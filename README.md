@@ -23,4 +23,4 @@ When reporting an issue put the version number before the issue title! Such as [
 + ![All the Mods 4](http://cf.way2muchnoise.eu/316059.svg "ATM4") All The Mods 4 - ATM4
 + ![All the Mods 5](http://cf.way2muchnoise.eu/357494.svg "ATM5") All The Mods 5 - ATM5
 + ![All the Mods 6](http://cf.way2muchnoise.eu/381671.svg "ATM5") All The Mods 6 - ATM6
-+ ![All the Mods 3 Expert](http://cf.way2muchnoise.eu/325396.svg "ATM3E") All The Mods Expert Remastered ATMER
++ ![All the Mods 3 Expert](http://cf.way2muchnoise.eu/325396.svg "ATM3E") All The Mods 3 Expert
