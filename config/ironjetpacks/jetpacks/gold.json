@@ -1,0 +1,19 @@
+{
+  "name": "gold",
+  "disable": true,
+  "tier": 3,
+  "color": "dede00",
+  "armorPoints": 4,
+  "enchantability": 25,
+  "craftingMaterial": "null",
+  "rarity": 0,
+  "capacity": 10000000,
+  "usage": 300,
+  "speedVertical": 0.61,
+  "accelVertical": 0.13,
+  "speedSideways": 0.15,
+  "speedHoverDescend": 0.34,
+  "speedHover": 0.03,
+  "sprintSpeedMulti": 1.5,
+  "sprintFuelMulti": 3.2
+}

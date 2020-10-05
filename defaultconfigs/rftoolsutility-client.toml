@@ -1,0 +1,13 @@
+
+#Settings for the screen system
+[screen]
+	#Set to true for TrueType font, set to false for vanilla font
+	useTruetype = false
+	#The default truetype font to use
+	fontName = "rftoolsutility:fonts/ubuntu.ttf"
+	#The size of the font
+	#Range: 0.0 ~ 1000000.0
+	fontSize = 40.0
+	#Additional characters that should be supported by the truetype system
+	additionalCharacters = ""
+

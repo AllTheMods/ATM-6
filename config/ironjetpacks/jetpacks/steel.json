@@ -1,0 +1,19 @@
+{
+  "name": "steel",
+  "disable": false,
+  "tier": 3,
+  "color": "565656",
+  "armorPoints": 4,
+  "enchantability": 15,
+  "craftingMaterial": "tag:forge:ingots/steel",
+  "rarity": 0,
+  "capacity": 12000000,
+  "usage": 350,
+  "speedVertical": 0.67,
+  "accelVertical": 0.135,
+  "speedSideways": 0.155,
+  "speedHoverDescend": 0.35,
+  "speedHover": 0.025,
+  "sprintSpeedMulti": 1.5,
+  "sprintFuelMulti": 3.2
+}

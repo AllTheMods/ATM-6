@@ -1,0 +1,6 @@
+
+#General configuration options.
+[General]
+	#Enable tag list tooltips for blocks/items?
+	tagTooltips = true
+

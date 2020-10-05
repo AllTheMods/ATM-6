@@ -1,0 +1,29 @@
+{
+  "flower": "tag:forge:storage_blocks/osmium",
+  "maxTimeInHive": 800,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#BDCBD4",
+    "primaryColor": "#B3C3C9",
+    "secondaryColor": "#BDCBD4"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "alltheores:osmium_ingot"
+  },
+  "SpawnData": {
+    "spawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Iron",
+    "parent2": "Lapis"
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

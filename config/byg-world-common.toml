@@ -1,0 +1,24 @@
+
+#Dimension Settings
+[Dimension_Settings]
+
+	[Dimension_Settings.The_End]
+		#Does BYG control The End?
+		ControlEnd = true
+		#Add external End biomes by their registry names in a commented list.
+		ExternalEndBiomes = ""
+		#Add external Nether biomes by their registry names in a commented list.
+		#Range: 0 ~ 10
+		EndBiomeSize = 3
+
+	[Dimension_Settings.The_Nether]
+		#Add external Nether biomes by their registry names in a commented list.
+		#Range: 0 ~ 10
+		NetherBiomeSize = 3
+		#Does BYG control The Nether?
+		ControlNether = true
+		#Add Nether biomes by their registry names(IDs) in a commented list.
+		# Adding a biome several times gives it more weight in generation.
+		# Default: "byg:embur_bog,byg:glowstone_gardens,byg:sythian_torrids,byg:warped_desert,minecraft:basalt_deltas,minecraft:crimson_forest,minecraft:nether_wastes,minecraft:soul_sand_valley,minecraft:warped_forest".
+		NetherBiomes = "byg:embur_bog,byg:glowstone_gardens,byg:sythian_torrids,byg:warped_desert,minecraft:basalt_deltas,minecraft:crimson_forest,minecraft:nether_wastes,minecraft:soul_sand_valley,minecraft:warped_forest"
+

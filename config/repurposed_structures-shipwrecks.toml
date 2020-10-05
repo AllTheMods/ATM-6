@@ -1,0 +1,41 @@
+
+[Shipwrecks]
+	#
+	# How rare are End Shipwreck in End Highlands biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	endShipwreckSpawnrate = 15
+	#
+	# How rare are Crimson Shipwreck in Crimson Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	crimsonShipwreckSpawnrate = 41
+	#
+	# Add Nether Bricks Shipwreck to modded non-warped or non-crimson Nether biomes.
+	addNetherBricksShipwreckToModdedBiomes = true
+	#
+	# Add Crimson Shipwreck to modded Crimson-named Nether biome.
+	addCrimsonShipwreckToModdedBiomes = true
+	#
+	# How rare are Nether Bricks Shipwreck in any non-warped or non-crimson Nether biome.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	netherBricksShipwreckSpawnrate = 51
+	#
+	# Add the ID/resource location of the biome you don't want
+	# RS's shipwrecks to spawn in. Separate each ID with a comma ,
+	#
+	#Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+	blacklistedShipwreckBiomes = ""
+	#
+	# Add End Shipwreck to modded End biomes.
+	addEndShipwreckToModdedBiomes = true
+	#
+	# How rare are Warped Shipwreck in Warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	warpedShipwreckSpawnrate = 41
+	#
+	# Add Warped Shipwreck to modded Warped Nether biomes.
+	addWarpedShipwreckToModdedBiomes = true
+

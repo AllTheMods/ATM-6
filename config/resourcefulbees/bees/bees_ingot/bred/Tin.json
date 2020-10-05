@@ -1,0 +1,28 @@
+{
+  "flower": "tag:forge:storage_blocks/tin",
+  "maxTimeInHive": 700,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#ECEDEE",
+    "primaryColor": "#ECEDEE"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "alltheores:tin_ingot"
+  },
+  "SpawnData": {
+    "spawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Crystal",
+    "parent2": "Rocky"
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

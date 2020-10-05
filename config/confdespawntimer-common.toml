@@ -1,0 +1,6 @@
+
+[General]
+	#The delay in ticks when an item should despawn, called the lifespan. Minecraft's default time is 6000 ticks. 1 second is 20 ticks.
+	#Range: 0 ~ 72000
+	despawnTimeInTicks = 12000
+

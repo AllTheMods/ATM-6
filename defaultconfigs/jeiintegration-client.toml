@@ -1,0 +1,20 @@
+
+# Configure the options below to one of the following: disabled, enabled, onShift, onDebug or onShiftAndDebug
+[tooltip_options]
+	# Configure tooltip for burn time.
+	burnTimeTooltipMode = "enabled"
+	# Configure tooltip for registry name. E.g. minecraft:stone
+	registryNameTooltipMode = "disabled"
+	# Configure tooltip for NBT data.
+	nbtTooltipMode = "onShiftAndDebug"
+	# Configure tooltip for translation key. E.g. block.minecraft.stone
+	translationKeyTooltipMode = "disabled"
+	# Configure tooltip for max stack size.
+	maxStackSizeTooltipMode = "disabled"
+	# Configure tooltip for tags. E.g. forge:ingot, minecraft:planks
+	tagsTooltipMode = "disabled"
+	# Configure tooltip for durability.
+	durabilityTooltipMode = "disabled"
+	# Configure tooltip for hunger and saturation.
+	foodTooltipMode = "enabled"
+

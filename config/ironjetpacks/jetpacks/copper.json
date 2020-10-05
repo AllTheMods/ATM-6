@@ -1,0 +1,19 @@
+{
+  "name": "copper",
+  "disable": false,
+  "tier": 1,
+  "color": "ce7201",
+  "armorPoints": 2,
+  "enchantability": 12,
+  "craftingMaterial": "tag:forge:ingots/copper",
+  "rarity": 0,
+  "capacity": 250000,
+  "usage": 85,
+  "speedVertical": 0.29,
+  "accelVertical": 0.11,
+  "speedSideways": 0.1,
+  "speedHoverDescend": 0.23,
+  "speedHover": 0.092,
+  "sprintSpeedMulti": 1.05,
+  "sprintFuelMulti": 1.4
+}

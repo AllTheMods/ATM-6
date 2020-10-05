@@ -1,0 +1,128 @@
+
+[item]
+
+	#Blueprint and template settings
+	[item.blueprint]
+		#Allowed blueprint types. Valid values are: BOTH, BLUEPRINT, and TEMPLATE
+		#Allowed Values: BOTH, BLUEPRINT, TEMPLATE
+		typesAllowed = "BOTH"
+		#When joining a new world, should players be given a blueprint package?
+		#The blueprint package gives some blueprints when used (right-click).
+		#To change what is given, override the starter_blueprints loot table.
+		spawnWithStarterBlueprints = false
+
+	#Repair kit configs.
+	[item.repairKits]
+
+		#Efficiency is the percentage of the repair value used. Higher values mean less materials used.
+		#Setting to zero would make the repair kit unusable.
+		[item.repairKits.efficiency]
+			#Range: 0.0 ~ 10.0
+			crimson = 0.44999998807907104
+			#Range: 0.0 ~ 10.0
+			sturdy = 0.4000000059604645
+			#Range: 0.0 ~ 10.0
+			crude = 0.3499999940395355
+			#Range: 0.0 ~ 10.0
+			azure = 0.5
+
+		#Capacity is the number of materials that can be stored (all types combined)
+		#Setting to zero would make the repair kit unusable.
+		[item.repairKits.capacity]
+			#Range: > 0
+			crimson = 48
+			#Range: > 0
+			sturdy = 32
+			#Range: > 0
+			crude = 16
+			#Range: > 0
+			azure = 64
+
+#Settings for nerfed items.
+#You can give items reduced durability to encourage use of Silent Gear tools.
+#Changes require a restart!
+[nerfedItems]
+	#Multiplies harvest speed by this value.
+	#Range: 0.0 ~ 1.0
+	harvestSpeedMultiplier = 0.5
+	#Multiplies max durability by this value. If the result would be zero, a value of 1 is assigned.
+	#Range: 0.0 ~ 1.0
+	durabilityMultiplier = 0.05
+	#These items will have reduced durability
+	items = ["diamond_axe", "iron_axe", "golden_axe", "stone_axe", "wooden_axe", "diamond_hoe", "iron_hoe", "golden_hoe", "stone_hoe", "wooden_hoe", "diamond_pickaxe", "iron_pickaxe", "golden_pickaxe", "stone_pickaxe", "wooden_pickaxe", "diamond_shovel", "iron_shovel", "golden_shovel", "stone_shovel", "wooden_shovel", "diamond_sword", "iron_sword", "golden_sword", "stone_sword", "wooden_sword"]
+	#Enable this feature. If false, the other settings in this category are ignored.
+	enabled = false
+
+#Settings for sinew drops
+[sinew]
+	#These entities can drop sinew when killed.
+	dropsFrom = ["minecraft:cow", "minecraft:pig", "minecraft:sheep"]
+	#Drop rate of sinew (chance out of 1)
+	#Range: 0.0 ~ 1.0
+	dropRate = 0.2
+
+#Settings for gear (tools, weapons, and armor)
+[gear]
+	#If true, gear breaks permanently, like vanilla tools and armor
+	breaksPermanently = false
+
+	[gear.repairs]
+		#DEPRECATED! Use repair kit configs instead.
+		#Range: 0.0 ~ 1.0
+		quickEffectiveness = 0.35
+		#Effectiveness of gear repairs done in an anvil. Set to 0 to disable anvil repairs.
+		#Range: 0.0 ~ 1.0
+		anvilEffectiveness = 0.5
+
+	#Settings for AOE tools (hammer, excavator)
+	#Match modes determine what blocks are considered similar enough to be mined together.
+	#LOOSE: Break anything (you probably do not want this)
+	#MODERATE: Break anything with the same harvest level
+	#STRICT: Break only the exact same block
+	[gear.aoeTool]
+
+		[gear.aoeTool.matchMode]
+			#Match mode for most blocks
+			#Allowed Values: LOOSE, MODERATE, STRICT
+			standard = "MODERATE"
+			#Match mode for ore blocks (anything in the forge:ores block tag)
+			#Allowed Values: LOOSE, MODERATE, STRICT
+			ores = "STRICT"
+
+	[gear.prospector_hammer]
+		#The range in blocks the prospector hammer will search for blocks of interest
+		#Range: 0 ~ 64
+		range = 16
+
+	[gear.upgrades]
+		#If true, upgrade parts may only be applied in an anvil.
+		applyInAnvilOnly = false
+
+#Settings for the salvager
+[salvager]
+
+	[salvager.partLossRate]
+		#Minimum rate of part loss when salvaging items. 0 = no loss, 1 = complete loss.
+		#Rate depends on remaining durability.
+		#Range: 0.0 ~ 1.0
+		min = 0.0
+		#Maximum rate of part loss when salvaging items. 0 = no loss, 1 = complete loss.
+		#Rate depends on remaining durability.
+		#Range: 0.0 ~ 1.0
+		max = 0.5
+
+[compat]
+
+	[compat.mineAndSlash]
+		#Enable compatibility with the Mine and Slash mod, if installed
+		enabled = true
+
+[debug]
+
+	[debug.logging]
+		#Log stat calculations in the debug.log every time gear stats are recalculated
+		stats = true
+		#Log additional information related to loading and synchronizing gear parts and traits.
+		#This might help track down more obscure issues.
+		extraPartAndTraitInfo = false
+

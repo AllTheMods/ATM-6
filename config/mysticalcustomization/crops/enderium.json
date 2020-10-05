@@ -1,0 +1,13 @@
+{
+    "name": "Enderium",
+    "type": "resource",
+    "tier": "mysticalagriculture:4",
+    "ingredient": {
+      "tag": "forge:ingots/enderium"
+    },
+    "color": "9BE1BA",
+    "textures": {
+      "flower": "mysticalagriculture:block/flower_ingot",
+      "essence": "mysticalagriculture:item/essence_ingot"
+    }
+  }

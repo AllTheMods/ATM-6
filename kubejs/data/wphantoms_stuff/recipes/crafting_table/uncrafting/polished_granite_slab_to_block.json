@@ -1,0 +1,16 @@
+﻿{
+    "type": "crafting_shaped",
+    "pattern": [
+        "_",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:polished_granite_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:polished_granite",
+        "count": 1
+    }
+}

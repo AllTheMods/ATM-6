@@ -1,0 +1,17 @@
+
+[gear]
+	#Allow gear items to have the 'enchanted glow' effect. Set to 'false' to disable the effect.
+	#The way vanilla handles the effect is bugged, and it is recommended to disable this until custom models are possible again.
+	allowEnchantedEffect = false
+	#Use 'lite' gear models. These should be easier on some systems, but do not allow unique textures for different materials.
+	#Currently, this option has no effect, as the normal model system is not working yet (lite models are used)
+	useLiteModels = false
+
+[item]
+
+	[item.gear]
+
+		[item.gear.materials]
+			#Disable item tooltips related to the new material system. Will be removed when fully implemented.
+			disableNewTooltips = false
+

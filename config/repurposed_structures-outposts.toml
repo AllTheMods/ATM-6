@@ -1,0 +1,34 @@
+#
+# Add the ID/resource location of the biome you don't want
+# RS's outposts to spawn in. Separate each ID with a comma ,
+#
+#Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+blacklistedOutpostBiomes = ""
+
+[Outposts]
+	#
+	# How rare are Nether Brick Outposts in non-warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	addNetherBrickOutpostToModdedBiomes = true
+	#
+	# How rare are Warped Outposts in Warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	addWarpedOutpostToModdedBiomes = true
+	#
+	# Add Crimson Outposts to modded Nether Warped biomes.
+	#Range: 1 ~ 1001
+	crimsonOutpostSpawnrate = 34
+	#
+	# Add Nether Brick Outposts to modded Nether biomes
+	# that other nether outposts don't fit in.
+	#Range: 1 ~ 1001
+	netherBrickOutpostSpawnrate = 34
+	#
+	# Add Warped Outposts to modded Nether Warped biomes.
+	#Range: 1 ~ 1001
+	warpedOutpostSpawnrate = 34
+	#
+	# How rare are Crimson Outposts in Warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	addCrimsonOutpostToModdedBiomes = true
+

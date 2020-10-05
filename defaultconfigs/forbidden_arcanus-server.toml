@@ -1,0 +1,108 @@
+
+[gen]
+
+	[gen.arcane_crystal]
+		#Generate Arcane Crystal Ore? [default: true]
+		generate = true
+		#Maximum size of Arcane Crystal Ore veins [default: 6]
+		#Range: 0 ~ 100
+		max_vein_size = 5
+		#Maximum Arcane Crystal Ore veins per chunk [default: 3]
+		#Range: 1 ~ 100
+		count = 3
+		#Maximum height for Arcane Crystal Ore to generate [default: 25]
+		#Range: 1 ~ 256
+		max_height = 25
+
+	[gen.runestone]
+		#Generate Runestone? [default: true]
+		generate = true
+		#Maximum size of Runestone veins [default: 3]
+		#Range: 0 ~ 100
+		max_vein_size = 3
+		#Maximum Runestone veins per chunk [default: 2]
+		#Range: 1 ~ 100
+		count = 2
+		#Maximum height for the Runestone to generate [default: 20]
+		#Range: 1 ~ 256
+		max_height = 20
+
+	[gen.darkstone]
+		#Generate Darkstone? [default: true]
+		generate = true
+		#Maximum size of Darkstone veins [default: 20]
+		#Range: 0 ~ 100
+		max_vein_size = 20
+		#Maximum Darkstone veins per chunk [default: 20]
+		#Range: 1 ~ 100
+		count = 20
+		#Maximum height for Darkstone to generate [default: 8]
+		#Range: 1 ~ 256
+		max_height = 8
+
+	[gen.arcane_gilded_darkstone]
+		#Generate Arcane Gilded Darkstone? [default: true]
+		generate = true
+		#Maximum size of Arcane Gilded Darkstone veins [default: 4]
+		#Range: 0 ~ 100
+		max_vein_size = 4
+		#Maximum Arcane Gilded Darkstone veins per chunk [default: 4]
+		#Range: 1 ~ 100
+		count = 4
+		#Maximum height for Arcane Gilded Darkstone to generate [default: 8]
+		#Range: 1 ~ 256
+		max_height = 8
+
+	[gen.dark_runestone]
+		#Generate Dark Runestone? [default: true]
+		generate = true
+		#Maximum size of Dark Runestone veins [default: 3]
+		#Range: 0 ~ 100
+		max_vein_size = 3
+		#Maximum Dark Runestone veins per chunk [default: 2]
+		#Range: 1 ~ 100
+		count = 2
+		#Maximum height for Dark Runestone to generate [default: 8]
+		#Range: 1 ~ 256
+		max_height = 8
+
+	[gen.xpetrified_ore]
+		#Generate Xpetrified Ore? [default: true]
+		generate = true
+
+	[gen.stella_arcanum]
+		#Generate Should Stella Arcanum? [default: true]
+		generate = true
+		#Maximum size of Stella Arcanum veins [default: 3]
+		#Range: 0 ~ 100
+		max_vein_size = 3
+		#Maximum Stella Arcanum veins per chunk [default: 2]
+		#Range: 1 ~ 100
+		count = 2
+		#Maximum height for Stella Arcanum to generate [default: 50]
+		#Range: 1 ~ 256
+		max_height = 50
+
+	[gen.cherrywood_tree]
+		#Generate Cherrywood Trees? [default: true]
+		generate = true
+
+	[gen.mysterywood_tree]
+		#Generate Mysterywood Trees? [default: true]
+		generate = true
+
+	[gen.edelwood_tree]
+		#Generate Edelwood Trees? [default: true]
+		generate = true
+
+	[gen.yellow_orchid]
+		#Generate Yellow Orchid? [default: true]
+		generate = true
+
+[block]
+
+	[block.runic_chiseled_polished_darkstone]
+		#Radius the Activated Runic Chiseled Polished Darkstone prevents Entities from spawning in (in Blocks) [default: 25]
+		#Range: 1 ~ 100
+		entity_spawn_blocking_radius = 25
+

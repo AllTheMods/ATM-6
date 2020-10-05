@@ -1,0 +1,42 @@
+{
+    "type": "quarryplus:workbench_recipe",
+    "id": "quarryplus:builtin_quarryplus",
+    "ingredients": [
+      {
+        "tag": "forge:gems/diamond",
+        "count": 32
+      },
+      {
+        "tag": "forge:ingots/gold",
+        "count": 32
+      },
+      {
+        "tag": "forge:ingots/iron",
+        "count": 64
+      },
+      {
+        "tag": "forge:dusts/redstone",
+        "count": 16
+      },
+      {
+        "tag": "forge:ender_pearls",
+        "count": 4
+      },
+      {
+          "tag": "forge:ingots/unobtainium",
+          "count": 8
+      }
+    ],
+    "energy": 320000.0,
+    "showInJEI": true,
+    "result": {
+      "item": "quarryplus:quarry",
+      "count": 1
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "quarryplus"
+        }
+    ]
+  }

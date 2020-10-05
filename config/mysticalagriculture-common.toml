@@ -1,0 +1,52 @@
+
+#General configuration options.
+[General]
+	#The amount of uses the basic Infusion Crystal should have.
+	#Range: > 10
+	infusionCrystalUses = 1000
+	#The amount of time in seconds between each Growth Accelerator growth tick.
+	#Range: > 1
+	growthAcceleratorCooldown = 10
+	#The percentage chance that harvesting a Resource Crop will drop a Fertilized Essence.
+	#Range: 0.0 ~ 1.0
+	fertilizedEssenceChance = 0.1
+	#The percentage chance that a passive or hostile mob will drop an Inferium Essence when killed.
+	#Range: 0.0 ~ 1.0
+	inferiumDropChance = 0.2
+
+#World generation options.
+[World]
+	#The percentage chance a Soulium Ore spawns in a Soulstone cluster.
+	#Range: 0.0 ~ 1.0
+	souliumOreChance = 0.05
+	#The maximum amount of Prosperity Ore blocks that can spawn in a vein.
+	#Range: > 0
+	prosperitySpawnSize = 8
+	#How many Inferium Ore veins should spawn in a chunk.
+	#Range: > 0
+	inferiumSpawnRate = 16
+	#The maximum amount of Inferium Ore blocks that can spawn in a vein.
+	#Range: > 0
+	inferiumSpawnSize = 8
+	#How many Prosperity Ore veins should spawn in a chunk.
+	#Range: > 0
+	prosperitySpawnRate = 12
+	#The maximum Y level that Soulstone veins can spawn.
+	#Range: 0 ~ 128
+	inferiumSpawnHeight = 128
+	#The maximum Y level that Prosperity Ore veins can spawn.
+	#Range: 0 ~ 256
+	prosperitySpawnHeight = 50
+	#Should Inferium Ore generate in the world?
+	generateInferiumOre = true
+	#The maximum amount of Soulstone blocks that can spawn in a vein.
+	#Range: > 0
+	soulstoneSpawnSize = 64
+	#Should Prosperity Ore generate in the world?
+	generateProsperityOre = true
+	#How many Soulstone veins should spawn in a chunk.
+	generateSoulstone = true
+	#How many Soulstone veins should spawn in a chunk.
+	#Range: > 0
+	soulstoneSpawnRate = 4
+

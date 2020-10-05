@@ -1,0 +1,10 @@
+
+#General configuration options.
+[General]
+	#The amount of Dragon Scales that an Ender Dragon will drop when killed.
+	#Range: 0 ~ 64
+	dragonScalesAmount = 8
+	#The percentage chance that a wither will drop a Withering Soul when killed.
+	#Range: 0.0 ~ 1.0
+	witheringSoulChance = 0.35
+

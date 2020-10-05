@@ -1,0 +1,19 @@
+{
+  "name": "silver",
+  "disable": true,
+  "tier": 2,
+  "color": "9fc4dd",
+  "armorPoints": 3,
+  "enchantability": 12,
+  "craftingMaterial": "tag:forge:ingots/silver",
+  "rarity": 0,
+  "capacity": 1200000,
+  "usage": 150,
+  "speedVertical": 0.48,
+  "accelVertical": 0.13,
+  "speedSideways": 0.15,
+  "speedHoverDescend": 0.3,
+  "speedHover": 0.07,
+  "sprintSpeedMulti": 1.3,
+  "sprintFuelMulti": 2.7
+}

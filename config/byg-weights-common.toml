@@ -1,0 +1,311 @@
+
+[Maple_Taiga]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Sierra_Valley]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Weeping_Witch_Forest]
+	#Set to 0 to disable generation. Default Weight is: 1
+	#Range: 0 ~ 256
+	Weight = 1
+
+[Prairie]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Seasonal_Taiga]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Vibrant_Swamplands]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Allium_Fields]
+	#Set to 0 to disable generation. Default Weight is: 2
+	#Range: 0 ~ 256
+	Weight = 2
+
+[Snowy_Blue_Taiga]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Evergreen_Taiga]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Alps]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Orchard]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Cold_Swamplands]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[ancientForest]
+	#Set to 0 to disable generation. Default Weight is: 1
+	#Range: 0 ~ 256
+	Weight = 1
+
+[Aspen_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Grassland_Plateau]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Cika_Woods]
+	#Set to 0 to disable generation. Default Weight is: 4
+	#Range: 0 ~ 256
+	Weight = 4
+
+[Meadow]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Mangrove_Marshes]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Autumnal_Valley]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Redwood_Tropics]
+	#Set to 0 to disable generation. Default Weight is: 4
+	#Range: 0 ~ 256
+	Weight = 4
+
+[Blue_Taiga]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Amaranth_Fields]
+	#Set to 0 to disable generation. Default Weight is: 2
+	#Range: 0 ~ 256
+	Weight = 2
+
+[Dead_Sea]
+	#Set to 0 to disable generation. Default Weight is: 2
+	#Range: 0 ~ 256
+	Weight = 2
+
+[Bayou]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Boreal_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Deciduous_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Dunes]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Jacaranda_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Lush_Tundra]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Tropical_Rain_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Ebony_Woods]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Snowy_Coniferous_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Cypress_Swampland]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Dover_Mountains]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Woodlands]
+	#Set to 0 to disable generation. Default Weight is: 4
+	#Range: 0 ~ 256
+	Weight = 4
+
+[Shrublands]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Coniferous_Forest]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[The_Black_Forest]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Cherry_Blossom_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Zelkova_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Seasonal_Birch_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Enchanted_Forest]
+	#Set to 0 to disable generation. Default Weight is: 1
+	#Range: 0 ~ 256
+	Weight = 1
+
+[Snowy_Deciduous_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Shattered_Glacier]
+	#Set to 0 to disable generation. Default Weight is: 4
+	#Range: 0 ~ 256
+	Weight = 4
+
+[Snowy_Evergreen_Taiga]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Seasonal_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Bluff_Steeps]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Seasonal_Deciduous_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Baobab_Savanna]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Seasonal_Giant_Taiga]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Crag_Gardens]
+	#Set to 0 to disable generation. Default Weight is: 1
+	#Range: 0 ~ 256
+	Weight = 1
+
+[Grove]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Guiana_Shield]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Enchanted_Grove]
+	#Set to 0 to disable generation. Default Weight is: 1
+	#Range: 0 ~ 256
+	Weight = 1
+
+[Red_Oak_Forest]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Red_Desert]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Skyris_Highlands]
+	#Set to 0 to disable generation. Default Weight is: 2
+	#Range: 0 ~ 256
+	Weight = 2
+
+[Tropical_Fungal_Forest]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+
+[Glowshroom_Bayou]
+	#Set to 0 to disable generation. Default Weight is: 1
+	#Range: 0 ~ 256
+	Weight = 1
+
+[Great_Lake]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Mojave_Desert]
+	#Set to 0 to disable generation. Default Weight is: 6
+	#Range: 0 ~ 256
+	Weight = 6
+
+[Red_Rock_Mountains]
+	#Set to 0 to disable generation. Default Weight is: 5
+	#Range: 0 ~ 256
+	Weight = 5
+

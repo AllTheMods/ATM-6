@@ -1,0 +1,14 @@
+{
+    "name": "Allthemodium",
+    "type": "resource",
+    "tier": "mysticalagradditions:6",
+    "ingredient": {
+        "tag": "forge:storage_blocks/allthemodium"
+    },
+    "color": "FCFC3D",
+    "textures": {
+      "flower": "mysticalagriculture:block/flower_ingot",
+      "essence": "mysticalagriculture:item/essence_ingot"
+    },
+    "crux": "allthemodium:allthemodium_block"
+  }

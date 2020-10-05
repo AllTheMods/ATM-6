@@ -1,0 +1,10 @@
+
+#Client Settings
+[Client_Settings]
+	#BYG Main Menu Panorama.
+	Panorama = true
+	#BYG's Biome Fog Settings.
+	#Applies to "Overworld" ONLY. Color no longer works.
+	#Allowed Values: DENSEFOGCOLOR, DENSEFOG, FOGCOLOR, OFF
+	BiomeFog = "DENSEFOGCOLOR"
+

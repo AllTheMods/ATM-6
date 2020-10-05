@@ -1,0 +1,33 @@
+{
+  "flower":"tag:misctags:flowers/magical_flowers",
+  "maxTimeInHive":1000,
+  "hasHoneycomb":true,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor":"#00C9EA",
+    "honeycombColor":"#00C9EA"
+  },
+  "MutationData": {
+    "hasMutation":false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput":"botania:black_lotus",
+    "secondaryOutput":"botania:blacker_lotus",
+    "bottleOutput":"botania:mana_bottle",
+    "mainOutputWeight":0.33,
+    "secondaryOutputWeight":0.01,
+    "mainInputCount":9
+  },
+  "SpawnData": {
+    "canSpawnInWorld":false,
+    "biomeWhitelist":"tag:magical",
+    "lightLevel": "night"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

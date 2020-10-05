@@ -1,0 +1,19 @@
+{
+  "name": "platinum",
+  "disable": false,
+  "tier": 4,
+  "color": "6feaef",
+  "armorPoints": 6,
+  "enchantability": 17,
+  "craftingMaterial": "null",
+  "rarity": 0,
+  "capacity": 36000000,
+  "usage": 720,
+  "speedVertical": 0.92,
+  "accelVertical": 0.155,
+  "speedSideways": 0.193,
+  "speedHoverDescend": 0.42,
+  "speedHover": 0.005,
+  "sprintSpeedMulti": 1.8,
+  "sprintFuelMulti": 3.8
+}

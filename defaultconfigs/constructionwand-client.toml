@@ -1,0 +1,7 @@
+
+[keys]
+	#Press SHIFT+CTRL instead of SHIFT for changing wand mode/direction lock
+	ShiftCtrl = false
+	#Press SHIFT+CTRL instead of SHIFT for opening wand GUI
+	ShiftCtrlGUI = false
+

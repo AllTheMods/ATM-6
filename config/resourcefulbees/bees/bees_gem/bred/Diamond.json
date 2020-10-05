@@ -1,0 +1,29 @@
+{
+  "flower": "tag:forge:storage_blocks/diamond",
+  "maxTimeInHive": 1100,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "diamond/diamond_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#00ffff"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:diamond"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Ender",
+    "parent2": "Lapis",
+    "feedItem": "minecraft:poppy"
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

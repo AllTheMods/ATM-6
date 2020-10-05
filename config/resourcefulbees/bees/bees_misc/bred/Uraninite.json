@@ -1,0 +1,29 @@
+{
+  "flower": "tag:forge:storage_blocks/uraninite",
+  "maxTimeInHive": 800,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#00FC1A",
+    "primaryColor": "#00FC1A"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "powah:uraninite",
+    "mainOutputCount": 4
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Emerald",
+    "parent2": "Uranium"
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

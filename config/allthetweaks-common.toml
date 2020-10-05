@@ -1,0 +1,6 @@
+
+[packmode]
+	#ATM = 0 SLOP = 1
+	#Range: 0 ~ 1
+	enable = 0
+

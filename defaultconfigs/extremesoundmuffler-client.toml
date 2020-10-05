@@ -1,0 +1,13 @@
+
+#general settings
+[general]
+	#Disable the anchors?
+	disableAnchors = false
+	#Sets the radius for the Anchors, from your feet X blocks in the 6 directions
+	#Range: 2.0 ~ 16.0
+	anchorRadius = 16.0
+	#Disable the Muffle button in the player inventory?
+	disableInventoryButton = false
+	#Blacklisted Sounds - add the name of the sounds to blacklist, separated with comma
+	forbiddenSounds = ["ui.", "music.", "ambient."]
+

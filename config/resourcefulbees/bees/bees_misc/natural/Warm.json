@@ -1,0 +1,26 @@
+{
+  "flower":"all",
+  "maxTimeInHive":600,
+  "hasHoneycomb":false,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor":"#BBBFBF"
+  },
+  "MutationData": {
+    "hasMutation":false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld":true,
+    "biomeWhitelist":"tag:cold",
+    "lightLevel": "night"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

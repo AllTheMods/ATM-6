@@ -1,0 +1,16 @@
+﻿{
+    "type": "crafting_shaped",
+    "pattern": [
+        "_",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:mossy_cobblestone_slab"
+        }
+    },
+    "result": {
+        "item": "minecraft:mossy_cobblestone",
+        "count": 1
+    }
+}

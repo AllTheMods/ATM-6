@@ -1,0 +1,27 @@
+#When enabled the amount of snow/sand built up on platforms will change with the weather
+#Regardless of setting you can still manually place sand/snow, and remove it with a shovel
+"Environment Reactive" = true
+#When enabled walking on platforms will disturb the collected snow/sand
+#Regardless of setting you can still manually place sand/snow, and remove it with a shovel
+"Entity Reactive" = true
+
+#Craft Output Control
+[crafting]
+	#Range: 1 ~ 16
+	Floor = 2
+	#Range: 1 ~ 16
+	Frame = 2
+	#Range: 1 ~ 16
+	Ramp = 2
+	#Range: 1 ~ 16
+	Rail = 4
+	#Range: 1 ~ 16
+	Flat = 4
+	#Multiplies the craft amount by the given value if a 'compressed' block is used (2x value if two are used)
+	#See 'data/forge/tags/items/storage_blocks/' to know what qualifies
+	#Note: Final value will be capped at a full stack
+	#Range: 1 ~ 16
+	"'Compressed' Block Multiplier" = 4
+	#Range: 1 ~ 16
+	Rise = 4
+

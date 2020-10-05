@@ -1,0 +1,19 @@
+{
+  "name": "wood",
+  "disable": false,
+  "tier": 0,
+  "color": "6b511f",
+  "armorPoints": 1,
+  "enchantability": 15,
+  "craftingMaterial": "tag:minecraft:planks",
+  "rarity": 0,
+  "capacity": 20000,
+  "usage": 32,
+  "speedVertical": 0.18,
+  "accelVertical": 0.1,
+  "speedSideways": 0.06,
+  "speedHoverDescend": 0.16,
+  "speedHover": 0.14,
+  "sprintSpeedMulti": 1.0,
+  "sprintFuelMulti": 1.0
+}

@@ -1,0 +1,33 @@
+{
+  "flower":"tag:forge:stone",
+  "maxTimeInHive":700,
+  "hasHoneycomb":true,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor":"#5A5A5A",
+    "honeycombColor":"#5A5A5A"
+  },
+  "MutationData": {
+    "hasMutation":false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput":"minecraft:stone",
+    "secondaryOutput":"minecraft:gravel",
+    "mainOutputCount":3,
+    "mainOutputWeight":0.9,
+    "secondaryOutputWeight":0.5,
+    "secondaryOutputCount":2
+  },
+  "SpawnData": {
+    "canSpawnInWorld":true,
+    "biomeWhitelist":"tag:mountain",
+    "lightLevel": "day"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

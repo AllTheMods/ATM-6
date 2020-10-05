@@ -1,0 +1,13 @@
+{
+    "name": "Uraninite",
+    "type": "resource",
+    "tier": "mysticalagriculture:5",
+    "ingredient": {
+      "item": "powah:uraninite"
+    },
+    "color": "00D611",
+    "textures": {
+      "flower": "mysticalagriculture:block/flower_dust",
+      "essence": "mysticalagriculture:item/essence_gem"
+    }
+  }

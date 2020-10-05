@@ -1,0 +1,17 @@
+
+#Settings for the layout guide
+[layout]
+	#Use untextured blocks to render the factory
+	simple = false
+	#Size of the layout blocks
+	#Range: 0.1 ~ 1.0
+	renderSize = 0.35
+	#Opacity of the layout blocks
+	#Range: 0.1 ~ 1.0
+	renderOpacity = 0.95
+
+#Settings for the anvil
+[anvil]
+	#Anvil generates particles when correctly placed
+	particles = true
+

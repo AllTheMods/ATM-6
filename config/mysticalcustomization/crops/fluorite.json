@@ -1,0 +1,13 @@
+{
+    "name": "Fluorite",
+    "type": "resource",
+    "tier": "mysticalagriculture:3",
+    "ingredient": {
+      "tag": "forge:gems/fluorite"
+    },
+    "color": "E4F5F6",
+    "textures": {
+      "flower": "mysticalagriculture:block/flower_rock",
+      "essence": "mysticalagriculture:item/essence_gem"
+    }
+  }

@@ -1,0 +1,19 @@
+{
+  "name": "emerald",
+  "disable": false,
+  "tier": 5,
+  "color": "41f384",
+  "armorPoints": 8,
+  "enchantability": 20,
+  "craftingMaterial": "tag:forge:gems/emerald",
+  "rarity": 0,
+  "capacity": 48000000,
+  "usage": 880,
+  "speedVertical": 1.03,
+  "accelVertical": 0.17,
+  "speedSideways": 0.21,
+  "speedHoverDescend": 0.45,
+  "speedHover": 0.0,
+  "sprintSpeedMulti": 2.0,
+  "sprintFuelMulti": 4.0
+}
