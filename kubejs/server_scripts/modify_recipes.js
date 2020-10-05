@@ -19,7 +19,7 @@ events.listen('recipes', function (e) {
     e.replaceOutput('#forge:cheese', 'rats:cheese')
     //Modified recipes
     modifyShaped('buildinggadgets:gadget_exchanging', 1,[
-      'iai',
+      'iri',
       'dld',
       'iai'
     ],{
@@ -77,14 +77,14 @@ events.listen('recipes', function (e) {
         R: 'mekanism:resistive_heater'
     })
     e.remove({id: 'bagofyurting:bag_of_yurting'})
-    e.shaped('bagofyurting:bag_of_yurting', 1,[
+    e.shaped(item.of('bagofyurting:bag_of_yurting', 1),[
       'WSW',
       'WEW',
       'WWW'
     ],{
         W: '#minecraft:wool',
         E: '#forge:ender_pearls',
-        S: 'minecraft:string'
+        S: '#forge:string'
     })
     var ingots = [
       '#forge:ingots/gold',
@@ -343,26 +343,43 @@ events.listen('recipes', function (e) {
         W: 'minecraft:'+color+'_wool'
       })
       e.remove({output:'comforts:sleeping_bag_'+color})
-      e.shaped(item.of('comforts:sleeping_bag_'+color), [
-      'WWW',
-      'SSS',
-      'WWW',
-      ], {
-        W: 'absentbydesign:slab_wool_'+color,
-        S: '#forge:string'
-      })
+      if(color !== 'light_gray'){
+        e.shaped(item.of('comforts:sleeping_bag_'+color), [
+        'WWW',
+        'SSS',
+        'WWW',
+        ], {
+          W: 'absentbydesign:slab_wool_'+color,
+          S: '#forge:string'
+        })
+        e.shaped(item.of('minecraft:'+color+'_wool', 1), [
+          'W',
+          'W'
+        ], {
+          W: 'absentbydesign:slab_wool_'+color
+        })
+      }else{
+        e.shaped(item.of('comforts:sleeping_bag_light_gray'), [
+          'WWW',
+          'SSS',
+          'WWW',
+        ], {
+          W: 'absentbydesign:slab_wool_light_gray',
+          S: '#forge:string'
+        })
+        e.shaped(item.of('minecraft:light_gray_wool', 1), [
+          'W',
+          'W'
+        ], {
+          W: 'absentbydesign:slab_wool_light_gray'
+        })
+      }
       e.shaped(item.of('minecraft:'+color+'_stained_glass', 3), [
         'GGG',
         'G G',
         'GGG',
       ], {
         G: 'minecraft:'+color+'_stained_glass_pane'
-      })
-      e.shaped(item.of('minecraft:'+color+'_wool', 1), [
-        'W',
-        'W'
-      ], {
-        W: 'absentbydesign:slab_wool_'+color
       })
   })
     e.shaped(item.of('minecraft:white_wool'), [

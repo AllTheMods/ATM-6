@@ -1,4 +1,4 @@
-events.listen('recipes', function (e) {
+/* events.listen('recipes', function (e) {
     e.remove({id: 'xreliquary:alkahestry/crafting/nether_star'})
     e.remove({type: 'xreliquary:alkahestry_charging'})
     function charge(item, amount){
@@ -25,4 +25,4 @@ events.listen('recipes', function (e) {
     craft('minecraft:leather', 2, 32)
     craft('minecraft:bone', 2, 32)
     craft('minecraft:blaze_rod', 3, 128)
-})
+}) */

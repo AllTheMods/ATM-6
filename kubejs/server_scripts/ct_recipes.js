@@ -77,7 +77,7 @@ events.listen('recipes', function (e) {
         'G': 'minecraft:green_wool'
     })
     //QuarryPlus
-    shaped('quarryplus:solidquarry',[
+/*     shaped('quarryplus:solidquarry',[
     'FFF',
     'DGD',
     'AAA'
@@ -96,7 +96,7 @@ events.listen('recipes', function (e) {
         'G': '#forge:storage_blocks/gold',
         'D': '#forge:storage_blocks/diamond',
         'A': '#forge:nuggets/allthemodium'
-    })
+    }) */
     //Mining Gadgets
     shaped('mininggadgets:upgrade_empty',[
     'RAL',
