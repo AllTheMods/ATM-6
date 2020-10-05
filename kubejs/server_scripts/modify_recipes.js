@@ -364,14 +364,14 @@ events.listen('recipes', function (e) {
           'SSS',
           'WWW',
         ], {
-          W: 'absentbydesign:slab_wool_light_gray',
+          W: 'absentbydesign:slab_wool_silver',
           S: '#forge:string'
         })
         e.shaped(item.of('minecraft:light_gray_wool', 1), [
           'W',
           'W'
         ], {
-          W: 'absentbydesign:slab_wool_light_gray'
+          W: 'absentbydesign:slab_wool_silver'
         })
       }
       e.shaped(item.of('minecraft:'+color+'_stained_glass', 3), [
