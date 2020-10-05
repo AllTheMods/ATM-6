@@ -1,9 +1,9 @@
 //Item tags go here
 events.listen('item.tags', function (e) {
-  var add = function(tag, id) {
+  function add(tag, id) {
     e.get(tag).add(id)
   }
-  var remove = function(tag, id) {
+  function remove(tag, id) {
     e.get(tag).remove(id)
   }
 
@@ -98,10 +98,10 @@ events.listen('item.tags', function (e) {
 
 //Block tags go here
 events.listen('block.tags', function (e) {
-  var add = function(tag, id) {
+  function add(tag, id) {
     e.get(tag).add(id)
   }
-  var remove = function(tag, id) {
+  function remove(tag, id) {
     e.get(tag).remove(id)
   }
 
@@ -157,10 +157,10 @@ events.listen('block.tags', function (e) {
 
 //Fluid tags go here
 events.listen('fluid.tags', function (e) {
-  var add = function(tag, id) 
+  function add(tag, id) 
     {e.get(tag).add(id)
   }
-  var remove = function(tag, id) 
+  function remove(tag, id) 
     {e.get(tag).remove(id)
   }
   //Add
