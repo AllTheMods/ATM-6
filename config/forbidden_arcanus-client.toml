@@ -70,7 +70,7 @@
 
 	[enchantments.indestructible]
 		#Damageable Items that shouldn't be able to contain the Indestructible Enchantment
-		item_blacklist = []
+		item_blacklist = ["xpbook:xp_book"]
 		#Enchantments that cannot be applied together with the Indestructible Enchantment
 		enchantment_blacklist = ["minecraft:unbreaking", "minecraft:mending"]
 		#Should the item be fully repaired after applying the Indestructible enchantment [default: true]
