@@ -262,7 +262,7 @@ events.listen('recipes', function (e) {
     ],{
       'C': 'mysticalagradditions:creative_essence',
       'H': 'rats:creative_cheese',
-      'U': 'rats:rat_upgrade_god'
+      'U': 'rats:rat_upgrade_nonbeliever'
     })
 
     //SGear salvaging

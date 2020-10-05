@@ -157,11 +157,11 @@ events.listen('block.tags', function (e) {
 
 //Fluid tags go here
 events.listen('fluid.tags', function (e) {
-  function add(tag, id) 
-    {e.get(tag).add(id)
+  function add(tag, id) {
+    e.get(tag).add(id)
   }
-  function remove(tag, id) 
-    {e.get(tag).remove(id)
+  function remove(tag, id) {
+    e.get(tag).remove(id)
   }
   //Add
   add('forge:essence','pneumaticcraft:memory_essence')
