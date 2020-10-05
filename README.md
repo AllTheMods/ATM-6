@@ -25,6 +25,7 @@ You can also find us on Discord for help or just to chat as well as Reddit:
 + ![All the Mods 4](http://cf.way2muchnoise.eu/316059.svg "ATM4") All The Mods 4 - ATM4
 + ![All the Mods 5](http://cf.way2muchnoise.eu/357494.svg "ATM5") All The Mods 5 - ATM5
 + ![All the Mods 6](http://cf.way2muchnoise.eu/381671.svg "ATM5") All The Mods 6 - ATM6
++ ![All the Mods 6](http://cf.way2muchnoise.eu/357494.svg "ATM5") All The Mods 6 - ATM6
 + ![All the Mods Expert Remastered](http://cf.way2muchnoise.eu/274849.svg "ATMER") All The Mods Expert Remastered ATMER
 + ![All the Mods: All the Magic](http://cf.way2muchnoise.eu/310346.svg "ATM: All the Magic") All The Mods: All the Magic ATMMAGIC
 
