@@ -1,5 +1,4 @@
 events.listen('recipes', function (e) {
-    var soil = e.recipes.botanypots.soil
     var pot = e.recipes.botanypots.crop
     var ma = 'mysticalagriculture:'
     var crop = {
@@ -36,7 +35,7 @@ events.listen('recipes', function (e) {
             }
         ]}
     //Soils
-/*     function soil(input, categories, growthModifier){
+    function soil(input, categories, growthModifier){
         e.recipes.botanypots.soil({
             'input':
             {
@@ -54,9 +53,9 @@ events.listen('recipes', function (e) {
             'growthModifier': growthModifier
         })
     }
-    soil('mysticalagradditions:insanium_farmland',['dirt','farmland','inferium','prudentium','tertium','imperium','supremium','insanium'], 0.50) */
+    soil('mysticalagradditions:insanium_farmland',['dirt','farmland','inferium','prudentium','tertium','imperium','supremium','insanium'], 0.50)
     
-    e.recipes.botanypots.soil({
+/*     e.recipes.botanypots.soil({
         'input':
         {
             'item': 'mysticalagradditions:insanium_farmland'
@@ -81,7 +80,7 @@ events.listen('recipes', function (e) {
         ],
         'growthModifier': 0.50
     })
-
+ */
     //MA Crop functions
     function t1(type) {
         e.remove({id: 'mysticalagriculture:crops/'+type})
