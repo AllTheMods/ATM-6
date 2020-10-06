@@ -127,6 +127,27 @@ events.listen('recipes', function (e) {
           }
         })
     }
+    function t7(type) {
+    cloche({
+        results: [
+            {
+              item: 'mysticalagriculture:'+type+'_essence',
+              count: 2
+            }
+          ],
+          input: {
+            item: 'mysticalagriculture:'+type+'_seeds'
+          },
+          soil: {
+            item: 'mysticalagradditions:insanium_block'
+          },
+          time: 8900,
+          render: {
+            type: 'crop',
+            block: 'mysticalagriculture:'+type+'_crop'
+          }
+        })
+    }
     function inf(rCount, time, fLand) {
       cloche({
           results: [
@@ -168,16 +189,16 @@ events.listen('recipes', function (e) {
     //Regular crops
     regular([{item: 'byg:blueberries',count: 2}], 'byg:blueberries', 'byg:blueberry_bush')
     regular([{item: 'forbidden_arcanus:arcane_gold_nugget'},{item: 'forbidden_arcanus:golden_orchid_seeds'}], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid')
-    //regular([{item: 'silentgear:flax_fiber',count: 2},{item: 'silentgear:flax_seeds'}], 'silentgear:flax_seeds', 'silentgear:flax_plant')
+    regular([{item: 'silentgear:flax_fiber',count: 2},{item: 'silentgear:flax_seeds'}], 'silentgear:flax_seeds', 'silentgear:flax_plant')
     
     //Inferium
-    inf(1, 1600, 'minecraft:dirt')
-    inf(2, 2200, 'mysticalagriculture:inferium_farmland')
-    inf(3, 2800, 'mysticalagriculture:prudentium_farmland')
-    inf(4, 3400, 'mysticalagriculture:tertium_farmland')
-    inf(5, 5000, 'mysticalagriculture:imperium_farmland')
-    inf(6, 5600, 'mysticalagriculture:supremium_farmland')
-    inf(7, 6200, 'mysticalagradditions:insanium_farmland')
+    inf(1, 1500, 'minecraft:dirt')
+    inf(2, 2100, 'mysticalagriculture:inferium_farmland')
+    inf(3, 2700, 'mysticalagriculture:prudentium_farmland')
+    inf(4, 3300, 'mysticalagriculture:tertium_farmland')
+    inf(5, 4900, 'mysticalagriculture:imperium_farmland')
+    inf(6, 5500, 'mysticalagriculture:supremium_farmland')
+    inf(7, 6100, 'mysticalagradditions:insanium_farmland')
     
     //Tier 1 Crops
     t1('air')
@@ -226,7 +247,6 @@ events.listen('recipes', function (e) {
     t3('graphite')
     t3('iron')
     t3('lead')
-    t3('manasteel')
     t3('nether_quartz')
     t3('obsidian')
     t3('prismarine')
@@ -249,7 +269,6 @@ events.listen('recipes', function (e) {
     t4('constantan')
     t4('crimson_steel')
     t4('electrum')
-    t4('elementium')
     t4('end')
     t4('enderman')
     t4('experience')
@@ -274,15 +293,21 @@ events.listen('recipes', function (e) {
     t5('diamond')
     t5('emerald')
     t5('netherite')
-    t5('terrasteel')
     t5('uraninite')
     t5('wither_skeleton')
     t5('platinum')
 
     //Tier 6 Crops
-    t6('allthemodium')
-    t6('vibranium')
-    t6('unobtainium')
     t6('dragon_egg')
     t6('nether_star')
+
+    //Botanical Tier
+    //t3('manasteel')
+    //t4('elementium')
+    //t5('terrasteel')
+
+    //Magical Tier
+    t7('allthemodium')
+    t7('vibranium')
+    t7('unobtainium')
 })

@@ -7,5 +7,14 @@
   },
   "mysticalagriculture:platinum": {
     "tier": "mysticalagriculture:5"
+  },
+  "mysticalagriculture:terrasteel": {
+    "tier": "mysticalcustomization:botanical"
+  },
+  "mysticalagriculture:manasteel": {
+    "tier": "mysticalcustomization:botanical"
+  },
+  "mysticalagriculture:elementium": {
+    "tier": "mysticalcustomization:botanical"
   }
 }

@@ -1,6 +1,6 @@
 events.listen('recipes', function (e) {
     //Soils
-    function makeSoil(input, categories, growthModifier){
+    function makeFarmland(input, categories, growthModifier){
         e.recipes.botanypots.soil({
             'input':
             {
@@ -18,34 +18,24 @@ events.listen('recipes', function (e) {
             'growthModifier': growthModifier
         })
     }
-    makeSoil('mysticalagradditions:insanium_farmland',['dirt','farmland','inferium','prudentium','tertium','imperium','supremium','insanium'], 0.50)
-    
-/*     e.recipes.botanypots.soil({
-        'input':
-        {
-            'item': 'mysticalagradditions:insanium_farmland'
-        },
-        'display':
-        {
-            'block': 'mysticalagradditions:insanium_farmland',
-            'properties':
+    function makeSoil(input, categories, growthModifier){
+        e.recipes.botanypots.soil({
+            'input':
             {
-                'moisture':7
-            }
-        },
-        'categories': [
-            'dirt',
-            'farmland',
-            'inferium',
-            'prudentium',
-            'tertium',
-            'imperium',
-            'supremium',
-            'insanium'
-        ],
-        'growthModifier': 0.50
-    })
- */
+                'item': input
+            },
+            'display':
+            {
+                'block': input
+            },
+            'categories': categories,
+            'growthModifier': growthModifier
+        })
+    }
+
+    makeFarmland('mysticalagradditions:insanium_farmland',['dirt','farmland','inferium','prudentium','tertium','imperium','supremium','insanium'], 0.50)
+    makeSoil('kubejs:magical_soil',['dirt','farmland','inferium','prudentium','tertium','imperium','supremium','insanium','magical'], 0.75)
+
     //MA Crop functions
     var ma = 'mysticalagriculture:'
     function t1(type) {
@@ -294,7 +284,7 @@ events.listen('recipes', function (e) {
                 maxRolls: 3
                 },
                 {
-                chance: 0.05,
+                chance: 0.03,
                 output: {
                     item: ma+type+'_seeds'
                 },
@@ -302,7 +292,51 @@ events.listen('recipes', function (e) {
                 maxRolls: 1
                 },
                 {
+                chance: 0.03,
+                output: {
+                    item: 'mysticalagriculture:fertilized_essence'
+                },
+                minRolls: 1,
+                maxRolls: 1
+                }
+            ]
+        })
+    }
+    function t7(type) {
+        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.recipes.botanypots.crop({
+            seed: {
+                item: ma+type+'_seeds'
+            },
+            categories: [
+                'magical'
+            ],
+            growthTicks: 6000,
+            display: {
+                block: ma+type+'_crop',
+                properties: {
+                age: 7
+                }
+            },
+            results: [
+                {
+                chance: 0.75,
+                output: {
+                    item: ma+type+'_essence'
+                },
+                minRolls: 1,
+                maxRolls: 3
+                },
+                {
                 chance: 0.01,
+                output: {
+                    item: ma+type+'_seeds'
+                },
+                minRolls: 1,
+                maxRolls: 1
+                },
+                {
+                chance: 0.1,
                 output: {
                     item: 'mysticalagriculture:fertilized_essence'
                 },
@@ -414,9 +448,11 @@ events.listen('recipes', function (e) {
     t5('platinum')
 
     //Tier 6 Crops
-    t6('allthemodium')
-    t6('vibranium')
-    t6('unobtainium')
     t6('dragon_egg')
     t6('nether_star')
+
+    //Magical Crops
+    t7('allthemodium')
+    t7('vibranium')
+    t7('unobtainium')
 })

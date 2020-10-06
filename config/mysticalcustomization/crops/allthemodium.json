@@ -1,7 +1,7 @@
 {
     "name": "Allthemodium",
     "type": "resource",
-    "tier": "mysticalagradditions:6",
+    "tier": "mysticalcustomization:magical",
     "ingredient": {
         "tag": "forge:storage_blocks/allthemodium"
     },
