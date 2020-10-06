@@ -107,7 +107,7 @@ events.listen('block.tags', function (e) {
 
   //Add
   add('forge:ores/certus_quartz',['appliedenergistics2:quartz_ore','appliedenergistics2:charged_quartz_ore'])
-  add('forge:ores/oratchalcum','#minecraft:gold_ores')
+  add('forge:ores/oratchalcum','rats:oratchalcum_ore')
   add('forge:ores/quartz','#forge:ores/certus_quartz')
   add('forge:ores/rat_gem','rats:ratlantean_gem_ore')
   add('forge:ores/arcane_brick','ars_nouveau:arcane_ore')
