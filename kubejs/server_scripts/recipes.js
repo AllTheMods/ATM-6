@@ -678,7 +678,8 @@ events.listen('recipes', function (e) {
     'solar_panel',
     'player_transmitter',
     'energy_hopper',
-    'energy_discharger'
+    'energy_discharger',
+    'energizing_rod'
   ]
   utils.listOf(typesPowah).forEach(function(type) {
     utils.listOf(tiersPowah).forEach(function(tier) {
