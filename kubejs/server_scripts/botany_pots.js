@@ -754,4 +754,42 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
+
+    //Misc crops
+    function miscCrop(mod, name, seed) {
+        e.recipes.botanypots.crop({
+            seed: {
+                item: mod + ':' + name + '_' + seed
+            },
+            categories: [
+                'dirt'
+            ],
+            growthTicks: 1200,
+            display: {
+                block: mod + ':' + name + '_crop',
+                properties: {
+                    age: 7
+                }
+            },
+            results: [{
+                    chance: 0.75,
+                    output: {
+                        item: mod + ':' + name
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: mod + ':' + name + '_' + seed
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
+            ]
+        })
+    }
+
+    miscCrop('ars_nouveau', 'mana_bloom', 'crop')
 })
