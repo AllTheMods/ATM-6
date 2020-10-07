@@ -1,24 +1,6 @@
 events.listen('recipes', function (e) {
     //Functions
-    var shaped = function (result, pattern, items) {
-        e.shaped(item.of(result),
-            pattern,
-            items
-        )
-    }
-    var shapedC = function (result, count, pattern, items) {
-        e.shaped(item.of(result, count),
-            pattern,
-            items
-        )
-    }
-    var shapeless = function (result, items) {
-        e.shapeless(item.of(result), items)
-    }
-    var shapelessC = function (result, count, items) {
-        e.shapeless(item.of(result, count), items)
-    }
-    var removeOut = function (item) {
+    function removeOut(item) {
       e.remove({output: item})
     }
     //Removals
@@ -68,7 +50,7 @@ events.listen('recipes', function (e) {
         'rftoolsbuilder:builder'
     ])
     //Rats
-    shaped('rats:pied_wool',[
+    e.shaped('rats:pied_wool',[
         'YGY',
         'GYG',
         'YGY'
@@ -87,7 +69,7 @@ events.listen('recipes', function (e) {
         'G': '#forge:storage_blocks/gold',
         'A': '#forge:nuggets/allthemodium'
     })
-    shaped('quarryplus:workbenchplus',[
+    e.shaped('quarryplus:workbenchplus',[
     'III',
     'GDG',
     'AAA'
@@ -98,7 +80,7 @@ events.listen('recipes', function (e) {
         'A': '#forge:nuggets/allthemodium'
     }) */
     //Mining Gadgets
-    shaped('mininggadgets:upgrade_empty',[
+    e.shaped('mininggadgets:upgrade_empty',[
     'RAL',
     'DGD',
     'LAR'
@@ -110,7 +92,7 @@ events.listen('recipes', function (e) {
         'G': 'minecraft:glass_pane'
     })
     //Mystical Agriculture
-    shaped('mysticalagriculture:unattuned_augment',[
+    e.shaped('mysticalagriculture:unattuned_augment',[
     'PMP',
     'AMA',
     'PMP'
@@ -120,7 +102,7 @@ events.listen('recipes', function (e) {
         'A': '#forge:nuggets/allthemodium'
     })
     //Mekanism
-    shaped('mekanism:digital_miner',[
+    e.shaped('mekanism:digital_miner',[
     'AUA',
     'LRL',
     'TST'
@@ -132,7 +114,7 @@ events.listen('recipes', function (e) {
         'S': 'mekanism:steel_casing',
         'U': '#forge:ingots/unobtainium'
     })
-    shaped('mekanism:atomic_disassembler',[
+    e.shaped('mekanism:atomic_disassembler',[
     'RER',
     'RUR',
     ' V '
@@ -142,7 +124,7 @@ events.listen('recipes', function (e) {
         'U': '#forge:circuits/ultimate',
         'V': '#forge:ingots/vibranium'
     })
-    shaped('mekanismgenerators:wind_generator',[
+    e.shaped('mekanismgenerators:wind_generator',[
     ' O ',
     'OCO',
     'EBE'
@@ -153,7 +135,7 @@ events.listen('recipes', function (e) {
         'O': '#forge:ingots/osmium'
     })
     //Jetpacks
-    shaped('ironjetpacks:diamond_cell',[
+    e.shaped('ironjetpacks:diamond_cell',[
     ' R ',
     'TCT',
     ' R '
@@ -162,7 +144,7 @@ events.listen('recipes', function (e) {
         'C': 'ironjetpacks:advanced_coil',
         'T': '#forge:gems/diamond'
     })
-    shaped('ironjetpacks:diamond_thruster',[
+    e.shaped('ironjetpacks:diamond_thruster',[
     'TAT',
     'ACA',
     'TFT'
@@ -172,7 +154,7 @@ events.listen('recipes', function (e) {
         'C': 'ironjetpacks:diamond_cell',
         'T': '#forge:gems/diamond'
     })
-    shaped('ironjetpacks:diamond_capacitor',[
+    e.shaped('ironjetpacks:diamond_capacitor',[
     'RCR',
     'RCR',
     'RCR'
@@ -180,7 +162,7 @@ events.listen('recipes', function (e) {
         'R': '#forge:gems/diamond',
         'C': 'ironjetpacks:diamond_cell'
     })
-    shaped('ironjetpacks:diamond_jetpack',[
+    e.shaped('ironjetpacks:diamond_jetpack',[
     'DCD',
     'DJD',
     'TRT'
@@ -191,7 +173,7 @@ events.listen('recipes', function (e) {
         'T': 'ironjetpacks:diamond_thruster',
         'R': 'angelring:itemdiamondring'
     })
-    shaped('ironjetpacks:platinum_cell',[
+    e.shaped('ironjetpacks:platinum_cell',[
     ' R ',
     'TCT',
     ' R '
@@ -200,7 +182,7 @@ events.listen('recipes', function (e) {
         'C': 'ironjetpacks:advanced_coil',
         'T': '#forge:ingots/platinum'
     })
-    shaped('ironjetpacks:platinum_thruster',[
+    e.shaped('ironjetpacks:platinum_thruster',[
     'TAT',
     'ACA',
     'TFT'
@@ -210,7 +192,7 @@ events.listen('recipes', function (e) {
         'C': 'ironjetpacks:platinum_cell',
         'T': '#forge:ingots/platinum'
     })
-    shaped('ironjetpacks:platinum_capacitor',[
+    e.shaped('ironjetpacks:platinum_capacitor',[
     'RCR',
     'RCR',
     'RCR'
@@ -218,7 +200,7 @@ events.listen('recipes', function (e) {
         'R': '#forge:ingots/platinum',
         'C': 'ironjetpacks:platinum_cell'
     })
-    shaped('ironjetpacks:platinum_jetpack',[
+    e.shaped('ironjetpacks:platinum_jetpack',[
     'PCP',
     'PJP',
     'TRT'
@@ -230,7 +212,7 @@ events.listen('recipes', function (e) {
         'R': 'angelring:itemdiamondring'
     })
     //Foods
-    shaped('pamhc2foodcore:fruitpunchitem',[
+    e.shaped('pamhc2foodcore:fruitpunchitem',[
     'FFF',
     'FBF',
     'FFF'
@@ -238,7 +220,7 @@ events.listen('recipes', function (e) {
         'F': '#forge:fruits',
         'B': 'pamhc2foodcore:applejuiceitem'
     })
-    shaped('pamhc2foodcore:applejuiceitem',[
+    e.shaped('pamhc2foodcore:applejuiceitem',[
     'FFF',
     'FBF',
     'FFF'
@@ -246,7 +228,7 @@ events.listen('recipes', function (e) {
         'F': 'minecraft:apple',
         'B': 'minecraft:glass_bottle'
     })
-    shaped('pamhc2foodcore:melonjuiceitem',[
+    e.shaped('pamhc2foodcore:melonjuiceitem',[
     'FFF',
     'FBF',
     'FFF'
@@ -254,7 +236,7 @@ events.listen('recipes', function (e) {
         'F': 'minecraft:melon_slice',
         'B': 'minecraft:glass_bottle'
     })
-    shaped('pamhc2foodcore:sweetberryjuiceitem',[
+    e.shaped('pamhc2foodcore:sweetberryjuiceitem',[
     'FFF',
     'FBF',
     'FFF'
@@ -262,7 +244,7 @@ events.listen('recipes', function (e) {
         'F': 'minecraft:sweet_berries',
         'B': 'minecraft:glass_bottle'
     })
-    shaped('pamhc2foodcore:p8juiceitem',[
+    e.shaped('pamhc2foodcore:p8juiceitem',[
     'FFF',
     'FBF',
     'FFF'
@@ -271,7 +253,7 @@ events.listen('recipes', function (e) {
         'B': 'minecraft:glass_bottle'
     })
     //Angel Ring
-    shaped('angelring:itemdiamondring',[
+    e.shaped('angelring:itemdiamondring',[
     'DND',
     'VEU',
     'DAD'
@@ -283,7 +265,7 @@ events.listen('recipes', function (e) {
         'A': '#forge:storage_blocks/allthemodium',
         'E': 'minecraft:elytra'
     })
-    shaped('angelring:itemring',[
+    e.shaped('angelring:itemring',[
     'CAC',
     'ARA',
     'DGD'
@@ -295,7 +277,7 @@ events.listen('recipes', function (e) {
         'G': 'botania:gaia_ingot'
     })
     //Computer Craft
-    shaped('computercraft:computer_normal',[
+    e.shaped('computercraft:computer_normal',[
     'QQQ',
     'QAQ',
     'QIQ'
@@ -304,7 +286,7 @@ events.listen('recipes', function (e) {
         'A': '#forge:ingots/allthemodium',
         'I': 'botania:elf_glass'
     })
-    shaped('computercraft:computer_advanced',[
+    e.shaped('computercraft:computer_advanced',[
     'GGG',
     'GCG',
     'GGG'
@@ -313,7 +295,7 @@ events.listen('recipes', function (e) {
         'C': 'computercraft:computer_normal'
     })
     //Other recipes
-    shaped('forbidden_arcanus:iron_chain', 3,[
+    e.shaped(item.of('forbidden_arcanus:iron_chain', 3),[
     'N  ',
     ' I ',
     '  N'
@@ -321,7 +303,7 @@ events.listen('recipes', function (e) {
         'N': '#forge:nuggets/iron',
         'I': '#forge:ingots/iron'
     })
-    shaped('entangled:block',[
+    e.shaped('entangled:block',[
     'UEU',
     'ECE',
     'UEU'
@@ -330,7 +312,7 @@ events.listen('recipes', function (e) {
         'E': '#forge:ender_pearls',
         'C': 'minecraft:ender_chest'
     })
-    shaped('entangled:item',[
+    e.shaped('entangled:item',[
     ' EC',
     ' UE',
     'U  '
@@ -340,7 +322,7 @@ events.listen('recipes', function (e) {
         'C': 'minecraft:ender_chest'
     })
     //Extra Disks
-    shaped('refinedstorage:4096k_fluid_storage_part',[
+    e.shaped('refinedstorage:4096k_fluid_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -350,7 +332,7 @@ events.listen('recipes', function (e) {
         'b': 'minecraft:bucket',
         'n': '#forge:nuggets/allthemodium'
     })
-    shaped('extradisks:4096k_storage_part',[
+    e.shaped('extradisks:4096k_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -360,7 +342,7 @@ events.listen('recipes', function (e) {
         'b': '#forge:dusts/redstone',
         'n': '#forge:nuggets/allthemodium'
     })
-    shaped('extradisks:16384k_fluid_storage_part',[
+    e.shaped('extradisks:16384k_fluid_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -370,7 +352,7 @@ events.listen('recipes', function (e) {
         'b': 'minecraft:bucket',
         'n': '#forge:ingots/allthemodium'
     })
-    shaped('extradisks:16384k_storage_part',[
+    e.shaped('extradisks:16384k_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -381,7 +363,7 @@ events.listen('recipes', function (e) {
         'n': '#forge:ingots/allthemodium'
     })
     
-    shaped('extradisks:65536k_fluid_storage_part',[
+    e.shaped('extradisks:65536k_fluid_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -391,7 +373,7 @@ events.listen('recipes', function (e) {
         'b': 'minecraft:bucket',
         'n': '#forge:ingots/allthemodium'
     })
-    shaped('extradisks:65536k_storage_part',[
+    e.shaped('extradisks:65536k_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -401,7 +383,7 @@ events.listen('recipes', function (e) {
         'b': '#forge:dusts/redstone',
         'n': '#forge:ingots/allthemodium'
     })
-    shaped('extradisks:262144k_fluid_storage_part',[
+    e.shaped('extradisks:262144k_fluid_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -411,7 +393,7 @@ events.listen('recipes', function (e) {
         'b': 'minecraft:bucket',
         'n': '#forge:ingots/vibranium'
     })
-    shaped('extradisks:262144k_storage_part',[
+    e.shaped('extradisks:262144k_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -421,7 +403,7 @@ events.listen('recipes', function (e) {
         'b': '#forge:dusts/redstone',
         'n': '#forge:ingots/vibranium'
     })
-    shaped('extradisks:1048576k_fluid_storage_part',[
+    e.shaped('extradisks:1048576k_fluid_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -431,7 +413,7 @@ events.listen('recipes', function (e) {
         'b': 'minecraft:bucket',
         'n': '#forge:ingots/unobtainium'
     })
-    shaped('extradisks:1048576k_storage_part',[
+    e.shaped('extradisks:1048576k_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -441,7 +423,7 @@ events.listen('recipes', function (e) {
         'b': '#forge:dusts/redstone',
         'n': '#forge:ingots/unobtainium'
     })
-    shaped('extradisks:infinite_fluid_storage_part',[
+    e.shaped('extradisks:infinite_fluid_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -451,7 +433,7 @@ events.listen('recipes', function (e) {
         'b': 'minecraft:bucket',
         'n': '#forge:ingots/unobtainium'
     })
-    shaped('extradisks:infinite_storage_part',[
+    e.shaped('extradisks:infinite_storage_part',[
     'ana',
     'fbf',
     'afa'
@@ -475,7 +457,7 @@ events.listen('recipes', function (e) {
     //BluePower
     //shapelessC('bluepower:blue_alloy_ingot', 4, ['#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:ingots/silver'])
     //RFTools
-    shaped('rftoolsbuilder:builder',[
+    e.shaped('rftoolsbuilder:builder',[
     'aea',
     'rmr',
     'ara'

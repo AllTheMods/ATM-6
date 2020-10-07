@@ -455,4 +455,56 @@ events.listen('recipes', function (e) {
     t7('allthemodium')
     t7('vibranium')
     t7('unobtainium')
+
+    //Botanypots tree functions
+    /* function growTree(mod, name, extra){
+        e.recipes.botanypots.crop({
+            'seed': {
+                'item': mod+':'+name+'_sapling'
+            },
+            'categories': [
+                'dirt'
+            ],
+            'growthTicks': 2400,
+            'display': {
+                'block': mod+':'+name+'_sapling'
+            },
+            'results': [
+                {
+                'chance': 0.5,
+                'output': {
+                    'item': mod+':'+name+'_log'
+                },
+                'minRolls': 1,
+                'maxRolls': 1
+                },
+                {
+                'chance': 0.1,
+                'output': {
+                    'item': 'minecraft:stick'
+                },
+                'minRolls': 1,
+                'maxRolls': 2
+                },
+                {
+                'chance': 0.05,
+                'output': {
+                    'item': mod+':'+name+'_sapling'
+                },
+                'minRolls': 1,
+                'maxRolls': 2
+                }
+                (extra)
+            ]
+        })
+    }
+    growTree('minecraft', 'oak', 
+    [,{
+    'chance': 0.01,
+    'output': {
+        'item': 'minecraft:apple'
+    },
+    'minRolls': 1,
+    'maxRolls': 1
+    }]) */
 })

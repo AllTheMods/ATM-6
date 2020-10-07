@@ -1,0 +1,39 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "minecraft:birch_sapling"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 2400,
+  "display": {
+    "block": "minecraft:birch_sapling"
+  },
+  "results": [
+    {
+      "chance": 0.5,
+      "output": {
+        "item": "minecraft:birch_log"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "minecraft:stick"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "minecraft:birch_sapling"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

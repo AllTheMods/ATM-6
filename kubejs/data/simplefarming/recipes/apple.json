@@ -1,0 +1,45 @@
+{
+  "type": "botanypots:crop",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "simplefarming"
+    }
+  ],
+  "seed": {
+    "item": "simplefarming:apple_sapling"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 2400,
+  "display": {
+    "block": "simplefarming:apple_sapling"
+  },
+  "results": [
+    {
+      "chance": 0.50,
+      "output": {
+        "item": "simplefarming:fruit_log"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+	{
+      "chance": 0.01,
+      "output": {
+        "item": "minecraft:apple"
+      },
+	  "minRolls": 1,
+	  "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "simplefarming:apple_sapling"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    }
+  ]
+}

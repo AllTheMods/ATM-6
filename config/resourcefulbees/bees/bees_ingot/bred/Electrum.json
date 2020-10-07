@@ -1,0 +1,28 @@
+{
+  "flower": "tag:forge:storage_blocks/electrum",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 800,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#E4E56C",
+    "primaryColor": "#E4E56C"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "immersiveengineering:ingot_electrum"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Gold",
+    "parent2": "Silver"
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

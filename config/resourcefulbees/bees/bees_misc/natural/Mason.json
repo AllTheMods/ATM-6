@@ -1,0 +1,32 @@
+{
+  "flower":"tag:misctags:flowers/forest_flowers",
+  "maxTimeInHive":600,
+  "hasHoneycomb":true,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor":"#48544F",
+    "honeycombColor":"#48544F"
+  },
+  "MutationData": {
+    "hasMutation":false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput":"minecraft:clay_ball",
+    "secondaryOutput":"minecraft:brick",
+    "mainOutputCount":3,
+    "secondaryOutputCount":2,
+    "secondaryOutputWeight":0.8
+  },
+  "SpawnData": {
+    "canSpawnInWorld":true,
+    "biomeWhitelist":"tag:overworld",
+    "biomeBlacklist":"tag:ocean"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

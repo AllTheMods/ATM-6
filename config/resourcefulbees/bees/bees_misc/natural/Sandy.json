@@ -1,0 +1,28 @@
+{
+  "flower":"tag:forge:sand",
+  "maxTimeInHive":600,
+  "hasHoneycomb":true,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor":"#DDD2B7",
+    "honeycombColor":"#DDD2B7"
+  },
+  "MutationData": {
+    "hasMutation":false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput":"minecraft:sand",
+    "mainOutputCount":3
+  },
+  "SpawnData": {
+    "canSpawnInWorld":true,
+    "biomeWhitelist":"tag:sandy"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "flower": "tag:minecraft:water",
+  "hasHoneycomb": true,
+  "traits": ["can_swim"],
+  "maxTimeInHive": 800,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#8FC0AA",
+    "primaryColor": "#8FC0AA"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:prismarine_shard",
+    "secondaryOutput" : "minecraft:prismarine_crystals",
+    "bottleOutput":"pamhc2foodcore:freshwateritem",
+    "mainOutputCount": 3,
+    "secondaryOutputCount":2
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:ocean"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

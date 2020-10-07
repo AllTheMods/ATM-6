@@ -196,6 +196,14 @@ events.listen('recipes', function (e) {
         Q: '#forge:gems/quartz',
         S: '#minecraft:wooden_slabs'
     })
+    modifyShaped('minecraft:beehive', 1,[
+      'PPP',
+      'CCC',
+      'PPP'
+    ],{
+      P: '#minecraft:planks',
+      C: '#resourcefulbees:resourceful_honeycomb'
+    })
     modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
     /* e.remove({output: 'silents_mechanisms:zombie_leather'})
     e.recipes.silents_mechanisms.drying({

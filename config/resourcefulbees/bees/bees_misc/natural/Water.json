@@ -1,0 +1,27 @@
+{
+  "flower":"tag:minecraft:water",
+  "maxTimeInHive":600,
+  "traits":["can_swim"],
+  "hasHoneycomb":true,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor":"#0F3653",
+    "honeycombColor":"#0F3653"
+  },
+  "MutationData": {
+    "hasMutation":false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld":true,
+    "biomeWhitelist":"tag:ocean,tag:river"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

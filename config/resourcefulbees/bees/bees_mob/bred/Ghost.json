@@ -1,0 +1,30 @@
+{
+  "flower": "tag:misctags:flowers/nether_flowers",
+  "maxTimeInHive": 800,
+  "hasHoneycomb": true,
+  "traits": ["nether"],
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#B7C7C7",
+    "primaryColor": "#B7C7C7"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:ghast_tear",
+    "mainOutputWeight": 0.7
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Creeper",
+    "parent2": "Magma"
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

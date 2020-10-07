@@ -1,0 +1,28 @@
+{
+  "flower": "tag:forge:storage_blocks/steel",
+  "maxTimeInHive": 700,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#949392",
+    "primaryColor": "#949392"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "mekanism:ingot_steel"
+  },
+  "SpawnData": {
+    "spawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Iron",
+    "parent2": "Coal"
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}

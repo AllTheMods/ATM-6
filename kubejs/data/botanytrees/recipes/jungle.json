@@ -1,0 +1,47 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "minecraft:jungle_sapling"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 2400,
+  "display": {
+    "block": "minecraft:jungle_sapling"
+  },
+  "results": [
+    {
+      "chance": 0.5,
+      "output": {
+        "item": "minecraft:jungle_log"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "item": "minecraft:stick"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.01,
+      "output": {
+        "item": "minecraft:cocoa_beans"
+      },
+	  "minRolls": 1,
+	  "maxRolls": 1
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "minecraft:jungle_sapling"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

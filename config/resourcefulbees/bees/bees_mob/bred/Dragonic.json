@@ -1,0 +1,30 @@
+{
+  "flower": "tag:misctags:flowers/draconic_flowers",
+  "maxTimeInHive": 1800,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#0F0F0F",
+    "primaryColor": "#0F0F0F"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:dragon_egg",
+    "bottleOutput" : "minecraft:dragon_breath",
+    "mainOutputWeight": 0.01
+  },
+  "SpawnData": {
+    "spawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Ender",
+    "parent2": "Refined_Obsidian"
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}
