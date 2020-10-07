@@ -712,10 +712,7 @@ events.listen('recipes', function (e) {
   ]
   var typesPowah = [
     'energy_cell',
-    'ender_cell',
-    'energy_cable',
     'reactor',
-    'ender_gate',
     'furnator',
     'magmator',
     'thermo_generator',
