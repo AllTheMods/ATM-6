@@ -1,7 +1,12 @@
 /* events.listen('recipes', function (e) {
-    e.remove({id: 'xreliquary:alkahestry/crafting/nether_star'})
-    e.remove({type: 'xreliquary:alkahestry_charging'})
-    function charge(item, amount){
+    e.remove({
+        id: 'xreliquary:alkahestry/crafting/nether_star'
+    })
+    e.remove({
+        type: 'xreliquary:alkahestry_charging'
+    })
+
+    function charge(item, amount) {
         e.recipes.xreliquary.alkahestry_charging({
             charge: amount,
             ingredient: {
@@ -9,7 +14,8 @@
             }
         })
     }
-    function craft(item, amount, cost){
+
+    function craft(item, amount, cost) {
         e.recipes.xreliquary.alkahestry_crafting({
             charge: cost,
             ingredient: {

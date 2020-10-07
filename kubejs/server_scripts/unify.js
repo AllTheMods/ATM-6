@@ -1,28 +1,36 @@
 events.listen('recipes', function (e) {
   function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
-    e.replaceOutput('#forge:ingots/'+name, ingotItem)
-    e.replaceOutput('#forge:dusts/'+name, dustItem)
-    e.replaceOutput('#forge:nuggets/'+name, nuggetItem)
-    e.replaceOutput('#forge:storage_blocks/'+name, blockItem)
-    e.remove({intput: ['#forge:ores/'+name,'#forge:dusts/'+name], output: '#forge:ingots/'+name, type: 'minecraft:smelting'})
-    e.remove({intput: ['#forge:ores/'+name,'#forge:dusts/'+name], output: '#forge:ingots/'+name, type: 'minecraft:blasting'})
-    e.recipes.minecraft.smelting(ingotItem, '#forge:dusts/'+name).xp(.5)
-    e.recipes.minecraft.blasting(ingotItem, '#forge:dusts/'+name).xp(.5)
+    e.replaceOutput('#forge:ingots/' + name, ingotItem)
+    e.replaceOutput('#forge:dusts/' + name, dustItem)
+    e.replaceOutput('#forge:nuggets/' + name, nuggetItem)
+    e.replaceOutput('#forge:storage_blocks/' + name, blockItem)
+    e.remove({
+      intput: ['#forge:ores/' + name, '#forge:dusts/' + name],
+      output: '#forge:ingots/' + name,
+      type: 'minecraft:smelting'
+    })
+    e.remove({
+      intput: ['#forge:ores/' + name, '#forge:dusts/' + name],
+      output: '#forge:ingots/' + name,
+      type: 'minecraft:blasting'
+    })
+    e.recipes.minecraft.smelting(ingotItem, '#forge:dusts/' + name).xp(.5)
+    e.recipes.minecraft.blasting(ingotItem, '#forge:dusts/' + name).xp(.5)
     e.recipes.pedestals.pedestal_crushing({
-      ingredient: 
-      {
-        tag: 'forge:ingots/'+name
+      ingredient: {
+        tag: 'forge:ingots/' + name
       },
-      result: 
-      {
+      result: {
         item: dustItem,
         count: 1
       }
     })
-    e.remove({id: 'appliedenergistics2:grinder/'+name+'_dust_ingot'})
+    e.remove({
+      id: 'appliedenergistics2:grinder/' + name + '_dust_ingot'
+    })
     e.recipes.appliedenergistics2.grinder({
       input: {
-        tag: 'forge:ingots/'+name
+        tag: 'forge:ingots/' + name
       },
       result: {
         primary: {
@@ -34,50 +42,51 @@ events.listen('recipes', function (e) {
     })
     //If unifiable item doesn't have an ore, add it below
     if (name !== 'steel' && name !== 'bronze') {
-      e.recipes.minecraft.smelting(ingotItem, '#forge:ores/'+name).xp(1)
-      e.recipes.minecraft.blasting(ingotItem, '#forge:ores/'+name).xp(1)
-      e.recipes.mekanism.enriching(item.of(dustItem, 2), '#forge:ores/'+name)
+      e.recipes.minecraft.smelting(ingotItem, '#forge:ores/' + name).xp(1)
+      e.recipes.minecraft.blasting(ingotItem, '#forge:ores/' + name).xp(1)
+      e.recipes.mekanism.enriching(item.of(dustItem, 2), '#forge:ores/' + name)
       //This is here to stop crushing hammer recipes for modium from generating
-      if(name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium'){
-        e.remove({id: 'engineerstools:crushing/'+name+'_grit_crushing_recipe'})
+      if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
+        e.remove({
+          id: 'engineerstools:crushing/' + name + '_grit_crushing_recipe'
+        })
         e.recipes.engineerstools.crafting_extended_shapeless({
           group: 'grit',
-          ingredients: [
-            {
-              tag: 'forge:ores/'+name
+          ingredients: [{
+              tag: 'forge:ores/' + name
             },
             {
               item: 'engineerstools:crushing_hammer'
             }
           ],
-          result: 
-          {
+          result: {
             item: dustItem,
             count: 2
           },
-          aspects: 
-          {
+          aspects: {
             tool: 'engineerstools:crushing_hammer',
             tool_damage: 25
           }
         })
       }
-      e.remove({id: 'pedestals:pedestal_crushing/dust'+name})
+      e.remove({
+        id: 'pedestals:pedestal_crushing/dust' + name
+      })
       e.recipes.pedestals.pedestal_crushing({
-        ingredient: 
-        {
-          tag: 'forge:ores/'+name
+        ingredient: {
+          tag: 'forge:ores/' + name
         },
-        result: 
-        {
+        result: {
           item: dustItem,
           count: 2
         }
       })
-      e.remove({id: 'appliedenergistics2:grinder/'+name+'_dust_ore'})
+      e.remove({
+        id: 'appliedenergistics2:grinder/' + name + '_dust_ore'
+      })
       e.recipes.appliedenergistics2.grinder({
         input: {
-          tag: 'forge:ores/'+name
+          tag: 'forge:ores/' + name
         },
         result: {
           primary: {
@@ -89,7 +98,9 @@ events.listen('recipes', function (e) {
       })
     }
   }
-  e.remove({id: 'engineerstools:crushing/aluminium_grit_crushing_recipe'})
+  e.remove({
+    id: 'engineerstools:crushing/aluminium_grit_crushing_recipe'
+  })
 
   unifyMetal('iron', 'minecraft:iron_ingot', 'alltheores:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget')
   unifyMetal('gold', 'minecraft:gold_ingot', 'alltheores:gold_dust', 'minecraft:gold_block', 'minecraft:gold_nugget')

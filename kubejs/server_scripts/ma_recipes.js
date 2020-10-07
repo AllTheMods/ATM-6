@@ -1,37 +1,34 @@
 events.listen('recipes', function (e) {
     //Functions
-    function plus(result, count, name){
+    function plus(result, count, name) {
         e.shaped(item.of(result, count), [
             ' a ',
             'aaa',
             ' a '
-        ],
-        {
-          a: 'mysticalagriculture:'+name+'_essence'
-        }
-        )
+        ], {
+            a: 'mysticalagriculture:' + name + '_essence'
+        })
     }
-    function circle(result, count, name){
+
+    function circle(result, count, name) {
         e.shaped(item.of(result, count), [
             'aaa',
             'a a',
             'aaa'
-        ],
-        {
-          a: 'mysticalagriculture:'+name+'_essence'
-        }
-        )
+        ], {
+            a: 'mysticalagriculture:' + name + '_essence'
+        })
     }
 
     //Recipes
-    e.shaped(item.of('minecraft:grass', 12),[
+    e.shaped(item.of('minecraft:grass', 12), [
         ' E ',
         'E E',
         '   '
-    ],{
+    ], {
         'E': 'mysticalagriculture:nature_essence'
     })
-    
+
     plus('powah:uraninite', 4, 'uraninite')
     circle('rats:oratchalcum_ingot', 4, 'oratchalcum')
     circle('allthemodium:allthemodium_nugget', 2, 'allthemodium')

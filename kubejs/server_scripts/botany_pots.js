@@ -1,16 +1,13 @@
 events.listen('recipes', function (e) {
     //Soils
-    function makeFarmland(input, categories, growthModifier){
+    function makeFarmland(input, categories, growthModifier) {
         e.recipes.botanypots.soil({
-            input:
-            {
+            input: {
                 item: input
             },
-            display:
-            {
+            display: {
                 block: input,
-                properties:
-                {
+                properties: {
                     moisture: 7
                 }
             },
@@ -18,14 +15,13 @@ events.listen('recipes', function (e) {
             growthModifier: growthModifier
         })
     }
-    function makeSoil(input, categories, growthModifier){
+
+    function makeSoil(input, categories, growthModifier) {
         e.recipes.botanypots.soil({
-            input:
-            {
+            input: {
                 item: input
             },
-            display:
-            {
+            display: {
                 block: input
             },
             categories: categories,
@@ -33,32 +29,34 @@ events.listen('recipes', function (e) {
         })
     }
 
-    makeFarmland('mysticalagradditions:insanium_farmland',['dirt','farmland','inferium','prudentium','tertium','imperium','supremium','insanium'], 0.50)
-    makeSoil('kubejs:magical_soil',['dirt','farmland','inferium','prudentium','tertium','imperium','supremium','insanium','magical'], 0.75)
+    makeFarmland('mysticalagradditions:insanium_farmland', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium'], 0.50)
+    makeSoil('kubejs:magical_soil', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium', 'magical'], 0.75)
 
     //MA Crop functions
     var ma = 'mysticalagriculture:'
+
     function t1(type) {
-        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.remove({
+            id: 'mysticalagriculture:crops/' + type
+        })
         e.recipes.botanypots.crop({
             seed: {
-                item: ma+type+'_seeds'
+                item: ma + type + '_seeds'
             },
             categories: [
                 'inferium'
             ],
             growthTicks: 1200,
             display: {
-                block: ma+type+'_crop',
+                block: ma + type + '_crop',
                 properties: {
-                age: 7
+                    age: 7
                 }
             },
-            results: [
-                {
+            results: [{
                     chance: 0.75,
                     output: {
-                        item: ma+type+'_essence'
+                        item: ma + type + '_essence'
                     },
                     minRolls: 1,
                     maxRolls: 3
@@ -66,7 +64,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: ma+type+'_seeds'
+                        item: ma + type + '_seeds'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -82,27 +80,29 @@ events.listen('recipes', function (e) {
             ]
         })
     }
+
     function t2(type) {
-        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.remove({
+            id: 'mysticalagriculture:crops/' + type
+        })
         e.recipes.botanypots.crop({
             seed: {
-                item: ma+type+'_seeds'
+                item: ma + type + '_seeds'
             },
             categories: [
                 'prudentium'
             ],
             growthTicks: 1900,
             display: {
-                block: ma+type+'_crop',
+                block: ma + type + '_crop',
                 properties: {
-                age: 7
+                    age: 7
                 }
             },
-            results: [
-                {
+            results: [{
                     chance: 0.75,
                     output: {
-                        item: ma+type+'_essence'
+                        item: ma + type + '_essence'
                     },
                     minRolls: 1,
                     maxRolls: 3
@@ -110,7 +110,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: ma+type+'_seeds'
+                        item: ma + type + '_seeds'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -126,27 +126,29 @@ events.listen('recipes', function (e) {
             ]
         })
     }
+
     function t3(type) {
-        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.remove({
+            id: 'mysticalagriculture:crops/' + type
+        })
         e.recipes.botanypots.crop({
             seed: {
-                item: ma+type+'_seeds'
+                item: ma + type + '_seeds'
             },
             categories: [
                 'tertium'
             ],
             growthTicks: 2400,
             display: {
-                block: ma+type+'_crop',
+                block: ma + type + '_crop',
                 properties: {
-                age: 7
+                    age: 7
                 }
             },
-            results: [
-                {
+            results: [{
                     chance: 0.75,
                     output: {
-                        item: ma+type+'_essence'
+                        item: ma + type + '_essence'
                     },
                     minRolls: 1,
                     maxRolls: 3
@@ -154,7 +156,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: ma+type+'_seeds'
+                        item: ma + type + '_seeds'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -170,27 +172,29 @@ events.listen('recipes', function (e) {
             ]
         })
     }
+
     function t4(type) {
-        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.remove({
+            id: 'mysticalagriculture:crops/' + type
+        })
         e.recipes.botanypots.crop({
             seed: {
-                item: ma+type+'_seeds'
+                item: ma + type + '_seeds'
             },
             categories: [
                 'imperium'
             ],
             growthTicks: 3200,
             display: {
-                block: ma+type+'_crop',
+                block: ma + type + '_crop',
                 properties: {
-                age: 7
+                    age: 7
                 }
             },
-            results: [
-                {
+            results: [{
                     chance: 0.75,
                     output: {
-                        item: ma+type+'_essence'
+                        item: ma + type + '_essence'
                     },
                     minRolls: 1,
                     maxRolls: 3
@@ -198,7 +202,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: ma+type+'_seeds'
+                        item: ma + type + '_seeds'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -214,27 +218,29 @@ events.listen('recipes', function (e) {
             ]
         })
     }
+
     function t5(type) {
-        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.remove({
+            id: 'mysticalagriculture:crops/' + type
+        })
         e.recipes.botanypots.crop({
             seed: {
-                item: ma+type+'_seeds'
+                item: ma + type + '_seeds'
             },
             categories: [
                 'supremium'
             ],
             growthTicks: 4000,
             display: {
-                block: ma+type+'_crop',
+                block: ma + type + '_crop',
                 properties: {
-                age: 7
+                    age: 7
                 }
             },
-            results: [
-                {
+            results: [{
                     chance: 0.75,
                     output: {
-                        item: ma+type+'_essence'
+                        item: ma + type + '_essence'
                     },
                     minRolls: 1,
                     maxRolls: 3
@@ -242,7 +248,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: ma+type+'_seeds'
+                        item: ma + type + '_seeds'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -258,27 +264,29 @@ events.listen('recipes', function (e) {
             ]
         })
     }
+
     function t6(type) {
-        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.remove({
+            id: 'mysticalagriculture:crops/' + type
+        })
         e.recipes.botanypots.crop({
             seed: {
-                item: ma+type+'_seeds'
+                item: ma + type + '_seeds'
             },
             categories: [
                 'insanium'
             ],
             growthTicks: 5000,
             display: {
-                block: ma+type+'_crop',
+                block: ma + type + '_crop',
                 properties: {
-                age: 7
+                    age: 7
                 }
             },
-            results: [
-                {
+            results: [{
                     chance: 0.75,
                     output: {
-                        item: ma+type+'_essence'
+                        item: ma + type + '_essence'
                     },
                     minRolls: 1,
                     maxRolls: 3
@@ -286,7 +294,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.03,
                     output: {
-                        item: ma+type+'_seeds'
+                        item: ma + type + '_seeds'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -302,27 +310,29 @@ events.listen('recipes', function (e) {
             ]
         })
     }
+
     function t7(type) {
-        e.remove({id: 'mysticalagriculture:crops/'+type})
+        e.remove({
+            id: 'mysticalagriculture:crops/' + type
+        })
         e.recipes.botanypots.crop({
             seed: {
-                item: ma+type+'_seeds'
+                item: ma + type + '_seeds'
             },
             categories: [
                 'magical'
             ],
             growthTicks: 6000,
             display: {
-                block: ma+type+'_crop',
+                block: ma + type + '_crop',
                 properties: {
-                age: 7
+                    age: 7
                 }
             },
-            results: [
-                {
+            results: [{
                     chance: 0.75,
                     output: {
-                        item: ma+type+'_essence'
+                        item: ma + type + '_essence'
                     },
                     minRolls: 1,
                     maxRolls: 3
@@ -330,7 +340,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.01,
                     output: {
-                        item: ma+type+'_seeds'
+                        item: ma + type + '_seeds'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -346,7 +356,7 @@ events.listen('recipes', function (e) {
             ]
         })
     }
-    
+
     //Tier 1 Crops
     t1('air')
     t1('earth')
@@ -457,23 +467,22 @@ events.listen('recipes', function (e) {
     t7('unobtainium')
 
     //Botanypots tree functions
-    function growTree(mod, name){
+    function growTree(mod, name) {
         e.recipes.botanypots.crop({
             seed: {
-                item: mod+':'+name+'_sapling'
+                item: mod + ':' + name + '_sapling'
             },
             categories: [
                 'dirt'
             ],
             growthTicks: 2400,
             display: {
-                block: mod+':'+name+'_sapling'
+                block: mod + ':' + name + '_sapling'
             },
-            results: [
-                {
+            results: [{
                     chance: 0.5,
                     output: {
-                        item: mod+':'+name+'_log'
+                        item: mod + ':' + name + '_log'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -489,7 +498,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: mod+':'+name+'_sapling'
+                        item: mod + ':' + name + '_sapling'
                     },
                     minRolls: 1,
                     maxRolls: 2
@@ -497,23 +506,23 @@ events.listen('recipes', function (e) {
             ]
         })
     }
-    function growTreeExtra(mod, name, extra){
+
+    function growTreeExtra(mod, name, extra) {
         e.recipes.botanypots.crop({
             seed: {
-                item: mod+':'+name+'_sapling'
+                item: mod + ':' + name + '_sapling'
             },
             categories: [
                 'dirt'
             ],
             growthTicks: 2400,
             display: {
-                block: mod+':'+name+'_sapling'
+                block: mod + ':' + name + '_sapling'
             },
-            results: [
-                {
+            results: [{
                     chance: 0.5,
                     output: {
-                        item: mod+':'+name+'_log'
+                        item: mod + ':' + name + '_log'
                     },
                     minRolls: 1,
                     maxRolls: 1
@@ -529,7 +538,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: mod+':'+name+'_sapling'
+                        item: mod + ':' + name + '_sapling'
                     },
                     minRolls: 1,
                     maxRolls: 2
@@ -538,20 +547,20 @@ events.listen('recipes', function (e) {
             ]
         })
     }
-    function growTreeExtraBoP(mod, name, extra){
+
+    function growTreeExtraBoP(mod, name, extra) {
         e.recipes.botanypots.crop({
             seed: {
-                item: mod+':'+name+'_sapling'
+                item: mod + ':' + name + '_sapling'
             },
             categories: [
                 'dirt'
             ],
             growthTicks: 2400,
             display: {
-                block: mod+':'+name+'_sapling'
+                block: mod + ':' + name + '_sapling'
             },
-            results: [
-                {
+            results: [{
                     chance: 0.1,
                     output: {
                         item: 'minecraft:stick'
@@ -562,7 +571,7 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: mod+':'+name+'_sapling'
+                        item: mod + ':' + name + '_sapling'
                     },
                     minRolls: 1,
                     maxRolls: 2
@@ -571,20 +580,20 @@ events.listen('recipes', function (e) {
             ]
         })
     }
-    function growTreeSF(name){
+
+    function growTreeSF(name) {
         e.recipes.botanypots.crop({
             seed: {
-                item: 'simplefarming:'+name+'_sapling'
+                item: 'simplefarming:' + name + '_sapling'
             },
             categories: [
                 'dirt'
             ],
             growthTicks: 2400,
             display: {
-                block: 'simplefarming:'+name+'_sapling'
+                block: 'simplefarming:' + name + '_sapling'
             },
-            results: [
-                {
+            results: [{
                     chance: 0.5,
                     output: {
                         item: 'simplefarming:fruit_log'
@@ -595,24 +604,23 @@ events.listen('recipes', function (e) {
                 {
                     chance: 0.05,
                     output: {
-                        item: 'simplefarming:'+name+'_sapling'
+                        item: 'simplefarming:' + name + '_sapling'
                     },
                     minRolls: 1,
                     maxRolls: 2
                 },
                 {
-                  chance: 0.05,
-                  output: {
-                    item: 'simplefarming:'+name
-                  },
-                  minRolls: 1,
-                  maxRolls: 1
+                    chance: 0.05,
+                    output: {
+                        item: 'simplefarming:' + name
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
     }
-    growTreeExtra('minecraft', 'oak', 
-    {
+    growTreeExtra('minecraft', 'oak', {
         chance: 0.01,
         output: {
             item: 'minecraft:apple'
@@ -620,38 +628,34 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('minecraft', 'dark_oak',
-    {
+    growTreeExtra('minecraft', 'dark_oak', {
         chance: 0.01,
         output: {
-          item: 'minecraft:apple'
+            item: 'minecraft:apple'
         },
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('minecraft', 'jungle',
-    {
+    growTreeExtra('minecraft', 'jungle', {
         chance: 0.01,
         output: {
-          item: 'minecraft:cocoa_beans'
+            item: 'minecraft:cocoa_beans'
         },
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('forbidden_arcanus', 'cherrywood',
-    {
+    growTreeExtra('forbidden_arcanus', 'cherrywood', {
         chance: 0.01,
         output: {
-          item: 'forbidden_arcanus:cherry_peach'
+            item: 'forbidden_arcanus:cherry_peach'
         },
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('forbidden_arcanus', 'mysterywood',
-    {
+    growTreeExtra('forbidden_arcanus', 'mysterywood', {
         chance: 0.01,
         output: {
-          item: 'minecraft:golden_apple'
+            item: 'minecraft:golden_apple'
         },
         minRolls: 1,
         maxRolls: 1
@@ -685,76 +689,68 @@ events.listen('recipes', function (e) {
     growTree('biomesoplenty', 'redwood')
     growTree('biomesoplenty', 'umbran')
     growTree('biomesoplenty', 'willow')
-    growTreeExtraBoP('biomesoplenty', 'flowering_oak',
-    {
-      chance: 0.50,
-      output: {
-        item: 'minecraft:oak_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'flowering_oak', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'maple',
-    {
-      chance: 0.50,
-      output: {
-        item: 'minecraft:oak_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'maple', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'orange_autumn',
-    {
-      chance: 0.50,
-      output: {
-        item: 'minecraft:dark_oak_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'orange_autumn', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:dark_oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'origin',
-    {
-      chance: 0.50,
-      output: {
-        item: 'minecraft:oak_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'origin', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'pink_cherry',
-    {
-      chance: 0.50,
-      output: {
-        item: 'biomesoplenty:cherry_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'pink_cherry', {
+        chance: 0.50,
+        output: {
+            item: 'biomesoplenty:cherry_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'rainbow_birch',
-    {
-      chance: 0.50,
-      output: {
-        item: 'minecraft:birch_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'rainbow_birch', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:birch_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'white_cherry',
-    {
-      chance: 0.50,
-      output: {
-        item: 'biomesoplenty:cherry_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'white_cherry', {
+        chance: 0.50,
+        output: {
+            item: 'biomesoplenty:cherry_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'yellow_autumn',
-    {
-      chance: 0.50,
-      output: {
-        item: 'minecraft:birch_log'
-      },
-      minRolls: 1,
-      maxRolls: 1
+    growTreeExtraBoP('biomesoplenty', 'yellow_autumn', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:birch_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
     })
 })

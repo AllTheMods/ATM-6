@@ -1,42 +1,39 @@
 {
-    "type": "quarryplus:workbench_recipe",
-    "id": "quarryplus:builtin_mini_quarry",
-    "ingredients": [
-      {
-        "tag": "forge:gems/diamond",
-        "count": 2
-      },
-      {
-        "tag": "forge:ingots/gold",
-        "count": 16
-      },
-      {
-        "tag": "forge:ingots/iron",
-        "count": 32
-      },
-      {
-        "tag": "forge:dusts/redstone",
-        "count": 8
-      },
-      {
-        "item": "minecraft:comparator",
-        "count": 4
-      },
-      {
-        "tag": "forge:ingots/vibranium",
-        "count": 4
-      }
-    ],
-    "energy": 10000.0,
-    "showInJEI": true,
-    "result": {
-      "item": "quarryplus:mini_quarry",
-      "count": 1
+  "type": "quarryplus:workbench_recipe",
+  "id": "quarryplus:builtin_mini_quarry",
+  "ingredients": [{
+      "tag": "forge:gems/diamond",
+      "count": 2
     },
-    "conditions": [
-        {
-            "type": "forge:mod_loaded",
-            "modid": "quarryplus"
-        }
-    ]
-  }
+    {
+      "tag": "forge:ingots/gold",
+      "count": 16
+    },
+    {
+      "tag": "forge:ingots/iron",
+      "count": 32
+    },
+    {
+      "tag": "forge:dusts/redstone",
+      "count": 8
+    },
+    {
+      "item": "minecraft:comparator",
+      "count": 4
+    },
+    {
+      "tag": "forge:ingots/vibranium",
+      "count": 4
+    }
+  ],
+  "energy": 10000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:mini_quarry",
+    "count": 1
+  },
+  "conditions": [{
+    "type": "forge:mod_loaded",
+    "modid": "quarryplus"
+  }]
+}

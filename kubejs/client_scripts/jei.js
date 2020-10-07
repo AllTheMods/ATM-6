@@ -9,9 +9,10 @@ events.listen('jei.information', function (e) {
 })
 events.listen('jei.add.items', function (e) {
     e.add([
-      'minecraft:dragon_egg'
+        'minecraft:dragon_egg'
     ])
-})/* 
+})
+/* 
 
 events.listen('jei.hide.items', function (e) {
     e.hide([
