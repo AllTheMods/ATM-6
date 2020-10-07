@@ -29,7 +29,7 @@
 		nickel_max_y = 25
 		#Nickel deposit size
 		#Range: 1 ~ 64
-		nickel_deposit_size = 8
+		nickel_deposit_size = 7
 		#Nickel bottom Y level for spawn
 		#Range: 1 ~ 254
 		nickel_min_y = 1
@@ -40,7 +40,7 @@
 		platinum_max_y = 25
 		#Platinum deposit size
 		#Range: 1 ~ 64
-		platinum_deposit_size = 6
+		platinum_deposit_size = 4
 		#Platinum bottom Y level for spawn
 		#Range: 1 ~ 254
 		platinum_min_y = 1
@@ -48,7 +48,7 @@
 	[spawntuning.tin]
 		#Tin deposit size
 		#Range: 1 ~ 64
-		tin_deposit_size = 8
+		tin_deposit_size = 7
 		#Tin top Y level for spawn
 		#Range: 1 ~ 254
 		tin_max_y = 60
@@ -59,7 +59,7 @@
 	[spawntuning.copper]
 		#Copper deposit size
 		#Range: 1 ~ 64
-		copper_deposit_size = 8
+		copper_deposit_size = 7
 		#Copper top Y level for spawn
 		#Range: 1 ~ 254
 		copper_max_y = 60
@@ -70,7 +70,7 @@
 	[spawntuning.osmium]
 		#Osmium deposit size
 		#Range: 1 ~ 64
-		osmium_deposit_size = 8
+		osmium_deposit_size = 7
 		#Osmium top Y level for spawn
 		#Range: 1 ~ 254
 		osmium_max_y = 40
@@ -87,12 +87,12 @@
 		silver_min_y = 1
 		#Silver deposit size
 		#Range: 1 ~ 64
-		silver_deposit_size = 8
+		silver_deposit_size = 7
 
 	[spawntuning.aluminum]
 		#Aluminum deposit size
 		#Range: 1 ~ 64
-		aluminum_deposit_size = 8
+		aluminum_deposit_size = 7
 		#Aluminum bottom Y level for spawn
 		#Range: 1 ~ 254
 		aluminum_min_y = 40
@@ -106,7 +106,7 @@
 		uranium_min_y = 1
 		#Uranium deposit size
 		#Range: 1 ~ 64
-		uranium_deposit_size = 6
+		uranium_deposit_size = 5
 		#Uranium top Y level for spawn
 		#Range: 1 ~ 254
 		uranium_max_y = 25
@@ -114,7 +114,7 @@
 	[spawntuning.zinc]
 		#Zinc deposit size
 		#Range: 1 ~ 64
-		zinc_deposit_size = 8
+		zinc_deposit_size = 7
 		#Zinc top Y level for spawn
 		#Range: 1 ~ 254
 		zinc_max_y = 60
@@ -128,7 +128,7 @@
 		lead_min_y = 20
 		#Lead deposit size
 		#Range: 1 ~ 64
-		lead_deposit_size = 8
+		lead_deposit_size = 7
 		#Lead top Y level for spawn
 		#Range: 1 ~ 254
 		lead_max_y = 40
