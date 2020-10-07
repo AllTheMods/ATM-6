@@ -358,6 +358,7 @@ events.listen('recipes', function (e) {
     }
 
     //Tier 1 Crops
+    t1('inferium')
     t1('air')
     t1('earth')
     t1('fire')
