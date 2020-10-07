@@ -154,6 +154,7 @@ events.listen('block.tags', function (e) {
   special('mcwwindows:window','/mcwwindows:.+_win/')
   special('misctags:concrete','/minecraft:.+_concrete/')
   special('forge:relocation_not_supported',['/refinedstorage:.+/','/extrastorage:.+/','/waystones:.+/','/appliedenergistics2:.+/'])
+  special('resourcefulbees:valid_apiary',['/.+_glass/'])
 })
 
 //Fluid tags go here
