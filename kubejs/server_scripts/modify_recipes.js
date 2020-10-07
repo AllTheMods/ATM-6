@@ -217,6 +217,17 @@ events.listen('recipes', function (e) {
     P: '#minecraft:planks',
     C: '#resourcefulbees:resourceful_honeycomb'
   })
+  modifyShaped('resourcefulbees:centrifuge_controller', 1, [
+    'ICI',
+    'BAB',
+    'IRI'
+  ], {
+    I: 'resourcefulbees:centrifuge_casing',
+    C: 'resourcefulbees:centrifuge',
+    B: 'minecraft:iron_bars',
+    A: 'minecraft:comparator',
+    R: '#forge:storage_blocks/redstone'
+  })
   modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
   /* e.remove({output: 'silents_mechanisms:zombie_leather'})
   e.recipes.silents_mechanisms.drying({
