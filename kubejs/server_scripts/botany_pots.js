@@ -2,34 +2,34 @@ events.listen('recipes', function (e) {
     //Soils
     function makeFarmland(input, categories, growthModifier){
         e.recipes.botanypots.soil({
-            'input':
+            input:
             {
-                'item': input
+                item: input
             },
-            'display':
+            display:
             {
-                'block': input,
-                'properties':
+                block: input,
+                properties:
                 {
-                    'moisture': 7
+                    moisture: 7
                 }
             },
-            'categories': categories,
-            'growthModifier': growthModifier
+            categories: categories,
+            growthModifier: growthModifier
         })
     }
     function makeSoil(input, categories, growthModifier){
         e.recipes.botanypots.soil({
-            'input':
+            input:
             {
-                'item': input
+                item: input
             },
-            'display':
+            display:
             {
-                'block': input
+                block: input
             },
-            'categories': categories,
-            'growthModifier': growthModifier
+            categories: categories,
+            growthModifier: growthModifier
         })
     }
 
@@ -56,28 +56,28 @@ events.listen('recipes', function (e) {
             },
             results: [
                 {
-                chance: 0.75,
-                output: {
-                    item: ma+type+'_essence'
-                },
-                minRolls: 1,
-                maxRolls: 3
-                },
-                {
-                chance: 0.05,
-                output: {
-                    item: ma+type+'_seeds'
-                },
-                minRolls: 1,
-                maxRolls: 1
+                    chance: 0.75,
+                    output: {
+                        item: ma+type+'_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 3
                 },
                 {
-                chance: 0.01,
-                output: {
-                    item: 'mysticalagriculture:fertilized_essence'
+                    chance: 0.05,
+                    output: {
+                        item: ma+type+'_seeds'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
-                minRolls: 1,
-                maxRolls: 1
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
@@ -100,28 +100,28 @@ events.listen('recipes', function (e) {
             },
             results: [
                 {
-                chance: 0.75,
-                output: {
-                    item: ma+type+'_essence'
-                },
-                minRolls: 1,
-                maxRolls: 3
-                },
-                {
-                chance: 0.05,
-                output: {
-                    item: ma+type+'_seeds'
-                },
-                minRolls: 1,
-                maxRolls: 1
+                    chance: 0.75,
+                    output: {
+                        item: ma+type+'_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 3
                 },
                 {
-                chance: 0.01,
-                output: {
-                    item: 'mysticalagriculture:fertilized_essence'
+                    chance: 0.05,
+                    output: {
+                        item: ma+type+'_seeds'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
-                minRolls: 1,
-                maxRolls: 1
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
@@ -144,28 +144,28 @@ events.listen('recipes', function (e) {
             },
             results: [
                 {
-                chance: 0.75,
-                output: {
-                    item: ma+type+'_essence'
-                },
-                minRolls: 1,
-                maxRolls: 3
-                },
-                {
-                chance: 0.05,
-                output: {
-                    item: ma+type+'_seeds'
-                },
-                minRolls: 1,
-                maxRolls: 1
+                    chance: 0.75,
+                    output: {
+                        item: ma+type+'_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 3
                 },
                 {
-                chance: 0.01,
-                output: {
-                    item: 'mysticalagriculture:fertilized_essence'
+                    chance: 0.05,
+                    output: {
+                        item: ma+type+'_seeds'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
-                minRolls: 1,
-                maxRolls: 1
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
@@ -188,28 +188,28 @@ events.listen('recipes', function (e) {
             },
             results: [
                 {
-                chance: 0.75,
-                output: {
-                    item: ma+type+'_essence'
-                },
-                minRolls: 1,
-                maxRolls: 3
-                },
-                {
-                chance: 0.05,
-                output: {
-                    item: ma+type+'_seeds'
-                },
-                minRolls: 1,
-                maxRolls: 1
+                    chance: 0.75,
+                    output: {
+                        item: ma+type+'_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 3
                 },
                 {
-                chance: 0.01,
-                output: {
-                    item: 'mysticalagriculture:fertilized_essence'
+                    chance: 0.05,
+                    output: {
+                        item: ma+type+'_seeds'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
-                minRolls: 1,
-                maxRolls: 1
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
@@ -232,28 +232,28 @@ events.listen('recipes', function (e) {
             },
             results: [
                 {
-                chance: 0.75,
-                output: {
-                    item: ma+type+'_essence'
-                },
-                minRolls: 1,
-                maxRolls: 3
-                },
-                {
-                chance: 0.05,
-                output: {
-                    item: ma+type+'_seeds'
-                },
-                minRolls: 1,
-                maxRolls: 1
+                    chance: 0.75,
+                    output: {
+                        item: ma+type+'_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 3
                 },
                 {
-                chance: 0.01,
-                output: {
-                    item: 'mysticalagriculture:fertilized_essence'
+                    chance: 0.05,
+                    output: {
+                        item: ma+type+'_seeds'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
-                minRolls: 1,
-                maxRolls: 1
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
@@ -276,28 +276,28 @@ events.listen('recipes', function (e) {
             },
             results: [
                 {
-                chance: 0.75,
-                output: {
-                    item: ma+type+'_essence'
-                },
-                minRolls: 1,
-                maxRolls: 3
-                },
-                {
-                chance: 0.03,
-                output: {
-                    item: ma+type+'_seeds'
-                },
-                minRolls: 1,
-                maxRolls: 1
+                    chance: 0.75,
+                    output: {
+                        item: ma+type+'_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 3
                 },
                 {
-                chance: 0.03,
-                output: {
-                    item: 'mysticalagriculture:fertilized_essence'
+                    chance: 0.03,
+                    output: {
+                        item: ma+type+'_seeds'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
-                minRolls: 1,
-                maxRolls: 1
+                {
+                    chance: 0.03,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
@@ -320,28 +320,28 @@ events.listen('recipes', function (e) {
             },
             results: [
                 {
-                chance: 0.75,
-                output: {
-                    item: ma+type+'_essence'
-                },
-                minRolls: 1,
-                maxRolls: 3
-                },
-                {
-                chance: 0.01,
-                output: {
-                    item: ma+type+'_seeds'
-                },
-                minRolls: 1,
-                maxRolls: 1
+                    chance: 0.75,
+                    output: {
+                        item: ma+type+'_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 3
                 },
                 {
-                chance: 0.1,
-                output: {
-                    item: 'mysticalagriculture:fertilized_essence'
+                    chance: 0.01,
+                    output: {
+                        item: ma+type+'_seeds'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
-                minRolls: 1,
-                maxRolls: 1
+                {
+                    chance: 0.1,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 }
             ]
         })
@@ -457,54 +457,304 @@ events.listen('recipes', function (e) {
     t7('unobtainium')
 
     //Botanypots tree functions
-    /* function growTree(mod, name, extra){
+    function growTree(mod, name){
         e.recipes.botanypots.crop({
-            'seed': {
-                'item': mod+':'+name+'_sapling'
+            seed: {
+                item: mod+':'+name+'_sapling'
             },
-            'categories': [
+            categories: [
                 'dirt'
             ],
-            'growthTicks': 2400,
-            'display': {
-                'block': mod+':'+name+'_sapling'
+            growthTicks: 2400,
+            display: {
+                block: mod+':'+name+'_sapling'
             },
-            'results': [
+            results: [
                 {
-                'chance': 0.5,
-                'output': {
-                    'item': mod+':'+name+'_log'
-                },
-                'minRolls': 1,
-                'maxRolls': 1
-                },
-                {
-                'chance': 0.1,
-                'output': {
-                    'item': 'minecraft:stick'
-                },
-                'minRolls': 1,
-                'maxRolls': 2
+                    chance: 0.5,
+                    output: {
+                        item: mod+':'+name+'_log'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
                 },
                 {
-                'chance': 0.05,
-                'output': {
-                    'item': mod+':'+name+'_sapling'
+                    chance: 0.1,
+                    output: {
+                        item: 'minecraft:stick'
+                    },
+                    minRolls: 1,
+                    maxRolls: 2
                 },
-                'minRolls': 1,
-                'maxRolls': 2
+                {
+                    chance: 0.05,
+                    output: {
+                        item: mod+':'+name+'_sapling'
+                    },
+                    minRolls: 1,
+                    maxRolls: 2
                 }
-                (extra)
             ]
         })
     }
-    growTree('minecraft', 'oak', 
-    [,{
-    'chance': 0.01,
-    'output': {
-        'item': 'minecraft:apple'
-    },
-    'minRolls': 1,
-    'maxRolls': 1
-    }]) */
+    function growTreeExtra(mod, name, extra){
+        e.recipes.botanypots.crop({
+            seed: {
+                item: mod+':'+name+'_sapling'
+            },
+            categories: [
+                'dirt'
+            ],
+            growthTicks: 2400,
+            display: {
+                block: mod+':'+name+'_sapling'
+            },
+            results: [
+                {
+                    chance: 0.5,
+                    output: {
+                        item: mod+':'+name+'_log'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.1,
+                    output: {
+                        item: 'minecraft:stick'
+                    },
+                    minRolls: 1,
+                    maxRolls: 2
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: mod+':'+name+'_sapling'
+                    },
+                    minRolls: 1,
+                    maxRolls: 2
+                },
+                extra
+            ]
+        })
+    }
+    function growTreeExtraBoP(mod, name, extra){
+        e.recipes.botanypots.crop({
+            seed: {
+                item: mod+':'+name+'_sapling'
+            },
+            categories: [
+                'dirt'
+            ],
+            growthTicks: 2400,
+            display: {
+                block: mod+':'+name+'_sapling'
+            },
+            results: [
+                {
+                    chance: 0.1,
+                    output: {
+                        item: 'minecraft:stick'
+                    },
+                    minRolls: 1,
+                    maxRolls: 2
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: mod+':'+name+'_sapling'
+                    },
+                    minRolls: 1,
+                    maxRolls: 2
+                },
+                extra
+            ]
+        })
+    }
+    function growTreeSF(name){
+        e.recipes.botanypots.crop({
+            seed: {
+                item: 'simplefarming:'+name+'_sapling'
+            },
+            categories: [
+                'dirt'
+            ],
+            growthTicks: 2400,
+            display: {
+                block: 'simplefarming:'+name+'_sapling'
+            },
+            results: [
+                {
+                    chance: 0.5,
+                    output: {
+                        item: 'simplefarming:fruit_log'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: 'simplefarming:'+name+'_sapling'
+                    },
+                    minRolls: 1,
+                    maxRolls: 2
+                },
+                {
+                  chance: 0.05,
+                  output: {
+                    item: 'simplefarming:'+name
+                  },
+                  minRolls: 1,
+                  maxRolls: 1
+                }
+            ]
+        })
+    }
+    growTreeExtra('minecraft', 'oak', 
+    {
+        chance: 0.01,
+        output: {
+            item: 'minecraft:apple'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtra('minecraft', 'dark_oak',
+    {
+        chance: 0.01,
+        output: {
+          item: 'minecraft:apple'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtra('minecraft', 'jungle',
+    {
+        chance: 0.01,
+        output: {
+          item: 'minecraft:cocoa_beans'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtra('forbidden_arcanus', 'cherrywood',
+    {
+        chance: 0.01,
+        output: {
+          item: 'forbidden_arcanus:cherry_peach'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtra('forbidden_arcanus', 'mysterywood',
+    {
+        chance: 0.01,
+        output: {
+          item: 'minecraft:golden_apple'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTree('minecraft', 'acacia')
+    growTree('minecraft', 'birch')
+    growTree('minecraft', 'spruce')
+    /*
+    growTree('quark', 'blue_blossom')
+    growTree('quark', 'lavender_blossom')
+    growTree('quark', 'orange_blossom')
+    growTree('quark', 'pink_blossom')
+    growTree('quark', 'yellow_blossom')
+    growTreeSF('apple')
+    growTreeSF('apricot')
+    growTreeSF('banana')
+    growTreeSF('cherry')
+    growTreeSF('mango')
+    growTreeSF('olive')
+    growTreeSF('orange')
+    growTreeSF('pear')
+    growTreeSF('plum')
+    */
+    growTree('biomesoplenty', 'dead')
+    growTree('biomesoplenty', 'fir')
+    growTree('biomesoplenty', 'hellbark')
+    growTree('biomesoplenty', 'jacaranda')
+    growTree('biomesoplenty', 'magic')
+    growTree('biomesoplenty', 'mahogany')
+    growTree('biomesoplenty', 'palm')
+    growTree('biomesoplenty', 'redwood')
+    growTree('biomesoplenty', 'umbran')
+    growTree('biomesoplenty', 'willow')
+    growTreeExtraBoP('biomesoplenty', 'flowering_oak',
+    {
+      chance: 0.50,
+      output: {
+        item: 'minecraft:oak_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
+    growTreeExtraBoP('biomesoplenty', 'maple',
+    {
+      chance: 0.50,
+      output: {
+        item: 'minecraft:oak_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
+    growTreeExtraBoP('biomesoplenty', 'orange_autumn',
+    {
+      chance: 0.50,
+      output: {
+        item: 'minecraft:dark_oak_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
+    growTreeExtraBoP('biomesoplenty', 'origin',
+    {
+      chance: 0.50,
+      output: {
+        item: 'minecraft:oak_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
+    growTreeExtraBoP('biomesoplenty', 'pink_cherry',
+    {
+      chance: 0.50,
+      output: {
+        item: 'biomesoplenty:cherry_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
+    growTreeExtraBoP('biomesoplenty', 'rainbow_birch',
+    {
+      chance: 0.50,
+      output: {
+        item: 'minecraft:birch_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
+    growTreeExtraBoP('biomesoplenty', 'white_cherry',
+    {
+      chance: 0.50,
+      output: {
+        item: 'biomesoplenty:cherry_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
+    growTreeExtraBoP('biomesoplenty', 'yellow_autumn',
+    {
+      chance: 0.50,
+      output: {
+        item: 'minecraft:birch_log'
+      },
+      minRolls: 1,
+      maxRolls: 1
+    })
 })
