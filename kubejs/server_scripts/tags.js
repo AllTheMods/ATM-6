@@ -69,6 +69,8 @@ events.listen('item.tags', function (e) {
   add('misctags:flowers/nether_flowers', ['minecraft:crimson_fungus', 'minecraft:warped_fungus', 'minecraft:nether_wart', 'minecraft:crimson_roots', 'minecraft:warped_roots', 'minecraft:weeping_vines', 'minecraft:twisting_vines'])
   add('misctags:flowers/swamp_flowers', ['byg:tiny_lilypads', 'byg:reeds', 'byg:cattail', 'minecraft:lily_pad', 'minecraft:sugar_cane', 'minecraft:brown_mushroom', 'minecraft:red_mushroom'])
   add('misctags:flowers/wither_flowers', ['minecraft:wither_rose'])
+  add('forge:storage_blocks/nether_star', 'kubejs:nether_star_block')
+  add('forge:storage_blocks', ['#forge:storage_blocks/nether_star'])
 
   //Remove
   remove('forge:leather', 'forbidden_arcanus:rotten_leather')
@@ -143,7 +145,8 @@ events.listen('block.tags', function (e) {
   add('forge:mushroom_caps', ['#forge:mushroom_caps/red_mushroom', '#forge:mushroom_caps/brown_mushroom', '#forge:mushroom_caps/blue_glowshroom', '#forge:mushroom_caps/purple_glowshroom', '#forge:mushroom_caps/green_mushroom', '#forge:mushroom_caps/black_puff_mushroom', '#forge:mushroom_caps/weeping_milkcap_mushroom'])
   add('forge:mushroom_stems', ['#forge:mushroom_stems/mushroom', '#forge:mushroom_stems/brown_mushroom', '#forge:mushroom_stems/white_mushroom', '#forge:mushroom_stems/red_glowshroom', '#forge:mushroom_stems/yellow_glowshroom'])
   add('forge:mushrooms', ['minecraft:warped_fungus', 'minecraft:crimson_fungus', 'byg:blue_glowshroom', 'byg:purple_glowshroom'])
-  add('forge:storage_blocks', ['#forge:storage_blocks/uraninite', '#forge:storage_blocks/oratchalcum'])
+  add('forge:storage_blocks', ['#forge:storage_blocks/uraninite', '#forge:storage_blocks/oratchalcum', '#forge:storage_blocks/nether_star'])
+  add('forge:storage_blocks/nether_star', 'kubejs:nether_star_block')
   add('forge:storage_blocks/uraninite', 'powah:uraninite_block')
   add('forge:storage_blocks/oratchalcum', 'rats:oratchalcum_block')
   add('cyclic:scythe_brush', ['#minecraft:flowers'])

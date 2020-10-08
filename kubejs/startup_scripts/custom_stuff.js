@@ -13,4 +13,5 @@ events.listen('item.registry', function (e) {
 })
 events.listen('block.registry', function (e) {
   e.create('magical_soil').displayName('§bMagical Soil').material(block.material.organic).hardness(0.6)
+  e.create('nether_star_block').displayName('§eNether Start Block').material(block.material.glass).hardness(2)
 })
