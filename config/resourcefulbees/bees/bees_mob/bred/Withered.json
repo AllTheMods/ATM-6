@@ -1,5 +1,5 @@
 {
-  "flower": "tag:misctags:flowers/wither_flowers",
+  "flower": "tag:minecraft:wither_summon_base_blocks",
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
   "baseLayerTexture": "wither/wither_bee",
