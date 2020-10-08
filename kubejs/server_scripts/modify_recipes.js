@@ -40,6 +40,14 @@ events.listen('recipes', function (e) {
     d: '#forge:gems/diamond',
     a: '#forge:nuggets/allthemodium'
   }) //gated since it can change modium ores easily
+  modifyShaped('minecraft:honeycomb_block', 1, [
+    'CCC',
+    'CCC',
+    'CCC'
+  ], {
+    C: 'minecraft:honeycomb'
+  })
+  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block')
   modifyShaped('minecraft:sticky_piston', 1, [
     'B',
     'P'
