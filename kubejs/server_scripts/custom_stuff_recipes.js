@@ -89,4 +89,17 @@ events.listen('recipes', function (e) {
       item: 'kubejs:magical_soil'
     }
   })
+
+  function customBlock(name, ingridient) {
+    e.shapeless(item.of(ingridient, 9), name)
+    e.shaped(item.of(name), [
+      'AAA',
+      'AAA',
+      'AAA'
+    ], {
+      A: ingridient
+    })
+  }
+
+  customBlock('kubejs:nether_star_block', 'minecraft:nether_star')
 })
