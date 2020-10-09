@@ -1,5 +1,5 @@
 {
-  "flower":"tag:minecraft:water",
+  "flower":"minecraft:water",
   "maxTimeInHive":600,
   "traits":["can_swim"],
   "hasHoneycomb":true,

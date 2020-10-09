@@ -1,5 +1,5 @@
 {
-  "flower":"tag:minecraft:lava",
+  "flower":"minecraft:lava",
   "maxTimeInHive":600,
   "traits":["nether"],
   "hasHoneycomb":true,
