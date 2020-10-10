@@ -20,5 +20,5 @@
 		#Add Nether biomes by their registry names(IDs) in a commented list.
 		# Adding a biome several times gives it more weight in generation.
 		# Default: "byg:embur_bog,byg:glowstone_gardens,byg:sythian_torrids,byg:warped_desert,minecraft:basalt_deltas,minecraft:crimson_forest,minecraft:nether_wastes,minecraft:soul_sand_valley,minecraft:warped_forest".
-		NetherBiomes = "byg:embur_bog,byg:glowstone_gardens,byg:sythian_torrids,byg:warped_desert,minecraft:basalt_deltas,minecraft:crimson_forest,minecraft:nether_wastes,minecraft:soul_sand_valley,minecraft:warped_forest"
+		NetherBiomes = "byg:glowstone_gardens,byg:sythian_torrids,byg:warped_desert,minecraft:basalt_deltas,minecraft:crimson_forest,minecraft:nether_wastes,minecraft:soul_sand_valley,minecraft:warped_forest"
 
