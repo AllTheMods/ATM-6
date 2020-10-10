@@ -29,6 +29,7 @@ events.listen('recipes', function (e) {
 
   e.replaceOutput('#forge:cheese', 'rats:cheese')
   //Modified recipes
+  modifyShapeless('botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book'])
   modifyShaped('buildinggadgets:gadget_exchanging', 1, [
     'iri',
     'dld',
