@@ -254,17 +254,17 @@ events.listen('recipes', function (e) {
   pressure([{
       'type': 'pneumaticcraft:stacked_item',
       'item': 'mysticalagradditions:insanium_block',
-      'count': 2
+      'count': 8
     },
     {
       'type': 'pneumaticcraft:stacked_item',
       'tag': 'forge:pellets/antimatter',
-      'count': 4
+      'count': 6
     },
     {
       'type': 'pneumaticcraft:stacked_item',
       'item': 'botania:gaia_ingot',
-      'count': 2
+      'count': 3
     },
     {
       'type': 'pneumaticcraft:stacked_item',
@@ -279,6 +279,21 @@ events.listen('recipes', function (e) {
     {
       'type': 'pneumaticcraft:stacked_item',
       'tag': 'forge:storage_blocks/unobtainium',
+      'count': 1
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'item': 'elementalcraft:purerock',
+      'count': 8
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'item': 'xreliquary:angelheart_vial',
+      'count': 6
+    },
+    {
+      'type': 'pneumaticcraft:stacked_item',
+      'item': 'mahoutsukai:fae_essence',
       'count': 1
     }
   ], 'mysticalagradditions:creative_essence', 1, 4.9)

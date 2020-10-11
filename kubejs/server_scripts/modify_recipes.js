@@ -29,6 +29,43 @@ events.listen('recipes', function (e) {
 
   e.replaceOutput('#forge:cheese', 'rats:cheese')
   //Modified recipes
+  var combBlock = '#resourcefulbees:resourceful_honeycomb_block'
+  modifyShaped('resourcefulbees:t1_apiary', 1, [
+    'CHC',
+    'HSH',
+    'CHC'
+  ], {
+    C: combBlock,
+    H: 'resourcefulbees:t4_beehive',
+    S: '#forge:nether_stars'
+  })
+  modifyShaped('resourcefulbees:t2_apiary', 1, [
+    'CHC',
+    'HSH',
+    'CHC'
+  ], {
+    C: combBlock,
+    H: 'resourcefulbees:t1_apiary',
+    S: '#forge:nether_stars'
+  })
+  modifyShaped('resourcefulbees:t3_apiary', 1, [
+    'SHS',
+    'HCH',
+    'SHS'
+  ], {
+    C: combBlock,
+    H: 'resourcefulbees:t2_apiary',
+    S: '#forge:nether_stars'
+  })
+  modifyShaped('resourcefulbees:t4_apiary', 1, [
+    'SHS',
+    'HCH',
+    'SHS'
+  ], {
+    C: combBlock,
+    H: 'resourcefulbees:t3_apiary',
+    S: '#forge:nether_stars'
+  })
   modifyShapeless('botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book'])
   modifyShaped('buildinggadgets:gadget_exchanging', 1, [
     'iri',
