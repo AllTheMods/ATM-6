@@ -21,8 +21,7 @@
   },
   "SpawnData": {
     "canSpawnInWorld":true,
-    "biomeWhitelist":"tag:magical",
-    "spawnWeight": 50
+    "biomeWhitelist":"tag:magical"
   },
   "BreedData": {
     "isBreedable": false
