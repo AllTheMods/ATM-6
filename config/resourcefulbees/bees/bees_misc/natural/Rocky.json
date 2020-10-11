@@ -24,7 +24,9 @@
     "biomeWhitelist":"tag:mountain"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "tag:forge:stone",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": false

@@ -20,7 +20,9 @@
     "biomeWhitelist": "tag:swamp"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "xreliquary:slime_pearl",
+    "feedAmount": 2
   },
   "TraitData": {
     "hasTraits": false

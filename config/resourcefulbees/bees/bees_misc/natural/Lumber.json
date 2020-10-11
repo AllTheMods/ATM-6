@@ -23,7 +23,9 @@
     "biomeWhitelist":"tag:forest"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "tag:minecraft:logs",
+    "feedAmount": 4
   },
   "TraitData": {
       "hasTraits": false

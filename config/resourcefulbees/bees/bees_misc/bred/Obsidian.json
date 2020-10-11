@@ -19,9 +19,10 @@
   },
   "BreedData": {
     "isBreedable": true,
-    "feedItem": "tag:minecraft:flowers",
     "parent1": "Water",
-    "parent2": "Lava"
+    "parent2": "Lava",
+    "feedItem": "minecraft:obsidian",
+    "feedAmount": 2
   },
   "TraitData": {
     "hasTraits": false

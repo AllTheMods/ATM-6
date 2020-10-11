@@ -19,7 +19,9 @@
     "biomeWhitelist":"tag:ocean,tag:river"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "minecraft:water_bucket",
+    "feedAmount": 1
   },
   "TraitData": {
     "hasTraits": true

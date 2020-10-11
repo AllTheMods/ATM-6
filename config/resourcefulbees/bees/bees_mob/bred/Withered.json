@@ -22,7 +22,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Coal",
-    "parent2": "Skeleton"
+    "parent2": "Skeleton",
+    "feedItem": "xreliquary:withered_rib",
+    "feedAmount": 2
   },
   "TraitData": {
     "hasTraits": true

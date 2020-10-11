@@ -24,7 +24,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Magma",
-    "parent2": "Skeleton"
+    "parent2": "Skeleton",
+    "feedItem": "xreliquary:molten_core",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": true

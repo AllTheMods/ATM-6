@@ -22,7 +22,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Redstone",
-    "parent2": "RGBee"
+    "parent2": "RGBee",
+    "feedItem": "tag:forge:gems/lapis",
+    "feedAmount": 5
   },
   "TraitData": {
     "hasTraits": false

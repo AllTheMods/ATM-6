@@ -23,7 +23,9 @@
     "biomeWhitelist": "tag:nether"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "tag:forge:dusts/glowstone",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": true

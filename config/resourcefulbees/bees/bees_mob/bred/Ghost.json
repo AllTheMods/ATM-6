@@ -22,7 +22,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Creeper",
-    "parent2": "Magma"
+    "parent2": "Magma",
+    "feedItem": "xreliquary:catalyzing_gland",
+    "feedAmount": 6
   },
   "TraitData": {
     "hasTraits": true

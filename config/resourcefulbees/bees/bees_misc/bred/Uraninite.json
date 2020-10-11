@@ -21,7 +21,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Emerald",
-    "parent2": "Uranium"
+    "parent2": "Uranium",
+    "feedItem": "powah:uraninite",
+    "feedAmount": 6
   },
   "TraitData": {
     "hasTraits": false

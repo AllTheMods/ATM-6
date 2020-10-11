@@ -1,6 +1,6 @@
 {
   "flower": "tag:forge:storage_blocks/allthemodium",
-  "maxTimeInHive": 1400,
+  "maxTimeInHive": 1900,
   "traits":["nether"],
   "hasHoneycomb": true,
   "baseLayerTexture": "modium/modium_bee",
@@ -23,7 +23,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Netherite",
-    "parent2": "Wither"
+    "parent2": "Wither",
+    "feedItem": "tag:forge:nuggets/allthemodium",
+    "feedAmount": 3
   },
   "TraitData": {
     "hasTraits": true

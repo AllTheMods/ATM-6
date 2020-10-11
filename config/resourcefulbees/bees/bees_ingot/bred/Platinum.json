@@ -20,7 +20,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Ender",
-    "parent2": "Gold"
+    "parent2": "Gold",
+    "feedItem": "tag:forge:nuggets/platinum",
+    "feedAmount": 3
   },
   "TraitData": {
     "hasTraits": false

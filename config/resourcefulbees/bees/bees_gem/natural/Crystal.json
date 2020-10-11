@@ -22,7 +22,9 @@
     "biomeWhitelist": "tag:nether"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "tag:forge:gems/quartz",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": true

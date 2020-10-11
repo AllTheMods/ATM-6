@@ -23,7 +23,9 @@
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "xreliquary:rib_bone",
+    "feedAmount": 3
   },
   "TraitData": {
     "hasTraits": false

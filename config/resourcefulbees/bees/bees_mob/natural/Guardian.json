@@ -24,7 +24,9 @@
     "biomeWhitelist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "xreliquary:guardian_spike",
+    "feedAmount": 2
   },
   "TraitData": {
     "hasTraits": true

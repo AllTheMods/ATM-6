@@ -1,6 +1,6 @@
 {
   "flower": "tag:forge:storage_blocks/unobtainium",
-  "maxTimeInHive": 1400,
+  "maxTimeInHive": 2100,
   "traits":["nether"],
   "hasHoneycomb": true,
   "baseLayerTexture": "modium/unobtainium_bee",
@@ -23,7 +23,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Vibranium",
-    "parent2": "Allthemodium"
+    "parent2": "Allthemodium",
+    "feedItem": "tag:forge:nuggets/unobtainium",
+    "feedAmount": 3
   },
   "TraitData": {
     "hasTraits": true

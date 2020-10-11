@@ -22,7 +22,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Ender",
-    "parent2": "Refined_Obsidian"
+    "parent2": "Refined_Obsidian",
+    "feedItem": "minecraft:end_crystal",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": false

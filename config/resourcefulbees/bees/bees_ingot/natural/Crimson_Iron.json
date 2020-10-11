@@ -20,7 +20,9 @@
     "biomeWhitelist": "tag:nether"
   },
   "BreedData": {
-    "breedable": true
+    "breedable": true,
+    "feedItem": "tag:forge:nuggets/crimson_iron",
+    "feedAmount": 1
   },
   "TraitData": {
     "hasTraits": true

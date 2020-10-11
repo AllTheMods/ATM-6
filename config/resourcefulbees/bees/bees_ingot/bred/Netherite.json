@@ -22,7 +22,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Wither",
-    "parent2": "Diamond"
+    "parent2": "Diamond",
+    "feedItem": "minecraft:netherite_scrap",
+    "feedAmount": 3
   },
   "TraitData": {
     "hasTraits": true

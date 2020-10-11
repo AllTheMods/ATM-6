@@ -22,7 +22,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Glowing",
-    "parent2": "Rocky"
+    "parent2": "Rocky",
+    "feedItem": "tag:forge:dusts/redstone",
+    "feedAmount": 6
   },
   "TraitData": {
     "hasTraits": false

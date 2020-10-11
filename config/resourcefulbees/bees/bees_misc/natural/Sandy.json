@@ -20,7 +20,9 @@
     "biomeWhitelist":"tag:sandy"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "tag:forge:sand",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": false

@@ -20,7 +20,9 @@
     "biomeWhitelist": "tag:nether"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "xreliquary:molten_core",
+    "feedAmount": 2
   },
   "TraitData": {
     "hasTraits": true

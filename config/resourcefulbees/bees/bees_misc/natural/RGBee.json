@@ -21,7 +21,9 @@
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "tag:forge:dyes",
+    "feedAmount": 6
   },
   "TraitData": {
     "hasTraits": false

@@ -21,7 +21,9 @@
     "biomeWhitelist":"tag:nether"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "minecraft:lava_bucket",
+    "feedAmount": 1
   },
   "TraitData": {
     "hasTraits": true

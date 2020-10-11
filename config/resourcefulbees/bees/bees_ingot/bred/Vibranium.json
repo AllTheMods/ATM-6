@@ -1,6 +1,6 @@
 {
   "flower": "tag:forge:storage_blocks/vibranium",
-  "maxTimeInHive": 1400,
+  "maxTimeInHive": 2000,
   "traits":["nether"],
   "hasHoneycomb": true,
   "baseLayerTexture": "modium/vibranium_bee",
@@ -23,7 +23,9 @@
   "BreedData": {
     "isBreedable": true,
     "parent1": "Netherite",
-    "parent2": "Dragonic"
+    "parent2": "Dragonic",
+    "feedItem": "tag:forge:nuggets/vibranium",
+    "feedAmount": 3
   },
   "TraitData": {
     "hasTraits": true

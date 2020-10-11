@@ -22,7 +22,9 @@
     "biomeWhitelist": "tag:end"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "xreliquary:nebulous_heart",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": true

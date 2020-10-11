@@ -22,7 +22,9 @@
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "xreliquary:zombie_heart",
+    "feedAmount": 2
   },
   "TraitData": {
     "hasTraits": true

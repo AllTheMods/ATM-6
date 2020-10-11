@@ -19,7 +19,9 @@
     "biomeWhitelist": "rats:ratlantis_biome"
   },
   "BreedData": {
-    "breedable": true
+    "breedable": true,
+    "feedItem": "tag:forge:nuggets/oratchalcum",
+    "feedAmount": 1
   },
   "TraitData": {
     "hasTraits": false
