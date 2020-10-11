@@ -1,0 +1,57 @@
+
+[stone_wand]
+	#Wand durability
+	#Range: > 1
+	durability = 131
+	#Wand block limit
+	#Range: > 1
+	limit = 9
+	#Max placement distance with angel mode (0 to disable angel mode)
+	#Range: > 0
+	angel = 0
+
+[iron_wand]
+	#Wand durability
+	#Range: > 1
+	durability = 250
+	#Wand block limit
+	#Range: > 1
+	limit = 27
+	#Max placement distance with angel mode (0 to disable angel mode)
+	#Range: > 0
+	angel = 1
+
+[diamond_wand]
+	#Wand durability
+	#Range: > 1
+	durability = 1561
+	#Wand block limit
+	#Range: > 1
+	limit = 128
+	#Max placement distance with angel mode (0 to disable angel mode)
+	#Range: > 0
+	angel = 4
+
+[infinity_wand]
+	#Wand block limit
+	#Range: > 1
+	limit = 1024
+	#Max placement distance with angel mode (0 to disable angel mode)
+	#Range: > 0
+	angel = 8
+
+[misc]
+	#Number of operations that can be undone
+	#Range: > 0
+	UndoHistory = 5
+	#Maximum placement range (0: unlimited). Affects all wands and is meant for lag prevention, not game balancing.
+	#Range: > 0
+	MaxRange = 256
+	#Blocks to treat equally when in Similar mode. Enter block IDs seperated by ;
+	SimilarBlocks = ["minecraft:dirt;minecraft:grass_block;minecraft:coarse_dirt;minecraft:podzol;minecraft:mycelium;minecraft:farmland;minecraft:grass_path"]
+	#Block limit for Infinity Wand used in creative mode
+	#Range: > 1
+	InfinityWandCreative = 2048
+	#Place blocks below you while falling > 10 blocks with angel mode (Can be used to save you from drops/the void)
+	AngelFalling = false
+
