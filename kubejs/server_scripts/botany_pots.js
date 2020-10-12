@@ -446,8 +446,9 @@ events.listen('recipes', function (e) {
     t4('steel')
     t4('titanium')
     t4('tungsten')
-    t4('uranium')
     t4('enderium')
+    t4('compressed_iron')
+    t4('hop_graphite')
 
     //Tier 5 Crops
     t5('diamond')
@@ -457,6 +458,7 @@ events.listen('recipes', function (e) {
     t5('uraninite')
     t5('wither_skeleton')
     t5('platinum')
+    t5('uranium')
 
     //Tier 6 Crops
     t6('dragon_egg')
