@@ -1,0 +1,317 @@
+
+#ElementalCraft config
+[elementalcraft]
+
+	[elementalcraft.infusion]
+		#The bonus to sword attack speed provided by the air infusion.
+		#Range: 0.0 ~ 10.0
+		swordAirInfusionSpeedBonus = 0.8
+		#The bonus to movement speed provided by the air infusion.
+		#Range: 0.0 ~ 1.0
+		leggingsAirInfusionSpeedBonus = 0.01
+
+	#Shrines config
+	[elementalcraft.shrines]
+		#The max element amount a shrine can hold.
+		#Range: 0 ~ 100000000
+		shrineMaxAmount = 10000
+
+		[elementalcraft.shrines.firePylon]
+			#The range of the Fire Pylon.
+			#Range: 0 ~ 100
+			firePylonRange = 10
+			#The amount of element consumed by the Fire Pylon.
+			#Range: 0 ~ 100
+			firePylonConsumeAmount = 5
+
+		[elementalcraft.shrines.vacuumShrine]
+			#The range of the Vacuum Shrine.
+			#Range: 0 ~ 100
+			vacuumShrineRange = 10
+			#The amount of element consumed by the Vacuum Shrine.
+			#Range: 0 ~ 100
+			vacuumShrineConsumeAmount = 1
+			#The pull speed of the Vacuum Shrine.
+			#Range: 0.0 ~ 5.0
+			vacuumShrinePullSpeed = 0.1
+
+		[elementalcraft.shrines.growthShrine]
+			#The range of the Growth Shrine.
+			#Range: 0 ~ 100
+			growthShrineRange = 4
+			#The amount of element consumed by the Growth Shrine.
+			#Range: 0 ~ 1000
+			growthShrineConsumeAmount = 50
+			#The chance of the Growth Shrine to tick.
+			#Range: 0.0 ~ 1.0
+			growthShrineChance = 0.02
+			#The nember of tick betwenn two GFrowth Shrine activations.
+			#Range: 0.0 ~ 2400.0
+			growthShrinePeriode = 20.0
+
+		[elementalcraft.shrines.harvestShrine]
+			#The range of the Harvest Shrine.
+			#Range: 0 ~ 100
+			harvestShrineRange = 4
+			#The amount of element consumed by the Harvest Shrine.
+			#Range: 0 ~ 1000
+			harvestShrineConsumeAmount = 100
+			#The chance of the Harvest Shrine to tick.
+			#Range: 0.0 ~ 1.0
+			harvestShrineChance = 0.02
+			#The nember of tick betwenn two Harvest Shrine activations.
+			#Range: 0.0 ~ 2400.0
+			harvestShrinePeriode = 20.0
+
+		[elementalcraft.shrines.lavaShrine]
+			#The range of the Lava Shrine.
+			#Range: 0 ~ 100
+			lavaShrineRange = 1
+			#The amount of element consumed by the Lava Shrine.
+			#Range: 0 ~ 100000
+			lavaShrineConsumeAmount = 5000
+			#The chance of the Lava Shrine to tick.
+			#Range: 0.0 ~ 1.0
+			lavaShrineChance = 0.02
+			#The nember of tick betwenn two Lava Shrine activations.
+			#Range: 0.0 ~ 2400.0
+			lavaShrinePeriode = 20.0
+
+		[elementalcraft.shrines.oreShrine]
+			#The range of the Ore Shrine.
+			#Range: 0 ~ 100
+			oreShrineRange = 6
+			#The amount of element consumed by the Ore Shrine.
+			#Range: 0 ~ 10000
+			oreShrineConsumeAmount = 2000
+			#The nember of tick betwenn two Ore Shrine activations.
+			#Range: 0.0 ~ 2400.0
+			oreShrinePeriode = 200.0
+
+		[elementalcraft.shrines.overloadShrine]
+			#The amount of element consumed by the overload Shrine.
+			#Range: 0 ~ 1000
+			overloadShrineConsumeAmount = 100
+			#The nember of tick betwenn two Overload Shrine activations.
+			#Range: 0.0 ~ 2400.0
+			overloadShrinePeriode = 3.0
+
+		[elementalcraft.shrines.sweetShrine]
+			#The range of the Sweet Shrine.
+			#Range: 0 ~ 100
+			sweetShrineRange = 10
+			#The amount of element consumed by the Sweet Shrine.
+			#Range: 0 ~ 10000
+			sweetShrineConsumeAmount = 500
+			#The nember of tick betwenn two Sweet Shrine activations.
+			#Range: 0.0 ~ 2400.0
+			sweetShrinePeriode = 40.0
+
+		[elementalcraft.shrines.enderLock]
+			#The range of the Ender Lock Shrine.
+			#Range: 0 ~ 100
+			enderLockShrineRange = 10
+			#The amount of element consumed by the Ender Lock Shrine.
+			#Range: 0 ~ 10000
+			enderLockShrineConsumeAmount = 500
+
+	#Instruments config
+	[elementalcraft.instruments]
+		#Set to false if you want to manualy manage processing of pure ore.
+		pureOreSmeltingRecipeInjection = true
+		#Define if or not binder recip require to be ordered.
+		binderRecipeMatchOrder = true
+
+		[elementalcraft.instruments.tank]
+			#The max element amount a small element container can hold.
+			#Range: 0 ~ 100000000
+			tankSmallMaxAmount = 1000
+			#The max element amount an element container can hold.
+			#Range: 0 ~ 100000000
+			tankMaxAmount = 100000
+
+		[elementalcraft.instruments.extractor]
+			#The amount of element extracted by an extractor.
+			#Range: 0 ~ 100
+			extractorExtractionAmount = 5
+			#The amount of element extracted by an improved extractor.
+			#Range: 0 ~ 500
+			improvedExtractorExtractionAmount = 25
+
+		[elementalcraft.instruments.fireFurnace]
+			#The amount of element consumed by the Fire Furnace per tick.
+			#Range: 0 ~ 500
+			fireFurnaceConsumeAmount = 10
+			#The amount of element consumed by the Fire Blast Furnace per tick.
+			#Range: 0 ~ 500
+			fireBlastFurnaceConsumeAmount = 20
+
+		[elementalcraft.instruments.purifier]
+			#The amount of element consumed by the Ore Purifier per tick.
+			#Range: 0 ~ 1000
+			purifierConsumeAmount = 25
+			#The nember of tick for a Ore Purifier co procces one item.
+			#Range: 0 ~ 2400
+			purifierDuration = 100
+
+		[elementalcraft.instruments.elementPipe]
+			#The amount of element transferred by impaired pipes.
+			#Range: 0 ~ 10000
+			impairedPipeTransferAmount = 5
+			#The amount of element transferred by pipes.
+			#Range: 0 ~ 10000
+			pipeTransferAmount = 25
+			#The amount of element transferred by improved pipes.
+			#Range: 0 ~ 10000
+			improvedPipeTransferAmount = 100
+
+	#Items config
+	[elementalcraft.items]
+		#Define source receptacle durablility (0 for unbreakable).
+		#Range: 0 ~ 1000
+		receptacleDurability = 20
+		#The max element amount an element holder can hold.
+		#Range: 0 ~ 100000000
+		elementHolderMaxAmount = 10000
+		#The amount of element transfered by an element holder.
+		#Range: 0 ~ 1000
+		elementHolderTransferAmount = 25
+		#The max number of spells on a focus.
+		#Range: 1 ~ 20
+		focusMaxSpell = 10
+		#Players start the game with an elementopedia in their inventory.
+		playersSpawnWithBook = false
+
+	#Worldgen config
+	[elementalcraft.worldgen]
+		#Disable all elementalcraft world gen.
+		disableWorldGen = false
+		#Chance to add a source in world (the small the more frequante).
+		#Range: 1 ~ 10000
+		sourceSpawnChance = 20
+		#CSource Altar genreration distance setting.
+		#Range: 0 ~ 100
+		sourceAltarDistance = 16
+
+	#Spells config
+	[elementalcraft.spells]
+
+		[elementalcraft.spells.enderStrike]
+			#The amount of element consumed by the ender strike.
+			#Range: 0 ~ 10000
+			enderStrikeConsumeAmount = 1000
+			#The cooldown the ender strike.
+			#Range: 0 ~ 10000
+			enderStrikeCooldown = 60
+			#The range the ender strike.
+			#Range: 0.0 ~ 200.0
+			enderStrikeRange = 20.0
+
+		[elementalcraft.spells.itemPull]
+			#The amount of element consumed by the item pull.
+			#Range: 0 ~ 10000
+			itemPullConsumeAmount = 1000
+			#The cooldown the item pull.
+			#Range: 0 ~ 10000
+			itemPullCooldown = 200
+			#The range the item pull.
+			#Range: 0.0 ~ 200.0
+			itemPullRange = 10.0
+
+		[elementalcraft.spells.gravelFall]
+			#The amount of element consumed by the gravel fall.
+			#Range: 0 ~ 10000
+			gravelFallConsumeAmount = 250
+			#The cooldown the gravel fall.
+			#Range: 0 ~ 10000
+			gravelFallCooldown = 40
+
+		[elementalcraft.spells.stoneWall]
+			#The amount of element consumed by the stone wall.
+			#Range: 0 ~ 10000
+			stoneWallConsumeAmount = 500
+			#The cooldown the stone wall.
+			#Range: 0 ~ 10000
+			stoneWallCooldown = 100
+
+		[elementalcraft.spells.fireBall]
+			#The amount of element consumed by the fire ball.
+			#Range: 0 ~ 10000
+			fireBallConsumeAmount = 500
+			#The cooldown the fire ball.
+			#Range: 0 ~ 10000
+			fireBallCooldown = 100
+
+		[elementalcraft.spells.animalGrowth]
+			#The amount of element consumed by the animal growth.
+			#Range: 0 ~ 10000
+			animalGrowthConsumeAmount = 2000
+			#The cooldown the animal growth.
+			#Range: 0 ~ 10000
+			animalGrowthCooldown = 200
+
+		[elementalcraft.spells.treeFall]
+			#The amount of element consumed by the tree fall.
+			#Range: 0 ~ 10000
+			treeFallConsumeAmount = 3000
+			#The cooldown the tree fall.
+			#Range: 0 ~ 10000
+			treeFallCooldown = 600
+
+		[elementalcraft.spells.purification]
+			#The amount of element consumed by the purification.
+			#Range: 0 ~ 10000
+			purificationConsumeAmount = 1000
+			#The cooldown the purification.
+			#Range: 0 ~ 10000
+			purificationCooldown = 200
+
+		[elementalcraft.spells.ripening]
+			#The amount of element consumed by the ripening.
+			#Range: 0 ~ 10000
+			ripeningConsumeAmount = 200
+			#The cooldown the ripening.
+			#Range: 0 ~ 10000
+			ripeningCooldown = 20
+
+		[elementalcraft.spells.flameCleave]
+			#The amount of element consumed by the flame Cleave.
+			#Range: 0 ~ 10000
+			flameCleaveConsumeAmount = 1000
+			#The cooldown the flame Cleave.
+			#Range: 0 ~ 10000
+			flameCleaveCooldown = 60
+			#The range the flame Cleave.
+			#Range: 0.0 ~ 20.0
+			flameCleaveRange = 3.0
+
+		[elementalcraft.spells.inferno]
+			#The amount of element consumed by the inferno.
+			#Range: 0 ~ 10000
+			infernoConsumeAmount = 10
+			#The cooldown the inferno.
+			#Range: 0 ~ 10000
+			infernoCooldown = 120
+			#The range the inferno.
+			#Range: 0.0 ~ 20.0
+			infernoRange = 5.0
+
+		[elementalcraft.spells.dash]
+			#The amount of element consumed by the dash.
+			#Range: 0 ~ 10000
+			dashConsumeAmount = 400
+			#The cooldown the dash.
+			#Range: 0 ~ 10000
+			dashCooldown = 40
+			#The range the dash.
+			#Range: 0.0 ~ 200.0
+			dashRange = 6.0
+
+		[elementalcraft.spells.heal]
+			#The amount of element consumed by the heal.
+			#Range: 0 ~ 10000
+			healConsumeAmount = 1000
+			#The cooldown the heal.
+			#Range: 0 ~ 10000
+			healCooldown = 600
+
