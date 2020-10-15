@@ -757,6 +757,211 @@ events.listen('recipes', function (e) {
         maxRolls: 1
     })
 
+    // Biomes You'll Go trees
+    growTree('byg', 'aspen')
+    growTree('byg', 'baobab')
+    growTree('byg', 'blue_enchanted')
+    growTreeExtraBoP('byg', 'pink_cherry', {
+        chance: 0.50,
+        output: {
+            item: 'byg:cherry_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'white_cherry', {
+        chance: 0.50,
+        output: {
+            item: 'byg:cherry_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTree('byg', 'cika')
+    growTree('byg', 'cypress')
+    growTree('byg', 'ebony')
+    growTree('byg', 'fir')
+    growTree('byg', 'green_enchanted')
+    growTreeExtra('byg', 'holly', {
+        chance: 0.01,
+        output: {
+            item: 'byg:holly_berries'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTree('byg', 'jacaranda')
+    growTreeExtraBoP('byg', 'indigo_jacaranda', {
+        chance: 0.50,
+        output: {
+            item: 'byg:jacaranda_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTree('byg', 'mahogany')
+    growTree('byg', 'mangrove')
+    growTree('byg', 'maple')
+    growTreeExtraBoP('byg', 'red_maple', {
+        chance: 0.50,
+        output: {
+            item: 'byg:maple_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'silver_maple', {
+        chance: 0.50,
+        output: {
+            item: 'byg:maple_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTree('byg', 'palo_verde')
+    growTree('byg', 'pine')
+    growTree('byg', 'rainbow_eucalyptus')
+    growTree('byg', 'redwood')
+    growTreeExtra('byg', 'skyris', {
+        chance: 0.01,
+        output: {
+            item: 'byg:green_apple'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTree('byg', 'willow')
+    growTree('byg', 'witch_hazel')
+    growTree('byg', 'zelkova')
+    growTreeExtraBoP('byg', 'blue_spruce', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:spruce_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'brown_birch', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:birch_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'brown_oak', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:dark_oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'joshua', {
+                chance: 0.50,
+                output: {
+                    item: 'minecraft:oak_log'
+                },
+                minRolls: 1,
+                maxRolls: 1
+            },
+            {
+                chance: 0.01,
+                output: {
+                    item: 'byg:joshua_fruit'
+                },
+                minRolls: 1,
+                maxRolls: 1
+            })
+    growTreeExtraBoP('byg', 'orange_birch', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:birch_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'orange_oak', {
+                chance: 0.50,
+                output: {
+                    item: 'minecraft:oak_log'
+                },
+                minRolls: 1,
+                maxRolls: 1
+            },
+            {
+                chance: 0.01,
+                output: {
+                    item: 'minecraft:apple'
+                },
+                minRolls: 1,
+                maxRolls: 1
+            })
+    growTreeExtraBoP('byg', 'orange_spruce', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:spruce_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'orchard', {
+                chance: 0.50,
+                output: {
+                    item: 'minecraft:oak_log'
+                },
+                minRolls: 1,
+                maxRolls: 1
+            },
+            {
+                chance: 0.50,
+                output: {
+                    item: 'minecraft:apple'
+                },
+                minRolls: 1,
+                maxRolls: 1
+            })
+    growTreeExtraBoP('byg', 'red_birch', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:birch_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'red_oak', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'red_spruce', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:spruce_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'yellow_birch', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:birch_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeExtraBoP('byg', 'yellow_spruce', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:spruce_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+
     //Misc crops
     function miscCrop(mod, name, seed) {
         e.recipes.botanypots.crop({
