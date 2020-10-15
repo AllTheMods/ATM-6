@@ -510,7 +510,7 @@ events.listen('recipes', function (e) {
         })
     }
 
-    function growTreeExtra(mod, name, extra) {
+    function growTreeExtra(mod, name, ...extra) {
         e.recipes.botanypots.crop({
             seed: {
                 item: mod + ':' + name + '_sapling'
@@ -546,12 +546,12 @@ events.listen('recipes', function (e) {
                     minRolls: 1,
                     maxRolls: 2
                 },
-                extra
+                ...extra
             ]
         })
     }
 
-    function growTreeExtraBoP(mod, name, extra) {
+    function growTreeExtraBoP(mod, name, ...extra) {
         e.recipes.botanypots.crop({
             seed: {
                 item: mod + ':' + name + '_sapling'
@@ -579,7 +579,7 @@ events.listen('recipes', function (e) {
                     minRolls: 1,
                     maxRolls: 2
                 },
-                extra
+                ...extra
             ]
         })
     }
