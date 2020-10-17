@@ -1,0 +1,808 @@
+{
+    reactorModerators: [
+        {
+            /* 
+             * Default: minecraft:air
+             */
+            location: "minecraft:air",
+
+            /* 
+             * Default: REGISTRY
+             * Allowed Values: REGISTRY, TAG, 
+             */
+            locationType: "REGISTRY",
+
+            /* 
+             * Default: 0.1
+             */
+            absorption: 0.1,
+
+            /* 
+             * Default: 0.25
+             */
+            heatEfficiency: 0.25,
+
+            /* 
+             * Default: 1.1
+             */
+            moderation: 1.1,
+
+            /* 
+             * Default: 0.05
+             */
+            conductivity: 0.05,
+
+        },
+
+        {
+            location: "minecraft:iron_block",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.5,
+
+            heatEfficiency: 0.75,
+
+            moderation: 1.4,
+
+            conductivity: 0.6,
+
+        },
+
+        {
+            location: "minecraft:gold_block",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.52,
+
+            heatEfficiency: 0.8,
+
+            moderation: 1.45,
+
+            conductivity: 2.0,
+
+        },
+
+        {
+            location: "minecraft:diamond_block",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.55,
+
+            heatEfficiency: 0.85,
+
+            moderation: 1.5,
+
+            conductivity: 3.0,
+
+        },
+
+        {
+            location: "minecraft:emerald_block",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.55,
+
+            heatEfficiency: 0.85,
+
+            moderation: 1.5,
+
+            conductivity: 2.5,
+
+        },
+
+        {
+            location: "minecraft:glass",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.2,
+
+            heatEfficiency: 0.25,
+
+            moderation: 1.1,
+
+            conductivity: 0.3,
+
+        },
+
+        {
+            location: "minecraft:ice",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.33,
+
+            heatEfficiency: 0.33,
+
+            moderation: 1.15,
+
+            conductivity: 0.1,
+
+        },
+
+        {
+            location: "minecraft:snow_block",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.15,
+
+            heatEfficiency: 0.33,
+
+            moderation: 1.05,
+
+            conductivity: 0.05,
+
+        },
+
+        {
+            location: "forge:storage_blocks/copper",
+
+            locationType: "TAG",
+
+            absorption: 0.5,
+
+            heatEfficiency: 0.75,
+
+            moderation: 1.4,
+
+            conductivity: 1.0,
+
+        },
+
+        {
+            location: "forge:storage_blocks/bronze",
+
+            locationType: "TAG",
+
+            absorption: 0.51,
+
+            heatEfficiency: 0.77,
+
+            moderation: 1.41,
+
+            conductivity: 1.0,
+
+        },
+
+        {
+            location: "forge:storage_blocks/invar",
+
+            locationType: "TAG",
+
+            absorption: 0.5,
+
+            heatEfficiency: 0.79,
+
+            moderation: 1.43,
+
+            conductivity: 0.6,
+
+        },
+
+        {
+            location: "forge:storage_blocks/silver",
+
+            locationType: "TAG",
+
+            absorption: 0.51,
+
+            heatEfficiency: 0.79,
+
+            moderation: 1.43,
+
+            conductivity: 1.5,
+
+        },
+
+        {
+            location: "forge:storage_blocks/lead",
+
+            locationType: "TAG",
+
+            absorption: 0.75,
+
+            heatEfficiency: 0.75,
+
+            moderation: 1.75,
+
+            conductivity: 1.5,
+
+        },
+
+        {
+            location: "forge:storage_blocks/electrum",
+
+            locationType: "TAG",
+
+            absorption: 0.75,
+
+            heatEfficiency: 0.75,
+
+            moderation: 1.75,
+
+            conductivity: 1.5,
+
+        },
+
+        {
+            location: "forge:storage_blocks/enderium",
+
+            locationType: "TAG",
+
+            absorption: 0.53,
+
+            heatEfficiency: 0.88,
+
+            moderation: 1.6,
+
+            conductivity: 3.0,
+
+        },
+
+        {
+            location: "minecraft:water",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.33,
+
+            heatEfficiency: 0.5,
+
+            moderation: 1.33,
+
+            conductivity: 0.1,
+
+        },
+
+        {
+            location: "biggerreactors:graphite_block",
+
+            locationType: "REGISTRY",
+
+            absorption: 0.1,
+
+            heatEfficiency: 0.5,
+
+            moderation: 2.0,
+
+            conductivity: 2.0,
+
+        },
+
+    ],
+
+    turbineCoils: [
+        {
+            /* 
+             * Default: minecraft:iron_block
+             */
+            location: "minecraft:iron_block",
+
+            /* 
+             * Default: REGISTRY
+             * Allowed Values: REGISTRY, TAG, 
+             */
+            locationType: "REGISTRY",
+
+            /* 
+             * Default: 0.33
+             */
+            efficiency: 0.33,
+
+            /* 
+             * Default: 0.1
+             */
+            extractionRate: 0.1,
+
+            /* 
+             * Default: 1.0
+             */
+            bonus: 1.0,
+
+        },
+
+        {
+            location: "minecraft:gold_block",
+
+            locationType: "REGISTRY",
+
+            efficiency: 0.66,
+
+            extractionRate: 0.175,
+
+            bonus: 1.0,
+
+        },
+
+        {
+            location: "biggerreactors:ludicrite_block",
+
+            locationType: "REGISTRY",
+
+            efficiency: 1.155,
+
+            extractionRate: 0.35,
+
+            bonus: 1.02,
+
+        },
+
+        {
+            location: "forge:storage_blocks/copper",
+
+            locationType: "TAG",
+
+            efficiency: 0.396,
+
+            extractionRate: 0.12,
+
+            bonus: 1.0,
+
+        },
+
+        {
+            location: "forge:storage_blocks/invar",
+
+            locationType: "TAG",
+
+            efficiency: 0.495,
+
+            extractionRate: 0.14,
+
+            bonus: 1.0,
+
+        },
+
+        {
+            location: "forge:storage_blocks/silver",
+
+            locationType: "TAG",
+
+            efficiency: 0.561,
+
+            extractionRate: 0.15,
+
+            bonus: 1.0,
+
+        },
+
+        {
+            location: "forge:storage_blocks/electrum",
+
+            locationType: "TAG",
+
+            efficiency: 0.825,
+
+            extractionRate: 0.2,
+
+            bonus: 1.0,
+
+        },
+
+        {
+            location: "forge:storage_blocks/enderium",
+
+            locationType: "TAG",
+
+            efficiency: 0.99,
+
+            extractionRate: 0.3,
+
+            bonus: 1.02,
+
+        },
+
+    ],
+
+    TurbineCoilConfigValues: {
+    },
+
+    ReactorModeratorConfigValues: {
+    },
+
+    CyaniteReprocessor: {
+        /* 
+         * Max transfer rate of fluids and energy.
+         * Min: 1
+         * Default: 500
+         */
+        TransferRate: 500,
+
+        /* 
+         * Max energy capacity.
+         * Min: 1
+         * Default: 5000
+         */
+        EnergyTankCapacity: 5000,
+
+        /* 
+         * Max water capacity
+         * Min: 1
+         * Default: 5000
+         */
+        WaterTankCapacity: 5000,
+
+        /* 
+         * Power usage per tick of work.
+         * Min: 0
+         * Default: 1
+         */
+        EnergyConsumptionPerTick: 1,
+
+        /* 
+         * Water usage per tick of work.
+         * Min: 0
+         * Default: 1
+         */
+        WaterConsumptionPerTick: 1,
+
+        /* 
+         * Time (in ticks) it takes to complete a job.
+         * Min: 0
+         * Default: 200
+         */
+        TotalWorkTime: 200,
+
+    },
+
+    Turbine: {
+        /* 
+         * Min: 5
+         * Max: 32
+         * Default: 32
+         */
+        MaxLength: 32,
+
+        /* 
+         * Min: 5
+         * Max: 32
+         * Default: 32
+         */
+        MaxWidth: 32,
+
+        /* 
+         * Min: 4
+         * Max: 48
+         * Default: 48
+         */
+        MaxHeight: 48,
+
+        /* 
+         * Min: 1
+         * Default: 4000
+         */
+        TankSize: 4000,
+
+        /* 
+         * Min: 1
+         * Default: 2000
+         */
+        MaxFlow: 2000,
+
+        /* 
+         * Min: 1
+         * Default: 25
+         */
+        FluidPerBlade: 25,
+
+        /* 
+         * Min: 1
+         * Default: 10
+         */
+        SteamCondensationEnergy: 10,
+
+        /* 
+         * Min: 1
+         * Default: 10
+         */
+        RotorMassPerPart: 10,
+
+        /* 
+         * Min: 0
+         * Default: 0.01
+         */
+        MassDragMultiplier: 0.01,
+
+        /* 
+         * Min: 0
+         * Default: 2.5E-5
+         */
+        BladeDragMultiplier: 2.5E-5,
+
+        /* 
+         * Min: 0
+         * Default: 1.0
+         */
+        CoilDragMultiplier: 1.0,
+
+        /* 
+         * Min: 0
+         * Default: 1000000
+         */
+        BatterySize: 1000000,
+
+    },
+
+    Reactor: {
+        /* 
+         * Min: 3
+         * Max: 32
+         * Default: 32
+         */
+        MaxLength: 32,
+
+        /* 
+         * Min: 3
+         * Max: 32
+         * Default: 32
+         */
+        MaxWidth: 32,
+
+        /* 
+         * Min: 3
+         * Max: 48
+         * Default: 48
+         */
+        MaxHeight: 48,
+
+        /* 
+         * Min: 0
+         * Default: 1.0
+         */
+        FuelUsageMultiplier: 1.0,
+
+        /* 
+         * Min: 0
+         * Default: 0.5
+         */
+        PowerOutputMultiplier: 0.5,
+
+        /* 
+         * Min: 0
+         * Default: 20.0
+         */
+        AmbientTemperature: 20.0,
+
+        /* 
+         * Min: 1
+         * Default: 4000
+         */
+        PerFuelRodCapacity: 4000,
+
+        /* 
+         * Min: 0
+         * Default: 0.1
+         */
+        FuelFertilityMinimumDecay: 0.1,
+
+        /* 
+         * Min: 0
+         * Default: 20.0
+         */
+        FuelFertilityDecayDenominator: 20.0,
+
+        /* 
+         * Min: 0
+         * Default: 200.0
+         */
+        FuelFertilityDecayDenominatorInactiveMultiplier: 200.0,
+
+        /* 
+         * Min: 0
+         * Default: 1.05
+         */
+        FuelReactivity: 1.05,
+
+        /* 
+         * Min: 0
+         * Default: 0.009999999776482582
+         */
+        FissionEventsPerFuelUnit: 0.009999999776482582,
+
+        /* 
+         * Min: 0
+         * Default: 10.0
+         */
+        FEPerRadiationUnit: 10.0,
+
+        /* 
+         * Min: 0
+         * Default: 7.0E-4
+         */
+        FuelPerRadiationUnit: 7.0E-4,
+
+        /* 
+         * Min: 0
+         * Default: 4
+         */
+        IrradiationDistance: 4,
+
+        /* 
+         * Min: 0
+         * Default: 1.0
+         */
+        FuelHardnessDivisor: 1.0,
+
+        /* 
+         * Min: 0
+         * Max: 1
+         * Default: 0.5
+         */
+        FuelAbsorptionCoefficient: 0.5,
+
+        /* 
+         * Min: 1
+         * Default: 1.5
+         */
+        FuelModerationFactor: 1.5,
+
+        /* 
+         * Min: 0
+         * Default: 10.0
+         */
+        FEPerCentigradePerUnitVolume: 10.0,
+
+        /* 
+         * Min: 0
+         * Default: 1.0
+         */
+        FuelToCasingTransferCoefficientMultiplier: 1.0,
+
+        /* 
+         * Min: 0
+         * Default: 0.6
+         */
+        CasingToCoolantSystemCoefficientMultiplier: 0.6,
+
+        /* 
+         * Min: 0
+         * Default: 0.001
+         */
+        HeatLossCoefficientMultiplier: 0.001,
+
+        /* 
+         * Min: 0
+         * Default: 0.2
+         */
+        PassiveCoolingTransferEfficiency: 0.2,
+
+        /* 
+         * Min: 0
+         * Default: 0.6
+         */
+        CasingHeatTransferCoefficient: 0.6,
+
+        /* 
+         * Min: 0
+         * Default: 1.0
+         */
+        FuelRodHeatTransferCoefficient: 1.0,
+
+        /* 
+         * Min: 0
+         * Default: 10000000
+         */
+        PassiveBatterySize: 10000000,
+
+        /* 
+         * Min: 1
+         * Default: 1000
+         */
+        FuelMBPerIngot: 1000,
+
+        /* 
+         * Min: 0
+         * Default: 50000
+         */
+        MaxActiveTankSize: 50000,
+
+        /* 
+         * Min: 0
+         * Default: 100
+         */
+        CoolantTankAmountPerExternalBlock: 100,
+
+        /* 
+         * Min: 0
+         * Default: 100.0
+         */
+        CoolantBoilingPoint: 100.0,
+
+        /* 
+         * Min: 0
+         * Default: 4.0
+         */
+        CoolantVaporizationEnergy: 4.0,
+
+        /* 
+         * Min: 0
+         * Max: 1
+         * Default: 0.95
+         */
+        RadIntensityScalingMultiplier: 0.95,
+
+        /* 
+         * Min: 0
+         * Default: 1.2
+         */
+        RadIntensityScalingRateExponentMultiplier: 1.2,
+
+        /* 
+         * Min: 1
+         * Default: 1.0
+         */
+        RadIntensityScalingShiftMultiplier: 1.0,
+
+        /* 
+         * Min: 0
+         * Default: 15.0
+         */
+        RadPenaltyShiftMultiplier: 15.0,
+
+        /* 
+         * Min: 0
+         * Default: 2.5
+         */
+        RadPenaltyRateMultiplier: 2.5,
+
+        /* 
+         * Min: 0
+         * Max: 1
+         * Default: 0.95
+         */
+        FuelAbsorptionScalingMultiplier: 0.95,
+
+        /* 
+         * Min: 1
+         * Default: 1.0
+         */
+        FuelAbsorptionScalingShiftMultiplier: 1.0,
+
+        /* 
+         * Min: 0
+         * Default: 2.2
+         */
+        FuelAbsorptionScalingRateExponentMultiplier: 2.2,
+
+        GUI: {
+            /* 
+             * Default: 2000
+             */
+            HeatDisplayMax: 2000,
+
+        },
+
+    },
+
+    WorldGen: {
+        /* 
+         * Min: 1
+         * Default: 5
+         */
+        YelloriteOreMaxClustersPerChunk: 5,
+
+        /* 
+         * Min: 1
+         * Default: 10
+         */
+        YelloriteMaxOrePerCluster: 10,
+
+        /* 
+         * Min: 5
+         * Default: 50
+         */
+        YelloriteOreMaxSpawnY: 50,
+
+        /* 
+         * Default: true
+         */
+        EnableYelloriteGeneration: false,
+
+    },
+
+}
