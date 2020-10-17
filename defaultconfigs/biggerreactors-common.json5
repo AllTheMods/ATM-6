@@ -1,29 +1,9 @@
 {
-    
     WorldGen: {
-        /* 
-         * Min: 1
-         * Default: 5
-         */
-        YelloriteOreMaxClustersPerChunk: 5,
-
-        /* 
-         * Min: 1
-         * Default: 10
-         */
-        YelloriteMaxOrePerCluster: 10,
-
-        /* 
-         * Min: 5
-         * Default: 50
-         */
-        YelloriteOreMaxSpawnY: 50,
-
         /* 
          * Default: true
          */
         EnableYelloriteGeneration: false,
-
     },
 
 }
