@@ -58,11 +58,11 @@
 
 	[Commands.kickall]
 		#Enable command: /kickall
-		enable = true
+		enable = false
 
 	[Commands.weather]
 		#Enable commands: /sun, /rain, /thunder
-		enable = true
+		enable = false
 
 	[Commands.heal]
 		#Enable command: /heal
@@ -90,7 +90,7 @@
 
 	[Commands.tempban]
 		#Enable command: /check
-		enable = true
+		enable = false
 
 	[Commands.rndtp]
 		#Range: > 0
@@ -116,12 +116,12 @@
 
 	[Commands.gm]
 		#Enable command: /gm
-		enable = true
+		enable = false
 
 	[Commands.suicide]
-		enable_player = true
+		enable_player = false
 		#Enable command: /suicide
-		enable = true
+		enable = false
 		#Range: > 0
 		cooldown_player = 20
 
@@ -132,7 +132,7 @@
 
 	[Commands.mute]
 		#Enable commands: /mute, /unmute
-		enable = true
+		enable = false
 
 	[Commands.kits]
 		#Enable command: /kit
@@ -142,11 +142,11 @@
 
 	[Commands.trash]
 		#Enable command: /trash
-		enable = true
+		enable = false
 
 	[Commands.invsee]
 		#Enable command: /invsee
-		enable = true
+		enable = false
 
 	[Commands.fly]
 		#Enable command: /fly
@@ -154,7 +154,7 @@
 
 	[Commands.tpall]
 		#Enable command: /tpall
-		enable = true
+		enable = false
 
 	[Commands.spawn]
 		#Range: > 0
@@ -167,9 +167,9 @@
 
 	[Commands.time]
 		#Enable commands: /day, /night
-		enable = true
+		enable = false
 
 	[Commands.god]
 		#Enable command: /god
-		enable = true
+		enable = false
 
