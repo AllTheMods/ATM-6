@@ -470,47 +470,7 @@ events.listen('recipes', function (e) {
     t7('unobtainium')
 
     //Botanypots tree functions
-    function growTree(mod, name) {
-        e.recipes.botanypots.crop({
-            seed: {
-                item: mod + ':' + name + '_sapling'
-            },
-            categories: [
-                'dirt'
-            ],
-            growthTicks: 2400,
-            display: {
-                block: mod + ':' + name + '_sapling'
-            },
-            results: [{
-                    chance: 0.5,
-                    output: {
-                        item: mod + ':' + name + '_log'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.1,
-                    output: {
-                        item: 'minecraft:stick'
-                    },
-                    minRolls: 1,
-                    maxRolls: 2
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: mod + ':' + name + '_sapling'
-                    },
-                    minRolls: 1,
-                    maxRolls: 2
-                }
-            ]
-        })
-    }
-
-    function growTreeExtra(mod, name, ...extra) {
+    function growTree(mod, name, ...extra) {
         e.recipes.botanypots.crop({
             seed: {
                 item: mod + ':' + name + '_sapling'
@@ -551,7 +511,7 @@ events.listen('recipes', function (e) {
         })
     }
 
-    function growTreeExtraBoP(mod, name, ...extra) {
+    function growTreeSnowflake(mod, name, ...extra) {
         e.recipes.botanypots.crop({
             seed: {
                 item: mod + ':' + name + '_sapling'
@@ -623,7 +583,7 @@ events.listen('recipes', function (e) {
             ]
         })
     }
-    growTreeExtra('minecraft', 'oak', {
+    growTree('minecraft', 'oak', {
         chance: 0.01,
         output: {
             item: 'minecraft:apple'
@@ -631,7 +591,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('minecraft', 'dark_oak', {
+    growTree('minecraft', 'dark_oak', {
         chance: 0.01,
         output: {
             item: 'minecraft:apple'
@@ -639,7 +599,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('minecraft', 'jungle', {
+    growTree('minecraft', 'jungle', {
         chance: 0.01,
         output: {
             item: 'minecraft:cocoa_beans'
@@ -647,7 +607,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('forbidden_arcanus', 'cherrywood', {
+    growTree('forbidden_arcanus', 'cherrywood', {
         chance: 0.01,
         output: {
             item: 'forbidden_arcanus:cherry_peach'
@@ -655,7 +615,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtra('forbidden_arcanus', 'mysterywood', {
+    growTree('forbidden_arcanus', 'mysterywood', {
         chance: 0.01,
         output: {
             item: 'minecraft:golden_apple'
@@ -666,6 +626,14 @@ events.listen('recipes', function (e) {
     growTree('minecraft', 'acacia')
     growTree('minecraft', 'birch')
     growTree('minecraft', 'spruce')
+    growTree('silentgear', 'netherwood', {
+        "chance": 0.01,
+        "output": {
+            "item": "silentgear:nether_banana"
+        },
+        "minRolls": 1,
+        "maxRolls": 1
+    })
     /*
     growTree('quark', 'blue_blossom')
     growTree('quark', 'lavender_blossom')
@@ -692,7 +660,7 @@ events.listen('recipes', function (e) {
     growTree('biomesoplenty', 'redwood')
     growTree('biomesoplenty', 'umbran')
     growTree('biomesoplenty', 'willow')
-    growTreeExtraBoP('biomesoplenty', 'flowering_oak', {
+    growTreeSnowflake('biomesoplenty', 'flowering_oak', {
         chance: 0.50,
         output: {
             item: 'minecraft:oak_log'
@@ -700,7 +668,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'maple', {
+    growTreeSnowflake('biomesoplenty', 'maple', {
         chance: 0.50,
         output: {
             item: 'minecraft:oak_log'
@@ -708,7 +676,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'orange_autumn', {
+    growTreeSnowflake('biomesoplenty', 'orange_autumn', {
         chance: 0.50,
         output: {
             item: 'minecraft:dark_oak_log'
@@ -716,7 +684,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'origin', {
+    growTreeSnowflake('biomesoplenty', 'origin', {
         chance: 0.50,
         output: {
             item: 'minecraft:oak_log'
@@ -724,7 +692,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'pink_cherry', {
+    growTreeSnowflake('biomesoplenty', 'pink_cherry', {
         chance: 0.50,
         output: {
             item: 'biomesoplenty:cherry_log'
@@ -732,7 +700,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'rainbow_birch', {
+    growTreeSnowflake('biomesoplenty', 'rainbow_birch', {
         chance: 0.50,
         output: {
             item: 'minecraft:birch_log'
@@ -740,7 +708,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'white_cherry', {
+    growTreeSnowflake('biomesoplenty', 'white_cherry', {
         chance: 0.50,
         output: {
             item: 'biomesoplenty:cherry_log'
@@ -748,7 +716,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('biomesoplenty', 'yellow_autumn', {
+    growTreeSnowflake('biomesoplenty', 'yellow_autumn', {
         chance: 0.50,
         output: {
             item: 'minecraft:birch_log'
@@ -761,7 +729,7 @@ events.listen('recipes', function (e) {
     growTree('byg', 'aspen')
     growTree('byg', 'baobab')
     growTree('byg', 'blue_enchanted')
-    growTreeExtraBoP('byg', 'pink_cherry', {
+    growTreeSnowflake('byg', 'pink_cherry', {
         chance: 0.50,
         output: {
             item: 'byg:cherry_log'
@@ -769,7 +737,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'white_cherry', {
+    growTreeSnowflake('byg', 'white_cherry', {
         chance: 0.50,
         output: {
             item: 'byg:cherry_log'
@@ -782,7 +750,7 @@ events.listen('recipes', function (e) {
     growTree('byg', 'ebony')
     growTree('byg', 'fir')
     growTree('byg', 'green_enchanted')
-    growTreeExtra('byg', 'holly', {
+    growTree('byg', 'holly', {
         chance: 0.01,
         output: {
             item: 'byg:holly_berries'
@@ -791,7 +759,7 @@ events.listen('recipes', function (e) {
         maxRolls: 1
     })
     growTree('byg', 'jacaranda')
-    growTreeExtraBoP('byg', 'indigo_jacaranda', {
+    growTreeSnowflake('byg', 'indigo_jacaranda', {
         chance: 0.50,
         output: {
             item: 'byg:jacaranda_log'
@@ -802,7 +770,7 @@ events.listen('recipes', function (e) {
     growTree('byg', 'mahogany')
     growTree('byg', 'mangrove')
     growTree('byg', 'maple')
-    growTreeExtraBoP('byg', 'red_maple', {
+    growTreeSnowflake('byg', 'red_maple', {
         chance: 0.50,
         output: {
             item: 'byg:maple_log'
@@ -810,7 +778,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'silver_maple', {
+    growTreeSnowflake('byg', 'silver_maple', {
         chance: 0.50,
         output: {
             item: 'byg:maple_log'
@@ -822,7 +790,7 @@ events.listen('recipes', function (e) {
     growTree('byg', 'pine')
     growTree('byg', 'rainbow_eucalyptus')
     growTree('byg', 'redwood')
-    growTreeExtra('byg', 'skyris', {
+    growTree('byg', 'skyris', {
         chance: 0.01,
         output: {
             item: 'byg:green_apple'
@@ -833,7 +801,7 @@ events.listen('recipes', function (e) {
     growTree('byg', 'willow')
     growTree('byg', 'witch_hazel')
     growTree('byg', 'zelkova')
-    growTreeExtraBoP('byg', 'blue_spruce', {
+    growTreeSnowflake('byg', 'blue_spruce', {
         chance: 0.50,
         output: {
             item: 'minecraft:spruce_log'
@@ -841,7 +809,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'brown_birch', {
+    growTreeSnowflake('byg', 'brown_birch', {
         chance: 0.50,
         output: {
             item: 'minecraft:birch_log'
@@ -849,7 +817,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'brown_oak', {
+    growTreeSnowflake('byg', 'brown_oak', {
         chance: 0.50,
         output: {
             item: 'minecraft:dark_oak_log'
@@ -857,23 +825,22 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'joshua', {
-                chance: 0.50,
-                output: {
-                    item: 'minecraft:oak_log'
-                },
-                minRolls: 1,
-                maxRolls: 1
-            },
-            {
-                chance: 0.01,
-                output: {
-                    item: 'byg:joshua_fruit'
-                },
-                minRolls: 1,
-                maxRolls: 1
-            })
-    growTreeExtraBoP('byg', 'orange_birch', {
+    growTreeSnowflake('byg', 'joshua', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    }, {
+        chance: 0.01,
+        output: {
+            item: 'byg:joshua_fruit'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeSnowflake('byg', 'orange_birch', {
         chance: 0.50,
         output: {
             item: 'minecraft:birch_log'
@@ -881,23 +848,22 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'orange_oak', {
-                chance: 0.50,
-                output: {
-                    item: 'minecraft:oak_log'
-                },
-                minRolls: 1,
-                maxRolls: 1
-            },
-            {
-                chance: 0.01,
-                output: {
-                    item: 'minecraft:apple'
-                },
-                minRolls: 1,
-                maxRolls: 1
-            })
-    growTreeExtraBoP('byg', 'orange_spruce', {
+    growTreeSnowflake('byg', 'orange_oak', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    }, {
+        chance: 0.01,
+        output: {
+            item: 'minecraft:apple'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeSnowflake('byg', 'orange_spruce', {
         chance: 0.50,
         output: {
             item: 'minecraft:spruce_log'
@@ -905,23 +871,22 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'orchard', {
-                chance: 0.50,
-                output: {
-                    item: 'minecraft:oak_log'
-                },
-                minRolls: 1,
-                maxRolls: 1
-            },
-            {
-                chance: 0.50,
-                output: {
-                    item: 'minecraft:apple'
-                },
-                minRolls: 1,
-                maxRolls: 1
-            })
-    growTreeExtraBoP('byg', 'red_birch', {
+    growTreeSnowflake('byg', 'orchard', {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:oak_log'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    }, {
+        chance: 0.50,
+        output: {
+            item: 'minecraft:apple'
+        },
+        minRolls: 1,
+        maxRolls: 1
+    })
+    growTreeSnowflake('byg', 'red_birch', {
         chance: 0.50,
         output: {
             item: 'minecraft:birch_log'
@@ -929,7 +894,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'red_oak', {
+    growTreeSnowflake('byg', 'red_oak', {
         chance: 0.50,
         output: {
             item: 'minecraft:oak_log'
@@ -937,7 +902,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'red_spruce', {
+    growTreeSnowflake('byg', 'red_spruce', {
         chance: 0.50,
         output: {
             item: 'minecraft:spruce_log'
@@ -945,7 +910,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'yellow_birch', {
+    growTreeSnowflake('byg', 'yellow_birch', {
         chance: 0.50,
         output: {
             item: 'minecraft:birch_log'
@@ -953,7 +918,7 @@ events.listen('recipes', function (e) {
         minRolls: 1,
         maxRolls: 1
     })
-    growTreeExtraBoP('byg', 'yellow_spruce', {
+    growTreeSnowflake('byg', 'yellow_spruce', {
         chance: 0.50,
         output: {
             item: 'minecraft:spruce_log'
