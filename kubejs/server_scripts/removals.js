@@ -8,7 +8,8 @@ events.listen('recipes', function (e) {
       'fluidtank:fluid_source',
       'fluidtank:pipe',
       'fluidtank:item_pipe',
-      'forbidden_arcanus:rotten_leather'
+      'forbidden_arcanus:rotten_leather',
+      'xreliquary:alkahestry_tome'
     ]
   })
   e.remove({
@@ -24,5 +25,8 @@ events.listen('recipes', function (e) {
   })
   e.remove({
     id: 'forbidden_arcanus:leather'
+  })
+  e.remove({
+    id: 'xreliquary:alkahestry_tome'
   })
 })
