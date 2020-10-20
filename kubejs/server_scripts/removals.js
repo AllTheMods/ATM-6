@@ -26,7 +26,4 @@ events.listen('recipes', function (e) {
   e.remove({
     id: 'forbidden_arcanus:leather'
   })
-  e.remove({
-    id: 'xreliquary:alkahestry_tome'
-  })
 })
