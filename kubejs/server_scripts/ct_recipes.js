@@ -62,7 +62,7 @@ events.listen('recipes', function (e) {
         'G': 'minecraft:green_wool'
     })
     //QuarryPlus
-    shaped('quarryplus:solidquarry', [
+    e.shaped('quarryplus:solidquarry', [
         'FFF',
         'DGD',
         'AAA'
