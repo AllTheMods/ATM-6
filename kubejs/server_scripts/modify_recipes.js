@@ -123,6 +123,16 @@ events.listen('recipes', function (e) {
     D: 'forbidden_arcanus:darkstone',
     G: 'forbidden_arcanus:arcane_gold_ingot'
   })
+  modifyShaped('torchmaster:megatorch', 1, [
+    'TTT',
+    'GLG',
+    'DLD'
+  ], {
+    'T': 'xreliquary:interdiction_torch',
+    'G': 'minecraft:gold_block',
+    'D': 'minecraft:diamond_block',
+    'L': '#minecraft:logs'
+  })
   modifyShaped('immersiveengineering:cloche', 1, [
     'GEG',
     'G G',
