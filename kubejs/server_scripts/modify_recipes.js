@@ -85,6 +85,50 @@ events.listen('recipes', function (e) {
   ], {
     C: 'minecraft:honeycomb'
   })
+  modifyShaped('solarflux:mirror', 3, [
+    'GGG',
+    'III'
+  ], {
+    G: '#forge:glass',
+    I: '#forge:ingots'
+  })
+  modifyShaped('solarflux:sp_1', 1, [
+    'MMM',
+    'ILI',
+    'III'
+  ], {
+    M: 'solarflux:mirror',
+    L: '#forge:storage_blocks/lapis',
+    I: '#forge:ingots/iron'
+  })
+  modifyShaped('solarflux:sp_6', 2, [
+    'PPP',
+    'SAS',
+    'SDS'
+  ], {
+    S: 'solarflux:sp_5',
+    A: 'allthemodium:allthemodium_block',
+    D: '#forge:storage_blocks/diamond',
+    P: 'solarflux:photovoltaic_cell_4'
+  })
+  modifyShaped('solarflux:sp_7', 2, [
+    'PPP',
+    'SAS',
+    'SAS'
+  ], {
+    S: 'solarflux:sp_6',
+    A: 'allthemodium:vibranium_block',
+    P: 'solarflux:photovoltaic_cell_5'
+  })
+  modifyShaped('solarflux:sp_8', 2, [
+    'PPP',
+    'SAS',
+    'SAS'
+  ], {
+    S: 'solarflux:sp_7',
+    A: 'allthemodium:unobtainium_block',
+    P: 'solarflux:photovoltaic_cell_6'
+  })
   e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block')
   modifyShaped('minecraft:sticky_piston', 1, [
     'B',
@@ -128,10 +172,10 @@ events.listen('recipes', function (e) {
     'GLG',
     'DLD'
   ], {
-    'T': 'xreliquary:interdiction_torch',
-    'G': '#forge:storage_blocks/gold',
-    'D': '#forge:storage_blocks/diamond',
-    'L': '#minecraft:logs'
+    T: 'xreliquary:interdiction_torch',
+    G: '#forge:storage_blocks/gold',
+    D: '#forge:storage_blocks/diamond',
+    L: '#minecraft:logs'
   })
   modifyShaped('immersiveengineering:cloche', 1, [
     'GEG',
