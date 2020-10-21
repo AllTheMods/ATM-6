@@ -129,8 +129,8 @@ events.listen('recipes', function (e) {
     'DLD'
   ], {
     'T': 'xreliquary:interdiction_torch',
-    'G': 'minecraft:gold_block',
-    'D': 'minecraft:diamond_block',
+    'G': '#forge:storage_blocks/gold',
+    'D': '#forge:storage_blocks/diamond',
     'L': '#minecraft:logs'
   })
   modifyShaped('immersiveengineering:cloche', 1, [
