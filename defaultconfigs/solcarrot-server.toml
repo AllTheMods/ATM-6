@@ -7,7 +7,7 @@
 	milestones = [5, 10, 15, 20, 25]
 	#Number of hearts you start out with.
 	#Range: 0 ~ 1000
-	baseHearts = 10
+	baseHearts = 20
 
 [filtering]
 	#The minimum hunger value foods need to provide in order to count for milestones, in half drumsticks.
