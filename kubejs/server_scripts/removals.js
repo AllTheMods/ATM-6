@@ -9,7 +9,8 @@ events.listen('recipes', function (e) {
       'fluidtank:pipe',
       'fluidtank:item_pipe',
       'forbidden_arcanus:rotten_leather',
-      'xreliquary:alkahestry_tome'
+      'xreliquary:alkahestry_tome',
+      'cyclic:uncrafter'
     ]
   })
   e.remove({
