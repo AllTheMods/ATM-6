@@ -101,34 +101,6 @@ events.listen('recipes', function (e) {
     L: '#forge:storage_blocks/lapis',
     I: '#forge:ingots/iron'
   })
-  modifyShaped('solarflux:sp_6', 2, [
-    'PPP',
-    'SAS',
-    'SDS'
-  ], {
-    S: 'solarflux:sp_5',
-    A: '#forge:storage_blocks/allthemodium',
-    D: '#forge:storage_blocks/diamond',
-    P: 'solarflux:photovoltaic_cell_4'
-  })
-  modifyShaped('solarflux:sp_7', 2, [
-    'PPP',
-    'SAS',
-    'SAS'
-  ], {
-    S: 'solarflux:sp_6',
-    A: '#forge:storage_blocks/vibranium',
-    P: 'solarflux:photovoltaic_cell_5'
-  })
-  modifyShaped('solarflux:sp_8', 2, [
-    'PPP',
-    'SAS',
-    'SAS'
-  ], {
-    S: 'solarflux:sp_7',
-    A: '#forge:storage_blocks/unobtainium',
-    P: 'solarflux:photovoltaic_cell_6'
-  })
   e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block')
   modifyShaped('minecraft:sticky_piston', 1, [
     'B',

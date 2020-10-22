@@ -12,10 +12,11 @@ events.listen('jei.add.items', function (e) {
         'minecraft:dragon_egg'
     ])
 })
-/* 
+
 
 events.listen('jei.hide.items', function (e) {
     e.hide([
+        /*
         'forbidden_arcanus:rotten_leather',
         'fluidtank:fluid_source',
         'fluidtank:chest_as_tank',
@@ -27,8 +28,13 @@ events.listen('jei.hide.items', function (e) {
         'appliedenergistics2:flour',
         '@curios',
         '/pedestals:dust.+/',
-        '/engineerstools:.+_grit/'
+        '/engineerstools:.+_grit/',
+        */
+        'solarflux:sp_6',
+        'solarflux:sp_7',
+        'solarflux:sp_8'
     ])
+    /*
     function hideMetal(mod, name, types){
         utils.listOf(types).forEach(function(type) {
             const id = mod === 'immersiveengineering' ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
@@ -44,5 +50,6 @@ events.listen('jei.hide.items', function (e) {
     hideMetal(['immersiveengineering'],'uranium',['ingot','ore','dust','nugget','storage'])
     hideMetal(['immersiveengineering'],'lead',['ingot','ore','dust','nugget','storage'])
     hideMetal(['immersiveengineering'],'nickel',['ingot','ore','dust','nugget','storage'])
-    hideMetal(['immersiveengineering'],'steel',['ingot','dust','nugget','storage']) 
-})*/
+    hideMetal(['immersiveengineering'],'steel',['ingot','dust','nugget','storage'])
+    */
+})

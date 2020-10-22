@@ -89,6 +89,34 @@ events.listen('recipes', function (e) {
       item: 'kubejs:magical_soil'
     }
   })
+  e.shaped(item.of('solarflux:sp_custom_allthemodium', 2), [
+    'PPP',
+    'SAS',
+    'SDS'
+  ], {
+    S: 'solarflux:sp_5',
+    A: '#forge:storage_blocks/allthemodium',
+    D: '#forge:storage_blocks/diamond',
+    P: 'solarflux:photovoltaic_cell_4'
+  })
+  e.shaped(item.of('solarflux:sp_custom_vibranium', 2), [
+    'PPP',
+    'SAS',
+    'SAS'
+  ], {
+    S: 'solarflux:sp_custom_allthemodium',
+    A: '#forge:storage_blocks/vibranium',
+    P: 'solarflux:photovoltaic_cell_5'
+  })
+  e.shaped(item.of('solarflux:sp_custom_unobtainium', 2), [
+    'PPP',
+    'SAS',
+    'SAS'
+  ], {
+    S: 'solarflux:sp_custom_vibranium',
+    A: '#forge:storage_blocks/unobtainium',
+    P: 'solarflux:photovoltaic_cell_6'
+  })
 
   function customBlock(name, ingridient) {
     e.shapeless(item.of(ingridient, 9), name)
