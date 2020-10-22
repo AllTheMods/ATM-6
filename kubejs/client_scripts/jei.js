@@ -16,12 +16,7 @@ events.listen('jei.add.items', function (e) {
 
 events.listen('jei.hide.items', function (e) {
     e.hide([
-        /*
         'forbidden_arcanus:rotten_leather',
-        'fluidtank:fluid_source',
-        'fluidtank:chest_as_tank',
-        'fluidtank:pipe',
-        'fluidtank:item_pipe',
         'appliedenergistics2:silicon',
         'appliedenergistics2:iron_dust',
         'appliedenergistics2:gold_dust',
@@ -29,7 +24,6 @@ events.listen('jei.hide.items', function (e) {
         '@curios',
         '/pedestals:dust.+/',
         '/engineerstools:.+_grit/',
-        */
         'solarflux:sp_6',
         'solarflux:sp_7',
         'solarflux:sp_8'
