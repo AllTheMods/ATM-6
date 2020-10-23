@@ -4,10 +4,6 @@ events.listen('recipes', function (e) {
     output: [
       'appliedenergistics2:silicon',
       'mekanism:upgrade_anchor',
-      'fluidtank:chest_as_tank',
-      'fluidtank:fluid_source',
-      'fluidtank:pipe',
-      'fluidtank:item_pipe',
       'forbidden_arcanus:rotten_leather',
       'xreliquary:alkahestry_tome',
       'cyclic:uncrafter',
