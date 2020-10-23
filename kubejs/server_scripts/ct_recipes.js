@@ -448,17 +448,18 @@ events.listen('recipes', function (e) {
     })
     //Quark
     /* 
-    shapeless('minecraft:chest', '#forge:chests/wooden')
-    shapeless('quark:oak_chest',['minecraft:oak_planks', '#forge:chests/wooden'])
-    shapeless('quark:dark_oak_chest',['minecraft:dark_oak_planks', '#forge:chests/wooden'])
-    shapeless('quark:acacia_chest',['minecraft:acacia_planks', '#forge:chests/wooden'])
-    shapeless('quark:spruce_chest',['minecraft:spruce_planks', '#forge:chests/wooden'])
-    shapeless('quark:birch_chest',['minecraft:birch_planks', '#forge:chests/wooden'])
-    shapeless('quark:jungle_chest',['minecraft:jungle_planks', '#forge:chests/wooden'])
-    shapeless('quark:warped_chest',['minecraft:warped_planks', '#forge:chests/wooden'])
-    shapeless('quark:crimson_chest',['minecraft:crimson_planks', '#forge:chests/wooden']) */
+    e.shapeless('minecraft:chest', '#forge:chests/wooden')
+    e.shapeless('quark:oak_chest',['minecraft:oak_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:dark_oak_chest',['minecraft:dark_oak_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:acacia_chest',['minecraft:acacia_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:spruce_chest',['minecraft:spruce_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:birch_chest',['minecraft:birch_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:jungle_chest',['minecraft:jungle_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:warped_chest',['minecraft:warped_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:crimson_chest',['minecraft:crimson_planks', '#forge:chests/wooden'])
+    */
     //BluePower
-    //shapelessC('bluepower:blue_alloy_ingot', 4, ['#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:ingots/silver'])
+    //e.shapeless(item.of('bluepower:blue_alloy_ingot', 4), ['#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:ingots/silver'])
     //RFTools
     e.shaped('rftoolsbuilder:builder', [
         'aea',
