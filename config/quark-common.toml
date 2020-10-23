@@ -358,7 +358,7 @@
 		#Allowed values: (0,)
 		"Afk Time" = 2400
 		#Allowed values: (0,1]
-		"Percent Req" = 1.0
+		"Percent Req" = 0.25
 
 	[tweaks.infinity_bucket]
 		Cost = 10
