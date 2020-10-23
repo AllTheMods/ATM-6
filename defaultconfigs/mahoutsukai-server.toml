@@ -220,7 +220,7 @@
 	WEAPON_SHOOTER_MANA_COST = 100
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	PROJECTION_MANA_COST = 1000000
+	PROJECTION_MANA_COST = 200000
 	#This is the distance before the lake begins to generate fog. (Note: Higher values may decrease FPS)
 	#Range: 0.0 ~ 1.0E8
 	POWER_CONSOLIDATION_FOG_RADIUS = 8.0
@@ -307,12 +307,12 @@
 	#Range: 0 ~ 100000000
 	POWER_CONSOLIDATION_FEAR_RADIUS = 15
 	#A list of enchantment names which cannot be projected. Such as minecraft:sharpness , for example.
-	PROJECTION_ENCHANTMENT_BLACKLIST = []
+	PROJECTION_ENCHANTMENT_BLACKLIST = ["forbidden_arcanus:indestructible", "minecraft:mending"]
 	#How much durability Morgan gains from killing villagers
 	#Range: 0 ~ 100000000
 	MORGAN_HEAL_FACTOR = 30
 	#A list of item names which cannot be projected. Such as minecraft:diamond_sword , for example.
-	PROJECTION_BLACKLIST = []
+	PROJECTION_BLACKLIST = ["silentgear"]
 	#How much Clarent's stored damage decreases per tick while blocking
 	#Range: 0.0 ~ 1.0E8
 	CLARENT_DECREASE_PER_BLOCKING_TICK = 0.02
