@@ -1,3 +1,23 @@
+var ores = [
+  'allthemodium',
+  'vibranium',
+  'unobtainium',
+  'aluminum',
+  'copper',
+  'lead',
+  'nickel',
+  'osmium',
+  'platinum',
+  'silver',
+  'tin',
+  'uranium',
+  'zinc'
+]
+
+events.listen('item.tags', e => {
+
+})
+
 //Item tags go here
 events.listen('item.tags', function (e) {
   function add(tag, id) {
@@ -7,6 +27,13 @@ events.listen('item.tags', function (e) {
   function remove(tag, id) {
     e.get(tag).remove(id)
   }
+
+  /*
+  utils.listOf(ores).forEach(function (ore) {
+    e.get('mekanism:clumps').add('kubejs:clump_' + ore)
+    e.get('mekanism:clumps/' + ore).add('kubejs:clump_' + ore)
+  })
+  */
 
   //Add
   add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet'])
