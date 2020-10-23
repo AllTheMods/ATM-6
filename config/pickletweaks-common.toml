@@ -58,7 +58,7 @@
 	#Enable Flint tools and armor?
 	flintGear = false
 	#Enable right click crop harvesting?
-	rightClickHarvest = true
+	rightClickHarvest = false
 	#Smooth Glowstone enabled?
 	smoothGlowstone = false
 	#Diamond and Emerald Apples enabled?
