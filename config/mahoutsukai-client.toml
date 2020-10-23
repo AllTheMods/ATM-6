@@ -1,0 +1,61 @@
+
+[Client]
+	#Multiplier for Caliburn ring speed
+	#Range: 0.0 ~ 1.0E8
+	POWER_CONSOLIDATION_CALIBURN_RING_SPEED = 1.0
+	#Whether to show the circles in the sky
+	HEAVENS_CUP_CLIENT_CIRCLE = true
+	#How far away Leylines can be seen
+	#Range: 0 ~ 100000000
+	LEY_RENDER_DISTANCE = 100
+	#Toggle for Fae Sounds
+	FAE_NOISE = true
+	#X value of Mahou value on screen
+	#Range: 0 ~ 100000000
+	CLIENT_GUI_MAHOU_PLACEMENT_X = 10
+	#Y value of Mahou value on screen
+	#Range: 0 ~ 100000000
+	CLIENT_GUI_MAHOU_PLACEMENT_Y = 20
+	#Ring speed for the Mystic Code
+	#Range: 0.0 ~ 1.0E8
+	MYSTIC_CODE_RING_SPEED = 1.0
+	#Spinning speed for boundaries
+	#Range: 0.0 ~ 1.0E8
+	BOUNDARY_SPEED = 2.0
+	#Toggle bleeding potion effect display
+	SHOW_BLEEDING = true
+	#Mystic Staff Beam Volume
+	#Range: 0.0 ~ 10.0
+	MYSTIC_STAFF_BEAM_VOLUME_FACTOR = 0.1
+	#Insight Left X Offset
+	#Range: -10000 ~ 10000
+	INSIGHT_LEFT_X = 0
+	#Insight Left Y Offset
+	#Range: -10000 ~ 10000
+	INSIGHT_LEFT_Y = 0
+	#Insight Right X Offset
+	#Range: -10000 ~ 10000
+	INSIGHT_RIGHT_X = 0
+	#Insight Right Y Offset
+	#Range: -10000 ~ 10000
+	INSIGHT_RIGHT_Y = 0
+	#Insight Bottom X Offset
+	#Range: -10000 ~ 10000
+	INSIGHT_BOTTOM_X = 0
+	#Insight Bottom Y Offset
+	#Range: -10000 ~ 10000
+	INSIGHT_BOTTOM_Y = 0
+	#Chain Quality
+	#Range: 3 ~ 10000
+	CHAIN_QUALITY = 11
+	#Chain Volume
+	#Range: 0.0 ~ 10.0
+	CHAIN_VOLUME = 0.01
+	#Smite Volume
+	#Range: 0.0 ~ 10.0
+	SMITE_VOLUME = 1.0
+	#Show Morgan/Caliburn Cooldown
+	SHOW_MORGAN_CALIBURN_COOLDOWN = false
+	#No Shaders
+	NO_SHADERS = false
+
