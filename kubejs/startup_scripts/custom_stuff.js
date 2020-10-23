@@ -35,7 +35,7 @@ events.listen('item.registry', function (e) {
     var oreFormatted = ore.toLowerCase()
     e.create('clump_' + oreFormatted).displayName(ore + ' Clump').texture('kubejs:item/oreStuff/clump_' + oreFormatted)
     e.create('shard_' + oreFormatted).displayName(ore + ' Shard').texture('kubejs:item/oreStuff/shard_' + oreFormatted)
-    e.create('dirty_' + oreFormatted).displayName(ore + ' Dirty Dust').texture('kubejs:item/oreStuff/dirty_' + oreFormatted)
+    e.create('dirty_' + oreFormatted).displayName('Dirty ' + ore + ' Dust').texture('kubejs:item/oreStuff/dirty_' + oreFormatted)
     e.create('crystal_' + oreFormatted).displayName(ore + ' Crystal').texture('kubejs:item/oreStuff/crystal_' + oreFormatted)
   })
   */
