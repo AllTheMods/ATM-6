@@ -41,7 +41,7 @@ function init() {
 		.transfer("" + (512 * 4 * 8))
 	.buildAndRegister()
 		.langBuilder()
-			.put("en_us", "Allthemodium Panel")
+			.put("en_us", "Allthemodium Solar Panel")
 			.build();
 
 	panel()
@@ -52,7 +52,7 @@ function init() {
 		.transfer("" + (512 * 4 * 8 * 4))
 	.buildAndRegister()
 		.langBuilder()
-			.put("en_us", "Vibranium Panel")
+			.put("en_us", "Vibranium Solar Panel")
 			.build();
 
 	panel()
@@ -63,6 +63,6 @@ function init() {
 		.transfer("" + (512 * 4 * 8 * 4 * 4))
 	.buildAndRegister()
 		.langBuilder()
-			.put("en_us", "Unobtainium Panel")
+			.put("en_us", "Unobtainium Solar Panel")
 			.build();
 }
