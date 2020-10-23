@@ -109,6 +109,15 @@ events.listen('recipes', function (e) {
   }], 'powah:spirited_crystal_block', 1, 9000000)
 
   //Misc recipes
+  e.shaped('minecraft:totem_of_undying', [
+    ' E ',
+    'GVG',
+    ' G '
+  ], {
+    E: 'compressium:emerald_3',
+    G: '#forge:storage_blocks/gold',
+    V: 'minecraft:villager_spawn_egg'
+  })
   e.remove({
     id: 'byg:black_glass_from_sand'
   })
