@@ -751,7 +751,16 @@ events.listen('recipes', function (e) {
       e.shapeless(item.of('powah:' + type + '_' + tier), 'powah:' + type + '_' + tier)
     })
   })
-  var solars = ['1', '2', '3', '4', '5', '6', '7', '8']
+  var solars = [
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    'custom_allthemodium',
+    'custom_vibranium',
+    'custom_unobtainium'
+  ]
   utils.listOf(solars).forEach(function (solar) {
     e.shapeless(item.of('solarflux:sp_' + solar), 'solarflux:sp_' + solar)
   })
