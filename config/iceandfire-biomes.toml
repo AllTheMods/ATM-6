@@ -31,7 +31,7 @@
 	#biome list
 	jungleMyrmexBiomes = []
 	#biome list
-	mausoleumBiomes = "allthemodium:the_other", "allthemodium:mountain_edges","allthemodium:mountains"]
+	mausoleumBiomes = ["allthemodium:the_other","allthemodium:mountain_edges","allthemodium:mountains"]
 	#biome list
 	sapphireBiomes = ["allthemodium:the_other","allthemodium:mountain_edges","allthemodium:mountains" ]
 	#biome list
