@@ -4,34 +4,7 @@ events.listen('recipes', function (e) {
   var mekEnrich = e.recipes.mekanism.enriching
   var pedCrush = e.recipes.pedestals.pedestal_crushing
   var pedSaw = e.recipes.pedestals.pedestal_sawing
-  /*     function silentsCrushTag(tag, result, rCount, duration) {
-        e.recipes.silents_mechanisms.crushing({
-          process_time: duration,
-          ingredient: {
-            tag: tag
-          },
-          results: [
-            {
-              item: result,
-              count: rCount
-            }
-          ]
-        })
-      }
-      function silentsCrushItem(item, result, rCount, duration) {
-        e.recipes.silents_mechanisms.crushing({
-          process_time: duration,
-          ingredient: {
-            item: item
-          },
-          results: [
-            {
-              item: result,
-              count: rCount
-            }
-          ]
-        })
-      } */
+  
   function energize(ingredient, result, rCount, power) {
     e.recipes.powah.energizing({
       ingredients: ingredient,
@@ -52,14 +25,6 @@ events.listen('recipes', function (e) {
         count: rCount
       }]
     })
-  }
-
-  function shapedC(result, count, pattern, items) {
-    e.shaped(item.of(result, count), pattern, items)
-  }
-
-  function shaped(result, pattern, items) {
-    e.shaped(item.of(result), pattern, items)
   }
 
   //Make bio fuel use tags instead of invidual items
@@ -109,6 +74,24 @@ events.listen('recipes', function (e) {
   }], 'powah:spirited_crystal_block', 1, 9000000)
 
   //Misc recipes
+  e.shaped('computercraft:turtle_advanced', [
+    'III',
+    'ICI',
+    'IAI'
+  ], {
+    I: '#forge:ingots/gold',
+    C: 'computercraft:computer_advanced',
+    A: '#forge:ingots/allthemodium'
+  })
+  e.shaped('computercraft:turtle_normal', [
+    'III',
+    'ICI',
+    'IAI'
+  ], {
+    I: '#forge:ingots/iron',
+    C: 'computercraft:computer_normal',
+    A: '#forge:ingots/allthemodium'
+  })
   e.shaped('minecraft:totem_of_undying', [
     ' E ',
     'GVG',
@@ -137,7 +120,7 @@ events.listen('recipes', function (e) {
   e.smelting(item.of('minecraft:glass'), '#forge:sand').xp(.1)
   e.shapeless(item.of('minecraft:clay_ball', 4), 'minecraft:clay')
   e.shapeless(item.of('minecraft:quartz', 4), 'minecraft:quartz_block')
-  shaped('appliedenergistics2:silicon_press', [
+  e.shaped('appliedenergistics2:silicon_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -145,7 +128,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:silicon_essence'
   })
-  shaped('appliedenergistics2:calculation_processor_press', [
+  e.shaped('appliedenergistics2:calculation_processor_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -153,7 +136,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:certus_quartz_essence'
   })
-  shaped('appliedenergistics2:engineering_processor_press', [
+  e.shaped('appliedenergistics2:engineering_processor_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -161,7 +144,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:diamond_essence'
   })
-  shaped('appliedenergistics2:logic_processor_press', [
+  e.shaped('appliedenergistics2:logic_processor_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -169,7 +152,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:gold_essence'
   })
-  shaped('minecraft:hopper', [
+  e.shaped('minecraft:hopper', [
     'ILI',
     'ILI',
     ' I '
@@ -177,13 +160,13 @@ events.listen('recipes', function (e) {
     'L': '#minecraft:logs',
     'I': '#forge:ingots/iron'
   })
-  shapedC('minecraft:stick', 16, [
+  e.shaped(item.of('minecraft:stick', 16), [
     'L',
     'L'
   ], {
     'L': '#minecraft:logs'
   })
-  shaped('minecraft:water_bucket', [
+  e.shaped('minecraft:water_bucket', [
     ' C ',
     'CBC',
     ' C '
@@ -191,7 +174,7 @@ events.listen('recipes', function (e) {
     'C': 'resourcefulbees:water_honeycomb',
     'B': 'minecraft:bucket'
   })
-  shaped('minecraft:lava_bucket', [
+  e.shaped('minecraft:lava_bucket', [
     ' C ',
     'CBC',
     ' C '
@@ -199,14 +182,14 @@ events.listen('recipes', function (e) {
     'C': 'resourcefulbees:lava_honeycomb',
     'B': 'minecraft:bucket'
   })
-  shapedC('minecraft:chest', 4, [
+  e.shaped(item.of('minecraft:chest', 4), [
     'LLL',
     'L L',
     'LLL'
   ], {
     'L': '#minecraft:logs'
   })
-  shapedC('appliedenergistics2:sky_stone_block', 4, [
+  e.shaped(item.of('appliedenergistics2:sky_stone_block', 4), [
     'BSB',
     'SBS',
     'BSB'

@@ -30,8 +30,6 @@ events.listen('recipes', function (e) {
         'angelring:itemdiamondring',
         //'bluepower:alloyfurnace',
         //'bluepower:blulectric_alloyfurnace',
-        'computercraft:computer_normal',
-        'computercraft:computer_advanced',
         'forbidden_arcanus:iron_chain',
         'silentgear:iron_rod',
         'entangled:block',
@@ -277,24 +275,6 @@ events.listen('recipes', function (e) {
         'R': 'angelring:itemdiamondring',
         'D': '#forge:nether_stars',
         'G': 'botania:gaia_ingot'
-    })
-    //Computer Craft
-    e.shaped('computercraft:computer_normal', [
-        'QQQ',
-        'QAQ',
-        'QIQ'
-    ], {
-        'Q': 'refinedstorage:quartz_enriched_iron',
-        'A': '#forge:ingots/allthemodium',
-        'I': 'botania:elf_glass'
-    })
-    e.shaped('computercraft:computer_advanced', [
-        'GGG',
-        'GCG',
-        'GGG'
-    ], {
-        'G': '#forge:ingots/gold',
-        'C': 'computercraft:computer_normal'
     })
     //Other recipes
     e.shaped(item.of('forbidden_arcanus:iron_chain', 3), [

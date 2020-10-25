@@ -20,7 +20,9 @@ events.listen('recipes', function (e) {
   var idRemove = [
     'minecraft:comparator',
     'pedestals:pedestal_crushing/dustnethergold',
-    'forbidden_arcanus:leather'
+    'forbidden_arcanus:leather',
+    'computercraft:turtle_normal',
+    'computercraft:turtle_advanced'
   ]
   utils.listOf(idRemove).forEach(function (iR) {
     e.remove({
