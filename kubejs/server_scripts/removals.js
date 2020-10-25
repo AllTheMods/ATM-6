@@ -17,13 +17,14 @@ events.listen('recipes', function (e) {
       'appliedenergistics2:flour'
     ]
   })
-  e.remove({
-    id: 'minecraft:comparator'
-  })
-  e.remove({
-    id: 'pedestals:pedestal_crushing/dustnethergold'
-  })
-  e.remove({
-    id: 'forbidden_arcanus:leather'
+  var idRemove = [
+    'minecraft:comparator',
+    'pedestals:pedestal_crushing/dustnethergold',
+    'forbidden_arcanus:leather'
+  ]
+  utils.listOf(idRemove).forEach(function (iR) {
+    e.remove({
+      id: iR
+    })
   })
 })
