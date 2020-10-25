@@ -5,7 +5,7 @@
 	#Blocks that a dragon can break, but won't spawn drops for. Use the format like "minecraft:stone" or "rats:block_of_cheese" 
 	noDropBreakBlocks = ["minecraft:stone", "minecraft:dirt", "minecraft:grass_block"]
 	#Whether to generate silver ore or not
-	"Generate Silver Ore" = true
+	"Generate Silver Ore" = false
 	#True if using blacklists, false if using whitelists for dragons and structure gen.
 	"Use Dimension Blacklist" = false
 	#Whitelist structure gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
@@ -99,7 +99,7 @@
 	"Dragon Target Search Length" = 128
 	#How many blocks away can dragons wander from their defined "home" position.
 	#Range: 1 ~ 10000
-	"Dragon Wander From Home Distance" = 40
+	"Dragon Wander From Home Distance" = 80
 	#Every interval of this number in ticks, dragon hunger decreases.
 	#Range: 1 ~ 10000
 	"Dragon Hunger Tick Rate" = 3000
@@ -116,12 +116,12 @@
 	"Spawn Hippogryphs" = true
 	#Hippogryph spawn weight. Lower = lower chance to spawn.
 	#Range: 1 ~ 10000
-	"Hippogryph Spawn Weight" = 2
+	"Hippogryph Spawn Weight" = 120
 	#True if gorgon temples are allowed to spawn
 	"Spawn Gorgons" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Spawn Gorgon Chance" = 75
+	"Spawn Gorgon Chance" = 175
 	#Maximum gorgon health
 	#Range: 1.0 ~ 10000.0
 	"Gorgon Max Health" = 500.0
@@ -129,22 +129,22 @@
 	"Spawn Pixies" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Spawn Pixies Chance" = 60
+	"Spawn Pixies Chance" = 160
 	#size of pixie villages
 	#Range: 1 ~ 10000
-	"Pixie Village Size" = 5
+	"Pixie Village Size" = 25
 	#True if pixies are allowed to steal from players
 	"Pixies Steal Items" = true
 	#True if cyclops caves are allowed to spawn
 	"Spawn Cyclopes Caves" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Spawn Cyclops Cave Chance" = 170
+	"Spawn Cyclops Cave Chance" = 1370
 	#True if wandering cyclopes are allowed to spawn
 	"Spawn Wandering Cyclopes" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Spawn Wandering Cyclops Chance" = 900
+	"Spawn Wandering Cyclops Chance" = 1900
 	#Maximum cyclops health
 	#Range: 1.0 ~ 10000.0
 	"Cyclops Max Health" = 750.0
@@ -195,7 +195,7 @@
 	"Death Worms Target Monsters" = true
 	#Deathworm spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Death Worm Spawn Weight" = 30
+	"Death Worm Spawn Weight" = 130
 	#A double check to see if the game can spawn death worms. Higher number = lower chance to spawn.
 	#Range: 0 ~ 10000
 	"Death Worm Spawn Check Chance" = 3
@@ -211,7 +211,7 @@
 	"Spawn Cockatrices" = true
 	#Cockatrice spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Cockatrice Spawn Weight" = 4
+	"Cockatrice Spawn Weight" = 140
 	#A double check to see if the game can spawn cockatrices. Higher number = lower chance to spawn.
 	#Range: 0 ~ 10000
 	"Cockatrice Spawn Check Chance" = 0
@@ -238,17 +238,17 @@
 	"Stymphalian Birds Target Animals" = false
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Spawn Stymhphalian Bird Chance" = 80
+	"Spawn Stymhphalian Bird Chance" = 180
 	#True if trolls are allowed to spawn
 	"Spawn Trolls" = true
 	#True if trolls are allowed to drop their weapon on death.
 	"Trolls Drop Weapon" = true
 	#Troll spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Troll Spawn Weight" = 60
+	"Troll Spawn Weight" = 160
 	#A double check to see if the game can spawn trolls. Higher number = lower chance to spawn.
 	#Range: 1 ~ 10000
-	"Troll Spawn Check Chance" = 30
+	"Troll Spawn Check Chance" = 1
 	#Maximum troll health
 	#Range: 1.0 ~ 10000.0
 	"Troll Max Health" = 250.0
@@ -278,7 +278,7 @@
 	"Spawn Amphitheres" = true
 	#Amphithere spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Amphithere Spawn Weight" = 50
+	"Amphithere Spawn Weight" = 150
 	#How many blocks away can ampitheres detect villagers being hurt. Note that increasing this could cause lag.
 	#Range: 1 ~ 10000
 	"Amphithere Villager Search Length" = 64
@@ -300,7 +300,7 @@
 	#Range: 1 ~ 10000
 	"Spawn Sea Serpent Chance" = 250
 	#Whether or not sea serpents can break weak blocks in their way
-	"Sea Serpent Griefing" = true
+	"Sea Serpent Griefing" = false
 	#Default sea serpent health, this is scaled to the sea serpent's particular size
 	#Range: 1.0 ~ 10000.0
 	"Sea Serpent Base Health" = 20.0
@@ -345,10 +345,10 @@
 	"Chunk Load Summon Crystal" = true
 	#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from spawn(0, 0).
 	#Range: 1 ~ 10000
-	"Dangerous World Gen Dist From Spawn" = 1000
+	"Dangerous World Gen Dist From Spawn" = 1
 	#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from the last generated structure.
 	#Range: 1 ~ 10000
-	"Dangerous World Gen Dist Seperation" = 300
+	"Dangerous World Gen Dist Seperation" = 100
 	#Change this to slow down or speed up dragon or amphithere flight.
 	#Range: 0.0 ~ 2.0
 	"Dragon Flight Speed Modifier" = 1.0
