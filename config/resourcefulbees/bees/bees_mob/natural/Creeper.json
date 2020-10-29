@@ -3,7 +3,7 @@
   "maxTimeInHive": 600,
   "hasHoneycomb": true,
   "baseLayerTexture": "/creeper/creeper_bee",
-  "traits" : ["creeper"],
+  "traits": ["creeper"],
   "ColorData": {
     "isBeeColored": false,
     "honeycombColor": "#0C9F0A",

@@ -13,7 +13,7 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:dragon_egg",
-    "bottleOutput" : "minecraft:dragon_breath",
+    "bottleOutput": "minecraft:dragon_breath",
     "mainOutputWeight": 0.01
   },
   "SpawnData": {

@@ -1,26 +1,26 @@
 {
-  "flower":"tag:misctags:flowers/forest_flowers",
-  "maxTimeInHive":600,
-  "hasHoneycomb":true,
+  "flower": "tag:misctags:flowers/forest_flowers",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
-    "primaryColor":"#453B2A",
-    "honeycombColor":"#453B2A"
+    "primaryColor": "#453B2A",
+    "honeycombColor": "#453B2A"
   },
   "MutationData": {
-    "hasMutation":false
+    "hasMutation": false
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput":"minecraft:apple",
-    "bottleOutput":"pamhc2foodcore:applejuiceitem",
-    "bottleOutputWeight":0.15,
-    "mainOutputWeight":0.33,
-    "mainOutputCount":2
+    "mainOutput": "minecraft:apple",
+    "bottleOutput": "pamhc2foodcore:applejuiceitem",
+    "bottleOutputWeight": 0.15,
+    "mainOutputWeight": 0.33,
+    "mainOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld":true,
-    "biomeWhitelist":"tag:forest"
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:forest"
   },
   "BreedData": {
     "isBreedable": true,
@@ -28,6 +28,6 @@
     "feedAmount": 4
   },
   "TraitData": {
-      "hasTraits": false
+    "hasTraits": false
   }
 }
