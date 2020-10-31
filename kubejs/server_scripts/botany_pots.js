@@ -1,6 +1,6 @@
 events.listen('recipes', function (e) {
     //Soils
-    function makeFarmland(input, categories, growthModifier) {
+    function makeFarmland(input, name, categories, growthModifier) {
         e.recipes.botanypots.soil({
             input: {
                 item: input
@@ -13,10 +13,10 @@ events.listen('recipes', function (e) {
             },
             categories: categories,
             growthModifier: growthModifier
-        }).id('kubejs:botany_pots/soil/' + input)
+        }).id('kubejs:botany_pots/soil/' + name)
     }
 
-    function makeSoil(input, categories, growthModifier) {
+    function makeSoil(input, name, categories, growthModifier) {
         e.recipes.botanypots.soil({
             input: {
                 item: input
@@ -26,11 +26,11 @@ events.listen('recipes', function (e) {
             },
             categories: categories,
             growthModifier: growthModifier
-        }).id('kubejs:botany_pots/soil/' + input)
+        }).id('kubejs:botany_pots/soil/' + name)
     }
 
-    makeFarmland('mysticalagradditions:insanium_farmland', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium'], 0.50)
-    makeSoil('kubejs:magical_soil', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium', 'magical'], 0.75)
+    makeFarmland('mysticalagradditions:insanium_farmland', 'insanium_farmland', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium'], 0.50)
+    makeSoil('kubejs:magical_soil', 'magical_soil', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium', 'magical'], 0.75)
 
     //MA Crop functions
     var ma = 'mysticalagriculture:'

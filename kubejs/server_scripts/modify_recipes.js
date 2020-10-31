@@ -171,7 +171,7 @@ events.listen('recipes', function (e) {
     W: '#minecraft:wool',
     E: '#forge:ender_pearls',
     S: '#forge:string'
-  }).id('kubejs:shaped/modified/bagofyurting:bag_of_yurting')
+  }).id('kubejs:shaped/modified/bagofyurting.bag_of_yurting')
   var ingots = [
     '#forge:ingots/gold',
     '#forge:ingots/iron',
@@ -377,6 +377,7 @@ events.listen('recipes', function (e) {
     'botanypots:red_botany_pot',
     'botanypots:black_botany_pot',
   ]
+  e.shapeless(item.of('botania:fertilizer'), ['#forge:fetilizer', ['#forge:dyes/' + colors], ['#forge:dyes/' + colors], ['#forge:dyes/' + colors], ['#forge:dyes/' + colors]])
   utils.listOf(colors).forEach(function (color) {
     e.shaped(item.of('botanypots:hopper_' + color + '_botany_pot'), [
       'MPM',
