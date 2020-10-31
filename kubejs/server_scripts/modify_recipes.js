@@ -1,5 +1,6 @@
 events.listen('recipes', function (e) {
   //Functions
+
   function modifyShaped(result, count, pattern, ingridients) {
     e.remove({
       output: result,
@@ -85,6 +86,7 @@ events.listen('recipes', function (e) {
   ], {
     C: 'minecraft:honeycomb'
   })
+  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block').id('kubejs:shapeless/honeycomb')
   modifyShaped('solarflux:mirror', 3, [
     'GGG',
     'III'
@@ -101,7 +103,6 @@ events.listen('recipes', function (e) {
     L: '#forge:storage_blocks/lapis',
     I: '#forge:ingots/iron'
   })
-  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block')
   modifyShaped('minecraft:sticky_piston', 1, [
     'B',
     'P'
@@ -170,7 +171,7 @@ events.listen('recipes', function (e) {
     W: '#minecraft:wool',
     E: '#forge:ender_pearls',
     S: '#forge:string'
-  })
+  }).id('kubejs:shaped/modified/bagofyurting:bag_of_yurting')
   var ingots = [
     '#forge:ingots/gold',
     '#forge:ingots/iron',
@@ -301,16 +302,6 @@ events.listen('recipes', function (e) {
     R: '#forge:storage_blocks/redstone'
   })
   modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
-  /* e.remove({output: 'silents_mechanisms:zombie_leather'})
-  e.recipes.silents_mechanisms.drying({
-    process_time: 600,
-    ingredient: {
-        item: 'minecraft:rotten_flesh'
-    },
-    result: {
-        item: 'forbidden_arcanus:rotten_leather'
-    }
-  }) */
   e.remove({
     id: 'appliedenergistics2:inscriber/silicon_print'
   })

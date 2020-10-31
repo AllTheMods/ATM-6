@@ -1,7 +1,16 @@
 events.listen('recipes', function (e) {
-  e.shapeless(item.of('kubejs:rotten_leather'), ['minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh'])
-  e.smelting(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(.5)
-  e.recipes.minecraft.smoking(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(.5)
+
+  function kjsShaped(result, pattern, ingredients, count) {
+    e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients)
+  }
+
+  function kjsShapeless(result, ingredients, count) {
+    e.shapeless(item.of(result, count != null ? count : 1), ingredients)
+  }
+
+  kjsShapeless('kubejs:rotten_leather', ['minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh'])
+  e.smelting(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(.5).id('kubejs:smelting/leather')
+  e.recipes.minecraft.smoking(item.of('minecraft:leather'), 'kubejs:rotten_leather').xp(.5).id('kubejs:smoking/leather')
   e.recipes.botania.runic_altar({
     output: {
       item: 'kubejs:rune_of_sins'
@@ -29,7 +38,7 @@ events.listen('recipes', function (e) {
         tag: 'botania:runes/pride'
       }
     ]
-  })
+  }).id('kubejs:runic_altar/rune_of_sins')
 
   e.recipes.botania.petal_apothecary({
     output: {
@@ -54,7 +63,7 @@ events.listen('recipes', function (e) {
         item: 'botania:ancient_will_karil'
       }
     ]
-  })
+  }).id('kubejs:petal_apothecary/mass_of_wills')
 
   e.recipes.mysticalagriculture.infusion({
     input: {
@@ -88,8 +97,8 @@ events.listen('recipes', function (e) {
     result: {
       item: 'kubejs:magical_soil'
     }
-  })
-  e.shaped(item.of('solarflux:sp_custom_allthemodium', 2), [
+  }).id('kubejs:infusion/magical_soil')
+  kjsShaped('solarflux:sp_custom_allthemodium', [
     'PPP',
     'SAS',
     'SDS'
@@ -98,8 +107,8 @@ events.listen('recipes', function (e) {
     A: '#forge:storage_blocks/allthemodium',
     D: '#forge:storage_blocks/diamond',
     P: 'solarflux:photovoltaic_cell_4'
-  })
-  e.shaped(item.of('solarflux:sp_custom_vibranium', 2), [
+  }, 2)
+  kjsShaped('solarflux:sp_custom_vibranium', [
     'PPP',
     'SAS',
     'SAS'
@@ -107,8 +116,8 @@ events.listen('recipes', function (e) {
     S: 'solarflux:sp_custom_allthemodium',
     A: '#forge:storage_blocks/vibranium',
     P: 'solarflux:photovoltaic_cell_5'
-  })
-  e.shaped(item.of('solarflux:sp_custom_unobtainium', 2), [
+  }, 2)
+  kjsShaped('solarflux:sp_custom_unobtainium', [
     'PPP',
     'SAS',
     'SAS'
@@ -116,11 +125,11 @@ events.listen('recipes', function (e) {
     S: 'solarflux:sp_custom_vibranium',
     A: '#forge:storage_blocks/unobtainium',
     P: 'solarflux:photovoltaic_cell_6'
-  })
+  }, 2)
 
   function customBlock(name, ingridient) {
-    e.shapeless(item.of(ingridient, 9), name)
-    e.shaped(item.of(name), [
+    kjsShapeless(name, ingridient, 9)
+    kjsShaped(name, [
       'AAA',
       'AAA',
       'AAA'

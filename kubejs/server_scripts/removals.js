@@ -22,8 +22,14 @@ events.listen('recipes', function (e) {
     'pedestals:pedestal_crushing/dustnethergold',
     'forbidden_arcanus:leather',
     'computercraft:turtle_normal',
-    'computercraft:turtle_advanced'
+    'computercraft:turtle_advanced',
+    'byg:black_glass_from_sand',
+    'byg:purple_glass_from_sand',
+    'byg:blue_glass_from_sand',
+    'byg:white_glass_from_sand',
+    'minecraft:glass'
   ]
+
   utils.listOf(idRemove).forEach(function (iR) {
     e.remove({
       id: iR
