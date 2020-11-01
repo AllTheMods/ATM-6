@@ -43,11 +43,6 @@ events.listen('recipes', function (e) {
     mekCrush(item.of('mekanism:bio_fuel', bioFuel), '#misctags:biofuel' + bioFuel)
   })
 
-  //Recipes for AE2 stuff
-  //silentsCrushTag('forge:ender_pearls', 'appliedenergistics2:ender_dust', 1, 180)
-  //silentsCrushTag('forge:gems/certus_quartz', 'appliedenergistics2:certus_quartz_dust', 1, 180)
-  //silentsCrushItem('appliedenergistics2:fluix_crystal', 'appliedenergistics2:fluix_dust', 1, 180)
-
   //Powah recipes
   energize([{
     tag: 'forge:ingots/allthemodium'
@@ -216,16 +211,16 @@ events.listen('recipes', function (e) {
   }], 'refinedstorage:creative_controller', 1, 420000000)
   energize([{
     item: 'refinedstorageaddons:wireless_crafting_grid'
-  }], 'refinedstorageaddons:creative_wireless_crafting_grid', 1, 420000000)
+  }], 'refinedstorageaddons:creative_wireless_crafting_grid', 1, 420000)
   energize([{
     item: 'refinedstorage:wireless_crafting_monitor'
-  }], 'refinedstorage:creative_wireless_crafting_monitor', 1, 420000000)
+  }], 'refinedstorage:creative_wireless_crafting_monitor', 1, 420000)
   energize([{
     item: 'refinedstorage:wireless_fluid_grid'
-  }], 'refinedstorage:creative_wireless_fluid_grid', 1, 420000000)
+  }], 'refinedstorage:creative_wireless_fluid_grid', 1, 420000)
   energize([{
     item: 'refinedstorage:wireless_grid'
-  }], 'refinedstorage:creative_wireless_grid', 1, 420000000)
+  }], 'refinedstorage:creative_wireless_grid', 1, 420000)
   e.shapeless(item.of('botania:mana_tablet', {
     mana: 500000,
     creative: 1
