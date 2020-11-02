@@ -9,7 +9,11 @@ events.listen('recipes', function (e) {
       'cyclic:uncrafter',
       'solarflux:sp_6',
       'solarflux:sp_7',
-      'solarflux:sp_8'
+      'solarflux:sp_8',
+      'quark:apple_crate',
+      'quark:potato_crate',
+      'quark:carrot_crate',
+      'quark:beetroot_crate'
     ]
   })
   e.remove({
@@ -27,7 +31,8 @@ events.listen('recipes', function (e) {
     'byg:purple_glass_from_sand',
     'byg:blue_glass_from_sand',
     'byg:white_glass_from_sand',
-    'minecraft:glass'
+    'minecraft:glass',
+    'engineerstools:crushing/aluminium_grit_crushing_recipe'
   ]
 
   utils.listOf(idRemove).forEach(function (iR) {

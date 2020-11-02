@@ -16,17 +16,14 @@ events.listen('recipes', function (e) {
     })
     e.remove({
       intput: '#forge:ores/' + name,
-      output: '#forge:dusts/' + name,
       type: 'mekanism:enriching'
     })
     e.remove({
       intput: '#forge:ores/' + name,
-      output: '#forge:dusts/' + name,
       type: 'immersiveengineering:crusher'
     })
     e.remove({
       intput: '#forge:ingots/' + name,
-      output: '#forge:dusts/' + name,
       type: 'immersiveengineering:crusher'
     })
     e.recipes.minecraft.smelting(ingotItem, '#forge:dusts/' + name).xp(.5).id('kubejs:minecraft/smelting/dusts/' + name)
@@ -138,9 +135,6 @@ events.listen('recipes', function (e) {
       }).id('kubejs:appliedenergistics2/grinder/ores/' + name)
     }
   }
-  e.remove({
-    id: 'engineerstools:crushing/aluminium_grit_crushing_recipe'
-  })
 
   unifyMetal('iron', 'minecraft:iron_ingot', 'alltheores:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget')
   unifyMetal('gold', 'minecraft:gold_ingot', 'alltheores:gold_dust', 'minecraft:gold_block', 'minecraft:gold_nugget')
@@ -158,7 +152,10 @@ events.listen('recipes', function (e) {
   unifyMetal('vibranium', 'allthemodium:vibranium_ingot', 'allthemodium:vibranium_dust', 'allthemodium:vibranium_block', 'allthemodium:vibranium_nugget')
   unifyMetal('unobtainium', 'allthemodium:unobtainium_ingot', 'allthemodium:unobtainium_dust', 'allthemodium:unobtainium_block', 'allthemodium:unobtainium_nugget')
   unifyMetal('steel', 'mekanism:ingot_steel', 'mekanism:dust_steel', 'mekanism:block_steel', 'mekanism:nugget_steel')
-  unifyMetal('bronze', 'mekanism:ingot_bronze', 'mekanism:dust_bronze', 'mekanism:block_bronze', 'mekanism:nugget_bronze')
+  unifyMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
   unifyMetal('azure_silver', 'silentgear:azure_silver_ingot', 'silentgear:azure_silver_dust', 'silentgear:azure_silver_block', 'silentgear:azure_silver_nugget')
   unifyMetal('crimson_iron', 'silentgear:crimson_iron_ingot', 'silentgear:crimson_iron_dust', 'silentgear:crimson_iron_block', 'silentgear:crimson_iron_nugget')
+  unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
+  unifyMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
+  unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
 })

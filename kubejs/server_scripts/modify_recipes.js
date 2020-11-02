@@ -301,6 +301,15 @@ events.listen('recipes', function (e) {
     A: 'minecraft:comparator',
     R: '#forge:storage_blocks/redstone'
   })
+  modifyShaped('minecolonies:blockhutbuilder', 1, [
+    'PTP',
+    'PDP',
+    'PPP'
+  ], {
+    P: '#minecraft:planks',
+    D: '#minecraft:wooden_doors',
+    T: 'structurize:sceptergold'
+  })
   modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
   e.remove({
     id: 'appliedenergistics2:inscriber/silicon_print'
