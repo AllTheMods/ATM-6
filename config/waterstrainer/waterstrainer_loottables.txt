@@ -1,0 +1,41 @@
+// You can add custom loot entries by using xml-like tags. The relevant data needs to be surrounded by <...> and </...>
+// Looking at the default table will give you some examples
+// Adding a new entry requires at least the <strainer> and <item> tag (surrounded by <add>). Use <chance> to set item rarity (higher chance = more likely to drop)
+// To copy the current loot table to another strainer use the <parent> and <child> tag (surrounded by <copy>)
+// Please use a new line for every new entry or command, since loot entries can not spread over multiple lines!
+// For more info: http://bit.ly/waterstrainer
+
+// Version of this config
+// This is an internal value for the file parser, don't change it
+<configversion>1</configversion>
+
+// Survivalist's Strainer
+<add><strainer>strainer_survivalist</strainer> <chance>30</chance> <item>minecraft:sand</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>20</chance> <item>minecraft:dirt</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>20</chance> <item>minecraft:stick</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>15</chance> <item>minecraft:clay_ball</item></add>
+<add><strainer>strainer_survivalist</strainer> <chance>13</chance> <item>minecraft:gravel</item></add>
+<add><strainer>strainer_survivalist</strainer> <group>NUGGET</group> <chance>2</chance> <item>minecraft:iron_nugget</item> <subchance>75</subchance></add>
+<add><strainer>strainer_survivalist</strainer> <group>NUGGET</group> <chance>2</chance> <item>minecraft:gold_nugget</item> <subchance>25</subchance></add>
+
+<copy><child>strainer_survivalist_solid</child> <parent>strainer_survivalist</parent></copy>
+<copy><child>strainer_survivalist_reinforced</child> <parent>strainer_survivalist</parent></copy>
+
+// Fisherman's Strainer
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:cod</item> <subchance>60</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:salmon</item> <subchance>25</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:pufferfish</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>FISH</group> <chance>100</chance> <item>minecraft:tropical_fish</item> <subchance>2</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:stick</item> <subchance>22</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:string</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:leather</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:rotten_flesh</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:bone</item> <subchance>13</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:glass_bottle</item> <subchance>12</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:lily_pad</item> <subchance>7</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <group>JUNK</group> <chance>30</chance> <item>minecraft:vine</item> <subchance>7</subchance></add>
+<add><strainer>strainer_fisherman</strainer> <chance>1</chance> <item>minecraft:enchanted_book</item></add>
+<add><strainer>strainer_fisherman</strainer> <chance>69</chance> <item>$BLANK$</item></add>
+
+<copy><child>strainer_fisherman_solid</child> <parent>strainer_fisherman</parent></copy>
+<copy><child>strainer_fisherman_reinforced</child> <parent>strainer_fisherman</parent></copy>
