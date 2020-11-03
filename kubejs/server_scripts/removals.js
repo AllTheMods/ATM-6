@@ -30,18 +30,33 @@ events.listen('recipes', function (e) {
   //Recipe removals
   e.remove({
     output: [
+
       'appliedenergistics2:silicon',
+
       'mekanism:upgrade_anchor',
+
       'forbidden_arcanus:rotten_leather',
+
       'xreliquary:alkahestry_tome',
+
       'cyclic:uncrafter',
+
       'solarflux:sp_6',
       'solarflux:sp_7',
       'solarflux:sp_8',
+
       'quark:apple_crate',
       'quark:potato_crate',
       'quark:carrot_crate',
-      'quark:beetroot_crate'
+      'quark:beetroot_crate',
+      'quark:charcoal_block',
+      'quark:gunpowder_sack',
+
+      'mekanism:block_charcoal',
+
+      'titanium:iron_gear',
+      'titanium:gold_gear',
+      'titanium:diamond_gear'
     ]
   })
   e.remove({
