@@ -1,3 +1,5 @@
+//priority: 1000
+
 var ores = [
   'allthemodium',
   'vibranium',

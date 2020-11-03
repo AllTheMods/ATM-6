@@ -1,4 +1,32 @@
+//priority: 999
+
 events.listen('recipes', function (e) {
+  var idRemove = [
+
+    'minecraft:comparator',
+    'minecraft:glass',
+
+    'pedestals:pedestal_crushing/dustnethergold',
+
+    'forbidden_arcanus:leather',
+
+    'computercraft:turtle_normal',
+    'computercraft:turtle_advanced',
+
+    'byg:black_glass_from_sand',
+    'byg:purple_glass_from_sand',
+    'byg:blue_glass_from_sand',
+    'byg:white_glass_from_sand',
+
+    'engineerstools:crushing/aluminium_grit_crushing_recipe',
+
+    'xreliquary:alkahestry/crafting/nether_star'
+  ]
+  utils.listOf(idRemove).forEach(function (iR) {
+    e.remove({
+      id: iR
+    })
+  })
   //Recipe removals
   e.remove({
     output: [
@@ -21,23 +49,8 @@ events.listen('recipes', function (e) {
       'appliedenergistics2:flour'
     ]
   })
-  var idRemove = [
-    'minecraft:comparator',
-    'pedestals:pedestal_crushing/dustnethergold',
-    'forbidden_arcanus:leather',
-    'computercraft:turtle_normal',
-    'computercraft:turtle_advanced',
-    'byg:black_glass_from_sand',
-    'byg:purple_glass_from_sand',
-    'byg:blue_glass_from_sand',
-    'byg:white_glass_from_sand',
-    'minecraft:glass',
-    'engineerstools:crushing/aluminium_grit_crushing_recipe'
-  ]
-
-  utils.listOf(idRemove).forEach(function (iR) {
-    e.remove({
-      id: iR
-    })
+  e.remove({
+    type: 'xreliquary:alkahestry_charging'
   })
+
 })

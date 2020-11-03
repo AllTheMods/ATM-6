@@ -1,3 +1,5 @@
+//priority: 997
+
 events.listen('recipes', function (e) {
   function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
     e.replaceOutput('#forge:ingots/' + name, ingotItem)
@@ -5,25 +7,26 @@ events.listen('recipes', function (e) {
     e.replaceOutput('#forge:nuggets/' + name, nuggetItem)
     e.replaceOutput('#forge:storage_blocks/' + name, blockItem)
     e.remove({
-      intput: ['#forge:ores/' + name, '#forge:dusts/' + name],
+      input: ['#forge:ores/' + name, '#forge:dusts/' + name],
       output: '#forge:ingots/' + name,
       type: 'minecraft:smelting'
     })
     e.remove({
-      intput: ['#forge:ores/' + name, '#forge:dusts/' + name],
+      input: ['#forge:ores/' + name, '#forge:dusts/' + name],
       output: '#forge:ingots/' + name,
       type: 'minecraft:blasting'
     })
     e.remove({
-      intput: '#forge:ores/' + name,
+      input: '#forge:ores/' + name,
+      output: '#forge:dusts/' + name,
       type: 'mekanism:enriching'
     })
     e.remove({
-      intput: '#forge:ores/' + name,
+      input: '#forge:ores/' + name,
       type: 'immersiveengineering:crusher'
     })
     e.remove({
-      intput: '#forge:ingots/' + name,
+      input: '#forge:ingots/' + name,
       type: 'immersiveengineering:crusher'
     })
     e.recipes.minecraft.smelting(ingotItem, '#forge:dusts/' + name).xp(.5).id('kubejs:minecraft/smelting/dusts/' + name)
@@ -65,10 +68,11 @@ events.listen('recipes', function (e) {
       energy: 3000
     }).id('kubejs:immersiveengineering/crusher/ingot/' + name)
     //If unifiable item doesn't have an ore, add it below
-    if (name !== 'steel' && name !== 'bronze') {
+    if(!ingredient.of('#forge:ores/' + name).empty){
       e.recipes.minecraft.smelting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/smelting/ores/' + name)
       e.recipes.minecraft.blasting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/blasting/ores/' + name)
       e.recipes.mekanism.enriching(item.of(dustItem, 2), '#forge:ores/' + name).id('kubejs:mekanism/enriching/ores/' + name)
+      //e.recipes.mekanism.enriching(item.of(dustItem), '#mekanism:dirty_dusts/' + name).id('kubejs:mekanism/enriching/dirty/' + name)
       //This is here to stop crushing hammer recipes for modium from generating
       if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
         e.remove({
@@ -152,10 +156,9 @@ events.listen('recipes', function (e) {
   unifyMetal('vibranium', 'allthemodium:vibranium_ingot', 'allthemodium:vibranium_dust', 'allthemodium:vibranium_block', 'allthemodium:vibranium_nugget')
   unifyMetal('unobtainium', 'allthemodium:unobtainium_ingot', 'allthemodium:unobtainium_dust', 'allthemodium:unobtainium_block', 'allthemodium:unobtainium_nugget')
   unifyMetal('steel', 'mekanism:ingot_steel', 'mekanism:dust_steel', 'mekanism:block_steel', 'mekanism:nugget_steel')
-  unifyMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
   unifyMetal('azure_silver', 'silentgear:azure_silver_ingot', 'silentgear:azure_silver_dust', 'silentgear:azure_silver_block', 'silentgear:azure_silver_nugget')
   unifyMetal('crimson_iron', 'silentgear:crimson_iron_ingot', 'silentgear:crimson_iron_dust', 'silentgear:crimson_iron_block', 'silentgear:crimson_iron_nugget')
+  unifyMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
   unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
   unifyMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
-  unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
 })
