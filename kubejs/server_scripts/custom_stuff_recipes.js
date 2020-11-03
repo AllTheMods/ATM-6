@@ -127,14 +127,14 @@ events.listen('recipes', function (e) {
     P: 'solarflux:photovoltaic_cell_6'
   }, 2)
 
-  function customBlock(name, ingridient) {
-    kjsShapeless(name, ingridient, 9)
-    kjsShaped(name, [
+  function customBlock(block, item) {
+    kjsShapeless(item, block, 9)
+    kjsShaped(block, [
       'AAA',
       'AAA',
       'AAA'
     ], {
-      A: ingridient
+      A: item
     })
   }
 
