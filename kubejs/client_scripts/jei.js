@@ -4,8 +4,8 @@ events.listen('jei.information', function (e) {
     }
     info('allthemodium:molten_bluelava_bucket', ['Soul Lava appears occasionally in the nether.', '(Small source blocks only - no pools.)'])
     info('allthemodium:allthemodium_ore', ['Check all the oceans for Allthemodium.', '(Y 5-45)'])
-    info('allthemodium:vibranium_ore', ['Vibranium can be found at higher altitudes around the nether.', '(Y 80-127)'])
-    info('allthemodium:unobtainium_ore', ['Unobtainium can be obtained in the End.'])
+    info('allthemodium:vibranium_ore', ['Vibranium can be found in warped forests in the Nether.', '(Y 80-127)'])
+    info('allthemodium:unobtainium_ore', ['Unobtainium can be obtained from the Highland biomes in the End.'])
 })
 events.listen('jei.add.items', function (e) {
     e.add([
