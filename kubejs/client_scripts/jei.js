@@ -37,13 +37,13 @@ events.listen('jei.hide.items', function (e) {
             }
         })
     }
-    //Hide metals, format: ['mod1','mod2'],'metal',['type1','type2']
-    hideMetal(['immersiveengineering'],'copper',['ingot','ore','dust','nugget','storage'])
-    hideMetal(['immersiveengineering'],'silver',['ingot','ore','dust','nugget','storage'])
-    hideMetal(['immersiveengineering'],'aluminum',['ingot','ore','dust','nugget','storage'])
-    hideMetal(['immersiveengineering'],'uranium',['ingot','ore','dust','nugget','storage'])
-    hideMetal(['immersiveengineering'],'lead',['ingot','ore','dust','nugget','storage'])
-    hideMetal(['immersiveengineering'],'nickel',['ingot','ore','dust','nugget','storage'])
-    hideMetal(['immersiveengineering'],'steel',['ingot','dust','nugget','storage'])
+    //Hide metals, format: 'mod','metal',['type1','type2']
+    hideMetal('immersiveengineering','copper',['ingot','ore','dust','nugget','storage'])
+    hideMetal('immersiveengineering','silver',['ingot','ore','dust','nugget','storage'])
+    hideMetal('immersiveengineering','aluminum',['ingot','ore','dust','nugget','storage'])
+    hideMetal('immersiveengineering','uranium',['ingot','ore','dust','nugget','storage'])
+    hideMetal('immersiveengineering','lead',['ingot','ore','dust','nugget','storage'])
+    hideMetal('immersiveengineering','nickel',['ingot','ore','dust','nugget','storage'])
+    hideMetal('immersiveengineering','steel',['ingot','dust','nugget','storage'])
     */
 })
