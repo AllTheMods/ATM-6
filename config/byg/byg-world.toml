@@ -170,5 +170,4 @@
 	#NO SPACES AFTER COMMAS!
 	#DOES NOT ACCEPT DATAPACK VALUES!
 	#Default: ""
-	BlacklistNether = "allthemodium:badlands,allthemodium:badlands_plateau,allthemodium:basalt_deltas,allthemodium:crimson_forest,allthemodium:desert,allthemodium:desert_hills,allthemodium:eroded_badlands,allthemodium:gravelly_mountains,allthemodium:modified_badlands_plateau,allthemodium:modified_gravelly_mountains,allthemodium:mountain_edges,allthemodium:mountains,allthemodium:nether_wastes,allthemodium:soul_sand_valley,allthemodium:the_other,allthemodium:warped_forest"
-
+	BlacklistNether = "allthemodium:modified_gravelly_mountains,allthemodium:gravelly_mountains,allthemodium:mining,allthemodium:badlands,allthemodium:badlands_plateau,allthemodium:basalt_deltas,allthemodium:crimson_forest,allthemodium:desert,allthemodium:desert_hills,allthemodium:eroded_badlands,allthemodium:mining,allthemodium:modified_badlands_plateau,allthemodium:mountain_edge,allthemodium:mountains,allthemodium:nether_wastes,allthemodium:soul_sand_valley,allthemodium:the_other,allthemodium:warped_forest"
