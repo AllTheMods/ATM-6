@@ -32,18 +32,7 @@
 			#
 			# How many Giant Boulders per chunk. (Can be decimal too)
 			#Range: 0.0 ~ 100.0
-			giantBouldersPerChunk = 1.0
-			#
-			# Adds tiny boulders to modded Taiga biomes.
-			addTinyBouldersModdedBiomes = false
-			#
-			# Adds a large tree somewhat uncommonly to Swamp biome and replaces
-			# all vanilla trees in Swamp Hills biome with the larger tree.
-			hornedSwampTree = true
-			#
-			# Adds tiny boulders to Taiga Mountains and Snowy Taiga Mountains biomes 
-			# that can contain small amounts of Coal and Iron ores.
-			boulderTiny = true
+			giantBouldersPerChunk = 0.5
 			#
 			# 1 out of ___ chance of Diamond Ore when placing
 			# a block in giant Boulders. Lower number = more common.
@@ -51,40 +40,23 @@
 			#Range: 0 ~ 1000000
 			diamondChanceInGiantBoulders = 7000
 			#
+			# Adds tiny boulders to modded Taiga biomes.
+			addTinyBouldersModdedBiomes = false
+			#
+			# Adds tiny boulders to Taiga Mountains and Snowy Taiga Mountains biomes 
+			# that can contain small amounts of Coal and Iron ores.
+			boulderTiny = true
+			#
 			# Replaces boulders in Giant Tree Taiga Hills and Giant Spruce Taiga Hills
 			# biomes with a larger boulder that can contain Coal, Iron, and extremely
 			# rarely, can also have Diamond Ores.
 			boulderGiant = true
+			#
+			# Adds a large tree somewhat uncommonly to Swamp biome and replaces
+			# all vanilla trees in Swamp Hills biome with the larger tree.
+			hornedSwampTree = true
 
 	["Mod-wide Impacting Options"."Structure Options"]
-
-		["Mod-wide Impacting Options"."Structure Options".Igloos]
-			#
-			# Add Grassy Igloos to modded biomes that are
-			# most likely grassy fields or temperate forests.
-			addGrassyIglooToModdedBiomes = true
-			#
-			# Add the ID/resource location of the biome you don't want
-			# RS's Igloos to spawn in. Separate each ID with a comma ,
-			#
-			#Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
-			blacklistedIglooBiomes = ""
-			#
-			# How rare are Stone Igloos in Giant Tree Taiga biomes.
-			# 
-			# 1 for spawning in most chunks and 1001 for no spawn.
-			#Range: 1 ~ 1001
-			stoneIglooSpawnrate = 20
-			#
-			# How rare are Grassy Igloos in Plains and Forests.
-			# 
-			# 1 for spawning in most chunks and 1001 for no spawn.
-			#Range: 1 ~ 1001
-			grassyIglooSpawnrate = 20
-			#
-			# Add Stone Igloos to modded biomes that are
-			# most likely Giant Tree Taiga variants.
-			addStoneIglooToModdedBiomes = true
 
 		["Mod-wide Impacting Options"."Structure Options"."Jungle Fortress"]
 			#
@@ -92,10 +64,10 @@
 			# 
 			# 1 for spawning in most chunks and 1001 for no spawn.
 			#Range: 1 ~ 1001
-			jungleFortressSpawnrate = 32
+			jungleFortressMaxChunkDistance = 32
 			#
-			# Controls whether loot chests spawn or not in Jungle Fortresses.
-			lootChestsJF = true
+			# Add Jungle Fortress to modded jungle biomes.
+			addJungleFortressToModdedBiomes = true
 			#
 			# Add the ID/resource location of the biome you don't want
 			# RS's Jungle Fortresses to spawn in. Separate each ID with a comma ,
@@ -103,17 +75,61 @@
 			#Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
 			blacklistedFortressBiomes = ""
 			#
-			# Add Jungle Fortress to modded jungle biomes.
-			addJungleFortressToModdedBiomes = true
-			#
 			# How often Silverfish Blocks will generate in Jungle Fortress as a percentage.
 			# Note: Mossy Stone Bricks block cannot be infected by Silverfish
 			# 
 			# 0 for no Silverfish Blocks and 100 for max spawnrate.
 			#Range: 0.0 ~ 100.0
-			silverfishSpawnrateJF = 0.5
+			silverfishSpawnrate = 0.5
 			#
 			# Silverfish Mob Spawners generate in Stone Fortresses.
 			# If turned off, the spawners will become Skeleton spawners.
-			allowSilverfishSpawnerJF = true
+			allowSilverfishSpawner = true
+			#
+			# Controls whether loot chests spawn or not in Jungle Fortresses.
+			lootChests = true
+
+		["Mod-wide Impacting Options"."Structure Options".Igloos]
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Igloos to spawn in. Separate each ID with a comma ,
+			#
+			#Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedIglooBiomes = ""
+			#
+			# How rare are Grassy Igloos in Plains and Forests.
+			# 
+			# 1 for spawning in most chunks and 1001 for no spawn.
+			#Range: 1 ~ 1001
+			grassyIglooMaxChunkDistance = 20
+			#
+			# Add Grassy Igloos to modded biomes that are
+			# most likely grassy fields or temperate forests.
+			addGrassyIglooToModdedBiomes = true
+			#
+			# How rare are Stone Igloos in Giant Tree Taiga biomes.
+			# 
+			# 1 for spawning in most chunks and 1001 for no spawn.
+			#Range: 1 ~ 1001
+			stoneIglooMaxChunkDistance = 20
+			#
+			# Add Stone Igloos to modded biomes that are
+			# most likely Giant Tree Taiga variants.
+			addStoneIglooToModdedBiomes = true
+
+		["Mod-wide Impacting Options"."Structure Options"."Ruined Portals"]
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Ruined Portals to spawn in. Separate each ID with a comma ,
+			#
+			#Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedRuinedPortalsBiomes = ""
+			#How rare are End themed Ruined Portals in
+			#End category biomes. 1 for spawning in most
+			#chunks and 1001 for none.
+			#Range: 1 ~ 1001
+			ruinedPortalEndMaxChunkDistance = 57
+			#Add End themed ruined portals to modded
+			#End category biomes.
+			addRuinedPortalEndToModdedBiomes = true
 
