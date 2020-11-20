@@ -2,7 +2,7 @@
 
 All The Mods 6
 ======
-This is the official repository and issue-tracker for All The Mods 6 1.16.3
+This is the official repository and issue-tracker for All The Mods 6 1.16.4
 
 Does "All The Mods" *really* contain ALL THE MODS? No, of course not.
 
@@ -24,4 +24,4 @@ When reporting an issue put the version number before the issue title! Such as [
 + ![All the Mods 3 Expert](http://cf.way2muchnoise.eu/325396.svg "ATM3E") All The Mods 3 - Expert - ATM3E
 + ![All the Mods 4](http://cf.way2muchnoise.eu/316059.svg "ATM4") All The Mods 4 - ATM4
 + ![All the Mods 5](http://cf.way2muchnoise.eu/357494.svg "ATM5") All The Mods 5 - ATM5
-+ ![All the Mods 6](http://cf.way2muchnoise.eu/381671.svg "ATM5") All The Mods 6 - ATM6
++ ![All the Mods 6](http://cf.way2muchnoise.eu/381671.svg "ATM6") All The Mods 6 - ATM6
