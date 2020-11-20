@@ -1,0 +1,17 @@
+
+["Dynamic chunk view distance settings"]
+	#The maximum chunk view distance allowed to use, set to the max which a player could benefit from. default: 20
+	#Range: 1 ~ 200
+	maxChunkViewDist = 20
+	#The average tick time to stabilize the chunk view distance around, setting it higher than 50ms is not advised, as after 50ms the tps will go below 20. default:40ms
+	#Range: 10 ~ 100
+	meanAvgTickTime = 45
+	#The minimum chunk view distance allowed to use, set to what players should get at least. default: 4
+	#Range: 3 ~ 200
+	minChunkViewDist = 5
+	#Whether to output log messages for actions done, its helpful to balance the other settings nicely.
+	logMessages = true
+	#The update frequency of average server tick time checks to update view distances, default is every 30 seconds
+	#Range: 1 ~ 1000
+	viewDistanceUpdateRate = 30
+
