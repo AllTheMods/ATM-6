@@ -247,8 +247,8 @@
 	#Range: 1 ~ 10000
 	"Troll Spawn Weight" = 160
 	#A double check to see if the game can spawn trolls. Higher number = lower chance to spawn.
-	#Range: 1 ~ 10000
-	"Troll Spawn Check Chance" = 1
+	#Range: 0 ~ 10000
+	"Troll Spawn Check Chance" = 0
 	#Maximum troll health
 	#Range: 1.0 ~ 10000.0
 	"Troll Max Health" = 250.0
@@ -354,6 +354,9 @@
 	"Dragon Flight Speed Modifier" = 1.0
 	#Whether to generate graveyards or not
 	"Generate Graveyards" = true
+	#Graveyard rarity.
+	#Range: 2 ~ 10000
+	"Graveyard Chance" = 46
 	#Maximum ghost health.
 	#Range: 1.0 ~ 10000.0
 	"Ghost Max Health" = 150.0
@@ -362,3 +365,4 @@
 	"Ghost Attack Strength" = 15.0
 	#True if ghosts can rarely spawn from brutal PvP deaths.
 	"Ghost Spawn from PvP deaths" = true
+
