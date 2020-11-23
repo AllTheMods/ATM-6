@@ -56,7 +56,10 @@ events.listen('recipes', function (e) {
 
       'titanium:iron_gear',
       'titanium:gold_gear',
-      'titanium:diamond_gear'
+      'titanium:diamond_gear',
+
+      // issue #349
+      'silentgear:salvager'
     ]
   })
   e.remove({
