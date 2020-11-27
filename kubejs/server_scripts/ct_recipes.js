@@ -421,6 +421,34 @@ events.listen('recipes', function (e) {
         'b': '#forge:dusts/redstone',
         'n': '#forge:ingots/unobtainium'
     })
+    //Iron Furnaces
+	e.shaped('ironfurnaces:allthemodium_furnace', [
+        'bab',
+        'afa',
+        'bab'
+    ], {
+        'f': 'ironfurnaces:netherite_furnace',
+        'a': 'allthemodium:allthemodium_ingot',
+		'b': 'allthemodium:allthemodium_block'
+    })
+	e.shaped('ironfurnaces:vibranium_furnace', [
+        'bvb',
+        'vfv',
+        'bvb'
+    ], {
+        'f': 'ironfurnaces:allthemodium_furnace',
+        'v': 'allthemodium:vibranium_ingot',
+		'b': 'allthemodium:vibranium_block'
+    })
+	e.shaped('ironfurnaces:unobtanium_furnace', [
+        'bub',
+        'uvu',
+        'bub'
+    ], {
+        'v': 'ironfurnaces:vibranium_furnace',
+        'u': 'allthemodium:unobtainium_ingot',
+		'b': 'allthemodium:unobtainium_block'
+    })
     //Quark
     e.shapeless('minecraft:chest', '#forge:chests/wooden')
     e.shapeless('quark:oak_chest', ['minecraft:oak_planks', '#forge:chests/wooden'])
