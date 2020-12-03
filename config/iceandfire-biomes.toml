@@ -1,83 +1,89 @@
 
+#Biome config
+#To filter biomes by registry name "mod_id:biome_id"
+#To filter biomes by category "@category"
+#To filter biomes by tags "#tag"
+#	Examples:
+#		"minecraft:plains"
+#		"@desert"
+#		"#overworld"
+#
+#If you want to exclude biomes put a ! before the biome identifier
+#	Examples:
+#		"!minecraft:plains"
+#		"!@desert"
+#		"!#nether"
+#
+#If you want to include biomes that would be satisfied by any in a set use |
+#	Examples:
+#		"|minecraft:plains"
+#		"|@desert"
+#		"|#nether"
+#
+#If you want a condition that MUST be satisfied use an & before the biome identifier
+#Please note using this on a registry name wouldn't be that useful
+#	Examples:
+#		"&minecraft:plains"
+#		"&@forest"
+#		"&#overworld"
+#
+#NOTE: Any entry without a !, |, or & symbol has a higher precedence
+#A list like ["!minecraft:plains", "#overworld"] would still see the plains as a viable biome
+#
+#Finally, you can create a expression that can be evaluated by itself using a + to combine identifiers
+#	Examples:
+#		"!#hot+!#dry+!#mountain"
+#
+#These expressions can be used to filter biomes in a lot of ways
+#Lets say we don't want anything to spawn in any place dry and sandy
+#	"!#dry+!#sandy"
+#
+#But there is a hot place we want them to spawn that's also wet
+#	"#hot+#wet"
+#
+#We just put them as separate values in the list and that'll work out
+#	["!#dry+!#sandy","#hot+#wet"]
+#
+#NOTE: Any entry that's an expression will not be affected by anything else in the list
 [biome_configs]
-	#biome list
 	deathwormBiomes = ["allthemodium:desert", "allthemodium:desert_hills"]
-	#biome list
 	lightningDragonBiomes = ["allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau"]
-	#biome list
 	cockatriceBiomes = ["allthemodium:desert", "allthemodium:desert_hills", "allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau"]
-	#biome list
 	blackHippogryphBiomes = ["allthemodium:the_other"]
-	#biome list
 	lightningLilyBiomes = ["allthemodium:desert", "allthemodium:desert_hills"]
-	#biome list
 	sirenBiomes = ["allthemodium:desert", "allthemodium:desert_hills", "allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau", "allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	amphithereBiomes = ["allthemodium:badlands_plateau", "allthemodium:crimson_forest", "allthemodium:nether_wastes", "allthemodium:soul_sand_valley", "allthemodium:warped_forest", "allthemodium:the_other"]
-	#biome list
 	fireDragonSkeletonBiomes = ["allthemodium:badlands_plateau", "allthemodium:crimson_forest", "allthemodium:nether_wastes", "allthemodium:soul_sand_valley", "allthemodium:warped_forest", "allthemodium:the_other"]
-	#biome list
 	brownHippogryphBiomes = ["allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	amethystBiomes = ["allthemodium:desert", "allthemodium:desert_hills", "allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau", "allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	hippocampusBiomes = []
-	#biome list
 	snowyTrollBiomes = ["allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	hippogryphBiomes = ["allthemodium:desert", "allthemodium:desert_hills", "allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau", "allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	iceDragonSkeletonBiomes = ["allthemodium:desert", "allthemodium:desert_hills", "allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau", "allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	jungleMyrmexBiomes = []
-	#biome list
-	mausoleumBiomes = "allthemodium:the_other", "allthemodium:mountain_edges","allthemodium:mountains"]
-	#biome list
-	sapphireBiomes = ["allthemodium:the_other","allthemodium:mountain_edges","allthemodium:mountains" ]
-	#biome list
-	mountainTrollBiomes = ["allthemodium:mountain_edges","allthemodium:mountains","allthemodium:the_other"]
-	#biome list
+	mausoleumBiomes = ["allthemodium:the_other", "allthemodium:mountain_edges", "allthemodium:mountains"]
+	sapphireBiomes = ["allthemodium:the_other", "allthemodium:mountain_edges", "allthemodium:mountains"]
+	mountainTrollBiomes = ["allthemodium:mountain_edges", "allthemodium:mountains", "allthemodium:the_other"]
 	iceLilyBiomes = []
-	#biome list
-	chestnutHippogryphBiomes = ["allthemodium:mountain_edges","allthemodium:nether_wastes"]
-	#biome list
+	chestnutHippogryphBiomes = ["allthemodium:mountain_edges", "allthemodium:nether_wastes"]
 	pixieBiomes = []
-	#biome list
 	creamyHippogryphBiomes = []
-	#biome list
 	overworldSpawnBiomes = []
-	#biome list
 	forestTrollBiomes = ["allthemodium:crimson_forest", "allthemodium:warped_forest"]
-	#biome list
 	grayHippogryphBiomes = ["allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	seaSerpentBiomes = []
-	#biome list
 	cyclopsCaveBiomes = ["allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau"]
-	#biome list
 	stymphalianBiomes = ["allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
-	gorgonTempleBiomes = ["allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau","allthemodium:desert"]
-	#biome list
+	gorgonTempleBiomes = ["allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau", "allthemodium:desert"]
 	hydraBiomes = ["allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	whiteHippogryphBiomes = ["allthemodium:desert", "allthemodium:desert_hills"]
-	#biome list
 	fireLilyBiomes = ["allthemodium:crimson_forest", "allthemodium:nether_wastes", "allthemodium:soul_sand_valley", "allthemodium:warped_forest", "allthemodium:the_other"]
-	#biome list
 	graveyardBiomes = ["allthemodium:the_other"]
-	#biome list
 	oreGenBiomes = ["allthemodium:desert", "allthemodium:desert_hills", "allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau", "allthemodium:basalt_deltas", "allthemodium:gravelly_mountains", "allthemodium:the_other", "allthemodium:mountain_edges"]
-	#biome list
 	iceDragonBiomes = ["allthemodium:gravelly_mountains", "allthemodium:modified_badlands_plateau", "allthemodium:mountain_edges"]
-	#biome list
 	darkBrownHippogryphBiomes = ["allthemodium:crimson_forest", "allthemodium:nether_wastes", "allthemodium:soul_sand_valley", "allthemodium:warped_forest", "allthemodium:the_other"]
-	#biome list
 	wanderingCyclopsBiomes = ["allthemodium:nether_wastes", "allthemodium:soul_sand_valley", "allthemodium:warped_forest", "allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau"]
-	#biome list
-	desertMyrmexBiomes = ["allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau","allthemodium:desert", "allthemodium:desert_hills"]
-	#biome list
+	desertMyrmexBiomes = ["allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau", "allthemodium:desert", "allthemodium:desert_hills"]
 	lightningDragonSkeletonBiomes = ["allthemodium:badlands", "allthemodium:badlands_plateau", "allthemodium:eroded_badlands", "allthemodium:modified_badlands_plateau"]
-	#biome list
 	fireDragonBiomes = ["allthemodium:badlands_plateau", "allthemodium:crimson_forest", "allthemodium:nether_wastes", "allthemodium:soul_sand_valley", "allthemodium:warped_forest", "allthemodium:the_other"]
 
