@@ -13,9 +13,9 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:bone",
-    "secondaryOutput":"minecraft:bone_meal",
-    "secondaryOutputWeight":0.5,
-    "secondaryOutputCount":3
+    "secondaryOutput": "minecraft:bone_meal",
+    "secondaryOutputWeight": 0.5,
+    "secondaryOutputCount": 3
   },
   "SpawnData": {
     "canSpawnInWorld": true,

@@ -1,5 +1,6 @@
 events.listen('recipes', function (e) {
   //Functions
+
   function modifyShaped(result, count, pattern, ingridients) {
     e.remove({
       output: result,
@@ -85,7 +86,23 @@ events.listen('recipes', function (e) {
   ], {
     C: 'minecraft:honeycomb'
   })
-  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block')
+  e.shapeless(item.of('minecraft:honeycomb', 9), 'minecraft:honeycomb_block').id('kubejs:shapeless/honeycomb')
+  modifyShaped('solarflux:mirror', 3, [
+    'GGG',
+    'III'
+  ], {
+    G: '#forge:glass',
+    I: '#forge:ingots'
+  })
+  modifyShaped('solarflux:sp_1', 1, [
+    'MMM',
+    'ILI',
+    'III'
+  ], {
+    M: 'solarflux:mirror',
+    L: '#forge:storage_blocks/lapis',
+    I: '#forge:ingots/iron'
+  })
   modifyShaped('minecraft:sticky_piston', 1, [
     'B',
     'P'
@@ -123,6 +140,16 @@ events.listen('recipes', function (e) {
     D: 'forbidden_arcanus:darkstone',
     G: 'forbidden_arcanus:arcane_gold_ingot'
   })
+  modifyShaped('torchmaster:megatorch', 1, [
+    'TTT',
+    'GLG',
+    'DLD'
+  ], {
+    T: 'xreliquary:interdiction_torch',
+    G: '#forge:storage_blocks/gold',
+    D: '#forge:storage_blocks/diamond',
+    L: '#minecraft:logs'
+  })
   modifyShaped('immersiveengineering:cloche', 1, [
     'GEG',
     'G G',
@@ -144,7 +171,7 @@ events.listen('recipes', function (e) {
     W: '#minecraft:wool',
     E: '#forge:ender_pearls',
     S: '#forge:string'
-  })
+  }).id('kubejs:shaped/modified/bagofyurting.bag_of_yurting')
   var ingots = [
     '#forge:ingots/gold',
     '#forge:ingots/iron',
@@ -274,17 +301,16 @@ events.listen('recipes', function (e) {
     A: 'minecraft:comparator',
     R: '#forge:storage_blocks/redstone'
   })
+  modifyShaped('minecolonies:blockhutbuilder', 1, [
+    'PTP',
+    'PDP',
+    'PPP'
+  ], {
+    P: '#minecraft:planks',
+    D: '#minecraft:wooden_doors',
+    T: 'structurize:sceptergold'
+  })
   modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
-  /* e.remove({output: 'silents_mechanisms:zombie_leather'})
-  e.recipes.silents_mechanisms.drying({
-    process_time: 600,
-    ingredient: {
-        item: 'minecraft:rotten_flesh'
-    },
-    result: {
-        item: 'forbidden_arcanus:rotten_leather'
-    }
-  }) */
   e.remove({
     id: 'appliedenergistics2:inscriber/silicon_print'
   })
@@ -360,6 +386,7 @@ events.listen('recipes', function (e) {
     'botanypots:red_botany_pot',
     'botanypots:black_botany_pot',
   ]
+  e.shapeless(item.of('botania:fertilizer'), ['#forge:fetilizer', ['#forge:dyes/' + colors], ['#forge:dyes/' + colors], ['#forge:dyes/' + colors], ['#forge:dyes/' + colors]])
   utils.listOf(colors).forEach(function (color) {
     e.shaped(item.of('botanypots:hopper_' + color + '_botany_pot'), [
       'MPM',

@@ -12,7 +12,7 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "immersiveengineering:ingot_electrum"
+    "mainOutput": "thermal:electrum_ingot"
   },
   "SpawnData": {
     "canSpawnInWorld": false

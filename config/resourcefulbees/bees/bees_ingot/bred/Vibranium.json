@@ -1,7 +1,7 @@
 {
   "flower": "tag:forge:storage_blocks/vibranium",
   "maxTimeInHive": 2000,
-  "traits":["nether"],
+  "traits": ["nether"],
   "hasHoneycomb": true,
   "baseLayerTexture": "modium/vibranium_bee",
   "ColorData": {

@@ -13,7 +13,9 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:slime_ball",
-    "mainOutputCount":2
+    "mainOutputCount": 2,
+    "secondaryOutput": "xreliquary:slime_pearl",
+    "secondaryOutputWeight": 0.05
   },
   "SpawnData": {
     "canSpawnInWorld": true,

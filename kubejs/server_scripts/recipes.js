@@ -1,37 +1,9 @@
 events.listen('recipes', function (e) {
-
   var mekCrush = e.recipes.mekanism.crushing
   var mekEnrich = e.recipes.mekanism.enriching
   var pedCrush = e.recipes.pedestals.pedestal_crushing
   var pedSaw = e.recipes.pedestals.pedestal_sawing
-  /*     function silentsCrushTag(tag, result, rCount, duration) {
-        e.recipes.silents_mechanisms.crushing({
-          process_time: duration,
-          ingredient: {
-            tag: tag
-          },
-          results: [
-            {
-              item: result,
-              count: rCount
-            }
-          ]
-        })
-      }
-      function silentsCrushItem(item, result, rCount, duration) {
-        e.recipes.silents_mechanisms.crushing({
-          process_time: duration,
-          ingredient: {
-            item: item
-          },
-          results: [
-            {
-              item: result,
-              count: rCount
-            }
-          ]
-        })
-      } */
+  
   function energize(ingredient, result, rCount, power) {
     e.recipes.powah.energizing({
       ingredients: ingredient,
@@ -54,28 +26,22 @@ events.listen('recipes', function (e) {
     })
   }
 
-  function shapedC(result, count, pattern, items) {
-    e.shaped(item.of(result, count), pattern, items)
+  function kjsShaped(result, pattern, ingredients, count) {
+    e.shaped(item.of(result, count != null ? count : 1), pattern, ingredients)
   }
 
-  function shaped(result, pattern, items) {
-    e.shaped(item.of(result), pattern, items)
+  function kjsShapeless(result, ingredients, count) {
+    e.shapeless(item.of(result, count != null ? count : 1), ingredients)
   }
 
   //Make bio fuel use tags instead of invidual items
   e.remove({
     output: 'mekanism:bio_fuel'
   })
-  mekCrush(item.of('mekanism:bio_fuel', 2), '#misctags:biofuel2')
-  mekCrush(item.of('mekanism:bio_fuel', 4), '#misctags:biofuel4')
-  mekCrush(item.of('mekanism:bio_fuel', 5), '#misctags:biofuel5')
-  mekCrush(item.of('mekanism:bio_fuel', 7), '#misctags:biofuel7')
-  mekCrush(item.of('mekanism:bio_fuel', 8), '#misctags:biofuel8')
-
-  //Recipes for AE2 stuff
-  //silentsCrushTag('forge:ender_pearls', 'appliedenergistics2:ender_dust', 1, 180)
-  //silentsCrushTag('forge:gems/certus_quartz', 'appliedenergistics2:certus_quartz_dust', 1, 180)
-  //silentsCrushItem('appliedenergistics2:fluix_crystal', 'appliedenergistics2:fluix_dust', 1, 180)
+  var bioFuels = [2,4,5,7,8]
+  utils.listOf(bioFuels).forEach(function (bioFuel) {
+    mekCrush(item.of('mekanism:bio_fuel', bioFuel), '#misctags:biofuel' + bioFuel)
+  })
 
   //Powah recipes
   energize([{
@@ -109,26 +75,38 @@ events.listen('recipes', function (e) {
   }], 'powah:spirited_crystal_block', 1, 9000000)
 
   //Misc recipes
-  e.remove({
-    id: 'byg:black_glass_from_sand'
+  kjsShaped('computercraft:turtle_advanced', [
+    'III',
+    'ICI',
+    'IAI'
+  ], {
+    I: '#forge:ingots/gold',
+    C: 'computercraft:computer_advanced',
+    A: '#forge:ingots/allthemodium'
   })
-  e.remove({
-    id: 'byg:purple_glass_from_sand'
+  kjsShaped('computercraft:turtle_normal', [
+    'III',
+    'ICI',
+    'IAI'
+  ], {
+    I: '#forge:ingots/iron',
+    C: 'computercraft:computer_normal',
+    A: '#forge:ingots/allthemodium'
   })
-  e.remove({
-    id: 'byg:blue_glass_from_sand'
-  })
-  e.remove({
-    id: 'byg:white_glass_from_sand'
-  })
-  e.remove({
-    id: 'minecraft:glass'
+  kjsShaped('minecraft:totem_of_undying', [
+    ' E ',
+    'GVG',
+    ' G '
+  ], {
+    E: 'compressium:emerald_3',
+    G: '#forge:storage_blocks/gold',
+    V: 'minecraft:villager_spawn_egg'
   })
   e.smelting(item.of('appliedenergistics2:certus_quartz_crystal'), '#forge:ores/certus_quartz').xp(1)
   e.smelting(item.of('minecraft:glass'), '#forge:sand').xp(.1)
   e.shapeless(item.of('minecraft:clay_ball', 4), 'minecraft:clay')
   e.shapeless(item.of('minecraft:quartz', 4), 'minecraft:quartz_block')
-  shaped('appliedenergistics2:silicon_press', [
+  kjsShaped('appliedenergistics2:silicon_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -136,7 +114,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:silicon_essence'
   })
-  shaped('appliedenergistics2:calculation_processor_press', [
+  kjsShaped('appliedenergistics2:calculation_processor_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -144,7 +122,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:certus_quartz_essence'
   })
-  shaped('appliedenergistics2:engineering_processor_press', [
+  kjsShaped('appliedenergistics2:engineering_processor_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -152,7 +130,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:diamond_essence'
   })
-  shaped('appliedenergistics2:logic_processor_press', [
+  kjsShaped('appliedenergistics2:logic_processor_press', [
     'EEE',
     'EAE',
     'EEE'
@@ -160,7 +138,7 @@ events.listen('recipes', function (e) {
     'E': 'mysticalagriculture:iron_essence',
     'A': 'mysticalagriculture:gold_essence'
   })
-  shaped('minecraft:hopper', [
+  kjsShaped('minecraft:hopper', [
     'ILI',
     'ILI',
     ' I '
@@ -168,13 +146,13 @@ events.listen('recipes', function (e) {
     'L': '#minecraft:logs',
     'I': '#forge:ingots/iron'
   })
-  shapedC('minecraft:stick', 16, [
+  kjsShaped('minecraft:stick', [
     'L',
     'L'
   ], {
     'L': '#minecraft:logs'
-  })
-  shaped('minecraft:water_bucket', [
+  }, 16)
+  kjsShaped('minecraft:water_bucket', [
     ' C ',
     'CBC',
     ' C '
@@ -182,7 +160,7 @@ events.listen('recipes', function (e) {
     'C': 'resourcefulbees:water_honeycomb',
     'B': 'minecraft:bucket'
   })
-  shaped('minecraft:lava_bucket', [
+  kjsShaped('minecraft:lava_bucket', [
     ' C ',
     'CBC',
     ' C '
@@ -190,21 +168,21 @@ events.listen('recipes', function (e) {
     'C': 'resourcefulbees:lava_honeycomb',
     'B': 'minecraft:bucket'
   })
-  shapedC('minecraft:chest', 4, [
+  kjsShaped('minecraft:chest', [
     'LLL',
     'L L',
     'LLL'
   ], {
     'L': '#minecraft:logs'
-  })
-  shapedC('appliedenergistics2:sky_stone_block', 4, [
+  }, 4)
+  kjsShaped('appliedenergistics2:sky_stone_block', [
     'BSB',
     'SBS',
     'BSB'
   ], {
     'S': 'minecraft:stone',
     'B': 'minecraft:blackstone'
-  })
+  }, 4)
   e.recipes.industrialforegoing.dissolution_chamber({
     input: [{
       tag: 'minecraft:planks'
@@ -233,16 +211,16 @@ events.listen('recipes', function (e) {
   }], 'refinedstorage:creative_controller', 1, 420000000)
   energize([{
     item: 'refinedstorageaddons:wireless_crafting_grid'
-  }], 'refinedstorageaddons:creative_wireless_crafting_grid', 1, 420000000)
+  }], 'refinedstorageaddons:creative_wireless_crafting_grid', 1, 420000)
   energize([{
     item: 'refinedstorage:wireless_crafting_monitor'
-  }], 'refinedstorage:creative_wireless_crafting_monitor', 1, 420000000)
+  }], 'refinedstorage:creative_wireless_crafting_monitor', 1, 420000)
   energize([{
     item: 'refinedstorage:wireless_fluid_grid'
-  }], 'refinedstorage:creative_wireless_fluid_grid', 1, 420000000)
+  }], 'refinedstorage:creative_wireless_fluid_grid', 1, 420000)
   energize([{
     item: 'refinedstorage:wireless_grid'
-  }], 'refinedstorage:creative_wireless_grid', 1, 420000000)
+  }], 'refinedstorage:creative_wireless_grid', 1, 420000)
   e.shapeless(item.of('botania:mana_tablet', {
     mana: 500000,
     creative: 1
@@ -297,7 +275,7 @@ events.listen('recipes', function (e) {
       'count': 1
     }
   ], 'mysticalagradditions:creative_essence', 1, 4.9)
-  e.shaped(item.of('botania:creative_pool'), [
+  kjsShaped('botania:creative_pool', [
     'CSC',
     'CPC',
     'CWC'
@@ -307,7 +285,7 @@ events.listen('recipes', function (e) {
     'S': 'kubejs:rune_of_sins',
     'W': 'kubejs:mass_of_wills'
   })
-  e.shaped(item.of('pneumaticcraft:creative_compressor'), [
+  kjsShaped('pneumaticcraft:creative_compressor', [
     'CLC',
     'FCA',
     'CEC'
@@ -318,7 +296,7 @@ events.listen('recipes', function (e) {
     'E': 'pneumaticcraft:electrostatic_compressor',
     'F': 'pneumaticcraft:flux_compressor'
   })
-  e.shaped(item.of('rats:rat_upgrade_creative'), [
+  kjsShaped('rats:rat_upgrade_creative', [
     'HUH',
     'CCC',
     'HUH'
@@ -615,7 +593,7 @@ events.listen('recipes', function (e) {
   })
 
   function extraBlock(size) {
-    e.shaped(item.of('extrastorage:block_' + size), [
+    kjsShaped('extrastorage:block_' + size, [
       'QPQ',
       'QCQ',
       'QRQ'
@@ -634,7 +612,7 @@ events.listen('recipes', function (e) {
   extraBlock('65536k_fluid')
   extraBlock('262144k_fluid')
   extraBlock('1048576k_fluid')
-  e.shaped(item.of('extrastorage:iron_crafter'), [
+  kjsShaped('extrastorage:iron_crafter', [
     'B B',
     'PCP',
     'B B'
@@ -643,7 +621,7 @@ events.listen('recipes', function (e) {
     P: 'refinedstorage:improved_processor',
     C: '#refinedstorage:crafter'
   })
-  e.shaped(item.of('extrastorage:gold_crafter'), [
+  kjsShaped('extrastorage:gold_crafter', [
     'B B',
     'PCP',
     'B B'
@@ -652,7 +630,7 @@ events.listen('recipes', function (e) {
     P: 'refinedstorage:advanced_processor',
     C: 'extrastorage:iron_crafter'
   })
-  e.shaped(item.of('extrastorage:diamond_crafter'), [
+  kjsShaped('extrastorage:diamond_crafter', [
     'B B',
     'PCP',
     'B B'
@@ -661,7 +639,7 @@ events.listen('recipes', function (e) {
     P: 'refinedstorage:advanced_processor',
     C: 'extrastorage:gold_crafter'
   })
-  e.shaped(item.of('extrastorage:netherite_crafter'), [
+  kjsShaped('extrastorage:netherite_crafter', [
     'BBB',
     'PCP',
     'BBB'
@@ -670,7 +648,7 @@ events.listen('recipes', function (e) {
     P: 'refinedstorage:advanced_processor',
     C: 'extrastorage:diamond_crafter'
   })
-  e.shaped(item.of('extrastorage:advanced_exporter'), [
+  kjsShaped('extrastorage:advanced_exporter', [
     ' T ',
     'PCP',
     ' T '
@@ -679,7 +657,7 @@ events.listen('recipes', function (e) {
     P: 'refinedstorage:improved_processor',
     C: 'refinedstorage:exporter'
   })
-  e.shaped(item.of('extrastorage:advanced_importer'), [
+  kjsShaped('extrastorage:advanced_importer', [
     ' T ',
     'PCP',
     ' T '
@@ -693,7 +671,7 @@ events.listen('recipes', function (e) {
     output: 'xreliquary:fertile_lily_pad',
     type: 'minecraft:crafting_shapeless'
   })
-  e.shaped(item.of('xreliquary:fertile_lily_pad'), [
+  kjsShaped('xreliquary:fertile_lily_pad', [
     'ESE',
     'FLF',
     'ESE'
@@ -742,7 +720,16 @@ events.listen('recipes', function (e) {
       e.shapeless(item.of('powah:' + type + '_' + tier), 'powah:' + type + '_' + tier)
     })
   })
-  var solars = ['1', '2', '3', '4', '5', '6', '7', '8']
+  var solars = [
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    'custom_allthemodium',
+    'custom_vibranium',
+    'custom_unobtainium'
+  ]
   utils.listOf(solars).forEach(function (solar) {
     e.shapeless(item.of('solarflux:sp_' + solar), 'solarflux:sp_' + solar)
   })

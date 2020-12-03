@@ -3,811 +3,813 @@
 	#This is the mana cost per cycle
 	#Range: 0 ~ 100000000
 	ALARM_BARRIER_MANA_COST = 1
-	#This is how often the boundary drains mana
-	#Range: 0 ~ 100000000
-	ALARM_BARRIER_MANA_CYCLE = 10
 	#This is the range of the boundary
 	#Range: 0 ~ 100000000
-	ALARM_BARRIER_RADIUS = 10
-	#This is how often the boundary does it's thing
+	ENCLOSURE_BARRIER_RADIUS = 5
+	#This is how often the boundary drains mana
 	#Range: 0 ~ 100000000
-	ALARM_BARRIER_CYCLE = 20
+	TANGIBLE_BARRIER_MANA_CYCLE = 3
 	#This is the mana cost per cycle
 	#Range: 0 ~ 100000000
 	DISPLACEMENT_BARRIER_MANA_COST = 1
-	#This is how often the boundary drains mana
+	#This is the range of the boundary
 	#Range: 0 ~ 100000000
-	DISPLACEMENT_BARRIER_MANA_CYCLE = 5
+	TANGIBLE_BARRIER_RADIUS = 10
 	#This is the range of the boundary
 	#Range: 0 ~ 100000000
 	DISPLACEMENT_BARRIER_RADIUS = 11
 	#This is how often the boundary does it's thing
 	#Range: 0 ~ 100000000
-	DISPLACEMENT_BARRIER_CYCLE = 4
+	ENCLOSURE_BARRIER_CYCLE = 20
 	#This is the mana cost per cycle
 	#Range: 0 ~ 100000000
 	DRAIN_LIFE_BARRIER_MANA_COST = 5
 	#This is how often the boundary drains mana
 	#Range: 0 ~ 100000000
+	GRAVITY_BARRIER_MANA_CYCLE = 2
+	#This is how often the boundary does it's thing
+	#Range: 0 ~ 100000000
+	TANGIBLE_BARRIER_CYCLE = 20
+	#This is the mana cost per cycle
+	#Range: 0 ~ 100000000
+	ENCLOSURE_BARRIER_MANA_COST = 20
+	#This is how often the boundary drains mana
+	#Range: 0 ~ 100000000
 	DRAIN_LIFE_BARRIER_MANA_CYCLE = 1
+	#This is how often the boundary drains mana
+	#Range: 0 ~ 100000000
+	ALARM_BARRIER_MANA_CYCLE = 10
+	#This is how often the boundary drains mana
+	#Range: 0 ~ 100000000
+	DISPLACEMENT_BARRIER_MANA_CYCLE = 5
+	#This is how often the boundary does it's thing
+	#Range: 0 ~ 100000000
+	DRAIN_LIFE_BARRIER_CYCLE = 20
+	#This is the range of the boundary
+	#Range: 0 ~ 100000000
+	ALARM_BARRIER_RADIUS = 10
 	#This is the range of the boundary
 	#Range: 0 ~ 100000000
 	DRAIN_LIFE_BARRIER_RADIUS = 10
 	#This is how often the boundary does it's thing
 	#Range: 0 ~ 100000000
-	DRAIN_LIFE_BARRIER_CYCLE = 20
-	#This is the mana cost per cycle
+	GRAVITY_BARRIER_CYCLE = 1
+	#This is how often the boundary does it's thing
 	#Range: 0 ~ 100000000
-	GRAVITY_BARRIER_MANA_COST = 1
-	#This is how often the boundary drains mana
-	#Range: 0 ~ 100000000
-	GRAVITY_BARRIER_MANA_CYCLE = 2
+	DISPLACEMENT_BARRIER_CYCLE = 4
+	#mahoutsukai.config.alarm_barrier_actionbar_messages.comment
+	ALARM_ACTION_BAR_MESSAGES = true
 	#This is the range of the boundary
 	#Range: 0 ~ 100000000
 	GRAVITY_BARRIER_RADIUS = 10
-	#This is how often the boundary does it's thing
-	#Range: 0 ~ 100000000
-	GRAVITY_BARRIER_CYCLE = 1
-	#This is the mana cost per cycle
-	#Range: 0 ~ 100000000
-	ENCLOSURE_BARRIER_MANA_COST = 20
-	#This is how often the boundary does it's thing
-	#Range: 0 ~ 100000000
-	ENCLOSURE_BARRIER_CYCLE = 20
-	#This is the range of the boundary
-	#Range: 0 ~ 100000000
-	ENCLOSURE_BARRIER_RADIUS = 5
 	#This is the mana cost per cycle
 	#Range: 0 ~ 100000000
 	TANGIBLE_BARRIER_MANA_COST = 1
-	#This is how often the boundary drains mana
+	#This is the mana cost per cycle
 	#Range: 0 ~ 100000000
-	TANGIBLE_BARRIER_MANA_CYCLE = 3
-	#This is the range of the boundary
-	#Range: 0 ~ 100000000
-	TANGIBLE_BARRIER_RADIUS = 10
+	GRAVITY_BARRIER_MANA_COST = 1
 	#This is how often the boundary does it's thing
 	#Range: 0 ~ 100000000
-	TANGIBLE_BARRIER_CYCLE = 20
-	#mahoutsukai.config.alarm_barrier_actionbar_messages.comment
-	ALARM_ACTION_BAR_MESSAGES = true
+	ALARM_BARRIER_CYCLE = 20
 
 [displacement]
-	#This is how often the circle checks for things to teleport
+	#This is the cost per teleport
 	#Range: 0 ~ 100000000
-	ASCENSION_BLOCK_CYCLE = 4
+	ORDERED_DISPLACEMENT_MANA_COST = 40
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	PROTECTIVE_DISPLACEMENT_MANA_COST = 50
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	PROJECTILE_DISPLACEMENT_MANA_COST = 50
+	#This is how far you can go before being sent back to your body
+	#Range: 0 ~ 100000000
+	MENTAL_DISPLACEMENT_RANGE = 20
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	MENTAL_DISPLACEMENT_MANA_COST = 300
+	#This is the max distance between ordered displacement circles.
+	#Range: 0 ~ 100000000
+	ORDERED_DISPLACEMENT_RADIUS = 20
+	#This is the cost per name tag
+	#Range: 0 ~ 100000000
+	SCRYING_MANA_COST = 50
+	#This is how often a Scrying tile entity will send updates
+	#Range: 0 ~ 100000000
+	SCRYING_BLOCK_CYCLE = 4
 	#This is the cost of using the scroll (also the cost per teleport if not a scroll)
 	#Range: 0 ~ 100000000
 	ASCENSION_SCROLL_MANA_COST = 30
+	#This is the cost per teleport
+	#Range: 0 ~ 100000000
+	EQUIVALENT_DISPLACEMENT_MANA_COST = 60
+	#This is the cooldown between teleports (so you don't get shot back and forth rapidly)
+	#Range: 0 ~ 100000000
+	ORDERED_DISPLACEMENT_RECEIVE_COOLDOWN = 15
+	#This is how often the circle checks for things to teleport
+	#Range: 0 ~ 100000000
+	ORDERED_DISPLACEMENT_BLOCK_CYCLE = 4
+	#This is how long (in ticks) before a single name tag use runs out
+	#Range: 0 ~ 100000000
+	SCRYING_DURATION = 1200
+	#This is how often the circle checks for things to teleport
+	#Range: 0 ~ 100000000
+	ASCENSION_BLOCK_CYCLE = 4
 	#This is how often the circle checks for things to teleport
 	#Range: 0 ~ 100000000
 	EQUIVALENT_DISPLACEMENT_BLOCK_CYCLE = 4
 	#This is the cooldown between teleports (so you don't get shot back and forth rapidly)
 	#Range: 0 ~ 100000000
 	EQUIVALENT_DISPLACEMENT_RECEIVE_COOLDOWN = 15
-	#This is the cost per teleport
-	#Range: 0 ~ 100000000
-	EQUIVALENT_DISPLACEMENT_MANA_COST = 60
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	MENTAL_DISPLACEMENT_MANA_COST = 300
-	#This is how far you can go before being sent back to your body
-	#Range: 0 ~ 100000000
-	MENTAL_DISPLACEMENT_RANGE = 20
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	PROJECTILE_DISPLACEMENT_MANA_COST = 50
-	#This is how often the circle checks for things to teleport
-	#Range: 0 ~ 100000000
-	ORDERED_DISPLACEMENT_BLOCK_CYCLE = 4
-	#This is the cooldown between teleports (so you don't get shot back and forth rapidly)
-	#Range: 0 ~ 100000000
-	ORDERED_DISPLACEMENT_RECEIVE_COOLDOWN = 15
-	#This is the cost per teleport
-	#Range: 0 ~ 100000000
-	ORDERED_DISPLACEMENT_MANA_COST = 40
-	#This is the max distance between ordered displacement circles.
-	#Range: 0 ~ 100000000
-	ORDERED_DISPLACEMENT_RADIUS = 20
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	PROTECTIVE_DISPLACEMENT_MANA_COST = 50
-	#This is the cost per name tag
-	#Range: 0 ~ 100000000
-	SCRYING_MANA_COST = 50
-	#This is how long (in ticks) before a single name tag use runs out
-	#Range: 0 ~ 100000000
-	SCRYING_DURATION = 1200
-	#This is how often a Scrying tile entity will send updates
-	#Range: 0 ~ 100000000
-	SCRYING_BLOCK_CYCLE = 4
 
 [projection]
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	WEAPON_SHOOTER_MANA_COST = 100
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_SCROLL_MANA_COST = 1000
-	#This is the cost per projectile when using the gauntlet
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_GAUNTLET_MANA_COST = 120
-	#This is the delay between projectiles of the gauntlet
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_COOLDOWN = 10
-	#This is the mana cost per chain spawned
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_CHAINS_MANA_COST = 120
-	#This is the cooldown between chain spawns
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_CHAINS_COOLDOWN = 10
-	#This is the number of initial chains spawned
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_CHAINS_COUNT = 16
-	#This is the cost per AOE projectile when using the gauntlet
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_AOE_MANA_COST = 120
-	#This is the delay between AOE projectiles of the gauntlet
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_AOE_COOLDOWN = 4
-	#This is the max distance between the target and the projectile spawn
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_DISTANCE = 20
-	#This is the min distance between the target and the projectile spawn
-	#Range: 0 ~ 100000000
-	TREASURY_PROJECTION_MIN_DISTANCE = 8
-	#This is the wind up time each projectile has before firing.
-	#Range: 0.0 ~ 1.0E8
-	TREASURY_PROJECTION_SPEED = 30.0
-	#Ignore whitelist; allow everything
-	TREASURY_PROJECTION_ALLOW_ALL = false
-	#Ignore whitelist & blacklist; allow everything
-	TREASURY_PROJECTION_DENY_ALL = false
-	#A list of additional registry names which will be considered for selection in Treasury Projection
-	TREASURY_PROJECTION_WHITELIST = []
-	#A list of  registry names which will be not considered for selection in Treasury Projection
-	TREASURY_PROJECTION_BLACKLIST = []
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	STRENGTHENING_MANA_COST = 50
-	#A blacklist for items which should not spawn extra drops with Strengthening
-	STRENGTHENING_ITEM_SPAWN_BLACKLIST = []
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	MARBLE_MANA_COST = 4000
-	#If you have dimension conflicts, change this to something else
-	#Range: 0 ~ 100000000
-	MARBLE_DIMENSION = -1
-	#Durability of swords spawned in the Marble Dimension
-	#Range: 0 ~ 100000000
-	MARBLE_DIMENSION_DURABILITY = 3
-	#Distance between swords spawned in the Marble Dimension
-	#Range: 0 ~ 100000000
-	MARBLE_DIMENSION_SPAWN_RATE = 12
-	#Probability of sword spawn
-	#Range: 0.0 ~ 1.0E8
-	MARBLE_DIMENSION_SPAWN_CHANCE = 0.8
-	#These will spawn in the Reality Marble as entities.. No guarantees on functionality if you change this.
-	MARBLE_SWORD_SPAWN_LIST = ["minecraft:iron_sword", "minecraft:diamond_sword", "minecraft:stone_sword"]
-	#This is how much durability the proximity projection keys have
-	#Range: 0 ~ 100000000
-	PROXIMITY_PROJECTION_MANA_COST = 30
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	PROJECTION_MANA_COST = 1000000
-	#A list of item names which cannot be projected. Such as minecraft:diamond_sword , for example.
-	PROJECTION_BLACKLIST = []
-	#Either the amount of damage a projected item takes from its max, or the total durability of the projected item
-	#Range: 0 ~ 100000000
-	PROJECTION_DURABILITY_FACTOR = 1
-	#Whether the projected durability is based on max damage (false) or just flat (true)
-	PROJECTION_DURABILITY_FLAT = true
-	#This is the cost per sword transformation.
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_SWORD_MANA_COST = 5000
-	#This is the cost per cycle for creating the lake.
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_LAKE_MANA_COST = 30
-	#This is how often the lake does it's thing to make a lake
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_LAKE_CYCLE = 20
-	#This is the max radius of the lake
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_LAKE_RADIUS = 12
-	#This is the minimum threshhold a lake needs to be to be able to transform a sword into Caliburn.
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_LAKE_THRESHHOLD = 150
-	#This is a nerf factor applied to enchantments to reduce the amount of power that can be consolidated. Lower is less nerf.
-	#Range: 0.0 ~ 1.0E8
-	POWER_CONSOLIDATION_NERF_FACTOR = 0.6
-	#This is the distance before the lake begins to generate fog. (Note: Higher values may decrease FPS)
-	#Range: 0.0 ~ 1.0E8
-	POWER_CONSOLIDATION_FOG_RADIUS = 8.0
 	#This is the range for pulling undead mobs with Caliburn
 	#Range: 0 ~ 100000000
 	POWER_CONSOLIDATION_PULL_RADIUS = 20
-	#This is the range for smiting undead mobs with Caliburn
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_SMITE_RADIUS = 10
-	#How much durability Caliburn has.
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_DURABILITY = 1000
-	#This is the range for undead mobs to fear Caliburn
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_FEAR_RADIUS = 15
-	#Entities must be this close to the wielder of Caliburn to be affected by the sweep.
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_SWEEP_RADIUS = 6
-	#Highest damage possible for Caliburn
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_ATTACK_CAP = 5000000
-	#Entities must be this close to the wielder of Caliburn's look vector to be affected by the sweep.
-	#Range: 0 ~ 100000000
-	POWER_CONSOLIDATION_SWEEP_LOOK_RADIUS = 3
 	#Acts as a blacklist if the toggle is on
 	POWER_CONSOLIDATION_BLACKLIST = ["mahoutsukai:clarent", "mahoutsukai:morgan"]
-	#Toggles the blacklist functionality
-	POWER_CONSOLIDATION_CALIBURN_BLACKLIST_TOGGLE = true
-	#Toggles whether it water should attempt to create tile entities. Only needed for old worlds with murky water in them.
-	POWER_CONSOLIDATION_RETRO_FOG_FIX = false
-	#mahoutsukai.config.power_consolidation_fear_blacklist.comment
-	POWER_CONSOLIDATION_FEAR_BLACKLIST = []
-	#Clarent is Unbreakable
-	CLARENT_UNBREAKABLE = true
-	#Clarent Durability
+	#This is the cost per cycle for creating the lake.
 	#Range: 0 ~ 100000000
-	CLARENT_DURABILITY = 1500
-	#How long Clarent's wound lasts
-	#Range: 0 ~ 100000000
-	CLARENT_WOUND_TICKS = 600
-	#How much damage the wound does per hit
-	#Range: 0.0 ~ 1.0E8
-	CLARENT_WOUND_DAMAGE = 0.2
-	#How much Clarent's stored damage decreases per tick while blocking
-	#Range: 0.0 ~ 1.0E8
-	CLARENT_DECREASE_PER_BLOCKING_TICK = 0.02
-	#How many hits the wound does each time it activates
-	#Range: 0 ~ 100000000
-	CLARENT_WOUND_DAMAGE_HITS = 3
-	#Which swords cannot turn into Clarent
-	CLARENT_SWORD_BLACKLIST = ["mahoutsukai:caliburn", "mahoutsukai:morgan"]
-	#Nerf factor for damage stored by Clarent
-	#Range: 0.0 ~ 1.0E8
-	CLARENT_STORED_FACTOR = 0.5
-	#Staff of Emrys Max Range
-	#Range: 0 ~ 100000000
-	EMRYS_MAX_RANGE = 22
-	#Staff of Emrys Damage Per Second
-	#Range: 0.0 ~ 1.0E8
-	EMRYS_DAMAGE_FOCUSED_PER_SECOND = 4.0
+	POWER_CONSOLIDATION_LAKE_MANA_COST = 30
 	#Staff of Emrys Zap Damage
 	#Range: 0.0 ~ 1.0E8
 	EMRYS_DAMAGE_ZAP = 1.5
-	#Staff of Emrys Ignites
-	EMRYS_BOLT_FIRE = false
+	#This is the min distance between the target and the projectile spawn
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_MIN_DISTANCE = 8
+	#Entities must be this close to the wielder of Caliburn's look vector to be affected by the sweep.
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_SWEEP_LOOK_RADIUS = 3
 	#Staff of Emrys Mana Per Second
 	#Range: 0 ~ 100000000
 	EMRYS_MANA_COST_FOCUSED = 200
-	#Staff of Emrys Mana Per Zap
+	#Entities must be this close to the wielder of Caliburn to be affected by the sweep.
 	#Range: 0 ~ 100000000
-	EMRYS_MANA_COST_PASSIVE = 80
+	POWER_CONSOLIDATION_SWEEP_RADIUS = 6
+	#This is the number of initial chains spawned
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_CHAINS_COUNT = 16
+	#Distance between swords spawned in the Marble Dimension
+	#Range: 0 ~ 100000000
+	MARBLE_DIMENSION_SPAWN_RATE = 12
+	#Nerf factor for damage stored by Clarent
+	#Range: 0.0 ~ 1.0E8
+	CLARENT_STORED_FACTOR = 0.5
+	#How much durability Caliburn has.
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_DURABILITY = 1000
+	#These will spawn in the Reality Marble as entities.. No guarantees on functionality if you change this.
+	MARBLE_SWORD_SPAWN_LIST = ["minecraft:iron_sword", "minecraft:diamond_sword", "minecraft:stone_sword"]
+	#If you have dimension conflicts, change this to something else
+	#Range: 0 ~ 100000000
+	MARBLE_DIMENSION = 0
+	#Caliburn Smite and Morgan Ball Mana Cost
+	#Range: 0 ~ 100000000
+	CALIBURN_MORGAN_ABILITY_MANA_COST = 300
+	#This is the delay between projectiles of the gauntlet
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_COOLDOWN = 10
+	#Clarent is Unbreakable
+	CLARENT_UNBREAKABLE = true
+	#This is the cost per AOE projectile when using the gauntlet
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_AOE_MANA_COST = 120
+	#Either the amount of damage a projected item takes from its max, or the total durability of the projected item
+	#Range: 0 ~ 100000000
+	PROJECTION_DURABILITY_FACTOR = 1
+	#How many hits the wound does each time it activates
+	#Range: 0 ~ 100000000
+	CLARENT_WOUND_DAMAGE_HITS = 3
+	#This is the cooldown between chain spawns
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_CHAINS_COOLDOWN = 10
 	#List of allowed pets that can be killed with Caliburn to create Morgan
 	MORGAN_TRANSFORM_ENTITY_WHITELIST = ["minecraft:wolf"]
 	#How much damage Morgan gains from killing children
 	#Range: 0.0 ~ 1.0E8
 	MORGAN_CHILD_INCREASE = 1.0
-	#How much damage Morgan gains from killing adult villagers
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_SCROLL_MANA_COST = 1000
+	#How much damage the wound does per hit
 	#Range: 0.0 ~ 1.0E8
-	MORGAN_ADULT_INCREASE = 0.2
-	#How much durability Morgan gains from killing villagers
+	CLARENT_WOUND_DAMAGE = 0.2
+	#Staff of Emrys Damage Per Second
+	#Range: 0.0 ~ 1.0E8
+	EMRYS_DAMAGE_FOCUSED_PER_SECOND = 4.0
+	#Toggles whether it water should attempt to create tile entities. Only needed for old worlds with murky water in them.
+	POWER_CONSOLIDATION_RETRO_FOG_FIX = false
+	#Ignore whitelist; allow everything
+	TREASURY_PROJECTION_ALLOW_ALL = false
+	#This is the max radius of the lake
 	#Range: 0 ~ 100000000
-	MORGAN_HEAL_FACTOR = 30
-	#Cooldown between special cast for Caliburn and Morgan
+	POWER_CONSOLIDATION_LAKE_RADIUS = 12
+	#Clarent Durability
 	#Range: 0 ~ 100000000
-	MORGAN_CALIBURN_POWER_COOLDOWN = 600
-	#Duration for Morgan Rage ability
-	#Range: 0 ~ 100000000
-	MORGAN_RAGE_TIME = 120
+	CLARENT_DURABILITY = 1500
 	#Morgan Max Ball Range
 	#Range: 0 ~ 100000000
 	MORGAN_MAX_BALL_RANGE = 15
+	#Staff of Emrys Max Range
+	#Range: 0 ~ 100000000
+	EMRYS_MAX_RANGE = 22
+	#A blacklist for items which should not spawn extra drops with Strengthening
+	STRENGTHENING_ITEM_SPAWN_BLACKLIST = []
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	WEAPON_SHOOTER_MANA_COST = 100
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	PROJECTION_MANA_COST = 200000
+	#This is the distance before the lake begins to generate fog. (Note: Higher values may decrease FPS)
+	#Range: 0.0 ~ 1.0E8
+	POWER_CONSOLIDATION_FOG_RADIUS = 8.0
+	#This is the delay between AOE projectiles of the gauntlet
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_AOE_COOLDOWN = 4
+	#Toggles the blacklist functionality
+	POWER_CONSOLIDATION_CALIBURN_BLACKLIST_TOGGLE = true
+	#A list of additional registry names which will be considered for selection in Treasury Projection
+	TREASURY_PROJECTION_WHITELIST = []
+	#Probability of sword spawn
+	#Range: 0.0 ~ 1.0E8
+	MARBLE_DIMENSION_SPAWN_CHANCE = 0.8
+	#This is how much durability the proximity projection keys have
+	#Range: 0 ~ 100000000
+	PROXIMITY_PROJECTION_MANA_COST = 30
+	#Staff of Emrys Ignites
+	EMRYS_BOLT_FIRE = false
+	#Duration for Morgan Rage ability
+	#Range: 0 ~ 100000000
+	MORGAN_RAGE_TIME = 120
+	#Cooldown between special cast for Caliburn and Morgan
+	#Range: 0 ~ 100000000
+	MORGAN_CALIBURN_POWER_COOLDOWN = 600
+	#This is the range for smiting undead mobs with Caliburn
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_SMITE_RADIUS = 10
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	STRENGTHENING_MANA_COST = 50
+	#This is the cost per sword transformation.
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_SWORD_MANA_COST = 5000
+	#This is the cost per projectile when using the gauntlet
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_GAUNTLET_MANA_COST = 120
+	#This is a nerf factor applied to enchantments to reduce the amount of power that can be consolidated. Lower is less nerf.
+	#Range: 0.0 ~ 1.0E8
+	POWER_CONSOLIDATION_NERF_FACTOR = 0.6
+	#This is the wind up time each projectile has before firing.
+	#Range: 0.0 ~ 1.0E8
+	TREASURY_PROJECTION_SPEED = 30.0
+	#This is the mana cost per chain spawned
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_CHAINS_MANA_COST = 120
+	#How long Clarent's wound lasts
+	#Range: 0 ~ 100000000
+	CLARENT_WOUND_TICKS = 600
 	#Morgan Max Spike Range
 	#Range: 0 ~ 100000000
 	MORGAN_SPIKE_RANGE = 10
-	#Caliburn Smite and Morgan Ball Mana Cost
+	#Durability of swords spawned in the Marble Dimension
 	#Range: 0 ~ 100000000
-	CALIBURN_MORGAN_ABILITY_MANA_COST = 300
+	MARBLE_DIMENSION_DURABILITY = 3
+	#Whether the projected durability is based on max damage (false) or just flat (true)
+	PROJECTION_DURABILITY_FLAT = true
+	#This is the max distance between the target and the projectile spawn
+	#Range: 0 ~ 100000000
+	TREASURY_PROJECTION_DISTANCE = 20
+	#How much damage Morgan gains from killing adult villagers
+	#Range: 0.0 ~ 1.0E8
+	MORGAN_ADULT_INCREASE = 0.2
+	#This is how often the lake does it's thing to make a lake
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_LAKE_CYCLE = 20
+	#A list of  registry names which will be not considered for selection in Treasury Projection
+	TREASURY_PROJECTION_BLACKLIST = []
+	#Staff of Emrys Mana Per Zap
+	#Range: 0 ~ 100000000
+	EMRYS_MANA_COST_PASSIVE = 80
+	#Which swords cannot turn into Clarent
+	CLARENT_SWORD_BLACKLIST = ["mahoutsukai:caliburn", "mahoutsukai:morgan"]
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	MARBLE_MANA_COST = 4000
+	#Ignore whitelist & blacklist; allow everything
+	TREASURY_PROJECTION_DENY_ALL = false
+	#Highest damage possible for Caliburn
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_ATTACK_CAP = 5000000
+	#mahoutsukai.config.power_consolidation_fear_blacklist.comment
+	POWER_CONSOLIDATION_FEAR_BLACKLIST = []
+	#This is the range for undead mobs to fear Caliburn
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_FEAR_RADIUS = 15
+	#A list of enchantment names which cannot be projected. Such as minecraft:sharpness , for example.
+	PROJECTION_ENCHANTMENT_BLACKLIST = ["forbidden_arcanus:indestructible", "minecraft:mending"]
+	#How much durability Morgan gains from killing villagers
+	#Range: 0 ~ 100000000
+	MORGAN_HEAL_FACTOR = 30
+	#A list of item names which cannot be projected. Such as minecraft:diamond_sword , for example.
+	PROJECTION_BLACKLIST = ["silentgear"]
+	#How much Clarent's stored damage decreases per tick while blocking
+	#Range: 0.0 ~ 1.0E8
+	CLARENT_DECREASE_PER_BLOCKING_TICK = 0.02
+	#This is the minimum threshhold a lake needs to be to be able to transform a sword into Caliburn.
+	#Range: 0 ~ 100000000
+	POWER_CONSOLIDATION_LAKE_THRESHHOLD = 150
 
 [exchange]
-	#This is how often the circle changes a layer underneath it
-	#Range: 0 ~ 100000000
-	ALCHEMICAL_EXCHANGE_BLOCK_CYCLE = 20
 	#How far down gets changed by the Alchemical Exchange
 	#Range: 0 ~ 100000000
 	ALCHEMICAL_EXCHANGE_HEIGHT = 5
-	#This is the cost for each block changed by the circle
-	#Range: 0 ~ 100000000
-	ALCHEMICAL_EXCHANGE_MANA_COST = 16
-	#This is a list of blocks available in the dirt-class exchange.
-	ALCHEMICAL_DIRT_CLASS = ["minecraft:dirt", "minecraft:sand", "minecraft:soul_sand", "minecraft:snow"]
-	#This is a list of blocks available in the stone-class exchange.
-	ALCHEMICAL_STONE_CLASS = ["minecraft:stone", "minecraft:ice", "minecraft:packed_ice", "minecraft:sandstone", "minecraft:red_sandstone", "minecraft:gravel", "minecraft:end_stone", "minecraft:purpur_block", "minecraft:magma", "minecraft:netherrack", "minecraft:hardened_clay"]
-	#This is a list of blocks available in the metal-class exchange.
-	ALCHEMICAL_METAL_CLASS = ["minecraft:iron_ore", "minecraft:gold_ore", "minecraft:quartz_ore"]
-	#This is a list of blocks available in the gem-class exchange.
-	ALCHEMICAL_GEM_CLASS = ["minecraft:diamond_ore", "minecraft:emerald_ore"]
-	#This is a list of blocks available in the clay-class exchange.
-	ALCHEMICAL_CLAY_CLASS = ["minecraft:clay", "minecraft:coal_ore", "minecraft:redstone_ore", "minecraft:lapis_ore"]
 	#This is a list of blocks available in the wood-class exchange.
 	ALCHEMICAL_WOOD_CLASS = ["minecraft:log", "minecraft:cactus", "minecraft:pumpkin", "minecraft:melon_block", "minecraft:brown_mushroom_block", "minecraft:red_mushroom_block", "minecraft:hay_block", "minecraft:nether_wart_block"]
-	#This is a list of blocks available in the special-class exchange.
-	ALCHEMICAL_SPECIAL_CLASS = ["minecraft:prismarine", "minecraft:glowstone", "minecraft:sea_lantern", "minecraft:obsidian", "minecraft:slime"]
-	#This is a list of blocks available in the grass-class exchange.
-	ALCHEMICAL_GRASS_CLASS = ["minecraft:grass", "minecraft:mycelium"]
-	#This is a list of blocks available in the fluid-class exchange.
-	ALCHEMICAL_FLUID_CLASS = ["minecraft:lava", "minecraft:water"]
-	#This is a list of blocks available in the moving-fluid-class exchange.
-	ALCHEMICAL_MOVING_FLUID_CLASS = ["minecraft:flowing_lava", "minecraft:flowing_water"]
-	#This is how often the circle checks for catalysts on top to change
+	#This is the max distance between contract circles.
 	#Range: 0 ~ 100000000
-	CATALYST_EXCHANGE_BLOCK_CYCLE = 4
-	#This is the cost for each catalyst exchanged by the circle
+	CONTRACT_RADIUS = 10
+	#This is the cost of forming a contract with another player
 	#Range: 0 ~ 100000000
-	CATALYST_EXCHANGE_MANA_COST = 50
-	#This is how often the circle restores or deducts mana
-	#Range: 0 ~ 100000000
-	CHRONAL_EXCHANGE_BLOCK_CYCLE = 20
-	#This is how much mana is gained or lost every cycle
-	#Range: 0 ~ 100000000
-	CHRONAL_EXCHANGE_MANA_GAIN_LOSS = 10
+	CONTRACT_MANA_COST = 10
+	#This is a list of blocks available in the metal-class exchange.
+	ALCHEMICAL_METAL_CLASS = ["minecraft:iron_ore", "minecraft:gold_ore", "minecraft:quartz_ore"]
 	#This is how often the circle restores mana
 	#Range: 0 ~ 100000000
 	DURABILITY_EXCHANGE_BLOCK_CYCLE = 20
 	#This is the limit on mana restored per cycle
 	#Range: 0 ~ 100000000
 	DURABILITY_EXCHANGE_MANA_GAIN_CAP = 10
-	#This is how much durability per mana restored
+	#This is a list of blocks available in the gem-class exchange.
+	ALCHEMICAL_GEM_CLASS = ["minecraft:diamond_ore", "minecraft:emerald_ore"]
+	#This is a list of blocks available in the special-class exchange.
+	ALCHEMICAL_SPECIAL_CLASS = ["minecraft:prismarine", "minecraft:glowstone", "minecraft:sea_lantern", "minecraft:obsidian", "minecraft:slime"]
+	#This is how often the circle restores or deducts mana
 	#Range: 0 ~ 100000000
-	DURABILITY_EXCHANGE_EFFICIENCY = 1
+	CHRONAL_EXCHANGE_BLOCK_CYCLE = 20
+	#This is a list of blocks available in the fluid-class exchange.
+	ALCHEMICAL_FLUID_CLASS = ["minecraft:lava", "minecraft:water"]
 	#mahoutsukai.config.durability_exchange_blacklist.comment
 	DURABILITY_EXCHANGE_BLACKLIST = []
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	DAMAGE_EXCHANGE_MANA_COST = 40
-	#This is the how much mana you get back when you're injured
-	#Range: 0 ~ 100000000
-	DAMAGE_EXCHANGE_MANA_GAIN = 20
 	#This is the new value of damage done while damage exchange is active
 	#Range: 0.0 ~ 1.0E8
 	DAMAGE_EXCHANGE_REDUCE_TO = 1.0
-	#This is the cost of forming a contract with another player
+	#This is how much mana is gained or lost every cycle
 	#Range: 0 ~ 100000000
-	CONTRACT_MANA_COST = 10
-	#This is how often the block checks for players on top of it
+	CHRONAL_EXCHANGE_MANA_GAIN_LOSS = 10
+	#This is how much durability per mana restored
 	#Range: 0 ~ 100000000
-	CONTRACT_BLOCK_CYCLE = 4
-	#This is the max distance between contract circles.
+	DURABILITY_EXCHANGE_EFFICIENCY = 1
+	#This is the cost for each catalyst exchanged by the circle
 	#Range: 0 ~ 100000000
-	CONTRACT_RADIUS = 10
+	CATALYST_EXCHANGE_MANA_COST = 50
+	#This is how often the circle changes a layer underneath it
+	#Range: 0 ~ 100000000
+	ALCHEMICAL_EXCHANGE_BLOCK_CYCLE = 20
 	#This is the mana cost per scroll
 	#Range: 0 ~ 100000000
 	IMMUNITY_EXCHANGE_MANA_COST = 400
 	#This is how long the buff/debuff lasts (in ticks)
 	#Range: 0 ~ 100000000
 	IMMUNITY_EXCHANGE_TIME = 1200
+	#This is the how much mana you get back when you're injured
+	#Range: 0 ~ 100000000
+	DAMAGE_EXCHANGE_MANA_GAIN = 20
+	#This is a list of blocks available in the moving-fluid-class exchange.
+	ALCHEMICAL_MOVING_FLUID_CLASS = ["minecraft:flowing_lava", "minecraft:flowing_water"]
+	#This is a list of blocks available in the dirt-class exchange.
+	ALCHEMICAL_DIRT_CLASS = ["minecraft:dirt", "minecraft:sand", "minecraft:soul_sand", "minecraft:snow"]
+	#This is a list of blocks available in the clay-class exchange.
+	ALCHEMICAL_CLAY_CLASS = ["minecraft:clay", "minecraft:coal_ore", "minecraft:redstone_ore", "minecraft:lapis_ore"]
+	#This is a list of blocks available in the stone-class exchange.
+	ALCHEMICAL_STONE_CLASS = ["minecraft:stone", "minecraft:ice", "minecraft:packed_ice", "minecraft:sandstone", "minecraft:red_sandstone", "minecraft:gravel", "minecraft:end_stone", "minecraft:purpur_block", "minecraft:magma", "minecraft:netherrack", "minecraft:hardened_clay"]
+	#This is a list of blocks available in the grass-class exchange.
+	ALCHEMICAL_GRASS_CLASS = ["minecraft:grass", "minecraft:mycelium"]
+	#This is the cost for each block changed by the circle
+	#Range: 0 ~ 100000000
+	ALCHEMICAL_EXCHANGE_MANA_COST = 16
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	DAMAGE_EXCHANGE_MANA_COST = 40
+	#This is how often the block checks for players on top of it
+	#Range: 0 ~ 100000000
+	CONTRACT_BLOCK_CYCLE = 4
+	#This is how often the circle checks for catalysts on top to change
+	#Range: 0 ~ 100000000
+	CATALYST_EXCHANGE_BLOCK_CYCLE = 4
 
 [mystic]
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	SPATIAL_DISORIENTATION_MANA_COST = 100
-	#This is the cost of using the staff on a block (per second!)
-	#Range: 0 ~ 100000000
-	SPATIAL_DISORIENTATION_MANA_COST_AOE = 20
-	#This is a flat cost of using the staff on an entity
-	#Range: 0 ~ 100000000
-	SPATIAL_DISORIENTATION_MANA_COST_ST = 200
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_SUMMON_MANA_COST = 100
-	#This is the cost of using the giant explosion
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_BIG_MANA_COST = 5000
-	#This is the cost of using the multiple explosion mode
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_AOE_MANA_COST = 600
-	#Whether the damage is flat or scales with caster's 'level'
-	MYSTIC_STAFF_BIG_SCALES = true
-	#Whether the damage is flat or scales with caster's 'level'
-	MYSTIC_STAFF_AOE_SCALES = true
+	#This is the effect that is applied when the network has multiples of 11.
+	HEAVENS_CUP_ELEVEN_EFFECT = "wither"
 	#Either a fraction of the max mana (if scaling) or a flat damage value
 	#Range: 0.0 ~ 1.0E8
 	MYSTIC_STAFF_BIG_FACTOR = 0.02
-	#Either a fraction of the max mana (if scaling) or a flat damage value
-	#Range: 0.0 ~ 1.0E8
-	MYSTIC_STAFF_AOE_FACTOR = 0.01
-	#Explosion Size for AOE Explosion
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_AOE_SIZE = 3
-	#Explosion Size for Big Explosion
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_BIG_SIZE = 30
-	#Mana cost per tick for Mystic Staff Beam
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_BEAM_MANA_PER_TICK = 500
-	#Damage factor for Mystic Staff Beam
-	#Range: -1.0E7 ~ 1.0E8
-	MYSTIC_STAFF_BEAM_DAMAGE_FACTOR = 0.01
-	#Damage scales with caster max mana for Beam
-	MYSTIC_STAFF_BEAM_DAMAGE_SCALES = true
-	#Damage Acceleration Factor for Mystic Staff Beam
-	#Range: 0.0 ~ 1.0E8
-	MYSTIC_STAFF_BEAM_DAMAGE_ACCELERATION = 1.5
-	#Mystic Staff Beam Block Limit Per Tick
-	#Range: 0 ~ 100000000
-	MYSTIC_STAFF_BEAM_MAX_BLOCK_BREAK_PER_TICK = 90
+	#Whether Rho Aias boops all the time or just when caster sneaking
+	RHO_AIAS_SNEAK_BOOP = true
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	RHO_AIAS_MANA_COST = 300
 	#How far away Rho Aias will delete entities
 	#Range: 0 ~ 100000000
 	RHO_AIAS_KILL_RANGE = 30
-	#Entities which Rho Aias will delete if within range
-	RHO_AIAS_ENTITY_KILL_LIST = []
-	#Entities which Rho Aias will delete if colliding with.
-	RHO_AIAS_COLLIDE_KILL_LIST = []
-	#Logs detected entities from the kill list, for debug only
-	RHO_AIAS_KILL_DEBUG = false
-	#Whether Rho Aias boops all the time or just when caster sneaking
-	RHO_AIAS_SNEAK_BOOP = true
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	DAMAGE_REPLICATION_MANA_COST = 160
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	AUTHORITY_MANA_COST = 900
-	#This is how long the effect lasts (in ticks)
-	#Range: 0 ~ 100000000
-	AUTHORITY_TIME = 400
-	#This is how much damage done to the player when attacking something
-	#Range: 0.0 ~ 1.0E8
-	AUTHORITY_DAMAGE_TO_SELF = 1.5
-	#This is how much damaqe is done when the player hits something
-	#Range: 0.0 ~ 1.0E8
-	AUTHORITY_DAMAGE_TO_OTHER = 3.0
-	#This is the slowdown factor when a punched thing hits a wall. Lower is slower
-	#Range: 0.0 ~ 1.0E8
-	AUTHORITY_BREAK_SLOW_DOWN_FACTOR = 0.5
-	#This is the slowdown factor when a punched thing is flying through the air normally. Lower is slower
-	#Range: 0.0 ~ 1.0E8
-	AUTHORITY_NORMAL_SLOW_DOWN_FACTOR = 0.875
-	#This is the multiplier for speed when the buff is active. Lower is slower
-	#Range: 0.0 ~ 1.0E8
-	AUTHORITY_SPEED_MULTIPLIER = 3.2
 	#Blocks with higher than this resistance will not be broken. Set to 0 for no breaking. 
 	#Range: 0 ~ 100000000
 	AUTHORITY_BLOCK_RESISTANCE_LIMIT = 45
-	#This is multiplied by the square root of the area of the target network, and then multiplied by the sum of potion to get the mana cost.
+	#Mana cost per tick for Mystic Staff Beam
 	#Range: 0 ~ 100000000
-	HEAVENS_CUP_MANA_COST = 2
+	MYSTIC_STAFF_BEAM_MANA_PER_TICK = 500
+	#This is the effect that is applied when the network has multiples of 13.
+	HEAVENS_CUP_THIRTEEN_EFFECT = "levitation"
+	#Entities which Rho Aias will delete if colliding with.
+	RHO_AIAS_COLLIDE_KILL_LIST = []
+	#Whether the damage is flat or scales with caster's 'level'
+	MYSTIC_STAFF_BIG_SCALES = true
+	#Entities which Rho Aias will delete if within range
+	RHO_AIAS_ENTITY_KILL_LIST = []
+	#This is a flat cost of using the staff on an entity
+	#Range: 0 ~ 100000000
+	SPATIAL_DISORIENTATION_MANA_COST_ST = 200
+	#Damage factor for Mystic Staff Beam
+	#Range: -1.0E7 ~ 1.0E8
+	MYSTIC_STAFF_BEAM_DAMAGE_FACTOR = 0.01
+	#This is the effect that is applied when the network has multiples of 3.
+	HEAVENS_CUP_THREE_EFFECT = "weakness"
+	#Whether the damage is flat or scales with caster's 'level'
+	MYSTIC_STAFF_AOE_SCALES = true
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	SPATIAL_DISORIENTATION_MANA_COST = 100
+	#Damage Acceleration Factor for Mystic Staff Beam
+	#Range: 0.0 ~ 1.0E8
+	MYSTIC_STAFF_BEAM_DAMAGE_ACCELERATION = 1.5
+	#This is how much damage done to the player when attacking something
+	#Range: 0.0 ~ 1.0E8
+	AUTHORITY_DAMAGE_TO_SELF = 1.5
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	DAMAGE_REPLICATION_MANA_COST = 160
+	#Explosion Size for Big Explosion
+	#Range: 0 ~ 100000000
+	MYSTIC_STAFF_BIG_SIZE = 30
+	#Mystic Staff Beam Block Limit Per Tick
+	#Range: 0 ~ 100000000
+	MYSTIC_STAFF_BEAM_MAX_BLOCK_BREAK_PER_TICK = 90
 	#This is the maximum distance the player can be from a network to activate it
 	#Range: 0 ~ 100000000
 	HEAVENS_CUP_START_DISTANCE = 20
-	#This is how long potion generated by the network last.
+	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	HEAVENS_CUP_DURATION = 1200
-	#This is the maximum distance between nodes for them to be counted as part of the network.
+	AUTHORITY_MANA_COST = 900
+	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	HEAVENS_CUP_NETWORK_DISTANCE = 30
+	MYSTIC_STAFF_SUMMON_MANA_COST = 100
+	#This is the multiplier for speed when the buff is active. Lower is slower
+	#Range: 0.0 ~ 1.0E8
+	AUTHORITY_SPEED_MULTIPLIER = 3.2
+	#Explosion Size for AOE Explosion
+	#Range: 0 ~ 100000000
+	MYSTIC_STAFF_AOE_SIZE = 3
 	#This is the effect that is applied when the network has multiples of 2.
 	HEAVENS_CUP_TWO_EFFECT = "poison"
-	#This is the effect that is applied when the network has multiples of 3.
-	HEAVENS_CUP_THREE_EFFECT = "weakness"
+	#This is how long the effect lasts (in ticks)
+	#Range: 0 ~ 100000000
+	AUTHORITY_TIME = 400
+	#This is the cost of using the giant explosion
+	#Range: 0 ~ 100000000
+	MYSTIC_STAFF_BIG_MANA_COST = 5000
+	#This is the slowdown factor when a punched thing hits a wall. Lower is slower
+	#Range: 0.0 ~ 1.0E8
+	AUTHORITY_BREAK_SLOW_DOWN_FACTOR = 0.5
 	#This is the effect that is applied when the network has multiples of 5.
 	HEAVENS_CUP_FIVE_EFFECT = "blindness"
 	#This is the effect that is applied when the network has multiples of 7.
 	HEAVENS_CUP_SEVEN_EFFECT = "slowness"
-	#This is the effect that is applied when the network has multiples of 11.
-	HEAVENS_CUP_ELEVEN_EFFECT = "wither"
-	#This is the effect that is applied when the network has multiples of 13.
-	HEAVENS_CUP_THIRTEEN_EFFECT = "levitation"
+	#This is how long potion generated by the network last.
+	#Range: 0 ~ 100000000
+	HEAVENS_CUP_DURATION = 1200
+	#This is the slowdown factor when a punched thing is flying through the air normally. Lower is slower
+	#Range: 0.0 ~ 1.0E8
+	AUTHORITY_NORMAL_SLOW_DOWN_FACTOR = 0.875
+	#This is the maximum distance between nodes for them to be counted as part of the network.
+	#Range: 0 ~ 100000000
+	HEAVENS_CUP_NETWORK_DISTANCE = 30
+	#This is the cost of using the multiple explosion mode
+	#Range: 0 ~ 100000000
+	MYSTIC_STAFF_AOE_MANA_COST = 600
+	#Logs detected entities from the kill list, for debug only
+	RHO_AIAS_KILL_DEBUG = false
+	#Either a fraction of the max mana (if scaling) or a flat damage value
+	#Range: 0.0 ~ 1.0E8
+	MYSTIC_STAFF_AOE_FACTOR = 0.01
+	#This is multiplied by the square root of the area of the target network, and then multiplied by the sum of potion to get the mana cost.
+	#Range: 0 ~ 100000000
+	HEAVENS_CUP_MANA_COST = 2
+	#This is the cost of using the staff on a block (per second!)
+	#Range: 0 ~ 100000000
+	SPATIAL_DISORIENTATION_MANA_COST_AOE = 20
+	#Damage scales with caster max mana for Beam
+	MYSTIC_STAFF_BEAM_DAMAGE_SCALES = true
+	#This is how much damaqe is done when the player hits something
+	#Range: 0.0 ~ 1.0E8
+	AUTHORITY_DAMAGE_TO_OTHER = 3.0
 
 [eyes]
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	CLAIRVOYANCE_MANA_COST = 220
-	#This is how long the buff lasts
-	#Range: 0 ~ 100000000
-	CLAIRVOYANCE_TIME = 1200
-	#Entities within this radius will have their movement predicted
-	#Range: 0 ~ 100000000
-	CLAIRVOYANCE_RANGE = 30
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	MYSTIC_EYES_MANA_COST = 320
-	#This is how long the buff lasts
-	#Range: 0 ~ 100000000
-	MYSTIC_EYES_TIME = 600
-	#Entities must be within this radius of the user to be affected
-	#Range: 0 ~ 100000000
-	MYSTIC_EYES_RANGE_FROM_USER = 5
 	#Entities must be this close to the user's look vector to be affected
 	#Range: 0 ~ 100000000
 	MYSTIC_EYES_RANGE_FROM_LOOK_VEC = 4
+	#Player deaths will count this much to the next death prevention.
+	#Range: 0.0 ~ 1.0E8
+	DEATH_COLLECTION_SOUL_VALUE_PLAYER = 1.0
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	REVERSION_EYES_MANA_COST = 410
 	#This is how long the buff lasts
 	#Range: 0 ~ 100000000
-	REVERSION_EYES_TIME = 600
-	#Entities must be within this radius of the user to be affected
+	CLAIRVOYANCE_TIME = 1200
+	#Whitelist or blacklist of dimension IDs
+	LEY_DIMENSION_LIST = []
+	#How often flames do an update (in ticks)
 	#Range: 0 ~ 100000000
-	REVERSION_EYES_RANGE_FROM_USER = 10
+	BLACK_FLAME_UPDATE_TICKS = 1
+	#If false, will show lines instead of runes. Lines not may not be compatible with shaders.
+	LEY_RUNES = true
 	#Entities must be this close to the user's look vector to be affected
 	#Range: 0 ~ 100000000
 	REVERSION_EYES_RANGE_FROM_LOOK_VEC = 4
+	#This is how long the buff lasts
+	#Range: 0 ~ 100000000
+	REVERSION_EYES_TIME = 600
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	BLACK_FLAME_MANA_COST = 300
+	#Blocks and entities within this range will be ignited if the user looks at them
+	#Range: 0 ~ 100000000
+	BLACK_FLAME_RANGE_FROM_USER = 30
+	#The Y value Ley Lines should render at
+	#Range: 0 ~ 100000000
+	LEY_RENDER_HEIGHT = 70
+	#Mob deaths will count this much to the next death prevention.
+	#Range: 0.0 ~ 1.0E8
+	DEATH_COLLECTION_SOUL_VALUE_MOB = 0.25
+	#This is how many ticks it lasts from the time of using the scroll.
+	#Range: 0 ~ 100000000
+	INSIGHT_TIME = 1200
+	#Entities must be within this radius of the user to be affected
+	#Range: 0 ~ 100000000
+	MYSTIC_EYES_RANGE_FROM_USER = 5
+	#Control the speed at which flames die (number between 0 and 3, probably)
+	#Range: 0 ~ 100000000
+	BLACK_FLAME_DEATH_AGE = 14
+	#This value is added to mana regen. It is the floor for mana added by leylines. By default, you lose 1 mana from regen for not being near a leyline.
+	#Range: 0 ~ 100000000
+	LEY_PUNISHMENT = 0
+	#If true, the dimension list is a blacklist. If false it is a whitelist.
+	LEY_BLACKLIST = true
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	DEATH_COLLECTION_MANA_COST = 400
 	#This is how long the buff lasts
 	#Range: 0 ~ 100000000
-	DEATH_COLLECTION_TIME = 600
-	#Entities must be within this radius of the user to be counted
-	#Range: 0 ~ 100000000
-	DEATH_COLLECTION_RANGE_FROM_USER = 10
-	#Mob deaths will count this much to the next death prevention.
-	#Range: 0.0 ~ 1.0E8
-	DEATH_COLLECTION_SOUL_VALUE_MOB = 0.25
-	#Player deaths will count this much to the next death prevention.
-	#Range: 0.0 ~ 1.0E8
-	DEATH_COLLECTION_SOUL_VALUE_PLAYER = 1.0
-	#Default revive health when triggering death collection.
-	#Range: 0.0 ~ 1.0E8
-	DEATH_COLLECTION_REVIVE_VALUE = 12.0
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	BLACK_FLAME_MANA_COST = 300
+	MYSTIC_EYES_TIME = 600
 	#This is how long the buff lasts
 	#Range: 0 ~ 100000000
 	BLACK_FLAME_TIME = 100
-	#Blocks and entities within this range will be ignited if the user looks at them
-	#Range: 0 ~ 100000000
-	BLACK_FLAME_RANGE_FROM_USER = 30
-	#Something is lit on fire every this many ticks, from the player's eyes
-	#Range: 0 ~ 100000000
-	BLACK_FLAME_IGNITION_TICKS = 1
-	#How often flames do an update (in ticks)
-	#Range: 0 ~ 100000000
-	BLACK_FLAME_UPDATE_TICKS = 1
-	#Control the speed at which flames die (number between 0 and 3, probably)
-	#Range: 0 ~ 100000000
-	BLACK_FLAME_DEATH_AGE = 14
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	FAY_SIGHT_MANA_COST = 100
-	#This is how long the buff lasts
+	CLAIRVOYANCE_MANA_COST = 220
+	#Entities must be within this radius of the user to be affected
 	#Range: 0 ~ 100000000
-	FAY_SIGHT_TIME = 600
-	#This value is added to mana regen. It is the floor for mana added by leylines. By default, you lose 1 mana from regen for not being near a leyline.
-	#Range: 0 ~ 100000000
-	LEY_PUNISHMENT = -1
-	#The factor used in calculating the leyline bonus regen
-	#Range: 0.0 ~ 1.0E8
-	LEY_FACTOR = 0.01
-	#Whether the bonus regen is flat or based on max mana
-	LEY_FLAT = false
-	#How far away ley points are from each other
-	#Range: 0 ~ 100000000
-	LEY_DISTANCE = 300
+	REVERSION_EYES_RANGE_FROM_USER = 10
 	#An offset in case you don't want 0,0 to be a leyline
 	#Range: 0 ~ 100000000
 	LEY_OFFSET = 0
-	#Set this to false if you don't like ley lines affecting mana regen
-	LEY_AFFECTS_MANA = true
-	#The Y value Ley Lines should render at
+	#Entities must be within this radius of the user to be counted
 	#Range: 0 ~ 100000000
-	LEY_RENDER_HEIGHT = 70
-	#Modifier for Fae spawn rate
+	DEATH_COLLECTION_RANGE_FROM_USER = 10
+	#The factor used in calculating the leyline bonus regen
 	#Range: 0.0 ~ 1.0E8
-	FAE_SPAWN_RATE = 1.0
-	#If false, will show lines instead of runes. Lines not may not be compatible with shaders.
-	LEY_RUNES = true
-	#If true, the dimension list is a blacklist. If false it is a whitelist.
-	LEY_BLACKLIST = true
-	#Whitelist or blacklist of dimension IDs
-	LEY_DIMENSION_LIST = []
+	LEY_FACTOR = 0.01
+	#Default revive health when triggering death collection.
+	#Range: 0.0 ~ 1.0E8
+	DEATH_COLLECTION_REVIVE_VALUE = 12.0
+	#How far away ley points are from each other
+	#Range: 0 ~ 100000000
+	LEY_DISTANCE = 300
 	#This is how much mana it costs to use the scroll.
 	#Range: 0 ~ 100000000
 	INSIGHT_MANA_COST = 320
-	#This is how many ticks it lasts from the time of using the scroll.
+	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	INSIGHT_TIME = 1200
+	MYSTIC_EYES_MANA_COST = 320
+	#Set this to false if you don't like ley lines affecting mana regen
+	LEY_AFFECTS_MANA = true
+	#Entities within this radius will have their movement predicted
+	#Range: 0 ~ 100000000
+	CLAIRVOYANCE_RANGE = 30
+	#Modifier for Fae spawn rate
+	#Range: 0.0 ~ 1.0E8
+	FAE_SPAWN_RATE = 1.0
+	#This is how long the buff lasts
+	#Range: 0 ~ 100000000
+	DEATH_COLLECTION_TIME = 600
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	FAY_SIGHT_MANA_COST = 100
+	#Whether the bonus regen is flat or based on max mana
+	LEY_FLAT = false
+	#This is how long the buff lasts
+	#Range: 0 ~ 100000000
+	FAY_SIGHT_TIME = 600
+	#Something is lit on fire every this many ticks, from the player's eyes
+	#Range: 0 ~ 100000000
+	BLACK_FLAME_IGNITION_TICKS = 1
 
 [familiar]
-	#This is the cost of using the scroll
+	#This is whether the effect disappears once used
+	BUTTERFLY_EFFECT_SINGLE_USE = false
+	#This is the range of the effect from the familiar
 	#Range: 0 ~ 100000000
-	POSSESS_ENTITY_MANA_COST = 200
-	#This is the cost of using the scroll
+	FAMILIARS_GARDEN_RANGE = 7
+	#Whether people other than the caster can see the butterfly effect
+	BUTTERFLY_EFFECT_VISIBLE_TO_OTHERS = false
+	#This is how many ticks it lasts from the time of using the scroll.
 	#Range: 0 ~ 100000000
-	RECALL_FAMILIAR_MANA_COST = 20
+	FAMILIARS_GARDEN_TIME = 1200
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	SUMMON_FAMILIAR_MANA_COST = 200
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	BUTTERFLY_EFFECT_MANA_COST = 100
+	RECALL_FAMILIAR_MANA_COST = 20
 	#This is the how long the effect lasts
 	#Range: 0 ~ 100000000
 	BUTTERFLY_EFFECT_DURATION = 400
-	#This is whether the effect disappears once used
-	BUTTERFLY_EFFECT_SINGLE_USE = false
-	#Whether people other than the caster can see the butterfly effect
-	BUTTERFLY_EFFECT_VISIBLE_TO_OTHERS = false
-	#How often the familiar tries to talk to you
-	#Range: 0 ~ 100000000
-	FAMILIAR_REPORT_SURROUNDINGS_TIME = 400
-	#How much health the familiar has
-	#Range: 0 ~ 100000000
-	FAMILIAR_HEALTH = 10
-	#The chance that a familiar will complain about being hurt.
-	#Range: 0.0 ~ 1.0E8
-	FAMILIAR_OUCH_CHANCE = 0.3
-	#This is the cost of using the scroll
-	#Range: 0 ~ 100000000
-	SWAP_FAMILIAR_MANA_COST = 40
 	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
 	FAMILIARS_GARDEN_MANA_COST = 200
-	#This is the range of the effect from the familiar
+	#This is the cost of using the scroll
 	#Range: 0 ~ 100000000
-	FAMILIARS_GARDEN_RANGE = 7
-	#This is how many ticks it lasts from the time of using the scroll.
-	#Range: 0 ~ 100000000
-	FAMILIARS_GARDEN_TIME = 1200
+	BUTTERFLY_EFFECT_MANA_COST = 100
 	#mahoutsukai.config.familiar_actionbar_messages.comment
 	FAMILIAR_ACTION_BAR_MESSAGES = true
+	#How often the familiar tries to talk to you
+	#Range: 0 ~ 100000000
+	FAMILIAR_REPORT_SURROUNDINGS_TIME = 400
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	SWAP_FAMILIAR_MANA_COST = 40
+	#How much health the familiar has
+	#Range: 0 ~ 100000000
+	FAMILIAR_HEALTH = 10
+	#This is the cost of using the scroll
+	#Range: 0 ~ 100000000
+	POSSESS_ENTITY_MANA_COST = 200
+	#The chance that a familiar will complain about being hurt.
+	#Range: 0.0 ~ 1.0E8
+	FAMILIAR_OUCH_CHANCE = 0.3
 
 [secret]
-	#This is how much mana per percent or health costs.
-	#Range: 0 ~ 100000000
-	RETRIBUTION_MANA_PER_DIFFERENCE = 40
-	#If true, mana is charged per percent difference between caster and target, as opposed to per health point differeence.
-	RETRIBUTION_MANA_CHARGED_PER_PERCENT = false
-	#Blacklist of mobs retribution won't work against
-	RETRIBUTION_BLACKLIST = []
 	#Cooldown of Fog Skill for Presence Concealment
 	#Range: 0 ~ 100000000
 	RIPPER_COOLDOWN = 800
-	#Mana Cost of Presence Concealment
-	#Range: 0 ~ 100000000
-	RIPPER_MANA_COST = 800
-	#Radius of Fog
-	#Range: 0 ~ 100000000
-	RIPPER_FOG_RANGE = 20
-	#Distance between Fog Particles
-	#Range: 0 ~ 100000000
-	RIPPER_FOG_DISTANCE = 5
-	#Cooldown of Invisibility on The Ripper after hitting someone
-	#Range: 0 ~ 100000000
-	RIPPER_INVIS_COOLDOWN = 40
-	#Ripper Gives Invisibility
-	RIPPER_GIVES_INVIS = true
-	#Ripper Attack Speed
-	#Range: 0.0 ~ 1000000.0
-	RIPPER_SPEED = 3.0
 	#Ripper Attack Damage
 	#Range: 0.0 ~ 1000000.0
 	RIPPER_DAMAGE = 2.5
+	#Ripper Attack Bonus Scales With Mana
+	RIPPER_DAMAGE_BONUS_SCALES_WITH_MANA = false
+	#This is how much mana per percent or health costs.
+	#Range: 0 ~ 100000000
+	RETRIBUTION_MANA_PER_DIFFERENCE = 40
+	#Blacklist of mobs retribution won't work against
+	RETRIBUTION_BLACKLIST = []
 	#Ripper Attack Bonus From Behind
 	#Range: 0.0 ~ 1000000.0
 	RIPPER_DAMAGE_BONUS_FROM_BEHIND = 6.0
-	#Ripper Attack Bonus Scales With Mana
-	RIPPER_DAMAGE_BONUS_SCALES_WITH_MANA = false
+	#Cooldown of Invisibility on The Ripper after hitting someone
+	#Range: 0 ~ 100000000
+	RIPPER_INVIS_COOLDOWN = 40
 	#Ripper Durability
 	#Range: 0 ~ 1000000000
 	RIPPER_DURABILITY = 1200
+	#Mana Cost of Presence Concealment
+	#Range: 0 ~ 100000000
+	RIPPER_MANA_COST = 800
+	#Ripper Gives Invisibility
+	RIPPER_GIVES_INVIS = true
+	#Distance between Fog Particles
+	#Range: 0 ~ 100000000
+	RIPPER_FOG_DISTANCE = 5
+	#Radius of Fog
+	#Range: 0 ~ 100000000
+	RIPPER_FOG_RANGE = 20
+	#Ripper Attack Speed
+	#Range: 0.0 ~ 1000000.0
+	RIPPER_SPEED = 3.0
+	#If true, mana is charged per percent difference between caster and target, as opposed to per health point differeence.
+	RETRIBUTION_MANA_CHARGED_PER_PERCENT = false
 
 [kodoku]
+	#mahoutsukai.config.kodoku_tool_divisor.comment
+	#Range: 0 ~ 100000000
+	KODOKU_TOOL_DIVISOR = 10
 	#mahoutsukai.config.kodoku_fire_chance.comment
 	#Range: 0.0 ~ 1.0
 	KODOKU_FIRE_CHANCE = 0.1
-	#mahoutsukai.config.kodoku_splash_chance.comment
+	#mahoutsukai.config.kodoku_trip_chance.comment
 	#Range: 0.0 ~ 1.0
-	KODOKU_SPLASH_CHANCE = 0.05
+	KODOKU_MISFORTUNE_TRIP_CHANCE = 4.0E-5
+	#mahoutsukai.config.kodoku_hunger_chance.comment
+	#Range: 0.0 ~ 1.0
+	KODOKU_HUNGER_CHANCE = 0.15
 	#mahoutsukai.config.kodoku_hop_chance.comment
 	#Range: 0.0 ~ 1.0
 	KODOKU_HOP_CHANCE = 0.08
+	#mahoutsukai.config.kodoku_teleport_chance.comment
+	#Range: 0.0 ~ 1.0
+	KODOKU_TELEPORT_CHANCE = 0.08
+	#mahoutsukai.config.kodoku_lightning_chance.comment
+	#Range: 0.0 ~ 1.0
+	KODOKU_MISFORTUNE_LIGHTNING_CHANCE = 2.0E-5
+	#mahoutsukai.config.kodoku_splash_chance.comment
+	#Range: 0.0 ~ 1.0
+	KODOKU_SPLASH_CHANCE = 0.05
+	#mahoutsukai.config.kodoku_drop_chance.comment
+	#Range: 0.0 ~ 1.0
+	KODOKU_MISFORTUNE_DROP_CHANCE = 7.142857142857143E-5
 	#mahoutsukai.config.kodoku_glow_chance.comment
 	#Range: 0.0 ~ 1.0
 	KODOKU_GLOW_CHANCE = 0.02
 	#mahoutsukai.config.kodoku_confuse_chance.comment
 	#Range: 0.0 ~ 1.0
 	KODOKU_CONFUSE_CHANCE = 0.01
-	#mahoutsukai.config.kodoku_teleport_chance.comment
-	#Range: 0.0 ~ 1.0
-	KODOKU_TELEPORT_CHANCE = 0.08
-	#mahoutsukai.config.kodoku_hunger_chance.comment
-	#Range: 0.0 ~ 1.0
-	KODOKU_HUNGER_CHANCE = 0.15
-	#mahoutsukai.config.kodoku_lightning_chance.comment
-	#Range: 0.0 ~ 1.0
-	KODOKU_MISFORTUNE_LIGHTNING_CHANCE = 2.0E-5
 	#mahoutsukai.config.kodoku_aggro_chance.comment
 	#Range: 0.0 ~ 1.0
 	KODOKU_MISFORTUNE_AGGRO_CHANCE = 4.0E-4
-	#mahoutsukai.config.kodoku_drop_chance.comment
-	#Range: 0.0 ~ 1.0
-	KODOKU_MISFORTUNE_DROP_CHANCE = 7.142857142857143E-5
-	#mahoutsukai.config.kodoku_trip_chance.comment
-	#Range: 0.0 ~ 1.0
-	KODOKU_MISFORTUNE_TRIP_CHANCE = 4.0E-5
 	#mahoutsukai.config.kodoku_loot_divisor.comment
 	#Range: 0 ~ 100000000
 	KODOKU_LOOT_DIVISOR = 10
-	#mahoutsukai.config.kodoku_tool_divisor.comment
-	#Range: 0 ~ 100000000
-	KODOKU_TOOL_DIVISOR = 10
 
 [other]
-	#The block range value for any spells which use the player's line of sight
-	#Range: 0 ~ 100000000
-	GLOBAL_LOOK_RANGE = 100
-	#If false, scrolls will not disappear in creative.
-	CREATIVE_MODE_SPELLS = false
-	#How much this circuit can hold
-	#Range: 0 ~ 100000000
-	MANA_CIRCUIT_MAGITECH_CAPACITY = 100000
-	#How much this circuit can hold
-	#Range: 0 ~ 100000000
-	MANA_CIRCUIT_CAPACITY = 100000
-	#How far away things can be from a Mana Circuit to use it
-	#Range: 0 ~ 100000000
-	MANA_CIRCUIT_RANGE = 10
-	#How high a player's personal mana can go
-	#Range: 0 ~ 100000000
-	MAX_MANA_CAP = 200000
-	#Should magic damage the player
-	MAGIC_DAMAGES_PLAYER = false
-	#If Magic damages the player, should it be flat damage or based on mana used
-	MAGIC_DAMAGE_FLAT = true
-	#If damage is flat, this value is dealt to player's health. If not flat, this value is multiplied by mana used and rounded up.
-	#Range: 0.0 ~ 1.0E8
-	MAGIC_DAMAGE_VALUE = 1.0
-	#What type of damage magic damage inflicts.
-	MAGIC_DAMAGE_GENERIC = true
-	#How much durability the Mystic Code - First Sorcery item has
-	#Range: 0 ~ 100000000
-	FIRST_SORCERY_DURABILITY = 50
-	#If true, only allow blood circles on solid blocks
-	BLOOD_CIRCLE_SOLID_ONLY = true
-	#How much mana is spent before it increases
-	#Range: 0 ~ 100000000
-	MANA_UP_COUNTER = 100
-	#How much max mana increases every time it does
-	#Range: 0 ~ 100000000
-	MANA_INCREASE = 1
-	#How much mana players regen per tick
-	#Range: 0 ~ 100000000
-	MANA_REGEN_PER_TICK = 1
-	#Percentage of max mana players get back by sleeping
-	#Range: 0.0 ~ 1.0E8
-	MANA_RECOVERY_SLEEP = 0.5
 	#mahoutsukai.config.magic_circles.comment
 	MAGIC_CIRCLES = []
-	#mahoutsukai.config.magic_runes.comment
-	MAGIC_RUNES = []
 	#mahoutsukai.config.projector_rot_speed.comment
 	#Range: 0.0 ~ 1000000.0
 	PROJECTOR_DEFAULT_ROTATION_SPEED = 1.0
-	#mahoutsukai.config.projector_off_spin.comment
-	PROJECTOR_CONTINUES_ROTATE_WHEN_OFF = false
-	#mahoutsukai.config.creative_mana.comment
-	CREATIVE_IGNORES_MANA_COSTS = true
+	#GameStages Enabled
+	GAMESTAGES_ENABLED = false
+	#How much this circuit can hold
+	#Range: 0 ~ 100000000
+	MANA_CIRCUIT_MAGITECH_CAPACITY = 100000
+	#How much max mana increases every time it does
+	#Range: 0 ~ 100000000
+	MANA_INCREASE = 1
+	#If false, scrolls will not disappear in creative.
+	CREATIVE_MODE_SPELLS = false
 	#How much mana fits into an attuned diamond
 	#Range: 0 ~ 100000000
 	ATTUNED_DIAMOND_CAPACITY = 10000
+	#Percentage of max mana players get back by sleeping
+	#Range: 0.0 ~ 1.0E8
+	MANA_RECOVERY_SLEEP = 0.5
+	#mahoutsukai.config.magic_runes.comment
+	MAGIC_RUNES = []
+	#If true, only allow blood circles on solid blocks
+	BLOOD_CIRCLE_SOLID_ONLY = true
+	#The block range value for any spells which use the player's line of sight
+	#Range: 0 ~ 100000000
+	GLOBAL_LOOK_RANGE = 100
+	#How far away things can be from a Mana Circuit to use it
+	#Range: 0 ~ 100000000
+	MANA_CIRCUIT_RANGE = 10
+	#How much durability the Mystic Code - First Sorcery item has
+	#Range: 0 ~ 100000000
+	FIRST_SORCERY_DURABILITY = 50
+	#If damage is flat, this value is dealt to player's health. If not flat, this value is multiplied by mana used and rounded up.
+	#Range: 0.0 ~ 1.0E8
+	MAGIC_DAMAGE_VALUE = 1.0
+	#mahoutsukai.config.creative_mana.comment
+	CREATIVE_IGNORES_MANA_COSTS = true
 	#How much mana fits into an attuned emerald
 	#Range: 0 ~ 100000000
 	ATTUNED_EMERALD_CAPACITY = 5000
-	#GameStages Enabled
-	GAMESTAGES_ENABLED = false
+	#How high a player's personal mana can go
+	#Range: 0 ~ 100000000
+	MAX_MANA_CAP = 200000
+	#mahoutsukai.config.projector_off_spin.comment
+	PROJECTOR_CONTINUES_ROTATE_WHEN_OFF = false
+	#If Magic damages the player, should it be flat damage or based on mana used
+	MAGIC_DAMAGE_FLAT = true
+	#What type of damage magic damage inflicts.
+	MAGIC_DAMAGE_GENERIC = true
+	#How much mana is spent before it increases
+	#Range: 0 ~ 100000000
+	MANA_UP_COUNTER = 100
+	#How much this circuit can hold
+	#Range: 0 ~ 100000000
+	MANA_CIRCUIT_CAPACITY = 100000
+	#Should magic damage the player
+	MAGIC_DAMAGES_PLAYER = false
+	#How much mana players regen per tick
+	#Range: 0 ~ 100000000
+	MANA_REGEN_PER_TICK = 1
 

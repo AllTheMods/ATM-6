@@ -1,7 +1,7 @@
 {
   "flower": "tag:forge:storage_blocks/refined_obsidian",
   "maxTimeInHive": 900,
-  "traits":["nether"],
+  "traits": ["nether"],
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
@@ -14,7 +14,7 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "mekanism:ingot_refined_obsidian",
-    "mainOutputWeight":0.8
+    "mainOutputWeight": 0.8
   },
   "SpawnData": {
     "spawnInWorld": false

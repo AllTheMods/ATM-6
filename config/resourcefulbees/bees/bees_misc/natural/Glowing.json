@@ -8,7 +8,7 @@
     "honeycombColor": "#F1ED95",
     "primaryColor": "#D6D30D",
     "isGlowing": true,
-    "glowColor" : "#D6D30D"
+    "glowColor": "#D6D30D"
   },
   "MutationData": {
     "hasMutation": false
