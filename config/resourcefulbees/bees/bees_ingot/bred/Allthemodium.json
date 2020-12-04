@@ -1,7 +1,7 @@
 {
   "flower": "tag:forge:storage_blocks/allthemodium",
   "maxTimeInHive": 1900,
-  "traits":["nether"],
+  "traits": ["nether"],
   "hasHoneycomb": true,
   "baseLayerTexture": "modium/modium_bee",
   "ColorData": {

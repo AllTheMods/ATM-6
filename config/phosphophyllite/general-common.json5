@@ -1,0 +1,11 @@
+{
+    GUI: {
+        /* 
+         * Min: 50
+         * Default: 200
+         */
+        UpdateIntervalMS: 200,
+
+    },
+
+}

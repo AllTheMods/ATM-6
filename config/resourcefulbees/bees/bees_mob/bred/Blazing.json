@@ -1,7 +1,7 @@
 {
   "flower": "tag:misctags:flowers/nether_flowers",
   "maxTimeInHive": 1000,
-  "traits":["blaze","nether"],
+  "traits": ["blaze", "nether"],
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
@@ -14,9 +14,9 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:blaze_rod",
-    "secondaryOutput":"minecraft:blaze_powder",
-    "secondaryOutputWeight":0.5,
-    "secondaryOutputCount":2
+    "secondaryOutput": "minecraft:blaze_powder",
+    "secondaryOutputWeight": 0.5,
+    "secondaryOutputCount": 2
   },
   "SpawnData": {
     "canSpawnInWorld": false

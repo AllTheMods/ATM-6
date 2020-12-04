@@ -105,11 +105,11 @@
 		#Minimum rate of part loss when salvaging items. 0 = no loss, 1 = complete loss.
 		#Rate depends on remaining durability.
 		#Range: 0.0 ~ 1.0
-		min = 0.0
+		min = 0.9
 		#Maximum rate of part loss when salvaging items. 0 = no loss, 1 = complete loss.
 		#Rate depends on remaining durability.
 		#Range: 0.0 ~ 1.0
-		max = 0.5
+		max = 1.0
 
 [compat]
 

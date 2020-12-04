@@ -1,3 +1,25 @@
+//priority: 1000
+
+var ores = [
+  'allthemodium',
+  'vibranium',
+  'unobtainium',
+  'aluminum',
+  'copper',
+  'lead',
+  'nickel',
+  'osmium',
+  'platinum',
+  'silver',
+  'tin',
+  'uranium',
+  'zinc'
+]
+
+events.listen('item.tags', e => {
+
+})
+
 //Item tags go here
 events.listen('item.tags', function (e) {
   function add(tag, id) {
@@ -8,12 +30,19 @@ events.listen('item.tags', function (e) {
     e.get(tag).remove(id)
   }
 
+  /*
+  utils.listOf(ores).forEach(function (ore) {
+    e.get('mekanism:clumps').add('kubejs:clump_' + ore)
+    e.get('mekanism:clumps/' + ore).add('kubejs:clump_' + ore)
+  })
+  */
+
   //Add
   add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet'])
   add('curios:angelring', ['botania:flight_tiara'])
   add('forge:ores/rat_gem', 'rats:ratlantean_gem_ore')
   add('forge:ores/arcane_brick', 'ars_nouveau:arcane_ore')
-  add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_end'])
+  add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
   add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
   add('forge:plastic', ['#pneumaticcraft:plastic_sheets', 'silents_mechanisms:plastic_sheet', 'mekanism:hdpe_sheet'])
   add('misctags:farmland/tier6', ['mysticalagradditions:insanium_farmland'])
@@ -159,7 +188,7 @@ events.listen('block.tags', function (e) {
   special('mcwwindows:window', '/mcwwindows:.+_win/')
   special('misctags:concrete', '/minecraft:.+_concrete/')
   special('forge:relocation_not_supported', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/'])
-  special('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/', '/rftoolsbuilder:.+/'])
+  special('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/', '/rftoolsbuilder:.+/'])//, '^\\w+_glass$'
 })
 
 //Fluid tags go here

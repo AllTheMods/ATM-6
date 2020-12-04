@@ -12,7 +12,7 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "mekanism:ingot_bronze"
+    "mainOutput": "thermal:bronze_ingot"
   },
   "SpawnData": {
     "canSpawnInWorld": false

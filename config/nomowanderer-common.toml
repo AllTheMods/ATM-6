@@ -1,0 +1,6 @@
+#Wandering Trader spawn prevention radius (in chunks)
+#Range: 4 ~ 12
+radius = 8
+#Disable all Wandering Trader spawns?
+disableSpawns = false
+

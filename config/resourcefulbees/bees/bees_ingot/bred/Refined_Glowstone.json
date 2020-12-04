@@ -1,7 +1,7 @@
 {
   "flower": "tag:forge:storage_blocks/refined_glowstone",
   "maxTimeInHive": 900,
-  "traits":["nether"],
+  "traits": ["nether"],
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
@@ -14,7 +14,7 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "mekanism:ingot_refined_glowstone",
-    "mainOutputWeight":0.85
+    "mainOutputWeight": 0.85
   },
   "SpawnData": {
     "spawnInWorld": false

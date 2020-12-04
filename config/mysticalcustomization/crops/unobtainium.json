@@ -10,5 +10,5 @@
       "flower": "mysticalagriculture:block/flower_ingot",
       "essence": "mysticalagriculture:item/essence_ingot"
     },
-    "crux": "allthemodium:unobtainium_block"
+    "crux": "kubejs:magical_soil"
   }

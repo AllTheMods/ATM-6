@@ -1,57 +1,50 @@
 events.listen('recipes', function (e) {
-    //Functions
-    function removeOut(item) {
-        e.remove({
-            output: item
-        })
-    }
     //Removals
-    removeOut([
-        /* 
-                'quark:oak_chest',
-                'quark:dark_oak_chest',
-                'quark:acacia_chest',
-                'quark:spruce_chest',
-                'quark:birch_chest',
-                'quark:jungle_chest',
-                'quark:warped_chest',
-                'quark:crimson_chest',
-                'quarryplus:solidquarry',
-                'quarryplus:workbenchplus',*/
-        'mininggadgets:upgrade_empty',
-        'mekanism:digital_miner',
-        'mekanism:atomic_disassembler',
-        'mekanismgenerators:wind_generator',
-        'pamhc2foodcore:fruitpunchitem',
-        'pamhc2foodcore:applejuiceitem',
-        'pamhc2foodcore:melonjuiceitem',
-        'pamhc2foodcore:sweetberryjuiceitem',
-        'pamhc2foodcore:p8juiceitem',
-        'angelring:itemring',
-        'angelring:itemdiamondring',
-        //'bluepower:alloyfurnace',
-        //'bluepower:blulectric_alloyfurnace',
-        'computercraft:computer_normal',
-        'computercraft:computer_advanced',
-        'forbidden_arcanus:iron_chain',
-        'silentgear:iron_rod',
-        'entangled:block',
-        'entangled:item',
-        'refinedstorage:4096k_fluid_storage_part',
-        'extradisks:4096k_storage_part',
-        'extradisks:16384k_fluid_storage_part',
-        'extradisks:16384k_storage_part',
-        'extradisks:65536k_fluid_storage_part',
-        'extradisks:65536k_storage_part',
-        'extradisks:262144k_fluid_storage_part',
-        'extradisks:262144k_storage_part',
-        'extradisks:1048576k_fluid_storage_part',
-        'extradisks:1048576k_storage_part',
-        'extradisks:infinite_fluid_storage_part',
-        'extradisks:infinite_storage_part',
-        'mysticalagriculture:unattuned_augment',
-        'rftoolsbuilder:builder'
-    ])
+    e.remove({
+        output: [
+            'quark:oak_chest',
+            'quark:dark_oak_chest',
+            'quark:acacia_chest',
+            'quark:spruce_chest',
+            'quark:birch_chest',
+            'quark:jungle_chest',
+            'quark:warped_chest',
+            'quark:crimson_chest',
+            'quarryplus:solidquarry',
+            'quarryplus:workbenchplus',
+            'mininggadgets:upgrade_empty',
+            'mekanism:digital_miner',
+            'mekanism:atomic_disassembler',
+            'mekanismgenerators:wind_generator',
+            'pamhc2foodcore:fruitpunchitem',
+            'pamhc2foodcore:applejuiceitem',
+            'pamhc2foodcore:melonjuiceitem',
+            'pamhc2foodcore:sweetberryjuiceitem',
+            'pamhc2foodcore:p8juiceitem',
+            'angelring:itemring',
+            'angelring:itemdiamondring',
+            //'bluepower:alloyfurnace',
+            //'bluepower:blulectric_alloyfurnace',
+            'forbidden_arcanus:iron_chain',
+            'silentgear:iron_rod',
+            'entangled:block',
+            'entangled:item',
+            'refinedstorage:4096k_fluid_storage_part',
+            'extradisks:4096k_storage_part',
+            'extradisks:16384k_fluid_storage_part',
+            'extradisks:16384k_storage_part',
+            'extradisks:65536k_fluid_storage_part',
+            'extradisks:65536k_storage_part',
+            'extradisks:262144k_fluid_storage_part',
+            'extradisks:262144k_storage_part',
+            'extradisks:1048576k_fluid_storage_part',
+            'extradisks:1048576k_storage_part',
+            'extradisks:infinite_fluid_storage_part',
+            'extradisks:infinite_storage_part',
+            'mysticalagriculture:unattuned_augment',
+            'rftoolsbuilder:builder'
+        ]
+    })
     //Rats
     e.shaped('rats:pied_wool', [
         'YGY',
@@ -279,24 +272,6 @@ events.listen('recipes', function (e) {
         'D': '#forge:nether_stars',
         'G': 'botania:gaia_ingot'
     })
-    //Computer Craft
-    e.shaped('computercraft:computer_normal', [
-        'QQQ',
-        'QAQ',
-        'QIQ'
-    ], {
-        'Q': 'refinedstorage:quartz_enriched_iron',
-        'A': '#forge:ingots/allthemodium',
-        'I': 'botania:elf_glass'
-    })
-    e.shaped('computercraft:computer_advanced', [
-        'GGG',
-        'GCG',
-        'GGG'
-    ], {
-        'G': '#forge:ingots/gold',
-        'C': 'computercraft:computer_normal'
-    })
     //Other recipes
     e.shaped(item.of('forbidden_arcanus:iron_chain', 3), [
         'N  ',
@@ -446,19 +421,46 @@ events.listen('recipes', function (e) {
         'b': '#forge:dusts/redstone',
         'n': '#forge:ingots/unobtainium'
     })
+    //Iron Furnaces
+	e.shaped('ironfurnaces:allthemodium_furnace', [
+        'bab',
+        'afa',
+        'bab'
+    ], {
+        'f': 'ironfurnaces:netherite_furnace',
+        'a': 'allthemodium:allthemodium_ingot',
+		'b': 'allthemodium:allthemodium_block'
+    })
+	e.shaped('ironfurnaces:vibranium_furnace', [
+        'bvb',
+        'vfv',
+        'bvb'
+    ], {
+        'f': 'ironfurnaces:allthemodium_furnace',
+        'v': 'allthemodium:vibranium_ingot',
+		'b': 'allthemodium:vibranium_block'
+    })
+	e.shaped('ironfurnaces:unobtanium_furnace', [
+        'bub',
+        'uvu',
+        'bub'
+    ], {
+        'v': 'ironfurnaces:vibranium_furnace',
+        'u': 'allthemodium:unobtainium_ingot',
+		'b': 'allthemodium:unobtainium_block'
+    })
     //Quark
-    /* 
-    shapeless('minecraft:chest', '#forge:chests/wooden')
-    shapeless('quark:oak_chest',['minecraft:oak_planks', '#forge:chests/wooden'])
-    shapeless('quark:dark_oak_chest',['minecraft:dark_oak_planks', '#forge:chests/wooden'])
-    shapeless('quark:acacia_chest',['minecraft:acacia_planks', '#forge:chests/wooden'])
-    shapeless('quark:spruce_chest',['minecraft:spruce_planks', '#forge:chests/wooden'])
-    shapeless('quark:birch_chest',['minecraft:birch_planks', '#forge:chests/wooden'])
-    shapeless('quark:jungle_chest',['minecraft:jungle_planks', '#forge:chests/wooden'])
-    shapeless('quark:warped_chest',['minecraft:warped_planks', '#forge:chests/wooden'])
-    shapeless('quark:crimson_chest',['minecraft:crimson_planks', '#forge:chests/wooden']) */
+    e.shapeless('minecraft:chest', '#forge:chests/wooden')
+    e.shapeless('quark:oak_chest', ['minecraft:oak_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:dark_oak_chest', ['minecraft:dark_oak_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:acacia_chest', ['minecraft:acacia_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:spruce_chest', ['minecraft:spruce_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:birch_chest', ['minecraft:birch_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:jungle_chest', ['minecraft:jungle_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:warped_chest', ['minecraft:warped_planks', '#forge:chests/wooden'])
+    e.shapeless('quark:crimson_chest', ['minecraft:crimson_planks', '#forge:chests/wooden'])
     //BluePower
-    //shapelessC('bluepower:blue_alloy_ingot', 4, ['#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:ingots/silver'])
+    //e.shapeless(item.of('bluepower:blue_alloy_ingot', 4), ['#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:ingots/silver'])
     //RFTools
     e.shaped('rftoolsbuilder:builder', [
         'aea',

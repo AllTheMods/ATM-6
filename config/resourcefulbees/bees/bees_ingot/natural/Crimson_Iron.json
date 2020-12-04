@@ -1,7 +1,7 @@
 {
   "flower": "tag:forge:storage_blocks/crimson_iron",
   "maxTimeInHive": 800,
-  "traits":["nether"],
+  "traits": ["nether"],
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,

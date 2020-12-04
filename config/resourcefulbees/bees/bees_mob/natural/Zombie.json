@@ -14,7 +14,9 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:rotten_flesh",
-    "mainOutputCount": 2
+    "mainOutputCount": 2,
+    "secondaryOutput": "xreliquary:zombie_heart",
+    "secondaryOutputWeight": 0.05
   },
   "SpawnData": {
     "canSpawnInWorld": true,

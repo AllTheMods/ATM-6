@@ -1,5 +1,5 @@
 {
-  "flower": "tag:minecraft:water",
+  "flower": "minecraft:water",
   "hasHoneycomb": true,
   "traits": ["can_swim"],
   "maxTimeInHive": 800,
@@ -15,7 +15,7 @@
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:prismarine_shard",
     "secondaryOutput" : "minecraft:prismarine_crystals",
-    "bottleOutput":"pamhc2foodcore:freshwateritem",
+    "bottleOutput": "pamhc2foodcore:freshwateritem",
     "mainOutputCount": 3,
     "secondaryOutputCount":2
   },
