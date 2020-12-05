@@ -30,9 +30,9 @@
 	#Range: 1.0 ~ 10000.0
 	"Cockatrice Health" = 200.0
 	#True if gorgon temples are allowed to spawn
-	"Spawn Gorgons" = true
+	"Spawn Gorgons" = false
 	#True if hippocampi are allowed to spawn
-	"Spawn Hippocampus" = true
+	"Spawn Hippocampus" = false
 	#Damage dealt from a successful ice breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 	#Range: 0.0 ~ 10000.0
 	"Dragon Attack Damage(Ice breath)" = 22.5
@@ -44,15 +44,15 @@
 	#True if tamed dragons go to sleep at night.
 	"Tamed Dragons Sleep" = true
 	#True if ghosts can rarely spawn from brutal PvP deaths.
-	"Ghost Spawn from PvP deaths" = true
+	"Ghost Spawn from PvP deaths" = false
 	#Whether or not cyclops can break logs or leaves in their way
 	"Cyclops Griefing" = true
 	#Disable this to remove easter egg with tinkers installed.
-	Weezer = true
+	Weezer = false
 	#True if dragons can despawn. Note that if this is false there may be SERIOUS lag issues.
 	"Dragons Despawn" = true
 	#True if hippogryphs are allowed to spawn
-	"Spawn Hippogryphs" = true
+	"Spawn Hippogryphs" = false
 	#True if dread liches are allowed to spawn
 	"Spawn Liches" = true
 	#One out of this number chance per chunk to generate a mausoleum.
@@ -70,7 +70,7 @@
 	#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
 	"Dragon Moved Wrongly Error Fix" = false
 	#Blocks that a dragon can break, but won't spawn drops for. Use the format like "minecraft:stone" or "rats:block_of_cheese" 
-	noDropBreakBlocks = ["minecraft:stone", "minecraft:dirt", "minecraft:grass_block"]
+	noDropBreakBlocks = ["minecraft:stone", "minecraft:dirt", "minecraft:grass_block", "minecraft:netherrack"]
 	#How many blocks away can death worms spot potential prey. Note that increasing this could cause lag
 	#Range: 1 ~ 10000
 	"Death Worm Target Search Length" = 64
@@ -89,7 +89,7 @@
 	#Range: 1 ~ 10000
 	"Spawn Cyclops Cave Chance" = 1370
 	#True if myrmex colonies are allowed to spawn
-	"Spawn Myrmex" = true
+	"Spawn Myrmex" = false
 	#Default attack strength of a dragonsteel sword.
 	#Range: 5.0 ~ 2.147483647E9
 	"Dragonsteel Sword Base Attack Strength" = 75.0
@@ -128,14 +128,14 @@
 	"Death Worm Base Attack Strength" = 15.0
 	#Maximum hydra health
 	#Range: 1.0 ~ 10000.0
-	"Hydra Max Health" = 2500.0
+	"Hydra Max Health" = 7000.0
 	#Maximum gorgon health
 	#Range: 1.0 ~ 10000.0
 	"Gorgon Max Health" = 1500.0
 	#Whether to generate silver ore or not
 	"Generate Silver Ore" = false
 	#Turning this to true simplifies the dragon's pathfinding process, making them dumber when finding a path, but better for servers with many loaded dragons.
-	"Experimental Dragon path Finder" = false
+	"Experimental Dragon path Finder" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
 	"Generate Dragon Skeleton Chance" = 300
@@ -341,7 +341,7 @@
 	"Amphithere Attack Strength" = 35.0
 	#Graveyard rarity.
 	#Range: 2 ~ 10000
-	"Graveyard Chance" = 46
+	"Graveyard Chance" = 10000
 	#Max dragon attack damage. Attack Damage is scaled to this
 	#Range: 1 ~ 10000
 	"Dragon Attack Damage" = 105
