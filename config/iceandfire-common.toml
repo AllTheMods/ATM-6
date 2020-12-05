@@ -40,7 +40,7 @@
 	#Range: > 100
 	"Max Dragon Flight Height" = 250
 	#True if cockatrices are allowed to spawn
-	"Spawn Cockatrices" = true
+	"Spawn Cockatrices" = false
 	#True if tamed dragons go to sleep at night.
 	"Tamed Dragons Sleep" = true
 	#True if ghosts can rarely spawn from brutal PvP deaths.
