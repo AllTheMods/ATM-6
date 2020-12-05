@@ -107,7 +107,7 @@
 	#Range: 1.0 ~ 10000.0
 	"Sea Serpent Base Health" = 20.0
 	#True if chickens lay rotten eggs.
-	"Chickens Lay Rotten Eggs" = true
+	"Chickens Lay Rotten Eggs" = false
 	#size of pixie villages
 	#Range: 1 ~ 10000
 	"Pixie Village Size" = 25
