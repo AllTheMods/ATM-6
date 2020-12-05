@@ -38,8 +38,11 @@ events.listen('recipes', function (e) {
       'forbidden_arcanus:rotten_leather',
 
       'xreliquary:alkahestry_tome',
+	  
+	  'naturesaura:chunk_loader',
 
       'cyclic:uncrafter',
+	  'cyclic:tile_transporter_empty'
 
       'solarflux:sp_6',
       'solarflux:sp_7',
