@@ -158,7 +158,7 @@ events.listen('block.tags', function (e) {
   add('misctags:flowers/nether_flowers', ['minecraft:crimson_fungus', 'minecraft:warped_fungus', 'minecraft:nether_wart', 'minecraft:crimson_roots', 'minecraft:warped_roots', 'minecraft:weeping_vines', 'minecraft:twisting_vines'])
   add('misctags:flowers/swamp_flowers', ['byg:tiny_lilypads', 'byg:reeds', 'byg:cattail', 'minecraft:lily_pad', 'minecraft:sugar_cane', 'minecraft:brown_mushroom', 'minecraft:red_mushroom'])
   add('misctags:flowers/wither_flowers', ['minecraft:wither_rose'])
-  add('resourcefulbees:valid_apiary', ['minecraft:polished_blackstone_bricks', '#misctags:concrete', '#mcwwindows:window', 'modularrouters:item_router','botania:mana_glass','botania:alf_glass'])
+  add('resourcefulbees:valid_apiary', ['minecraft:polished_blackstone_bricks', '#misctags:concrete', '#mcwwindows:window', 'modularrouters:item_router','botania:mana_glass','botania:alf_glass', 'minecraft:soul_sand', '#minecraft:nylium', 'byg:nylium_soul_sand', 'byg:nylium_soul_soil', 'minecraft:soul_soil', 'minecraft:glowstone', 'minecraft:water'])
   add('forge:mushroom_caps/black_puff_mushroom', 'byg:black_puff_mushroom_block')
   add('forge:mushroom_caps/blue_glowshroom', 'byg:blue_glowshroom_block')
   add('forge:mushroom_caps/weeping_milkcap_mushroom', 'byg:weeping_milkcap_mushroom_block')
