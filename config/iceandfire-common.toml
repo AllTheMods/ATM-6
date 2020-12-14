@@ -69,7 +69,7 @@
 	#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
 	"Dragon Moved Wrongly Error Fix" = false
 	#Blocks that a dragon can break, but won't spawn drops for. Use the format like "minecraft:stone" or "rats:block_of_cheese" 
-	noDropBreakBlocks = ["minecraft:stone", "minecraft:dirt", "minecraft:grass_block"]
+	noDropBreakBlocks = ["minecraft:netherrack", "minecraft:dirt", "minecraft:grass_block", "minecraft:stone", "minecraft:soul_sand"]
 	#How many blocks away can death worms spot potential prey. Note that increasing this could cause lag
 	#Range: 1 ~ 10000
 	"Death Worm Target Search Length" = 64
