@@ -72,7 +72,7 @@
 	forestTrollBiomes = ["allthemodium:crimson_forest", "allthemodium:warped_forest"]
 	grayHippogryphBiomes = ["minecraft:dark_forest_hills"]
 	seaSerpentBiomes = [""]
-	cyclopsCaveBiomes = ["allthemodium:badlands_plateau"]
+	cyclopsCaveBiomes = ["allthemodium:gravelly_mountains"]
 	stymphalianBiomes = ["allthemodium:mountains"]
 	gorgonTempleBiomes = ["allthemodium:desert"]
 	hydraBiomes = ["allthemodium:mountain_edge"]
