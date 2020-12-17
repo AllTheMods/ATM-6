@@ -1,77 +1,76 @@
 //priority: 999
+events.listen('recipes', function(e) {
+    var idRemove = [
 
-events.listen('recipes', function (e) {
-  var idRemove = [
+        'minecraft:comparator',
+        'minecraft:glass',
 
-    'minecraft:comparator',
-    'minecraft:glass',
+        'pedestals:pedestal_crushing/dustnethergold',
 
-    'pedestals:pedestal_crushing/dustnethergold',
+        'forbidden_arcanus:leather',
 
-    'forbidden_arcanus:leather',
+        'computercraft:turtle_normal',
+        'computercraft:turtle_advanced',
 
-    'computercraft:turtle_normal',
-    'computercraft:turtle_advanced',
+        'byg:black_glass_from_sand',
+        'byg:purple_glass_from_sand',
+        'byg:blue_glass_from_sand',
+        'byg:white_glass_from_sand',
 
-    'byg:black_glass_from_sand',
-    'byg:purple_glass_from_sand',
-    'byg:blue_glass_from_sand',
-    'byg:white_glass_from_sand',
+        'engineerstools:crushing/aluminium_grit_crushing_recipe',
 
-    'engineerstools:crushing/aluminium_grit_crushing_recipe',
-
-    'xreliquary:alkahestry/crafting/nether_star'
-  ]
-  utils.listOf(idRemove).forEach(function (iR) {
-    e.remove({
-      id: iR
+        'xreliquary:alkahestry/crafting/nether_star'
+    ]
+    utils.listOf(idRemove).forEach(function(iR) {
+        e.remove({
+            id: iR
+        })
     })
-  })
-  //Recipe removals
-  e.remove({
-    output: [
+    //Recipe removals
+    e.remove({
+        output: [
 
-      'appliedenergistics2:silicon',
+            'appliedenergistics2:silicon',
 
-      'mekanism:upgrade_anchor',
+            'mekanism:upgrade_anchor',
 
-      'forbidden_arcanus:rotten_leather',
+            'forbidden_arcanus:rotten_leather',
 
-      'xreliquary:alkahestry_tome',
-	  
-	  'naturesaura:chunk_loader',
+            'xreliquary:alkahestry_tome',
 
-      'cyclic:uncrafter',
-	  'cyclic:tile_transporter_empty'
+            'naturesaura:chunk_loader',
 
-      'solarflux:sp_6',
-      'solarflux:sp_7',
-      'solarflux:sp_8',
+            'cyclic:uncrafter',
+            'cyclic:tile_transporter_empty',
 
-      'quark:apple_crate',
-      'quark:potato_crate',
-      'quark:carrot_crate',
-      'quark:beetroot_crate',
-      'quark:charcoal_block',
-      'quark:gunpowder_sack',
+            'solarflux:sp_6',
+            'solarflux:sp_7',
+            'solarflux:sp_8',
 
-      'mekanism:block_charcoal',
+            'quark:apple_crate',
+            'quark:potato_crate',
+            'quark:carrot_crate',
+            'quark:beetroot_crate',
+            'quark:charcoal_block',
+            'quark:gunpowder_sack',
 
-      'titanium:iron_gear',
-      'titanium:gold_gear',
-      'titanium:diamond_gear',
+            'mekanism:block_charcoal',
 
-      // issue #349
-      'silentgear:salvager'
-    ]
-  })
-  e.remove({
-    input: [
-      'appliedenergistics2:flour'
-    ]
-  })
-  e.remove({
-    type: 'xreliquary:alkahestry_charging'
-  })
+            'titanium:iron_gear',
+            'titanium:gold_gear',
+            'titanium:diamond_gear',
+
+            // issue #349
+            'silentgear:salvager'
+        ]
+    })
+    e.remove({
+        input: [
+            'appliedenergistics2:flour'
+        ]
+    })
+    e.remove({
+        type: 'xreliquary:alkahestry_charging'
+    })
 
 })
