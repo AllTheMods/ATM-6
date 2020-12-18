@@ -38,6 +38,7 @@ events.listen('item.tags', function (e) {
   */
 
   //Add
+  add('forge:dusts/certus_quartz', ['appliedenergistics2:certus_quartz_dust'])
   add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet'])
   add('curios:angelring', ['botania:flight_tiara'])
   add('forge:ores/rat_gem', 'rats:ratlantean_gem_ore')
@@ -102,6 +103,7 @@ events.listen('item.tags', function (e) {
   add('forge:storage_blocks', ['#forge:storage_blocks/nether_star'])
 
   //Remove
+  remove('forge:dusts/certus_quartz', 'jaopca:dusts.certus_quartz')
   remove('forge:leather', 'forbidden_arcanus:rotten_leather')
   remove('engineerstools:musli_bar_food_blacklisted', 'minecraft:chicken')
   remove('forge:dyes', 'mekanism:dust_sulfur')
