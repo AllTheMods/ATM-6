@@ -1,6 +1,7 @@
 //priority: 997
 
 events.listen('recipes', function (e) {
+  e.replaceInput('appliedenergistics2:certus_quartz_dust', '#forge:dusts/certus_quartz')
   function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
     e.replaceOutput('#forge:ingots/' + name, ingotItem)
     e.replaceOutput('#forge:dusts/' + name, dustItem)
