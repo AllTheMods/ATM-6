@@ -117,4 +117,4 @@ events.listen('block.tags', function (e) {
   add('resourcefulbees:valid_apiary', ['enviromats:alabaster_black_brick_small'])
   add('resourcefulbees:valid_apiary', ['enviromats:alabaster_black_tile'])
   add('resourcefulbees:valid_apiary', ['enviromats:alabaster_black_tile_small'])
-  
+})
