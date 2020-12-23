@@ -31,7 +31,9 @@ events.listen('jei.hide.items', function (e) {
         '/engineerstools:.+_grit/',
         'solarflux:sp_6',
         'solarflux:sp_7',
-        'solarflux:sp_8'
+        'solarflux:sp_8',
+		'cyclic:tile_transporter_empty',
+		'naturesaura:chunk_loader'
     ])
     /*
     function hideMetal(mod, name, types){

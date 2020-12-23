@@ -120,7 +120,7 @@
 		#Set to false if you want to manualy manage processing of pure ore.
 		pureOreSmeltingRecipeInjection = true
 		#Define if or not binder recip require to be ordered.
-		binderRecipeMatchOrder = true
+		binderRecipeMatchOrder = false
 
 		[elementalcraft.instruments.tank]
 			#The max element amount a small element container can hold.

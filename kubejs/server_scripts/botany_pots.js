@@ -1,4 +1,4 @@
-events.listen('recipes', function (e) {
+onEvent('recipes', e => {
     //Soils
     function makeFarmland(input, name, categories, growthModifier) {
         e.recipes.botanypots.soil({
@@ -497,494 +497,123 @@ events.listen('recipes', function (e) {
         'unobtainium'
     ])
 
-    //Botanypots tree functions
-    function growTree(mod, name, ...extra) {
-        e.recipes.botanypots.crop({
-            seed: {
-                item: mod + ':' + name + '_sapling'
-            },
-            categories: [
-                'dirt'
-            ],
-            growthTicks: 2400,
-            display: {
-                block: mod + ':' + name + '_sapling'
-            },
-            results: [{
-                    chance: 0.5,
-                    output: {
-                        item: mod + ':' + name + '_log'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.1,
-                    output: {
-                        item: 'minecraft:stick'
-                    },
-                    minRolls: 1,
-                    maxRolls: 2
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: mod + ':' + name + '_sapling'
-                    },
-                    minRolls: 1,
-                    maxRolls: 2
-                },
-                ...extra
-            ]
-        }).id('kubejs:botany_pots/crop/' + mod + '/' + name)
+//Botany Trees
+//KubeJS code relevant to botany pots: https://github.com/KubeJS-Mods/KubeJS/blob/2dd08e1f24b9619e613f5998f46eed69a4cf964f/common/src/main/java/dev/latvian/kubejs/recipe/mod/BotanyPotsCropRecipeJS.java#L44
+  const growTreeUniversal = (mod, name, raredrops, soil, log) => {
+    const dropchance_log = 0.5
+    const dropchance_stick = 0.1
+    const dropchance_sapling = 0.05
+    const dropchance_raredrops = 0.01
+    if (!soil) {
+      soil = 'dirt'
+	  //console.log(`console.log: soil is null, set to ${soil}`);
+	}
+    if (!log) {
+      log = mod + ':' + name + '_log'
+      console.log(`console.log: log is null, set to ${log}`)
+    } else {
+      console.log("console.log: log is not null");
     }
-
-    function growTreeSnowflake(mod, name, ...extra) {
-        e.recipes.botanypots.crop({
-            seed: {
-                item: mod + ':' + name + '_sapling'
-            },
-            categories: [
-                'dirt'
-            ],
-            growthTicks: 2400,
-            display: {
-                block: mod + ':' + name + '_sapling'
-            },
-            results: [{
-                    chance: 0.1,
-                    output: {
-                        item: 'minecraft:stick'
-                    },
-                    minRolls: 1,
-                    maxRolls: 2
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: mod + ':' + name + '_sapling'
-                    },
-                    minRolls: 1,
-                    maxRolls: 2
-                },
-                ...extra
-            ]
-        }).id('kubejs:botany_pots/crop/' + mod + '/' + name)
-    }
-
-    //Vanilla Trees
-    growTree('minecraft', 'oak', {
-        chance: 0.01,
-        output: {
-            item: 'minecraft:apple'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTree('minecraft', 'dark_oak', {
-        chance: 0.01,
-        output: {
-            item: 'minecraft:apple'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTree('minecraft', 'jungle', {
-        chance: 0.01,
-        output: {
-            item: 'minecraft:cocoa_beans'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTree('minecraft', 'acacia')
-    growTree('minecraft', 'birch')
-    growTree('minecraft', 'spruce')
-
-    //SGear Trees
-    growTree('silentgear', 'netherwood', {
-        "chance": 0.01,
-        "output": {
-            "item": "silentgear:nether_banana"
-        },
-        "minRolls": 1,
-        "maxRolls": 1
-    })
-
-    //F&A Trees
-    growTree('forbidden_arcanus', 'cherrywood', {
-        chance: 0.01,
-        output: {
-            item: 'forbidden_arcanus:cherry_peach'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTree('forbidden_arcanus', 'mysterywood', {
-        chance: 0.01,
-        output: {
-            item: 'minecraft:golden_apple'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-
-    //Quark Trees
-    growTreeSnowflake('quark', 'blue_blossom', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('quark', 'lavender_blossom', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('quark', 'orange_blossom', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('quark', 'pink_blossom', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('quark', 'yellow_blossom', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
     
-    //BoP Trees
-    growTree('biomesoplenty', 'dead')
-    growTree('biomesoplenty', 'fir')
-    growTree('biomesoplenty', 'hellbark')
-    growTree('biomesoplenty', 'jacaranda')
-    growTree('biomesoplenty', 'magic')
-    growTree('biomesoplenty', 'mahogany')
-    growTree('biomesoplenty', 'palm')
-    growTree('biomesoplenty', 'redwood')
-    growTree('biomesoplenty', 'umbran')
-    growTree('biomesoplenty', 'willow')
-    growTreeSnowflake('biomesoplenty', 'flowering_oak', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('biomesoplenty', 'maple', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('biomesoplenty', 'orange_autumn', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:dark_oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('biomesoplenty', 'origin', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('biomesoplenty', 'pink_cherry', {
-        chance: 0.50,
-        output: {
-            item: 'biomesoplenty:cherry_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('biomesoplenty', 'rainbow_birch', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:birch_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('biomesoplenty', 'white_cherry', {
-        chance: 0.50,
-        output: {
-            item: 'biomesoplenty:cherry_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('biomesoplenty', 'yellow_autumn', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:birch_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-
-    //BYG trees
-    growTree('byg', 'aspen')
-    growTree('byg', 'baobab')
-    growTree('byg', 'blue_enchanted')
-    growTree('byg', 'cika')
-    growTree('byg', 'cypress')
-    growTree('byg', 'ebony')
-    growTree('byg', 'fir')
-    growTree('byg', 'green_enchanted')
-    growTree('byg', 'mahogany')
-    growTree('byg', 'mangrove')
-    growTree('byg', 'maple')
-    growTree('byg', 'palo_verde')
-    growTree('byg', 'pine')
-    growTree('byg', 'rainbow_eucalyptus')
-    growTree('byg', 'redwood')
-    growTree('byg', 'willow')
-    growTree('byg', 'witch_hazel')
-    growTree('byg', 'zelkova')
-    growTreeSnowflake('byg', 'pink_cherry', {
-        chance: 0.50,
-        output: {
-            item: 'byg:cherry_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'white_cherry', {
-        chance: 0.50,
-        output: {
-            item: 'byg:cherry_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTree('byg', 'holly', {
-        chance: 0.01,
-        output: {
-            item: 'byg:holly_berries'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTree('byg', 'jacaranda')
-    growTreeSnowflake('byg', 'indigo_jacaranda', {
-        chance: 0.50,
-        output: {
-            item: 'byg:jacaranda_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'red_maple', {
-        chance: 0.50,
-        output: {
-            item: 'byg:maple_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'silver_maple', {
-        chance: 0.50,
-        output: {
-            item: 'byg:maple_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTree('byg', 'skyris', {
-        chance: 0.01,
-        output: {
-            item: 'byg:green_apple'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'blue_spruce', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'brown_birch', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:birch_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'brown_oak', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:dark_oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'joshua', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    }, {
-        chance: 0.01,
-        output: {
-            item: 'byg:joshua_fruit'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'orange_birch', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:birch_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'orange_oak', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    }, {
-        chance: 0.01,
-        output: {
-            item: 'minecraft:apple'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'orange_spruce', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'orchard', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    }, {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:apple'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'red_birch', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:birch_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'red_oak', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:oak_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'red_spruce', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'yellow_birch', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:birch_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-    growTreeSnowflake('byg', 'yellow_spruce', {
-        chance: 0.50,
-        output: {
-            item: 'minecraft:spruce_log'
-        },
-        minRolls: 1,
-        maxRolls: 1
-    })
-
-    //Misc crops
-    function miscCrop(mod, name, seed) {
-        e.recipes.botanypots.crop({
-            seed: {
-                item: mod + ':' + name + '_' + seed
-            },
-            categories: [
-                'dirt'
-            ],
-            growthTicks: 1200,
-            display: {
-                block: mod + ':' + name + '_crop',
-                properties: {
-                    age: 7
-                }
-            },
-            results: [{
-                    chance: 0.75,
-                    output: {
-                        item: mod + ':' + name
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: mod + ':' + name + '_' + seed
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-            ]
-        }).id('kubejs:botany_pots/crop/' + mod + '/' + name)
+    const results = [
+      Item.of(log).chance(dropchance_log),
+      {item: Item.of('minecraft:stick').chance(dropchance_stick), maxRolls: 2},
+      {item: Item.of(mod + ':' + name + '_sapling').chance(dropchance_sapling), maxRolls: 2}
+    ]
+    
+    if(raredrops) {
+      results.push({item: Item.of(raredrops).chance(dropchance_raredrops), maxRolls: 2})
     }
+    
+    e.recipes.botanypots.crop(results, mod + ':' + name + '_sapling').categories([soil])
+  }
+  
+/* 
+ Use the function to add custom trees to the pots. 
+   Parameter 1 is mod as the advanced tooltip sees it.   
+   Parameter 2 is the tree name as the advanced tooltip sees it.
+   Parameter 3 is for the unique drops like apple/cherry etc. If none, use 'null' without the quotes.
+   Parameter 4 is for the soil to grow on, using 'modname:blockname'. If dirt, 'null' without the quotes will default to dirt.
+   Parameter 5 is for specifying a different log than what would normally be modname:treename_log. 'null' defaults to modname:treename_log.
+*/
+  growTreeUniversal('minecraft', 'oak', 'minecraft:apple', null, null)
+  growTreeUniversal('minecraft', 'dark_oak', 'minecraft:apple', null, null)
+  growTreeUniversal('minecraft', 'jungle', 'minecraft:cocoa_beans', null, null)
+  growTreeUniversal('minecraft', 'acacia', '', null, null)
+  growTreeUniversal('minecraft', 'birch', '', null, null)
+  growTreeUniversal('minecraft', 'spruce', '', null, null)
+  growTreeUniversal('silentgear', 'netherwood', 'silentgear:nether_banana', null, null)
+  growTreeUniversal('forbidden_arcanus', 'cherrywood', 'forbidden_arcanus:cherry_peach', null, null)
+  growTreeUniversal('forbidden_arcanus', 'mysterywood', 'minecraft:golden_apple', null, null)
+//Quark Trees
+  growTreeUniversal('quark', 'blue_blossom', null, null, 'minecraft:spruce_log')
+  growTreeUniversal('quark', 'lavender_blossom', null, null, 'minecraft:spruce_log')
+  growTreeUniversal('quark', 'orange_blossom', null, null, 'minecraft:spruce_log')
+  growTreeUniversal('quark', 'pink_blossom', null, null, 'minecraft:spruce_log')
+  growTreeUniversal('quark', 'yellow_blossom', null, null, 'minecraft:spruce_log')
+//BoP Trees
+  growTreeUniversal('biomesoplenty', 'dead', '', null, null)
+  growTreeUniversal('biomesoplenty', 'fir', '', null, null)
+  growTreeUniversal('biomesoplenty', 'hellbark', '', null, null)
+  growTreeUniversal('biomesoplenty', 'jacaranda', '', null, null)
+  growTreeUniversal('biomesoplenty', 'magic', '', null, null)
+  growTreeUniversal('biomesoplenty', 'mahogany', '', null, null)
+  growTreeUniversal('biomesoplenty', 'palm', '', null, null)
+  growTreeUniversal('biomesoplenty', 'redwood', '', null, null)
+  growTreeUniversal('biomesoplenty', 'umbran', '', null, null)
+  growTreeUniversal('biomesoplenty', 'willow', '', null, null)
+  growTreeUniversal('biomesoplenty', 'flowering_oak', null, null, 'minecraft:oak_log')
+  growTreeUniversal('biomesoplenty', 'maple', null, null, 'minecraft:oak_log')
+  growTreeUniversal('biomesoplenty', 'orange_autumn', null, null, 'minecraft:dark_oak_log')
+  growTreeUniversal('biomesoplenty', 'origin', null, null, 'minecraft:oak_log')
+  growTreeUniversal('biomesoplenty', 'pink_cherry', null, null, 'biomesoplenty:cherry_log')
+  growTreeUniversal('biomesoplenty', 'rainbow_birch', null, null, 'minecraft:birch_log')
+  growTreeUniversal('biomesoplenty', 'white_cherry', null, null, 'biomesoplenty:cherry_log')
+  growTreeUniversal('biomesoplenty', 'yellow_autumn', null, null, 'minecraft:birch_log')
+//BYG Trees
+  growTreeUniversal('byg', 'aspen', null, null, null)
+  growTreeUniversal('byg', 'baobab', null, null, null)
+  growTreeUniversal('byg', 'blue_enchanted', null, null, null)
+  growTreeUniversal('byg', 'cika', null, null, null)
+  growTreeUniversal('byg', 'cypress', null, null, null)
+  growTreeUniversal('byg', 'ebony', null, null, null)
+  growTreeUniversal('byg', 'fir', null, null, null)
+  growTreeUniversal('byg', 'green_enchanted', null, null, null)
+  growTreeUniversal('byg', 'jacaranda', null, null, null)
+  growTreeUniversal('byg', 'mahogany', null, null, null)
+  growTreeUniversal('byg', 'mangrove', null, null, null)
+  growTreeUniversal('byg', 'maple', null, null, null)
+  growTreeUniversal('byg', 'palo_verde', null, null, null)
+  growTreeUniversal('byg', 'pine', null, null, null)
+  growTreeUniversal('byg', 'rainbow_eucalyptus', null, null, null)
+  growTreeUniversal('byg', 'redwood', null, null, null)
+  growTreeUniversal('byg', 'willow', null, null, null)
+  growTreeUniversal('byg', 'witch_hazel', null, null, null)
+  growTreeUniversal('byg', 'zelkova', null, null, null)
+  growTreeUniversal('byg', 'pink_cherry', null, null, 'byg:cherry_log')
+  growTreeUniversal('byg', 'white_cherry', null, null, 'byg:cherry_log')
+  growTreeUniversal('byg', 'holly', null, null, 'byg:holly_berries')
+  growTreeUniversal('byg', 'indigo_jacaranda', null, null, 'byg:jacaranda_log')
+  growTreeUniversal('byg', 'red_maple', null, null, 'byg:maple_log')
+  growTreeUniversal('byg', 'silver_maple', null, null, 'byg:maple_log')
+  growTreeUniversal('byg', 'skyris', 'byg:green_apple', null, null)
+  growTreeUniversal('byg', 'blue_spruce', null, null, 'minecraft:spruce_log')
+  growTreeUniversal('byg', 'brown_oak', null, null, 'minecraft:dark_oak_log')
+  growTreeUniversal('byg', 'joshua', 'byg:joshua_fruit', null, 'minecraft:oak_log')
+  growTreeUniversal('byg', 'orange_birch', null, null, 'minecraft:birch_log')
+  growTreeUniversal('byg', 'orange_oak', 'minecraft:apple', null, 'minecraft:oak_log')
+  growTreeUniversal('byg', 'orange_spruce', null, null, 'minecraft:birch_log')
+  growTreeUniversal('byg', 'orchard', 'minecraft:apple', null, 'minecraft:oak_log')
+  growTreeUniversal('byg', 'red_birch', null, null, 'minecraft:birch_log')
+  growTreeUniversal('byg', 'red_oak', null, null, 'minecraft:dark_oak_log')
+  growTreeUniversal('byg', 'red_spruce', null, null, 'minecraft:spruce_log')
+  growTreeUniversal('byg', 'yellow_birch', null, null, 'minecraft:birch_log')
+  growTreeUniversal('byg', 'yellow_spruce', null, null, 'minecraft:spruce_log')
 
-    //Ars Nouveau Crops
-    miscCrop('ars_nouveau', 'mana_bloom', 'crop')
+//Ars Nouveau Mana Bloom
+  const results = [
+      Item.of('ars_nouveau:mana_bloom').chance(0.75),
+      {item: Item.of('ars_nouveau:mana_bloom_crop').chance(0.05), maxRolls: 2}
+    ]
+    e.recipes.botanypots.crop(results, 'ars_nouveau:mana_bloom_crop').categories(['dirt'])
 })
