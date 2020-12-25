@@ -182,7 +182,15 @@ events.listen('block.tags', function(e) {
     add('cyclic:scythe_brush', ['#minecraft:flowers'])
 
     //Resourceful Bees Apiary Tags
-    add('resourcefulbees:valid_apiary', ['minecraft:polished_blackstone_bricks', '#misctags:concrete', '#mcwwindows:window', 'modularrouters:item_router', 'botania:mana_glass', 'botania:alf_glass', 'minecraft:soul_sand', '#minecraft:nylium', 'byg:nylium_soul_sand', 'byg:nylium_soul_soil', 'minecraft:soul_soil', 'minecraft:glowstone', 'minecraft:water'])
+    //Removed  as it was not coming up as a valid item.
+    add('resourcefulbees:valid_apiary', ['#repurposed_structures:nether_stronghold_bookshelves', '#misctags:concrete', '#mcwwindows:window', 'modularrouters:item_router', 'botania:mana_glass', 'botania:elf_glass', 'minecraft:soul_sand', '#minecraft:nylium', 'byg:nylium_soul_sand', 'byg:nylium_soul_soil', 'minecraft:soul_soil', 'minecraft:glowstone', 'minecraft:water'])
+    add('resourcefulbees:valid_apiary', ['#minecraft:base_stone_nether', '#minecraft:stone_bricks', '#minecraft:wart_blocks', '#minecolonies:decoblocks', '#forge:bookshelves', '#forge:cobblestone', '#forge:mushroom_caps', '#forge:mushroom_stems', '#forge:terracotta'])
+    add('resourcefulbees:valid_apiary', ['minecraft:white_glazed_terracotta', 'minecraft:orange_glazed_terracotta', 'minecraft:magenta_glazed_terracotta', 'minecraft:light_blue_glazed_terracotta', 'minecraft:yellow_glazed_terracotta', 'minecraft:lime_glazed_terracotta', 'minecraft:pink_glazed_terracotta', 'minecraft:gray_glazed_terracotta', 'minecraft:light_gray_glazed_terracotta', 'minecraft:cyan_glazed_terracotta', 'minecraft:purple_glazed_terracotta', 'minecraft:blue_glazed_terracotta', 'minecraft:brown_glazed_terracotta', 'minecraft:green_glazed_terracotta', 'minecraft:red_glazed_terracotta', 'minecraft:black_glazed_terracotta'])
+    add('resourcefulbees:valid_apiary', ['minecraft:polished_basalt', 'minecraft:crying_obsidian', 'minecraft:smooth_quartz', 'minecraft:quartz_pillar', 'minecraft:quartz_bricks', 'minecraft:chiseled_quartz_block', 'minecraft:chiseled_nether_bricks', 'minecraft:cracked_nether_bricks', 'minecraft:nether_bricks', 'minecraft:red_nether_bricks'])
+    add('resourcefulbees:valid_apiary', ['minecraft:purpur_block', 'minecraft:purpur_pillar', 'minecraft:end_stone_bricks'])
+    add('resourcefulbees:valid_apiary', ['minecraft:sea_lantern', 'minecraft:dark_prismarine', 'minecraft:prismarine_bricks', 'minecraft:prismarine'])
+    //Removed 'minecraft:permafrost_bricks' as they are replaced by Quark
+    add('resourcefulbees:valid_apiary', ['minecraft:bone_block', 'minecraft:smooth_stone'])
     //Enviromats
     add('resourcefulbees:valid_apiary', ['enviromats:alabaster_white', 'enviromats:alabaster_white_cobble', 'enviromats:alabaster_white_polished', 'enviromats:alabaster_white_brick', 'enviromats:alabaster_white_brick_small', 'enviromats:alabaster_white_tile', 'enviromats:alabaster_white_tile_small'])
     add('resourcefulbees:valid_apiary', ['enviromats:alabaster_orange', 'enviromats:alabaster_orange_cobble', 'enviromats:alabaster_orange_polished', 'enviromats:alabaster_orange_brick', 'enviromats:alabaster_orange_brick_small', 'enviromats:alabaster_orange_tile', 'enviromats:alabaster_orange_tile_small'])
@@ -200,8 +208,25 @@ events.listen('block.tags', function(e) {
     add('resourcefulbees:valid_apiary', ['enviromats:alabaster_green', 'enviromats:alabaster_green_cobble', 'enviromats:alabaster_green_polished', 'enviromats:alabaster_green_brick', 'enviromats:alabaster_green_brick_small', 'enviromats:alabaster_green_tile', 'enviromats:alabaster_green_tile_small'])
     add('resourcefulbees:valid_apiary', ['enviromats:alabaster_red', 'enviromats:alabaster_red_cobble', 'enviromats:alabaster_red_polished', 'enviromats:alabaster_red_brick', 'enviromats:alabaster_red_brick_small', 'enviromats:alabaster_red_tile', 'enviromats:alabaster_red_tile_small'])
     add('resourcefulbees:valid_apiary', ['enviromats:alabaster_black', 'enviromats:alabaster_black_cobble', 'enviromats:alabaster_black_polished', 'enviromats:alabaster_black_brick', 'enviromats:alabaster_black_brick_small', 'enviromats:alabaster_black_tile', 'enviromats:alabaster_black_tile_small'])
-
-
+    //Quark
+    add('resourcefulbees:valid_apiary', ['#quark:crystal', 'quark:red_crystal_pane', 'quark:orange_crystal_pane', 'quark:yellow_crystal_pane', 'quark:green_crystal_pane', 'quark:blue_crystal_pane', 'quark:indigo_crystal_pane', 'quark:violet_crystal_pane', 'quark:white_crystal_pane', 'quark:black_crystal_pane'])
+    add('resourcefulbees:valid_apiary', ['#quark:vertical_slab', 'quark:vertical_white_stained_planks', 'quark:vertical_orange_stained_planks', 'quark:vertical_magenta_stained_planks', 'quark:vertical_light_blue_stained_planks', 'quark:vertical_yellow_stained_planks', 'quark:vertical_lime_stained_planks', 'quark:vertical_pink_stained_planks', 'quark:vertical_gray_stained_planks', 'quark:vertical_light_gray_stained_planks', 'quark:vertical_cyan_stained_planks', 'quark:vertical_purple_stained_planks', 'quark:vertical_blue_stained_planks', 'quark:vertical_brown_stained_planks', 'quark:vertical_green_stained_planks', 'quark:vertical_red_stained_planks', 'quark:vertical_black_stained_planks'])
+    add('resourcefulbees:valid_apiary', ['quark:white_stained_planks', 'quark:orange_stained_planks', 'quark:magenta_stained_planks', 'quark:light_blue_stained_planks', 'quark:yellow_stained_planks', 'quark:lime_stained_planks', 'quark:pink_stained_planks', 'quark:gray_stained_planks', 'quark:light_gray_stained_planks', 'quark:cyan_stained_planks', 'quark:purple_stained_planks', 'quark:blue_stained_planks', 'quark:brown_stained_planks', 'quark:green_stained_planks', 'quark:red_stained_planks', 'quark:black_stained_planks'])
+    add('resourcefulbees:valid_apiary', ['quark:sandy_bricks', 'quark:snow_bricks', 'quark:charred_nether_bricks', 'quark:blue_nether_bricks', 'quark:sandstone_bricks', 'quark:red_sandstone_bricks', 'quark:soul_sandstone_bricks', 'quark:magma_bricks'])
+    add('resourcefulbees:valid_apiary', ['quark:biotite_block', 'quark:smooth_biotite', 'quark:chiseled_biotite_block', 'quark:biotite_pillar', 'quark:biotite_bricks'])
+    add('resourcefulbees:valid_apiary', ['quark:granite_bricks', 'quark:chiseled_granite_bricks', 'quark:granite_pavement', 'quark:granite_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:diorite_bricks', 'quark:chiseled_diorite_bricks', 'quark:diorite_pavement', 'quark:diorite_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:andesite_bricks', 'quark:chiseled_andesite_bricks', 'quark:andesite_pavement', 'quark:andesite_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:marble_bricks', 'quark:chiseled_marble_bricks', 'quark:marble_pavement', 'quark:marble_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:limestone_bricks', 'quark:chiseled_limestone_bricks', 'quark:limestone_pavement', 'quark:limestone_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:jasper_bricks', 'quark:chiseled_jasper_bricks', 'quark:jasper_pavement', 'quark:jasper_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:slate_bricks', 'quark:chiseled_slate_bricks', 'quark:slate_pavement', 'quark:slate_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:basalt_bricks', 'quark:chiseled_basalt_bricks', 'quark:basalt_pavement', 'quark:basalt_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:sugar_cane_block', 'quark:bamboo_block', 'quark:cactus_block', 'quark:chorus_fruit_block', 'quark:stick_block', 'quark:midori_block', 'quark:midori_pillar'])
+    add('resourcefulbees:valid_apiary', ['quark:shingles', 'quark:white_shingles', 'quark:orange_shingles', 'quark:magenta_shingles', 'quark:light_blue_shingles', 'quark:yellow_shingles', 'quark:lime_shingles', 'quark:pink_shingles', 'quark:gray_shingles', 'quark:light_gray_shingles', 'quark:cyan_shingles', 'quark:purple_shingles', 'quark:blue_shingles', 'quark:brown_shingles', 'quark:green_shingles', 'quark:red_shingles', 'quark:black_shingles'])
+    add('resourcefulbees:valid_apiary', ['quark:elder_prismarine', 'quark:elder_prismarine_bricks', 'quark:dark_elder_prismarine', 'quark:elder_sea_lantern', 'quark:myalite_crystal', 'quark:duskbound_block', 'quark:duskbound_lantern'])
+    add('resourcefulbees:valid_apiary', ['quark:brimstone_bricks', 'quark:blaze_lantern', 'quark:soul_sandstone', 'quark:chiseled_soul_sandstone', 'quark:cut_soul_sandstone', 'quark:smooth_soul_sandstone'])
+    add('resourcefulbees:valid_apiary', ['quark:lit_lamp', 'quark:paper_wall', 'quark:paper_wall_big', 'quark:paper_wall_sakura'])
     //Special tag systems
     function special(tags, items) {
         var tag = e.get(tags)
