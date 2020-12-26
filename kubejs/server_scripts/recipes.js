@@ -205,9 +205,9 @@ events.listen('recipes', function(e) {
             count: 1
         }
     })
-	mekCrush(item.of('minecraft:brick', 4), 'minecraft:bricks')
-	mekCrush(item.of('minecraft:rotten_flesh', 9), 'biomesoplenty:flesh')
-	mekCrush(item.of('minecraft:magma_cream', 4), 'minecraft:magma_block')
+    mekCrush(item.of('minecraft:brick', 4), 'minecraft:bricks')
+    mekCrush(item.of('minecraft:rotten_flesh', 9), 'biomesoplenty:flesh')
+    mekCrush(item.of('minecraft:magma_cream', 4), 'minecraft:magma_block')
     mekCrush(item.of('minecraft:blaze_powder', 4), '#forge:rods/blaze')
     mekCrush(item.of('minecraft:quartz', 4), '#forge:storage_blocks/quartz')
     mekEnrich(item.of('minecraft:blaze_rod'), [item.of('minecraft:blaze_powder', 4)])
