@@ -1,8 +1,5 @@
 //priority: 1000
-var ores = [
-    'allthemodium',
-    'vibranium',
-    'unobtainium',
+var alltheores = [
     'aluminum',
     'copper',
     'lead',
@@ -15,12 +12,12 @@ var ores = [
     'zinc'
 ]
 
-events.listen('item.tags', e => {
+var allthemodiumores = [
+    'allthemodium',
+    'vibranium',
+    'unobtainium'
+]
 
-})
-
-//Item tags go here
-//events.listen('item.tags', function (e) {
 events.listen('item.tags', e => {
     function add(tag, id) {
         e.get(tag).add(id)
@@ -30,65 +27,35 @@ events.listen('item.tags', e => {
         e.get(tag).remove(id)
     }
 
-    /*
-    utils.listOf(ores).forEach(function (ore) {
-      e.get('mekanism:clumps').add('kubejs:clump_' + ore)
-      e.get('mekanism:clumps/' + ore).add('kubejs:clump_' + ore)
-    })
-    */
+    //Mek Clumps
+    allthemodiumores.forEach( item => {
+      e.get('mekanism:clumps/' + item).add('allthemodium:' + item + '_clump')
+      e.get('mekanism:clumps').add('#mekanism:clumps/' + item)
+    });
+    alltheores.forEach(item => {
+      e.get('mekanism:clumps/' + item).add('alltheores:' + item + '_clump')
+      e.get('mekanism:clumps').add('#mekanism:clumps/' + item)
+    });
+    //Mek Shards
+    allthemodiumores.forEach(item => {
+      e.get('mekanism:shards/' + item).add('allthemodium:' + item + '_shard')
+      e.get('mekanism:shards').add('#mekanism:shards/' + item)
+    });
+    alltheores.forEach(item => {
+      e.get('mekanism:shards/' + item).add('alltheores:' + item + '_shard')
+      e.get('mekanism:shards').add('#mekanism:shards/' + item)
+    });
+    //Mek Crystals
+    allthemodiumores.forEach(item => {
+      e.get('mekanism:crystals/' + item).add('allthemodium:' + item + '_crystal')
+      e.get('mekanism:crystals').add('#mekanism:crystals/' + item)
+    });
+    alltheores.forEach(item => {
+      e.get('mekanism:crystals/' + item).add('alltheores:' + item + '_crystal')
+      e.get('mekanism:crystals').add('#mekanism:crystals/' + item)
+    });
 
-    //Add
-    //MEK Processing
-    //Clumps
-    add('mekanism:clumps/allthemodium', ['allthemodium:allthemodium_clump'])
-    add('mekanism:clumps/vibranium', ['allthemodium:vibranium_clump'])
-    add('mekanism:clumps/unobtainium', ['allthemodium:unobtainium_clump'])
-    add('mekanism:clumps/aluminum', ['alltheores:aluminum_clump'])
-    add('mekanism:clumps/copper', ['alltheores:copper_clump'])
-    add('mekanism:clumps/lead', ['alltheores:lead_clump'])
-    add('mekanism:clumps/nickel', ['alltheores:nickel_clump'])
-    add('mekanism:clumps/osmium', ['alltheores:osmium_clump'])
-    add('mekanism:clumps/platinum', ['alltheores:platinum_clump'])
-    add('mekanism:clumps/silver', ['alltheores:silver_clump'])
-    add('mekanism:clumps/tin', ['alltheores:tin_clump'])
-    add('mekanism:clumps/uranium', ['alltheores:uranium_clump'])
-    add('mekanism:clumps/zinc', ['alltheores:zinc_clump'])
-    add('mekanism:clumps', ['#mekanism:clumps/allthemodium','#mekanism:clumps/vibranium','#mekanism:clumps/unobtainium','#mekanism:clumps/aluminum','#mekanism:clumps/copper','#mekanism:clumps/lead','#mekanism:clumps/nickel','#mekanism:clumps/osmium','#mekanism:clumps/platinum','#mekanism:clumps/silver','#mekanism:clumps/tin','#mekanism:clumps/uranium','#mekanism:clumps/zinc'])
-    //Shards
-    add('mekanism:shards/allthemodium', ['allthemodium:allthemodium_shard'])
-    add('mekanism:shards/vibranium', ['allthemodium:vibranium_shard'])
-    add('mekanism:shards/unobtainium', ['allthemodium:unobtainium_shard'])
-    add('mekanism:shards/aluminum', ['alltheores:aluminum_shard'])
-    add('mekanism:shards/copper', ['alltheores:copper_shard'])
-    add('mekanism:shards/lead', ['alltheores:lead_shard'])
-    add('mekanism:shards/nickel', ['alltheores:nickel_shard'])
-    add('mekanism:shards/osmium', ['alltheores:osmium_shard'])
-    add('mekanism:shards/platinum', ['alltheores:platinum_shard'])
-    add('mekanism:shards/silver', ['alltheores:silver_shard'])
-    add('mekanism:shards/tin', ['alltheores:tin_shard'])
-    add('mekanism:shards/uranium', ['alltheores:uranium_shard'])
-    add('mekanism:shards/zinc', ['alltheores:zinc_shard'])
-    add('mekanism:shards', ['#mekanism:shards/allthemodium','#mekanism:shards/vibranium','#mekanism:shards/unobtainium','#mekanism:shards/aluminum','#mekanism:shards/copper','#mekanism:shards/lead','#mekanism:shards/nickel','#mekanism:shards/osmium','#mekanism:shards/platinum','#mekanism:shards/silver','#mekanism:shards/tin','#mekanism:shards/uranium','#mekanism:shards/zinc'])
-    //Crystals
-    add('mekanism:crystals/allthemodium', ['allthemodium:allthemodium_crystal'])
-    add('mekanism:crystals/vibranium', ['allthemodium:vibranium_crystal'])
-    add('mekanism:crystals/unobtainium', ['allthemodium:unobtainium_crystal'])
-    add('mekanism:crystals/aluminum', ['alltheores:aluminum_crystal'])
-    add('mekanism:crystals/copper', ['alltheores:copper_crystal'])
-    add('mekanism:crystals/lead', ['alltheores:lead_crystal'])
-    add('mekanism:crystals/nickel', ['alltheores:nickel_crystal'])
-    add('mekanism:crystals/osmium', ['alltheores:osmium_crystal'])
-    add('mekanism:crystals/platinum', ['alltheores:platinum_crystal'])
-    add('mekanism:crystals/silver', ['alltheores:silver_crystal'])
-    add('mekanism:crystals/tin', ['alltheores:tin_crystal'])
-    add('mekanism:crystals/uranium', ['alltheores:uranium_crystal'])
-    add('mekanism:crystals/zinc', ['alltheores:zinc_crystal'])
-    add('mekanism:crystals', ['#mekanism:crystals/allthemodium','#mekanism:crystals/vibranium','#mekanism:crystals/unobtainium','#mekanism:crystals/aluminum','#mekanism:crystals/copper','#mekanism:crystals/lead','#mekanism:crystals/nickel','#mekanism:crystals/osmium','#mekanism:crystals/platinum','#mekanism:crystals/silver','#mekanism:crystals/tin','#mekanism:crystals/uranium','#mekanism:crystals/zinc'])
-
-
-
-
-
+    add('forge:swords', ['allthemodium:alloy_paxel', 'allthemodium:alloy_sword'])
     add('forge:dusts/certus_quartz', ['appliedenergistics2:certus_quartz_dust'])
     add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet'])
     add('curios:angelring', ['botania:flight_tiara'])
