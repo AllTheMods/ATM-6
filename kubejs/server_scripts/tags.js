@@ -32,6 +32,11 @@ events.listen('item.tags', e => {
       e.get('mekanism:clumps/' + item).add('allthemodium:' + item + '_clump')
       e.get('mekanism:clumps').add('#mekanism:clumps/' + item)
     });
+     //Mek Dirty Dusts
+        allthemodiumores.forEach( item => {
+          e.get('mekanism:dirty_dusts/' + item).add('allthemodium:dirty_' + item + '_dust')
+          e.get('mekanism:dirty_dusts').add('#mekanism:dirty_dusts/dirty_' + item)
+       });
     alltheores.forEach(item => {
       e.get('mekanism:clumps/' + item).add('alltheores:' + item + '_clump')
       e.get('mekanism:clumps').add('#mekanism:clumps/' + item)
