@@ -226,5 +226,13 @@
     "block.resourcefulbees.lava_honeycomb_block" : "Lava Honeycomb Block",
     "item.resourcefulbees.lava_honeycomb" : "Lava Honeycomb",
     "item.resourcefulbees.lava_bee_spawn_egg" : "Lava Bee Spawn Egg",
-    "entity.resourcefulbees.lava_bee" : "Lava Bee"
+    "entity.resourcefulbees.lava_bee" : "Lava Bee",
+    "block.resourcefulbees.certus_honeycomb_block": "Certus Honeycomb Block",
+    "item.resourcefulbees.certus_honeycomb": "Certus Honeycomb",
+    "item.resourcefulbees.certus_bee_spawn_egg": "Certus Bee Spawn Egg",
+    "entity.resourcefulbees.certus_bee": "Certus Bee",
+	"block.resourcefulbees.spider_honeycomb_block": "Spider Honeycomb Block",
+    "item.resourcefulbees.spider_honeycomb": "Spider Honeycomb",
+    "item.resourcefulbees.spider_bee_spawn_egg": "Spider Bee Spawn Egg",
+    "entity.resourcefulbees.spider_bee": "Spider Bee"
 }
