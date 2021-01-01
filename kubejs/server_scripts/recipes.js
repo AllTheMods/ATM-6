@@ -62,7 +62,7 @@ events.listen('recipes', function(e) {
         tag: 'forge:ingots/vibranium'
     }, {
         tag: 'forge:ingots/unobtainium'
-    }], 'allthemodium:vibranium_unobtainium_alloy_ingot', 1, 50000)
+    }], 'allthemodium:unobtainium_vibranium_alloy_ingot', 1, 50000)
     energize([{
         tag: 'forge:storage_blocks/iron'
     }, {
