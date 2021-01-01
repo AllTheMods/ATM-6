@@ -39,11 +39,11 @@ events.listen('item.tags', e => {
     //Mek Dirty Dusts
     allthemodiumores.forEach( item => {
        e.get('mekanism:dirty_dusts/' + item).add('allthemodium:dirty_' + item + '_dust')
-       e.get('mekanism:dirty_dusts').add('#mekanism:dirty_dusts/dirty_' + item)
+       e.get('mekanism:dirty_dusts').add('#mekanism:dirty_dusts/' + item)
     });
     alltheores.forEach( item => {
        e.get('mekanism:dirty_dusts/' + item).add('alltheores:dirty_' + item + '_dust')
-       e.get('mekanism:dirty_dusts').add('#mekanism:dirty_dusts/dirty_' + item)
+       e.get('mekanism:dirty_dusts').add('#mekanism:dirty_dusts/' + item)
     });
     //Mek Shards
     allthemodiumores.forEach(item => {

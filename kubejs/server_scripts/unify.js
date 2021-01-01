@@ -17,11 +17,86 @@ events.listen('recipes', function (e) {
       output: '#forge:ingots/' + name,
       type: 'minecraft:blasting'
     })
+console.log("Removing enriching for " + name)
+if (name !== 'iron' && name !== 'gold') {
     e.remove({
       input: '#forge:ores/' + name,
-      output: '#forge:dusts/' + name,
+      output: 'mekanism:dust_' + name,
       type: 'mekanism:enriching'
     })
+    }
+console.log("Removing enriching for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: 'mekanism:dirty_dust_' + name,
+      output: 'mekanism:dust_' + name,
+      type: 'mekanism:enriching'
+    })
+    }
+console.log("Removing purifying for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: '#forge:ores/' + name,
+      output: 'mekanism:clump_' + name,
+      type: 'mekanism:purifying'
+    })
+    }
+console.log("Removing purifying for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: 'mekanism:shard_' + name,
+      output: 'mekanism:clump_' + name,
+      type: 'mekanism:purifying'
+    })
+    }
+console.log("Removing injecting for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: '#forge:ores/' + name,
+      output: 'mekanism:shard_' + name,
+      type: 'mekanism:injecting'
+    })
+    }
+console.log("Removing injecting for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: '#mekanism:crystals/' + name,
+      output: 'mekanism:shard_' + name,
+      type: 'mekanism:injecting'
+    })
+    }
+console.log("Removing crushing for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: '#mekanism:clumps/' + name,
+      output: 'mekanism:dirty_dust_' + name,
+      type: 'mekanism:crushing'
+    })
+    }
+console.log("Removing crystallizing for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: {"slurry": "mekanism:clean_" + name,"amount":200},
+      output: 'mekanism:crystal_' + name,
+      type: 'mekanism:crystallizing'
+    })
+    }
+console.log("Removing washing for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: {"slurry": "mekanism:dirty_" + name,"amount":1},
+      output: {"slurry": "mekanism:clean_" + name,"amount":1},
+      type: 'mekanism:washing'
+    })
+    }
+console.log("Removing dissolution for " + name)
+if (name !== 'iron' && name !== 'gold') {
+    e.remove({
+      input: '#forge:ores/' + name,
+      output: {"slurry":"mekanism:dirty_" + name,"amount":1000},
+      type: 'mekanism:dissolution'
+    })
+    }
     e.remove({
       input: '#forge:ores/' + name,
       type: 'immersiveengineering:crusher'
@@ -72,6 +147,7 @@ events.listen('recipes', function (e) {
     if(!ingredient.of('#forge:ores/' + name).empty){
       e.recipes.minecraft.smelting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/smelting/ores/' + name)
       e.recipes.minecraft.blasting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/blasting/ores/' + name)
+      //e.recipes.mekanism.smelting(ingotItem, '#forge:dusts/' + name).id('kubejs:mekanism/smelting/dusts/' + name)
       e.recipes.mekanism.enriching(item.of(dustItem, 2), '#forge:ores/' + name).id('kubejs:mekanism/enriching/ores/' + name)
       //e.recipes.mekanism.enriching(item.of(dustItem), '#mekanism:dirty_dusts/' + name).id('kubejs:mekanism/enriching/dirty/' + name)
       //This is here to stop crushing hammer recipes for modium from generating
@@ -139,6 +215,10 @@ events.listen('recipes', function (e) {
         turns: 8
       }).id('kubejs:appliedenergistics2/grinder/ores/' + name)
     }
+    //e.replaceInput(nuggetItem, ('#forge:nuggets/' + name))
+    //e.replaceInput(dustItem, ('#forge:dusts/' + name))
+    //e.replaceInput(ingotItem, ('#forge:ingots/' + name))
+    //e.replaceInput(blockItem, ('#forge:storage_blocks/' + name))
   }
 
   unifyMetal('iron', 'minecraft:iron_ingot', 'alltheores:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget')
@@ -159,7 +239,7 @@ events.listen('recipes', function (e) {
   unifyMetal('steel', 'mekanism:ingot_steel', 'mekanism:dust_steel', 'mekanism:block_steel', 'mekanism:nugget_steel')
   unifyMetal('azure_silver', 'silentgear:azure_silver_ingot', 'silentgear:azure_silver_dust', 'silentgear:azure_silver_block', 'silentgear:azure_silver_nugget')
   unifyMetal('crimson_iron', 'silentgear:crimson_iron_ingot', 'silentgear:crimson_iron_dust', 'silentgear:crimson_iron_block', 'silentgear:crimson_iron_nugget')
-  unifyMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
+  unifyMetal('bronze', 'mekanism:bronze_ingot', 'mekanism:bronze_dust', 'mekanism:bronze_block', 'mekanism:bronze_nugget')
   unifyMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
   unifyMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
 })

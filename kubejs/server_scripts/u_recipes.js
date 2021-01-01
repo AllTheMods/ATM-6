@@ -1,12 +1,12 @@
 events.listen('recipes', function (e) {
     //Unobtanium
-    e.shapeless('allthemodium:vibranium_unobtainium_alloy_dust', ['allthemodium:unobtainium_dust', 'allthemodium:vibranium_dust']).id('kubejs:shapeless/vibranium_unobtainium_alloy_dust')
+    e.shapeless('allthemodium:unobtainium_vibranium_alloy_dust', ['allthemodium:unobtainium_dust', 'allthemodium:vibranium_dust']).id('kubejs:shapeless/unobtainium_vibranium_alloy_dust')
     e.shapeless('allthemodium:unobtainium_allthemodium_alloy_dust', ['allthemodium:unobtainium_dust', 'allthemodium:allthemodium_dust']).id('kubejs:shapeless/unobtainium_allthemodium_alloy_dust')
     e.shapeless('allthemodium:vibranium_allthemodium_alloy_dust', ['allthemodium:allthemodium_dust', 'allthemodium:vibranium_dust']).id('kubejs:shapeless/vibranium_allthemodium_alloy_dust')
     e.recipes.mekanism.nucleosynthesizing({
         'itemInput': {
             'ingredient': {
-                'tag': 'forge:dusts/vibranium_unobtainium_alloy'
+                'tag': 'forge:dusts/unobtainium_vibranium_alloy'
             }
         },
         'gasInput': {
@@ -21,7 +21,7 @@ events.listen('recipes', function (e) {
     }).id('kubejs:nucleosynthesizing/uu-matter')
     e.recipes.psi.trick_crafting({
         'input': {
-            'tag': 'forge:dusts/vibranium_unobtainium_alloy'
+            'tag': 'forge:dusts/unobtainium_vibranium_alloy'
         },
         'output': {
             'type': 'forge:nbt',
