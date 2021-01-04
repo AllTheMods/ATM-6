@@ -1,4 +1,10 @@
 
+#This is the Server config for ConstructionWand.
+#If you're not familiar with Forge's new split client/server config, let me explain:
+#Client config is stored in the /config folder and only contains client specific settings like graphics and keybinds.
+#Mod behavior is configured in the Server config, which is world-specific and thus located
+#in the /saves/myworld/serverconfig folder. If you want to change the serverconfig for all
+#new worlds, copy the config files in the /defaultconfigs folder.
 [stone_wand]
 	#Wand durability
 	#Range: > 1
@@ -54,4 +60,11 @@
 	InfinityWandCreative = 2048
 	#Place blocks below you while falling > 10 blocks with angel mode (Can be used to save you from drops/the void)
 	AngelFalling = false
+
+[tileentity]
+	#White/Blacklist for Tile Entities. Allow/Prevent blocks with TEs from being placed by wand.
+	#You can either add block ids like minecraft:chest or mod ids like minecraft
+	TEList = ["chiselsandbits"]
+	#If set to TRUE, treat TEList as a whitelist, otherwise blacklist
+	TEWhitelist = false
 

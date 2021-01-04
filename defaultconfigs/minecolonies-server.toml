@@ -1,195 +1,198 @@
 
 #All configuration items related to the citizen names
 [names]
-	#Male first names to be used for colonists
+	#Male first names to be used for colonists 
 	malefirstnames = ["Aaron", "Adam", "Adrian", "Aidan", "Aiden", "Alain", "Alex", "Alexander", "Andrew", "Anthony", "Asher", "Austin", "Benjamin", "Brayden", "Bryson", "Caden", "Caleb", "Callum", "Camden", "Cameron", "Carson", "Carter", "Charles", "Charlie", "Chase", "Christian", "Christopher", "Cole", "Colton", "Connor", "Cooper", "Curtis", "Cyrille", "Damian", "Daniel", "David", "Declan", "Diego", "Diogo", "Dominic", "Duarte", "Dylan", "Easton", "Eli", "Elias", "Elijah", "Elliot", "Ethan", "Evan", "Ezra", "Félix", "Gabriel", "Gavin", "George", "Grayson", "Guewen", "Harrison", "Henrik", "Henry", "Houston", "Hudson", "Hugo", "Hunter", "Ian", "Isaac", "Isaiah", "Jack", "Jackson", "Jacob", "James", "Jason", "Jayce", "Jayden", "Jeremiah", "Jim", "Joel", "John", "Jonathan", "Jordan", "Joseph", "Joshua", "Josiah", "Julian", "Kai", "Karsen", "Kevin", "Kian", "Landon", "Leo", "Levi", "Liam", "Lincoln", "Logan", "Luís", "Lucas", "Luke", "Mark", "Mason", "Mateo", "Matthew", "Max", "Michael", "Miles", "Muhammad", "Nathan", "Nathanael", "Nicholas", "Noah", "Nolan", "Oliver", "Oscar", "Owen", "Parker", "Paul", "Peter", "Philibert", "Rénald", "Ray", "Richard", "Robert", "Rory", "Roxan", "Ryan", "Samuel", "Sebastian", "Steven", "Thaddee", "Thomas", "Tiago", "Tristan", "Tyler", "William", "Wyatt", "Xavier", "Zachary", "Zane", "Abraham", "Allen", "Ambrose", "Arthur", "Avery", "Barnaby", "Bartholomew", "Benedict", "Bernard", "Cuthbert", "Edmund", "Edward", "Francis", "Fulke", "Geoffrey", "Gerard", "Gilbert", "Giles", "Gregory", "Hugh", "Humphrey", "Jerome", "Lancelot", "Lawrence", "Leonard", "Martin", "Mathias", "Nathaniel", "Oswyn", "Philip", "Piers", "Ralph", "Reynold", "Roger", "Rowland", "Simon", "Solomon", "Stephen", "Tobias", "Walter", "William", "Kysen"]
-	#Female first names to be used for colonists
+	#Female first names to be used for colonists 
 	femalefirstnames = ["Aaliyah", "Abigail", "Adalyn", "Addison", "Adeline", "Alaina", "Alexandra", "Alice", "Allison", "Alyssa", "Amelia", "Anastasia", "Anna", "Annabelle", "Aria", "Arianna", "Aubrey", "Audrey", "Aurora", "Ava", "Bailey", "Barbara", "Bella", "Betty", "Brooklyn", "Callie", "Camilla", "Caroline", "Charlotte", "Chloe", "Claire", "Cora", "Daniela", "Diana", "Dorothy", "Eleanor", "Elena", "Eliana", "Elizabeth", "Ella", "Ellie", "Emilia", "Emilienne", "Emily", "Emma", "Eva", "Evelyn", "Everly", "Filipa", "Frédérique", "Gabriella", "Gianna", "Grace", "Hailey", "Hannah", "Harper", "Haylie", "Hazel", "Helen", "Isabella", "Isabelle", "Jade", "Jasmine", "Jennifer", "Jocelyn", "Jordyn", "Julia", "Juliana", "Julienne", "Karen", "Katia", "Kaylee", "Keira", "Kennedy", "Kinsley", "Kylie", "Layla", "Leah", "Lena", "Lila", "Liliana", "Lillian", "Lily", "Linda", "Lisa", "London", "Lorena", "Luana", "Lucy", "Luna", "Mélanie", "Mackenzie", "Madelyn", "Madison", "Maisy", "Makayla", "Margaret", "Maria", "Marine", "Mary", "Maya", "Melanie", "Mia", "Mila", "Nancy", "Natalie", "Natasha", "Niamh", "Nora", "Odile", "Olivia", "Paisley", "Paloma", "Paola", "Patricia", "Penelope", "Peyton", "Prudence", "Reagan", "Riley", "Sadie", "Samantha", "Sarah", "Savannah", "Scarlett", "Skyler", "Sophia", "Sophie", "Stella", "Susan", "Vérane", "Vera", "Victoria", "Violet", "Vivian", "Zoe", "Agnes", "Amy", "Anne", "Avis", "Beatrice", "Blanche", "Bridget", "Catherine", "Cecily", "Charity", "Christina", "Clemence", "Constance", "Denise", "Edith", "Elinor", "Ellen", "Florence", "Fortune", "Frances", "Frideswide", "Gillian", "Isabel", "Jane", "Janet", "Joan", "Josian", "Joyce", "Judith", "Katherine", "Lettice", "Mabel", "Margery", "Marion", "Martha", "Maud", "Mildred", "Millicent", "Parnell", "Philippa", "Rachel", "Rebecca", "Rose", "Ruth", "Susanna", "Sybil", "Thomasin", "Ursula", "Wilmot", "Winifred"]
-	#Should citizens have a middle initial?
+	#Should citizens have a middle initial? [Default: true]
 	usemiddleinitial = true
-	#Last names to be used for colonists
+	#Last names to be used for colonists 
 	lastnames = ["Brown", "Clark", "Fletcher", "Harris", "Johnson", "Jones", "Mardle", "Miller", "Robinson", "Smith", "Taylor", "Wallgreen", "White", "Williams", "Wilson", "Abell", "Ackworth", "Adams", "Addicock", "Alban", "Aldebourne", "Alfray", "Alicock", "Allard", "Allington", "Amberden", "Amcotts", "Amondsham", "Andrews", "Annesley", "Ansty", "Archer", "Ardall", "Ardern", "Argentein", "Arnold", "Asger", "Ashby", "Ashcombe", "Ashenhurst", "Ashton", "Askew", "Asplin", "Astley", "Atherton", "Atkinson", "Atlee", "Attilburgh", "Audeley", "Audlington", "Ayde", "Ayleward", "Aylmer", "Aynesworth", "Babham", "Babington", "Badby", "Baker", "Balam", "Baldwin", "Ballard", "Ballett", "Bammard", "Barber", "Bardolf", "Barefoot", "Barker", "Barnes", "Barre", "Barrentine", "Barrett", "Barstaple", "Bartelot", "Barton", "Basset", "Bathurst", "Battersby", "Battle", "Baynton", "Beauchamp", "Cheddar", "Chelsey", "Chernock", "Chester", "Chetwood", "Cheverell", "Cheyne", "Chichester", "Chilton", "Chowne", "Chudderley", "Church", "Churmond", "Clavell", "Claybrook", "Clement", "Clerk", "Clifford", "Clifton", "Clitherow", "Clopton", "Cobb", "Cobham", "Cobley", "Cockayne", "Cod", "Coddington", "Coffin", "Coggshall", "Colby", "Colkins", "Collard", "Colmer", "Colt", "Colthurst", "Complin", "Compton", "Conquest", "Cooke", "Coorthopp", "Coppinger", "Corbett", "Corby", "Cossington", "Cosworth", "Cotton", "Courtenay", "Covert", "Cowill", "Cox", "Crane", "Cranford", "Crawley", "Cressy", "Crickett", "Cripps", "Crisp", "Cristemas", "Crocker", "Crugg", "Cuddon", "Culpepper", "Cunningham", "Curzon", "Dagworth", "Gardiner", "Gare", "Garnis", "Garrard", "Garret", "Gascoigne", "Gasper", "Gavell", "Gedding", "Gerville", "Geste", "Gibbs", "Gifford", "Gill", "Ginter", "Gisborne", "Gittens", "Glennon", "Glover", "Gobberd", "Goddam", "Godfrey", "Gold", "Golding", "Goldwell", "Gomershall", "Gomfrey", "Gonson", "Good", "Goodenouth", "Gooder", "Goodluck", "Goodnestone", "Goodrick", "Goodrington", "Goodwin", "Goring", "Gorney", "Gorst", "Gosebourne", "Grafton", "Gray", "Greene", "Greenway", "Grenefeld", "Greville", "Grey", "Grimbald", "Grobbam", "Grofhurst", "Groston", "Grove", "Guildford", "Hackman", "Haddock", "Haddon", "Hadresham", "Hakebourne", "Hale", "Hall", "Halley", "Hambard", "Hammer", "Hammond", "Hampden", "Sparrow"]
 
 #All configuration items related to the core gameplay
 [gameplay]
-	#AI Update rate. Increase this to improve performance. This throttles citizen updates. [Default: 1]
+	#AI Update rate. Increase this to improve performance. This throttles citizen updates. [Default: 1, min: 1, max: 100]
 	#Range: 1 ~ 100
 	updaterate = 1
 	#Automatically fix orphaned chunks which were caused by chunk loading and saving issues. [Default: false]
 	fixorphanedchunks = false
-	#Max citizens in one colony. [Default: 50]
+	#Max citizens in one colony. [Default: 150, min: 4, max: 500]
 	#Range: 4 ~ 500
 	maxcitizenpercolony = 150
-	#Amount of blocks the Builder checks (to decrease lag). [Default: 1000]
-	#Range: 1000 ~ 100000
-	maxblockscheckedbybuilder = 1000
-	#How common diseases are. 1 = Very common, 100 = extremely rare. [Default: 5]
+                                                                        
+                      
+                                 
+	#How common diseases are. 1 = Very common, 100 = extremely rare. [Default: 5, min: 1, max: 100]
 	#Range: 1 ~ 100
 	diseasemodifier = 5
-	#Should development features be enabled (might be buggy). [Default: false]
+	#Should development features be enabled (might be buggy)? [Default: false]
 	enableindevelopmentfeatures = false
-	#Should the Builder place construction tape? [Default: true]
+	#Should construction tape be placed around in-construction builds? [Default: true]
 	builderplaceconstructiontape = true
-	#Should the Builder and Miner build without resources? (This also turns off what they produce.) [Default: false]
+	#Should the Builder and Miner build without resources? (This also turns off what the Miner produces.) [Default: false]
 	builderinfiniteresources = false
 	#Should players be allowed to abandon their colony to create a new one easily? Note: This is buggy! [Default: false]
 	allowinfinitecolonies = false
 	#If part of the colony is loaded by an owner/officer, the entire colony should be kept loaded. [Default: false]
 	forceloadcolony = false
-	#Child growth modifier. On average children take about 60min to grow at 1.0x modifier (the default). 5 = 5x as fast. [Default: 1]
+	#Child growth modifier. On average children take about 60min to grow at 1.0x modifier (the default). 5 = 5x as fast. [Default: 1.000000, min: 1.000000, max: 100.000000]
 	#Range: 1.0 ~ 100.0
 	growthmodifier = 1.0
 	#Should citizen name tags be rendered? [Default: true]
 	alwaysrendernametag = true
 	#Should players be able to place an infinite amount of supply camps/ships? [Default: false]
 	allowinfinitesupplychests = false
-	#Average citizen respawn interval (in seconds). [Default: 60]
+	#If a colony is under the initial citizen count, this changes the amount of time before a new citizen spawns. [Default: 60, min: 10, max: 600]
 	#Range: 10 ~ 600
 	citizenrespawninterval = 60
-	#Should colonies in other dimensions be allowed? Note: This is buggy if the dimension doesn't have day/night! [Default: false]
+	#Should colonies in other dimensions be allowed? [Default: false]
 	allowotherdimcolonies = false
 	#Should workers work during the rain? [Default: false]
 	workersalwaysworkinrain = false
-	#Quantity of dirt per compost filling. [Default: 1]
+	#Quantity of dirt per compost filling. [Default: 1, min: 0, max: 100]
 	#Range: 0 ~ 100
 	dirtfromcompost = 1
-	#Chance to get a prismarine shard or crystal drop from the Fisher (starting at hut level 3). Overall chance of prismarine is 2x this number [Default: 2.5]
+	#Chance to get a prismarine shard or crystal drop from the Fisher (starting at hut level 3). Overall chance of prismarine is 2x this number [Default: 2.500000, min: 0.000000, max: 100.000000]
 	#Range: 0.0 ~ 100.0
 	fisherprismarinechance = 2.5
-	#Food consumption modifier. Min: 1.0. [Default: 1.0]
+	#Food consumption modifier. Min: 1.0. [Default: 1.000000, min: 0.100000, max: 100.000000]
 	#Range: 0.1 ~ 100.0
 	foodmodifier = 1.0
-	#Delay modifier to mine a block (decreasing it decreases the delay). [Default: 500]
+	#Delay modifier to mine a block (decreasing it decreases the delay). [Default: 500, min: 1, max: 10000]
 	#Range: 1 ~ 10000
 	blockminingdelaymodifier = 500
-	#Chance to get a sponge from the Fisher (starting at hut level 4). [Default: 0.1]
+	#Chance to get a sponge from the Fisher (starting at hut level 4). [Default: 0.100000, min: 0.000000, max: 100.000000]
 	#Range: 0.0 ~ 100.0
 	fisherspongechance = 0.1
 	#Should players be sent entering/leaving colony notifications? [Default: true]
 	sendenteringleavingmessages = true
-	#Should players be allowed to change names? -1 for false, 0 for specific groups, 1 for true. [Default: 1]
+	#Should players be allowed to change citizen names? -1 for false, 0 for certain players only, 1 for true. (To set which players can change the names, see "Special Permissions Group" below.) [Default: 1, min: -1, max: 1]
 	#Range: -1 ~ 1
 	allowglobalnamechanges = 1
-	#Delay after each block placement (increasing it increases the delay). [Default: 15]
+	#Delay after each block placement (increasing it increases the delay). [Default: 15, min: 1, max: 500]
 	#Range: 1 ~ 500
 	builderbuildblockdelay = 15
-	#Amount of initial citizens. [Default: 4]
+	#Amount of initial citizens. [Default: 4, min: 1, max: 10]
 	#Range: 1 ~ 10
 	initialcitizenamount = 4
 	#Should the Builder be slower when working underground? [Default: true]
 	restrictbuilderunderground = true
-	#Should there be a max of 1 warehouse per colony?. [Default: true]
+	#Should there be a max of 1 warehouse per colony? [Default: true]
 	limittoonewarehousepercolony = true
-	#Chance to get a lucky block as a percentage. [Default: 1]
+	#Chance for the Miner to get an ore when mining cobblestone or stone (by default, can be expanded with datapacks to other materials). This is a percentage. [Default: 1, min: 0, max: 100]
 	#Range: 0 ~ 100
 	luckyblockchance = 1
-	#Suggest building tool usage when trying to place a building without the building tool. [Default: true]
+	#Suggest build tool usage when trying to place a building without the build tool. [Default: true]
 	suggestbuildtoolplacement = true
 	#Should special holiday content be displayed? [Default: true]
 	holidayfeatures = true
-	#The minimum level a Town Hall has to be to allow teleportation to allied colonies. [Default: 3]
+	#The minimum level a Town Hall has to be to allow teleportation to allied colonies. [Default: 3, min: 0, max: 5]
 	#Range: 0 ~ 5
 	minthleveltoteleport = 3
+	#Chance to get an evil tavern visitor which can run off with the resources, in % [Default: 2] [Default: 2, min: 1, max: 100]
+	#Range: 1 ~ 100
+	badvisitorchance = 2
 
 #All configurations related to the MineColonies commands
 [commands]
-	#Should a player be allowed to use the /mc colony teleport command? [Default: false]
+	#Should players be allowed to use the /mc colony teleport command? [Default: false]
 	canplayerusecolonytpcommand = false
-	#Which level counts as OP on a server. [Default: 3]
-	#Range: 0 ~ 3
-	oplevelforserver = 3
-	#Sets whether or not colony structures are destroyed automatically when a colony is deleted. [Default: true]
-	autodestroycolonyblocks = true
-	#Should a player be allowed to use the /mc rtp command? [Default: true]
+                                                    
+              
+                     
+                                                                                                             
+                               
+	#Should players be allowed to use the /mc rtp command? [Default: true]
 	canplayerusertpcommand = true
-	#minecolonies.config.numberofattemptsforsafetp.comment
+	#Amount of attempts to find a safe random teleport (with /mc rtp).. [Default: 4, min: 1, max: 10]
 	#Range: 1 ~ 10
 	numberofattemptsforsafetp = 4
-	#Should the player be allowed to use the /mc colony delete command? [Default: true]
+	#Should players be allowed to use the /mc colony delete command? [Default: true]
 	canplayerusedeletecolonycommand = true
-	#Sets the amount of hours until a colony will be deleted after not seeing its governor. Set to zero to disable this. [Default: 0]
-	#Range: 168 ~ 10000
-	autodeletecoloniesinhours = 168
-	#Should the player be allowed to use the /mc colony info command? [Default: true]
+                                                                                                                                  
+                    
+                                
+	#Should players be allowed to use the /mc colony info command? [Default: true]
 	canplayeruseshowcolonyinfocommand = true
-	#Should the player be allowed to use the /mc colony addOfficer command? [Default: true]
+	#Should players be allowed to use the /mc colony addOfficer command? [Default: true]
 	canplayeruseaddofficercommand = true
-	#Time until a next teleport (to a colony) can be executed in seconds. [Default: 120]
-	#Range: 30 ~ 99999
-	teleportbuffer = 120
-	#Should a player be allowed to use the /mc home command? [Default: true]
+	#Should players be allowed to use the /mc home command? Note: Only owners of the colony can use this command. [Default: true]
+                   
+                     
+                                                                         
 	canplayerusehometpcommand = true
-	#Can a player teleport to allied colonies? [Default:true]
+	#Can players teleport to allied colonies? [Default: true]
 	canplayeruseallytownhallteleport = true
-	#Should the player be allowed to use the /mc citizens kill command? [Default: true]
+	#Should players be allowed to use the /mc citizens kill command? [Default: true]
 	canplayerusekillcitizenscommand = true
 
-#minecolonies.config.claims.comment
+#All configuration related to mod compatibility
 [claims]
 	#Should the min/max distance from spawn also affect colony placement? [Default: false]
 	restrictcolonyplacement = false
-	#minecolonies.config.officersreceiveadvancements.comment
+	#Should officers of a colony receive advancements from that colony? [Default: true]
 	officersreceiveadvancements = true
-	#minecolonies.config.initialcolonysize.comment
+	#Initial claim size for a colony. This is the radius, measured in chunks. [Default: 4, min: 1, max: 200]
 	#Range: 1 ~ 200
 	initialColonySize = 4
-	#minecolonies.config.maxcolonysize.comment
+	#Maximum claim range for a colony. This is the radius, measured in chunks. [Default: 20, min: 1, max: 50]
 	#Range: 1 ~ 50
 	maxColonySize = 20
-	#Max distance (in blocks) from world spawn for a colony. [Default: 8000]
+	#Max distance (in blocks) from world spawn for a colony. [Default: 8000, min: 1000, max: 100000]
 	#Range: 1000 ~ 100000
 	maxdistancefromworldspawn = 8000
-	#minecolonies.config.mincolonydistance.comment
+	#The minimum distance (in chunks) between colonies. [Default: 8, min: 1, max: 200]
 	#Range: 1 ~ 200
 	minColonyDistance = 8
-	#Should players be allowed to build their colonies over existing (vanilla) villages? [Default: false]
-	protectvillages = false
-	#Min distance (in blocks) from world spawn for a colony. [Default: 512]
+                                                                                                      
+                        
+	#Min distance (in blocks) from world spawn for a colony. [Default: 512, min: 1, max: 1000]
 	#Range: 1 ~ 1000
 	mindistancefromworldspawn = 512
 
 #All configuration items related to the combat elements of MineColonies
 [combat]
-	#The minimum number of nights between raids. [Default: 1]
+	#The minimum number of nights between raids. [Default: 8, min: 1, max: 30]
 	#Range: 1 ~ 30
 	minimumnumberofnightsbetweenraids = 8
-	#Days until the pirate ships despawn. [Default: 3]
+	#Days until the pirate ships despawn. [Default: 3, min: 1, max: 10]
 	#Range: 1 ~ 10
 	daysuntilpirateshipsdespawn = 3
-	#minecolonies.config.citizencallforhelp.comment
+	#Should citizens call Guards for help when attacked? [Default: true]
 	citizencallforhelp = true
-	#Whether or not barbarians can break, scale, and bridge obstacles. [Default: true]
+	#Whether or not raiders can break, scale, and bridge obstacles. [Default: true]
 	dobarbariansbreakthroughwalls = true
-	#Should mobs attack citizens? [Default: false]
+	#Should mobs attack citizens? [Default: true]
 	mobattackcitizens = true
-	#The max size of a barbarian horde. [Default: 20]
+	#The max size of a raider horde. [Default: 80, min: 6, max: 400]
 	#Range: 6 ~ 400
 	maxBarbarianSize = 80
-	#Health multiplier for all Guards. [Default: 1.0]
+	#Health multiplier for all Guards. [Default: 1.000000, min: 0.100000, max: 5.000000]
 	#Range: 0.1 ~ 5.0
 	guardhealthmult = 1.0
-	#minecolonies.config.barbarianhordedifficulty.comment
+	#The difficulty setting for raiders. [Default: 5, min: 0, max: 10]
 	#Range: 0 ~ 10
 	barbarianhordedifficulty = 5
-	#The average number of nights between raids. [Default: 3]
-	#Range: 1 ~ 10
+	#The average number of nights between raids. [Default: 12, min: 1, max: 50]
+	#Range: 1 ~ 50
 	averagenumberofnightsbetweenraids = 10
-	#Damage multiplier for Knight Guards. [Default: 1.0]
+	#Damage multiplier for Knight Guards. [Default: 1.000000, min: 0.100000, max: 5.000000]
 	#Range: 0.1 ~ 5.0
 	knightdamagemult = 1.0
 	#Turn on MineColonies pvp mode (colonies can be destroyed and griefed under certain conditions). [Default: false]
 	pvp_mode = false
-	#minecolonies.config.shouldraiderbreakdoors.comment
+	#Whether or not raiders can break through doors. [Default: true]
 	shouldraiderbreakdoors = true
-	#Max Y level (height) for Barbarians to spawn. [Default: 200]
+	#Max Y level (height) for Barbarians to spawn. [Default: 200, min: 1, max: 500]
 	#Range: 1 ~ 500
 	maxyforbarbarians = 200
-	#Whether or not to spawn barbarians. [Default: true]
+	#Whether or not to spawn raiders. [Default: true]
 	dobarbariansspawn = true
-	#Damage multiplier for Archer Guards. [Default: 1.0]
+	#Damage multiplier for Archer Guards. [Default: 1.000000, min: 0.100000, max: 5.000000]
 	#Range: 0.1 ~ 5.0
 	rangerdamagemult = 1.0
-	#The min size of a barbarian horde. [Default: 5]
+	#The min size of a raider horde. [Default: 5, min: 1, max: 10]
 	#Range: 1 ~ 10
 	spawnbarbariansize = 5
 	#Should Archer Guards benefit from Power/Punch/Flame enchants (on bows)? [Default: true]
@@ -197,421 +200,429 @@
 
 #All permission configuration options
 [permissions]
-	#Blocks players should be able to interact with in any colony (ex: vending machines)
+	#Blocks players should be able to interact with in any colony (ex: vending machines) 
 	freetointeractblocks = ["dirt", "0 0 0"]
 	#Should colony protection be enabled? [Default: true]
 	enablecolonyprotection = false
 	#Independent from the colony protection, should explosions be turned off inside colonies? [Default: true]
 	turnoffexplosionsincolonies = true
-	#Seconds between permission messages. [Default: 30]
+	#Seconds between permission messages. [Default: 30, min: 1, max: 1000]
 	#Range: 1 ~ 1000
 	secondsBetweenPermissionMessages = 30
-	#minecolonies.config.specialpermgroup.comment
+	#Players who have special permissions, especially to change citizen names (see "Name Changes" above). 
 	specialpermgroup = ["_Raycoms_"]
 
 #All configuration related to mod compatibility
 [compatibility]
-	#Experience multiplier of the enchanter (how much more experience do they get from a citizen than they drain). [Default: 2.0]
+	#Experience multiplier of the enchanter (how much more experience do they get from a citizen than they drain). [Default: 2.0] [Default: 2.000000, min: 1.000000, max: 10.000000]
 	#Range: 1.0 ~ 10.0
 	enchanterexperiencemultiplier = 2.0
-	#minecolonies.config.extraores.comment
-	extraOres = ["minestuck:ore_cruxite", "minestuck:ore_uranium"]
-	#The items and item-tags that the Florist can plant.
+                                       
+                                                               
+	#The items and item-tags that the Florist can plant. 
 	listofplantables = ["minecraft:sunflower", "minecraft:lilac", "minecraft:rose_bush", "minecraft:peony", "minecraft:tall_grass", "minecraft:large_fern", "minecraft:fern", "biomesoplenty:small_flowers", "minecraft:small_flowers"]
-	#minecolonies.config.siftableblocks.comment
+	#List of materials a Sifter can rifle through for resources. 
 	siftableblocks = ["minecraft:dirt", "minecraft:sand", "minecraft:gravel", "minecraft:soul_sand"]
-	#All diseases citizens can get. The name, how common it is, and all ingredients to cure it.
+	#All diseases citizens can get. The name, how common it is, and all ingredients to cure it. 
 	diseases = ["Influenza,100,minecraft:carrot,minecraft:potato", "Measles,10,minecraft:dandelion,minecraft:kelp,minecraft:poppy", "Smallpox,1,minecraft:honeycomb,minecraft:golden_apple"]
-	#minecolonies.config.configliststudyitems.comment
+	#Items consumed by citizens in the Library. 
 	configliststudyitems = ["minecraft:paper;400;100", "minecraft:book;600;10"]
-	#The possible enchantments for the enchanter.
+	#The possible enchantments for the enchanter. 
 	enchantments = ["1,minecraft:aqua_affinity,1,50", "1,minecraft:bane_of_arthropods,1,50", "1,minecraft:blast_protection,1,50", "1,minecraft:depth_strider,1,50", "1,minecraft:feather_falling,1,50", "1,minecraft:fire_aspect,1,50", "1,minecraft:fire_protection,1,50", "1,minecraft:flame,1,50", "1,minecraft:frost_walker,1,50", "1,minecraft:knockback,1,50", "1,minecraft:looting,1,50", "1,minecraft:power,1,50", "1,minecraft:projectile_protection,1,50", "1,minecraft:protection,1,50", "1,minecraft:punch,1,50", "1,minecraft:respiration,1,50", "1,minecraft:sharpness,1,50", "1,minecraft:smite,1,50", "1,minecraft:sweeping,1,50", "1,minecraft:unbreaking,1,50", "2,minecraft:aqua_affinity,2,25", "2,minecraft:bane_of_arthropods,2,25", "2,minecraft:blast_protection,2,25", "2,minecraft:depth_strider,2,25", "2,minecraft:feather_falling,2,25", "2,minecraft:fire_aspect,2,25", "2,minecraft:fire_protection,2,25", "2,minecraft:flame,2,25", "2,minecraft:frost_walker,2,25", "2,minecraft:knockback,2,25", "2,minecraft:looting,2,25", "2,minecraft:power,2,25", "2,minecraft:projectile_protection,2,25", "2,minecraft:protection,2,25", "2,minecraft:punch,2,25", "2,minecraft:respiration,2,25", "2,minecraft:sharpness,2,25", "2,minecraft:smite,2,25", "2,minecraft:sweeping,2,25", "2,minecraft:unbreaking,2,25", "3,minecraft:aqua_affinity,3,15", "3,minecraft:bane_of_arthropods,3,15", "3,minecraft:blast_protection,3,15", "3,minecraft:depth_strider,3,15", "3,minecraft:feather_falling,3,15", "3,minecraft:fire_aspect,3,15", "3,minecraft:fire_protection,3,15", "3,minecraft:flame,3,15", "3,minecraft:frost_walker,3,15", "3,minecraft:knockback,3,15", "3,minecraft:looting,3,15", "3,minecraft:power,3,15", "3,minecraft:projectile_protection,3,15", "3,minecraft:protection,3,15", "3,minecraft:punch,3,15", "3,minecraft:respiration,3,15", "3,minecraft:sharpness,3,15", "3,minecraft:smite,3,15", "3,minecraft:sweeping,3,15", "3,minecraft:unbreaking,3,15", "4,minecraft:aqua_affinity,4,5", "4,minecraft:bane_of_arthropods,4,5", "4,minecraft:blast_protection,4,5", "4,minecraft:depth_strider,4,5", "4,minecraft:feather_falling,4,5", "4,minecraft:fire_aspect,4,5", "4,minecraft:fire_protection,4,5", "4,minecraft:flame,4,5", "4,minecraft:frost_walker,4,5", "4,minecraft:infinity,1,5", "4,minecraft:knockback,4,5", "4,minecraft:looting,4,5", "4,minecraft:power,4,5", "4,minecraft:projectile_protection,4,5", "4,minecraft:protection,4,5", "4,minecraft:punch,4,5", "4,minecraft:respiration,4,5", "4,minecraft:sharpness,4,5", "4,minecraft:smite,4,5", "4,minecraft:sweeping,4,5", "4,minecraft:unbreaking,4,5", "5,minecraft:aqua_affinity,5,1", "5,minecraft:bane_of_arthropods,5,1", "5,minecraft:blast_protection,5,1", "5,minecraft:depth_strider,5,1", "5,minecraft:feather_falling,5,1", "5,minecraft:fire_aspect,5,1", "5,minecraft:fire_protection,5,1", "5,minecraft:flame,5,1", "5,minecraft:frost_walker,5,1", "5,minecraft:infinity,1,1", "5,minecraft:knockback,5,1", "5,minecraft:looting,5,1", "5,minecraft:mending,1,1", "5,minecraft:power,5,1", "5,minecraft:projectile_protection,5,1", "5,minecraft:protection,5,1", "5,minecraft:punch,5,1", "5,minecraft:respiration,5,1", "5,minecraft:sharpness,5,1", "5,minecraft:smite,5,1", "5,minecraft:sweeping,5,1", "5,minecraft:unbreaking,5,1"]
-	#minecolonies.config.siftermeshes.comment
+	#List of materials a sifter can use as a mesh material, along with bonus weights 
 	siftermeshes = ["minecraft:string,0", "minecraft:flint,0.1", "minecraft:iron_ingot,0.1", "minecraft:diamond,0.1"]
-	#minecolonies.config.listofcompostableitems.comment
-	listOfCompostableItems = ["minecraft:rotten_flesh", "minecraft:brown_mushroom", "minecraft:red_mushroom", "minecraft:feather", "minecraft:pumpkin", "minecraft:carved_pumpkin", "minecraft:grass", "minecraft:tall_grass", "minecraft:fern", "minecraft:large_fern", "minecraft:kelp", "minecraft:seagrass", "minecraft:cactus", "minecraft:sugar_cane", "minecraft:vine", "minecraft:cocoa_beans", "minecraft:lily_pad", "minecraft:sea_pickle", "minecraft:wheat", "minecraft:brown_mushroom_block", "minecraft:red_mushroom_block", "minecraft:mushroom_stem", "minecraft:cake", "minecraft:rabbit_foot", "minecraft:fermented_spider_eye", "saplings", "flowers", "leaves"]
-	#minecolonies.config.sifterdrops.comment
+	#List of materials a sifter can find from raw materials, as well as their weights. 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                                         
 	sifterdrops = ["0,0,minecraft:wheat_seeds,25", "0,0,minecraft:oak_sapling,1", "0,0,minecraft:birch_sapling,1", "0,0,minecraft:spruce_sapling,1", "0,0,minecraft:jungle_sapling,1", "0,1,minecraft:wheat_seeds,50", "0,1,minecraft:oak_sapling,5", "0,1,minecraft:birch_sapling,5", "0,1,minecraft:spruce_sapling,5", "0,1,minecraft:jungle_sapling,5", "0,1,minecraft:carrot:0,1", "0,1,minecraft:potato:0,1", "0,2,minecraft:wheat_seeds,50", "0,2,minecraft:oak_sapling,10", "0,2,minecraft:birch_sapling,10", "0,2,minecraft:spruce_sapling,10", "0,2,minecraft:jungle_sapling,10", "0,2,minecraft:pumpkin_seeds:0,1", "0,2,minecraft:melon_seeds:0,1", "0,2,minecraft:beetroot_seeds:0,1", "0,2,minecraft:carrot,1", "0,2,minecraft:potato,1", "0,2,minecraft:dark_oak_sapling,1", "0,2,minecraft:acacia_sapling,1", "0,3,minecraft:wheat_seeds,25", "0,3,minecraft:oak_sapling,10", "0,3,minecraft:birch_sapling,10", "0,3,minecraft:spruce_sapling,10", "0,3,minecraft:jungle_sapling,10", "0,3,minecraft:pumpkin_seeds:0,5", "0,3,minecraft:melon_seeds:0,5", "0,3,minecraft:beetroot_seeds:0,5", "0,3,minecraft:carrot:0,5", "0,3,minecraft:potato:0,5", "0,3,minecraft:dark_oak_sapling,5", "0,3,minecraft:acacia_sapling,5", "1,0,minecraft:cactus,2.5", "1,0,minecraft:sugar_cane,2.5", "1,1,minecraft:cactus,5", "1,1,minecraft:sugar_cane,5", "1,1,minecraft:gold_nugget,5", "1,2,minecraft:cactus,10", "1,2,minecraft:sugar_cane,10", "1,2,minecraft:cocoa_beans,10", "1,2,minecraft:gold_nugget,10", "1,3,minecraft:cactus,15", "1,3,minecraft:sugar_cane,15", "1,3,minecraft:cocoa_beans,15", "1,3,minecraft:gold_nugget,15", "2,0,minecraft:iron_nugget,5", "2,0,minecraft:flint,5", "2,0,minecraft:coal,5", "2,1,minecraft:redstone,10", "2,1,minecraft:iron_nugget,10", "2,1,minecraft:flint,10", "2,1,minecraft:coal,10", "2,2,minecraft:redstone,15", "2,2,minecraft:iron_nugget,15", "2,2,minecraft:coal,15", "2,2,minecraft:lapis_lazuli,5", "2,2,minecraft:iron_ingot,1", "2,2,minecraft:gold_ingot,1", "2,2,minecraft:emerald,1", "2,2,minecraft:diamond,1", "2,3,minecraft:redstone,20", "2,3,minecraft:coal,20", "2,3,minecraft:lapis_lazuli,10", "2,3,minecraft:iron_ingot,2.5", "2,3,minecraft:gold_ingot,2.5", "2,3,minecraft:emerald,2.5", "2,3,minecraft:diamond,2.5", "3,0,minecraft:nether_wart,5", "3,0,minecraft:quartz,5", "3,1,minecraft:nether_wart,10", "3,1,minecraft:quartz,10", "3,1,minecraft:glowstone_dust,5", "3,2,minecraft:nether_wart,10", "3,2,minecraft:quartz,10", "3,2,minecraft:glowstone_dust,10", "3,2,minecraft:blaze_powder,1", "3,2,minecraft:magma_cream,1", "3,3,minecraft:nether_wart,15", "3,3,minecraft:quartz,15", "3,3,minecraft:glowstone_dust,15", "3,3,minecraft:blaze_powder,5", "3,3,minecraft:magma_cream,5", "3,3,minecraft:player_head,5"]
-	#minecolonies.config.crusherproduction.comment
+	#List of materials a crusher can reduce, and what they convert into, separated by bangs. 
 	crusherproduction = ["minecraft:cobblestone!minecraft:gravel", "minecraft:gravel!minecraft:sand", "minecraft:sand!minecraft:clay"]
-	#minecolonies.config.guardresourcelocations.comment
+	#List of guard resources. 
 	guardresourcelocations = ["minecraft:slime", "tconstruct:blueslime"]
-	#Forester harvest trunk size for dynamic trees: 1-8. [Default: 5]
+	#Forester harvest trunk size for dynamic trees: 1-8. [Default: 5, min: 1, max: 5]
 	#Range: 1 ~ 5
 	dynamictreeharvestsize = 5
-	#minecolonies.config.debuginventories.comment
+	#Enable inventory debugging. [Default: false]
 	debuginventories = false
-	#minecolonies.config.luckyores.comment
+	#List of ore blocks rarely found magically by miners. 
 	luckyores = ["minecraft:coal_ore!64", "minecraft:iron_ore!32", "minecraft:gold_ore!16", "minecraft:redstone_ore!8", "minecraft:lapis_ore!4", "minecraft:diamond_ore!2", "minecraft:emerald_ore!1"]
-	#minecolonies.config.configlistrecruitmentitems.comment
+	#Items requested by potential recruits. 
 	configlistrecruitmentitems = ["minecraft:hay_block;2", "minecraft:book;2", "minecraft:enchanted_book;9", "minecraft:diamond;9", "minecraft:emerald;8", "minecraft:baked_potato;1", "minecraft:gold_ingot;2", "minecraft:redstone;2", "minecraft:lapis_lazuli;2", "minecraft:cake;7", "minecraft:sunflower;5", "minecraft:honeycomb;6", "minecraft:quartz;3"]
-	#minecolonies.config.luckyblocks.comment
-	luckyblocks = ["minecraft:stone", "minecraft:cobblestone"]
+	#List of recognized and enabled Tags. 
+	enabledmodtags = ["minecraft:wool", "minecraft:planks", "minecraft:stone_bricks", "minecraft:wooden_buttons", "minecraft:buttons", "minecraft:carpets", "minecraft:wooden_doors", "minecraft:wooden_stairs", "minecraft:wooden_slabs", "minecraft:wooden_fences", "minecraft:wooden_pressure_plates", "minecraft:wooden_trapdoors", "minecraft:saplings", "minecraft:logs", "minecraft:dark_oak_logs", "minecraft:oak_logs", "minecraft:birch_logs", "minecraft:acacia_logs", "minecraft:jungle_logs", "minecraft:spruce_logs", "minecraft:banners", "minecraft:sand", "minecraft:walls", "minecraft:anvil", "minecraft:leaves", "minecraft:small_flowers", "minecraft:beds", "minecraft:fishes", "minecraft:signs", "minecraft:music_discs", "minecraft:arrows", "forge:bones", "forge:bookshelves", "forge:chests/ender", "forge:chests/trapped", "forge:chests/wooden", "forge:cobblestone", "forge:crops/beetroot", "forge:crops/carrot", "forge:crops/nether_wart", "forge:crops/potato", "forge:crops/wheat", "forge:dusts/prismarine", "forge:dusts/redstone", "forge:dusts/glowstone", "forge:dyes", "forge:dyes/black", "forge:dyes/red", "forge:dyes/green", "forge:dyes/brown", "forge:dyes/blue", "forge:dyes/purple", "forge:dyes/cyan", "forge:dyes/light_gray", "forge:dyes/gray", "forge:dyes/pink", "forge:dyes/lime", "forge:dyes/yellow", "forge:dyes/light_blue", "forge:dyes/magenta", "forge:dyes/orange", "forge:dyes/white", "forge:eggs", "forge:ender_pearls", "forge:feathers", "forge:fence_gates", "forge:fence_gates/wooden", "forge:fences", "forge:fences/nether_brick", "forge:fences/wooden", "forge:gems/diamond", "forge:gems/emerald", "forge:gems/lapis", "forge:gems/prismarine", "forge:gems/quartz", "forge:glass", "forge:glass/black", "forge:glass/blue", "forge:glass/brown", "forge:glass/colorless", "forge:glass/cyan", "forge:glass/gray", "forge:glass/green", "forge:glass/light_blue", "forge:glass/light_gray", "forge:glass/lime", "forge:glass/magenta", "forge:glass/orange", "forge:glass/pink", "forge:glass/purple", "forge:glass/red", "forge:glass/white", "forge:glass/yellow", "forge:glass_panes", "forge:glass_panes/black", "forge:glass_panes/blue", "forge:glass_panes/brown", "forge:glass_panes/colorless", "forge:glass_panes/cyan", "forge:glass_panes/gray", "forge:glass_panes/green", "forge:glass_panes/light_blue", "forge:glass_panes/light_gray", "forge:glass_panes/lime", "forge:glass_panes/magenta", "forge:glass_panes/orange", "forge:glass_panes/pink", "forge:glass_panes/purple", "forge:glass_panes/red", "forge:glass_panes/white", "forge:glass_panes/yellow", "forge:gravel", "forge:gunpowder", "forge:heads", "forge:ingots/brick", "forge:ingots/gold", "forge:ingots/iron", "forge:ingots/nether_brick", "forge:leather", "forge:mushrooms", "forge:nether_stars", "forge:netherrack", "forge:nuggets/gold", "forge:nuggets/iron", "forge:obsidian", "forge:ores/coal", "forge:ores/diamond", "forge:ores/emerald", "forge:ores/gold", "forge:ores/iron", "forge:ores/lapis", "forge:ores/quartz", "forge:ores/redstone", "forge:rods/blaze", "forge:rods/wooden", "forge:sand", "forge:sand/colorless", "forge:sand/red", "forge:sandstone", "forge:seeds", "forge:seeds/beetroot", "forge:seeds/melon", "forge:seeds/pumpkin", "forge:seeds/wheat", "forge:slimeballs", "forge:stained_glass", "forge:stained_glass_panes", "forge:stone", "forge:storage_blocks/coal", "forge:storage_blocks/diamond", "forge:storage_blocks/emerald", "forge:storage_blocks/gold", "forge:storage_blocks/iron", "forge:storage_blocks/lapis", "forge:storage_blocks/quartz", "forge:storage_blocks/redstone", "forge:string"]
+	#Offset for the maximum durability unenchanted rod a T2 Fishing Hut can use, compared to iron tools (250).  Thermal Foundation Iron requires +6.  T3 huts can use unenchanted rods of any durability level, so long as they can take damage at all.  Anything below -250 will only allow vanilla rods, except as allowed by T1. [Default: 6, min: -249, max: 250000]
+	#Range: -249 ~ 250000
+	fishingroddurabilityadjustt2 = 6
+	#Offset for the maximum durability unenchanted rod a T1 Fishing Hut can use, compared to other wooden tools (59).  Vanilla rods always work, but equivalents would need +6.  Default value allows up to Thermal Foundation Silver.  Anything below -59 will only allow vanilla rods. [Default: 22, min: -58, max: 250000]
+	#Range: -58 ~ 250000
+	fishingroddurabilityadjustt1 = 22
 
 #All configurations related to pathfinding
 [pathfinding]
-	#Amount of additional threads to be used for pathfinding. [Default: 2]
+	#Amount of additional threads to be used for pathfinding. [Default: 2, min: 1, max: 10]
 	#Range: 1 ~ 10
 	pathfindingmaxthreadcount = 2
-	#Verbosity of pathfinding. [Default: 0]
+	#Verbosity of pathfinding. [Default: 0, min: 0, max: 10]
 	#Range: 0 ~ 10
 	pathfindingdebugverbosity = 0
-	#minecolonies.config.minimumrailstopath.comment
+	#Minimum number of consecutive rails for citizens to use them. [Default: 5, min: 5, max: 100]
 	#Range: 5 ~ 100
 	minimumrailstopath = 5
-	#Max amount of nodes (positions) to map during pathfinding. Lowering increases performance, but might lead to pathing glitches. [Default: 5000]
+	#Max amount of nodes (positions) to map during pathfinding. Lowering increases performance, but might lead to pathing glitches. [Default: 5000, min: 1, max: 10000]
 	#Range: 1 ~ 10000
 	pathfindingmaxnodes = 5000
 
-#minecolonies.config.requestsystem.comment
+#All configurations related to the request system
 [requestSystem]
-	#The maximal amount of tries that the request system will perform for retryable requests. Higher increases server load. [Default: 3]
+	#The maximal amount of tries that the request system will perform for retryable requests. Higher increases server load. [Default: 3, min: 1, max: 10]
 	#Range: 1 ~ 10
 	maximalretries = 3
 	#Should the request system creatively resolve (if possible) when the player is required to resolve a request. [Default: false]
 	creativeresolve = false
 	#Should a player be allowed to use the /mc colony rs reset command? [Default: false]
 	canplayeruseresetcommand = false
-	#The amount of ticks between retries of the request system for retryable requests. Lower increases server load. [Default: 1200]
+	#The amount of ticks between retries of the request system for retryable requests. Lower increases server load. [Default: 1200, min: 30, max: 10000]
 	#Range: 30 ~ 10000
 	delaybetweenretries = 1200
-	#The maximal amount of buildings the Courier should try to gather from before attempting a drop off at the warehouse. [Default: 6]
-	#Range: 1 ~ 50
-	maximalbuildingstogather = 6
+                                                                                                                                   
+               
+                             
 	#Should the request system show debug information? Useful if malfunctioning. [Default: false]
 	enabledebuglogging = false
-	#The minimal amount of buildings the Courier should try to gather from before attempting a drop off at the warehouse. [Default: 3]
-	#Range: 1 ~ 50
-	minimalbuildingstogather = 3
+                                                                                                                                   
+               
+                             
 
 #minecolonies.config.research.comment
 [research]
-	#minecolonies.config.steelarmour.comment
+	#minecolonies.config.steelarmour.comment 
 	steelarmour = ["minecraft:iron_ingot*64"]
-	#minecolonies.config.bandaid.comment
+	#minecolonies.config.bandaid.comment 
 	bandaid = ["minecraft:golden_carrot*1"]
-	#minecolonies.config.biodegradable.comment
+	#minecolonies.config.biodegradable.comment 
 	biodegradable = ["minecraft:bone_meal*64"]
-	#minecolonies.config.arrowpierce.comment
+	#minecolonies.config.arrowpierce.comment 
 	arrowpierce = ["minecraft:arrow*64", "minecraft:redstone*64"]
-	#minecolonies.config.healingcream.comment
+	#minecolonies.config.healingcream.comment 
 	healingcream = ["minecraft:golden_carrot*8"]
-	#minecolonies.config.masterbowman.comment
+	#minecolonies.config.masterbowman.comment 
 	masterbowman = ["minecraft:bow*27"]
-	#minecolonies.config.regeneration.comment
+	#minecolonies.config.regeneration.comment 
 	regeneration = ["minecraft:emerald*1"]
-	#minecolonies.config.hamlet.comment
+	#minecolonies.config.hamlet.comment 
 	hamlet = ["minecraft:cooked_beef*128"]
-	#minecolonies.config.compost.comment
+	#minecolonies.config.compost.comment 
 	compost = ["minecraft:wheat_seeds*256"]
-	#minecolonies.config.accuracy.comment
+	#minecolonies.config.accuracy.comment 
 	accuracy = ["minecraft:iron_ingot*16"]
-	#minecolonies.config.captaintraining.comment
+	#minecolonies.config.captaintraining.comment 
 	captaintraining = ["minecraft:shield*16"]
-	#minecolonies.config.tactictraining.comment
+	#minecolonies.config.tactictraining.comment 
 	tactictraining = ["minecraft:iron_block*3"]
-	#minecolonies.config.ironarmour.comment
+	#minecolonies.config.ironarmour.comment 
 	ironarmour = ["minecraft:iron_ingot*32"]
-	#minecolonies.config.scholarly.comment
+	#minecolonies.config.scholarly.comment 
 	scholarly = ["minecraft:book*24"]
-	#minecolonies.config.skills.comment
+	#minecolonies.config.skills.comment 
 	skills = ["minecraft:iron_ingot*128"]
-	#minecolonies.config.cast.comment
+	#minecolonies.config.cast.comment 
 	cast = ["minecraft:golden_carrot*64"]
-	#minecolonies.config.stonecake.comment
+	#minecolonies.config.stonecake.comment 
 	stonecake = ["minecraft:chiseled_stone_bricks*64"]
-	#minecolonies.config.rockingroll.comment
+	#minecolonies.config.rockingroll.comment 
 	rockingroll = ["minecraft:stone*64"]
-	#minecolonies.config.goodveins.comment
+	#minecolonies.config.goodveins.comment 
 	goodveins = ["minecraft:iron_ore*64"]
-	#minecolonies.config.circus.comment
+	#minecolonies.config.circus.comment 
 	circus = ["minecraft:cake*1"]
-	#minecolonies.config.glutton.comment
+	#minecolonies.config.glutton.comment 
 	glutton = ["minecraft:cookie*512"]
-	#minecolonies.config.feint.comment
+	#minecolonies.config.feint.comment 
 	feint = ["minecraft:emerald*8"]
-	#minecolonies.config.livesaver.comment
+	#minecolonies.config.livesaver.comment 
 	livesaver = ["minecraft:hay_block*32"]
-	#minecolonies.config.repost.comment
+	#minecolonies.config.repost.comment 
 	repost = ["minecraft:iron_ingot*32"]
-	#minecolonies.config.fear.comment
+	#minecolonies.config.fear.comment 
 	fear = ["minecraft:emerald*16"]
-	#minecolonies.config.lightning.comment
+	#minecolonies.config.lightning.comment 
 	lightning = ["minecraft:redstone*2048"]
-	#minecolonies.config.spectacle.comment
+	#minecolonies.config.spectacle.comment 
 	spectacle = ["minecraft:cake*18"]
-	#minecolonies.config.cleave.comment
+	#minecolonies.config.cleave.comment 
 	cleave = ["minecraft:iron_block*8"]
-	#minecolonies.config.compress.comment
+	#minecolonies.config.compress.comment 
 	compress = ["minecraft:golden_carrot*32"]
-	#minecolonies.config.dung.comment
+	#minecolonies.config.dung.comment 
 	dung = ["minecraft:wheat_seeds*128"]
-	#minecolonies.config.festival.comment
+	#minecolonies.config.festival.comment 
 	festival = ["minecraft:cake*9"]
-	#minecolonies.config.studious.comment
+	#minecolonies.config.studious.comment 
 	studious = ["minecraft:book*12"]
-	#minecolonies.config.deadlyaim.comment
+	#minecolonies.config.deadlyaim.comment 
 	deadlyaim = ["minecraft:flint*256"]
-	#minecolonies.config.guardianangel2.comment
+	#minecolonies.config.guardianangel2.comment 
 	guardianangel2 = ["minecraft:hay_block*256"]
-	#minecolonies.config.agilearcher.comment
+	#minecolonies.config.agilearcher.comment 
 	agilearcher = ["minecraft:diamond*64"]
-	#minecolonies.config.avoidance.comment
+	#minecolonies.config.avoidance.comment 
 	avoidance = ["minecraft:iron_block*3"]
-	#minecolonies.config.reinforced.comment
+	#minecolonies.config.reinforced.comment 
 	reinforced = ["minecraft:diamond*32"]
-	#minecolonies.config.resistance.comment
+	#minecolonies.config.resistance.comment 
 	resistance = ["minecraft:golden_apple*1"]
-	#minecolonies.config.nightowl2.comment
+	#minecolonies.config.nightowl2.comment 
 	nightowl2 = ["minecraft:golden_carrot*75"]
-	#minecolonies.config.gildedhammer.comment
+	#minecolonies.config.gildedhammer.comment 
 	gildedhammer = ["minecraft:gravel*64", "minecraft:sand*64", "minecraft:clay*64"]
-	#minecolonies.config.evasion.comment
+	#minecolonies.config.evasion.comment 
 	evasion = ["minecraft:leather*64"]
-	#minecolonies.config.agile.comment
+	#minecolonies.config.agile.comment 
 	agile = ["minecraft:rabbit_foot*10"]
-	#minecolonies.config.quickdraw.comment
+	#minecolonies.config.quickdraw.comment 
 	quickdraw = ["minecraft:iron_block*2"]
-	#minecolonies.config.diligent.comment
+	#minecolonies.config.diligent.comment 
 	diligent = ["minecraft:book*6"]
-	#minecolonies.config.rainman.comment
+	#minecolonies.config.rainman.comment 
 	rainman = ["minecraft:salmon_bucket*27"]
-	#minecolonies.config.strong.comment
+	#minecolonies.config.strong.comment 
 	strong = ["minecraft:diamond*8"]
-	#minecolonies.config.hormones.comment
+	#minecolonies.config.hormones.comment 
 	hormones = ["minecraft:cooked_chicken*64"]
-	#minecolonies.config.city.comment
+	#minecolonies.config.city.comment 
 	city = ["minecraft:cooked_beef*512"]
-	#minecolonies.config.rainbowheaven.comment
+	#minecolonies.config.rainbowheaven.comment 
 	rainbowheaven = ["minecraft:poppy*64"]
-	#minecolonies.config.morebooks.comment
+	#minecolonies.config.morebooks.comment 
 	morebooks = ["minecraft:book*6"]
-	#minecolonies.config.hot.comment
+	#minecolonies.config.hot.comment 
 	hot = ["minecraft:lava_bucket*4"]
-	#minecolonies.config.tools.comment
+	#minecolonies.config.tools.comment 
 	tools = ["minecraft:iron_ingot*256"]
-	#minecolonies.config.hotboots.comment
+	#minecolonies.config.hotboots.comment 
 	hotboots = ["minecraft:leather*32", "minecraft:iron_ingot*16"]
-	#minecolonies.config.capacity.comment
+	#minecolonies.config.capacity.comment 
 	capacity = ["minecolonies:blockminecoloniesrack*32"]
-	#minecolonies.config.livesaver2.comment
+	#minecolonies.config.livesaver2.comment 
 	livesaver2 = ["minecraft:hay_block*64"]
-	#minecolonies.config.letitgrow.comment
+	#minecolonies.config.letitgrow.comment 
 	letitgrow = ["minecolonies:compost*16"]
-	#minecolonies.config.diamondskin.comment
+	#minecolonies.config.diamondskin.comment 
 	diamondskin = ["minecraft:diamond*64"]
-	#minecolonies.config.rails.comment
+	#minecolonies.config.rails.comment 
 	rails = ["minecraft:rail*64"]
-	#minecolonies.config.ability.comment
+	#minecolonies.config.ability.comment 
 	ability = ["minecraft:iron_ingot*64"]
-	#minecolonies.config.hittingiron.comment
+	#minecolonies.config.hittingiron.comment 
 	hittingiron = ["minecraft:anvil*1"]
-	#minecolonies.config.diamondcoated.comment
+	#minecolonies.config.diamondcoated.comment 
 	diamondcoated = ["minecraft:diamond*128"]
-	#minecolonies.config.fullretreat.comment
+	#minecolonies.config.fullretreat.comment 
 	fullretreat = ["minecraft:emerald*64"]
-	#minecolonies.config.resilience.comment
+	#minecolonies.config.resilience.comment 
 	resilience = ["minecraft:golden_apple*8"]
-	#minecolonies.config.veinminer.comment
+	#minecolonies.config.veinminer.comment 
 	veinminer = ["minecraft:iron_ore*32"]
-	#minecolonies.config.masterswordsman.comment
+	#minecolonies.config.masterswordsman.comment 
 	masterswordsman = ["minecraft:diamond*64"]
-	#minecolonies.config.stuffer.comment
+	#minecolonies.config.stuffer.comment 
 	stuffer = ["minecraft:cookie*128"]
-	#minecolonies.config.isthisredstone.comment
+	#minecolonies.config.isthisredstone.comment 
 	isthisredstone = ["minecraft:redstone*128"]
-	#minecolonies.config.improvedleather.comment
+	#minecolonies.config.improvedleather.comment 
 	improvedleather = ["minecraft:leather*32"]
-	#minecolonies.config.thoselungs.comment
+	#minecolonies.config.thoselungs.comment 
 	thoselungs = ["minecraft:glass*64"]
-	#minecolonies.config.dodge.comment
+	#minecolonies.config.dodge.comment 
 	dodge = ["minecraft:leather*16"]
-	#minecolonies.config.pavetheroad.comment
+	#minecolonies.config.pavetheroad.comment 
 	pavetheroad = ["minecraft:white_concrete*32"]
-	#minecolonies.config.knockbackaoe.comment
+	#minecolonies.config.knockbackaoe.comment 
 	knockbackaoe = ["minecraft:redstone*64", "minecraft:gold_ingot*64", "minecraft:lapis_lazuli*128"]
-	#minecolonies.config.recipebook.comment
+	#minecolonies.config.recipebook.comment 
 	recipebook = ["minecraft:paper*128"]
-	#minecolonies.config.beanstalk.comment
+	#minecolonies.config.beanstalk.comment 
 	beanstalk = ["minecraft:cooked_chicken*512"]
-	#minecolonies.config.rtm.comment
+	#minecolonies.config.rtm.comment 
 	rtm = ["minecraft:paper*256"]
-	#minecolonies.config.arrowuse.comment
+	#minecolonies.config.arrowuse.comment 
 	arrowuse = ["minecraft:arrow*64"]
-	#minecolonies.config.higherlearning.comment
+	#minecolonies.config.higherlearning.comment 
 	higherlearning = ["minecraft:book*3"]
-	#minecolonies.config.phd.comment
+	#minecolonies.config.phd.comment 
 	phd = ["minecraft:bookshelf*64"]
-	#minecolonies.config.piercingshot.comment
+	#minecolonies.config.piercingshot.comment 
 	piercingshot = ["minecraft:flint*64"]
-	#minecolonies.config.nurture.comment
+	#minecolonies.config.nurture.comment 
 	nurture = ["minecraft:cooked_chicken*32"]
-	#minecolonies.config.memoryaid.comment
+	#minecolonies.config.memoryaid.comment 
 	memoryaid = ["minecraft:paper*32"]
-	#minecolonies.config.reflective.comment
+	#minecolonies.config.reflective.comment 
 	reflective = ["minecraft:book*48"]
-	#minecolonies.config.improvedbows.comment
+	#minecolonies.config.improvedbows.comment 
 	improvedbows = ["minecraft:iron_block*6"]
-	#minecolonies.config.amazingveins.comment
+	#minecolonies.config.amazingveins.comment 
 	amazingveins = ["minecraft:gold_ore*64"]
-	#minecolonies.config.improvedswords.comment
+	#minecolonies.config.improvedswords.comment 
 	improvedswords = ["minecraft:iron_block*6"]
-	#minecolonies.config.opera.comment
+	#minecolonies.config.opera.comment 
 	opera = ["minecraft:cake*27"]
-	#minecolonies.config.whatisthisspeed.comment
+	#minecolonies.config.whatisthisspeed.comment 
 	whatisthisspeed = ["minecraft:redstone*1024"]
-	#minecolonies.config.stamina.comment
+	#minecolonies.config.stamina.comment 
 	stamina = ["minecraft:carrot*1"]
-	#minecolonies.config.richveins.comment
+	#minecolonies.config.richveins.comment 
 	richveins = ["minecraft:gold_ore*32"]
-	#minecolonies.config.knowtheend.comment
+	#minecolonies.config.knowtheend.comment 
 	knowtheend = ["minecraft:chorus_fruit*64"]
-	#minecolonies.config.improvedevasion.comment
+	#minecolonies.config.improvedevasion.comment 
 	improvedevasion = ["minecraft:diamond*16"]
-	#minecolonies.config.nightowl.comment
+	#minecolonies.config.nightowl.comment 
 	nightowl = ["minecraft:golden_carrot*25"]
-	#minecolonies.config.space.comment
+	#minecolonies.config.space.comment 
 	space = ["minecolonies:blockminecoloniesrack*16"]
-	#minecolonies.config.boiledleather.comment
+	#minecolonies.config.boiledleather.comment 
 	boiledleather = ["minecraft:leather*64"]
-	#minecolonies.config.whirlwind.comment
+	#minecolonies.config.whirlwind.comment 
 	whirlwind = ["minecraft:iron_block*32"]
-	#minecolonies.config.loaded.comment
+	#minecolonies.config.loaded.comment 
 	loaded = ["minecraft:emerald*64"]
-	#minecolonies.config.provost.comment
+	#minecolonies.config.provost.comment 
 	provost = ["minecraft:diamond*16"]
-	#minecolonies.config.preciseshot.comment
+	#minecolonies.config.preciseshot.comment 
 	preciseshot = ["minecraft:flint*16"]
-	#minecolonies.config.steelbracing.comment
+	#minecolonies.config.steelbracing.comment 
 	steelbracing = ["minecraft:diamond*64"]
-	#minecolonies.config.academic.comment
+	#minecolonies.config.academic.comment 
 	academic = ["minecraft:book*128"]
-	#minecolonies.config.vitality.comment
+	#minecolonies.config.vitality.comment 
 	vitality = ["minecraft:golden_apple*16"]
-	#minecolonies.config.theater.comment
+	#minecolonies.config.theater.comment 
 	theater = ["minecraft:enchanted_golden_apple*16"]
-	#minecolonies.config.tickshot.comment
+	#minecolonies.config.tickshot.comment 
 	tickshot = ["minecraft:bow*5"]
-	#minecolonies.config.evade.comment
+	#minecolonies.config.evade.comment 
 	evade = ["minecraft:emerald*16"]
-	#minecolonies.config.puberty.comment
+	#minecolonies.config.puberty.comment 
 	puberty = ["minecraft:cooked_chicken*128"]
-	#minecolonies.config.seemsautomatic.comment
+	#minecolonies.config.seemsautomatic.comment 
 	seemsautomatic = ["minecraft:iron_ingot*512"]
-	#minecolonies.config.hardened.comment
+	#minecolonies.config.hardened.comment 
 	hardened = ["minecraft:diamond*16"]
-	#minecolonies.config.woodwork.comment
+	#minecolonies.config.woodwork.comment 
 	woodwork = ["minecraft:oak_planks*64"]
-	#minecolonies.config.fortitude.comment
+	#minecolonies.config.fortitude.comment 
 	fortitude = ["minecraft:golden_apple*32"]
-	#minecolonies.config.gorger.comment
+	#minecolonies.config.gorger.comment 
 	gorger = ["minecraft:cookie*64"]
-	#minecolonies.config.rapidshot.comment
+	#minecolonies.config.rapidshot.comment 
 	rapidshot = ["minecraft:bow*18"]
-	#minecolonies.config.swift.comment
+	#minecolonies.config.swift.comment 
 	swift = ["minecraft:rabbit_foot*32"]
-	#minecolonies.config.improveddodge.comment
+	#minecolonies.config.improveddodge.comment 
 	improveddodge = ["minecraft:leather*32"]
-	#minecolonies.config.theflintstones.comment
+	#minecolonies.config.theflintstones.comment 
 	theflintstones = ["minecraft:stone_bricks*64"]
-	#minecolonies.config.sieving.comment
+	#minecolonies.config.sieving.comment 
 	sieving = ["minecraft:string*64"]
-	#minecolonies.config.athlete.comment
+	#minecolonies.config.athlete.comment 
 	athlete = ["minecraft:rabbit_foot*64"]
-	#minecolonies.config.flowerpower.comment
+	#minecolonies.config.flowerpower.comment 
 	flowerpower = ["minecolonies:compost*64"]
-	#minecolonies.config.nimble.comment
+	#minecolonies.config.nimble.comment 
 	nimble = ["minecraft:rabbit_foot*1"]
-	#minecolonies.config.epicure.comment
+	#minecolonies.config.epicure.comment 
 	epicure = ["minecraft:cookie*256"]
-	#minecolonies.config.deeppockets.comment
+	#minecolonies.config.deeppockets.comment 
 	deeppockets = ["minecraft:emerald*256"]
-	#minecolonies.config.penetratingshot.comment
+	#minecolonies.config.penetratingshot.comment 
 	penetratingshot = ["minecraft:flint*32"]
-	#minecolonies.config.knighttraining.comment
+	#minecolonies.config.knighttraining.comment 
 	knighttraining = ["minecraft:shield*8"]
-	#minecolonies.config.multishot.comment
+	#minecolonies.config.multishot.comment 
 	multishot = ["minecraft:bow*9"]
-	#minecolonies.config.retreat.comment
+	#minecolonies.config.retreat.comment 
 	retreat = ["minecraft:emerald*32"]
-	#minecolonies.config.keen.comment
+	#minecolonies.config.keen.comment 
 	keen = ["minecraft:book*3"]
-	#minecolonies.config.firstaid.comment
+	#minecolonies.config.firstaid.comment 
 	firstaid = ["minecraft:hay_block*8"]
-	#minecolonies.config.redstonepowered.comment
+	#minecolonies.config.redstonepowered.comment 
 	redstonepowered = ["minecraft:redstone*256"]
-	#minecolonies.config.powerattack.comment
+	#minecolonies.config.powerattack.comment 
 	powerattack = ["minecraft:iron_block*4"]
-	#minecolonies.config.doubletrouble.comment
+	#minecolonies.config.doubletrouble.comment 
 	doubletrouble = ["minecraft:bamboo*64", "minecraft:sugar_cane*64", "minecraft:cactus*64"]
-	#minecolonies.config.hotfoot.comment
+	#minecolonies.config.hotfoot.comment 
 	hotfoot = ["minecraft:emerald*64"]
-	#minecolonies.config.gourmand.comment
+	#minecolonies.config.gourmand.comment 
 	gourmand = ["minecraft:cookie*32"]
-	#minecolonies.config.fullstock.comment
+	#minecolonies.config.fullstock.comment 
 	fullstock = ["minecolonies:blockminecoloniesrack*64"]
-	#minecolonies.config.mightycleave.comment
+	#minecolonies.config.mightycleave.comment 
 	mightycleave = ["minecraft:iron_block*16"]
-	#minecolonies.config.heavilyloaded.comment
+	#minecolonies.config.heavilyloaded.comment 
 	heavilyloaded = ["minecraft:emerald*128"]
-	#minecolonies.config.squiretraining.comment
+	#minecolonies.config.squiretraining.comment 
 	squiretraining = ["minecraft:shield*4"]
-	#minecolonies.config.woundingshot.comment
+	#minecolonies.config.woundingshot.comment 
 	woundingshot = ["minecraft:flint*128"]
-	#minecolonies.config.guardianangel.comment
+	#minecolonies.config.guardianangel.comment 
 	guardianangel = ["minecraft:hay_block*128"]
-	#minecolonies.config.flee.comment
+	#minecolonies.config.flee.comment 
 	flee = ["minecraft:emerald*32"]
-	#minecolonies.config.duelist.comment
+	#minecolonies.config.duelist.comment 
 	duelist = ["minecraft:iron_ingot*64"]
-	#minecolonies.config.ironskin.comment
+	#minecolonies.config.ironskin.comment 
 	ironskin = ["minecraft:iron_ingot*16"]
-	#minecolonies.config.heavymachinery.comment
+	#minecolonies.config.heavymachinery.comment 
 	heavymachinery = ["minecraft:redstone*512"]
-	#minecolonies.config.cheatsheet.comment
+	#minecolonies.config.cheatsheet.comment 
 	cheatsheet = ["minecraft:paper*64"]
-	#minecolonies.config.motherlode.comment
+	#minecolonies.config.motherlode.comment 
 	motherlode = ["minecraft:diamond_ore*64"]
-	#minecolonies.config.firstaid2.comment
+	#minecolonies.config.firstaid2.comment 
 	firstaid2 = ["minecraft:hay_block*16"]
-	#minecolonies.config.bandages.comment
+	#minecolonies.config.bandages.comment 
 	bandages = ["minecraft:golden_carrot*16"]
-	#minecolonies.config.enhanced_gates2.comment
+	#minecolonies.config.enhanced_gates2.comment 
 	enhanced_gates2 = ["minecolonies:gate_iron*64", "minecolonies:ancienttome*2", "minecraft:obsidian*32"]
-	#minecolonies.config.enhanced_gates1.comment
+	#minecolonies.config.enhanced_gates1.comment 
 	enhanced_gates1 = ["minecolonies:gate_wood*64", "minecolonies:ancienttome*2", "minecraft:iron_block*5"]
-	#minecolonies.config.village.comment
+	#minecolonies.config.village.comment 
 	village = ["minecraft:cooked_beef*256"]
-	#minecolonies.config.madness.comment
+	#minecolonies.config.madness.comment 
 	madness = ["minecraft:iron_ingot*1024"]
-	#minecolonies.config.bachelor.comment
+	#minecolonies.config.bachelor.comment 
 	bachelor = ["minecraft:bookshelf*12"]
-	#minecolonies.config.captainoftheguard.comment
+	#minecolonies.config.captainoftheguard.comment 
 	captainoftheguard = ["minecraft:shield*27"]
-	#minecolonies.config.stringwork.comment
+	#minecolonies.config.stringwork.comment 
 	stringwork = ["minecraft:string*16"]
-	#minecolonies.config.fertilizer.comment
+	#minecolonies.config.fertilizer.comment 
 	fertilizer = ["minecraft:wheat_seeds*512"]
-	#minecolonies.config.master.comment
+	#minecolonies.config.master.comment 
 	master = ["minecraft:bookshelf*32"]
-	#minecolonies.config.parry.comment
+	#minecolonies.config.parry.comment 
 	parry = ["minecraft:iron_ingot*16"]
-	#minecolonies.config.bookworm.comment
+	#minecolonies.config.bookworm.comment 
 	bookworm = ["minecraft:bookshelf*6"]
-	#minecolonies.config.magiccompost.comment
+	#minecolonies.config.magiccompost.comment 
 	magiccompost = ["minecraft:wheat_seeds*2048"]
-	#minecolonies.config.whatyaneed.comment
+	#minecolonies.config.whatyaneed.comment 
 	whatyaneed = ["minecraft:redstone*64"]
-	#minecolonies.config.bonemeal.comment
+	#minecolonies.config.bonemeal.comment 
 	bonemeal = ["minecraft:wheat_seeds*64"]
-	#minecolonies.config.growth.comment
+	#minecolonies.config.growth.comment 
 	growth = ["minecraft:cooked_chicken*256"]
-	#minecolonies.config.indefatigability.comment
+	#minecolonies.config.indefatigability.comment 
 	indefatigability = ["minecraft:golden_apple*64"]
-	#minecolonies.config.avoid.comment
+	#minecolonies.config.avoid.comment 
 	avoid = ["minecraft:emerald*8"]
-	#minecolonies.config.taunt.comment
+	#minecolonies.config.taunt.comment 
 	taunt = ["minecraft:rotten_flesh*8", "minecraft:bone*8", "minecraft:spider_eye*8"]
-	#minecolonies.config.outpost.comment
+	#minecolonies.config.outpost.comment 
 	outpost = ["minecraft:cooked_beef*64"]
+	#minecolonies.config.morescrolls.comment 
+	morescrolls = ["minecraft:paper*64", "minecolonies:ancienttome*1", "minecraft:lapis_lazuli*64"]
 
