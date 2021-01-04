@@ -26,6 +26,8 @@
 			weightPercentage = 0.5
 			#Enable the spawning of baby endermen. Think baby zombies.
 			shouldSpawn = false
+			#The list of structure ids that baby endermen will not spawn in even if the normal mob variant can spawn.
+			structureBlackList = []
 
 		#Config options regarding baby creepers.
 		[additions-common.spawning.baby-creepers]
@@ -48,6 +50,8 @@
 			weightPercentage = 0.5
 			#Enable the spawning of baby creepers. Think baby zombies.
 			shouldSpawn = false
+			#The list of structure ids that baby creepers will not spawn in even if the normal mob variant can spawn.
+			structureBlackList = []
 
 		#Config options regarding baby wither skeletons.
 		[additions-common.spawning.baby-wither-skeletons]
@@ -70,6 +74,8 @@
 			weightPercentage = 0.5
 			#Enable the spawning of baby wither skeletons. Think baby zombies.
 			shouldSpawn = false
+			#The list of structure ids that baby wither skeletons will not spawn in even if the normal mob variant can spawn.
+			structureBlackList = []
 
 		#Config options regarding baby skeletons.
 		[additions-common.spawning.baby-skeletons]
@@ -92,6 +98,8 @@
 			weightPercentage = 0.5
 			#Enable the spawning of baby skeletons. Think baby zombies.
 			shouldSpawn = false
+			#The list of structure ids that baby skeletons will not spawn in even if the normal mob variant can spawn.
+			structureBlackList = []
 
 		#Config options regarding baby strays.
 		[additions-common.spawning.baby-strays]
@@ -114,4 +122,6 @@
 			weightPercentage = 0.5
 			#Enable the spawning of baby strays. Think baby zombies.
 			shouldSpawn = false
+			#The list of structure ids that baby strays will not spawn in even if the normal mob variant can spawn.
+			structureBlackList = []
 

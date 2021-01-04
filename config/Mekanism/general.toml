@@ -6,7 +6,7 @@
 	maxUpgradeMultiplier = 10
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
 	maxSolarNeutronActivatorRate = 64
-	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box.
+	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box. For example: ["mekanism"]
 	cardboardModBlacklist = []
 	#Disable to make the anchor upgrade not do anything.
 	allowChunkloading = true
@@ -144,6 +144,12 @@
 		negativeEffectsMinSeverity = 0.1
 		#Enable worldwide radiation effects. Don't be a downer and disable this.
 		radiationEnabled = true
+		#Number of ticks required for radioactive gas stored in a Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+		#Range: > 1
+		radioactiveWasteBarrelProcessTicks = 1200
+		#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in a Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+		#Range: 0 ~ 9223372036854775807
+		radioactiveWasteBarrelDecayAmount = 1
 
 	#SPS Settings
 	[general.sps]
