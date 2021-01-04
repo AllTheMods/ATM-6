@@ -72,7 +72,7 @@ events.listen('item.tags', e => {
     add('forge:ores/arcane_brick', 'ars_nouveau:arcane_ore')
     add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
     add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
-    add('forge:plastic', ['#pneumaticcraft:plastic_sheets', 'silents_mechanisms:plastic_sheet', 'mekanism:hdpe_sheet'])
+    add('forge:plastic', ['#pneumaticcraft:plastic_sheets', 'mekanism:hdpe_sheet']);//, 'silents_mechanisms:plastic_sheet'
     add('misctags:farmland/tier6', ['mysticalagradditions:insanium_farmland'])
     add('misctags:farmland/tier5', ['mysticalagriculture:supremium_farmland', '#misctags:farmland/tier6'])
     add('misctags:farmland/tier4', ['mysticalagriculture:imperium_farmland', '#misctags:farmland/tier5'])
@@ -92,7 +92,7 @@ events.listen('item.tags', e => {
     add('appliedenergistics2:nether_quartz_dust', '#forge:dusts/quartz')
     add('appliedenergistics2:dusts/nether_quartz', '#forge:dusts/quartz')
     add('appliedenergistics2:dusts/quartz', '#forge:dusts/quartz')
-    add('forge:seeds', ['bluepower:flax_seeds', 'immersiveengineering:seed'])
+    add('forge:seeds', ['immersiveengineering:seed'])//'bluepower:flax_seeds', 
     add('engineerstools:musli_bar_seeds', '#forge:seeds')
     add('forge:ingots', ['#forge:ingots/unobtainium_allthemodium_alloy', '#forge:ingots/vibranium_unobtainium_alloy', '#forge:ingots/vibranium_allthemodium_alloy', '#forge:ingots/oratchalcum'])
     add('forge:sand', ['byg:white_sand', 'byg:black_sand', 'byg:purple_sand', 'byg:blue_sand'])
@@ -130,7 +130,6 @@ events.listen('item.tags', e => {
     add('forge:storage_blocks', ['#forge:storage_blocks/nether_star'])
 
     //Remove
-    remove('forge:dusts/certus_quartz', 'jaopca:dusts.certus_quartz')
     remove('forge:leather', 'forbidden_arcanus:rotten_leather')
     remove('engineerstools:musli_bar_food_blacklisted', 'minecraft:chicken')
     remove('forge:dyes', 'mekanism:dust_sulfur')
@@ -209,7 +208,6 @@ events.listen('block.tags', function(e) {
     add('cyclic:scythe_brush', ['#minecraft:flowers'])
 
     //Resourceful Bees Apiary Tags
-    //Removed  as it was not coming up as a valid item.
     add('resourcefulbees:valid_apiary', ['#repurposed_structures:nether_stronghold_bookshelves', '#misctags:concrete', '#mcwwindows:window', 'modularrouters:item_router', 'botania:mana_glass', 'botania:elf_glass', 'minecraft:soul_sand', '#minecraft:nylium', 'byg:nylium_soul_sand', 'byg:nylium_soul_soil', 'minecraft:soul_soil', 'minecraft:glowstone', 'minecraft:water'])
     add('resourcefulbees:valid_apiary', ['#minecraft:base_stone_nether', '#minecraft:stone_bricks', '#minecraft:wart_blocks', '#minecolonies:decoblocks', '#forge:bookshelves', '#forge:cobblestone', '#forge:mushroom_caps', '#forge:mushroom_stems', '#forge:terracotta'])
     add('resourcefulbees:valid_apiary', ['minecraft:white_glazed_terracotta', 'minecraft:orange_glazed_terracotta', 'minecraft:magenta_glazed_terracotta', 'minecraft:light_blue_glazed_terracotta', 'minecraft:yellow_glazed_terracotta', 'minecraft:lime_glazed_terracotta', 'minecraft:pink_glazed_terracotta', 'minecraft:gray_glazed_terracotta', 'minecraft:light_gray_glazed_terracotta', 'minecraft:cyan_glazed_terracotta', 'minecraft:purple_glazed_terracotta', 'minecraft:blue_glazed_terracotta', 'minecraft:brown_glazed_terracotta', 'minecraft:green_glazed_terracotta', 'minecraft:red_glazed_terracotta', 'minecraft:black_glazed_terracotta'])
@@ -258,11 +256,14 @@ events.listen('block.tags', function(e) {
     function special(tags, items) {
         var tag = e.get(tags)
         ingredient.of(items).stacks.forEach(stack => tag.add(stack.id))
-    }
-    special('mcwwindows:window', '/mcwwindows:.+_win/')
-    special('misctags:concrete', '/minecraft:.+_concrete/')
-    special('forge:relocation_not_supported', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/'])
-    special('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/', '/rftoolsbuilder:.+/']) //, '^\\w+_glass$'
+    };
+    e.add('mcwwindows:window', '/mcwwindows:.+_win/');
+    e.add('misctags:concrete', '/minecraft:.+_concrete/');
+    //Regex to add a tag preventing moving by bag of yurting
+    e.add('forge:relocation_not_supported', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']);
+    //Replaced by the line e.add('forge:relocation_not_supported', [
+    //special('forge:relocation_not_supported', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/'])
+    e.add('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/']); //, '/rftoolsbuilder:.+/', '^\\w+_glass$'
 })
 
 //Fluid tags go here
