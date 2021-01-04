@@ -2,7 +2,7 @@
   "flower": "tag:forge:storage_blocks/diamond",
   "maxTimeInHive": 1100,
   "hasHoneycomb": true,
-  "baseLayerTexture": "diamond/diamond_bee",
+  "baseLayerTexture": "ores/diamond/diamond_bee",
   "ColorData": {
     "isBeeColored": false,
     "honeycombColor": "#00ffff"
