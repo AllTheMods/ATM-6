@@ -2,11 +2,11 @@
   "flower": "tag:misctags:flowers/swamp_flowers",
   "maxTimeInHive": 600,
   "hasHoneycomb": true,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#A5FC97",
-    "primaryColor": "#A5FC97"
-  },
+  "baseLayerTexture": "slime/slime_bee",  
+  "ColorData": {  
+      "modelType": "GELATINOUS",  
+      "gelLayerTexture": "/slime/slime_gel_Layer"  
+  },  
   "MutationData": {
     "hasMutation": false
   },

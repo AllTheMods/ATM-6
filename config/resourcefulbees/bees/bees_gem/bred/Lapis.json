@@ -2,12 +2,12 @@
   "flower": "tag:forge:storage_blocks/lapis",
   "maxTimeInHive": 700,
   "hasHoneycomb": true,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#345ec3",
-    "primaryColor": "#345ec3",
-    "secondaryColor": "#303030"
-  },
+  "baseLayerTexture": "ores/lapis/lapis_bee",  
+  "ColorData": {  
+      "isBeeColored": false,  
+      "honeycombColor": "#345ec3",  
+      "modelType": "ORE"  
+  },  
   "MutationData": {
     "hasMutation": false
   },

@@ -2,11 +2,12 @@
   "flower": "tag:forge:storage_blocks/coal",
   "maxTimeInHive": 600,
   "hasHoneycomb": true,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#303030",
-    "primaryColor": "#303030"
-  },
+  "baseLayerTexture": "ores/coal/coal_bee",  
+  "ColorData": {  
+      "isBeeColored": false,  
+      "honeycombColor": "#303030",  
+      "modelType": "ORE"  
+  },  
   "MutationData": {
     "hasMutation": false
   },
