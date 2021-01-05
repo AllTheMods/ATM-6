@@ -263,13 +263,4 @@ events.listen('recipes', function(e) {
     unifyCraftMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget');
     unifyCraftMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget');
     unifyCraftMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget');
-
-    //Ingot conversion recipes for unifications that occur on live servers
-    function kjsShapeless(result, ingredients, count) {
-        e.shapeless(item.of(result, count != null ? count : 1), ingredients)
-    }
-    kjsShapeless('thermal:bronze_ingot', ['mekanism:ingot_bronze']);
-    kjsShapeless('thermal:bronze_dust', ['mekanism:dust_bronze']);
-    kjsShapeless('thermal:bronze_block', ['mekanism:block_bronze']);
-    kjsShapeless('thermal:bronze_nugget', ['mekanism:nugget_bronze']);
 })
