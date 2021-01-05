@@ -17,7 +17,7 @@ events.listen('recipes', function(e) {
             output: '#forge:ingots/' + name,
             type: 'minecraft:blasting'
         });
-        if (name !== 'iron' && name !== 'gold' && name !== 'bronze' && name !== 'steel' && name !== 'constantan' && name !== 'electrum' && name !== 'azure_silver' && name !== 'crimson_iron') {
+        if (name !== 'iron' && name !== 'gold' && name !== 'azure_silver' && name !== 'crimson_iron') {
             console.log("Removing enriching recipes for #forge:ores/" + name + " to mekanism:dust_" + name);
             e.remove({
                 input: '#forge:ores/' + name,
@@ -54,6 +54,7 @@ events.listen('recipes', function(e) {
                 output: 'mekanism:shard_' + name,
                 type: 'mekanism:injecting'
             });
+/* Not working prior to KubeJS kubejs-1604.3.4.137-forge.jar, unnecessary currently.
             console.log("Removing injecting recipes for mekanism:crystals/" + name + " to mekanism:shard_" + name);
             e.remove({
                 input: '#mekanism:crystals/' + name,
@@ -90,6 +91,7 @@ events.listen('recipes', function(e) {
                 },
                 type: 'mekanism:dissolution'
             });
+*/
             //Uncomment and use this to see if your criteria will match a recipe, and if the recipe is what you want them to match. Useful for updating script, do not leave uncommented for pack release.
             //e.forEachRecipe({}, recipe => console.info('Recipe matched! ' + recipe));
         };
@@ -208,7 +210,7 @@ events.listen('recipes', function(e) {
             },
             turns: 8
         }).id('kubejs:appliedenergistics2/grinder/ores/' + name);
-        //};
+        //}; //End of if (!ingredient.of('#forge:ores/' + name).empty)
         //e.replaceInput(nuggetItem, ('#forge:nuggets/' + name));
         //e.replaceInput(dustItem, ('#forge:dusts/' + name));
         //e.replaceInput(ingotItem, ('#forge:ingots/' + name));

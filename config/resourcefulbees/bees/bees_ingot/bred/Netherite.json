@@ -2,7 +2,7 @@
   "flower": "tag:forge:storage_blocks/netherite",
   "maxTimeInHive": 600,
   "hasHoneycomb": true,
-  "baseLayerTexture": "netherite/netherite_bee",
+  "baseLayerTexture": "ores/netherite/netherite_bee",
   "traits": ["nether"],
   "ColorData": {
     "isBeeColored": false,
