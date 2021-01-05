@@ -12,9 +12,11 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:apple",
+    "mainOutput": "mysticalagriculture:wood_essence",
+    "secondaryOutput": "minecraft:apple",
+    "secondaryOutputWeight": 0.01,
     "bottleOutput": "pamhc2foodcore:applejuiceitem",
-    "bottleOutputWeight": 0.15,
+    "bottleOutputWeight": 0.01,
     "mainOutputWeight": 0.33,
     "mainOutputCount": 2
   },
