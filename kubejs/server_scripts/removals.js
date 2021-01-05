@@ -1,5 +1,5 @@
 //priority: 999
-events.listen('recipes', function(e) {
+events.listen('recipes', e => {
     var idRemove = [
 
         'minecraft:comparator',
@@ -20,12 +20,12 @@ events.listen('recipes', function(e) {
         'engineerstools:crushing/aluminium_grit_crushing_recipe',
 
         'xreliquary:alkahestry/crafting/nether_star'
-    ]
-    utils.listOf(idRemove).forEach(function(iR) {
+    ];
+    idRemove.forEach(iR => {
         e.remove({
             id: iR
-        })
-    })
+        });
+    });
     //Recipe removals
     e.remove({
         output: [
@@ -63,14 +63,14 @@ events.listen('recipes', function(e) {
             // issue #349
             'silentgear:salvager'
         ]
-    })
+    });
     e.remove({
         input: [
             'appliedenergistics2:flour'
         ]
-    })
+    });
     e.remove({
         type: 'xreliquary:alkahestry_charging'
-    })
+    });
 
-})
+});
