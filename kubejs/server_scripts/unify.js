@@ -256,10 +256,20 @@ events.listen('recipes', function(e) {
 
     //Craft only metals
     //Multiple Mods crafted only (no ore)
-    unifyCraftMetal('bronze', 'mekanism:ingot_bronze', 'mekanism:dust_bronze', 'mekanism:block_bronze', 'mekanism:nugget_bronze');
+    //unifyCraftMetal('bronze', 'mekanism:ingot_bronze', 'mekanism:dust_bronze', 'mekanism:block_bronze', 'mekanism:nugget_bronze'); //Replaced/Returned to unifying on thermal's bronze
     unifyCraftMetal('steel', 'mekanism:ingot_steel', 'mekanism:dust_steel', 'mekanism:block_steel', 'mekanism:nugget_steel');
 
     //Thermal
+    unifyCraftMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget');
     unifyCraftMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget');
     unifyCraftMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget');
+
+    //Ingot conversion recipes for unifications that occur on live servers
+    function kjsShapeless(result, ingredients, count) {
+        e.shapeless(item.of(result, count != null ? count : 1), ingredients)
+    }
+    kjsShapeless('thermal:bronze_ingot', ['mekanism:ingot_bronze']);
+    kjsShapeless('thermal:bronze_dust', ['mekanism:dust_bronze']);
+    kjsShapeless('thermal:bronze_block', ['mekanism:block_bronze']);
+    kjsShapeless('thermal:bronze_nugget', ['mekanism:nugget_bronze']);
 })
