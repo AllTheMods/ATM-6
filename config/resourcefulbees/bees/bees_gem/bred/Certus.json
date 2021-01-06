@@ -3,30 +3,30 @@
   "maxTimeInHive": 700,
   "hasHoneycomb": true,
   "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#d2d6f7",
-    "primaryColor": "#d2d6f7",
-    "secondaryColor": "#303030"
+      "isBeeColored": true,
+      "honeycombColor": "#d2d6f7",
+      "primaryColor": "#d2d6f7",
+      "secondaryColor": "#303030"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "appliedenergistics2:certus_quartz_crystal",
-    "mainOutputCount": 2
+      "hasCentrifugeOutput": true,
+      "mainOutput": "appliedenergistics2:certus_quartz_crystal",
+      "mainOutputCount": 1
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Crystal",
-    "parent2": "Diamond",
-    "feedItem": "appliedenergistics2:certus_quartz_crystal",
-    "feedAmount": 4
+      "isBreedable": true,
+      "parent1": "Crystal",
+      "parent2": "Diamond",
+      "feedItem": "appliedenergistics2:certus_quartz_crystal",
+      "feedAmount": 4
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

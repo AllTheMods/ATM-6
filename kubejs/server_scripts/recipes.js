@@ -191,9 +191,9 @@ events.listen('recipes', function(e) {
         'FFF',
         'FFF',
         'FFF'
-	], {
-     'F': 'minecraft:rotten_flesh',
-	})
+    ], {
+        'F': 'minecraft:rotten_flesh',
+    })
     e.recipes.industrialforegoing.dissolution_chamber({
         input: [{
             tag: 'minecraft:planks'

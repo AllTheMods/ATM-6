@@ -3,33 +3,33 @@
   "maxTimeInHive": 600,
   "hasHoneycomb": true,
   "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#3b0000",
-    "primaryColor": "#030303",
-    "secondaryColor": "#910000"
+      "isBeeColored": true,
+      "honeycombColor": "#3b0000",
+      "primaryColor": "#030303",
+      "secondaryColor": "#910000"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:string",
-	"mainOutputCount": 1,
-	"secondaryOutput" : "xreliquary:chelicerae",
-    "secondaryOutputWeight": 0.01,
-    "secondaryOutputCount": 1
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:string",
+      "mainOutputCount": 1,
+      "secondaryOutput": "xreliquary:chelicerae",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 1
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:overworld",
-    "biomeBlacklist": "tag:ocean"
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:overworld",
+      "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "xreliquary:chelicerae",
-    "feedAmount": 3
+      "isBreedable": true,
+      "feedItem": "xreliquary:chelicerae",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }
