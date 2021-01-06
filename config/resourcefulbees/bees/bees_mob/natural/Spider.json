@@ -14,7 +14,7 @@
   "CentrifugeData": {
       "hasCentrifugeOutput": true,
       "mainOutput": "minecraft:string",
-      "mainOutputCount": 1,
+      "mainOutputCount": 4,
       "secondaryOutput": "xreliquary:chelicerae",
       "secondaryOutputWeight": 0.01,
       "secondaryOutputCount": 1
