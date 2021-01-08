@@ -234,9 +234,5 @@
     "block.resourcefulbees.spider_honeycomb_block": "Spider Honeycomb Block",
     "item.resourcefulbees.spider_honeycomb": "Spider Honeycomb",
     "item.resourcefulbees.spider_bee_spawn_egg": "Spider Bee Spawn Egg",
-    "entity.resourcefulbees.spider_bee": "Spider Bee",
-    "block.resourcefulbees.fluix_honeycomb_block": "Fluix Honeycomb Block",
-    "item.resourcefulbees.fluix_honeycomb": "Fluix Honeycomb",
-    "item.resourcefulbees.fluix_bee_spawn_egg": "Fluix Bee Spawn Egg",
-    "entity.resourcefulbees.fluix_bee": "Fluix Bee"
+    "entity.resourcefulbees.spider_bee": "Spider Bee"
 }
