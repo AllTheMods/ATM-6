@@ -252,6 +252,22 @@ events.listen('block.tags', function(e) {
     add('resourcefulbees:valid_apiary', ['quark:elder_prismarine', 'quark:elder_prismarine_bricks', 'quark:dark_elder_prismarine', 'quark:elder_sea_lantern', 'quark:myalite_crystal', 'quark:duskbound_block', 'quark:duskbound_lantern']);
     add('resourcefulbees:valid_apiary', ['quark:brimstone_bricks', 'quark:blaze_lantern', 'quark:soul_sandstone', 'quark:chiseled_soul_sandstone', 'quark:cut_soul_sandstone', 'quark:smooth_soul_sandstone']);
     add('resourcefulbees:valid_apiary', ['quark:lit_lamp', 'quark:paper_wall', 'quark:paper_wall_big', 'quark:paper_wall_sakura']);
+    //Astral Sorcery
+    add('resourcefulbees:valid_apiary', [/^astralsorcery:marble_/, /^astralsorcery:black_marble_/, /^astralsorcery:infused_wood_/]);
+    //Forbidden & Arcanus
+    add('resourcefulbees:valid_apiary', /^forbidden_arcanus:[\w]*darkstone/);
+    //Create
+    add('resourcefulbees:valid_apiary', [
+        /^create:[\w]+_window/,
+        /^create:[\w]*granite/,
+        /^create:[\w]*diorite/,
+        /^create:[\w]*andesite/,
+        /^create:[\w]*limestone/,
+        /^create:[\w]*dolomite/,
+        /^create:[\w]*gabbro/,
+        /^create:[\w]*scoria/,
+    ]);
+
     //Special tag systems
     function special(tags, items) {
         var tag = e.get(tags);
