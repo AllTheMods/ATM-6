@@ -205,13 +205,13 @@
 
 [management]
 	"Chests In Boats" = true
-	"Easy Transfering" = true
+	"Easy Transfering" = false
 	"F To Switch" = true
 	"Hotbar Changer" = true
 	"Inventory Sorting" = false
 	"Item Sharing" = true
 	"Shulker Box Right Click" = true
-	"Right Click Armor" = true
+	"Right Click Armor" = false
 
 	[management.inventory_sorting]
 		"Enable Player Inventory" = false
@@ -222,7 +222,7 @@
 		"Render Items In Chat" = true
 
 	[management.easy_transfering]
-		"Enable Shift Lock" = true
+		"Enable Shift Lock" = false
 
 [tools]
 	"Ancient Tomes" = true
