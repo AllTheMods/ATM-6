@@ -221,6 +221,23 @@ onEvent('block.tags', e => {
     e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']);//Regex to add a tag preventing moving by bag of yurting
     e.add('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/']); //, '/rftoolsbuilder:.+/', '^\\w+_glass$'
 
+    //Astral Sorcery
+    e.add('resourcefulbees:valid_apiary', [/^astralsorcery:marble_/, /^astralsorcery:black_marble_/, /^astralsorcery:infused_wood_/]);
+    //Forbidden & Arcanus
+    e.add('resourcefulbees:valid_apiary', /^forbidden_arcanus:[\w]*darkstone/);
+    //Create
+    e.add('resourcefulbees:valid_apiary', [
+        /^create:[\w]+_window/,
+        /^create:[\w]*granite/,
+        /^create:[\w]*diorite/,
+        /^create:[\w]*andesite/,
+        /^create:[\w]*limestone/,
+        /^create:[\w]*dolomite/,
+        /^create:[\w]*gabbro/,
+        /^create:[\w]*scoria/,
+    ]);
+
+
     //Removal
     e.removeAll('minecraft:enderman_holdable');
 });
