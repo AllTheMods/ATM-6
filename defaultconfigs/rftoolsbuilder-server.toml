@@ -63,7 +63,7 @@
 	#Range: 0.0 ~ 1000000.0
 	silkquarryShapeCardFactor = 3.0
 	#If true the quarry will chunkload a chunk at a time. If false the quarry will stop if a chunk is not loaded
-	quarryChunkloads = false
+	quarryChunkloads = true
 	#RF per entity move operation for the builder
 	#Range: > 0
 	builderRfPerEntity = 5000
