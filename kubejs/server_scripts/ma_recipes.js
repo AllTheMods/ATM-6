@@ -45,7 +45,7 @@ events.listen('recipes', function (e) {
     circle('industrialforegoing:dryrubber',6,'rubber')
     circle('thermal:constantan_ingot',4,'constantan')
     circle('mekanism:ingot_steel',2,'steel')
-    circle('silentgear:electrum',2,'electrum')
+    circle('thermal:electrum_ingot',2,'electrum')
     circle('allthemodium:allthemodium_nugget', 2, 'allthemodium')
     circle('allthemodium:vibranium_nugget', 2, 'vibranium')
     circle('allthemodium:unobtainium_nugget', 2, 'unobtainium')

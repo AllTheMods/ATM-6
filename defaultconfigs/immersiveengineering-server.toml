@@ -99,6 +99,9 @@
 	#The Flux the Assembler will consume to craft an item from a recipe
 	#Range: > 1
 	assembler_consumption = 80
+	#The amount of damage a sawblade in the sawmill takes for a single recipe.
+	#Range: > 1
+	sawmill_bladeDamage = 5
 
 	[machines.capacitors]
 
@@ -302,8 +305,8 @@
 		#The maximum amount of damage Graphite Electrodes can take. While the furnace is working, electrodes sustain 1 damage per tick, so this is effectively the lifetime in ticks. The default value of 96000 makes them last for 8 consecutive ingame days
 		#Range: > 1
 		electrodeDamage = 96000
-		#Set this to true to make the blueprint for graphite electrodes craftable in addition to villager/dungeon loot
-		electrodeCrafting = false
+                                                                                                                
+                           
 		#Set this to false to disable the Arc Furnace's recycling of armors and tools
 		recycle = true
 
@@ -327,6 +330,14 @@
 		initial_depletion = 0.2
 		#List of dimensions that can't contain minerals. Default: The End.
 		dimBlacklist = ["minecraft:dimension_type"]
+
+	[machines.sawmill]
+		#A modifier to apply to the energy costs of every sawmill recipe
+		#Range: 0.001 ~ 1000.0
+		energyModifier = 1.0
+		#A modifier to apply to the time of every sawmill recipe
+		#Range: 0.001 ~ 1000.0
+		timeModifier = 1.0
 
 [ores]
 	#The retrogeneration key. Basically IE checks if this key is saved in the chunks data. If it isn't, it will perform retrogen on all ores marked for retrogen.

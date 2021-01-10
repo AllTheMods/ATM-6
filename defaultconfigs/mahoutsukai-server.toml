@@ -319,6 +319,17 @@
 	#This is the minimum threshhold a lake needs to be to be able to transform a sword into Caliburn.
 	#Range: 0 ~ 100000000
 	POWER_CONSOLIDATION_LAKE_THRESHHOLD = 150
+	#Items that Strengthening won't work on
+	STRENGTHENING_ITEM_BLACKLIST = []
+	#Reality Marble Mob Blacklist
+	MARBLE_MOB_BLACKLIST = []
+	#Projection items cannot be used in anvil
+	PROJECTION_ANVIL_CANCEL = false
+	#Power Consolidation Enchant Blacklist
+	POWER_CONSOLIDATION_ENCHANT_BLACKLIST = ["minecraft:mending"]
+	#Morgan Upgrade Mana Cost
+	#Range: 0 ~ 10000000
+	MORGAN_UPGRADE_MANA_COST = 400
 
 [exchange]
 	#How far down gets changed by the Alchemical Exchange
@@ -623,6 +634,14 @@
 	#Something is lit on fire every this many ticks, from the player's eyes
 	#Range: 0 ~ 100000000
 	BLACK_FLAME_IGNITION_TICKS = 1
+	#Max Souls possible for Death Collection
+	#Range: -1.0E7 ~ 1.0E7
+	DEATH_COLLECTION_MAX = 1.0E7
+	#Mana drained per soul held
+	#Range: -1.0E7 ~ 1.0E7
+	DEATH_COLLECTION_DRAIN_PER_SOUL = 0.3
+	#Leyline Eytra boost limited to Fay Sight
+	LEY_ELYTRA_LIMITED_TO_FAY_SIGHT = false
 
 [familiar]
 	#This is whether the effect disappears once used
@@ -707,6 +726,50 @@
 	RIPPER_SPEED = 3.0
 	#If true, mana is charged per percent difference between caster and target, as opposed to per health point differeence.
 	RETRIBUTION_MANA_CHARGED_PER_PERCENT = false
+	#Ripper Fog Mana Cost
+	#Range: 0 ~ 10000000
+	RIPPER_FOG_MANA_COST = 200
+	#Ripper Invis Mana Cost
+	#Range: 0 ~ 10000000
+	RIPPER_INVIS_MANA_COST = 0
+	#Gandr Black Particles Spawned on Hit
+	#Range: 0 ~ 100000000
+	GANDR_BLACK_PARTICLES_HIT = 150
+	#Gandr Red Particles Spawned on Hit
+	#Range: 0 ~ 100000000
+	GANDR_RED_PARTICLES_HI = 40
+	#Gandr Red Particles Spawned on Launch
+	#Range: 0 ~ 100000000
+	GANDR_RED_PARTICLES_LAUNCH = 25
+	#Gandr Hit Radius
+	#Range: 0.0 ~ 1.0E8
+	GANDR_HIT_RADIUS = 6.0
+	#Gandr Effect Cloud Duration
+	#Range: 0 ~ 100000000
+	GANDR_CLOUD_DURATION = 200
+	#Gandr Mana Cost Scales with Max Mana
+	GANDR_MANA_SCALES = true
+	#Gandr Mana Cost Factor
+	#Range: 0.0 ~ 1.0E8
+	GANDR_MANA_COST_FACTOR = 0.05
+	#Gandr Damage Scales with Max Mana
+	GANDR_DAMAGE_SCALES = true
+	#Gandr Damage Factor
+	#Range: 0.0 ~ 1.0E8
+	GANDR_DAMAGE_FACTOR = 0.009999999776482582
+	#Gandr Max Damage
+	#Range: 0.0 ~ 1.0E8
+	GANDR_MAX_DAMAGE = 1000.0
+	#Gandr Min Damage
+	#Range: 0.0 ~ 1.0E8
+	GANDR_MIN_DAMAGE = 5.0
+	#Gandr Projectile Speed
+	#Range: 0.0 ~ 1.0E8
+	GANDR_SPEED = 1.0
+	#Gandr Effect Blacklist
+	GANDR_EFFECT_BLACKLIST = []
+	#Gandr Effect Whitelist
+	GANDR_EFFECT_WHITELIST = ["mahoutsukai:misfortune", "mahoutsukai:bound", "mahoutsukai:fear", "mahoutsukai:black_burning", "mahoutsukai:wounded", "mahoutsukai:confusion"]
 
 [kodoku]
 	#mahoutsukai.config.kodoku_tool_divisor.comment
@@ -812,4 +875,10 @@
 	#How much mana players regen per tick
 	#Range: 0 ~ 100000000
 	MANA_REGEN_PER_TICK = 1
+	#How much mana regen scaled with max mana is added to player regen
+	#Range: 0.0 ~ 1.0E7
+	MANA_ADDED_SCALING_REGEN_PER_TICK = 0.0
+	#Scaling factor for how much hunger affects regen
+	#Range: -1.0E7 ~ 1.0E7
+	MANA_REGEN_HUNGER_FACTOR = 1.0
 
