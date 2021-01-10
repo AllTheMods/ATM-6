@@ -56,6 +56,10 @@ events.listen('recipes', e => {
 
             'mekanism:block_charcoal',
 
+            'pedestals:coin/rfquarryb',
+            'pedestals:coin/quarryb',
+            // wants to break the pack by spoofing players to circumvent the anti-quarry
+
             'titanium:iron_gear',
             'titanium:gold_gear',
             'titanium:diamond_gear',
