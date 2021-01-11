@@ -2,9 +2,9 @@ events.listen('jei.information', function (e) {
     function info(item, text) {
         e.add(item, text)
     }
-    info('allthemodium:molten_bluelava_bucket', ['Soul Lava appears occasionally in the nether.', '(Small source blocks only - no pools.)'])
+    info('allthemodium:molten_bluelava_bucket', ['Soul Lava appears occasionally in the nether.', '(Small source blocks only - no pools.)','This fluid is extremely hot!'])
     info('allthemodium:allthemodium_ore', ['Check all the oceans for Allthemodium.', '(Y 5-45)'])
-    info('allthemodium:vibranium_ore', ['Vibranium can be found in warped forests in the Nether.', '(Y 80-127)'])
+    info('allthemodium:vibranium_ore', ['Vibranium can be found in warped forests and crimson forests in the Nether.', '(Y 82-118)'])
     info('allthemodium:unobtainium_ore', ['Unobtainium can be obtained from the Highland biomes in the End.'])
     info('silentgear:salvager', ['Disabled due to issue #349.'])
 })
