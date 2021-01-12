@@ -31,9 +31,11 @@ events.listen('recipes', function (e) {
 
     circle('rats:oratchalcum_ingot', 4, 'oratchalcum')
     circle('industrialforegoing:dryrubber',6,'rubber')
-    circle('allthemodium:allthemodium_nugget', 2, 'allthemodium')
-    circle('allthemodium:vibranium_nugget', 2, 'vibranium')
-    circle('allthemodium:unobtainium_nugget', 2, 'unobtainium')
+
+    circle('allthemodium:allthemodium_nugget', 1, 'allthemodium')
+    circle('allthemodium:vibranium_nugget', 1, 'vibranium')
+    circle('allthemodium:unobtainium_nugget', 1, 'unobtainium')
+
     circle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
     circle('silentgear:azure_silver_ingot', 6, 'azure_silver')
     circle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
