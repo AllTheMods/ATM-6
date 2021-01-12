@@ -24,7 +24,7 @@
     "isBreedable": true,
     "parent1": "Netherite",
     "parent2": "Dragonic",
-    "feedItem": "tag:forge:nuggets/vibranium",
+    "feedItem": "tag:forge:storage_blocks/vibranium",
     "feedAmount": 3
   },
   "TraitData": {
