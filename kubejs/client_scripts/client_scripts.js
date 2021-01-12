@@ -51,7 +51,7 @@ onEvent(`jei.add.items`, e => {
 
 onEvent(`jei.hide.items`, e => {
     e.hide([
-        `@quark`,
+        `quark:ancient_tome`,
 
         `@curios`,
 
@@ -59,6 +59,7 @@ onEvent(`jei.hide.items`, e => {
 
         `appliedenergistics2:silicon`,
         `appliedenergistics2:flour`,
+        /appliedenergistics2:facade/,
 
         `cyclic:tile_transporter_empty`,
 
@@ -85,6 +86,8 @@ onEvent(`jei.hide.items`, e => {
         `mekanism:lead_ore`,
         `mekanism:sawdust`,
         `mekanism:block_charcoal`,
+        /mekanism:creative_chemical_tank/,
+        /mekanism:creative_fluid_tank/,
 
         /immersiveengineering:.+coke/,
         `immersiveengineering:coke`,
@@ -94,7 +97,22 @@ onEvent(`jei.hide.items`, e => {
 
         /biggerreactors:yello.+/,
 
-        /engineerstools:.+_grit/
+        /engineerstools:.+_grit/,
+
+        `pamhc2foodcore:cheeseitem`,
+
+        `platforms:ramp`,
+        `platforms:rise`,
+        `platforms:rail`,
+        `platforms:floor`,
+        `platforms:flat`,
+        `platforms:frame`,
+
+        `xreliquary:alkahestry_tome`,
+
+        `mininggadgets:minerslight`,
+
+        `rats:ratlantis_portal`
     ]);
 
     colors.forEach(color => {
@@ -156,6 +174,7 @@ onEvent(`jei.hide.items`, e => {
     hideMetal(`thermal`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
 
     //Hides items based on type, format: `mod`, `type`, [`name1`, `name2`, `etc`]
+    hideStuff(`thermal`, `dust`, [`iron`, `gold`]);
     hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`]);
     hideStuff(`immersiveengineering`, `plate`, [`iron`, `gold`, `copper`, `aluminum`, `lead`, `silver`, `nickel`, `constantan`, `electrum`]);
     hideStuff(`mekanism`, `dust`, [`sulfur`, `lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`]);
@@ -168,6 +187,8 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`iceandfire`, `ore`, [`silver`, `copper`]);
     hideStuff(`tmechworks`, `ore`, [`aluminum`, `copper`]);
     hideStuff(`solarflux`, `sp`, [6, 7, 8]);
+    hideStuff(`quark`, `crate`, [`apple`, `carrot`, `beetroot`, `potato`]);
+    hideStuff(`quark`, `block`, [`bamboo`, `charcoal`, `sugar_cane`]);
 });
 
 onEvent(`item.tooltip`, e => {
