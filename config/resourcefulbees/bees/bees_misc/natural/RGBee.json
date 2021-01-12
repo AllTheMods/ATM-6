@@ -3,29 +3,28 @@
   "maxTimeInHive": 600,
   "hasHoneycomb": true,
   "ColorData": {
-    "isBeeColored": true,
-    "primaryColor": "#ffffff",
-    "honeycombColor": "#ffffff",
-    "isRainbowBee": true,
-    "isGlowing": true
+      "isBeeColored": true,
+      "honeycombColor": "#ffffff",
+      "isRainbowBee": true,
+      "isGlowing": true
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": false
+      "hasCentrifugeOutput": false
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:overworld",
-    "biomeBlacklist": "tag:ocean"
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:overworld",
+      "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "tag:forge:dyes",
-    "feedAmount": 6
+      "isBreedable": true,
+      "feedItem": "tag:forge:dyes",
+      "feedAmount": 6
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }
