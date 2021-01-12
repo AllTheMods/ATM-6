@@ -2,7 +2,7 @@ settings.logAddedRecipes = true
 settings.logRemovedRecipes = true
 
 
-events.listen('recipes', function (e) {
+events.listen('recipes', function(e) {
     var mekCrush = e.recipes.mekanism.crushing
     var mekEnrich = e.recipes.mekanism.enriching
     var pedCrush = e.recipes.pedestals.pedestal_crushing
@@ -43,7 +43,7 @@ events.listen('recipes', function (e) {
         output: 'mekanism:bio_fuel'
     })
     var bioFuels = [2, 4, 5, 7, 8]
-    utils.listOf(bioFuels).forEach(function (bioFuel) {
+    utils.listOf(bioFuels).forEach(function(bioFuel) {
         mekCrush(item.of('mekanism:bio_fuel', bioFuel), '#misctags:biofuel' + bioFuel)
     })
 
@@ -705,7 +705,7 @@ events.listen('recipes', function (e) {
         'rftoolspower:powercell_card',
         'rftoolsutility:syringe'
     ]
-    utils.listOf(resetNBT).forEach(function (reset) {
+    utils.listOf(resetNBT).forEach(function(reset) {
         e.shapeless(item.of(reset), reset)
     })
 
@@ -730,8 +730,8 @@ events.listen('recipes', function (e) {
         'energy_discharger',
         'energizing_rod'
     ]
-    utils.listOf(typesPowah).forEach(function (type) {
-        utils.listOf(tiersPowah).forEach(function (tier) {
+    utils.listOf(typesPowah).forEach(function(type) {
+        utils.listOf(tiersPowah).forEach(function(tier) {
             e.shapeless(item.of('powah:' + type + '_' + tier), 'powah:' + type + '_' + tier)
         })
     })
@@ -745,7 +745,7 @@ events.listen('recipes', function (e) {
         'custom_vibranium',
         'custom_unobtainium'
     ]
-    utils.listOf(solars).forEach(function (solar) {
+    utils.listOf(solars).forEach(function(solar) {
         e.shapeless(item.of('solarflux:sp_' + solar), 'solarflux:sp_' + solar)
     })
     //Smithing stuff
