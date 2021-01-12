@@ -24,7 +24,7 @@
     "isBreedable": true,
     "parent1": "Vibranium",
     "parent2": "Allthemodium",
-    "feedItem": "tag:forge:nuggets/unobtainium",
+    "feedItem": "tag:forge:storage_blocks/unobtainium",
     "feedAmount": 3
   },
   "TraitData": {
