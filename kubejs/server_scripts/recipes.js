@@ -1,7 +1,3 @@
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
-
-
 events.listen('recipes', function(e) {
     var mekCrush = e.recipes.mekanism.crushing
     var mekEnrich = e.recipes.mekanism.enriching
