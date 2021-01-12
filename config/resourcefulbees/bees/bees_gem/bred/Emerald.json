@@ -2,11 +2,11 @@
   "flower": "tag:forge:storage_blocks/emerald",
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ores/emerald/emerald_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#18eb09",
-    "primaryColor": "#18eb09",
-    "secondaryColor": "#303030"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false

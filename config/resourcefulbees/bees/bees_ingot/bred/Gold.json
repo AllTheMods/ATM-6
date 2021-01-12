@@ -2,11 +2,11 @@
   "flower": "tag:forge:storage_blocks/gold",
   "hasHoneycomb": true,
   "maxTimeInHive": 800,
+  "baseLayerTexture": "ores/gold/gold_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#FFDC00",
-    "primaryColor": "#FFDC00",
-    "secondaryColor": "#303030"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false
