@@ -142,7 +142,7 @@ onEvent('recipes', e => {
             energy: 3000
         });
 
-        if (!ingredient.of(`#forge:ores/${name}`).stack.empty) {
+        if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
             e.recipes.minecraft.smelting(ingotItem, `#forge:ores/${name}`).xp(1);
             e.recipes.minecraft.blasting(ingotItem, `#forge:ores/${name}`).xp(1);
             e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`);
