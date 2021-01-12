@@ -2,30 +2,30 @@
   "flower": "tag:forge:storage_blocks/iron",
   "hasHoneycomb": true,
   "maxTimeInHive": 700,
+  "baseLayerTexture": "ores/iron/iron_bee",
   "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#ffcc99",
-    "primaryColor": "#ffcc99",
-    "secondaryColor": "#303030"
+      "isBeeColored": false,
+      "honeycombColor": "#ffcc99",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:iron_ingot"
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:iron_ingot"
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Crystal",
-    "parent2": "Rocky",
-    "feedItem": "tag:forge:nuggets/iron",
-    "feedAmount": 3
+      "isBreedable": true,
+      "parent1": "Crystal",
+      "parent2": "Rocky",
+      "feedItem": "tag:forge:nuggets/iron",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }
