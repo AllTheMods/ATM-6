@@ -309,7 +309,7 @@
 	"Automatic Recipe Unlock" = true
 	"Axe Leaf Harvesting" = true
 	"Campfires Boost Elytra" = true
-	"Compasses Work Everywhere" = true
+	"Compasses Work Everywhere" = false
 	"Dirt To Path" = true
 	"Double Door Opening" = true
 	"Dragon Scales" = true
@@ -344,10 +344,10 @@
 		"Max Speed" = 1.0
 
 	[tweaks.compasses_work_everywhere]
-		"Enable Compass Nerf" = true
-		"Enable Clock Nerf" = true
-		"Enable Nether" = true
-		"Enable End" = true
+		"Enable Compass Nerf" = false
+		"Enable Clock Nerf" = false
+		"Enable Nether" = false
+		"Enable End" = false
 
 	[tweaks.emotes]
 		#The enabled default emotes. Remove from this list to disable them. You can also re-order them, if you feel like it.
