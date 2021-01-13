@@ -133,6 +133,7 @@ onEvent('item.tags', e => {
     e.remove('appliedenergistics2:wool', '#minecraft:wool');
     e.remove('appliedenergistics2:workbench', 'minecraft:crafting_table');
     e.remove('minecraft:beehives', ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive']);
+    e.remove('forge:cheese/silkentofu', 'pamhc2foodextended:silkentofuitem');
 
     e.add('minecraft:wart_blocks', '/.+_wart_block/');
     e.add('forge:axes', ['/.+_axe/', '/.+_paxel/', '/.+:axe_.+/']);
