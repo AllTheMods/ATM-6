@@ -210,11 +210,11 @@ onEvent('recipes', e => {
                 },
                 turns: 8
             });
-        } //End of if (!ingredient.of(`#forge:ores/${name}`).empty)
-        //e.replaceInput(nuggetItem, (`#forge:nuggets/${name}`));
-        //e.replaceInput(dustItem, (`#forge:dusts/${name}`));
-        //e.replaceInput(ingotItem, (`#forge:ingots/${name}`));
-        //e.replaceInput(blockItem, (`#forge:storage_blocks/${name}`));
+        }
+        e.replaceInput(nuggetItem, (`#forge:nuggets/${name}`));
+        e.replaceInput(dustItem, (`#forge:dusts/${name}`));
+        e.replaceInput(ingotItem, (`#forge:ingots/${name}`));
+        e.replaceInput(blockItem, (`#forge:storage_blocks/${name}`));
     }
 
     function unifyCraftMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
