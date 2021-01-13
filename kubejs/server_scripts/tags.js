@@ -124,7 +124,6 @@ onEvent('item.tags', e => {
     //Remove
     e.remove('forge:leather', 'forbidden_arcanus:rotten_leather');
     e.remove('engineerstools:musli_bar_food_blacklisted', 'minecraft:chicken');
-    e.remove('forge:dyes', 'mekanism:dust_sulfur');
     e.remove('forge:dyes/yellow', 'mekanism:dust_sulfur');
     e.remove('forge:nether_stars', 'forbidden_arcanus:dark_nether_star');
     e.remove('curios:charm', ['angelring:itemring', 'simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
