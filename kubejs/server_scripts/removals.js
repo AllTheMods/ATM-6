@@ -1,7 +1,6 @@
 //priority: 999
 events.listen('recipes', e => {
     var idRemove = [
-
         'minecraft:comparator',
         'minecraft:glass',
 
@@ -29,7 +28,6 @@ events.listen('recipes', e => {
     //Recipe removals
     e.remove({
         output: [
-
             'appliedenergistics2:silicon',
 
             'mekanism:upgrade_anchor',
@@ -59,9 +57,6 @@ events.listen('recipes', e => {
             'titanium:iron_gear',
             'titanium:gold_gear',
             'titanium:diamond_gear',
-
-            // issue #349
-            'silentgear:salvager'
         ]
     });
     e.remove({
