@@ -487,7 +487,8 @@ onEvent('recipes', e => {
     //Tier 6 Crops
     t6([
         'dragon_egg',
-        'nether_star'
+        'nether_star',
+        'nitro_crystal',
     ])
 
     //Magical Crops

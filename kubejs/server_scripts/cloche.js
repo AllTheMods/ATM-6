@@ -307,6 +307,7 @@ events.listen('recipes', function (e) {
   //Tier 6 Crops
   t6('dragon_egg')
   t6('nether_star')
+  t6('nitro_crystal')
 
   //Botanical Tier
   //t3('manasteel')
