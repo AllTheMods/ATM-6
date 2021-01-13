@@ -18,37 +18,37 @@ onEvent('recipes', e => {
             type: 'minecraft:blasting'
         });
         if (name !== 'iron' && name !== 'gold' && name !== 'azure_silver' && name !== 'crimson_iron') {
-            console.log(`Removing enriching recipes for #forge:ores/${name} to mekanism:dust_${name}`);
+            //console.log(`Removing enriching recipes for #forge:ores/${name} to mekanism:dust_${name}`);
             e.remove({
                 input: `#forge:ores/${name}`,
                 output: `mekanism:dust_${name}`,
                 type: 'mekanism:enriching'
             });
-            console.log(`Removing enriching recipes for mekanism:dirty_dust_${name} to mekanism:dust_${name}`);
+            //console.log(`Removing enriching recipes for mekanism:dirty_dust_${name} to mekanism:dust_${name}`);
             e.remove({
                 input: `mekanism:dirty_dust_${name}`,
                 output: `mekanism:dust_${name}`,
                 type: 'mekanism:enriching'
             });
-            console.log(`Removing purifying recipes for #mekanism:clumps/${name} to mekanism:dirty_dust_${name}`);
+            //console.log(`Removing purifying recipes for #mekanism:clumps/${name} to mekanism:dirty_dust_${name}`);
             e.remove({
                 input: `#mekanism:clumps/${name}`,
                 output: `mekanism:dirty_dust_${name}`,
                 type: 'mekanism:crushing'
             });
-            console.log(`Removing purifying recipes for #forge:ores/${name} to mekanism:clump_${name}`);
+            //console.log(`Removing purifying recipes for #forge:ores/${name} to mekanism:clump_${name}`);
             e.remove({
                 input: `#forge:ores/${name}`,
                 output: `mekanism:clump_${name}`,
                 type: 'mekanism:purifying'
             });
-            console.log(`Removing purifying recipes for mekanism:shard_${name} to mekanism:clump_${name}`);
+            //console.log(`Removing purifying recipes for mekanism:shard_${name} to mekanism:clump_${name}`);
             e.remove({
                 input: `mekanism:shard_${name}`,
                 output: `mekanism:clump_${name}`,
                 type: 'mekanism:purifying'
             });
-            console.log(`Removing injecting recipes for #forge:ores/${name} to mekanism:shard_${name}`);
+            //console.log(`Removing injecting recipes for #forge:ores/${name} to mekanism:shard_${name}`);
             e.remove({
                 input: `#forge:ores/${name}`,
                 output: `mekanism:shard_${name}`,
