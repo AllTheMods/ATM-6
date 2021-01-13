@@ -510,9 +510,9 @@ onEvent('recipes', e => {
 	}
     if (!log) {
       log = mod + ':' + name + '_log'
-      console.log(`console.log: log is null, set to ${log}`)
+      //console.log(`console.log: log is null, set to ${log}`)
     } else {
-      console.log("console.log: log is not null");
+      //console.log("console.log: log is not null");
     }
     
     const results = [
