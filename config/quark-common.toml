@@ -435,7 +435,7 @@
 		#Can torches can be used as fuel in furnaces?
 		"Torches Burn" = true
 		#Can bones be smelted down to bone meal?
-		"Bone Meal Utility" = true
+		"Bone Meal Utility" = false
 
 	[tweaks.skull_pikes]
 		"Pike Range" = 5.0
