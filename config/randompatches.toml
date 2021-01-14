@@ -73,12 +73,12 @@
 		# The Minecraft window title.
 		# The Minecraft version is provided as an argument.
 		# Default: Minecraft* %s
-		title = "Minecraft* %s"
+		title = "Minecraft ${mcversion} - ATM6"
 		# The Minecraft window title.
 		# The Minecraft version and current activity are provided as arguments.
 		# For example: "RandomPatches - %2$s"
 		# Default: Minecraft* %s - %s
-		titleWithActivity = "Minecraft* %s - %s"
+		titleWithActivity = "Minecraft ${mcversion} - ATM6 - ${activity}"
 
 # Options related to boats.
 [boats]
