@@ -88,7 +88,7 @@
 	#Range: 1 ~ 10000
 	"Spawn Cyclops Cave Chance" = 100
 	#True if myrmex colonies are allowed to spawn
-	"Spawn Myrmex" = true
+	"Spawn Myrmex" = false
 	#Default attack strength of a dragonsteel sword.
 	#Range: 5.0 ~ 2.147483647E9
 	"Dragonsteel Sword Base Attack Strength" = 25.0
@@ -355,7 +355,7 @@
 	"Spawn Sirens Chance" = 400
 	#Maximum troll health
 	#Range: 1.0 ~ 10000.0
-	"Troll Max Health" = 500.0
+	"Troll Max Health" = 50.0
 	#Default sea serpent attack strength, this is scaled to the sea serpent's particular size
 	#Range: 1.0 ~ 10000.0
 	"Sea Serpent Base Attack Strength" = 4.0
