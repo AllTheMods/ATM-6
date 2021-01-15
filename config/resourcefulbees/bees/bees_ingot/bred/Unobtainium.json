@@ -15,7 +15,7 @@
     "hasCentrifugeOutput": true,
     "mainOutput": "allthemodium:unobtainium_nugget",
     "mainOutputWeight": 0.02,
-    "mainOutputCount": 2
+    "mainOutputCount": 1
   },
   "SpawnData": {
     "spawnInWorld": false
@@ -24,7 +24,7 @@
     "isBreedable": true,
     "parent1": "Vibranium",
     "parent2": "Allthemodium",
-    "feedItem": "tag:forge:nuggets/unobtainium",
+    "feedItem": "tag:forge:storage_blocks/unobtainium",
     "feedAmount": 3
   },
   "TraitData": {

@@ -2,30 +2,30 @@
   "flower": "tag:forge:storage_blocks/emerald",
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ores/emerald/emerald_bee",
   "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#18eb09",
-    "primaryColor": "#18eb09",
-    "secondaryColor": "#303030"
+      "isBeeColored": false,
+      "honeycombColor": "#18eb09",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:emerald"
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:emerald"
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Diamond",
-    "parent2": "Slimy",
-    "feedItem": "tag:forge:gems/emerald",
-    "feedAmount": 1
+      "isBreedable": true,
+      "parent1": "Diamond",
+      "parent2": "Slimy",
+      "feedItem": "tag:forge:gems/emerald",
+      "feedAmount": 1
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

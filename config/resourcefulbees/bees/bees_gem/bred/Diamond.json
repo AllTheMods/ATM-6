@@ -4,27 +4,27 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "ores/diamond/diamond_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#00ffff"
+      "isBeeColored": false,
+      "honeycombColor": "#00ffff"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:diamond"
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:diamond"
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Ender",
-    "parent2": "Lapis",
-    "feedItem": "tag:forge:gems/diamond",
-    "feedAmount": 1
+      "isBreedable": true,
+      "parent1": "Ender",
+      "parent2": "Lapis",
+      "feedItem": "tag:forge:gems/diamond",
+      "feedAmount": 1
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

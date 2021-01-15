@@ -2,31 +2,31 @@
   "flower": "tag:forge:storage_blocks/lapis",
   "maxTimeInHive": 700,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ores/lapis/lapis_bee",
   "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#345ec3",
-    "primaryColor": "#345ec3",
-    "secondaryColor": "#303030"
+      "isBeeColored": false,
+      "honeycombColor": "#345ec3",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:lapis_lazuli",
-    "mainOutputCount": 8
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:lapis_lazuli",
+      "mainOutputCount": 8
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Redstone",
-    "parent2": "RGBee",
-    "feedItem": "tag:forge:gems/lapis",
-    "feedAmount": 5
+      "isBreedable": true,
+      "parent1": "Redstone",
+      "parent2": "RGBee",
+      "feedItem": "tag:forge:gems/lapis",
+      "feedAmount": 5
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

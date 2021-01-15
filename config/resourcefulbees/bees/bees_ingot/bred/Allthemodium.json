@@ -15,7 +15,7 @@
     "hasCentrifugeOutput": true,
     "mainOutput": "allthemodium:allthemodium_nugget",
     "mainOutputWeight": 0.02,
-    "mainOutputCount": 2
+    "mainOutputCount": 1
   },
   "SpawnData": {
     "spawnInWorld": false
@@ -24,7 +24,7 @@
     "isBreedable": true,
     "parent1": "Netherite",
     "parent2": "Wither",
-    "feedItem": "tag:forge:nuggets/allthemodium",
+    "feedItem": "tag:forge:storage_blocks/allthemodium",
     "feedAmount": 3
   },
   "TraitData": {

@@ -1,7 +1,7 @@
 {
   "__comment": "Instructions: https://mods.blakebr0.com/docs/cucumber/tags-config",
   "forge:ingots/aluminum": "alltheores:aluminum_ingot",
-  "forge:ingots/constantan": "immersiveengineering:ingot_constantan",
+  "forge:ingots/constantan": "thermal:constantan_ingot",
   "forge:ingots/tungsten": "null",
   "forge:ingots/mithril": "null",
   "forge:ingots/tin": "alltheores:tin_ingot",
@@ -11,7 +11,7 @@
   "forge:ingots/copper": "alltheores:copper_ingot",
   "forge:ingots/invar": "null",
   "forge:ingots/chrome": "null",
-  "forge:ingots/electrum": "immersiveengineering:ingot_electrum",
+  "forge:ingots/electrum": "thermal:electrum_ingot",
   "forge:silicon": "refinedstorage:silicon",
   "forge:ingots/brass": "null",
   "forge:ingots/silver": "alltheores:silver_ingot",

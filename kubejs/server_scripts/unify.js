@@ -1,125 +1,125 @@
 //priority: 997
-events.listen('recipes', function(e) {
-    e.replaceInput('appliedenergistics2:certus_quartz_dust', '#forge:dusts/certus_quartz')
+onEvent('recipes', e => {
+    e.replaceInput('appliedenergistics2:certus_quartz_dust', '#forge:dusts/certus_quartz');
 
     function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem, dslurryFluid, cslurryFluid, crystalItem, shardItem, clumpItem, dirtydustItem) {
-        e.replaceOutput('#forge:ingots/' + name, ingotItem);
-        e.replaceOutput('#forge:dusts/' + name, dustItem);
-        e.replaceOutput('#forge:nuggets/' + name, nuggetItem);
-        e.replaceOutput('#forge:storage_blocks/' + name, blockItem);
+        e.replaceOutput(`#forge:ingots/${name}`, ingotItem);
+        e.replaceOutput(`#forge:dusts/${name}`, dustItem);
+        e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem);
+        e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem);
         e.remove({
-            input: ['#forge:ores/' + name, '#forge:dusts/' + name],
-            output: '#forge:ingots/' + name,
+            input: [`#forge:ores/${name}`, `#forge:dusts/${name}`],
+            output: `#forge:ingots/${name}`,
             type: 'minecraft:smelting'
         });
         e.remove({
-            input: ['#forge:ores/' + name, '#forge:dusts/' + name],
-            output: '#forge:ingots/' + name,
+            input: [`#forge:ores/${name}`, `#forge:dusts/${name}`],
+            output: `#forge:ingots/${name}`,
             type: 'minecraft:blasting'
         });
         if (name !== 'iron' && name !== 'gold' && name !== 'azure_silver' && name !== 'crimson_iron') {
-            console.log("Removing enriching recipes for #forge:ores/" + name + " to mekanism:dust_" + name);
+            //console.log(`Removing enriching recipes for #forge:ores/${name} to mekanism:dust_${name}`);
             e.remove({
-                input: '#forge:ores/' + name,
-                output: 'mekanism:dust_' + name,
+                input: `#forge:ores/${name}`,
+                output: `mekanism:dust_${name}`,
                 type: 'mekanism:enriching'
             });
-            console.log("Removing enriching recipes for mekanism:dirty_dust_" + name + " to mekanism:dust_" + name);
+            //console.log(`Removing enriching recipes for mekanism:dirty_dust_${name} to mekanism:dust_${name}`);
             e.remove({
-                input: 'mekanism:dirty_dust_' + name,
-                output: 'mekanism:dust_' + name,
+                input: `mekanism:dirty_dust_${name}`,
+                output: `mekanism:dust_${name}`,
                 type: 'mekanism:enriching'
             });
-            console.log("Removing purifying recipes for #mekanism:clumps/" + name + " to mekanism:dirty_dust_" + name);
+            //console.log(`Removing purifying recipes for #mekanism:clumps/${name} to mekanism:dirty_dust_${name}`);
             e.remove({
-                input: '#mekanism:clumps/' + name,
-                output: 'mekanism:dirty_dust_' + name,
+                input: `#mekanism:clumps/${name}`,
+                output: `mekanism:dirty_dust_${name}`,
                 type: 'mekanism:crushing'
             });
-            console.log("Removing purifying recipes for #forge:ores/" + name + " to mekanism:clump_" + name);
+            //console.log(`Removing purifying recipes for #forge:ores/${name} to mekanism:clump_${name}`);
             e.remove({
-                input: '#forge:ores/' + name,
-                output: 'mekanism:clump_' + name,
+                input: `#forge:ores/${name}`,
+                output: `mekanism:clump_${name}`,
                 type: 'mekanism:purifying'
             });
-            console.log("Removing purifying recipes for mekanism:shard_" + name + " to mekanism:clump_" + name);
+            //console.log(`Removing purifying recipes for mekanism:shard_${name} to mekanism:clump_${name}`);
             e.remove({
-                input: 'mekanism:shard_' + name,
-                output: 'mekanism:clump_' + name,
+                input: `mekanism:shard_${name}`,
+                output: `mekanism:clump_${name}`,
                 type: 'mekanism:purifying'
             });
-            console.log("Removing injecting recipes for #forge:ores/" + name + " to mekanism:shard_" + name);
+            //console.log(`Removing injecting recipes for #forge:ores/${name} to mekanism:shard_${name}`);
             e.remove({
-                input: '#forge:ores/' + name,
-                output: 'mekanism:shard_' + name,
+                input: `#forge:ores/${name}`,
+                output: `mekanism:shard_${name}`,
                 type: 'mekanism:injecting'
             });
-/* Not working prior to KubeJS kubejs-1604.3.4.137-forge.jar, unnecessary currently.
-            console.log("Removing injecting recipes for mekanism:crystals/" + name + " to mekanism:shard_" + name);
-            e.remove({
-                input: '#mekanism:crystals/' + name,
-                output: 'mekanism:shard_' + name,
-                type: 'mekanism:injecting'
-            });
-            console.log("Removing crystallizing recipes for mekanism:clean_" + name + " to mekanism:shard_" + name);
-            e.remove({
-                input: {
-                    "slurry": "mekanism:clean_" + name,
-                    "amount": 200
-                },
-                output: 'mekanism:crystal_' + name,
-                type: 'mekanism:crystallizing'
-            });
-            console.log("Removing washing recipes for mekanism:dirty_" + name + " to mekanism:clean_" + name);
-            e.remove({
-                input: {
-                    "slurry": "mekanism:dirty_" + name,
-                    "amount": 1
-                },
-                output: {
-                    "slurry": "mekanism:clean_" + name,
-                    "amount": 1
-                },
-                type: 'mekanism:washing'
-            });
-            console.log("Removing dissolution recipes for #forge:ores/" + name + " to mekanism:dirty_" + name);
-            e.remove({
-                input: '#forge:ores/' + name,
-                output: {
-                    "slurry": "mekanism:dirty_" + name,
-                    "amount": 1000
-                },
-                type: 'mekanism:dissolution'
-            });
-*/
+            /* Not working prior to KubeJS kubejs-1604.3.4.137-forge.jar, unnecessary currently.
+                        console.log(`Removing injecting recipes for mekanism:crystals/${name} to mekanism:shard_${name}`);
+                        e.remove({
+                            input: `#mekanism:crystals/${name}`,
+                            output: `mekanism:shard_${name}`,
+                            type: 'mekanism:injecting'
+                        });
+                        console.log(`Removing crystallizing recipes for mekanism:clean_${name} to mekanism:shard_${name}`);
+                        e.remove({
+                            input: {
+                                "slurry": `mekanism:clean_${name}`,
+                                "amount": 200
+                            },
+                            output: `mekanism:crystal_${name}`,
+                            type: 'mekanism:crystallizing'
+                        });
+                        console.log(`Removing washing recipes for mekanism:dirty_${name} to mekanism:clean_${name}`);
+                        e.remove({
+                            input: {
+                                "slurry": `mekanism:dirty_${name}`,
+                                "amount": 1
+                            },
+                            output: {
+                                "slurry": `mekanism:clean_${name}`,
+                                "amount": 1
+                            },
+                            type: 'mekanism:washing'
+                        });
+                        console.log(`Removing dissolution recipes for #forge:ores/${name} to mekanism:dirty_${name}`);
+                        e.remove({
+                            input: `#forge:ores/${name}`,
+                            output: {
+                                "slurry": `mekanism:dirty_${name}`,
+                                "amount": 1000
+                            },
+                            type: 'mekanism:dissolution'
+                        });
+            */
             //Uncomment and use this to see if your criteria will match a recipe, and if the recipe is what you want them to match. Useful for updating script, do not leave uncommented for pack release.
             //e.forEachRecipe({}, recipe => console.info('Recipe matched! ' + recipe));
-        };
+        }
         e.remove({
-            input: '#forge:ores/' + name,
+            input: `#forge:ores/${name}`,
             type: 'immersiveengineering:crusher'
         });
         e.remove({
-            input: '#forge:ingots/' + name,
+            input: `#forge:ingots/${name}`,
             type: 'immersiveengineering:crusher'
         });
-        e.recipes.minecraft.smelting(ingotItem, '#forge:dusts/' + name).xp(.5).id('kubejs:minecraft/smelting/dusts/' + name);
-        e.recipes.minecraft.blasting(ingotItem, '#forge:dusts/' + name).xp(.5).id('kubejs:minecraft/blasting/dusts/' + name);
+        e.recipes.minecraft.smelting(ingotItem, `#forge:dusts/${name}`).xp(0.5);
+        e.recipes.minecraft.blasting(ingotItem, `#forge:dusts/${name}`).xp(0.5);
         e.recipes.pedestals.pedestal_crushing({
             ingredient: {
-                tag: 'forge:ingots/' + name
+                tag: `forge:ingots/${name}`
             },
             result: {
                 item: dustItem,
                 count: 1
             }
-        }).id('kubejs:pedestals/crusher/ingot/' + name);
+        });
         e.remove({
-            id: 'appliedenergistics2:grinder/' + name + '_dust_ingot'
-        })
+            id: `appliedenergistics2:grinder/${name}_dust_ingot`
+        });
         e.recipes.appliedenergistics2.grinder({
             input: {
-                tag: 'forge:ingots/' + name
+                tag: `forge:ingots/${name}`
             },
             result: {
                 primary: {
@@ -128,7 +128,7 @@ events.listen('recipes', function(e) {
                 }
             },
             turns: 8
-        }).id('kubejs:appliedenergistics2/grinder/ingot/' + name);
+        });
         e.recipes.immersiveengineering.crusher({
             secondaries: [],
             result: {
@@ -137,95 +137,95 @@ events.listen('recipes', function(e) {
                 }
             },
             input: {
-                tag: 'forge:ingots/' + name
+                tag: `forge:ingots/${name}`
             },
             energy: 3000
-        }).id('kubejs:immersiveengineering/crusher/ingot/' + name);
+        });
 
-        //        if (!ingredient.of('#forge:ores/' + name).empty) {   //If unifiable item doesn't have an ore, add it below (does not work so it's commented out for now)
-        e.recipes.minecraft.smelting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/smelting/ores/' + name);
-        e.recipes.minecraft.blasting(ingotItem, '#forge:ores/' + name).xp(1).id('kubejs:minecraft/blasting/ores/' + name);
-        e.recipes.mekanism.enriching(item.of(dustItem, 2), '#forge:ores/' + name).id('kubejs:mekanism/enriching/ores/' + name);
-        //This is here to stop crushing hammer recipes for modium from generating
-        if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
-            e.remove({
-                id: 'engineerstools:crushing/' + name + '_grit_crushing_recipe'
-            });
-            e.recipes.engineerstools.crafting_extended_shapeless({
-                group: 'grit',
-                ingredients: [{
-                        tag: 'forge:ores/' + name
+        if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
+            e.recipes.minecraft.smelting(ingotItem, `#forge:ores/${name}`).xp(1);
+            e.recipes.minecraft.blasting(ingotItem, `#forge:ores/${name}`).xp(1);
+            e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`);
+            //This is here to stop crushing hammer recipes for modium from generating
+            if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
+                e.remove({
+                    id: `engineerstools:crushing/${name}_grit_crushing_recipe`
+                });
+                e.recipes.engineerstools.crafting_extended_shapeless({
+                    group: 'grit',
+                    ingredients: [{
+                            tag: `forge:ores/${name}`
+                        },
+                        {
+                            item: 'engineerstools:crushing_hammer'
+                        }
+                    ],
+                    result: {
+                        item: dustItem,
+                        count: 2
                     },
-                    {
-                        item: 'engineerstools:crushing_hammer'
+                    aspects: {
+                        tool: 'engineerstools:crushing_hammer',
+                        tool_damage: 25
                     }
-                ],
+                });
+            }
+            e.recipes.immersiveengineering.crusher({
+                secondaries: [],
+                result: {
+                    count: 2,
+                    base_ingredient: {
+                        item: dustItem
+                    }
+                },
+                input: {
+                    tag: `forge:ores/${name}`
+                },
+                energy: 3000
+            });
+            e.remove({
+                id: `pedestals:pedestal_crushing/dust${name}`
+            });
+            e.recipes.pedestals.pedestal_crushing({
+                ingredient: {
+                    tag: `forge:ores/${name}`
+                },
                 result: {
                     item: dustItem,
                     count: 2
+                }
+            });
+            e.remove({
+                id: `appliedenergistics2:grinder/${name}_dust_ore`
+            });
+            e.recipes.appliedenergistics2.grinder({
+                input: {
+                    tag: `forge:ores/${name}`
                 },
-                aspects: {
-                    tool: 'engineerstools:crushing_hammer',
-                    tool_damage: 25
-                }
-            }).id('kubejs:engineerstools/crushing_hammer/ores/' + name);
-        };
-        e.recipes.immersiveengineering.crusher({
-            secondaries: [],
-            result: {
-                count: 2,
-                base_ingredient: {
-                    item: dustItem
-                }
-            },
-            input: {
-                tag: 'forge:ores/' + name
-            },
-            energy: 3000
-        }).id('kubejs:immersiveengineering/crusher/ore/' + name);
-        e.remove({
-            id: 'pedestals:pedestal_crushing/dust' + name
-        })
-        e.recipes.pedestals.pedestal_crushing({
-            ingredient: {
-                tag: 'forge:ores/' + name
-            },
-            result: {
-                item: dustItem,
-                count: 2
-            }
-        }).id('kubejs:pedestals/crusher/ore/' + name);
-        e.remove({
-            id: 'appliedenergistics2:grinder/' + name + '_dust_ore'
-        })
-        e.recipes.appliedenergistics2.grinder({
-            input: {
-                tag: 'forge:ores/' + name
-            },
-            result: {
-                primary: {
-                    item: dustItem,
-                    count: 2
-                }
-            },
-            turns: 8
-        }).id('kubejs:appliedenergistics2/grinder/ores/' + name);
-        //}; //End of if (!ingredient.of('#forge:ores/' + name).empty)
-        //e.replaceInput(nuggetItem, ('#forge:nuggets/' + name));
-        //e.replaceInput(dustItem, ('#forge:dusts/' + name));
-        //e.replaceInput(ingotItem, ('#forge:ingots/' + name));
-        //e.replaceInput(blockItem, ('#forge:storage_blocks/' + name));
-    };
+                result: {
+                    primary: {
+                        item: dustItem,
+                        count: 2
+                    }
+                },
+                turns: 8
+            });
+        }
+        e.replaceInput(nuggetItem, (`#forge:nuggets/${name}`));
+        e.replaceInput(dustItem, (`#forge:dusts/${name}`));
+        e.replaceInput(ingotItem, (`#forge:ingots/${name}`));
+        e.replaceInput(blockItem, (`#forge:storage_blocks/${name}`));
+    }
 
     function unifyCraftMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
-        e.replaceInput(nuggetItem, ('#forge:nuggets/' + name));
-        e.replaceInput(dustItem, ('#forge:dusts/' + name));
-        e.replaceInput(ingotItem, ('#forge:ingots/' + name));
-        e.replaceInput(blockItem, ('#forge:storage_blocks/' + name));
-        e.replaceOutput('#forge:ingots/' + name, ingotItem);
-        e.replaceOutput('#forge:dusts/' + name, dustItem);
-        e.replaceOutput('#forge:nuggets/' + name, nuggetItem);
-        e.replaceOutput('#forge:storage_blocks/' + name, blockItem);
+        e.replaceInput(nuggetItem, (`#forge:nuggets/${name}`));
+        e.replaceInput(dustItem, (`#forge:dusts/${name}`));
+        e.replaceInput(ingotItem, (`#forge:ingots/${name}`));
+        e.replaceInput(blockItem, (`#forge:storage_blocks/${name}`));
+        e.replaceOutput(`#forge:ingots/${name}`, ingotItem);
+        e.replaceOutput(`#forge:dusts/${name}`, dustItem);
+        e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem);
+        e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem);
     }
     //Vanilla MC
     unifyMetal('gold', 'minecraft:gold_ingot', 'alltheores:gold_dust', 'minecraft:gold_block', 'minecraft:gold_nugget', 'mekanism:dirty_gold', 'mekanism:clean_gold', 'mekanism:crystal_gold', 'mekanism:shard_gold', 'mekanism:clump_gold', 'mekanism:dirty_dust_gold');
@@ -263,4 +263,4 @@ events.listen('recipes', function(e) {
     unifyCraftMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget');
     unifyCraftMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget');
     unifyCraftMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget');
-})
+});

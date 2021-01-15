@@ -15,7 +15,7 @@
     "hasCentrifugeOutput": true,
     "mainOutput": "allthemodium:vibranium_nugget",
     "mainOutputWeight": 0.02,
-    "mainOutputCount": 2
+    "mainOutputCount": 1
   },
   "SpawnData": {
     "spawnInWorld": false
@@ -24,7 +24,7 @@
     "isBreedable": true,
     "parent1": "Netherite",
     "parent2": "Dragonic",
-    "feedItem": "tag:forge:nuggets/vibranium",
+    "feedItem": "tag:forge:storage_blocks/vibranium",
     "feedAmount": 3
   },
   "TraitData": {
