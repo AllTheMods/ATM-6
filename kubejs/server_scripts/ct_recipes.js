@@ -2,14 +2,6 @@ events.listen('recipes', function (e) {
     //Removals
     e.remove({
         output: [
-            'quark:oak_chest',
-            'quark:dark_oak_chest',
-            'quark:acacia_chest',
-            'quark:spruce_chest',
-            'quark:birch_chest',
-            'quark:jungle_chest',
-            'quark:warped_chest',
-            'quark:crimson_chest',
             'quarryplus:solidquarry',
             'quarryplus:workbenchplus',
             'mininggadgets:upgrade_empty',

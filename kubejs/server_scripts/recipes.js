@@ -168,13 +168,6 @@ events.listen('recipes', function(e) {
         'C': 'resourcefulbees:lava_honeycomb',
         'B': 'minecraft:bucket'
     })
-    kjsShaped('minecraft:chest', [
-        'LLL',
-        'L L',
-        'LLL'
-    ], {
-        'L': '#minecraft:logs'
-    }, 4)
     kjsShaped('appliedenergistics2:sky_stone_block', [
         'BSB',
         'SBS',
