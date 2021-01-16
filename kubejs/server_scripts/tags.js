@@ -225,6 +225,8 @@ onEvent('block.tags', e => {
     e.add('resourcefulbees:valid_apiary', [/^astralsorcery:marble_/, /^astralsorcery:black_marble_/, /^astralsorcery:infused_wood_/]);
     //Forbidden & Arcanus
     e.add('resourcefulbees:valid_apiary', /^forbidden_arcanus:[\w]*darkstone/);
+    //Glassential
+    e.add('resourcefulbees:valid_apiary', /^glassential:glass_/);
     //Create
     e.add('resourcefulbees:valid_apiary', [
         /^create:[\w]+_window/,
