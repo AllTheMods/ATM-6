@@ -102,6 +102,22 @@ events.listen('recipes', function(e) {
         G: '#forge:storage_blocks/gold',
         V: 'minecraft:villager_spawn_egg'
     })
+    e.shaped(item.of('enviromats:alabaster_magenta', 8), [
+        'AAA',
+        'AMA',
+        'AAA'
+    ], {
+        A: '#forge:alabaster',
+        M: '#forge:dyes/magenta'
+    })
+    e.shaped(item.of('minecraft:ladder', 4), [
+        'S S',
+        'SPS',
+        'S S'
+    ], {
+        S: '#forge:rods',
+        P: '#minecraft:planks'
+    })
     e.smelting(item.of('appliedenergistics2:certus_quartz_crystal'), '#forge:ores/certus_quartz').xp(1)
     e.smelting(item.of('minecraft:glass'), '#forge:sand').xp(.1)
     e.shapeless(item.of('minecraft:clay_ball', 4), 'minecraft:clay')
