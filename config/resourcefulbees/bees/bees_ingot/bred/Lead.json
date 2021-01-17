@@ -2,10 +2,11 @@
   "flower": "tag:forge:storage_blocks/lead",
   "maxTimeInHive": 800,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ato/lead_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#D0E4E1",
-    "primaryColor": "#D0E4E1"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false

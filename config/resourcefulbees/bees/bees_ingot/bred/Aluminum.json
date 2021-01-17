@@ -2,10 +2,11 @@
   "flower": "tag:forge:storage_blocks/aluminum",
   "hasHoneycomb": true,
   "maxTimeInHive": 800,
+  "baseLayerTexture": "ato/aluminum_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#C3CDD5",
-    "primaryColor": "#C3CDD5"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false
