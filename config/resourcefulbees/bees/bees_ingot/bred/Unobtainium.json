@@ -6,7 +6,8 @@
   "baseLayerTexture": "modium/unobtainium_bee",
   "ColorData": {
     "isBeeColored": false,
-    "honeycombColor": "#A62BE0"
+    "honeycombColor": "#A62BE0",
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false

@@ -2,10 +2,11 @@
   "flower": "tag:forge:storage_blocks/uranium",
   "maxTimeInHive": 800,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ato/uranium_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#A2F2A0",
-    "primaryColor": "#A2F2A0"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false

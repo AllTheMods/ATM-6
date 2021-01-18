@@ -2,10 +2,11 @@
   "flower": "tag:forge:storage_blocks/uraninite",
   "maxTimeInHive": 800,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ato/uraninite_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#00FC1A",
-    "primaryColor": "#00FC1A"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false
