@@ -2,11 +2,11 @@
   "flower": "tag:forge:storage_blocks/osmium",
   "maxTimeInHive": 800,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ato/osmium_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#BDCBD4",
-    "primaryColor": "#B3C3C9",
-    "secondaryColor": "#BDCBD4"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false

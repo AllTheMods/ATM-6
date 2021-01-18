@@ -2,10 +2,11 @@
   "flower": "tag:forge:storage_blocks/silver",
   "maxTimeInHive": 700,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ato/silver_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#D1E1EC",
-    "primaryColor": "#D1E1EC"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false
