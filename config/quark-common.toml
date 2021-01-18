@@ -121,7 +121,7 @@
 	"Tie Leads To Fences" = true
 	Turf = true
 	"Variant Bookshelves" = true
-	"Variant Chests" = true
+	"Variant Chests" = false
 	"Variant Ladders" = true
 	"Vertical Planks" = true
 	"Vertical Slabs" = true

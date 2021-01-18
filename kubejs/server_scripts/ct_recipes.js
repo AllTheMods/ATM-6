@@ -2,14 +2,6 @@ events.listen('recipes', function (e) {
     //Removals
     e.remove({
         output: [
-            'quark:oak_chest',
-            'quark:dark_oak_chest',
-            'quark:acacia_chest',
-            'quark:spruce_chest',
-            'quark:birch_chest',
-            'quark:jungle_chest',
-            'quark:warped_chest',
-            'quark:crimson_chest',
             'quarryplus:solidquarry',
             'quarryplus:workbenchplus',
             'mininggadgets:upgrade_empty',
@@ -423,14 +415,28 @@ events.listen('recipes', function (e) {
     })
     //Quark
     e.shapeless('minecraft:chest', '#forge:chests/wooden')
-    e.shapeless('quark:oak_chest', ['minecraft:oak_planks', '#forge:chests/wooden'])
-    e.shapeless('quark:dark_oak_chest', ['minecraft:dark_oak_planks', '#forge:chests/wooden'])
-    e.shapeless('quark:acacia_chest', ['minecraft:acacia_planks', '#forge:chests/wooden'])
-    e.shapeless('quark:spruce_chest', ['minecraft:spruce_planks', '#forge:chests/wooden'])
-    e.shapeless('quark:birch_chest', ['minecraft:birch_planks', '#forge:chests/wooden'])
-    e.shapeless('quark:jungle_chest', ['minecraft:jungle_planks', '#forge:chests/wooden'])
-    e.shapeless('quark:warped_chest', ['minecraft:warped_planks', '#forge:chests/wooden'])
-    e.shapeless('quark:crimson_chest', ['minecraft:crimson_planks', '#forge:chests/wooden'])
+    e.shapeless('minecraft:trapped_chest', '#forge:chests/trapped')
+
+    const quarkWoodTypes = ['oak', 'dark_oak', 'acacia', 'spruce', 'birch', 'jungle', 'warped', 'crimson'];
+    quarkWoodTypes.forEach(wood => {
+        e.shapeless('quark:' + wood + '_chest', ['minecraft:' + wood + '_planks', '#forge:chests/wooden']);
+        e.shapeless('quark:' + wood + '_trapped_chest', ['quark:' + wood + '_chest', 'minecraft:tripwire_hook']);
+    });
+
+    function buildQuarkChest(type, material) {
+        e.shaped('quark:' + type + '_chest', [
+            'aaa',
+            'a a',
+            'aaa'
+        ], {a: material});
+        e.shapeless('quark:' + type + '_trapped_chest', ['quark:' + type + '_chest', 'minecraft:tripwire_hook']);
+    }
+
+    buildQuarkChest('nether_brick', 'minecraft:nether_bricks');
+    buildQuarkChest('prismarine', 'minecraft:prismarine');
+    buildQuarkChest('mushroom', '#forge:mushroom_caps');
+    buildQuarkChest('purpur', 'minecraft:purpur_block');
+
     //BluePower
     //e.shapeless(item.of('bluepower:blue_alloy_ingot', 4), ['#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:ingots/silver'])
     //RFTools
