@@ -3,7 +3,6 @@
   "maxTimeInHive": 1900,
   "traits": ["nether"],
   "hasHoneycomb": true,
-  "isEnchanted" : true,
   "baseLayerTexture": "modium/modium_bee",
   "ColorData": {
     "isBeeColored": false,
