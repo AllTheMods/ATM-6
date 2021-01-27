@@ -2,10 +2,11 @@
   "flower": "tag:forge:storage_blocks/platinum",
   "maxTimeInHive": 800,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ato/platinum_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#A4EDFC",
-    "primaryColor": "#A4EDFC"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false

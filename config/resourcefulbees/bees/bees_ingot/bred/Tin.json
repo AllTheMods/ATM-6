@@ -2,10 +2,11 @@
   "flower": "tag:forge:storage_blocks/tin",
   "maxTimeInHive": 700,
   "hasHoneycomb": true,
+  "baseLayerTexture": "ato/tin_bee",
   "ColorData": {
-    "isBeeColored": true,
+    "isBeeColored": false,
     "honeycombColor": "#ECEDEE",
-    "primaryColor": "#ECEDEE"
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false

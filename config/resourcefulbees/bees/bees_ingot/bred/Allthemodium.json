@@ -6,7 +6,8 @@
   "baseLayerTexture": "modium/modium_bee",
   "ColorData": {
     "isBeeColored": false,
-    "honeycombColor": "#FCC50C"
+    "honeycombColor": "#FCC50C",
+    "modelType": "ORE"
   },
   "MutationData": {
     "hasMutation": false
