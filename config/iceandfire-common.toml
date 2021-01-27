@@ -1,4 +1,3 @@
-
 [general]
 	#How fast amphitheres fly.
 	#Range: 0.0 ~ 3.0
@@ -18,7 +17,7 @@
 	#Whether or not sea serpents can break weak blocks in their way
 	"Sea Serpent Griefing" = false
 	#True if pixie villages are allowed to spawn
-	"Spawn Pixies" = false
+	"Spawn Pixies" = true
 	#How many blocks away can cyclopes detect sheep. Note that increasing this could cause lag.
 	#Range: 1 ~ 10000
 	"Cyclopes Sheep Search Length" = 17
@@ -109,7 +108,7 @@
 	"Chickens Lay Rotten Eggs" = false
 	#size of pixie villages
 	#Range: 1 ~ 10000
-	"Pixie Village Size" = 5
+	"Pixie Village Size" = 25
 	#Maximum amphithere health
 	#Range: 1.0 ~ 10000.0
 	"Amphithere Max Health" = 500.0
@@ -203,7 +202,7 @@
 	"Hippogryph Spawn Weight" = 2
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Roost Chance" = 360
+	"Generate Dragon Roost Chance" = 60
 	#Maximum ghost attack strength.
 	#Range: 0.0 ~ 10000.0
 	"Ghost Attack Strength" = 20.0
@@ -230,7 +229,7 @@
 	"Glacier Spawn Weight" = 4
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Cave Chance" = 180
+	"Generate Dragon Cave Chance" = 80
 	#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 	#Range: 0 ~ 2
 	"Dragon Griefing" = 0
@@ -370,5 +369,5 @@
 	"Spawn Death Worms" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Spawn Pixies Chance" = 60
+	"Spawn Pixies Chance" = 20
 
