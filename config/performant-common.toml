@@ -1,0 +1,116 @@
+
+["Load balancing settings"]
+
+	# Load balancing is a mechanic which profiles and throttles down lagging entities, tileentities and event subscribers.
+	# It is used to prevent a certain laggy mob or block from lagging out the whole game. Since this is rather invasive and may cause the lagging
+	# entity/block to not work nicely it is only done once the game goes over the configured lagging threshold.
+	# Those thresholds as set in miliseconds, anything below 50ms is 20 TPS (1s = 1000ms, 1000 / 50 = 20).
+	# Above 50ms ticks is where your game starts to lag, as it hits 100% cpu and starts skipping ticks.
+	# This is where load balancing comes in and reduces the lag caused by specific entities and blocks.
+	# If you run into trouble with some of the entities or blocks not working correctly you can disable it here
+	#
+	["Load balancing settings"."Entity AI Load balancing settings"]
+		#Enables load balancing for entity AI. default = true
+		AILoadBalancing = true
+		#Mean tick time at which AI load balancing takes effect, 1000 / mean tick time = TPS. default: 55
+		#Range: 1 ~ 200
+		meanTickAITH = 55
+		#Whether to debug lagging entities and log offenders, requires load balancing to be enabled. default = true
+		logEntityAILag = true
+
+	["Load balancing settings"."Tile entities load balancing settings"]
+		#Enables Tile entity load balancing. default: true
+		TELoadBalancing = true
+		#Mean tick time at which load balancing takes effect, 1000 / mean tick time = TPS. default: 55
+		#Range: 1 ~ 200
+		meanTickTH = 55
+		#Enables debug log output for lagging tile entities, default = false
+		TEDebugOutput = false
+		#Requires TELoadBalancing = true. Enables dealing with lag caused by tile entities during chunk unload. This is normally not needed. default = false
+		TEUnloadLag = false
+
+	["Load balancing settings"."Event load balancing settings"]
+		#Enables event load balancing, this is mostly stuff which is happening outside entityAI/Tile entities on world ticks. default: true
+		eventLoadBalancing = false
+		#Mean tick time at which event load balancing takes effect, 1000 / mean tick time = TPS. default: 55
+		#Range: 1 ~ 200
+		meanTickEvent = 60
+		#Enables debug log output for lagging event subscribers, default = false
+		eventDebugOutput = true
+
+["Entity settings"]
+	#Entity density setting, determines how many entities are spawned overall. 1 = Vanilla default, 0.1 e.g 10x less than vanilla. 10 = 10x more than vanilla, default = 1
+	#Range: 0.01 ~ 100.0
+	entityDensity = 0.5
+	#Adapt entity speed to tps, makes entities struggle less with lag. default = true
+	adaptiveSpeed = true
+	#Entity spawn interval setting, determines how frequently entities are spawned overall. 1 = Vanilla default, default = 10
+	#Range: 1 ~ 1000
+	spawnInterval = 10
+	#Fix leash lag from entities on a leash, default = true
+	fixLeash = true
+	#Enables improved entity collision and movement calculations for any non item entity, default = true
+	fastCollisions = true
+	#Enables less laggy entity item pickup, default = true
+	noLagItemPickup = true
+	#Enables fast itemstack comparisons
+	fastItemCompare = true
+	#Enable faster pathfinding, default = true
+	fastPathFinding = true
+	#Enable fast inventory advancement triggers, many advancements based on items tend to lag the players, default = true
+	fastInventoryAdvancement = true
+	#Enable multithreading support for entities, requires fastCollisions to be enabled. default = true
+	multiEntities = true
+	#Disables block changes notifying all entity paths in the world, to possibly adjust their paths, disable with IE, incompat, default = true
+	disableNotifyOnBlockChange = true
+
+["Entity AI Settings"]
+	#Sets the tick interval in which non-running AI tasks are rechecked. Vanilla default is 1(starting with 1.13+), this mods suggested default is 4(as it was in 1.12)
+	#Range: 1 ~ 500
+	goalselectorrate = 4
+	#Enables a slower updated AI tempt goal, tempt is used e.g. for luring sheep with wheat. default = true
+	optimizeTempt = true
+	#Enables a slower updated AI avoid entity goal, avoid is used e.g. for villagers avoiding zombies so it constantly searches for mobs in the area. default = true
+	optimizeAvoid = true
+	#Enables a slower updated AI Panic entity goal, panic is used for chickens/other animals running away e.g. on fire. default = true
+	optimizePanic = true
+	#Enables a slower updated AI Breed entity goal, breed is used for searching nearby similar animals and doesnt have to be checked that often. default = true
+	optimizeBreed = true
+	#Enables a slower updated AI Fox find shelter goal, which causes too much load. default = true
+	slowFindShelter = true
+	#Fix chunkloading and lag caused by the block break goal, mostly used by zombies or endermen. default = true
+	fixBlockBreakGoal = true
+
+["General performance improvements settings"]
+	#Enable FPS improvements, default = true
+	betterFps = true
+	#Reduces crafting lag by caching recipe lookups, helps a lot with autocrafting/crafting related lag. default = true
+	cacheRecipes = true
+	#Enable fast spawn radius check, this makes entity spawn mechanics lag less. default = true
+	fastSpawnRadius = true
+	#Enable fast chunk block ticks, reduces lag on random block ticks in the world but keeps the same growth e.g. on crops. default = true
+	fastChunkBlocks = true
+	#Enable fast chunk save, unmodified chunks are saved a lot faster and cause less lag when saving to disk. default = true
+	fastChunkSave = true
+	#If true hoppers are causing less lag
+	fasterHoppers = true
+
+["Utility settings, debugging and other"]
+	#List of mobs disallowed from spawning: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
+	forbiddenMobs = []
+	#Set the max login timeout during connection in ticks. 20 ticks = 1 sec, default = 120 seconds
+	#Range: 600 ~ 20000
+	logintimeout = 2400
+	#Set the amount of items at which too many stacked items report their position. Default = 100 items
+	#Range: 2 ~ 1000
+	maxItems = 100
+	#Set the ingame disconnect timeout for disconnecting players. Default = 60sec
+	#Range: 15 ~ 400
+	disconnectTimeout = 60
+	#Disables the config reload during the game, can cause performance issues on some linux systems, default = false
+	disableConfigReload = false
+	#Enable printing of world/chunk saves for debugging purposes, those normally happen every 5minutes. default = false
+	printWorldSaves = false
+	#Enable various debugging error logs, like chunkloading etc. , default = false
+	debugOptionsEnabled = false
+
