@@ -108,7 +108,7 @@
 	"Chickens Lay Rotten Eggs" = false
 	#size of pixie villages
 	#Range: 1 ~ 10000
-	"Pixie Village Size" = 25
+	"Pixie Village Size" = 5
 	#Maximum amphithere health
 	#Range: 1.0 ~ 10000.0
 	"Amphithere Max Health" = 500.0
