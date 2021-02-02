@@ -23,3 +23,10 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+
+**Logs**
+Please use a paste site for logs, instead of putting the file directly in the issue, not only is this easier but also means we can view on mobile when we are not at our computers.
+Here's a list of some paste sites and their size limits:
+    https://pastebin.com/ 512KB
+    https://hastebin.com/ 400KB
+    https://gist.github.com/ 100MB Requires member (Free)
