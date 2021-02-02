@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-<!--  Questions without a pack version will be closed without comment.  -->
+<!--  Issues without a pack version will be closed without comment.  -->
