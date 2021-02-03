@@ -36,13 +36,6 @@ var refined = [
     `crafting_monitor`
 ];
 
-onEvent(`jei.information`, e => {
-    e.add(`allthemodium:molten_bluelava_bucket`, [`Soul Lava appears occasionally in the nether.`, `(Small source blocks only - no pools.)`]);
-    e.add(`allthemodium:allthemodium_ore`, [`Check all the oceans for Allthemodium.`, `(Y 5-45)`]);
-    e.add(`allthemodium:vibranium_ore`, [`Vibranium can be found in warped forests in the Nether.`, `(Y 80-127)`]);
-    e.add(`allthemodium:unobtainium_ore`, [`Unobtainium can be obtained from the Highland biomes in the End.`]);
-});
-
 onEvent(`jei.add.items`, e => {
     e.add([
         `minecraft:dragon_egg`
