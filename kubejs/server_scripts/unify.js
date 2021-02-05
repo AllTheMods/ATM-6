@@ -54,6 +54,12 @@ onEvent('recipes', e => {
                 output: `mekanism:shard_${name}`,
                 type: 'mekanism:injecting'
             });
+            //console.log("Removing injecting recipes for mekanism:crystals_" + name + " to mekanism:shard_" + name);
+            e.remove({
+                input: `#mekanism:crystals/${name}`,
+                output: `mekanism:shard_${name}`,
+                type: 'mekanism:injecting'
+            });
             /* Not working prior to KubeJS kubejs-1604.3.4.137-forge.jar, unnecessary currently.
                         console.log(`Removing injecting recipes for mekanism:crystals/${name} to mekanism:shard_${name}`);
                         e.remove({
