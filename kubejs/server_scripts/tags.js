@@ -218,7 +218,7 @@ onEvent('block.tags', e => {
     e.add('resourcefulbees:valid_apiary', ['quark:lit_lamp', 'quark:paper_wall', 'quark:paper_wall_big', 'quark:paper_wall_sakura']);
     e.add('mcwwindows:window', '/mcwwindows:.+_win/');
     e.add('misctags:concrete', '/minecraft:.+_concrete/');
-    e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']);//Regex to add a tag preventing moving by bag of yurting
+    e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']); //Regex to add a tag preventing moving by bag of yurting
     e.add('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/']); //, '/rftoolsbuilder:.+/', '^\\w+_glass$'
 
     //Astral Sorcery
@@ -238,7 +238,8 @@ onEvent('block.tags', e => {
         /^create:[\w]*gabbro/,
         /^create:[\w]*scoria/,
     ]);
-
+    //AE2
+    e.add('resourcefulbees:valid_apiary', ['appliedenergistics2:quartz_block']);
 
     //Removal
     e.removeAll('minecraft:enderman_holdable');
