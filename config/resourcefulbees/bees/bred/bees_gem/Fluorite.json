@@ -14,7 +14,7 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainOutput": "mekanism:fluorite_ore",
-        "mainOutputWeight": 0.66,
+        "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
         "secondaryOutput": "mekanism:fluorite_gem",
         "secondaryOutputWeight": 0.01,
@@ -25,8 +25,9 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "osmium",
-        "parent2": "lapis",
+        "breedChance": 0.8,
+        "parent1": "Osmium",
+        "parent2": "Lapis",
         "feedItem": "mekanism:fluorite_gem",
         "feedAmount": 6
     },

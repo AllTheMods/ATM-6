@@ -1,32 +1,32 @@
 {
   "flower": "tag:forge:storage_blocks/nether_star",
-  "maxTimeInHive": 1800,
+  "maxTimeInHive": 2400,
   "hasHoneycomb": true,
   "baseLayerTexture": "wither/wither_bee",
   "traits": ["nether", "wither"],
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#444444"
+      "isBeeColored": false,
+      "honeycombColor": "#444444"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:nether_star",
-    "mainOutputWeight": 0.01
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:nether_star",
+      "mainOutputWeight": 0.01
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Withered",
-    "parent2": "Ghost",
-    "feedItem": "tag:forge:nether_stars",
-    "feedAmount": 2
+      "isBreedable": true,
+      "parent1": "Withered",
+      "parent2": "Ghost",
+      "feedItem": "tag:forge:nether_stars",
+      "feedAmount": 2
   },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   }
 }

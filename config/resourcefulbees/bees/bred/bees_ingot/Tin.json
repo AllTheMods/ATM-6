@@ -1,31 +1,37 @@
 {
   "flower": "tag:forge:storage_blocks/tin",
-  "maxTimeInHive": 700,
+  "maxTimeInHive": 1200,
   "hasHoneycomb": true,
   "baseLayerTexture": "ato/tin_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#ECEDEE",
-    "modelType": "ORE"
+      "isBeeColored": false,
+      "honeycombColor": "#ECEDEE",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "alltheores:tin_ingot"
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_tin",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:tin_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "spawnInWorld": false
+      "spawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Crystal",
-    "parent2": "Rocky",
-    "feedItem": "tag:forge:nuggets/tin",
-    "feedAmount": 3
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Quartz",
+      "parent2": "Rocky",
+      "feedItem": "tag:forge:storage_blocks/tin",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

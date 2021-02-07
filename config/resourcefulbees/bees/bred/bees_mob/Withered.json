@@ -5,28 +5,28 @@
   "baseLayerTexture": "wither/wither_bee",
   "traits": ["nether", "wither"],
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#444444"
+      "isBeeColored": false,
+      "honeycombColor": "#444444"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:wither_skeleton_skull",
-    "mainOutputWeight": 0.1
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:wither_skeleton_skull",
+      "mainOutputWeight": 0.1
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Coal",
-    "parent2": "Skeleton",
-    "feedItem": "xreliquary:withered_rib",
-    "feedAmount": 2
+      "isBreedable": true,
+      "parent1": "Coal",
+      "parent2": "Skeleton",
+      "feedItem": "xreliquary:withered_rib",
+      "feedAmount": 2
   },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   }
 }

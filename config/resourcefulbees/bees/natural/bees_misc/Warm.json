@@ -1,25 +1,25 @@
 {
   "flower": "all",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 1200,
   "hasHoneycomb": false,
   "ColorData": {
-    "isBeeColored": true,
-    "primaryColor": "#BBBFBF"
+      "isBeeColored": true,
+      "primaryColor": "#BBBFBF"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": false
+      "hasCentrifugeOutput": false
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:cold"
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:cold"
   },
   "BreedData": {
-    "isBreedable": true
+      "isBreedable": true
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

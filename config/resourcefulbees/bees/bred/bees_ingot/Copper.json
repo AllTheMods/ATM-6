@@ -1,31 +1,37 @@
 {
   "flower": "tag:forge:storage_blocks/copper",
   "hasHoneycomb": true,
-  "maxTimeInHive": 800,
+  "maxTimeInHive": 1200,
   "baseLayerTexture": "ato/copper_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#D28868",
-    "modelType": "ORE"
+      "isBeeColored": false,
+      "honeycombColor": "#D28868",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "alltheores:copper_ingot"
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_copper",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:copper_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+      "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Crystal",
-    "parent2": "Rocky",
-    "feedItem": "tag:forge:nuggets/copper",
-    "feedAmount": 3
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Quartz",
+      "parent2": "Rocky",
+      "feedItem": "tag:forge:storage_blocks/copper",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

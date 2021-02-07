@@ -1,34 +1,36 @@
 {
-  "flower": "minecraft:water",
+  "flower": "minecraft:prismarine_bricks",
   "hasHoneycomb": true,
   "traits": ["can_swim"],
-  "maxTimeInHive": 800,
+  "maxTimeInHive": 1200,
   "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#8FC0AA",
-    "primaryColor": "#8FC0AA"
+      "isBeeColored": true,
+      "honeycombColor": "#8FC0AA",
+      "primaryColor": "#8FC0AA"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:prismarine_shard",
-    "secondaryOutput" : "minecraft:prismarine_crystals",
-    "bottleOutput": "pamhc2foodcore:freshwateritem",
-    "mainOutputCount": 3,
-    "secondaryOutputCount":2
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:prismarine_shard",
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "minecraft:prismarine_crystals",
+      "secondaryOutputWeight": 0.10,
+      "bottleOutput": "pamhc2foodcore:freshwateritem",
+      "mainOutputCount": 3,
+      "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:ocean"
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true,
-    "feedItem": "xreliquary:guardian_spike",
-    "feedAmount": 2
+      "isBreedable": true,
+      "feedItem": "xreliquary:guardian_spike",
+      "feedAmount": 2
   },
   "TraitData": {
-    "hasTraits": true
+      "hasTraits": true
   }
 }
