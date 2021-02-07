@@ -182,6 +182,7 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`solarflux`, `sp`, [6, 7, 8]);
     hideStuff(`quark`, `crate`, [`apple`, `carrot`, `beetroot`, `potato`]);
     hideStuff(`quark`, `block`, [`bamboo`, `charcoal`, `sugar_cane`]);
+    hideStuff(`eidolon`, `ore`, [`lead`]);
 });
 
 onEvent(`item.tooltip`, e => {
