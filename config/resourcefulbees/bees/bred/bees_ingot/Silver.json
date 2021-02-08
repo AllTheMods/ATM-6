@@ -1,31 +1,37 @@
 {
   "flower": "tag:forge:storage_blocks/silver",
-  "maxTimeInHive": 700,
+  "maxTimeInHive": 1200,
   "hasHoneycomb": true,
   "baseLayerTexture": "ato/silver_bee",
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#D1E1EC",
-    "modelType": "ORE"
+      "isBeeColored": false,
+      "honeycombColor": "#D1E1EC",
+      "modelType": "ORE"
   },
   "MutationData": {
-    "hasMutation": false
+      "hasMutation": false
   },
   "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "alltheores:silver_ingot"
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_silver",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:silver_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
   },
   "SpawnData": {
-    "spawnInWorld": false
+      "spawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "Iron",
-    "parent2": "Mason",
-    "feedItem": "tag:forge:nuggets/silver",
-    "feedAmount": 3
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Iron",
+      "parent2": "Mason",
+      "feedItem": "tag:forge:storage_blocks/silver",
+      "feedAmount": 3
   },
   "TraitData": {
-    "hasTraits": false
+      "hasTraits": false
   }
 }

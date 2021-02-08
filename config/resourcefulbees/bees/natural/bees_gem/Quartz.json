@@ -1,0 +1,36 @@
+{
+  "flower": "tag:forge:storage_blocks/quartz",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "traits": ["nether"],
+  "baseLayerTexture": "misc/quartz_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#D4CABA",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:nether_quartz_ore",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "minecraft:quartz",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:nether"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "tag:forge:storage_blocks/quartz",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

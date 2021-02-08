@@ -1,0 +1,37 @@
+{
+    "flower": "mekanism:fluorite_ore",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "misc/fluorite_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#d6aedd",
+        "modelType": "ORE"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "mekanism:fluorite_ore",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 1,
+        "secondaryOutput": "mekanism:fluorite_gem",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 2
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "breedChance": 0.8,
+        "parent1": "Osmium",
+        "parent2": "Lapis",
+        "feedItem": "mekanism:fluorite_gem",
+        "feedAmount": 6
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}
