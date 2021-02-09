@@ -120,6 +120,7 @@ events.listen('recipes', function(e) {
         P: '#minecraft:planks'
     })
     e.smelting(item.of('appliedenergistics2:certus_quartz_crystal'), '#forge:ores/certus_quartz').xp(1)
+    e.smelting(item.of('alltheores:platinum_ingot'), 'create:crushed_platinum_ore').xp(1)
     e.smelting(item.of('minecraft:glass'), '#forge:sand').xp(.1)
     e.shapeless(item.of('minecraft:clay_ball', 4), 'minecraft:clay')
     e.shapeless(item.of('minecraft:quartz', 4), 'minecraft:quartz_block')
