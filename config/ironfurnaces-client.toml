@@ -1,0 +1,9 @@
+
+#Update Checker Settings
+[updates]
+
+	[updates.check_updates]
+		# true = check for updates, false = don't check for updates.
+		# Default: true.
+		updates = false
+
