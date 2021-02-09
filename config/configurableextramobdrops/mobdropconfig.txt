@@ -82,7 +82,7 @@
 'iceandfire:stone_statue' : '',
 'iceandfire:gorgon' : '',
 'iceandfire:pixie' : '',
-'iceandfire:cyclops' : '',
+'iceandfire:cyclops' : '{id:"forbidden_arcanus:spectral_eye_amulet",Count:1b,tag:{dropchance:0.5d,Deactivated:0b}}',
 'iceandfire:siren' : '',
 'iceandfire:hippocampus' : '',
 'iceandfire:deathworm' : '',
