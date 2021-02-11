@@ -1,0 +1,34 @@
+{
+  "flower": "tag:minecraft:leaves",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "primaryColor": "#06B805",
+      "honeycombColor": "#06B805"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "mysticalagriculture:nature_essence",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "mysticalagriculture:nature_essence",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:forest"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "tag:minecraft:leaves",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

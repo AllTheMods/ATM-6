@@ -1,0 +1,34 @@
+{
+  "flower": "tag:forge:bone_block",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "skeleton/skeleton_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#F6F2E6"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:bone",
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "minecraft:bone_meal",
+      "secondaryOutputWeight": 0.5,
+      "secondaryOutputCount": 3
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:overworld",
+      "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "xreliquary:rib_bone",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

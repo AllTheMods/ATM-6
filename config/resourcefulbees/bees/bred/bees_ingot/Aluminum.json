@@ -1,0 +1,37 @@
+{
+  "flower": "tag:forge:storage_blocks/aluminum",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 1200,
+  "baseLayerTexture": "ato/aluminum_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#C3CDD5",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_aluminum",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:aluminum_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "canSpawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Quartz",
+      "parent2": "Rocky",
+      "feedItem": "tag:forge:storage_blocks/aluminum",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "flower": "tag:forge:storage_blocks/platinum",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/platinum_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#A4EDFC",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_platinum",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:platinum_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "spawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Ender",
+      "parent2": "Gold",
+      "feedItem": "tag:forge:storage_blocks/platinum",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

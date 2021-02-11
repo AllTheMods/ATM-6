@@ -1,0 +1,36 @@
+{
+  "flower": "tag:forge:storage_blocks/unobtainium",
+  "maxTimeInHive": 4800,
+  "traits": ["nether"],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "modium/unobtainium_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "isEnchanted": true,
+      "honeycombColor": "#A62BE0",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "allthemodium:unobtainium_nugget",
+      "mainOutputWeight": 0.02,
+      "mainOutputCount": 1
+  },
+  "SpawnData": {
+      "spawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.6,
+      "parent1": "Vibranium",
+      "parent2": "Allthemodium",
+      "feedItem": "tag:forge:storage_blocks/unobtainium",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

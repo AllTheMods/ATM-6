@@ -1,0 +1,36 @@
+{
+    "flower": "tag:minecraft:logs",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "ColorData": {
+        "isBeeColored": true,
+        "primaryColor": "#453B2A",
+        "honeycombColor": "#453B2A"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "mysticalagriculture:wood_essence",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 2,
+        "secondaryOutput": "minecraft:apple",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 1,
+        "bottleOutput": "pamhc2foodcore:applejuiceitem",
+        "bottleOutputWeight": 0.01
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:forest"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:minecraft:logs",
+        "feedAmount": 4
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

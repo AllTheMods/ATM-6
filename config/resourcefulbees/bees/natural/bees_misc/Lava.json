@@ -1,0 +1,34 @@
+{
+  "flower": "minecraft:lava",
+  "maxTimeInHive": 1200,
+  "traits": ["nether"],
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "primaryColor": "#DB4819",
+      "honeycombColor": "#DB4819",
+      "isGlowing": true,
+      "glowColor": "#DB4819"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:lava",
+      "mainOutputCount": 1000,
+      "hasFluidOutput": true
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:nether"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:lava_bucket",
+      "feedAmount": 1
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

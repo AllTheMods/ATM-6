@@ -1,0 +1,36 @@
+{
+  "flower": "tag:forge:storage_blocks/allthemodium",
+  "maxTimeInHive": 4800,
+  "traits": ["nether"],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "modium/modium_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "isEnchanted": true,
+      "honeycombColor": "#FCC50C",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "allthemodium:allthemodium_nugget",
+      "mainOutputWeight": 0.02,
+      "mainOutputCount": 1
+  },
+  "SpawnData": {
+      "spawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.6,
+      "parent1": "Netherite",
+      "parent2": "Wither",
+      "feedItem": "tag:forge:storage_blocks/allthemodium",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

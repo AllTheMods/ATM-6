@@ -1,0 +1,41 @@
+{
+  "flower": "tag:misctags:flowers/draconic_flowers",
+  "maxTimeInHive": 4800,
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "isGlowing": true,
+      "modelType": "DRAGON",
+      "primaryLayerTexture": "dragon/dragon_bee_primary",
+      "secondaryLayerTexture": "dragon/dragon_bee_secondary",
+      "emissiveLayerTexture": "dragon/dragon_bee_emissive",
+      "primaryColor": "#222222",
+      "secondaryColor": "#171717",
+      "glowColor": "#E400FF",
+      "honeycombColor": "#E400FF"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:dragon_egg",
+      "mainOutputWeight": 0.01,
+      "bottleOutput": "minecraft:dragon_breath",
+      "bottleOutputWeight": 0.10
+  },
+  "SpawnData": {
+      "spawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.6,
+      "parent1": "Ender",
+      "parent2": "Wither",
+      "feedItem": "minecraft:end_crystal",
+      "feedAmount": 4
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

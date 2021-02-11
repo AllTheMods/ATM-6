@@ -1,0 +1,32 @@
+{
+  "flower": "tag:forge:obsidian",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "honeycombColor": "#211B20",
+      "primaryColor": "#211B20"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:obsidian",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1
+  },
+  "SpawnData": {
+      "canSpawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "parent1": "Water",
+      "parent2": "Lava",
+      "feedItem": "minecraft:obsidian",
+      "feedAmount": 2
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

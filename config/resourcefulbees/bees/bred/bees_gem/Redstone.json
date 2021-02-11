@@ -1,0 +1,37 @@
+{
+    "flower": "minecraft:redstone_block",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/redstone/redstone_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#aa0f01",
+        "modelType": "ORE"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:redstone_ore",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 1,
+        "secondaryOutput": "minecraft:redstone",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 2
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "breedChance": 0.8,
+        "parent1": "Glowing",
+        "parent2": "Rocky",
+        "feedItem": "minecraft:redstone_block",
+        "feedAmount": 3
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

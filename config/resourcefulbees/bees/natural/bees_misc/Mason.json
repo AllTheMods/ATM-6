@@ -1,0 +1,35 @@
+{
+  "flower": "tag:forge:storage_blocks/clay",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "primaryColor": "#48544F",
+      "honeycombColor": "#48544F"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:clay_ball",
+      "secondaryOutput": "minecraft:brick",
+      "mainOutputCount": 3,
+      "mainOutputWeight": 0.50,
+      "secondaryOutputCount": 2,
+      "secondaryOutputWeight": 0.8
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:overworld",
+      "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "tag:forge:storage_blocks/clay",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

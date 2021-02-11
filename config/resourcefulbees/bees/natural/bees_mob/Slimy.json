@@ -1,0 +1,34 @@
+{
+    "flower": "tag:misctags:flowers/swamp_flowers",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "slime/slime_bee",
+    "ColorData": {
+        "modelType": "GELATINOUS",
+        "gelLayerTexture": "/slime/slime_gel_Layer",
+        "honeycombColor": "#1ad920"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:slime_ball",
+        "mainOutputCount": 2,
+        "mainOutputWeight": 0.50,
+        "secondaryOutput": "xreliquary:slime_pearl",
+        "secondaryOutputWeight": 0.05
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:swamp"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "xreliquary:slime_pearl",
+        "feedAmount": 3
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

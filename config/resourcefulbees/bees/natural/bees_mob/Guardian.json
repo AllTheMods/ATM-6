@@ -1,0 +1,36 @@
+{
+  "flower": "minecraft:prismarine_bricks",
+  "hasHoneycomb": true,
+  "traits": ["can_swim"],
+  "maxTimeInHive": 1200,
+  "ColorData": {
+      "isBeeColored": true,
+      "honeycombColor": "#8FC0AA",
+      "primaryColor": "#8FC0AA"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:prismarine_shard",
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "minecraft:prismarine_crystals",
+      "secondaryOutputWeight": 0.10,
+      "bottleOutput": "pamhc2foodcore:freshwateritem",
+      "mainOutputCount": 3,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:ocean"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "xreliquary:guardian_spike",
+      "feedAmount": 2
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

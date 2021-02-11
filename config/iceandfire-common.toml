@@ -1,3 +1,4 @@
+
 [general]
 	#How fast amphitheres fly.
 	#Range: 0.0 ~ 3.0
@@ -202,13 +203,13 @@
 	"Hippogryph Spawn Weight" = 2
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Roost Chance" = 60
+	"Generate Dragon Roost Chance" = 800
 	#Maximum ghost attack strength.
 	#Range: 0.0 ~ 10000.0
 	"Ghost Attack Strength" = 20.0
 	#One out of this number chance per chunk to generate a hydra cave.
 	#Range: 1 ~ 10000
-	"Hydra Caves Gen Chance" = 100
+	"Hydra Caves Gen Chance" = 1000
 	#Every interval of this number in ticks, dragon allowed to break blocks.
 	#Range: 0 ~ 10000
 	"Dragon Block Break Cooldown" = 5
@@ -229,7 +230,7 @@
 	"Glacier Spawn Weight" = 4
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Cave Chance" = 80
+	"Generate Dragon Cave Chance" = 800
 	#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 	#Range: 0 ~ 2
 	"Dragon Griefing" = 0

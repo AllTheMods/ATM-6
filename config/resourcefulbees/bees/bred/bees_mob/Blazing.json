@@ -1,0 +1,37 @@
+{
+  "flower": "botania:blaze_block",
+  "maxTimeInHive": 1200,
+  "traits": ["blaze", "nether"],
+  "hasHoneycomb": true,
+  "ColorData": {
+      "isBeeColored": true,
+      "honeycombColor": "#BD5900",
+      "primaryColor": "#BD5900"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:blaze_rod",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "minecraft:blaze_powder",
+      "secondaryOutputWeight": 0.10,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "canSpawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Magma",
+      "parent2": "Skeleton",
+      "feedItem": "xreliquary:molten_core",
+      "feedAmount": 4
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

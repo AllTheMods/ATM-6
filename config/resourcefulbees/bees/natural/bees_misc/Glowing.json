@@ -1,0 +1,34 @@
+{
+  "flower": "tag:misctags:flowers/glowing_flowers",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "traits": ["nether", "pigman"],
+  "ColorData": {
+      "isBeeColored": true,
+      "honeycombColor": "#F1ED95",
+      "primaryColor": "#D6D30D",
+      "isGlowing": true,
+      "glowColor": "#D6D30D"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:glowstone_dust",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 3
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:nether"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "tag:misctags:flowers/glowing_flowers",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

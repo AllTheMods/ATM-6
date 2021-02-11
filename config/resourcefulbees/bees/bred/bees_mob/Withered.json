@@ -1,0 +1,32 @@
+{
+  "flower": "tag:minecraft:wither_summon_base_blocks",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "wither/wither_bee",
+  "traits": ["nether", "wither"],
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#444444"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:wither_skeleton_skull",
+      "mainOutputWeight": 0.1
+  },
+  "SpawnData": {
+      "canSpawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "parent1": "Coal",
+      "parent2": "Skeleton",
+      "feedItem": "xreliquary:withered_rib",
+      "feedAmount": 2
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

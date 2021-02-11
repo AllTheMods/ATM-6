@@ -1,0 +1,37 @@
+{
+  "flower": "tag:forge:storage_blocks/uranium",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/uranium_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#fff37f",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_uranium",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:uranium_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "spawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Iron",
+      "parent2": "Creeper",
+      "feedItem": "tag:forge:storage_blocks/uranium",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}

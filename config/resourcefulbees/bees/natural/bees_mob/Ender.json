@@ -1,0 +1,34 @@
+{
+  "flower": "minecraft:purpur_block",
+  "hasHoneycomb": true,
+  "traits": ["ender"],
+  "maxTimeInHive": 1200,
+  "ColorData": {
+      "isBeeColored": true,
+      "honeycombColor": "#339786",
+      "primaryColor": "#339786",
+      "secondaryColor": "#303030"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:ender_pearl",
+      "mainOutputWeight": 0.50,
+      "bottleOutput": "botania:ender_air_bottle",
+      "bottleOutputWeight": 0.01
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:end"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "xreliquary:nebulous_heart",
+      "feedAmount": 4
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "flower": "tag:forge:storage_blocks/gunpowder",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "/creeper/creeper_bee",
+  "traits": ["creeper"],
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#0C9F0A",
+      "isGlowing": true,
+      "glowColor": "#E2D3D3",
+      "glowingPulse": 2,
+      "emissiveLayerTexture": "/creeper/creeper_bee_emissive"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:gunpowder",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 4
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:overworld",
+      "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "xreliquary:catalyzing_gland",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

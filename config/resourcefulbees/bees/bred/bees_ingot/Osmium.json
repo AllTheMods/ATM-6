@@ -1,0 +1,37 @@
+{
+  "flower": "tag:forge:storage_blocks/osmium",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/osmium_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#BDCBD4",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "alltheores:ore_osmium",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "alltheores:osmium_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "spawnInWorld": false
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "breedChance": 0.8,
+      "parent1": "Iron",
+      "parent2": "Lapis",
+      "feedItem": "tag:forge:storage_blocks/osmium",
+      "feedAmount": 3
+  },
+  "TraitData": {
+      "hasTraits": false
+  }
+}
