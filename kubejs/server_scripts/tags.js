@@ -238,8 +238,8 @@ onEvent('block.tags', e => {
         /^create:[\w]*gabbro/,
         /^create:[\w]*scoria/,
     ]);
-    //AE2
-    e.add('resourcefulbees:valid_apiary', ['appliedenergistics2:quartz_block']);
+    //Flowers
+    e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay' ,'minecraft:water','appliedenergistics2:quartz_block']);
 
     //Removal
     e.removeAll('minecraft:enderman_holdable');
