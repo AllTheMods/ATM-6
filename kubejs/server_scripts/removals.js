@@ -18,7 +18,10 @@ events.listen('recipes', e => {
 
         'engineerstools:crushing/aluminium_grit_crushing_recipe',
 
-        'xreliquary:alkahestry/crafting/nether_star'
+        'xreliquary:alkahestry/crafting/nether_star',
+
+        'thermal:machine/press/packing2x2/press_honeycomb_packing',
+        'thermal:machine/press/unpacking/press_honeycomb_unpacking'
     ];
     idRemove.forEach(iR => {
         e.remove({
