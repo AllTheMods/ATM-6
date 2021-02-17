@@ -14,7 +14,7 @@
 	"Cyclops Max Health" = 5500.0
 	#Dread Lich spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Lich Spawn Weight" = 2
+	"Lich Spawn Weight" = 2000
 	#Whether or not sea serpents can break weak blocks in their way
 	"Sea Serpent Griefing" = false
 	#True if pixie villages are allowed to spawn
@@ -191,7 +191,7 @@
 	"Ghost Max Health" = 300.0
 	#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from spawn(0, 0).
 	#Range: 1 ~ 10000
-	"Dangerous World Gen Dist From Spawn" = 800
+	"Dangerous World Gen Dist From Spawn" = 10
 	#Damage dealt from a successful lightning breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 	#Range: 0.0 ~ 10000.0
 	"Dragon Attack Damage(Lightning breath)" = 85.0
@@ -203,13 +203,13 @@
 	"Hippogryph Spawn Weight" = 2
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Roost Chance" = 800
+	"Generate Dragon Roost Chance" = 1
 	#Maximum ghost attack strength.
 	#Range: 0.0 ~ 10000.0
 	"Ghost Attack Strength" = 20.0
 	#One out of this number chance per chunk to generate a hydra cave.
 	#Range: 1 ~ 10000
-	"Hydra Caves Gen Chance" = 1000
+	"Hydra Caves Gen Chance" = 100
 	#Every interval of this number in ticks, dragon allowed to break blocks.
 	#Range: 0 ~ 10000
 	"Dragon Block Break Cooldown" = 5
@@ -230,7 +230,7 @@
 	"Glacier Spawn Weight" = 4
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Cave Chance" = 800
+	"Generate Dragon Cave Chance" = 1
 	#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 	#Range: 0 ~ 2
 	"Dragon Griefing" = 0
@@ -245,7 +245,7 @@
 	"Death Worms Target Monsters" = false
 	#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from the last generated structure.
 	#Range: 1 ~ 10000
-	"Dangerous World Gen Dist Seperation" = 3000
+	"Dangerous World Gen Dist Seperation" = 1500
 	#True if dragons fire/ice charges create secondary explosions that launch blocks everywhere. Turn this to true if you like unfair explosions. Or lag.
 	"Explosive Dragon Breath" = false
 	#Maximum threads to use for dragon/myrmex pathfinding. Increase this number if pathing is slow and you have many cores.
