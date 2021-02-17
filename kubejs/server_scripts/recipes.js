@@ -201,6 +201,35 @@ events.listen('recipes', function(e) {
     ], {
         'F': 'minecraft:rotten_flesh',
     })
+    kjsShaped('ctiers:centrifuge_casing_tier_creative', [
+        'IRG',
+        'RTR',
+        'DCE'
+    ], {
+        'I': '#ctiers:quadruple_compressed_iron_blocks',
+        'R': 'minecraft:redstone',
+        'G': '#ctiers:quadruple_compressed_gold_blocks',
+        'T': 'ctiers:centrifuge_casing_tier_5',
+        'D': '#ctiers:quadruple_compressed_diamond_blocks',
+        'E': '#ctiers:quadruple_compressed_emerald_blocks',
+        'C': 'mysticalagradditions:creative_essence'
+
+    }, 3)
+    kjsShaped('ctiers:centrifuge_controller_tier_creative', [
+        'ICG',
+        'STS',
+        'DPE'
+    ], {
+        'I': '#ctiers:sextuple_compressed_iron_blocks',
+        'C': 'ctiers:centrifuge_casing_tier_creative',
+        'G': '#ctiers:sextuple_compressed_gold_blocks',
+        'T': 'ctiers:centrifuge_controller_tier_5',
+        'S': 'atmadditions:dragon_soul',
+        'D': '#ctiers:sextuple_compressed_diamond_blocks',
+        'E': '#ctiers:sextuple_compressed_emerald_blocks',
+        'P': 'minecraft:ender_pearl'
+
+    }, )
     e.recipes.industrialforegoing.dissolution_chamber({
         input: [{
             tag: 'minecraft:planks'
