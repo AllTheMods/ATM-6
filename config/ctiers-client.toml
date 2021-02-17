@@ -1,0 +1,61 @@
+#
+#Centrifuge Tier 3 output Multiplier
+#Range: 1 ~ 150
+centrifugeTier3Mutliplier = 1
+#
+#Centrifuge Tier 4 output Multiplier
+#Range: 1 ~ 150
+centrifugeTier4Mutliplier = 1
+#
+#Centrifuge Tier 5 output Multiplier
+#Range: 1 ~ 150
+centrifugeTier5Mutliplier = 1
+#
+#Centrifuge Tier output Multiplier
+#Range: 1 ~ 150
+centrifugeTierCreativeMutliplier = 5
+#
+#Centrifuge Tier 3 Recipe Time 
+#The Value Multiplies the Recipe Time
+#Range: 0.001 ~ 100.0
+centrifugeTier3RecipeTime = 0.333
+#
+#Centrifuge Tier 4 Recipe Time 
+#The Value Multiplies the Recipe Time
+#Range: 0.001 ~ 100.0
+centrifugeTier4RecipeTime = 0.25
+#
+#Centrifuge Tier 5 Recipe Time 
+#The Value Multiplies the Recipe Time
+#Range: 0.001 ~ 100.0
+centrifugeTier5RecipeTime = 0.125
+#
+#Centrifuge Tier Recipe Time 
+#The Value is the Tick for the Recipe Time
+#Range: 1 ~ 500
+centrifugeTierCreativeRecipeTime = 1
+#
+#Centrifuge Tier 3 RF per Block Multiplier
+#Range: 1 ~ 1000
+centrifugeTier3RFPerBlockMutliplier = 2
+#
+#Centrifuge Tier 4 RF per Block Multiplier
+#Range: 1 ~ 1000
+centrifugeTier4RFPerBlockMutliplier = 4
+#
+#Centrifuge Tier 5 RF per Block Multiplier
+#Range: 1 ~ 1000
+centrifugeTier5RFPerBlockMutliplier = 8
+#
+#Centrifuge Tier 3 RF Capacity Multiplier
+#Range: 1 ~ 1500
+centrifugeTier3CapacityMutliplier = 20
+#
+#Centrifuge Tier 4 RF Capacity Multiplier
+#Range: 1 ~ 1500
+centrifugeTier4CapacityMutliplier = 40
+#
+#Centrifuge Tier 5 RF Capacity Multiplier
+#Range: 1 ~ 1500
+centrifugeTier5CapacityMutliplier = 80
+
