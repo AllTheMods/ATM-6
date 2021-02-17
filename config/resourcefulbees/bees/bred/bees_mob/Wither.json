@@ -21,6 +21,7 @@
   },
   "BreedData": {
       "isBreedable": true,
+      "breedChance": 0.6,
       "parent1": "Withered",
       "parent2": "Ghost",
       "feedItem": "tag:forge:nether_stars",
