@@ -21,8 +21,6 @@ events.listen('recipes', e => {
         'xreliquary:alkahestry/crafting/nether_star',
 
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
-
-        'thermal:machine/press/unpacking/press_honeycomb_unpacking',
         'thermal:machine/press/unpacking/press_honeycomb_unpacking',
         
         'ctiers:centrifuge_casing_tier_creative',
