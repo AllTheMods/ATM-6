@@ -58,4 +58,7 @@ centrifugeTier4CapacityMutliplier = 40
 #Centrifuge Tier 5 RF Capacity Multiplier
 #Range: 1 ~ 1500
 centrifugeTier5CapacityMutliplier = 80
-
+#
+#Centrifuge Tier Creative 3x3x3 Size 
+#Should it be 3x3x3?
+centrifugeTierCreativeSize = false
