@@ -63,7 +63,7 @@
 	"Intelligent Dragon Pathfinding" = false
 	#Cockatrice spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Cockatrice Spawn Weight" = 400
+	"Cockatrice Spawn Weight" = 200
 	#True to make the screen pink when sirens attract players
 	"Use Siren Shader" = false
 	#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
@@ -96,7 +96,7 @@
 	"Generate Dragon Caves" = true
 	#How high stymphalian birds can fly, in Y height.
 	#Range: > 10
-	"Max Stymphalian Bird Flight Height" = 80
+	"Max Stymphalian Bird Flight Height" = 200
 	#Whitelist mob spawn (troll, hippogryph, etc) dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
 	blacklistDimensions = ["allthemodium:the_other"]
 	#1 out of this number chance per chunk for generation
@@ -203,13 +203,13 @@
 	"Hippogryph Spawn Weight" = 2
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Roost Chance" = 1
+	"Generate Dragon Roost Chance" = 20
 	#Maximum ghost attack strength.
 	#Range: 0.0 ~ 10000.0
 	"Ghost Attack Strength" = 20.0
 	#One out of this number chance per chunk to generate a hydra cave.
 	#Range: 1 ~ 10000
-	"Hydra Caves Gen Chance" = 100
+	"Hydra Caves Gen Chance" = 10
 	#Every interval of this number in ticks, dragon allowed to break blocks.
 	#Range: 0 ~ 10000
 	"Dragon Block Break Cooldown" = 5
@@ -230,7 +230,7 @@
 	"Glacier Spawn Weight" = 4
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Cave Chance" = 1
+	"Generate Dragon Cave Chance" = 10
 	#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 	#Range: 0 ~ 2
 	"Dragon Griefing" = 0
@@ -245,7 +245,7 @@
 	"Death Worms Target Monsters" = false
 	#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from the last generated structure.
 	#Range: 1 ~ 10000
-	"Dangerous World Gen Dist Seperation" = 1500
+	"Dangerous World Gen Dist Seperation" = 3000
 	#True if dragons fire/ice charges create secondary explosions that launch blocks everywhere. Turn this to true if you like unfair explosions. Or lag.
 	"Explosive Dragon Breath" = false
 	#Maximum threads to use for dragon/myrmex pathfinding. Increase this number if pathing is slow and you have many cores.
