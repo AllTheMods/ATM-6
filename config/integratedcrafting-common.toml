@@ -25,3 +25,8 @@
 		#If the version checker should be enabled.
 		versionChecker = false
 
+[item]
+
+	[item.on_the_dynamics_of_integration]
+		#If the info book should automatically obtained when the player first spawns.
+		obtainOnSpawn = false
