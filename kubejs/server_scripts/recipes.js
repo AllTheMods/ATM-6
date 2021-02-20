@@ -46,21 +46,6 @@ events.listen('recipes', function(e) {
 
     //Powah recipes
     energize([{
-        tag: 'forge:ingots/allthemodium'
-    }, {
-        tag: 'forge:ingots/unobtainium'
-    }], 'allthemodium:unobtainium_allthemodium_alloy_ingot', 1, 50000)
-    energize([{
-        tag: 'forge:ingots/vibranium'
-    }, {
-        tag: 'forge:ingots/allthemodium'
-    }], 'allthemodium:vibranium_allthemodium_alloy_ingot', 1, 50000)
-    energize([{
-        tag: 'forge:ingots/vibranium'
-    }, {
-        tag: 'forge:ingots/unobtainium'
-    }], 'allthemodium:unobtainium_vibranium_alloy_ingot', 1, 50000)
-    energize([{
         tag: 'forge:storage_blocks/iron'
     }, {
         tag: 'forge:storage_blocks/gold'
