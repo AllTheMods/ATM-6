@@ -1,8 +1,6 @@
 {
   "biomes": [
       "minecraft:desert",
-      "minecraft:nether_wastes",
-      "minecraft:the_end",
       "minecraft:desert_hills",
       "minecraft:badlands",
       "minecraft:wooded_badlands_plateau",

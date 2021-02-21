@@ -3,20 +3,6 @@
         "byg:enchanted_forest",
         "byg:enchanted_forest_hills",
         "byg:enchanted_grove",
-        "byg:ancient_forest",
-        "byg:crag_gardens",
-        "byg:glowshroom_bayou",
-        "byg:tropical_fungal_forest",
-        "byg:twilight_valley",
-        "byg:weeping_witch_forest",
-        "byg:woodlands",
-        "byg:flowering_ancient_forest",
-        "byg:flowering_enchanted_grove",
-        "byg:fungal_patch",
-        "byg:glowing_ancient_forest",
-        "byg:pumpkin_forest",
-        "byg:tropical_fungal_rainforest_hills",
-        "byg:twilight_valley_hills",
-        "byg:weeping_witch_clearing"
+        "byg:ancient_forest"
     ]
 }

@@ -1,7 +1,6 @@
 {
   "biomes": [
       "minecraft:desert",
-      "minecraft:nether_wastes",
       "minecraft:desert_hills",
       "minecraft:jungle",
       "minecraft:jungle_hills",
