@@ -1,13 +1,30 @@
 {
-  "biomes": [
-    "minecraft:jungle",
-    "minecraft:jungle_hills",
-    "minecraft:dark_forest",
-    "minecraft:modified_jungle",
-    "minecraft:tall_birch_forest",
-    "minecraft:tall_birch_hills",
-    "minecraft:dark_forest_hills",
-    "minecraft:giant_spruce_taiga",
-    "minecraft:giant_spruce_taiga_hills"
-  ]
+    "biomes": [
+        "minecraft:jungle",
+        "minecraft:jungle_hills",
+        "minecraft:dark_forest",
+        "minecraft:modified_jungle",
+        "minecraft:tall_birch_forest",
+        "minecraft:tall_birch_hills",
+        "minecraft:dark_forest_hills",
+        "minecraft:giant_spruce_taiga",
+        "minecraft:giant_spruce_taiga_hills",
+        "byg:ebony_woods",
+        "byg:guiana_shield",
+        "byg:mangrove_marshes",
+        "byg:redwood_tropics",
+        "byg:stone_forest",
+        "byg:tropical_fungal_forest",
+        "byg:tropical_rainforest",
+        "byg:woodlands",
+        "byg:araucaria_forest",
+        "byg:bamboo_forest",
+        "byg:ebony_hills",
+        "byg:flowering_ancient_forest",
+        "byg:fungal_patch",
+        "byg:glowing_ancient_forest",
+        "byg:jacaranda_forest_hills",
+        "byg:tropical_fungal_rainforest_hills",
+        "byg:tropical_rainforest_hills"
+    ]
 }

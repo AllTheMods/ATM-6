@@ -1,9 +1,19 @@
 {
-  "biomes": [
-    "minecraft:jungle",
-    "minecraft:jungle_hills",
-    "minecraft:jungle_edge",
-    "minecraft:modified_jungle",
-    "minecraft:modified_jungle_edge"
-  ]
+    "biomes": [
+        "minecraft:jungle",
+        "minecraft:jungle_hills",
+        "minecraft:jungle_edge",
+        "minecraft:modified_jungle",
+        "minecraft:modified_jungle_edge",
+        "byg:crag_gardens",
+        "byg:guiana_shield",
+        "byg:tropical_fungal_forest",
+        "byg:tropical_rainforest",
+        "byg:fungal_patch",
+        "byg:guiana_clearing",
+        "byg:jacaranda_clearing",
+        "byg:jacaranda_forest_hills",
+        "byg:tropical_fungal_rainforest_hills",
+        "byg:tropical_rainforest_hills"
+    ]
 }
