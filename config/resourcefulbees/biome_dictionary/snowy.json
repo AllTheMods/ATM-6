@@ -1,12 +1,31 @@
 {
-  "biomes": [
-    "minecraft:frozen_ocean",
-    "minecraft:frozen_river",
-    "minecraft:snowy_tundra",
-    "minecraft:snowy_mountains",
-    "minecraft:snowy_taiga",
-    "minecraft:snowy_taiga_hills",
-    "minecraft:ice_spikes",
-    "minecraft:snowy_taiga_mountains"
-  ]
+    "biomes": [
+        "minecraft:frozen_ocean",
+        "minecraft:frozen_river",
+        "minecraft:snowy_tundra",
+        "minecraft:snowy_mountains",
+        "minecraft:snowy_taiga",
+        "minecraft:snowy_taiga_hills",
+        "minecraft:ice_spikes",
+        "minecraft:snowy_taiga_mountains",
+        "byg:lush_tundra",
+        "byg:shattered_glacier",
+        "byg:snowy_coniferous_forest",
+        "byg:snowy_deciduous_forest",
+        "byg:snowy_evergreen_taiga",
+        "byg:alpine_foothills",
+        "byg:bluff_peaks",
+        "byg:frozen_lake",
+        "byg:northern_forest",
+        "byg:snowy_black_beach",
+        "byg:snowy_blue_giant_taiga",
+        "byg:snowy_blue_taiga_hills",
+        "byg:snowy_coniferous_clearing",
+        "byg:snowy_coniferous_forest_hills",
+        "byg:snowy_deciduous_clearing",
+        "byg:snowy_deciduous_forest_hills",
+        "byg:snowy_evergreen_clearing",
+        "byg:snowy_evergreen_hills",
+        "byg:snowy_rocky_black_beach"
+    ]
 }
