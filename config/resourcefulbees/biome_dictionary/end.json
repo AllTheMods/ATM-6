@@ -1,9 +1,22 @@
 {
   "biomes": [
-      "minecraft:the_end",
-      "minecraft:small_end_islands",
-      "minecraft:end_midlands",
-      "minecraft:end_highlands",
-      "minecraft:end_barrens"
+    "minecraft:the_end",
+    "minecraft:small_end_islands",
+    "minecraft:end_midlands",
+    "minecraft:end_highlands",
+    "minecraft:end_barrens",
+    "byg:bulbis_gardens",
+    "byg:cryptic_wastes",
+    "byg:ethereal_islands",
+    "byg:ivis_fields",
+    "byg:nightshade_forest",
+    "byg:purpur_peaks",
+    "byg:shattered_desert",
+    "byg:shulkren_forest",
+    "void-biomes",
+    "byg:bulbis_gardens_edge",
+    "byg:ethereal_forest",
+    "byg:ethereal_clearing",
+    "byg:shattered_viscal_isles"
   ]
 }
