@@ -22,10 +22,93 @@ events.listen('recipes', e => {
 
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/press/unpacking/press_honeycomb_unpacking',
-        
+
         'ctiers:centrifuge_casing_tier_creative',
-        'ctiers:centrifuge_controller_tier_creative'
-        
+        'ctiers:centrifuge_controller_tier_creative',
+
+        //ma balance
+        'mysticalagriculture:essence/astralsorcery/aquamarine',
+        'mysticalagriculture:essence/astralsorcery/rock_crystal',
+        'mysticalagriculture:essence/astralsorcery/starmetal_ingot',
+
+        'mysticalagriculture:essence/thermal/basalz_rod',
+        'mysticalagriculture:essence/thermal/blitz_rod',
+        'mysticalagriculture:essence/thermal/blizz_rod',
+        'mysticalagriculture:essence/thermal/enderium_ingot',
+        'mysticalagriculture:essence/thermal/lumium_ingot',
+        'mysticalagriculture:essence/thermal/signalum_ingot',
+
+        'mysticalagriculture:essence/quark/ender_biotite',
+
+        'mysticalagriculture:essence/powah/blazing_crystal',
+        'mysticalagriculture:essence/powah/energized_steel',
+        'mysticalagriculture:essence/powah/niotic_crystal',
+        'mysticalagriculture:essence/powah/nitro_crystal',
+        'mysticalagriculture:essence/powah/spirited_crystal',
+
+        'mysticalagriculture:essence/botania/elementium_ingot',
+        'mysticalagriculture:essence/botania/manasteel_ingot',
+        `mysticalagriculture:essence/botania/terrasteel_ingot`,
+
+        'mysticalagriculture:essence/common/brass_ingot',
+        'mysticalagriculture:essence/common/bronze_ingot',
+        'mysticalagriculture:essence/common/constantan_ingot',
+        'mysticalagriculture:essence/common/electrum_ingot',
+        'mysticalagriculture:essence/common/graphite_ingot',
+        'mysticalagriculture:essence/common/invar_ingot',
+        'mysticalagriculture:essence/common/silicon',
+        'mysticalagriculture:essence/common/steel_ingot',
+        'mysticalagriculture:essence/common/sulfur',
+
+        'mysticalagriculture:essence/immersiveengineering/hop_graphite_ingot',
+
+        'mysticalagriculture:essence/pneumaticcraft/compressed_iron_ingot',
+
+        'mysticalagriculture:essence/appliedenergistics2/fluix',
+        'mysticalagriculture:essence/appliedenergistics2/sky_stone',
+
+        'mysticalagriculture:essence/refinedstorage/quartz_enriched_iron_ingot',
+
+        'mysticalagriculture:essence/mekanism/refined_glowstone_ingot',
+        'mysticalagriculture:essence/mekanism/refined_obsidian_ingot',
+
+
+        'mysticalagriculture:seed/infusion/aquamarine',
+        'mysticalagriculture:seed/infusion/basalz',
+        'mysticalagriculture:seed/infusion/blazing_crystal',
+        'mysticalagriculture:seed/infusion/blitz',
+        'mysticalagriculture:seed/infusion/blizz',
+        'mysticalagriculture:seed/infusion/brass',
+        'mysticalagriculture:seed/infusion/bronze',
+        'mysticalagriculture:seed/infusion/compressed_iron',
+        'mysticalagriculture:seed/infusion/constantan',
+        'mysticalagriculture:crimson_steel_seeds_infusion',
+        'mysticalagriculture:seed/infusion/electrum',
+        'mysticalagriculture:seed/infusion/elementium',
+        'mysticalagriculture:seed/infusion/enderium',
+        'mysticalagriculture:seed/infusion/ender_biotite',
+        'mysticalagriculture:seed/infusion/energized_steel',
+        'mysticalagriculture:seed/infusion/fluix',
+        'mysticalagriculture:seed/infusion/graphite',
+        'mysticalagriculture:seed/infusion/hop_graphite',
+        'mysticalagriculture:seed/infusion/invar',
+        'mysticalagriculture:seed/infusion/lumium',
+        'mysticalagriculture:seed/infusion/manasteel',
+        'mysticalagriculture:seed/infusion/niotic_crystal',
+        'mysticalagriculture:nitro_crystal_seeds_infusion',
+        'mysticalagriculture:oratchalcum_seeds_infusion',
+        'mysticalagriculture:seed/infusion/quartz_enriched_iron',
+        'mysticalagriculture:seed/infusion/refined_glowstone',
+        'mysticalagriculture:seed/infusion/refined_obsidian',
+        'mysticalagriculture:seed/infusion/rock_crystal',
+        'mysticalagriculture:seed/infusion/signalum',
+        'mysticalagriculture:seed/infusion/silicon',
+        'mysticalagriculture:seed/infusion/sky_stone',
+        'mysticalagriculture:seed/infusion/spirited_crystal',
+        'mysticalagriculture:seed/infusion/starmetal',
+        'mysticalagriculture:seed/infusion/steel',
+        'mysticalagriculture:seed/infusion/sulfur',
+        'mysticalagriculture:seed/infusion/terrasteel',
 
     ];
     idRemove.forEach(iR => {
