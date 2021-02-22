@@ -239,7 +239,7 @@ onEvent('block.tags', e => {
         /^create:[\w]*scoria/,
     ]);
     //Misc
-    e.add('resourcefulbees:valid_apiary', ['compactmachines:solid_wall']);
+    e.add('resourcefulbees:valid_apiary', ['#mekanismadditions:plastic_blocks', 'compactmachines:solid_wall']);
 
     //Flowers
     e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block']);
