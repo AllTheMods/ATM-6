@@ -1,15 +1,15 @@
 #
 #Centrifuge Tier 3 output Multiplier
 #Range: 1 ~ 150
-centrifugeTier3Mutliplier = 1
+centrifugeTier3Mutliplier = 2
 #
 #Centrifuge Tier 4 output Multiplier
 #Range: 1 ~ 150
-centrifugeTier4Mutliplier = 1
+centrifugeTier4Mutliplier = 3
 #
 #Centrifuge Tier 5 output Multiplier
 #Range: 1 ~ 150
-centrifugeTier5Mutliplier = 1
+centrifugeTier5Mutliplier = 4
 #
 #Centrifuge Tier output Multiplier
 #Range: 1 ~ 150
