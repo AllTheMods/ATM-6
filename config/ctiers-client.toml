@@ -94,3 +94,8 @@ centrifugeTier5ItemMaxStackSize = 1024
 #Centrifuge Tier Creative Item Max Stack Size
 #Range: 1 ~ 1048576
 centrifugeTierCreativeItemMaxStackSize = 16384
+#
+#Do you want Compressed Blocks from this mod? 
+#Only disable if you have Compressium downloaded 
+#If not there will be no Crafting Recipes :)
+CompressedBlocks = false
