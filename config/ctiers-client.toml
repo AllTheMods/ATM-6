@@ -13,7 +13,7 @@ centrifugeTier5Mutliplier = 4
 #
 #Centrifuge Tier output Multiplier
 #Range: 1 ~ 150
-centrifugeTierCreativeMutliplier = 5
+centrifugeTierCreativeMutliplier = 10
 #
 #Centrifuge Tier 3 Recipe Time 
 #The Value Multiplies the Recipe Time
@@ -62,3 +62,35 @@ centrifugeTier5CapacityMutliplier = 80
 #Centrifuge Tier Creative 3x3x3 Size 
 #Should it be 3x3x3?
 centrifugeTierCreativeSize = false
+#
+#Centrifuge Tier 3 Max Tank Capacity
+#Range: 1 ~ 10000000
+centrifugeTier3MaxTankCapacity = 100000
+#
+#Centrifuge Tier 4 Max Tank Capacity
+#Range: 1 ~ 10000000
+centrifugeTier4MaxTankCapacity = 200000
+#
+#Centrifuge Tier 5 Max Tank Capacity
+#Range: 1 ~ 10000000
+centrifugeTier5MaxTankCapacity = 400000
+#
+#Centrifuge Tier Creative Max Tank Capacity
+#Range: 1 ~ 10000000
+centrifugeTierCreativeMaxTankCapacity = 5000000
+#
+#Centrifuge Tier 3 Item Max Stack Size
+#Range: 1 ~ 1048576
+centrifugeTier3ItemMaxStackSize = 256
+#
+#Centrifuge Tier 4 Item Max Stack Size
+#Range: 1 ~ 1048576
+centrifugeTier4ItemMaxStackSize = 512
+#
+#Centrifuge Tier 5 Item Max Stack Size
+#Range: 1 ~ 1048576
+centrifugeTier5ItemMaxStackSize = 1024
+#
+#Centrifuge Tier Creative Item Max Stack Size
+#Range: 1 ~ 1048576
+centrifugeTierCreativeItemMaxStackSize = 16384
