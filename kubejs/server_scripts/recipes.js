@@ -203,7 +203,7 @@ events.listen('recipes', function(e) {
     kjsShaped('ctiers:centrifuge_controller_tier_creative', [
         'ICG',
         'STS',
-        'DPE'
+        'DME'
     ], {
         'I': '#ctiers:sextuple_compressed_iron_blocks',
         'C': 'ctiers:centrifuge_casing_tier_creative',
@@ -212,7 +212,7 @@ events.listen('recipes', function(e) {
         'S': 'atmadditions:dragon_soul',
         'D': '#ctiers:sextuple_compressed_diamond_blocks',
         'E': '#ctiers:sextuple_compressed_emerald_blocks',
-        'P': 'minecraft:ender_pearl'
+        'M': 'compressium:cobblestone_9'
 
     }, )
     e.recipes.industrialforegoing.dissolution_chamber({
