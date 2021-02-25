@@ -186,7 +186,7 @@ events.listen('recipes', function(e) {
     ], {
         'F': 'minecraft:rotten_flesh',
     })
-    kjsShaped('ctiers:centrifuge_casing_tier_creative', [
+    kjsShaped('ctiers:centrifuge_casing_tier_creative_2', [
         'IRG',
         'RTR',
         'DCE'
@@ -200,7 +200,7 @@ events.listen('recipes', function(e) {
         'C': 'mysticalagradditions:creative_essence'
 
     }, 3)
-    kjsShaped('ctiers:centrifuge_controller_tier_creative', [
+    kjsShaped('ctiers:centrifuge_controller_tier_creative_2', [
         'ICG',
         'STS',
         'DME'
