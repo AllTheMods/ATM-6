@@ -215,6 +215,7 @@ events.listen('recipes', function(e) {
         'M': 'compressium:cobblestone_9'
 
     }, )
+
     e.recipes.industrialforegoing.dissolution_chamber({
         input: [{
             tag: 'minecraft:planks'
