@@ -191,12 +191,12 @@ events.listen('recipes', function(e) {
         'RTR',
         'DCE'
     ], {
-        'I': '#ctiers:quadruple_compressed_iron_blocks',
+        'I': '#ctiers:quadruple_compressed_iron_blocks_2',
         'R': 'minecraft:redstone',
-        'G': '#ctiers:quadruple_compressed_gold_blocks',
+        'G': '#ctiers:quadruple_compressed_gold_blocks_2',
         'T': 'ctiers:centrifuge_casing_tier_5',
-        'D': '#ctiers:quadruple_compressed_diamond_blocks',
-        'E': '#ctiers:quadruple_compressed_emerald_blocks',
+        'D': '#ctiers:quadruple_compressed_diamond_blocks_2',
+        'E': '#ctiers:quadruple_compressed_emerald_blocks_2',
         'C': 'mysticalagradditions:creative_essence'
 
     }, 3)
@@ -205,13 +205,13 @@ events.listen('recipes', function(e) {
         'STS',
         'DME'
     ], {
-        'I': '#ctiers:sextuple_compressed_iron_blocks',
+        'I': '#ctiers:sextuple_compressed_iron_blocks_2',
         'C': 'ctiers:centrifuge_casing_tier_creative',
-        'G': '#ctiers:sextuple_compressed_gold_blocks',
+        'G': '#ctiers:sextuple_compressed_gold_blocks_2',
         'T': 'ctiers:centrifuge_controller_tier_5',
         'S': 'atmadditions:dragon_soul',
-        'D': '#ctiers:sextuple_compressed_diamond_blocks',
-        'E': '#ctiers:sextuple_compressed_emerald_blocks',
+        'D': '#ctiers:sextuple_compressed_diamond_blocks_2',
+        'E': '#ctiers:sextuple_compressed_emerald_blocks_2',
         'M': 'compressium:cobblestone_9'
 
     }, )
