@@ -1,0 +1,16 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "nether"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "allthemodium:nether_wastes"
+      }
+    ]
+  ]
+}
