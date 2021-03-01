@@ -1,0 +1,73 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "overworld"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "rare"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "magical"
+      }
+    ],
+    [
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "overworld"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "dense"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": false,
+        "value": "forest"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "mountain"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "hills"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "wet"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "hot"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "cold"
+      },
+      {
+        "type": "BIOME_DICT",
+        "negate": true,
+        "value": "dry"
+      },
+      {
+        "type": "BIOME_CATEGORY",
+        "negate": true,
+        "value": "taiga"
+      }
+    ]
+  ]
+}

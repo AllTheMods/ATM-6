@@ -2,6 +2,7 @@
     "biomes": [
         "byg:enchanted_forest",
         "byg:enchanted_forest_hills",
-        "byg:enchanted_grove"
+        "byg:enchanted_grove",
+        "byg:ancient_forest"
     ]
 }

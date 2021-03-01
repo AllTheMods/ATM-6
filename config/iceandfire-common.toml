@@ -8,13 +8,13 @@
 	"Siren Time Between Songs" = 2000
 	#Troll attack strength
 	#Range: 1.0 ~ 10000.0
-	"Troll Attack Strength" = 10.0
+	"Troll Attack Strength" = 40.0
 	#Maximum cyclops health
 	#Range: 1.0 ~ 10000.0
 	"Cyclops Max Health" = 5500.0
 	#Dread Lich spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Lich Spawn Weight" = 2
+	"Lich Spawn Weight" = 2000
 	#Whether or not sea serpents can break weak blocks in their way
 	"Sea Serpent Griefing" = false
 	#True if pixie villages are allowed to spawn
@@ -24,17 +24,17 @@
 	"Cyclopes Sheep Search Length" = 17
 	#A double check to see if the game can spawn death worms. Higher number = lower chance to spawn.
 	#Range: 0 ~ 10000
-	"Death Worm Spawn Check Chance" = 3
+	"Death Worm Spawn Check Chance" = 300
 	#Maximum cockatrice health
 	#Range: 1.0 ~ 10000.0
 	"Cockatrice Health" = 4000.0
 	#True if gorgon temples are allowed to spawn
-	"Spawn Gorgons" = false
+	"Spawn Gorgons" = true
 	#True if hippocampi are allowed to spawn
 	"Spawn Hippocampus" = false
 	#Damage dealt from a successful ice breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 	#Range: 0.0 ~ 10000.0
-	"Dragon Attack Damage(Ice breath)" = 75.0
+	"Dragon Attack Damage(Ice breath)" = 150.0
 	#How high dragons can fly, in Y height.
 	#Range: > 100
 	"Max Dragon Flight Height" = 250
@@ -51,23 +51,23 @@
 	#True if dragons can despawn. Note that if this is false there may be SERIOUS lag issues.
 	"Dragons Despawn" = true
 	#True if hippogryphs are allowed to spawn
-	"Spawn Hippogryphs" = false
+	"Spawn Hippogryphs" = true
 	#True if dread liches are allowed to spawn
 	"Spawn Liches" = true
 	#One out of this number chance per chunk to generate a mausoleum.
 	#Range: 1 ~ 10000
-	"Mausoleum Gen Chance" = 1800
+	"Mausoleum Gen Chance" = 100
 	#Whether to generate copper ore or not
 	"Generate Copper Ore" = false
 	#A more intelligent dragon pathfinding system, but is also laggier. Turn this on if you think dragons are too stupid.
 	"Intelligent Dragon Pathfinding" = false
 	#Cockatrice spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Cockatrice Spawn Weight" = 400
+	"Cockatrice Spawn Weight" = 2000
 	#True to make the screen pink when sirens attract players
 	"Use Siren Shader" = false
 	#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
-	"Dragon Moved Wrongly Error Fix" = false
+	"Dragon Moved Wrongly Error Fix" = true
 	#Blocks that a dragon can break, but won't spawn drops for. Use the format like "minecraft:stone" or "rats:block_of_cheese" 
 	noDropBreakBlocks = ["minecraft:netherrack", "minecraft:dirt", "minecraft:grass_block", "minecraft:stone", "minecraft:soul_sand"]
 	#How many blocks away can death worms spot potential prey. Note that increasing this could cause lag
@@ -78,25 +78,25 @@
 	"Stymphalian Bird Flock Length" = 40
 	#How many maximum individuals a myrmex colony can have.
 	#Range: 10 ~ 10000
-	"Myrmex Colony Max Size" = 80
+	"Myrmex Colony Max Size" = 20
 	#1 out of this number chance per block that gold will generate in dragon lairs.
 	#Range: 1 ~ 10000
-	"Dragon Den Gold Amount" = 4
+	"Dragon Den Gold Amount" = 3
 	#Whether to generate dragon skeletons or not
 	"Generate Dragon Skeletons" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
 	"Spawn Cyclops Cave Chance" = 100
 	#True if myrmex colonies are allowed to spawn
-	"Spawn Myrmex" = false
+	"Spawn Myrmex" = true
 	#Default attack strength of a dragonsteel sword.
 	#Range: 5.0 ~ 2.147483647E9
-	"Dragonsteel Sword Base Attack Strength" = 25.0
+	"Dragonsteel Sword Base Attack Strength" = 350.0
 	#Whether to generate dragon caves or not
 	"Generate Dragon Caves" = true
 	#How high stymphalian birds can fly, in Y height.
 	#Range: > 10
-	"Max Stymphalian Bird Flight Height" = 80
+	"Max Stymphalian Bird Flight Height" = 200
 	#Whitelist mob spawn (troll, hippogryph, etc) dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
 	blacklistDimensions = ["allthemodium:the_other"]
 	#1 out of this number chance per chunk for generation
@@ -112,7 +112,7 @@
 	"Pixie Village Size" = 5
 	#Maximum amphithere health
 	#Range: 1.0 ~ 10000.0
-	"Amphithere Max Health" = 500.0
+	"Amphithere Max Health" = 2500.0
 	#How many ticks it takes while riding an untamed amphithere to tame it.
 	#Range: 1 ~ 10000
 	"Amphithere Tame Time" = 400
@@ -130,7 +130,7 @@
 	"Hydra Max Health" = 10000.0
 	#Maximum gorgon health
 	#Range: 1.0 ~ 10000.0
-	"Gorgon Max Health" = 100.0
+	"Gorgon Max Health" = 8000.0
 	#Whether to generate silver ore or not
 	"Generate Silver Ore" = false
 	#Turning this to true simplifies the dragon's pathfinding process, making them dumber when finding a path, but better for servers with many loaded dragons.
@@ -149,7 +149,7 @@
 	"Generate Hydra Caves" = true
 	#Default armor value of dragonsteel chestplate.
 	#Range: > 7
-	"Dragonsteel Base Armor" = 12
+	"Dragonsteel Base Armor" = 120
 	#How many blocks away can dragons wander from their defined "home" position.
 	#Range: 1 ~ 10000
 	"Dragon Wander From Home Distance" = 40
@@ -179,7 +179,7 @@
 	#Range: 1 ~ 100000
 	"Myrmex Hatch Length" = 35000
 	#Whether to generate graveyards or not
-	"Generate Graveyards" = false
+	"Generate Graveyards" = true
 	#True if trolls are allowed to spawn
 	"Spawn Trolls" = true
 	#True if amphitheres are allowed to spawn
@@ -188,13 +188,13 @@
 	"Generate Sapphire Ore" = true
 	#Maximum ghost health.
 	#Range: 1.0 ~ 10000.0
-	"Ghost Max Health" = 300.0
+	"Ghost Max Health" = 3000.0
 	#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from spawn(0, 0).
 	#Range: 1 ~ 10000
-	"Dangerous World Gen Dist From Spawn" = 800
+	"Dangerous World Gen Dist From Spawn" = 1000
 	#Damage dealt from a successful lightning breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 	#Range: 0.0 ~ 10000.0
-	"Dragon Attack Damage(Lightning breath)" = 85.0
+	"Dragon Attack Damage(Lightning breath)" = 125.0
 	#One out of this number chance per chunk to generate a myrmex hive.
 	#Range: 1 ~ 10000
 	"Myrmex Colony Gen Chance" = 150
@@ -203,16 +203,16 @@
 	"Hippogryph Spawn Weight" = 2
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Roost Chance" = 800
+	"Generate Dragon Roost Chance" = 20
 	#Maximum ghost attack strength.
 	#Range: 0.0 ~ 10000.0
 	"Ghost Attack Strength" = 20.0
 	#One out of this number chance per chunk to generate a hydra cave.
 	#Range: 1 ~ 10000
-	"Hydra Caves Gen Chance" = 1000
+	"Hydra Caves Gen Chance" = 10
 	#Every interval of this number in ticks, dragon allowed to break blocks.
 	#Range: 0 ~ 10000
-	"Dragon Block Break Cooldown" = 5
+	"Dragon Block Break Cooldown" = 10
 	#True if stymphalian birds are allowed to spawn
 	"Spawn Stymphalian Birds" = true
 	#True if dragons can drop their blood on death.
@@ -224,19 +224,19 @@
 	"Trolls Drop Weapon" = true
 	#Troll spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Troll Spawn Weight" = 4
+	"Troll Spawn Weight" = 400
 	#Glacier Spawn Weight. Higher number = more common
 	#Range: 1 ~ 10000
-	"Glacier Spawn Weight" = 4
+	"Glacier Spawn Weight" = 400
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Cave Chance" = 800
+	"Generate Dragon Cave Chance" = 10
 	#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 	#Range: 0 ~ 2
 	"Dragon Griefing" = 0
 	#A double check to see if the game can spawn cockatrices. Higher number = lower chance to spawn.
 	#Range: 0 ~ 10000
-	"Cockatrice Spawn Check Chance" = 0
+	"Cockatrice Spawn Check Chance" = 2000
 	#True if pixies are allowed to steal from players
 	"Pixies Steal Items" = false
 	#True if dragons can drop their heart on death.
@@ -253,17 +253,17 @@
 	"Dragon Pathfinding Threads" = 3
 	#Base Myrmex(worker) attack strength
 	#Range: 1.0 ~ 10000.0
-	"Myrmex Base Attack Strength" = 13.0
+	"Myrmex Base Attack Strength" = 28.0
 	#How far away dragons will detect gold blocks being destroyed or chests being opened
 	#Range: 0 ~ 10000
 	"Dragon Gold Search Length" = 30
 	#True if stymphalian birds can drop items registered in the ore dictionary to ingotCopper, ingotBronze, nuggetCopper, nuggetBronze.
-	"Stymphalian Birds drop ore dict items" = true
+	"Stymphalian Birds drop ore dict items" = false
 	#True if animals should run away and hide from dragons and other hostile Ice and Fire mobs.
 	"Animals Fear Dragons" = true
 	#Stymphalian bird feather attack strength.
 	#Range: 0.0 ~ 10000.0
-	"Stymphalian Bird Feather Attack Strength" = 1.0
+	"Stymphalian Bird Feather Attack Strength" = 5.0
 	#Blocks that a dragon cannot break. Use the format like "minecraft:chest" or "rats:block_of_cheese" 
 	blacklistedBreakBlocks = []
 	#1 out of this number chance per chunk for generation
@@ -271,7 +271,7 @@
 	"Spawn Hippocampus Chance" = 40
 	#Amphithere spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Amphithere Spawn Weight" = 50
+	"Amphithere Spawn Weight" = 500
 	#Dragon Flute Distance - how many chunks away is the dragon flute effective?
 	#Range: 0 ~ 10000
 	"Dragon Flute Distance" = 4
@@ -280,11 +280,11 @@
 	"Dragon Block Breaking Drop Chance" = 0.10000000149011612
 	#Damage dealt from a successful fire breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 	#Range: 0.0 ~ 10000.0
-	"Dragon Attack Damage(Fire breath)" = 80.0
+	"Dragon Attack Damage(Fire breath)" = 90.0
 	#How many blocks away can ampitheres detect villagers being hurt. Note that increasing this could cause lag.
 	#Range: 1 ~ 10000
 	"Amphithere Villager Search Length" = 64
-	#Deathworm spawn weight. Lower = lower chance to spawn
+	#Deathworm spawn weight. Higher = lower chance to spawn
 	#Range: 1 ~ 10000
 	"Death Worm Spawn Weight" = 30
 	#Percentage of critical strike that will disarm with easter egg tinkers material.
@@ -343,7 +343,7 @@
 	"Cyclops Bite Strength" = 70.0
 	#Amphithere attack strength
 	#Range: 1.0 ~ 10000.0
-	"Amphithere Attack Strength" = 17.0
+	"Amphithere Attack Strength" = 27.0
 	#Graveyard rarity.
 	#Range: 2 ~ 10000
 	"Graveyard Chance" = 46
@@ -355,14 +355,14 @@
 	"Spawn Sirens Chance" = 400
 	#Maximum troll health
 	#Range: 1.0 ~ 10000.0
-	"Troll Max Health" = 50.0
+	"Troll Max Health" = 5000.0
 	#Default sea serpent attack strength, this is scaled to the sea serpent's particular size
 	#Range: 1.0 ~ 10000.0
 	"Sea Serpent Base Attack Strength" = 4.0
 	#Whether to generate dragon roosts or not
 	"Generate Dragon Roosts" = true
 	#True if mausoleums are allowed to generate
-	"Generate Mausoleums" = false
+	"Generate Mausoleums" = true
 	#Dragon Flap Noise Distance - Larger number, further away you can hear it
 	#Range: 0 ~ 10000
 	"Dragon Flap Noise Distance" = 4
@@ -370,5 +370,5 @@
 	"Spawn Death Worms" = true
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Spawn Pixies Chance" = 20
+	"Spawn Pixies Chance" = 40
 
