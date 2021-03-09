@@ -206,5 +206,9 @@
     "block.resourcefulbees.fluorite_honeycomb_block": "Fluorite Honeycomb Block",
     "item.resourcefulbees.fluorite_honeycomb": "Fluorite Honeycomb",
     "item.resourcefulbees.fluorite_bee_spawn_egg": "Fluorite Bee Spawn Egg",
-    "entity.resourcefulbees.fluorite_bee": "Fluorite Bee"
+    "entity.resourcefulbees.fluorite_bee": "Fluorite Bee",
+    "block.resourcefulbees.aquamarine_honeycomb_block": "Aquamarine Honeycomb Block",
+    "item.resourcefulbees.aquamarine_honeycomb": "Aquamarine Honeycomb",
+    "item.resourcefulbees.aquamarine_bee_spawn_egg": "Aquamarine Bee Spawn Egg",
+    "entity.resourcefulbees.aquamarine_bee": "Aquamarine Bee"
 }

@@ -242,7 +242,7 @@ onEvent('block.tags', e => {
     e.add('resourcefulbees:valid_apiary', ['#mekanismadditions:plastic_blocks', 'compactmachines:solid_wall']);
 
     //Flowers
-    e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block']);
+    e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block', 'astralsorcery:starmetal']);
 
     //Removal
     e.removeAll('minecraft:enderman_holdable');
