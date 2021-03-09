@@ -29,7 +29,8 @@ events.listen('recipes', e => {
         //ma balance
         'mysticalagriculture:essence/astralsorcery/rock_crystal',
         'mysticalagriculture:essence/astralsorcery/starmetal_ingot',
-
+        'mysticalagriculture:essence/astralsorcery/aquamarine',
+        
         'mysticalagriculture:essence/thermal/basalz_rod',
         'mysticalagriculture:essence/thermal/blitz_rod',
         'mysticalagriculture:essence/thermal/blizz_rod',
