@@ -1,0 +1,31 @@
+{
+    "flower": "tag:forge:cobblestone",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "misc/cobbee_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#1c1823"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:cobblestone",
+        "mainOutputCount": 3,
+        "mainOutputWeight": 0.9
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:mountain"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:cobblestone",
+        "feedAmount": 4
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+  }

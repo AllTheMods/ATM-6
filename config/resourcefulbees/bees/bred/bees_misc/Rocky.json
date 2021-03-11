@@ -2,9 +2,9 @@
   "flower": "tag:forge:stone",
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
+  "baseLayerTexture": "misc/rocky_bee",
   "ColorData": {
-      "isBeeColored": true,
-      "primaryColor": "#5A5A5A",
+      "isBeeColored": false,
       "honeycombColor": "#5A5A5A"
   },
   "MutationData": {
@@ -13,21 +13,20 @@
   "CentrifugeData": {
       "hasCentrifugeOutput": true,
       "mainOutput": "minecraft:stone",
-      "secondaryOutput": "minecraft:gravel",
       "mainOutputCount": 3,
-      "mainOutputWeight": 0.9,
-      "secondaryOutputWeight": 0.5,
-      "secondaryOutputCount": 2
+      "mainOutputWeight": 0.9
   },
   "SpawnData": {
-      "canSpawnInWorld": true,
-      "biomeWhitelist": "tag:mountain"
-  },
+    "canSpawnInWorld": false
+},
   "BreedData": {
-      "isBreedable": true,
-      "feedItem": "tag:forge:stone",
-      "feedAmount": 4
-  },
+    "isBreedable": true,
+    "breedChance": 0.80,
+    "parent1": "Lava",
+    "parent2": "Cobbee",
+    "feedItem": "immersiveengineering:hemp_fiber",
+    "feedAmount": 3
+},
   "TraitData": {
       "hasTraits": false
   }

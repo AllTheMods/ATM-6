@@ -127,10 +127,10 @@
     "item.resourcefulbees.rgbee_honeycomb": "RGBee Honeycomb",
     "item.resourcefulbees.rgbee_bee_spawn_egg": "RGBee Spawn Egg",
     "entity.resourcefulbees.rgbee_bee": "RGBee",
-    "block.resourcefulbees.rocky_honeycomb_block": "Rocky Honeycomb Block",
-    "item.resourcefulbees.rocky_honeycomb": "Rocky Honeycomb",
-    "item.resourcefulbees.rocky_bee_spawn_egg": "Rocky Bee Spawn Egg",
-    "entity.resourcefulbees.rocky_bee": "Rocky Bee",
+    "block.resourcefulbees.rocky_honeycomb_block": "Stoned Honeycomb Block",
+    "item.resourcefulbees.rocky_honeycomb": "Stoned Honeycomb",
+    "item.resourcefulbees.rocky_bee_spawn_egg": "Stoned Bee Spawn Egg",
+    "entity.resourcefulbees.rocky_bee": "Stoned Bee",
     "block.resourcefulbees.sandy_honeycomb_block": "Sandy Honeycomb Block",
     "item.resourcefulbees.sandy_honeycomb": "Sandy Honeycomb",
     "item.resourcefulbees.sandy_bee_spawn_egg": "Sandy Bee Spawn Egg",
@@ -210,5 +210,9 @@
     "block.resourcefulbees.aquamarine_honeycomb_block": "Aquamarine Honeycomb Block",
     "item.resourcefulbees.aquamarine_honeycomb": "Aquamarine Honeycomb",
     "item.resourcefulbees.aquamarine_bee_spawn_egg": "Aquamarine Bee Spawn Egg",
-    "entity.resourcefulbees.aquamarine_bee": "Aquamarine Bee"
+    "entity.resourcefulbees.aquamarine_bee": "Aquamarine Bee",
+    "block.resourcefulbees.cobbee_honeycomb_block": "Cobbee Honeycomb Block",
+    "item.resourcefulbees.cobbee_honeycomb": "Cobbee Honeycomb",
+    "item.resourcefulbees.cobbee_bee_spawn_egg": "Cobbee Spawn Egg",
+    "entity.resourcefulbees.cobbee_bee": "Cobbee"
 }
