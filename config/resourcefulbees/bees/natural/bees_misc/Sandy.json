@@ -2,9 +2,9 @@
   "flower": "tag:forge:sand",
   "maxTimeInHive": 1200,
   "hasHoneycomb": true,
+  "baseLayerTexture": "misc/sandy_bee",
   "ColorData": {
-      "isBeeColored": true,
-      "primaryColor": "#DDD2B7",
+      "isBeeColored": false,
       "honeycombColor": "#DDD2B7"
   },
   "MutationData": {
