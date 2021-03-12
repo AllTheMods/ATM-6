@@ -1,0 +1,36 @@
+{
+    "flower": "astralsorcery:starmetal",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "traits": [],
+    "baseLayerTexture": "misc/aquamarine_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#35b3ff",
+        "modelType": "ORE"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "astralsorcery:aquamarine",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 1,
+        "secondaryOutput": "astralsorcery:aquamarine",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 2
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:beach"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "astralsorcery:aquamarine",
+        "feedAmount": 18
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

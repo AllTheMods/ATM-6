@@ -215,7 +215,13 @@ events.listen('recipes', function(e) {
         'M': 'compressium:cobblestone_9'
 
     }, )
-
+    kjsShaped('astralsorcery:aquamarine', [
+        'AAA',
+        'A A',
+        'AAA'
+    ], {
+        'A': 'mysticalagriculture:aquamarine_essence',
+    }, 8)
     e.recipes.industrialforegoing.dissolution_chamber({
         input: [{
             tag: 'minecraft:planks'

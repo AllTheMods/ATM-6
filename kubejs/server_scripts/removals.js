@@ -27,10 +27,10 @@ events.listen('recipes', e => {
         'ctiers:centrifuge_controller_tier_creative_2',
 
         //ma balance
-        'mysticalagriculture:essence/astralsorcery/aquamarine',
         'mysticalagriculture:essence/astralsorcery/rock_crystal',
         'mysticalagriculture:essence/astralsorcery/starmetal_ingot',
-
+        'mysticalagriculture:essence/astralsorcery/aquamarine',
+        
         'mysticalagriculture:essence/thermal/basalz_rod',
         'mysticalagriculture:essence/thermal/blitz_rod',
         'mysticalagriculture:essence/thermal/blizz_rod',
@@ -73,7 +73,6 @@ events.listen('recipes', e => {
         'mysticalagriculture:essence/mekanism/refined_obsidian_ingot',
 
 
-        'mysticalagriculture:seed/infusion/aquamarine',
         'mysticalagriculture:seed/infusion/basalz',
         'mysticalagriculture:seed/infusion/blazing_crystal',
         'mysticalagriculture:seed/infusion/blitz',
