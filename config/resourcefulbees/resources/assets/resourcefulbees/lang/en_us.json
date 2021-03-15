@@ -214,5 +214,9 @@
     "block.resourcefulbees.cobbee_honeycomb_block": "Cobbee Honeycomb Block",
     "item.resourcefulbees.cobbee_honeycomb": "Cobbee Honeycomb",
     "item.resourcefulbees.cobbee_bee_spawn_egg": "Cobbee Spawn Egg",
-    "entity.resourcefulbees.cobbee_bee": "Cobbee"
+    "entity.resourcefulbees.cobbee_bee": "Cobbee",
+    "block.resourcefulbees.icey_honeycomb_block": "Icey Honeycomb Block",
+    "item.resourcefulbees.icey_honeycomb": "Icey Honeycomb",
+    "item.resourcefulbees.icey_bee_spawn_egg": "Icey Spawn Egg",
+    "entity.resourcefulbees.icey_bee": "Icey Bee"
 }
