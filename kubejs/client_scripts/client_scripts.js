@@ -105,7 +105,13 @@ onEvent(`jei.hide.items`, e => {
 
         `mininggadgets:minerslight`,
 
-        `rats:ratlantis_portal`
+        `rats:ratlantis_portal`,
+
+        'eidolon:sulfur',
+        'eidolon:lead_ore',
+        'eidolon:lead_ingot',
+        'eidolon:lead_block',
+        'eidolon:lead_nugget'
     ]);
 
     colors.forEach(color => {
@@ -170,7 +176,7 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`thermal`, `dust`, [`iron`, `gold`]);
     hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`]);
     hideStuff(`immersiveengineering`, `plate`, [`iron`, `gold`, `copper`, `aluminum`, `lead`, `silver`, `nickel`, `constantan`, `electrum`]);
-    hideStuff(`mekanism`, `dust`, [`sulfur`, `lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`]);
+    hideStuff(`mekanism`, `dust`, [`lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`]);
     hideStuff(`mekanism`, `crystal`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
     hideStuff(`mekanism`, `shard`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
     hideStuff(`mekanism`, `dirty_dust`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
@@ -182,7 +188,6 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`solarflux`, `sp`, [6, 7, 8]);
     hideStuff(`quark`, `crate`, [`apple`, `carrot`, `beetroot`, `potato`]);
     hideStuff(`quark`, `block`, [`bamboo`, `charcoal`, `sugar_cane`]);
-    hideStuff(`eidolon`, `ore`, [`lead`]);
     hideStuff(`mysticalagriculture`, `seeds`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`]);
     hideStuff(`mysticalagriculture`, `essence`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`]);
 
