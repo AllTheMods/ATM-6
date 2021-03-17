@@ -194,7 +194,7 @@
 'resourcefulbees:mana_bee' : '',
 'resourcefulbees:mason_bee' : '',
 'resourcefulbees:rgbee_bee' : '',
-'resourcefulbees:rocky_bee' : '',
+'resourcefulbees:stoned_bee' : '',
 'resourcefulbees:sandy_bee' : '',
 'resourcefulbees:warm_bee' : '',
 'resourcefulbees:water_bee' : '',

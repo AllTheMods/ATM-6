@@ -27,7 +27,7 @@
         "isBreedable": true,
         "breedChance": 0.8,
         "parent1": "Glowing",
-        "parent2": "Rocky",
+        "parent2": "Stoned",
         "feedItem": "minecraft:redstone_block",
         "feedAmount": 3
     },

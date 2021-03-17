@@ -27,7 +27,7 @@
       "isBreedable": true,
       "breedChance": 0.8,
       "parent1": "Quartz",
-      "parent2": "Rocky",
+      "parent2": "Stoned",
       "feedItem": "tag:forge:storage_blocks/aluminum",
       "feedAmount": 3
   },

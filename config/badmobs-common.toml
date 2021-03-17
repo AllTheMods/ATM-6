@@ -1907,8 +1907,8 @@
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
 		removeAggressively = false
 
-	#Spawning options for resourcefulbees:rocky_bee
-	[resourcefulbees.rocky_bee]
+	#Spawning options for resourcefulbees:stoned_bee
+	[resourcefulbees.stoned_bee]
 		#Should the entity be allowed to spawn normally?
 		allowNormalSpawning = true
 		#Should spawners be able to spawn the entity?
