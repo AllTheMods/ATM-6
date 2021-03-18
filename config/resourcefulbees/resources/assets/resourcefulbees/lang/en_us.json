@@ -222,5 +222,9 @@
     "block.resourcefulbees.gravely_honeycomb_block": "Gravely Honeycomb Block",
     "item.resourcefulbees.gravely_honeycomb": "Gravely Honeycomb",
     "item.resourcefulbees.gravely_bee_spawn_egg": "Gravely Spawn Egg",
-    "entity.resourcefulbees.gravely_bee": "Gravely Bee"
+    "entity.resourcefulbees.gravely_bee": "Gravely Bee",
+    "block.resourcefulbees.soul_lava_honeycomb_block": "Soul Lava Honeycomb Block",
+    "item.resourcefulbees.soul_lava_honeycomb": "Soul Lava Honeycomb",
+    "item.resourcefulbees.soul_lava_bee_spawn_egg": "Soul Lava Spawn Egg",
+    "entity.resourcefulbees.soul_lava_bee": "Soul Lava Bee"
 }
