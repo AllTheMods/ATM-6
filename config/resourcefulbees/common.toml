@@ -137,7 +137,7 @@
 	generateDefaults = false
 	#
 	#Set to true to hide certain data in the Beepedia until the player has unlocked the bee. [true/false]
-	beepediaHideLocked = true
+	beepediaHideLocked = false
 
 ["Honey Generator Options"]
 	#
