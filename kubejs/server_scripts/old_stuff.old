@@ -1,0 +1,177 @@
+    //SGear salvaging
+    /* Disabled in removals.js for issue #349
+      function salvage(item, results) {
+        e.recipes.silentgear.salvaging({
+          ingredient: {
+            item: item
+          },
+          results: results
+        })
+      }
+      salvage('minecraft:netherite_sword', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:stick',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 2
+        }
+      ])
+      salvage('minecraft:netherite_shovel', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:stick',
+          'count': 2
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 1
+        }
+      ])
+      salvage('minecraft:netherite_pickaxe', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:stick',
+          'count': 2
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 3
+        }
+      ])
+      salvage('minecraft:netherite_hoe', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:stick',
+          'count': 2
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 2
+        }
+      ])
+      salvage('minecraft:netherite_axe', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:stick',
+          'count': 2
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 3
+        }
+      ])
+      salvage('minecraft:netherite_boots', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 4
+        }
+      ])
+      salvage('minecraft:netherite_leggings', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 7
+        }
+      ])
+      salvage('minecraft:netherite_chestplate', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 8
+        }
+      ])
+      salvage('minecraft:netherite_helmet', [{
+          'item': 'minecraft:netherite_ingot',
+          'count': 1
+        },
+        {
+          'item': 'minecraft:diamond',
+          'count': 5
+        }
+      ])
+      salvage('minecraft:anvil', [{
+        'item': 'minecraft:iron_ingot',
+        'count': 31
+      }])
+      salvage('minecraft:diamond_horse_armor', [{
+        'item': 'minecraft:diamond',
+        'count': 7
+      }])
+      salvage('minecraft:golden_horse_armor', [{
+        'item': 'minecraft:gold_ingot',
+        'count': 7
+      }])
+      salvage('minecraft:iron_horse_armor', [{
+        'item': 'minecraft:iron_ingot',
+        'count': 7
+      }])
+      salvage('minecraft:leather_horse_armor', [{
+        'item': 'minecraft:leather',
+        'count': 7
+      }])
+      salvage('minecraft:minecart', [{
+        'item': 'minecraft:iron_ingot',
+        'count': 5
+      }])
+      salvage('minecraft:saddle', [{
+          'item': 'minecraft:leather',
+          'count': 5
+        },
+        {
+          'item': 'minecraft:iron_nugget',
+          'count': 2
+        }
+      ])
+    */
+
+    /*
+events.listen('recipes', function (e) {
+    function charge(items, amount) {
+        utils.listOf(items).forEach(function (item) {
+            e.recipes.xreliquary.alkahestry_charging({
+                charge: amount,
+                ingredient: {
+                    item: item
+                }
+            })
+        })
+    }
+
+    function craft(items, amount, cost) {
+        utils.listOf(items).forEach(function (item) {
+            e.recipes.xreliquary.alkahestry_crafting({
+                charge: cost,
+                ingredient: {
+                    item: item
+                },
+                result_count: amount
+            })
+        })
+    }
+    craft(['minecraft:slime_ball', 'minecraft:leather', 'minecraft:bone'], 2, 32)
+    craft(['minecraft:ender_pearl'], 2, 128)
+    craft(['minecraft:blaze_rod'], 3, 128)
+    craft(['minecraft:ghast_tear'], 2, 256)
+    charge(['allthemodium:allthemodium_ingot'], 512);
+})
+*/

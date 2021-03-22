@@ -1,8 +1,4 @@
 events.listen('recipes', e => {
-    //Unobtanium
-    e.shapeless('allthemodium:unobtainium_vibranium_alloy_dust', ['allthemodium:unobtainium_dust', 'allthemodium:vibranium_dust']);
-    e.shapeless('allthemodium:unobtainium_allthemodium_alloy_dust', ['allthemodium:unobtainium_dust', 'allthemodium:allthemodium_dust']);
-    e.shapeless('allthemodium:vibranium_allthemodium_alloy_dust', ['allthemodium:allthemodium_dust', 'allthemodium:vibranium_dust']);
     e.custom({
         type: 'mekanism:nucleosynthesizing',
         itemInput: {

@@ -1,199 +1,199 @@
-events.listen('recipes', function (e) {
+events.listen('recipes', function(e) {
 
   var cloche = e.recipes.immersiveengineering.cloche
 
   function t1(type) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:' + type + '_essence',
-        count: 2
-      }],
-      input: {
-        item: 'mysticalagriculture:' + type + '_seeds'
-      },
-      soil: {
-        tag: 'misctags:farmland/tier1'
-      },
-      time: 1600,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:' + type + '_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:' + type + '_essence',
+              count: 2
+          }],
+          input: {
+              item: 'mysticalagriculture:' + type + '_seeds'
+          },
+          soil: {
+              tag: 'misctags:farmland/tier1'
+          },
+          time: 1600,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:' + type + '_crop'
+          }
+      })
   }
 
   function t2(type) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:' + type + '_essence',
-        count: 2
-      }],
-      input: {
-        item: 'mysticalagriculture:' + type + '_seeds'
-      },
-      soil: {
-        tag: 'misctags:farmland/tier2'
-      },
-      time: 2800,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:' + type + '_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:' + type + '_essence',
+              count: 2
+          }],
+          input: {
+              item: 'mysticalagriculture:' + type + '_seeds'
+          },
+          soil: {
+              tag: 'misctags:farmland/tier2'
+          },
+          time: 2800,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:' + type + '_crop'
+          }
+      })
   }
 
   function t3(type) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:' + type + '_essence',
-        count: 2
-      }],
-      input: {
-        item: 'mysticalagriculture:' + type + '_seeds'
-      },
-      soil: {
-        tag: 'misctags:farmland/tier3'
-      },
-      time: 4000,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:' + type + '_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:' + type + '_essence',
+              count: 2
+          }],
+          input: {
+              item: 'mysticalagriculture:' + type + '_seeds'
+          },
+          soil: {
+              tag: 'misctags:farmland/tier3'
+          },
+          time: 4000,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:' + type + '_crop'
+          }
+      })
   }
 
   function t4(type) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:' + type + '_essence',
-        count: 2
-      }],
-      input: {
-        item: 'mysticalagriculture:' + type + '_seeds'
-      },
-      soil: {
-        tag: 'misctags:farmland/tier4'
-      },
-      time: 5200,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:' + type + '_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:' + type + '_essence',
+              count: 2
+          }],
+          input: {
+              item: 'mysticalagriculture:' + type + '_seeds'
+          },
+          soil: {
+              tag: 'misctags:farmland/tier4'
+          },
+          time: 5200,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:' + type + '_crop'
+          }
+      })
   }
 
   function t5(type) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:' + type + '_essence',
-        count: 2
-      }],
-      input: {
-        item: 'mysticalagriculture:' + type + '_seeds'
-      },
-      soil: {
-        tag: 'misctags:farmland/tier5'
-      },
-      time: 6400,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:' + type + '_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:' + type + '_essence',
+              count: 2
+          }],
+          input: {
+              item: 'mysticalagriculture:' + type + '_seeds'
+          },
+          soil: {
+              tag: 'misctags:farmland/tier5'
+          },
+          time: 6400,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:' + type + '_crop'
+          }
+      })
   }
 
   function t6(type) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:' + type + '_essence',
-        count: 2
-      }],
-      input: {
-        item: 'mysticalagriculture:' + type + '_seeds'
-      },
-      soil: {
-        tag: 'misctags:farmland/tier6'
-      },
-      time: 7600,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:' + type + '_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:' + type + '_essence',
+              count: 2
+          }],
+          input: {
+              item: 'mysticalagriculture:' + type + '_seeds'
+          },
+          soil: {
+              tag: 'misctags:farmland/tier6'
+          },
+          time: 7600,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:' + type + '_crop'
+          }
+      })
   }
 
   function t7(type) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:' + type + '_essence',
-        count: 2
-      }],
-      input: {
-        item: 'mysticalagriculture:' + type + '_seeds'
-      },
-      soil: {
-        item: 'mysticalagradditions:insanium_block'
-      },
-      time: 8900,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:' + type + '_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:' + type + '_essence',
+              count: 2
+          }],
+          input: {
+              item: 'mysticalagriculture:' + type + '_seeds'
+          },
+          soil: {
+              item: 'mysticalagradditions:insanium_block'
+          },
+          time: 8900,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:' + type + '_crop'
+          }
+      })
   }
 
   function inf(rCount, time, fLand) {
-    cloche({
-      results: [{
-        item: 'mysticalagriculture:inferium_essence',
-        count: rCount
-      }],
-      input: {
-        item: 'mysticalagriculture:inferium_seeds'
-      },
-      soil: {
-        item: fLand
-      },
-      time: time,
-      render: {
-        type: 'crop',
-        block: 'mysticalagriculture:inferium_crop'
-      }
-    })
+      cloche({
+          results: [{
+              item: 'mysticalagriculture:inferium_essence',
+              count: rCount
+          }],
+          input: {
+              item: 'mysticalagriculture:inferium_seeds'
+          },
+          soil: {
+              item: fLand
+          },
+          time: time,
+          render: {
+              type: 'crop',
+              block: 'mysticalagriculture:inferium_crop'
+          }
+      })
   }
 
   function regular(results, seed, crop) {
-    cloche({
-      results: results,
-      input: {
-        item: seed
-      },
-      soil: {
-        item: 'minecraft:dirt'
-      },
-      time: 600,
-      render: {
-        type: 'crop',
-        block: crop
-      }
-    })
+      cloche({
+          results: results,
+          input: {
+              item: seed
+          },
+          soil: {
+              item: 'minecraft:dirt'
+          },
+          time: 600,
+          render: {
+              type: 'crop',
+              block: crop
+          }
+      })
   }
 
   //Regular crops
   regular([{
-    item: 'byg:blueberries',
-    count: 2
+      item: 'byg:blueberries',
+      count: 2
   }], 'byg:blueberries', 'byg:blueberry_bush')
   regular([{
-    item: 'forbidden_arcanus:arcane_gold_nugget'
+      item: 'forbidden_arcanus:arcane_gold_nugget'
   }, {
-    item: 'forbidden_arcanus:golden_orchid_seeds'
+      item: 'forbidden_arcanus:golden_orchid_seeds'
   }], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid')
   regular([{
-    item: 'silentgear:flax_fiber',
-    count: 2
+      item: 'silentgear:flax_fiber',
+      count: 2
   }, {
-    item: 'silentgear:flax_seeds'
+      item: 'silentgear:flax_seeds'
   }], 'silentgear:flax_seeds', 'silentgear:flax_plant')
 
   //Inferium

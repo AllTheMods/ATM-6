@@ -30,7 +30,7 @@ events.listen('recipes', e => {
         'mysticalagriculture:essence/astralsorcery/rock_crystal',
         'mysticalagriculture:essence/astralsorcery/starmetal_ingot',
         'mysticalagriculture:essence/astralsorcery/aquamarine',
-        
+
         'mysticalagriculture:essence/thermal/basalz_rod',
         'mysticalagriculture:essence/thermal/blitz_rod',
         'mysticalagriculture:essence/thermal/blizz_rod',
@@ -109,6 +109,43 @@ events.listen('recipes', e => {
         'mysticalagriculture:seed/infusion/sulfur',
         'mysticalagriculture:seed/infusion/terrasteel',
 
+        //crative apiary
+        'creativeapiary:tcreative_apiary',
+        'creativeapiary:creative_apiary_storage',
+
+        'quarryplus:solidquarry',
+        'quarryplus:workbenchplus',
+        'mininggadgets:upgrade_empty',
+        'mekanism:digital_miner',
+        'mekanism:atomic_disassembler',
+        'mekanismgenerators:wind_generator',
+        'pamhc2foodcore:fruitpunchitem',
+        'pamhc2foodcore:applejuiceitem',
+        'pamhc2foodcore:melonjuiceitem',
+        'pamhc2foodcore:sweetberryjuiceitem',
+        'pamhc2foodcore:p8juiceitem',
+        'angelring:itemring',
+        'angelring:itemdiamondring',
+        //'bluepower:alloyfurnace',
+        //'bluepower:blulectric_alloyfurnace',
+        'forbidden_arcanus:iron_chain',
+        'silentgear:iron_rod',
+        'entangled:block',
+        'entangled:item',
+        'refinedstorage:4096k_fluid_storage_part',
+        'extradisks:4096k_storage_part',
+        'extradisks:16384k_fluid_storage_part',
+        'extradisks:16384k_storage_part',
+        'extradisks:65536k_fluid_storage_part',
+        'extradisks:65536k_storage_part',
+        'extradisks:262144k_fluid_storage_part',
+        'extradisks:262144k_storage_part',
+        'extradisks:1048576k_fluid_storage_part',
+        'extradisks:1048576k_storage_part',
+        'extradisks:infinite_fluid_storage_part',
+        'extradisks:infinite_storage_part',
+        'mysticalagriculture:unattuned_augment',
+        'rftoolsbuilder:builder'
     ];
     idRemove.forEach(iR => {
         e.remove({
@@ -157,5 +194,37 @@ events.listen('recipes', e => {
     e.remove({
         type: 'xreliquary:alkahestry_charging'
     });
-
+    e.remove({
+        id: 'appliedenergistics2:grinder/flour'
+    })
+    e.remove({
+        output: '#minecraft:signs',
+        type: 'pedestals:pedestal_sawing'
+    })
+    e.remove({
+        output: '#minecraft:wooden_stairs',
+        type: 'pedestals:pedestal_sawing'
+    })
+    e.remove({
+        output: '#minecraft:wooden_slabs',
+        type: 'pedestals:pedestal_sawing'
+    })
+    e.remove({
+        output: '#minecraft:wooden_trapdoors',
+        type: 'pedestals:pedestal_sawing'
+    })
+    e.remove({
+        output: '#minecraft:wooden_pressure_plates',
+        type: 'pedestals:pedestal_sawing'
+    })
+    e.remove({
+        output: 'minecraft:stick',
+        type: 'pedestals:pedestal_sawing'
+    })
+    e.remove({
+        output: 'pedestals:dustflour'
+    })
+    e.remove({
+        output: 'mekanism:bio_fuel'
+    })
 });
