@@ -221,7 +221,6 @@ onEvent('block.tags', e => {
     e.add('misctags:concrete', '/minecraft:.+_concrete/');
     e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']); //Regex to add a tag preventing moving by bag of yurting
     e.add('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/']); //, '/rftoolsbuilder:.+/', '^\\w+_glass$'
-
     //Astral Sorcery
     e.add('resourcefulbees:valid_apiary', [/^astralsorcery:marble_/, /^astralsorcery:black_marble_/, /^astralsorcery:infused_wood_/]);
     //Forbidden & Arcanus
@@ -241,7 +240,6 @@ onEvent('block.tags', e => {
     ]);
     //Misc
     e.add('resourcefulbees:valid_apiary', ['#mekanismadditions:plastic_blocks', 'compactmachines:solid_wall']);
-
     //Flowers
     e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block', 'astralsorcery:starmetal']);
 

@@ -1,4 +1,23 @@
 events.listen('recipes', function(e) {
+  
+  //Comb to Bucket
+  e.shaped('minecraft:water_bucket', [
+      ' C ',
+      'CBC',
+      ' C '
+  ], {
+      'C': 'resourcefulbees:water_honeycomb',
+      'B': 'minecraft:bucket'
+  }).id(`kubejs:water_comb_bucket`)
+  e.shaped('minecraft:lava_bucket', [
+      ' C ',
+      'CBC',
+      ' C '
+  ], {
+      'C': 'resourcefulbees:lava_honeycomb',
+      'B': 'minecraft:bucket'
+  }).id(`kubejs:lava_comb_bucket`)
+
   //Combs to Dye
   var cuShaped = e.recipes.cucumber.shaped_no_mirror
 
@@ -217,7 +236,7 @@ events.listen('recipes', function(e) {
       '   ',
       '   '
   ])
-  //Combs to Mystical
+  //Combs to crop
   var cuShaped = e.recipes.cucumber.shaped_no_mirror
 
   function Crop(result, pattern) {
