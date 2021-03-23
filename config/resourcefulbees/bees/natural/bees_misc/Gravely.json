@@ -1,0 +1,31 @@
+{
+    "flower": "tag:forge:gravel",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "misc/gravely_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#726b69"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:gravel",
+        "mainOutputCount": 3,
+        "mainOutputWeight": 0.9
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:mountain"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:gravel",
+        "feedAmount": 4
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

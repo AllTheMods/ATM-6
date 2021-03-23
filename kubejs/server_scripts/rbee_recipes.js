@@ -1,5 +1,5 @@
 events.listen('recipes', function(e) {
-
+  
   //Comb to Bucket
   e.shaped('minecraft:water_bucket', [
       ' C ',
@@ -127,4 +127,222 @@ events.listen('recipes', function(e) {
       '   ',
       '   '
   ])
+  //Combs to Mystical
+  var cuShaped = e.recipes.cucumber.shaped_no_mirror
+
+  function MysticalShaped(result, pattern) {
+      cuShaped({
+          'pattern': pattern,
+          'key': {
+              'C': {
+                  'item': 'resourcefulbees:mystical_honeycomb'
+              }
+          },
+          'result': {
+              'item': result,
+              'count': 2
+          }
+      })
+      cuShaped({
+          'pattern': pattern,
+          'key': {
+              'C': {
+                  'item': 'resourcefulbees:mystical_honeycomb_block'
+              }
+          },
+          'result': {
+              'item': result,
+              'count': 18
+          }
+      })
+  }
+  MysticalShaped('botania:white_mystical_flower', [
+      '  C',
+      ' C ',
+      ' C '
+  ])
+  MysticalShaped('botania:green_mystical_flower', [
+      '  C',
+      'CC ',
+      '   '
+  ])
+  MysticalShaped('botania:purple_mystical_flower', [
+      '  C',
+      '  C',
+      ' C '
+  ])
+  MysticalShaped('botania:cyan_mystical_flower', [
+      'C C',
+      ' C ',
+      '   '
+  ])
+  MysticalShaped('botania:light_gray_mystical_flower', [
+      ' C ',
+      ' C ',
+      '  C'
+  ])
+  MysticalShaped('botania:gray_mystical_flower', [
+      '  C',
+      ' C ',
+      'C  '
+  ])
+  MysticalShaped('botania:pink_mystical_flower', [
+      'C  ',
+      ' C ',
+      '  C'
+  ])
+  MysticalShaped('botania:lime_mystical_flower', [
+      '  C',
+      '  C',
+      '  C'
+  ])
+  MysticalShaped('botania:yellow_mystical_flower', [
+      ' C ',
+      ' C ',
+      ' C '
+  ])
+  MysticalShaped('botania:light_blue_mystical_flower', [
+      'C  ',
+      'C  ',
+      'C  '
+  ])
+  MysticalShaped('botania:magenta_mystical_flower', [
+      '   ',
+      '   ',
+      'CCC'
+  ])
+  MysticalShaped('botania:orange_mystical_flower', [
+      '   ',
+      'CCC',
+      '   '
+  ])
+  MysticalShaped('botania:blue_mystical_flower', [
+      '   ',
+      ' C ',
+      'C C'
+  ])
+  MysticalShaped('botania:brown_mystical_flower', [
+      '  C',
+      ' C ',
+      '  C'
+  ])
+  MysticalShaped('botania:black_mystical_flower', [
+      '   ',
+      'CC ',
+      '  C'
+  ])
+  MysticalShaped('botania:red_mystical_flower', [
+      'CCC',
+      '   ',
+      '   '
+  ])
+  //Combs to crop
+  var cuShaped = e.recipes.cucumber.shaped_no_mirror
+
+  function Crop(result, pattern) {
+      cuShaped({
+          'pattern': pattern,
+          'key': {
+              'C': {
+                  'item': 'resourcefulbees:cropy_honeycomb'
+              }
+          },
+          'result': {
+              'item': result,
+              'count': 3
+          }
+      })
+      cuShaped({
+          'pattern': pattern,
+          'key': {
+              'C': {
+                  'item': 'resourcefulbees:cropy_honeycomb_block'
+              }
+          },
+          'result': {
+              'item': result,
+              'count': 27
+          }
+      })
+  }
+  Crop('minecraft:wheat', [
+      '  C',
+      ' C ',
+      ' C '
+  ])
+  Crop('minecraft:beetroot', [
+      '  C',
+      'CC ',
+      '   '
+  ])
+  Crop('minecraft:carrot', [
+      '  C',
+      '  C',
+      ' C '
+  ])
+  Crop('minecraft:potato', [
+      'C C',
+      ' C ',
+      '   '
+  ])
+  Crop('minecraft:melon_slice', [
+      ' C ',
+      ' C ',
+      '  C'
+  ])
+  Crop('minecraft:pumpkin', [
+      '  C',
+      ' C ',
+      'C  '
+  ])
+  Crop('minecraft:bamboo', [
+      'C  ',
+      ' C ',
+      '  C'
+  ])
+  Crop('minecraft:sweet_berries', [
+      '  C',
+      '  C',
+      '  C'
+  ])
+  Crop('minecraft:brown_mushroom', [
+      ' C ',
+      ' C ',
+      ' C '
+  ])
+  Crop('minecraft:red_mushroom', [
+      'C  ',
+      'C  ',
+      'C  '
+  ])
+  /*Crop('', [
+      '   ',
+      '   ',
+      'CCC'
+  ])
+  Crop('', [
+      '   ',
+      'CCC',
+      '   '
+  ])
+  Crop('', [
+      '   ',
+      ' C ',
+      'C C'
+  ])
+  Crop('', [
+      '  C',
+      ' C ',
+      '  C'
+  ])
+  Crop('', [
+      '   ',
+      'CC ',
+      '  C'
+  ])
+  Crop('', [
+      'CCC',
+      '   ',
+      '   '
+  ])*/
 })

@@ -1,0 +1,11 @@
+{
+    "biomes": [
+        "byg:flowering_ancient_forest",
+        "byg:flowering_ancient_forest",
+        "minecraft:flower_forest",
+        "minecraft:sunflower_plains",
+        "byg:flowering_enchanted_grove",
+        "byg:flowering_grove",
+        "byg:flowering_meadow"
+    ]
+}
