@@ -1,0 +1,29 @@
+{
+    "flower": "minecraft:hay_block",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "crop/wheat_bee", 
+    "ColorData": {
+        "isBeeColored": false,
+        "modelType": "CROP",
+        "honeycombColor": "#dcbb65"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:cropy"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:hay_block",
+        "feedAmount": 3
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}
