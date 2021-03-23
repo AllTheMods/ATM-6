@@ -1,0 +1,8 @@
+{
+    "biomes": [
+        "byg:prairie",
+        "byg:prairie_clearing",
+        "minecraft:plains",
+        "minecraft:savanna"
+    ]
+}
