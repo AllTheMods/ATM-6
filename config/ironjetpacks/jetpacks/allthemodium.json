@@ -1,0 +1,19 @@
+{
+  "name": "allthemodium",
+  "disable": false,
+  "tier": 6,
+  "color": "ffef0e",
+  "armorPoints": 150,
+  "enchantability": 87,
+  "craftingMaterial": "tag:forge:ingots/allthemodium",
+  "rarity": 0,
+  "capacity": 72000000,
+  "usage": 1650,
+  "speedVertical": 1.15,
+  "accelVertical": 0.20,
+  "speedSideways": 0.25,
+  "speedHoverDescend": 0.70,
+  "speedHover": 0.0,
+  "sprintSpeedMulti": 2.3,
+  "sprintFuelMulti": 4.4
+}
