@@ -1,5 +1,5 @@
 events.listen('recipes', function(e) {
-
+    //functions
     function energize(ingredient, result, rCount, power) {
         e.recipes.powah.energizing({
             ingredients: ingredient,
@@ -31,6 +31,19 @@ events.listen('recipes', function(e) {
             'experience': xp
         })
     }
+
+    function modifyShaped(result, count, pattern, ingridients) {
+        e.remove({
+            output: result,
+            type: 'minecraft:crafting_shaped'
+        })
+        e.shaped(item.of(result, count),
+            pattern,
+            ingridients
+        ).id(`kubejs_${result}`)
+    }
+
+    //Shaped Recipes
     e.shaped('ctiers:centrifuge_casing_tier_creative', [
         'IRG',
         'RTR',
@@ -90,7 +103,39 @@ events.listen('recipes', function(e) {
         'H': 'rats:creative_cheese',
         'U': 'rats:rat_upgrade_nonbeliever'
     })
-    //Creative recipes
+    e.shaped('creativeapiary:tcreative_apiary', [
+        'HMH',
+        'MCM',
+        'TAT'
+    ], {
+        'H': 'compressium:honey_6',
+        'M': 'mekanism:pellet_antimatter',
+        'C': 'ctiers:centrifuge_controller_tier_creative',
+        'T': 'resourcefulbees:t4_apiary',
+        'A': 'allthemodium:unobtainium_allthemodium_alloy_block'
+    })
+    e.shaped('creativeapiary:creative_apiary_storage', [
+        'HNH',
+        'CAC',
+        'NHN'
+    ], {
+        'H': 'compressium:honey_3',
+        'N': 'kubejs:nether_star_block',
+        'C': 'ctiers:centrifuge_casing_tier_creative',
+        'A': 'resourcefulbees:apiary_storage'
+    })
+
+    //Shapeless Recipes
+    e.shapeless(item.of('botania:mana_tablet', {
+        mana: 500000,
+        creative: 1
+    }), ['botania:creative_pool'])
+    e.shapeless('botania:creative_pool', [item.of('botania:mana_tablet', {
+        mana: 500000,
+        creative: 1
+    })])
+
+    //Energize Recipes
     energize([{
         item: 'appliedenergistics2:dense_energy_cell'
     }], 'appliedenergistics2:creative_energy_cell', 1, 420000000)
@@ -109,14 +154,8 @@ events.listen('recipes', function(e) {
     energize([{
         item: 'refinedstorage:wireless_grid'
     }], 'refinedstorage:creative_wireless_grid', 1, 420000)
-    e.shapeless(item.of('botania:mana_tablet', {
-        mana: 500000,
-        creative: 1
-    }), ['botania:creative_pool'])
-    e.shapeless('botania:creative_pool', [item.of('botania:mana_tablet', {
-        mana: 500000,
-        creative: 1
-    })])
+
+    //Pressure Recipes
     pressure([{
             'type': 'pneumaticcraft:stacked_item',
             'item': 'mysticalagradditions:insanium_block',
@@ -163,6 +202,8 @@ events.listen('recipes', function(e) {
             'count': 1
         }
     ], 'mysticalagradditions:creative_essence', 1, 4.9)
+
+    //Jumbo Recipes
     jumbo(
         [{
                 'type': 'forge:nbt',
