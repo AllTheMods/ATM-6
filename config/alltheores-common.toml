@@ -33,14 +33,20 @@
 		#Nickel bottom Y level for spawn
 		#Range: 1 ~ 254
 		nickel_min_y = 1
+		#Nickel veins per chunk
+		#Range: 1 ~ 64
+		nickel_vein_count = 8
 
 	[spawntuning.platinum]
+		#Platinum veins per chunk
+		#Range: 1 ~ 64
+		platinum_vein_count = 6
 		#Platinum top Y level for spawn
 		#Range: 1 ~ 254
 		platinum_max_y = 25
 		#Platinum deposit size
 		#Range: 1 ~ 64
-		platinum_deposit_size = 4
+		platinum_deposit_size = 3
 		#Platinum bottom Y level for spawn
 		#Range: 1 ~ 254
 		platinum_min_y = 1
@@ -49,6 +55,9 @@
 		#Tin deposit size
 		#Range: 1 ~ 64
 		tin_deposit_size = 7
+		#Tin veins per chunk
+		#Range: 1 ~ 64
+		tin_vein_count = 10
 		#Tin top Y level for spawn
 		#Range: 1 ~ 254
 		tin_max_y = 60
@@ -57,6 +66,9 @@
 		tin_min_y = 30
 
 	[spawntuning.copper]
+		#Copper veins per chunk
+		#Range: 1 ~ 64
+		copper_vein_count = 10
 		#Copper deposit size
 		#Range: 1 ~ 64
 		copper_deposit_size = 7
@@ -74,6 +86,9 @@
 		#Osmium top Y level for spawn
 		#Range: 1 ~ 254
 		osmium_max_y = 40
+		#Osmium veins per chunk
+		#Range: 1 ~ 64
+		osmium_vein_count = 8
 		#Osmium bottom Y level for spawn
 		#Range: 1 ~ 254
 		osmium_min_y = 20
@@ -85,9 +100,12 @@
 		#Silver bottom Y level for spawn
 		#Range: 1 ~ 254
 		silver_min_y = 1
+		#Silver veins per chunk
+		#Range: 1 ~ 64
+		silver_vein_count = 8
 		#Silver deposit size
 		#Range: 1 ~ 64
-		silver_deposit_size = 7
+		silver_deposit_size = 5
 
 	[spawntuning.aluminum]
 		#Aluminum deposit size
@@ -99,6 +117,9 @@
 		#Aluminum top Y level for spawn
 		#Range: 1 ~ 254
 		aluminum_max_y = 70
+		#Aluminum veins per chunk
+		#Range: 1 ~ 64
+		aluminum_vein_count = 10
 
 	[spawntuning.uranium]
 		#Uranium bottom Y level for spawn
@@ -106,12 +127,18 @@
 		uranium_min_y = 1
 		#Uranium deposit size
 		#Range: 1 ~ 64
-		uranium_deposit_size = 5
+		uranium_deposit_size = 4
+		#Uranium veins per chunk
+		#Range: 1 ~ 64
+		uranium_vein_count = 6
 		#Uranium top Y level for spawn
 		#Range: 1 ~ 254
 		uranium_max_y = 25
 
 	[spawntuning.zinc]
+		#Zinc veins per chunk
+		#Range: 1 ~ 64
+		zinc_vein_count = 10
 		#Zinc deposit size
 		#Range: 1 ~ 64
 		zinc_deposit_size = 7
@@ -129,7 +156,11 @@
 		#Lead deposit size
 		#Range: 1 ~ 64
 		lead_deposit_size = 7
+		#Lead veins per chunk
+		#Range: 1 ~ 64
+		lead_vein_count = 8
 		#Lead top Y level for spawn
 		#Range: 1 ~ 254
 		lead_max_y = 40
+
 
