@@ -468,6 +468,14 @@ events.listen('recipes', function(e) {
         ], {
             G: 'minecraft:' + color + '_stained_glass_pane'
         })
+        e.shaped(item.of('minecraft:' + color + '_concrete', 8), [
+            'PPP',
+            'PWP',
+            'PPP',
+        ], {
+            P: 'minecraft:' + color + '_concrete_powder',
+            W: ['resourcefulbees:water_honeycomb', 'mysticalagriculture:water_essence', 'minecraft:water_bucket']
+        })
     })
     e.shaped(item.of('minecraft:white_wool'), [
         'SS',
