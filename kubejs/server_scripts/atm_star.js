@@ -53,15 +53,18 @@ events.listen('recipes', function(e) {
         D: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_wither" })
     })
 	//philosophers Fuel
-    e.shapeless('kubejs:saltpeter_block', ['9x kubejs:saltpeter_ingot'])
-    e.shapeless('9x kubejs:saltpeter_ingot', ['kubejs:saltpeter_block'])
+	e.shapeless('kubejs:saltpeter_block', ['9x kubejs:saltpeter_ingot'])
+	e.shapeless('9x kubejs:saltpeter_ingot', ['kubejs:saltpeter_block'])
 	e.shapeless('kubejs:saltpeter_ingot', ['9x immersiveengineering:dust_saltpeter'])
-	e.shapeless('kubejs:potassium_block', ['9x kubejs:potassium_nitrate_ingot'])
-    e.shapeless('9x kubejs:potassium_nitrate_ingot', ['kubejs:potassium_block'])
-    e.shapeless('kubejs:potassium_nitrate_ingot', ['9x kubejs:potassium_nitrate_dust'])
-	e.shapeless('kubejs:potassium_nitrate_block', ['9x kubejs:potassium_ingot'])
-    e.shapeless('9x kubejs:potassium_ingot', ['kubejs:potassium_nitrate_block'])
+	
+	e.shapeless('9x kubejs:potassium_nitrate_ingot', ['kubejs:potassium_nitrate_block'])
+	e.shapeless('kubejs:potassium_nitrate_block', ['9x kubejs:potassium_nitrate_ingot'])
+	e.shapeless('kubejs:potassium_nitrate_ingot', ['9x kubejs:potassium_nitrate_dust'])
+	
+	e.shapeless('9x kubejs:potassium_ingot', ['kubejs:potassium_block'])
+	e.shapeless('kubejs:potassium_block', ['9x kubejs:potassium_ingot'])
 	e.shapeless('kubejs:potassium_ingot', ['9x kubejs:potassium_dust'])
+	
 	
 	const multiCrush = (output, input) => {
     e.recipes.mekanism.crushing(output, input)
