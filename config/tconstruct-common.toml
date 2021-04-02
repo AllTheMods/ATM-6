@@ -1,0 +1,42 @@
+
+#Everything to do with gameplay
+[gameplay]
+	#Set this to false to disable new players spawning with the Tinkers' Book.
+	shouldSpawnWithTinkersBook = false
+	#Blacklist of registry names for the crafting station to connect to. Mainly for compatibility.
+	craftingStationBlacklist = []
+	#If true all material variants of the different tools will be listed in creative. Set to false to only have the first found material for all tools (usually wood).
+	listAllToolMaterials = true
+	#If true all material variants of the different parts will be listed in creative. Set to false to only have the first found material for all parts (usually wood).
+	listAllPartMaterials = true
+
+#Options related to recipes, limited options as a datapack allows most recipes to be modified
+[recipes]
+	#Add a recipe that allows you to craft a piece of flint using 3 gravel
+	addGravelToFlintRecipe = false
+	#Makes the recipe to alloy netherite in the smeltery only cost 2 gold per netherite ingot. If false uses the vanilla rate of 4 gold per ingot. Disable if there are crafting duplications.
+	cheaperNetheriteAlloy = false
+	#Makes wither skeletons drop necrotic bones
+	witherBoneDrop = true
+	#Allows converting wither bones to regular bones
+	witherBoneConversion = true
+	#Number of nuggets produced when an ore block is melted in the melter. 9 would give 1 ingot
+	#Range: 1 ~ 45
+	melterNuggetsPerOre = 12
+	#Number of nuggets produced when an ore block is melted in the smeltery. 9 nuggets would give 1 ingot
+	#Range: 1 ~ 45
+	smelteryNuggetsPerOre = 18
+
+#Everything to do with world generation
+[worldgen]
+	#Generate Copper
+	generateCopper = false
+	#Approx Ores per Chunk
+	veinCountCopper = 20
+	#Generate Cobalt
+	generateCobalt = true
+	#Approx Ores per Chunk
+	veinCountCobalt = 8
+	#Set this to false to disable slime islands spawning in the world
+	generateSlimeIslands = true
+
