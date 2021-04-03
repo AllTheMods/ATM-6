@@ -22,10 +22,10 @@ events.listen('recipes', function(e) {
     }
     //Ctiers
     e.shaped('3x ctiers:centrifuge_casing_tier_creative', [
-            'IRG',
-            'RCR',
-            'DRE'
-        ],
+        'IRG',
+        'RCR',
+        'DRE'
+    ],
         {
             I: 'compressium:iron_3',
             R: 'compressium:redstone_3',
@@ -119,10 +119,10 @@ events.listen('recipes', function(e) {
             mode: 0,
             spells: ",intangible,ignite,flare,strength,craft,cold_snap,rune,snare,slowfall,freeze,split,crush,smelt,summon_steed,accelerate,summon_vex,lightning,grow,dampen,touch,invisibility,extract,delay,light,duration_down,exchange,place_block,summon_wolves,shield,conjure_water,cut,harm,interact,blink,amplify,phantom_block,fell,extend_time,heal,leap,redstone_signal,pierce,harvest,fortune,break,pickup,launch,dispel,haste,ender_inventory,pull,explosion,fangs,aoe,gravity,self,aquatic,projectile,wither,gust"
         }), [
-            'ASG',
-            'GGE',
-            'EER'
-        ],
+        'ASG',
+        'GGE',
+        'EER'
+    ],
         {
             A: 'ars_nouveau:archmage_spell_book',
             S: atm_star,
@@ -132,10 +132,10 @@ events.listen('recipes', function(e) {
         })
 
     e.shaped('ars_nouveau:creative_mana_jar', [
-            'GMG',
-            'GSG',
-            'GGG'
-        ],
+        'GMG',
+        'GSG',
+        'GGG'
+    ],
         {
             G: '#forge:glass',
             S: atm_star,
@@ -169,10 +169,10 @@ events.listen('recipes', function(e) {
     }), 2147483647)
     //Create
     e.recipes.create.mechanical_crafting('create:creative_motor', [
-            'CBC',
-            'HSH',
-            'LGL'
-        ],
+        'CBC',
+        'HSH',
+        'LGL'
+    ],
         {
             C: 'create:cogwheel',
             L: 'create:large_cogwheel',
@@ -235,10 +235,10 @@ events.listen('recipes', function(e) {
         }], 'pneumaticcraft:creative_compressor', 1, 4.9)
     //Storage Drawers
     e.shaped('16x storagedrawers:creative_storage_upgrade', [
-            'EEE',
-            'ASA',
-            'EEE'
-        ],
+        'EEE',
+        'ASA',
+        'EEE'
+    ],
         {
             E: 'storagedrawers:emerald_storage_upgrade',
             S: atm_star,
@@ -246,10 +246,10 @@ events.listen('recipes', function(e) {
         })
     //Ice And Fire
     e.shaped('2x iceandfire:creative_dragon_meal', [
-            'DDD',
-            'DSD',
-            'DDD'
-        ],
+        'DDD',
+        'DSD',
+        'DDD'
+    ],
         {
             D: 'iceandfire:dragon_meal',
             S: atm_star
