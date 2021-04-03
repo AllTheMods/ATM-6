@@ -22,17 +22,19 @@ events.listen('recipes', function(e) {
     }
     //Ctiers
     e.shaped('3x ctiers:centrifuge_casing_tier_creative', [
-        'IRG',
-        'RTR',
-        'DRE'
-    ], {
-        I: 'compressium:iron_3',
-        R: 'compressium:redstone_3',
-        G: 'compressium:gold_3',
-        T: 'ctiers:centrifuge_casing_tier_5',
-        D: 'compressium:diamond_3',
-        E: 'compressium:emerald_3'
-    })
+            'IRG',
+            'RCR',
+            'DRE'
+        ],
+        {
+            I: 'compressium:iron_3',
+            R: 'compressium:redstone_3',
+            G: 'compressium:gold_3',
+            C: 'ctiers:centrifuge_casing_tier_5',
+            D: 'compressium:diamond_3',
+            E: 'compressium:emerald_3'
+        })
+
     e.shaped('ctiers:centrifuge_controller_tier_creative', [
         'ICG',
         'HSH',
@@ -112,30 +114,33 @@ events.listen('recipes', function(e) {
     }), ['botania:creative_pool'])
 
     //Ars Nouveau
-    e.shaped(Item.of('ars_nouveau:creative_spell_book', {
-        mode: 0,
-        spells: ",intangible,ignite,flare,strength,craft,cold_snap,rune,snare,slowfall,freeze,split,crush,smelt,summon_steed,accelerate,summon_vex,lightning,grow,dampen,touch,invisibility,extract,delay,light,duration_down,exchange,place_block,summon_wolves,shield,conjure_water,cut,harm,interact,blink,amplify,phantom_block,fell,extend_time,heal,leap,redstone_signal,pierce,harvest,fortune,break,pickup,launch,dispel,haste,ender_inventory,pull,explosion,fangs,aoe,gravity,self,aquatic,projectile,wither,gust"
-    }), [
-        'ABC',
-        'CCD',
-        'DDE'
-    ], {
-        A: 'ars_nouveau:archmage_spell_book',
-        B: atm_star,
-        C: 'astralsorcery:resonating_gem',
-        D: 'minecraft:ender_eye',
-        E: 'tombstone:soul_receptacle'
-    })
+    e.shaped(Item.of('ars_nouveau:creative_spell_book',
+        {
+            mode: 0,
+            spells: ",intangible,ignite,flare,strength,craft,cold_snap,rune,snare,slowfall,freeze,split,crush,smelt,summon_steed,accelerate,summon_vex,lightning,grow,dampen,touch,invisibility,extract,delay,light,duration_down,exchange,place_block,summon_wolves,shield,conjure_water,cut,harm,interact,blink,amplify,phantom_block,fell,extend_time,heal,leap,redstone_signal,pierce,harvest,fortune,break,pickup,launch,dispel,haste,ender_inventory,pull,explosion,fangs,aoe,gravity,self,aquatic,projectile,wither,gust"
+        }), [
+            'ASG',
+            'GGE',
+            'EER'
+        ],
+        {
+            A: 'ars_nouveau:archmage_spell_book',
+            S: atm_star,
+            G: 'astralsorcery:resonating_gem',
+            E: 'minecraft:ender_eye',
+            R: 'tombstone:soul_receptacle'
+        })
 
     e.shaped('ars_nouveau:creative_mana_jar', [
-        'ACA',
-        'ABA',
-        'AAA'
-    ], {
-        A: '#forge:glass',
-        B: atm_star,
-        C: 'ars_nouveau:mana_gem_block'
-    })
+            'GMG',
+            'GSG',
+            'GGG'
+        ],
+        {
+            G: '#forge:glass',
+            S: atm_star,
+            M: 'ars_nouveau:mana_gem_block'
+        })
     //Immersive Engineering
     energize(['immersiveengineering:capacitor_lv', 'immersiveengineering:capacitor_mv', 'immersiveengineering:capacitor_hv', atm_star], 'immersiveengineering:capacitor_creative', 2147483647)
     //Integrated Dynamics
@@ -164,16 +169,17 @@ events.listen('recipes', function(e) {
     }), 2147483647)
     //Create
     e.recipes.create.mechanical_crafting('create:creative_motor', [
-        'ABA',
-        'CDC',
-        'BEB'
-    ], {
-        A: 'create:cogwheel',
-        B: 'create:large_cogwheel',
-        C: 'create:shaft',
-        D: atm_star,
-        E: 'create:gearbox'
-    })
+            'CBC',
+            'HSH',
+            'LGL'
+        ],
+        {
+            C: 'create:cogwheel',
+            L: 'create:large_cogwheel',
+            H: 'create:shaft',
+            S: atm_star,
+            G: 'create:gearbox'
+        })
     //Refined Storage
     energize(['refinedstorage:wireless_grid'], 'refinedstorage:creative_wireless_grid', 2147483647)
     energize(['refinedstorage:wireless_fluid_grid'], 'refinedstorage:creative_wireless_fluid_grid', 2147483647)
@@ -185,7 +191,7 @@ events.listen('recipes', function(e) {
     pressure([{
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
+            'count': 64
         },
         {
             'type': 'pneumaticcraft:stacked_item',
@@ -195,7 +201,7 @@ events.listen('recipes', function(e) {
         {
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
+            'count': 64
         },
         {
             'type': 'pneumaticcraft:stacked_item',
@@ -215,7 +221,7 @@ events.listen('recipes', function(e) {
         {
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
+            'count': 64
         },
         {
             'type': 'pneumaticcraft:stacked_item',
@@ -225,28 +231,29 @@ events.listen('recipes', function(e) {
         {
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
-        }
-    ], 'pneumaticcraft:creative_compressor', 1, 4.9)
+            'count': 64
+        }], 'pneumaticcraft:creative_compressor', 1, 4.9)
     //Storage Drawers
     e.shaped('16x storagedrawers:creative_storage_upgrade', [
-        'AAA',
-        'CBC',
-        'AAA'
-    ], {
-        A: 'storagedrawers:emerald_storage_upgrade',
-        B: atm_star,
-        C: 'allthemodium:allthemodium_block'
-    })
+            'EEE',
+            'ASA',
+            'EEE'
+        ],
+        {
+            E: 'storagedrawers:emerald_storage_upgrade',
+            S: atm_star,
+            A: 'allthemodium:allthemodium_block'
+        })
     //Ice And Fire
     e.shaped('2x iceandfire:creative_dragon_meal', [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: 'iceandfire:dragon_meal',
-        B: atm_star
-    })
+            'DDD',
+            'DSD',
+            'DDD'
+        ],
+        {
+            D: 'iceandfire:dragon_meal',
+            S: atm_star
+        })
 
     const colors = ['red', 'green', 'bronze', 'gray', 'blue', 'white', 'sapphire', 'silver', 'electric', 'amythest', 'copper', 'black']
 
