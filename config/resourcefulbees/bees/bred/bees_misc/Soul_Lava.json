@@ -31,6 +31,6 @@
         "isPassive": false,
         "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 100
+        "attackDamage": 1000
     }
 }
