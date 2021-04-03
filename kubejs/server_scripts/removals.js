@@ -112,8 +112,7 @@ events.listen('recipes', e => {
         //crative apiary
         'creativeapiary:tcreative_apiary',
         'creativeapiary:creative_apiary_storage',
-        'creativeapiary:creative_apiary_breeder',
-        
+
         'quarryplus:solidquarry',
         'quarryplus:workbenchplus',
         'mininggadgets:upgrade_empty',
