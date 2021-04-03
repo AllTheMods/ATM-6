@@ -1,5 +1,5 @@
 events.listen('recipes', function(e) {
-	function jumbo(ingredients, result, xp) {
+    function jumbo(ingredients, result, xp) {
         e.recipes.jumbofurnace.jumbo_smelting({
             'ingredients': ingredients,
             'result': {
@@ -8,7 +8,7 @@ events.listen('recipes', function(e) {
             'experience': xp
         })
     }
-	//Dragon Soul
+    //Dragon Soul
     const iaf = 'iceandfire:'
     const dBlood = '_dragon_blood'
     e.shaped('atmadditions:dragon_soul', [
@@ -25,7 +25,7 @@ events.listen('recipes', function(e) {
         E: 'forbidden_arcanus:golden_dragon_scale',
         I: '#forge:scales/dragon'
     })
-	//Dimensional Seed
+    //Dimensional Seed
     e.shaped('atmadditions:dimensional_seed', [
         'ABC',
         'DEF',
@@ -41,7 +41,7 @@ events.listen('recipes', function(e) {
         H: 'compressium:snow_4',
         I: 'compressium:obsidian_3'
     })
-	//Withers Compass
+    //Withers Compass
     e.shaped('atmadditions:withers_compass', [
         'DCD',
         'ABA',
@@ -50,41 +50,44 @@ events.listen('recipes', function(e) {
         A: 'resourcefulbees:wither_honeycomb_block',
         B: 'ars_nouveau:glyph_wither',
         C: 'darkutils:rune_wither',
-        D: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_wither" })
+        D: Item.of('apotheosis:potion_charm', {
+            Damage: 0,
+            Potion: "apotheosis:strong_wither"
+        })
     })
-	//philosophers Fuel
-	e.shapeless('kubejs:saltpeter_block', ['9x kubejs:saltpeter_ingot'])
-	e.shapeless('9x kubejs:saltpeter_ingot', ['kubejs:saltpeter_block'])
-	e.shapeless('kubejs:saltpeter_ingot', ['9x immersiveengineering:dust_saltpeter'])
-	
-	e.shapeless('9x kubejs:potassium_nitrate_ingot', ['kubejs:potassium_nitrate_block'])
-	e.shapeless('kubejs:potassium_nitrate_block', ['9x kubejs:potassium_nitrate_ingot'])
-	e.shapeless('kubejs:potassium_nitrate_ingot', ['9x kubejs:potassium_nitrate_dust'])
-	
-	e.shapeless('9x kubejs:potassium_ingot', ['kubejs:potassium_block'])
-	e.shapeless('kubejs:potassium_block', ['9x kubejs:potassium_ingot'])
-	e.shapeless('kubejs:potassium_ingot', ['9x kubejs:potassium_dust'])
-	
-	
-	const multiCrush = (output, input) => {
-    e.recipes.mekanism.crushing(output, input)
-    e.recipes.create.crushing(output, input)
-	e.recipes.immersiveengineering.crusher(output, input)
-	e.recipes.thermal.pulverizer(output, input)
-	}
-	
-	multiCrush('9x immersiveengineering:dust_saltpeter', ['kubejs:saltpeter_ingot'])
-	multiCrush('9x kubejs:potassium_dust', ['kubejs:potassium_ingot'])
-	multiCrush('9x kubejs:potassium_nitrate_dust', ['kubejs:potassium_nitrate_ingot'])
+    //philosophers Fuel
+    e.shapeless('kubejs:saltpeter_block', ['9x kubejs:saltpeter_ingot'])
+    e.shapeless('9x kubejs:saltpeter_ingot', ['kubejs:saltpeter_block'])
+    e.shapeless('kubejs:saltpeter_ingot', ['9x immersiveengineering:dust_saltpeter'])
 
-	e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_dust', 'kubejs:potassium_dust', '#forge:dusts/saltpeter')
-	e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_ingot', 'kubejs:potassium_ingot', 'kubejs:saltpeter_ingot')
-	e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_block', 'kubejs:potassium_block', 'kubejs:saltpeter_block')
-	e.recipes.create.mixing('2x kubejs:potassium_nitrate_dust', ['kubejs:potassium_dust', '#forge:dusts/saltpeter'])
-	e.recipes.create.mixing('2x kubejs:potassium_nitrate_ingot', ['kubejs:potassium_ingot', 'kubejs:saltpeter_ingot'])
-	e.recipes.create.mixing('2x kubejs:potassium_nitrate_block', ['kubejs:potassium_block', 'kubejs:saltpeter_block'])
-	
-	jumbo(
+    e.shapeless('9x kubejs:potassium_nitrate_ingot', ['kubejs:potassium_nitrate_block'])
+    e.shapeless('kubejs:potassium_nitrate_block', ['9x kubejs:potassium_nitrate_ingot'])
+    e.shapeless('kubejs:potassium_nitrate_ingot', ['9x kubejs:potassium_nitrate_dust'])
+
+    e.shapeless('9x kubejs:potassium_ingot', ['kubejs:potassium_block'])
+    e.shapeless('kubejs:potassium_block', ['9x kubejs:potassium_ingot'])
+    e.shapeless('kubejs:potassium_ingot', ['9x kubejs:potassium_dust'])
+
+
+    const multiCrush = (output, input) => {
+        e.recipes.mekanism.crushing(output, input)
+        e.recipes.create.crushing(output, input)
+        e.recipes.immersiveengineering.crusher(output, input)
+        e.recipes.thermal.pulverizer(output, input)
+    }
+
+    multiCrush('9x immersiveengineering:dust_saltpeter', ['kubejs:saltpeter_ingot'])
+    multiCrush('9x kubejs:potassium_dust', ['kubejs:potassium_ingot'])
+    multiCrush('9x kubejs:potassium_nitrate_dust', ['kubejs:potassium_nitrate_ingot'])
+
+    e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_dust', 'kubejs:potassium_dust', '#forge:dusts/saltpeter')
+    e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_ingot', 'kubejs:potassium_ingot', 'kubejs:saltpeter_ingot')
+    e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_block', 'kubejs:potassium_block', 'kubejs:saltpeter_block')
+    e.recipes.create.mixing('2x kubejs:potassium_nitrate_dust', ['kubejs:potassium_dust', '#forge:dusts/saltpeter'])
+    e.recipes.create.mixing('2x kubejs:potassium_nitrate_ingot', ['kubejs:potassium_ingot', 'kubejs:saltpeter_ingot'])
+    e.recipes.create.mixing('2x kubejs:potassium_nitrate_block', ['kubejs:potassium_block', 'kubejs:saltpeter_block'])
+
+    jumbo(
         [{
                 'type': 'jumbofurnace:tag_stack',
                 'tag': 'forge:vegetables',
@@ -103,16 +106,16 @@ events.listen('recipes', function(e) {
         ],
         'kubejs:potassium_dust', 5
     )
-	
-	e.recipes.bloodmagic.alchemytable('atmadditions:philosophers_fuel', [
-	'kubejs:potassium_nitrate_block',
-	'mekanism:sulfuric_acid_bucket',
-	'mana-and-artifice:enchantment_focus_fire',
-	'thermal:coal_coke_block',
-	'immersivepetroleum:napalm_bucket',
-	'pneumaticcraft:lpg_bucket'
-	]).syphon(50000)
-	//Improbable Probaility Device
+
+    e.recipes.bloodmagic.alchemytable('atmadditions:philosophers_fuel', [
+        'kubejs:potassium_nitrate_block',
+        'mekanism:sulfuric_acid_bucket',
+        'mana-and-artifice:enchantment_focus_fire',
+        'thermal:coal_coke_block',
+        'immersivepetroleum:napalm_bucket',
+        'pneumaticcraft:lpg_bucket'
+    ]).syphon(50000)
+    //Improbable Probaility Device
     e.shaped('atmadditions:improbable_probability_device', [
         'AAB',
         'CDE',
@@ -122,10 +125,13 @@ events.listen('recipes', function(e) {
         B: 'mekanism:module_solar_recharging_unit',
         C: ['extradisks:1048576k_storage_part', 'ae2extras:16m_cell_component', 'extradisks:1048576k_fluid_storage_part'],
         D: 'rats:psionic_rat_brain',
-        E: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_knowledge" }),
+        E: Item.of('apotheosis:potion_charm', {
+            Damage: 0,
+            Potion: "apotheosis:strong_knowledge"
+        }),
         F: 'thermal:enderium_block'
     })
-	//Nexium Emitter
+    //Nexium Emitter
     e.shaped('atmadditions:nexium_emitter', [
         'A C',
         ' BF',
@@ -138,7 +144,7 @@ events.listen('recipes', function(e) {
         E: 'mana-and-artifice:transitory_tunnel',
         F: 'powah:player_transmitter_nitro'
     })
-	//Pulsating Black Hole
+    //Pulsating Black Hole
     e.shaped('atmadditions:pulsating_black_hole', [
         'ABC',
         'DEF',
@@ -154,7 +160,7 @@ events.listen('recipes', function(e) {
         H: 'envirotech:xerothium_void_miner_ccu',
         I: 'modularrouters:void_module'
     })
-	//Oblivion Shard
+    //Oblivion Shard
     e.shaped('atmadditions:oblivion_shard', [
         ' AB',
         'ACA',
@@ -164,8 +170,8 @@ events.listen('recipes', function(e) {
         C: 'astralsorcery:shifting_star_vicio',
         B: 'forbidden_arcanus:dark_nether_star_block'
     })
-	//Creative Essence
-	e.shaped('mysticalagradditions:creative_essence', [
+    //Creative Essence
+    e.shaped('mysticalagradditions:creative_essence', [
         'CAC',
         'ABA',
         'CAC'
@@ -174,7 +180,7 @@ events.listen('recipes', function(e) {
         C: 'mysticalagradditions:insanium_gemstone_block',
         B: 'mysticalagriculture:master_infusion_crystal'
     })
-	//Patrick Star
+    //Patrick Star
     e.recipes.create.mechanical_crafting('kubejs:patrick_star', [
         '    B    ',
         '   BCA   ',
@@ -194,7 +200,7 @@ events.listen('recipes', function(e) {
         F: 'minecraft:lime_concrete',
         G: 'minecraft:magenta_concrete_powder'
     })
-	//ATM Star
+    //ATM Star
     e.recipes.create.mechanical_crafting('atmadditions:atm_star', [
         '    A    ',
         '   AJA   ',
@@ -218,7 +224,7 @@ events.listen('recipes', function(e) {
         J: 'kubejs:nether_star_block',
         K: 'atmadditions:philosophers_fuel',
         L: 'mysticalagradditions:creative_essence',
-		M: 'kubejs:rune_of_sins',
-		N: 'kubejs:mass_of_wills'
+        M: 'kubejs:rune_of_sins',
+        N: 'kubejs:mass_of_wills'
     })
 })
