@@ -705,7 +705,7 @@ events.listen('recipes', function(e) {
         B: 'compressium:redstone_4',
         C: 'pipez:ultimate_upgrade'
     })
-    
+
     //Misc Shapeless Recipes
     e.shapeless(item.of('minecraft:clay_ball', 4), 'minecraft:clay').id(`kubejs:clay`)
     e.shapeless(item.of('minecraft:quartz', 4), 'minecraft:quartz_block').id(`kubejs:quartz`)
@@ -958,7 +958,7 @@ events.listen('recipes', function(e) {
     //pulverize (`output`, `input`)
 
     //add byg logs to mek sawmill
-    var Saw = [
+    var saw = [
         'aspen',
         'baobab',
         'blue_enchanted',
@@ -983,16 +983,14 @@ events.listen('recipes', function(e) {
         'skyris',
         'willow',
         'witch_hazel',
-        'zelkova',
-
+        'zelkova'
     ]
-    Saw.forEach(type => {
-        mekSaw((`6x byg:${type}_planks`), [, `byg:stripped_${type}_log`, `byg:${type}_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_${type}`)
+    saw.forEach(type => {
+        mekSaw((`6x byg:${type}_planks`), [`byg:stripped_${type}_log`, `byg:${type}_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_${type}`)
     })
-    mekSaw(item.of('minecraft:oak_planks', 6), 'byg:withering_oak_log', Item.of('mekanism:sawdust').withChance(0.25)).id('kubejs:saw/byg_log_withering_oak')
-    mekSaw(item.of('mekanism:sawdust', 8), 'byg:imbued_nightshade_log').id('kubejs:saw/byg_log_imbued_nightshade')
-    mekSaw(item.of('minecraft:birch_planks', 6), 'byg:palo_verde_log', Item.of('mekanism:sawdust').withChance(0.25)).id('kubejs:saw/byg_log_palo_verde')
-    mekSaw(item.of('minecraft:birch_planks', 6), 'byg:stripped_palo_verde_log', Item.of('mekanism:sawdust').withChance(0.25)).id('kubejs:saw/byg_log_stripped_palo_verde')
+    mekSaw((`6x minecraft:oak_planks`), `byg:withering_oak_log`, Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_withering_oak`)
+    mekSaw((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`, ).id(`kubejs:saw/byg_log_imbued_nightshade`)
+    mekSaw((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
 
     //botania
     e.recipes.botania.runic_altar({
