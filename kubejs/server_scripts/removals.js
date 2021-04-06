@@ -146,7 +146,9 @@ events.listen('recipes', e => {
         'extradisks:part/infinite_fluid_storage_part',
         'extradisks:part/infinite_storage_part',
         'mysticalagriculture:unattuned_augment',
-        'rftoolsbuilder:builder'
+        'rftoolsbuilder:builder',
+        'extrastorage:iron_crafter'
+        
     ];
     idRemove.forEach(iR => {
         e.remove({

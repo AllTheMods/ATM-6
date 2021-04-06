@@ -185,7 +185,7 @@ events.listen('recipes', function(e) {
     pressure([{
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
+            'count': 64
         },
         {
             'type': 'pneumaticcraft:stacked_item',
@@ -195,7 +195,7 @@ events.listen('recipes', function(e) {
         {
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
+            'count': 64
         },
         {
             'type': 'pneumaticcraft:stacked_item',
@@ -215,7 +215,7 @@ events.listen('recipes', function(e) {
         {
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
+            'count': 64
         },
         {
             'type': 'pneumaticcraft:stacked_item',
@@ -225,7 +225,7 @@ events.listen('recipes', function(e) {
         {
             'type': 'pneumaticcraft:stacked_item',
             'item': 'pneumaticcraft:advanced_pressure_tube',
-            'count': 1
+            'count': 64
         }
     ], 'pneumaticcraft:creative_compressor', 1, 4.9)
     //Storage Drawers
