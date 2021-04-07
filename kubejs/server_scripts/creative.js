@@ -60,8 +60,8 @@ events.listen('recipes', function(e) {
         'NBN',
         'BNB'
     ], {
-        'B': 'resourcefulbees:apiary_breeder',
-        'N': 'kubejs:nether_star_block'
+        B: 'resourcefulbees:apiary_breeder',
+        N: 'kubejs:nether_star_block'
     })
     e.shaped('ctiers:centrifuge_controller_tier_creative', [
         'ICG',
