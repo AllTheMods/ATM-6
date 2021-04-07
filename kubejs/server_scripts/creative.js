@@ -94,6 +94,15 @@ events.listen('recipes', function(e) {
         U: 'rats:rat_upgrade_block',
         S: atm_star
     })
+    e.shaped('rats:rat_upgrade_combined_creative', [
+        'RUR',
+        'USU',
+        'RUR'
+    ], {
+        R: 'rats:idol_of_ratlantis',
+        U: 'rats:rat_upgrade_combined',
+        S: atm_star
+    })
     //Woot
     e.shaped('woot:creative_conatus', [
         'UCU',
