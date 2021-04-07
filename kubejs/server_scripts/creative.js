@@ -85,6 +85,15 @@ events.listen('recipes', function(e) {
         C: '#forge:cheese_block',
         S: atm_star
     })
+    e.shaped('rats:rat_upgrade_creative', [
+        'CUC',
+        'USU',
+        'CUC'
+    ], {
+        C: '#forge:cheese_block',
+        U: 'rats:rat_upgrade_block',
+        S: atm_star
+    })
     //Woot
     e.shaped('woot:creative_conatus', [
         'UCU',
