@@ -33,6 +33,19 @@ events.listen('recipes', function(e) {
         D: 'compressium:diamond_3',
         E: 'compressium:emerald_3'
     })
+    e.shaped('ctiers:centrifuge_controller_tier_creative', [
+        'ICG',
+        'HSH',
+        'DHE'
+    ], {
+        I: 'compressium:iron_5',
+        C: 'ctiers:centrifuge_casing_tier_creative',
+        G: 'compressium:gold_5',
+        S: atm_star,
+        D: 'compressium:diamond_5',
+        E: 'compressium:emerald_5',
+        H: 'compressium:honey_5'
+    })
     //CApiary
     e.shaped('creativeapiary:tcreative_apiary', [
         'HMH',
@@ -62,19 +75,6 @@ events.listen('recipes', function(e) {
     ], {
         B: 'resourcefulbees:apiary_breeder',
         N: 'kubejs:nether_star_block'
-    })
-    e.shaped('ctiers:centrifuge_controller_tier_creative', [
-        'ICG',
-        'HSH',
-        'DHE'
-    ], {
-        I: 'compressium:iron_5',
-        C: 'ctiers:centrifuge_casing_tier_creative',
-        G: 'compressium:gold_5',
-        S: atm_star,
-        D: 'compressium:diamond_5',
-        E: 'compressium:emerald_5',
-        H: 'compressium:honey_5'
     })
     //Rats
     e.shaped('rats:creative_cheese', [
