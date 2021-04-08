@@ -234,5 +234,6 @@
     "block.resourcefulbees.cropy_honeycomb_block": "Cropy Honeycomb Block",
     "item.resourcefulbees.cropy_honeycomb": "Cropy Honeycomb",
     "item.resourcefulbees.cropy_bee_spawn_egg": "Cropy Spawn Egg",
-    "entity.resourcefulbees.cropy_bee": "Cropy Bee"
+    "entity.resourcefulbees.cropy_bee": "Cropy Bee",
+    "trait.resourcefulbees.soul_fire": "Soul Fire Trait"
 }

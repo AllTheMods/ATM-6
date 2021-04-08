@@ -1,7 +1,7 @@
 {
-    "flower": "allthemodium:molten_bluelava",
+    "flower": "allthemodium:molten_bluelava_block",
     "maxTimeInHive": 2400,
-    "traits": ["nether", "angry"],
+    "traits": ["nether", "angry", "soul_fire"],
     "hasHoneycomb": true,
     "baseLayerTexture": "modium/soul_lava_bee",
     "ColorData": {
