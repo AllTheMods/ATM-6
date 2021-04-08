@@ -12,11 +12,20 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationType": "ENTITY_TO_ENTITY",
-        "mutationInput": "resourcefulbees:lava_bee",
-        "mutationOutput": "resourcefulbees:soul_lava_bee",
         "mutationCount": 1,
-        "chance": 0.50
+        "mutations": [{
+            "type": "ENTITY_TO_ENTITY",
+            "inputID": "resourcefulbees:lava_bee",
+            "outputs": [{
+                    "outputID": "resourcefulbees:lava_bee",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:soul_lava_bee",
+                    "weight": 20
+                }
+            ]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -29,11 +38,8 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "breedChance": 0.6,
-        "parent1": "Vibranium",
-        "parent2": "Allthemodium",
         "feedItem": "tag:forge:storage_blocks/unobtainium",
-        "feedAmount": 3
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": true
