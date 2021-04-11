@@ -16,7 +16,7 @@
 	#This value scales the bee size for all Resource Bees. 
 	#Note: Setting the value in bee JSON overrides this value.
 	#Range: 0.5 ~ 2.0
-	global_bee_size_modifier = 0.75
+	global_bee_size_modifier = 1.0
 	#
 	#Should bees inflict poison damage?
 	#Note: Poison is only inflicted if a bee has not been given a trait with a special damage output.

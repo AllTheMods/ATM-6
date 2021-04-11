@@ -1052,7 +1052,7 @@ events.listen('recipes', function(e) {
 
     //Custom Blocks
     function customBlock(block, item) {
-        e.shapeless(item, block, 9)
+        e.shapeless(`9x ${item}`, block)
         e.shaped(block, [
             'AAA',
             'AAA',

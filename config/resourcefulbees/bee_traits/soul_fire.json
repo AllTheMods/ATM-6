@@ -1,0 +1,23 @@
+{
+    "beepediaItemID": "minecraft:soul_campfire",
+    "damageImmunities": [
+        "inFire",
+        "lightningBolt",
+        "onFire",
+        "lava",
+        "hotFloor",
+        "inWall",
+        "cramming",
+        "drown",
+        "starve",
+        "cactus",
+        "fall",
+        "flyIntoWall",
+        "wither",
+        "anvil",
+        "fallingBlock",
+        "dragonBreath",
+        "dryout"  
+    ],
+    "particleName": "minecraft:soul_fire_flame"
+}

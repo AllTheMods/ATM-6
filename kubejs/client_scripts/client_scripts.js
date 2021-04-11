@@ -106,12 +106,17 @@ onEvent(`jei.hide.items`, e => {
         `mininggadgets:minerslight`,
 
         `rats:ratlantis_portal`,
+        `iceandfire:silver_ingot`,
+        `iceandfire:copper_ingot`,
+        `tconstruct:copper_ingot`,
+        `tmechworks:copper_ingot`,
+        `tmechworks:aluminum_ingot`,
 
-        'eidolon:sulfur',
-        'eidolon:lead_ore',
-        'eidolon:lead_ingot',
-        'eidolon:lead_block',
-        'eidolon:lead_nugget'
+        `eidolon:sulfur`,
+        `eidolon:lead_ore`,
+        `eidolon:lead_ingot`,
+        `eidolon:lead_block`,
+        `eidolon:lead_nugget`
     ]);
 
     colors.forEach(color => {

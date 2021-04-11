@@ -1,36 +1,47 @@
 {
-  "flower": "tag:forge:storage_blocks/vibranium",
-  "maxTimeInHive": 4800,
-  "traits": ["nether"],
-  "hasHoneycomb": true,
-  "baseLayerTexture": "modium/vibranium_bee",
-  "ColorData": {
-      "isBeeColored": false,
-      "isEnchanted": true,
-      "honeycombColor": "#1BB188",
-      "modelType": "ORE"
-  },
-  "MutationData": {
-      "hasMutation": false
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "allthemodium:vibranium_nugget",
-      "mainOutputWeight": 0.02,
-      "mainOutputCount": 1
-  },
-  "SpawnData": {
-      "spawnInWorld": false
-  },
-  "BreedData": {
-      "isBreedable": true,
-      "breedChance": 0.6,
-      "parent1": "Netherite",
-      "parent2": "Dragonic",
-      "feedItem": "tag:forge:storage_blocks/vibranium",
-      "feedAmount": 3
-  },
-  "TraitData": {
-      "hasTraits": true
-  }
+    "flower": "tag:forge:storage_blocks/vibranium",
+    "maxTimeInHive": 4800,
+    "traits": ["nether"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "modium/modium_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "isEnchanted": true,
+        "honeycombColor": "#FCC50C",
+        "modelType": "ORE"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "tag:forge:storage_blocks/vibranium",
+            "outputs": [{
+                    "outputID": "minecraft:cobble_stone",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:vibranium_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "allthemodium:allthemodium_nugget",
+        "mainOutputWeight": 0.02,
+        "mainOutputCount": 1
+    },
+    "SpawnData": {
+        "spawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:storage_blocks/vibranium",
+        "feedAmount": 5
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }
