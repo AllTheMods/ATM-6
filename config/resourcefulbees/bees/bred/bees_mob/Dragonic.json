@@ -21,7 +21,7 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "tag:forge:storage_blocks/allthemodium",
             "outputs": [{
-                    "outputID": "minecraft:cobble_stone",
+                    "outputID": "minecraft:cobblestone",
                     "weight": 80
                 },
                 {
@@ -34,9 +34,7 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainOutput": "minecraft:dragon_egg",
-        "mainOutputWeight": 0.01,
-        "bottleOutput": "minecraft:dragon_breath",
-        "bottleOutputWeight": 0.10
+        "mainOutputWeight": 0.01
     },
     "SpawnData": {
         "spawnInWorld": false
