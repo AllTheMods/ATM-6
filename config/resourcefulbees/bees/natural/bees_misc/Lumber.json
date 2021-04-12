@@ -17,9 +17,7 @@
         "mainOutputCount": 2,
         "secondaryOutput": "minecraft:apple",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 1,
-        "bottleOutput": "pamhc2foodcore:applejuiceitem",
-        "bottleOutputWeight": 0.01
+        "secondaryOutputCount": 1
     },
     "SpawnData": {
         "canSpawnInWorld": true,

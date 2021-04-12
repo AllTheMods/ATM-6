@@ -17,7 +17,6 @@
       "mainOutputWeight": 0.50,
       "secondaryOutput": "minecraft:prismarine_crystals",
       "secondaryOutputWeight": 0.10,
-      "bottleOutput": "pamhc2foodcore:freshwateritem",
       "mainOutputCount": 3,
       "secondaryOutputCount": 2
   },
