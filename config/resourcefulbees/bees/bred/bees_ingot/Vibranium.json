@@ -7,7 +7,7 @@
     "ColorData": {
         "isBeeColored": false,
         "isEnchanted": true,
-        "honeycombColor": "#1BB188",
+        "honeycombColor": "#26DE88",
         "modelType": "ORE"
     },
     "MutationData": {
@@ -29,7 +29,7 @@
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        "mainOutput": "allthemodium:allthemodium_nugget",
+        "mainOutput": "allthemodium:vibranium_nugget",
         "mainOutputWeight": 0.02,
         "mainOutputCount": 1
     },
