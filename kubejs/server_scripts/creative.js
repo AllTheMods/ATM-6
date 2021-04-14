@@ -258,6 +258,17 @@ events.listen('recipes', function(e) {
         B: atm_star,
         C: 'allthemodium:allthemodium_block'
     })
+    //Thermal 
+    e.shaped('thermal:machine_efficiency_creative_augment', [
+        'AHA',
+        'ESE',
+        'AHA'
+    ], {
+        A: 'thermal:upgrade_augment_3',
+        H: Item.of('minecraft:enchanted_book').enchant('cofh_core:holding', 4),
+        E: Item.of('minecraft:enchanted_book').enchant('minecraft:efficiency', 5),
+        S: atm_star
+    })
     //Ice And Fire
     e.shaped('2x iceandfire:creative_dragon_meal', [
         'AAA',
