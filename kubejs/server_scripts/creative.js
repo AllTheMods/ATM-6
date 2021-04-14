@@ -157,7 +157,9 @@ events.listen('recipes', function(e) {
     //Immersive Engineering
     energize(['immersiveengineering:capacitor_lv', 'immersiveengineering:capacitor_mv', 'immersiveengineering:capacitor_hv', atm_star], 'immersiveengineering:capacitor_creative', 2147483647)
     //Integrated Dynamics
-    energize(['integrateddynamics:coal_generator', 'integrateddynamics:coal_generator', atm_star, 'integrateddynamics:coal_generator', 'integrateddynamics:coal_generator'], 'integrateddynamics:energy_battery_creative', 2147483647)
+    energize(['integrateddynamics:energy_battery', 'integrateddynamics:energy_battery', atm_star, 'integrateddynamics:energy_battery', 'integrateddynamics:energy_battery'], 'integrateddynamics:energy_battery_creative', 2147483647)
+    //Powah
+    energize(['powah:energy_cell_nitro', 'powah:energy_cell_nitro', atm_star, 'powah:energy_cell_nitro','powah:energy_cell_nitro'], 'powah:energy_cell_creative', 2147483647)
     //Applied Energistics 2
     energize(['appliedenergistics2:dense_energy_cell', atm_star], 'appliedenergistics2:creative_energy_cell', 2147483647)
     //Mekanism
