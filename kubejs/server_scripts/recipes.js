@@ -361,6 +361,43 @@ events.listen('recipes', function(e) {
         'B': '#forge:circuits/basic',
         'O': '#forge:ingots/osmium'
     }).id(`kubejs:wind_generator`)
+    e.shaped('ironjetpacks:wood_cell', [
+        ' R ',
+        'PCP',
+        ' R '
+    ], {
+        'R': '#forge:dusts/redstone',
+        'C': 'ironjetpacks:basic_coil',
+        'P': '#minecraft:planks'
+    }).id(`kubejs:wood_cell`)
+    e.shaped('ironjetpacks:wood_thruster', [
+        'PBP',
+        'BCB',
+        'PFP'
+    ], {
+        'F': 'minecraft:furnace',
+        'B': 'ironjetpacks:basic_coil',
+        'C': 'ironjetpacks:wood_cell',
+        'P': '#minecraft:planks'
+    }).id(`kubejs:wood_thruster`)
+    e.shaped('ironjetpacks:wood_capacitor', [
+        'PCP',
+        'PCP',
+        'PCP'
+    ], {
+        'P': '#minecraft:planks',
+        'C': 'ironjetpacks:wood_cell'
+    }).id(`kubejs:wood_capacitor`)
+    e.shaped('ironjetpacks:wood_jetpack', [
+        'PCP',
+        'PJP',
+        'T T'
+    ], {
+        'P': '#minecraft:planks',
+        'C': 'ironjetpacks:wood_capacitor',
+        'J': ['ironjetpacks:strap'],
+        'T': 'ironjetpacks:wood_thruster',
+    }).id(`kubejs:wood_jetpack`)
     e.shaped('ironjetpacks:diamond_cell', [
         ' R ',
         'TCT',
