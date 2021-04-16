@@ -63,7 +63,7 @@
 	"Intelligent Dragon Pathfinding" = false
 	#Cockatrice spawn weight. Lower = lower chance to spawn
 	#Range: 1 ~ 10000
-	"Cockatrice Spawn Weight" = 200
+	"Cockatrice Spawn Weight" = 10
 	#True to make the screen pink when sirens attract players
 	"Use Siren Shader" = false
 	#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
@@ -91,7 +91,7 @@
 	"Spawn Myrmex" = true
 	#Default attack strength of a dragonsteel sword.
 	#Range: 5.0 ~ 2.147483647E9
-	"Dragonsteel Sword Base Attack Strength" = 350.0
+	"Dragonsteel Sword Base Attack Strength" = 1350.0
 	#Whether to generate dragon caves or not
 	"Generate Dragon Caves" = true
 	#How high stymphalian birds can fly, in Y height.
@@ -149,7 +149,7 @@
 	"Generate Hydra Caves" = true
 	#Default armor value of dragonsteel chestplate.
 	#Range: > 7
-	"Dragonsteel Base Armor" = 120
+	"Dragonsteel Base Armor" = 1420
 	#How many blocks away can dragons wander from their defined "home" position.
 	#Range: 1 ~ 10000
 	"Dragon Wander From Home Distance" = 40
@@ -169,7 +169,7 @@
 	"Spawn Gorgon Chance" = 8
 	#Default durability value of dragonsteel sword.
 	#Range: > 1
-	"Dragonsteel Base Durability" = 8000
+	"Dragonsteel Base Durability" = 18000
 	#How many blocks away can stymphalian birds spot potential prey. Note that increasing this could cause lag.
 	#Range: 1 ~ 10000
 	"Stymphalian Bird Target Search Length" = 64
@@ -203,13 +203,13 @@
 	"Hippogryph Spawn Weight" = 2
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Roost Chance" = 4
+	"Generate Dragon Roost Chance" = 3
 	#Maximum ghost attack strength.
 	#Range: 0.0 ~ 10000.0
 	"Ghost Attack Strength" = 20.0
 	#One out of this number chance per chunk to generate a hydra cave.
 	#Range: 1 ~ 10000
-	"Hydra Caves Gen Chance" = 100
+	"Hydra Caves Gen Chance" = 10
 	#Every interval of this number in ticks, dragon allowed to break blocks.
 	#Range: 0 ~ 10000
 	"Dragon Block Break Cooldown" = 10
@@ -230,7 +230,7 @@
 	"Glacier Spawn Weight" = 400
 	#1 out of this number chance per chunk for generation
 	#Range: 1 ~ 10000
-	"Generate Dragon Cave Chance" = 8
+	"Generate Dragon Cave Chance" = 4
 	#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 	#Range: 0 ~ 2
 	"Dragon Griefing" = 0

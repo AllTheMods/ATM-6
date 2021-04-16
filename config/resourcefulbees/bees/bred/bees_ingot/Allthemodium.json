@@ -17,7 +17,7 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "tag:forge:storage_blocks/vibranium",
             "outputs": [{
-                    "outputID": "minecraft:cobble_stone",
+                    "outputID": "minecraft:cobblestone",
                     "weight": 80
                 },
                 {

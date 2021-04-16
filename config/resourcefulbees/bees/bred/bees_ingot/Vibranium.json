@@ -3,11 +3,11 @@
     "maxTimeInHive": 4800,
     "traits": ["nether"],
     "hasHoneycomb": true,
-    "baseLayerTexture": "modium/modium_bee",
+    "baseLayerTexture": "modium/vibranium_bee",
     "ColorData": {
         "isBeeColored": false,
         "isEnchanted": true,
-        "honeycombColor": "#FCC50C",
+        "honeycombColor": "#26DE88",
         "modelType": "ORE"
     },
     "MutationData": {
@@ -15,13 +15,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "tag:forge:storage_blocks/vibranium",
+            "inputID": "tag:forge:storage_blocks/unobtainium",
             "outputs": [{
-                    "outputID": "minecraft:cobble_stone",
+                    "outputID": "minecraft:cobblestone",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:vibranium_bee_spawn_egg",
+                    "outputID": "resourcefulbees:unobtainium_bee_spawn_egg",
                     "weight": 20
                 }
             ]
@@ -29,7 +29,7 @@
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        "mainOutput": "allthemodium:allthemodium_nugget",
+        "mainOutput": "allthemodium:vibranium_nugget",
         "mainOutputWeight": 0.02,
         "mainOutputCount": 1
     },

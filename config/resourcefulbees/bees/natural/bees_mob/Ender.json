@@ -15,9 +15,7 @@
   "CentrifugeData": {
       "hasCentrifugeOutput": true,
       "mainOutput": "minecraft:ender_pearl",
-      "mainOutputWeight": 0.50,
-      "bottleOutput": "botania:ender_air_bottle",
-      "bottleOutputWeight": 0.01
+      "mainOutputWeight": 0.50
   },
   "SpawnData": {
       "canSpawnInWorld": true,
