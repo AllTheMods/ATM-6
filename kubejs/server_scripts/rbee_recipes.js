@@ -45,7 +45,6 @@ events.listen('recipes', function(e) {
 
     //Combs to Dye
     var cuShaped = e.recipes.cucumber.shaped_no_mirror
-
     function dyeShaped(result, pattern) {
         cuShaped({
             'pattern': pattern,
