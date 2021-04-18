@@ -116,7 +116,9 @@ onEvent(`jei.hide.items`, e => {
         `eidolon:lead_ore`,
         `eidolon:lead_ingot`,
         `eidolon:lead_block`,
-        `eidolon:lead_nugget`
+        `eidolon:lead_nugget`,
+
+        /resourcefulbees:.+_bee_spawn_egg/,
     ]);
 
     colors.forEach(color => {
@@ -196,6 +198,20 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`mysticalagriculture`, `seeds`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`]);
     hideStuff(`mysticalagriculture`, `essence`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`]);
 
+    var eggs = [
+        'dragonic',
+        'allthemodium',
+        'vibranium',
+        'unobtainium',
+        'soul_lava',
+    ]
+    eggs.forEach(type => {
+        onEvent(`jei.add.items`, e => {
+            e.add([
+                `resourcefulbees:${type}_bee_spawn_egg`
+            ]);
+        });
+    })
 });
 
 onEvent(`item.tooltip`, e => {

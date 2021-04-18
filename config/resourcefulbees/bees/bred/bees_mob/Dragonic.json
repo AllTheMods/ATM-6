@@ -41,9 +41,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "breedChance": 0.6,
-        "parent1": "Ender",
-        "parent2": "Wither",
         "feedItem": "minecraft:end_crystal",
         "feedAmount": 4
     },
