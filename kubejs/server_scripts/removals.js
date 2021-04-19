@@ -23,9 +23,6 @@ events.listen('recipes', e => {
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/press/unpacking/press_honeycomb_unpacking',
 
-        'ctiers:centrifuge_casing_tier_creative_2',
-        'ctiers:centrifuge_controller_tier_creative_2',
-
         //ma balance
         'mysticalagriculture:essence/astralsorcery/rock_crystal',
         'mysticalagriculture:essence/astralsorcery/starmetal_ingot',

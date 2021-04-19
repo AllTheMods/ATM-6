@@ -1,33 +1,47 @@
 {
-  "flower": "tag:forge:storage_blocks/nether_star",
-  "maxTimeInHive": 2400,
-  "hasHoneycomb": true,
-  "baseLayerTexture": "wither/wither_bee",
-  "traits": ["nether", "wither"],
-  "ColorData": {
-      "isBeeColored": false,
-      "honeycombColor": "#444444"
-  },
-  "MutationData": {
-      "hasMutation": false
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "minecraft:nether_star",
-      "mainOutputWeight": 0.01
-  },
-  "SpawnData": {
-      "canSpawnInWorld": false
-  },
-  "BreedData": {
-      "isBreedable": true,
-      "breedChance": 0.6,
-      "parent1": "Withered",
-      "parent2": "Ghost",
-      "feedItem": "tag:forge:nether_stars",
-      "feedAmount": 2
-  },
-  "TraitData": {
-      "hasTraits": true
-  }
+    "flower": "tag:forge:storage_blocks/nether_star",
+    "maxTimeInHive": 2400,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "wither/wither_bee",
+    "traits": ["nether", "wither"],
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#444444"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "minecraft:dragon_egg",
+            "outputs": [{
+                    "outputID": "minecraft:dragon_egg",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:dragonic_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:nether_star",
+        "mainOutputWeight": 0.01
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "breedChance": 0.6,
+        "parent1": "Withered",
+        "parent2": "Ghost",
+        "feedItem": "tag:forge:nether_stars",
+        "feedAmount": 2
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }
