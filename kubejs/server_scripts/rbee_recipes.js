@@ -18,32 +18,44 @@ events.listen('recipes', function(e) {
         'B': 'minecraft:bucket'
     }).id(`kubejs:lava_comb_bucket`)
 
+
+    //Honey Compatibility
+    var honey = [
+        'resourcefulbees:honey',
+        'cyclic:honey',
+        'create:honey',
+    ]
+    honey.forEach(type => {
+        e.recipes.thermal.chiller('minecraft:honey_block', fluid.of(`${type}`, 1000))
+    })
+    var customhoney = [
+        'resourcefulbees:rainbow_honey',
+        'resourcefulbees:catnip_honey',
+    ]
+    customhoney.forEach(type => {
+        e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))
+        e.shaped('compressium:honey_1', [
+            'AAA',
+            'AAA',
+            'AAA'
+        ], {
+            A: `${type}_block`
+        })
+    })
+
     //Combs to Dye
     var cuShaped = e.recipes.cucumber.shaped_no_mirror
-
     function dyeShaped(result, pattern) {
         cuShaped({
             'pattern': pattern,
             'key': {
                 'C': {
-                    'item': 'resourcefulbees:rgbee_honeycomb'
+                    'item': 'resourcefulbees:rainbow_honey_block'
                 }
             },
             'result': {
                 'item': result,
-                'count': 6
-            }
-        })
-        cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:rgbee_honeycomb_block'
-                }
-            },
-            'result': {
-                'item': result,
-                'count': 54
+                'count': 32
             }
         })
     }

@@ -217,9 +217,6 @@ onEvent('block.tags', e => {
     e.add('resourcefulbees:valid_apiary', ['quark:elder_prismarine', 'quark:elder_prismarine_bricks', 'quark:dark_elder_prismarine', 'quark:elder_sea_lantern', 'quark:myalite_crystal', 'quark:duskbound_block', 'quark:duskbound_lantern']);
     e.add('resourcefulbees:valid_apiary', ['quark:brimstone_bricks', 'quark:blaze_lantern', 'quark:soul_sandstone', 'quark:chiseled_soul_sandstone', 'quark:cut_soul_sandstone', 'quark:smooth_soul_sandstone']);
     e.add('resourcefulbees:valid_apiary', ['quark:lit_lamp', 'quark:paper_wall', 'quark:paper_wall_big', 'quark:paper_wall_sakura']);
-    e.add('mcwwindows:window', '/mcwwindows:.+_win/');
-    e.add('misctags:concrete', '/minecraft:.+_concrete/');
-    e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']); //Regex to add a tag preventing moving by bag of yurting
     e.add('resourcefulbees:valid_apiary', ['/darkutils:filter_.+/']); //, '/rftoolsbuilder:.+/', '^\\w+_glass$'
     //Astral Sorcery
     e.add('resourcefulbees:valid_apiary', [/^astralsorcery:marble_/, /^astralsorcery:black_marble_/, /^astralsorcery:infused_wood_/]);
@@ -242,9 +239,22 @@ onEvent('block.tags', e => {
     e.add('resourcefulbees:valid_apiary', ['#mekanismadditions:plastic_blocks', 'compactmachines:solid_wall']);
     //Flowers
     e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block', 'astralsorcery:starmetal', 'minecraft:slime_block', 'botania:terrasteel_block', 'minecraft:hay_block', 'allthemodium:molten_bluelava_block']);
+    //Immersive Engineering 
+    e.add('resourcefulbees:valid_apiary', [
+        /immersiveengineering:slab_sheetmetal_+/,
+        /immersiveengineering:sheetmetal_+/,
+        '#forge:treated_wood',
+        '#immersiveengineering:scaffoldings/aluminum',
+        '#immersiveengineering:scaffoldings/steel',
+    ]);
 
+    //misc tags
+    e.add('mcwwindows:window', '/mcwwindows:.+_win/');
+    e.add('misctags:concrete', '/minecraft:.+_concrete/');
+    e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/']); //Regex to add a tag preventing moving by bag of yurting
     //Removal
     e.removeAll('minecraft:enderman_holdable');
+
 });
 
 //Fluid tags go here
