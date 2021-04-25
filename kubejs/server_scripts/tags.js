@@ -257,6 +257,12 @@ onEvent('block.tags', e => {
 
 });
 
+//Entity tags go here
+onEvent('entity_type.tags', e => {
+    e.add('industrialforegoing:mob_imprisonment_tool_blacklist', ['iceandfire:dragon_multipart','iceandfire:dragon_egg',/iceandfire:.+_dragon/,]);
+    e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/]);
+});
+
 //Fluid tags go here
 onEvent('fluid.tags', e => {
     //Add

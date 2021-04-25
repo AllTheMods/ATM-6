@@ -1,0 +1,103 @@
+#Should TF Compatibility load? Turn off if TF's Compatibility is causing crashes or if not desired.
+doCompat = true
+#The dimension you can always travel to the Twilight Forest from, as well as the dimension you will return to. Defaults to the overworld. (domain:regname).
+originDimension = "minecraft:overworld"
+#Allow portals to the Twilight Forest to be made outside of the 'origin' dimension. May be considered an exploit.
+allowPortalsInOtherDimensions = false
+#Allow portals only for admins (Operators). This severely reduces the range in which the mod usually scans for valid portal conditions, and it scans near ops only.
+adminOnlyPortals = false
+#Disable Twilight Forest portal creation entirely. Provided for server operators looking to restrict action to the dimension.
+disablePortalCreation = false
+#Determines if new portals should be pre-checked for safety. If enabled, portals will fail to form rather than redirect to a safe alternate destination.
+#Note that enabling this also reduces the rate at which portal formation checks are performed.
+checkPortalDestination = false
+#Set this true if you want the lightning that zaps the portal to not set things on fire. For those who don't like fun.
+portalLightning = false
+#If false, the return portal will require the activation item.
+shouldReturnPortalBeUsable = true
+#Sets the default value of the game rule controlling enforced progression.
+progressionRuleDefault = true
+#Disable the uncrafting function of the uncrafting table. Provided as an option when interaction with other mods produces exploitable recipes.
+disableUncrafting = true
+
+#Settings that are not reversible without consequences.
+["Dimension Settings"]
+	#If true, players spawning for the first time will spawn in the Twilight Forest.
+	newPlayersSpawnInTF = false
+	#If true, Twilight Forest will generate as a void except for Major Structures
+	skylightForest = false
+	#If true, giant Twilight Oaks will also spawn in void worlds
+	skylightOaks = true
+
+	#Weights for various small features
+	["Dimension Settings"."World-Gen Weights"]
+		#Range: > 0
+		stoneCircleWeight = 10
+		#Range: > 0
+		wellWeight = 10
+		#Range: > 0
+		stalagmiteWeight = 12
+		#Range: > 0
+		foundationWeight = 10
+		#Range: > 0
+		monolithWeight = 10
+		#Range: > 0
+		groveRuinsWeight = 5
+		#Range: > 0
+		hollowStumpWeight = 12
+		#Range: > 0
+		fallenHollowLogWeight = 10
+		#Range: > 0
+		fallenSmallLogWeight = 10
+		#Range: > 0
+		druidHutWeight = 10
+
+	#Defines custom stalactites generated in hollow hills.
+	#Format is "modid:block size maxLength minHeight weight", where the properties are:
+	#Size - the maximum length of the stalactite relative to the space between hill floor and ceiling,
+	#Max length - maximum length of a stalactite in blocks,
+	#Min height - minimum space between the hill floor and the stalactite to let it generate,
+	#Weight - how often it generates.
+	#
+	#For example: "minecraft:iron_ore 0.7 8 1 24" would add a stalactite equal to the default iron ore stalactite.
+	["Dimension Settings"."Custom Hollow Hill Stalactites"]
+		#Blocks generating as stalactites in large hills only
+		largeHill = []
+		#Blocks generating as stalactites in all hills
+		mediumHill = []
+		#If true, default stalactites and stalactites defined by other mods will not be used.
+		useConfigOnly = false
+
+#Lets you sacrifice various things to improve world performance.
+["Performance Tweaks"]
+	#Amount of canopy coverage. Lower numbers improve chunk generation speed at the cost of a thinner forest.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	canopyCoverage = 1.7000000476837158
+	#Chance that a chunk in the Twilight Forest will contain a twilight oak tree. Higher numbers reduce the number of trees, increasing performance.
+	#Range: > 1
+	twilightOakChance = 48
+	#This controls the opacity of leaves, changing the amount of light blocked. Can be used to decrease complexity in some lighting checks.
+	#Range: 0 ~ 255
+	leavesLightOpacity = 1
+	#Setting this true will make Twilight Glaciers generate with Packed Ice instead of regular translucent Ice, decreasing amount of light checking calculations.
+	glacierPackedIce = false
+	#If the dimension has per-block skylight values. Disabling this will significantly improve world generation performance, at the cost of flat lighting everywhere.
+	#WARNING: Once chunks are loaded without skylight, that data is lost and cannot easily be regenerated. Be careful!
+	enableSkylight = true
+
+#We recommend downloading the Shield Parry mod for parrying, but these controls remain for without.
+["Shield Parrying"]
+	#Set to true to parry non-Twilight projectiles.
+	parryNonTwilightAttacks = false
+	#The amount of ticks after raising a shield that makes it OK to parry an arrow.
+	#Range: > 0
+	shieldParryTicksArrow = 40
+	#The amount of ticks after raising a shield that makes it OK to parry a fireball.
+	#Range: > 0
+	shieldParryTicksFireball = 40
+	#The amount of ticks after raising a shield that makes it OK to parry a thrown item.
+	#Range: > 0
+	shieldParryTicksThrowable = 40
+	#Range: > 0
+	shieldParryTicksBeam = 10
+
