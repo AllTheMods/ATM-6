@@ -40,7 +40,7 @@ events.listen('recipes', e => {
         'mysticalagriculture:essence/powah/blazing_crystal',
         'mysticalagriculture:essence/powah/energized_steel',
         'mysticalagriculture:essence/powah/niotic_crystal',
-        'mysticalagriculture:essence/powah/nitro_crystal',
+        'mysticalagradditions:essence/nitro_crystal',
         'mysticalagriculture:essence/powah/spirited_crystal',
 
         'mysticalagriculture:essence/botania/elementium_ingot',
@@ -146,7 +146,7 @@ events.listen('recipes', e => {
         'rftoolsbuilder:builder',
         'extrastorage:iron_crafter',
         'twilightforest:uncrafting_table'
-        
+
     ];
     idRemove.forEach(iR => {
         e.remove({
