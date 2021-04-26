@@ -12,6 +12,7 @@ events.listen('recipes', function(e) {
             }
         })
     }
+
     function pressure(inputs, result, rCount, pressure) {
         e.recipes.pneumaticcraft.pressure_chamber({
             inputs: inputs,
@@ -22,6 +23,7 @@ events.listen('recipes', function(e) {
             }]
         })
     }
+
     function pedestalCrush(result, count, ingredient, type) {
         if (type == 1) {
             pedCrush({
@@ -45,6 +47,7 @@ events.listen('recipes', function(e) {
             })
         }
     }
+
     function pedestalSaw(result, count, ingredient, type) {
         if (type == 1) {
             pedSaw({
@@ -68,6 +71,7 @@ events.listen('recipes', function(e) {
             })
         }
     }
+
     function jumbo(ingredients, result, xp) {
         e.recipes.jumbofurnace.jumbo_smelting({
             'ingredients': ingredients,
@@ -77,21 +81,26 @@ events.listen('recipes', function(e) {
             'experience': xp
         })
     }
+
     function multicrush(output, input) {
         e.recipes.mekanism.crushing(output, input)
         e.recipes.create.crushing(output, input)
         e.recipes.immersiveengineering.crusher(output, input)
         e.recipes.thermal.pulverizer(output, input)
     }
+
     function crush(output, input) {
         e.recipes.mekanism.crushing((output), input)
     }
+
     function enrich(output, input) {
         e.recipes.mekanism.enriching((output), input)
     }
+
     function pulverize(output, input) {
         e.recipes.thermal.pulverizer((output), input)
     }
+
     function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
         e.recipes.mysticalagriculture.infusion({
             input: {
@@ -664,6 +673,14 @@ events.listen('recipes', function(e) {
         B: 'compressium:redstone_4',
         C: 'pipez:ultimate_upgrade'
     })
+    //MA
+    e.shaped('8x astralsorcery:aquamarine', [
+        'AAA',
+        'A A',
+        'AAA'
+    ], {
+        A: 'mysticalagriculture:aquamarine_essence'
+    }).id(`kubejs:aquamarine_essence`)
 
     //Misc Shapeless Recipes
     e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:clay`)
