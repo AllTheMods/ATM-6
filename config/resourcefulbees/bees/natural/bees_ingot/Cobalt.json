@@ -1,0 +1,50 @@
+{
+  "flower": "tag:forge:storage_blocks/cobalt",
+  "maxTimeInHive": 1200,
+  "traits": ["nether"],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/cobalt_bee",
+  "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#2248ba",
+      "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [{
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:cobalt_honeycomb_block",
+        "outputs": [{
+                "outputID": "tconstruct:cobalt_ingot",
+                "weight": 80
+            },
+            {
+                "outputID": "resourcefulbees:cobalt_bee_spawn_egg",
+                "weight": 20
+            }
+        ]
+    }]
+},
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "tconstruct:cobalt_ore",
+      "mainOutputWeight": 0.50,
+      "mainOutputCount": 1,
+      "secondaryOutput": "tconstruct:cobalt_ingot",
+      "secondaryOutputWeight": 0.01,
+      "secondaryOutputCount": 2
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:cobalt"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "feedItem": "tag:forge:storage_blocks/cobalt",
+      "feedAmount": 5
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}

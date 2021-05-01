@@ -1,0 +1,8 @@
+{
+    "biomes": [
+        "minecraft:beach",
+        "minecraft:stone_shore",
+        "byg:rainbow_beach",
+        "byg:white_beach"
+    ]
+}
