@@ -145,7 +145,8 @@ events.listen('recipes', e => {
         'mysticalagriculture:unattuned_augment',
         'rftoolsbuilder:builder',
         'extrastorage:iron_crafter',
-        'twilightforest:uncrafting_table'
+        'twilightforest:uncrafting_table',
+        'mob_grinding_utils:recipe_mob_swab'
 
     ];
     idRemove.forEach(iR => {

@@ -119,7 +119,10 @@ onEvent(`jei.hide.items`, e => {
         `eidolon:lead_nugget`,
 
         /resourcefulbees:.+_bee_spawn_egg/,
-        `twilightforest:uncrafting_table`
+        `twilightforest:uncrafting_table`,
+        `mob_grinding_utils:mob_swab`,
+        `mob_grinding_utils:mob_swab_used`,
+        `mob_grinding_utils:gm_chicken_feed`
     ]);
 
     colors.forEach(color => {
