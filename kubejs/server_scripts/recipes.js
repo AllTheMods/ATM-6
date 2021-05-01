@@ -228,6 +228,17 @@ events.listen('recipes', function(e) {
         P: 'refinedstorage:improved_processor',
         C: '#refinedstorage:crafter'
     }).id(`kubejs:iron_crafter`)
+     modifyShaped(`creativecrafter:creative_crafter`, 1, [
+            `BUB`,
+            `PCP`,
+            `BUB`
+        ], {
+            B: `#forge:storage_blocks/netherite`,
+            P: `extradisks:withering_processor`,
+            C: `extrastorage:netherite_crafter`,
+            U: `#forge:ingots/unobtainium`
+        });
+
     e.shaped('xreliquary:fertile_lily_pad', [
         'ESE',
         'FLF',
