@@ -235,5 +235,13 @@
     "item.resourcefulbees.cropy_honeycomb": "Cropy Honeycomb",
     "item.resourcefulbees.cropy_bee_spawn_egg": "Cropy Spawn Egg",
     "entity.resourcefulbees.cropy_bee": "Cropy Bee",
-    "trait.resourcefulbees.soul_fire": "Soul Fire Trait"
+    "trait.resourcefulbees.soul_fire": "Soul Fire Trait",
+    "block.resourcefulbees.salt_baee_honeycomb_block": "Salt Baee Honeycomb Block",
+    "item.resourcefulbees.salt_baee_honeycomb": "Salt Baee Honeycomb",
+    "item.resourcefulbees.salt_baee_bee_spawn_egg": "Salt Baee Spawn Egg",
+    "entity.resourcefulbees.salt_baee_bee": "Salt Baee",
+    "block.resourcefulbees.cobalt_honeycomb_block": "Cobalt Honeycomb Block",
+    "item.resourcefulbees.cobalt_honeycomb": "Cobalt Honeycomb",
+    "item.resourcefulbees.cobalt_bee_spawn_egg": "Cobalt Spawn Egg",
+    "entity.resourcefulbees.cobalt_bee": "Cobalt Bee"
 }

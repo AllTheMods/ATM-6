@@ -1,0 +1,45 @@
+{
+    "flower": "mekanism:block_salt",
+    "maxTimeInHive": 1200,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "misc/salt_baee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#f3f8e3"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:salt_baee_honeycomb_block",
+            "outputs": [{
+                    "outputID": "mekanism:salt",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:salt_baee_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "mekanism:salt",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 3
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:saltbae"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "mekanism:block_salt",
+        "feedAmount": 4
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+  }
