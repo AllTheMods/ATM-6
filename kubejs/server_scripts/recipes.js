@@ -228,17 +228,16 @@ events.listen('recipes', function(e) {
         P: 'refinedstorage:improved_processor',
         C: '#refinedstorage:crafter'
     }).id(`kubejs:iron_crafter`)
-     modifyShaped(`creativecrafter:creative_crafter`, 1, [
-            `BUB`,
-            `PCP`,
-            `BUB`
-        ], {
-            B: `#forge:storage_blocks/netherite`,
-            P: `extradisks:withering_processor`,
-            C: `extrastorage:netherite_crafter`,
-            U: `#forge:ingots/unobtainium`
-        });
-
+    e.shaped(`creativecrafter:creative_crafter`, [
+        `BUB`,
+        `PCP`,
+        `BUB`
+    ], {
+        B: `#forge:storage_blocks/netherite`,
+        P: `extradisks:withering_processor`,
+        C: `extrastorage:netherite_crafter`,
+        U: `#forge:ingots/unobtainium`
+    });
     e.shaped('xreliquary:fertile_lily_pad', [
         'ESE',
         'FLF',
@@ -692,6 +691,29 @@ events.listen('recipes', function(e) {
     ], {
         A: 'mysticalagriculture:aquamarine_essence'
     }).id(`kubejs:aquamarine_essence`)
+    //Cable Tiers changes
+    var caTypes = [
+        `importer`,
+        `exporter`,
+        `constructor`,
+        `destructor`
+    ];
+    const caTier = (tier, corners, processor, cables) => {
+        caTypes.forEach(caType => {
+            e.shaped(`cabletiers:${tier}_${caType}`, [
+                `a a`,
+                `bcb`,
+                `a a`
+            ], {
+                a: corners,
+                b: processor,
+                c: `${cables}${caType}`
+            });
+        });
+    };
+    caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`);
+    caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`);
+    caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`);
 
     //Misc Shapeless Recipes
     e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:clay`)

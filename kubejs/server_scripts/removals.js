@@ -146,7 +146,8 @@ events.listen('recipes', e => {
         'rftoolsbuilder:builder',
         'extrastorage:iron_crafter',
         'twilightforest:uncrafting_table',
-        'mob_grinding_utils:recipe_mob_swab'
+        'mob_grinding_utils:recipe_mob_swab',
+        'creativecrafter:creative_crafter'
 
     ];
     idRemove.forEach(iR => {
@@ -187,6 +188,15 @@ events.listen('recipes', e => {
             'titanium:gold_gear',
             'titanium:diamond_gear',
         ]
+    });
+    //Remove via mod name
+    var modRemove = [
+        `cabletiers`,
+    ];
+    modRemove.forEach(mR => {
+        e.remove({
+            mod: mR
+        });
     });
     e.remove({
         input: [
