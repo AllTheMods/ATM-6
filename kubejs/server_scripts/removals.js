@@ -147,7 +147,8 @@ events.listen('recipes', e => {
         'extrastorage:iron_crafter',
         'twilightforest:uncrafting_table',
         'mob_grinding_utils:recipe_mob_swab',
-        'creativecrafter:creative_crafter'
+        'creativecrafter:creative_crafter',
+        'creativewirelesstransmitter:creative_wireless_transmitter'
 
     ];
     idRemove.forEach(iR => {

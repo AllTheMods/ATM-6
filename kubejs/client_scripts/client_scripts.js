@@ -132,7 +132,11 @@ onEvent(`jei.hide.items`, e => {
             ]);
         });
     });
-
+    colors.forEach(color => {
+        e.hide([
+            `creativewirelesstransmitter:${color}_creative_wireless_transmitter`
+        ]);
+    });
     const hideMetal = (mod, name, types) => {
         types.forEach(type => {
             const typeFirst = ['mekanism', 'immersiveengineering'];
@@ -223,4 +227,5 @@ onEvent(`item.tooltip`, e => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
     });
     e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`]);
+    e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`]);
 });

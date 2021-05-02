@@ -714,6 +714,17 @@ events.listen('recipes', function(e) {
     caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`);
     caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`);
     caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`);
+    //Creative Transmitter
+    e.shaped('creativewirelesstransmitter:creative_wireless_transmitter', [
+        'ITI',
+        'ICI',
+        'IDI'
+    ], {
+        I: 'allthemodium:unobtainium_ingot',
+        D: 'rsinfinitybooster:dimension_card',
+        C: 'refinedstorage:machine_casing',
+        T: 'refinedstorage:wireless_transmitter'
+    }).id(`kubejs:creative_wireless_transmitter`)
 
     //Misc Shapeless Recipes
     e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:clay`)
