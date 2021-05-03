@@ -1,36 +1,88 @@
 {
-    "flower": "ALL",
+    "flower": "all",
     "maxTimeInHive": 1200,
+    "traits": [""],
     "hasHoneycomb": true,
+    "baseLayerTexture": "/ores/custom/custom_bee_primary",
     "ColorData": {
-        "isBeeColored": true,
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffffff",
         "honeycombColor": "#ffffff",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "/ores/custom/custom_bee_secondary",
+        "emissiveLayerTexture": "/ores/custom/custom_bee_emissive",
+        "isBeeColored": false,
         "isRainbowBee": true,
-        "isGlowing": true
+        "isGlowing": true,
+        "glowColor": "#ffffff",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
-        "hasMutation": false
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:rgbee_honeycomb_block",
+            "outputs": [{
+                    "outputID": "resourcefulbees:rainbow_honey_bottle",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:rgbee_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
     },
-    "CentrifugeData": {  
-        "hasCentrifugeOutput": true,  
-        "mainOutput": "resourcefulbees:rainbow_honey",  
-        "mainOutputCount": 250,  
-        "hasFluidOutput": true,
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "resourcefulbees:rainbow_honey",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 250,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
         "bottleOutput": "resourcefulbees:rainbow_honey_bottle",
-        "bottleOutputWeight": 0.1,
-        "bottleOutputCount": 1
-      },
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidoutput": true
+    },
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:overworld",
-        "biomeBlacklist": "tag:ocean"
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.8,
         "feedItem": "tag:forge:dyes",
-        "feedAmount": 6
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": false
+        "hasTraits": true
     }
 }

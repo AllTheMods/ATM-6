@@ -1,23 +1,23 @@
 {
-    "flower": "minecraft:hay_block",
+    "flower": "tag:minecraft:leaves",
     "maxTimeInHive": 1200,
     "traits": [""],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/crop/wheat_bee",
+    "baseLayerTexture": "/custom/bee",
     "ColorData": {
-        "primaryColor": "#dcbb65",
-        "secondaryColor": "#dcbb65",
-        "honeycombColor": "#dcbb65",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
+        "primaryColor": "#06B805",
+        "secondaryColor": "#06B805",
+        "honeycombColor": "#06B805",
+        "primaryLayerTexture": "/custom/primary_layer",
+        "secondaryLayerTexture": "/custom/secondary_layer",
         "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
+        "isBeeColored": true,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#dcbb65",
+        "glowColor": "#06B805",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "CROP"
+        "modelType": "default"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,27 +30,27 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:cropy_honeycomb_block",
+            "inputID": "resourcefulbees:leafy_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:cropy_honeycomb",
+                    "outputID": "mysticalagriculture:nature_essence",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:cropy_bee_spawn_egg",
+                    "outputID": "resourcefulbees:leafy_bee_spawn_egg",
                     "weight": 20
                 }
             ]
         }]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false,
+        "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "resourcefulbees:cropy_honeycomb",
+        "mainOutput": "mysticalagriculture:nature_essence",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
         "mainNBTData": {},
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
+        "secondaryOutput": "mysticalagriculture:nature_essence",
+        "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
@@ -62,8 +62,8 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:cropy",
-        "biomeBlacklist": "",
+        "biomeWhitelist": "tag:forest",
+        "biomeBlacklist": "tag:ocean",
         "spawnWeight": 2,
         "minYLevel": 0,
         "maxYLevel": 255,
@@ -77,7 +77,7 @@
         "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
-        "feedItem": "minecraft:hay_block",
+        "feedItem": "tag:minecraft:leaves",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

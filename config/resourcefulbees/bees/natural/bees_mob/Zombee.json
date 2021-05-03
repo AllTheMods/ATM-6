@@ -1,23 +1,23 @@
 {
-    "flower": "minecraft:hay_block",
+    "flower": "biomesoplenty:flesh",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": ["zombie"],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/crop/wheat_bee",
+    "baseLayerTexture": "/zombie/zombie_bee",
     "ColorData": {
-        "primaryColor": "#dcbb65",
-        "secondaryColor": "#dcbb65",
-        "honeycombColor": "#dcbb65",
+        "primaryColor": "#2F4E32",
+        "secondaryColor": "#2F4E32",
+        "honeycombColor": "#2F4E32",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#dcbb65",
+        "glowColor": "#2F4E32",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "CROP"
+        "modelType": "ORE"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,27 +30,27 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:cropy_honeycomb_block",
+            "inputID": "resourcefulbees:zombee_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:cropy_honeycomb",
+                    "outputID": "minecraft:rotten_flesh",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:cropy_bee_spawn_egg",
+                    "outputID": "resourcefulbees:zombee_bee_spawn_egg",
                     "weight": 20
                 }
             ]
         }]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false,
+        "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "resourcefulbees:cropy_honeycomb",
+        "mainOutput": "minecraft:rotten_flesh",
         "mainOutputWeight": 0.5,
-        "mainOutputCount": 1,
+        "mainOutputCount": 2,
         "mainNBTData": {},
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
+        "secondaryOutput": "xreliquary:zombie_heart",
+        "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
@@ -62,8 +62,8 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:cropy",
-        "biomeBlacklist": "",
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean",
         "spawnWeight": 2,
         "minYLevel": 0,
         "maxYLevel": 255,
@@ -77,7 +77,7 @@
         "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
-        "feedItem": "minecraft:hay_block",
+        "feedItem": "xreliquary:zombie_heart",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
