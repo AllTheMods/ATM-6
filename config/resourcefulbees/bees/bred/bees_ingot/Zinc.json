@@ -1,37 +1,88 @@
 {
-  "flower": "tag:forge:storage_blocks/zinc",
-  "maxTimeInHive": 1200,
-  "hasHoneycomb": true,
-  "baseLayerTexture": "ato/zinc_bee",
-  "ColorData": {
-      "isBeeColored": false,
-      "honeycombColor": "#B6DBD8",
-      "modelType": "ORE"
-  },
-  "MutationData": {
-      "hasMutation": false
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "alltheores:ore_zinc",
-      "mainOutputWeight": 0.50,
-      "mainOutputCount": 1,
-      "secondaryOutput": "alltheores:zinc_ingot",
-      "secondaryOutputWeight": 0.01,
-      "secondaryOutputCount": 2
-  },
-  "SpawnData": {
-      "spawnInWorld": false
-  },
-  "BreedData": {
-      "isBreedable": true,
-      "breedChance": 0.8,
-      "parent1": "Iron",
-      "parent2": "Warm",
-      "feedItem": "tag:forge:storage_blocks/zinc",
-      "feedAmount": 3
-  },
-  "TraitData": {
-      "hasTraits": false
-  }
+    "flower": "tag:forge:storage_blocks/zinc",
+    "maxTimeInHive": 2400,
+    "traits": [""],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ato/zinc_bee",
+    "ColorData": {
+        "primaryColor": "#B6DBD8",
+        "secondaryColor": "#B6DBD8",
+        "honeycombColor": "#B6DBD8",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#B6DBD8",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:zinc_honeycomb_block",
+            "outputs": [{
+                    "outputID": "alltheores:zinc_ingot",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:zinc_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "alltheores:ore_zinc",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "alltheores:zinc_ingot",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 10,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidoutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": false,
+        "parent1": "Iron",
+        "parent2": "Tin",
+        "breedWeight": 10,
+        "breedChance": 0.60,
+        "feedItem": "tag:forge:storage_blocks/zinc",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
 }

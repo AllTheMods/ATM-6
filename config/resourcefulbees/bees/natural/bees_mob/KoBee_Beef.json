@@ -1,23 +1,23 @@
 {
-    "flower": "minecraft:water",
+    "flower": "cookingforblockheads:fridge",
     "maxTimeInHive": 1200,
-    "traits": ["can_swim"],
+    "traits": [""],
     "hasHoneycomb": true,
     "baseLayerTexture": "/custom/bee",
     "ColorData": {
-        "primaryColor": "#0F3653",
-        "secondaryColor": "#0F3653",
-        "honeycombColor": "#0F3653",
+        "primaryColor": "#FF6666",
+        "secondaryColor": "#663300",
+        "honeycombColor": "#FF6666",
         "primaryLayerTexture": "/custom/primary_layer",
         "secondaryLayerTexture": "/custom/secondary_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": true,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#0F3653",
+        "glowColor": "#FF6666",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -29,40 +29,41 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:water_honeycomb_block",
-            "outputs": [{
-                    "outputID": "resourcefulbees:water_honeycomb",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:water_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
-        }]
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:kobee_beef_honeycomb_block",
+                "outputs": [{
+                        "outputID": "minecraft:beef",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:kobee_beef_bee_spawn_egg",
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": true,
+        "hasCentrifugeOutput": false,
         "mainInputCount": 1,
-        "mainOutput": "minecraft:water",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 1000,
+        "mainOutput": "minecraft:beef",
+        "mainOutputWeight": 0.01,
+        "mainOutputCount": 1,
         "mainNBTData": {},
-        "secondaryOutput": "minecraft:water",
+        "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.2,
-        "secondaryOutputCount": 1000,
+        "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
         "bottleNBTData": {},
         "recipeTime": 200,
-        "hasFluidoutput": true
+        "hasFluidoutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:ocean,tag:river",
+        "biomeWhitelist": "tag:kobeebeef",
         "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,
@@ -76,13 +77,13 @@
         "parent1": "",
         "parent2": "",
         "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "minecraft:water_bucket",
-        "feedAmount": 1,
+        "breedChance": 0.6,
+        "feedItem": "minecraft:beef",
+        "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": true
+        "hasTraits": false
     }
 }

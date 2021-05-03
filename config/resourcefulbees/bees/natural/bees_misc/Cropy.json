@@ -64,7 +64,7 @@
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:cropy",
         "biomeBlacklist": "",
-        "spawnWeight": 2,
+        "spawnWeight": 5,
         "minYLevel": 0,
         "maxYLevel": 255,
         "minGroupSize": 1,

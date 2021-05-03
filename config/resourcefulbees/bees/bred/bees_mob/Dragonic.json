@@ -1,48 +1,100 @@
 {
-    "flower": "tag:misctags:flowers/draconic_flowers",
+    "flower": "minecraft:end_crystal",
     "maxTimeInHive": 4800,
+    "traits": [""],
     "hasHoneycomb": true,
+    "baseLayerTexture": "/custom/bee",
     "ColorData": {
-        "isBeeColored": true,
-        "isGlowing": true,
-        "modelType": "DRAGON",
+        "primaryColor": "#222222",
+        "secondaryColor": "#171717",
+        "honeycombColor": "#E400FF",
         "primaryLayerTexture": "dragon/dragon_bee_primary",
         "secondaryLayerTexture": "dragon/dragon_bee_secondary",
         "emissiveLayerTexture": "dragon/dragon_bee_emissive",
-        "primaryColor": "#222222",
-        "secondaryColor": "#171717",
+        "isBeeColored": true,
+        "isRainbowBee": false,
+        "isGlowing": true,
         "glowColor": "#E400FF",
-        "honeycombColor": "#E400FF"
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "DRAGON"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "tag:forge:storage_blocks/allthemodium",
-            "outputs": [{
-                    "outputID": "minecraft:cobblestone",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:allthemodium_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
-        }]
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dragonic_honeycomb_block",
+                "outputs": [{
+                        "outputID": "resourcefulbees:dragonic_honeycomb",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:dragonic_bee_spawn_egg",
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "tag:forge:storage_blocks/allthemodium",
+                "outputs": [{
+                        "outputID": "minecraft:cobblestone",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:allthemodium_bee_spawn_egg",
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": true,
+        "hasCentrifugeOutput": false,
+        "mainInputCount": 1,
         "mainOutput": "minecraft:dragon_egg",
-        "mainOutputWeight": 0.01
+        "mainOutputWeight": 0.01,
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidoutput": false
     },
     "SpawnData": {
-        "spawnInWorld": false
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,
-        "feedItem": "minecraft:end_crystal",
-        "feedAmount": 4
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.60,
+        "feedItem": "minecraft:dragon_egg",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
     },
     "TraitData": {
         "hasTraits": false

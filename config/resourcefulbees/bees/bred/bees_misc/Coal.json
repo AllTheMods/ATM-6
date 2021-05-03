@@ -1,20 +1,20 @@
 {
-    "flower": "tag:forge:storage_blocks/emerald",
+    "flower": "tag:forge:storage_blocks/coal",
     "maxTimeInHive": 2400,
     "traits": [""],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ores/emerald/emerald_bee",
+    "baseLayerTexture": "ores/coal/coal_bee",
     "ColorData": {
-        "primaryColor": "#18eb09",
-        "secondaryColor": "#18eb09",
-        "honeycombColor": "#18eb09",
+        "primaryColor": "#303030",
+        "secondaryColor": "#303030",
+        "honeycombColor": "#303030",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#18eb09",
+        "glowColor": "#303030",
         "isEnchanted": false,
         "glowingPulse": 0,
         "modelType": "ORE"
@@ -30,13 +30,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:emerald_honeycomb_block",
+            "inputID": "resourcefulbees:coal_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:emerald",
+                    "outputID": "minecraft:coal",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:emerald_bee_spawn_egg",
+                    "outputID": "resourcefulbees:coal_bee_spawn_egg",
                     "weight": 20
                 }
             ]
@@ -45,11 +45,11 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "minecraft:emerald_ore",
+        "mainOutput": "minecraft:coal_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
         "mainNBTData": {},
-        "secondaryOutput": "minecraft:emerald",
+        "secondaryOutput": "minecraft:coal",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
         "secondaryNBTData": {},
@@ -73,11 +73,11 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "Slimy",
-        "parent2": "Gold",
+        "parent1": "Blazing",
+        "parent2": "Lumber",
         "breedWeight": 10,
         "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/emerald",
+        "feedItem": "tag:forge:storage_blocks/coal",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

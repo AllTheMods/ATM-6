@@ -39,10 +39,10 @@
     "item.resourcefulbees.lead_honeycomb": "Lead Honeycomb",
     "item.resourcefulbees.lead_bee_spawn_egg": "Lead Bee Spawn Egg",
     "entity.resourcefulbees.lead_bee": "Lead Bee",
-    "block.resourcefulbees.netherite_honeycomb_block": "Netherite Honeycomb Block",
-    "item.resourcefulbees.netherite_honeycomb": "Netherite Honeycomb",
-    "item.resourcefulbees.netherite_bee_spawn_egg": "Netherite Spawn Egg",
-    "entity.resourcefulbees.netherite_bee": "Netherite Bee",
+    "block.resourcefulbees.netherite_honeycomb_block": "Ancient  Debee Honeycomb Block",
+    "item.resourcefulbees.netherite_honeycomb": "Ancient  Debee Honeycomb",
+    "item.resourcefulbees.netherite_bee_spawn_egg": "Ancient  Debee Spawn Egg",
+    "entity.resourcefulbees.netherite_bee": "Ancient  Debee",
     "block.resourcefulbees.nickel_honeycomb_block": "Nickel Honeycomb Block",
     "item.resourcefulbees.nickel_honeycomb": "Nickel Honeycomb",
     "item.resourcefulbees.nickel_bee_spawn_egg": "Nickel Bee Spawn Egg",
@@ -239,5 +239,9 @@
     "block.resourcefulbees.cobalt_honeycomb_block": "Cobalt Honeycomb Block",
     "item.resourcefulbees.cobalt_honeycomb": "Cobalt Honeycomb",
     "item.resourcefulbees.cobalt_bee_spawn_egg": "Cobalt Spawn Egg",
-    "entity.resourcefulbees.cobalt_bee": "Cobalt Bee"
+    "entity.resourcefulbees.cobalt_bee": "Cobalt Bee",
+    "block.resourcefulbees.kobee_beef_honeycomb_block": "KoBee Beef Honeycomb Block",
+    "item.resourcefulbees.kobee_beef_honeycomb": "KoBee Beef Honeycomb",
+    "item.resourcefulbees.kobee_beef_bee_spawn_egg": "KoBee Beef Spawn Egg",
+    "entity.resourcefulbees.kobee_beef_bee": "KoBee Beef"
 }

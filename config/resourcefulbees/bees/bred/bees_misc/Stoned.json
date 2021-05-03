@@ -1,23 +1,23 @@
 {
-    "flower": "tag:forge:storage_blocks/emerald",
-    "maxTimeInHive": 2400,
+    "flower": "tag:forge:stone",
+    "maxTimeInHive": 1200,
     "traits": [""],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ores/emerald/emerald_bee",
+    "baseLayerTexture": "misc/stoned_bee",
     "ColorData": {
-        "primaryColor": "#18eb09",
-        "secondaryColor": "#18eb09",
-        "honeycombColor": "#18eb09",
+        "primaryColor": "#5A5A5A",
+        "secondaryColor": "#5A5A5A",
+        "honeycombColor": "#5A5A5A",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#18eb09",
+        "glowColor": "#5A5A5A",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "ORE"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,13 +30,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:emerald_honeycomb_block",
+            "inputID": "resourcefulbees:rocky_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:emerald",
+                    "outputID": "minecraft:stone",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:emerald_bee_spawn_egg",
+                    "outputID": "resourcefulbees:rocky_bee_spawn_egg",
                     "weight": 20
                 }
             ]
@@ -45,13 +45,13 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "minecraft:emerald_ore",
+        "mainOutput": "minecraft:stone",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutputCount": 16,
         "mainNBTData": {},
-        "secondaryOutput": "minecraft:emerald",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.20,
+        "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -73,11 +73,11 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "Slimy",
-        "parent2": "Gold",
+        "parent1": "Lava",
+        "parent2": "Cobbee",
         "breedWeight": 10,
         "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/emerald",
+        "feedItem": "immersiveengineering:hemp_fiber",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
