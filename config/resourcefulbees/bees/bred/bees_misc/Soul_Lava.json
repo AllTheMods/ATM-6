@@ -1,36 +1,88 @@
 {
     "flower": "allthemodium:molten_bluelava_block",
-    "maxTimeInHive": 2400,
+    "maxTimeInHive": 4800,
     "traits": ["nether", "angry", "soul_fire"],
     "hasHoneycomb": true,
     "baseLayerTexture": "modium/soul_lava_bee",
     "ColorData": {
+        "primaryColor": "#7cc7d6",
+        "secondaryColor": "#7cc7d6",
+        "honeycombColor": "#7cc7d6",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
-        "honeycombColor": "#7cc7d6"
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#7cc7d6",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "DEFAULT"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
-        "hasMutation": false
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:soul_lava_honeycomb_block",
+            "outputs": [{
+                    "outputID": "resourcefulbees:soul_lava_honeycomb",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:Soul_lava_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
         "mainOutput": "allthemodium:molten_bluelava",
-        "mainOutputCount": 10,
         "mainOutputWeight": 0.50,
-        "hasFluidOutput": true
+        "mainOutputCount": 10,
+        "mainNBTData": {},
+        "secondaryOutput": "allthemodium:molten_bluelava",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 10,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidoutput": true
     },
     "SpawnData": {
-        "canSpawnInWorld": false
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": false
+        "isBreedable": false,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.60,
+        "feedItem": "",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
     },
     "TraitData": {
         "hasTraits": true
-    },
-    "CombatData": {
-        "isPassive": false,
-        "removeStingerOnAttack": false,
-        "inflictsPoison": true,
-        "attackDamage": 1000
     }
 }

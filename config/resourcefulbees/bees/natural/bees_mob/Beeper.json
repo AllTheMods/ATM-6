@@ -1,23 +1,23 @@
 {
-    "flower": "tag:forge:storage_blocks/zinc",
-    "maxTimeInHive": 2400,
-    "traits": [""],
+    "flower": "tag:forge:storage_blocks/gunpowder",
+    "maxTimeInHive": 1200,
+    "traits": ["creeper"],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ato/zinc_bee",
+    "baseLayerTexture": "/creeper/creeper_bee",
     "ColorData": {
-        "primaryColor": "#B6DBD8",
-        "secondaryColor": "#B6DBD8",
-        "honeycombColor": "#B6DBD8",
+        "primaryColor": "#0C9F0A",
+        "secondaryColor": "#0C9F0A",
+        "honeycombColor": "#0C9F0A",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "/creeper/creeper_bee_emissive",
         "isBeeColored": false,
         "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#B6DBD8",
+        "isGlowing": true,
+        "glowColor": "#E2D3D3",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "ORE"
+        "modelType": "default"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,13 +30,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:zinc_honeycomb_block",
+            "inputID": "resourcefulbees:beeper_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:zinc_ingot",
+                    "outputID": "minecraft:gunpowder",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:zinc_bee_spawn_egg",
+                    "outputID": "resourcefulbees:beeper_bee_spawn_egg",
                     "weight": 20
                 }
             ]
@@ -45,13 +45,13 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_zinc",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutput": "minecraft:gunpowder",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 2,
         "mainNBTData": {},
-        "secondaryOutput": "alltheores:zinc_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -61,10 +61,10 @@
         "hasFluidoutput": false
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 5,
         "minYLevel": 0,
         "maxYLevel": 255,
         "minGroupSize": 1,
@@ -72,17 +72,17 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "Iron",
-        "parent2": "Tin",
+        "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
         "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/zinc",
+        "breedChance": 0.8,
+        "feedItem": "xreliquary:catalyzing_gland",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": false
+        "hasTraits": true
     }
 }

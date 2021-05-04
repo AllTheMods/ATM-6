@@ -1,0 +1,23 @@
+{
+    "biomes": [
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:sunflower_plains",
+        "byg:grassland_plateau",
+        "byg:grove",
+        "byg:lush_tundra",
+        "byg:meadow",
+        "byg:orchard",
+        "byg:prairie",
+        "byg:rose_fields",
+        "byg:shrublands",
+        "byg:sierra_valley",
+        "byg:flowering_enchanted_grove",
+        "byg:flowering_grove",
+        "byg:flowering_meadow",
+        "byg:prairie_clearing",
+        "byg:wooded_grassland_plateau",
+        "byg:wooded_meadow"
+    ]
+}

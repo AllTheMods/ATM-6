@@ -1,36 +1,88 @@
 {
     "flower": "tag:Minecraft:wool",
     "maxTimeInHive": 1200,
+    "traits": ["spider"],
     "hasHoneycomb": true,
+    "baseLayerTexture": "/custom/bee",
     "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#3b0000",
         "primaryColor": "#030303",
-        "secondaryColor": "#910000"
+        "secondaryColor": "#910000",
+        "honeycombColor": "#3b0000",
+        "primaryLayerTexture": "/custom/primary_layer",
+        "secondaryLayerTexture": "/custom/secondary_layer",
+        "emissiveLayerTexture": "/empty_layer",
+        "isBeeColored": true,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#243281",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "default"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
-        "hasMutation": false
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:spider_honeycomb_block",
+            "outputs": [{
+                    "outputID": "minecraft:string",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:spider_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
         "mainOutput": "minecraft:string",
+        "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
-        "mainOutputWeight": 0.50,
+        "mainNBTData": {},
         "secondaryOutput": "xreliquary:chelicerae",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 1
+        "secondaryOutputCount": 2,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidoutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:overworld",
-        "biomeBlacklist": "tag:ocean"
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 5,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.8,
         "feedItem": "xreliquary:chelicerae",
-        "feedAmount": 3
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": false
+        "hasTraits": true
     }
 }

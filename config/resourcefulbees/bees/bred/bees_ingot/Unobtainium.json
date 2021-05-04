@@ -5,41 +5,96 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "modium/unobtainium_bee",
     "ColorData": {
-        "isBeeColored": false,
-        "isEnchanted": true,
+        "primaryColor": "#A62BE0",
+        "secondaryColor": "#A62BE0",
         "honeycombColor": "#A62BE0",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#A62BE0",
+        "isEnchanted": true,
+        "glowingPulse": 0,
         "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-            "type": "ENTITY_TO_ENTITY",
-            "inputID": "resourcefulbees:lava_bee",
-            "outputs": [{
-                    "outputID": "resourcefulbees:lava_bee",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:soul_lava_bee",
-                    "weight": 20
-                }
-            ]
-        }]
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:unobtainium_honeycomb_block",
+                "outputs": [{
+                        "outputID": "allthemodium:unobtainium_nugget",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:unobtainium_bee_spawn_egg",
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "type": "ENTITY_TO_ENTITY",
+                "inputID": "resourcefulbees:lava_bee",
+                "outputs": [{
+                        "outputID": "resourcefulbees:lava_bee",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:soul_lava_bee",
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+        "mainInputCount": 4,
         "mainOutput": "allthemodium:unobtainium_nugget",
         "mainOutputWeight": 0.02,
-        "mainOutputCount": 1
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.20,
+        "secondaryOutputCount": 2,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidoutput": false
     },
     "SpawnData": {
-        "spawnInWorld": false
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.6,
         "feedItem": "tag:forge:storage_blocks/unobtainium",
-        "feedAmount": 5
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
     },
     "TraitData": {
         "hasTraits": true

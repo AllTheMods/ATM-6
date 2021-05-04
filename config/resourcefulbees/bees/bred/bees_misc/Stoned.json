@@ -1,23 +1,23 @@
 {
-    "flower": "tag:forge:storage_blocks/zinc",
-    "maxTimeInHive": 2400,
+    "flower": "tag:forge:stone",
+    "maxTimeInHive": 1200,
     "traits": [""],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ato/zinc_bee",
+    "baseLayerTexture": "misc/stoned_bee",
     "ColorData": {
-        "primaryColor": "#B6DBD8",
-        "secondaryColor": "#B6DBD8",
-        "honeycombColor": "#B6DBD8",
+        "primaryColor": "#5A5A5A",
+        "secondaryColor": "#5A5A5A",
+        "honeycombColor": "#5A5A5A",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#B6DBD8",
+        "glowColor": "#5A5A5A",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "ORE"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,13 +30,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:zinc_honeycomb_block",
+            "inputID": "resourcefulbees:rocky_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:zinc_ingot",
+                    "outputID": "minecraft:stone",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:zinc_bee_spawn_egg",
+                    "outputID": "resourcefulbees:rocky_bee_spawn_egg",
                     "weight": 20
                 }
             ]
@@ -45,13 +45,13 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_zinc",
+        "mainOutput": "minecraft:stone",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutputCount": 16,
         "mainNBTData": {},
-        "secondaryOutput": "alltheores:zinc_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.20,
+        "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -72,12 +72,12 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "Iron",
-        "parent2": "Tin",
+        "isBreedable": true,
+        "parent1": "Lava",
+        "parent2": "Cobbee",
         "breedWeight": 10,
         "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/zinc",
+        "feedItem": "immersiveengineering:hemp_fiber",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

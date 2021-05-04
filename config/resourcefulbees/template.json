@@ -1,20 +1,20 @@
 {
-    "flower": "tag:forge:storage_blocks/zinc",
-    "maxTimeInHive": 2400,
+    "flower": "",
+    "maxTimeInHive": 1200,
     "traits": [""],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ato/zinc_bee",
+    "baseLayerTexture": "",
     "ColorData": {
-        "primaryColor": "#B6DBD8",
-        "secondaryColor": "#B6DBD8",
-        "honeycombColor": "#B6DBD8",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
+        "primaryColor": "#ffcc99",
+        "secondaryColor": "#ffcc99",
+        "honeycombColor": "#ffcc99",
+        "primaryLayerTexture": "/custom/primary_layer",
+        "secondaryLayerTexture": "/custom/secondary_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#B6DBD8",
+        "glowColor": "#ffcc99",
         "isEnchanted": false,
         "glowingPulse": 0,
         "modelType": "ORE"
@@ -29,27 +29,28 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:zinc_honeycomb_block",
-            "outputs": [{
-                    "outputID": "alltheores:zinc_ingot",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:zinc_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
-        }]
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:_honeycomb_block",
+                "outputs": [{
+                        "outputID": "",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:_bee_spawn_egg",
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_zinc",
+        "mainInputCount": 4,
+        "mainOutput": "",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
         "mainNBTData": {},
-        "secondaryOutput": "alltheores:zinc_ingot",
+        "secondaryOutput": "",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
         "secondaryNBTData": {},
@@ -72,12 +73,12 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "Iron",
-        "parent2": "Tin",
+        "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
         "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/zinc",
+        "breedChance": 0.6,
+        "feedItem": "",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

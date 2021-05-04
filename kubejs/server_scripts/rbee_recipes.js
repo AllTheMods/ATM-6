@@ -45,6 +45,7 @@ events.listen('recipes', function(e) {
 
     //Combs to Dye
     var cuShaped = e.recipes.cucumber.shaped_no_mirror
+
     function dyeShaped(result, pattern) {
         cuShaped({
             'pattern': pattern,
@@ -353,6 +354,115 @@ events.listen('recipes', function(e) {
         '  C'
     ])
     Crop('', [
+        'CCC',
+        '   ',
+        '   '
+    ])*/
+    //Combs to Meat
+    var cuShaped = e.recipes.cucumber.shaped_no_mirror
+
+    function Meat(result, pattern) {
+        cuShaped({
+            'pattern': pattern,
+            'key': {
+                'C': {
+                    'item': 'resourcefulbees:kobee_beef_honeycomb'
+                }
+            },
+            'result': {
+                'item': result,
+                'count': 3
+            }
+        })
+        cuShaped({
+            'pattern': pattern,
+            'key': {
+                'C': {
+                    'item': 'resourcefulbees:kobee_beef_honeycomb_block'
+                }
+            },
+            'result': {
+                'item': result,
+                'count': 27
+            }
+        })
+    }
+    Meat('minecraft:porkchop', [
+        '  C',
+        ' C ',
+        ' C '
+    ])
+    Meat('minecraft:beef', [
+        '  C',
+        'CC ',
+        '   '
+    ])
+    Meat('minecraft:cod', [
+        '  C',
+        '  C',
+        ' C '
+    ])
+    Meat('minecraft:salmon', [
+        'C C',
+        ' C ',
+        '   '
+    ])
+    Meat('minecraft:chicken', [
+        ' C ',
+        ' C ',
+        '  C'
+    ])
+    Meat('minecraft:rabbit', [
+        '  C',
+        ' C ',
+        'C  '
+    ])
+    Meat('minecraft:mutton', [
+        'C  ',
+        ' C ',
+        '  C'
+    ])
+    Meat('twilightforest:raw_venison', [
+        '  C',
+        '  C',
+        '  C'
+    ])
+    Meat('rats:raw_rat', [
+        ' C ',
+        ' C ',
+        ' C '
+    ])
+    Meat('aquaculture:fish_fillet_raw', [
+        'C  ',
+        'C  ',
+        'C  '
+    ])
+    /*Meat('', [
+        '   ',
+        '   ',
+        'CCC'
+    ])
+    Meat('', [
+        '   ',
+        'CCC',
+        '   '
+    ])
+    Meat('', [
+        '   ',
+        ' C ',
+        'C C'
+    ])
+    Meat('', [
+        '  C',
+        ' C ',
+        '  C'
+    ])
+    Meat('', [
+        '   ',
+        'CC ',
+        '  C'
+    ])
+    Meat('', [
         'CCC',
         '   ',
         '   '
