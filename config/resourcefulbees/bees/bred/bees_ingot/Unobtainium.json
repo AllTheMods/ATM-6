@@ -65,14 +65,14 @@
         "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.20,
-        "secondaryOutputCount": 2,
+        "secondaryOutputCount": 1,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
         "bottleNBTData": {},
         "recipeTime": 200,
-        "hasFluidoutput": false
+        "hasFluidOutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": false,
