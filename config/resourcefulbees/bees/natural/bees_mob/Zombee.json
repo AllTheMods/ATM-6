@@ -51,7 +51,7 @@
         "mainNBTData": {},
         "secondaryOutput": "xreliquary:zombie_heart",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 1,
+        "secondaryOutputCount": 2,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
