@@ -1,0 +1,305 @@
+{
+	id: "17FC076B9E2CED42",
+	group: "1AC60211DE7427FC",
+	order_index: 0,
+	filename: "storage",
+	title: "Storage",
+	icon: "minecraft:chest",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			description: [
+				"The following quests will help you keep the clutter down to a minimum when it comes to your storage needs. ",
+				"",
+				""
+			],
+			size: 1.5d,
+			id: "36B77CD98252A562",
+			tasks: [{
+				id: "44A2422929D424C4",
+				type: "checkmark",
+				title: "Storage",
+				icon: "minecraft:chest"
+			}],
+			rewards: [{
+				id: "2C8966909D750D8B",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Simple Storage Network",
+			icon: "storagenetwork:inventory",
+			x: 0.0d,
+			y: 3.0d,
+			description: [
+				"Simple Storage Network is a useful early game logistics storage system that will keep you organized.",
+				"",
+				"It will use the chests you already have in place but connect everything together by a Network Root. You can request things and insert them automatically as well."
+			],
+			dependencies: ["36B77CD98252A562"],
+			id: "581522B00D27906F",
+			tasks: [{
+				id: "02F239E8948A19EB",
+				type: "checkmark",
+				title: "Simple Storage Network"
+			}],
+			rewards: [{
+				id: "3F1AFBFBB5EA5FBE",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Storage Drawers",
+			icon: "storagedrawers:oak_full_drawers_1",
+			x: -3.0d,
+			y: 0.0d,
+			description: ["Drawers can be used alone or together linked to a controller. Each drawer can have multiple upgrades expanding its capacity."],
+			dependencies: ["36B77CD98252A562"],
+			id: "5060C74BBACDEA8D",
+			tasks: [{
+				id: "29FD996BF9F0A6F5",
+				type: "item",
+				title: "Any #storagedrawers:drawers",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}],
+			rewards: [{
+				id: "5A263985110A49E9",
+				type: "item",
+				item: "storagedrawers:drawer_key"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 1.5d,
+			description: ['Forgot where you left stacks of dirt? Find Me is included in this pack for just that reason, mouse over some in your inventory or JEI and hit "Y" to locate it.'],
+			dependencies: ["36B77CD98252A562"],
+			id: "6C43AF7861A7DCCA",
+			tasks: [{
+				id: "231182DFC11BDDA2",
+				type: "checkmark",
+				title: "FindMe",
+				icon: "chiselsandbits:magnifying_glass"
+			}],
+			rewards: [{
+				id: "6C53046F631FECE4",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 2.5d,
+			description: ['Inventory full? Dont have anywhere to store it? Plonk is included for just that reason. It allows you to place stacks of items on the ground by hitting "P". Right click the items to pick them back up again.'],
+			dependencies: ["6C43AF7861A7DCCA"],
+			id: "55458A95B31A06A4",
+			tasks: [{
+				id: "3C9305B5A1C08E53",
+				type: "checkmark",
+				title: "Plonk",
+				icon: {
+					id: "botania:third_eye",
+					Count: 1b,
+					tag: {}
+				}
+			}],
+			rewards: [{
+				id: "511EB03EE84BAE98",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Refined Storage",
+			x: 1.5d,
+			y: 1.5d,
+			description: ["Welcome to the digital age of storage, making life easier... ish. Refined Storage allows for the storage of items and fluids simultaneously. It can also automatically craft things for you. Refer to the Refined Storage quest line to see this mod in more detail. "],
+			dependencies: ["36B77CD98252A562"],
+			id: "2101202B4639186B",
+			tasks: [{
+				id: "38F81876FBD8DE32",
+				type: "item",
+				item: "refinedstorage:controller"
+			}],
+			rewards: [{
+				id: "26EDFEE85FF6A5AD",
+				type: "item",
+				item: "pamhc2foodcore:toastitem",
+				count: 4
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -2.0d,
+			description: [
+				"If you wanted more of a challenge when it comes to the digital age of storage, this is the route you need to go. ",
+				"",
+				"Check out the Applied Energistics tab to learn all you need to know about the mod and its capabilities."
+			],
+			dependencies: ["36B77CD98252A562"],
+			id: "6107CCBA37998637",
+			tasks: [{
+				id: "0666C61FDDECFB63",
+				type: "item",
+				item: "appliedenergistics2:controller"
+			}],
+			rewards: [{
+				id: "05C45476BA15A131",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			icon: "industrialforegoing:common_black_hole_unit",
+			x: -1.5d,
+			y: -2.0d,
+			description: [
+				"Industrial Foregoing and its black hole units have massive storage capabilities.",
+				"",
+				"Check out the Industrial Foregoing tab to learn more about the mod."
+			],
+			dependencies: ["36B77CD98252A562"],
+			id: "2967875291C3B608",
+			tasks: [{
+				id: "3C25569DE15819E7",
+				type: "item",
+				item: "industrialforegoing:common_black_hole_unit"
+			}],
+			rewards: [{
+				id: "44339AB35512C163",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Iron Chests",
+			x: 0.0d,
+			y: -3.0d,
+			description: [
+				"The Iron Chests mod allows for large storage in the space of a single chest. It comes in multiple varities with different levels of storage.",
+				"",
+				"Chests can be upgraded in place by an upgrade or crafted in a crafting table."
+			],
+			dependencies: ["36B77CD98252A562"],
+			id: "4F510481E079F422",
+			tasks: [
+				{
+					id: "06610A61572ED3E1",
+					type: "item",
+					item: "ironchest:iron_chest"
+				},
+				{
+					id: "30087AEBACB774F0",
+					type: "item",
+					item: "ironchest:wood_to_iron_chest_upgrade"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -4.5d,
+			dependencies: ["4F510481E079F422"],
+			id: "444F3995BAAAF4A0",
+			tasks: [
+				{
+					id: "2845BF03AA445D8F",
+					type: "item",
+					item: "ironchest:gold_chest"
+				},
+				{
+					id: "1D8E56B003EBEE27",
+					type: "item",
+					item: "ironchest:iron_to_gold_chest_upgrade"
+				}
+			],
+			rewards: [{
+				id: "6A2812292BBF8654",
+				type: "item",
+				item: "pamhc2foodcore:baconcheeseburgeritem",
+				count: 2
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -6.0d,
+			dependencies: ["444F3995BAAAF4A0"],
+			id: "4F1BCC37F8B25D6A",
+			tasks: [
+				{
+					id: "384C07F054B1FE20",
+					type: "item",
+					item: "ironchest:gold_to_diamond_chest_upgrade"
+				},
+				{
+					id: "0B56E381988E57DA",
+					type: "item",
+					item: "ironchest:diamond_chest"
+				}
+			],
+			rewards: [{
+				id: "602FCCFC4A465DE2",
+				type: "item",
+				item: "pamhc2foodcore:baconcheeseburgeritem",
+				count: 2
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 0.5d,
+			description: ["This controls all drawers that are connected to it. Items can be inserted and drawn out of it."],
+			dependencies: ["5060C74BBACDEA8D"],
+			id: "49CEFFF3A9962BE9",
+			tasks: [{
+				id: "0E6FF31E8DC7475B",
+				type: "item",
+				item: "storagedrawers:controller"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -0.5d,
+			description: ["Do you really need more than this in a single drawer?"],
+			dependencies: ["5060C74BBACDEA8D"],
+			id: "0D3C6EA4DA085FE9",
+			tasks: [{
+				id: "61F49EA9065596E3",
+				type: "item",
+				item: "storagedrawers:emerald_storage_upgrade"
+			}]
+		},
+		{
+			title: "Storage Downgrade",
+			x: -3.5d,
+			y: -1.0d,
+			description: ["This allows the drawer to only hold one stack of whatever item it is currently holding."],
+			dependencies: ["5060C74BBACDEA8D"],
+			id: "3F09F111C7064DF3",
+			tasks: [{
+				id: "3A0B04A8CB4B2535",
+				type: "item",
+				item: "storagedrawers:one_stack_upgrade"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 1.0d,
+			description: ["This upgrade will void anything beyond what the drawer can hold."],
+			dependencies: ["5060C74BBACDEA8D"],
+			id: "4221676C5A1FF340",
+			tasks: [{
+				id: "08EB511AF78EAF1B",
+				type: "item",
+				item: "storagedrawers:void_upgrade"
+			}]
+		}
+	]
+}

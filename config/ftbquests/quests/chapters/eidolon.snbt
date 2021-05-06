@@ -1,0 +1,10 @@
+{
+	id: "40B37FFAD7420FCA",
+	group: "02FE661031A105D8",
+	order_index: 4,
+	filename: "eidolon",
+	title: "Eidolon",
+	icon: "eidolon:sanguine_amulet",
+	default_quest_shape: "",
+	quests: []
+}

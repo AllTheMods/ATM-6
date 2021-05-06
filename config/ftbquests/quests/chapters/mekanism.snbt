@@ -1,0 +1,1589 @@
+{
+	id: "53601B79303BC1CF",
+	group: "2B51AC12041E3F89",
+	order_index: 5,
+	filename: "mekanism",
+	title: "Mekanism",
+	icon: {
+		id: "mekanism:atomic_disassembler",
+		Count: 1b,
+		tag: {
+			HideFlags: 2,
+			mekData: {
+				EnergyContainers: [{
+					Container: 0b,
+					stored: "1000000"
+				}]
+			}
+		}
+	},
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Bear Bones",
+			icon: "mekanism:metallurgic_infuser",
+			x: 12.0d,
+			y: 3.0d,
+			dependencies: ["5387F019DD03B1DF"],
+			dependency_requirement: "all_started",
+			id: "6EC1F4FCC3DBCAC2",
+			tasks: [
+				{
+					id: "20F7220E6C44C490",
+					type: "item",
+					item: "mekanism:metallurgic_infuser"
+				},
+				{
+					id: "017D5E0C0CEA1E08",
+					type: "item",
+					item: "mekanism:configuration_card"
+				}
+			],
+			rewards: [{
+				id: "7C1C3E98C64F2AAC",
+				type: "item",
+				item: "mekanism:basic_tier_installer"
+			}]
+		},
+		{
+			title: "mekanism",
+			icon: "mekanism:robit",
+			x: 15.0d,
+			y: 3.0d,
+			description: [
+				"mekanism discription",
+				""
+			],
+			size: 1.5d,
+			id: "5387F019DD03B1DF",
+			tasks: [{
+				id: "5E25FB691B7E835A",
+				type: "item",
+				item: "mekanism:configurator"
+			}],
+			rewards: [{
+				id: "7098E00C9A0C021F",
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "2x",
+			x: 8.0d,
+			y: -0.5d,
+			dependencies: ["32C3B760FC519938"],
+			id: "0F67DE95889058A1",
+			tasks: [{
+				id: "1EC613B300EAED20",
+				type: "item",
+				item: "mekanism:enrichment_chamber"
+			}],
+			rewards: [{
+				id: "359D61DFDF038910",
+				type: "item",
+				item: "mekanism:basic_tier_installer"
+			}]
+		},
+		{
+			title: "1x",
+			x: 10.0d,
+			y: -0.5d,
+			dependencies: ["29C59AB0F740189B"],
+			id: "32C3B760FC519938",
+			tasks: [{
+				id: "218671060CBE300D",
+				type: "item",
+				item: "mekanism:energized_smelter"
+			}],
+			rewards: [{
+				id: "2105EF9661A88E1F",
+				type: "item",
+				item: "mekanism:basic_tier_installer"
+			}]
+		},
+		{
+			title: "3x",
+			x: 6.0d,
+			y: -0.5d,
+			dependencies: [
+				"0F67DE95889058A1",
+				"146F69C84DD0613C"
+			],
+			id: "054B13499AB5F125",
+			tasks: [
+				{
+					id: "430FA0781E8E1D6D",
+					type: "item",
+					item: "mekanism:purification_chamber"
+				},
+				{
+					id: "3EC2D422967D65A4",
+					type: "item",
+					item: "mekanism:crusher"
+				}
+			]
+		},
+		{
+			title: "4x",
+			x: 4.0d,
+			y: -0.5d,
+			dependencies: [
+				"054B13499AB5F125",
+				"0EF9E7485FB667DF"
+			],
+			dependency_requirement: "one_started",
+			id: "530BE2BDACDE301A",
+			tasks: [{
+				id: "5A729473B9371EFC",
+				type: "item",
+				item: "mekanism:chemical_injection_chamber"
+			}]
+		},
+		{
+			title: "5x",
+			x: 2.0d,
+			y: -0.5d,
+			dependencies: [
+				"530BE2BDACDE301A",
+				"193F18AFE7E6DE19"
+			],
+			id: "2BEA3D38738579BD",
+			tasks: [
+				{
+					id: "2100190DFB0B27B8",
+					type: "item",
+					item: "mekanism:chemical_dissolution_chamber"
+				},
+				{
+					id: "3331C35ABE86F68F",
+					type: "item",
+					item: "mekanism:chemical_washer"
+				},
+				{
+					id: "0DDC91BF12C20002",
+					type: "item",
+					item: "mekanism:chemical_crystallizer"
+				}
+			]
+		},
+		{
+			title: "power",
+			icon: "mekanismgenerators:wind_generator",
+			x: 13.5d,
+			y: 1.5d,
+			optional: true,
+			id: "7D2DA29D67C394C5",
+			tasks: [
+				{
+					id: "7E0538FC22B67EF1",
+					type: "item",
+					item: "mekanismgenerators:wind_generator"
+				},
+				{
+					id: "42AB7D9F480920EA",
+					type: "item",
+					item: "mekanismgenerators:heat_generator"
+				},
+				{
+					id: "16BFB2530778C38C",
+					type: "item",
+					item: "mekanismgenerators:solar_generator"
+				},
+				{
+					id: "1057FB34D8AED673",
+					type: "item",
+					item: "mekanismgenerators:advanced_solar_generator"
+				},
+				{
+					id: "441A413A265724FC",
+					type: "item",
+					item: "mekanismgenerators:gas_burning_generator"
+				},
+				{
+					id: "67E11702AC08F1D2",
+					type: "item",
+					item: "mekanismgenerators:bio_generator"
+				},
+				{
+					id: "0FA236F074CBEAC6",
+					type: "checkmark",
+					title: "only slect this if you have another source of power"
+				}
+			],
+			rewards: [{
+				id: "001FE0F9D2546237",
+				type: "item",
+				item: "mekanism:basic_energy_cube"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: -0.5d,
+			description: [
+				"most ores can be doubled",
+				"and some can be quintoupled ",
+				"here is a rough guid of what you will need ",
+				""
+			],
+			dependencies: ["6EC1F4FCC3DBCAC2"],
+			id: "29C59AB0F740189B",
+			tasks: [{
+				id: "4A6967CE3872AA1D",
+				type: "item",
+				title: "Ore prossesing",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "forge:ores"
+					}
+				}
+			}]
+		},
+		{
+			title: "fusion reactor",
+			icon: "mekanismgenerators:fusion_reactor_controller",
+			x: 20.0d,
+			y: 10.0d,
+			shape: "pentagon",
+			dependencies: [
+				"14150C467A1C6097",
+				"5D6413BABD7F52B6",
+				"7EABCE18AA431BC2",
+				"7D217992C3766994",
+				"01F118FC8D59A826"
+			],
+			id: "174CD61528FDC02C",
+			tasks: [
+				{
+					id: "0570EB8205CD1820",
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_controller"
+				},
+				{
+					id: "450727022D8F93EC",
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_frame",
+					count: 50L
+				},
+				{
+					id: "43D6976F92EA35B4",
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_frame",
+					count: 25L
+				},
+				{
+					id: "43C8B3E7B9BE9C27",
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_port",
+					count: 2L
+				},
+				{
+					id: "65BF854F46B58E16",
+					type: "item",
+					item: "mekanismgenerators:laser_focus_matrix"
+				},
+				{
+					id: "081124FD0DA514F3",
+					type: "item",
+					item: "mekanismgenerators:reactor_glass",
+					count: 8L
+				}
+			]
+		},
+		{
+			title: "fission reactor",
+			icon: "mekanismgenerators:control_rod_assembly",
+			x: 14.0d,
+			y: 8.5d,
+			shape: "hexagon",
+			min_required_dependencies: 2,
+			dependencies: [
+				"687D1EAE01D094CA",
+				"36F67CF896521E72",
+				"1DA255BED3C072D4",
+				"4C619346A1926580"
+			],
+			size: 1.5d,
+			id: "770582061B8E4F9A",
+			tasks: [
+				{
+					id: "045AFF9348D73623",
+					type: "item",
+					item: "mekanismgenerators:fission_reactor_casing",
+					count: 26L
+				},
+				{
+					id: "782C2EA2123719F3",
+					type: "item",
+					item: "mekanismgenerators:fission_reactor_port",
+					count: 3L
+				},
+				{
+					id: "34BF754D7A747476",
+					type: "item",
+					item: "mekanismgenerators:fission_fuel_assembly"
+				},
+				{
+					id: "45BDDF7F712C5E7E",
+					type: "item",
+					item: "mekanismgenerators:control_rod_assembly"
+				},
+				{
+					id: "0E6A5ED52F5A5714",
+					type: "item",
+					item: "mekanismgenerators:reactor_glass",
+					count: 8L
+				}
+			]
+		},
+		{
+			title: "induction matrix",
+			icon: "mekanism:basic_induction_provider",
+			x: 0.0d,
+			y: 3.0d,
+			description: ["BIG POWER SAFE"],
+			dependencies: ["27526934C531A1EE"],
+			id: "3B74EF6F65BB1ED1",
+			tasks: [
+				{
+					id: "3C2E4A1321C09659",
+					type: "item",
+					item: "mekanism:basic_induction_cell"
+				},
+				{
+					id: "431211F886B2A35B",
+					type: "item",
+					item: "mekanism:induction_casing",
+					count: 20L
+				},
+				{
+					id: "58DFE06E910123C6",
+					type: "item",
+					item: "mekanism:induction_port",
+					count: 2L
+				},
+				{
+					id: "2EBC3284502BFD2B",
+					type: "item",
+					item: "mekanism:basic_induction_provider"
+				},
+				{
+					id: "5A16EF3C14B04686",
+					type: "item",
+					item: "mekanism:structural_glass",
+					count: 4L
+				},
+				{
+					id: "14E46FD7891210CC",
+					type: "forge_energy",
+					value: 100000L
+				}
+			]
+		},
+		{
+			title: "Fissile Oxygen",
+			x: 4.0d,
+			y: 10.0d,
+			dependencies: ["6DA6333E2D72F2D9"],
+			id: "6AFD0B689989B32A",
+			tasks: [{
+				id: "4DB57C07B899B664",
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			title: "Sulfur Dioxide",
+			x: 2.0d,
+			y: 8.5d,
+			dependencies: ["2E575C0EEBCB3757"],
+			id: "023D0FC0492AD42A",
+			tasks: [{
+				id: "619B8F998E3755B0",
+				type: "item",
+				item: "mekanism:chemical_oxidizer"
+			}]
+		},
+		{
+			title: "Sulfur Trioxide",
+			x: 4.0d,
+			y: 8.5d,
+			dependencies: [
+				"023D0FC0492AD42A",
+				"6AFD0B689989B32A"
+			],
+			id: "784C4E0161364B14",
+			tasks: [{
+				id: "657ADC1B7B41D87F",
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			title: "Water Vapor",
+			x: 6.0d,
+			y: 10.0d,
+			dependencies: ["6DA6333E2D72F2D9"],
+			id: "3AE5A5E4AE67C7D1",
+			tasks: [{
+				id: "09DC818CAE8E0815",
+				type: "item",
+				item: "mekanism:rotary_condensentrator"
+			}]
+		},
+		{
+			title: "Sulfuric Acid",
+			x: 6.0d,
+			y: 8.5d,
+			dependencies: [
+				"3AE5A5E4AE67C7D1",
+				"784C4E0161364B14"
+			],
+			id: "02CFEF39B50C54C3",
+			tasks: [{
+				id: "2A4C98013B1BC9EE",
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			title: "Hydrofluoric Acid",
+			x: 8.0d,
+			y: 8.5d,
+			dependencies: [
+				"02CFEF39B50C54C3",
+				"41E5478D464CFA54"
+			],
+			id: "0EF15FA8B38CD2D1",
+			tasks: [{
+				id: "2B2D2553195490A5",
+				type: "item",
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		},
+		{
+			title: "Yellow Cake Uranium",
+			icon: "mekanism:yellow_cake_uranium",
+			x: 8.0d,
+			y: 7.0d,
+			dependencies: ["3D3784391A47FCBF"],
+			id: "6A6CB4A819F88820",
+			tasks: [
+				{
+					id: "21D1C72B43428E36",
+					type: "item",
+					item: "mekanism:enrichment_chamber"
+				},
+				{
+					id: "7B404F06FC341E46",
+					type: "item",
+					item: "mekanism:yellow_cake_uranium"
+				}
+			]
+		},
+		{
+			title: "Uranium Oxide",
+			x: 10.0d,
+			y: 7.0d,
+			dependencies: ["6A6CB4A819F88820"],
+			id: "60E2C21019661885",
+			tasks: [{
+				id: "757AA7A577CB2F6B",
+				type: "item",
+				item: "mekanism:chemical_oxidizer"
+			}]
+		},
+		{
+			title: "Uranium Hexafluoride",
+			x: 10.0d,
+			y: 8.5d,
+			dependencies: [
+				"60E2C21019661885",
+				"0EF15FA8B38CD2D1"
+			],
+			id: "13CC329047F83F4B",
+			tasks: [{
+				id: "053EF61BAD31737F",
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			title: "No. 1 Fissile Fuel",
+			x: 12.0d,
+			y: 8.5d,
+			dependencies: ["13CC329047F83F4B"],
+			id: "687D1EAE01D094CA",
+			tasks: [{
+				id: "0E6C501224A65CC0",
+				type: "item",
+				item: "mekanism:isotopic_centrifuge"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 10.0d,
+			id: "2E575C0EEBCB3757",
+			tasks: [{
+				id: "0BF93AD3DFF99E4B",
+				type: "item",
+				title: "any sulfur",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "forge:dusts/sulfur"
+					}
+				}
+			}]
+		},
+		{
+			title: "Fissile Water",
+			icon: "cookingforblockheads:sink",
+			x: 5.0d,
+			y: 11.0d,
+			dependency_requirement: "one_started",
+			optional: true,
+			id: "6DA6333E2D72F2D9",
+			tasks: [{
+				id: "157531C9B821915C",
+				type: "checkmark",
+				title: "Water"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 7.0d,
+			id: "3D3784391A47FCBF",
+			tasks: [{
+				id: "3318D9186FEC6E81",
+				type: "item",
+				item: "alltheores:uranium_ingot"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 10.0d,
+			id: "41E5478D464CFA54",
+			tasks: [{
+				id: "7013AFA33BE97FED",
+				type: "item",
+				item: "mekanism:fluorite_gem"
+			}]
+		},
+		{
+			title: "Thermal Evaporation",
+			icon: "mekanism:thermal_evaporation_controller",
+			x: 8.0d,
+			y: 3.0d,
+			dependencies: [
+				"6EC1F4FCC3DBCAC2",
+				"03B63299AE20FF7E"
+			],
+			id: "00EBE16B1E5EFF30",
+			tasks: [
+				{
+					id: "58E39A750194CB56",
+					type: "item",
+					item: "mekanism:thermal_evaporation_block",
+					count: 34L
+				},
+				{
+					id: "5301A801C19063E1",
+					type: "item",
+					item: "mekanism:thermal_evaporation_controller"
+				},
+				{
+					id: "7BEEAE57333257E0",
+					type: "item",
+					item: "mekanism:thermal_evaporation_valve",
+					count: 2L
+				}
+			]
+		},
+		{
+			title: "Fission Water",
+			icon: "cookingforblockheads:sink",
+			x: 16.0d,
+			y: 8.5d,
+			optional: true,
+			id: "36F67CF896521E72",
+			tasks: [{
+				id: "43BC68F53165C03D",
+				type: "checkmark",
+				title: "Water"
+			}]
+		},
+		{
+			title: "Lithium ",
+			icon: "mekanism:thermal_evaporation_controller",
+			x: 6.0d,
+			y: 3.0d,
+			dependencies: ["00EBE16B1E5EFF30"],
+			id: "02EFF9C4A8766954",
+			tasks: [
+				{
+					id: "50C945CAEC103010",
+					type: "item",
+					item: "mekanism:thermal_evaporation_controller"
+				},
+				{
+					id: "6CD57CC73D1161F4",
+					type: "item",
+					item: "mekanism:thermal_evaporation_block",
+					count: 34L
+				},
+				{
+					id: "28BBEAF28E2822CD",
+					type: "item",
+					item: "mekanism:thermal_evaporation_valve",
+					count: 2L
+				}
+			]
+		},
+		{
+			title: "Lithium part 2",
+			x: 4.0d,
+			y: 3.0d,
+			dependencies: ["02EFF9C4A8766954"],
+			id: "0C9B3C6C9FE5AEC6",
+			tasks: [{
+				id: "738E21C1EDB27879",
+				type: "item",
+				item: "mekanism:rotary_condensentrator"
+			}]
+		},
+		{
+			title: "Lithium part 3",
+			icon: "mekanism:dust_lithium",
+			x: 2.0d,
+			y: 3.0d,
+			dependencies: ["0C9B3C6C9FE5AEC6"],
+			id: "27526934C531A1EE",
+			tasks: [
+				{
+					id: "00CB7403B57B9B63",
+					type: "item",
+					item: "mekanism:chemical_crystallizer"
+				},
+				{
+					id: "6E8568682CD2D369",
+					type: "item",
+					item: "mekanism:dust_lithium"
+				}
+			]
+		},
+		{
+			title: "Sodium",
+			x: 12.0d,
+			y: 7.0d,
+			dependencies: ["5765DB202BA9966F"],
+			id: "1DA255BED3C072D4",
+			tasks: [{
+				id: "3333D44629654B93",
+				type: "item",
+				item: {
+					id: "mekanism:ultimate_chemical_tank",
+					Count: 1b,
+					tag: {
+						mekData: {
+							owner: [I;
+								-707900567,
+								463030432,
+								-1416162499,
+								2100424058
+							],
+							SlurryTanks: [],
+							InfusionTanks: [],
+							dumping: 0,
+							controlType: 0,
+							componentEjector: {
+								color1: -1,
+								color2: -1,
+								color0: -1,
+								strictInput: 0b,
+								color5: -1,
+								color3: -1,
+								color4: -1
+							},
+							componentConfig: {
+								config2: {
+									side4: 1,
+									side3: 1,
+									side5: 1,
+									side0: 4,
+									side2: 1,
+									side1: 1
+								},
+								config3: {
+									side4: 1,
+									side3: 1,
+									side5: 1,
+									side0: 4,
+									side2: 1,
+									side1: 1
+								},
+								config4: {
+									side4: 1,
+									side3: 1,
+									side5: 1,
+									side0: 4,
+									side2: 1,
+									side1: 1
+								},
+								config5: {
+									side4: 1,
+									side3: 1,
+									side5: 1,
+									side0: 4,
+									side2: 1,
+									side1: 1
+								},
+								config6: {
+									side4: 1,
+									side3: 1,
+									side5: 1,
+									side0: 4,
+									side2: 1,
+									side1: 1
+								},
+								eject5: 1b,
+								eject6: 0b,
+								eject3: 1b,
+								eject4: 1b,
+								eject2: 1b
+							},
+							PigmentTanks: [],
+							securityMode: 0,
+							GasTanks: [{
+								Tank: 0b,
+								stored: {
+									gasName: "mekanism:sodium",
+									amount: 512000L
+								}
+							}],
+							Items: []
+						}
+					}
+				}
+			}]
+		},
+		{
+			title: "Sodium production",
+			x: 12.0d,
+			y: 5.0d,
+			dependencies: ["00EBE16B1E5EFF30"],
+			id: "5765DB202BA9966F",
+			tasks: [{
+				id: "4B7EA659186BAB22",
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			title: "Thermal Evap Water",
+			icon: "cookingforblockheads:sink",
+			x: 10.0d,
+			y: 1.5d,
+			id: "03B63299AE20FF7E",
+			tasks: [{
+				id: "6E408D605A5E63B6",
+				type: "checkmark",
+				title: "Water"
+			}]
+		},
+		{
+			title: "Repurposed",
+			x: 14.0d,
+			y: 10.5d,
+			dependencies: [
+				"75A06E951A1E4721",
+				"4A2D6607C0D7EB98"
+			],
+			id: "4C619346A1926580",
+			tasks: [{
+				id: "376C3B58AC7BAD78",
+				type: "item",
+				item: "mekanism:chemical_oxidizer"
+			}]
+		},
+		{
+			title: "Polonium",
+			x: 16.0d,
+			y: 7.0d,
+			dependencies: ["770582061B8E4F9A"],
+			id: "6DA2A51BBEF9FC2C",
+			tasks: [{
+				id: "28D6790AD70E38BF",
+				type: "item",
+				item: "mekanism:isotopic_centrifuge"
+			}]
+		},
+		{
+			title: "Plutonium",
+			x: 16.0d,
+			y: 10.0d,
+			dependencies: [
+				"770582061B8E4F9A",
+				"7B7E9A2F04F8AB09"
+			],
+			id: "0FA3736F938E1B9C",
+			tasks: [{
+				id: "16A7B8EA5491821A",
+				type: "item",
+				item: "mekanism:solar_neutron_activator"
+			}]
+		},
+		{
+			title: "Fluorite Dust",
+			icon: "mekanism:dust_fluorite",
+			x: 18.0d,
+			y: 8.5d,
+			dependencies: ["2EDBD3085F60488B"],
+			id: "3E7434947696C8E1",
+			tasks: [
+				{
+					id: "5962F3DE6EDFBEC4",
+					type: "item",
+					item: "mekanism:crusher"
+				},
+				{
+					id: "4B70066FEBDC62A4",
+					type: "item",
+					item: "mekanism:dust_fluorite"
+				}
+			]
+		},
+		{
+			title: "Plutonium Pellets ",
+			icon: "mekanism:pellet_plutonium",
+			x: 18.0d,
+			y: 10.0d,
+			dependencies: [
+				"0FA3736F938E1B9C",
+				"36F67CF896521E72",
+				"3E7434947696C8E1"
+			],
+			id: "01F118FC8D59A826",
+			tasks: [
+				{
+					id: "3BC5843EC453189B",
+					type: "item",
+					item: "mekanism:pressurized_reaction_chamber"
+				},
+				{
+					id: "5B1D004055F0BE6D",
+					type: "item",
+					item: "mekanism:pellet_plutonium"
+				}
+			]
+		},
+		{
+			title: "Polonium Pellets ",
+			icon: "mekanism:pellet_polonium",
+			x: 18.0d,
+			y: 7.0d,
+			description: [""],
+			dependencies: [
+				"6DA2A51BBEF9FC2C",
+				"36F67CF896521E72",
+				"3E7434947696C8E1"
+			],
+			id: "7EABCE18AA431BC2",
+			tasks: [
+				{
+					id: "65290F0D9785EE51",
+					type: "item",
+					item: "mekanism:pressurized_reaction_chamber"
+				},
+				{
+					id: "48F24AD62395BEE4",
+					type: "item",
+					item: "mekanism:pellet_polonium"
+				}
+			]
+		},
+		{
+			x: 17.0d,
+			y: 8.5d,
+			id: "2EDBD3085F60488B",
+			tasks: [{
+				id: "01D4543CFCF5A891",
+				type: "item",
+				item: "mekanism:fluorite_gem"
+			}]
+		},
+		{
+			x: 18.0d,
+			y: 3.0d,
+			dependencies: ["5387F019DD03B1DF"],
+			id: "597A0F47FD2622FD",
+			tasks: [{
+				id: "61131D4A1775BB79",
+				type: "item",
+				item: "mekanism:basic_control_circuit"
+			}]
+		},
+		{
+			x: 20.0d,
+			y: 4.0d,
+			dependencies: ["597A0F47FD2622FD"],
+			id: "53681A095AFE693A",
+			tasks: [{
+				id: "14A3EA1126BBAC35",
+				type: "item",
+				item: "mekanism:alloy_infused"
+			}]
+		},
+		{
+			x: 20.0d,
+			y: 2.0d,
+			dependencies: [
+				"53681A095AFE693A",
+				"597A0F47FD2622FD"
+			],
+			id: "29DD4F70977BCD79",
+			tasks: [{
+				id: "539C906CA5B08037",
+				type: "item",
+				item: "mekanism:advanced_control_circuit"
+			}]
+		},
+		{
+			x: 22.0d,
+			y: 2.0d,
+			dependencies: [
+				"29DD4F70977BCD79",
+				"6FDEB1F84F5BFB2F"
+			],
+			id: "66E92EBE6C296542",
+			tasks: [{
+				id: "3B830DD5DA0FACA9",
+				type: "item",
+				item: "mekanism:elite_control_circuit"
+			}]
+		},
+		{
+			x: 24.0d,
+			y: 2.0d,
+			dependencies: [
+				"7B07E82C3B56E513",
+				"66E92EBE6C296542"
+			],
+			id: "704835C6BD0F065C",
+			tasks: [{
+				id: "36E7BD2A36D44890",
+				type: "item",
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		},
+		{
+			x: 22.0d,
+			y: 4.0d,
+			dependencies: ["53681A095AFE693A"],
+			id: "6FDEB1F84F5BFB2F",
+			tasks: [{
+				id: "0BB182C30905D035",
+				type: "item",
+				icon: "mekanism:alloy_reinforced",
+				item: "mekanism:alloy_reinforced"
+			}]
+		},
+		{
+			x: 24.0d,
+			y: 4.0d,
+			dependencies: ["6FDEB1F84F5BFB2F"],
+			id: "7B07E82C3B56E513",
+			tasks: [{
+				id: "7D61DE0E568885CF",
+				type: "item",
+				item: "mekanism:alloy_atomic"
+			}]
+		},
+		{
+			title: "Water",
+			x: 20.0d,
+			y: 15.0d,
+			id: "722E24AB3DD68C28",
+			tasks: [{
+				id: "410B931183C09D89",
+				type: "checkmark",
+				title: "Water",
+				icon: "cookingforblockheads:sink"
+			}]
+		},
+		{
+			title: "Oxygen/Hydrogen",
+			x: 18.0d,
+			y: 15.0d,
+			dependencies: ["722E24AB3DD68C28"],
+			id: "1E48F926568C940E",
+			tasks: [{
+				id: "23532889C23A9B40",
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			title: "Bio Fuel",
+			icon: "mekanism:bio_fuel",
+			x: 16.0d,
+			y: 18.0d,
+			id: "1BD373EB6881BBF8",
+			tasks: [
+				{
+					id: "1D6126456D9F3869",
+					type: "item",
+					item: "mekanism:crusher"
+				},
+				{
+					id: "61CAC2C8D3E6B8C2",
+					type: "item",
+					item: "mekanism:bio_fuel"
+				}
+			]
+		},
+		{
+			title: "Substrate ",
+			icon: "mekanism:substrate",
+			x: 16.0d,
+			y: 16.0d,
+			dependencies: [
+				"1E48F926568C940E",
+				"1BD373EB6881BBF8"
+			],
+			id: "34CA9A73E50B87CF",
+			tasks: [
+				{
+					id: "118E6B77F1118FD2",
+					type: "item",
+					item: "mekanism:pressurized_reaction_chamber"
+				},
+				{
+					id: "7B8FFD50C0267B7A",
+					type: "item",
+					item: "mekanism:substrate"
+				}
+			]
+		},
+		{
+			x: 16.0d,
+			y: 12.0d,
+			dependencies: ["1A616BD9C980B704"],
+			id: "7B7E9A2F04F8AB09",
+			tasks: [{
+				id: "1CC20FF057C6FCCC",
+				type: "item",
+				item: "mekanism:hdpe_sheet"
+			}]
+		},
+		{
+			title: "HDPE Pellet",
+			icon: "mekanism:hdpe_pellet",
+			x: 16.0d,
+			y: 14.0d,
+			dependencies: [
+				"34CA9A73E50B87CF",
+				"1E48F926568C940E"
+			],
+			id: "1A616BD9C980B704",
+			tasks: [
+				{
+					id: "6965324EAFAD8C01",
+					type: "item",
+					item: "mekanism:pressurized_reaction_chamber"
+				},
+				{
+					id: "2022AE253623DE2B",
+					type: "item",
+					item: "mekanism:hdpe_pellet"
+				}
+			]
+		},
+		{
+			title: "Fissile Chlorine",
+			x: 10.0d,
+			y: 10.5d,
+			hide_dependency_lines: true,
+			dependencies: ["00EBE16B1E5EFF30"],
+			id: "6FCFAD3E62E755FD",
+			tasks: [{
+				id: "658927756CF1CA90",
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			title: "Hydrogen",
+			x: 10.0d,
+			y: 12.0d,
+			dependencies: ["6DA6333E2D72F2D9"],
+			id: "31C1A12D016A9264",
+			tasks: [{
+				id: "54E81F254A44349D",
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			title: "Hydrogen Chloride",
+			x: 12.0d,
+			y: 10.5d,
+			dependencies: [
+				"6FCFAD3E62E755FD",
+				"31C1A12D016A9264"
+			],
+			id: "75A06E951A1E4721",
+			tasks: [{
+				id: "580ED999E27E5890",
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 12.0d,
+			dependencies: ["01F118FC8D59A826"],
+			id: "4A2D6607C0D7EB98",
+			tasks: [{
+				id: "08D29FFB9E0F8CD3",
+				type: "item",
+				item: "mekanism:reprocessed_fissile_fragment"
+			}]
+		},
+		{
+			icon: {
+				id: "mekanism:mekasuit_bodyarmor",
+				Count: 1b,
+				tag: {
+					HideFlags: 2
+				}
+			},
+			x: 15.0d,
+			y: 5.25d,
+			shape: "pentagon",
+			size: 1.5d,
+			id: "2B9F6C1A929A5E37",
+			tasks: [
+				{
+					id: "1E56581AD6F8B92E",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_helmet",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "0D078AB4AE303AE7",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_bodyarmor",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "6D33FE6AD336C3AA",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_pants",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "7564102845DF8ED8",
+					type: "item",
+					item: {
+						id: "mekanism:mekasuit_boots",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "7E399F5D1AF80820",
+					type: "item",
+					item: {
+						id: "mekanism:meka_tool",
+						Count: 1b,
+						tag: {
+							HideFlags: 2
+						}
+					}
+				},
+				{
+					id: "111C51A052429525",
+					type: "item",
+					item: "mekanism:module_base"
+				},
+				{
+					id: "3223C334D8AF942C",
+					type: "item",
+					item: "mekanism:modification_station"
+				}
+			]
+		},
+		{
+			x: 18.5d,
+			y: 5.5d,
+			id: "5CA6F43BC047DABE",
+			tasks: [{
+				id: "63608535312BDC4B",
+				type: "item",
+				item: "mekanism:upgrade_speed"
+			}]
+		},
+		{
+			x: 19.5d,
+			y: 5.5d,
+			id: "0FE65D9875F65191",
+			tasks: [{
+				id: "2C2D5C85CAEC8049",
+				type: "item",
+				item: "mekanism:upgrade_energy"
+			}]
+		},
+		{
+			x: 21.5d,
+			y: 5.5d,
+			id: "7B420D7BD6536B1A",
+			tasks: [{
+				id: "441317410FB1CFC3",
+				type: "item",
+				item: "mekanism:upgrade_filter"
+			}]
+		},
+		{
+			x: 20.5d,
+			y: 5.5d,
+			id: "1CC7DAD2B3D10F3B",
+			tasks: [{
+				id: "1B4EFD5881D123EF",
+				type: "item",
+				item: "mekanism:upgrade_gas"
+			}]
+		},
+		{
+			x: 22.0d,
+			y: 8.5d,
+			dependencies: ["13BC5E5283CE1EB6"],
+			id: "5D6413BABD7F52B6",
+			tasks: [{
+				id: "6D23F88FDF7D5BEF",
+				type: "item",
+				title: "Deuterium",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			x: 22.0d,
+			y: 10.0d,
+			dependencies: [
+				"5D6413BABD7F52B6",
+				"14150C467A1C6097"
+			],
+			id: "7AC88917F56D4362",
+			tasks: [{
+				id: "6C121BB4098BC636",
+				type: "item",
+				title: "D-T Fuel",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			title: "Tritium",
+			x: 22.0d,
+			y: 11.5d,
+			dependencies: ["1D14FADBBFDFDAFE"],
+			id: "14150C467A1C6097",
+			tasks: [{
+				id: "7395DDD0054F6BD0",
+				type: "item",
+				item: "mekanism:solar_neutron_activator"
+			}]
+		},
+		{
+			x: 20.0d,
+			y: 11.5d,
+			hide_dependency_lines: true,
+			dependencies: ["7AC88917F56D4362"],
+			id: "7D217992C3766994",
+			tasks: [{
+				id: "0E8DE2421F0F3E36",
+				type: "item",
+				item: {
+					id: "mekanismgenerators:hohlraum",
+					Count: 1b,
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b,
+								stored: {
+									gasName: "mekanismgenerators:fusion_fuel",
+									amount: 10L
+								}
+							}]
+						}
+					}
+				}
+			}]
+		},
+		{
+			title: "SPS Chamber",
+			icon: "mekanism:supercharged_coil",
+			x: 20.0d,
+			y: 7.0d,
+			dependencies: [
+				"01F118FC8D59A826",
+				"7EABCE18AA431BC2"
+			],
+			id: "56CFE3BE819544E8",
+			tasks: [
+				{
+					id: "45749A24169FFE8D",
+					type: "item",
+					item: "mekanism:sps_casing",
+					count: 60L
+				},
+				{
+					id: "5366660B8D3A9474",
+					type: "item",
+					item: "mekanism:sps_port",
+					count: 3L
+				},
+				{
+					id: "2BA5071A0E4D0E27",
+					type: "item",
+					item: "mekanism:supercharged_coil"
+				},
+				{
+					id: "0E30B6B16CB06B16",
+					type: "item",
+					item: "mekanism:structural_glass",
+					count: 123L
+				},
+				{
+					id: "19A77C6730BA7288",
+					type: "forge_energy",
+					value: 400000000L
+				}
+			]
+		},
+		{
+			title: "Lithuim",
+			icon: "mekanism:thermal_evaporation_controller",
+			x: 23.5d,
+			y: 11.5d,
+			dependencies: ["406F6FA9F738468F"],
+			id: "1D14FADBBFDFDAFE",
+			tasks: [
+				{
+					id: "674F3C2D189FA826",
+					type: "item",
+					item: "mekanism:thermal_evaporation_controller",
+					count: 2L
+				},
+				{
+					id: "686C0710313AFC05",
+					type: "item",
+					item: "mekanism:thermal_evaporation_valve",
+					count: 4L
+				},
+				{
+					id: "73D7EDAD57513AB5",
+					type: "item",
+					item: "mekanism:thermal_evaporation_block",
+					count: 68L
+				}
+			]
+		},
+		{
+			icon: "mekanism:pellet_antimatter",
+			x: 22.0d,
+			y: 7.0d,
+			dependencies: ["56CFE3BE819544E8"],
+			id: "3468FFB0B632D8EA",
+			tasks: [
+				{
+					id: "1149525CC815B454",
+					type: "item",
+					item: "mekanism:pellet_antimatter"
+				},
+				{
+					id: "4DB2A989CEC6BF31",
+					type: "item",
+					item: "mekanism:chemical_crystallizer"
+				}
+			]
+		},
+		{
+			x: 24.0d,
+			y: 8.5d,
+			id: "13BC5E5283CE1EB6",
+			tasks: [
+				{
+					id: "102EFDFC653509E9",
+					type: "item",
+					item: "mekanism:electric_pump"
+				},
+				{
+					id: "02D2E84EF0518E6B",
+					type: "item",
+					item: "mekanism:upgrade_filter"
+				}
+			]
+		},
+		{
+			x: 25.0d,
+			y: 11.5d,
+			id: "406F6FA9F738468F",
+			tasks: [{
+				id: "7E2BE1117AB3CF8E",
+				type: "item",
+				item: "mekanism:resistive_heater"
+			}]
+		},
+		{
+			title: "Ore Oxygen/Hydrogen",
+			x: 6.0d,
+			y: -2.5d,
+			dependencies: ["64E5B45A36113F30"],
+			id: "146F69C84DD0613C",
+			tasks: [{
+				id: "40DE9CCD44E6CF15",
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -4.5d,
+			id: "64E5B45A36113F30",
+			tasks: [{
+				id: "0B8B696641815585",
+				type: "checkmark",
+				title: "Ore Water",
+				icon: "cookingforblockheads:sink"
+			}]
+		},
+		{
+			title: "Ore Hydrogen Chloride",
+			x: 4.0d,
+			y: -2.5d,
+			dependencies: [
+				"146F69C84DD0613C",
+				"13862C719A1A0538"
+			],
+			id: "0EF9E7485FB667DF",
+			tasks: [{
+				id: "1319C2B188AE1D0E",
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			title: "Ore Brine",
+			x: 4.0d,
+			y: -6.5d,
+			dependencies: ["64E5B45A36113F30"],
+			id: "2AEACFCEC3FDF869",
+			tasks: [{
+				id: "58A8A14718832216",
+				type: "item",
+				item: "mekanism:thermal_evaporation_controller"
+			}]
+		},
+		{
+			title: "Ore Chlorine",
+			x: 4.0d,
+			y: -4.5d,
+			dependencies: ["2AEACFCEC3FDF869"],
+			id: "13862C719A1A0538",
+			tasks: [{
+				id: "6ADFDD63BE8B3C6F",
+				type: "item",
+				item: "mekanism:electrolytic_separator"
+			}]
+		},
+		{
+			title: "Ore Sulfuric Acid",
+			x: 2.0d,
+			y: -2.5d,
+			dependencies: [
+				"2F846A2410534BC2",
+				"6F67DF81EC2FEC33"
+			],
+			id: "193F18AFE7E6DE19",
+			tasks: [{
+				id: "3989C5D0CDD56B84",
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			title: "Ore Water Vapor",
+			x: 0.0d,
+			y: -2.5d,
+			hide_dependency_lines: true,
+			dependencies: ["64E5B45A36113F30"],
+			id: "2F846A2410534BC2",
+			tasks: [{
+				id: "4629906DB872815B",
+				type: "item",
+				item: "mekanism:rotary_condensentrator"
+			}]
+		},
+		{
+			title: "Ore Sulfur Trioxide",
+			x: 2.0d,
+			y: -4.5d,
+			dependencies: ["6B8BBB62D5D5B877"],
+			id: "6F67DF81EC2FEC33",
+			tasks: [{
+				id: "667E5FB4E9C50EA7",
+				type: "item",
+				item: "mekanism:chemical_infuser"
+			}]
+		},
+		{
+			title: "Ore Sulfur Dioxide",
+			x: 2.0d,
+			y: -6.5d,
+			dependencies: ["7FA2B315DF403E3C"],
+			id: "6B8BBB62D5D5B877",
+			tasks: [{
+				id: "62B844A50E7A9A58",
+				type: "item",
+				item: "mekanism:chemical_oxidizer"
+			}]
+		},
+		{
+			title: "Ore any sulfur",
+			x: 0.0d,
+			y: -6.5d,
+			id: "7FA2B315DF403E3C",
+			tasks: [{
+				id: "47BF75240C988AB1",
+				type: "item",
+				title: "Any sulfur",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "forge:dusts/sulfur"
+					}
+				}
+			}]
+		}
+	]
+}
