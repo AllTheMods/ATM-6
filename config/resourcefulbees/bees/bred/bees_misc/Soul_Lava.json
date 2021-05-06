@@ -58,7 +58,7 @@
         "bottleOutputCount": 1,
         "bottleNBTData": {},
         "recipeTime": 200,
-        "hasFluidoutput": true
+        "hasFluidOutput": true
     },
     "SpawnData": {
         "canSpawnInWorld": false,
