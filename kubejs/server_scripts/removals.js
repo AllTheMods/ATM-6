@@ -148,7 +148,9 @@ events.listen('recipes', e => {
         'twilightforest:uncrafting_table',
         'mob_grinding_utils:recipe_mob_swab',
         'creativecrafter:creative_crafter',
-        'creativewirelesstransmitter:creative_wireless_transmitter'
+        'creativewirelesstransmitter:creative_wireless_transmitter',
+        'thermal:machine/pyrolyzer/pyrolyzer_coal',
+        'thermal:machine/pyrolyzer/pyrolyzer_logs'
 
     ];
     idRemove.forEach(iR => {

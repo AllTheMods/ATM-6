@@ -1012,6 +1012,8 @@ events.listen('recipes', function(e) {
     e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`, ).id(`kubejs:saw/byg_log_imbued_nightshade`)
     e.recipes.mekanism.sawing((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
 
+    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote',250),'minecraft:charcoal'], '#minecraft:logs')
+    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote',5000),'immersiveengineering:coke'], 'minecraft:coal_block')
     //botania
     e.recipes.botania.runic_altar({
         output: {
