@@ -31,7 +31,7 @@
 	#True if gorgon temples are allowed to spawn
 	"Spawn Gorgons" = true
 	#True if hippocampi are allowed to spawn
-	"Spawn Hippocampus" = false
+	"Spawn Hippocampus" = true
 	#Damage dealt from a successful ice breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 	#Range: 0.0 ~ 10000.0
 	"Dragon Attack Damage(Ice breath)" = 150.0
@@ -104,7 +104,7 @@
 	"Spawn Sea Serpent Chance" = 250
 	#Default sea serpent health, this is scaled to the sea serpent's particular size
 	#Range: 1.0 ~ 10000.0
-	"Sea Serpent Base Health" = 20.0
+	"Sea Serpent Base Health" = 520.0
 	#True if chickens lay rotten eggs.
 	"Chickens Lay Rotten Eggs" = false
 	#size of pixie villages
@@ -328,7 +328,7 @@
 	"Spawn Wandering Cyclopes" = true
 	#Maximum siren health
 	#Range: 1.0 ~ 10000.0
-	"Siren Max Health" = 50.0
+	"Siren Max Health" = 750.0
 	#True if dragons can drop their skull on death.
 	"Dragons Drop Skull" = true
 	#True if sea serpents are allowed to spawn
