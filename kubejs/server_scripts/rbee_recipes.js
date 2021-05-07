@@ -467,4 +467,99 @@ events.listen('recipes', function(e) {
         '   ',
         '   '
     ])*/
+    //Combs to Stone
+    function stoneShaped(result, pattern) {
+        cuShaped({
+            'pattern': pattern,
+            'key': {
+                'C': {
+                    'item': 'resourcefulbees:stan_honeycomb_block'
+                }
+            },
+            'result': {
+                'item': result,
+                'count': 16
+            }
+        })
+    }
+    stoneShaped('minecraft:andesite', [
+        '  C',
+        ' C ',
+        ' C '
+    ])
+    stoneShaped('minecraft:diorite', [
+        '  C',
+        'CC ',
+        '   '
+    ])
+    stoneShaped('minecraft:granite', [
+        '  C',
+        '  C',
+        ' C '
+    ])
+    stoneShaped('minecraft:basalt', [
+        'C C',
+        ' C ',
+        '   '
+    ])
+    stoneShaped('create:gabbro', [
+        ' C ',
+        ' C ',
+        '  C'
+    ])
+    stoneShaped('create:dolomite', [
+        '  C',
+        ' C ',
+        'C  '
+    ])
+    stoneShaped('create:weathered_limestone', [
+        'C  ',
+        ' C ',
+        '  C'
+    ])
+    stoneShaped('create:limestone', [
+        '  C',
+        '  C',
+        '  C'
+    ])
+    stoneShaped('create:scoria', [
+        ' C ',
+        ' C ',
+        ' C '
+    ])
+    stoneShaped('create:dark_scoria', [
+        'C  ',
+        'C  ',
+        'C  '
+    ])
+    stoneShaped('quark:brimstone', [
+        '   ',
+        '   ',
+        'CCC'
+    ])
+    stoneShaped('quark:slate', [
+        '   ',
+        'CCC',
+        '   '
+    ])
+    stoneShaped('quark:jasper', [
+        '   ',
+        ' C ',
+        'C C'
+    ])
+    stoneShaped('quark:limestone', [
+        '  C',
+        ' C ',
+        '  C'
+    ])
+    stoneShaped('quark:basalt', [
+        '   ',
+        'CC ',
+        '  C'
+    ])
+    stoneShaped('astralsorcery:marble_raw', [
+        'CCC',
+        '   ',
+        '   '
+    ])
 })
