@@ -1,0 +1,23 @@
+{
+  "beepediaItemID": "minecraft:honeycomb",
+  "damageImmunities": [
+      "inFire",
+      "lightningBolt",
+      "onFire",
+      "lava",
+      "hotFloor",
+      "inWall",
+      "cramming",
+      "drown",
+      "starve",
+      "cactus",
+      "fall",
+      "flyIntoWall",
+      "wither",
+      "anvil",
+      "fallingBlock",
+      "dragonBreath",
+      "dryout"  
+  ],
+  "particleName": "minecraft:dripping_honey"
+}

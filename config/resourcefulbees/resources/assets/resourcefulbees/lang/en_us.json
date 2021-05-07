@@ -235,5 +235,14 @@
     "item.resourcefulbees.cropy_honeycomb": "Cropy Honeycomb",
     "item.resourcefulbees.cropy_bee_spawn_egg": "Cropy Spawn Egg",
     "entity.resourcefulbees.cropy_bee": "Cropy Bee",
-    "trait.resourcefulbees.soul_fire": "Soul Fire Trait"
+    "block.resourcefulbees.stan_bee_honeycomb_block": "Stan Bee Honeycomb Block",
+    "item.resourcefulbees.stan_bee_honeycomb": "Stan Bee Honeycomb",
+    "item.resourcefulbees.stan_bee_bee_spawn_egg": "Stan Bee Spawn Egg",
+    "entity.resourcefulbees.stan_bee_bee": "Stan Bee",
+    "block.resourcefulbees.starry_honeycomb_block": "Starry Honeycomb Block",
+    "item.resourcefulbees.starry_honeycomb": "Starry Honeycomb",
+    "item.resourcefulbees.starry_bee_spawn_egg": "Starry Spawn Egg",
+    "entity.resourcefulbees.starry_bee": "Starry Bee",
+    "trait.resourcefulbees.soul_fire": "Soul Fire Trait",
+    "trait.resourcefulbees.starry": "Starry Night Trait"
 }
