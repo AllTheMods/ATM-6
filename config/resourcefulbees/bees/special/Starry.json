@@ -1,0 +1,75 @@
+{
+    "flower": "allthemodium:unobtainium_vibranium_alloy_block",
+    "maxTimeInHive": 1200,
+    "traits": ["starry"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "special/starry_bee_primary_layer",
+    "ColorData": {
+        "primaryColor": "#FFA500",
+        "secondaryColor": "#FFA500",
+        "honeycombColor": "#FFA500",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "special/starry_bee_secondary_layer",
+        "emissiveLayerTexture": "special/starry_bee_emissive",
+        "isBeeColored": true,
+        "isRainbowBee": false,
+        "isGlowing": true,
+        "glowColor": "#FFA500",
+        "isEnchanted": false,
+        "glowingPulse": 1,
+        "modelType": "QUEEN"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": false,
+        "attackDamage": 10
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "kubejs:patrick_star",
+        "mainOutputWeight": 0.99,
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "atmadditions:atm_star",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidoutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "comment_for_pdiddy": "there is no spawning, before you say something about it",
+        "isBreedable": false,
+        "parent1": "Starry",
+        "parent2": "Starry",
+        "breedWeight": 10,
+        "breedChance": 0.8,
+        "feedItem": "atmadditions:atm_star",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

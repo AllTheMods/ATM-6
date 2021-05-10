@@ -1,0 +1,88 @@
+{
+    "flower": "tag:forge:stone",
+    "maxTimeInHive": 1200,
+    "traits": [""],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "misc/stan_bee",
+    "ColorData": {
+        "primaryColor": "#5A5A5A",
+        "secondaryColor": "#5A5A5A",
+        "honeycombColor": "#5A5A5A",
+        "primaryLayerTexture": "/custom/primary_layer",
+        "secondaryLayerTexture": "/custom/secondary_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#5A5A5A",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "DEFAULT"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:stan_bee_honeycomb_block",
+            "outputs": [{
+                    "outputID": "resourcefulbees:stan_bee_honeycomb",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:stan_bee_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false,
+        "mainInputCount": 1,
+        "mainOutput": "astralsorcery:marble_raw",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "astralsorcery:black_marble_raw",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 2,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "TAG:Mountain, HILLS",
+        "biomeBlacklist": "minecraft:desert_hills",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": false,
+        "parent1": "Stan_Bee",
+        "parent2": "Stan_Bee",
+        "breedWeight": 10,
+        "breedChance": 0.8,
+        "feedItem": "tag:forge:stone",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}
