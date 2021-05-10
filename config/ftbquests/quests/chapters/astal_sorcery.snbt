@@ -1,0 +1,639 @@
+{
+	id: "70AE2F21054AD796",
+	group: "02FE661031A105D8",
+	order_index: 1,
+	filename: "astal_sorcery",
+	title: "Astral Sorcery",
+	icon: "astralsorcery:starmetal_ingot",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Astral Sorcery",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "hexagon",
+			subtitle: "Stargazing",
+			description: [
+				"Welcome to Astral Sorcery!",
+				"",
+				"The mod that will forever change the way you play Minecraft, while also having stunning visuals."
+			],
+			size: 1.5d,
+			id: "6950F72651930951",
+			tasks: [{
+				id: "2EC2A284F54C3C9D",
+				type: "checkmark",
+				title: "Stargazing",
+				icon: {
+					id: "astralsorcery:altar_radiance",
+					Count: 2b
+				}
+			}],
+			rewards: [{
+				id: "620631644E4BF6D0",
+				type: "item",
+				item: "astralsorcery:wand"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -2.5d,
+			shape: "rsquare",
+			subtitle: "Exploration",
+			description: [
+				"As the title suggests, the first part of AS consists of exploration.",
+				"",
+				"Head out and look for white marble structures scattered around the world. They can be on surface, or just under, but still visible.",
+				"",
+				"Keep looking until you find one with a floating Collector Crystal in the middle and put a vanilla Crafting Table somewhere under it.",
+				"",
+				"Make sure the Crystal has a clear view of the sky, otherwise nothing will happen!"
+			],
+			dependencies: ["6950F72651930951"],
+			hide: true,
+			dependency_requirement: "one_completed",
+			size: 1.25d,
+			id: "250122EB4DD234AA",
+			tasks: [{
+				id: "2305D00EDE69C168",
+				type: "item",
+				item: "astralsorcery:altar_discovery"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -2.5d,
+			shape: "rsquare",
+			subtitle: "Attunement",
+			description: [
+				"Upgrading your Luminout Table, will advance your sorcery skills and open up new possibilities.",
+				"",
+				"This altar, unlike the Luminous Crafting Table, will require you to build a structure around it, which is shown in the book or by right-clicking the altar with your wand."
+			],
+			dependencies: ["250122EB4DD234AA"],
+			hide: true,
+			hide_text_until_complete: true,
+			size: 1.25d,
+			id: "3897E4368DEB0731",
+			tasks: [{
+				id: "10090F580562155D",
+				type: "item",
+				item: "astralsorcery:altar_attunement"
+			}]
+		},
+		{
+			title: "Celestial Altar",
+			x: 2.5d,
+			y: 2.5d,
+			shape: "rsquare",
+			subtitle: "Constellation",
+			dependencies: ["3897E4368DEB0731"],
+			hide: true,
+			size: 1.25d,
+			id: "77F19C5A4E7449DC",
+			tasks: [
+				{
+					id: "1261AF1629540A93",
+					type: "advancement",
+					title: "Celestial Attunement",
+					icon: {
+						id: "astralsorcery:knowledge_share",
+						Count: 1b,
+						tag: {
+							astralsorcery: {
+								creativeKnowledge: 1b
+							}
+						}
+					},
+					advancement: "astralsorcery:attune_self",
+					criterion: ""
+				},
+				{
+					id: "068FBBE20AB0884E",
+					type: "item",
+					item: "astralsorcery:altar_constellation"
+				}
+			]
+		},
+		{
+			x: -2.5d,
+			y: 2.5d,
+			shape: "rsquare",
+			subtitle: "Radiance",
+			dependencies: ["77F19C5A4E7449DC"],
+			hide: true,
+			size: 1.25d,
+			id: "3A266BCC750972EF",
+			tasks: [{
+				id: "65DEDD8383FEC1B0",
+				type: "item",
+				item: "astralsorcery:altar_radiance"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -4.0d,
+			description: [
+				"The Attunement Altar is the next big step in Astral Sorcery. It allows you to bind yourself or Rokck Crystals to Constellations.",
+				"",
+				"Binding yourself to one, will unlock a new tab in your Astral Tome with a perk tree, where you can get different abilities or stats."
+			],
+			dependencies: ["05F111F5A5D121D5"],
+			id: "03025D2C26829C27",
+			tasks: [
+				{
+					id: "208CB93ED81C5F8B",
+					type: "item",
+					item: "astralsorcery:attunement_altar"
+				},
+				{
+					id: "126D65B0027926AA",
+					type: "item",
+					item: "astralsorcery:spectral_relay",
+					count: 8L
+				}
+			]
+		},
+		{
+			x: -5.0d,
+			y: -2.5d,
+			description: [
+				"During the night, while holding the Resonating Wand, you will spot some white particles coming out of the ground in some places.",
+				"",
+				"By digging down near those particles, all the way down to Bedrock, you will find Rock Crystal Ores. These crystals have unique attributes which will help you along the way later on.",
+				"",
+				"It is recommended that you hold the Resonating Wand in your off-hand while mining for these ores, as it makes it a lot easier."
+			],
+			dependencies: ["250122EB4DD234AA"],
+			id: "60453670FAC23174",
+			tasks: [{
+				id: "39FC0906484BCFB3",
+				type: "item",
+				item: {
+					id: "astralsorcery:rock_crystal",
+					Count: 1b,
+					tag: {
+						astralsorcery: {}
+					}
+				},
+				count: 5L,
+				consume_items: false
+			}]
+		},
+		{
+			x: 8.5d,
+			y: 4.5d,
+			dependencies: ["794E8123E2CB578F"],
+			id: "3769907561E63D18",
+			tasks: [{
+				id: "4FDA3F90D2CE2694",
+				type: "item",
+				item: "astralsorcery:rock_collector_crystal"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -7.0d,
+			description: ["These Crystal Lenses will allow you to focus the starlight from Collector Crystals to the Altar, or distribute it throughout your base."],
+			dependencies: ["32B10DB85B038DA6"],
+			id: "566126DB5183D918",
+			tasks: [{
+				id: "531DFB0AAD3CDF8D",
+				type: "item",
+				item: "astralsorcery:lens"
+			}]
+		},
+		{
+			title: "Starlight",
+			x: -7.0d,
+			y: -2.5d,
+			description: [
+				"By combining a Rock Crystal with some Marble, you can create the Lightwell, a cauldron that will collect starlight in liquid form.",
+				"",
+				"To begin collecting, simply right-click with an Aquamarine on the Lightwell and it will slowly start collecting. The Aquamarine will break after a while, so make sure you replace it."
+			],
+			dependencies: ["60453670FAC23174"],
+			id: "45DD510FAB476090",
+			tasks: [
+				{
+					id: "71B540A7D7DA12BC",
+					type: "item",
+					item: "astralsorcery:well"
+				},
+				{
+					id: "57E2855AA8145F9C",
+					type: "item",
+					item: "astralsorcery:liquid_starlight_bucket"
+				}
+			]
+		},
+		{
+			x: 5.0d,
+			y: -2.5d,
+			description: ["The Telesope is an upgraded version of the Looking Glass and will allow you to see Dim Constellations."],
+			dependencies: ["3897E4368DEB0731"],
+			hide: true,
+			id: "2B88E726242C0F40",
+			tasks: [{
+				id: "020A06B6D3D145D0",
+				type: "item",
+				item: "astralsorcery:telescope"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -4.5d,
+			description: [
+				"The Looking Glass is going to be your starting item for stargazing.",
+				"",
+				"During the night, when the stars are out, look at the sky through the Looking Glass until you find a constellation of larger stars.",
+				"",
+				"Upon finding one, check your constellation papers for one that looks similar. When you look back at it, you can hold [Shift] to start drawing the constellation.",
+				"",
+				"Once you drew the constellation correctly, it will light up and it will also permanently show up in the sky."
+			],
+			dependencies: ["250122EB4DD234AA"],
+			id: "29E83DD1F5A3FEC4",
+			tasks: [{
+				id: "7228B211065BBD7B",
+				type: "item",
+				item: "astralsorcery:hand_telescope"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 2.5d,
+			dependencies: ["3A266BCC750972EF"],
+			hide: true,
+			id: "54613B0F33A85159",
+			tasks: [{
+				id: "2DFC17CFEAC8D18F",
+				type: "item",
+				item: "astralsorcery:observatory"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -5.5d,
+			description: [
+				"The Starmetal Cutting Tool allows you to break down Starmetal Ingots and Rock Crystals.",
+				"",
+				"Dropping these items and then hitting them with the Tool will fragment them, giving you Starmetal Dust from Ingots and splitting the Rock Crystals into their base elements."
+			],
+			dependencies: ["51A0951EA41570A6"],
+			id: "074D0738A05AA950",
+			tasks: [{
+				id: "4BCEA9B5FC87D521",
+				type: "item",
+				item: {
+					id: "astralsorcery:chisel",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -5.0d,
+			description: ["The Linking Tool will allow you to concentrate starlight from Collector Crystals or Crystal Lenses for transmutation, empowering the Crafting Altars, and many other things."],
+			dependencies: ["3897E4368DEB0731"],
+			hide: true,
+			id: "32B10DB85B038DA6",
+			tasks: [{
+				id: "2B6454C6606251F0",
+				type: "item",
+				item: "astralsorcery:linking_tool"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -4.0d,
+			description: ["By placing an Iron Ore block and linking a Collector Crystal to it, it will be infused with starlight, becoming a Starmetal Ore, which can then be smelted into Starmetal Ingots."],
+			dependencies: [
+				"3897E4368DEB0731",
+				"32B10DB85B038DA6"
+			],
+			hide: true,
+			id: "51A0951EA41570A6",
+			tasks: [{
+				id: "47A069B728064061",
+				type: "item",
+				icon: "astralsorcery:starmetal_ingot",
+				item: "astralsorcery:starmetal_ingot",
+				count: 8L,
+				consume_items: false
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -4.0d,
+			description: ["Stardust is created by hitting a Starmetal Ingot with a Starmetal Cutting Tool."],
+			dependencies: [
+				"074D0738A05AA950",
+				"51A0951EA41570A6"
+			],
+			id: "05F111F5A5D121D5",
+			tasks: [{
+				id: "52F5FD518F086A9E",
+				type: "item",
+				item: "astralsorcery:stardust"
+			}]
+		},
+		{
+			x: 11.0d,
+			y: -4.0d,
+			description: [
+				"If you wish to disable one of your gained stats in your perk tree, you may do so by using a Sealing Sigil.",
+				"",
+				"Once you crafted one, it will show up in your perk tree. All you have to do is drag it from the top left corner into the perk you want to temporarily disable. The Sigil is consumed in the process."
+			],
+			dependencies: ["03025D2C26829C27"],
+			id: "5572A51C9F8429F8",
+			tasks: [{
+				id: "0B3AED7287FE2682",
+				type: "item",
+				item: "astralsorcery:perk_seal"
+			}]
+		},
+		{
+			icon: {
+				id: "astralsorcery:knowledge_share",
+				Count: 1b,
+				tag: {
+					astralsorcery: {}
+				}
+			},
+			disable_toast: true,
+			x: 8.5d,
+			y: -6.0d,
+			description: ["This cluster of 4 wands will guide you through each wand and their uses."],
+			dependencies: ["05F111F5A5D121D5"],
+			id: "09F23F67A7CB6095",
+			tasks: [{
+				id: "3A6996EAF028D0EE",
+				type: "checkmark",
+				title: "Utility Wands",
+				icon: "astralsorcery:illumination_wand"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: -8.0d,
+			description: [
+				"The Formation Wand is your standard building wand. [Shift + Right-click] on any block to select it, and then right click to place the blocks.",
+				"",
+				"[Shift + Right-click] in the air to change modes."
+			],
+			dependencies: ["09F23F67A7CB6095"],
+			id: "70495A1DD5FE396D",
+			tasks: [{
+				id: "188F2F9072B96E02",
+				type: "item",
+				item: "astralsorcery:architect_wand"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: -7.5d,
+			description: [
+				"The Conversion Wand is your standard exchange wand. [Shift + Right-click] on a block to select it, then [Right-click] to replace blocks.",
+				"",
+				"[Shift + Right-click] in the air to change size."
+			],
+			dependencies: ["09F23F67A7CB6095"],
+			id: "47CC701FA20B78AA",
+			tasks: [{
+				id: "69E4D1776BBD8B1D",
+				type: "item",
+				item: "astralsorcery:exchange_wand"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -7.5d,
+			description: ["The Impulsion Wand will throw a spectral rope in the direction you're facing. Upon landing, it will pull you towards it."],
+			dependencies: ["09F23F67A7CB6095"],
+			id: "06E5E32584035A0B",
+			tasks: [{
+				id: "0ADE59C5A4916053",
+				type: "item",
+				item: "astralsorcery:grapple_wand"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: -6.0d,
+			description: [
+				"The Traversal Wand has two functions, you can switch between them with [Shift + Right-click].",
+				"",
+				"In blink mode, you will get teleported forward. Holding it will allow you to aim and see the location you'll be teleported to.",
+				"",
+				"In dash mode, you can charge the wand by holding [Right-click]. Upon releasing it, you will get knocked in the direction you're looking."
+			],
+			dependencies: ["09F23F67A7CB6095"],
+			id: "754BB5C6CC144571",
+			tasks: [{
+				id: "4CB0DF244CFAEEC9",
+				type: "item",
+				item: "astralsorcery:blink_wand"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 5.0d,
+			dependencies: ["77F19C5A4E7449DC"],
+			hide: true,
+			id: "3E2309BAFAE8CF52",
+			tasks: [{
+				id: "2D7A06F6901FE83E",
+				type: "item",
+				item: {
+					id: "astralsorcery:illumination_wand",
+					Count: 1b,
+					tag: {
+						astralsorcery: {}
+					}
+				}
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 4.5d,
+			dependencies: ["77F19C5A4E7449DC"],
+			hide: true,
+			id: "59FC9BCCBB3F6B62",
+			tasks: [{
+				id: "5FA88669F24E8C39",
+				type: "item",
+				item: "astralsorcery:infuser"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 6.0d,
+			dependencies: ["59FC9BCCBB3F6B62"],
+			id: "2D306FF2EA9A94CA",
+			tasks: [{
+				id: "19ED70340E65DAAC",
+				type: "item",
+				item: "astralsorcery:resonating_gem"
+			}]
+		},
+		{
+			title: "Crystal Attunement",
+			x: 6.5d,
+			y: 4.5d,
+			dependencies: ["2D306FF2EA9A94CA"],
+			id: "794E8123E2CB578F",
+			tasks: [{
+				id: "5845BF1989242EEB",
+				type: "advancement",
+				icon: {
+					id: "astralsorcery:rock_crystal",
+					Count: 1b,
+					tag: {
+						astralsorcery: {}
+					}
+				},
+				advancement: "astralsorcery:attune_crystal",
+				criterion: ""
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 7.5d,
+			dependencies: ["2D306FF2EA9A94CA"],
+			id: "6E4B66A01855EAA6",
+			tasks: [{
+				id: "531748D86ECC5FCD",
+				type: "item",
+				item: {
+					id: "astralsorcery:celestial_crystal",
+					Count: 1b,
+					tag: {
+						astralsorcery: {}
+					}
+				}
+			}]
+		},
+		{
+			x: 8.5d,
+			y: 7.5d,
+			dependencies: ["6E4B66A01855EAA6"],
+			id: "40240888E783DEBB",
+			tasks: [{
+				id: "71C95450A23AD169",
+				type: "item",
+				item: {
+					id: "astralsorcery:celestial_collector_crystal",
+					Count: 1b,
+					tag: {
+						astralsorcery: {}
+					}
+				}
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 5.0d,
+			dependencies: ["3A266BCC750972EF"],
+			hide: true,
+			id: "68C18316E27565E7",
+			tasks: [{
+				id: "699A11FC25CC330D",
+				type: "item",
+				item: {
+					id: "astralsorcery:resonator",
+					Count: 1b,
+					tag: {
+						astralsorcery: {
+							upgrades: [
+								0,
+								1,
+								2
+							]
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 5.0d,
+			dependencies: ["3A266BCC750972EF"],
+			hide: true,
+			id: "5CB10BCC82F7C8B1",
+			tasks: [{
+				id: "00A80EF4C681E421",
+				type: "item",
+				item: "astralsorcery:fountain"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -5.0d,
+			description: [
+				"The Cave Illuminator is a block that, when placed anywhere in the world, will slowly light up the area below it by placing yellow light sources.",
+				"",
+				"Perfect for preventing mobs from spawning in the caves below your base or mob farm!"
+			],
+			dependencies: ["250122EB4DD234AA"],
+			id: "264E718EA3A38B5D",
+			tasks: [{
+				id: "58DB063B2AC69451",
+				type: "item",
+				item: "astralsorcery:illuminator"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -5.0d,
+			description: [
+				"The Celestial Gateways allow fast travel from one point to another. Simply place 2 of them anywhere, build the structure around them and you're set!",
+				"",
+				"Standing on one of the Gateways, will show you a dark sky with yellow stars representing other gateways. Holding [Shift], while looking at one of these stars, will teleport you to it."
+			],
+			dependencies: ["3897E4368DEB0731"],
+			hide: true,
+			id: "5BDE541EC051CFE8",
+			tasks: [{
+				id: "6FA1C48C4497A62E",
+				type: "item",
+				item: {
+					id: "astralsorcery:celestial_gateway",
+					Count: 1b,
+					tag: {
+						astralsorcery: {}
+					}
+				},
+				count: 2L
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 4.0d,
+			dependencies: ["3A266BCC750972EF"],
+			hide: true,
+			id: "05E8FA4197DF9E9B",
+			tasks: [{
+				id: "37A87411751A15F3",
+				type: "item",
+				item: "astralsorcery:chalice"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 2.5d,
+			dependencies: ["77F19C5A4E7449DC"],
+			hide: true,
+			id: "00516175868A1E68",
+			tasks: [{
+				id: "49CC3CB29F764149",
+				type: "item",
+				item: "astralsorcery:tree_beacon"
+			}]
+		}
+	]
+}

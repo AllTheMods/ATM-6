@@ -1,0 +1,407 @@
+{
+	id: "00000000000003AB",
+	group: "02FE661031A105D8",
+	order_index: 3,
+	filename: "ars_nouveau",
+	title: "Ars Nouveau",
+	icon: "ars_nouveau:mana_gem",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Ars Nouveau",
+			icon: "ars_nouveau:creative_spell_book",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "pentagon",
+			description: [
+				"With Ars Nouveau you will learn to harness the mana infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. ",
+				"",
+				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information."
+			],
+			size: 1.5d,
+			id: "00000000000003AC",
+			tasks: [{
+				id: "00000000000003AD",
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: "00000000000003AF",
+				type: "item",
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 2.0d,
+			description: ["The Spell Turret is an enhanced apparatus used to cast spells on demand with a redstone pulse. "],
+			dependencies: ["00000000000009ED"],
+			id: "00000000000003B2",
+			tasks: [{
+				id: "00000000000003F6",
+				type: "item",
+				item: "ars_nouveau:spell_turret"
+			}],
+			rewards: [{
+				id: "00000000000005F5",
+				type: "item",
+				item: "ars_nouveau:glyph_aoe"
+			}]
+		},
+		{
+			title: "Mana",
+			icon: "ars_nouveau:mana_gem",
+			x: -3.5d,
+			y: 1.0d,
+			description: [
+				"Mana is the driving energy behind every spell and arcane device in Ars Nouveau, but it must be condensed out of the world to harness it for anything beyond simple spell casting.",
+				"",
+				"Craft a Mana Condenser and a Mana Jar to begin. The Mana Gems required can be found while mining at any depth. Keep an eye out for purple Arcane Ore."
+			],
+			dependencies: ["00000000000003AC"],
+			id: "00000000000003B6",
+			tasks: [
+				{
+					id: "00000000000003BC",
+					type: "item",
+					item: "ars_nouveau:mana_condenser"
+				},
+				{
+					id: "00000000000003BD",
+					type: "item",
+					item: "ars_nouveau:mana_jar"
+				}
+			]
+		},
+		{
+			title: "Magic Clay",
+			x: -7.0d,
+			y: 4.5d,
+			description: [
+				"",
+				"In order to learn new spells, this Magic Clay and its variants may be pressed in a Glyph Press along with some other reagent to form a focus."
+			],
+			dependencies: ["00000000000003C6"],
+			id: "00000000000003BE",
+			tasks: [{
+				id: "00000000000003C0",
+				type: "item",
+				item: "ars_nouveau:magic_clay",
+				count: 8L
+			}]
+		},
+		{
+			title: "Marvelous Clay",
+			icon: "ars_nouveau:marvelous_clay",
+			x: -6.0d,
+			y: 5.5d,
+			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbook to cast. "],
+			dependencies: ["00000000000003BE"],
+			id: "00000000000003C2",
+			tasks: [
+				{
+					id: "00000000000003C3",
+					type: "item",
+					item: "ars_nouveau:marvelous_clay",
+					count: 8L
+				},
+				{
+					id: "00000000000003F9",
+					type: "item",
+					item: "ars_nouveau:apprentice_spell_book"
+				}
+			]
+		},
+		{
+			title: "Mythical Clay",
+			icon: "ars_nouveau:mythical_clay",
+			x: -4.5d,
+			y: 4.5d,
+			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbook to cast. "],
+			dependencies: ["00000000000003C2"],
+			id: "00000000000003C4",
+			tasks: [
+				{
+					id: "00000000000003C5",
+					type: "item",
+					item: "ars_nouveau:mythical_clay",
+					count: 2L
+				},
+				{
+					id: "00000000000003FA",
+					type: "item",
+					item: "ars_nouveau:archmage_spell_book"
+				}
+			]
+		},
+		{
+			x: -7.0d,
+			y: 3.0d,
+			description: [
+				"The Glyph Press will accept up to two items; a type of clay and a reagent. ",
+				"",
+				"Both are consumed along with a fair amount of mana from a nearby Mana Jar to create new Glyphs."
+			],
+			dependencies: ["00000000000003B6"],
+			id: "00000000000003C6",
+			tasks: [{
+				id: "00000000000003C7",
+				type: "item",
+				item: "ars_nouveau:glyph_press"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 7.0d,
+			description: [
+				"",
+				"To use Chalk, begin by drawing a circle on the ground. Now right click the circle with a prepared Spell Parchment. Valid Spell Parchments must begin with the Touch Form."
+			],
+			dependencies: ["00000000000003D0"],
+			id: "00000000000003CE",
+			tasks: [{
+				id: "00000000000003CF",
+				type: "item",
+				item: {
+					id: "ars_nouveau:runic_chalk",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Spell Parchment",
+			x: 1.5d,
+			y: 6.0d,
+			description: [
+				"",
+				"To prepare a Parchment with a spell, design the spell within your spellbook, then place a parchment on the Scribe's Table. Sneak Right Click the table with your spell book to transfer the selected spell over to the parchment."
+			],
+			dependencies: ["00000000000003D5"],
+			id: "00000000000003D0",
+			tasks: [{
+				id: "00000000000003D3",
+				type: "item",
+				item: "ars_nouveau:spell_parchment"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 4.5d,
+			description: [
+				"",
+				"Growing these will serve two purposes to a budding practitioner. First, they produce more mana than any mundane plants when grown. Second, they can be woven into a fabric that intertwines itself with wearer's mana, expanding the practitioner's reserves.  "
+			],
+			dependencies: ["00000000000003D7"],
+			id: "00000000000003D5",
+			tasks: [{
+				id: "00000000000003D6",
+				type: "item",
+				item: "ars_nouveau:mana_bloom_crop"
+			}],
+			rewards: [{
+				id: "00000000000005F4",
+				type: "item",
+				item: "ars_nouveau:glyph_harvest"
+			}]
+		},
+		{
+			title: "Enchanting Apparatus",
+			icon: "ars_nouveau:enchanting_apparatus",
+			x: 0.0d,
+			y: 3.0d,
+			description: [
+				"",
+				"To construct the Enchanting Apparatus, place down the Arcane Core with the Enchanting Apparatus on top of it. The Pedestals can be placed anywhere in an 11x11 area centered on the Core. A Mana Jar with mana must also be present nearby. ",
+				"",
+				"To work with it, place the reagents in the pedestals and the focus in the Enchanting Apparatus itself, then Sneak Right Click the Apparatus with an empty hand."
+			],
+			dependencies: ["00000000000003AC"],
+			id: "00000000000003D7",
+			tasks: [
+				{
+					id: "00000000000003DB",
+					type: "item",
+					item: "ars_nouveau:arcane_core"
+				},
+				{
+					id: "00000000000003DC",
+					type: "item",
+					item: "ars_nouveau:enchanting_apparatus"
+				},
+				{
+					id: "00000000000003DD",
+					type: "item",
+					item: "ars_nouveau:arcane_pedestal",
+					count: 8L
+				}
+			]
+		},
+		{
+			title: "Curious Trinkets",
+			icon: "ars_nouveau:amulet_of_mana_regen",
+			x: -2.0d,
+			y: 3.0d,
+			description: [
+				"",
+				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
+			],
+			dependencies: ["00000000000003D7"],
+			id: "00000000000003DE",
+			tasks: [
+				{
+					id: "00000000000003DF",
+					type: "item",
+					item: "ars_nouveau:amulet_of_mana_regen"
+				},
+				{
+					id: "00000000000003E2",
+					type: "item",
+					item: "ars_nouveau:ring_of_lesser_discount"
+				}
+			],
+			rewards: [{
+				id: "00000000000009FA",
+				type: "item",
+				item: "ars_nouveau:void_jar"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: 1.5d,
+			description: [
+				"Though found relatively commonly in the earth, Arcane Crystals can also be crystallized directly from the surrounding mana. ",
+				"",
+				"Build a Crystallizer early on to help obtain more of these very useful gems."
+			],
+			dependencies: ["00000000000003B6"],
+			id: "00000000000003E7",
+			tasks: [{
+				id: "00000000000003E8",
+				type: "item",
+				item: "ars_nouveau:crystallizer"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 4.5d,
+			description: [
+				"Mana permeates all things. Left to its own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing mana for later use, but moving it from place to place can be a touchy subject.",
+				"",
+				"Mana Relays serve this purpose. They provide a controlled channel for mana to flow through without dissipating back into the world. Mana Relays may be linked to other relays as well as jars to provide safe transit from one place to another. ",
+				"",
+				"Use a Dominion Wand to set the links. "
+			],
+			dependencies: ["00000000000003D7"],
+			id: "00000000000003EB",
+			tasks: [{
+				id: "00000000000003EC",
+				type: "item",
+				item: "ars_nouveau:arcane_relay"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 6.0d,
+			description: ["A more advanced Mana Relay capable of pulling from and sending to multiple locations."],
+			dependencies: ["00000000000003EB"],
+			id: "00000000000003ED",
+			tasks: [{
+				id: "00000000000003EE",
+				type: "item",
+				item: "ars_nouveau:arcane_relay_splitter"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.0d,
+			description: [
+				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone.",
+				"",
+				"Refer to the Worn Notebook for an in-depth guide on using Whelps. "
+			],
+			dependencies: ["00000000000003F7"],
+			id: "00000000000003F0",
+			tasks: [{
+				id: "00000000000003F1",
+				type: "item",
+				item: "ars_nouveau:whelp_charm"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 2.0d,
+			description: [
+				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. ",
+				"",
+				"Refer to the Worn Notebook for an in-depth guide on using Carbuncles."
+			],
+			dependencies: ["00000000000009ED"],
+			id: "00000000000003F2",
+			tasks: [{
+				id: "00000000000003F3",
+				type: "item",
+				item: "ars_nouveau:carbuncle_charm"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 3.0d,
+			description: [
+				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you.",
+				"",
+				"Refer to the Worn Notebook for an in-depth guide on using Sylphs."
+			],
+			dependencies: ["00000000000003F7"],
+			id: "00000000000003F4",
+			tasks: [{
+				id: "00000000000003F5",
+				type: "item",
+				item: "ars_nouveau:sylph_charm"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 2.0d,
+			description: [
+				"",
+				"Placing the Summoning Crystal will define the area that these creatures will perform their tasks. An inventory directly adjacent to the Summoning Crystal will be used to store any items they collect. ",
+				"",
+				"The Summoning Crystal is crafted with the Enchanting Apparatus, as are all Charms."
+			],
+			dependencies: ["00000000000009ED"],
+			id: "00000000000003F7",
+			tasks: [{
+				id: "00000000000003F8",
+				type: "item",
+				item: "ars_nouveau:summoning_crystal"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 2.0d,
+			description: ["Thankfully, mana naturally trickles out of molten lava, escaping into the air. This device assists in collecting these trace amounts of mana so they may be put to use."],
+			dependencies: ["00000000000003B6"],
+			id: "000000000000069D",
+			tasks: [{
+				id: "000000000000069E",
+				type: "item",
+				item: "ars_nouveau:volcanic_accumulator"
+			}]
+		},
+		{
+			title: "Auto-magically",
+			icon: "ars_nouveau:glyph_self",
+			x: 4.0d,
+			y: 0.5d,
+			description: ["What good is magic if it cannot be made to work for us without constant intervention?"],
+			dependencies: ["00000000000003AC"],
+			id: "00000000000009ED",
+			tasks: [{
+				id: "00000000000009EE",
+				type: "checkmark"
+			}]
+		}
+	]
+}
