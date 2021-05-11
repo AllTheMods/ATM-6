@@ -1,0 +1,11 @@
+{
+	id: "29299B83AD3E6E65",
+	group: "1AC60211DE7427FC",
+	order_index: 3,
+	filename: "integrated_dynamics",
+	title: "Integrated Dynamics",
+	icon: "integrateddynamics:menril_sapling",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: []
+}

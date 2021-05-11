@@ -1,35 +1,88 @@
 {
-  "flower": "tag:forge:storage_blocks/clay",
-  "maxTimeInHive": 1200,
-  "hasHoneycomb": true,
-  "ColorData": {
-      "isBeeColored": true,
-      "primaryColor": "#48544F",
-      "honeycombColor": "#48544F"
-  },
-  "MutationData": {
-      "hasMutation": false
-  },
-  "CentrifugeData": {
-      "hasCentrifugeOutput": true,
-      "mainOutput": "minecraft:clay_ball",
-      "secondaryOutput": "minecraft:brick",
-      "mainOutputCount": 3,
-      "mainOutputWeight": 0.50,
-      "secondaryOutputCount": 2,
-      "secondaryOutputWeight": 0.8
-  },
-  "SpawnData": {
-      "canSpawnInWorld": true,
-      "biomeWhitelist": "tag:overworld",
-      "biomeBlacklist": "tag:ocean"
-  },
-  "BreedData": {
-      "isBreedable": true,
-      "feedItem": "tag:forge:storage_blocks/clay",
-      "feedAmount": 3
-  },
-  "TraitData": {
-      "hasTraits": false
-  }
+    "flower": "tag:forge:storage_blocks/clay",
+    "maxTimeInHive": 1200,
+    "traits": [""],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "/custom/bee",
+    "ColorData": {
+        "primaryColor": "#48544F",
+        "secondaryColor": "#48544F",
+        "honeycombColor": "#48544F",
+        "primaryLayerTexture": "/custom/primary_layer",
+        "secondaryLayerTexture": "/custom/secondary_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": true,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#48544F",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "default"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:mason_honeycomb_block",
+            "outputs": [{
+                    "outputID": "minecraft:clay_ball",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:mason_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "minecraft:clay_ball",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 3,
+        "mainNBTData": {},
+        "secondaryOutput": "minecraft:brick",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 5,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.8,
+        "feedItem": "tag:forge:storage_blocks/clay",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }

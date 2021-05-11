@@ -1,0 +1,88 @@
+{
+    "flower": "biomesoplenty:flesh",
+    "maxTimeInHive": 1200,
+    "traits": ["zombie"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "/zombie/zombie_bee",
+    "ColorData": {
+        "primaryColor": "#2F4E32",
+        "secondaryColor": "#2F4E32",
+        "honeycombColor": "#2F4E32",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#2F4E32",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:zombee_honeycomb_block",
+            "outputs": [{
+                    "outputID": "minecraft:rotten_flesh",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:zombee_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "minecraft:rotten_flesh",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 2,
+        "mainNBTData": {},
+        "secondaryOutput": "xreliquary:zombie_heart",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 2,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 5,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.8,
+        "feedItem": "xreliquary:zombie_heart",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "flower": "tag:forge:storage_blocks/gunpowder",
+    "maxTimeInHive": 1200,
+    "traits": ["creeper"],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "/creeper/creeper_bee",
+    "ColorData": {
+        "primaryColor": "#0C9F0A",
+        "secondaryColor": "#0C9F0A",
+        "honeycombColor": "#0C9F0A",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "/creeper/creeper_bee_emissive",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": true,
+        "glowColor": "#E2D3D3",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "default"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:beeper_honeycomb_block",
+            "outputs": [{
+                    "outputID": "minecraft:gunpowder",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:beeper_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "minecraft:gunpowder",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 2,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 5,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.8,
+        "feedItem": "xreliquary:catalyzing_gland",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

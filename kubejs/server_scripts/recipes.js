@@ -12,6 +12,7 @@ events.listen('recipes', function(e) {
             }
         })
     }
+
     function pressure(inputs, result, rCount, pressure) {
         e.recipes.pneumaticcraft.pressure_chamber({
             inputs: inputs,
@@ -22,6 +23,7 @@ events.listen('recipes', function(e) {
             }]
         })
     }
+
     function pedestalCrush(result, count, ingredient, type) {
         if (type == 1) {
             pedCrush({
@@ -45,6 +47,7 @@ events.listen('recipes', function(e) {
             })
         }
     }
+
     function pedestalSaw(result, count, ingredient, type) {
         if (type == 1) {
             pedSaw({
@@ -68,6 +71,7 @@ events.listen('recipes', function(e) {
             })
         }
     }
+
     function jumbo(ingredients, result, xp) {
         e.recipes.jumbofurnace.jumbo_smelting({
             'ingredients': ingredients,
@@ -77,21 +81,26 @@ events.listen('recipes', function(e) {
             'experience': xp
         })
     }
+
     function multicrush(output, input) {
         e.recipes.mekanism.crushing(output, input)
         e.recipes.create.crushing(output, input)
         e.recipes.immersiveengineering.crusher(output, input)
         e.recipes.thermal.pulverizer(output, input)
     }
+
     function crush(output, input) {
         e.recipes.mekanism.crushing((output), input)
     }
+
     function enrich(output, input) {
         e.recipes.mekanism.enriching((output), input)
     }
+
     function pulverize(output, input) {
         e.recipes.thermal.pulverizer((output), input)
     }
+
     function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
         e.recipes.mysticalagriculture.infusion({
             input: {
@@ -219,6 +228,16 @@ events.listen('recipes', function(e) {
         P: 'refinedstorage:improved_processor',
         C: '#refinedstorage:crafter'
     }).id(`kubejs:iron_crafter`)
+    e.shaped(`creativecrafter:creative_crafter`, [
+        `BUB`,
+        `PCP`,
+        `BUB`
+    ], {
+        B: `#forge:storage_blocks/netherite`,
+        P: `extradisks:withering_processor`,
+        C: `extrastorage:netherite_crafter`,
+        U: `#forge:ingots/unobtainium`
+    });
     e.shaped('xreliquary:fertile_lily_pad', [
         'ESE',
         'FLF',
@@ -664,6 +683,48 @@ events.listen('recipes', function(e) {
         B: 'compressium:redstone_4',
         C: 'pipez:ultimate_upgrade'
     })
+    //MA
+    e.shaped('8x astralsorcery:aquamarine', [
+        'AAA',
+        'A A',
+        'AAA'
+    ], {
+        A: 'mysticalagriculture:aquamarine_essence'
+    }).id(`kubejs:aquamarine_essence`)
+    //Cable Tiers changes
+    var caTypes = [
+        `importer`,
+        `exporter`,
+        `constructor`,
+        `destructor`
+    ];
+    const caTier = (tier, corners, processor, cables) => {
+        caTypes.forEach(caType => {
+            e.shaped(`cabletiers:${tier}_${caType}`, [
+                `a a`,
+                `bcb`,
+                `a a`
+            ], {
+                a: corners,
+                b: processor,
+                c: `${cables}${caType}`
+            });
+        });
+    };
+    caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`);
+    caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`);
+    caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`);
+    //Creative Transmitter
+    e.shaped('creativewirelesstransmitter:creative_wireless_transmitter', [
+        'ITI',
+        'ICI',
+        'IDI'
+    ], {
+        I: 'allthemodium:unobtainium_ingot',
+        D: 'rsinfinitybooster:dimension_card',
+        C: 'refinedstorage:machine_casing',
+        T: 'refinedstorage:wireless_transmitter'
+    }).id(`kubejs:creative_wireless_transmitter`)
 
     //Misc Shapeless Recipes
     e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:clay`)
@@ -951,6 +1012,8 @@ events.listen('recipes', function(e) {
     e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`, ).id(`kubejs:saw/byg_log_imbued_nightshade`)
     e.recipes.mekanism.sawing((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
 
+    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote',250),'minecraft:charcoal'], '#minecraft:logs')
+    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote',5000),'immersiveengineering:coke'], 'minecraft:coal_block')
     //botania
     e.recipes.botania.runic_altar({
         output: {

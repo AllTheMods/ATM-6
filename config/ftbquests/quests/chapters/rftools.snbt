@@ -1,0 +1,10 @@
+{
+	id: "45EF158BB7579C81",
+	group: "2B51AC12041E3F89",
+	order_index: 6,
+	filename: "rftools",
+	title: "RFTools",
+	icon: "rftoolsbase:dimensionalshard",
+	default_quest_shape: "",
+	quests: []
+}

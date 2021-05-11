@@ -1,0 +1,15 @@
+{
+    "biomes": [
+      "minecraft:nether_wastes",
+      "minecraft:soul_sand_valley",
+      "minecraft:crimson_forest",
+      "minecraft:warped_forest",
+      "minecraft:basalt_deltas",
+      "byg:sythian_torrids",
+      "byg:quartz_desert",
+      "byg:brimstone_caverns",
+      "byg:withering_woods",
+      "byg:wailing_garth",
+      "byg:crimson_gardens"
+    ]
+  }

@@ -1,35 +1,86 @@
 {
     "flower": "appliedenergistics2:quartz_block",
-    "maxTimeInHive": 1200,
+    "maxTimeInHive": 2400,
+    "traits": [""],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/certus_bee",
     "ColorData": {
-        "isBeeColored": false,
+        "primaryColor": "#d2d6f7",
+        "secondaryColor": "#d2d6f7",
         "honeycombColor": "#d2d6f7",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#d2d6f7",
+        "isEnchanted": false,
+        "glowingPulse": 0,
         "modelType": "ORE"
     },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
     "MutationData": {
-        "hasMutation": false
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:certus_honeycomb_block",
+            "outputs": [{
+                    "outputID": "appliedenergistics2:certus_quartz_crystal",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:certus_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
         "mainOutput": "appliedenergistics2:quartz_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
+        "mainNBTData": {},
         "secondaryOutput": "appliedenergistics2:certus_quartz_crystal",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2
+        "secondaryOutputWeight": 0.20,
+        "secondaryOutputCount": 2,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
     },
     "SpawnData": {
-        "canSpawnInWorld": false
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,
-        "breedChance": 0.80,
         "parent1": "Quartz",
-        "parent2": "Diamond",
+        "parent2": "Copper",
+        "breedWeight": 10,
+        "breedChance": 0.60,
         "feedItem": "appliedenergistics2:quartz_block",
-        "feedAmount": 3
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
     },
     "TraitData": {
         "hasTraits": false

@@ -1,0 +1,88 @@
+{
+    "flower": "tag:forge:storage_blocks/coal",
+    "maxTimeInHive": 2400,
+    "traits": [""],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/coal/coal_bee",
+    "ColorData": {
+        "primaryColor": "#303030",
+        "secondaryColor": "#303030",
+        "honeycombColor": "#303030",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#303030",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:coal_honeycomb_block",
+            "outputs": [{
+                    "outputID": "minecraft:coal",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:coal_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "minecraft:coal_ore",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "minecraft:coal",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 2,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "Blazing",
+        "parent2": "Lumber",
+        "breedWeight": 10,
+        "breedChance": 0.60,
+        "feedItem": "tag:forge:storage_blocks/coal",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

@@ -40,7 +40,7 @@ events.listen('recipes', e => {
         'mysticalagriculture:essence/powah/blazing_crystal',
         'mysticalagriculture:essence/powah/energized_steel',
         'mysticalagriculture:essence/powah/niotic_crystal',
-        'mysticalagriculture:essence/powah/nitro_crystal',
+        'mysticalagradditions:essence/nitro_crystal',
         'mysticalagriculture:essence/powah/spirited_crystal',
 
         'mysticalagriculture:essence/botania/elementium_ingot',
@@ -145,8 +145,13 @@ events.listen('recipes', e => {
         'mysticalagriculture:unattuned_augment',
         'rftoolsbuilder:builder',
         'extrastorage:iron_crafter',
-        'twilightforest:uncrafting_table'
-        
+        'twilightforest:uncrafting_table',
+        'mob_grinding_utils:recipe_mob_swab',
+        'creativecrafter:creative_crafter',
+        'creativewirelesstransmitter:creative_wireless_transmitter',
+        'thermal:machine/pyrolyzer/pyrolyzer_coal',
+        'thermal:machine/pyrolyzer/pyrolyzer_logs'
+
     ];
     idRemove.forEach(iR => {
         e.remove({
@@ -186,6 +191,15 @@ events.listen('recipes', e => {
             'titanium:gold_gear',
             'titanium:diamond_gear',
         ]
+    });
+    //Remove via mod name
+    var modRemove = [
+        `cabletiers`,
+    ];
+    modRemove.forEach(mR => {
+        e.remove({
+            mod: mR
+        });
     });
     e.remove({
         input: [

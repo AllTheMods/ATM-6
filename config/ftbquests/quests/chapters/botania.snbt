@@ -1,0 +1,932 @@
+{
+	id: "0000000000000500",
+	group: "02FE661031A105D8",
+	order_index: 2,
+	filename: "botania",
+	title: "Botania",
+	icon: "botania:mana_pylon",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Botania",
+			x: 0.75d,
+			y: 0.0d,
+			shape: "pentagon",
+			description: [
+				"",
+				"Botania is an expansive mod, and so not everything will be covered here. Refer back to the Lexica Botania frequently for in depth information and interesting tips."
+			],
+			size: 1.5d,
+			id: "0000000000000501",
+			tasks: [{
+				id: "0000000000000502",
+				type: "checkmark",
+				icon: "botania:lexicon"
+			}],
+			rewards: [{
+				id: "0000000000000504",
+				type: "item",
+				item: "botania:pestle_and_mortar"
+			}]
+		},
+		{
+			title: "Mystical Flower",
+			icon: "botania:magenta_mystical_flower",
+			x: -3.5d,
+			y: 0.5d,
+			description: ["Scattered throughout the world are flowers that seem preternaturally bright. Collect some to begin exploring the mysteries of floromancy."],
+			dependencies: ["0000000000000501"],
+			id: "0000000000000505",
+			tasks: [{
+				id: "0000000000000507",
+				type: "item",
+				title: "Any botania:mystical_flowers",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				},
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: "0000000000000508",
+					type: "item",
+					item: "botania:flower_bag"
+				},
+				{
+					id: "000000000000050D",
+					type: "item",
+					item: {
+						id: "minecraft:shears",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: 0.0d,
+			description: ["Having trouble finding some colors of Mystical Flower? A bit of Floral Fertilizer can sprout them in no time."],
+			dependencies: ["0000000000000505"],
+			id: "0000000000000509",
+			tasks: [{
+				id: "000000000000050A",
+				type: "item",
+				item: "botania:fertilizer"
+			}],
+			rewards: [{
+				id: "00000000000005E6",
+				type: "item",
+				item: "botania:fertilizer",
+				count: 16
+			}]
+		},
+		{
+			title: "Petal Apothecary",
+			icon: "botania:apothecary_default",
+			x: -4.0d,
+			y: 1.5d,
+			description: ["Something strange occurs when Mystical Petals are combined with certain reagents and a seed. They seem to spontaneously unfold and reform, hijacking the seed and making an entirely new construct. "],
+			dependencies: ["0000000000000505"],
+			id: "000000000000050B",
+			tasks: [
+				{
+					id: "000000000000050C",
+					type: "item",
+					item: "botania:apothecary_default"
+				},
+				{
+					id: "000000000000050E",
+					type: "item",
+					item: "botania:pure_daisy"
+				}
+			]
+		},
+		{
+			title: "Livingwood \\& Livingrock",
+			x: -4.0d,
+			y: 2.5d,
+			description: ["The Pure Daisy appears to draw some essence from the earth itself, infusing it into certain nearby materials."],
+			dependencies: ["000000000000050B"],
+			id: "000000000000050F",
+			tasks: [
+				{
+					id: "000000000000051D",
+					type: "item",
+					item: "botania:livingwood",
+					count: 16L
+				},
+				{
+					id: "000000000000051E",
+					type: "item",
+					item: "botania:livingrock",
+					count: 16L
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 1.5d,
+			description: [
+				"",
+				"Drop items on the Runic Altar to begin crafting. Mana must be supplied by linking a Mana Spreader to the Altar and crafting progresses faster if mana is supplied more rapidly. Right click the altar with a Wand of the Forest to finalize the operation. "
+			],
+			dependencies: ["0000000000000501"],
+			id: "0000000000000513",
+			tasks: [{
+				id: "0000000000000514",
+				type: "item",
+				item: "botania:runic_altar"
+			}]
+		},
+		{
+			title: "The Portal to Alfheim",
+			icon: "botania:natura_pylon",
+			x: 4.0d,
+			y: 4.5d,
+			description: [
+				"",
+				"Refer to the Lexica Botania for instructions on building the portal. The Lexica should be one of the first things sent through the portal to unlock further knowledge"
+			],
+			dependencies: ["0000000000000517"],
+			id: "0000000000000515",
+			tasks: [
+				{
+					id: "0000000000000516",
+					type: "item",
+					item: "botania:alfheim_portal"
+				},
+				{
+					id: "000000000000057A",
+					type: "item",
+					item: "botania:natura_pylon",
+					count: 2L
+				},
+				{
+					id: "000000000000057B",
+					type: "item",
+					item: "botania:mana_pool",
+					count: 2L
+				},
+				{
+					id: "000000000000057C",
+					type: "item",
+					item: "botania:glimmering_livingwood",
+					count: 3L
+				},
+				{
+					id: "000000000000057D",
+					type: "item",
+					item: "botania:livingwood",
+					count: 8L
+				}
+			]
+		},
+		{
+			icon: "botania:terra_plate",
+			x: 3.5d,
+			y: 3.0d,
+			description: [
+				"",
+				"Upon placing an ingot of Manasteel, a Mana Diamond, and finally a Mana Pearl, something strange happens. The Pearl seems to warp the mana around it and draw it along the conduit lines made by the Spark. Once more, causing spontaneous re-assembly of the materials present to form a new substance."
+			],
+			dependencies: ["0000000000000559"],
+			id: "0000000000000517",
+			tasks: [
+				{
+					id: "0000000000000518",
+					type: "item",
+					item: "botania:terra_plate"
+				},
+				{
+					id: "000000000000056F",
+					type: "item",
+					item: "botania:livingrock",
+					count: 5L
+				},
+				{
+					id: "0000000000000570",
+					type: "item",
+					item: "minecraft:lapis_block",
+					count: 4L
+				},
+				{
+					id: "0000000000000599",
+					type: "item",
+					item: "botania:terrasteel_ingot"
+				}
+			]
+		},
+		{
+			x: -5.0d,
+			y: 4.0d,
+			description: [
+				"Livingrock forms an excellent receptacle for mana, keeping it safe and ready for use at a moment's notice. ",
+				"",
+				"Breaking the Mana Pool will cause all stored mana to be lost. Placing a Comparator against it will allow the volume to be read for automation purposes. "
+			],
+			dependencies: ["000000000000050F"],
+			id: "0000000000000519",
+			tasks: [{
+				id: "000000000000051A",
+				type: "item",
+				item: "botania:mana_pool"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 4.0d,
+			description: [
+				"",
+				"Mana Spreaders may be linked directly to Generating Flora to transmit Mana from the flower to a Mana Pool for storage. They can also be chained by linking one spreader to another and will automatically draw from an adjacent Mana Pool."
+			],
+			dependencies: ["000000000000050F"],
+			id: "000000000000051B",
+			tasks: [{
+				id: "000000000000051C",
+				type: "item",
+				item: "botania:mana_spreader"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 4.0d,
+			description: [
+				"Livingwood appears to have an affinity for channeling this mysterious essence from the earth. Craft a Wand of the Forest to direct it more precisely.",
+				"",
+				"The Wand of the Forest will be the tool of choice for linking Generating Flora, Mana Spreaders, and Mana Pools. Sneak + Right Click the source, then destination."
+			],
+			dependencies: ["000000000000050F"],
+			id: "000000000000051F",
+			tasks: [{
+				id: "0000000000000520",
+				type: "item",
+				item: {
+					id: "botania:twig_wand",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 5.5d,
+			description: [
+				"",
+				"Place the Endoflame on grass or dirt to begin. The Mana Spreader should be placed somewhere nearby as well as a Mana Pool. Use the Wand of the Forest to link the flower to the Spreader, and the Spreader to the Pool."
+			],
+			dependencies: [
+				"0000000000000519",
+				"000000000000051B",
+				"000000000000051F"
+			],
+			id: "0000000000000521",
+			tasks: [{
+				id: "0000000000000522",
+				type: "item",
+				item: "botania:endoflame"
+			}],
+			rewards: [
+				{
+					id: "0000000000000523",
+					type: "item",
+					item: "botania:open_crate"
+				},
+				{
+					id: "00000000000005E8",
+					type: "item",
+					item: "botania:monocle"
+				}
+			]
+		},
+		{
+			title: "Guardian of Gaia",
+			icon: "botania:life_essence",
+			x: 8.5d,
+			y: 3.0d,
+			description: [
+				"",
+				"Summon forth the earth's final defenses and silence her cries, once and for all. "
+			],
+			dependencies: ["0000000000000528"],
+			id: "0000000000000524",
+			tasks: [{
+				id: "0000000000000527",
+				type: "item",
+				item: "botania:life_essence"
+			}]
+		},
+		{
+			title: "Gaia Arena",
+			icon: "botania:gaia_pylon",
+			x: 8.0d,
+			y: 1.5d,
+			description: [
+				"",
+				"Level a large area; a circle with a radius of roughly eleven blocks will suffice. Lay the trap and bait it with Terrasteel to see what comes forth.",
+				"",
+				"The Lexica Botania will show the exact structure required to build the arena."
+			],
+			dependencies: ["0000000000000501"],
+			id: "0000000000000528",
+			tasks: [
+				{
+					id: "0000000000000529",
+					type: "item",
+					item: "botania:gaia_pylon",
+					count: 4L
+				},
+				{
+					id: "000000000000052C",
+					type: "item",
+					item: "minecraft:beacon"
+				}
+			]
+		},
+		{
+			title: "Dice of Fate",
+			icon: "botania:dice",
+			x: 8.5d,
+			y: 5.5d,
+			description: [
+				"",
+				"Summon and defeat the Guardian's second incarnation. "
+			],
+			dependencies: ["0000000000000524"],
+			id: "000000000000052A",
+			tasks: [{
+				id: "000000000000052B",
+				type: "item",
+				item: "botania:dice"
+			}]
+		},
+		{
+			title: "Elemental Runes",
+			x: 0.0d,
+			y: 3.0d,
+			description: ["Livingstone makes an excellent substrate for encoding information while Manasteel provides a portable vessel for mana. Supply a few other items to set an affinity and bind it all together with Mana powder. "],
+			dependencies: ["0000000000000513"],
+			id: "000000000000052D",
+			tasks: [
+				{
+					id: "000000000000052E",
+					type: "item",
+					item: "botania:rune_water"
+				},
+				{
+					id: "000000000000052F",
+					type: "item",
+					item: "botania:rune_fire"
+				},
+				{
+					id: "0000000000000530",
+					type: "item",
+					item: "botania:rune_earth"
+				},
+				{
+					id: "0000000000000531",
+					type: "item",
+					item: "botania:rune_air"
+				},
+				{
+					id: "0000000000000532",
+					type: "item",
+					item: "botania:rune_mana"
+				}
+			]
+		},
+		{
+			x: -5.0d,
+			y: 7.0d,
+			description: ["When soaked in mana they seem to have a warping effect on Mana in the immediate locale, causing it to behave unexpectedly."],
+			dependencies: ["0000000000000521"],
+			id: "0000000000000533",
+			tasks: [{
+				id: "0000000000000534",
+				type: "item",
+				item: "botania:mana_pearl"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 7.0d,
+			description: ["The facets in this gem seem to be amplifying the energies bound within it."],
+			dependencies: ["0000000000000521"],
+			id: "0000000000000535",
+			tasks: [{
+				id: "0000000000000536",
+				type: "item",
+				item: "botania:mana_diamond"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 10.0d,
+			description: ["When exposed even briefly to a pool of mana, iron transforms into a sort of mana accumulator, storing up more mana for later use and even spontaneously re-organizing after rapid forceful impact events. While this seems like an obvious material to use for a tool or armor, perhaps other more delicate uses can be found as well."],
+			dependencies: ["0000000000000521"],
+			id: "0000000000000537",
+			tasks: [{
+				id: "0000000000000538",
+				type: "item",
+				item: "botania:manasteel_ingot"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 8.0d,
+			description: ["An ordinary piece of string seems a poor choice for the wild nature of mana."],
+			dependencies: ["0000000000000521"],
+			id: "0000000000000539",
+			tasks: [{
+				id: "000000000000053A",
+				type: "item",
+				item: "botania:mana_string"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 8.0d,
+			description: ["It would seem that most any powder, when bathed in condensed mana, becomes a powerful bonding agent."],
+			dependencies: ["0000000000000521"],
+			id: "000000000000053B",
+			tasks: [{
+				id: "000000000000053C",
+				type: "item",
+				item: "botania:mana_powder"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 9.0d,
+			shape: "circle",
+			description: ["A Band of Mana combines several of the materials we've discovered so far into a useful object; one that can act as a portable mana pool. Making one will open up new possibilities as mana exploitation just got peronal. "],
+			dependencies: ["0000000000000538"],
+			id: "000000000000053D",
+			tasks: [{
+				id: "000000000000053F",
+				type: "item",
+				item: {
+					id: "botania:mana_ring",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 8.5d,
+			description: [
+				"",
+				"Drop the required reagents on the Brewery and point a Mana Spreader at it to begin. ",
+				"",
+				"Brews are potions with multiple uses and Incense Sticks apply their effects in a wide area. "
+			],
+			dependencies: ["000000000000052D"],
+			id: "0000000000000540",
+			tasks: [{
+				id: "0000000000000541",
+				type: "item",
+				item: "botania:brewery"
+			}],
+			rewards: [{
+				id: "00000000000005DB",
+				type: "item",
+				item: "botania:vial",
+				count: 8
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 5.5d,
+			description: ["A Rosa Arcana is capable of absorbing and purifying these globules for further use."],
+			dependencies: ["000000000000052D"],
+			id: "0000000000000542",
+			tasks: [{
+				id: "0000000000000543",
+				type: "item",
+				item: "botania:rosa_arcana"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 6.5d,
+			description: ["A gust of wind rushes forth, wrapping the bearer in a protective envelope that pulls them into the sky and cushions their eventual decent. "],
+			dependencies: ["000000000000052D"],
+			id: "0000000000000544",
+			tasks: [{
+				id: "0000000000000545",
+				type: "item",
+				item: {
+					id: "botania:tornado_rod",
+					Count: 1b,
+					tag: {}
+				}
+			}],
+			rewards: [{
+				id: "0000000000000556",
+				type: "item",
+				item: "botania:avatar"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 6.5d,
+			description: [
+				"",
+				"Place an item in an item frame on the chest to control what gets picked up. The Hopperhock will distinguish between a full and empty Mana Tablet or Band of Mana. The flower can be disabled entirely by providing a redstone signal. "
+			],
+			dependencies: ["000000000000052D"],
+			id: "0000000000000546",
+			tasks: [{
+				id: "0000000000000547",
+				type: "item",
+				item: "botania:hopperhock"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 6.5d,
+			description: ["A rumble can be heard when activating this device as the earth shifts, forcing dirt to push up to fill the area at the point of contact. "],
+			dependencies: ["000000000000052D"],
+			id: "0000000000000548",
+			tasks: [{
+				id: "0000000000000549",
+				type: "item",
+				item: "botania:dirt_rod"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 7.5d,
+			description: ["Though it functions similarly to the Pure Daisy, the Clayconia requires far more mana than it can drain from the earth on its own. A source of mana is required nearby to power its nanocrystaline-recombination of sand into clay.."],
+			dependencies: ["000000000000052D"],
+			id: "000000000000054A",
+			tasks: [{
+				id: "000000000000054B",
+				type: "item",
+				item: "botania:clayconia"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 7.5d,
+			description: ["The ability to draw forth water from the earth at a moment's notice is handy indeed."],
+			dependencies: ["000000000000052D"],
+			id: "000000000000054C",
+			tasks: [{
+				id: "000000000000054D",
+				type: "item",
+				item: "botania:water_rod"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 5.5d,
+			description: ["Combining water from deep aquifers with liquid hot magma to create and draw forth raw stone from the earth. "],
+			dependencies: ["000000000000052D"],
+			id: "000000000000054E",
+			tasks: [{
+				id: "000000000000054F",
+				type: "item",
+				item: "botania:cobble_rod"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 4.5d,
+			description: [
+				"Livestock can be ... obstinate at times, only willingly eating if fed by hand. Worse, only breeding when they've had a snack. It's a wonder they've lasted this long.",
+				"",
+				"The Pollidisiac addresses this issue by driving the beasts to at least feed themselves. "
+			],
+			dependencies: ["000000000000052D"],
+			id: "0000000000000550",
+			tasks: [{
+				id: "0000000000000558",
+				type: "item",
+				item: "botania:pollidisiac"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 5.5d,
+			description: [
+				"",
+				"",
+				"The Narslimmus will absorb and process the entire Slime instead, breaking down its integral structure and releasing far more mana than could be obtained through more primitive methods."
+			],
+			dependencies: ["000000000000052D"],
+			id: "0000000000000552",
+			tasks: [{
+				id: "0000000000000553",
+				type: "item",
+				item: "botania:narslimmus"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 9.0d,
+			description: ["The mana infused in this glass provides a brilliant source of light. Peering through it reveals a hidden world to you."],
+			dependencies: ["0000000000000521"],
+			id: "0000000000000554",
+			tasks: [{
+				id: "0000000000000555",
+				type: "item",
+				item: "botania:mana_glass"
+			}]
+		},
+		{
+			title: "Sparks",
+			x: 3.5d,
+			y: 1.5d,
+			description: ["While the Livingwood casing of Mana Spreaders appear to make them very efficient at long distance channeling, they're not always the quickest method. By removing the casing, a Spark can be formed which lacks the directionality of a Spreader but makes up for it with the shear volume it can handle. "],
+			dependencies: ["0000000000000501"],
+			id: "0000000000000559",
+			tasks: [{
+				id: "000000000000055A",
+				type: "item",
+				item: "botania:spark",
+				count: 2L
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 5.5d,
+			description: [
+				"",
+				"Explore the new tools and items that are now obtainable with Elementium."
+			],
+			dependencies: ["0000000000000515"],
+			id: "000000000000057F",
+			tasks: [{
+				id: "0000000000000580",
+				type: "item",
+				item: "botania:elementium_ingot"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 5.5d,
+			description: [
+				"",
+				"Explore the new tools and items that are now obtainable with Dragonstone."
+			],
+			dependencies: ["0000000000000515"],
+			id: "0000000000000581",
+			tasks: [{
+				id: "0000000000000582",
+				type: "item",
+				item: "botania:dragonstone"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 6.0d,
+			description: [
+				"",
+				"Explore the new tools and items that are now obtainable with Pixie Dust."
+			],
+			dependencies: ["0000000000000515"],
+			id: "0000000000000583",
+			tasks: [{
+				id: "0000000000000584",
+				type: "item",
+				item: "botania:pixie_dust"
+			}]
+		},
+		{
+			title: "Spark Augments",
+			x: 4.0d,
+			y: 8.0d,
+			description: ["Spark Augments are the missing piece for more direct manipulation of mana over Spark conduits, allowing one to specify when and where the mana travels."],
+			dependencies: ["0000000000000583"],
+			id: "0000000000000585",
+			tasks: [
+				{
+					id: "0000000000000586",
+					type: "item",
+					item: "botania:spark_upgrade_recessive"
+				},
+				{
+					id: "000000000000058B",
+					type: "item",
+					item: "botania:spark_upgrade_dominant"
+				}
+			],
+			rewards: [{
+				id: "000000000000058F",
+				type: "item",
+				item: "botania:spark_changer"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 7.5d,
+			description: [
+				"",
+				"The Elementium core and Dreamwood stabilization seems capable of firing larger bursts at once, greatly enhancing throughput."
+			],
+			dependencies: ["000000000000057F"],
+			id: "0000000000000589",
+			tasks: [{
+				id: "000000000000058A",
+				type: "item",
+				item: "botania:elven_spreader"
+			}]
+		},
+		{
+			title: "Corporea Networks",
+			icon: "botania:corporea_spark_master",
+			x: 5.0d,
+			y: 7.5d,
+			description: [
+				"",
+				"The Corporea system is a powerful item management system that permits the transfer of items across long distances. Explore more by referring to the chapters on Corporea in the Lexica Botania."
+			],
+			dependencies: ["0000000000000581"],
+			id: "000000000000058C",
+			tasks: [
+				{
+					id: "000000000000058D",
+					type: "item",
+					item: "botania:corporea_index"
+				},
+				{
+					id: "000000000000058E",
+					type: "item",
+					item: "botania:corporea_spark_master"
+				}
+			],
+			rewards: [{
+				id: "0000000000000590",
+				type: "item",
+				item: "botania:corporea_spark",
+				count: 8
+			}]
+		},
+		{
+			title: "Mana Lenses",
+			x: 0.0d,
+			y: 9.5d,
+			description: [
+				"Experiments with the various Runes show that they're capable of augmenting the behaviour of Mana Spreaders as well by combining them with a Mana Lens. Furthermore, two such lenses can be permanently bonded together by pressing some slime between them. ",
+				"",
+				"Further experimentation is needed as it seems that the raw mana burst can be augmented in a striking variety of ways.",
+				"",
+				"Combine the Velocity and Potency lenses to create a composite lens, which will allow a Mana Spreader to send larger bursts that travel faster. "
+			],
+			dependencies: [
+				"0000000000000531",
+				"000000000000052F"
+			],
+			id: "0000000000000591",
+			tasks: [
+				{
+					id: "0000000000000592",
+					type: "item",
+					item: {
+						id: "botania:lens_speed",
+						Count: 1b,
+						tag: {}
+					}
+				},
+				{
+					id: "0000000000000593",
+					type: "item",
+					item: {
+						id: "botania:lens_power",
+						Count: 1b,
+						tag: {}
+					}
+				}
+			],
+			rewards: [{
+				id: "0000000000000594",
+				type: "item",
+				item: "minecraft:slime_block"
+			}]
+		},
+		{
+			icon: "mythicbotany:mana_infuser",
+			x: 8.5d,
+			y: 6.5d,
+			description: ["When exposed to an intense mana field, the materials native to Alfheim seem to spontaneously bond into a new substance in much the same way as Terrasteel is formed from native materials. "],
+			dependencies: [
+				"0000000000000582",
+				"0000000000000584",
+				"0000000000000580"
+			],
+			id: "0000000000000595",
+			tasks: [
+				{
+					id: "0000000000000596",
+					type: "item",
+					item: "mythicbotany:mana_infuser"
+				},
+				{
+					id: "000000000000059A",
+					type: "item",
+					item: "minecraft:gold_block",
+					count: 4L
+				},
+				{
+					id: "000000000000059B",
+					type: "item",
+					item: "botania:shimmerrock",
+					count: 5L
+				},
+				{
+					id: "000000000000059C",
+					type: "item",
+					item: "mythicbotany:alfsteel_ingot"
+				}
+			]
+		},
+		{
+			x: 8.5d,
+			y: 7.5d,
+			description: [
+				"",
+				"Use a Mana Spreader to send mana into the Pylon. Any items enchanted with Mending that find themselves atop the Pylon will rapidly repair at the cost of mana."
+			],
+			dependencies: ["0000000000000595"],
+			id: "0000000000000597",
+			tasks: [{
+				id: "0000000000000598",
+				type: "item",
+				item: "mythicbotany:alfsteel_pylon"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 4.0d,
+			description: [
+				"A game of simple rules, yet complex outcomes, much like the living systems it mimics. Unlocking its mysteries will provide you with enormous mana for very little input.",
+				"",
+				"Refer to the Lexica Botania for the full list of rules."
+			],
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A0",
+			tasks: [{
+				id: "00000000000005A1",
+				type: "item",
+				item: "botania:dandelifeon"
+			}],
+			rewards: [{
+				id: "00000000000005CF",
+				type: "item",
+				item: "botania:cell_block",
+				count: 8
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 4.0d,
+			description: [
+				"",
+				"Timeless Ivy can be combined with anything that's normally repairable on an anvil. Place the item, a Timeless Ivy, and three of whatever material is used to repair the item in a crafting grid to bind it. For example, a Diamond Sword would require three diamonds. "
+			],
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A2",
+			tasks: [{
+				id: "00000000000005A3",
+				type: "item",
+				item: "botaniaadditions:regen_ivy"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 3.5d,
+			description: ["The final iteration of the Mana Spreader, infused with the very essence of Gaia herself to maximize throughput. "],
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A4",
+			tasks: [{
+				id: "00000000000005A5",
+				type: "item",
+				item: "botania:gaia_spreader"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 3.5d,
+			description: ["With the potent energies of Gaia to stabilize it, a small pocket dimension can be formed to store an unreal number of items. "],
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A6",
+			tasks: [{
+				id: "00000000000005A7",
+				type: "item",
+				item: {
+					id: "botania:black_hole_talisman",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		}
+	]
+}

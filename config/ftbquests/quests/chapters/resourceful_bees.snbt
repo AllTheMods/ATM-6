@@ -1,0 +1,10 @@
+{
+	id: "07FEC2DB1A90942A",
+	group: "6614EE2378B8AFB9",
+	order_index: 0,
+	filename: "resourceful_bees",
+	title: "Resourceful Bees",
+	icon: "creativeapiary:tcreative_apiary",
+	default_quest_shape: "",
+	quests: []
+}

@@ -1,0 +1,14 @@
+{
+	id: "453076E6CA0939B1",
+	group: "02FE661031A105D8",
+	order_index: 0,
+	filename: "blood_magic",
+	title: "Blood Magic",
+	icon: {
+		id: "bloodmagic:growthsigil",
+		Count: 1b,
+		tag: {}
+	},
+	default_quest_shape: "",
+	quests: []
+}

@@ -76,6 +76,18 @@ events.listen('recipes', function(e) {
         B: 'resourcefulbees:apiary_breeder',
         N: 'kubejs:nether_star_block'
     })
+    //Exchangers
+        e.shaped('exchangers:creative_exchanger', [
+            ' E ',
+            'RSH',
+            ' U '
+        ], {
+            S: atm_star,
+            E: 'exchangers:end_exchanger',
+            H: 'exchangers:hv_exchanger',
+            U: 'exchangers:ultimate_exchanger',
+            R: 'exchangers:resonant_exchanger'
+        })
     //Rats
     e.shaped('rats:creative_cheese', [
         'CCC',

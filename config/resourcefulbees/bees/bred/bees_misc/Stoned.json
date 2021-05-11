@@ -1,0 +1,88 @@
+{
+    "flower": "tag:forge:stone",
+    "maxTimeInHive": 1200,
+    "traits": [""],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "misc/stoned_bee",
+    "ColorData": {
+        "primaryColor": "#5A5A5A",
+        "secondaryColor": "#5A5A5A",
+        "honeycombColor": "#5A5A5A",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "empty_layer",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "glowColor": "#5A5A5A",
+        "isEnchanted": false,
+        "glowingPulse": 0,
+        "modelType": "DEFAULT"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:rocky_honeycomb_block",
+            "outputs": [{
+                    "outputID": "minecraft:stone",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:rocky_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
+        }]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "minecraft:stone",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 16,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.20,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "Lava",
+        "parent2": "Cobbee",
+        "breedWeight": 10,
+        "breedChance": 0.60,
+        "feedItem": "immersiveengineering:hemp_fiber",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

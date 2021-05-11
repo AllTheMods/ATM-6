@@ -119,7 +119,10 @@ onEvent(`jei.hide.items`, e => {
         `eidolon:lead_nugget`,
 
         /resourcefulbees:.+_bee_spawn_egg/,
-        `twilightforest:uncrafting_table`
+        `twilightforest:uncrafting_table`,
+        `mob_grinding_utils:mob_swab`,
+        `mob_grinding_utils:mob_swab_used`,
+        `mob_grinding_utils:gm_chicken_feed`
     ]);
 
     colors.forEach(color => {
@@ -129,7 +132,11 @@ onEvent(`jei.hide.items`, e => {
             ]);
         });
     });
-
+    colors.forEach(color => {
+        e.hide([
+            `creativewirelesstransmitter:${color}_creative_wireless_transmitter`
+        ]);
+    });
     const hideMetal = (mod, name, types) => {
         types.forEach(type => {
             const typeFirst = ['mekanism', 'immersiveengineering'];
@@ -220,4 +227,6 @@ onEvent(`item.tooltip`, e => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
     });
     e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`]);
+    e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`]);
+    e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
 });
