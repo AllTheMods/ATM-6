@@ -250,7 +250,11 @@
     "entity.resourcefulbees.stan_bee": "Stan Bee",
     "block.resourcefulbees.starry_honeycomb_block": "Starry Honeycomb Block",
     "item.resourcefulbees.starry_honeycomb": "Starry Honeycomb",
-    "item.resourcefulbees.starry_bee_spawn_egg": "Starry Spawn Egg",
+    "item.resourcefulbees.starry_bee_spawn_egg": "Starry Bee Spawn Egg",
     "entity.resourcefulbees.starry_bee": "Starry Bee",
+    "block.resourcefulbees.dirty_honeycomb_block": "Dirty Honeycomb Block",
+    "item.resourcefulbees.dirty_honeycomb": "Dirty Honeycomb",
+    "item.resourcefulbees.dirty_bee_spawn_egg": "Dirty Bee Spawn Egg",
+    "entity.resourcefulbees.dirty_bee": "Dirty Bee",
     "trait.resourcefulbees.starry": "Starry Night Trait"
 }
