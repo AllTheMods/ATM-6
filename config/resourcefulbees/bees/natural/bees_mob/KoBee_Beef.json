@@ -44,7 +44,7 @@
         ]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false,
+        "hasCentrifugeOutput": true,
         "mainInputCount": 1,
         "mainOutput": "minecraft:beef",
         "mainOutputWeight": 0.01,
