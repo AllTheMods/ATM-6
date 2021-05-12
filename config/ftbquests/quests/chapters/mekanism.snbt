@@ -817,7 +817,7 @@
 			tasks: [{
 				id: "28D6790AD70E38BF",
 				type: "item",
-				item: "mekanism:isotopic_centrifuge"
+				item: "mekanism:solar_neutron_activator"
 			}]
 		},
 		{
@@ -832,7 +832,7 @@
 			tasks: [{
 				id: "16A7B8EA5491821A",
 				type: "item",
-				item: "mekanism:solar_neutron_activator"
+				item: "mekanism:isotopic_centrifuge"
 			}]
 		},
 		{
