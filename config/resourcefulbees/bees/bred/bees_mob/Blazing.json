@@ -43,7 +43,7 @@
         }]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false,
+        "hasCentrifugeOutput": true,
         "mainInputCount": 1,
         "mainOutput": "minecraft:blaze_rod",
         "mainOutputWeight": 0.50,
