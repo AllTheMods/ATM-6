@@ -43,7 +43,7 @@
         }]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false,
+        "hasCentrifugeOutput": true,
         "mainInputCount": 1,
         "mainOutput": "minecraft:wither_skeleton_skull",
         "mainOutputWeight": 0.01,
