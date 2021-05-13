@@ -238,7 +238,7 @@ onEvent('block.tags', e => {
     //Misc
     e.add('resourcefulbees:valid_apiary', ['#mekanismadditions:plastic_blocks', 'compactmachines:solid_wall']);
     //Flowers
-    e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block', 'astralsorcery:starmetal', 'minecraft:slime_block', 'botania:terrasteel_block', 'minecraft:hay_block', 'allthemodium:molten_bluelava_block']);
+    e.add('resourcefulbees:valid_apiary', ['biomesoplenty:flesh', 'minecraft:lava', 'botania:blaze_block', 'minecraft:magma_block', 'minecraft:clay', 'minecraft:water', 'appliedenergistics2:quartz_block', 'astralsorcery:starmetal', 'minecraft:slime_block', 'botania:terrasteel_block', 'minecraft:hay_block', 'allthemodium:molten_bluelava_block','cookingforblockheads:fridge']);
     //Immersive Engineering 
     e.add('resourcefulbees:valid_apiary', [
         /immersiveengineering:slab_sheetmetal_+/,

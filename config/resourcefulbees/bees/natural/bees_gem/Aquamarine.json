@@ -43,7 +43,7 @@
         }]
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false,
+        "hasCentrifugeOutput": true,
         "mainInputCount": 1,
         "mainOutput": "astralsorcery:aquamarine",
         "mainOutputWeight": 0.5,
@@ -83,6 +83,6 @@
         "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": true
+        "hasTraits": false
     }
 }

@@ -1,0 +1,88 @@
+{
+  "flower": "tag:forge:dirt",
+  "maxTimeInHive": 1200,
+  "traits": [""],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/dirty_bee",
+  "ColorData": {
+      "primaryColor": "#79553A",
+      "secondaryColor": "#79553A",
+      "honeycombColor": "#79553A",
+      "primaryLayerTexture": "empty_layer",
+      "secondaryLayerTexture": "empty_layer",
+      "emissiveLayerTexture": "empty_layer",
+      "isBeeColored": false,
+      "isRainbowBee": false,
+      "isGlowing": false,
+      "glowColor": "#79553A",
+      "isEnchanted": false,
+      "glowingPulse": 0,
+      "modelType": "DEFAULT"
+  },
+  "CombatData": {
+      "isPassive": true,
+      "removeStingerOnAttack": true,
+      "inflictsPoison": true,
+      "attackDamage": 1
+  },
+  "MutationData": {
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "resourcefulbees:dirty_honeycomb_block",
+          "outputs": [{
+                  "outputID": "minecraft:dirt",
+                  "weight": 80
+              },
+              {
+                  "outputID": "resourcefulbees:dirty_bee_spawn_egg",
+                  "weight": 20
+              }
+          ]
+      }]
+  },
+  "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainInputCount": 1,
+      "mainOutput": "minecraft:dirt",
+      "mainOutputWeight": 0.5,
+      "mainOutputCount": 16,
+      "mainNBTData": {},
+      "secondaryOutput": "resourcefulbees:wax",
+      "secondaryOutputWeight": 0.2,
+      "secondaryOutputCount": 1,
+      "secondaryNBTData": {},
+      "bottleOutput": "minecraft:honey_bottle",
+      "bottleOutputWeight": 0.25,
+      "bottleOutputCount": 1,
+      "bottleNBTData": {},
+      "recipeTime": 200,
+      "hasFluidOutput": false
+  },
+  "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:OVERWORLD",
+      "biomeBlacklist": "",
+      "spawnWeight": 5,
+      "minYLevel": 0,
+      "maxYLevel": 255,
+      "minGroupSize": 1,
+      "maxGroupSize": 3,
+      "lightLevel": "ANY"
+  },
+  "BreedData": {
+      "isBreedable": true,
+      "parent1": "",
+      "parent2": "",
+      "breedWeight": 10,
+      "breedChance": 0.8,
+      "feedItem": "tag:forge:dirt",
+      "feedAmount": 5,
+      "childGrowthDelay": -24000,
+      "breedDelay": 6000
+  },
+  "TraitData": {
+      "hasTraits": true
+  }
+}
