@@ -86,7 +86,7 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
+        "isBreedable": false,
         "parent1": "Quartz",
         "parent2": "Rocky",
         "breedWeight": 10,

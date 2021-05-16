@@ -86,7 +86,7 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
+        "isBreedable": false,
         "parent1": "",
         "parent2": "",
         "breedWeight": 10,
