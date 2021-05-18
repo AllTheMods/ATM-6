@@ -1,5 +1,5 @@
 {
-    "flower": "minecraft:end_crystal",
+    "flower": "minecraft:end_stone",
     "maxTimeInHive": 4800,
     "traits": [""],
     "hasHoneycomb": true,
@@ -86,7 +86,7 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
+        "isBreedable": false,
         "parent1": "",
         "parent2": "",
         "breedWeight": 10,
