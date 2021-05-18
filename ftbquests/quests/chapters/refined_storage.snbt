@@ -1,0 +1,425 @@
+{
+	id: "7502FD50B84CFAC5",
+	group: "1AC60211DE7427FC",
+	order_index: 2,
+	filename: "refined_storage",
+	title: "Refined Storage",
+	icon: "refinedstorage:construction_core",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "pentagon",
+			subtitle: "The Easier Version of AE2",
+			description: ["For people that want to take the easy route, this is the mod for you. Refined Storage and Applied Energistics 2 offer the same capabilities just with a little less damage to your mental health when it comes to RS. "],
+			size: 1.5d,
+			id: "0E54FF7699823D2B",
+			tasks: [{
+				id: "038D769CFB97AD31",
+				type: "checkmark",
+				title: "Refined Storage",
+				icon: "refinedstorage:quartz_enriched_iron"
+			}],
+			rewards: [
+				{
+					id: "410F6A0700146DA2",
+					type: "item",
+					item: "minecraft:slime_ball",
+					count: 4
+				},
+				{
+					id: "24415A74980AE174",
+					type: "item",
+					item: "minecraft:string",
+					count: 4
+				},
+				{
+					id: "76FFDFF8539D7A2C",
+					type: "item",
+					item: "refinedstorage:wrench"
+				}
+			]
+		},
+		{
+			title: "Processors",
+			icon: "refinedstorage:improved_processor",
+			x: 0.0d,
+			y: 2.0d,
+			description: ["Processors are the basic components for most RS devices. You'll need a decent supply of slime before getting into this mod."],
+			dependencies: ["0E54FF7699823D2B"],
+			id: "7B26D4214B3BD0A6",
+			tasks: [
+				{
+					id: "6D7294075BB3FCA9",
+					type: "item",
+					item: "refinedstorage:basic_processor"
+				},
+				{
+					id: "7B738A99C0661B53",
+					type: "item",
+					item: "refinedstorage:improved_processor"
+				},
+				{
+					id: "52B696134CA123D5",
+					type: "item",
+					item: "refinedstorage:advanced_processor"
+				}
+			],
+			rewards: [{
+				id: "2CD32C5AB07CBDCB",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 32
+			}]
+		},
+		{
+			title: "Controller",
+			icon: "refinedstorage:controller",
+			x: 0.0d,
+			y: 3.5d,
+			description: [
+				"The Controller is the heart of your network. It requires RF/FE power. ",
+				"",
+				"All parts, excluding wireless, must be connected via Cables. "
+			],
+			dependencies: ["7B26D4214B3BD0A6"],
+			id: "689BEBA92BD7A0C4",
+			tasks: [
+				{
+					id: "7C2069695A79F370",
+					type: "item",
+					item: "refinedstorage:controller"
+				},
+				{
+					id: "4424234555BA3F6B",
+					type: "item",
+					item: "refinedstorage:cable",
+					count: 4L
+				}
+			]
+		},
+		{
+			icon: "refinedstorage:disk_drive",
+			x: 0.0d,
+			y: 5.5d,
+			shape: "rsquare",
+			description: [
+				"To store items in your system you'll need to make a Disk Drive. The Disk Drive holds Storage Disks which come in a variety of sizes. The first you'll want to make is a 1k disk. ",
+				"",
+				"Up to ten disks can be held by the Disk Drive at a time, you can swap them in and out as you feel fit."
+			],
+			dependencies: ["689BEBA92BD7A0C4"],
+			size: 1.5d,
+			id: "7695F83DB89F669D",
+			tasks: [
+				{
+					id: "3ED0A0B6A1880419",
+					type: "item",
+					item: "refinedstorage:disk_drive"
+				},
+				{
+					id: "566846E52998438B",
+					type: "item",
+					item: "refinedstorage:1k_storage_disk"
+				}
+			],
+			rewards: [{
+				id: "6F5D94B8A9A0A094",
+				type: "item",
+				item: "refinedstorage:storage_housing",
+				count: 2
+			}]
+		},
+		{
+			title: "Long Range Storage",
+			icon: "refinedstorage:network_card",
+			x: 0.0d,
+			y: 7.0d,
+			description: [
+				"This is the solution to having multiple storage networks across hundreds of blocks.",
+				"",
+				"Place the Network Receiver at the distant location, shift-right click it with the Network Card. Place a Network Transmitter at your main network and give it the Network Card. Give it a second and you should see your main storage on the other end.",
+				"",
+				"The Transmitter must be chunloaded for any of this to work."
+			],
+			dependencies: ["7695F83DB89F669D"],
+			id: "51E471F1E0E57CCA",
+			tasks: [
+				{
+					id: "70648642A0464731",
+					type: "item",
+					item: "refinedstorage:network_receiver"
+				},
+				{
+					id: "78DD860DDA0586F0",
+					type: "item",
+					item: "refinedstorage:network_transmitter"
+				},
+				{
+					id: "27B1A02D6DB39B7A",
+					type: "item",
+					item: "refinedstorage:network_card"
+				}
+			]
+		},
+		{
+			title: "Build me up, Knock me down",
+			x: -2.0d,
+			y: 5.5d,
+			description: [
+				"Constructors can place or drop items right from your system. ",
+				"",
+				"I think Destructors are pretty obvious.."
+			],
+			dependencies: ["7695F83DB89F669D"],
+			id: "6B1EFB170165F098",
+			tasks: [
+				{
+					id: "2889F5D732615884",
+					type: "item",
+					item: "refinedstorage:constructor"
+				},
+				{
+					id: "42332033E5B82167",
+					type: "item",
+					item: "refinedstorage:destructor"
+				}
+			]
+		},
+		{
+			title: "External Storage",
+			x: -2.0d,
+			y: 3.5d,
+			description: ["If you set this up facing a normal inventory, that inventory will be treated as part of the network and its contents can be accessed as though they were on drives."],
+			dependencies: ["7695F83DB89F669D"],
+			id: "2311524C2C16E882",
+			tasks: [{
+				id: "0EE17BF45846F50E",
+				type: "item",
+				item: "refinedstorage:external_storage"
+			}],
+			rewards: [{
+				id: "2580BE18491CD024",
+				type: "item",
+				item: "industrialforegoing:common_black_hole_unit"
+			}]
+		},
+		{
+			title: "Import your Exports",
+			x: -2.0d,
+			y: 7.0d,
+			description: ["Importers automatically pull items from the connected inventory and exporters automatically push items to the connected inventory. Both can have filters and or upgrades."],
+			dependencies: ["7695F83DB89F669D"],
+			id: "2E1BCB8F790B9569",
+			tasks: [
+				{
+					id: "18A796B965F80A48",
+					type: "item",
+					item: "refinedstorage:importer"
+				},
+				{
+					id: "0C36AA4DF76D8AFE",
+					type: "item",
+					item: "refinedstorage:exporter"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: 8.5d,
+			description: ["This device is similar to the Importer and Exporter as it handles network input/output. Though it doesnt push or pull items it is a less laggy form of inputting items into the network."],
+			dependencies: ["2E1BCB8F790B9569"],
+			id: "0C690CC7199A6B07",
+			tasks: [{
+				id: "69379A51499FC110",
+				type: "item",
+				item: "refinedstorage:interface"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 5.5d,
+			description: ["The Grid is the basic version of accessing your network inventory. You can later upgrade this to be able to craft and view liquids."],
+			dependencies: ["7695F83DB89F669D"],
+			id: "0EB34DFA7F57D7BD",
+			tasks: [{
+				id: "5A249A5D5EAA845D",
+				type: "item",
+				item: "refinedstorage:grid"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 7.0d,
+			description: ["Patterns are what will store recipes for every automated crafting process you want. You can encode the pattern in the Pattern Grid and then place it in a Crafter, sit back and relax. "],
+			dependencies: ["0EB34DFA7F57D7BD"],
+			id: "43F4D66F2434C338",
+			tasks: [{
+				id: "630484808B28A9B4",
+				type: "item",
+				item: "refinedstorage:pattern",
+				count: 4L
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 9.0d,
+			shape: "rsquare",
+			description: ["The joy of autocrafting, never having to touch a crafting table again. Each crafter can hold up to nine patterns for proccessing recipes you must put down a crafter with the input facing the machine that is doing the proccessing."],
+			dependencies: ["43F4D66F2434C338"],
+			size: 1.5d,
+			id: "5AF8C3336558E5C2",
+			tasks: [{
+				id: "2CD9C56518B5EE9E",
+				type: "item",
+				item: "refinedstorage:crafter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 9.0d,
+			description: ["This device can be used to check the progress of any in-progress crafts. It will include the current progress and predicted time to finish."],
+			dependencies: ["5AF8C3336558E5C2"],
+			id: "460B1D4B8E64377E",
+			tasks: [{
+				id: "6972BEAC6F6239C4",
+				type: "item",
+				item: "refinedstorage:crafting_monitor"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 9.0d,
+			description: ["This will connect all Crafters to a single block so you dont have to go running around trying to find a crafter to fit a pattern in to. "],
+			dependencies: ["5AF8C3336558E5C2"],
+			id: "45C18B3EC33D1BB3",
+			tasks: [{
+				id: "5377AAA63B8CF6B2",
+				type: "item",
+				item: "refinedstorage:crafter_manager"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 11.0d,
+			description: ["This is for when you run out of slots in your normal Crafters and feel you need an upgraded one so you dont run out of room in your base. It has more slots than a normal Crafter and is slightly faster."],
+			dependencies: ["5AF8C3336558E5C2"],
+			id: "7FFC0E3FFFC61EAA",
+			tasks: [{
+				id: "0BD850AE9A34B0E7",
+				type: "item",
+				item: "extrastorage:iron_crafter"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 13.0d,
+			subtitle: "Is this really necessary now..?",
+			description: ["This is the overkill crafter that no one ever asked for but its here. With 81 slots its the top tier crafter that is possible to craft... for now ;)"],
+			dependencies: ["7FFC0E3FFFC61EAA"],
+			id: "264A695D2C35A8F9",
+			tasks: [{
+				id: "1CBADCFD50F23B5A",
+				type: "item",
+				item: "extrastorage:netherite_crafter"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 7.0d,
+			description: ["The most beautiful thing that was ever brought to Minecraft, a crafting grid. This is a crafting table that will retain its inventory and is connected to your network, who could ask for more?"],
+			dependencies: ["0EB34DFA7F57D7BD"],
+			id: "33ED8E6701AB73D4",
+			tasks: [{
+				id: "394ADC430E423C9B",
+				type: "item",
+				item: "refinedstorage:crafting_grid"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 5.5d,
+			description: ["Fluid Grids work a little bit differently than the rest of your network. Fluids can only be inserted/extracted via fluid container items EG a bucket"],
+			dependencies: ["0EB34DFA7F57D7BD"],
+			id: "20FE60151A6AB2BF",
+			tasks: [{
+				id: "55B68C9C31762AAE",
+				type: "item",
+				item: "refinedstorage:fluid_grid"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 3.5d,
+			description: ["This adds a way of seeing the current number of a given item or fluid in your network at a glance. Shift-right click to open a config GUI."],
+			dependencies: ["0EB34DFA7F57D7BD"],
+			id: "51091A94644F8FA2",
+			tasks: [{
+				id: "62B013D723067979",
+				type: "item",
+				item: "refinedstorage:storage_monitor"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 5.5d,
+			description: ["Well, you need storage disks to store fluid just like the rest of the network. That should come to no surprise. "],
+			dependencies: ["20FE60151A6AB2BF"],
+			id: "25B6B0CD3B9CFE93",
+			tasks: [{
+				id: "4A50CC745328F367",
+				type: "item",
+				item: "refinedstorage:1024k_fluid_storage_disk"
+			}]
+		},
+		{
+			icon: "refinedstorage:wireless_grid",
+			x: 5.5d,
+			y: 9.0d,
+			description: ["This is exactly what it sounds like, a wireless grid. This doesnt have crafting capabilities just yet. These must be charged and only work when near wireless transmitters that are hooked to your network."],
+			dependencies: ["33ED8E6701AB73D4"],
+			id: "44F94355F800E30A",
+			tasks: [
+				{
+					id: "152D87CD426A8A8C",
+					type: "item",
+					item: "refinedstorage:wireless_grid"
+				},
+				{
+					id: "58CDEFBA6282B668",
+					type: "item",
+					item: "refinedstorage:wireless_transmitter"
+				}
+			]
+		},
+		{
+			x: 7.0d,
+			y: 10.0d,
+			description: ["You dont want to have to stay within 16 blocks of the transmitter at all times do you? These little things will upgrade the range of that tremendously."],
+			dependencies: [
+				"389D0AF249BA6544",
+				"44F94355F800E30A"
+			],
+			id: "7C9C93F8590AAFB5",
+			tasks: [{
+				id: "7FB152C6526419FE",
+				type: "item",
+				item: "refinedstorage:range_upgrade",
+				count: 4L
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 10.5d,
+			description: ["Now were talking, you can now wirelessly craft and see everything in your inventory. Life couldnt get any better."],
+			dependencies: ["44F94355F800E30A"],
+			id: "389D0AF249BA6544",
+			tasks: [{
+				id: "29DF0ACAE7513D1F",
+				type: "item",
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}]
+		}
+	]
+}

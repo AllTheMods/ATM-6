@@ -1,0 +1,385 @@
+{
+	id: "0C3E6FFC1528C8EC",
+	group: "2B51AC12041E3F89",
+	order_index: 4,
+	filename: "powah",
+	title: "Powah",
+	icon: "powah:energy_cable_nitro",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -0.5d,
+			y: 0.5d,
+			id: "14C5A0C8D55795CA",
+			tasks: [{
+				id: "0724E2FA54DF06F5",
+				type: "item",
+				item: "powah:book"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -1.5d,
+			dependencies: ["14C5A0C8D55795CA"],
+			id: "4C551A6009B90E9A",
+			tasks: [{
+				id: "04F76D14F8F526D4",
+				type: "item",
+				item: "powah:dielectric_paste"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -1.0d,
+			dependencies: ["14C5A0C8D55795CA"],
+			id: "041593EFEAE50B0E",
+			tasks: [{
+				id: "3F516759EFCEDC8C",
+				type: "item",
+				item: "powah:capacitor_basic_tiny"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -2.0d,
+			dependencies: ["041593EFEAE50B0E"],
+			id: "48DB209A82A8F1EB",
+			tasks: [{
+				id: "3DFD5A5E42CBDA17",
+				type: "item",
+				item: "powah:capacitor_basic"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -3.0d,
+			dependencies: ["48DB209A82A8F1EB"],
+			id: "5289C45896BDD2D1",
+			tasks: [{
+				id: "1D629EF062717A71",
+				type: "item",
+				item: "powah:capacitor_basic_large"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -3.5d,
+			dependencies: ["4C551A6009B90E9A"],
+			id: "6B504016C21B7636",
+			tasks: [{
+				id: "766A641F898B0F55",
+				type: "item",
+				item: "powah:dielectric_rod"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -3.0d,
+			dependencies: ["4C551A6009B90E9A"],
+			id: "634FF1D7528901D5",
+			tasks: [{
+				id: "18772EA975A4AEC8",
+				type: "item",
+				item: "powah:dielectric_casing"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 0.5d,
+			description: ["Uranite is the back bone material for this mod and is used in many recipes and is used as the main fuel source for reactors"],
+			dependencies: ["14C5A0C8D55795CA"],
+			id: "16F413CBED0EA2F0",
+			tasks: [{
+				id: "50E9F439D133FFE3",
+				type: "item",
+				item: "powah:uraninite"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 2.5d,
+			description: ["This mod has tiers to almost everything the mod has to offer from power generation to power transmitting. That being said the energizing orb is your gateway to these different tiers. I wont be listing every tier of every item just beginning and last but you get the jist if you want more capabilities upgrade to a higher tier."],
+			dependencies: ["198582DFE7FEB546"],
+			id: "034A97E587D10974",
+			tasks: [{
+				id: "582DCC4138D43FC2",
+				type: "item",
+				item: "powah:energizing_orb"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 1.0d,
+			description: ["The energizing rod is used to power the energizing orb. Simply place the Rod near the orb supply it with power and a cool laser should start shooting at the orb"],
+			dependencies: ["14C5A0C8D55795CA"],
+			id: "198582DFE7FEB546",
+			tasks: [{
+				id: "0AE87BD0D1FC5209",
+				type: "item",
+				item: "powah:energizing_rod_starter"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 3.5d,
+			description: ["This is your main material needed for the hardened tier, the 3rd tier to powah in total 7."],
+			dependencies: ["034A97E587D10974"],
+			id: "558E7590339A71EC",
+			tasks: [{
+				id: "710AADAC0A79BA9A",
+				type: "item",
+				item: "powah:steel_energized"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 3.5d,
+			description: ["4th tier"],
+			dependencies: ["558E7590339A71EC"],
+			id: "4C3D19CD0E35A9CC",
+			tasks: [{
+				id: "3C313C7BE4276D99",
+				type: "item",
+				item: "powah:crystal_blazing"
+			}]
+		},
+		{
+			x: -10.0d,
+			y: 3.5d,
+			description: ["5th tier"],
+			dependencies: ["4C3D19CD0E35A9CC"],
+			id: "017673790AD986D0",
+			tasks: [{
+				id: "0ADEF95FC38F0028",
+				type: "item",
+				item: "powah:crystal_niotic"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: 3.5d,
+			description: ["6th tier"],
+			dependencies: ["017673790AD986D0"],
+			id: "56F155527E62012A",
+			tasks: [{
+				id: "48FBCA831F721F58",
+				type: "item",
+				item: "powah:crystal_spirited"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: 3.5d,
+			description: ["7th tier"],
+			dependencies: ["56F155527E62012A"],
+			id: "6FB12FBC49DD442F",
+			tasks: [{
+				id: "006DC2198C36C580",
+				type: "item",
+				item: "powah:crystal_nitro"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 5.0d,
+			description: ["Reactors are the main power source of this mod and in order to maximaize the power generation of a reactor it needs to be cooled and thats were dry ice comes in. Dry ice is the best coolant you can have in a powah reactor at the time of writing this. There are other options more early game friendly such as water but if you cant quite get your hands on dry ice just yet and want better cooling than water then look at the uses of a reactor in JEI and look for the coolants there you will find other options to your cooling needs."],
+			dependencies: ["034A97E587D10974"],
+			id: "3153A8953C157D0E",
+			tasks: [{
+				id: "35DB9AA8CB43A0A4",
+				type: "item",
+				item: "powah:dry_ice"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.0d,
+			description: ["Once you make the paste you are now able to get into the basics of this mod, this quest is here to show you the power generation options this mod has to offer."],
+			dependencies: ["4C551A6009B90E9A"],
+			id: "594CB0BACCBA447C",
+			tasks: [
+				{
+					id: "15C4180F07D37609",
+					type: "item",
+					item: "powah:furnator_starter"
+				},
+				{
+					id: "5C0D20F1549CFEA4",
+					type: "item",
+					item: "powah:reactor_starter"
+				},
+				{
+					id: "620D7751460FD0B4",
+					type: "item",
+					item: "powah:magmator_starter"
+				},
+				{
+					id: "3A84D67924CB7381",
+					type: "item",
+					item: "powah:thermo_generator_starter"
+				},
+				{
+					id: "4B1502E6BCBD611F",
+					type: "item",
+					item: "powah:solar_panel_starter"
+				}
+			]
+		},
+		{
+			x: 3.5d,
+			y: 3.0d,
+			description: ["enables wireless charging when binded with a binding card or a dimensional card."],
+			dependencies: ["5E7911E61673F854"],
+			id: "25974379F69A1DEC",
+			tasks: [{
+				id: "29A4D7B0686AA943",
+				type: "item",
+				item: "powah:player_transmitter_starter"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 3.5d,
+			description: ["allows for wireless charging in the over world"],
+			dependencies: ["25974379F69A1DEC"],
+			id: "0E04409A9BA4D058",
+			tasks: [{
+				id: "6112D9FF62D91A44",
+				type: "item",
+				item: "powah:binding_card"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 2.0d,
+			description: ["Place in a player transmitter to allow for wireless charging across dimensions"],
+			dependencies: ["0E04409A9BA4D058"],
+			id: "1677286070137ABC",
+			tasks: [{
+				id: "7DEAFB962C3ABF5F",
+				type: "item",
+				item: "powah:binding_card_dim"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 3.0d,
+			description: ["Basic energy storage can be upgraded to the other tiers."],
+			dependencies: ["14C5A0C8D55795CA"],
+			id: "602A6679A1B46EBA",
+			tasks: [{
+				id: "6CBA67F432A3F2F8",
+				type: "item",
+				item: "powah:energy_cell_starter"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 4.5d,
+			description: ["This battery if placed in a curio slot will carge anything in your inventory that requires power"],
+			dependencies: ["602A6679A1B46EBA"],
+			id: "2F9AFA8942442F1B",
+			tasks: [{
+				id: "656898E8C34BFA52",
+				type: "item",
+				item: {
+					id: "powah:battery_starter",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 6.0d,
+			description: ["works like a ender chest but with power and channels."],
+			dependencies: ["2F9AFA8942442F1B"],
+			id: "22246D56E1007E35",
+			tasks: [{
+				id: "328F9784C315BC42",
+				type: "item",
+				item: "powah:ender_cell_starter"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 2.0d,
+			description: ["Reactors will be your main source of power in this mod to run efficently they require carbon(coal), redstone, coolant and uranite."],
+			dependencies: ["558E7590339A71EC"],
+			id: "0F60460E5733B6CD",
+			tasks: [{
+				id: "0823C1830BA7A25F",
+				type: "item",
+				item: "powah:reactor_hardened"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: 5.0d,
+			dependencies: ["4C3D19CD0E35A9CC"],
+			id: "66BCF426F66C1629",
+			tasks: [{
+				id: "2ED7C8792D78FAA4",
+				type: "item",
+				item: "powah:reactor_blazing"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: 2.0d,
+			dependencies: ["017673790AD986D0"],
+			id: "7E01D0368B1FE65C",
+			tasks: [{
+				id: "5A8EDEB566AF13E5",
+				type: "item",
+				item: "powah:reactor_niotic"
+			}]
+		},
+		{
+			x: -14.0d,
+			y: 5.0d,
+			dependencies: ["56F155527E62012A"],
+			id: "445D40994E5A7A21",
+			tasks: [{
+				id: "1358792437558402",
+				type: "item",
+				item: "powah:reactor_spirited"
+			}]
+		},
+		{
+			x: -16.0d,
+			y: 2.0d,
+			description: ["The final tier of reactor."],
+			dependencies: ["6FB12FBC49DD442F"],
+			id: "0A4A1CCC08072BDB",
+			tasks: [{
+				id: "797D6B84C3D5F536",
+				type: "item",
+				item: "powah:reactor_nitro"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 2.5d,
+			dependencies: ["14C5A0C8D55795CA"],
+			id: "5E7911E61673F854",
+			tasks: [{
+				id: "67DB9493A007D671",
+				type: "item",
+				item: "powah:energy_cable_starter"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 4.0d,
+			description: ["placed along a block to act as a dimensional transporter of energy"],
+			dependencies: ["5E7911E61673F854"],
+			id: "0C85EC3B98AEC6C4",
+			tasks: [{
+				id: "54C752E6810C184E",
+				type: "item",
+				item: "powah:ender_gate_starter"
+			}]
+		}
+	]
+}

@@ -1,0 +1,366 @@
+{
+	id: "3B2CDABE39855211",
+	group: "1AC60211DE7427FC",
+	order_index: 1,
+	filename: "applied_energistics_2",
+	title: "Applied Energistics 2",
+	icon: "appliedenergistics2:engineering_processor",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Press On",
+			x: 0.0d,
+			y: 1.5d,
+			description: [
+				"These are the most essential thing Applied Energistics, they will create circuits which you can turn in to processors.",
+				"",
+				"You will be using Processors for most devices in AE2. Collect the Sky Stone as well because it will be used in recipes later on with AE."
+			],
+			dependencies: ["1E6A08F52669947D"],
+			id: "66698E784627E27E",
+			tasks: [
+				{
+					id: "1AF6FB5574AD8BFE",
+					type: "item",
+					item: "appliedenergistics2:calculation_processor_press"
+				},
+				{
+					id: "1A025F05B08B4ED3",
+					type: "item",
+					item: "appliedenergistics2:engineering_processor_press"
+				},
+				{
+					id: "5051462B6F632C8C",
+					type: "item",
+					item: "appliedenergistics2:logic_processor_press"
+				},
+				{
+					id: "49653E75D553E443",
+					type: "item",
+					item: "appliedenergistics2:silicon_press"
+				}
+			]
+		},
+		{
+			title: "Process the World",
+			x: 0.0d,
+			y: 4.5d,
+			description: ["With the Inscriber, you can combine certain circuits and redstone to make processors. These processors are used in key devices in AE2, make sure you have enough of them."],
+			dependencies: ["1BC50CE322E0D2DD"],
+			id: "1DFFEAA835C9C9D4",
+			tasks: [
+				{
+					id: "223C46FE8472D3A8",
+					type: "item",
+					item: "appliedenergistics2:engineering_processor"
+				},
+				{
+					id: "3A9ADA1F955F99D4",
+					type: "item",
+					item: "appliedenergistics2:calculation_processor"
+				},
+				{
+					id: "1F3443E45A4901D5",
+					type: "item",
+					item: "appliedenergistics2:logic_processor"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "pentagon",
+			description: ["Applied Energistics is the more complex version of Refined Storage, for the people who want more of a challenge. AE2 has channels unlike RS yet still has all the same capabilities when it comes to autocrafting, storage and importing/exporting items."],
+			size: 1.5d,
+			id: "1E6A08F52669947D",
+			tasks: [{
+				id: "628F64186DCB6231",
+				type: "checkmark",
+				title: "Applied Energistics 2",
+				icon: "appliedenergistics2:silicon"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 3.0d,
+			description: ["Used to make circuits, this is a vital machine in the Applied Energistics lineup. You will want to make multiple of these later on."],
+			dependencies: ["66698E784627E27E"],
+			id: "1BC50CE322E0D2DD",
+			tasks: [{
+				id: "7BD404E2730D8A2B",
+				type: "item",
+				item: "appliedenergistics2:inscriber"
+			}]
+		},
+		{
+			title: "Control your needs",
+			icon: "appliedenergistics2:controller",
+			x: 0.0d,
+			y: 6.0d,
+			shape: "rsquare",
+			description: ["The brain of your network. These control everything that will be hooked to it. You can have as many of these as you want with 32 channels per side."],
+			dependencies: ["1DFFEAA835C9C9D4"],
+			size: 1.5d,
+			id: "1892A6F5BC990C30",
+			tasks: [
+				{
+					id: "5BB965D456D5C90A",
+					type: "item",
+					item: "appliedenergistics2:controller"
+				},
+				{
+					id: "4249329FB0F6561A",
+					type: "item",
+					item: "appliedenergistics2:fluix_glass_cable",
+					count: 8L
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 6.0d,
+			description: ["This device will hold your storage disks which store everything you put in to your ME network. You can put up to 10 drives into this bank."],
+			dependencies: ["1892A6F5BC990C30"],
+			id: "5923A33F618B3CF5",
+			tasks: [{
+				id: "2D3D892894768E41",
+				type: "item",
+				item: "appliedenergistics2:drive"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 6.0d,
+			description: ["The first terminal of many. This is your basic access terminal in AE, it will show you everything you have stored in your ME system."],
+			dependencies: ["5923A33F618B3CF5"],
+			id: "70BCD551B5CFBD30",
+			tasks: [{
+				id: "64554BAB6523238F",
+				type: "item",
+				item: "appliedenergistics2:terminal"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 4.5d,
+			description: ["The smallest drive you can make to put in to your ME system, you can put up to 10 of these in the ME drive or you can make higher tier ones and use less space."],
+			dependencies: ["5923A33F618B3CF5"],
+			id: "4DF1FA14CBED2C4B",
+			tasks: [{
+				id: "67BF3FE3E6B162C8",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:1k_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			icon: "appliedenergistics2:import_bus",
+			x: -2.0d,
+			y: 7.5d,
+			dependencies: ["1892A6F5BC990C30"],
+			id: "795D1E88445588A2",
+			tasks: [
+				{
+					id: "48CAD9FD661585D9",
+					type: "item",
+					item: "appliedenergistics2:import_bus"
+				},
+				{
+					id: "0C2C6E3CD015615A",
+					type: "item",
+					item: "appliedenergistics2:export_bus"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: 4.5d,
+			description: [""],
+			dependencies: ["1892A6F5BC990C30"],
+			id: "754E24C8A8EC954B",
+			tasks: [
+				{
+					id: "7321DC2FBAC70FDB",
+					type: "item",
+					item: "appliedenergistics2:storage_bus"
+				},
+				{
+					id: "4BF06ED1FD85301B",
+					type: "item",
+					item: "appliedenergistics2:fluid_storage_bus"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: 9.0d,
+			dependencies: ["795D1E88445588A2"],
+			id: "2A9B31EEE7D116B8",
+			tasks: [
+				{
+					id: "2472319325DDD6C1",
+					type: "item",
+					item: "appliedenergistics2:interface"
+				},
+				{
+					id: "76982EF70CCF7998",
+					type: "item",
+					item: "appliedenergistics2:fluid_interface"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: 6.0d,
+			dependencies: ["1892A6F5BC990C30"],
+			id: "460A0A27BF370B9A",
+			tasks: [{
+				id: "312F7806EC61DA00",
+				type: "item",
+				item: "appliedenergistics2:annihilation_plane"
+			}]
+		},
+		{
+			icon: "appliedenergistics2:wireless_access_point",
+			x: 0.0d,
+			y: 7.5d,
+			description: [""],
+			dependencies: ["1892A6F5BC990C30"],
+			id: "1BB6C8CBB556F04E",
+			tasks: [
+				{
+					id: "33DD868BC5D80A22",
+					type: "item",
+					item: "appliedenergistics2:security_station"
+				},
+				{
+					id: "43C4BAEE8B59123B",
+					type: "item",
+					item: "appliedenergistics2:wireless_access_point"
+				}
+			]
+		},
+		{
+			icon: "appliedenergistics2:singularity",
+			x: 0.0d,
+			y: 9.0d,
+			dependencies: ["1BB6C8CBB556F04E"],
+			id: "3BD80C9F95C7FBF2",
+			tasks: [
+				{
+					id: "09FA012324BCEB7E",
+					type: "item",
+					item: "appliedenergistics2:quantum_ring"
+				},
+				{
+					id: "36A45987EE0E9D94",
+					type: "item",
+					item: "appliedenergistics2:quantum_link",
+					count: 8L
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: 3.0d,
+			dependencies: ["4DF1FA14CBED2C4B"],
+			id: "71434A26F9EB9968",
+			tasks: [{
+				id: "4C1BFDB2E5DDB508",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:1k_fluid_storage_cell",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 7.5d,
+			dependencies: ["5923A33F618B3CF5"],
+			id: "44C986501C308CE0",
+			tasks: [
+				{
+					id: "47CB3A5E01D61668",
+					type: "item",
+					item: "appliedenergistics2:crafting_accelerator"
+				},
+				{
+					id: "426FDB88CE13061B",
+					type: "item",
+					item: "appliedenergistics2:1k_crafting_storage"
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: 9.0d,
+			dependencies: ["44C986501C308CE0"],
+			id: "673BDC64BD176FD7",
+			tasks: [{
+				id: "46306D2707B25452",
+				type: "item",
+				item: "appliedenergistics2:molecular_assembler"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 7.5d,
+			dependencies: ["70BCD551B5CFBD30"],
+			id: "64BBE234D148198F",
+			tasks: [{
+				id: "1A4B069A7A322E20",
+				type: "item",
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 9.0d,
+			dependencies: ["64BBE234D148198F"],
+			id: "5AB01D1829B78A3E",
+			tasks: [{
+				id: "73C69DC395B8E184",
+				type: "item",
+				item: "appliedenergistics2:pattern_terminal"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 6.0d,
+			dependencies: ["70BCD551B5CFBD30"],
+			id: "54D0EB10AFBD48F1",
+			tasks: [{
+				id: "632F1D8EE4CC1579",
+				type: "item",
+				item: "appliedenergistics2:interface_terminal"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 4.5d,
+			dependencies: ["70BCD551B5CFBD30"],
+			id: "4393560E60AC0827",
+			tasks: [{
+				id: "3388D0E199715F2C",
+				type: "item",
+				item: "appliedenergistics2:fluid_terminal"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 10.5d,
+			dependencies: ["2A9B31EEE7D116B8"],
+			id: "732E2492E7D4DC46",
+			tasks: [{
+				id: "220F4B198CFB9EC5",
+				type: "item",
+				item: "appliedenergistics2:me_p2p_tunnel"
+			}]
+		}
+	]
+}

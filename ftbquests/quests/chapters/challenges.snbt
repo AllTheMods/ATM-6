@@ -1,0 +1,664 @@
+{
+	id: "0000000000000098",
+	group: "",
+	order_index: 1,
+	filename: "challenges",
+	title: "Challenges",
+	icon: "minecraft:dragon_head",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Limitless Power",
+			icon: "mininggadgets:upgrade_battery_3",
+			x: 0.5d,
+			y: 2.5d,
+			subtitle: "Infinite Cosmic Power!",
+			description: [
+				"The Ultimate Induction Cell can store up to 1.600.000.000.000 FE, also known as 1.6TFE",
+				"",
+				"To charge an Induction Cell, place it inside an Induction Cell multiblock and charge it."
+			],
+			dependencies: ["1C6E46EA96373E74"],
+			id: "4473CCD6EB0E60E0",
+			tasks: [{
+				id: "43D8479933BD78E5",
+				type: "item",
+				title: "Full Ultimate Induction Cell",
+				icon: {
+					id: "mekanism:ultimate_induction_cell",
+					Count: 1b,
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b,
+								stored: "4000000000000"
+							}]
+						}
+					}
+				},
+				item: {
+					id: "itemfilters:and",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt",
+								Count: 1b,
+								tag: {
+									value: {
+										mekData: {
+											EnergyContainers: [{
+												Container: 0b,
+												stored: "4000000000000"
+											}]
+										}
+									}
+								}
+							},
+							{
+								id: "mekanism:ultimate_induction_cell",
+								Count: 1b,
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b,
+											stored: "4000000000000"
+										}]
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		},
+		{
+			title: "Challenger",
+			icon: "minecraft:dragon_head",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "hexagon",
+			description: ["Slaying the Ender Dragon has given you access to the Challenges chapter!"],
+			size: 1.5d,
+			id: "1C6E46EA96373E74",
+			tasks: [{
+				id: "6C159C9408B0C66C",
+				type: "advancement",
+				title: "Kill the Ender Dragon",
+				icon: "minecraft:dragon_head",
+				advancement: "minecraft:end/kill_dragon",
+				criterion: ""
+			}]
+		},
+		{
+			title: "Limitless Lava",
+			x: -3.0d,
+			y: 0.0d,
+			dependencies: ["1C6E46EA96373E74"],
+			id: "64A6812D6EFF4308",
+			tasks: [{
+				id: "5484233E300B3E29",
+				type: "item",
+				title: "Supreme Black Hole Tank with Lava",
+				icon: {
+					id: "industrialforegoing:supreme_black_hole_tank",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST",
+								Pointer: 0,
+								Filter: {}
+							},
+							tank: {
+								FluidName: "minecraft:lava",
+								FacingModes: {
+									LEFT: "ENABLED",
+									TOP: "ENABLED",
+									RIGHT: "ENABLED",
+									BACK: "ENABLED",
+									FRONT: "ENABLED",
+									BOTTOM: "ENABLED"
+								},
+								Amount: 2147483647
+							}
+						}
+					}
+				},
+				item: {
+					id: "itemfilters:and",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt",
+								Count: 1b,
+								tag: {
+									value: {
+										BlockEntityTag: {
+											filter: {
+												Type: "WHITELIST",
+												Pointer: 0,
+												Filter: {}
+											},
+											tank: {
+												FluidName: "minecraft:lava",
+												FacingModes: {
+													LEFT: "ENABLED",
+													TOP: "ENABLED",
+													RIGHT: "ENABLED",
+													BACK: "ENABLED",
+													FRONT: "ENABLED",
+													BOTTOM: "ENABLED"
+												},
+												Amount: 2147483647
+											}
+										}
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:supreme_black_hole_tank",
+								Count: 1b,
+								tag: {
+									BlockEntityTag: {
+										filter: {
+											Type: "WHITELIST",
+											Pointer: 0,
+											Filter: {}
+										},
+										tank: {
+											FluidName: "minecraft:lava",
+											FacingModes: {
+												LEFT: "ENABLED",
+												TOP: "ENABLED",
+												RIGHT: "ENABLED",
+												BACK: "ENABLED",
+												FRONT: "ENABLED",
+												BOTTOM: "ENABLED"
+											},
+											Amount: 2147483647
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		},
+		{
+			title: "Limitless Water",
+			icon: {
+				id: "industrialforegoing:supreme_black_hole_tank",
+				Count: 1b,
+				tag: {
+					BlockEntityTag: {
+						filter: {
+							Type: "WHITELIST",
+							Pointer: 0,
+							Filter: {}
+						},
+						tank: {
+							FluidName: "minecraft:water",
+							FacingModes: {
+								LEFT: "ENABLED",
+								TOP: "ENABLED",
+								RIGHT: "ENABLED",
+								BACK: "ENABLED",
+								FRONT: "ENABLED",
+								BOTTOM: "ENABLED"
+							},
+							Amount: 2147483647
+						}
+					}
+				}
+			},
+			x: -3.0d,
+			y: 1.0d,
+			dependencies: ["1C6E46EA96373E74"],
+			id: "6D463AE8FE933401",
+			tasks: [{
+				id: "68B113885B76682E",
+				type: "item",
+				title: "Supreme Black Hole with Water",
+				icon: {
+					id: "industrialforegoing:supreme_black_hole_tank",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST",
+								Pointer: 0,
+								Filter: {}
+							},
+							tank: {
+								FluidName: "minecraft:water",
+								FacingModes: {
+									LEFT: "ENABLED",
+									TOP: "ENABLED",
+									RIGHT: "ENABLED",
+									BACK: "ENABLED",
+									FRONT: "ENABLED",
+									BOTTOM: "ENABLED"
+								},
+								Amount: 2147483647
+							}
+						}
+					}
+				},
+				item: {
+					id: "itemfilters:and",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt",
+								Count: 1b,
+								tag: {
+									value: {
+										BlockEntityTag: {
+											filter: {
+												Type: "WHITELIST",
+												Pointer: 0,
+												Filter: {}
+											},
+											tank: {
+												FluidName: "minecraft:water",
+												FacingModes: {
+													LEFT: "ENABLED",
+													TOP: "ENABLED",
+													RIGHT: "ENABLED",
+													BACK: "ENABLED",
+													FRONT: "ENABLED",
+													BOTTOM: "ENABLED"
+												},
+												Amount: 2147483647
+											}
+										}
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:supreme_black_hole_tank",
+								Count: 1b,
+								tag: {
+									BlockEntityTag: {
+										filter: {
+											Type: "WHITELIST",
+											Pointer: 0,
+											Filter: {}
+										},
+										tank: {
+											FluidName: "minecraft:water",
+											FacingModes: {
+												LEFT: "ENABLED",
+												TOP: "ENABLED",
+												RIGHT: "ENABLED",
+												BACK: "ENABLED",
+												FRONT: "ENABLED",
+												BOTTOM: "ENABLED"
+											},
+											Amount: 2147483647
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		},
+		{
+			title: "Limitless Oil",
+			icon: {
+				id: "industrialforegoing:supreme_black_hole_tank",
+				Count: 1b,
+				tag: {
+					BlockEntityTag: {
+						filter: {
+							Type: "WHITELIST",
+							Pointer: 0,
+							Filter: {}
+						},
+						tank: {
+							FluidName: "thermal:crude_oil",
+							FacingModes: {
+								LEFT: "ENABLED",
+								TOP: "ENABLED",
+								RIGHT: "ENABLED",
+								BACK: "ENABLED",
+								FRONT: "ENABLED",
+								BOTTOM: "ENABLED"
+							},
+							Amount: 2147483647
+						}
+					}
+				}
+			},
+			x: -3.0d,
+			y: -1.0d,
+			dependencies: ["1C6E46EA96373E74"],
+			id: "378F01CE074D79A0",
+			tasks: [{
+				id: "53630EB2AB461FE0",
+				type: "item",
+				title: "Supreme Black Hole Tank with Oil",
+				icon: {
+					id: "industrialforegoing:supreme_black_hole_tank",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST",
+								Pointer: 0,
+								Filter: {}
+							},
+							tank: {
+								FluidName: "immersivepetroleum:oil",
+								FacingModes: {
+									LEFT: "ENABLED",
+									TOP: "ENABLED",
+									RIGHT: "ENABLED",
+									BACK: "ENABLED",
+									FRONT: "ENABLED",
+									BOTTOM: "ENABLED"
+								},
+								Amount: 2147483647
+							}
+						}
+					}
+				},
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "itemfilters:and",
+								Count: 1b,
+								tag: {
+									items: [
+										{
+											id: "industrialforegoing:supreme_black_hole_tank",
+											Count: 1b,
+											tag: {
+												BlockEntityTag: {
+													filter: {
+														Type: "WHITELIST",
+														Pointer: 0,
+														Filter: {}
+													},
+													tank: {
+														FluidName: "thermal:crude_oil",
+														FacingModes: {
+															LEFT: "ENABLED",
+															TOP: "ENABLED",
+															RIGHT: "ENABLED",
+															BACK: "ENABLED",
+															FRONT: "ENABLED",
+															BOTTOM: "ENABLED"
+														},
+														Amount: 2147483647
+													}
+												}
+											}
+										},
+										{
+											id: "itemfilters:strong_nbt",
+											Count: 1b,
+											tag: {
+												value: {
+													BlockEntityTag: {
+														filter: {
+															Type: "WHITELIST",
+															Pointer: 0,
+															Filter: {}
+														},
+														tank: {
+															FluidName: "thermal:crude_oil",
+															FacingModes: {
+																LEFT: "ENABLED",
+																TOP: "ENABLED",
+																RIGHT: "ENABLED",
+																BACK: "ENABLED",
+																FRONT: "ENABLED",
+																BOTTOM: "ENABLED"
+															},
+															Amount: 2147483647
+														}
+													}
+												}
+											}
+										}
+									]
+								}
+							},
+							{
+								id: "itemfilters:and",
+								Count: 1b,
+								tag: {
+									items: [
+										{
+											id: "industrialforegoing:supreme_black_hole_tank",
+											Count: 1b,
+											tag: {
+												BlockEntityTag: {
+													filter: {
+														Type: "WHITELIST",
+														Pointer: 0,
+														Filter: {}
+													},
+													tank: {
+														FluidName: "pneumaticcraft:oil",
+														FacingModes: {
+															LEFT: "ENABLED",
+															TOP: "ENABLED",
+															RIGHT: "ENABLED",
+															BACK: "ENABLED",
+															FRONT: "ENABLED",
+															BOTTOM: "ENABLED"
+														},
+														Amount: 2147483647
+													}
+												}
+											}
+										},
+										{
+											id: "itemfilters:strong_nbt",
+											Count: 1b,
+											tag: {
+												value: {
+													BlockEntityTag: {
+														filter: {
+															Type: "WHITELIST",
+															Pointer: 0,
+															Filter: {}
+														},
+														tank: {
+															FluidName: "pneumaticcraft:oil",
+															FacingModes: {
+																LEFT: "ENABLED",
+																TOP: "ENABLED",
+																RIGHT: "ENABLED",
+																BACK: "ENABLED",
+																FRONT: "ENABLED",
+																BOTTOM: "ENABLED"
+															},
+															Amount: 2147483647
+														}
+													}
+												}
+											}
+										}
+									]
+								}
+							},
+							{
+								id: "itemfilters:and",
+								Count: 1b,
+								tag: {
+									items: [
+										{
+											id: "industrialforegoing:supreme_black_hole_tank",
+											Count: 1b,
+											tag: {
+												BlockEntityTag: {
+													filter: {
+														Type: "WHITELIST",
+														Pointer: 0,
+														Filter: {}
+													},
+													tank: {
+														FluidName: "immersivepetroleum:oil",
+														FacingModes: {
+															LEFT: "ENABLED",
+															TOP: "ENABLED",
+															RIGHT: "ENABLED",
+															BACK: "ENABLED",
+															FRONT: "ENABLED",
+															BOTTOM: "ENABLED"
+														},
+														Amount: 2147483647
+													}
+												}
+											}
+										},
+										{
+											id: "itemfilters:strong_nbt",
+											Count: 1b,
+											tag: {
+												value: {
+													BlockEntityTag: {
+														filter: {
+															Type: "WHITELIST",
+															Pointer: 0,
+															Filter: {}
+														},
+														tank: {
+															FluidName: "immersivepetroleum:oil",
+															FacingModes: {
+																LEFT: "ENABLED",
+																TOP: "ENABLED",
+																RIGHT: "ENABLED",
+																BACK: "ENABLED",
+																FRONT: "ENABLED",
+																BOTTOM: "ENABLED"
+															},
+															Amount: 2147483647
+														}
+													}
+												}
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			}]
+		},
+		{
+			title: "Infinity Tools",
+			x: -0.5d,
+			y: 2.5d,
+			description: ["That's a lot of power! But there is a way to fill these up. Find it, and these Artifacts are yours for the taking."],
+			dependencies: ["1C6E46EA96373E74"],
+			id: "17E8CDC64C0FB5EA",
+			tasks: [
+				{
+					id: "4801DE27B925DA50",
+					type: "item",
+					item: {
+						id: "industrialforegoing:infinity_drill",
+						Count: 1b,
+						tag: {
+							CanCharge: 1b,
+							Special: 0b,
+							Selected: "ARTIFACT",
+							Energy: 9223372036854775807L,
+							Fluid: {
+								FluidName: "biofuel",
+								Amount: 0
+							}
+						}
+					}
+				},
+				{
+					id: "7FD0249142690FBD",
+					type: "item",
+					item: {
+						id: "industrialforegoing:infinity_hammer",
+						Count: 1b,
+						tag: {
+							CanCharge: 1b,
+							Energy: 9223372036854775807L,
+							Fluid: {
+								FluidName: "biofuel",
+								Amount: 0
+							},
+							Special: 0b,
+							Selected: "ARTIFACT",
+							Beheading: 0
+						}
+					}
+				},
+				{
+					id: "625720B1A137C6DF",
+					type: "item",
+					item: {
+						id: "industrialforegoing:infinity_trident",
+						Count: 1b,
+						tag: {
+							CanCharge: 1b,
+							Riptide: 0,
+							Channeling: 0b,
+							Energy: 9223372036854775807L,
+							Fluid: {
+								FluidName: "biofuel",
+								Amount: 0
+							},
+							Special: 0b,
+							Selected: "ARTIFACT",
+							Loyalty: 0
+						}
+					}
+				},
+				{
+					id: "314182BBA59CFDD8",
+					type: "item",
+					item: {
+						id: "industrialforegoing:infinity_saw",
+						Count: 1b,
+						tag: {
+							CanCharge: 1b,
+							Special: 0b,
+							Selected: "ARTIFACT",
+							Energy: 9223372036854775807L,
+							Fluid: {
+								FluidName: "biofuel",
+								Amount: 0
+							}
+						}
+					}
+				},
+				{
+					id: "09A7BEA11BB1C9B1",
+					type: "item",
+					item: {
+						id: "industrialforegoing:infinity_backpack",
+						Count: 1b,
+						tag: {
+							CanCharge: 1b,
+							Special: 0b,
+							Selected: "ARTIFACT",
+							Energy: 9223372036854775807L
+						}
+					}
+				}
+			]
+		}
+	]
+}

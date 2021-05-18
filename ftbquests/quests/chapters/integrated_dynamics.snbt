@@ -1,0 +1,328 @@
+{
+	id: "29299B83AD3E6E65",
+	group: "1AC60211DE7427FC",
+	order_index: 3,
+	filename: "integrated_dynamics",
+	title: "Integrated Dynamics",
+	icon: "integrateddynamics:menril_sapling",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "pentagon",
+			description: [
+				"The goal of Integrated Dynamics is to be an easy to understand logistics system that can also act as many other things. Integrated Dynamics was born to be the go-to system to automating your logistics systems.",
+				"",
+				"This is Integrated Dynamics dumbed down, refer to the mods book for documentation if you get lost and need more help than what is described here."
+			],
+			size: 2.0d,
+			id: "4C2095C450CC486E",
+			tasks: [{
+				id: "14FAB51396155EC2",
+				type: "checkmark",
+				title: "Integrated Dynamics",
+				icon: "integrateddynamics:menril_berries"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 2.0d,
+			shape: "circle",
+			description: ["You will find Menril Saplings in Mengelin biomes, these are one of the main components of the mod. Stock up on these or make a farm of Menril trees so you wont run out."],
+			dependencies: ["4C2095C450CC486E"],
+			hide: false,
+			id: "24A840B634708072",
+			tasks: [{
+				id: "5129E4086775920B",
+				type: "item",
+				item: "integrateddynamics:menril_sapling"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 3.5d,
+			description: [
+				"These are use to get Menril Resin out of Menril Logs, put a Menril Log in the squeezer and start jumping on it. The resin will then start coming out the sides of the squeezer.",
+				"",
+				"Later on, you will be able to make a Mechanical Squeezer to ease the pain."
+			],
+			dependencies: ["24A840B634708072"],
+			id: "3D42C59EDD0A82FC",
+			tasks: [{
+				id: "1E8ABA87792F2435",
+				type: "item",
+				item: "integrateddynamics:squeezer"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 5.0d,
+			description: [
+				"Make sure you have one of these next to your squeezer so you can process the Menril Resin you just squeezed out of the log. ",
+				"",
+				"Later on, you will be able to make a Mechanical Drying Basin."
+			],
+			dependencies: ["3D42C59EDD0A82FC"],
+			id: "780D69050F85063B",
+			tasks: [{
+				id: "391D8CB2F7113F1B",
+				type: "item",
+				item: "integrateddynamics:drying_basin"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 6.5d,
+			description: ["The main goal of this mod is for building control networks for automation. This is mostly done by Logic cables. "],
+			dependencies: ["780D69050F85063B"],
+			id: "3596A77BEAB6F847",
+			tasks: [{
+				id: "0070DD54FF3B4C33",
+				type: "item",
+				item: "integrateddynamics:cable"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 7.5d,
+			description: ["Variable cards are used to store reference values in the network."],
+			dependencies: ["3596A77BEAB6F847"],
+			id: "362D6E3E2A41755F",
+			tasks: [{
+				id: "4E285AB6B9AC0627",
+				type: "item",
+				item: "integrateddynamics:variable"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 7.5d,
+			description: ["Variable Transformers are crafting components that can be placed on elements such as Logic cables to read and write these variables."],
+			dependencies: ["362D6E3E2A41755F"],
+			id: "066D70A86B55DDE7",
+			tasks: [
+				{
+					id: "224481770BAC4830",
+					type: "item",
+					item: "integrateddynamics:variable_transformer_input"
+				},
+				{
+					id: "538DF8B1FCC8EDC4",
+					type: "item",
+					item: "integrateddynamics:variable_transformer_output"
+				}
+			]
+		},
+		{
+			x: -4.0d,
+			y: 7.5d,
+			description: ["Display panels are used for reading values of Variable Cards."],
+			dependencies: ["066D70A86B55DDE7"],
+			id: "3A7A84CEB9A79DE6",
+			tasks: [{
+				id: "2AAC88F39C3FFF73",
+				type: "item",
+				item: "integrateddynamics:part_display_panel"
+			}]
+		},
+		{
+			title: "Readers",
+			icon: "integrateddynamics:part_redstone_reader",
+			x: 0.0d,
+			y: 9.0d,
+			shape: "rsquare",
+			description: ["Readers and Writers are used for many things and this is just one of them. The redstone reader is used to read the redstone value of something in-world. To put it simply what the Writer does, it will take what the Redstone Reader got from the redstone source and display it how you want it to be shown."],
+			dependencies: ["3596A77BEAB6F847"],
+			size: 1.5d,
+			id: "6159162681C01593",
+			tasks: [
+				{
+					id: "662419277B01DC0E",
+					type: "item",
+					item: "integrateddynamics:part_redstone_reader"
+				},
+				{
+					id: "3FD533560CD2BBF6",
+					type: "item",
+					item: "integrateddynamics:part_redstone_writer"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 13.0d,
+			dependencies: ["6159162681C01593"],
+			id: "1A4D78CBF3C8D732",
+			tasks: [{
+				id: "6797DC35A58D7C94",
+				type: "item",
+				item: "integrateddynamics:part_world_reader"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 12.5d,
+			dependencies: ["6159162681C01593"],
+			id: "07344AAA2B130F83",
+			tasks: [{
+				id: "686F03835D25F867",
+				type: "item",
+				item: "integrateddynamics:part_network_reader"
+			}]
+		},
+		{
+			icon: "integrateddynamics:part_machine_reader",
+			x: 1.0d,
+			y: 12.5d,
+			dependencies: ["6159162681C01593"],
+			id: "562AF87A7936269E",
+			tasks: [
+				{
+					id: "74E649992CD1ACA8",
+					type: "item",
+					item: "integrateddynamics:part_machine_reader"
+				},
+				{
+					id: "1C4E8B74B1FD82F8",
+					type: "item",
+					item: "integrateddynamics:part_machine_writer"
+				}
+			]
+		},
+		{
+			icon: "integrateddynamics:part_inventory_reader",
+			x: -2.0d,
+			y: 12.0d,
+			dependencies: ["6159162681C01593"],
+			id: "25CEE0C1057FD18C",
+			tasks: [
+				{
+					id: "6B93B842E8663F87",
+					type: "item",
+					item: "integrateddynamics:part_inventory_reader"
+				},
+				{
+					id: "422F66290A0DACBA",
+					type: "item",
+					item: "integrateddynamics:part_inventory_writer"
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 12.0d,
+			dependencies: ["6159162681C01593"],
+			id: "0E932EFF93AF348E",
+			tasks: [{
+				id: "7A99B9DBDFE9DFD1",
+				type: "item",
+				item: "integrateddynamics:part_fluid_reader"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 11.5d,
+			dependencies: ["6159162681C01593"],
+			id: "1CCB39F0FD5680B0",
+			tasks: [{
+				id: "4BF36AE7CF3C964D",
+				type: "item",
+				item: "integrateddynamics:part_extradimensional_reader"
+			}]
+		},
+		{
+			icon: "integrateddynamics:part_entity_reader",
+			x: 3.0d,
+			y: 11.5d,
+			dependencies: ["6159162681C01593"],
+			id: "682505025B93857E",
+			tasks: [
+				{
+					id: "28FF82837538CDA2",
+					type: "item",
+					item: "integrateddynamics:part_entity_reader"
+				},
+				{
+					id: "7AF8A298D53AAC64",
+					type: "item",
+					item: "integrateddynamics:part_entity_writer"
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: 10.5d,
+			dependencies: ["6159162681C01593"],
+			id: "27DED362DB8ACCFA",
+			tasks: [{
+				id: "3597C228EB3CCC53",
+				type: "item",
+				item: "integrateddynamics:part_block_reader"
+			}]
+		},
+		{
+			icon: "integrateddynamics:part_audio_reader",
+			x: 3.0d,
+			y: 10.5d,
+			dependencies: ["6159162681C01593"],
+			id: "6A4279F4C81A2B76",
+			tasks: [
+				{
+					id: "0EFFBA5297588FA4",
+					type: "item",
+					item: "integrateddynamics:part_audio_reader"
+				},
+				{
+					id: "49AD622679DE942C",
+					type: "item",
+					item: "integrateddynamics:part_audio_writer"
+				}
+			]
+		},
+		{
+			icon: "integrateddynamics:logic_programmer",
+			x: 1.5d,
+			y: 7.5d,
+			description: ["The beginning of what might be logistical heaven or nightmare. These two blocks will become your best friends throughout the time you use Integrated Dynamics. The Logistical Programmer does exactly what the name sounds like and the Variable Store does the same thing. The Variable Store stores the variables that you created in the Logistical Programmer so that your system can start to function."],
+			dependencies: ["3596A77BEAB6F847"],
+			id: "764E03E4D4CF6F23",
+			tasks: [
+				{
+					id: "652820717D27BB10",
+					type: "item",
+					item: "integrateddynamics:logic_programmer"
+				},
+				{
+					id: "0920F4CCE12AFBE7",
+					type: "item",
+					item: "integrateddynamics:variablestore"
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: 7.5d,
+			description: ["The Materializer is used to create dynamic variables instead of static ones like the ones created in the logic programmer."],
+			dependencies: ["764E03E4D4CF6F23"],
+			id: "18CFECB656A8D627",
+			tasks: [{
+				id: "6DC31DF8E3AF280B",
+				type: "item",
+				item: "integrateddynamics:materializer"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 7.5d,
+			description: ["The Proxy allows you to add an extra level of indirection to your variables."],
+			dependencies: ["18CFECB656A8D627"],
+			id: "6F714E61059E944E",
+			tasks: [{
+				id: "7E7572BFFBE3DC56",
+				type: "item",
+				item: "integrateddynamics:proxy"
+			}]
+		}
+	]
+}
