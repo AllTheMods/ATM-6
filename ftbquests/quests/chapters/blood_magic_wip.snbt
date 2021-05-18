@@ -1,5 +1,5 @@
 {
-	id: "0000000000000895",
+	id: "1A2399A9B311E21F",
 	group: "02FE661031A105D8",
 	order_index: 2,
 	filename: "blood_magic_wip",
@@ -27,13 +27,13 @@
 				"Blood Magic is currently in Beta and as such is incomplete at this time. More quests will be added as content is added. Be sure to check the book regularly as it too is a work in progress."
 			],
 			size: 2.0d,
-			id: "0000000000000896",
+			id: "729FB4D3DFC79BCF",
 			tasks: [{
-				id: "0000000000000897",
+				id: "23E06C50BE9C1A21",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: "04592CAFF9CC5FCF",
+				id: "50B7D0B714552A33",
 				type: "xp",
 				xp: 100
 			}]
@@ -55,10 +55,9 @@
 				"",
 				"It can be helpful to gather a few pieces of Demonic Will in this way. Better methods will soon present themselves. "
 			],
-			dependencies: ["000000000000089F"],
-			id: "000000000000089B",
+			id: "5C900F554E2BC857",
 			tasks: [{
-				id: "00000000000008B3",
+				id: "3AF56C314D0A8FA2",
 				type: "item",
 				item: {
 					id: "bloodmagic:basemonstersoul",
@@ -67,7 +66,7 @@
 				}
 			}],
 			rewards: [{
-				id: "000000000000089D",
+				id: "7A3C13F4C88399A2",
 				type: "item",
 				title: "Demon Will",
 				item: {
@@ -93,16 +92,15 @@
 				"",
 				"The Sanguine Scientiem has an excellent guide on empowering the Altar. For now, it will suffice to simply place the Altar anywhere, though it may be prudent to plan out a large area for future expansion."
 			],
-			dependencies: ["0000000000000896"],
 			min_width: 300,
-			id: "000000000000089F",
+			id: "4FD5F8F3AE022FEC",
 			tasks: [{
-				id: "00000000000008A0",
+				id: "69E5BB4786B34324",
 				type: "item",
 				item: "bloodmagic:altar"
 			}],
 			rewards: [{
-				id: "00000000000008C1",
+				id: "27BDB43B8AC25DC9",
 				type: "item",
 				title: "Sacrificial Knife",
 				item: {
@@ -122,10 +120,9 @@
 				"",
 				"The ashes are used to draw a sigil on the ground, and then a binder and reagent are combined within it to create powerful tokens that may be powered via the Soul Network. "
 			],
-			dependencies: ["00000000000008B4"],
-			id: "00000000000008A1",
+			id: "2C81DFA549BF9F0E",
 			tasks: [{
-				id: "00000000000008A2",
+				id: "09A66458104E01C2",
 				type: "item",
 				item: {
 					id: "bloodmagic:arcaneashes",
@@ -136,7 +133,7 @@
 				}
 			}],
 			rewards: [{
-				id: "000000000000090B",
+				id: "171D0E07CC480350",
 				type: "item",
 				title: "Sigil of the Blood Lamp",
 				item: "bloodmagic:bloodlightsigil"
@@ -151,10 +148,9 @@
 				"",
 				"As the amount of Will in a held Tartaric Gem increases, so too does the power of the tool. "
 			],
-			dependencies: ["00000000000008A6"],
-			id: "00000000000008A3",
+			id: "56C7F63DAE17FB59",
 			tasks: [{
-				id: "00000000000008A4",
+				id: "30C9B38278041D82",
 				type: "item",
 				item: {
 					id: "bloodmagic:soulsword",
@@ -165,7 +161,7 @@
 				}
 			}],
 			rewards: [{
-				id: "00000000000008A5",
+				id: "43101F07CB8EBFD8",
 				type: "item",
 				title: "Sentient Pickaxe",
 				item: {
@@ -188,10 +184,9 @@
 				"",
 				"Be sure to keep both upgraded."
 			],
-			dependencies: ["00000000000008B4"],
-			id: "00000000000008A6",
+			id: "1C3E4F52138976F0",
 			tasks: [{
-				id: "00000000000008A7",
+				id: "6418101BAFC265A8",
 				type: "item",
 				item: {
 					id: "bloodmagic:soulgempetty",
@@ -210,10 +205,9 @@
 				"",
 				"Note: Many recipes will require a high amount of will in the Hellforge, while only draining a small amount of that for the craft. If the craft doesn't begin immediately, check to be sure the minimum required will has been met."
 			],
-			dependencies: ["000000000000089B"],
-			id: "00000000000008B4",
+			id: "30400F86FD9F44E9",
 			tasks: [{
-				id: "00000000000008B5",
+				id: "0F7EC98B800F90E2",
 				type: "item",
 				item: "bloodmagic:soulforge"
 			}]
@@ -236,11 +230,10 @@
 				"",
 				"A note on Pretty Pipes: A pipe with an Extraction Module cannot input into another inventory. Two lengths of pipe are required, one to extract, and another to insert."
 			],
-			dependencies: ["000000000000089F"],
 			min_width: 300,
-			id: "00000000000008B6",
+			id: "10FE55BDC0CA46DA",
 			tasks: [{
-				id: "00000000000008B7",
+				id: "37545141F34BEADA",
 				type: "item",
 				item: "bloodmagic:blankslate"
 			}]
@@ -253,15 +246,14 @@
 				"",
 				"Hold the Orb and right click it once to bind it. Anyone using this Orb will draw from your personal Soul Network."
 			],
-			dependencies: ["000000000000089F"],
-			id: "00000000000008BF",
+			id: "2BCBE26D7C0D533A",
 			tasks: [{
-				id: "00000000000008C0",
+				id: "77ECBEB114D49F55",
 				type: "item",
 				item: "bloodmagic:weakbloodorb"
 			}],
 			rewards: [{
-				id: "00000000000008C3",
+				id: "450007D0B0DFD2A2",
 				type: "item",
 				title: "Charm of Regeneration II",
 				item: {
@@ -286,16 +278,15 @@
 				"",
 				"Be sure to upgrade your Blood Orb as well. "
 			],
-			dependencies: ["000000000000089F"],
-			id: "00000000000008C4",
+			id: "13522634357E0497",
 			tasks: [{
-				id: "00000000000008C5",
+				id: "034F2529882FC9FA",
 				type: "item",
 				item: "bloodmagic:blankrune",
 				count: 6L
 			}],
 			rewards: [{
-				id: "00000000000008C6",
+				id: "7C10D9223C90EE91",
 				type: "item",
 				title: "Speed Rune",
 				item: "bloodmagic:speedrune",
@@ -314,17 +305,16 @@
 				"",
 				"Refer to the Sanguin Scientiem for a guide on how to build the Tier 3 Altar. "
 			],
-			dependencies: ["00000000000008C4"],
-			id: "00000000000008C7",
+			id: "77D4207B4986ADF3",
 			tasks: [
 				{
-					id: "00000000000008C8",
+					id: "5DE4B22F77362793",
 					type: "item",
 					item: "bloodmagic:blankrune",
 					count: 16L
 				},
 				{
-					id: "00000000000008C9",
+					id: "00F099914CDA2C49",
 					type: "item",
 					item: "minecraft:glowstone",
 					count: 4L
@@ -332,14 +322,14 @@
 			],
 			rewards: [
 				{
-					id: "00000000000008CB",
+					id: "5076DE470E75D3FC",
 					type: "item",
 					title: "Sea Lantern",
 					item: "minecraft:sea_lantern",
 					count: 4
 				},
 				{
-					id: "00000000000008DA",
+					id: "2096C005788AC309",
 					type: "item",
 					title: "Rune of Sacrifice",
 					item: "bloodmagic:sacrificerune",
@@ -351,10 +341,9 @@
 			x: -1.5d,
 			y: 6.5d,
 			description: ["The Ritual Diviner is crucial to the construction and use of Rituals. "],
-			dependencies: ["00000000000008C7"],
-			id: "00000000000008CC",
+			id: "2C164685C5463105",
 			tasks: [{
-				id: "00000000000008CD",
+				id: "1E54462840BBD98D",
 				type: "item",
 				item: "bloodmagic:ritualdiviner"
 			}]
@@ -369,10 +358,9 @@
 				"",
 				"The Dagger of Sacrifice is used to extract LP from other entities. Be careful, it's sharp. "
 			],
-			dependencies: ["00000000000008C4"],
-			id: "00000000000008DB",
+			id: "1B88422B9560EB0A",
 			tasks: [{
-				id: "00000000000008DC",
+				id: "7638DCA922151012",
 				type: "item",
 				item: "bloodmagic:daggerofsacrifice"
 			}]
@@ -390,16 +378,15 @@
 				"",
 				"To build a Ritual, place down the Master Ritual Stone. Next, Sneak + Right Click the Ritual Diviner in the air to choose the desired ritual. Finally, with sufficient Ritual Stones in your inventory, right click the Master Ritual Stone with the Diviner to automatically place the blocks."
 			],
-			dependencies: ["00000000000008CC"],
-			id: "00000000000008DF",
+			id: "26C3104CA5235653",
 			tasks: [
 				{
-					id: "00000000000008E3",
+					id: "0209E0FE152848A3",
 					type: "item",
 					item: "bloodmagic:masterritualstone"
 				},
 				{
-					id: "00000000000008E4",
+					id: "0943E077CF3ADCBE",
 					type: "item",
 					item: "bloodmagic:ritualstone",
 					count: 8L
@@ -415,10 +402,9 @@
 				"",
 				"Once activated they will drain LP continuously, which may not always be desired. They may be turned on and off with redstone, however. "
 			],
-			dependencies: ["00000000000008DF"],
-			id: "00000000000008E5",
+			id: "2BCE77442F570EB4",
 			tasks: [{
-				id: "00000000000008E6",
+				id: "44B6C35387FA569E",
 				type: "item",
 				item: "bloodmagic:activationcrystalweak"
 			}]
@@ -433,24 +419,23 @@
 				"",
 				"As with previous tiers, check the Sanguine Scientiem for a guide on how to build the upgraded altar, and be sure to upgrade your Blood Orb."
 			],
-			dependencies: ["00000000000008C7"],
-			id: "00000000000008E7",
+			id: "15F52BD4A48B87AD",
 			tasks: [
 				{
-					id: "00000000000008E8",
+					id: "2FF16603E8F92033",
 					type: "item",
 					item: "bloodmagic:blankrune",
 					count: 28L
 				},
 				{
-					id: "000000000000090D",
+					id: "6B13896C9701B6C0",
 					type: "item",
 					item: "bloodmagic:bloodstonebrick",
 					count: 4L
 				}
 			],
 			rewards: [{
-				id: "00000000000008EC",
+				id: "01339F563CAA1040",
 				type: "item",
 				title: "Rune of Capacity",
 				item: "bloodmagic:altarcapacityrune",
@@ -466,16 +451,15 @@
 				"",
 				"By using different reagents, it can enable stronger reactions that would have been unsafe to perform in the open air. "
 			],
-			dependencies: ["00000000000008C7"],
-			id: "00000000000008E9",
+			id: "1EC83F5047691C69",
 			tasks: [
 				{
-					id: "00000000000008EA",
+					id: "74120BFD44559EF7",
 					type: "item",
 					item: "bloodmagic:alchemicalreactionchamber"
 				},
 				{
-					id: "00000000000008ED",
+					id: "7CD88405530881BE",
 					type: "item",
 					item: {
 						id: "bloodmagic:sanguinereverter",
@@ -486,7 +470,7 @@
 					}
 				},
 				{
-					id: "00000000000008EE",
+					id: "2DCCFEE2B86FD9B1",
 					type: "item",
 					item: "bloodmagic:weakbloodshard"
 				}
@@ -502,18 +486,14 @@
 				"",
 				"Excess Will may be absorb into a Tartaric Gem again by placing a Hellfire Forge in the chunk and inserting the Tartaric Gem."
 			],
-			dependencies: [
-				"00000000000008A6",
-				"00000000000008A3"
-			],
-			id: "00000000000008EF",
+			id: "70DB6CB4B7EFFEDC",
 			tasks: [{
-				id: "00000000000008F0",
+				id: "62116C21EB377F94",
 				type: "item",
 				item: "bloodmagic:demoncrucible"
 			}],
 			rewards: [{
-				id: "00000000000008F5",
+				id: "0D2D05C00949A7F5",
 				type: "item",
 				title: "Demon Will Gauge",
 				item: "bloodmagic:demonwillgauge"
@@ -532,11 +512,10 @@
 				"",
 				"There exists a specialized Dusk ritual that would assist in automating this process as well, which causes the secondary spires to fall off naturally. "
 			],
-			dependencies: ["00000000000008EF"],
 			min_width: 300,
-			id: "00000000000008F3",
+			id: "289018B51771FB5A",
 			tasks: [{
-				id: "00000000000008F4",
+				id: "06A6D5A1BA57D5CB",
 				type: "item",
 				item: "bloodmagic:demoncrystallizer"
 			}]
@@ -555,10 +534,9 @@
 				"",
 				"Resonance of the Faceted Crystal - Facilitates the growth of specialized Demon Will Crystals."
 			],
-			dependencies: ["00000000000008E7"],
-			id: "00000000000008F8",
+			id: "0AB6B0F82479E00C",
 			tasks: [{
-				id: "00000000000008F9",
+				id: "5E997B279FECECC6",
 				type: "item",
 				item: "bloodmagic:ritualdivinerdusk"
 			}]
@@ -575,28 +553,27 @@
 				"",
 				"Eventually, another crystal will form here within the bounds of the ritual. Once it has fully grown, the ritual will fragment it into its elemental essences, growing four new crystal types around it which may be harvested in the same way as the previous Demonic Will Crystals. "
 			],
-			dependencies: ["00000000000008F3"],
-			id: "00000000000008FA",
+			id: "72A086A3422F6645",
 			tasks: [
 				{
-					id: "0000000000000904",
+					id: "609552A0D5A4C481",
 					type: "item",
 					item: "bloodmagic:masterritualstone"
 				},
 				{
-					id: "0000000000000905",
+					id: "2E2C4A6EEFDDA65E",
 					type: "item",
 					item: "bloodmagic:ritualstone",
 					count: 20L
 				},
 				{
-					id: "000000000000090C",
+					id: "2D1991776E2B0F6F",
 					type: "item",
 					item: "bloodmagic:defaultcrystal"
 				}
 			],
 			rewards: [{
-				id: "00000000000009B1",
+				id: "6EE555B5A5E84B47",
 				type: "item",
 				title: "Demon Will Crystal",
 				item: "bloodmagic:defaultcrystal",
@@ -620,27 +597,26 @@
 				"",
 				"Beyond this, however, these new Demonic Wills open up entirely new avenues by way of Augmenting Rituals. Refer to the Ritual Diviner for more information on how each Will type effects each ritual. "
 			],
-			dependencies: ["00000000000008FA"],
 			min_width: 300,
-			id: "00000000000008FD",
+			id: "794C89221531920F",
 			tasks: [
 				{
-					id: "00000000000008FE",
+					id: "3F056A5AD8211E9A",
 					type: "item",
 					item: "bloodmagic:corrosivecrystal"
 				},
 				{
-					id: "00000000000008FF",
+					id: "1BB07093CE1DD38C",
 					type: "item",
 					item: "bloodmagic:vengefulcrystal"
 				},
 				{
-					id: "0000000000000900",
+					id: "1C07F318C41E3E13",
 					type: "item",
 					item: "bloodmagic:destructivecrystal"
 				},
 				{
-					id: "0000000000000901",
+					id: "6FD671586A1C5AF9",
 					type: "item",
 					item: "bloodmagic:steadfastcrystal"
 				}
@@ -654,10 +630,9 @@
 				"",
 				"Feeding the Ritual the appropriate Will types is as simple as burning those crystals in a Hellfire Forge in the same Chunk. Of course, arranging for that to happen automatically is a whole other challenge. "
 			],
-			dependencies: ["00000000000008FD"],
-			id: "0000000000000907",
+			id: "61B6DCF3E1F72967",
 			tasks: [{
-				id: "0000000000000908",
+				id: "0B327F3FB1AE5859",
 				type: "item",
 				item: "bloodmagic:ritualtinkerer"
 			}]
@@ -672,10 +647,9 @@
 				"",
 				"When seeking to automate this work bench, consider using some limiting pipe similar to the earlier Blank Slates. Inputs can be piped in the sides, while the output may be extracted from the bottom. "
 			],
-			dependencies: ["00000000000008BF"],
-			id: "0000000000000909",
+			id: "25E88FCD2F31AB95",
 			tasks: [{
-				id: "000000000000090A",
+				id: "15E76ABA1B884BB8",
 				type: "item",
 				item: "bloodmagic:alchemytable"
 			}]
@@ -689,23 +663,22 @@
 				"",
 				"Refer to the Sanguine Scientiem for more information on expanding the Incense Altar, increasing its effect. "
 			],
-			dependencies: ["000000000000089F"],
-			id: "000000000000090E",
+			id: "342271561845BA7E",
 			tasks: [
 				{
-					id: "000000000000090F",
+					id: "59D259AC658749A5",
 					type: "item",
 					item: "bloodmagic:incensealtar"
 				},
 				{
-					id: "0000000000000918",
+					id: "77B970D76429660C",
 					type: "item",
 					item: "bloodmagic:woodbrickpath",
 					count: 12L
 				}
 			],
 			rewards: [{
-				id: "0000000000000919",
+				id: "44226082866C2B38",
 				type: "item",
 				title: "Divination Sigil",
 				item: "bloodmagic:divinationsigil"
