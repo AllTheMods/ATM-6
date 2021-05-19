@@ -1,0 +1,132 @@
+{
+	id: "7A6B1CD5DE007F2B",
+	group: "",
+	order_index: 1,
+	filename: "atm",
+	title: "ATM",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -0.5d,
+			y: 1.5d,
+			id: "4548B0E30DCD59A4",
+			tasks: [{
+				id: "020B201E582AC647",
+				type: "item",
+				item: "kubejs:patrick_star"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 0.0d,
+			dependencies: [
+				"3DDF486DEE908A20",
+				"4548B0E30DCD59A4",
+				"7633927107252797",
+				"5B677F41E5A12166",
+				"3FCB14EFFBAF0C9B",
+				"4B6F6458B290F3FF",
+				"26175CD0F21263E4",
+				"7A2C6D2BF3FF5B8A",
+				"2C6B3E47676E62A4",
+				"1EAB4A302BC29CAF"
+			],
+			id: "257064EF9D295744",
+			tasks: [{
+				id: "1805981EC03970F2",
+				type: "item",
+				item: "atmadditions:atm_star"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -1.0d,
+			id: "3FCB14EFFBAF0C9B",
+			tasks: [{
+				id: "3183D4DEAB2C4F3E",
+				type: "item",
+				item: "atmadditions:nexium_emitter"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -1.0d,
+			id: "3DDF486DEE908A20",
+			tasks: [{
+				id: "04BC676867D17C75",
+				type: "item",
+				item: "atmadditions:dragon_soul"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 0.0d,
+			id: "2C6B3E47676E62A4",
+			tasks: [{
+				id: "668FDE92D3C3CF31",
+				type: "item",
+				item: "atmadditions:improbable_probability_device"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 1.0d,
+			id: "26175CD0F21263E4",
+			tasks: [{
+				id: "25ABCDE2203D6C94",
+				type: "item",
+				item: "atmadditions:oblivion_shard"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 0.0d,
+			id: "7633927107252797",
+			tasks: [{
+				id: "27348FEF99D8CB45",
+				type: "item",
+				item: "atmadditions:philosophers_fuel"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 1.0d,
+			id: "4B6F6458B290F3FF",
+			tasks: [{
+				id: "323C73CE2E9A8EAA",
+				type: "item",
+				item: "atmadditions:pulsating_black_hole"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -1.5d,
+			id: "1EAB4A302BC29CAF",
+			tasks: [{
+				id: "02762484FB7BE47F",
+				type: "item",
+				item: "atmadditions:withers_compass"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 1.5d,
+			id: "7A2C6D2BF3FF5B8A",
+			tasks: [{
+				id: "03EF1A2F1062529D",
+				type: "item",
+				item: "atmadditions:dimensional_seed"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -1.5d,
+			id: "5B677F41E5A12166",
+			tasks: [{
+				id: "32115EB5F6198E0A",
+				type: "item",
+				item: "mysticalagradditions:creative_essence"
+			}]
+		}
+	]
+}

@@ -1,0 +1,272 @@
+{
+	id: "16956970FF49BB4D",
+	group: "",
+	order_index: 2,
+	filename: "creative",
+	title: "Creative ",
+	icon: "atmadditions:atm_star",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.0d,
+			y: -1.0d,
+			description: ["Who doesn't wants a Creative Controller?"],
+			dependencies: ["238BB6ED076FF964"],
+			dependency_requirement: "all_started",
+			size: 2.0d,
+			id: "30CED5B9C295B35E",
+			tasks: [{
+				id: "31F0B27967C02BD8",
+				type: "item",
+				item: "refinedstorage:creative_controller"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 2.0d,
+			shape: "diamond",
+			description: ["This thingy is fast, faster than your mom"],
+			dependencies: ["30CED5B9C295B35E"],
+			dependency_requirement: "all_started",
+			id: "6B7DBB240C8118FE",
+			tasks: [{
+				id: "35EB9584F516588A",
+				type: "item",
+				item: "cabletiers:creative_importer"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 3.5d,
+			shape: "diamond",
+			description: ["That thingy is too fast for the police (I got arrested :/)"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "0F9109AE64212CF7",
+			tasks: [{
+				id: "058A8C0A7A5E1EC7",
+				type: "item",
+				item: "cabletiers:creative_exporter"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.5d,
+			shape: "diamond",
+			description: ["BUILD THE WORLD (or a block fast)"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "146C3E26EDEC0367",
+			tasks: [{
+				id: "327FC7484ACA80D4",
+				type: "item",
+				item: "cabletiers:creative_constructor"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 2.0d,
+			shape: "diamond",
+			description: ["DESTROY THE WORLD (or a block fast)"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "53645509B62A9CC3",
+			tasks: [{
+				id: "448B5E5CF32D35F8",
+				type: "item",
+				item: "cabletiers:creative_destructor"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -0.5d,
+			description: ["Who is tired of not having infinite Space? -Yes you"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "06D3E33E05FE772B",
+			tasks: [{
+				id: "5162E68375FD02E4",
+				type: "item",
+				item: "extradisks:infinite_storage_part"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -0.5d,
+			description: ["I think you are making something illegal"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "4308E010FFA13776",
+			tasks: [{
+				id: "6B60347B23D31266",
+				type: "item",
+				item: "extradisks:infinite_fluid_storage_part"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 0.5d,
+			description: ["Last Step for Infinite Item Storage."],
+			dependencies: ["06D3E33E05FE772B"],
+			id: "44AD57AE43B87688",
+			tasks: [{
+				id: "554522543E07DF62",
+				type: "item",
+				item: "extradisks:infinite_storage_disk"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 0.5d,
+			description: ["Last Step for Infinite Fluid Storage."],
+			dependencies: ["4308E010FFA13776"],
+			id: "0C96CC7992E0AA34",
+			tasks: [{
+				id: "4559EA6B3E990E81",
+				type: "item",
+				item: "extradisks:infinite_fluid_storage_disk"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -1.5d,
+			description: ["Pls don't build this block its useless, just use a Disk Drive"],
+			dependencies: ["06D3E33E05FE772B"],
+			id: "0A020FC07B087DC6",
+			tasks: [{
+				id: "6748222126CC16FC",
+				type: "item",
+				item: "extradisks:infinite_storage_block"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: -1.5d,
+			description: ["Pls don't build this block its useless, just use a Disk Drive"],
+			dependencies: ["4308E010FFA13776"],
+			id: "04EBABF967CDC6B9",
+			tasks: [{
+				id: "7EEEACA18EE3EC8C",
+				type: "item",
+				item: "extradisks:infinite_fluid_storage_block"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -3.0d,
+			description: ["Good for people who don't want to wait.. (like you :))"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "4D03898DBFE209BA",
+			tasks: [{
+				id: "115A3E3BEDF7A1FC",
+				type: "item",
+				item: "creativecrafter:creative_crafter"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -3.0d,
+			description: ["Who doesn't wants to have infinite Range that also works across dimensions?"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "0ABBCD2FA07815F2",
+			tasks: [{
+				id: "093509335BA2BFAD",
+				type: "item",
+				item: "creativewirelesstransmitter:creative_wireless_transmitter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -13.0d,
+			description: ["MORE RESOURCES"],
+			dependencies: ["238BB6ED076FF964"],
+			size: 2.0d,
+			id: "695EEC6AEF550449",
+			tasks: [{
+				id: "7D962F84E056C9BC",
+				type: "item",
+				item: "creativeapiary:tcreative_apiary"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -7.5d,
+			description: ["The most powerful item you can get. You need this item for nearly every Creative Crafting Recipe"],
+			dependencies: ["7A6B1CD5DE007F2B"],
+			size: 3.0d,
+			id: "238BB6ED076FF964",
+			tasks: [{
+				id: "7787EDA65C44149E",
+				type: "item",
+				item: "atmadditions:atm_star"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -14.0d,
+			description: ["MORE SLOTS"],
+			dependencies: ["695EEC6AEF550449"],
+			id: "10D9631CFB2F7E70",
+			tasks: [{
+				id: "79950B2F24578A11",
+				type: "item",
+				item: "creativeapiary:creative_apiary_storage"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -14.0d,
+			description: ["INSTANT BREEDING"],
+			dependencies: ["695EEC6AEF550449"],
+			id: "781B1AFE1BAEDB32",
+			tasks: [{
+				id: "09DE0D02E36DD837",
+				type: "item",
+				item: "creativeapiary:creative_apiary_breeder"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 4.0d,
+			description: ["No more RF for the Wireless Grid needed"],
+			dependencies: ["30CED5B9C295B35E"],
+			id: "174ABE77F6B2AE1E",
+			tasks: [{
+				id: "42877799D98896A9",
+				type: "item",
+				item: "refinedstorage:creative_wireless_grid"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 5.5d,
+			description: ["Why do you want to see your Fluids in your system?"],
+			dependencies: ["174ABE77F6B2AE1E"],
+			id: "31C7561C314412A5",
+			tasks: [{
+				id: "1790E35E4A8451C8",
+				type: "item",
+				item: "refinedstorage:creative_wireless_fluid_grid"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 6.0d,
+			description: ["Useless.. But if you want make it ¯\\_(ツ)_/¯"],
+			dependencies: ["174ABE77F6B2AE1E"],
+			id: "483120B0993728A0",
+			tasks: [{
+				id: "4D32C4F87E9FF0BB",
+				type: "item",
+				item: "refinedstorage:creative_wireless_crafting_monitor"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 5.5d,
+			description: ["BUILD THAT NOW!"],
+			dependencies: ["174ABE77F6B2AE1E"],
+			id: "4FB9FA944DEAA66A",
+			tasks: [{
+				id: "1649D5E2F2DADF9C",
+				type: "item",
+				item: "refinedstorageaddons:creative_wireless_crafting_grid"
+			}]
+		}
+	]
+}
