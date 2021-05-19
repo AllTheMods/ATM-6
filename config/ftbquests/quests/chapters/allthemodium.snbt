@@ -1,0 +1,735 @@
+{
+	id: "1B175B2C955D8395",
+	group: "",
+	order_index: 0,
+	filename: "allthemodium",
+	title: "Allthemodium",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -3.5d,
+			y: 1.5d,
+			dependencies: ["2403B59A21D2B3AF"],
+			id: "3DF54AB611650DEC",
+			tasks: [{
+				id: "422891062FB23336",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_sword",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -5.0d,
+			dependencies: ["731686C758AD9A99"],
+			dependency_requirement: "one_completed",
+			id: "5BDBE666E604FCAC",
+			tasks: [{
+				id: "75498AE05CC06F8F",
+				type: "item",
+				item: "allthemodium:allthemodium_ore"
+			}],
+			rewards: [{
+				id: "79B9F276D8F8C3F8",
+				type: "item",
+				item: "allthemodium:allthemodium_nugget"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -5.0d,
+			dependencies: ["731686C758AD9A99"],
+			dependency_requirement: "one_started",
+			id: "2DF64CB9298E91EA",
+			tasks: [{
+				id: "0F6B68E05B7B43AB",
+				type: "item",
+				item: "allthemodium:vibranium_ore"
+			}],
+			rewards: [{
+				id: "2DF58D0443FC347F",
+				type: "item",
+				item: "allthemodium:vibranium_nugget"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -5.0d,
+			dependencies: ["731686C758AD9A99"],
+			id: "4F6E6AF1D9E74CB7",
+			tasks: [{
+				id: "52CCB85E5967BF9F",
+				type: "item",
+				item: "allthemodium:unobtainium_ore"
+			}],
+			rewards: [{
+				id: "088E6395809A89F6",
+				type: "item",
+				item: "allthemodium:unobtainium_nugget"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -2.0d,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "2CC97CF32D9C017B",
+			tasks: [{
+				id: "07FF0DC32B705DCC",
+				type: "item",
+				item: "ironfurnaces:allthemodium_furnace"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -4.5d,
+			dependencies: ["5BDBE666E604FCAC"],
+			id: "04AB01C841CD3E3F",
+			tasks: [{
+				id: "2F97DA30FE1982CF",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:allthemodium_sight"
+					}
+				}
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -4.0d,
+			dependencies: ["5BDBE666E604FCAC"],
+			dependency_requirement: "one_completed",
+			id: "71A43C89EB13E9A0",
+			tasks: [{
+				id: "6A101A8056AC9A3A",
+				type: "item",
+				item: "allthemodium:allthemodium_ingot"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -3.0d,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "4F08DCAC86C3C8E3",
+			tasks: [{
+				id: "2FBE8D7E3E54357A",
+				type: "item",
+				item: "solarflux:sp_custom_allthemodium"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -4.5d,
+			dependencies: ["2DF64CB9298E91EA"],
+			id: "7496DB58411060AE",
+			tasks: [{
+				id: "0C83388DB2387448",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:vibranium_sight"
+					}
+				}
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -4.5d,
+			dependencies: ["4F6E6AF1D9E74CB7"],
+			id: "76016E5C8C9397D2",
+			tasks: [{
+				id: "238E353C6A05F0A3",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:unobtainium_sight"
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -4.0d,
+			dependencies: ["2DF64CB9298E91EA"],
+			id: "61FDABF2C7CC1F9D",
+			tasks: [{
+				id: "61761B6C1D1542FD",
+				type: "item",
+				item: "allthemodium:vibranium_ingot"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			dependencies: ["4F6E6AF1D9E74CB7"],
+			id: "4F23CB27606EDD78",
+			tasks: [{
+				id: "2673FC8D2F0DB1F5",
+				type: "item",
+				item: "allthemodium:unobtainium_ingot"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -1.0d,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "3D6EFB3C35D50091",
+			tasks: [{
+				id: "392D3D1ADCD17B94",
+				type: "item",
+				item: {
+					id: "ironjetpacks:allthemodium_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -2.0d,
+			dependencies: ["61FDABF2C7CC1F9D"],
+			id: "5CA0BA27F9C537B2",
+			tasks: [{
+				id: "0B2932972CD2E73E",
+				type: "item",
+				item: "ironfurnaces:vibranium_furnace"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -3.0d,
+			dependencies: ["61FDABF2C7CC1F9D"],
+			id: "794057DF3614A59E",
+			tasks: [{
+				id: "494CAA9FBE72C3FA",
+				type: "item",
+				item: "solarflux:sp_custom_vibranium"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -1.0d,
+			dependencies: ["61FDABF2C7CC1F9D"],
+			id: "4D3DD44BEDA715BA",
+			tasks: [{
+				id: "7E31EC075DBB3741",
+				type: "item",
+				item: {
+					id: "ironjetpacks:vibranium_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -1.0d,
+			dependencies: ["4F23CB27606EDD78"],
+			id: "4D24742EB7E480FD",
+			tasks: [{
+				id: "0F521F7C1D602AAD",
+				type: "item",
+				item: {
+					id: "ironjetpacks:unobtainium_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.0d,
+			dependencies: ["4F23CB27606EDD78"],
+			id: "630255EA7104D1E1",
+			tasks: [{
+				id: "499F0061A2D1B220",
+				type: "item",
+				item: "solarflux:sp_custom_unobtainium"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.0d,
+			dependencies: ["4F23CB27606EDD78"],
+			id: "1AFDB3AE73E72A33",
+			tasks: [{
+				id: "579B48ABB0CBD18A",
+				type: "item",
+				item: "ironfurnaces:unobtainium_furnace"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -3.5d,
+			dependencies: ["04AB01C841CD3E3F"],
+			id: "6CDAE6626ACA1897",
+			tasks: [{
+				id: "0F12B54714A6E502",
+				type: "item",
+				item: {
+					id: "apotheosis:potion_charm",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						Potion: "potionsmaster:allthemodium_sight"
+					}
+				}
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -3.5d,
+			dependencies: ["7496DB58411060AE"],
+			id: "479B9579742354E1",
+			tasks: [{
+				id: "52C5601FBBA7966C",
+				type: "item",
+				item: {
+					id: "apotheosis:potion_charm",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						Potion: "potionsmaster:vibranium_sight"
+					}
+				}
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -3.5d,
+			dependencies: ["76016E5C8C9397D2"],
+			id: "2D76BDEC76B0C788",
+			tasks: [{
+				id: "7EBAE80EDF561AF2",
+				type: "item",
+				item: {
+					id: "apotheosis:potion_charm",
+					Count: 1b,
+					tag: {
+						Damage: 0,
+						Potion: "potionsmaster:unobtainium_sight"
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -2.5d,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "37561407B7D8D952",
+			tasks: [{
+				id: "217D70FF90F36EF5",
+				type: "item",
+				item: "resourcefulbees:allthemodium_honeycomb"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -2.5d,
+			dependencies: ["61FDABF2C7CC1F9D"],
+			id: "6BAA3137C9674E7F",
+			tasks: [{
+				id: "583DD954B43E92FE",
+				type: "item",
+				item: "resourcefulbees:vibranium_honeycomb"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -2.5d,
+			dependencies: ["4F23CB27606EDD78"],
+			id: "25884CEF41F8AABC",
+			tasks: [{
+				id: "1C120189C0DFD703",
+				type: "item",
+				item: "resourcefulbees:unobtainium_honeycomb"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 2.5d,
+			dependencies: ["2403B59A21D2B3AF"],
+			id: "2AF6901685445541",
+			tasks: [{
+				id: "14331565838B5753",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_pick",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 2.5d,
+			dependencies: [
+				"5A9C8F63CE469155",
+				"3DF54AB611650DEC",
+				"2AF6901685445541",
+				"768A30A300FCE0F3"
+			],
+			id: "6ECF485F071CC8C3",
+			tasks: [{
+				id: "6854D75DEBE29D3C",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_paxel",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 3.5d,
+			dependencies: ["2403B59A21D2B3AF"],
+			id: "5A9C8F63CE469155",
+			tasks: [{
+				id: "07002227A9F5DC62",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_axe",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 2.5d,
+			dependencies: ["2403B59A21D2B3AF"],
+			id: "768A30A300FCE0F3",
+			tasks: [{
+				id: "56A2A29B47FA027C",
+				type: "item",
+				item: {
+					id: "allthemodium:alloy_shovel",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 0.5d,
+			dependencies: [
+				"61761B6C1D1542FD",
+				"6A101A8056AC9A3A"
+			],
+			id: "1992480C3D44D959",
+			tasks: [{
+				id: "3F8EB59495D407FA",
+				type: "item",
+				item: "allthemodium:vibranium_allthemodium_alloy_ingot"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 0.5d,
+			dependencies: [
+				"61761B6C1D1542FD",
+				"2673FC8D2F0DB1F5"
+			],
+			id: "6459F9A1F845A049",
+			tasks: [{
+				id: "2403B59A21D2B3AF",
+				type: "item",
+				item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 0.5d,
+			dependencies: [
+				"6A101A8056AC9A3A",
+				"2673FC8D2F0DB1F5"
+			],
+			id: "1D3C4B41BD512EF7",
+			tasks: [{
+				id: "0F3803B82A460772",
+				type: "item",
+				item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -1.5d,
+			dependencies: ["26296F815ACC04BE"],
+			id: "1BF186347C4683B3",
+			tasks: [{
+				id: "5CCD462442A9CBC9",
+				type: "item",
+				item: {
+					id: "allthemodium:allthemodium_boots",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -2.5d,
+			dependencies: ["4C7718982E78D7A2"],
+			id: "26296F815ACC04BE",
+			tasks: [{
+				id: "7CE4D8C55D2A92A8",
+				type: "item",
+				item: {
+					id: "allthemodium:allthemodium_leggings",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -3.5d,
+			dependencies: ["29637BD992599915"],
+			id: "4C7718982E78D7A2",
+			tasks: [{
+				id: "4979179C2D56C137",
+				type: "item",
+				item: {
+					id: "allthemodium:allthemodium_chestplate",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -4.5d,
+			dependencies: ["71A43C89EB13E9A0"],
+			dependency_requirement: "one_completed",
+			id: "29637BD992599915",
+			tasks: [{
+				id: "6F0BA8751E4F963A",
+				type: "item",
+				item: {
+					id: "allthemodium:allthemodium_helmet",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -4.5d,
+			dependencies: ["61FDABF2C7CC1F9D"],
+			id: "3AD52402D8E8DD26",
+			tasks: [{
+				id: "318FE9EB4C76A8EC",
+				type: "item",
+				item: {
+					id: "allthemodium:vibranium_helmet",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -4.5d,
+			dependencies: ["2673FC8D2F0DB1F5"],
+			id: "172E838FFEC67A70",
+			tasks: [{
+				id: "6B7216A17814B466",
+				type: "item",
+				item: {
+					id: "allthemodium:unobtainium_helmet",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -3.5d,
+			dependencies: ["3AD52402D8E8DD26"],
+			id: "7B3AB687F4C93A34",
+			tasks: [{
+				id: "7B3CDD0509D01AAE",
+				type: "item",
+				item: {
+					id: "allthemodium:vibranium_chestplate",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -2.5d,
+			dependencies: ["7B3AB687F4C93A34"],
+			id: "75739214ED76F5EB",
+			tasks: [{
+				id: "1FC0BDF4415EB2DA",
+				type: "item",
+				item: {
+					id: "allthemodium:vibranium_leggings",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -1.5d,
+			dependencies: ["75739214ED76F5EB"],
+			id: "2EB6FFC8ECE83EA5",
+			tasks: [{
+				id: "257AC90DE43522E3",
+				type: "item",
+				item: {
+					id: "allthemodium:vibranium_boots",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -3.5d,
+			dependencies: ["172E838FFEC67A70"],
+			id: "20E127419D6C8D4F",
+			tasks: [{
+				id: "6CF03B6572FC417E",
+				type: "item",
+				item: {
+					id: "allthemodium:unobtainium_chestplate",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -2.5d,
+			dependencies: ["20E127419D6C8D4F"],
+			id: "0DA107D16D5D56AA",
+			tasks: [{
+				id: "394BBD6916C7E6CF",
+				type: "item",
+				item: {
+					id: "allthemodium:unobtainium_leggings",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -1.5d,
+			dependencies: ["0DA107D16D5D56AA"],
+			id: "751C6906C49E6E41",
+			tasks: [{
+				id: "74597E29E1ED9CFF",
+				type: "item",
+				item: {
+					id: "allthemodium:unobtainium_boots",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -6.5d,
+			id: "731686C758AD9A99",
+			tasks: [{
+				id: "71D1672A82D08E89",
+				type: "item",
+				item: {
+					id: "patchouli:guide_book",
+					Count: 1b,
+					tag: {
+						"patchouli:book": "allthemodium:allthemodium"
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -1.5d,
+			dependencies: ["37561407B7D8D952"],
+			id: "4DB7AB98161AC064",
+			tasks: [{
+				id: "4A5DA941C0DAC273",
+				type: "item",
+				item: "mysticalagriculture:allthemodium_seeds"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -1.5d,
+			dependencies: ["6BAA3137C9674E7F"],
+			id: "48A776F5F3D35B23",
+			tasks: [{
+				id: "69579871C1D8E1C1",
+				type: "item",
+				item: "mysticalagriculture:vibranium_seeds"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -1.5d,
+			dependencies: ["25884CEF41F8AABC"],
+			id: "55FC612B6B92629F",
+			tasks: [{
+				id: "549B21412588BDFC",
+				type: "item",
+				item: "mysticalagriculture:unobtainium_seeds"
+			}]
+		}
+	]
+}

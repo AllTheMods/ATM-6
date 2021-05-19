@@ -1,10 +1,10 @@
 {
 	id: "16956970FF49BB4D",
-	group: "264AAD9C33AF29A5",
-	order_index: 0,
+	group: "",
+	order_index: 2,
 	filename: "creative",
 	title: "Creative ",
-	icon: "simplyjetpacks:jetpack_creative",
+	icon: "atmadditions:atm_star",
 	default_quest_shape: "",
 	quests: [
 		{
@@ -101,7 +101,7 @@
 		{
 			x: -6.0d,
 			y: 0.5d,
-			description: ["Last Step for Infinite Space"],
+			description: ["Last Step for Infinite Item Storage."],
 			dependencies: ["06D3E33E05FE772B"],
 			id: "44AD57AE43B87688",
 			tasks: [{
@@ -113,7 +113,7 @@
 		{
 			x: 6.5d,
 			y: 0.5d,
-			description: ["Last Step for Infinite Fluid Space"],
+			description: ["Last Step for Infinite Fluid Storage."],
 			dependencies: ["4308E010FFA13776"],
 			id: "0C96CC7992E0AA34",
 			tasks: [{
@@ -149,7 +149,7 @@
 		{
 			x: -3.0d,
 			y: -3.0d,
-			description: ["Good for people who doesn't want to wait.. (like you :))"],
+			description: ["Good for people who don't want to wait.. (like you :))"],
 			dependencies: ["30CED5B9C295B35E"],
 			id: "4D03898DBFE209BA",
 			tasks: [{
@@ -186,7 +186,8 @@
 		{
 			x: 0.0d,
 			y: -7.5d,
-			description: ["You need this item for nearly every Creative Crafting Recipe"],
+			description: ["The most powerful item you can get. You need this item for nearly every Creative Crafting Recipe"],
+			dependencies: ["7A6B1CD5DE007F2B"],
 			size: 3.0d,
 			id: "238BB6ED076FF964",
 			tasks: [{
