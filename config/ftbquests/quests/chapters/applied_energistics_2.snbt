@@ -1,7 +1,7 @@
 {
 	id: "3B2CDABE39855211",
 	group: "1AC60211DE7427FC",
-	order_index: 1,
+	order_index: 0,
 	filename: "applied_energistics_2",
 	title: "Applied Energistics 2",
 	icon: "appliedenergistics2:engineering_processor",
