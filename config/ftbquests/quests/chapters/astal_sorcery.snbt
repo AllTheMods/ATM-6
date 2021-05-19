@@ -1,7 +1,7 @@
 {
 	id: "70AE2F21054AD796",
 	group: "02FE661031A105D8",
-	order_index: 1,
+	order_index: 0,
 	filename: "astal_sorcery",
 	title: "Astral Sorcery",
 	icon: "astralsorcery:starmetal_ingot",
