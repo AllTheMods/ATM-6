@@ -14,6 +14,11 @@
 				id: "020B201E582AC647",
 				type: "item",
 				item: "kubejs:patrick_star"
+			}],
+			rewards: [{
+				id: "12CAAD4E3A41127F",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -36,6 +41,12 @@
 				id: "1805981EC03970F2",
 				type: "item",
 				item: "atmadditions:atm_star"
+			}],
+			rewards: [{
+				id: "2E9A520DEC8C27C1",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem",
+				count: 2
 			}]
 		},
 		{
@@ -46,6 +57,11 @@
 				id: "3183D4DEAB2C4F3E",
 				type: "item",
 				item: "atmadditions:nexium_emitter"
+			}],
+			rewards: [{
+				id: "0941901F4B5EE1C4",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -56,6 +72,11 @@
 				id: "04BC676867D17C75",
 				type: "item",
 				item: "atmadditions:dragon_soul"
+			}],
+			rewards: [{
+				id: "5F008E41DD00B16F",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -66,6 +87,11 @@
 				id: "668FDE92D3C3CF31",
 				type: "item",
 				item: "atmadditions:improbable_probability_device"
+			}],
+			rewards: [{
+				id: "6C15B7FBA87B96D9",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -76,6 +102,11 @@
 				id: "25ABCDE2203D6C94",
 				type: "item",
 				item: "atmadditions:oblivion_shard"
+			}],
+			rewards: [{
+				id: "388D90F741B5B0F8",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -86,6 +117,11 @@
 				id: "27348FEF99D8CB45",
 				type: "item",
 				item: "atmadditions:philosophers_fuel"
+			}],
+			rewards: [{
+				id: "669C3B858C7D2814",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -96,6 +132,11 @@
 				id: "323C73CE2E9A8EAA",
 				type: "item",
 				item: "atmadditions:pulsating_black_hole"
+			}],
+			rewards: [{
+				id: "7D12D645F5CB2813",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -106,6 +147,11 @@
 				id: "02762484FB7BE47F",
 				type: "item",
 				item: "atmadditions:withers_compass"
+			}],
+			rewards: [{
+				id: "545E189962BEFB1E",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -116,6 +162,11 @@
 				id: "03EF1A2F1062529D",
 				type: "item",
 				item: "atmadditions:dimensional_seed"
+			}],
+			rewards: [{
+				id: "79E9954DA4DE4282",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		},
 		{
@@ -126,6 +177,11 @@
 				id: "32115EB5F6198E0A",
 				type: "item",
 				item: "mysticalagradditions:creative_essence"
+			}],
+			rewards: [{
+				id: "51E7B49C797D47B5",
+				type: "item",
+				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 	]

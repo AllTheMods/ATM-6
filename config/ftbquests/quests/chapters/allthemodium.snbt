@@ -21,11 +21,17 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "71E83AB29CA31128",
+				type: "item",
+				item: "forbidden_arcanus:stellarite_piece"
 			}]
 		},
 		{
 			x: -7.0d,
 			y: -5.0d,
+			description: ["Find this ore in any ocean biome between Y5 to Y45."],
 			dependencies: ["731686C758AD9A99"],
 			dependency_requirement: "one_completed",
 			id: "5BDBE666E604FCAC",
@@ -43,6 +49,7 @@
 		{
 			x: -3.5d,
 			y: -5.0d,
+			description: ["Find this ore in the Nethers Warped Forests and Crimson Forests between Y107 to Y113."],
 			dependencies: ["731686C758AD9A99"],
 			dependency_requirement: "one_started",
 			id: "2DF64CB9298E91EA",
@@ -60,6 +67,7 @@
 		{
 			x: 0.0d,
 			y: -5.0d,
+			description: ["Find this obtainable ore in the End Highlands biome."],
 			dependencies: ["731686C758AD9A99"],
 			id: "4F6E6AF1D9E74CB7",
 			tasks: [{
@@ -76,17 +84,24 @@
 		{
 			x: -7.0d,
 			y: -2.0d,
+			description: ["Now that is a fast furnace!"],
 			dependencies: ["71A43C89EB13E9A0"],
 			id: "2CC97CF32D9C017B",
 			tasks: [{
 				id: "07FF0DC32B705DCC",
 				type: "item",
 				item: "ironfurnaces:allthemodium_furnace"
+			}],
+			rewards: [{
+				id: "434234EED2F21388",
+				type: "item",
+				item: "ironfurnaces:heater"
 			}]
 		},
 		{
 			x: -6.0d,
 			y: -4.5d,
+			description: ["It is recommended to use this potion with your first ingot. "],
 			dependencies: ["5BDBE666E604FCAC"],
 			id: "04AB01C841CD3E3F",
 			tasks: [{
@@ -99,11 +114,23 @@
 						Potion: "potionsmaster:allthemodium_sight"
 					}
 				}
+			}],
+			rewards: [{
+				id: "0ECCA5C5897A6ADE",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:coal_sight"
+					}
+				}
 			}]
 		},
 		{
 			x: -7.0d,
 			y: -4.0d,
+			description: ["Don't underestimate my power!"],
 			dependencies: ["5BDBE666E604FCAC"],
 			dependency_requirement: "one_completed",
 			id: "71A43C89EB13E9A0",
@@ -111,22 +138,34 @@
 				id: "6A101A8056AC9A3A",
 				type: "item",
 				item: "allthemodium:allthemodium_ingot"
+			}],
+			rewards: [{
+				id: "73C21670B55648AF",
+				type: "item",
+				item: "allthemodium:allthemodium_nugget"
 			}]
 		},
 		{
 			x: -7.0d,
 			y: -3.0d,
+			description: ["This solar panel produces 2,048 FE/Tick."],
 			dependencies: ["71A43C89EB13E9A0"],
 			id: "4F08DCAC86C3C8E3",
 			tasks: [{
 				id: "2FBE8D7E3E54357A",
 				type: "item",
 				item: "solarflux:sp_custom_allthemodium"
+			}],
+			rewards: [{
+				id: "3F0219C35EF7BDDA",
+				type: "item",
+				item: "pipez:energy_pipe"
 			}]
 		},
 		{
 			x: -2.5d,
 			y: -4.5d,
+			description: ["It is recommended to use this potion with your first ingot. "],
 			dependencies: ["2DF64CB9298E91EA"],
 			id: "7496DB58411060AE",
 			tasks: [{
@@ -139,11 +178,23 @@
 						Potion: "potionsmaster:vibranium_sight"
 					}
 				}
+			}],
+			rewards: [{
+				id: "012AF629D69BE0A8",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:redstone_sight"
+					}
+				}
 			}]
 		},
 		{
 			x: 1.0d,
 			y: -4.5d,
+			description: ["It is recommended to use this potion with your first ingot. "],
 			dependencies: ["4F6E6AF1D9E74CB7"],
 			id: "76016E5C8C9397D2",
 			tasks: [{
@@ -156,26 +207,49 @@
 						Potion: "potionsmaster:unobtainium_sight"
 					}
 				}
+			}],
+			rewards: [{
+				id: "105EF9E3FD9CF783",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:iron_sight"
+					}
+				}
 			}]
 		},
 		{
 			x: -3.5d,
 			y: -4.0d,
+			description: ["With great power comes.. well something."],
 			dependencies: ["2DF64CB9298E91EA"],
 			id: "61FDABF2C7CC1F9D",
 			tasks: [{
 				id: "61761B6C1D1542FD",
 				type: "item",
 				item: "allthemodium:vibranium_ingot"
+			}],
+			rewards: [{
+				id: "44CF4A0D641812F8",
+				type: "item",
+				item: "allthemodium:vibranium_nugget"
 			}]
 		},
 		{
 			x: 0.0d,
 			y: -4.0d,
+			description: ["Unlimited Power!"],
 			dependencies: ["4F6E6AF1D9E74CB7"],
 			id: "4F23CB27606EDD78",
 			tasks: [{
 				id: "2673FC8D2F0DB1F5",
+				type: "item",
+				item: "allthemodium:unobtainium_ingot"
+			}],
+			rewards: [{
+				id: "3DBC11C23965ECCA",
 				type: "item",
 				item: "allthemodium:unobtainium_ingot"
 			}]
@@ -195,28 +269,45 @@
 						Throttle: 1.0d
 					}
 				}
+			}],
+			rewards: [{
+				id: "471186A049CD9353",
+				type: "item",
+				item: "ironjetpacks:ultimate_coil"
 			}]
 		},
 		{
 			x: -3.5d,
 			y: -2.0d,
+			description: ["How fast can this possibly get!?"],
 			dependencies: ["61FDABF2C7CC1F9D"],
 			id: "5CA0BA27F9C537B2",
 			tasks: [{
 				id: "0B2932972CD2E73E",
 				type: "item",
 				item: "ironfurnaces:vibranium_furnace"
+			}],
+			rewards: [{
+				id: "75920A94628447C9",
+				type: "item",
+				item: "ironfurnaces:item_heater"
 			}]
 		},
 		{
 			x: -3.5d,
 			y: -3.0d,
+			description: ["This solar panel produces 8,129 FE/Tick."],
 			dependencies: ["61FDABF2C7CC1F9D"],
 			id: "794057DF3614A59E",
 			tasks: [{
 				id: "494CAA9FBE72C3FA",
 				type: "item",
 				item: "solarflux:sp_custom_vibranium"
+			}],
+			rewards: [{
+				id: "4522676E78278993",
+				type: "item",
+				item: "pipez:ultimate_upgrade"
 			}]
 		},
 		{
@@ -234,6 +325,11 @@
 						Throttle: 1.0d
 					}
 				}
+			}],
+			rewards: [{
+				id: "475DE91B81F36C4C",
+				type: "item",
+				item: "ironjetpacks:unobtainium_cell"
 			}]
 		},
 		{
@@ -251,33 +347,60 @@
 						Throttle: 1.0d
 					}
 				}
+			}],
+			rewards: [{
+				id: "7036B8794E65EF86",
+				type: "item",
+				item: {
+					id: "minecraft:enchanted_book",
+					Count: 1b,
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s,
+							id: "ensorcellation:soulbound"
+						}]
+					}
+				}
 			}]
 		},
 		{
 			x: 0.0d,
 			y: -3.0d,
+			description: ["This solar panel produces 32,768 FE/Tick."],
 			dependencies: ["4F23CB27606EDD78"],
 			id: "630255EA7104D1E1",
 			tasks: [{
 				id: "499F0061A2D1B220",
 				type: "item",
 				item: "solarflux:sp_custom_unobtainium"
+			}],
+			rewards: [{
+				id: "56FCA4E8D9B742E4",
+				type: "item",
+				item: "compressium:redstone_4"
 			}]
 		},
 		{
 			x: 0.0d,
 			y: -2.0d,
+			description: ["Now you are just showing off."],
 			dependencies: ["4F23CB27606EDD78"],
 			id: "1AFDB3AE73E72A33",
 			tasks: [{
 				id: "579B48ABB0CBD18A",
 				type: "item",
 				item: "ironfurnaces:unobtainium_furnace"
+			}],
+			rewards: [{
+				id: "3BE998CE25785795",
+				type: "item",
+				item: "ironfurnaces:rainbow_coal"
 			}]
 		},
 		{
 			x: -6.0d,
 			y: -3.5d,
+			description: ["Almost cheating at this point."],
 			dependencies: ["04AB01C841CD3E3F"],
 			id: "6CDAE6626ACA1897",
 			tasks: [{
@@ -291,11 +414,17 @@
 						Potion: "potionsmaster:allthemodium_sight"
 					}
 				}
+			}],
+			rewards: [{
+				id: "2C51C7F63194A4C1",
+				type: "item",
+				item: "allthemodium:allthemodium_ingot"
 			}]
 		},
 		{
 			x: -2.5d,
 			y: -3.5d,
+			description: ["My god this stuff is a lot more commen then I thought."],
 			dependencies: ["7496DB58411060AE"],
 			id: "479B9579742354E1",
 			tasks: [{
@@ -309,11 +438,17 @@
 						Potion: "potionsmaster:vibranium_sight"
 					}
 				}
+			}],
+			rewards: [{
+				id: "4B36A1BF1A9B8479",
+				type: "item",
+				item: "allthemodium:vibranium_ingot"
 			}]
 		},
 		{
 			x: 1.0d,
 			y: -3.5d,
+			description: ["Why cant I hold all these things."],
 			dependencies: ["76016E5C8C9397D2"],
 			id: "2D76BDEC76B0C788",
 			tasks: [{
@@ -327,15 +462,26 @@
 						Potion: "potionsmaster:unobtainium_sight"
 					}
 				}
+			}],
+			rewards: [{
+				id: "2380BFFB5BFD8761",
+				type: "item",
+				item: "allthemodium:unobtainium_ingot"
 			}]
 		},
 		{
 			x: -6.0d,
 			y: -2.5d,
+			description: ["Bees?"],
 			dependencies: ["71A43C89EB13E9A0"],
 			id: "37561407B7D8D952",
 			tasks: [{
 				id: "217D70FF90F36EF5",
+				type: "item",
+				item: "resourcefulbees:allthemodium_honeycomb"
+			}],
+			rewards: [{
+				id: "7501D78475AD48C9",
 				type: "item",
 				item: "resourcefulbees:allthemodium_honeycomb"
 			}]
@@ -349,6 +495,11 @@
 				id: "583DD954B43E92FE",
 				type: "item",
 				item: "resourcefulbees:vibranium_honeycomb"
+			}],
+			rewards: [{
+				id: "53CCB32B80FCBE07",
+				type: "item",
+				item: "resourcefulbees:vibranium_honeycomb"
 			}]
 		},
 		{
@@ -358,6 +509,11 @@
 			id: "25884CEF41F8AABC",
 			tasks: [{
 				id: "1C120189C0DFD703",
+				type: "item",
+				item: "resourcefulbees:unobtainium_honeycomb"
+			}],
+			rewards: [{
+				id: "1860AB81C35FFA40",
 				type: "item",
 				item: "resourcefulbees:unobtainium_honeycomb"
 			}]
@@ -377,11 +533,17 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "713E52661D217F05",
+				type: "item",
+				item: "forbidden_arcanus:stellarite_piece"
 			}]
 		},
 		{
 			x: -3.5d,
 			y: 2.5d,
+			description: [""],
 			dependencies: [
 				"5A9C8F63CE469155",
 				"3DF54AB611650DEC",
@@ -399,6 +561,12 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "4E3DAA68BCEE451E",
+				type: "item",
+				item: "forbidden_arcanus:xpetrified_orb",
+				count: 4
 			}]
 		},
 		{
@@ -416,6 +584,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "35620952D554095B",
+				type: "item",
+				item: "forbidden_arcanus:stellarite_piece"
 			}]
 		},
 		{
@@ -433,11 +606,17 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "2E66B65DBD3B1152",
+				type: "item",
+				item: "forbidden_arcanus:stellarite_piece"
 			}]
 		},
 		{
 			x: -4.5d,
 			y: 0.5d,
+			description: ["Looks like candy."],
 			dependencies: [
 				"61761B6C1D1542FD",
 				"6A101A8056AC9A3A"
@@ -447,11 +626,24 @@
 				id: "3F8EB59495D407FA",
 				type: "item",
 				item: "allthemodium:vibranium_allthemodium_alloy_ingot"
-			}]
+			}],
+			rewards: [
+				{
+					id: "1776BFCB74D5332E",
+					type: "item",
+					item: "allthemodium:vibranium_ingot"
+				},
+				{
+					id: "1E88C11BD9C0B1D1",
+					type: "item",
+					item: "allthemodium:allthemodium_ingot"
+				}
+			]
 		},
 		{
 			x: -2.5d,
 			y: 0.5d,
+			description: ["We are in the endgame now."],
 			dependencies: [
 				"61761B6C1D1542FD",
 				"2673FC8D2F0DB1F5"
@@ -461,11 +653,24 @@
 				id: "2403B59A21D2B3AF",
 				type: "item",
 				item: "allthemodium:unobtainium_vibranium_alloy_ingot"
-			}]
+			}],
+			rewards: [
+				{
+					id: "31F4C0334113B27A",
+					type: "item",
+					item: "allthemodium:vibranium_ingot"
+				},
+				{
+					id: "10D8CC1F58FB9085",
+					type: "item",
+					item: "allthemodium:unobtainium_ingot"
+				}
+			]
 		},
 		{
 			x: -3.5d,
 			y: 0.5d,
+			description: ["Doesn't taste good though."],
 			dependencies: [
 				"6A101A8056AC9A3A",
 				"2673FC8D2F0DB1F5"
@@ -475,7 +680,19 @@
 				id: "0F3803B82A460772",
 				type: "item",
 				item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
-			}]
+			}],
+			rewards: [
+				{
+					id: "2652458CE5C46E6E",
+					type: "item",
+					item: "allthemodium:unobtainium_ingot"
+				},
+				{
+					id: "28FA85808B53F21F",
+					type: "item",
+					item: "allthemodium:allthemodium_ingot"
+				}
+			]
 		},
 		{
 			x: -8.0d,
@@ -492,6 +709,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "7731A2F9966688C3",
+				type: "item",
+				item: "allthemodium:vibranium_nugget"
 			}]
 		},
 		{
@@ -509,6 +731,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "4CE489C268A83C6B",
+				type: "item",
+				item: "allthemodium:vibranium_nugget"
 			}]
 		},
 		{
@@ -526,6 +753,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "33A1923F4A4E76D7",
+				type: "item",
+				item: "allthemodium:vibranium_nugget"
 			}]
 		},
 		{
@@ -544,6 +776,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "2FAD18EE60BA9222",
+				type: "item",
+				item: "allthemodium:vibranium_nugget"
 			}]
 		},
 		{
@@ -561,6 +798,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "15020EE01C7BA591",
+				type: "item",
+				item: "allthemodium:unobtainium_nugget"
 			}]
 		},
 		{
@@ -578,7 +820,24 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "3C3A48848EBEE3EA",
+					type: "item",
+					item: "iceandfire:dragonforge_fire_brick"
+				},
+				{
+					id: "3E669C643FB082F4",
+					type: "item",
+					item: "iceandfire:dragonforge_ice_brick"
+				},
+				{
+					id: "1FEDD6F95E6AC23C",
+					type: "item",
+					item: "iceandfire:dragonforge_lightning_brick"
+				}
+			]
 		},
 		{
 			x: -4.5d,
@@ -595,6 +854,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "678279C0552BD231",
+				type: "item",
+				item: "allthemodium:unobtainium_nugget"
 			}]
 		},
 		{
@@ -612,6 +876,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "3ABA74FD8667B9FA",
+				type: "item",
+				item: "allthemodium:unobtainium_nugget"
 			}]
 		},
 		{
@@ -629,6 +898,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "125729382BB74F17",
+				type: "item",
+				item: "allthemodium:unobtainium_nugget"
 			}]
 		},
 		{
@@ -646,7 +920,24 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "2C617013ECC2052D",
+					type: "item",
+					item: "iceandfire:dragonforge_fire_brick"
+				},
+				{
+					id: "024F61E2555EBC89",
+					type: "item",
+					item: "iceandfire:dragonforge_ice_brick"
+				},
+				{
+					id: "275DEF92814F48E3",
+					type: "item",
+					item: "iceandfire:dragonforge_lightning_brick"
+				}
+			]
 		},
 		{
 			x: -1.0d,
@@ -663,7 +954,24 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "7A89B4A20ED43469",
+					type: "item",
+					item: "iceandfire:dragonforge_fire_brick"
+				},
+				{
+					id: "412B8E070736D010",
+					type: "item",
+					item: "iceandfire:dragonforge_ice_brick"
+				},
+				{
+					id: "39E71A5C8AB46D63",
+					type: "item",
+					item: "iceandfire:dragonforge_lightning_brick"
+				}
+			]
 		},
 		{
 			x: -1.0d,
@@ -680,11 +988,29 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "574E676180A95510",
+					type: "item",
+					item: "iceandfire:dragonforge_fire_brick"
+				},
+				{
+					id: "62FC110499869F8D",
+					type: "item",
+					item: "iceandfire:dragonforge_ice_brick"
+				},
+				{
+					id: "59893647A12DE6E1",
+					type: "item",
+					item: "iceandfire:dragonforge_lightning_brick"
+				}
+			]
 		},
 		{
 			x: -3.5d,
 			y: -6.5d,
+			description: ["Detailed Guide to Allthemodium."],
 			id: "731686C758AD9A99",
 			tasks: [{
 				id: "71D1672A82D08E89",
@@ -707,6 +1033,11 @@
 				id: "4A5DA941C0DAC273",
 				type: "item",
 				item: "mysticalagriculture:allthemodium_seeds"
+			}],
+			rewards: [{
+				id: "54F5FD95C95EE3AA",
+				type: "item",
+				item: "mysticalagriculture:allthemodium_essence"
 			}]
 		},
 		{
@@ -718,6 +1049,11 @@
 				id: "69579871C1D8E1C1",
 				type: "item",
 				item: "mysticalagriculture:vibranium_seeds"
+			}],
+			rewards: [{
+				id: "49E1D40F2591FC0C",
+				type: "item",
+				item: "mysticalagriculture:vibranium_essence"
 			}]
 		},
 		{
@@ -729,6 +1065,11 @@
 				id: "549B21412588BDFC",
 				type: "item",
 				item: "mysticalagriculture:unobtainium_seeds"
+			}],
+			rewards: [{
+				id: "645C635F77769001",
+				type: "item",
+				item: "mysticalagriculture:unobtainium_essence"
 			}]
 		}
 	]
