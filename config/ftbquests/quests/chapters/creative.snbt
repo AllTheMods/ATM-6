@@ -77,7 +77,7 @@
 		{
 			x: -4.0d,
 			y: -0.5d,
-			description: ["Who is tired of not having infinite Space? -Yes you"],
+			description: ["Who is tired of not having infinite Item Storage? -Yes you"],
 			dependencies: ["30CED5B9C295B35E"],
 			id: "06D3E33E05FE772B",
 			tasks: [{
@@ -101,7 +101,7 @@
 		{
 			x: -6.0d,
 			y: 0.5d,
-			description: ["Last Step for Infinite Item Storage."],
+			description: ["Last Step for Infinite Item Storage"],
 			dependencies: ["06D3E33E05FE772B"],
 			id: "44AD57AE43B87688",
 			tasks: [{
@@ -113,7 +113,7 @@
 		{
 			x: 6.5d,
 			y: 0.5d,
-			description: ["Last Step for Infinite Fluid Storage."],
+			description: ["Last Step for Infinite Fluid Storage"],
 			dependencies: ["4308E010FFA13776"],
 			id: "0C96CC7992E0AA34",
 			tasks: [{
@@ -266,6 +266,344 @@
 				id: "1649D5E2F2DADF9C",
 				type: "item",
 				item: "refinedstorageaddons:creative_wireless_crafting_grid"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -7.5d,
+			description: ["Did someone say more Resources?"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "54A9B5BD133DEEBD",
+			tasks: [{
+				id: "7C183EACFB14B28C",
+				type: "item",
+				item: "ctiers:centrifuge_casing_tier_creative"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -7.5d,
+			description: ["Help me"],
+			dependencies: ["54A9B5BD133DEEBD"],
+			id: "28128A206D096F27",
+			tasks: [{
+				id: "6B39213BDB8B6447",
+				type: "item",
+				item: "ctiers:centrifuge_controller_tier_creative"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -10.0d,
+			description: [
+				"I never played Woot, so I don't know what this does :)",
+				"But build it, if you want :)"
+			],
+			dependencies: ["238BB6ED076FF964"],
+			id: "61069A50EE9E3564",
+			tasks: [{
+				id: "173C460B86F6935F",
+				type: "item",
+				item: "woot:creative_conatus"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -7.5d,
+			description: ["Who doesn't want infinite Mana?"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "527AAD9B7DB2FBF0",
+			tasks: [{
+				id: "7C69307D15F4C27D",
+				type: "item",
+				item: "botania:creative_pool"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -7.5d,
+			description: [
+				"A Tablet that has Infinite Mana",
+				"Isn't that cool? "
+			],
+			dependencies: ["527AAD9B7DB2FBF0"],
+			id: "24BBF9EAFC992E80",
+			tasks: [{
+				id: "2A92A112B86EEDCC",
+				type: "item",
+				item: {
+					id: "botania:mana_tablet",
+					Count: 1b,
+					tag: {
+						mana: 500000,
+						creative: 1b
+					}
+				}
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -10.0d,
+			description: ["Everything you want is in this book"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "55F188E5F963CECA",
+			tasks: [{
+				id: "58B6A14C640B7B66",
+				type: "item",
+				item: "ars_nouveau:creative_spell_book"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -6.0d,
+			description: [
+				"Mana Jar.",
+				"What should I write else?"
+			],
+			dependencies: ["238BB6ED076FF964"],
+			id: "49BF14EB67E23950",
+			tasks: [{
+				id: "06F2A790EAEAC6CE",
+				type: "item",
+				item: "ars_nouveau:creative_mana_jar"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -6.0d,
+			description: ["Infinite RPM out of nothing :O"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "2CF11A70229000AB",
+			tasks: [{
+				id: "0CF133CEADDC504C",
+				type: "item",
+				item: "create:creative_motor"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -4.5d,
+			description: [
+				"INFINITE ENERGY",
+				"YAY"
+			],
+			dependencies: ["238BB6ED076FF964"],
+			id: "6E47EC730178E08B",
+			tasks: [{
+				id: "1F84095CD6855C7E",
+				type: "item",
+				item: "mekanism:creative_energy_cube"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -4.5d,
+			description: [
+				"INFINITE ENERGY",
+				"YAY"
+			],
+			dependencies: ["238BB6ED076FF964"],
+			id: "02766ACD9AF4DC55",
+			tasks: [{
+				id: "26842B27FC687C5D",
+				type: "item",
+				item: "appliedenergistics2:creative_energy_cell"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -10.5d,
+			description: [
+				"INFINITE ENERGY",
+				"YAY"
+			],
+			dependencies: ["238BB6ED076FF964"],
+			id: "61D247B6998CECCB",
+			tasks: [{
+				id: "3CC0F1FCCE8B1301",
+				type: "item",
+				item: "immersiveengineering:capacitor_creative"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -10.5d,
+			description: ["A cool infinite Battery."],
+			dependencies: ["238BB6ED076FF964"],
+			id: "434E5B84AFEA48AD",
+			tasks: [{
+				id: "35991F9FFCEB2A73",
+				type: "item",
+				item: "integrateddynamics:energy_battery_creative"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -4.0d,
+			description: ["Did I read write? Infinite Storage?! :D"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "546D0730D780D30B",
+			tasks: [{
+				id: "6A69B872FEC84F2C",
+				type: "item",
+				item: "storagedrawers:creative_storage_upgrade"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -4.0d,
+			description: ["Exchange many things"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "20651A1892BDE61C",
+			tasks: [{
+				id: "611AB79B02C8D030",
+				type: "item",
+				item: {
+					id: "exchangers:creative_exchanger",
+					Count: 1b,
+					tag: {
+						mode: 0,
+						fuzzyPlacementChance: 100,
+						directionalPlacement: 0b,
+						forceDropItems: 0b,
+						fuzzyPlacement: 0b,
+						voidItems: 0b,
+						range: 0,
+						Damage: 0,
+						blockstate: {
+							Name: "minecraft:air"
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -9.0d,
+			description: ["Hello my Name is lame"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "0FD7181F1B5D63FA",
+			tasks: [{
+				id: "0AA391797B15CD14",
+				type: "item",
+				item: "tconstruct:creative_upgrade"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -9.5d,
+			dependencies: ["0FD7181F1B5D63FA"],
+			id: "7A8623CCCB16D1B9",
+			tasks: [{
+				id: "4A6594AB198FE886",
+				type: "item",
+				item: "tconstruct:creative_ability"
+			}]
+		},
+		{
+			title: "Alfsteel AIOT SS Rank",
+			icon: {
+				id: "aiotbotania:alfsteel_aiot",
+				Count: 1b,
+				tag: {
+					tipped: 1b,
+					mana: 2147483647,
+					Damage: 0
+				}
+			},
+			x: 5.5d,
+			y: -9.5d,
+			dependencies: ["4D15AA4334D14E1D"],
+			id: "0BE2549013745186",
+			tasks: [{
+				id: "6681321AB17F2EF9",
+				type: "item",
+				title: "Alfsteel AIOT SS Rank",
+				icon: {
+					id: "aiotbotania:alfsteel_aiot",
+					Count: 1b,
+					tag: {
+						tipped: 1b,
+						mana: 2147483647,
+						Damage: 0
+					}
+				},
+				item: {
+					id: "itemfilters:and",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "itemfilters:weak_nbt",
+								Count: 1b,
+								tag: {
+									value: {
+										tipped: 1b,
+										mana: 2147483647,
+										Damage: 0
+									}
+								}
+							},
+							{
+								id: "aiotbotania:alfsteel_aiot",
+								Count: 1b,
+								tag: {
+									tipped: 1b,
+									mana: 2147483647,
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+			}]
+		},
+		{
+			title: "Terrasteel AIOT SS Rank",
+			icon: {
+				id: "aiotbotania:terra_aiot",
+				Count: 1b,
+				tag: {
+					tipped: 1b,
+					mana: 2147483647,
+					Damage: 0
+				}
+			},
+			x: 3.5d,
+			y: -9.0d,
+			description: ["Terrasteel AIOT SS Rank"],
+			dependencies: ["238BB6ED076FF964"],
+			id: "4D15AA4334D14E1D",
+			tasks: [{
+				id: "6A12700E5D568EC6",
+				type: "item",
+				item: {
+					id: "itemfilters:and",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "aiotbotania:terra_aiot",
+								Count: 1b,
+								tag: {
+									tipped: 1b,
+									mana: 2147483647,
+									Damage: 0
+								}
+							},
+							{
+								id: "itemfilters:weak_nbt",
+								Count: 1b,
+								tag: {
+									value: {
+										mana: 2147483647,
+										tipped: 1b
+									}
+								}
+							}
+						]
+					}
+				}
 			}]
 		}
 	]
