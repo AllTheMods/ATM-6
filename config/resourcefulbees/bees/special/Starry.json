@@ -1,5 +1,5 @@
 {
-    "flower": "allthemodium:unobtainium_vibranium_alloy_block",
+    "flower": "kubejs:atm_star_block",
     "maxTimeInHive": 1200,
     "traits": ["starry"],
     "hasHoneycomb": true,
