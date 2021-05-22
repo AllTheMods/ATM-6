@@ -33,6 +33,11 @@
 				id: "35EB9584F516588A",
 				type: "item",
 				item: "cabletiers:creative_importer"
+			}],
+			rewards: [{
+				id: "19A6926A441E120E",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
@@ -46,32 +51,47 @@
 				id: "058A8C0A7A5E1EC7",
 				type: "item",
 				item: "cabletiers:creative_exporter"
+			}],
+			rewards: [{
+				id: "43A7E2137B8756E8",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
 			x: 1.5d,
 			y: 3.5d,
 			shape: "diamond",
-			description: ["BUILD THE WORLD (or a block fast)"],
+			description: ["BUILD THE WORLD (or one block fast)"],
 			dependencies: ["30CED5B9C295B35E"],
 			id: "146C3E26EDEC0367",
 			tasks: [{
 				id: "327FC7484ACA80D4",
 				type: "item",
 				item: "cabletiers:creative_constructor"
+			}],
+			rewards: [{
+				id: "25B60B8ED6E1BA9E",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
 			x: 3.5d,
 			y: 2.0d,
 			shape: "diamond",
-			description: ["DESTROY THE WORLD (or a block fast)"],
+			description: ["DESTROY THE WORLD (or one block fast)"],
 			dependencies: ["30CED5B9C295B35E"],
 			id: "53645509B62A9CC3",
 			tasks: [{
 				id: "448B5E5CF32D35F8",
 				type: "item",
 				item: "cabletiers:creative_destructor"
+			}],
+			rewards: [{
+				id: "33FCD8E1C03FB22E",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
@@ -84,18 +104,28 @@
 				id: "5162E68375FD02E4",
 				type: "item",
 				item: "extradisks:infinite_storage_part"
+			}],
+			rewards: [{
+				id: "6860F6AB3C7B38F7",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: 4.0d,
 			y: -0.5d,
-			description: ["I think you are making something illegal"],
+			description: ["Wait... THATS ILLEGAL"],
 			dependencies: ["30CED5B9C295B35E"],
 			id: "4308E010FFA13776",
 			tasks: [{
 				id: "6B60347B23D31266",
 				type: "item",
 				item: "extradisks:infinite_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "22893CBE9E9226E2",
+				type: "item",
+				item: "refinedstorage:1k_storage_disk"
 			}]
 		},
 		{
@@ -108,6 +138,11 @@
 				id: "554522543E07DF62",
 				type: "item",
 				item: "extradisks:infinite_storage_disk"
+			}],
+			rewards: [{
+				id: "32070DA7BA620A3E",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
@@ -120,30 +155,45 @@
 				id: "4559EA6B3E990E81",
 				type: "item",
 				item: "extradisks:infinite_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "4B84DB0F8726A3DC",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -6.0d,
 			y: -1.5d,
-			description: ["Pls don't build this block its useless, just use a Disk Drive"],
+			description: ["This isn't useless at all..."],
 			dependencies: ["06D3E33E05FE772B"],
 			id: "0A020FC07B087DC6",
 			tasks: [{
 				id: "6748222126CC16FC",
 				type: "item",
 				item: "extradisks:infinite_storage_block"
+			}],
+			rewards: [{
+				id: "5F627C99A1CF7692",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: 6.5d,
 			y: -1.5d,
-			description: ["Pls don't build this block its useless, just use a Disk Drive"],
+			description: ["Useless block is useless. But craft it anyway,"],
 			dependencies: ["4308E010FFA13776"],
 			id: "04EBABF967CDC6B9",
 			tasks: [{
 				id: "7EEEACA18EE3EC8C",
 				type: "item",
 				item: "extradisks:infinite_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "313B59A4246CE31C",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
@@ -168,6 +218,11 @@
 				id: "093509335BA2BFAD",
 				type: "item",
 				item: "creativewirelesstransmitter:creative_wireless_transmitter"
+			}],
+			rewards: [{
+				id: "6013E00B05293D67",
+				type: "item",
+				item: "refinedstorage:wireless_transmitter"
 			}]
 		},
 		{
@@ -181,6 +236,11 @@
 				id: "7D962F84E056C9BC",
 				type: "item",
 				item: "creativeapiary:tcreative_apiary"
+			}],
+			rewards: [{
+				id: "05A5ECD16A804E54",
+				type: "item",
+				item: "minecraft:bee_spawn_egg"
 			}]
 		},
 		{
@@ -206,6 +266,11 @@
 				id: "79950B2F24578A11",
 				type: "item",
 				item: "creativeapiary:creative_apiary_storage"
+			}],
+			rewards: [{
+				id: "4E888365DAA63235",
+				type: "item",
+				item: "apotheosis:beeshelf"
 			}]
 		},
 		{
@@ -218,6 +283,11 @@
 				id: "09DE0D02E36DD837",
 				type: "item",
 				item: "creativeapiary:creative_apiary_breeder"
+			}],
+			rewards: [{
+				id: "4BD2A95F266A3BE2",
+				type: "item",
+				item: "minecraft:bee_nest"
 			}]
 		},
 		{
@@ -230,6 +300,11 @@
 				id: "42877799D98896A9",
 				type: "item",
 				item: "refinedstorage:creative_wireless_grid"
+			}],
+			rewards: [{
+				id: "779234C793666E0E",
+				type: "item",
+				item: "refinedstorage:wireless_fluid_grid"
 			}]
 		},
 		{
@@ -278,6 +353,11 @@
 				id: "7C183EACFB14B28C",
 				type: "item",
 				item: "ctiers:centrifuge_casing_tier_creative"
+			}],
+			rewards: [{
+				id: "703A6EDA47903AF4",
+				type: "item",
+				item: "resourcefulbees:centrifuge_casing"
 			}]
 		},
 		{
@@ -296,8 +376,8 @@
 			x: -2.5d,
 			y: -10.0d,
 			description: [
-				"I never played Woot, so I don't know what this does :)",
-				"But build it, if you want :)"
+				"",
+				""
 			],
 			dependencies: ["238BB6ED076FF964"],
 			id: "61069A50EE9E3564",
@@ -305,6 +385,11 @@
 				id: "173C460B86F6935F",
 				type: "item",
 				item: "woot:creative_conatus"
+			}],
+			rewards: [{
+				id: "2D04A6769343457D",
+				type: "item",
+				item: "woot:conatus_fluid_bucket"
 			}]
 		},
 		{
@@ -317,6 +402,11 @@
 				id: "7C69307D15F4C27D",
 				type: "item",
 				item: "botania:creative_pool"
+			}],
+			rewards: [{
+				id: "1E3359594EE6BEE6",
+				type: "item",
+				item: "botania:mana_pool"
 			}]
 		},
 		{
@@ -351,6 +441,11 @@
 				id: "58B6A14C640B7B66",
 				type: "item",
 				item: "ars_nouveau:creative_spell_book"
+			}],
+			rewards: [{
+				id: "66AB6688609D92E4",
+				type: "item",
+				item: "ars_nouveau:novice_spell_book"
 			}]
 		},
 		{
@@ -366,6 +461,11 @@
 				id: "06F2A790EAEAC6CE",
 				type: "item",
 				item: "ars_nouveau:creative_mana_jar"
+			}],
+			rewards: [{
+				id: "3F63C6D33396B403",
+				type: "item",
+				item: "ars_nouveau:mana_jar"
 			}]
 		},
 		{
@@ -378,6 +478,11 @@
 				id: "0CF133CEADDC504C",
 				type: "item",
 				item: "create:creative_motor"
+			}],
+			rewards: [{
+				id: "39C85D32E8F91BB0",
+				type: "item",
+				item: "create:water_wheel"
 			}]
 		},
 		{
@@ -393,6 +498,11 @@
 				id: "1F84095CD6855C7E",
 				type: "item",
 				item: "mekanism:creative_energy_cube"
+			}],
+			rewards: [{
+				id: "17C691E7480A4392",
+				type: "item",
+				item: "mekanism:basic_energy_cube"
 			}]
 		},
 		{
@@ -408,6 +518,15 @@
 				id: "26842B27FC687C5D",
 				type: "item",
 				item: "appliedenergistics2:creative_energy_cell"
+			}],
+			rewards: [{
+				id: "57A0639CA0911384",
+				type: "item",
+				item: {
+					id: "appliedenergistics2:dense_energy_cell",
+					Count: 1b,
+					tag: {}
+				}
 			}]
 		},
 		{
@@ -423,6 +542,11 @@
 				id: "3CC0F1FCCE8B1301",
 				type: "item",
 				item: "immersiveengineering:capacitor_creative"
+			}],
+			rewards: [{
+				id: "3A9805F8C8B36C54",
+				type: "item",
+				item: "immersiveengineering:capacitor_mv"
 			}]
 		},
 		{
@@ -435,6 +559,17 @@
 				id: "35991F9FFCEB2A73",
 				type: "item",
 				item: "integrateddynamics:energy_battery_creative"
+			}],
+			rewards: [{
+				id: "6218BAB139E0DE0A",
+				type: "item",
+				item: {
+					id: "integrateddynamics:energy_battery",
+					Count: 1b,
+					tag: {
+						energy: 0
+					}
+				}
 			}]
 		},
 		{
@@ -447,6 +582,11 @@
 				id: "6A69B872FEC84F2C",
 				type: "item",
 				item: "storagedrawers:creative_storage_upgrade"
+			}],
+			rewards: [{
+				id: "09B576D0B4CC9DF0",
+				type: "item",
+				item: "storagedrawers:spruce_full_drawers_1"
 			}]
 		},
 		{
@@ -475,6 +615,27 @@
 						}
 					}
 				}
+			}],
+			rewards: [{
+				id: "10E9499A767ADA3A",
+				type: "item",
+				item: {
+					id: "exchangers:wooden_exchanger",
+					Count: 1b,
+					tag: {
+						mode: 0,
+						fuzzyPlacementChance: 100,
+						directionalPlacement: 0b,
+						forceDropItems: 0b,
+						fuzzyPlacement: 0b,
+						voidItems: 0b,
+						range: 0,
+						Damage: 0,
+						blockstate: {
+							Name: "minecraft:air"
+						}
+					}
+				}
 			}]
 		},
 		{
@@ -487,6 +648,11 @@
 				id: "0AA391797B15CD14",
 				type: "item",
 				item: "tconstruct:creative_upgrade"
+			}],
+			rewards: [{
+				id: "47F652357238F8F2",
+				type: "item",
+				item: "minecraft:damaged_anvil"
 			}]
 		},
 		{
@@ -513,6 +679,7 @@
 			},
 			x: 5.5d,
 			y: -9.5d,
+			description: ["Get a Life"],
 			dependencies: ["4D15AA4334D14E1D"],
 			id: "0BE2549013745186",
 			tasks: [{
@@ -556,6 +723,11 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "4AF9AD001C827085",
+				type: "item",
+				item: "minecraft:dirt"
 			}]
 		},
 		{
@@ -602,6 +774,17 @@
 								}
 							}
 						]
+					}
+				}
+			}],
+			rewards: [{
+				id: "7D47D39B5A8AAF56",
+				type: "item",
+				item: {
+					id: "aiotbotania:livingwood_aiot",
+					Count: 1b,
+					tag: {
+						Damage: 0
 					}
 				}
 			}]

@@ -10,77 +10,123 @@
 			x: 0.0d,
 			y: -7.5d,
 			shape: "circle",
-			description: ["First step for a Refined Storage System"],
+			description: ["The Controller is the core of the Refined Storage network. You need to connect all the Refined Storage devices to this block."],
 			size: 3.0d,
 			id: "01F18150EC923482",
 			tasks: [{
 				id: "196B8B6D59ABFC74",
 				type: "item",
 				item: "refinedstorage:controller"
+			}],
+			rewards: [{
+				id: "5A192F6E697F4B12",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 6
 			}]
 		},
 		{
 			x: 0.0d,
 			y: -11.0d,
+			description: ["The Disk Drive is the block in which you store storage disks or fluid storage disks."],
 			dependencies: ["01F18150EC923482"],
 			id: "2E578DF170653BC8",
 			tasks: [{
 				id: "3C65A0D164EFEED8",
 				type: "item",
 				item: "refinedstorage:disk_drive"
+			}],
+			rewards: [{
+				id: "0BD3E2D8092D5A44",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
 			x: 2.5d,
 			y: -5.0d,
+			description: ["The Grid is a block that allows access to the items and fluids in the storage network. The player can extract items or fluids from the central GUI."],
 			dependencies: ["01F18150EC923482"],
 			id: "3C83AB7FF3AF0900",
 			tasks: [{
 				id: "428BA4D38A93C77E",
 				type: "item",
 				item: "refinedstorage:grid"
+			}],
+			rewards: [{
+				id: "097C5CA449AD2CAD",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 3
 			}]
 		},
 		{
 			x: 4.5d,
 			y: -5.0d,
+			description: ["The Crafting Grid is the same as a regular Grid, but has a crafting inventory. When an item is crafted, it won’t just clear the crafting slots, but it’ll try to retrieve the same items from the storage network again."],
 			dependencies: ["3C83AB7FF3AF0900"],
 			id: "5FBFC7EB398AC145",
 			tasks: [{
 				id: "0C884A4B016B0675",
 				type: "item",
 				item: "refinedstorage:crafting_grid"
+			}],
+			rewards: [{
+				id: "21F8413512CD96A4",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 3
 			}]
 		},
 		{
 			x: 4.0d,
 			y: -4.0d,
+			description: ["The Pattern Grid is the same as a regular Grid, but also allows for the creation of patterns."],
 			dependencies: ["3C83AB7FF3AF0900"],
 			id: "40047D54C0382718",
 			tasks: [{
 				id: "411DA6B671A3EA64",
 				type: "item",
 				item: "refinedstorage:pattern_grid"
+			}],
+			rewards: [{
+				id: "0CA81685F2CAC599",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 3
 			}]
 		},
 		{
 			x: 3.0d,
 			y: -3.5d,
+			description: ["The Fluid Grid is the same as a regular Grid, but is used for viewing fluids in the fluid storage of your storage network."],
 			dependencies: ["3C83AB7FF3AF0900"],
 			id: "13B7384CC1F9EA39",
 			tasks: [{
 				id: "11F322BD5FFDE293",
 				type: "item",
 				item: "refinedstorage:fluid_grid"
+			}],
+			rewards: [{
+				id: "5B3843350A9E25BE",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 3
 			}]
 		},
 		{
 			x: -1.5d,
 			y: -12.5d,
+			description: ["The 1k Storage Disk can store 1000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "4101F8275B41C79B",
 			tasks: [{
 				id: "1121780C6403D660",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
+			}],
+			rewards: [{
+				id: "7101231C513F9297",
 				type: "item",
 				item: "refinedstorage:1k_storage_part"
 			}]
@@ -88,6 +134,7 @@
 		{
 			x: 0.0d,
 			y: -13.0d,
+			description: ["A Storage Disk is an item where items from the storage network are stored on. It has to be put in a Disk Drive. The Storage Disk won’t despawn when dropped in the world."],
 			dependencies: [
 				"4101F8275B41C79B",
 				"3FD801D7DE9176FB",
@@ -104,121 +151,187 @@
 				id: "68F507801D1E0E1C",
 				type: "item",
 				item: "refinedstorage:storage_housing"
+			}],
+			rewards: [{
+				id: "6B92B31FC4AFE142",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
 			x: -2.5d,
 			y: -12.5d,
+			description: ["The 4k Storage Disk can store 4000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "3FD801D7DE9176FB",
 			tasks: [{
 				id: "1420D2099CBB6833",
 				type: "item",
 				item: "refinedstorage:4k_storage_part"
+			}],
+			rewards: [{
+				id: "21708DD72F05DD8D",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -3.5d,
 			y: -12.5d,
+			description: ["The 16k Storage Disk can store 16000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "03C78165C5CBD9E1",
 			tasks: [{
 				id: "0346A00E2F8F7532",
 				type: "item",
 				item: "refinedstorage:16k_storage_part"
+			}],
+			rewards: [{
+				id: "5D40C0B2EB190BC8",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -4.5d,
 			y: -12.5d,
+			description: ["The 64k Storage Disk can store 64000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "3F8EEE1AD4420702",
 			tasks: [{
 				id: "02A8CBA1DAC84DAE",
 				type: "item",
 				item: "refinedstorage:64k_storage_part"
+			}],
+			rewards: [{
+				id: "7259D70EACB17641",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -9.5d,
 			y: -12.5d,
+			description: ["The 65536k Storage Disk can store 65536000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "1D2700821045CCF2",
 			tasks: [{
 				id: "7E7B3341B5C8D8CA",
 				type: "item",
 				item: "extradisks:65536k_storage_part"
+			}],
+			rewards: [{
+				id: "2C19B2FA0A8BD085",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -5.5d,
 			y: -12.5d,
+			description: ["The 256k Storage Disk can store 256000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "4C1F13F5A0E273EF",
 			tasks: [{
 				id: "04B88AEDB2799159",
 				type: "item",
 				item: "extradisks:256k_storage_part"
+			}],
+			rewards: [{
+				id: "6CC89E17107E48D8",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -6.5d,
 			y: -12.5d,
+			description: ["The 1024k Storage Disk can store 1024000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "7C94F6AE2A793858",
 			tasks: [{
 				id: "15F9ABA22EFEF7E6",
 				type: "item",
 				item: "extradisks:1024k_storage_part"
+			}],
+			rewards: [{
+				id: "526E85D67522B447",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -7.5d,
 			y: -12.5d,
+			description: ["The 4096k Storage Disk can store 4096000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "52ACADDFCB0E22AB",
 			tasks: [{
 				id: "71E4327C2E1FBB04",
 				type: "item",
 				item: "extradisks:4096k_storage_part"
+			}],
+			rewards: [{
+				id: "6B651EFA5574FD90",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -8.5d,
 			y: -12.5d,
+			description: ["The 16384k Storage Disk can store 16384000 items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "123807F4BBE75120",
 			tasks: [{
 				id: "6C599CC5ADBA425B",
 				type: "item",
 				item: "extradisks:16384k_storage_part"
+			}],
+			rewards: [{
+				id: "007543066807C26D",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -10.5d,
 			y: -12.5d,
+			description: ["The 262m Storage Disk can store well 262m items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "4966162FBA933453",
 			tasks: [{
 				id: "3C2952EABDCBF187",
 				type: "item",
 				item: "extradisks:262144k_storage_part"
+			}],
+			rewards: [{
+				id: "6156096673FDBB6F",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: -11.5d,
 			y: -12.5d,
+			description: ["The 1048m Storage Disk can store well 1048m items."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "718A2040D868E09F",
 			tasks: [{
 				id: "4E565846EED470F5",
 				type: "item",
 				item: "extradisks:1048576k_storage_part"
+			}],
+			rewards: [{
+				id: "5449AE4F52C12FD0",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
 			}]
 		},
 		{
 			x: 0.0d,
 			y: -14.0d,
+			description: ["It's like the regular one but ADVANCED."],
 			dependencies: [
 				"4C1F13F5A0E273EF",
 				"7C94F6AE2A793858",
@@ -249,6 +362,11 @@
 				id: "27787FCF7D78AB3F",
 				type: "item",
 				item: "refinedstorage:1k_storage_disk"
+			}],
+			rewards: [{
+				id: "4AC2820EDF8398F3",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -260,6 +378,11 @@
 				id: "15D12F22A141AA1C",
 				type: "item",
 				item: "refinedstorage:4k_storage_disk"
+			}],
+			rewards: [{
+				id: "7EBB1A593D60DDCC",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -271,6 +394,11 @@
 				id: "71C4F330864FF3BF",
 				type: "item",
 				item: "refinedstorage:16k_storage_disk"
+			}],
+			rewards: [{
+				id: "70269A303EE1D829",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -282,6 +410,11 @@
 				id: "2BC7781B7DDD1E3C",
 				type: "item",
 				item: "refinedstorage:64k_storage_disk"
+			}],
+			rewards: [{
+				id: "1BA10C4FEEB84D74",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -293,6 +426,11 @@
 				id: "6606B7D00BD25934",
 				type: "item",
 				item: "extrastorage:disk_256k"
+			}],
+			rewards: [{
+				id: "16A780A82BB81AC8",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -304,6 +442,11 @@
 				id: "40D31519A01A74EC",
 				type: "item",
 				item: "extrastorage:disk_1024k"
+			}],
+			rewards: [{
+				id: "51ED1C67DAC6757D",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -315,6 +458,11 @@
 				id: "600D77963899AB2F",
 				type: "item",
 				item: "extrastorage:disk_4096k"
+			}],
+			rewards: [{
+				id: "424EC620A61979D9",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -326,6 +474,11 @@
 				id: "577217F8B7E9C081",
 				type: "item",
 				item: "extrastorage:disk_16384k"
+			}],
+			rewards: [{
+				id: "2A9C25F91C5A5036",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -337,6 +490,11 @@
 				id: "3EA5B6658DDF753B",
 				type: "item",
 				item: "extradisks:65536k_storage_disk"
+			}],
+			rewards: [{
+				id: "75443F202AA783C4",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -348,6 +506,11 @@
 				id: "0A21D3C9450BE8AD",
 				type: "item",
 				item: "extradisks:262144k_storage_disk"
+			}],
+			rewards: [{
+				id: "0DCE98235FC49D74",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -359,6 +522,11 @@
 				id: "4D50BE9D125A53B1",
 				type: "item",
 				item: "extradisks:1048576k_storage_disk"
+			}],
+			rewards: [{
+				id: "73B20BF162A4C193",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -370,6 +538,11 @@
 				id: "1A30C5BD5281FA73",
 				type: "item",
 				item: "refinedstorage:wireless_grid"
+			}],
+			rewards: [{
+				id: "3EB6A5A447658940",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
 			}]
 		},
 		{
@@ -381,6 +554,11 @@
 				id: "3D84E7778A3AFFAA",
 				type: "item",
 				item: "refinedstorage:wireless_fluid_grid"
+			}],
+			rewards: [{
+				id: "4DBE7D8DCAE63A82",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
 			}]
 		},
 		{
@@ -392,6 +570,11 @@
 				id: "6F8F5DACE3FF619D",
 				type: "item",
 				item: "refinedstorage:wireless_crafting_monitor"
+			}],
+			rewards: [{
+				id: "798DE95CEB3BA567",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
 			}]
 		},
 		{
@@ -403,17 +586,28 @@
 				id: "63DB5571CDEBD0B9",
 				type: "item",
 				item: "refinedstorageaddons:wireless_crafting_grid"
+			}],
+			rewards: [{
+				id: "78F49F0A5F6FFEF6",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
 			}]
 		},
 		{
 			x: -2.5d,
 			y: -7.5d,
+			description: ["The Crafter is a block that crafts items with patterns. It can take speed upgrades to increase the crafting speed."],
 			dependencies: ["01F18150EC923482"],
 			id: "44881E39AB1D62AA",
 			tasks: [{
 				id: "202A7EA0318662C5",
 				type: "item",
 				item: "refinedstorage:crafter"
+			}],
+			rewards: [{
+				id: "3351B9B6898579ED",
+				type: "item",
+				item: "refinedstorage:pattern"
 			}]
 		},
 		{
@@ -425,6 +619,12 @@
 				id: "0ED2706B229F3AA7",
 				type: "item",
 				item: "extrastorage:iron_crafter"
+			}],
+			rewards: [{
+				id: "78D26C79FAC05CFF",
+				type: "item",
+				item: "refinedstorage:pattern",
+				count: 2
 			}]
 		},
 		{
@@ -436,6 +636,12 @@
 				id: "1AA53ECBAE795C70",
 				type: "item",
 				item: "extrastorage:gold_crafter"
+			}],
+			rewards: [{
+				id: "5ACCF4B3C45E2989",
+				type: "item",
+				item: "refinedstorage:pattern",
+				count: 3
 			}]
 		},
 		{
@@ -447,6 +653,12 @@
 				id: "461E78CF8E7FCD04",
 				type: "item",
 				item: "extrastorage:diamond_crafter"
+			}],
+			rewards: [{
+				id: "23E76AEB4BEA3B45",
+				type: "item",
+				item: "refinedstorage:pattern",
+				count: 4
 			}]
 		},
 		{
@@ -458,22 +670,35 @@
 				id: "4FEB0889EEBC1BDA",
 				type: "item",
 				item: "extrastorage:netherite_crafter"
+			}],
+			rewards: [{
+				id: "09E39857FC64780B",
+				type: "item",
+				item: "refinedstorage:pattern",
+				count: 5
 			}]
 		},
 		{
 			x: 2.5d,
 			y: -7.5d,
+			description: ["The Wireless Transmitter is used to send signals to wireless network items in Refined Storage."],
 			dependencies: ["01F18150EC923482"],
 			id: "24C71F2D172C7A20",
 			tasks: [{
 				id: "754B1C56BBB33086",
 				type: "item",
 				item: "refinedstorage:wireless_transmitter"
+			}],
+			rewards: [{
+				id: "6F61E3D9DC28ABAE",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
 			}]
 		},
 		{
 			x: -2.0d,
 			y: -10.0d,
+			description: ["The Disk Manipulator is a block that adds a fast way of transferring items between storage disks or fluid storage disks and the storage network."],
 			dependencies: ["01F18150EC923482"],
 			id: "1D609E429870CAD5",
 			tasks: [{
@@ -485,6 +710,7 @@
 		{
 			x: 2.0d,
 			y: -10.0d,
+			description: ["The Portable Grid is a portable storage that isn’t connected to a network. It allows you to interact with a Storage Disk while not being connected to a network."],
 			dependencies: ["01F18150EC923482"],
 			id: "384469C5B92524D8",
 			tasks: [{
@@ -495,11 +721,18 @@
 					Count: 1b,
 					tag: {}
 				}
+			}],
+			rewards: [{
+				id: "300A5FB00E03A559",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 6
 			}]
 		},
 		{
 			x: 1.0d,
 			y: -4.0d,
+			description: ["The Wrench in Refined Storage is a tool that can do two things. Rotate blocks and Break Refined Storage covers. Simply sneak and right click when using the Wrench."],
 			dependencies: ["01F18150EC923482"],
 			id: "3FAD086F7D9CCAE9",
 			tasks: [{
@@ -511,12 +744,19 @@
 		{
 			x: -1.0d,
 			y: -4.0d,
+			description: ["Cable is used to connect devices to the Controller.Cables are not always necessary, as long as the devices are next to each other in any direction a connection will be established as well."],
 			dependencies: ["01F18150EC923482"],
 			id: "6904EC449FBEE387",
 			tasks: [{
 				id: "1A2C2B95FDA9D2DA",
 				type: "item",
 				item: "refinedstorage:cable"
+			}],
+			rewards: [{
+				id: "3940AD01E5D76358",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 3
 			}]
 		},
 		{
@@ -528,6 +768,11 @@
 				id: "0E57EE9B975D05C3",
 				type: "item",
 				item: "refinedstorage:importer"
+			}],
+			rewards: [{
+				id: "56952166435BBAFD",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
@@ -539,6 +784,11 @@
 				id: "5762E9CE9A7D3FCA",
 				type: "item",
 				item: "refinedstorage:destructor"
+			}],
+			rewards: [{
+				id: "413513D76C0D795E",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
@@ -550,6 +800,11 @@
 				id: "2BB33FEBA2B071DF",
 				type: "item",
 				item: "refinedstorage:constructor"
+			}],
+			rewards: [{
+				id: "16A7426755666D2A",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
@@ -561,6 +816,11 @@
 				id: "528F054C15BB7191",
 				type: "item",
 				item: "refinedstorage:exporter"
+			}],
+			rewards: [{
+				id: "2F8BF8BDC69238E6",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
@@ -572,6 +832,12 @@
 				id: "6947092EB1DF6DCE",
 				type: "item",
 				item: "cabletiers:elite_importer"
+			}],
+			rewards: [{
+				id: "16907D13E3CCAA51",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 2
 			}]
 		},
 		{
@@ -583,6 +849,12 @@
 				id: "60057B7F36565B42",
 				type: "item",
 				item: "cabletiers:ultra_importer"
+			}],
+			rewards: [{
+				id: "4C8C8479B4DFE0AC",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 3
 			}]
 		},
 		{
@@ -594,6 +866,12 @@
 				id: "6AD21D58B8EE01A3",
 				type: "item",
 				item: "cabletiers:elite_destructor"
+			}],
+			rewards: [{
+				id: "1CFD13E1677B92C7",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 2
 			}]
 		},
 		{
@@ -605,6 +883,12 @@
 				id: "1AC9A19F8B27A12C",
 				type: "item",
 				item: "cabletiers:ultra_destructor"
+			}],
+			rewards: [{
+				id: "3F9FF1B6F88AFC55",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 3
 			}]
 		},
 		{
@@ -616,6 +900,12 @@
 				id: "32C8173865CAFD14",
 				type: "item",
 				item: "cabletiers:elite_constructor"
+			}],
+			rewards: [{
+				id: "58D389151A884B83",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 2
 			}]
 		},
 		{
@@ -627,6 +917,12 @@
 				id: "140A523F7D4EFC3E",
 				type: "item",
 				item: "cabletiers:ultra_constructor"
+			}],
+			rewards: [{
+				id: "759B1F78F58DB2C3",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 3
 			}]
 		},
 		{
@@ -638,6 +934,12 @@
 				id: "4E291FDCE1763291",
 				type: "item",
 				item: "cabletiers:elite_exporter"
+			}],
+			rewards: [{
+				id: "063D7D81C0000253",
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 2
 			}]
 		},
 		{
@@ -649,118 +951,148 @@
 				id: "515DEAD74B07300C",
 				type: "item",
 				item: "cabletiers:ultra_exporter"
-			}]
-		},
-		{
-			x: -2.5d,
-			y: -6.5d,
-			dependencies: ["532229D285CA4858"],
-			id: "08A6A80A91BB4C32",
-			tasks: [{
-				id: "361BB1AF3A9C8B9C",
+			}],
+			rewards: [{
+				id: "45AF3E5F86FD970C",
 				type: "item",
-				item: "extrastorage:advanced_importer",
-				count: 64L
-			}]
-		},
-		{
-			x: -2.5d,
-			y: -1.5d,
-			dependencies: ["4CD83943865018EA"],
-			id: "2ED96AAC03FAAFF0",
-			tasks: [{
-				id: "42D10AE7731C6FD5",
-				type: "item",
-				item: "extrastorage:advanced_exporter",
-				count: 64L
+				item: "refinedstorage:cable",
+				count: 3
 			}]
 		},
 		{
 			x: 1.5d,
 			y: -12.5d,
+			description: ["The 64k Fluid Storage Part is used to craft the 64k Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "4B81E84CAE814BA9",
 			tasks: [{
 				id: "3F9B17A338B2EEFE",
 				type: "item",
 				item: "refinedstorage:64k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "5FBC20F518F8CC10",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
 			x: 2.5d,
 			y: -12.5d,
+			description: ["The 256k Fluid Storage Part is used to craft the 256k Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "39C8E1705EF1CD31",
 			tasks: [{
 				id: "440737C224526B0B",
 				type: "item",
 				item: "refinedstorage:256k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "5A9FC3B2C36FAE7D",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
 			x: 3.5d,
 			y: -12.5d,
+			description: ["The 1024k Fluid Storage Part is used to craft the 1024k Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "60244F26B9ABED49",
 			tasks: [{
 				id: "40AEA1CE52FAFCAB",
 				type: "item",
 				item: "refinedstorage:1024k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "46283420A1698786",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
 			x: 4.5d,
 			y: -12.5d,
+			description: ["The 4096k Fluid Storage Part is used to craft the 4096k Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "3751015CD5C84134",
 			tasks: [{
 				id: "2B57DE504688FC8D",
 				type: "item",
 				item: "refinedstorage:4096k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "5233E12E2786B8C7",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
 			x: 5.5d,
 			y: -12.5d,
+			description: ["The 16384k Fluid Storage Part is used to craft the 16384k Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "53CA0D6B4D5A17D5",
 			tasks: [{
 				id: "62F1F92687582BAF",
 				type: "item",
 				item: "extradisks:16384k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "05E8317BD4799F34",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
 			x: 6.5d,
 			y: -12.5d,
+			description: ["The 65536k Fluid Storage Part is used to craft the 65536k Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "64D6C395B6304F40",
 			tasks: [{
 				id: "3D29353D5475642D",
 				type: "item",
 				item: "extradisks:65536k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "7A771C2461319CF9",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
 			x: 7.5d,
 			y: -12.5d,
+			description: ["The 262m Fluid Storage Part is used to craft the 262m Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "17920C436DDBBD07",
 			tasks: [{
 				id: "5DDDBCF17E30A7C4",
 				type: "item",
 				item: "extradisks:262144k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "602C7CA7527F0763",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
 			x: 8.5d,
 			y: -12.5d,
+			description: ["The 1048m Fluid Storage Part is used to craft the 1048m Fluid Storage Disk."],
 			dependencies: ["2E578DF170653BC8"],
 			id: "49772923B8AF0F1F",
 			tasks: [{
 				id: "0EE5758F4584DD05",
 				type: "item",
 				item: "extradisks:1048576k_fluid_storage_part"
+			}],
+			rewards: [{
+				id: "32D6820FA6525A26",
+				type: "item",
+				item: "refinedstorage:advanced_processor"
 			}]
 		},
 		{
@@ -772,6 +1104,11 @@
 				id: "7D820BEC39614791",
 				type: "item",
 				item: "refinedstorage:64k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "16BE126AB5AD51A8",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -783,6 +1120,11 @@
 				id: "0E28AAD0C5208021",
 				type: "item",
 				item: "refinedstorage:256k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "704D3DFE1B1C3308",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -794,6 +1136,11 @@
 				id: "475597881C6BB74C",
 				type: "item",
 				item: "refinedstorage:1024k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "5D4A9F33D64BF958",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -805,6 +1152,11 @@
 				id: "542C2A1DE088664D",
 				type: "item",
 				item: "refinedstorage:4096k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "61FED88046E3CDF1",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		},
 		{
@@ -816,6 +1168,11 @@
 				id: "1CD273F470079AB6",
 				type: "item",
 				item: "extradisks:16384k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "4CB629454A44007A",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -827,6 +1184,11 @@
 				id: "464106626F5D473C",
 				type: "item",
 				item: "extradisks:65536k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "499B3C854C43F342",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -838,6 +1200,11 @@
 				id: "46F80AC057C1C0E6",
 				type: "item",
 				item: "extradisks:262144k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "211F6C766D5791AE",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
@@ -849,22 +1216,35 @@
 				id: "2FF6EB88EDE9FDC4",
 				type: "item",
 				item: "extradisks:1048576k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: "05BAA7B399F5BA43",
+				type: "item",
+				item: "extradisks:advanced_storage_housing"
 			}]
 		},
 		{
 			x: 1.0d,
 			y: -10.5d,
+			description: ["The Network Receiver is the block that receives a signal from the Network Transmitter.In order for the Network Receiver to work reliably the Network Receiver has to be chunkloaded."],
 			dependencies: ["01F18150EC923482"],
 			id: "42A295ED90E01EA8",
 			tasks: [{
 				id: "54F8697E8D8B3006",
 				type: "item",
 				item: "refinedstorage:network_receiver"
+			}],
+			rewards: [{
+				id: "3C0CE1F2265A24D4",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 6
 			}]
 		},
 		{
 			x: -1.0d,
 			y: -10.5d,
+			description: ["A Network Transmitter sends a network signal to a Network Receiver that is specified in the given Network Card."],
 			dependencies: ["01F18150EC923482"],
 			id: "05A12C6E9B574561",
 			tasks: [{
@@ -882,17 +1262,481 @@
 				id: "4D9E7CCF420BDE8C",
 				type: "item",
 				item: "refinedstorage:external_storage"
+			}],
+			rewards: [{
+				id: "0F25DDC0B3F5281C",
+				type: "item",
+				item: "refinedstorage:cable"
 			}]
 		},
 		{
 			x: 2.0d,
 			y: -3.5d,
+			description: ["The Storage Monitor is a block that displays the current amount of a certain item or fluid in your storage system."],
 			dependencies: ["3C83AB7FF3AF0900"],
 			id: "21D57FDA2510CBDD",
 			tasks: [{
 				id: "5C83CD42AE0638A2",
 				type: "item",
 				item: "refinedstorage:storage_monitor"
+			}],
+			rewards: [{
+				id: "0BD4519912E0D150",
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 3
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -1.5d,
+			dependencies: ["4CD83943865018EA"],
+			id: "383DCC6ADE5364B5",
+			tasks: [{
+				id: "357CC03A3DC5164D",
+				type: "item",
+				item: "extrastorage:advanced_exporter"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -6.5d,
+			dependencies: ["532229D285CA4858"],
+			id: "355BFF36994B3916",
+			tasks: [{
+				id: "05352F383961DC1B",
+				type: "item",
+				item: "extrastorage:advanced_importer"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4101F8275B41C79B"],
+			optional: true,
+			id: "22F54B43B833CBB2",
+			tasks: [{
+				id: "7E7F6CE9FC70A5AF",
+				type: "item",
+				item: "refinedstorage:1k_storage_block"
+			}],
+			rewards: [{
+				id: "5CD15B37B86FC0A5",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["3FD801D7DE9176FB"],
+			optional: true,
+			id: "616DD901DC05DECE",
+			tasks: [{
+				id: "4001E0D82E6DC1C0",
+				type: "item",
+				item: "refinedstorage:4k_storage_block"
+			}],
+			rewards: [{
+				id: "1E7AC501E83691BA",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["03C78165C5CBD9E1"],
+			optional: true,
+			id: "2B63087981E50F8F",
+			tasks: [{
+				id: "59C8E1962D7FC18D",
+				type: "item",
+				item: "refinedstorage:16k_storage_block"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["3F8EEE1AD4420702"],
+			optional: true,
+			id: "31444DB5A3B17826",
+			tasks: [{
+				id: "29EB87DD4323598C",
+				type: "item",
+				item: "refinedstorage:64k_storage_block"
+			}],
+			rewards: [{
+				id: "2E0386C12AC3EEDB",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4C1F13F5A0E273EF"],
+			optional: true,
+			id: "38F04840041F461D",
+			tasks: [{
+				id: "5057EAD32AA581D8",
+				type: "item",
+				item: "extradisks:256k_storage_block"
+			}],
+			rewards: [{
+				id: "7BC82A53F9F577E8",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["7C94F6AE2A793858"],
+			optional: true,
+			id: "572F52C6402864A8",
+			tasks: [{
+				id: "61F0444E27D49B3D",
+				type: "item",
+				item: "extradisks:1024k_storage_block"
+			}],
+			rewards: [{
+				id: "5CB0E69ADFCBA005",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["52ACADDFCB0E22AB"],
+			optional: true,
+			id: "52789A76615D0575",
+			tasks: [{
+				id: "2B56D70921F04A72",
+				type: "item",
+				item: "extradisks:4096k_storage_block"
+			}],
+			rewards: [{
+				id: "61F0792E83E5B100",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["123807F4BBE75120"],
+			optional: true,
+			id: "5C50A1795315A65C",
+			tasks: [{
+				id: "381D4381BB8410C2",
+				type: "item",
+				item: "extradisks:16384k_storage_block"
+			}],
+			rewards: [{
+				id: "328ADA2F5362A2E8",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -9.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["1D2700821045CCF2"],
+			optional: true,
+			id: "7F7B296068AAF405",
+			tasks: [{
+				id: "3054B2FFA8893E29",
+				type: "item",
+				item: "extradisks:65536k_storage_block"
+			}],
+			rewards: [{
+				id: "1142E4BCD71BF694",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4966162FBA933453"],
+			optional: true,
+			id: "2EFA5E43AF196F62",
+			tasks: [{
+				id: "2BF903DAA14F9ECA",
+				type: "item",
+				item: "extradisks:262144k_storage_block"
+			}],
+			rewards: [{
+				id: "4162DF199EA9BC53",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -11.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["718A2040D868E09F"],
+			optional: true,
+			id: "173CF3220ABCA57E",
+			tasks: [{
+				id: "751B84E77B2DE755",
+				type: "item",
+				item: "extradisks:1048576k_storage_block"
+			}],
+			rewards: [{
+				id: "270B6497653E4D78",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4B81E84CAE814BA9"],
+			optional: true,
+			id: "1E51EF64EA465F54",
+			tasks: [{
+				id: "054937A9AA230A26",
+				type: "item",
+				item: "refinedstorage:64k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "21DD73C9900B0A74",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["39C8E1705EF1CD31"],
+			optional: true,
+			id: "5C9D829641916A37",
+			tasks: [{
+				id: "127D03F468D4B833",
+				type: "item",
+				item: "refinedstorage:256k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "46A7AA33EED3A203",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["60244F26B9ABED49"],
+			optional: true,
+			id: "3244AF0B5D37738B",
+			tasks: [{
+				id: "533C1172A7219C78",
+				type: "item",
+				item: "refinedstorage:1024k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "6CF3B2C7CC72975C",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["3751015CD5C84134"],
+			optional: true,
+			id: "5FD8FFE17397E805",
+			tasks: [{
+				id: "51C10EB9420902B1",
+				type: "item",
+				item: "refinedstorage:4096k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "7251D0704D4B4055",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["53CA0D6B4D5A17D5"],
+			optional: true,
+			id: "17748B93B25AD2CA",
+			tasks: [{
+				id: "1D6F846C0C99F319",
+				type: "item",
+				item: "extradisks:16384k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "07C4A6DD91AB6398",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["64D6C395B6304F40"],
+			optional: true,
+			id: "4F4E241234534DD4",
+			tasks: [{
+				id: "014AA24A00F84611",
+				type: "item",
+				item: "extradisks:65536k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "4505A4B3AF3A2321",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["17920C436DDBBD07"],
+			optional: true,
+			id: "62D71019E735F1B3",
+			tasks: [{
+				id: "7B79FEF0C5876174",
+				type: "item",
+				item: "extradisks:262144k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "555EB88EF0071765",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["49772923B8AF0F1F"],
+			optional: true,
+			id: "40C1F197E3F3E220",
+			tasks: [{
+				id: "6C12783A4C026440",
+				type: "item",
+				item: "extradisks:1048576k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "2F75D3D4B5661DF4",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -9.0d,
+			description: ["Security is always gud"],
+			dependencies: ["01F18150EC923482"],
+			id: "3B84215240D9F2CB",
+			tasks: [{
+				id: "20F3020C07C9D22B",
+				type: "item",
+				item: "refinedstorage:security_manager"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -9.0d,
+			description: ["Please don't detect me :O"],
+			dependencies: ["01F18150EC923482"],
+			id: "5D31FCC61B02E17A",
+			tasks: [{
+				id: "6C6F92D9A6D8DFD6",
+				type: "item",
+				item: "refinedstorage:detector"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.5d,
+			description: ["Manipulate your gf :P"],
+			dependencies: ["01F18150EC923482"],
+			id: "41424EB0CC76EFAF",
+			tasks: [{
+				id: "68E02B9159B931BE",
+				type: "item",
+				item: "refinedstorage:disk_manipulator"
 			}]
 		}
 	]
