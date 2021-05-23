@@ -83,6 +83,6 @@
       "breedDelay": 6000
   },
   "TraitData": {
-      "hasTraits": true
+      "hasTraits": false
   }
 }
