@@ -62,7 +62,7 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:saltbae",
+        "biomeWhitelist": "tag:salt_baee",
         "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,
