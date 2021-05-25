@@ -491,4 +491,41 @@ events.listen('recipes', function(e) {
         G: 'minecraft:glass_pane'
     })
     e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
+    e.remove({
+        id: 'engineersdecor:dependent/slag_brick_block_recipe'
+    })
+    e.shaped(item.of('engineersdecor:slag_brick_block', 8), [
+        'BBB',
+        'BSB',
+        'BBB'
+    ], {
+        B: '#engineersdecor:brick_ingots',
+        S: '#forge:slag'
+    })
+    e.remove({
+        id: 'immersivepetroleum:asphalt2'
+    })
+    e.shaped(item.of('immersivepetroleum:asphalt', 12), [
+        'SBS',
+        'GUG',
+        'SBS'
+    ], {
+        B: 'immersivepetroleum:bitumen',
+        S: '#forge:slag',
+        G: '#forge:gravel',
+        U: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
+    })
+    e.remove({
+        id: 'immersiveengineering:crafting/concrete2'
+    })
+    e.shaped(item.of('immersiveengineering:concrete', 12), [
+        'SBS',
+        'GUG',
+        'SBS'
+    ], {
+        B: '#forge:clay',
+        S: '#forge:slag',
+        G: '#forge:gravel',
+        U: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
+    })
 })
