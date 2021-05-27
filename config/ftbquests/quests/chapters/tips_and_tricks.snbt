@@ -1,0 +1,123 @@
+{
+	id: "1BE666F01EFFC00D",
+	group: "",
+	order_index: 3,
+	filename: "tips_and_tricks",
+	title: "Tips and Tricks",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -4.5d,
+			y: -4.0d,
+			description: ["Easy item to automate infinite water. Need more water? Make another!"],
+			id: "722978AC0C1B2649",
+			tasks: [{
+				id: "6855AE257D62AA37",
+				type: "item",
+				item: "cookingforblockheads:sink"
+			}],
+			rewards: [{
+				id: "145F9B3A17676EAA",
+				type: "item",
+				item: "pipez:fluid_pipe"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -4.0d,
+			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."],
+			id: "7EC8814940C4C3D7",
+			tasks: [{
+				id: "30C938C85BED7956",
+				type: "item",
+				item: {
+					id: "shrink:shrinking_device",
+					Count: 1b,
+					tag: {}
+				}
+			}],
+			rewards: [{
+				id: "7CCC4171B93B35F0",
+				type: "item",
+				item: "compactmachines:wall",
+				count: 8
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -4.0d,
+			description: ["Not your average storage device. "],
+			id: "73C662E0597726F3",
+			tasks: [{
+				id: "29DBBEDE434FC907",
+				type: "item",
+				item: "dankstorage:dank_1"
+			}],
+			rewards: [{
+				id: "37528CBEEBA5AEA6",
+				type: "item",
+				item: "minecraft:redstone_block"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -2.5d,
+			description: ["Craftable X-Ray potions are very useful when you are running low on an item."],
+			id: "3EE9F242794CD95F",
+			tasks: [{
+				id: "03F9DE34E4C766D8",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:diamond_sight"
+					}
+				}
+			}],
+			rewards: [{
+				id: "319A13116831F46D",
+				type: "item",
+				item: {
+					id: "minecraft:potion",
+					Count: 1b,
+					tag: {
+						Potion: "potionsmaster:emerald_sight"
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -2.5d,
+			description: ["Wireless power to fix your direwire."],
+			id: "4DFA99898C174BD6",
+			tasks: [{
+				id: "7C643CA94F63FBA2",
+				type: "item",
+				item: "fluxnetworks:flux_controller"
+			}],
+			rewards: [{
+				id: "0A947736C7FD97A9",
+				type: "item",
+				item: "fluxnetworks:flux_point"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.5d,
+			description: ["Use the market to get seeds or saplings. Also try and eat as many foods as you can to improve your health."],
+			id: "27D9B9F9695206BE",
+			tasks: [{
+				id: "5DDBD32533AB4583",
+				type: "item",
+				item: "farmingforblockheads:market"
+			}],
+			rewards: [{
+				id: "500A1F43838C5E64",
+				type: "item",
+				item: "minecraft:emerald"
+			}]
+		}
+	]
+}

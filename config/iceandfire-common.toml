@@ -121,7 +121,7 @@
 	#True if siren islands are allowed to spawn
 	"Spawn Sirens" = false
 	#True if tamed dragons can follow the griefing rules.
-	"Tamed Dragon Griefing" = true
+	"Tamed Dragon Griefing" = false
 	#Default deathworm attack strength, this is scaled to the worm's particular size
 	#Range: 1.0 ~ 10000.0
 	"Death Worm Base Attack Strength" = 23.0

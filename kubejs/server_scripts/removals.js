@@ -19,6 +19,7 @@ events.listen('recipes', e => {
         'engineerstools:crushing/aluminium_grit_crushing_recipe',
 
         'xreliquary:alkahestry/crafting/nether_star',
+		'xreliquary:fertile_lily_pad',
 
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/press/unpacking/press_honeycomb_unpacking',

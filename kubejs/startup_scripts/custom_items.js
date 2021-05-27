@@ -33,4 +33,5 @@ events.listen('block.registry', function(e) {
     e.create('saltpeter_block').displayName('Nitrate Block').material('iron')
     e.create('potassium_block').displayName('Potassium Block').material('iron')
     e.create('potassium_nitrate_block').displayName('Potassium Nitrate Block').material('iron')
+    e.create('atm_star_block').displayName('§eATM Star Block').material('iron').hardness(5).lightLevel(10)
 })
