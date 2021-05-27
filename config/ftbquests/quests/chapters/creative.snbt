@@ -62,7 +62,7 @@
 			x: 1.5d,
 			y: 3.5d,
 			shape: "diamond",
-			description: ["BUILD THE WORLD (or a block fast)"],
+			description: ["BUILD THE WORLD (or one block fast)"],
 			dependencies: ["30CED5B9C295B35E"],
 			id: "146C3E26EDEC0367",
 			tasks: [{
@@ -80,7 +80,7 @@
 			x: 3.5d,
 			y: 2.0d,
 			shape: "diamond",
-			description: ["DESTROY THE WORLD (or a block fast)"],
+			description: ["DESTROY THE WORLD (or one block fast)"],
 			dependencies: ["30CED5B9C295B35E"],
 			id: "53645509B62A9CC3",
 			tasks: [{
@@ -679,6 +679,7 @@
 			},
 			x: 5.5d,
 			y: -9.5d,
+			description: ["Get a Life"],
 			dependencies: ["4D15AA4334D14E1D"],
 			id: "0BE2549013745186",
 			tasks: [{
@@ -722,6 +723,11 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "4AF9AD001C827085",
+				type: "item",
+				item: "minecraft:dirt"
 			}]
 		},
 		{

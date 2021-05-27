@@ -960,40 +960,6 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: -6.5d,
-			dependencies: ["532229D285CA4858"],
-			id: "08A6A80A91BB4C32",
-			tasks: [{
-				id: "361BB1AF3A9C8B9C",
-				type: "item",
-				item: "extrastorage:advanced_importer",
-				count: 64L
-			}],
-			rewards: [{
-				id: "472C30D0C99EB6A8",
-				type: "item",
-				item: "refinedstorage:cable"
-			}]
-		},
-		{
-			x: -2.5d,
-			y: -1.5d,
-			dependencies: ["4CD83943865018EA"],
-			id: "2ED96AAC03FAAFF0",
-			tasks: [{
-				id: "42D10AE7731C6FD5",
-				type: "item",
-				item: "extrastorage:advanced_exporter",
-				count: 64L
-			}],
-			rewards: [{
-				id: "2A3F9C189C126B45",
-				type: "item",
-				item: "refinedstorage:cable"
-			}]
-		},
-		{
 			x: 1.5d,
 			y: -12.5d,
 			description: ["The 64k Fluid Storage Part is used to craft the 64k Fluid Storage Disk."],
@@ -1319,6 +1285,458 @@
 				type: "item",
 				item: "refinedstorage:quartz_enriched_iron",
 				count: 3
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -1.5d,
+			dependencies: ["4CD83943865018EA"],
+			id: "383DCC6ADE5364B5",
+			tasks: [{
+				id: "357CC03A3DC5164D",
+				type: "item",
+				item: "extrastorage:advanced_exporter"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -6.5d,
+			dependencies: ["532229D285CA4858"],
+			id: "355BFF36994B3916",
+			tasks: [{
+				id: "05352F383961DC1B",
+				type: "item",
+				item: "extrastorage:advanced_importer"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4101F8275B41C79B"],
+			optional: true,
+			id: "22F54B43B833CBB2",
+			tasks: [{
+				id: "7E7F6CE9FC70A5AF",
+				type: "item",
+				item: "refinedstorage:1k_storage_block"
+			}],
+			rewards: [{
+				id: "5CD15B37B86FC0A5",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["3FD801D7DE9176FB"],
+			optional: true,
+			id: "616DD901DC05DECE",
+			tasks: [{
+				id: "4001E0D82E6DC1C0",
+				type: "item",
+				item: "refinedstorage:4k_storage_block"
+			}],
+			rewards: [{
+				id: "1E7AC501E83691BA",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["03C78165C5CBD9E1"],
+			optional: true,
+			id: "2B63087981E50F8F",
+			tasks: [{
+				id: "59C8E1962D7FC18D",
+				type: "item",
+				item: "refinedstorage:16k_storage_block"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["3F8EEE1AD4420702"],
+			optional: true,
+			id: "31444DB5A3B17826",
+			tasks: [{
+				id: "29EB87DD4323598C",
+				type: "item",
+				item: "refinedstorage:64k_storage_block"
+			}],
+			rewards: [{
+				id: "2E0386C12AC3EEDB",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4C1F13F5A0E273EF"],
+			optional: true,
+			id: "38F04840041F461D",
+			tasks: [{
+				id: "5057EAD32AA581D8",
+				type: "item",
+				item: "extradisks:256k_storage_block"
+			}],
+			rewards: [{
+				id: "7BC82A53F9F577E8",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["7C94F6AE2A793858"],
+			optional: true,
+			id: "572F52C6402864A8",
+			tasks: [{
+				id: "61F0444E27D49B3D",
+				type: "item",
+				item: "extradisks:1024k_storage_block"
+			}],
+			rewards: [{
+				id: "5CB0E69ADFCBA005",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["52ACADDFCB0E22AB"],
+			optional: true,
+			id: "52789A76615D0575",
+			tasks: [{
+				id: "2B56D70921F04A72",
+				type: "item",
+				item: "extradisks:4096k_storage_block"
+			}],
+			rewards: [{
+				id: "61F0792E83E5B100",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["123807F4BBE75120"],
+			optional: true,
+			id: "5C50A1795315A65C",
+			tasks: [{
+				id: "381D4381BB8410C2",
+				type: "item",
+				item: "extradisks:16384k_storage_block"
+			}],
+			rewards: [{
+				id: "328ADA2F5362A2E8",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -9.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["1D2700821045CCF2"],
+			optional: true,
+			id: "7F7B296068AAF405",
+			tasks: [{
+				id: "3054B2FFA8893E29",
+				type: "item",
+				item: "extradisks:65536k_storage_block"
+			}],
+			rewards: [{
+				id: "1142E4BCD71BF694",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4966162FBA933453"],
+			optional: true,
+			id: "2EFA5E43AF196F62",
+			tasks: [{
+				id: "2BF903DAA14F9ECA",
+				type: "item",
+				item: "extradisks:262144k_storage_block"
+			}],
+			rewards: [{
+				id: "4162DF199EA9BC53",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -11.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["718A2040D868E09F"],
+			optional: true,
+			id: "173CF3220ABCA57E",
+			tasks: [{
+				id: "751B84E77B2DE755",
+				type: "item",
+				item: "extradisks:1048576k_storage_block"
+			}],
+			rewards: [{
+				id: "270B6497653E4D78",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["4B81E84CAE814BA9"],
+			optional: true,
+			id: "1E51EF64EA465F54",
+			tasks: [{
+				id: "054937A9AA230A26",
+				type: "item",
+				item: "refinedstorage:64k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "21DD73C9900B0A74",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["39C8E1705EF1CD31"],
+			optional: true,
+			id: "5C9D829641916A37",
+			tasks: [{
+				id: "127D03F468D4B833",
+				type: "item",
+				item: "refinedstorage:256k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "46A7AA33EED3A203",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["60244F26B9ABED49"],
+			optional: true,
+			id: "3244AF0B5D37738B",
+			tasks: [{
+				id: "533C1172A7219C78",
+				type: "item",
+				item: "refinedstorage:1024k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "6CF3B2C7CC72975C",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["3751015CD5C84134"],
+			optional: true,
+			id: "5FD8FFE17397E805",
+			tasks: [{
+				id: "51C10EB9420902B1",
+				type: "item",
+				item: "refinedstorage:4096k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "7251D0704D4B4055",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["53CA0D6B4D5A17D5"],
+			optional: true,
+			id: "17748B93B25AD2CA",
+			tasks: [{
+				id: "1D6F846C0C99F319",
+				type: "item",
+				item: "extradisks:16384k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "07C4A6DD91AB6398",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["64D6C395B6304F40"],
+			optional: true,
+			id: "4F4E241234534DD4",
+			tasks: [{
+				id: "014AA24A00F84611",
+				type: "item",
+				item: "extradisks:65536k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "4505A4B3AF3A2321",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["17920C436DDBBD07"],
+			optional: true,
+			id: "62D71019E735F1B3",
+			tasks: [{
+				id: "7B79FEF0C5876174",
+				type: "item",
+				item: "extradisks:262144k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "555EB88EF0071765",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: -14.0d,
+			description: [
+				"Building Useless Blocks",
+				"yay"
+			],
+			dependencies: ["49772923B8AF0F1F"],
+			optional: true,
+			id: "40C1F197E3F3E220",
+			tasks: [{
+				id: "6C12783A4C026440",
+				type: "item",
+				item: "extradisks:1048576k_fluid_storage_block"
+			}],
+			rewards: [{
+				id: "2F75D3D4B5661DF4",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -9.0d,
+			description: ["Security is always gud"],
+			dependencies: ["01F18150EC923482"],
+			id: "3B84215240D9F2CB",
+			tasks: [{
+				id: "20F3020C07C9D22B",
+				type: "item",
+				item: "refinedstorage:security_manager"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -9.0d,
+			description: ["Please don't detect me :O"],
+			dependencies: ["01F18150EC923482"],
+			id: "5D31FCC61B02E17A",
+			tasks: [{
+				id: "6C6F92D9A6D8DFD6",
+				type: "item",
+				item: "refinedstorage:detector"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.5d,
+			description: ["Manipulate your gf :P"],
+			dependencies: ["01F18150EC923482"],
+			id: "41424EB0CC76EFAF",
+			tasks: [{
+				id: "68E02B9159B931BE",
+				type: "item",
+				item: "refinedstorage:disk_manipulator"
 			}]
 		}
 	]
