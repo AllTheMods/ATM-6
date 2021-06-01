@@ -229,4 +229,5 @@ onEvent(`item.tooltip`, e => {
     e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`]);
     e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`]);
     e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
+    e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)
 });
