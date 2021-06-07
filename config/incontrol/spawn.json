@@ -48,6 +48,35 @@
       "perplayer": true
     },
     "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mod": "iceandfire",
+    "mincount": {
+      "amount": 0,
+      "mod": "iceandfire",
+      "perchunk": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "mod": "iceandfire",
+    "mincount": {
+      "amount": 0,
+      "mod": "iceandfire",
+      "perchunk": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:the_end",
+    "mod": "iceandfire",
+    "mincount": {
+      "amount": 0,
+      "mod": "iceandfire",
+      "perchunk": true
+    },
+    "result": "deny"
   }
-
 ]
