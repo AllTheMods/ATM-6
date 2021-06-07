@@ -1,0 +1,33 @@
+[
+  {
+    "dimension": "rats:ratlantis",
+    "mob": "iceandfire:sea_serpent",
+    "mincount": {
+      "amount": 10,
+      "hostile": true,
+      "perplayer": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "twilightforest:twilightforest",
+    "mob": "iceandfire:siren",
+    "mincount": {
+      "amount": 10,
+      "hostile": true,
+      "perplayer": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "twilightforest:twilightforest",
+    "mob": "iceandfire:sea_serpent",
+    "mincount": {
+      "amount": 10,
+      "hostile": true,
+      "perplayer": true
+    },
+    "result": "deny"
+  }
+
+]
