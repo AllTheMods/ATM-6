@@ -28,6 +28,26 @@
       "perplayer": true
     },
     "result": "deny"
+  },
+  {
+    "dimension": "allthemodium:the_other",
+    "mob": "iceandfire:hydra",
+    "mincount": {
+      "amount": 10,
+      "hostile": true,
+      "perplayer": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "allthemodium:the_other",
+    "mob": "iceandfire:ghost",
+    "mincount": {
+      "amount": 10,
+      "hostile": true,
+      "perplayer": true
+    },
+    "result": "deny"
   }
 
 ]
