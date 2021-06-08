@@ -725,6 +725,59 @@ events.listen('recipes', function(e) {
         C: 'refinedstorage:machine_casing',
         T: 'refinedstorage:wireless_transmitter'
     }).id(`kubejs:creative_wireless_transmitter`)
+    //Mekasuit
+    e.shaped(Item.of('mekanism:mekasuit_helmet', {
+        HideFlags: 2
+    }), [
+        'HCH',
+        'HUH',
+        'PIP'
+    ], {
+        H: 'mekanism:hdpe_sheet',
+        C: 'mekanism:ultimate_control_circuit',
+        P: 'mekanism:pellet_polonium',
+        I: 'mekanism:basic_induction_cell',
+        U: 'allthemodium:unobtainium_helmet'
+    }).id(`kubejs:mekasuit_helmet`)
+    e.shaped(Item.of('mekanism:mekasuit_bodyarmor', {
+        HideFlags: 2
+    }), [
+        'HCH',
+        'HUH',
+        'PIP'
+    ], {
+        H: 'mekanism:hdpe_sheet',
+        C: 'mekanism:ultimate_control_circuit',
+        P: 'mekanism:pellet_polonium',
+        I: 'mekanism:basic_induction_cell',
+        U: 'allthemodium:unobtainium_chestplate'
+    }).id(`kubejs:mekasuit_bodyarmor`)
+    e.shaped(Item.of('mekanism:mekasuit_pants', {
+        HideFlags: 2
+    }), [
+        'HCH',
+        'HUH',
+        'PIP'
+    ], {
+        H: 'mekanism:hdpe_sheet',
+        C: 'mekanism:ultimate_control_circuit',
+        P: 'mekanism:pellet_polonium',
+        I: 'mekanism:basic_induction_cell',
+        U: 'allthemodium:unobtainium_leggings'
+    }).id(`kubejs:mekasuit_pants`)
+    e.shaped(Item.of('mekanism:mekasuit_boots', {
+        HideFlags: 2
+    }), [
+        'HCH',
+        'HUH',
+        'PIP'
+    ], {
+        H: 'mekanism:hdpe_sheet',
+        C: 'mekanism:ultimate_control_circuit',
+        P: 'mekanism:pellet_polonium',
+        I: 'mekanism:basic_induction_cell',
+        U: 'allthemodium:unobtainium_boots'
+    }).id(`kubejs:mekasuit_boots`)
 
     //Misc Shapeless Recipes
     e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:clay`)
@@ -1012,8 +1065,8 @@ events.listen('recipes', function(e) {
     e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`, ).id(`kubejs:saw/byg_log_imbued_nightshade`)
     e.recipes.mekanism.sawing((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
 
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote',250),'minecraft:charcoal'], '#minecraft:logs')
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote',5000),'immersiveengineering:coke'], 'minecraft:coal_block')
+    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
+    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
     //botania
     e.recipes.botania.runic_altar({
         output: {

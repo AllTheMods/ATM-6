@@ -1,51 +1,7 @@
 events.listen('recipes', function(e) {
-
-    //Comb to Bucket
-    e.shaped('minecraft:water_bucket', [
-        ' C ',
-        'CBC',
-        ' C '
-    ], {
-        'C': 'resourcefulbees:water_honeycomb',
-        'B': 'minecraft:bucket'
-    }).id(`kubejs:water_comb_bucket`)
-    e.shaped('minecraft:lava_bucket', [
-        ' C ',
-        'CBC',
-        ' C '
-    ], {
-        'C': 'resourcefulbees:lava_honeycomb',
-        'B': 'minecraft:bucket'
-    }).id(`kubejs:lava_comb_bucket`)
-
-
-    //Honey Compatibility
-    var honey = [
-        'resourcefulbees:honey',
-        'cyclic:honey',
-        'create:honey',
-    ]
-    honey.forEach(type => {
-        e.recipes.thermal.chiller('minecraft:honey_block', fluid.of(`${type}`, 1000))
-    })
-    var customhoney = [
-        'resourcefulbees:rainbow_honey',
-        'resourcefulbees:catnip_honey',
-    ]
-    customhoney.forEach(type => {
-        e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))
-        e.shaped('compressium:honey_1', [
-            'AAA',
-            'AAA',
-            'AAA'
-        ], {
-            A: `${type}_block`
-        })
-    })
-
-    //Combs to Dye
     var cuShaped = e.recipes.cucumber.shaped_no_mirror
 
+    //Combs to Dye
     function dyeShaped(result, pattern) {
         cuShaped({
             'pattern': pattern,
@@ -140,9 +96,8 @@ events.listen('recipes', function(e) {
         '   ',
         '   '
     ])
-    //Combs to Mystical
-    var cuShaped = e.recipes.cucumber.shaped_no_mirror
 
+    //Combs to Mystical
     function MysticalShaped(result, pattern) {
         cuShaped({
             'pattern': pattern,
@@ -249,9 +204,8 @@ events.listen('recipes', function(e) {
         '   ',
         '   '
     ])
-    //Combs to crop
-    var cuShaped = e.recipes.cucumber.shaped_no_mirror
 
+    //Combs to crop
     function Crop(result, pattern) {
         cuShaped({
             'pattern': pattern,
@@ -358,9 +312,8 @@ events.listen('recipes', function(e) {
         '   ',
         '   '
     ])*/
-    //Combs to Meat
-    var cuShaped = e.recipes.cucumber.shaped_no_mirror
 
+    //Combs to Meat
     function Meat(result, pattern) {
         cuShaped({
             'pattern': pattern,
@@ -467,6 +420,7 @@ events.listen('recipes', function(e) {
         '   ',
         '   '
     ])*/
+
     //Combs to Stone
     function stoneShaped(result, pattern) {
         cuShaped({
