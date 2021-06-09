@@ -1,4 +1,4 @@
-var colors = [
+const colors = [
     `white`,
     `light_gray`,
     `gray`,
@@ -15,9 +15,9 @@ var colors = [
     `magenta`,
     `pink`,
     `brown`
-];
+]
 
-var refined = [
+const refined = [
     `controller`,
     `creative_controller`,
     `grid`,
@@ -34,15 +34,49 @@ var refined = [
     `crafter`,
     `crafter_manager`,
     `crafting_monitor`
-];
+]
 
 onEvent(`jei.add.items`, e => {
+    const eggs = [
+        'dragonic',
+        'allthemodium',
+        'vibranium',
+        'unobtainium',
+        'soul_lava',
+        'netherite',
+    ]
+    eggs.forEach(type => {
+        e.add([
+            `resourcefulbees:${type}_bee_spawn_egg`
+        ])
+    })
+
     e.add([
         `minecraft:dragon_egg`
-    ]);
-});
+    ])
+})
 
 onEvent(`jei.hide.items`, e => {
+    const typeFirst = ['mekanism', 'immersiveengineering']
+
+    function hideMetal(mod, name, types) {
+        types.forEach(type => {
+            const id = typeFirst.includes(mod) ?
+                `${mod}:${type}_${name}` :
+                `${mod}:${name}_${type}`
+            if (!Ingredient.of(id).stacks.empty) e.hide(id)
+        })
+    }
+
+    function hideStuff(mod, type, names) {
+        names.forEach(name => {
+            const id = typeFirst.includes(mod) ?
+                `${mod}:${type}_${name}` :
+                `${mod}:${name}_${type}`
+            if (!Ingredient.of(id).stacks.empty) e.hide(id)
+        })
+    }
+
     e.hide([
         `quark:ancient_tome`,
 
@@ -123,111 +157,70 @@ onEvent(`jei.hide.items`, e => {
         `mob_grinding_utils:mob_swab`,
         `mob_grinding_utils:mob_swab_used`,
         `mob_grinding_utils:gm_chicken_feed`
-    ]);
+    ])
 
     colors.forEach(color => {
         refined.forEach(refin => {
             e.hide([
                 `refinedstorage:${color}_${refin}`
-            ]);
-        });
-    });
-    colors.forEach(color => {
+            ])
+        })
+
         e.hide([
             `creativewirelesstransmitter:${color}_creative_wireless_transmitter`
-        ]);
-    });
-    const hideMetal = (mod, name, types) => {
-        types.forEach(type => {
-            const typeFirst = ['mekanism', 'immersiveengineering'];
-            const id = typeFirst.includes(mod) ?
-                `${mod}:${type}_${name}` :
-                `${mod}:${name}_${type}`;
-            if (!Ingredient.of(id).stacks.empty) {
-                e.hide(id);
-                //console.log(`Hid ${id}`);
-            }
-        });
-    };
-
-    const hideStuff = (mod, type, names) => {
-        names.forEach(name => {
-            const typeFirst = ['mekanism', 'immersiveengineering'];
-            const id = typeFirst.includes(mod) ?
-                `${mod}:${type}_${name}` :
-                `${mod}:${name}_${type}`;
-            if (!Ingredient.of(id).stacks.empty) {
-                e.hide(id);
-                //console.log(`Hid ${id}`);
-            }
-        });
-    };
+        ])
+    })
 
     //Hides items based name, format: `mod`, `metal`, [`type1`, `type2`, `etc`]
-    hideMetal(`immersiveengineering`, `copper`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `aluminum`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `uranium`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `lead`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `steel`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `electrum`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`immersiveengineering`, `constantan`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`]);
-    hideMetal(`mekanism`, `copper`, [`ingot`, `dust`, `nugget`, `block`]);
-    hideMetal(`mekanism`, `tin`, [`ingot`, `dust`, `nugget`, `block`]);
-    hideMetal(`mekanism`, `uranium`, [`ingot`, `dust`, `nugget`, `block`]);
-    hideMetal(`mekanism`, `lead`, [`ingot`, `dust`, `nugget`, `block`]);
-    hideMetal(`mekanism`, `osmium`, [`ingot`, `dust`, `nugget`, `block`]);
-    hideMetal(`mekanism`, `bronze`, [`ingot`, `dust`, `nugget`, `block`]);
-    hideMetal(`create`, `copper`, [`ingot`, `ore`, `nugget`, `block`]);
-    hideMetal(`create`, `zinc`, [`ingot`, `ore`, `nugget`, `block`]);
-    hideMetal(`thermal`, `copper`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
-    hideMetal(`thermal`, `tin`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
-    hideMetal(`thermal`, `lead`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
-    hideMetal(`thermal`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
-    hideMetal(`thermal`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `block`]);
+    hideMetal(`immersiveengineering`, `copper`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `aluminum`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `uranium`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `lead`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `steel`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `electrum`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`immersiveengineering`, `constantan`, [`ingot`, `dust`, `nugget`, `storage`, `slab_storage`])
+    hideMetal(`mekanism`, `copper`, [`ingot`, `dust`, `nugget`, `block`])
+    hideMetal(`mekanism`, `tin`, [`ingot`, `dust`, `nugget`, `block`])
+    hideMetal(`mekanism`, `uranium`, [`ingot`, `dust`, `nugget`, `block`])
+    hideMetal(`mekanism`, `lead`, [`ingot`, `dust`, `nugget`, `block`])
+    hideMetal(`mekanism`, `osmium`, [`ingot`, `dust`, `nugget`, `block`])
+    hideMetal(`mekanism`, `bronze`, [`ingot`, `dust`, `nugget`, `block`])
+    hideMetal(`create`, `copper`, [`ingot`, `ore`, `nugget`, `block`])
+    hideMetal(`create`, `zinc`, [`ingot`, `ore`, `nugget`, `block`])
+    hideMetal(`thermal`, `copper`, [`ingot`, `ore`, `dust`, `nugget`, `block`])
+    hideMetal(`thermal`, `tin`, [`ingot`, `ore`, `dust`, `nugget`, `block`])
+    hideMetal(`thermal`, `lead`, [`ingot`, `ore`, `dust`, `nugget`, `block`])
+    hideMetal(`thermal`, `silver`, [`ingot`, `ore`, `dust`, `nugget`, `block`])
+    hideMetal(`thermal`, `nickel`, [`ingot`, `ore`, `dust`, `nugget`, `block`])
 
     //Hides items based on type, format: `mod`, `type`, [`name1`, `name2`, `etc`]
-    hideStuff(`thermal`, `dust`, [`iron`, `gold`]);
-    hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`]);
-    hideStuff(`immersiveengineering`, `plate`, [`iron`, `gold`, `copper`, `aluminum`, `lead`, `silver`, `nickel`, `constantan`, `electrum`]);
-    hideStuff(`mekanism`, `dust`, [`lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`]);
-    hideStuff(`mekanism`, `crystal`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
-    hideStuff(`mekanism`, `shard`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
-    hideStuff(`mekanism`, `dirty_dust`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
-    hideStuff(`mekanism`, `clump`, [`osmium`, `copper`, `tin`, `lead`, `uranium`]);
-    hideStuff(`appliedenergistics2`, `dust`, [`nether_quartz`, `ender`, `iron`, `gold`]);
-    hideStuff(`create`, `sheet`, [`iron`, `golden`, `copper`]);
-    hideStuff(`iceandfire`, `ore`, [`silver`, `copper`]);
-    hideStuff(`tmechworks`, `ore`, [`aluminum`, `copper`]);
-    hideStuff(`solarflux`, `sp`, [6, 7, 8]);
-    hideStuff(`quark`, `crate`, [`apple`, `carrot`, `beetroot`, `potato`]);
-    hideStuff(`quark`, `block`, [`bamboo`, `charcoal`, `sugar_cane`]);
-    hideStuff(`mysticalagriculture`, `seeds`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`]);
-    hideStuff(`mysticalagriculture`, `essence`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`]);
-
-    var eggs = [
-        'dragonic',
-        'allthemodium',
-        'vibranium',
-        'unobtainium',
-        'soul_lava',
-    ]
-    eggs.forEach(type => {
-        onEvent(`jei.add.items`, e => {
-            e.add([
-                `resourcefulbees:${type}_bee_spawn_egg`
-            ]);
-        });
-    })
-});
+    hideStuff(`thermal`, `dust`, [`iron`, `gold`])
+    hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`])
+    hideStuff(`immersiveengineering`, `plate`, [`iron`, `gold`, `copper`, `aluminum`, `lead`, `silver`, `nickel`, `constantan`, `electrum`])
+    hideStuff(`mekanism`, `dust`, [`lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`])
+    hideStuff(`mekanism`, `crystal`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
+    hideStuff(`mekanism`, `shard`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
+    hideStuff(`mekanism`, `dirty_dust`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
+    hideStuff(`mekanism`, `clump`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
+    hideStuff(`appliedenergistics2`, `dust`, [`nether_quartz`, `ender`, `iron`, `gold`])
+    hideStuff(`create`, `sheet`, [`iron`, `golden`, `copper`])
+    hideStuff(`iceandfire`, `ore`, [`silver`, `copper`])
+    hideStuff(`tmechworks`, `ore`, [`aluminum`, `copper`])
+    hideStuff(`solarflux`, `sp`, [6, 7, 8])
+    hideStuff(`quark`, `crate`, [`apple`, `carrot`, `beetroot`, `potato`])
+    hideStuff(`quark`, `block`, [`bamboo`, `charcoal`, `sugar_cane`])
+    hideStuff(`mysticalagriculture`, `seeds`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`])
+    hideStuff(`mysticalagriculture`, `essence`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`])
+})
 
 onEvent(`item.tooltip`, e => {
     refined.forEach(refin => {
-        e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`);
-    });
-    e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`]);
-    e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`]);
+        e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`)
+    })
+    e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`])
+    e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`])
     e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
     e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)
-});
+})

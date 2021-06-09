@@ -1,4 +1,4 @@
-events.listen('recipes', function(e) {
+events.listen('recipes', e => {
     //Functions
 
     function modifyShaped(result, count, pattern, ingridients) {
@@ -156,6 +156,7 @@ events.listen('recipes', function(e) {
     modifyShapeless('appliedenergistics2:crafting_card', 1, ['#forge:workbench', 'appliedenergistics2:basic_card'])
     modifyShapeless('appliedenergistics2:fuzzy_card', 1, ['#minecraft:wool', 'appliedenergistics2:advanced_card'])
     modifyShapeless('appliedenergistics2:crafting_terminal', 1, ['appliedenergistics2:terminal', '#forge:workbench', 'appliedenergistics2:calculation_processor'])
+
     modifyShaped('appliedenergistics2:quartz_glass', 4, [
         'GDG',
         'DGD',
@@ -321,7 +322,7 @@ events.listen('recipes', function(e) {
     })
 
     //Dye stuff
-    var colors = [
+    const colors = [
         'white',
         'light_gray',
         'gray',
@@ -339,7 +340,7 @@ events.listen('recipes', function(e) {
         'pink',
         'brown'
     ]
-    var pots = [
+    const pots = [
         'botanypots:botany_pot',
         'botanypots:white_botany_pot',
         'botanypots:orange_botany_pot',
@@ -358,8 +359,8 @@ events.listen('recipes', function(e) {
         'botanypots:red_botany_pot',
         'botanypots:black_botany_pot',
     ]
-    //e.shapeless(item.of('botania:fertilizer'), ['#forge:fetilizer', ['#forge:dyes/' + colors], ['#forge:dyes/' + colors], ['#forge:dyes/' + colors], ['#forge:dyes/' + colors]])
-    utils.listOf(colors).forEach(function(color) {
+    
+    colors.forEach(color => {
         e.shaped(item.of('botanypots:hopper_' + color + '_botany_pot'), [
             'MPM',
             ' H '

@@ -1,4 +1,4 @@
-events.listen('recipes', function(e) {
+events.listen('recipes', e => {
     //Functions
     function plus(result, count, name) {
         e.shaped(item.of(result, count), [
@@ -36,5 +36,6 @@ events.listen('recipes', function(e) {
     circle('silentgear:azure_silver_ingot', 6, 'azure_silver')
     circle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
     circle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
+
     circle('mekanism:fluorite_gem', 12, 'fluorite')
 })
