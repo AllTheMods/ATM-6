@@ -27,7 +27,7 @@ events.listen('recipes', e => {
             item: result,
             count: count
         }
-        obj.ingredient[type == 1 ? 'tag' : 'item'] = ingred
+        obj.ingredient = type == 1 ? { tag: ingred } : { item: ingred }
 
         e.recipes.pedestals.pedestal_crushing(obj)
     }
@@ -38,7 +38,7 @@ events.listen('recipes', e => {
             item: result,
             count: count
         }
-        obj.ingredient[type == 1 ? 'tag' : 'item'] = ingred
+        obj.ingredient = type == 1 ? { tag: ingred } : { item: ingred }
 
         e.recipes.pedestals.pedestal_sawing(obj)
     }
@@ -632,7 +632,7 @@ events.listen('recipes', e => {
         S: 'mysticalagradditions:dragon_egg_chunk',
         D: 'atmadditions:dragon_soul'
     })
-    //Tombstone 
+    //Tombstone
     e.shaped('tombstone:soul_receptacle', [
         'ABA',
         'CDC',
@@ -994,7 +994,7 @@ events.listen('recipes', e => {
     //crush (`output`, `input`)
     crush(`4x minecraft:blaze_powder`, `#forge:rods/blaze`)
 
-    //enrich - mek enriching 
+    //enrich - mek enriching
     //enrich (`output`, `input`)
     enrich(`minecraft:blaze_rod`, `4x minecraft:blaze_powder`)
 
