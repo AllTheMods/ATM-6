@@ -2,7 +2,10 @@
     "flower": "kubejs:atm_star_block",
     "maxTimeInHive": 1200,
     "traits": ["starry"],
+    "sizeModifier": 2.0,
     "hasHoneycomb": true,
+    "apiaryOutputAmounts": [1,1,1,1],
+	"apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB"],
     "baseLayerTexture": "special/starry_bee_primary_layer",
     "ColorData": {
         "primaryColor": "#FFA500",
@@ -20,7 +23,7 @@
         "modelType": "QUEEN"
     },
     "CombatData": {
-        "isPassive": true,
+        "isPassive": false,
         "removeStingerOnAttack": false,
         "inflictsPoison": false,
         "attackDamage": 10
@@ -34,40 +37,20 @@
         "mainOutput": "kubejs:patrick_star",
         "mainOutputWeight": 0.99,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "atmadditions:atm_star",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "bottleNBTData": {},
+        "bottleOutput": "minecraft:bottle",
+        "bottleOutputWeight": 0,
+        "bottleOutputCount": 0,
         "recipeTime": 200,
         "hasFluidoutput": false
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
-        "comment_for_pdiddy": "there is no spawning, before you say something about it",
-        "isBreedable": false,
-        "parent1": "Starry",
-        "parent2": "Starry",
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "atmadditions:atm_star",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": true

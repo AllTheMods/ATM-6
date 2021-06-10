@@ -36,7 +36,7 @@ onEvent('recipes', e => {
     var ma = 'mysticalagriculture:'
 
     function t1(types) {
-        utils.listOf(types).forEach(function(type) {
+        utils.listOf(types).forEach(function (type) {
             e.remove({
                 id: 'mysticalagriculture:crops/' + type
             })
@@ -55,36 +55,36 @@ onEvent('recipes', e => {
                     }
                 },
                 results: [{
-                        chance: 0.75,
-                        output: {
-                            item: ma + type + '_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 3
+                    chance: 0.75,
+                    output: {
+                        item: ma + type + '_essence'
                     },
-                    {
-                        chance: 0.05,
-                        output: {
-                            item: ma + type + '_seeds'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
+                    minRolls: 1,
+                    maxRolls: 3
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: ma + type + '_seeds'
                     },
-                    {
-                        chance: 0.01,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
-                    }
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
                 ]
             }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
         })
     }
 
     function t2(types) {
-        utils.listOf(types).forEach(function(type) {
+        utils.listOf(types).forEach(function (type) {
             e.remove({
                 id: 'mysticalagriculture:crops/' + type
             })
@@ -103,36 +103,36 @@ onEvent('recipes', e => {
                     }
                 },
                 results: [{
-                        chance: 0.75,
-                        output: {
-                            item: ma + type + '_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 3
+                    chance: 0.75,
+                    output: {
+                        item: ma + type + '_essence'
                     },
-                    {
-                        chance: 0.05,
-                        output: {
-                            item: ma + type + '_seeds'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
+                    minRolls: 1,
+                    maxRolls: 3
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: ma + type + '_seeds'
                     },
-                    {
-                        chance: 0.01,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
-                    }
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
                 ]
             }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
         })
     }
 
     function t3(types) {
-        utils.listOf(types).forEach(function(type) {
+        utils.listOf(types).forEach(function (type) {
             e.remove({
                 id: 'mysticalagriculture:crops/' + type
             })
@@ -151,36 +151,36 @@ onEvent('recipes', e => {
                     }
                 },
                 results: [{
-                        chance: 0.75,
-                        output: {
-                            item: ma + type + '_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 3
+                    chance: 0.75,
+                    output: {
+                        item: ma + type + '_essence'
                     },
-                    {
-                        chance: 0.05,
-                        output: {
-                            item: ma + type + '_seeds'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
+                    minRolls: 1,
+                    maxRolls: 3
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: ma + type + '_seeds'
                     },
-                    {
-                        chance: 0.01,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
-                    }
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
                 ]
             }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
         })
     }
 
     function t4(types) {
-        utils.listOf(types).forEach(function(type) {
+        utils.listOf(types).forEach(function (type) {
             e.remove({
                 id: 'mysticalagriculture:crops/' + type
             })
@@ -199,36 +199,36 @@ onEvent('recipes', e => {
                     }
                 },
                 results: [{
-                        chance: 0.75,
-                        output: {
-                            item: ma + type + '_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 3
+                    chance: 0.75,
+                    output: {
+                        item: ma + type + '_essence'
                     },
-                    {
-                        chance: 0.05,
-                        output: {
-                            item: ma + type + '_seeds'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
+                    minRolls: 1,
+                    maxRolls: 3
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: ma + type + '_seeds'
                     },
-                    {
-                        chance: 0.01,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
-                    }
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
                 ]
             }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
         })
     }
 
     function t5(types) {
-        utils.listOf(types).forEach(function(type) {
+        utils.listOf(types).forEach(function (type) {
             e.remove({
                 id: 'mysticalagriculture:crops/' + type
             })
@@ -247,36 +247,36 @@ onEvent('recipes', e => {
                     }
                 },
                 results: [{
-                        chance: 0.75,
-                        output: {
-                            item: ma + type + '_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 3
+                    chance: 0.75,
+                    output: {
+                        item: ma + type + '_essence'
                     },
-                    {
-                        chance: 0.05,
-                        output: {
-                            item: ma + type + '_seeds'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
+                    minRolls: 1,
+                    maxRolls: 3
+                },
+                {
+                    chance: 0.05,
+                    output: {
+                        item: ma + type + '_seeds'
                     },
-                    {
-                        chance: 0.01,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
-                    }
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.01,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
                 ]
             }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
         })
     }
 
     function t6(types) {
-        utils.listOf(types).forEach(function(type) {
+        utils.listOf(types).forEach(function (type) {
             e.remove({
                 id: 'mysticalagriculture:crops/' + type
             })
@@ -295,36 +295,36 @@ onEvent('recipes', e => {
                     }
                 },
                 results: [{
-                        chance: 0.75,
-                        output: {
-                            item: ma + type + '_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 3
+                    chance: 0.75,
+                    output: {
+                        item: ma + type + '_essence'
                     },
-                    {
-                        chance: 0.03,
-                        output: {
-                            item: ma + type + '_seeds'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
+                    minRolls: 1,
+                    maxRolls: 3
+                },
+                {
+                    chance: 0.03,
+                    output: {
+                        item: ma + type + '_seeds'
                     },
-                    {
-                        chance: 0.03,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
-                    }
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.03,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
                 ]
             }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
         })
     }
 
     function t7(types) {
-        utils.listOf(types).forEach(function(type) {
+        utils.listOf(types).forEach(function (type) {
             e.remove({
                 id: 'mysticalagriculture:crops/' + type
             })
@@ -343,29 +343,29 @@ onEvent('recipes', e => {
                     }
                 },
                 results: [{
-                        chance: 0.75,
-                        output: {
-                            item: ma + type + '_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 3
+                    chance: 0.75,
+                    output: {
+                        item: ma + type + '_essence'
                     },
-                    {
-                        chance: 0.01,
-                        output: {
-                            item: ma + type + '_seeds'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
+                    minRolls: 1,
+                    maxRolls: 3
+                },
+                {
+                    chance: 0.01,
+                    output: {
+                        item: ma + type + '_seeds'
                     },
-                    {
-                        chance: 0.1,
-                        output: {
-                            item: 'mysticalagriculture:fertilized_essence'
-                        },
-                        minRolls: 1,
-                        maxRolls: 1
-                    }
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.1,
+                    output: {
+                        item: 'mysticalagriculture:fertilized_essence'
+                    },
+                    minRolls: 1,
+                    maxRolls: 1
+                }
                 ]
             }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
         })
@@ -505,19 +505,9 @@ onEvent('recipes', e => {
         const dropchance_stick = 0.1
         const dropchance_sapling = 0.05
         const dropchance_raredrops = 0.01
-        if (!soil) {
-            soil = 'dirt'
-            //console.log(`console.log: soil is null, set to ${soil}`);
-        }
-        if (!log) {
-            log = mod + ':' + name + '_log'
-            //console.log(`console.log: log is null, set to ${log}`)
-        } else {
-            //console.log("console.log: log is not null");
-        }
 
         const results = [
-            Item.of(log).chance(dropchance_log),
+            Item.of(log || 'dirt').chance(dropchance_log),
             {
                 item: Item.of('minecraft:stick').chance(dropchance_stick),
                 maxRolls: 2
@@ -535,92 +525,8 @@ onEvent('recipes', e => {
             })
         }
 
-        e.recipes.botanypots.crop(results, mod + ':' + name + '_sapling').categories([soil])
+        e.recipes.botanypots.crop(results, mod + ':' + name + '_sapling').categories([soil || (mod + ':' + name + '_log')])
     }
-
-    /* 
-     Use the function to add custom trees to the pots. 
-       Parameter 1 is mod as the advanced tooltip sees it.   
-       Parameter 2 is the tree name as the advanced tooltip sees it.
-       Parameter 3 is for the unique drops like apple/cherry etc. If none, use 'null' without the quotes.
-       Parameter 4 is for the soil to grow on, using 'modname:blockname'. If dirt, 'null' without the quotes will default to dirt.
-       Parameter 5 is for specifying a different log than what would normally be modname:treename_log. 'null' defaults to modname:treename_log.
-    */
-    /*Replaced by Botany Trees mod, but maintaining the code in case we have to add trees or change them.
-      growTreeUniversal('minecraft', 'oak', 'minecraft:apple', null, null)
-      growTreeUniversal('minecraft', 'dark_oak', 'minecraft:apple', null, null)
-      growTreeUniversal('minecraft', 'jungle', 'minecraft:cocoa_beans', null, null)
-      growTreeUniversal('minecraft', 'acacia', '', null, null)
-      growTreeUniversal('minecraft', 'birch', '', null, null)
-      growTreeUniversal('minecraft', 'spruce', '', null, null)
-      growTreeUniversal('silentgear', 'netherwood', 'silentgear:nether_banana', null, null)
-      growTreeUniversal('forbidden_arcanus', 'cherrywood', 'forbidden_arcanus:cherry_peach', null, null)
-      growTreeUniversal('forbidden_arcanus', 'mysterywood', 'minecraft:golden_apple', null, null)
-      //Quark Trees
-      growTreeUniversal('quark', 'blue_blossom', null, null, 'minecraft:spruce_log')
-      growTreeUniversal('quark', 'lavender_blossom', null, null, 'minecraft:spruce_log')
-      growTreeUniversal('quark', 'orange_blossom', null, null, 'minecraft:spruce_log')
-      growTreeUniversal('quark', 'pink_blossom', null, null, 'minecraft:spruce_log')
-      growTreeUniversal('quark', 'yellow_blossom', null, null, 'minecraft:spruce_log')
-      //BoP Trees
-      growTreeUniversal('biomesoplenty', 'dead', '', null, null)
-      growTreeUniversal('biomesoplenty', 'fir', '', null, null)
-      growTreeUniversal('biomesoplenty', 'hellbark', '', null, null)
-      growTreeUniversal('biomesoplenty', 'jacaranda', '', null, null)
-      growTreeUniversal('biomesoplenty', 'magic', '', null, null)
-      growTreeUniversal('biomesoplenty', 'mahogany', '', null, null)
-      growTreeUniversal('biomesoplenty', 'palm', '', null, null)
-      growTreeUniversal('biomesoplenty', 'redwood', '', null, null)
-      growTreeUniversal('biomesoplenty', 'umbran', '', null, null)
-      growTreeUniversal('biomesoplenty', 'willow', '', null, null)
-      growTreeUniversal('biomesoplenty', 'flowering_oak', null, null, 'minecraft:oak_log')
-      growTreeUniversal('biomesoplenty', 'maple', null, null, 'minecraft:oak_log')
-      growTreeUniversal('biomesoplenty', 'orange_autumn', null, null, 'minecraft:dark_oak_log')
-      growTreeUniversal('biomesoplenty', 'origin', null, null, 'minecraft:oak_log')
-      growTreeUniversal('biomesoplenty', 'pink_cherry', null, null, 'biomesoplenty:cherry_log')
-      growTreeUniversal('biomesoplenty', 'rainbow_birch', null, null, 'minecraft:birch_log')
-      growTreeUniversal('biomesoplenty', 'white_cherry', null, null, 'biomesoplenty:cherry_log')
-      growTreeUniversal('biomesoplenty', 'yellow_autumn', null, null, 'minecraft:birch_log')
-      //BYG Trees
-      growTreeUniversal('byg', 'aspen', null, null, null)
-      growTreeUniversal('byg', 'baobab', null, null, null)
-      growTreeUniversal('byg', 'blue_enchanted', null, null, null)
-      growTreeUniversal('byg', 'cika', null, null, null)
-      growTreeUniversal('byg', 'cypress', null, null, null)
-      growTreeUniversal('byg', 'ebony', null, null, null)
-      growTreeUniversal('byg', 'fir', null, null, null)
-      growTreeUniversal('byg', 'green_enchanted', null, null, null)
-      growTreeUniversal('byg', 'jacaranda', null, null, null)
-      growTreeUniversal('byg', 'mahogany', null, null, null)
-      growTreeUniversal('byg', 'mangrove', null, null, null)
-      growTreeUniversal('byg', 'maple', null, null, null)
-      growTreeUniversal('byg', 'palo_verde', null, null, null)
-      growTreeUniversal('byg', 'pine', null, null, null)
-      growTreeUniversal('byg', 'rainbow_eucalyptus', null, null, null)
-      growTreeUniversal('byg', 'redwood', null, null, null)
-      growTreeUniversal('byg', 'willow', null, null, null)
-      growTreeUniversal('byg', 'witch_hazel', null, null, null)
-      growTreeUniversal('byg', 'zelkova', null, null, null)
-      growTreeUniversal('byg', 'pink_cherry', null, null, 'byg:cherry_log')
-      growTreeUniversal('byg', 'white_cherry', null, null, 'byg:cherry_log')
-      growTreeUniversal('byg', 'holly', null, null, 'byg:holly_berries')
-      growTreeUniversal('byg', 'indigo_jacaranda', null, null, 'byg:jacaranda_log')
-      growTreeUniversal('byg', 'red_maple', null, null, 'byg:maple_log')
-      growTreeUniversal('byg', 'silver_maple', null, null, 'byg:maple_log')
-      growTreeUniversal('byg', 'skyris', 'byg:green_apple', null, null)
-      growTreeUniversal('byg', 'blue_spruce', null, null, 'minecraft:spruce_log')
-      growTreeUniversal('byg', 'brown_oak', null, null, 'minecraft:dark_oak_log')
-      growTreeUniversal('byg', 'joshua', 'byg:joshua_fruit', null, 'minecraft:oak_log')
-      growTreeUniversal('byg', 'orange_birch', null, null, 'minecraft:birch_log')
-      growTreeUniversal('byg', 'orange_oak', 'minecraft:apple', null, 'minecraft:oak_log')
-      growTreeUniversal('byg', 'orange_spruce', null, null, 'minecraft:birch_log')
-      growTreeUniversal('byg', 'orchard', 'minecraft:apple', null, 'minecraft:oak_log')
-      growTreeUniversal('byg', 'red_birch', null, null, 'minecraft:birch_log')
-      growTreeUniversal('byg', 'red_oak', null, null, 'minecraft:dark_oak_log')
-      growTreeUniversal('byg', 'red_spruce', null, null, 'minecraft:spruce_log')
-      growTreeUniversal('byg', 'yellow_birch', null, null, 'minecraft:birch_log')
-      growTreeUniversal('byg', 'yellow_spruce', null, null, 'minecraft:spruce_log')
-    */
     //Ars Nouveau Mana Bloom
     const results = [
         Item.of('ars_nouveau:mana_bloom').chance(0.75),
