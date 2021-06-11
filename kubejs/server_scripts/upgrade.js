@@ -1,5 +1,4 @@
-events.listen('recipes', function(e) {
-
+events.listen('recipes', e => {
     function upgrade(material, previous, next) {
         let recipe = previous.replace(`:`, `_`)
         e.recipes.allthemodium.atmshaped_crafting({

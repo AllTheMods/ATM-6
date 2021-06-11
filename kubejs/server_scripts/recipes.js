@@ -1,7 +1,4 @@
-events.listen('recipes', function(e) {
-    var pedCrush = e.recipes.pedestals.pedestal_crushing
-    var pedSaw = e.recipes.pedestals.pedestal_sawing
-
+events.listen('recipes', e => {
     function energize(ingredient, result, rCount, power) {
         e.recipes.powah.energizing({
             ingredients: ingredient,
@@ -24,61 +21,35 @@ events.listen('recipes', function(e) {
         })
     }
 
-    function pedestalCrush(result, count, ingredient, type) {
-        if (type == 1) {
-            pedCrush({
-                ingredient: {
-                    tag: ingredient
-                },
-                result: {
-                    item: result,
-                    count: count
-                }
-            })
-        } else {
-            pedCrush({
-                ingredient: {
-                    item: ingredient
-                },
-                result: {
-                    item: result,
-                    count: count
-                }
-            })
+    function pedestalCrush(result, count, ingred, type) {
+        const obj = {}
+        obj.result = {
+            item: result,
+            count: count
         }
+        obj.ingredient = type == 1 ? { tag: ingred } : { item: ingred }
+
+        e.recipes.pedestals.pedestal_crushing(obj)
     }
 
-    function pedestalSaw(result, count, ingredient, type) {
-        if (type == 1) {
-            pedSaw({
-                ingredient: {
-                    tag: ingredient
-                },
-                result: {
-                    item: result,
-                    count: count
-                }
-            })
-        } else {
-            pedSaw({
-                ingredient: {
-                    item: ingredient
-                },
-                result: {
-                    item: result,
-                    count: count
-                }
-            })
+    function pedestalSaw(result, count, ingred, type) {
+        const obj = {}
+        obj.result = {
+            item: result,
+            count: count
         }
+        obj.ingredient = type == 1 ? { tag: ingred } : { item: ingred }
+
+        e.recipes.pedestals.pedestal_sawing(obj)
     }
 
-    function jumbo(ingredients, result, xp) {
+    function jumbo(ingred, res, xp) {
         e.recipes.jumbofurnace.jumbo_smelting({
-            'ingredients': ingredients,
-            'result': {
-                'item': result
+            ingredients: ingred,
+            result: {
+                item: res
             },
-            'experience': xp
+            experience: xp
         })
     }
 
@@ -107,29 +78,29 @@ events.listen('recipes', function(e) {
                 item: middle
             },
             ingredients: [{
-                    item: item1
-                },
-                {
-                    item: item2
-                },
-                {
-                    item: item3
-                },
-                {
-                    item: item4
-                },
-                {
-                    item: item5
-                },
-                {
-                    item: item6
-                },
-                {
-                    item: item7
-                },
-                {
-                    item: item8
-                }
+                item: item1
+            },
+            {
+                item: item2
+            },
+            {
+                item: item3
+            },
+            {
+                item: item4
+            },
+            {
+                item: item5
+            },
+            {
+                item: item6
+            },
+            {
+                item: item7
+            },
+            {
+                item: item8
+            }
             ],
             result: {
                 item: output
@@ -661,7 +632,7 @@ events.listen('recipes', function(e) {
         S: 'mysticalagradditions:dragon_egg_chunk',
         D: 'atmadditions:dragon_soul'
     })
-    //Tombstone 
+    //Tombstone
     e.shaped('tombstone:soul_receptacle', [
         'ABA',
         'CDC',
@@ -692,13 +663,13 @@ events.listen('recipes', function(e) {
         A: 'mysticalagriculture:aquamarine_essence'
     }).id(`kubejs:aquamarine_essence`)
     //Cable Tiers changes
-    var caTypes = [
+    const caTypes = [
         `importer`,
         `exporter`,
         `constructor`,
         `destructor`
-    ];
-    const caTier = (tier, corners, processor, cables) => {
+    ]
+    function caTier(tier, corners, processor, cables) {
         caTypes.forEach(caType => {
             e.shaped(`cabletiers:${tier}_${caType}`, [
                 `a a`,
@@ -707,10 +678,10 @@ events.listen('recipes', function(e) {
             ], {
                 a: corners,
                 b: processor,
-                c: `${cables}${caType}`
-            });
-        });
-    };
+                c: cables + caType
+            })
+        })
+    }
     caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`);
     caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`);
     caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`);
@@ -805,7 +776,7 @@ events.listen('recipes', function(e) {
         tag: 'forge:storage_blocks/emerald'
     }], 'powah:spirited_crystal_block', 1, 9000000)
 
-    var tiersPowah = [
+    const tiersPowah = [
         'starter',
         'basic',
         'hardened',
@@ -814,7 +785,7 @@ events.listen('recipes', function(e) {
         'spirited',
         'nitro'
     ]
-    var typesPowah = [
+    const typesPowah = [
         'energy_cell',
         'reactor',
         'furnator',
@@ -826,8 +797,8 @@ events.listen('recipes', function(e) {
         'energy_discharger',
         'energizing_rod'
     ]
-    utils.listOf(typesPowah).forEach(function(type) {
-        utils.listOf(tiersPowah).forEach(function(tier) {
+    typesPowah.forEach(type => {
+        tiersPowah.forEach(tier => {
             e.shapeless(item.of('powah:' + type + '_' + tier), 'powah:' + type + '_' + tier)
         })
     })
@@ -837,11 +808,11 @@ events.listen('recipes', function(e) {
         if (type == 'rf') {
             e.recipes.allthemodium.atmshapeless_crafting({
                 ingredients: [{
-                        item: 'pedestals:coin/' + name
-                    },
-                    {
-                        tag: 'forge:storage_blocks/redstone'
-                    }
+                    item: 'pedestals:coin/' + name
+                },
+                {
+                    tag: 'forge:storage_blocks/redstone'
+                }
                 ],
                 result: {
                     item: 'pedestals:coin/' + type + name
@@ -850,11 +821,11 @@ events.listen('recipes', function(e) {
         } else {
             e.recipes.allthemodium.atmshapeless_crafting({
                 ingredients: [{
-                        item: 'pedestals:coin/' + name
-                    },
-                    {
-                        item: 'minecraft:experience_bottle'
-                    }
+                    item: 'pedestals:coin/' + name
+                },
+                {
+                    item: 'minecraft:experience_bottle'
+                }
                 ],
                 result: {
                     item: 'pedestals:coin/' + type + name
@@ -897,7 +868,7 @@ events.listen('recipes', function(e) {
     })
 
     //NBT Resets
-    var resetNBT = [
+    const resetNBT = [
         'rftoolsbase:filter_module',
         'rftoolspower:dimensionalcell_simple',
         'rftoolspower:dimensionalcell',
@@ -905,12 +876,12 @@ events.listen('recipes', function(e) {
         'rftoolspower:powercell_card',
         'rftoolsutility:syringe'
     ]
-    utils.listOf(resetNBT).forEach(function(reset) {
+    utils.listOf(resetNBT).forEach(function (reset) {
         e.shapeless(item.of(reset), reset)
     })
 
     //Solarflux Recipe
-    var solars = [
+    const solars = [
         '1',
         '2',
         '3',
@@ -920,7 +891,7 @@ events.listen('recipes', function(e) {
         'custom_vibranium',
         'custom_unobtainium'
     ]
-    utils.listOf(solars).forEach(function(solar) {
+    solars.forEach(solar => {
         e.shapeless(item.of('solarflux:sp_' + solar), 'solarflux:sp_' + solar)
     })
 
@@ -968,10 +939,10 @@ events.listen('recipes', function(e) {
     })
 
     //quark
-    const quarkWoodTypes = ['oak', 'dark_oak', 'acacia', 'spruce', 'birch', 'jungle', 'warped', 'crimson'];
+    const quarkWoodTypes = ['oak', 'dark_oak', 'acacia', 'spruce', 'birch', 'jungle', 'warped', 'crimson']
     quarkWoodTypes.forEach(wood => {
-        e.shapeless('quark:' + wood + '_chest', ['minecraft:' + wood + '_planks', '#forge:chests/wooden']);
-        e.shapeless('quark:' + wood + '_trapped_chest', ['quark:' + wood + '_chest', 'minecraft:tripwire_hook']);
+        e.shapeless('quark:' + wood + '_chest', ['minecraft:' + wood + '_planks', '#forge:chests/wooden'])
+        e.shapeless('quark:' + wood + '_trapped_chest', ['quark:' + wood + '_chest', 'minecraft:tripwire_hook'])
     });
 
     function buildQuarkChest(type, material) {
@@ -1004,8 +975,8 @@ events.listen('recipes', function(e) {
     })
 
     //Make bio fuel use tags instead of invidual items
-    var bioFuels = [2, 4, 5, 7, 8]
-    utils.listOf(bioFuels).forEach(function(bioFuel) {
+    const bioFuels = [2, 4, 5, 7, 8]
+    bioFuels.forEach(bioFuel => {
         e.recipes.mekanism.crushing(item.of('mekanism:bio_fuel', bioFuel), '#misctags:biofuel' + bioFuel)
     })
 
@@ -1023,7 +994,7 @@ events.listen('recipes', function(e) {
     //crush (`output`, `input`)
     crush(`4x minecraft:blaze_powder`, `#forge:rods/blaze`)
 
-    //enrich - mek enriching 
+    //enrich - mek enriching
     //enrich (`output`, `input`)
     enrich(`minecraft:blaze_rod`, `4x minecraft:blaze_powder`)
 
@@ -1031,7 +1002,7 @@ events.listen('recipes', function(e) {
     //pulverize (`output`, `input`)
 
     //add byg logs to mek sawmill
-    var saw = [
+    const saw = [
         'aspen',
         'baobab',
         'blue_enchanted',
@@ -1062,7 +1033,7 @@ events.listen('recipes', function(e) {
         e.recipes.mekanism.sawing((`6x byg:${type}_planks`), [`byg:stripped_${type}_log`, `byg:${type}_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_${type}`)
     })
     e.recipes.mekanism.sawing((`6x minecraft:oak_planks`), `byg:withering_oak_log`, Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_withering_oak`)
-    e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`, ).id(`kubejs:saw/byg_log_imbued_nightshade`)
+    e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`,).id(`kubejs:saw/byg_log_imbued_nightshade`)
     e.recipes.mekanism.sawing((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
 
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
@@ -1074,26 +1045,26 @@ events.listen('recipes', function(e) {
         },
         mana: 25000,
         ingredients: [{
-                tag: 'botania:runes/lust'
-            },
-            {
-                tag: 'botania:runes/gluttony'
-            },
-            {
-                tag: 'botania:runes/greed'
-            },
-            {
-                tag: 'botania:runes/sloth'
-            },
-            {
-                tag: 'botania:runes/wrath'
-            },
-            {
-                tag: 'botania:runes/envy'
-            },
-            {
-                tag: 'botania:runes/pride'
-            }
+            tag: 'botania:runes/lust'
+        },
+        {
+            tag: 'botania:runes/gluttony'
+        },
+        {
+            tag: 'botania:runes/greed'
+        },
+        {
+            tag: 'botania:runes/sloth'
+        },
+        {
+            tag: 'botania:runes/wrath'
+        },
+        {
+            tag: 'botania:runes/envy'
+        },
+        {
+            tag: 'botania:runes/pride'
+        }
         ]
     }).id('kubejs:runic_altar/rune_of_sins')
     e.recipes.botania.petal_apothecary({
@@ -1101,23 +1072,23 @@ events.listen('recipes', function(e) {
             item: 'kubejs:mass_of_wills'
         },
         ingredients: [{
-                item: 'botania:ancient_will_ahrim'
-            },
-            {
-                item: 'botania:ancient_will_dharok'
-            },
-            {
-                item: 'botania:ancient_will_guthan'
-            },
-            {
-                item: 'botania:ancient_will_torag'
-            },
-            {
-                item: 'botania:ancient_will_verac'
-            },
-            {
-                item: 'botania:ancient_will_karil'
-            }
+            item: 'botania:ancient_will_ahrim'
+        },
+        {
+            item: 'botania:ancient_will_dharok'
+        },
+        {
+            item: 'botania:ancient_will_guthan'
+        },
+        {
+            item: 'botania:ancient_will_torag'
+        },
+        {
+            item: 'botania:ancient_will_verac'
+        },
+        {
+            item: 'botania:ancient_will_karil'
+        }
         ]
     }).id('kubejs:petal_apothecary/mass_of_wills')
 

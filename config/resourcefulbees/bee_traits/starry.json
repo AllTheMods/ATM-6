@@ -1,23 +1,41 @@
 {
   "beepediaItemID": "minecraft:honeycomb",
   "damageImmunities": [
-      "inFire",
-      "lightningBolt",
-      "onFire",
-      "lava",
-      "hotFloor",
-      "inWall",
-      "cramming",
-      "drown",
-      "starve",
-      "cactus",
-      "fall",
-      "flyIntoWall",
-      "wither",
-      "anvil",
-      "fallingBlock",
-      "dragonBreath",
-      "dryout"  
+    "inFire",
+    "lightningBolt",
+    "onFire",
+    "lava",
+    "hotFloor",
+    "inWall",
+    "cramming",
+    "drown",
+    "starve",
+    "cactus",
+    "fall",
+    "flyIntoWall",
+    "wither",
+    "anvil",
+    "fallingBlock",
+    "dragonBreath",
+    "dryout",
+    "generic",
+    "outOfWorld",
+    "magic",
+    "sweetBerryBush",
+    "player"
   ],
-  "particleName": "minecraft:dripping_honey"
+  "particleName": "minecraft:dripping_honey",
+  "potionDamageEffects": [{
+      "effectID": "minecraft:nausea",
+      "strength": 3
+    },
+    {
+      "effectID": "minecraft:blindness",
+      "strength": 3
+    },
+    {
+      "effectID": "minecraft:weakness",
+      "strength": 5
+    }
+  ]
 }

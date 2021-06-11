@@ -1,4 +1,4 @@
-events.listen('recipes', function(e) {
+events.listen('recipes', e => {
     e.remove({
         output: [
             'minecraft:dragon_egg',

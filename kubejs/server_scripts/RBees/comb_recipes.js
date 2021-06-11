@@ -1,18 +1,17 @@
-events.listen('recipes', function(e) {
-    var cuShaped = e.recipes.cucumber.shaped_no_mirror
-
+events.listen('recipes', e => {
+    const cuShaped = e.recipes.cucumber.shaped_no_mirror
     //Combs to Dye
-    function dyeShaped(result, pattern) {
+    function dyeShaped(result_, pattern_) {
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:rainbow_honey_block'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:rainbow_honey_block'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 32
+            result: {
+                item: result_,
+                count: 32
             }
         })
     }
@@ -98,341 +97,281 @@ events.listen('recipes', function(e) {
     ])
 
     //Combs to Mystical
-    function MysticalShaped(result, pattern) {
+    function mysticalShaped(result_, pattern_) {
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:mystical_honeycomb'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:mystical_honeycomb'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 2
+            result: {
+                item: result_,
+                count: 2
             }
         })
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:mystical_honeycomb_block'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:mystical_honeycomb_block'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 18
+            result: {
+                item: result_,
+                count: 18
             }
         })
     }
-    MysticalShaped('botania:white_mystical_flower', [
+    mysticalShaped('botania:white_mystical_flower', [
         '  C',
         ' C ',
         ' C '
     ])
-    MysticalShaped('botania:green_mystical_flower', [
+    mysticalShaped('botania:green_mystical_flower', [
         '  C',
         'CC ',
         '   '
     ])
-    MysticalShaped('botania:purple_mystical_flower', [
+    mysticalShaped('botania:purple_mystical_flower', [
         '  C',
         '  C',
         ' C '
     ])
-    MysticalShaped('botania:cyan_mystical_flower', [
+    mysticalShaped('botania:cyan_mystical_flower', [
         'C C',
         ' C ',
         '   '
     ])
-    MysticalShaped('botania:light_gray_mystical_flower', [
+    mysticalShaped('botania:light_gray_mystical_flower', [
         ' C ',
         ' C ',
         '  C'
     ])
-    MysticalShaped('botania:gray_mystical_flower', [
+    mysticalShaped('botania:gray_mystical_flower', [
         '  C',
         ' C ',
         'C  '
     ])
-    MysticalShaped('botania:pink_mystical_flower', [
+    mysticalShaped('botania:pink_mystical_flower', [
         'C  ',
         ' C ',
         '  C'
     ])
-    MysticalShaped('botania:lime_mystical_flower', [
+    mysticalShaped('botania:lime_mystical_flower', [
         '  C',
         '  C',
         '  C'
     ])
-    MysticalShaped('botania:yellow_mystical_flower', [
+    mysticalShaped('botania:yellow_mystical_flower', [
         ' C ',
         ' C ',
         ' C '
     ])
-    MysticalShaped('botania:light_blue_mystical_flower', [
+    mysticalShaped('botania:light_blue_mystical_flower', [
         'C  ',
         'C  ',
         'C  '
     ])
-    MysticalShaped('botania:magenta_mystical_flower', [
+    mysticalShaped('botania:magenta_mystical_flower', [
         '   ',
         '   ',
         'CCC'
     ])
-    MysticalShaped('botania:orange_mystical_flower', [
+    mysticalShaped('botania:orange_mystical_flower', [
         '   ',
         'CCC',
         '   '
     ])
-    MysticalShaped('botania:blue_mystical_flower', [
+    mysticalShaped('botania:blue_mystical_flower', [
         '   ',
         ' C ',
         'C C'
     ])
-    MysticalShaped('botania:brown_mystical_flower', [
+    mysticalShaped('botania:brown_mystical_flower', [
         '  C',
         ' C ',
         '  C'
     ])
-    MysticalShaped('botania:black_mystical_flower', [
+    mysticalShaped('botania:black_mystical_flower', [
         '   ',
         'CC ',
         '  C'
     ])
-    MysticalShaped('botania:red_mystical_flower', [
+    mysticalShaped('botania:red_mystical_flower', [
         'CCC',
         '   ',
         '   '
     ])
 
     //Combs to crop
-    function Crop(result, pattern) {
+    function crop(result_, pattern_) {
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:cropy_honeycomb'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:cropy_honeycomb'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 3
+            result: {
+                item: result_,
+                count: 3
             }
         })
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:cropy_honeycomb_block'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:cropy_honeycomb_block'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 27
+            result: {
+                item: result_,
+                count: 27
             }
         })
     }
-    Crop('minecraft:wheat', [
+    crop('minecraft:wheat', [
         '  C',
         ' C ',
         ' C '
     ])
-    Crop('minecraft:beetroot', [
+    crop('minecraft:beetroot', [
         '  C',
         'CC ',
         '   '
     ])
-    Crop('minecraft:carrot', [
+    crop('minecraft:carrot', [
         '  C',
         '  C',
         ' C '
     ])
-    Crop('minecraft:potato', [
+    crop('minecraft:potato', [
         'C C',
         ' C ',
         '   '
     ])
-    Crop('minecraft:melon_slice', [
+    crop('minecraft:melon_slice', [
         ' C ',
         ' C ',
         '  C'
     ])
-    Crop('minecraft:pumpkin', [
+    crop('minecraft:pumpkin', [
         '  C',
         ' C ',
         'C  '
     ])
-    Crop('minecraft:bamboo', [
+    crop('minecraft:bamboo', [
         'C  ',
         ' C ',
         '  C'
     ])
-    Crop('minecraft:sweet_berries', [
+    crop('minecraft:sweet_berries', [
         '  C',
         '  C',
         '  C'
     ])
-    Crop('minecraft:brown_mushroom', [
+    crop('minecraft:brown_mushroom', [
         ' C ',
         ' C ',
         ' C '
     ])
-    Crop('minecraft:red_mushroom', [
+    crop('minecraft:red_mushroom', [
         'C  ',
         'C  ',
         'C  '
     ])
-    /*Crop('', [
-        '   ',
-        '   ',
-        'CCC'
-    ])
-    Crop('', [
-        '   ',
-        'CCC',
-        '   '
-    ])
-    Crop('', [
-        '   ',
-        ' C ',
-        'C C'
-    ])
-    Crop('', [
-        '  C',
-        ' C ',
-        '  C'
-    ])
-    Crop('', [
-        '   ',
-        'CC ',
-        '  C'
-    ])
-    Crop('', [
-        'CCC',
-        '   ',
-        '   '
-    ])*/
 
     //Combs to Meat
-    function Meat(result, pattern) {
+    function meat(result_, pattern_) {
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:kobee_beef_honeycomb'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:kobee_beef_honeycomb'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 3
+            result: {
+                item: result_,
+                count: 3
             }
         })
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:kobee_beef_honeycomb_block'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:kobee_beef_honeycomb_block'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 27
+            result: {
+                item: result_,
+                count: 27
             }
         })
     }
-    Meat('minecraft:porkchop', [
+    meat('minecraft:porkchop', [
         '  C',
         ' C ',
         ' C '
     ])
-    Meat('minecraft:beef', [
+    meat('minecraft:beef', [
         '  C',
         'CC ',
         '   '
     ])
-    Meat('minecraft:cod', [
+    meat('minecraft:cod', [
         '  C',
         '  C',
         ' C '
     ])
-    Meat('minecraft:salmon', [
+    meat('minecraft:salmon', [
         'C C',
         ' C ',
         '   '
     ])
-    Meat('minecraft:chicken', [
+    meat('minecraft:chicken', [
         ' C ',
         ' C ',
         '  C'
     ])
-    Meat('minecraft:rabbit', [
+    meat('minecraft:rabbit', [
         '  C',
         ' C ',
         'C  '
     ])
-    Meat('minecraft:mutton', [
+    meat('minecraft:mutton', [
         'C  ',
         ' C ',
         '  C'
     ])
-    Meat('twilightforest:raw_venison', [
+    meat('twilightforest:raw_venison', [
         '  C',
         '  C',
         '  C'
     ])
-    Meat('rats:raw_rat', [
+    meat('rats:raw_rat', [
         ' C ',
         ' C ',
         ' C '
     ])
-    Meat('aquaculture:fish_fillet_raw', [
+    meat('aquaculture:fish_fillet_raw', [
         'C  ',
         'C  ',
         'C  '
     ])
-    /*Meat('', [
-        '   ',
-        '   ',
-        'CCC'
-    ])
-    Meat('', [
-        '   ',
-        'CCC',
-        '   '
-    ])
-    Meat('', [
-        '   ',
-        ' C ',
-        'C C'
-    ])
-    Meat('', [
-        '  C',
-        ' C ',
-        '  C'
-    ])
-    Meat('', [
-        '   ',
-        'CC ',
-        '  C'
-    ])
-    Meat('', [
-        'CCC',
-        '   ',
-        '   '
-    ])*/
 
     //Combs to Stone
-    function stoneShaped(result, pattern) {
+    function stoneShaped(result_, pattern_) {
         cuShaped({
-            'pattern': pattern,
-            'key': {
-                'C': {
-                    'item': 'resourcefulbees:stan_honeycomb_block'
+            pattern: pattern_,
+            key: {
+                C: {
+                    item: 'resourcefulbees:stan_honeycomb_block'
                 }
             },
-            'result': {
-                'item': result,
-                'count': 16
+            result: {
+                item: result_,
+                count: 16
             }
         })
     }

@@ -4,6 +4,7 @@
 	order_index: 0,
 	filename: "allthemodium",
 	title: "Allthemodium",
+	icon: "allthemodium:allthemodium_ingot",
 	default_quest_shape: "",
 	quests: [
 		{

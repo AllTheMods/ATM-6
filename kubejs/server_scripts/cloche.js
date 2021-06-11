@@ -1,4 +1,4 @@
-events.listen('recipes', function(e) {
+events.listen('recipes', e => {
 
     var cloche = e.recipes.immersiveengineering.cloche
 

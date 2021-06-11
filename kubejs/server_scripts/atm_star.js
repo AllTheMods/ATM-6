@@ -1,4 +1,4 @@
-events.listen('recipes', function(e) {
+events.listen('recipes', e => {
     function jumbo(ingredients, result, xp) {
         e.recipes.jumbofurnace.jumbo_smelting({
             'ingredients': ingredients,
@@ -89,20 +89,20 @@ events.listen('recipes', function(e) {
 
     jumbo(
         [{
-                'type': 'jumbofurnace:tag_stack',
-                'tag': 'forge:vegetables',
-                'count': 64
-            },
-            {
-                'type': 'jumbofurnace:tag_stack',
-                'tag': 'forge:vegetables',
-                'count': 64
-            },
-            {
-                'type': 'jumbofurnace:tag_stack',
-                'tag': 'forge:vegetables',
-                'count': 64
-            }
+            'type': 'jumbofurnace:tag_stack',
+            'tag': 'forge:vegetables',
+            'count': 64
+        },
+        {
+            'type': 'jumbofurnace:tag_stack',
+            'tag': 'forge:vegetables',
+            'count': 64
+        },
+        {
+            'type': 'jumbofurnace:tag_stack',
+            'tag': 'forge:vegetables',
+            'count': 64
+        }
         ],
         'kubejs:potassium_dust', 5
     )

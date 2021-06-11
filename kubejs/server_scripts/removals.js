@@ -1,6 +1,6 @@
 //priority: 999
 events.listen('recipes', e => {
-    var idRemove = [
+    const idRemove = [
         'minecraft:comparator',
         'minecraft:glass',
 
@@ -157,12 +157,12 @@ events.listen('recipes', e => {
         'mekanism:mekasuit_pants',
         'mekanism:mekasuit_boots',
 
-    ];
+    ]
     idRemove.forEach(iR => {
         e.remove({
             id: iR
-        });
-    });
+        })
+    })
     //Recipe removals
     e.remove({
         output: [
@@ -196,24 +196,24 @@ events.listen('recipes', e => {
             'titanium:gold_gear',
             'titanium:diamond_gear',
         ]
-    });
+    })
     //Remove via mod name
     var modRemove = [
         `cabletiers`,
-    ];
+    ]
     modRemove.forEach(mR => {
         e.remove({
             mod: mR
-        });
-    });
+        })
+    })
     e.remove({
         input: [
             'appliedenergistics2:flour'
         ]
-    });
+    })
     e.remove({
         type: 'xreliquary:alkahestry_charging'
-    });
+    })
     e.remove({
         id: 'appliedenergistics2:grinder/flour'
     })
@@ -247,4 +247,4 @@ events.listen('recipes', e => {
     e.remove({
         output: 'mekanism:bio_fuel'
     })
-});
+})

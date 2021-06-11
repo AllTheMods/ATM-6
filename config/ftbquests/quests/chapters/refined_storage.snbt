@@ -4,6 +4,7 @@
 	order_index: 0,
 	filename: "refined_storage",
 	title: "Refined Storage",
+	icon: "refinedstorage:creative_controller",
 	default_quest_shape: "",
 	quests: [
 		{
