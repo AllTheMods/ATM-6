@@ -16,7 +16,6 @@ const colors = [
     `pink`,
     `brown`
 ]
-
 const refined = [
     `controller`,
     `creative_controller`,
@@ -140,8 +139,10 @@ onEvent(`jei.hide.items`, e => {
         `mininggadgets:minerslight`,
 
         `rats:ratlantis_portal`,
+        
         `iceandfire:silver_ingot`,
         `iceandfire:copper_ingot`,
+
         `tconstruct:copper_ingot`,
         `tmechworks:copper_ingot`,
         `tmechworks:aluminum_ingot`,
@@ -153,7 +154,9 @@ onEvent(`jei.hide.items`, e => {
         `eidolon:lead_nugget`,
 
         /resourcefulbees:.+_bee_spawn_egg/,
+
         `twilightforest:uncrafting_table`,
+
         `mob_grinding_utils:mob_swab`,
         `mob_grinding_utils:mob_swab_used`,
         `mob_grinding_utils:gm_chicken_feed`
