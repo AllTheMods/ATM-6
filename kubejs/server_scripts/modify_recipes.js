@@ -371,16 +371,18 @@ events.listen('recipes', e => {
         })
         e.shapeless(item.of('botanypots:' + color + '_botany_pot'), [pots, '#forge:dyes/' + color])
         e.shapeless(item.of('botanypots:hopper_' + color + '_botany_pot'), ['#botanypots:hopper_botany_pots', '#forge:dyes/' + color])
-        e.recipes.mekanism.enriching(item.of('minecraft:' + color + '_dye', 2), '#byg:' + color + '_dye')
-        e.recipes.pedestals.pedestal_crushing({
-            ingredient: {
-                tag: 'byg:' + color + '_dye'
-            },
-            result: {
-                item: 'minecraft:' + color + '_dye',
-                count: 2
-            }
-        })
+        if (color != "gray") {
+			e.recipes.mekanism.enriching(item.of('minecraft:' + color + '_dye', 2), '#byg:' + color + '_dye')
+			e.recipes.pedestals.pedestal_crushing({
+				ingredient: {
+					tag: 'byg:' + color + '_dye'
+				},
+				result: {
+					item: 'minecraft:' + color + '_dye',
+					count: 2
+				}
+			})
+		}
         e.remove({
             output: 'minecraft:' + color + '_bed'
         })
