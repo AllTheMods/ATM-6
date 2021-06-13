@@ -155,13 +155,13 @@ events.listen('recipes', e => {
         M: 'ars_nouveau:mana_gem_block'
     })
     //Immersive Engineering
-    energize(['immersiveengineering:capacitor_lv', 'immersiveengineering:capacitor_mv', 'immersiveengineering:capacitor_hv', atm_star], 'immersiveengineering:capacitor_creative', 2147483647)
+    energize(['immersiveengineering:capacitor_lv', 'immersiveengineering:capacitor_mv', 'immersiveengineering:capacitor_hv', atm_star], 'immersiveengineering:capacitor_creative', "2147483647")
     //Integrated Dynamics
-    energize(['integrateddynamics:energy_battery', 'integrateddynamics:energy_battery', atm_star, 'integrateddynamics:energy_battery', 'integrateddynamics:energy_battery'], 'integrateddynamics:energy_battery_creative', 2147483647)
+    energize(['integrateddynamics:energy_battery', 'integrateddynamics:energy_battery', atm_star, 'integrateddynamics:energy_battery', 'integrateddynamics:energy_battery'], 'integrateddynamics:energy_battery_creative', "2147483647")
     //Powah
-    energize(['powah:energy_cell_nitro', 'powah:energy_cell_nitro', atm_star, 'powah:energy_cell_nitro','powah:energy_cell_nitro'], 'powah:energy_cell_creative', 2147483647)
+    energize(['powah:energy_cell_nitro', 'powah:energy_cell_nitro', atm_star, 'powah:energy_cell_nitro','powah:energy_cell_nitro'], 'powah:energy_cell_creative', "2147483647")
     //Applied Energistics 2
-    energize(['appliedenergistics2:dense_energy_cell', atm_star], 'appliedenergistics2:creative_energy_cell', 2147483647)
+    energize(['appliedenergistics2:dense_energy_cell', atm_star], 'appliedenergistics2:creative_energy_cell', "2147483647")
     //Mekanism
     e.shaped('mekanism:creative_energy_cube', [
         'ATA',
@@ -181,7 +181,7 @@ events.listen('recipes', e => {
                 stored: "18446744073709551615.9999"
             }]
         }
-    }), 2147483647)
+    }), "2147483647")
     //Create
     e.recipes.create.mechanical_crafting('create:creative_motor', [
         'CLC',
@@ -195,12 +195,12 @@ events.listen('recipes', e => {
         G: 'create:gearbox'
     })
     //Refined Storage
-    energize(['refinedstorage:wireless_grid'], 'refinedstorage:creative_wireless_grid', 2147483647)
-    energize(['refinedstorage:wireless_fluid_grid'], 'refinedstorage:creative_wireless_fluid_grid', 2147483647)
-    energize(['refinedstorage:wireless_crafting_monitor'], 'refinedstorage:creative_wireless_crafting_monitor', 2147483647)
-    energize(['refinedstorageaddons:wireless_crafting_grid'], 'refinedstorageaddons:creative_wireless_crafting_grid', 2147483647)
-    energize(['refinedstorage:portable_grid'], 'refinedstorage:creative_portable_grid', 2147483647)
-    energize(['refinedstorage:controller', atm_star], 'refinedstorage:creative_controller', 2147483647)
+    energize(['refinedstorage:wireless_grid'], 'refinedstorage:creative_wireless_grid', "2147483647")
+    energize(['refinedstorage:wireless_fluid_grid'], 'refinedstorage:creative_wireless_fluid_grid', "2147483647")
+    energize(['refinedstorage:wireless_crafting_monitor'], 'refinedstorage:creative_wireless_crafting_monitor', "2147483647")
+    energize(['refinedstorageaddons:wireless_crafting_grid'], 'refinedstorageaddons:creative_wireless_crafting_grid', "2147483647")
+    energize(['refinedstorage:portable_grid'], 'refinedstorage:creative_portable_grid', "2147483647")
+    energize(['refinedstorage:controller', atm_star], 'refinedstorage:creative_controller', "2147483647")
     //Pneumatic Craft
     pressure([{
             'type': 'pneumaticcraft:stacked_item',
@@ -258,7 +258,7 @@ events.listen('recipes', e => {
         S: atm_star,
         A: 'allthemodium:allthemodium_block'
     })
-    //Thermal 
+    //Thermal
     e.shaped('thermal:machine_efficiency_creative_augment', [
         'AHA',
         'ESE',
