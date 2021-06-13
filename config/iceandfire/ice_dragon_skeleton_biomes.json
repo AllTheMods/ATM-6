@@ -2,7 +2,7 @@
   "biomes": [
     [
     {
-      "type": "REGISTRY_NAME",
+      "type": "BIOME_DICT",
       "negate": false,
       "value": "allthemodium:soul_sand_valley"
     }
