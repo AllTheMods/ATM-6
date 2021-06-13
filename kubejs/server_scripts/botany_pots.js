@@ -8,7 +8,7 @@ onEvent('recipes', e => {
             display: {
                 block: input,
                 properties: {
-                    moisture: 7
+                    moisture: "7"
                 }
             },
             categories: categories,

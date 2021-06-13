@@ -1,11 +1,11 @@
 {
   "name": "gold",
-  "disable": true,
+  "disable": false,
   "tier": 3,
   "color": "dede00",
-  "armorPoints": 4,
+  "armorPoints": 2,
   "enchantability": 25,
-  "craftingMaterial": "null",
+  "craftingMaterial": "tag:forge:ingots/gold",
   "rarity": 0,
   "capacity": 10000000,
   "usage": 300,
@@ -15,5 +15,6 @@
   "speedHoverDescend": 0.34,
   "speedHover": 0.03,
   "sprintSpeedMulti": 1.5,
+  "sprintSpeedMultiVertical": 1.0,
   "sprintFuelMulti": 3.2
 }

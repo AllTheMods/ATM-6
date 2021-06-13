@@ -1,6 +1,6 @@
 {
   "name": "stone",
-  "disable": true,
+  "disable": false,
   "tier": 1,
   "color": "7f7f7f",
   "armorPoints": 2,
@@ -15,5 +15,6 @@
   "speedHoverDescend": 0.18,
   "speedHover": 0.1,
   "sprintSpeedMulti": 1.0,
+  "sprintSpeedMultiVertical": 1.0,
   "sprintFuelMulti": 1.0
 }
