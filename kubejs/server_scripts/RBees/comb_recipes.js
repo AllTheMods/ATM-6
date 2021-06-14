@@ -1,458 +1,225 @@
 events.listen('recipes', e => {
-    const cuShaped = e.recipes.cucumber.shaped_no_mirror
-    //Combs to Dye
-    function dyeShaped(result_, pattern_) {
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:rainbow_honey_block'
-                }
-            },
-            result: {
-                item: result_,
-                count: 32
-            }
-        })
-    }
-    dyeShaped('minecraft:red_dye', [
-        '  C',
-        ' C ',
-        ' C '
-    ])
-    dyeShaped('minecraft:green_dye', [
-        '  C',
-        'CC ',
-        '   '
-    ])
-    dyeShaped('minecraft:purple_dye', [
-        '  C',
-        '  C',
-        ' C '
-    ])
-    dyeShaped('minecraft:cyan_dye', [
-        'C C',
-        ' C ',
-        '   '
-    ])
-    dyeShaped('minecraft:light_gray_dye', [
-        ' C ',
-        ' C ',
-        '  C'
-    ])
-    dyeShaped('minecraft:gray_dye', [
-        '  C',
-        ' C ',
-        'C  '
-    ])
-    dyeShaped('minecraft:pink_dye', [
-        'C  ',
-        ' C ',
-        '  C'
-    ])
-    dyeShaped('minecraft:lime_dye', [
-        '  C',
-        '  C',
-        '  C'
-    ])
-    dyeShaped('minecraft:yellow_dye', [
-        ' C ',
-        ' C ',
-        ' C '
-    ])
-    dyeShaped('minecraft:light_blue_dye', [
-        'C  ',
-        'C  ',
-        'C  '
-    ])
-    dyeShaped('minecraft:magenta_dye', [
-        '   ',
-        '   ',
-        'CCC'
-    ])
-    dyeShaped('minecraft:orange_dye', [
-        '   ',
-        'CCC',
-        '   '
-    ])
-    dyeShaped('minecraft:blue_dye', [
-        '   ',
-        ' C ',
-        'C C'
-    ])
-    dyeShaped('minecraft:brown_dye', [
-        '  C',
-        ' C ',
-        '  C'
-    ])
-    dyeShaped('minecraft:black_dye', [
-        '   ',
-        'CC ',
-        '  C'
-    ])
-    dyeShaped('minecraft:white_dye', [
-        'CCC',
-        '   ',
-        '   '
-    ])
+  const cuShaped = e.recipes.cucumber.shaped_no_mirror
+  const colors = [`white`, `light_gray`, `gray`, `black`, `red`, `orange`, `yellow`, `lime`, `green`, `light_blue`, `cyan`, `blue`, `purple`, `magenta`, `pink`, `brown`]
+  const craftingShapes = [
+    //vertical
+    [
+      '  C',
+      '  C',
+      '  C'
+    ], [
+      ' C ',
+      ' C ',
+      ' C '
+    ], [
+      'C  ',
+      'C  ',
+      'C  '
+    ],
+    //horizontal 
+    [
+      'CCC',
+      '   ',
+      '   '
+    ], [
+      '   ',
+      'CCC',
+      '   '
+    ], [
+      '   ',
+      '   ',
+      'CCC'
+    ],
+    //diagonal
+    [
+      '  C',
+      ' C ',
+      'C  '
+    ], [
+      'C  ',
+      ' C ',
+      '  C'
+    ],
+    //misc
+    [
+      '  C',
+      ' C ',
+      ' C '
+    ], [
+      ' C ',
+      'C  ',
+      'C  '
+    ], [
+      '  C',
+      'CC ',
+      '   '
+    ], [
+      '   ',
+      '  C',
+      'CC '
+    ], [
+      '  C',
+      '  C',
+      ' C '
+    ], [
+      ' C ',
+      ' C ',
+      'C  '
+    ], [
+      'C C',
+      ' C ',
+      '   '
+    ], [
+      '   ',
+      'C C',
+      ' C '
+    ], [
+      ' C ',
+      ' C ',
+      '  C'
+    ], [
+      'C  ',
+      'C  ',
+      ' C '
+    ], [
+      '   ',
+      ' C ',
+      'C C'
+    ], [
+      ' C ',
+      'C C',
+      '   '
+    ], [
+      '  C',
+      ' C ',
+      '  C'
+    ], [
+      ' C ',
+      'C  ',
+      ' C '
+    ], [
+      '   ',
+      'CC ',
+      '  C'
+    ], [
+      'CC ',
+      '  C',
+      '   '
+    ]
+  ] // 25 now
+  const dyes = []
+  const botaniaFlowers = []
+  colors.forEach(color => {
+    dyes.push(`minecraft:${color}_dye`)
+    botaniaFlowers.push(`botania:${color}_mystical_flower`)
+  })
+  const crops = [
+    `minecraft:wheat`,
+    `minecraft:beetroot`,
+    `minecraft:carrot`,
+    `minecraft:potato`,
+    `minecraft:melon_slice`,
+    `minecraft:pumpkin`,
+    `minecraft:bamboo`,
+    `minecraft:sweet_berries`,
+    `minecraft:brown_mushroom`,
+    `minecraft:red_mushroom`
+  ]
+  const meat = [
+    `minecraft:porkchop`,
+    `minecraft:beef`,
+    `minecraft:cod`,
+    `minecraft:salmon`,
+    `minecraft:chicken`,
+    `minecraft:rabbit`,
+    `minecraft:mutton`
+  ]
+  const stones = [
+    `minecraft:andesite`,
+    `minecraft:diorite`,
+    `minecraft:granite`,
+    `minecraft:basalt`,
+    `create:gabbro`,
+    `create:dolomite`,
+    `create:weathered_limestone`,
+    `create:limestone`,
+    `create:scoria`,
+    `create:dark_scoria`,
+    `quark:brimstone`,
+    `quark:slate`,
+    `quark:jasper`,
+    `quark:limestone`,
+    `quark:basalt`,
+    `astralsorcery:marble_raw`
+  ]
+  const honey = [
+    'resourcefulbees:honey',
+    'cyclic:honey',
+    'create:honey',
+  ]
+  const customHoney = [
+    'resourcefulbees:rainbow_honey',
+    'resourcefulbees:catnip_honey',
+  ]
 
-    //Combs to Mystical
-    function mysticalShaped(result_, pattern_) {
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:mystical_honeycomb'
-                }
-            },
-            result: {
-                item: result_,
-                count: 2
-            }
-        })
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:mystical_honeycomb_block'
-                }
-            },
-            result: {
-                item: result_,
-                count: 18
-            }
-        })
+  function shapedRecipe(results_, craftingItem_, itemCount_) {
+    const maxLength = Math.min(craftingShapes.length, results_.length)
+    for (let i = 0; i < maxLength; i++) {
+      cuShaped({
+        pattern: craftingShapes[i],
+        key: {
+          C: {
+            item: craftingItem_
+          }
+        },
+        result: {
+          item: results_[i],
+          count: itemCount_
+        }
+      })
     }
-    mysticalShaped('botania:white_mystical_flower', [
-        '  C',
-        ' C ',
-        ' C '
-    ])
-    mysticalShaped('botania:green_mystical_flower', [
-        '  C',
-        'CC ',
-        '   '
-    ])
-    mysticalShaped('botania:purple_mystical_flower', [
-        '  C',
-        '  C',
-        ' C '
-    ])
-    mysticalShaped('botania:cyan_mystical_flower', [
-        'C C',
-        ' C ',
-        '   '
-    ])
-    mysticalShaped('botania:light_gray_mystical_flower', [
-        ' C ',
-        ' C ',
-        '  C'
-    ])
-    mysticalShaped('botania:gray_mystical_flower', [
-        '  C',
-        ' C ',
-        'C  '
-    ])
-    mysticalShaped('botania:pink_mystical_flower', [
-        'C  ',
-        ' C ',
-        '  C'
-    ])
-    mysticalShaped('botania:lime_mystical_flower', [
-        '  C',
-        '  C',
-        '  C'
-    ])
-    mysticalShaped('botania:yellow_mystical_flower', [
-        ' C ',
-        ' C ',
-        ' C '
-    ])
-    mysticalShaped('botania:light_blue_mystical_flower', [
-        'C  ',
-        'C  ',
-        'C  '
-    ])
-    mysticalShaped('botania:magenta_mystical_flower', [
-        '   ',
-        '   ',
-        'CCC'
-    ])
-    mysticalShaped('botania:orange_mystical_flower', [
-        '   ',
-        'CCC',
-        '   '
-    ])
-    mysticalShaped('botania:blue_mystical_flower', [
-        '   ',
-        ' C ',
-        'C C'
-    ])
-    mysticalShaped('botania:brown_mystical_flower', [
-        '  C',
-        ' C ',
-        '  C'
-    ])
-    mysticalShaped('botania:black_mystical_flower', [
-        '   ',
-        'CC ',
-        '  C'
-    ])
-    mysticalShaped('botania:red_mystical_flower', [
-        'CCC',
-        '   ',
-        '   '
-    ])
+  }
 
-    //Combs to crop
-    function crop(result_, pattern_) {
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:cropy_honeycomb'
-                }
-            },
-            result: {
-                item: result_,
-                count: 3
-            }
-        })
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:cropy_honeycomb_block'
-                }
-            },
-            result: {
-                item: result_,
-                count: 27
-            }
-        })
-    }
-    crop('minecraft:wheat', [
-        '  C',
-        ' C ',
-        ' C '
-    ])
-    crop('minecraft:beetroot', [
-        '  C',
-        'CC ',
-        '   '
-    ])
-    crop('minecraft:carrot', [
-        '  C',
-        '  C',
-        ' C '
-    ])
-    crop('minecraft:potato', [
-        'C C',
-        ' C ',
-        '   '
-    ])
-    crop('minecraft:melon_slice', [
-        ' C ',
-        ' C ',
-        '  C'
-    ])
-    crop('minecraft:pumpkin', [
-        '  C',
-        ' C ',
-        'C  '
-    ])
-    crop('minecraft:bamboo', [
-        'C  ',
-        ' C ',
-        '  C'
-    ])
-    crop('minecraft:sweet_berries', [
-        '  C',
-        '  C',
-        '  C'
-    ])
-    crop('minecraft:brown_mushroom', [
-        ' C ',
-        ' C ',
-        ' C '
-    ])
-    crop('minecraft:red_mushroom', [
-        'C  ',
-        'C  ',
-        'C  '
-    ])
+  //Comb to Bucket
+  e.shaped('minecraft:water_bucket', [
+    ' C ',
+    'CBC',
+    ' C '
+  ], {
+    'C': 'resourcefulbees:water_honeycomb',
+    'B': 'minecraft:bucket'
+  }).id(`kubejs:water_comb_bucket`)
+  e.shaped('minecraft:lava_bucket', [
+    ' C ',
+    'CBC',
+    ' C '
+  ], {
+    'C': 'resourcefulbees:lava_honeycomb',
+    'B': 'minecraft:bucket'
+  }).id(`kubejs:lava_comb_bucket`)
 
-    //Combs to Meat
-    function meat(result_, pattern_) {
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:kobee_beef_honeycomb'
-                }
-            },
-            result: {
-                item: result_,
-                count: 3
-            }
-        })
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:kobee_beef_honeycomb_block'
-                }
-            },
-            result: {
-                item: result_,
-                count: 27
-            }
-        })
-    }
-    meat('minecraft:porkchop', [
-        '  C',
-        ' C ',
-        ' C '
-    ])
-    meat('minecraft:beef', [
-        '  C',
-        'CC ',
-        '   '
-    ])
-    meat('minecraft:cod', [
-        '  C',
-        '  C',
-        ' C '
-    ])
-    meat('minecraft:salmon', [
-        'C C',
-        ' C ',
-        '   '
-    ])
-    meat('minecraft:chicken', [
-        ' C ',
-        ' C ',
-        '  C'
-    ])
-    meat('minecraft:rabbit', [
-        '  C',
-        ' C ',
-        'C  '
-    ])
-    meat('minecraft:mutton', [
-        'C  ',
-        ' C ',
-        '  C'
-    ])
-    meat('twilightforest:raw_venison', [
-        '  C',
-        '  C',
-        '  C'
-    ])
-    meat('rats:raw_rat', [
-        ' C ',
-        ' C ',
-        ' C '
-    ])
-    meat('aquaculture:fish_fillet_raw', [
-        'C  ',
-        'C  ',
-        'C  '
-    ])
+  //Honey Compatibility
+  honey.forEach(type => {
+    e.recipes.thermal.chiller('minecraft:honey_block', fluid.of(`${type}`, 1000))
+  })
+  customHoney.forEach(type => {
+    e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))
+    e.shaped('compressium:honey_1', [
+      'AAA',
+      'AAA',
+      'AAA'
+    ], {
+      A: `${type}_block`
+    })
+  })
 
-    //Combs to Stone
-    function stoneShaped(result_, pattern_) {
-        cuShaped({
-            pattern: pattern_,
-            key: {
-                C: {
-                    item: 'resourcefulbees:stan_honeycomb_block'
-                }
-            },
-            result: {
-                item: result_,
-                count: 16
-            }
-        })
-    }
-    stoneShaped('minecraft:andesite', [
-        '  C',
-        ' C ',
-        ' C '
-    ])
-    stoneShaped('minecraft:diorite', [
-        '  C',
-        'CC ',
-        '   '
-    ])
-    stoneShaped('minecraft:granite', [
-        '  C',
-        '  C',
-        ' C '
-    ])
-    stoneShaped('minecraft:basalt', [
-        'C C',
-        ' C ',
-        '   '
-    ])
-    stoneShaped('create:gabbro', [
-        ' C ',
-        ' C ',
-        '  C'
-    ])
-    stoneShaped('create:dolomite', [
-        '  C',
-        ' C ',
-        'C  '
-    ])
-    stoneShaped('create:weathered_limestone', [
-        'C  ',
-        ' C ',
-        '  C'
-    ])
-    stoneShaped('create:limestone', [
-        '  C',
-        '  C',
-        '  C'
-    ])
-    stoneShaped('create:scoria', [
-        ' C ',
-        ' C ',
-        ' C '
-    ])
-    stoneShaped('create:dark_scoria', [
-        'C  ',
-        'C  ',
-        'C  '
-    ])
-    stoneShaped('quark:brimstone', [
-        '   ',
-        '   ',
-        'CCC'
-    ])
-    stoneShaped('quark:slate', [
-        '   ',
-        'CCC',
-        '   '
-    ])
-    stoneShaped('quark:jasper', [
-        '   ',
-        ' C ',
-        'C C'
-    ])
-    stoneShaped('quark:limestone', [
-        '  C',
-        ' C ',
-        '  C'
-    ])
-    stoneShaped('quark:basalt', [
-        '   ',
-        'CC ',
-        '  C'
-    ])
-    stoneShaped('astralsorcery:marble_raw', [
-        'CCC',
-        '   ',
-        '   '
-    ])
+  shapedRecipe(dyes, `resourcefulbees:rainbow_honey_block`, 32)
+  shapedRecipe(botaniaFlowers, `resourcefulbees:mystical_honeycomb`, 2)
+  shapedRecipe(botaniaFlowers, `resourcefulbees:mystical_honeycomb_block`, 18)
+  shapedRecipe(crops, `resourcefulbees:cropy_honeycomb`, 3)
+  shapedRecipe(crops, `resourcefulbees:cropy_honeycomb_block`, 27)
+  shapedRecipe(meat, `resourcefulbees:kobee_beef_honeycomb`, 3)
+  shapedRecipe(meat, `resourcefulbees:kobee_beef_honeycomb_block`, 27)
+  shapedRecipe(stones, `resourcefulbees:stan_honeycomb`, 2)
+  shapedRecipe(stones, `resourcefulbees:stan_honeycomb_block`, 18)
 })
