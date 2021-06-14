@@ -11,6 +11,7 @@ const ApiaryBlocks = [
     'botania:terrasteel_block',
     'minecraft:hay_block',
     'cookingforblockheads:fridge',
+    'minecraft:bone_block',
 
     //Minecraft
     /minecraft:.*nether_bricks/,
