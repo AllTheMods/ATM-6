@@ -5,6 +5,8 @@ const VA = 'resourcefulbees:valid_apiary'
 events.listen('item.tags', e => {
   e.add(VA, whitelistVA)
   e.remove(VA, blacklistVA)
+  //Item Only
+  e.remove(VA, 'quark:biotite')
 })
 
 events.listen('block.tags', e => {
@@ -115,15 +117,13 @@ const blacklistVA = [
   '#forge:glass_panes',
   '#forge:fences',
   '#forge:fence_gates',
-  
+
   '#minecraft:walls',
   '#minecraft:trap_doors',
 
   'create:andesite_funnel',
   'create:andesite_tunnel',
   'create:andesite_casing',
-  
-  'quark:biotite',
 
   'astralsorcery:infused_wood_column',
 
