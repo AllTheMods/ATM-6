@@ -1,4 +1,3 @@
-//priority: 1000
 const VA = 'resourcefulbees:valid_apiary'
 
 //Adding Valid Apiary tags
