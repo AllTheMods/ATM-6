@@ -17,15 +17,15 @@
 		#True if using blacklists, false if using whitelists for dragons and structure gen.
 		"Use Dimension Blacklist" = false
 		#Whitelisted feature(cyclops caves, hydra dens, etc) gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
-		whitelistDimensionsFeature = ["allthemodium_the_other"]
+		whitelistDimensionsFeature = ["allthemodium:the_other"]
 		#Blacklisted dragon gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
 		blacklistDimensionsDragons = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
 		#Whitelist dragon gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
 		whitelistDimensionsDragons = ["allthemodium:the_other"]
 		#Blacklisted feature(cyclops caves, hydra dens, etc) gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
-		blacklistDimensionsFeature = ["minecraft:the_nether", "minecraft:the_end"]
+		blacklistDimensionsFeature = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
 		#Blacklisted mob spawn (troll, hippogryph, etc) dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
-		blacklistDimensionsMobs = ["minecraft:the_nether", "minecraft:the_end"]
+		blacklistDimensionsMobs = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
 
 	[Generation.Dragon]
 		#Ratio of Stone(this number) to Ores in Dragon Caves
@@ -38,7 +38,7 @@
 		"Generate Dragon Cave Chance" = 16
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Roost Chance" = 36
+		"Generate Dragon Roost Chance" = 25
 		#Whether to generate dragon caves or not
 		"Generate Dragon Caves" = true
 		#Whether to generate dragon roosts or not
