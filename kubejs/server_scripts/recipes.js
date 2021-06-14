@@ -765,16 +765,16 @@ events.listen('recipes', e => {
         tag: 'forge:storage_blocks/iron'
     }, {
         tag: 'forge:storage_blocks/gold'
-    }], 'powah:energized_steel_block', 2, 90000)
+    }], 'powah:energized_steel_block', 2, "90000")
     energize([{
         item: 'botania:blaze_block'
-    }], 'powah:blazing_crystal_block', 1, 810000)
+    }], 'powah:blazing_crystal_block', 1, "810000")
     energize([{
         tag: 'forge:storage_blocks/diamond'
-    }], 'powah:niotic_crystal_block', 1, 2700000)
+    }], 'powah:niotic_crystal_block', 1, "2700000")
     energize([{
         tag: 'forge:storage_blocks/emerald'
-    }], 'powah:spirited_crystal_block', 1, 9000000)
+    }], 'powah:spirited_crystal_block', 1, "9000000")
 
     const tiersPowah = [
         'starter',

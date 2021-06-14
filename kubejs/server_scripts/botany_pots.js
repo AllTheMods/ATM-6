@@ -8,7 +8,7 @@ onEvent('recipes', e => {
             display: {
                 block: input,
                 properties: {
-                    moisture: 7
+                    moisture: "7"
                 }
             },
             categories: categories,
@@ -32,347 +32,52 @@ onEvent('recipes', e => {
     makeFarmland('mysticalagradditions:insanium_farmland', 'insanium_farmland', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium'], 0.50)
     makeSoil('kubejs:magical_soil', 'magical_soil', ['dirt', 'farmland', 'inferium', 'prudentium', 'tertium', 'imperium', 'supremium', 'insanium', 'magical'], 0.75)
 
-    //MA Crop functions
-    var ma = 'mysticalagriculture:'
+    //Crops
+    function tier(types, time, soil) {
+    types.forEach(type => {
+      let rItem = `mysticalagriculture:${type}_essence`
+      let inItem = `mysticalagriculture:${type}_seeds`
+      let renBlock = `mysticalagriculture:${type}_crop`
 
-    function t1(types) {
-        utils.listOf(types).forEach(function (type) {
-            e.remove({
-                id: 'mysticalagriculture:crops/' + type
-            })
-            e.recipes.botanypots.crop({
-                seed: {
-                    item: ma + type + '_seeds'
-                },
-                categories: [
-                    'inferium'
-                ],
-                growthTicks: 1200,
-                display: {
-                    block: ma + type + '_crop',
-                    properties: {
-                        age: 7
-                    }
-                },
-                results: [{
-                    chance: 0.75,
-                    output: {
-                        item: ma + type + '_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 3
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: ma + type + '_seeds'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.01,
-                    output: {
-                        item: 'mysticalagriculture:fertilized_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-                ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
-        })
-    }
+      e.remove({
+        id: `mysticalagriculture:crops/${type}`
+      })
 
-    function t2(types) {
-        utils.listOf(types).forEach(function (type) {
-            e.remove({
-                id: 'mysticalagriculture:crops/' + type
-            })
-            e.recipes.botanypots.crop({
-                seed: {
-                    item: ma + type + '_seeds'
-                },
-                categories: [
-                    'prudentium'
-                ],
-                growthTicks: 1900,
-                display: {
-                    block: ma + type + '_crop',
-                    properties: {
-                        age: 7
-                    }
-                },
-                results: [{
-                    chance: 0.75,
-                    output: {
-                        item: ma + type + '_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 3
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: ma + type + '_seeds'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.01,
-                    output: {
-                        item: 'mysticalagriculture:fertilized_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-                ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
-        })
-    }
-
-    function t3(types) {
-        utils.listOf(types).forEach(function (type) {
-            e.remove({
-                id: 'mysticalagriculture:crops/' + type
-            })
-            e.recipes.botanypots.crop({
-                seed: {
-                    item: ma + type + '_seeds'
-                },
-                categories: [
-                    'tertium'
-                ],
-                growthTicks: 2400,
-                display: {
-                    block: ma + type + '_crop',
-                    properties: {
-                        age: 7
-                    }
-                },
-                results: [{
-                    chance: 0.75,
-                    output: {
-                        item: ma + type + '_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 3
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: ma + type + '_seeds'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.01,
-                    output: {
-                        item: 'mysticalagriculture:fertilized_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-                ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
-        })
-    }
-
-    function t4(types) {
-        utils.listOf(types).forEach(function (type) {
-            e.remove({
-                id: 'mysticalagriculture:crops/' + type
-            })
-            e.recipes.botanypots.crop({
-                seed: {
-                    item: ma + type + '_seeds'
-                },
-                categories: [
-                    'imperium'
-                ],
-                growthTicks: 3200,
-                display: {
-                    block: ma + type + '_crop',
-                    properties: {
-                        age: 7
-                    }
-                },
-                results: [{
-                    chance: 0.75,
-                    output: {
-                        item: ma + type + '_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 3
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: ma + type + '_seeds'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.01,
-                    output: {
-                        item: 'mysticalagriculture:fertilized_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-                ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
-        })
-    }
-
-    function t5(types) {
-        utils.listOf(types).forEach(function (type) {
-            e.remove({
-                id: 'mysticalagriculture:crops/' + type
-            })
-            e.recipes.botanypots.crop({
-                seed: {
-                    item: ma + type + '_seeds'
-                },
-                categories: [
-                    'supremium'
-                ],
-                growthTicks: 4000,
-                display: {
-                    block: ma + type + '_crop',
-                    properties: {
-                        age: 7
-                    }
-                },
-                results: [{
-                    chance: 0.75,
-                    output: {
-                        item: ma + type + '_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 3
-                },
-                {
-                    chance: 0.05,
-                    output: {
-                        item: ma + type + '_seeds'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.01,
-                    output: {
-                        item: 'mysticalagriculture:fertilized_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-                ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
-        })
-    }
-
-    function t6(types) {
-        utils.listOf(types).forEach(function (type) {
-            e.remove({
-                id: 'mysticalagriculture:crops/' + type
-            })
-            e.recipes.botanypots.crop({
-                seed: {
-                    item: ma + type + '_seeds'
-                },
-                categories: [
-                    'insanium'
-                ],
-                growthTicks: 5000,
-                display: {
-                    block: ma + type + '_crop',
-                    properties: {
-                        age: 7
-                    }
-                },
-                results: [{
-                    chance: 0.75,
-                    output: {
-                        item: ma + type + '_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 3
-                },
-                {
-                    chance: 0.03,
-                    output: {
-                        item: ma + type + '_seeds'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.03,
-                    output: {
-                        item: 'mysticalagriculture:fertilized_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-                ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
-        })
-    }
-
-    function t7(types) {
-        utils.listOf(types).forEach(function (type) {
-            e.remove({
-                id: 'mysticalagriculture:crops/' + type
-            })
-            e.recipes.botanypots.crop({
-                seed: {
-                    item: ma + type + '_seeds'
-                },
-                categories: [
-                    'magical'
-                ],
-                growthTicks: 6000,
-                display: {
-                    block: ma + type + '_crop',
-                    properties: {
-                        age: 7
-                    }
-                },
-                results: [{
-                    chance: 0.75,
-                    output: {
-                        item: ma + type + '_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 3
-                },
-                {
-                    chance: 0.01,
-                    output: {
-                        item: ma + type + '_seeds'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                },
-                {
-                    chance: 0.1,
-                    output: {
-                        item: 'mysticalagriculture:fertilized_essence'
-                    },
-                    minRolls: 1,
-                    maxRolls: 1
-                }
-                ]
-            }).id('kubejs:botany_pots/crop/mystical_agriculture/' + type)
-        })
+      e.recipes.botanypots.crop({
+        seed: Ingredient.of(inItem).toJson(),
+        categories: [soil],
+        growthTicks: time,
+        display: {
+          block: renBlock,
+          properties: {
+            age: "7"
+          }
+        },
+        results: [{
+          chance: 0.75,
+          output: Item.of(rItem).toResultJson(),
+          minRolls: 1,
+          maxRolls: 3
+        },
+        {
+          chance: 0.05,
+          output: Item.of(inItem).toResultJson(),
+          minRolls: 1,
+          maxRolls: 1
+        },
+        {
+          chance: 0.01,
+          output: Item.of(`mysticalagriculture:fertilized_essence`).toResultJson(),
+          minRolls: 1,
+          maxRolls: 1
+        }
+        ]
+      }).id(`kubejs:botany_pots/crop/mystical_agriculture/${type}`)
+    })
     }
 
     //Tier 1 Crops
-    t1([
+    tier([
         'inferium',
         'air',
         'earth',
@@ -382,10 +87,10 @@ onEvent('recipes', e => {
         'wood',
         'ice',
         'stone'
-    ])
+    ], 900, 'inferium')
 
     //Tier 2 Crops
-    t2([
+    tier([
         'aluminum',
         'chicken',
         'coal',
@@ -408,11 +113,12 @@ onEvent('recipes', e => {
         'squid',
         'sulfur',
         'turtle',
-        'sky_stone'
-    ])
+        'sky_stone',
+        'apatite'
+    ], 1600, 'prudentium')
 
     //Tier 3 Crops
-    t3([
+    tier([
         'azure_silver',
         'brass',
         'bronze',
@@ -438,11 +144,16 @@ onEvent('recipes', e => {
         'zinc',
         'zombie',
         'lumium',
-        'fluorite'
-    ])
+        'fluorite',
+        'tinkers_bronze',
+        'slimesteel',
+        'pig_iron',
+        'steeleaf',
+        'ironwood'
+    ], 1600, 'prudentium')
 
     //Tier 4 Crops
-    t4([
+    tier([
         'azure_electrum',
         'blaze',
         'chrome',
@@ -469,11 +180,15 @@ onEvent('recipes', e => {
         'tungsten',
         'enderium',
         'compressed_iron',
-        'hop_graphite'
-    ])
+        'hop_graphite',
+        'cobalt',
+        'rose_gold',
+        'knightmetal',
+        'fiery_ingot'
+    ], 2700, 'imperium')
 
     //Tier 5 Crops
-    t5([
+    tier([
         'diamond',
         'emerald',
         'netherite',
@@ -481,24 +196,27 @@ onEvent('recipes', e => {
         'uraninite',
         'wither_skeleton',
         'platinum',
-        'uranium'
-    ])
+        'uranium',
+        'manyullyn',
+        'queens_slime',
+        'hepatizon'
+    ], 3500, 'supremium')
 
     //Tier 6 Crops
-    t6([
+    tier([
         'dragon_egg',
         'nether_star',
         'nitro_crystal',
-    ])
+    ], 4100, 'insanium')
 
     //Magical Crops
-    t7([
+    tier([
         'allthemodium',
         'vibranium',
         'unobtainium'
-    ])
+    ], 5200, 'magical')
 
-    //Botany Trees 
+    //Botany Trees
     //KubeJS code relevant to botany pots: https://github.com/KubeJS-Mods/KubeJS/blob/2dd08e1f24b9619e613f5998f46eed69a4cf964f/common/src/main/java/dev/latvian/kubejs/recipe/mod/BotanyPotsCropRecipeJS.java#L44
     const growTreeUniversal = (mod, name, raredrops, soil, log) => {
         const dropchance_log = 0.5

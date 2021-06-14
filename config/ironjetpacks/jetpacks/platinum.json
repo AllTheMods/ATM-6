@@ -3,9 +3,9 @@
   "disable": false,
   "tier": 4,
   "color": "6feaef",
-  "armorPoints": 6,
-  "enchantability": 17,
-  "craftingMaterial": "null",
+  "armorPoints": 4,
+  "enchantability": 12,
+  "craftingMaterial": "tag:forge:ingots/platinum",
   "rarity": 0,
   "capacity": 36000000,
   "usage": 720,
@@ -15,5 +15,6 @@
   "speedHoverDescend": 0.42,
   "speedHover": 0.005,
   "sprintSpeedMulti": 1.8,
+  "sprintSpeedMultiVertical": 1.0,
   "sprintFuelMulti": 3.8
 }

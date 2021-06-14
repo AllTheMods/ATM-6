@@ -3,7 +3,7 @@
   "disable": false,
   "tier": 3,
   "color": "a79135",
-  "armorPoints": 4,
+  "armorPoints": 2,
   "enchantability": 18,
   "craftingMaterial": "tag:forge:ingots/electrum",
   "rarity": 0,
@@ -15,5 +15,6 @@
   "speedHoverDescend": 0.37,
   "speedHover": 0.03,
   "sprintSpeedMulti": 1.6,
+  "sprintSpeedMultiVertical": 1.0,
   "sprintFuelMulti": 3.5
 }
