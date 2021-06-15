@@ -159,7 +159,11 @@ onEvent(`jei.hide.items`, e => {
 
         `mob_grinding_utils:mob_swab`,
         `mob_grinding_utils:mob_swab_used`,
-        `mob_grinding_utils:gm_chicken_feed`
+        `mob_grinding_utils:gm_chicken_feed`,
+		
+		`solarflux:sp_6`,
+		`solarflux:sp_7`,
+		`solarflux:sp_8`
     ])
 
     colors.forEach(color => {

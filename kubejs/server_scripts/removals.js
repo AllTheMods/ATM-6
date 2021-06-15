@@ -155,8 +155,7 @@ events.listen('recipes', e => {
         'mekanism:mekasuit_helmet',
         'mekanism:mekasuit_bodyarmor',
         'mekanism:mekasuit_pants',
-        'mekanism:mekasuit_boots',
-
+        'mekanism:mekasuit_boots'
     ]
     idRemove.forEach(iR => {
         e.remove({
@@ -178,10 +177,6 @@ events.listen('recipes', e => {
 
             'cyclic:uncrafter',
             'cyclic:tile_transporter_empty',
-
-            'solarflux:sp_6',
-            'solarflux:sp_7',
-            'solarflux:sp_8',
 
             'quark:apple_crate',
             'quark:potato_crate',
