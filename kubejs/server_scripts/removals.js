@@ -123,6 +123,7 @@ events.listen('recipes', e => {
         'pamhc2foodcore:melonjuiceitem',
         'pamhc2foodcore:sweetberryjuiceitem',
         'pamhc2foodcore:p8juiceitem',
+        'pamhc2foodcore:tool_roller',
         'angelring:itemring',
         'angelring:itemdiamondring',
         //'bluepower:alloyfurnace',

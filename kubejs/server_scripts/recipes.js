@@ -140,6 +140,12 @@ events.listen('recipes', e => {
     e.smelting('allthemodium:unobtainium_vibranium_alloy_ingot', 'allthemodium:unobtainium_vibranium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_vibranium_alloy_dust')
 
     //Misc shaped recipes
+    e.shaped('pamhc2foodcore:rolleritem', [
+        'SLS'
+    ], {
+        S: '#forge:rods/wooden',
+        L: `#minecraft:logs_unstripped`
+    }).id(`kubejs:pam_roller_unstripped`)
     e.shaped('computercraft:turtle_advanced', [
         'III',
         'ICI',

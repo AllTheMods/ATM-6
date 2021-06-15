@@ -40,6 +40,8 @@ onEvent('item.tags', e => {
         e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
     })
 
+    e.add('minecraft:logs_unstripped', '/^.+:(?!stripped_).+_log$/')
+
     e.add('forge:swords', ['allthemodium:alloy_paxel', 'allthemodium:alloy_sword'])
     e.add('forge:dusts/certus_quartz', ['appliedenergistics2:certus_quartz_dust'])
     e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet'])
@@ -127,7 +129,6 @@ onEvent('item.tags', e => {
     e.remove('appliedenergistics2:workbench', 'minecraft:crafting_table')
     e.remove('minecraft:beehives', ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive'])
     e.remove('forge:cheese/silkentofu', 'pamhc2foodextended:silkentofuitem')
-
 })
 
 //Block tags
@@ -176,7 +177,6 @@ onEvent('block.tags', e => {
     e.add('misctags:no_moving', ['/refinedstorage:.+/', '/extrastorage:.+/', '/waystones:.+/', '/appliedenergistics2:.+/'])
 
     e.removeAll('minecraft:enderman_holdable')
-
 })
 
 //Entity tags
