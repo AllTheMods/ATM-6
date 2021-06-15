@@ -107,6 +107,28 @@ events.listen('recipes', e => {
             }
         })
     }
+
+    function parapet(woodTypes) {
+        woodTypes.forEach(woodType => {
+            e.remove({type: 'minecraft:crafting_shaped', output: `mcwwindows:${woodType}_log_parapet`})
+            e.shaped(`mcwwindows:${woodType}_log_parapet`, [
+                'SLS'
+            ], {
+                S: '#forge:rods/wooden',
+                L: `minecraft:stripped_${woodType}_log`
+            }).id(`kubejs:parapet_${woodType}`)
+        })
+    }
+
+    parapet([
+        'oak',
+        'spruce',
+        'birch',
+        'jungle',
+        'acacia',
+        'dark_oak'
+    ])
+
     //Smelting
     e.smelting('appliedenergistics2:certus_quartz_crystal', '#forge:ores/certus_quartz').xp(1).id('kubejs:smelting/certus')
     e.smelting('alltheores:platinum_ingot', 'create:crushed_platinum_ore').xp(1).id('kubejs:smelting/create_platinum')
@@ -1040,7 +1062,7 @@ events.listen('recipes', e => {
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
 	e.replaceInput({}, 'thermal:bitumen', '#forge:bitumen')
 	e.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:bitumen')
-	
+
     //botania
     e.recipes.botania.runic_altar({
         output: {
