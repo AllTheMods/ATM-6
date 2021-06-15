@@ -49,3 +49,6 @@
 	#obfuscated, bold, strikethrough, underline, italic
 	ModNameFormat = ""
 
+[sorting]
+	#Sorting order for the ingredient list. Valid stages: [MOD_NAME, INGREDIENT_TYPE, ALPHABETICAL, CREATIVE_MENU]
+	IngredientSortStages = ["MOD_NAME", "INGREDIENT_TYPE", "CREATIVE_MENU"]
