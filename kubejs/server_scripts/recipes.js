@@ -1060,8 +1060,8 @@ events.listen('recipes', e => {
 
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
-	e.replaceInput({}, 'thermal:bitumen', '#forge:bitumen')
-	e.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:bitumen')
+    e.replaceInput({}, 'thermal:bitumen', '#forge:bitumen')
+    e.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:bitumen')
 
     //botania
     e.recipes.botania.runic_altar({
