@@ -2,81 +2,49 @@
   {
     "dimension": "rats:ratlantis",
     "mob": "iceandfire:sea_serpent",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
+	"onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "twilightforest:twilightforest",
     "mob": "iceandfire:siren",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
+	"onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "twilightforest:twilightforest",
     "mob": "iceandfire:sea_serpent",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
+	"onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "allthemodium:the_other",
     "mob": "iceandfire:hydra",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
+	"onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "allthemodium:the_other",
     "mob": "iceandfire:ghost",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
+	"onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "minecraft:overworld",
     "mod": "iceandfire",
-    "mincount": {
-      "amount": 0,
-      "mod": "iceandfire",
-      "perchunk": true
-    },
+	"onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "minecraft:the_nether",
     "mod": "iceandfire",
-    "mincount": {
-      "amount": 0,
-      "mod": "iceandfire",
-      "perchunk": true
-    },
+	"onjoin": true,
     "result": "deny"
   },
   {
     "dimension": "minecraft:the_end",
     "mod": "iceandfire",
-    "mincount": {
-      "amount": 0,
-      "mod": "iceandfire",
-      "perchunk": true
-    },
+	"onjoin": true,
     "result": "deny"
   }
 ]
