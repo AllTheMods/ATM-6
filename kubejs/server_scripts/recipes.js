@@ -789,6 +789,16 @@ events.listen('recipes', e => {
 
 
     //Powah recipes
+    e.shaped('powah:thermoelectric_plate', [
+        'BAB',
+        'ACA',
+        'BAB'
+    ], {
+        B: '#forge:rods/blaze',
+        A: 'mekanism:alloy_infused',
+        C: 'powah:capacitor_basic_tiny'
+    }).id('kubejs:thermoelectric_plate')
+
     energize([{
         tag: 'forge:storage_blocks/iron'
     }, {

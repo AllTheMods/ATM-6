@@ -156,7 +156,8 @@ events.listen('recipes', e => {
         'mekanism:mekasuit_helmet',
         'mekanism:mekasuit_bodyarmor',
         'mekanism:mekasuit_pants',
-        'mekanism:mekasuit_boots'
+        'mekanism:mekasuit_boots',
+        'powah:crafting/thermoelectric_plate'
     ]
     idRemove.forEach(iR => {
         e.remove({
