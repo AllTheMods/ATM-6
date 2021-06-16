@@ -260,14 +260,15 @@ events.listen('recipes', e => {
     })
     //Thermal
     e.shaped('thermal:machine_efficiency_creative_augment', [
-        'AHA',
-        'ESE',
-        'AHA'
+        'ABA',
+        'CDC',
+        'AEA'
     ], {
         A: 'thermal:upgrade_augment_3',
-        H: Item.of('minecraft:enchanted_book').enchant('cofh_core:holding', 4),
-        E: Item.of('minecraft:enchanted_book').enchant('minecraft:efficiency', 5),
-        S: atm_star
+        B: `powah:charged_snowball`,
+        C: `thermal:energy_cell`,
+        D: atm_star,
+        E: `thermal:lightning_charge`
     })
 
     //Iron Jetpacks
