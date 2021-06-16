@@ -186,6 +186,41 @@ onEvent('recipes', e => {
         e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
         e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
     }
+
+    function unifyPlateSheets(types) {
+        types.forEach(type => {
+            let create = type == 'gold' ? `create:${type}en_sheet` : `create:${type}_sheet`
+            let output = type == 'aluminum' ? `immersiveengineering:plate_${type}` : `thermal:${type}_plate`
+            e.replaceInput(`immersiveengineering:plate_${type}`, `#forge:plates/${type}`)
+            e.replaceInput(create, `#forge:plates/${type}`)
+            e.replaceOutput(`immersiveengineering:plate_${type}`, output)
+            e.replaceOutput(create, output)
+            if (type != 'aluminum') {
+                e.remove({id: `tconstruct:smeltery/casting/metal/${type}/plate_gold_cast`})
+                e.remove({id: `tconstruct:smeltery/casting/metal/${type}/plate_sand_cast`})
+            }
+        })
+    }
+
+    // Plates
+    unifyPlateSheets([
+        'iron',
+        'gold',
+        'copper',
+        'tin',
+        'lead',
+        'silver',
+        'nickel',
+        'bronze',
+        'electrum',
+        'invar',
+        'constantan',
+        'signalum',
+        'lumium',
+        'enderium',
+        'aluminum'
+    ])
+
     //Vanilla MC
     unifyMetal('gold', 'minecraft:gold_ingot', 'alltheores:gold_dust', 'minecraft:gold_block', 'minecraft:gold_nugget', 'mekanism:dirty_gold', 'mekanism:clean_gold', 'mekanism:crystal_gold', 'mekanism:shard_gold', 'mekanism:clump_gold', 'mekanism:dirty_dust_gold')
     unifyMetal('iron', 'minecraft:iron_ingot', 'alltheores:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget', 'mekanism:dirty_iron', 'mekanism:clean_iron', 'mekanism:crystal_iron', 'mekanism:shard_iron', 'mekanism:clump_iron', 'mekanism:dirty_dust_iron')
