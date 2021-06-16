@@ -20,7 +20,7 @@
   +B:solarflux:furnace_upgrade=true
 
   # Enable this recipe? (Default: true)
-  +B:solarflux:mirror=true
+  +B:solarflux:mirror=false
 
   # Enable this recipe? (Default: true)
   +B:solarflux:photovoltaic_cell_1=true
