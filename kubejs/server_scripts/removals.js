@@ -123,6 +123,7 @@ events.listen('recipes', e => {
         'pamhc2foodcore:melonjuiceitem',
         'pamhc2foodcore:sweetberryjuiceitem',
         'pamhc2foodcore:p8juiceitem',
+        'pamhc2foodcore:tool_roller',
         'angelring:itemring',
         'angelring:itemdiamondring',
         //'bluepower:alloyfurnace',
@@ -156,7 +157,7 @@ events.listen('recipes', e => {
         'mekanism:mekasuit_bodyarmor',
         'mekanism:mekasuit_pants',
         'mekanism:mekasuit_boots',
-
+        'powah:crafting/thermoelectric_plate'
     ]
     idRemove.forEach(iR => {
         e.remove({
@@ -178,10 +179,6 @@ events.listen('recipes', e => {
 
             'cyclic:uncrafter',
             'cyclic:tile_transporter_empty',
-
-            'solarflux:sp_6',
-            'solarflux:sp_7',
-            'solarflux:sp_8',
 
             'quark:apple_crate',
             'quark:potato_crate',

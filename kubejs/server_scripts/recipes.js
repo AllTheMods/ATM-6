@@ -108,6 +108,18 @@ events.listen('recipes', e => {
         })
     }
 
+    function parapet(woodTypes) {
+        woodTypes.forEach(woodType => {
+            e.remove({type: 'minecraft:crafting_shaped', output: `mcwwindows:${woodType}_log_parapet`})
+            e.shaped(`mcwwindows:${woodType}_log_parapet`, [
+                'SLS'
+            ], {
+                S: '#forge:rods/wooden',
+                L: `minecraft:stripped_${woodType}_log`
+            }).id(`kubejs:parapet_${woodType}`)
+        })
+    }
+
     function plateCasting(material, coolingTime, result) {
         e.custom(
             {
@@ -236,6 +248,16 @@ events.listen('recipes', e => {
         ['brass', [2, 3], 57, 'create:brass_sheet']
     ])
 
+
+    parapet([
+        'oak',
+        'spruce',
+        'birch',
+        'jungle',
+        'acacia',
+        'dark_oak'
+    ])
+
     //Smelting
     e.smelting('appliedenergistics2:certus_quartz_crystal', '#forge:ores/certus_quartz').xp(1).id('kubejs:smelting/certus')
     e.smelting('alltheores:platinum_ingot', 'create:crushed_platinum_ore').xp(1).id('kubejs:smelting/create_platinum')
@@ -247,6 +269,12 @@ events.listen('recipes', e => {
     e.smelting('allthemodium:unobtainium_vibranium_alloy_ingot', 'allthemodium:unobtainium_vibranium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_vibranium_alloy_dust')
 
     //Misc shaped recipes
+    e.shaped('pamhc2foodcore:rolleritem', [
+        'SLS'
+    ], {
+        S: '#forge:rods/wooden',
+        L: `#minecraft:logs_unstripped`
+    }).id(`kubejs:pam_roller_unstripped`)
     e.shaped('computercraft:turtle_advanced', [
         'III',
         'ICI',
@@ -890,6 +918,16 @@ events.listen('recipes', e => {
 
 
     //Powah recipes
+    e.shaped('powah:thermoelectric_plate', [
+        'BAB',
+        'ACA',
+        'BAB'
+    ], {
+        B: '#forge:rods/blaze',
+        A: 'mekanism:alloy_infused',
+        C: 'powah:capacitor_basic_tiny'
+    }).id('kubejs:thermoelectric_plate')
+
     energize([{
         tag: 'forge:storage_blocks/iron'
     }, {
@@ -1167,6 +1205,9 @@ events.listen('recipes', e => {
 
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
+    e.replaceInput({}, 'thermal:bitumen', '#forge:bitumen')
+    e.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:bitumen')
+
     //botania
     e.recipes.botania.runic_altar({
         output: {

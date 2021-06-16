@@ -48,6 +48,16 @@ events.listen('recipes', e => {
               }
             }
           },
+          "theoneprobe": {
+            "id": "theoneprobe:probenote",
+            "Count": 1,
+            "tag": {
+              "akashictome:displayName": {
+                "text": "ProbeSettings"
+              },
+              "akashictome:is_morphing": 1
+            }
+          },
           "ftbquests": {
             "id": "ftbquests:book",
             "Count": 1,
