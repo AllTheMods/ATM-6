@@ -1,5 +1,5 @@
 //priority: 999
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     const idRemove = [
         'minecraft:comparator',
         'minecraft:glass',
