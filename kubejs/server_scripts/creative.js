@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
 
     const atm_star = 'atmadditions:atm_star'
 
