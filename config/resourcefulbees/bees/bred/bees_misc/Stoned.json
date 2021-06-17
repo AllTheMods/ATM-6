@@ -30,13 +30,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:rocky_honeycomb_block",
+            "inputID": "resourcefulbees:stoned_honeycomb_block",
             "outputs": [{
                     "outputID": "minecraft:stone",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:rocky_bee_spawn_egg",
+                    "outputID": "resourcefulbees:stoned_bee_spawn_egg",
                     "weight": 20
                 }
             ]
