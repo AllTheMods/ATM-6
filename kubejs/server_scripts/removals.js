@@ -64,6 +64,10 @@ onEvent('recipes', e => {
 
         'mysticalagriculture:essence/appliedenergistics2/fluix',
         'mysticalagriculture:essence/appliedenergistics2/sky_stone',
+        'mysticalagriculture:essence/appliedenergistics2/silicon_press',
+        'mysticalagriculture:essence/appliedenergistics2/calculation_press',
+        'mysticalagriculture:essence/appliedenergistics2/engineering_processor_press',
+        'mysticalagriculture:essence/appliedenergistics2/logic_processor_press',
 
         'mysticalagriculture:essence/refinedstorage/quartz_enriched_iron_ingot',
 
