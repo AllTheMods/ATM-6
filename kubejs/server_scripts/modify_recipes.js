@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     //Functions
 
     function modifyShaped(result, count, pattern, ingridients) {
