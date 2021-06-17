@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     //Functions
     function plus(result, count, name) {
         e.shaped(item.of(result, count), [

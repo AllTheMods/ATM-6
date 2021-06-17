@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
 
     let tier = (types, time, soil, rCount) => {
         types.forEach(type => {

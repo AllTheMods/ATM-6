@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     function energize(ingredient, result, rCount, power) {
         e.recipes.powah.energizing({
             ingredients: ingredient,
