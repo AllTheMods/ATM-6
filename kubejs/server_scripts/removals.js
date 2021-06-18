@@ -23,8 +23,6 @@ onEvent('recipes', e => {
 
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/press/unpacking/press_honeycomb_unpacking',
-        
-        'cookingforblockheads:fridge',
 
         //ma balance
         'mysticalagriculture:essence/astralsorcery/rock_crystal',
@@ -98,7 +96,7 @@ onEvent('recipes', e => {
         'mysticalagriculture:seed/infusion/lumium',
         'mysticalagriculture:seed/infusion/manasteel',
         'mysticalagriculture:seed/infusion/niotic_crystal',
-        'mysticalagriculture:nitro_crystal_seeds_infusion',
+        'mysticalagriculture:seed/infusion/nitro_crystal',
         'mysticalagriculture:oratchalcum_seeds_infusion',
         'mysticalagriculture:seed/infusion/quartz_enriched_iron',
         'mysticalagriculture:seed/infusion/refined_glowstone',
