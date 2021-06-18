@@ -10,17 +10,6 @@ onEvent('recipes', e => {
         })
     }
 
-    function pressure(inputs, result, rCount, pressure) {
-        e.recipes.pneumaticcraft.pressure_chamber({
-            inputs: inputs,
-            pressure: pressure,
-            results: [{
-                item: result,
-                count: rCount
-            }]
-        })
-    }
-
     function pedestalCrush(result, count, ingred, type) {
         const obj = {}
         obj.result = {
@@ -43,16 +32,6 @@ onEvent('recipes', e => {
         e.recipes.pedestals.pedestal_sawing(obj)
     }
 
-    function jumbo(ingred, res, xp) {
-        e.recipes.jumbofurnace.jumbo_smelting({
-            ingredients: ingred,
-            result: {
-                item: res
-            },
-            experience: xp
-        })
-    }
-
     function multicrush(output, input) {
         e.recipes.mekanism.crushing(output, input)
         e.recipes.create.crushing(output, input)
@@ -66,10 +45,6 @@ onEvent('recipes', e => {
 
     function enrich(output, input) {
         e.recipes.mekanism.enriching((output), input)
-    }
-
-    function pulverize(output, input) {
-        e.recipes.thermal.pulverizer((output), input)
     }
 
     function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
@@ -340,6 +315,44 @@ onEvent('recipes', e => {
         'S': 'minecraft:stone',
         'B': 'minecraft:blackstone'
     }).id(`kubejs:sky_stone_brick`)
+    e.shaped('appliedenergistics2:calculation_processor_press', [
+        'CFC',
+        'FSF',
+        'PFP'
+    ], {
+        'C': 'appliedenergistics2:purified_certus_quartz_crystal',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity',
+        'P': 'appliedenergistics2:fluix_pearl'
+    }).id(`kubejs:calculation_press`)
+    e.shaped('appliedenergistics2:logic_processor_press', [
+        'BFB',
+        'FSF',
+        'CFC'
+    ], {
+        'B': '#forge:ingots/blaze_gold',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity',
+        'C': '#forge:ingots/rose_gold'
+    }).id(`kubejs:logic_press`)
+    e.shaped('appliedenergistics2:engineering_processor_press', [
+        'DFD',
+        'FSF',
+        'DFD'
+    ], {
+        'D': '#forge:gems/mana_diamond',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity'
+    }).id(`kubejs:engineering_press`)
+    e.shaped('appliedenergistics2:silicon_press', [
+        'WFW',
+        'FSF',
+        'WFW'
+    ], {
+        'W': '#forge:silicon',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity'
+    }).id(`kubejs:silicon_press`)
     e.shaped('biomesoplenty:flesh', [
         'FFF',
         'FFF',
@@ -1205,8 +1218,6 @@ onEvent('recipes', e => {
 
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
     e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
-    e.replaceInput({}, 'thermal:bitumen', '#forge:bitumen')
-    e.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:bitumen')
 
     //botania
     e.recipes.botania.runic_altar({

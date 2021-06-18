@@ -118,6 +118,7 @@ onEvent(`jei.hide.items`, e => {
         /immersiveengineering:.+coke/,
         `immersiveengineering:coke`,
         `immersiveengineering:slag`,
+        'immersiveengineering:bitumen',
 
         `darkutils:ender_hopper`,
 
@@ -230,4 +231,8 @@ onEvent(`item.tooltip`, e => {
     e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`])
     e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
     e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)
+})
+
+onEvent('jei.information', e => {
+    e.add('thermal:bitumen', ['Byproduct of refining Oil in a Distillation Tower'])
 })

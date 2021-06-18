@@ -359,7 +359,7 @@ onEvent('recipes', e => {
         'botanypots:red_botany_pot',
         'botanypots:black_botany_pot',
     ]
-    
+
     colors.forEach(color => {
         e.shaped(item.of('botanypots:hopper_' + color + '_botany_pot'), [
             'MPM',
@@ -504,19 +504,6 @@ onEvent('recipes', e => {
     ], {
         B: '#engineersdecor:brick_ingots',
         S: '#forge:slag'
-    })
-    e.remove({
-        id: 'immersivepetroleum:asphalt2'
-    })
-    e.shaped(item.of('immersivepetroleum:asphalt', 12), [
-        'SBS',
-        'GUG',
-        'SBS'
-    ], {
-        B: 'immersivepetroleum:bitumen',
-        S: '#forge:slag',
-        G: '#forge:gravel',
-        U: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
     })
     e.remove({
         id: 'immersiveengineering:crafting/concrete2'
