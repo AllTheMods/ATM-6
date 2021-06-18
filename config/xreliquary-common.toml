@@ -14,7 +14,7 @@ mobDropsEnabled = true
 	#Disable Alkahestry tome and its and recipes
 	alkahestryTome = true
 	#Disable the HANDGUN, bullets, magazines, and gun parts
-	handgun = false
+	handgun = true
 	#Disable all display-only pedestals
 	passivePedestal = false
 
