@@ -10,17 +10,6 @@ onEvent('recipes', e => {
         })
     }
 
-    function pressure(inputs, result, rCount, pressure) {
-        e.recipes.pneumaticcraft.pressure_chamber({
-            inputs: inputs,
-            pressure: pressure,
-            results: [{
-                item: result,
-                count: rCount
-            }]
-        })
-    }
-
     function pedestalCrush(result, count, ingred, type) {
         const obj = {}
         obj.result = {
@@ -43,16 +32,6 @@ onEvent('recipes', e => {
         e.recipes.pedestals.pedestal_sawing(obj)
     }
 
-    function jumbo(ingred, res, xp) {
-        e.recipes.jumbofurnace.jumbo_smelting({
-            ingredients: ingred,
-            result: {
-                item: res
-            },
-            experience: xp
-        })
-    }
-
     function multicrush(output, input) {
         e.recipes.mekanism.crushing(output, input)
         e.recipes.create.crushing(output, input)
@@ -66,10 +45,6 @@ onEvent('recipes', e => {
 
     function enrich(output, input) {
         e.recipes.mekanism.enriching((output), input)
-    }
-
-    function pulverize(output, input) {
-        e.recipes.thermal.pulverizer((output), input)
     }
 
     function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
