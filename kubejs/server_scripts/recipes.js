@@ -340,6 +340,44 @@ onEvent('recipes', e => {
         'S': 'minecraft:stone',
         'B': 'minecraft:blackstone'
     }).id(`kubejs:sky_stone_brick`)
+    e.shaped('appliedenergistics2:calculation_processor_press', [
+        'CFC',
+        'FSF',
+        'PFP'
+    ], {
+        'C': 'appliedenergistics2:purified_certus_quartz_crystal',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity',
+        'P': 'appliedenergistics2:fluix_pearl'
+    }).id(`kubejs:calculation_press`)
+    e.shaped('appliedenergistics2:logic_processor_press', [
+        'BFB',
+        'FSF',
+        'CFC'
+    ], {
+        'B': '#forge:ingots/blaze_gold',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity',
+        'C': '#forge:ingots/rose_gold'
+    }).id(`kubejs:logic_press`)
+    e.shaped('appliedenergistics2:engineering_processor_press', [
+        'DFD',
+        'FSF',
+        'DFD'
+    ], {
+        'D': '#forge:gems/mana_diamond',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity'
+    }).id(`kubejs:engineering_press`)
+    e.shaped('appliedenergistics2:silicon_press', [
+        'WFW',
+        'FSF',
+        'WFW'
+    ], {
+        'W': '#forge:silicon',
+        'F': '#forge:ingots/fluix_steel',
+        'S': 'appliedenergistics2:singularity'
+    }).id(`kubejs:silicon_press`)
     e.shaped('biomesoplenty:flesh', [
         'FFF',
         'FFF',
