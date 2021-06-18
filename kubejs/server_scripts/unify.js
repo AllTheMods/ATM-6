@@ -257,4 +257,68 @@ onEvent('recipes', e => {
     unifyCraftMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
     unifyCraftMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
     unifyCraftMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
+
+    //Bitumen
+    e.replaceInput('thermal:bitumen', '#forge:bitumen')
+    e.replaceInput('immersivepetroleum:bitumen', '#forge:bitumen')
+    e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
+    e.remove({id: 'immersivepetroleum:distillationtower/oilcracking'})
+    e.remove({output: 'immersivepetroleum:asphalt'})
+    e.shaped('immersivepetroleum:asphalt', [
+        'SBS',
+        'GWG',
+        'SBS'
+    ], {
+        S: '#forge:sand',
+        B: '#forge:bitumen',
+        G: '#forge:gravel',
+        W: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket'],
+    }).id('kubejs:asphalt_1')
+    e.shaped('immersivepetroleum:asphalt', [
+        'SBS',
+        'GWG',
+        'SBS'
+    ], {
+        S: '#forge:slag',
+        B: '#forge:bitumen',
+        G: '#forge:gravel',
+        W: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket'],
+    }).id('kubejs:asphalt_2')
+    e.shaped('immersivepetroleum:asphalt', [
+        'S',
+        'S',
+    ], {
+        S: 'immersivepetroleum:asphalt_slab'
+    }).id('kubejs:asphalt_3')
+    e.custom(
+        {
+            "type": "immersivepetroleum:distillation",
+            "byproducts": [
+                {
+                    "item": "thermal:bitumen",
+                    "chance": 0.07
+                }
+            ],
+            "results": [
+                {
+                    "fluid": "immersivepetroleum:lubricant",
+                    "amount": 9
+                },
+                {
+                    "fluid": "immersivepetroleum:diesel_sulfur",
+                    "amount": 14
+                },
+                {
+                    "fluid": "immersivepetroleum:gasoline",
+                    "amount": 39
+                }
+            ],
+            "input": {
+                "tag": "forge:crude_oil",
+                "amount": 75
+            },
+            "time": 1,
+            "energy": 2048
+        }
+    ).id('kubejs:oilcracking')
 })

@@ -231,3 +231,8 @@ onEvent(`item.tooltip`, e => {
     e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
     e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)
 })
+
+onEvent('jei.information', e => {
+    console.info('fires')
+    e.add('thermal:bitumen', ['Byproduct of refining Oil in a Distillation Tower'])
+})
