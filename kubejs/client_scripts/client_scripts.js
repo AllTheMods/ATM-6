@@ -118,6 +118,7 @@ onEvent(`jei.hide.items`, e => {
         /immersiveengineering:.+coke/,
         `immersiveengineering:coke`,
         `immersiveengineering:slag`,
+        'immersiveengineering:bitumen',
 
         `darkutils:ender_hopper`,
 
