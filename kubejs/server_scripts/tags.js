@@ -42,6 +42,7 @@ onEvent('item.tags', e => {
 
     e.add('minecraft:logs_unstripped', '/^.+:(?!stripped_).+_log$/')
 
+    e.add(`cookingforblockheads:fridge`, `create:brittle`)
     e.add('forge:swords', ['allthemodium:alloy_paxel', 'allthemodium:alloy_sword'])
     e.add('forge:dusts/certus_quartz', ['appliedenergistics2:certus_quartz_dust'])
     e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet'])
