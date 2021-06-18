@@ -191,6 +191,7 @@ onEvent('recipes', e => {
         types.forEach(type => {
             let create = type == 'gold' ? `create:${type}en_sheet` : `create:${type}_sheet`
             let output = type == 'aluminum' ? `immersiveengineering:plate_${type}` : `thermal:${type}_plate`
+            e.replaceInput(`thermal:${type}_plate`, `#forge:plates/${type}`)
             e.replaceInput(`immersiveengineering:plate_${type}`, `#forge:plates/${type}`)
             e.replaceInput(create, `#forge:plates/${type}`)
             e.replaceOutput(`immersiveengineering:plate_${type}`, output)
