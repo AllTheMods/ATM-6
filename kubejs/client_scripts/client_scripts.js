@@ -233,6 +233,5 @@ onEvent(`item.tooltip`, e => {
 })
 
 onEvent('jei.information', e => {
-    console.info('fires')
     e.add('thermal:bitumen', ['Byproduct of refining Oil in a Distillation Tower'])
 })
