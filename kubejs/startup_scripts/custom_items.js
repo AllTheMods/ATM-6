@@ -1,19 +1,3 @@
-const ores = [
-    'Allthemodium',
-    'Vibranium',
-    'Unobtainium',
-    'Aluminum',
-    'Copper',
-    'Lead',
-    'Nickel',
-    'Osmium',
-    'Platinum',
-    'Silver',
-    'Tin',
-    'Uranium',
-    'Zinc'
-]
-
 onEvent('item.registry', e => {
     e.create('mass_of_wills').displayName('§6Mass of Wills').tooltip('§8Combination of the six wills of the ancients').unstackable()
     e.create('rune_of_sins').displayName('§6Rune of Sins').tooltip('§8Rune that contains the power of the seven sins').unstackable()

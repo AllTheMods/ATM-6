@@ -74,7 +74,6 @@ onEvent('recipes', e => {
         'mysticalagriculture:essence/mekanism/refined_glowstone_ingot',
         'mysticalagriculture:essence/mekanism/refined_obsidian_ingot',
 
-
         'mysticalagriculture:seed/infusion/basalz',
         'mysticalagriculture:seed/infusion/blazing_crystal',
         'mysticalagriculture:seed/infusion/blitz',
