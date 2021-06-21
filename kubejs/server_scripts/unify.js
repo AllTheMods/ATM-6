@@ -1,7 +1,6 @@
 //priority: 997
 onEvent('recipes', e => {
-    e.replaceInput('appliedenergistics2:certus_quartz_dust', '#forge:dusts/certus_quartz')
-
+    // #region Functions
     function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
         e.replaceOutput(`#forge:ingots/${name}`, ingotItem)
         e.replaceOutput(`#forge:dusts/${name}`, dustItem)
@@ -112,7 +111,8 @@ onEvent('recipes', e => {
                 })
                 e.recipes.engineerstools.crafting_extended_shapeless({
                     group: 'grit',
-                    ingredients: [{
+                    ingredients: [
+                        {
                             tag: `forge:ores/${name}`
                         },
                         {
@@ -170,17 +170,17 @@ onEvent('recipes', e => {
                 turns: 8
             })
         }
-        e.replaceInput(nuggetItem, (`#forge:nuggets/${name}`))
-        e.replaceInput(dustItem, (`#forge:dusts/${name}`))
-        e.replaceInput(ingotItem, (`#forge:ingots/${name}`))
-        e.replaceInput(blockItem, (`#forge:storage_blocks/${name}`))
+        e.replaceInput(nuggetItem, `#forge:nuggets/${name}`)
+        e.replaceInput(dustItem, `#forge:dusts/${name}`)
+        e.replaceInput(ingotItem, `#forge:ingots/${name}`)
+        e.replaceInput(blockItem, `#forge:storage_blocks/${name}`)
     }
 
     function unifyCraftMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
-        e.replaceInput(nuggetItem, (`#forge:nuggets/${name}`))
-        e.replaceInput(dustItem, (`#forge:dusts/${name}`))
-        e.replaceInput(ingotItem, (`#forge:ingots/${name}`))
-        e.replaceInput(blockItem, (`#forge:storage_blocks/${name}`))
+        e.replaceInput(nuggetItem, `#forge:nuggets/${name}`)
+        e.replaceInput(dustItem, `#forge:dusts/${name}`)
+        e.replaceInput(ingotItem, `#forge:ingots/${name}`)
+        e.replaceInput(blockItem, `#forge:storage_blocks/${name}`)
         e.replaceOutput(`#forge:ingots/${name}`, ingotItem)
         e.replaceOutput(`#forge:dusts/${name}`, dustItem)
         e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
@@ -197,31 +197,14 @@ onEvent('recipes', e => {
             e.replaceOutput(`immersiveengineering:plate_${type}`, output)
             e.replaceOutput(create, output)
             if (type != 'aluminum') {
-                e.remove({id: `tconstruct:smeltery/casting/metal/${type}/plate_gold_cast`})
-                e.remove({id: `tconstruct:smeltery/casting/metal/${type}/plate_sand_cast`})
+                e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_gold_cast` })
+                e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_sand_cast` })
             }
         })
     }
+    // #endregion Functions
 
-    // Plates
-    unifyPlateSheets([
-        'iron',
-        'gold',
-        'copper',
-        'tin',
-        'lead',
-        'silver',
-        'nickel',
-        'bronze',
-        'electrum',
-        'invar',
-        'constantan',
-        'signalum',
-        'lumium',
-        'enderium',
-        'aluminum'
-    ])
-
+    // #region Metal Unification
     //Vanilla MC
     unifyMetal('gold', 'minecraft:gold_ingot', 'alltheores:gold_dust', 'minecraft:gold_block', 'minecraft:gold_nugget')
     unifyMetal('iron', 'minecraft:iron_ingot', 'alltheores:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget')
@@ -241,13 +224,37 @@ onEvent('recipes', e => {
     unifyMetal('osmium', 'alltheores:osmium_ingot', 'alltheores:osmium_dust', 'alltheores:osmium_block', 'alltheores:osmium_nugget')
 
     //Silent Gear
-    unifyMetal('azure_silver', 'silentgear:azure_silver_ingot', 'silentgear:azure_silver_dust', 'silentgear:azure_silver_block', 'silentgear:azure_silver_nugget')
-    unifyMetal('crimson_iron', 'silentgear:crimson_iron_ingot', 'silentgear:crimson_iron_dust', 'silentgear:crimson_iron_block', 'silentgear:crimson_iron_nugget')
+    unifyMetal(
+        'azure_silver',
+        'silentgear:azure_silver_ingot',
+        'silentgear:azure_silver_dust',
+        'silentgear:azure_silver_block',
+        'silentgear:azure_silver_nugget'
+    )
+    unifyMetal(
+        'crimson_iron',
+        'silentgear:crimson_iron_ingot',
+        'silentgear:crimson_iron_dust',
+        'silentgear:crimson_iron_block',
+        'silentgear:crimson_iron_nugget'
+    )
 
     //Allthemodium (Why would we need to unify these they are only ours)
-    unifyMetal('allthemodium', 'allthemodium:allthemodium_ingot', 'allthemodium:allthemodium_dust', 'allthemodium:allthemodium_block', 'allthemodium:allthemodium_nugget')
+    unifyMetal(
+        'allthemodium',
+        'allthemodium:allthemodium_ingot',
+        'allthemodium:allthemodium_dust',
+        'allthemodium:allthemodium_block',
+        'allthemodium:allthemodium_nugget'
+    )
     unifyMetal('vibranium', 'allthemodium:vibranium_ingot', 'allthemodium:vibranium_dust', 'allthemodium:vibranium_block', 'allthemodium:vibranium_nugget')
-    unifyMetal('unobtainium', 'allthemodium:unobtainium_ingot', 'allthemodium:unobtainium_dust', 'allthemodium:unobtainium_block', 'allthemodium:unobtainium_nugget')
+    unifyMetal(
+        'unobtainium',
+        'allthemodium:unobtainium_ingot',
+        'allthemodium:unobtainium_dust',
+        'allthemodium:unobtainium_block',
+        'allthemodium:unobtainium_nugget'
+    )
 
     //Craft only metals
     //Multiple Mods crafted only (no ore)
@@ -258,68 +265,80 @@ onEvent('recipes', e => {
     unifyCraftMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
     unifyCraftMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
     unifyCraftMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
+    // #endregion Metal Unification
 
-    //Bitumen
+    // #region Plate Unification
+    unifyPlateSheets([
+        'iron',
+        'gold',
+        'copper',
+        'tin',
+        'lead',
+        'silver',
+        'nickel',
+        'bronze',
+        'electrum',
+        'invar',
+        'constantan',
+        'signalum',
+        'lumium',
+        'enderium',
+        'aluminum'
+    ])
+    // #endregion Plate Unification
+
+    // Certus Quartz
+    e.replaceInput('appliedenergistics2:certus_quartz_dust', '#forge:dusts/certus_quartz')
+
+    // #region Bitumen
     e.replaceInput('thermal:bitumen', '#forge:bitumen')
     e.replaceInput('immersivepetroleum:bitumen', '#forge:bitumen')
     e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
-    e.remove({id: 'immersivepetroleum:distillationtower/oilcracking'})
-    e.remove({output: 'immersivepetroleum:asphalt'})
-    e.shaped('immersivepetroleum:asphalt', [
-        'SBS',
-        'GWG',
-        'SBS'
-    ], {
+    e.remove({ id: 'immersivepetroleum:distillationtower/oilcracking' })
+    e.remove({ output: 'immersivepetroleum:asphalt' })
+    e.shaped('immersivepetroleum:asphalt', ['SBS', 'GWG', 'SBS'], {
         S: '#forge:sand',
         B: '#forge:bitumen',
         G: '#forge:gravel',
-        W: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket'],
+        W: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
     }).id('kubejs:asphalt_1')
-    e.shaped('immersivepetroleum:asphalt', [
-        'SBS',
-        'GWG',
-        'SBS'
-    ], {
+    e.shaped('immersivepetroleum:asphalt', ['SBS', 'GWG', 'SBS'], {
         S: '#forge:slag',
         B: '#forge:bitumen',
         G: '#forge:gravel',
-        W: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket'],
+        W: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
     }).id('kubejs:asphalt_2')
-    e.shaped('immersivepetroleum:asphalt', [
-        'S',
-        'S',
-    ], {
+    e.shaped('immersivepetroleum:asphalt', ['S', 'S'], {
         S: 'immersivepetroleum:asphalt_slab'
     }).id('kubejs:asphalt_3')
-    e.custom(
-        {
-            "type": "immersivepetroleum:distillation",
-            "byproducts": [
-                {
-                    "item": "thermal:bitumen",
-                    "chance": 0.07
-                }
-            ],
-            "results": [
-                {
-                    "fluid": "immersivepetroleum:lubricant",
-                    "amount": 9
-                },
-                {
-                    "fluid": "immersivepetroleum:diesel_sulfur",
-                    "amount": 14
-                },
-                {
-                    "fluid": "immersivepetroleum:gasoline",
-                    "amount": 39
-                }
-            ],
-            "input": {
-                "tag": "forge:crude_oil",
-                "amount": 75
+    e.custom({
+        type: 'immersivepetroleum:distillation',
+        byproducts: [
+            {
+                item: 'thermal:bitumen',
+                chance: 0.07
+            }
+        ],
+        results: [
+            {
+                fluid: 'immersivepetroleum:lubricant',
+                amount: 9
             },
-            "time": 1,
-            "energy": 2048
-        }
-    ).id('kubejs:oilcracking')
+            {
+                fluid: 'immersivepetroleum:diesel_sulfur',
+                amount: 14
+            },
+            {
+                fluid: 'immersivepetroleum:gasoline',
+                amount: 39
+            }
+        ],
+        input: {
+            tag: 'forge:crude_oil',
+            amount: 75
+        },
+        time: 1,
+        energy: 2048
+    }).id('kubejs:oilcracking')
+    // #endregion Bitumen
 })
