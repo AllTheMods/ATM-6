@@ -1,5 +1,6 @@
 // this file remaps default mod recipes with parsing issues
 onEvent('recipes', e => {
+    // #region Functions
     // Thermal resolving
     function thermalRemoval(entries) {
         let recipes = []
@@ -68,8 +69,9 @@ onEvent('recipes', e => {
             }).id(`kubejs:melting/${input.substring(input.indexOf(':') + 1)}`)
         })
     }
+    // #endregion Functions
 
-    // removal
+    // #region Removal
     const invalidRemovals = [
         'biggerreactors:crafting/reactor/reactor_manifold',
         'biomesoplenty:soil/ash',
@@ -118,8 +120,9 @@ onEvent('recipes', e => {
         ])
     )
     invalidRemovals.forEach(id => e.remove({ id: id }))
+    // #endregion Removal
 
-    // Astral Sorcery remapping
+    // #region Astral Sorcery
     e.custom({
         type: 'thermal:pulverizer',
         ingredient: {
@@ -143,14 +146,16 @@ onEvent('recipes', e => {
             }
         ]
     })
+    // #endregion Astral Sorcery
 
-    // Bigger Reactors remapping
+    // #region Bigger Reactors
     e.shaped('4x biggerreactors:reactor_manifold', ['IGI', 'G G', 'IGI'], {
         I: '#forge:ingots/iron',
         G: '#forge:glass'
     }).id(`kubejs:reactor_manifold`)
+    // #endregion Bigger Reactors
 
-    // Immersive Petroleum remapping
+    // #region Immersive Petroleum
     e.custom({
         type: 'immersivepetroleum:hydrotreater',
         time: 1,
@@ -172,15 +177,17 @@ onEvent('recipes', e => {
             chance: '0.02'
         }
     }).id('kubejs:hydrotreater/sulfur_recovery')
+    // #endregion Immersive Petroleum
 
-    // Oh the biomes you'll go remapping
+    // #region Oh the biomes you'll go
     tinkerBasinCasting([
         ['byg:cryptic_stone', 'byg:cryptic_magma_block'],
         ['minecraft:blackstone', 'byg:magmatic_stone']
     ])
     tinkerMelting(['byg:cryptic_magma_block', 'byg:magmatic_stone'])
+    // #endregion Oh the biomes you'll go
 
-    // Pams Harvestcraft remapping
+    // #region Pams Harvestcraft
     e.shapeless('pamhc2foodcore:cottoncandyitem', ['#forge:tool_pot', '#forge:sugar']).id('kubejs:cottoncandy')
     e.shapeless('pamhc2foodextended:peachesandcreamoatmealitem', [
         '#forge:tool_pot',
@@ -189,14 +196,16 @@ onEvent('recipes', e => {
         '#forge:cream',
         '#forge:water'
     ]).id('kubejs:peachesandcreamoatmealitem')
+    // #endregion Pams Harvestcraft
 
-    // Rats remapping
+    // #region Rats
     e.shaped('rats:dragon_wing', ['BBB', 'LLB', '  L'], {
         B: '#forge:bones/dragon',
         L: '#forge:scales/dragon'
     }).id(`kubejs:dragon_wing`)
+    // #endregion Rats
 
-    // Thermal remapping
+    // #region Thermal
     e.custom({
         type: 'thermal:smelter',
         input: [
@@ -284,4 +293,5 @@ onEvent('recipes', e => {
             }
         ]
     }).id('kubejs:smelter/slimesteel')
+    // #endregion Thermal
 })

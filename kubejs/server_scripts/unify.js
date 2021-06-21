@@ -186,22 +186,6 @@ onEvent('recipes', e => {
         e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
         e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
     }
-
-    function unifyPlateSheets(types) {
-        types.forEach(type => {
-            let create = type == 'gold' ? `create:${type}en_sheet` : `create:${type}_sheet`
-            let output = type == 'aluminum' ? `immersiveengineering:plate_${type}` : `thermal:${type}_plate`
-            e.replaceInput(`thermal:${type}_plate`, `#forge:plates/${type}`)
-            e.replaceInput(`immersiveengineering:plate_${type}`, `#forge:plates/${type}`)
-            e.replaceInput(create, `#forge:plates/${type}`)
-            e.replaceOutput(`immersiveengineering:plate_${type}`, output)
-            e.replaceOutput(create, output)
-            if (type != 'aluminum') {
-                e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_gold_cast` })
-                e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_sand_cast` })
-            }
-        })
-    }
     // #endregion Functions
 
     // #region Metal Unification
@@ -268,6 +252,22 @@ onEvent('recipes', e => {
     // #endregion Metal Unification
 
     // #region Plate Unification
+    function unifyPlateSheets(types) {
+        types.forEach(type => {
+            let create = type == 'gold' ? `create:${type}en_sheet` : `create:${type}_sheet`
+            let output = type == 'aluminum' ? `immersiveengineering:plate_${type}` : `thermal:${type}_plate`
+            e.replaceInput(`thermal:${type}_plate`, `#forge:plates/${type}`)
+            e.replaceInput(`immersiveengineering:plate_${type}`, `#forge:plates/${type}`)
+            e.replaceInput(create, `#forge:plates/${type}`)
+            e.replaceOutput(`immersiveengineering:plate_${type}`, output)
+            e.replaceOutput(create, output)
+            if (type != 'aluminum') {
+                e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_gold_cast` })
+                e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_sand_cast` })
+            }
+        })
+    }
+
     unifyPlateSheets([
         'iron',
         'gold',
@@ -347,4 +347,29 @@ onEvent('recipes', e => {
     e.replaceInput('mekanism:dust_coal', '#forge:dusts/coal')
     e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
     // #endregion Coal Dust
+
+    // #region ExtraDisks & ExtraStorage
+    function unifyExtraStorageDisks(entries) {
+        const storageTypes = [
+            ['parts', 'part', 'part', 'storagepart'],
+            ['storage_blocks', 'storage_block', 'block', 'block'],
+            ['disks', 'disk/shaped', 'disk', 'disk']
+        ]
+
+        entries.forEach(size => {
+            storageTypes.forEach(([tagCategory, recipeCategory, disk, storage]) => {
+                e.replaceInput(`extrastorage:${storage}_${size}k`, `#refinedstorage:${tagCategory}/items/${size}k`)
+                e.replaceInput(`extrastorage:${storage}_${size * 64}k_fluid`, `#refinedstorage:${tagCategory}/fluids/${size * 64}k`)
+                e.replaceOutput(`extrastorage:${storage}_${size}k`, `extradisks:${size}k_storage_${disk}`)
+                e.replaceOutput(`extrastorage:${storage}_${size * 64}k_fluid`, `extradisks:${size * 64}k_fluid_storage_${disk}`)
+                e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size}k` })
+                e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size * 64}k_fluid` })
+            })
+            e.remove({ id: `extrastorage:disk/shapeless/disk_${size}k` })
+            e.remove({ id: `extrastorage:disk/shapeless/disk_${size * 64}k_fluid` })
+        })
+    }
+
+    unifyExtraStorageDisks([256, 1024, 4096, 16384])
+    // #endregion ExtraDisks & ExtraStorage
 })
