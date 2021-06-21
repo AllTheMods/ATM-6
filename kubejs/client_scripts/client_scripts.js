@@ -77,6 +77,7 @@ onEvent(`jei.hide.items`, e => {
         `naturesaura:chunk_loader`,
 
         /extrastorage:disk_.+/,
+        /extrastorage:block_.+/,
         /extrastorage:storagepart_.+/,
 
         /titanium:.+/,
