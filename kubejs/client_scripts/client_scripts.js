@@ -149,7 +149,9 @@ onEvent(`jei.hide.items`, e => {
 
         `solarflux:sp_6`,
         `solarflux:sp_7`,
-        `solarflux:sp_8`
+        `solarflux:sp_8`,
+
+        'lazierae2:coal_dust'
     ])
 
     colors.forEach(color => {

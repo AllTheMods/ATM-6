@@ -341,4 +341,10 @@ onEvent('recipes', e => {
         energy: 2048
     }).id('kubejs:oilcracking')
     // #endregion Bitumen
+
+    // #region Coal Dust
+    e.replaceInput('lazierae2:coal_dust', '#forge:dusts/coal')
+    e.replaceInput('mekanism:dust_coal', '#forge:dusts/coal')
+    e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
+    // #endregion Coal Dust
 })
