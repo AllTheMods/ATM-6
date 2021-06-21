@@ -1,9 +1,8 @@
 // this file remaps default mod recipes with parsing issues
 onEvent('recipes', e => {
-
     // Thermal resolving
     function thermalRemoval(entries) {
-        let recipes = [];
+        let recipes = []
         entries.forEach(([name, mod, machine]) => {
             switch (mod) {
                 case 0:
@@ -40,52 +39,48 @@ onEvent('recipes', e => {
 
     function tinkerBasinCasting(entries) {
         entries.forEach(([input, output]) => {
-            e.custom(
-                {
-                    "conditions": [
-                        {
-                            "type": "forge:mod_loaded",
-                            "modid": "tconstruct"
-                        }
-                    ],
-                    "type": "tconstruct:casting_basin",
-                    "cast": {
-                        "item": input
-                    },
-                    "cast_consumed": true,
-                    "fluid": {
-                        "name": "tconstruct:magma",
-                        "amount": 1000
-                    },
-                    "result": output,
-                    "cooling_time": 90
-                }
-            ).id(`kubejs:basin_casting/${output.substring(output.indexOf(':') + 1)}`)
+            e.custom({
+                conditions: [
+                    {
+                        type: 'forge:mod_loaded',
+                        modid: 'tconstruct'
+                    }
+                ],
+                type: 'tconstruct:casting_basin',
+                cast: {
+                    item: input
+                },
+                cast_consumed: true,
+                fluid: {
+                    name: 'tconstruct:magma',
+                    amount: 1000
+                },
+                result: output,
+                cooling_time: 90
+            }).id(`kubejs:basin_casting/${output.substring(output.indexOf(':') + 1)}`)
         })
     }
 
     function tinkerMelting(entries) {
         entries.forEach(input => {
-            e.custom(
-                {
-                    "conditions": [
-                        {
-                            "type": "forge:mod_loaded",
-                            "modid": "tconstruct"
-                        }
-                    ],
-                    "type": "tconstruct:melting",
-                    "ingredient": {
-                        "item": input
-                    },
-                    "result": {
-                        "fluid": "tconstruct:magma",
-                        "amount": 1000
-                    },
-                    "temperature": 300,
-                    "time": 127
-                }
-            ).id(`kubejs:melting/${input.substring(input.indexOf(':') + 1)}`)
+            e.custom({
+                conditions: [
+                    {
+                        type: 'forge:mod_loaded',
+                        modid: 'tconstruct'
+                    }
+                ],
+                type: 'tconstruct:melting',
+                ingredient: {
+                    item: input
+                },
+                result: {
+                    fluid: 'tconstruct:magma',
+                    amount: 1000
+                },
+                temperature: 300,
+                time: 127
+            }).id(`kubejs:melting/${input.substring(input.indexOf(':') + 1)}`)
         })
     }
 
@@ -138,44 +133,38 @@ onEvent('recipes', e => {
             ['pigiron', 1, 'smelter_alloy'],
             ['pigiron', 1, 'chiller'],
             ['slimesteel', 1, 'smelter_alloy'],
-            ['aquamarine', 2],
+            ['aquamarine', 2]
         ])
     )
     invalidRemovals.forEach(id => e.remove({ id: id }))
 
     // Astral Sorcery remapping
-    e.custom(
-        {
-            "type": "thermal:pulverizer",
-            "ingredient": {
-                "item": "astralsorcery:aquamarine_sand_ore"
+    e.custom({
+        type: 'thermal:pulverizer',
+        ingredient: {
+            item: 'astralsorcery:aquamarine_sand_ore'
+        },
+        result: [
+            {
+                item: 'astralsorcery:aquamarine',
+                chance: 6.0
             },
-            "result": [
-                {
-                    "item": "astralsorcery:aquamarine",
-                    "chance": 6.0
-                },
-                {
-                    "item": "minecraft:sand",
-                    "chance": 0.2
-                }
-            ],
-            "experience": 0.2,
-            "conditions": [
-                {
-                    "type": "forge:mod_loaded",
-                    "modid": "astralsorcery"
-                }
-            ]
-        }
-    )
+            {
+                item: 'minecraft:sand',
+                chance: 0.2
+            }
+        ],
+        experience: 0.2,
+        conditions: [
+            {
+                type: 'forge:mod_loaded',
+                modid: 'astralsorcery'
+            }
+        ]
+    })
 
     // Bigger Reactors remapping
-    e.shaped('4x biggerreactors:reactor_manifold', [
-        'IGI',
-        'G G',
-        'IGI'
-    ], {
+    e.shaped('4x biggerreactors:reactor_manifold', ['IGI', 'G G', 'IGI'], {
         I: '#forge:ingots/iron',
         G: '#forge:glass'
     }).id(`kubejs:reactor_manifold`)
@@ -189,145 +178,137 @@ onEvent('recipes', e => {
     ])
 
     // Immersive Petroleum remapping
-    e.custom(
-        {
-            "type": "immersivepetroleum:hydrotreater",
-            "time": 1,
-            "energy": 512,
-            "result": {
-                "fluid": "immersivepetroleum:diesel",
-                "amount": 7
-            },
-            "input": {
-                "tag": "forge:diesel_sulfur",
-                "amount": 7
-            },
-            "secondary_input": {
-                "tag": "minecraft:water",
-                "amount": 7
-            },
-            "secondary_result": {
-                "item": "immersiveengineering:dust_sulfur",
-                "chance": "0.02"
-            }
+    e.custom({
+        type: 'immersivepetroleum:hydrotreater',
+        time: 1,
+        energy: 512,
+        result: {
+            fluid: 'immersivepetroleum:diesel',
+            amount: 7
+        },
+        input: {
+            tag: 'forge:diesel_sulfur',
+            amount: 7
+        },
+        secondary_input: {
+            tag: 'minecraft:water',
+            amount: 7
+        },
+        secondary_result: {
+            item: 'immersiveengineering:dust_sulfur',
+            chance: '0.02'
         }
-    ).id('kubejs:hydrotreater/sulfur_recovery')
+    }).id('kubejs:hydrotreater/sulfur_recovery')
 
     // Oh the biomes you'll go remapping
     tinkerBasinCasting([
         ['byg:cryptic_stone', 'byg:cryptic_magma_block'],
         ['minecraft:blackstone', 'byg:magmatic_stone']
     ])
-    tinkerMelting([
-        'byg:cryptic_magma_block', 'byg:magmatic_stone'
-    ])
+    tinkerMelting(['byg:cryptic_magma_block', 'byg:magmatic_stone'])
 
     // Pams Harvestcraft remapping
     e.shapeless('pamhc2foodcore:cottoncandyitem', ['#forge:tool_pot', '#forge:sugar']).id('kubejs:cottoncandy')
     e.shapeless('pamhc2foodextended:peachesandcreamoatmealitem', [
-        '#forge:tool_pot', '#forge:crops/oats', '#forge:crops/peach', '#forge:cream', '#forge:water'
+        '#forge:tool_pot',
+        '#forge:crops/oats',
+        '#forge:crops/peach',
+        '#forge:cream',
+        '#forge:water'
     ]).id('kubejs:peachesandcreamoatmealitem')
 
     // Rats remapping
-    e.shaped('rats:dragon_wing', [
-        'BBB',
-        'LLB',
-        '  L'
-    ], {
+    e.shaped('rats:dragon_wing', ['BBB', 'LLB', '  L'], {
         B: '#forge:bones/dragon',
         L: '#forge:scales/dragon'
     }).id(`kubejs:dragon_wing`)
 
     // Thermal remapping
-    e.custom(
-        {
-            "type": "thermal:smelter",
-            "input": [
-                {
-                    "tag": "forge:ingots/iron",
-                    "count": 1
-                },
-                {
-                    "item": "tconstruct:blood_slime_ball",
-                    "count": 1
-                },
-                {
-                    "item": "minecraft:clay_ball",
-                    "count": 1
-                }
-            ],
-            "result": [
-                {
-                    "item": "tconstruct:pig_iron_ingot",
-                    "count": 2
-                }
-            ],
-            "energy": 4000,
-            "conditions": [
-                {
-                    "type": "forge:mod_loaded",
-                    "modid": "tconstruct"
-                }
-            ]
-        }
-    ).id('kubejs:smelter/pig_iron')
-    e.custom(
-        {
-            "type": "thermal:chiller",
-            "input": [
-                {
-                    "fluid": "tconstruct:molten_pig_iron",
-                    "amount": 144
-                },
-                {
-                    "item": "thermal:chiller_ingot_cast"
-                }
-            ],
-            "result": [
-                {
-                    "item": "tconstruct:pig_iron_ingot",
-                    "count": 1
-                }
-            ],
-            "energy": 5000,
-            "conditions": [
-                {
-                    "type": "forge:mod_loaded",
-                    "modid": "tconstruct"
-                }
-            ]
-        }
-    ).id('kubejs:chiller/pig_iron')
-    e.custom(
-        {
-            "type": "thermal:smelter",
-            "input": [
-                {
-                    "tag": "forge:ingots/iron",
-                    "count": 1
-                },
-                {
-                    "item": "tconstruct:sky_slime_ball",
-                    "count": 1
-                },
-                {
-                    "item": "tconstruct:seared_brick",
-                    "count": 1
-                }
-            ],
-            "result": [
-                {
-                    "item": "tconstruct:slimesteel_ingot",
-                    "count": 2
-                }
-            ],
-            "energy": 4000,
-            "conditions": [
-                {
-                    "type": "forge:mod_loaded",
-                    "modid": "tconstruct"
-                }
-            ]
-        }
-    ).id('kubejs:smelter/slimesteel')
+    e.custom({
+        type: 'thermal:smelter',
+        input: [
+            {
+                tag: 'forge:ingots/iron',
+                count: 1
+            },
+            {
+                item: 'tconstruct:blood_slime_ball',
+                count: 1
+            },
+            {
+                item: 'minecraft:clay_ball',
+                count: 1
+            }
+        ],
+        result: [
+            {
+                item: 'tconstruct:pig_iron_ingot',
+                count: 2
+            }
+        ],
+        energy: 4000,
+        conditions: [
+            {
+                type: 'forge:mod_loaded',
+                modid: 'tconstruct'
+            }
+        ]
+    }).id('kubejs:smelter/pig_iron')
+
+    e.custom({
+        type: 'thermal:chiller',
+        input: [
+            {
+                fluid: 'tconstruct:molten_pig_iron',
+                amount: 144
+            },
+            {
+                item: 'thermal:chiller_ingot_cast'
+            }
+        ],
+        result: [
+            {
+                item: 'tconstruct:pig_iron_ingot',
+                count: 1
+            }
+        ],
+        energy: 5000,
+        conditions: [
+            {
+                type: 'forge:mod_loaded',
+                modid: 'tconstruct'
+            }
+        ]
+    }).id('kubejs:chiller/pig_iron')
+
+    e.custom({
+        type: 'thermal:smelter',
+        input: [
+            {
+                tag: 'forge:ingots/iron',
+                count: 1
+            },
+            {
+                item: 'tconstruct:sky_slime_ball',
+                count: 1
+            },
+            {
+                item: 'tconstruct:seared_brick',
+                count: 1
+            }
+        ],
+        result: [
+            {
+                item: 'tconstruct:slimesteel_ingot',
+                count: 2
+            }
+        ],
+        energy: 4000,
+        conditions: [
+            {
+                type: 'forge:mod_loaded',
+                modid: 'tconstruct'
+            }
+        ]
+    }).id('kubejs:smelter/slimesteel')
 })
