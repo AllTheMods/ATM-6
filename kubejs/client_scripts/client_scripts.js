@@ -190,7 +190,17 @@ onEvent(`jei.hide.items`, e => {
     //Hides items based on type, format: `mod`, `type`, [`name1`, `name2`, `etc`]
     hideStuff(`thermal`, `dust`, [`iron`, `gold`])
     hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`])
-    hideStuff(`immersiveengineering`, `plate`, [`iron`, `gold`, `copper`, `aluminum`, `lead`, `silver`, `nickel`, `constantan`, `electrum`])
+    hideStuff(`immersiveengineering`, `plate`, [
+        `iron`,
+        `gold`,
+        `copper`,
+        `aluminum`,
+        `lead`,
+        `silver`,
+        `nickel`,
+        `constantan`,
+        `electrum`
+    ])
     hideStuff(`mekanism`, `dust`, [`lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`])
     hideStuff(`mekanism`, `crystal`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
     hideStuff(`mekanism`, `shard`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
@@ -295,7 +305,10 @@ onEvent(`item.tooltip`, e => {
     refined.forEach(refin => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`)
     })
-    e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`])
+    e.add(`pedestals:pedestal/stone333`, [
+        `Press show uses(default U) key on §6§lColored Pallet§r`,
+        `to show different colored pedestals you can make`
+    ])
     e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`])
     e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
     e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)

@@ -194,18 +194,72 @@ onEvent('recipes', e => {
     unifyMetal('iron', 'minecraft:iron_ingot', 'alltheores:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget')
 
     //Multiple Mods
-    unifyMetal('aluminum', 'alltheores:aluminum_ingot', 'alltheores:aluminum_dust', 'alltheores:aluminum_block', 'alltheores:aluminum_nugget')
-    unifyMetal('copper', 'alltheores:copper_ingot', 'alltheores:copper_dust', 'alltheores:copper_block', 'alltheores:copper_nugget')
-    unifyMetal('lead', 'alltheores:lead_ingot', 'alltheores:lead_dust', 'alltheores:lead_block', 'alltheores:lead_nugget')
-    unifyMetal('nickel', 'alltheores:nickel_ingot', 'alltheores:nickel_dust', 'alltheores:nickel_block', 'alltheores:nickel_nugget')
-    unifyMetal('platinum', 'alltheores:platinum_ingot', 'alltheores:platinum_dust', 'alltheores:platinum_block', 'alltheores:platinum_nugget')
-    unifyMetal('silver', 'alltheores:silver_ingot', 'alltheores:silver_dust', 'alltheores:silver_block', 'alltheores:silver_nugget')
+    unifyMetal(
+        'aluminum',
+        'alltheores:aluminum_ingot',
+        'alltheores:aluminum_dust',
+        'alltheores:aluminum_block',
+        'alltheores:aluminum_nugget'
+    )
+    unifyMetal(
+        'copper',
+        'alltheores:copper_ingot',
+        'alltheores:copper_dust',
+        'alltheores:copper_block',
+        'alltheores:copper_nugget'
+    )
+    unifyMetal(
+        'lead',
+        'alltheores:lead_ingot',
+        'alltheores:lead_dust',
+        'alltheores:lead_block',
+        'alltheores:lead_nugget'
+    )
+    unifyMetal(
+        'nickel',
+        'alltheores:nickel_ingot',
+        'alltheores:nickel_dust',
+        'alltheores:nickel_block',
+        'alltheores:nickel_nugget'
+    )
+    unifyMetal(
+        'platinum',
+        'alltheores:platinum_ingot',
+        'alltheores:platinum_dust',
+        'alltheores:platinum_block',
+        'alltheores:platinum_nugget'
+    )
+    unifyMetal(
+        'silver',
+        'alltheores:silver_ingot',
+        'alltheores:silver_dust',
+        'alltheores:silver_block',
+        'alltheores:silver_nugget'
+    )
     unifyMetal('tin', 'alltheores:tin_ingot', 'alltheores:tin_dust', 'alltheores:tin_block', 'alltheores:tin_nugget')
-    unifyMetal('uranium', 'alltheores:uranium_ingot', 'alltheores:uranium_dust', 'alltheores:uranium_block', 'alltheores:uranium_nugget')
-    unifyMetal('zinc', 'alltheores:zinc_ingot', 'alltheores:zinc_dust', 'alltheores:zinc_block', 'alltheores:zinc_nugget')
+    unifyMetal(
+        'uranium',
+        'alltheores:uranium_ingot',
+        'alltheores:uranium_dust',
+        'alltheores:uranium_block',
+        'alltheores:uranium_nugget'
+    )
+    unifyMetal(
+        'zinc',
+        'alltheores:zinc_ingot',
+        'alltheores:zinc_dust',
+        'alltheores:zinc_block',
+        'alltheores:zinc_nugget'
+    )
 
     //Mekanism
-    unifyMetal('osmium', 'alltheores:osmium_ingot', 'alltheores:osmium_dust', 'alltheores:osmium_block', 'alltheores:osmium_nugget')
+    unifyMetal(
+        'osmium',
+        'alltheores:osmium_ingot',
+        'alltheores:osmium_dust',
+        'alltheores:osmium_block',
+        'alltheores:osmium_nugget'
+    )
 
     //Silent Gear
     unifyMetal(
@@ -231,7 +285,13 @@ onEvent('recipes', e => {
         'allthemodium:allthemodium_block',
         'allthemodium:allthemodium_nugget'
     )
-    unifyMetal('vibranium', 'allthemodium:vibranium_ingot', 'allthemodium:vibranium_dust', 'allthemodium:vibranium_block', 'allthemodium:vibranium_nugget')
+    unifyMetal(
+        'vibranium',
+        'allthemodium:vibranium_ingot',
+        'allthemodium:vibranium_dust',
+        'allthemodium:vibranium_block',
+        'allthemodium:vibranium_nugget'
+    )
     unifyMetal(
         'unobtainium',
         'allthemodium:unobtainium_ingot',
@@ -243,12 +303,36 @@ onEvent('recipes', e => {
     //Craft only metals
     //Multiple Mods crafted only (no ore)
     //unifyCraftMetal('bronze', 'mekanism:ingot_bronze', 'mekanism:dust_bronze', 'mekanism:block_bronze', 'mekanism:nugget_bronze') //Replaced/Returned to unifying on thermal's bronze
-    unifyCraftMetal('steel', 'mekanism:ingot_steel', 'mekanism:dust_steel', 'mekanism:block_steel', 'mekanism:nugget_steel')
+    unifyCraftMetal(
+        'steel',
+        'mekanism:ingot_steel',
+        'mekanism:dust_steel',
+        'mekanism:block_steel',
+        'mekanism:nugget_steel'
+    )
 
     //Thermal
-    unifyCraftMetal('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
-    unifyCraftMetal('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
-    unifyCraftMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
+    unifyCraftMetal(
+        'bronze',
+        'thermal:bronze_ingot',
+        'thermal:bronze_dust',
+        'thermal:bronze_block',
+        'thermal:bronze_nugget'
+    )
+    unifyCraftMetal(
+        'constantan',
+        'thermal:constantan_ingot',
+        'thermal:constantan_dust',
+        'thermal:constantan_block',
+        'thermal:constantan_nugget'
+    )
+    unifyCraftMetal(
+        'electrum',
+        'thermal:electrum_ingot',
+        'thermal:electrum_dust',
+        'thermal:electrum_block',
+        'thermal:electrum_nugget'
+    )
     // #endregion Metal Unification
 
     // #region Plate Unification
@@ -359,9 +443,15 @@ onEvent('recipes', e => {
         entries.forEach(size => {
             storageTypes.forEach(([tagCategory, recipeCategory, disk, storage]) => {
                 e.replaceInput(`extrastorage:${storage}_${size}k`, `#refinedstorage:${tagCategory}/items/${size}k`)
-                e.replaceInput(`extrastorage:${storage}_${size * 64}k_fluid`, `#refinedstorage:${tagCategory}/fluids/${size * 64}k`)
+                e.replaceInput(
+                    `extrastorage:${storage}_${size * 64}k_fluid`,
+                    `#refinedstorage:${tagCategory}/fluids/${size * 64}k`
+                )
                 e.replaceOutput(`extrastorage:${storage}_${size}k`, `extradisks:${size}k_storage_${disk}`)
-                e.replaceOutput(`extrastorage:${storage}_${size * 64}k_fluid`, `extradisks:${size * 64}k_fluid_storage_${disk}`)
+                e.replaceOutput(
+                    `extrastorage:${storage}_${size * 64}k_fluid`,
+                    `extradisks:${size * 64}k_fluid_storage_${disk}`
+                )
                 e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size}k` })
                 e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size * 64}k_fluid` })
             })

@@ -194,22 +194,18 @@ onEvent('recipes', e => {
 
             'titanium:iron_gear',
             'titanium:gold_gear',
-            'titanium:diamond_gear',
+            'titanium:diamond_gear'
         ]
     })
     //Remove via mod name
-    var modRemove = [
-        `cabletiers`,
-    ]
+    var modRemove = [`cabletiers`]
     modRemove.forEach(mR => {
         e.remove({
             mod: mR
         })
     })
     e.remove({
-        input: [
-            'appliedenergistics2:flour'
-        ]
+        input: ['appliedenergistics2:flour']
     })
     e.remove({
         type: 'xreliquary:alkahestry_charging'
