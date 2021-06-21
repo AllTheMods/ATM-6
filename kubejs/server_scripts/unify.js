@@ -371,6 +371,326 @@ onEvent('recipes', e => {
     ])
     // #endregion Plate Unification
 
+    // #region Tinkers Unification
+    function tinkerMelting(material, type, typeValues, temperature, time, byproduct) {
+        const recipe = {
+            type: 'tconstruct:melting',
+            ingredient: {
+                tag: `forge:${type}/${material}`
+            },
+            result: {
+                fluid: `alltheores:molten_${material}`,
+                amount: typeValues.amount
+            },
+            temperature: temperature,
+            time: time * typeValues.multiplier
+        }
+        e.custom(type != 'ores' ? recipe : Object.assign({ byproducts: byproduct }, recipe)).id(
+            `kubejs:melting/${type}/${material}`
+        )
+    }
+
+    function tinkerBlockMelting(entries) {
+        entries.forEach(([input, fluidAmount, time, byproductAmount], index) => {
+            e.custom({
+                type: 'tconstruct:melting',
+                ingredient: input,
+                result: {
+                    fluid: 'alltheores:molten_copper',
+                    amount: fluidAmount
+                },
+                temperature: 500,
+                time: time,
+                byproducts: [
+                    {
+                        fluid: 'tconstruct:seared_stone',
+                        amount: byproductAmount
+                    }
+                ]
+            }).id(`kubejs:melting/copper/fromblock/${index + 1}`)
+        })
+    }
+
+    function tinkerAlloys(entries) {
+        entries.forEach(([output, outputAmount, temperature, inputs]) => {
+            e.remove({ id: `tconstruct:smeltery/alloys/molten_${output}` })
+            e.custom({
+                type: 'tconstruct:alloy',
+                conditions: [
+                    {
+                        value: {
+                            tag: `forge:ingots/${output}`,
+                            type: 'forge:tag_empty'
+                        },
+                        type: 'forge:not'
+                    }
+                ],
+                inputs: inputs,
+                result: {
+                    fluid: `tconstruct:molten_${output}`,
+                    amount: outputAmount
+                },
+                temperature: temperature
+            }).id(`kubejs:melting/alloys/${output}`)
+        })
+    }
+
+    function unifyTinkers(entries) {
+        const meltingTypes = [
+            'block',
+            'can',
+            'coin',
+            'dust',
+            'gear',
+            'ingot',
+            'nugget',
+            'ore',
+            'plates',
+            'rod',
+            'sheetmetal'
+        ]
+        const meltingTypeValues = {
+            storage_blocks: {
+                amount: 1296,
+                multiplier: 88.125
+            },
+            dusts: {
+                amount: 144,
+                multiplier: 21.75
+            },
+            gears: {
+                amount: 576,
+                multiplier: 58.8
+            },
+            ingots: {
+                amount: 144,
+                multiplier: 29.4
+            },
+            nuggets: {
+                amount: 16,
+                multiplier: 10.0
+            },
+            ores: {
+                amount: 144,
+                multiplier: 44.1
+            },
+            plates: {
+                amount: 144,
+                multiplier: 29.4
+            },
+            rods: {
+                amount: 72,
+                multiplier: 5.88
+            },
+            sheetmetals: {
+                amount: 144,
+                multiplier: 29.4
+            }
+        }
+        const meltingParts = [
+            'broad_axe_head',
+            'broad_blade',
+            'hammer_head',
+            'large_plate',
+            'pickaxe_head',
+            'repair_kit',
+            'small_axe_head',
+            'small_blade',
+            'tool_binding',
+            'tool_handle',
+            'tough_handle'
+        ]
+
+        entries.forEach(([material, temperature, time, types, byproduct]) => {
+            e.replaceInput(`tconstruct:${material}_ingot`, `#forge:ingots/${material}`)
+            e.replaceInput(`tmechworks:${material}_ingot`, `#forge:ingots/${material}`)
+            e.replaceInput(`tconstruct:${material}_block`, `#forge:storage_blocks/${material}`)
+            e.replaceInput(`tmechworks:${material}_block`, `#forge:storage_blocks/${material}`)
+            e.replaceOutput(`tconstruct:${material}_ingot`, `alltheores:${material}_ingot`)
+            e.replaceOutput(`tmechworks:${material}_ingot`, `alltheores:${material}_ingot`)
+            e.replaceOutput(`tconstruct:${material}_block`, `alltheores:${material}_block`)
+            e.replaceOutput(`tmechworks:${material}_block`, `alltheores:${material}_block`)
+
+            meltingTypes.forEach(meltingType => {
+                e.remove({ id: `tconstruct:smeltery/melting/metal/${material}/${meltingType}` })
+                for (let type in meltingTypeValues) {
+                    if (types.includes(type)) {
+                        tinkerMelting(material, type, meltingTypeValues[type], temperature, time, byproduct)
+                    }
+                }
+            })
+            meltingParts.forEach(meltingPart => {
+                e.remove({ id: `tconstruct:tools/parts/melting/${meltingPart}/tconstruct/${material}` })
+            })
+        })
+    }
+
+    unifyTinkers([
+        [
+            'aluminum',
+            425,
+            1.6,
+            ['storage_blocks', 'dusts', 'ingots', 'nuggets', 'ores', 'plates', 'rods', 'sheetmetals'],
+            [{ fluid: 'tconstruct:molten_iron', amount: 48 }]
+        ],
+        [
+            'copper',
+            500,
+            1.7,
+            ['storage_blocks', 'dusts', 'gears', 'ingots', 'nuggets', 'ores', 'plates', 'sheetmetals'],
+            [{ fluid: 'tconstruct:molten_gold', amount: 16 }]
+        ],
+        [
+            'lead',
+            330,
+            1.4,
+            ['storage_blocks', 'dusts', 'gears', 'ingots', 'nuggets', 'ores', 'plates', 'sheetmetals'],
+            [{ fluid: 'alltheores:molten_silver', amount: 48 }]
+        ],
+        [
+            'nickel',
+            950,
+            2.2,
+            ['storage_blocks', 'dusts', 'gears', 'ingots', 'nuggets', 'ores', 'plates', 'sheetmetals'],
+            [{ fluid: 'alltheores:molten_platinum', amount: 16 }]
+        ],
+        [
+            'osmium',
+            975,
+            2.2,
+            ['storage_blocks', 'dusts', 'ingots', 'nuggets', 'ores'],
+            [{ fluid: 'tconstruct:molten_iron', amount: 48 }]
+        ],
+        [
+            'platinum',
+            970,
+            2.2,
+            ['storage_blocks', 'dusts', 'ingots', 'nuggets', 'ores'],
+            [{ fluid: 'tconstruct:molten_gold', amount: 48 }]
+        ],
+        [
+            'silver',
+            790,
+            2.0,
+            ['storage_blocks', 'dusts', 'gears', 'ingots', 'nuggets', 'ores', 'plates', 'sheetmetals'],
+            [{ fluid: 'alltheores:molten_lead', amount: 48 }]
+        ],
+        [
+            'tin',
+            225,
+            1.3,
+            ['storage_blocks', 'dusts', 'gears', 'ingots', 'nuggets', 'ores', 'plates'],
+            [{ fluid: 'alltheores:molten_copper', amount: 48 }]
+        ],
+        [
+            'uranium',
+            830,
+            2.0,
+            ['storage_blocks', 'dusts', 'ingots', 'nuggets', 'ores', 'plates', 'sheetmetals'],
+            [{ fluid: 'alltheores:molten_lead', amount: 48 }]
+        ],
+        [
+            'zinc',
+            420,
+            1.6,
+            ['storage_blocks', 'dusts', 'ingots', 'nuggets', 'ores'],
+            [{ fluid: 'alltheores:molten_tin', amount: 48 }]
+        ]
+    ])
+
+    tinkerAlloys([
+        [
+            'brass',
+            288,
+            605,
+            [
+                { tag: 'forge:molten_copper', amount: 144 },
+                { tag: 'forge:molten_zinc', amount: 144 }
+            ]
+        ],
+        [
+            'bronze',
+            576,
+            700,
+            [
+                { tag: 'forge:molten_copper', amount: 432 },
+                { tag: 'forge:molten_tin', amount: 144 }
+            ]
+        ],
+        [
+            'constantan',
+            288,
+            920,
+            [
+                { tag: 'forge:molten_copper', amount: 144 },
+                { tag: 'forge:molten_nickel', amount: 144 }
+            ]
+        ],
+        [
+            'electrum',
+            288,
+            760,
+            [
+                { tag: 'tconstruct:molten_gold', amount: 144 },
+                { tag: 'forge:molten_silver', amount: 144 }
+            ]
+        ],
+        [
+            'hepatizon',
+            288,
+            1400,
+            [
+                { tag: 'forge:molten_copper', amount: 288 },
+                { tag: 'tconstruct:molten_cobalt', amount: 144 },
+                { tag: 'tconstruct:molten_obsidian', amount: 1000 }
+            ]
+        ],
+        [
+            'invar',
+            432,
+            900,
+            [
+                { tag: 'tconstruct:molten_iron', amount: 288 },
+                { tag: 'forge:molten_nickel', amount: 144 }
+            ]
+        ],
+        [
+            'pewter',
+            288,
+            400,
+            [
+                { tag: 'tconstruct:molten_iron', amount: 144 },
+                { tag: 'forge:molten_lead', amount: 144 }
+            ]
+        ],
+        [
+            'rose_gold',
+            576,
+            550,
+            [
+                { tag: 'forge:molten_copper', amount: 432 },
+                { tag: 'tconstruct:molten_gold', amount: 144 }
+            ]
+        ],
+        [
+            'tinkers_bronze',
+            432,
+            700,
+            [
+                { tag: 'forge:molten_copper', amount: 432 },
+                { tag: 'tconstruct:molten_glass', amount: 1000 }
+            ]
+        ]
+    ])
+
+    e.remove({ id: 'tconstruct:smeltery/melting/copper/smeltery_controller' })
+    e.remove({ id: 'tconstruct:smeltery/melting/copper/smeltery_io' })
+    tinkerBlockMelting([
+        [{ item: 'tconstruct:smeltery_controller' }, 576, 175, 1152],
+        [[{ item: 'tconstruct:seared_drain' }, { item: 'tconstruct:seared_chute' }], 288, 125, 576]
+    ])
+    // #endregion Tinkers Unification
+
     // Certus Quartz
     e.replaceInput('appliedenergistics2:certus_quartz_dust', '#forge:dusts/certus_quartz')
 

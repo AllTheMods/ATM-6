@@ -345,4 +345,8 @@ onEvent('entity_type.tags', e => {
 //Fluid tags
 onEvent('fluid.tags', e => {
     e.add('forge:essence', 'pneumaticcraft:memory_essence')
+    alltheores.forEach(material => {
+        e.add(`forge:molten_${material}`, [`alltheores:molten_${material}`, `#tconstruct:molten_${material}`])
+        e.add(`tconstruct:metal_like`, `alltheores:molten_${material}`)
+    })
 })
