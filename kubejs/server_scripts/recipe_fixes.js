@@ -22,21 +22,6 @@ onEvent('recipes', e => {
         return recipes
     }
 
-    function corailWoodcutting(entries) {
-        entries.forEach(([input, output, amount]) => {
-            e.custom(
-                {
-                    "type": "corail_woodcutter:woodcutting",
-                    "ingredient": {
-                        "tag": input
-                    },
-                    "result": output,
-                    "count": amount
-                }
-            ).id(`kubejs:woodcutting/${output.substring(output.indexOf(':') + 1)}`)
-        })
-    }
-
     function tinkerBasinCasting(entries) {
         entries.forEach(([input, output]) => {
             e.custom({
@@ -92,10 +77,6 @@ onEvent('recipes', e => {
         'byg:compat/tconstruct/magma_cream_from_magmatic_stone_melting',
         'byg:compat/tconstruct/magmatic_stone_from_casting',
         'byg:compat/tconstruct/cryptic_magma_block_from_casting',
-        'corail_woodcutter:woodcutting/quark/crimson_ladder_from_crimson_logs',
-        'corail_woodcutter:woodcutting/quark/crimson_vertical_slab_from_crimson_logs',
-        'corail_woodcutter:woodcutting/quark/warped_ladder_from_warped_logs',
-        'corail_woodcutter:woodcutting/quark/warped_vertical_slab_from_warped_logs',
         'immersivepetroleum:hydrotreater/sulfur_recovery',
         'pamhc2foodcore:cottoncandyitem',
         'pamhc2foodextended:peachesandcreamoatmealitem',
@@ -168,14 +149,6 @@ onEvent('recipes', e => {
         I: '#forge:ingots/iron',
         G: '#forge:glass'
     }).id(`kubejs:reactor_manifold`)
-
-    // Corail remapping
-    corailWoodcutting([
-        ['minecraft:crimson_stems', 'quark:crimson_ladder', 4],
-        ['minecraft:warped_stems', 'quark:warped_ladder', 4],
-        ['minecraft:crimson_stems', 'quark:crimson_vertical_slab', 8],
-        ['minecraft:warped_stems', 'quark:warped_vertical_slab', 8]
-    ])
 
     // Immersive Petroleum remapping
     e.custom({
