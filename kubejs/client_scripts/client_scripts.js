@@ -36,23 +36,12 @@ const refined = [
 ]
 
 onEvent(`jei.add.items`, e => {
-    const eggs = [
-        'dragonic',
-        'allthemodium',
-        'vibranium',
-        'unobtainium',
-        'soul_lava',
-        'netherite',
-    ]
+    const eggs = ['dragonic', 'allthemodium', 'vibranium', 'unobtainium', 'soul_lava', 'netherite']
     eggs.forEach(type => {
-        e.add([
-            `resourcefulbees:${type}_bee_spawn_egg`
-        ])
+        e.add([`resourcefulbees:${type}_bee_spawn_egg`])
     })
 
-    e.add([
-        `minecraft:dragon_egg`
-    ])
+    e.add([`minecraft:dragon_egg`])
 })
 
 onEvent(`jei.hide.items`, e => {
@@ -60,18 +49,14 @@ onEvent(`jei.hide.items`, e => {
 
     function hideMetal(mod, name, types) {
         types.forEach(type => {
-            const id = typeFirst.includes(mod) ?
-                `${mod}:${type}_${name}` :
-                `${mod}:${name}_${type}`
+            const id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
             if (!Ingredient.of(id).stacks.empty) e.hide(id)
         })
     }
 
     function hideStuff(mod, type, names) {
         names.forEach(name => {
-            const id = typeFirst.includes(mod) ?
-                `${mod}:${type}_${name}` :
-                `${mod}:${name}_${type}`
+            const id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
             if (!Ingredient.of(id).stacks.empty) e.hide(id)
         })
     }
@@ -169,14 +154,10 @@ onEvent(`jei.hide.items`, e => {
 
     colors.forEach(color => {
         refined.forEach(refin => {
-            e.hide([
-                `refinedstorage:${color}_${refin}`
-            ])
+            e.hide([`refinedstorage:${color}_${refin}`])
         })
 
-        e.hide([
-            `creativewirelesstransmitter:${color}_creative_wireless_transmitter`
-        ])
+        e.hide([`creativewirelesstransmitter:${color}_creative_wireless_transmitter`])
     })
 
     //Hides items based name, format: `mod`, `metal`, [`type1`, `type2`, `etc`]
@@ -219,8 +200,92 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`solarflux`, `sp`, [6, 7, 8])
     hideStuff(`quark`, `crate`, [`apple`, `carrot`, `beetroot`, `potato`])
     hideStuff(`quark`, `block`, [`bamboo`, `charcoal`, `sugar_cane`])
-    hideStuff(`mysticalagriculture`, `seeds`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`])
-    hideStuff(`mysticalagriculture`, `essence`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`])
+    hideStuff(`mysticalagriculture`, `seeds`, [
+        `basalz`,
+        `blazing_crystal`,
+        `blitz`,
+        `blizz`,
+        `brass`,
+        `bronze`,
+        `compressed_iron`,
+        `constantan`,
+        `crimson_steel`,
+        `chrome`,
+        `electrum`,
+        `elementium`,
+        `enderium`,
+        `ender_biotite`,
+        `energized_steel`,
+        `fluix`,
+        `graphite`,
+        `hop_graphite`,
+        `invar`,
+        `iridium`,
+        `lumium`,
+        `manasteel`,
+        `niotic_crystal`,
+        `nitro_crystal`,
+        `oratchalcum`,
+        `quartz_enriched_iron`,
+        `refined_glowstone`,
+        `refined_obsidian`,
+        `rock_crystal`,
+        `rubber`,
+        `signalum`,
+        `silicon`,
+        `sky_stone`,
+        `spirited_crystal`,
+        `starmetal`,
+        `steel`,
+        `sulfur`,
+        `terrasteel`,
+        `titanium`,
+        `tungsten`,
+        `mithril`
+    ])
+    hideStuff(`mysticalagriculture`, `essence`, [
+        `basalz`,
+        `blazing_crystal`,
+        `blitz`,
+        `blizz`,
+        `brass`,
+        `bronze`,
+        `compressed_iron`,
+        `constantan`,
+        `crimson_steel`,
+        `chrome`,
+        `electrum`,
+        `elementium`,
+        `enderium`,
+        `ender_biotite`,
+        `energized_steel`,
+        `fluix`,
+        `graphite`,
+        `hop_graphite`,
+        `invar`,
+        `iridium`,
+        `lumium`,
+        `manasteel`,
+        `niotic_crystal`,
+        `nitro_crystal`,
+        `oratchalcum`,
+        `quartz_enriched_iron`,
+        `refined_glowstone`,
+        `refined_obsidian`,
+        `rock_crystal`,
+        `rubber`,
+        `signalum`,
+        `silicon`,
+        `sky_stone`,
+        `spirited_crystal`,
+        `starmetal`,
+        `steel`,
+        `sulfur`,
+        `terrasteel`,
+        `titanium`,
+        `tungsten`,
+        `mithril`
+    ])
 })
 
 onEvent(`item.tooltip`, e => {
