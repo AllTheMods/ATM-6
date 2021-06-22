@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     e.remove({ id: 'akashictome:tome' })
 
     e.shapeless(
