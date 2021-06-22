@@ -15,16 +15,6 @@ onEvent('recipes', e => {
                         }
                     }
                 },
-                psi: {
-                    id: 'patchouli:guide_book',
-                    Count: 1,
-                    tag: {
-                        'patchouli:book': 'psi:encyclopaedia_psionica',
-                        'akashictome:displayName': {
-                            text: 'EncylopaediaPsionica'
-                        }
-                    }
-                },
                 tconstruct: {
                     id: 'tconstruct:materials_and_you',
                     Count: 1,
@@ -34,12 +24,13 @@ onEvent('recipes', e => {
                         }
                     }
                 },
-                theoneprobe: {
-                    id: 'theoneprobe:probenote',
+                psi: {
+                    id: 'patchouli:guide_book',
                     Count: 1,
                     tag: {
+                        'patchouli:book': 'psi:encyclopaedia_psionica',
                         'akashictome:displayName': {
-                            text: 'ProbeSettings'
+                            text: 'EncylopaediaPsionica'
                         }
                     }
                 },
@@ -66,6 +57,16 @@ onEvent('recipes', e => {
                         }
                     }
                 },
+                theoneprobe: {
+                    id: 'theoneprobe:probenote',
+                    Count: 1,
+                    tag: {
+                        'akashictome:displayName': {
+                            text: 'ProbeSettings'
+                        },
+                        'akashictome:is_morphing': 1
+                    }
+                },
                 ftbquests: {
                     id: 'ftbquests:book',
                     Count: 1,
@@ -75,7 +76,7 @@ onEvent('recipes', e => {
                         }
                     }
                 },
-                manaandartifice: {
+                'mana-and-artifice': {
                     id: 'mana-and-artifice:guide_book',
                     Count: 1,
                     tag: {
@@ -139,6 +140,20 @@ onEvent('recipes', e => {
                         'akashictome:is_morphing': 1,
                         display: {
                             Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Allthemodium"}]}'
+                        }
+                    }
+                },
+                elementalcraft: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: {
+                        'akashictome:displayName': {
+                            text: 'Elementopedia'
+                        },
+                        'patchouli:book': 'elementalcraft:element_book',
+                        'akashictome:is_morphing': 1,
+                        display: {
+                            Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Elementopedia"}]}'
                         }
                     }
                 },
@@ -310,6 +325,16 @@ onEvent('recipes', e => {
                         'akashictome:is_morphing': 1,
                         display: {
                             Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"SanguineScientiem"}]}'
+                        }
+                    }
+                },
+                twilightforest: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: {
+                        'patchouli:book': 'twilightforest:guide',
+                        'akashictome:displayName': {
+                            text: "Traveller'sLogbook"
                         }
                     }
                 },
