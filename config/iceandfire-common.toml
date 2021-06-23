@@ -153,7 +153,7 @@
 		#Damage dealt from a successful fire breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
 		"Dragon Attack Damage(Fire breath)" = 23.0
-		#Max dragon attack damage. Attack Damage is scaled to thi
+		#Max dragon attack damage. Attack Damage is scaled to this
 		#Range: 1 ~ 10000
 		"Dragon Attack Damage" = 37
 		#How long it takes(in ticks) for a dragon egg to hatch
