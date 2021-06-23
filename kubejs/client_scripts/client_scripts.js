@@ -136,6 +136,18 @@ onEvent(`jei.hide.items`, e => {
         `tmechworks:copper_ingot`,
         `tmechworks:aluminum_ingot`,
 
+        // tinker fluids overriden by ATO
+        'tconstruct:molten_aluminum_bucket',
+        'tconstruct:molten_copper_bucket',
+        'tconstruct:molten_lead_bucket',
+        'tconstruct:molten_nickel_bucket',
+        'tconstruct:molten_osmium_bucket',
+        'tconstruct:molten_platinum_bucket',
+        'tconstruct:molten_silver_bucket',
+        'tconstruct:molten_tin_bucket',
+        'tconstruct:molten_uranium_bucket',
+        'tconstruct:molten_zinc_bucket',
+
         `eidolon:sulfur`,
         `eidolon:lead_ore`,
         `eidolon:lead_ingot`,
@@ -143,6 +155,10 @@ onEvent(`jei.hide.items`, e => {
         `eidolon:lead_nugget`,
 
         /resourcefulbees:.+_bee_spawn_egg/,
+
+        // honey buckets
+        'cyclic:honey_bucket',
+        'create:honey_bucket',
 
         `twilightforest:uncrafting_table`,
 
@@ -154,7 +170,11 @@ onEvent(`jei.hide.items`, e => {
         `solarflux:sp_7`,
         `solarflux:sp_8`,
 
-        'lazierae2:coal_dust'
+        'lazierae2:coal_dust',
+
+        'thermal:rf_coil_creative_augment',
+        'thermal:fluid_tank_creative_augment',
+        'thermal:machine_catalyst_creative_augment'
     ])
 
     colors.forEach(color => {
