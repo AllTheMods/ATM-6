@@ -331,7 +331,7 @@ onEvent('block.tags', e => {
         '/waystones:.+/',
         '/appliedenergistics2:.+/'
     ])
-    e.add('create:brittle', 'cookingforblockheads:fridge')
+    e.add(`cookingforblockheads:fridge`, `create:brittle`)
     e.removeAll('minecraft:enderman_holdable')
 })
 
