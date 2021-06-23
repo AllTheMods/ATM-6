@@ -850,6 +850,7 @@ onEvent('recipes', e => {
     }
 
     removeRecipesByID([
+        'create:emptying/honey_bottle',
         'cyclic:melter_honey',
         'cyclic:melter_honey1',
         'cyclic:melter_honeybottle',
@@ -874,6 +875,10 @@ onEvent('recipes', e => {
         'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/crucible/crucible_honey_block_to_honey'
     ])
+
+    e.recipes.create
+        .emptying(['minecraft:glass_bottle', Fluid.of('resourcefulbees:honey', 250)], 'minecraft:honey_bottle')
+        .id('kubejs:emptying/honey_bottle')
 
     e.recipes.thermal
         .centrifuge(Fluid.of('resourcefulbees:honey', 100), '#forge:simple_honeycombs')
