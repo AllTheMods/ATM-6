@@ -24,6 +24,16 @@ onEvent('recipes', e => {
                         }
                     }
                 },
+                psi: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: {
+                        'patchouli:book': 'psi:encyclopaedia_psionica',
+                        'akashictome:displayName': {
+                            text: 'EncylopaediaPsionica'
+                        }
+                    }
+                },
                 resourcefulbees: {
                     id: 'patchouli:guide_book',
                     Count: 1,
