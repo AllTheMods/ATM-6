@@ -1,6 +1,11 @@
 //priority: 997
 onEvent('recipes', e => {
     // #region Functions
+    function removeRecipesByID(recipes) {
+        recipes.forEach(recipe => {
+            e.remove({ id: recipe })
+        })
+    }
     function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
         e.replaceOutput(`#forge:ingots/${name}`, ingotItem)
         e.replaceOutput(`#forge:dusts/${name}`, dustItem)
@@ -782,4 +787,280 @@ onEvent('recipes', e => {
 
     unifyExtraStorageDisks([256, 1024, 4096, 16384])
     // #endregion ExtraDisks & ExtraStorage
+
+    // #region Honey
+    const simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'cyclic:honey', 'create:honey']
+    const customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey']
+
+    function cyclicHoneyMelter(entries) {
+        entries.forEach(([input, honey, honeyAmount]) => {
+            e.custom({
+                type: 'cyclic:melter',
+                inputFirst: {
+                    item: input
+                },
+                result: {
+                    fluid: honey,
+                    count: honeyAmount
+                }
+            }).id(`kubejs:melter/${input.substring(input.indexOf(':') + 1)}/0`)
+            e.custom({
+                type: 'cyclic:melter',
+                inputFirst: {
+                    item: input
+                },
+                inputSecond: {
+                    item: input
+                },
+                result: {
+                    fluid: honey,
+                    count: honeyAmount * 2
+                }
+            }).id(`kubejs:melter/${input.substring(input.indexOf(':') + 1)}/1`)
+        })
+    }
+
+    function createHoneyMixing(entries) {
+        entries.forEach(([output, amount, honey, inputs, id]) => {
+            let honeyMixingRecipe = {
+                type: 'create:mixing',
+                results: [
+                    {
+                        item: output,
+                        amount: amount
+                    }
+                ]
+            }
+            let honeyMixingInputs = [
+                {
+                    fluidTag: 'forge:honey',
+                    amount: honey
+                }
+            ]
+            inputs.forEach(([input, type]) => {
+                honeyMixingInputs.push(type == 0 ? { item: input } : { tag: input })
+            })
+            honeyMixingRecipe = Object.assign({ ingredients: honeyMixingInputs }, honeyMixingRecipe)
+            e.custom(honeyMixingRecipe).id(
+                id
+                    ? `kubejs:honey_mixing/${output.substring(output.indexOf(':') + 1)}/${id}`
+                    : `kubejs:honey_mixing/${output.substring(output.indexOf(':') + 1)}`
+            )
+        })
+    }
+
+    removeRecipesByID([
+        'cyclic:melter_honey',
+        'cyclic:melter_honey1',
+        'cyclic:melter_honeybottle',
+        'cyclic:melter_honeybottle1',
+        'cyclic:solidifier_honeynest',
+        'cyclic:solidifier_honeycookie',
+        'cyclic:solidifier_honeymelon',
+        'cyclic:solidifier_apple_enchanted',
+        'cyclic:solidifier_honeyhive',
+        'cyclic:solidifier_apple0',
+        'cyclic:solidifier_honey_block0',
+        'cyclic:solidifier_amber',
+        'cyclic:solidifier_honeycomb',
+        'cyclic:solidifier_honey_block',
+        'cyclic:solidifier_apple',
+        'cyclic:solidifier_honeypie',
+        'cyclic:solidifier_honeycake',
+        'cyclic:solidifier_honeycarrot',
+        'cyclic:solidifier_honey_bottle',
+        'thermal:machine/chiller/chiller_honey_to_honey_block',
+        'thermal:machine/bottler/bottler_honey_bottle',
+        'thermal:machine/centrifuge/centrifuge_honeycomb',
+        'thermal:machine/crucible/crucible_honey_block_to_honey'
+    ])
+
+    e.recipes.thermal
+        .centrifuge(Fluid.of('resourcefulbees:honey', 100), '#forge:simple_honeycombs')
+        .id(`kubejs:machine/centrifuge/centrifuge_honeycomb`)
+    e.recipes.thermal
+        .centrifuge(Fluid.of('resourcefulbees:honey', 900), '#forge:simple_honeycomb_blocks')
+        .id(`kubejs:machine/centrifuge/centrifuge_honeycomb_block`)
+    e.recipes.thermal
+        .crucible(Fluid.of('resourcefulbees:honey', 1000), 'minecraft:honey_block')
+        .id('kubejs:machine/crucible/crucible_honey_block_to_honey')
+
+    simpleHoneys.forEach((honey, index) => {
+        e.recipes.thermal
+            .chiller('minecraft:honey_block', Fluid.of(honey, 1000))
+            .id(`kubejs:machine/chiller/chiller_honey_to_honey_block/${index}`)
+        e.recipes.thermal
+            .bottler('minecraft:honey_bottle', [Fluid.of(honey, 250), 'minecraft:glass_bottle'])
+            .id(`kubejs:machine/bottler/bottler_honey_bottle/${index}`)
+    })
+    customHoneys.forEach(honey => {
+        e.recipes.thermal
+            .chiller(`${honey}_block`, Fluid.of(honey, 1000))
+            .id(`kubejs:machine/chiller/chiller_honey_to_honey_block/${honey.substring(honey.indexOf(':') + 1)}`)
+        e.recipes.thermal
+            .bottler(`${honey}_bottle`, [Fluid.of(honey, 250), 'minecraft:glass_bottle'])
+            .id(`kubejs:machine/bottler/bottler_honey_bottle/${honey.substring(honey.indexOf(':') + 1)}`)
+        e.recipes.thermal
+            .centrifuge(
+                Fluid.of(honey, 100),
+                honey.includes('rainbow') ? 'resourcefulbees:rgbee_honeycomb' : `${honey}comb`
+            )
+            .id(`kubejs:machine/centrifuge/centrifuge_honeycomb/${honey.substring(honey.indexOf(':') + 1)}`)
+        e.recipes.thermal
+            .centrifuge(
+                Fluid.of(honey, 900),
+                honey.includes('rainbow') ? 'resourcefulbees:rgbee_honeycomb_block' : `${honey}comb_block`
+            )
+            .id(`kubejs:machine/centrifuge/centrifuge_honeycomb_block/${honey.substring(honey.indexOf(':') + 1)}`)
+        e.recipes.thermal
+            .crucible(Fluid.of(honey, 1000), `${honey}_block`)
+            .id(`kubejs:machine/crucible/crucible_honey_block_to_honey/${honey.substring(honey.indexOf(':') + 1)}`)
+    })
+
+    cyclicHoneyMelter([
+        ['minecraft:honey_bottle', 'resourcefulbees:honey', 250],
+        ['minecraft:honey_block', 'resourcefulbees:honey', 1000],
+        ['resourcefulbees:catnip_honey_bottle', 'resourcefulbees:catnip_honey', 250],
+        ['resourcefulbees:catnip_honey_block', 'resourcefulbees:catnip_honey', 1000],
+        ['resourcefulbees:rainbow_honey_bottle', 'resourcefulbees:rainbow_honey', 250],
+        ['resourcefulbees:rainbow_honey_block', 'resourcefulbees:rainbow_honey', 1000]
+    ])
+
+    createHoneyMixing([
+        [
+            'minecraft:bee_nest',
+            1,
+            8000,
+            [
+                ['resourcefulbees:resourceful_honeycomb_block', 1],
+                ['resourcefulbees:resourceful_honeycomb', 1],
+                ['resourcefulbees:resourceful_honeycomb_block', 1]
+            ]
+        ],
+        [
+            'minecraft:cookie',
+            16,
+            50,
+            [
+                ['minecraft:wheat', 0],
+                ['minecraft:cocoa_beans', 0],
+                ['minecraft:wheat', 0]
+            ]
+        ],
+        [
+            'minecraft:glistering_melon_slice',
+            2,
+            100,
+            [
+                ['minecraft:melon_slice', 0],
+                ['forge:nuggets/gold', 1],
+                ['minecraft:melon_slice', 0]
+            ]
+        ],
+        [
+            'minecraft:enchanted_golden_apple',
+            1,
+            4000,
+            [
+                ['cyclic:apple_diamond', 0],
+                ['minecraft:netherite_block', 0],
+                ['minecraft:golden_apple', 0]
+            ]
+        ],
+        [
+            'minecraft:beehive',
+            3,
+            100,
+            [
+                ['forge:chests', 1],
+                ['resourcefulbees:resourceful_honeycomb', 1],
+                ['forge:rods/wooden', 1]
+            ]
+        ],
+        [
+            'cyclic:gem_amber',
+            1,
+            500,
+            [
+                ['minecraft:fire_charge', 0],
+                ['forge:dusts/redstone', 1],
+                ['minecraft:magma_block', 0]
+            ]
+        ],
+        [
+            'minecraft:honeycomb_block',
+            1,
+            100,
+            [
+                ['resourcefulbees:resourceful_honeycomb', 1],
+                ['resourcefulbees:resourceful_honeycomb', 1],
+                ['resourcefulbees:resourceful_honeycomb', 1]
+            ]
+        ],
+        [
+            'minecraft:honey_block',
+            1,
+            1000,
+            [
+                ['forge:rods/wooden', 1],
+                ['forge:rods/wooden', 1],
+                ['forge:rods/wooden', 1]
+            ],
+            1
+        ],
+        [
+            'cyclic:apple_honey',
+            3,
+            300,
+            [
+                ['minecraft:apple', 0],
+                ['minecraft:apple', 0],
+                ['minecraft:apple', 0]
+            ],
+            1
+        ],
+        [
+            'minecraft:pumpkin_pie',
+            1,
+            100,
+            [
+                ['minecraft:egg', 0],
+                ['minecraft:pumpkin', 0],
+                ['minecraft:egg', 0]
+            ]
+        ],
+        [
+            'minecraft:cake',
+            1,
+            500,
+            [
+                ['minecraft:egg', 0],
+                ['minecraft:wheat', 0],
+                ['minecraft:egg', 0]
+            ]
+        ],
+        [
+            'minecraft:golden_carrot',
+            2,
+            100,
+            [
+                ['minecraft:carrot', 0],
+                ['forge:nuggets/gold', 1],
+                ['minecraft:carrot', 0]
+            ]
+        ],
+        [
+            'minecraft:honey_bottle',
+            3,
+            750,
+            [
+                ['minecraft:glass_bottle', 0],
+                ['minecraft:glass_bottle', 0],
+                ['minecraft:glass_bottle', 0]
+            ]
+        ],
+        ['cyclic:apple_honey', 1, 100, [['minecraft:apple', 0]], 2],
+        ['minecraft:honey_block', 1, 1000, [['forge:rods/wooden', 1]], 2]
+    ])
+    // #endregion Honey
 })

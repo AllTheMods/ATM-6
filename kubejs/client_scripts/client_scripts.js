@@ -301,6 +301,31 @@ onEvent(`jei.hide.items`, e => {
     ])
 })
 
+onEvent('jei.hide.fluids', e => {
+    const hideFluids = [
+        // honey
+        'cofh_core:honey',
+        'cyclic:honey',
+        'create:flowing_honey',
+        'create:honey',
+
+        // tinker fluids overriden by ATO
+        'tconstruct:molten_aluminum',
+        'tconstruct:molten_copper',
+        'tconstruct:molten_lead',
+        'tconstruct:molten_nickel',
+        'tconstruct:molten_osmium',
+        'tconstruct:molten_platinum',
+        'tconstruct:molten_silver',
+        'tconstruct:molten_tin',
+        'tconstruct:molten_uranium',
+        'tconstruct:molten_zinc'
+    ]
+    hideFluids.forEach(fluid => {
+        e.hide(fluid)
+    })
+})
+
 onEvent(`item.tooltip`, e => {
     refined.forEach(refin => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`)

@@ -175,3 +175,64 @@ events.listen('recipes', function (e) {
     charge(['allthemodium:allthemodium_ingot'], 512);
 })
 */
+/*
+Author: Relentless
+not working because they don't support fluid tags
+
+    function cyclicSolidifier(entries) {
+        entries.forEach(([output, count, topInput, middleInput, bottomInput, honeyAmount]) => {
+            let solidifierRecipe = {
+                type: 'cyclic:solidifier',
+                inputTop: {
+                    item: topInput
+                },
+                mix: {
+                    fluid: 'forge:honey',
+                    count: honeyAmount
+                },
+                result: {
+                    item: output,
+                    count: count
+                }
+            }
+            if (middleInput)
+                solidifierRecipe = Object.assign(
+                    {
+                        inputMiddle: {
+                            item: middleInput
+                        }
+                    },
+                    solidifierRecipe
+                )
+            if (bottomInput)
+                solidifierRecipe = Object.assign(
+                    {
+                        inputBottom: {
+                            item: bottomInput
+                        }
+                    },
+                    solidifierRecipe
+                )
+            e.custom(solidifierRecipe).id(`kubejs:solidification/${output.substring(output.indexOf(':') + 1)}`)
+        })
+    }
+    function foregoingChamber(entries) {
+        entries.forEach(([output, amount, honey, inputs]) => {
+            let chamberRecipe = {
+                type: 'industrialforegoing:dissolution_chamber',
+                inputFluid: `{tag: "forge:honey", Amount: ${honey}}`,
+                processingTime: 40,
+                output: {
+                    item: output,
+                    count: amount
+                }
+            }
+            let chamberInputs = []
+            inputs.forEach(([input, type]) => {
+                chamberInputs.push(type == 0 ? { item: input } : { tag: input })
+            })
+            chamberRecipe = Object.assign({ input: chamberInputs }, chamberRecipe)
+            e.custom(chamberRecipe).id(`kubejs:dissolution_chamber/${output.substring(output.indexOf(':') + 1)}`)
+        })
+    }
+*/

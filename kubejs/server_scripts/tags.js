@@ -202,6 +202,9 @@ onEvent('item.tags', e => {
     e.add('forge:swords', ['/.+_sword/', '/.+:sword_.+/'])
     e.add('forge:hoes', ['/.+_hoe/', '/.+:hoe_.+/'])
 
+    e.add('forge:simple_honeycombs', '/^.+:(?!(catnip|rgbee)_).*honeycomb$/')
+    e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
+
     e.remove(`minecraft:flowers`, `#botania:special_flowers`)
     e.remove('forge:leather', 'forbidden_arcanus:rotten_leather')
     e.remove('engineerstools:musli_bar_food_blacklisted', 'minecraft:chicken')
@@ -345,6 +348,14 @@ onEvent('entity_type.tags', e => {
 //Fluid tags
 onEvent('fluid.tags', e => {
     e.add('forge:essence', 'pneumaticcraft:memory_essence')
+    e.add('minecraft:water', [
+        'cofh_core:honey',
+        'cyclic:honey',
+        'resourcefulbees:catnip_honey',
+        'resourcefulbees:honey',
+        'resourcefulbees:rainbow_honey_flowing',
+        'resourcefulbees:rainbow_honey'
+    ])
     alltheores.forEach(material => {
         e.add(`forge:molten_${material}`, [`alltheores:molten_${material}`, `#tconstruct:molten_${material}`])
         e.add(`tconstruct:metal_like`, `alltheores:molten_${material}`)
