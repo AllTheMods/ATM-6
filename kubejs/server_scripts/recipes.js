@@ -1169,19 +1169,6 @@ onEvent('recipes', e => {
     buildQuarkChest('mushroom', '#forge:mushroom_caps');
     buildQuarkChest('purpur', 'minecraft:purpur_block');
 
-    //Industrial Foregoing Recipes
-    e.recipes.industrialforegoing.dissolution_chamber({
-        input: [{
-            tag: 'minecraft:planks'
-        }],
-        inputFluid: '{FluidName:\'immersiveengineering:creosote\',Amount:125}',
-        processingTime: 1,
-        output: {
-            item: 'immersiveengineering:treated_wood_horizontal',
-            count: 1
-        }
-    })
-
     //Make bio fuel use tags instead of invidual items
     const bioFuels = [2, 4, 5, 7, 8]
     bioFuels.forEach(bioFuel => {
@@ -1243,9 +1230,6 @@ onEvent('recipes', e => {
     e.recipes.mekanism.sawing((`6x minecraft:oak_planks`), `byg:withering_oak_log`, Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_withering_oak`)
     e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`,).id(`kubejs:saw/byg_log_imbued_nightshade`)
     e.recipes.mekanism.sawing((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
-
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
 
     //botania
     e.recipes.botania.runic_altar({

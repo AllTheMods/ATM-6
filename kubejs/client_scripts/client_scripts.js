@@ -160,6 +160,11 @@ onEvent(`jei.hide.items`, e => {
         'cyclic:honey_bucket',
         'create:honey_bucket',
 
+        // oil buckets
+        'thermal:creosote_bucket',
+        'thermal:crude_oil_bucket',
+        'immersivepetroleum:oil_bucket',
+
         `twilightforest:uncrafting_table`,
 
         `mob_grinding_utils:mob_swab`,
@@ -341,7 +346,12 @@ onEvent('jei.hide.fluids', e => {
         'tconstruct:molten_silver',
         'tconstruct:molten_tin',
         'tconstruct:molten_uranium',
-        'tconstruct:molten_zinc'
+        'tconstruct:molten_zinc',
+
+        // oil
+        'thermal:creosote',
+        'thermal:crude_oil',
+        'immersivepetroleum:oil'
     ]
     hideFluids.forEach(fluid => {
         e.hide(fluid)

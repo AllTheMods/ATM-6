@@ -1068,4 +1068,138 @@ onEvent('recipes', e => {
         ['minecraft:honey_block', 1, 1000, [['forge:rods/wooden', 1]], 2]
     ])
     // #endregion Honey
+
+    // #region Oil
+    removeRecipesByID([
+        'thermal:machine/centrifuge/centrifuge_oil_sand',
+        'thermal:machine/centrifuge/centrifuge_oil_red_sand'
+    ])
+
+    // crude
+    e.recipes.thermal
+        .centrifuge(
+            [Fluid.of('pneumaticcraft:oil', 100), 'minecraft:sand', 'thermal:bitumen', 'thermal:tar'],
+            'thermal:oil_sand'
+        )
+        .id('kubejs:machine/centrifuge/centrifuge_oil_sand')
+    e.recipes.thermal
+        .centrifuge(
+            [Fluid.of('pneumaticcraft:oil', 100), 'minecraft:red_sand', 'thermal:bitumen', 'thermal:tar'],
+            'thermal:oil_red_sand'
+        )
+        .id('kubejs:machine/centrifuge/centrifuge_oil_red_sand')
+    e.custom({
+        type: 'thermal:refinery',
+        ingredient: {
+            fluid: 'pneumaticcraft:oil',
+            amount: 100
+        },
+        result: [
+            {
+                fluid: 'thermal:heavy_oil',
+                amount: 40
+            },
+            {
+                fluid: 'thermal:light_oil',
+                amount: 60
+            },
+            {
+                item: 'thermal:bitumen',
+                chance: 0.1
+            }
+        ],
+        energy: 6000
+    }).id('kubejs:machine/refinery/pneumatic_crude_oil')
+    e.custom({
+        type: 'thermal:refinery',
+        ingredient: {
+            fluid: 'immersivepetroleum:oil',
+            amount: 100
+        },
+        result: [
+            {
+                fluid: 'thermal:heavy_oil',
+                amount: 40
+            },
+            {
+                fluid: 'thermal:light_oil',
+                amount: 60
+            },
+            {
+                item: 'thermal:bitumen',
+                chance: 0.1
+            }
+        ],
+        energy: 6000
+    }).id('kubejs:machine/refinery/immersive_crude_oil')
+    e.custom({
+        type: 'pneumaticcraft:amadron',
+        input: {
+            type: 'FLUID',
+            id: 'thermal:crude_oil',
+            amount: 5000
+        },
+        output: {
+            type: 'ITEM',
+            id: 'minecraft:emerald',
+            amount: 1
+        },
+        static: true,
+        level: 0
+    }).id('kubejs:amadron/thermal/oil_to_emerald')
+    e.custom({
+        type: 'pneumaticcraft:amadron',
+        input: {
+            type: 'FLUID',
+            id: 'immersivepetroleum:oil',
+            amount: 5000
+        },
+        output: {
+            type: 'ITEM',
+            id: 'minecraft:emerald',
+            amount: 1
+        },
+        static: true,
+        level: 0
+    }).id('kubejs:amadron/immersive/oil_to_emerald')
+
+    // creosote
+    e.recipes.thermal
+        .pyrolyzer([Fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
+        .id('kubejs:machine/pyrolyzer/charcoal')
+    e.recipes.thermal
+        .pyrolyzer(
+            [Fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'],
+            '#forge:storage_blocks/coal'
+        )
+        .id('kubejs:machine/pyrolyzer/coke_block')
+    e.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                tag: 'minecraft:planks'
+            }
+        ],
+        inputFluid: '{FluidName:"immersiveengineering:creosote",Amount:125}',
+        processingTime: 5,
+        output: {
+            item: 'immersiveengineering:treated_wood_horizontal',
+            count: 1
+        }
+    })
+    e.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [
+            {
+                tag: 'minecraft:planks'
+            }
+        ],
+        inputFluid: '{FluidName:"thermal:creosote",Amount:125}',
+        processingTime: 5,
+        output: {
+            item: 'immersiveengineering:treated_wood_horizontal',
+            count: 1
+        }
+    })
+    // #endregion Oil
 })
