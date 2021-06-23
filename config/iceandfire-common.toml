@@ -117,7 +117,7 @@
 
 	[Dragons.Griefing]
 		#Blocks that a dragon cannot break. Use the format like "minecraft:chest" or "rats:block_of_cheese" 
-		blacklistedBreakBlocks = ["minecraft:obsidian", "minecraft:bedrock", "minecraft:ancient_debris", "minecraft:barrier"]
+		blacklistedBreakBlocks = ["minecraft:obsidian", "minecraft:bedrock", "minecraft:ancient_debris", "minecraft:barrier", "cyclic:unbreakable_block", "cyclic:unbreakable_reactive", "metalbarrels:obsidian_barrel", "ironfurnaces:million_furnace", "powah:energy_cell_creative", "mekanism:creative_energy_cube", "ctiers:centrifuge_controller_tier_creative", "ctiers:centrifuge_casing_tier_creative", "refinedstorage:creative_controller", "creativewirelesstransmitter:creative_wireless_transmitter", "creativecrafter:creative_crafter", "creativeapiary:tcreative_apiary"]
 		#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 		#Range: 0 ~ 2
 		"Dragon Griefing" = 1
