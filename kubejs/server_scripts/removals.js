@@ -110,6 +110,8 @@ onEvent('recipes', e => {
         'mysticalagriculture:seed/infusion/sulfur',
         'mysticalagriculture:seed/infusion/terrasteel',
 
+        'mysticalagradditions:nitro_crystal_crux',
+
         //crative apiary
         'creativeapiary:tcreative_apiary',
         'creativeapiary:creative_apiary_storage',

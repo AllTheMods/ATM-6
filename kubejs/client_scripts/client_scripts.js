@@ -125,6 +125,8 @@ onEvent(`jei.hide.items`, e => {
 
         `mininggadgets:minerslight`,
 
+        'mysticalagradditions:nitro_crystal_crux',
+
         `rats:ratlantis_portal`,
 
         `iceandfire:silver_ingot`,
