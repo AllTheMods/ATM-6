@@ -1,0 +1,16 @@
+{
+  "condition": {
+    "value": {
+      "tag": "forge:ingots/lead",
+      "type": "forge:tag_empty"
+    },
+    "type": "forge:not"
+  },
+  "craftable": false,
+  "tier": 2,
+  "sortOrder": 5,
+  "fluid": "alltheores:molten_lead",
+  "fluidPerUnit": 144,
+  "textColor": "#575E79",
+  "temperature": 330
+}

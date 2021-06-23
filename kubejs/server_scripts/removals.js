@@ -74,7 +74,6 @@ onEvent('recipes', e => {
         'mysticalagriculture:essence/mekanism/refined_glowstone_ingot',
         'mysticalagriculture:essence/mekanism/refined_obsidian_ingot',
 
-
         'mysticalagriculture:seed/infusion/basalz',
         'mysticalagriculture:seed/infusion/blazing_crystal',
         'mysticalagriculture:seed/infusion/blitz',
@@ -110,6 +109,8 @@ onEvent('recipes', e => {
         'mysticalagriculture:seed/infusion/steel',
         'mysticalagriculture:seed/infusion/sulfur',
         'mysticalagriculture:seed/infusion/terrasteel',
+
+        'mysticalagradditions:nitro_crystal_crux',
 
         //crative apiary
         'creativeapiary:tcreative_apiary',
@@ -195,22 +196,18 @@ onEvent('recipes', e => {
 
             'titanium:iron_gear',
             'titanium:gold_gear',
-            'titanium:diamond_gear',
+            'titanium:diamond_gear'
         ]
     })
     //Remove via mod name
-    var modRemove = [
-        `cabletiers`,
-    ]
+    var modRemove = [`cabletiers`]
     modRemove.forEach(mR => {
         e.remove({
             mod: mR
         })
     })
     e.remove({
-        input: [
-            'appliedenergistics2:flour'
-        ]
+        input: ['appliedenergistics2:flour']
     })
     e.remove({
         type: 'xreliquary:alkahestry_charging'

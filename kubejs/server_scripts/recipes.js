@@ -86,7 +86,7 @@ onEvent('recipes', e => {
     function parapet(woodTypes) {
         woodTypes.forEach(woodType => {
             e.remove({type: 'minecraft:crafting_shaped', output: `mcwwindows:${woodType}_log_parapet`})
-            e.shaped(`mcwwindows:${woodType}_log_parapet`, [
+            e.shaped(`4x mcwwindows:${woodType}_log_parapet`, [
                 'SLS'
             ], {
                 S: '#forge:rods/wooden',
@@ -327,41 +327,41 @@ onEvent('recipes', e => {
     }).id(`kubejs:sky_stone_brick`)
     e.shaped('appliedenergistics2:calculation_processor_press', [
         'CFC',
-        'FSF',
+        'FVF',
         'PFP'
     ], {
         'C': 'appliedenergistics2:purified_certus_quartz_crystal',
         'F': '#forge:ingots/fluix_steel',
-        'S': 'appliedenergistics2:singularity',
+        'V': '#forge:storage_blocks/vibranium',
         'P': 'appliedenergistics2:fluix_pearl'
     }).id(`kubejs:calculation_press`)
     e.shaped('appliedenergistics2:logic_processor_press', [
         'BFB',
-        'FSF',
+        'FVF',
         'CFC'
     ], {
         'B': '#forge:ingots/blaze_gold',
         'F': '#forge:ingots/fluix_steel',
-        'S': 'appliedenergistics2:singularity',
+        'V': '#forge:storage_blocks/vibranium',
         'C': '#forge:ingots/rose_gold'
     }).id(`kubejs:logic_press`)
     e.shaped('appliedenergistics2:engineering_processor_press', [
         'DFD',
-        'FSF',
+        'FVF',
         'DFD'
     ], {
         'D': '#forge:gems/mana_diamond',
         'F': '#forge:ingots/fluix_steel',
-        'S': 'appliedenergistics2:singularity'
+        'V': '#forge:storage_blocks/vibranium'
     }).id(`kubejs:engineering_press`)
     e.shaped('appliedenergistics2:silicon_press', [
         'WFW',
-        'FSF',
+        'FVF',
         'WFW'
     ], {
         'W': '#forge:silicon',
         'F': '#forge:ingots/fluix_steel',
-        'S': 'appliedenergistics2:singularity'
+        'V': '#forge:storage_blocks/vibranium'
     }).id(`kubejs:silicon_press`)
     e.shaped('biomesoplenty:flesh', [
         'FFF',
@@ -953,6 +953,10 @@ onEvent('recipes', e => {
     e.shapeless('kubejs:rotten_leather', '3x minecraft:rotten_flesh').id(`kubejs:rotten_leather`)
     e.shapeless('appliedenergistics2:interface', 'appliedenergistics2:cable_interface').id(`kubejs:ae_interface`)
 
+    // conversion recipe for solar panels which were removed from the game
+    e.shapeless('solarflux:sp_custom_allthemodium', 'solarflux:sp_6').id('kubejs:solar_conversion/tier_6')
+    e.shapeless('solarflux:sp_custom_vibranium', 'solarflux:sp_7').id('kubejs:solar_conversion/tier_7')
+    e.shapeless('solarflux:sp_custom_unobtainium', 'solarflux:sp_8').id('kubejs:solar_conversion/tier_8')
 
     //Powah recipes
     e.shaped('powah:thermoelectric_plate', [
@@ -1165,19 +1169,6 @@ onEvent('recipes', e => {
     buildQuarkChest('mushroom', '#forge:mushroom_caps');
     buildQuarkChest('purpur', 'minecraft:purpur_block');
 
-    //Industrial Foregoing Recipes
-    e.recipes.industrialforegoing.dissolution_chamber({
-        input: [{
-            tag: 'minecraft:planks'
-        }],
-        inputFluid: '{FluidName:\'immersiveengineering:creosote\',Amount:125}',
-        processingTime: 1,
-        output: {
-            item: 'immersiveengineering:treated_wood_horizontal',
-            count: 1
-        }
-    })
-
     //Make bio fuel use tags instead of invidual items
     const bioFuels = [2, 4, 5, 7, 8]
     bioFuels.forEach(bioFuel => {
@@ -1239,9 +1230,6 @@ onEvent('recipes', e => {
     e.recipes.mekanism.sawing((`6x minecraft:oak_planks`), `byg:withering_oak_log`, Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_withering_oak`)
     e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`,).id(`kubejs:saw/byg_log_imbued_nightshade`)
     e.recipes.mekanism.sawing((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
-
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
 
     //botania
     e.recipes.botania.runic_altar({

@@ -36,23 +36,12 @@ const refined = [
 ]
 
 onEvent(`jei.add.items`, e => {
-    const eggs = [
-        'dragonic',
-        'allthemodium',
-        'vibranium',
-        'unobtainium',
-        'soul_lava',
-        'netherite',
-    ]
+    const eggs = ['dragonic', 'allthemodium', 'vibranium', 'unobtainium', 'soul_lava', 'netherite']
     eggs.forEach(type => {
-        e.add([
-            `resourcefulbees:${type}_bee_spawn_egg`
-        ])
+        e.add([`resourcefulbees:${type}_bee_spawn_egg`])
     })
 
-    e.add([
-        `minecraft:dragon_egg`
-    ])
+    e.add([`minecraft:dragon_egg`])
 })
 
 onEvent(`jei.hide.items`, e => {
@@ -60,18 +49,14 @@ onEvent(`jei.hide.items`, e => {
 
     function hideMetal(mod, name, types) {
         types.forEach(type => {
-            const id = typeFirst.includes(mod) ?
-                `${mod}:${type}_${name}` :
-                `${mod}:${name}_${type}`
+            const id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
             if (!Ingredient.of(id).stacks.empty) e.hide(id)
         })
     }
 
     function hideStuff(mod, type, names) {
         names.forEach(name => {
-            const id = typeFirst.includes(mod) ?
-                `${mod}:${type}_${name}` :
-                `${mod}:${name}_${type}`
+            const id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
             if (!Ingredient.of(id).stacks.empty) e.hide(id)
         })
     }
@@ -92,6 +77,7 @@ onEvent(`jei.hide.items`, e => {
         `naturesaura:chunk_loader`,
 
         /extrastorage:disk_.+/,
+        /extrastorage:block_.+/,
         /extrastorage:storagepart_.+/,
 
         /titanium:.+/,
@@ -139,6 +125,8 @@ onEvent(`jei.hide.items`, e => {
 
         `mininggadgets:minerslight`,
 
+        'mysticalagradditions:nitro_crystal_crux',
+
         `rats:ratlantis_portal`,
 
         `iceandfire:silver_ingot`,
@@ -148,6 +136,18 @@ onEvent(`jei.hide.items`, e => {
         `tmechworks:copper_ingot`,
         `tmechworks:aluminum_ingot`,
 
+        // tinker fluids overriden by ATO
+        'tconstruct:molten_aluminum_bucket',
+        'tconstruct:molten_copper_bucket',
+        'tconstruct:molten_lead_bucket',
+        'tconstruct:molten_nickel_bucket',
+        'tconstruct:molten_osmium_bucket',
+        'tconstruct:molten_platinum_bucket',
+        'tconstruct:molten_silver_bucket',
+        'tconstruct:molten_tin_bucket',
+        'tconstruct:molten_uranium_bucket',
+        'tconstruct:molten_zinc_bucket',
+
         `eidolon:sulfur`,
         `eidolon:lead_ore`,
         `eidolon:lead_ingot`,
@@ -155,6 +155,15 @@ onEvent(`jei.hide.items`, e => {
         `eidolon:lead_nugget`,
 
         /resourcefulbees:.+_bee_spawn_egg/,
+
+        // honey buckets
+        'cyclic:honey_bucket',
+        'create:honey_bucket',
+
+        // oil buckets
+        'thermal:creosote_bucket',
+        'thermal:crude_oil_bucket',
+        'immersivepetroleum:oil_bucket',
 
         `twilightforest:uncrafting_table`,
 
@@ -164,19 +173,21 @@ onEvent(`jei.hide.items`, e => {
 
         `solarflux:sp_6`,
         `solarflux:sp_7`,
-        `solarflux:sp_8`
+        `solarflux:sp_8`,
+
+        'lazierae2:coal_dust',
+
+        'thermal:rf_coil_creative_augment',
+        'thermal:fluid_tank_creative_augment',
+        'thermal:machine_catalyst_creative_augment'
     ])
 
     colors.forEach(color => {
         refined.forEach(refin => {
-            e.hide([
-                `refinedstorage:${color}_${refin}`
-            ])
+            e.hide([`refinedstorage:${color}_${refin}`])
         })
 
-        e.hide([
-            `creativewirelesstransmitter:${color}_creative_wireless_transmitter`
-        ])
+        e.hide([`creativewirelesstransmitter:${color}_creative_wireless_transmitter`])
     })
 
     //Hides items based name, format: `mod`, `metal`, [`type1`, `type2`, `etc`]
@@ -206,7 +217,17 @@ onEvent(`jei.hide.items`, e => {
     //Hides items based on type, format: `mod`, `type`, [`name1`, `name2`, `etc`]
     hideStuff(`thermal`, `dust`, [`iron`, `gold`])
     hideStuff(`immersiveengineering`, `dust`, [`iron`, `gold`, `sulfur`, `wood`])
-    hideStuff(`immersiveengineering`, `plate`, [`iron`, `gold`, `copper`, `aluminum`, `lead`, `silver`, `nickel`, `constantan`, `electrum`])
+    hideStuff(`immersiveengineering`, `plate`, [
+        `iron`,
+        `gold`,
+        `copper`,
+        `aluminum`,
+        `lead`,
+        `silver`,
+        `nickel`,
+        `constantan`,
+        `electrum`
+    ])
     hideStuff(`mekanism`, `dust`, [`lapis_lazuli`, `emerald`, `diamond`, `quartz`, `iron`, `gold`])
     hideStuff(`mekanism`, `crystal`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
     hideStuff(`mekanism`, `shard`, [`osmium`, `copper`, `tin`, `lead`, `uranium`])
@@ -219,15 +240,132 @@ onEvent(`jei.hide.items`, e => {
     hideStuff(`solarflux`, `sp`, [6, 7, 8])
     hideStuff(`quark`, `crate`, [`apple`, `carrot`, `beetroot`, `potato`])
     hideStuff(`quark`, `block`, [`bamboo`, `charcoal`, `sugar_cane`])
-    hideStuff(`mysticalagriculture`, `seeds`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`])
-    hideStuff(`mysticalagriculture`, `essence`, [`basalz`, `blazing_crystal`, `blitz`, `blizz`, `brass`, `bronze`, `compressed_iron`, `constantan`, `crimson_steel`, `chrome`, `electrum`, `elementium`, `enderium`, `ender_biotite`, `energized_steel`, `fluix`, `graphite`, `hop_graphite`, `invar`, `iridium`, `lumium`, `manasteel`, `niotic_crystal`, `nitro_crystal`, `oratchalcum`, `quartz_enriched_iron`, `refined_glowstone`, `refined_obsidian`, `rock_crystal`, `rubber`, `signalum`, `silicon`, `sky_stone`, `spirited_crystal`, `starmetal`, `steel`, `sulfur`, `terrasteel`, `titanium`, `tungsten`, `mithril`])
+    hideStuff(`mysticalagriculture`, `seeds`, [
+        `basalz`,
+        `blazing_crystal`,
+        `blitz`,
+        `blizz`,
+        `brass`,
+        `bronze`,
+        `compressed_iron`,
+        `constantan`,
+        `crimson_steel`,
+        `chrome`,
+        `electrum`,
+        `elementium`,
+        `enderium`,
+        `ender_biotite`,
+        `energized_steel`,
+        `fluix`,
+        `graphite`,
+        `hop_graphite`,
+        `invar`,
+        `iridium`,
+        `lumium`,
+        `manasteel`,
+        `niotic_crystal`,
+        `nitro_crystal`,
+        `oratchalcum`,
+        `quartz_enriched_iron`,
+        `refined_glowstone`,
+        `refined_obsidian`,
+        `rock_crystal`,
+        `rubber`,
+        `signalum`,
+        `silicon`,
+        `sky_stone`,
+        `spirited_crystal`,
+        `starmetal`,
+        `steel`,
+        `sulfur`,
+        `terrasteel`,
+        `titanium`,
+        `tungsten`,
+        `mithril`
+    ])
+    hideStuff(`mysticalagriculture`, `essence`, [
+        `basalz`,
+        `blazing_crystal`,
+        `blitz`,
+        `blizz`,
+        `brass`,
+        `bronze`,
+        `compressed_iron`,
+        `constantan`,
+        `crimson_steel`,
+        `chrome`,
+        `electrum`,
+        `elementium`,
+        `enderium`,
+        `ender_biotite`,
+        `energized_steel`,
+        `fluix`,
+        `graphite`,
+        `hop_graphite`,
+        `invar`,
+        `iridium`,
+        `lumium`,
+        `manasteel`,
+        `niotic_crystal`,
+        `nitro_crystal`,
+        `oratchalcum`,
+        `quartz_enriched_iron`,
+        `refined_glowstone`,
+        `refined_obsidian`,
+        `rock_crystal`,
+        `rubber`,
+        `signalum`,
+        `silicon`,
+        `sky_stone`,
+        `spirited_crystal`,
+        `starmetal`,
+        `steel`,
+        `sulfur`,
+        `terrasteel`,
+        `titanium`,
+        `tungsten`,
+        `mithril`
+    ])
+})
+
+onEvent('jei.hide.fluids', e => {
+    const hideFluids = [
+        // honey
+        'cofh_core:honey',
+        'cyclic:honey',
+        'create:flowing_honey',
+        'create:honey',
+
+        // tinker fluids overriden by ATO
+        'tconstruct:molten_aluminum',
+        'tconstruct:molten_copper',
+        'tconstruct:molten_lead',
+        'tconstruct:molten_nickel',
+        'tconstruct:molten_osmium',
+        'tconstruct:molten_platinum',
+        'tconstruct:molten_silver',
+        'tconstruct:molten_tin',
+        'tconstruct:molten_uranium',
+        'tconstruct:molten_zinc',
+
+        // oil
+        'thermal:creosote',
+        'thermal:crude_oil',
+        'immersivepetroleum:oil'
+    ]
+    hideFluids.forEach(fluid => {
+        e.hide(fluid)
+    })
 })
 
 onEvent(`item.tooltip`, e => {
     refined.forEach(refin => {
         e.add(`refinedstorage:${refin}`, `Right click or craft with a dye to color`)
     })
-    e.add(`pedestals:pedestal/stone333`, [`Press show uses(default U) key on §6§lColored Pallet§r`, `to show different colored pedestals you can make`])
+    e.add(`pedestals:pedestal/stone333`, [
+        `Press show uses(default U) key on §6§lColored Pallet§r`,
+        `to show different colored pedestals you can make`
+    ])
     e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`])
     e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
     e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)

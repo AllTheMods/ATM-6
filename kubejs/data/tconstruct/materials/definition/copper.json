@@ -1,0 +1,9 @@
+{
+  "craftable": true,
+  "tier": 2,
+  "sortOrder": 1,
+  "fluid": "alltheores:molten_copper",
+  "fluidPerUnit": 144,
+  "textColor": "#F98648",
+  "temperature": 500
+}

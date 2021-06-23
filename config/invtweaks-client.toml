@@ -90,15 +90,27 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
-		containerClass = "appeng.container.implementations.CraftingTermContainer"
+		containerClass = "appeng.container.me.fluids.FluidTerminalContainer"
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
-		containerClass = "appeng.container.implementations.PatternTermContainer"
+		containerClass = "appeng.container.me.items.CraftingTermContainer"
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
-		containerClass = "appeng.container.implementations.WirelessTermContainer"
+		containerClass = "appeng.container.me.items.ItemTerminalContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.me.items.MEPortableCellContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.me.items.PatternTermContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.me.items.WirelessTermContainer"
 		sortRange = ""
 
 #Tweaks
