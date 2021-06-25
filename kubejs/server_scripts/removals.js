@@ -1,5 +1,5 @@
 //priority: 999
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     const idRemove = [
         'minecraft:comparator',
         'minecraft:glass',
@@ -64,12 +64,15 @@ events.listen('recipes', e => {
 
         'mysticalagriculture:essence/appliedenergistics2/fluix',
         'mysticalagriculture:essence/appliedenergistics2/sky_stone',
+        'mysticalagriculture:essence/appliedenergistics2/silicon_press',
+        'mysticalagriculture:essence/appliedenergistics2/calculation_press',
+        'mysticalagriculture:essence/appliedenergistics2/engineering_press',
+        'mysticalagriculture:essence/appliedenergistics2/logic_press',
 
         'mysticalagriculture:essence/refinedstorage/quartz_enriched_iron_ingot',
 
         'mysticalagriculture:essence/mekanism/refined_glowstone_ingot',
         'mysticalagriculture:essence/mekanism/refined_obsidian_ingot',
-
 
         'mysticalagriculture:seed/infusion/basalz',
         'mysticalagriculture:seed/infusion/blazing_crystal',
@@ -92,7 +95,7 @@ events.listen('recipes', e => {
         'mysticalagriculture:seed/infusion/lumium',
         'mysticalagriculture:seed/infusion/manasteel',
         'mysticalagriculture:seed/infusion/niotic_crystal',
-        'mysticalagriculture:nitro_crystal_seeds_infusion',
+        'mysticalagriculture:seed/infusion/nitro_crystal',
         'mysticalagriculture:oratchalcum_seeds_infusion',
         'mysticalagriculture:seed/infusion/quartz_enriched_iron',
         'mysticalagriculture:seed/infusion/refined_glowstone',
@@ -106,6 +109,8 @@ events.listen('recipes', e => {
         'mysticalagriculture:seed/infusion/steel',
         'mysticalagriculture:seed/infusion/sulfur',
         'mysticalagriculture:seed/infusion/terrasteel',
+
+        'mysticalagradditions:nitro_crystal_crux',
 
         //crative apiary
         'creativeapiary:tcreative_apiary',
@@ -123,6 +128,7 @@ events.listen('recipes', e => {
         'pamhc2foodcore:melonjuiceitem',
         'pamhc2foodcore:sweetberryjuiceitem',
         'pamhc2foodcore:p8juiceitem',
+        'pamhc2foodcore:tool_roller',
         'angelring:itemring',
         'angelring:itemdiamondring',
         //'bluepower:alloyfurnace',
@@ -156,7 +162,7 @@ events.listen('recipes', e => {
         'mekanism:mekasuit_bodyarmor',
         'mekanism:mekasuit_pants',
         'mekanism:mekasuit_boots',
-
+        'powah:crafting/thermoelectric_plate'
     ]
     idRemove.forEach(iR => {
         e.remove({
@@ -179,10 +185,6 @@ events.listen('recipes', e => {
             'cyclic:uncrafter',
             'cyclic:tile_transporter_empty',
 
-            'solarflux:sp_6',
-            'solarflux:sp_7',
-            'solarflux:sp_8',
-
             'quark:apple_crate',
             'quark:potato_crate',
             'quark:carrot_crate',
@@ -194,22 +196,18 @@ events.listen('recipes', e => {
 
             'titanium:iron_gear',
             'titanium:gold_gear',
-            'titanium:diamond_gear',
+            'titanium:diamond_gear'
         ]
     })
     //Remove via mod name
-    var modRemove = [
-        `cabletiers`,
-    ]
+    var modRemove = [`cabletiers`]
     modRemove.forEach(mR => {
         e.remove({
             mod: mR
         })
     })
     e.remove({
-        input: [
-            'appliedenergistics2:flour'
-        ]
+        input: ['appliedenergistics2:flour']
     })
     e.remove({
         type: 'xreliquary:alkahestry_charging'

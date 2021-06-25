@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     function jumbo(ingredients, result, xp) {
         e.recipes.jumbofurnace.jumbo_smelting({
             'ingredients': ingredients,

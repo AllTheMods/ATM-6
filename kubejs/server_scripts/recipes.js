@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     function energize(ingredient, result, rCount, power) {
         e.recipes.powah.energizing({
             ingredients: ingredient,
@@ -7,17 +7,6 @@ events.listen('recipes', e => {
                 item: result,
                 count: rCount
             }
-        })
-    }
-
-    function pressure(inputs, result, rCount, pressure) {
-        e.recipes.pneumaticcraft.pressure_chamber({
-            inputs: inputs,
-            pressure: pressure,
-            results: [{
-                item: result,
-                count: rCount
-            }]
         })
     }
 
@@ -43,16 +32,6 @@ events.listen('recipes', e => {
         e.recipes.pedestals.pedestal_sawing(obj)
     }
 
-    function jumbo(ingred, res, xp) {
-        e.recipes.jumbofurnace.jumbo_smelting({
-            ingredients: ingred,
-            result: {
-                item: res
-            },
-            experience: xp
-        })
-    }
-
     function multicrush(output, input) {
         e.recipes.mekanism.crushing(output, input)
         e.recipes.create.crushing(output, input)
@@ -66,10 +45,6 @@ events.listen('recipes', e => {
 
     function enrich(output, input) {
         e.recipes.mekanism.enriching((output), input)
-    }
-
-    function pulverize(output, input) {
-        e.recipes.thermal.pulverizer((output), input)
     }
 
     function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
@@ -107,6 +82,167 @@ events.listen('recipes', e => {
             }
         })
     }
+
+    function parapet(woodTypes) {
+        woodTypes.forEach(woodType => {
+            e.remove({type: 'minecraft:crafting_shaped', output: `mcwwindows:${woodType}_log_parapet`})
+            e.shaped(`4x mcwwindows:${woodType}_log_parapet`, [
+                'SLS'
+            ], {
+                S: '#forge:rods/wooden',
+                L: `minecraft:stripped_${woodType}_log`
+            }).id(`kubejs:parapet_${woodType}`)
+        })
+    }
+
+    function plateCasting(material, coolingTime, result) {
+        e.custom(
+            {
+                "type": "tconstruct:casting_table",
+                "conditions": [
+                    {
+                        "value": {
+                            "tag": `forge:plates/${material}`,
+                            "type": "forge:tag_empty"
+                        },
+                        "type": "forge:not"
+                    }
+                ],
+                "cast": {
+                    "tag": "tconstruct:casts/multi_use/plate"
+                },
+                "fluid": {
+                    "name": `tconstruct:molten_${material}`,
+                    "amount": 144
+                },
+                "result": {
+                    "item": result
+                },
+                "cooling_time": coolingTime
+            }
+        )
+        e.custom(
+            {
+                "type": "tconstruct:casting_table",
+                "conditions": [
+                    {
+                        "value": {
+                            "tag": `forge:plates/${material}`,
+                            "type": "forge:tag_empty"
+                        },
+                        "type": "forge:not"
+                    }
+                ],
+                "cast": {
+                    "tag": "tconstruct:casts/single_use/plate"
+                },
+                "cast_consumed": true,
+                "fluid": {
+                    "name": `tconstruct:molten_${material}`,
+                    "amount": 144
+                },
+                "result": {
+                    "item": result
+                },
+                "cooling_time": coolingTime
+            }
+        )
+    }
+
+    function platePressing(material, result) {
+        e.custom(
+            {
+                "type": "immersiveengineering:metal_press",
+                "mold": {
+                    "item": "immersiveengineering:mold_plate"
+                },
+                "result": {
+                    "item": result
+                },
+                "conditions": [
+                    {
+                        "value": {
+                            "tag": `forge:ingots/${material}`,
+                            "type": "forge:tag_empty"
+                        },
+                        "type": "forge:not"
+                    },
+                    {
+                        "value": {
+                            "tag": `forge:plates/${material}`,
+                            "type": "forge:tag_empty"
+                        },
+                        "type": "forge:not"
+                    }
+                ],
+                "input": {
+                    "tag": `forge:ingots/${material}`
+                },
+                "energy": 2400
+            }
+        )
+    }
+
+    function plateProcessing(types) {
+        types.forEach(([material, type, coolingTime, result]) => {
+            result = result ? result : `thermal:${material}_plate`
+            if (material == 'lapis') {
+                e.recipes.create.pressing(result, `#forge:storage_blocks/${material}`)
+                e.recipes.thermal.press(result, `#forge:storage_blocks/${material}`)
+                e.shapeless(result, [`#forge:storage_blocks/${material}`, 'immersiveengineering:hammer']).id(`kubejs:${material}_plate`)
+                return
+            }
+            if (type.includes(0)) plateCasting(material, coolingTime, result) // casting missing
+            if (type.includes(1)) e.recipes.create.pressing(result, `#forge:ingots/${material}`) // create missing
+            if (type.includes(2)) e.recipes.thermal.press(result, `#forge:ingots/${material}`) // thermal missing
+            if (type.includes(3)) e.shapeless(result, [`#forge:ingots/${material}`, 'immersiveengineering:hammer']).id(`kubejs:${material}_plate`) // crafting missing
+            if (type.includes(4)) platePressing(material, result) // immersiveengineering missing
+        })
+    }
+
+    function essenceCircle(result, count, name) {
+        e.shaped(item.of(result, count), [
+            'aaa',
+            'a a',
+            'aaa'
+        ], {
+            a: 'mysticalagriculture:' + name + '_essence'
+        }).id(`kubejs:${name}_nugget`)
+    }
+
+    // Plate Processing Additions
+    plateProcessing([
+        ['aluminum', [1, 2], 47, 'immersiveengineering:plate_aluminum'],
+        ['steel', [1, 2], null, 'immersiveengineering:plate_steel'],
+        ['uranium', [1], null, 'immersiveengineering:plate_uranium'],
+        ['iron', [0], 60],
+        ['gold', [0], 57],
+        ['copper', [0], 50],
+        ['tin', [0, 1, 3], 39],
+        ['lead', [0, 1], 43],
+        ['silver', [0, 1], 60],
+        ['nickel', [0, 1], 65],
+        ['bronze', [0, 1, 3], 57],
+        ['electrum', [0, 1], 59],
+        ['invar', [0, 1, 3], 63],
+        ['constantan', [0, 1], 64],
+        ['signalum', [1, 3, 4]],
+        ['lumium', [1, 3, 4]],
+        ['enderium', [1, 3, 4]],
+        ['lapis', null, null, 'create:lapis_sheet'],
+        ['brass', [2, 3], 57, 'create:brass_sheet']
+    ])
+
+
+    parapet([
+        'oak',
+        'spruce',
+        'birch',
+        'jungle',
+        'acacia',
+        'dark_oak'
+    ])
+
     //Smelting
     e.smelting('appliedenergistics2:certus_quartz_crystal', '#forge:ores/certus_quartz').xp(1).id('kubejs:smelting/certus')
     e.smelting('alltheores:platinum_ingot', 'create:crushed_platinum_ore').xp(1).id('kubejs:smelting/create_platinum')
@@ -118,6 +254,12 @@ events.listen('recipes', e => {
     e.smelting('allthemodium:unobtainium_vibranium_alloy_ingot', 'allthemodium:unobtainium_vibranium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_vibranium_alloy_dust')
 
     //Misc shaped recipes
+    e.shaped('pamhc2foodcore:rolleritem', [
+        'SLS'
+    ], {
+        S: '#forge:rods/wooden',
+        L: `#minecraft:logs_unstripped`
+    }).id(`kubejs:pam_roller_unstripped`)
     e.shaped('computercraft:turtle_advanced', [
         'III',
         'ICI',
@@ -183,6 +325,44 @@ events.listen('recipes', e => {
         'S': 'minecraft:stone',
         'B': 'minecraft:blackstone'
     }).id(`kubejs:sky_stone_brick`)
+    e.shaped('appliedenergistics2:calculation_processor_press', [
+        'CFC',
+        'FVF',
+        'PFP'
+    ], {
+        'C': 'appliedenergistics2:purified_certus_quartz_crystal',
+        'F': '#forge:ingots/fluix_steel',
+        'V': '#forge:storage_blocks/vibranium',
+        'P': 'appliedenergistics2:fluix_pearl'
+    }).id(`kubejs:calculation_press`)
+    e.shaped('appliedenergistics2:logic_processor_press', [
+        'BFB',
+        'FVF',
+        'CFC'
+    ], {
+        'B': '#forge:ingots/blaze_gold',
+        'F': '#forge:ingots/fluix_steel',
+        'V': '#forge:storage_blocks/vibranium',
+        'C': '#forge:ingots/rose_gold'
+    }).id(`kubejs:logic_press`)
+    e.shaped('appliedenergistics2:engineering_processor_press', [
+        'DFD',
+        'FVF',
+        'DFD'
+    ], {
+        'D': '#forge:gems/mana_diamond',
+        'F': '#forge:ingots/fluix_steel',
+        'V': '#forge:storage_blocks/vibranium'
+    }).id(`kubejs:engineering_press`)
+    e.shaped('appliedenergistics2:silicon_press', [
+        'WFW',
+        'FVF',
+        'WFW'
+    ], {
+        'W': '#forge:silicon',
+        'F': '#forge:ingots/fluix_steel',
+        'V': '#forge:storage_blocks/vibranium'
+    }).id(`kubejs:silicon_press`)
     e.shaped('biomesoplenty:flesh', [
         'FFF',
         'FFF',
@@ -268,6 +448,20 @@ events.listen('recipes', e => {
         'A': '#forge:nuggets/allthemodium',
         'G': 'minecraft:glass_pane'
     }).id(`kubejs:mininggadgets_upgrade`)
+    e.shaped(item.of('minecraft:grass', 12), [
+        ' E ',
+        'E E',
+        '   '
+    ], {
+        'E': 'mysticalagriculture:nature_essence'
+    }).id('kubejs:grass')
+    essenceCircle('allthemodium:allthemodium_nugget', 1, 'allthemodium')
+    essenceCircle('allthemodium:vibranium_nugget', 1, 'vibranium')
+    essenceCircle('allthemodium:unobtainium_nugget', 1, 'unobtainium')
+    essenceCircle('silentgear:azure_silver_ingot', 6, 'azure_silver')
+    essenceCircle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
+    essenceCircle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
+    essenceCircle('mekanism:fluorite_gem', 12, 'fluorite')
     e.shaped('mysticalagriculture:unattuned_augment', [
         'PMP',
         'AMA',
@@ -759,8 +953,22 @@ events.listen('recipes', e => {
     e.shapeless('kubejs:rotten_leather', '3x minecraft:rotten_flesh').id(`kubejs:rotten_leather`)
     e.shapeless('appliedenergistics2:interface', 'appliedenergistics2:cable_interface').id(`kubejs:ae_interface`)
 
+    // conversion recipe for solar panels which were removed from the game
+    e.shapeless('solarflux:sp_custom_allthemodium', 'solarflux:sp_6').id('kubejs:solar_conversion/tier_6')
+    e.shapeless('solarflux:sp_custom_vibranium', 'solarflux:sp_7').id('kubejs:solar_conversion/tier_7')
+    e.shapeless('solarflux:sp_custom_unobtainium', 'solarflux:sp_8').id('kubejs:solar_conversion/tier_8')
 
     //Powah recipes
+    e.shaped('powah:thermoelectric_plate', [
+        'BAB',
+        'ACA',
+        'BAB'
+    ], {
+        B: '#forge:rods/blaze',
+        A: 'mekanism:alloy_infused',
+        C: 'powah:capacitor_basic_tiny'
+    }).id('kubejs:thermoelectric_plate')
+
     energize([{
         tag: 'forge:storage_blocks/iron'
     }, {
@@ -961,19 +1169,6 @@ events.listen('recipes', e => {
     buildQuarkChest('mushroom', '#forge:mushroom_caps');
     buildQuarkChest('purpur', 'minecraft:purpur_block');
 
-    //Industrial Foregoing Recipes
-    e.recipes.industrialforegoing.dissolution_chamber({
-        input: [{
-            tag: 'minecraft:planks'
-        }],
-        inputFluid: '{FluidName:\'immersiveengineering:creosote\',Amount:125}',
-        processingTime: 1,
-        output: {
-            item: 'immersiveengineering:treated_wood_horizontal',
-            count: 1
-        }
-    })
-
     //Make bio fuel use tags instead of invidual items
     const bioFuels = [2, 4, 5, 7, 8]
     bioFuels.forEach(bioFuel => {
@@ -1036,8 +1231,6 @@ events.listen('recipes', e => {
     e.recipes.mekanism.sawing((`8x mekanism:sawdust`), `byg:imbued_nightshade_log`,).id(`kubejs:saw/byg_log_imbued_nightshade`)
     e.recipes.mekanism.sawing((`6x minecraft:birch_planks`), [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
 
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs')
-    e.recipes.thermal.pyrolyzer([fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], 'minecraft:coal_block')
     //botania
     e.recipes.botania.runic_altar({
         output: {

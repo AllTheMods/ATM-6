@@ -1,0 +1,75 @@
+~ Saved With Solar Flux 16.2.5
+
++C:recipes={
+  # Enable this recipe? (Default: true)
+  +B:solarflux:blank_upgrade=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:block_charging_upgrade=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:capacity_upgrade=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:dispersive_upgrade=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:efficiency_upgrade=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:furnace_upgrade=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:mirror=false
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:photovoltaic_cell_1=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:photovoltaic_cell_2=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:photovoltaic_cell_3=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:photovoltaic_cell_4=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:photovoltaic_cell_5=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:photovoltaic_cell_6=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_1=false
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_2=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_3=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_4=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_5=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_6=false
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_7=false
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:solar_panel_8=false
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:transfer_rate_upgrade=true
+
+  # Enable this recipe? (Default: true)
+  +B:solarflux:traversal_upgrade=true
+
+}
+
+

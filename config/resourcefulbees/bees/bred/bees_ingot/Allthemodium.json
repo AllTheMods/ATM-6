@@ -88,7 +88,7 @@
     "BreedData": {
         "isBreedable": false,
         "parent1": "Quartz",
-        "parent2": "Rocky",
+        "parent2": "Stoned",
         "breedWeight": 10,
         "breedChance": 0.6,
         "feedItem": "tag:forge:storage_blocks/allthemodium",

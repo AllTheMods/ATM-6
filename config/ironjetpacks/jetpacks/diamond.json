@@ -5,7 +5,7 @@
   "color": "4aedd1",
   "armorPoints": 4,
   "enchantability": 10,
-  "craftingMaterial": "tag:forge:gems/diamond",
+  "craftingMaterial": "null",
   "rarity": 0,
   "capacity": 30000000,
   "usage": 650,

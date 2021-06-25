@@ -1,4 +1,4 @@
-events.listen('recipes', e => {
+onEvent('recipes', e => {
     e.custom({
         type: 'mekanism:nucleosynthesizing',
         itemInput: {
