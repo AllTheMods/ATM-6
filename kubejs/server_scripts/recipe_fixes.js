@@ -1,5 +1,8 @@
 // this file remaps default mod recipes with parsing issues
 onEvent('recipes', e => {
+
+
+
     // #region Functions
     // Thermal resolving
     function thermalRemoval(entries) {
@@ -204,6 +207,7 @@ onEvent('recipes', e => {
         L: '#forge:scales/dragon'
     }).id(`kubejs:dragon_wing`)
     // #endregion Rats
+
 
     // #region Thermal
     e.custom({

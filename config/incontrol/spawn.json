@@ -48,23 +48,5 @@
       "perplayer": true
     },
     "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "mod": "iceandfire",
-	  "onjoin": true,
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:the_nether",
-    "mod": "iceandfire",
-	  "onjoin": true,
-    "result": "deny"
-  },
-  {
-    "dimension": "minecraft:the_end",
-    "mod": "iceandfire",
-	  "onjoin": true,
-    "result": "deny"
   }
 ]
