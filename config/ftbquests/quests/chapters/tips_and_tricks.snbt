@@ -23,7 +23,7 @@
 			}]
 		},
 		{
-			x: -6.0d,
+			x: -1.5d,
 			y: -4.0d,
 			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."],
 			id: "7EC8814940C4C3D7",
@@ -41,22 +41,6 @@
 				type: "item",
 				item: "compactmachines:wall",
 				count: 8
-			}]
-		},
-		{
-			x: -3.0d,
-			y: -4.0d,
-			description: ["Not your average storage device. "],
-			id: "73C662E0597726F3",
-			tasks: [{
-				id: "29DBBEDE434FC907",
-				type: "item",
-				item: "dankstorage:dank_1"
-			}],
-			rewards: [{
-				id: "37528CBEEBA5AEA6",
-				type: "item",
-				item: "minecraft:redstone_block"
 			}]
 		},
 		{
@@ -97,11 +81,18 @@
 				type: "item",
 				item: "fluxnetworks:flux_controller"
 			}],
-			rewards: [{
-				id: "0A947736C7FD97A9",
-				type: "item",
-				item: "fluxnetworks:flux_point"
-			}]
+			rewards: [
+				{
+					id: "0A947736C7FD97A9",
+					type: "item",
+					item: "fluxnetworks:flux_point"
+				},
+				{
+					id: "4E700E2FE535CCEE",
+					type: "item",
+					item: "fluxnetworks:flux_plug"
+				}
+			]
 		},
 		{
 			x: -3.0d,
@@ -118,6 +109,229 @@
 				type: "item",
 				item: "minecraft:emerald"
 			}]
+		},
+		{
+			x: -1.5d,
+			y: -2.5d,
+			description: [
+				"The sleeping bag lets you sleep during the night.",
+				"",
+				"The hammock lets you sleep during the day.",
+				"",
+				"Neither will reset your spawn-point."
+			],
+			id: "14C8FC3F19190054",
+			tasks: [
+				{
+					id: "450D00C38F5DB42B",
+					type: "item",
+					item: "comforts:hammock_white"
+				},
+				{
+					id: "76BF5183FA92EF4B",
+					type: "item",
+					item: "comforts:sleeping_bag_white"
+				}
+			],
+			rewards: [{
+				id: "34037270BA530831",
+				type: "item",
+				item: "comforts:rope_and_nail",
+				count: 2
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -4.0d,
+			description: [
+				"It's an entire room in one block!",
+				"",
+				"Higher tiers are even bigger on the inside."
+			],
+			id: "594540768120A627",
+			tasks: [{
+				id: "029DB3044D5E30A0",
+				type: "item",
+				item: "compactmachines:machine_tiny"
+			}],
+			rewards: [{
+				id: "17FAC4A27147E065",
+				type: "item",
+				item: "compactmachines:personal_shrinking_device"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -4.0d,
+			description: [
+				"Stores all the guidebooks you'll ever need!",
+				"",
+				"Re-craftable with one stick."
+			],
+			id: "5718EEFE4F50BB73",
+			tasks: [{
+				id: "523C1E77663E2287",
+				type: "item",
+				item: "akashictome:tome"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -5.5d,
+			description: [
+				"A quick way to switch between tools.",
+				"",
+				"Upgrade with belt pouches in an anvil to increase capacity."
+			],
+			id: "378C95C18798D413",
+			tasks: [{
+				id: "7FD9A02EA29669F6",
+				type: "item",
+				item: "toolbelt:belt"
+			}],
+			rewards: [{
+				id: "40BCE4D56FE98018",
+				type: "item",
+				item: "toolbelt:pouch",
+				count: 2
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -5.5d,
+			description: [
+				"Allows you to store multiple tools in one!",
+				"",
+				"It'll automatically morph in to a mod's tool when looking at a block from that mod. You must add tools via crafting."
+			],
+			id: "73F91BF3D424B269",
+			tasks: [{
+				id: "3B227EED4B839733",
+				type: "item",
+				item: "morphtool:tool"
+			}]
+		},
+		{
+			title: "Building Gadgets",
+			x: -3.0d,
+			y: -5.5d,
+			description: [
+				"Some useful gadgets for building.",
+				"",
+				"&cDestruction Gadget voids blocks!"
+			],
+			id: "0F75D7B9F4FF2459",
+			tasks: [
+				{
+					id: "358F3A8EA9E5E7E3",
+					type: "item",
+					item: {
+						id: "buildinggadgets:gadget_building",
+						Count: 1b,
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer",
+								state: {
+									Name: "minecraft:air"
+								},
+								data: {}
+							}
+						}
+					}
+				},
+				{
+					id: "008AD88A1CDCEE5E",
+					type: "item",
+					item: {
+						id: "buildinggadgets:gadget_exchanging",
+						Count: 1b,
+						tag: {
+							state: {
+								serializer: "buildinggadgets:dummy_serializer",
+								state: {
+									Name: "minecraft:air"
+								},
+								data: {}
+							}
+						}
+					}
+				},
+				{
+					id: "4738B22DF26DB2D8",
+					type: "item",
+					item: {
+						id: "buildinggadgets:gadget_copy_paste",
+						Count: 1b,
+						tag: {
+							mode: 0b,
+							template_id: [I;
+								1687424916,
+								-1474150034,
+								-1591711937,
+								1045183693
+							]
+						}
+					}
+				},
+				{
+					id: "283D88FA9196A4AC",
+					type: "item",
+					item: {
+						id: "buildinggadgets:gadget_destruction",
+						Count: 1b,
+						tag: {
+							overlay: 1b,
+							fuzzy: 1b
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Other Gadgets",
+			x: -1.5d,
+			y: -5.5d,
+			description: [
+				"Can be helpful for building.",
+				"",
+				"The consruction wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
+			],
+			id: "2A2E3D020B1F5126",
+			tasks: [
+				{
+					id: "05D9E287D437CDDB",
+					type: "item",
+					item: {
+						id: "constructionwand:stone_wand",
+						Count: 1b,
+						tag: {
+							wand_options: {},
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: "0478DE9976B3B6D5",
+					type: "item",
+					item: {
+						id: "exchangers:wooden_exchanger",
+						Count: 1b,
+						tag: {
+							mode: 0,
+							fuzzyPlacementChance: 100,
+							directionalPlacement: 0b,
+							forceDropItems: 0b,
+							fuzzyPlacement: 0b,
+							voidItems: 0b,
+							range: 0,
+							Damage: 0,
+							blockstate: {
+								Name: "minecraft:air"
+							}
+						}
+					}
+				}
+			]
 		}
 	]
 }

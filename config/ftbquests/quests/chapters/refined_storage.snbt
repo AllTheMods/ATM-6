@@ -1,7 +1,7 @@
 {
 	id: "15AAF17B6665223D",
 	group: "1AC60211DE7427FC",
-	order_index: 0,
+	order_index: 1,
 	filename: "refined_storage",
 	title: "Refined Storage",
 	icon: "refinedstorage:creative_controller",
