@@ -260,7 +260,7 @@ onEvent('recipes', e => {
     ], {
         C: '#forge:ingots/copper',
         S: 'tconstruct:seared_melter'
-    }
+    })
     //Misc shaped recipes
     e.shaped('pamhc2foodcore:rolleritem', [
         'SLS'
