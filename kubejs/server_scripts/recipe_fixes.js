@@ -1,16 +1,8 @@
 // this file remaps default mod recipes with parsing issues
 onEvent('recipes', e => {
 
-    //Tinkers Quick Fix
-    e.shaped('tconstruct:smeltery_controller', [
-        'CCC',
-        'CSC',
-        'CCC'
-    ], {
-        C: '#forge:ingots/copper',
-        S: 'tconstruct:seared_melter'
-    }
-    
+
+
     // #region Functions
     // Thermal resolving
     function thermalRemoval(entries) {
