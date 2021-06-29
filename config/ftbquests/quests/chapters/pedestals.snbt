@@ -43,32 +43,40 @@
 					item: "pedestals:coin/default"
 				}
 			],
-			rewards: [{
-				id: "6E97357346D96E2E",
-				type: "item",
-				item: {
-					id: "minecraft:player_head",
-					Count: 1b,
-					tag: {
-						SkullOwner: {
-							Properties: {
-								textures: [{
-									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3YzI3M2U5N2MyNzdjNDljOTA2NWVkZGYxMDdlODdlYTc3NWM4N2IyYzlmZWEwOTIyNTUwNTE5MDJhYzRhIn19fQ=="
-								}]
+			rewards: [
+				{
+					id: "6E97357346D96E2E",
+					type: "item",
+					item: {
+						id: "minecraft:player_head",
+						Count: 1b,
+						tag: {
+							SkullOwner: {
+								Properties: {
+									textures: [{
+										Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3YzI3M2U5N2MyNzdjNDljOTA2NWVkZGYxMDdlODdlYTc3NWM4N2IyYzlmZWEwOTIyNTUwNTE5MDJhYzRhIn19fQ=="
+									}]
+								},
+								Id: [I;
+									-647195142,
+									2010533167,
+									-1243897687,
+									1144171008
+								]
 							},
-							Id: [I;
-								-647195142,
-								2010533167,
-								-1243897687,
-								1144171008
-							]
-						},
-						display: {
-							Name: '{"text":"BovineShaman"}'
+							display: {
+								Name: '{"text":"BovineShaman"}'
+							}
 						}
 					}
+				},
+				{
+					id: "582218BBA8C953B9",
+					type: "item",
+					item: "pedestals:coin/default",
+					count: 3
 				}
-			}]
+			]
 		},
 		{
 			x: 0.0d,
@@ -82,48 +90,27 @@
 			}]
 		},
 		{
-			x: 0.0d,
-			y: -3.5d,
+			x: -1.0d,
+			y: -1.0d,
 			dependencies: ["2478CC45028C833D"],
-			id: "2D6EEE28D91BE1DC",
+			id: "51435B0D8A1BEEB8",
 			tasks: [
 				{
-					id: "22240A3044CBA5F2",
+					id: "4D9020332C19C058",
 					type: "item",
-					item: "pedestals:coin/export"
+					item: "pedestals:coin/frestock"
 				},
 				{
-					id: "65DBB982E4253337",
+					id: "5F43D91AD1708E30",
 					type: "item",
-					item: "pedestals:coin/restock"
+					item: "pedestals:coin/fimport"
 				}
 			]
 		},
 		{
-			x: -1.0d,
-			y: -3.0d,
-			dependencies: ["2478CC45028C833D"],
-			id: "4BE83C671FB30D27",
-			tasks: [{
-				id: "4C1B4C6FE2493A3F",
-				type: "item",
-				item: "pedestals:coin/fimport"
-			}]
-		},
-		{
-			x: 1.0d,
-			y: -4.5d,
-			dependencies: ["2D6EEE28D91BE1DC"],
-			id: "51435B0D8A1BEEB8",
-			tasks: [{
-				id: "4D9020332C19C058",
-				type: "item",
-				item: "pedestals:coin/frestock"
-			}]
-		},
-		{
 			x: 2.0d,
 			y: -2.0d,
+			description: ["Will transfer energy between pedestals."],
 			dependencies: ["578911E0725C6A01"],
 			id: "3EC242094715BD60",
 			tasks: [{
@@ -135,6 +122,7 @@
 		{
 			x: 2.0d,
 			y: 0.0d,
+			description: ["Will transfer fluids between pedestals."],
 			dependencies: ["578911E0725C6A01"],
 			id: "7DEAF5CC9706935D",
 			tasks: [{
@@ -146,6 +134,7 @@
 		{
 			x: 2.0d,
 			y: 2.0d,
+			description: ["Will transfer XP between pedestals."],
 			dependencies: ["578911E0725C6A01"],
 			id: "37AD6B7D76A8B002",
 			tasks: [{
@@ -155,7 +144,7 @@
 			}]
 		},
 		{
-			x: 4.0d,
+			x: 3.5d,
 			y: -2.0d,
 			dependencies: ["3EC242094715BD60"],
 			id: "42B96CCD45DDC17C",
@@ -166,7 +155,7 @@
 			}]
 		},
 		{
-			x: 4.0d,
+			x: 3.5d,
 			y: 0.0d,
 			dependencies: ["7DEAF5CC9706935D"],
 			id: "4324073FAA133943",
@@ -177,7 +166,7 @@
 			}]
 		},
 		{
-			x: 4.0d,
+			x: 3.5d,
 			y: 2.0d,
 			dependencies: ["37AD6B7D76A8B002"],
 			id: "19BD6BA955A7BF95",
@@ -188,9 +177,9 @@
 			}]
 		},
 		{
-			x: 3.0d,
-			y: -3.0d,
-			dependencies: ["3EC242094715BD60"],
+			x: 5.0d,
+			y: -2.0d,
+			dependencies: ["42B96CCD45DDC17C"],
 			id: "24FF0974C57A08F0",
 			tasks: [{
 				id: "0C21F78807BF17B2",
@@ -199,9 +188,9 @@
 			}]
 		},
 		{
-			x: 3.0d,
-			y: -1.0d,
-			dependencies: ["7DEAF5CC9706935D"],
+			x: 5.0d,
+			y: 0.0d,
+			dependencies: ["4324073FAA133943"],
 			id: "318FBD15A359F405",
 			tasks: [{
 				id: "0B4435EBFCFA4F80",
@@ -210,8 +199,8 @@
 			}]
 		},
 		{
-			x: 1.0d,
-			y: -3.0d,
+			x: -1.5d,
+			y: -2.0d,
 			dependencies: ["2478CC45028C833D"],
 			id: "5A3DAD4F87335B03",
 			tasks: [{
@@ -221,9 +210,10 @@
 			}]
 		},
 		{
-			x: -1.5d,
-			y: -2.0d,
-			dependencies: ["2478CC45028C833D"],
+			x: -2.0d,
+			y: 0.0d,
+			dependencies: ["51435B0D8A1BEEB8"],
+			dependency_requirement: "one_completed",
 			id: "57152CF55E8C5E17",
 			tasks: [{
 				id: "15A4DC4E367A32CB",
@@ -232,8 +222,8 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: 4.0d,
+			x: 3.5d,
+			y: 3.5d,
 			dependencies: ["19BD6BA955A7BF95"],
 			id: "2C5B637FFB10812D",
 			tasks: [{
@@ -243,7 +233,7 @@
 			}]
 		},
 		{
-			x: 3.0d,
+			x: 2.5d,
 			y: 3.0d,
 			dependencies: ["19BD6BA955A7BF95"],
 			id: "154FD28D614A5FBD",
@@ -254,8 +244,8 @@
 			}]
 		},
 		{
-			x: 3.0d,
-			y: 1.0d,
+			x: 4.5d,
+			y: 3.0d,
 			dependencies: ["19BD6BA955A7BF95"],
 			id: "5B02343D2BCF7294",
 			tasks: [{
@@ -265,7 +255,7 @@
 			}]
 		},
 		{
-			x: 6.0d,
+			x: 5.0d,
 			y: 2.0d,
 			dependencies: ["19BD6BA955A7BF95"],
 			id: "3AC81639A20C39E9",
@@ -288,7 +278,7 @@
 			]
 		},
 		{
-			x: 5.0d,
+			x: 4.5d,
 			y: 1.0d,
 			dependencies: [
 				"19BD6BA955A7BF95",
@@ -299,6 +289,524 @@
 				id: "6C648245BA0028A3",
 				type: "item",
 				item: "pedestals:coin/fluidxpconverter"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -4.0d,
+			dependencies: ["242760890E1D8275"],
+			id: "734A5B641366822E",
+			tasks: [{
+				id: "7E992D5573429DDD",
+				type: "item",
+				item: "pedestals:coin/placer"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -5.0d,
+			dependencies: ["242760890E1D8275"],
+			id: "4BC6585238D414CF",
+			tasks: [{
+				id: "1C514DB776F11D76",
+				type: "item",
+				item: "pedestals:coin/breaker"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -6.5d,
+			dependencies: ["242760890E1D8275"],
+			id: "141F1B275090FBFC",
+			tasks: [{
+				id: "1E5F2044D83DB59F",
+				type: "item",
+				item: "pedestals:coin/chopper"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -5.5d,
+			dependencies: ["4BC6585238D414CF"],
+			id: "7AD0979F82D22484",
+			tasks: [{
+				id: "10CD42E4B9FEAF42",
+				type: "item",
+				item: "pedestals:coin/quarry"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -7.0d,
+			dependencies: ["141F1B275090FBFC"],
+			id: "59A758F472160F1E",
+			tasks: [{
+				id: "1BF995D66B887709",
+				type: "item",
+				item: "pedestals:coin/choppershrooms"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -3.5d,
+			dependencies: ["42B96CCD45DDC17C"],
+			id: "0EE06578BCFED5E3",
+			tasks: [{
+				id: "7F0B8A068DAFE723",
+				type: "item",
+				item: "pedestals:coin/rffuelgen"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -5.0d,
+			dependencies: ["0EE06578BCFED5E3"],
+			id: "4C81207F75E45A75",
+			tasks: [{
+				id: "10165391F1048853",
+				type: "item",
+				item: "pedestals:coin/rfexpgen"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -3.0d,
+			dependencies: ["42B96CCD45DDC17C"],
+			id: "667C30764CDE52E0",
+			tasks: [{
+				id: "69D7C1003FC5F6F5",
+				type: "item",
+				item: "pedestals:coin/rfcrusher"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -3.0d,
+			dependencies: ["242760890E1D8275"],
+			id: "677C03C4F1366CC5",
+			tasks: [{
+				id: "347A7DE1B343351F",
+				type: "item",
+				item: "pedestals:coin/crusher"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -4.5d,
+			dependencies: ["677C03C4F1366CC5"],
+			id: "46AAF5331FF8D520",
+			tasks: [{
+				id: "646FA253D627589C",
+				type: "item",
+				item: "pedestals:coin/sawmill"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -4.5d,
+			dependencies: ["667C30764CDE52E0"],
+			id: "0C77CF8EE90DC4A3",
+			tasks: [{
+				id: "7102CCC5FAB1D941",
+				type: "item",
+				item: "pedestals:coin/rfsawmill"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -6.0d,
+			dependencies: ["0C77CF8EE90DC4A3"],
+			id: "7A31852EBCDE9781",
+			tasks: [{
+				id: "47FAC9D45AAE5AD3",
+				type: "item",
+				item: "pedestals:coin/rfsmelter"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -6.0d,
+			dependencies: ["46AAF5331FF8D520"],
+			id: "2D519E8EBA0E5992",
+			tasks: [{
+				id: "13C5378EE4D61293",
+				type: "item",
+				item: "pedestals:coin/smelter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.5d,
+			dependencies: ["2478CC45028C833D"],
+			id: "242760890E1D8275",
+			tasks: [{
+				id: "174AEC0E5B1B1FE8",
+				type: "item",
+				item: "pedestals:coin/itemtank"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -3.0d,
+			dependencies: ["42B96CCD45DDC17C"],
+			id: "3C2D8F6DA55AC71F",
+			tasks: [{
+				id: "588C0B255804E24C",
+				type: "item",
+				item: "pedestals:coin/rfimport"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -1.0d,
+			dependencies: ["4324073FAA133943"],
+			id: "622DB4CBAEFA4C06",
+			tasks: [{
+				id: "5D0155A2D82AB046",
+				type: "item",
+				item: "pedestals:coin/fluidpump"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 1.0d,
+			dependencies: ["4324073FAA133943"],
+			id: "3F1D0B4C02073024",
+			tasks: [{
+				id: "1303B38058FEE531",
+				type: "item",
+				item: "pedestals:coin/fluiddrain"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -1.0d,
+			dependencies: ["4324073FAA133943"],
+			id: "7A3A138095EEFA99",
+			tasks: [{
+				id: "6408B22AC766B745",
+				type: "item",
+				item: "pedestals:coin/fluidimport"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -1.0d,
+			dependencies: ["7A3A138095EEFA99"],
+			id: "20F0C9AD82AD133C",
+			tasks: [{
+				id: "066C9FC1ABF828A7",
+				type: "item",
+				item: "pedestals:coin/fluidfilteredimport"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 0.0d,
+			dependencies: ["4324073FAA133943"],
+			id: "2E5FD4C05212D75A",
+			tasks: [
+				{
+					id: "596D66EE03BC5A51",
+					type: "item",
+					item: "pedestals:coin/fluidcrafter1"
+				},
+				{
+					id: "45D7CC5D23C9FD83",
+					type: "item",
+					item: "pedestals:coin/placeholderbucket"
+				}
+			]
+		},
+		{
+			x: -1.0d,
+			y: -3.0d,
+			dependencies: ["2478CC45028C833D"],
+			id: "20EB9E705AF796B2",
+			tasks: [
+				{
+					id: "5B3E97B785955F6F",
+					type: "item",
+					item: "pedestals:coin/crafter1"
+				},
+				{
+					id: "5A2A1B3C492841C4",
+					type: "item",
+					item: "pedestals:coin/placeholder"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: -4.0d,
+			dependencies: ["20EB9E705AF796B2"],
+			id: "1EDE6BF7E899CE79",
+			tasks: [{
+				id: "49B297D625BBA523",
+				type: "item",
+				item: "pedestals:coin/compactor2"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 2.0d,
+			dependencies: ["578911E0725C6A01"],
+			id: "6942609F4C6A54F6",
+			tasks: [{
+				id: "5AE919444803279F",
+				type: "item",
+				item: "pedestals:itemcolorpalletdefault"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.0d,
+			dependencies: ["2478CC45028C833D"],
+			id: "64B15B89EE3540DF",
+			tasks: [{
+				id: "0ACB2BB0D37C2FA2",
+				type: "item",
+				item: "pedestals:coin/cobble"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -3.0d,
+			dependencies: ["64B15B89EE3540DF"],
+			id: "56D3C3494C68E02C",
+			tasks: [
+				{
+					id: "0CED5F01EDBA9B34",
+					type: "item",
+					item: "pedestals:coin/attack"
+				},
+				{
+					id: "154E60C54636BB80",
+					type: "item",
+					item: "pedestals:coin/fan"
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: -3.5d,
+			dependencies: ["64B15B89EE3540DF"],
+			id: "2960E068ABC30611",
+			tasks: [{
+				id: "3AA8F263C5F8C13E",
+				type: "item",
+				item: "pedestals:coin/shearer"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -1.0d,
+			dependencies: ["64B15B89EE3540DF"],
+			id: "3F2E9932D768ED3C",
+			tasks: [{
+				id: "135FE73C4BC72A23",
+				type: "item",
+				item: "pedestals:coin/effect"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -0.5d,
+			dependencies: ["64B15B89EE3540DF"],
+			id: "20C158570DB536C0",
+			tasks: [{
+				id: "105891DDDFC60DD8",
+				type: "item",
+				item: "pedestals:coin/teleporter"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -1.0d,
+			dependencies: ["64B15B89EE3540DF"],
+			id: "70EE25D93F2A8EE2",
+			tasks: [{
+				id: "277B1BEC55D67A98",
+				type: "item",
+				item: "pedestals:coin/recycler"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -3.0d,
+			dependencies: ["64B15B89EE3540DF"],
+			id: "2D84406D9EFE1D1D",
+			tasks: [{
+				id: "0EECAE408C736D5B",
+				type: "item",
+				item: "pedestals:coin/harvesterhives"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -8.0d,
+			dependencies: ["141F1B275090FBFC"],
+			id: "6FA32C5B088D442B",
+			tasks: [{
+				id: "0B384A8147709C04",
+				type: "item",
+				item: "pedestals:coin/harvester"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -8.5d,
+			dependencies: ["6FA32C5B088D442B"],
+			id: "6424A5540EDAA569",
+			tasks: [{
+				id: "4967A9F1A55D56E9",
+				type: "item",
+				item: "pedestals:coin/planter"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 0.0d,
+			dependencies: ["4324073FAA133943"],
+			id: "5D1D79795F156677",
+			tasks: [{
+				id: "71DAE31ACB39E582",
+				type: "item",
+				item: "pedestals:coin/milker"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -2.0d,
+			dependencies: ["64B15B89EE3540DF"],
+			id: "0FA964578831F594",
+			tasks: [{
+				id: "60EDC00D7120A5B1",
+				type: "item",
+				item: "pedestals:coin/enderexport"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -2.5d,
+			dependencies: ["0FA964578831F594"],
+			id: "19E03BC5B6AB9AB1",
+			tasks: [{
+				id: "358550D40F35B372",
+				type: "item",
+				item: "pedestals:coin/enderfilteredexport"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -1.5d,
+			dependencies: ["0FA964578831F594"],
+			id: "72B652280E3736B0",
+			tasks: [{
+				id: "4B5FD795DCC1DCA5",
+				type: "item",
+				item: "pedestals:coin/enderfilteredrestock"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 2.0d,
+			dependencies: ["578911E0725C6A01"],
+			id: "334B7FB59A913534",
+			tasks: [
+				{
+					id: "6B3222494E8EED32",
+					type: "item",
+					item: "pedestals:upgradespeed"
+				},
+				{
+					id: "58357534E311FEA8",
+					type: "item",
+					item: "pedestals:upgradecapacity"
+				},
+				{
+					id: "4358360B0E4AD3A4",
+					type: "item",
+					item: "pedestals:upgraderange"
+				}
+			]
+		},
+		{
+			x: -4.0d,
+			y: 2.0d,
+			dependencies: ["334B7FB59A913534"],
+			id: "74AEFBF24CE25081",
+			tasks: [
+				{
+					id: "382A1F4A083ECE71",
+					type: "item",
+					item: "pedestals:upgraderoundrobin"
+				},
+				{
+					id: "0F3E38CFDDCB275A",
+					type: "item",
+					item: "pedestals:upgradesoundmuffler"
+				},
+				{
+					id: "1161904DD4FA0936",
+					type: "item",
+					item: "pedestals:upgradeparticlediffuser"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 4.0d,
+			dependencies: ["578911E0725C6A01"],
+			id: "6AFB0FE7F52ECDE7",
+			tasks: [{
+				id: "2A21C4C960D502B9",
+				type: "item",
+				item: "pedestals:filter/filterbase"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 3.0d,
+			dependencies: ["578911E0725C6A01"],
+			id: "5CCE866D08C12F9C",
+			tasks: [
+				{
+					id: "3F965656C21FA961",
+					type: "item",
+					item: "pedestals:bookspeed"
+				},
+				{
+					id: "0FC8E640BD032A1F",
+					type: "item",
+					item: "pedestals:bookrange"
+				},
+				{
+					id: "57C07C5393CA1619",
+					type: "item",
+					item: "pedestals:bookarea"
+				},
+				{
+					id: "571F00AC84C5F692",
+					type: "item",
+					item: "pedestals:bookcapacity"
+				},
+				{
+					id: "2A73099188CFA581",
+					type: "item",
+					item: "pedestals:bookmagnet"
+				}
+			]
+		},
+		{
+			x: -4.0d,
+			y: 4.0d,
+			dependencies: ["5CCE866D08C12F9C"],
+			id: "1FB8A2BE09831AD0",
+			tasks: [{
+				id: "71564ABE6A01954D",
+				type: "item",
+				item: "pedestals:bookadvanced"
 			}]
 		}
 	]
