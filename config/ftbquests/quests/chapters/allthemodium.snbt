@@ -9,7 +9,7 @@
 	quests: [
 		{
 			x: -3.5d,
-			y: 1.5d,
+			y: 2.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "3DF54AB611650DEC",
 			tasks: [{
@@ -507,7 +507,7 @@
 		},
 		{
 			x: -4.5d,
-			y: 2.5d,
+			y: 3.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "2AF6901685445541",
 			tasks: [{
@@ -529,7 +529,7 @@
 		},
 		{
 			x: -3.5d,
-			y: 2.5d,
+			y: 3.0d,
 			description: [""],
 			dependencies: [
 				"5A9C8F63CE469155",
@@ -558,7 +558,7 @@
 		},
 		{
 			x: -3.5d,
-			y: 3.5d,
+			y: 4.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "5A9C8F63CE469155",
 			tasks: [{
@@ -580,7 +580,7 @@
 		},
 		{
 			x: -2.5d,
-			y: 2.5d,
+			y: 3.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "768A30A300FCE0F3",
 			tasks: [{
@@ -1084,9 +1084,9 @@
 			}]
 		},
 		{
-			title: "A Place For Quarries",
-			x: -7.5d,
-			y: 1.0d,
+			title: "Diggy Diggy Hole!",
+			x: -8.0d,
+			y: 0.5d,
 			dependencies: ["5130BBAD5C542EDB"],
 			id: "21AC1C7A92CAB0C2",
 			tasks: [{
@@ -1096,14 +1096,39 @@
 			}]
 		},
 		{
-			x: -6.5d,
-			y: 1.0d,
+			title: "Piglin Homeworld",
+			x: -6.0d,
+			y: 0.5d,
 			dependencies: ["5130BBAD5C542EDB"],
 			id: "1A5E414C9D25703A",
 			tasks: [{
 				id: "2212DFCF11CE8D69",
 				type: "dimension",
 				dimension: "allthemodium:the_other"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -0.5d,
+			hide_dependency_lines: true,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "7F3B96033AB7A21E",
+			tasks: [{
+				id: "6C79D005D95BAB61",
+				type: "item",
+				item: "allthemodium:allthemodium_apple"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -0.5d,
+			hide_dependency_lines: true,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "15D56588634665FA",
+			tasks: [{
+				id: "32629A7C461C48F7",
+				type: "item",
+				item: "allthemodium:allthemodium_carrot"
 			}]
 		}
 	]
