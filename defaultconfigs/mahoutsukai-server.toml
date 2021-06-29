@@ -71,6 +71,22 @@
 	#This is how often the boundary does it's thing
 	#Range: 0 ~ 100000000
 	ALARM_BARRIER_CYCLE = 20
+	#This is whether the boundary ignores hunger when refilling
+	DRAIN_LIFE_IGNORE_HUNGER = false
+	#This is how much mana the boundary restores
+	#Range: 0 ~ 10000000
+	DRAIN_LIFE_MANA_REGEN = 1
+	#This is how much the boundary heals
+	#Range: -1.0E7 ~ 1.0E7
+	DRAIN_LIFE_HEAL_FACTOR = 0.5
+	#This is how much damage the boundary does
+	#Range: 0.0 ~ 1.0E7
+	DRAIN_LIFE_DAMAGE = 2.0
+	#The boundary does this much times its normal damage if the target has magic resistance
+	#Range: 0.0 ~ 1.0E7
+	DRAIN_LIFE_PUNISH_RESIST = 1.8
+	#Entities that won't be considered for the boundary
+	DRAIN_LIFE_ENTITY_BLACKLIST = []
 
 [displacement]
 	#This is the cost per teleport
@@ -121,6 +137,11 @@
 	#This is the cooldown between teleports (so you don't get shot back and forth rapidly)
 	#Range: 0 ~ 100000000
 	EQUIVALENT_DISPLACEMENT_RECEIVE_COOLDOWN = 15
+	#Max Distance for Equivalent Displacement
+	#Range: -1.0E7 ~ 1.0E7
+	EQUIVALENT_DISPLACEMENT_MAX_DISTANCE = -1.0
+	#Whether Equivalent Displacement can traverse dimensions
+	EQUIVALENT_DISPLACEMENT_DIMENSIONAL_TRAVEL = true
 
 [projection]
 	#This is the range for pulling undead mobs with Caliburn
@@ -330,6 +351,120 @@
 	#Morgan Upgrade Mana Cost
 	#Range: 0 ~ 10000000
 	MORGAN_UPGRADE_MANA_COST = 400
+	#Speed of projectiles shot from the weapon projectile bow
+	#Range: 0.0 ~ 1.0E7
+	WEAPON_SHOOTER_PROJECTILE_SPEED = 3.0
+	#Damage multiplier for projectiles shot from the weapon projectile bow
+	#Range: 0.0 ~ 1.0E7
+	WEAPON_SHOOTER_DAMAGE_MULTIPLIER = 1.0
+	#Weapon projectile bow durability
+	#Range: 0 ~ 10000000
+	WEAPON_SHOOTER_DURABILITY = 30
+	#How much damage chains do on contact
+	#Range: 0.0 ~ 1.0E8
+	TREASURY_PROJECTION_CHAINS_DAMAGE = 1.0
+	#Treasury Projection Speed Increase Per Available Sword
+	#Range: -10000.0 ~ 10000.0
+	TREASURY_PROJECTION_SPEED_INCREASE_PER_SWORD = 1.0
+	#Treasury Projection Speed Minimum
+	#Range: 0.0 ~ 100000.0
+	TREASURY_PROJECTION_SPEED_MIN = 10.0
+	#Treasury Projection Cooldown Increase Per Available Sword
+	#Range: -10000.0 ~ 10000.0
+	TREASURY_PROJECTION_COOLDOWN_INCREASE_PER_SWORD = 1.0
+	#Treasury Projection Cooldown Minimum
+	#Range: 0.0 ~ 100000.0
+	TREASURY_PROJECTION_COOLDOWN_MIN = 3.0
+	#Treasury Projection AOE Mode Max Spawns Per Tick
+	#Range: 0.0 ~ 100000.0
+	TREASURY_PROJECTION_AOE_MAX_SPAWNS = 3.0
+	#Treasury Projection AOE Mode Swords Per Spawn
+	#Range: 0.0 ~ 100000.0
+	TREASURY_PROJECTION_AOE_SWORDS_PER_SPAWN = 5.0
+	#Treasury Projection Increases Requires Unique Weapons
+	TREASURY_PROJECTION_INCREASE_REQUIRES_UNIQUE = true
+	#Max Strengthening Cap
+	#Range: 0 ~ 100000000
+	STRENGTHENING_CAP = 50
+	#If False, PROJECTION_BLACKLIST will be considered a whitelist
+	PROJECTION_IS_BLACKLIST = true
+	#Projection Explicit Whitelist
+	PROJECTION_EXPLICIT_WHITELIST = []
+	#Rhongomyniad Lake Nerf Factor
+	#Range: -1.0E7 ~ 1.0E7
+	RHONGOMYNIAD_NERF_FACTOR = 0.6
+	#Rhongomyniad Speed Factor
+	#Range: -1.0E7 ~ 1.0E7
+	RHONGOMYNIAD_SPEED_FACTOR = 1.4
+	#Rhongomyniad Mana Cost
+	#Range: 0 ~ 10000000
+	RHONGOMYNIAD_MANA_COST = 300
+	#Rhongomyniad Max Smites
+	#Range: 0 ~ 10000000
+	RHONGOMYNIAD_MAX_SMITES = 10
+	#Rhongomyniad Range
+	#Range: 0 ~ 10000000
+	RHONGOMYNIAD_RANGE = 20
+	#Max stored damage for Clarent
+	#Range: 0 ~ 100000000
+	CLARENT_ATTACK_CAP = 5000000
+	#Clarent Blacklist Toggle
+	CLARENT_BLACKLIST_TOGGLE = true
+	#Disable Emrys
+	DISABLE_EMRYS = false
+	#All pet wolves are allowed for transformation to Morgan
+	MORGAN_TRANSFORM_WOLFS_ALLOWED = true
+	#Replica Shockwave Base Damage
+	#Range: 0.0 ~ 1.0E7
+	REPLICA_BASE_DAMAGE = 4.0
+	#Replica Friend Teleport Range
+	#Range: 0.0 ~ 1.0E7
+	REPLICA_TELEPORT_FRIEND_RANGE = 6.0
+	#Replica Friend Teleport Max Distance
+	#Range: -1.0E7 ~ 1.0E7
+	REPLICA_TELEPORT_MAX_DISTANCE = -1.0
+	#Replica Teleport Start Time
+	#Range: 0 ~ 10000000
+	REPLICA_TELEPORT_START_TELEPORTING = 110
+	#Replica Teleport Stop Time
+	#Range: 0 ~ 10000000
+	REPLICA_TELEPORT_STOP_TELEPORTING = 120
+	#Replica Teleport Life
+	#Range: 0 ~ 10000000
+	REPLICA_TELEPORT_LIFE = 140
+	#Replica Teleport Mana Cost
+	#Range: 0 ~ 10000000
+	REPLICA_TELEPORT_MANA_COST = 300
+	#Replica Shockwave Mana Cost
+	#Range: 0 ~ 10000000
+	REPLICA_ATTACK_MANA_COST = 30
+	#Replica Shockwave Cooldown
+	#Range: 0 ~ 1000000
+	REPLICA_SHOCKWAVE_COOLDOWN = 50
+	#Replica Shockwave Range
+	#Range: 0.0 ~ 1.0E7
+	REPLICA_ATTACK_RANGE = 8.0
+	#Replica can Teleport across Dimensions
+	REPLICA_TELEPORT_CROSS_DIMENSION = true
+	#Replica Cover Move Range
+	#Range: 0.0 ~ 1.0E7
+	REPLICA_COVER_MOVE_RANGE = 20.0
+	#Replica Shockwave Max Damage
+	#Range: 0.0 ~ 1.0E7
+	REPLICA_MAX_DAMAGE = 5000000.0
+	#Replica is disabled
+	REPLICA_DISABLED = false
+	#Replica Banned Damage Types
+	REPLICA_BANNED_DAMAGE_TYPES = []
+	#Power Consolidation Damage Cap Tiers
+	POWER_CONSOLIDATION_TIERS = [10000.0, 50000.0, 500000.0, 1000000.0, 5000000.0]
+	#Power Consolidation Tier Upgrade Items
+	POWER_CONSOLIDATION_TIER_UPGRADE_ITEM = ["allthemodium:vibranium_allthemodium_alloy_block"]
+	#Replica Durability
+	#Range: 0 ~ 10000000
+	REPLICA_DURABILITY = 10000
+	#Replica is Unbreakable
+	REPLICA_IS_UNBREAKABLE = true
 
 [exchange]
 	#How far down gets changed by the Alchemical Exchange
@@ -408,6 +543,13 @@
 	#This is how often the circle checks for catalysts on top to change
 	#Range: 0 ~ 100000000
 	CATALYST_EXCHANGE_BLOCK_CYCLE = 4
+	#Durability Exchange Tax Brackets
+	DURABILITY_EXCHANGE_TAX_BRACKETS = [5000.0, 20000.0, 100000.0]
+	#Durability Exchange Tax Rates
+	DURABILITY_EXCHANGE_TAX_RATES = [0.02, 0.03, 0.04]
+	#Damage Exchange Cap
+	#Range: 0 ~ 1000000000
+	DAMAGE_EXCHANGE_CAP = 100
 
 [mystic]
 	#This is the effect that is applied when the network has multiples of 11.
@@ -523,6 +665,25 @@
 	#This is how much damaqe is done when the player hits something
 	#Range: 0.0 ~ 1.0E8
 	AUTHORITY_DAMAGE_TO_OTHER = 3.0
+	#Mystic Staff Creates Rain and Thunder
+	MYSTIC_STAFF_BIG_RAIN = true
+	#Mystic Staff Scaling Mana Factor
+	#Range: 0.0 ~ 1.0E7
+	MYSTIC_STAFF_SCALING_MANA = 0.0
+	#Mystic Staff World Damage
+	MYSTIC_STAFF_WORLD_DAMAGE = true
+	#Mystic Staff Beam Block Whitelist
+	MYSTIC_STAFF_BEAM_BLOCK_WHITELIST = []
+	#How long Rho Aias lasts
+	#Range: 0 ~ 100000000
+	RHO_AIAS_LIFE = 1200
+	#Borrowed Authority Drops Blocks
+	AUTHORITY_DROPS_BLOCKS = true
+	#Spatial Disorientation Air Resistance
+	SPATIAL_DISORIENTATION_AIR_RESISTANCE = false
+	#Spatial Disorientation Launch Speed
+	#Range: 0.0 ~ 1.0E7
+	SPATIAL_DISORIENTATION_SPEED = 7.0
 
 [eyes]
 	#Entities must be this close to the user's look vector to be affected
@@ -642,6 +803,8 @@
 	DEATH_COLLECTION_DRAIN_PER_SOUL = 0.3
 	#Leyline Eytra boost limited to Fay Sight
 	LEY_ELYTRA_LIMITED_TO_FAY_SIGHT = false
+	#Souls drain with negative mana regen
+	DEATH_COLLECTION_NEGATIVE_REGEN_PUNISHMENT = true
 
 [familiar]
 	#This is whether the effect disappears once used
@@ -722,7 +885,7 @@
 	#Range: 0 ~ 100000000
 	RIPPER_FOG_RANGE = 20
 	#Ripper Attack Speed
-	#Range: 0.0 ~ 1000000.0
+	#Range: -1000000.0 ~ 1000000.0
 	RIPPER_SPEED = 3.0
 	#If true, mana is charged per percent difference between caster and target, as opposed to per health point differeence.
 	RETRIBUTION_MANA_CHARGED_PER_PERCENT = false
@@ -735,9 +898,6 @@
 	#Gandr Black Particles Spawned on Hit
 	#Range: 0 ~ 100000000
 	GANDR_BLACK_PARTICLES_HIT = 150
-	#Gandr Red Particles Spawned on Hit
-	#Range: 0 ~ 100000000
-	GANDR_RED_PARTICLES_HI = 40
 	#Gandr Red Particles Spawned on Launch
 	#Range: 0 ~ 100000000
 	GANDR_RED_PARTICLES_LAUNCH = 25
@@ -770,6 +930,37 @@
 	GANDR_EFFECT_BLACKLIST = []
 	#Gandr Effect Whitelist
 	GANDR_EFFECT_WHITELIST = ["mahoutsukai:misfortune", "mahoutsukai:bound", "mahoutsukai:fear", "mahoutsukai:black_burning", "mahoutsukai:wounded", "mahoutsukai:confusion"]
+	#Ripper Movement Speed
+	#Range: -1.0E7 ~ 1000000.0
+	RIPPER_MOVEMENT_SPEED = 0.05
+	#Gandr Red Particles Spawned on Hit
+	#Range: 0 ~ 100000000
+	GANDR_RED_PARTICLES_HIT = 40
+	#Fallen Down Block Break Per Tick
+	#Range: 0 ~ 100000000
+	FALLEN_DOWN_BLOCK_BREAK_PER_TICK = 800
+	#Fallen Down Radius
+	#Range: 0 ~ 100000000
+	FALLEN_DOWN_RADIUS = 30
+	#Fallen Down Mana Per Tick
+	#Range: 0 ~ 100000000
+	FALLEN_DOWN_MANA_COST = 2000
+	#Fallen Down Beam Mode Blocks In
+	FALLEN_DOWN_BEAM_IN = ["minecraft:grass_block", "minecraft:sand", "minecraft:red_sand", "minecraft:cobblestone", "minecraft:clay", "minecraft:ice", "minecraft:packed_ice", "minecraft:blue_ice"]
+	#Fallen Down Beam Mode Blocks Out
+	FALLEN_DOWN_BEAM_OUT = ["minecraft:dirt", "minecraft:glass", "minecraft:red_stained_glass", "minecraft:stone", "minecraft:terracotta", "minecraft:water", "minecraft:water", "minecraft:water"]
+	#Fallen Down Beam Damage
+	#Range: 0.0 ~ 1.0E9
+	FALLEN_DOWN_BEAM_DAMAGE = 2.0
+	#Fallen Down Beam Growth
+	#Range: 0.0 ~ 1.0E9
+	FALLEN_DOWN_BEAM_GROWTH = 0.12
+	#Geas Mana Cost
+	#Range: 0 ~ 100000000
+	GEAS_MANA_COST = 30
+	#Geas Mana Regen
+	#Range: 0.0 ~ 1.0E8
+	MANA_REGEN_PER_GEAS = 3.0
 
 [kodoku]
 	#mahoutsukai.config.kodoku_tool_divisor.comment
@@ -881,4 +1072,10 @@
 	#Scaling factor for how much hunger affects regen
 	#Range: -1.0E7 ~ 1.0E7
 	MANA_REGEN_HUNGER_FACTOR = 1.0
+	#Mystic Code First Sorcery Blacklist
+	MYSTIC_CODE_FIRST_SORCERY_BLACKLIST = ["mahoutsukai:scroll_boundary_drain_life"]
+	#Mystic Code Enchant Blacklist
+	MYSTIC_CODE_ENCHANT_BLACKLIST = []
+	#Spell Creation Blacklist
+	SPELL_BLACKLIST = []
 
