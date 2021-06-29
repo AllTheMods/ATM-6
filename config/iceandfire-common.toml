@@ -286,7 +286,7 @@
 		"Spawn Cyclopes Caves" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Cyclops Cave Chance" = 55
+		"Spawn Cyclops Cave Chance" = 45
 		#Maximum cyclops health
 		#Range: 1.0 ~ 10000.0
 		"Cyclops Max Health" = 3500.0
@@ -310,7 +310,7 @@
 	[Mobs.Trolls]
 		#Troll spawn weight. Lower = lower chance to spawn
 		#Range: 1 ~ 10000
-		"Troll Spawn Weight" = 40
+		"Troll Spawn Weight" = 50
 		#Troll attack strength
 		#Range: 1.0 ~ 10000.0
 		"Troll Attack Strength" = 10.0
