@@ -694,6 +694,21 @@ onEvent('recipes', e => {
         [{ item: 'tconstruct:smeltery_controller' }, 576, 175, 1152],
         [[{ item: 'tconstruct:seared_drain' }, { item: 'tconstruct:seared_chute' }], 288, 125, 576]
     ])
+	
+    e.custom({
+    "type": "tconstruct:casting_basin",
+    "cast": {
+    "item": "tconstruct:seared_heater"
+    },
+    "cast_consumed": true,
+    "fluid": {
+    "name": "alltheores:molten_copper",
+    "amount": 576
+    },
+    "result": "tconstruct:smeltery_controller",
+    "cooling_time": 100
+	})
+	
     // #endregion Tinkers Unification
 
     // Certus Quartz
