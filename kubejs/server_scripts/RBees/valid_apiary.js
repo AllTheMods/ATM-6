@@ -88,7 +88,7 @@ const whitelistVA = [
   /quark:.*shingles/,
   /quark:.*prismarine/,
   /quark:.*soul_sandstone/,
-  /quark:.*verticle_slab/,
+  /quark:.*vertical_slab/,
   /quark:.*duskbound.*/,
   'quark:lit_lamp',
   'quark:blaze_lantern',
