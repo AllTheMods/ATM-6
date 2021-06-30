@@ -252,15 +252,7 @@ onEvent('recipes', e => {
     e.smelting('allthemodium:vibranium_allthemodium_alloy_ingot', 'allthemodium:vibranium_allthemodium_alloy_dust').xp(.5).id('kubejs:smelting/vibranium_allthemodium_alloy_dust')
     e.smelting('allthemodium:unobtainium_allthemodium_alloy_ingot', 'allthemodium:unobtainium_allthemodium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_allthemodium_alloy_dust')
     e.smelting('allthemodium:unobtainium_vibranium_alloy_ingot', 'allthemodium:unobtainium_vibranium_alloy_dust').xp(.5).id('kubejs:smelting/unobtainium_vibranium_alloy_dust')
-    //Tinkers Quick Fix
-    e.shaped('tconstruct:smeltery_controller', [
-        'CCC',
-        'CSC',
-        'CCC'
-    ], {
-        C: '#forge:ingots/copper',
-        S: 'tconstruct:seared_melter'
-    })
+ 
     //Misc shaped recipes
     e.shaped('pamhc2foodcore:rolleritem', [
         'SLS'

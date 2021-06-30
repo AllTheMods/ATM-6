@@ -9,7 +9,7 @@
 	quests: [
 		{
 			x: -3.5d,
-			y: 1.5d,
+			y: 2.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "3DF54AB611650DEC",
 			tasks: [{
@@ -103,7 +103,7 @@
 			x: -6.0d,
 			y: -4.5d,
 			description: ["It is recommended to use this potion with your first ingot. "],
-			dependencies: ["5BDBE666E604FCAC"],
+			dependencies: ["71A43C89EB13E9A0"],
 			id: "04AB01C841CD3E3F",
 			tasks: [{
 				id: "2F97DA30FE1982CF",
@@ -167,7 +167,7 @@
 			x: -2.5d,
 			y: -4.5d,
 			description: ["It is recommended to use this potion with your first ingot. "],
-			dependencies: ["2DF64CB9298E91EA"],
+			dependencies: ["61FDABF2C7CC1F9D"],
 			id: "7496DB58411060AE",
 			tasks: [{
 				id: "0C83388DB2387448",
@@ -196,7 +196,7 @@
 			x: 1.0d,
 			y: -4.5d,
 			description: ["It is recommended to use this potion with your first ingot. "],
-			dependencies: ["4F6E6AF1D9E74CB7"],
+			dependencies: ["44760B819EB3CA68"],
 			id: "76016E5C8C9397D2",
 			tasks: [{
 				id: "238E353C6A05F0A3",
@@ -236,23 +236,6 @@
 				id: "44CF4A0D641812F8",
 				type: "item",
 				item: "allthemodium:vibranium_nugget"
-			}]
-		},
-		{
-			x: 0.0d,
-			y: -4.0d,
-			description: ["Unlimited Power!"],
-			dependencies: ["4F6E6AF1D9E74CB7"],
-			id: "4F23CB27606EDD78",
-			tasks: [{
-				id: "2673FC8D2F0DB1F5",
-				type: "item",
-				item: "allthemodium:unobtainium_ingot"
-			}],
-			rewards: [{
-				id: "3DBC11C23965ECCA",
-				type: "item",
-				item: "allthemodium:unobtainium_ingot"
 			}]
 		},
 		{
@@ -336,7 +319,7 @@
 		{
 			x: 0.0d,
 			y: -1.0d,
-			dependencies: ["4F23CB27606EDD78"],
+			dependencies: ["44760B819EB3CA68"],
 			id: "4D24742EB7E480FD",
 			tasks: [{
 				id: "0F521F7C1D602AAD",
@@ -368,7 +351,7 @@
 			x: 0.0d,
 			y: -3.0d,
 			description: ["This solar panel produces 32,768 FE/Tick."],
-			dependencies: ["4F23CB27606EDD78"],
+			dependencies: ["44760B819EB3CA68"],
 			id: "630255EA7104D1E1",
 			tasks: [{
 				id: "499F0061A2D1B220",
@@ -385,7 +368,7 @@
 			x: 0.0d,
 			y: -2.0d,
 			description: ["Now you are just showing off."],
-			dependencies: ["4F23CB27606EDD78"],
+			dependencies: ["44760B819EB3CA68"],
 			id: "1AFDB3AE73E72A33",
 			tasks: [{
 				id: "579B48ABB0CBD18A",
@@ -474,6 +457,7 @@
 			x: -6.0d,
 			y: -2.5d,
 			description: ["Bees?"],
+			hide_dependency_lines: true,
 			dependencies: ["71A43C89EB13E9A0"],
 			id: "37561407B7D8D952",
 			tasks: [{
@@ -490,6 +474,7 @@
 		{
 			x: -2.5d,
 			y: -2.5d,
+			hide_dependency_lines: true,
 			dependencies: ["61FDABF2C7CC1F9D"],
 			id: "6BAA3137C9674E7F",
 			tasks: [{
@@ -506,7 +491,8 @@
 		{
 			x: 1.0d,
 			y: -2.5d,
-			dependencies: ["4F23CB27606EDD78"],
+			hide_dependency_lines: true,
+			dependencies: ["44760B819EB3CA68"],
 			id: "25884CEF41F8AABC",
 			tasks: [{
 				id: "1C120189C0DFD703",
@@ -521,7 +507,7 @@
 		},
 		{
 			x: -4.5d,
-			y: 2.5d,
+			y: 3.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "2AF6901685445541",
 			tasks: [{
@@ -543,7 +529,7 @@
 		},
 		{
 			x: -3.5d,
-			y: 2.5d,
+			y: 3.0d,
 			description: [""],
 			dependencies: [
 				"5A9C8F63CE469155",
@@ -572,7 +558,7 @@
 		},
 		{
 			x: -3.5d,
-			y: 3.5d,
+			y: 4.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "5A9C8F63CE469155",
 			tasks: [{
@@ -594,7 +580,7 @@
 		},
 		{
 			x: -2.5d,
-			y: 2.5d,
+			y: 3.0d,
 			dependencies: ["2403B59A21D2B3AF"],
 			id: "768A30A300FCE0F3",
 			tasks: [{
@@ -645,10 +631,7 @@
 			x: -2.5d,
 			y: 0.5d,
 			description: ["We are in the endgame now."],
-			dependencies: [
-				"61761B6C1D1542FD",
-				"2673FC8D2F0DB1F5"
-			],
+			dependencies: ["61761B6C1D1542FD"],
 			id: "6459F9A1F845A049",
 			tasks: [{
 				id: "2403B59A21D2B3AF",
@@ -672,10 +655,7 @@
 			x: -3.5d,
 			y: 0.5d,
 			description: ["Doesn't taste good though."],
-			dependencies: [
-				"6A101A8056AC9A3A",
-				"2673FC8D2F0DB1F5"
-			],
+			dependencies: ["6A101A8056AC9A3A"],
 			id: "1D3C4B41BD512EF7",
 			tasks: [{
 				id: "0F3803B82A460772",
@@ -809,7 +789,7 @@
 		{
 			x: -1.0d,
 			y: -4.5d,
-			dependencies: ["2673FC8D2F0DB1F5"],
+			dependencies: ["44760B819EB3CA68"],
 			id: "172E838FFEC67A70",
 			tasks: [{
 				id: "6B7216A17814B466",
@@ -1028,7 +1008,8 @@
 		{
 			x: -6.0d,
 			y: -1.5d,
-			dependencies: ["37561407B7D8D952"],
+			hide_dependency_lines: true,
+			dependencies: ["71A43C89EB13E9A0"],
 			id: "4DB7AB98161AC064",
 			tasks: [{
 				id: "4A5DA941C0DAC273",
@@ -1044,7 +1025,8 @@
 		{
 			x: -2.5d,
 			y: -1.5d,
-			dependencies: ["6BAA3137C9674E7F"],
+			hide_dependency_lines: true,
+			dependencies: ["61FDABF2C7CC1F9D"],
 			id: "48A776F5F3D35B23",
 			tasks: [{
 				id: "69579871C1D8E1C1",
@@ -1060,7 +1042,8 @@
 		{
 			x: 1.0d,
 			y: -1.5d,
-			dependencies: ["25884CEF41F8AABC"],
+			hide_dependency_lines: true,
+			dependencies: ["44760B819EB3CA68"],
 			id: "55FC612B6B92629F",
 			tasks: [{
 				id: "549B21412588BDFC",
@@ -1071,6 +1054,81 @@
 				id: "645C635F77769001",
 				type: "item",
 				item: "mysticalagriculture:unobtainium_essence"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			dependencies: ["4F6E6AF1D9E74CB7"],
+			id: "44760B819EB3CA68",
+			tasks: [{
+				id: "16A8B32CB4B011DA",
+				type: "item",
+				item: "allthemodium:unobtainium_ingot"
+			}],
+			rewards: [{
+				id: "630BAC7F9B93C9D9",
+				type: "item",
+				item: "allthemodium:unobtainium_nugget"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: 0.0d,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "5130BBAD5C542EDB",
+			tasks: [{
+				id: "1F28A31269E9EDE8",
+				type: "item",
+				item: "allthemodium:teleport_pad"
+			}]
+		},
+		{
+			title: "Diggy Diggy Hole!",
+			x: -8.0d,
+			y: 0.5d,
+			dependencies: ["5130BBAD5C542EDB"],
+			id: "21AC1C7A92CAB0C2",
+			tasks: [{
+				id: "59FF7825435AF860",
+				type: "dimension",
+				dimension: "allthemodium:mining"
+			}]
+		},
+		{
+			title: "Piglin Homeworld",
+			x: -6.0d,
+			y: 0.5d,
+			dependencies: ["5130BBAD5C542EDB"],
+			id: "1A5E414C9D25703A",
+			tasks: [{
+				id: "2212DFCF11CE8D69",
+				type: "dimension",
+				dimension: "allthemodium:the_other"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -0.5d,
+			hide_dependency_lines: true,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "7F3B96033AB7A21E",
+			tasks: [{
+				id: "6C79D005D95BAB61",
+				type: "item",
+				item: "allthemodium:allthemodium_apple"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -0.5d,
+			hide_dependency_lines: true,
+			dependencies: ["71A43C89EB13E9A0"],
+			id: "15D56588634665FA",
+			tasks: [{
+				id: "32629A7C461C48F7",
+				type: "item",
+				item: "allthemodium:allthemodium_carrot"
 			}]
 		}
 	]

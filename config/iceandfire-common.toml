@@ -286,7 +286,7 @@
 		"Spawn Cyclopes Caves" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Cyclops Cave Chance" = 55
+		"Spawn Cyclops Cave Chance" = 45
 		#Maximum cyclops health
 		#Range: 1.0 ~ 10000.0
 		"Cyclops Max Health" = 3500.0
@@ -310,7 +310,7 @@
 	[Mobs.Trolls]
 		#Troll spawn weight. Lower = lower chance to spawn
 		#Range: 1 ~ 10000
-		"Troll Spawn Weight" = 40
+		"Troll Spawn Weight" = 50
 		#Troll attack strength
 		#Range: 1.0 ~ 10000.0
 		"Troll Attack Strength" = 10.0
@@ -410,14 +410,14 @@
 	"Dragonsteel Base Durability" = 8000
 	#Default armor value of dragonsteel chestplate.
 	#Range: > 7
-	"Dragonsteel Base Armor" = 12
+	"Dragonsteel Base Armor" = 75
 	#Disable this to remove easter egg with tinkers installed.
 	Weezer = true
 	#True if the summon crystal can load chunks to find dragons.
 	"Chunk Load Summon Crystal" = true
 	#Default attack strength of a dragonsteel sword.
 	#Range: 5.0 ~ 2.147483647E9
-	"Dragonsteel Sword Base Attack Strength" = 25.0
+	"Dragonsteel Sword Base Attack Strength" = 1350.0
 	#Percentage of critical strike that will disarm with easter egg tinkers material.
 	#Range: 0.0 ~ 1.0
 	"Easter Egg Tinkers Tool Disarm chance" = 0.20000000298023224
