@@ -476,7 +476,7 @@ onEvent('recipes', e => {
                 multiplier: 10.0
             },
             ores: {
-                amount: 144,
+                amount: 288,
                 multiplier: 44.1
             },
             plates: {
