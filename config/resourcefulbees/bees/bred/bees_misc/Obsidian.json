@@ -30,7 +30,7 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:obsiadian_honeycomb_block",
+            "inputID": "resourcefulbees:obsidian_honeycomb_block",
             "outputs": [{
                     "outputID": "minecraft:obsidian",
                     "weight": 80
