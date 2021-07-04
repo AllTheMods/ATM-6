@@ -262,5 +262,5 @@
 		#Turns on/off addition of loot into backpacks
 		addLoot = true
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
-		playJukebox = true
+		playJukebox = false
 
