@@ -1,7 +1,7 @@
 {
     "flower": "tag:minecraft:leaves",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "/custom/bee",
     "ColorData": {

@@ -1,7 +1,7 @@
 {
     "flower": "tag:forge:storage_blocks/nickel",
     "maxTimeInHive": 2400,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "ato/nickel_bee",
     "ColorData": {

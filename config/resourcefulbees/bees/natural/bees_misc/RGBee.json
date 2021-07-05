@@ -1,7 +1,7 @@
 {
     "flower": "all",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "/ores/custom/custom_bee_primary",
     "ColorData": {

@@ -1,7 +1,7 @@
 {
     "flower": "appliedenergistics2:quartz_block",
     "maxTimeInHive": 2400,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/certus_bee",
     "ColorData": {
