@@ -245,9 +245,21 @@ onEvent('block.tags', e => {
         '#forge:ores/dimensionalshard',
         '#forge:ores/arcane_brick'
     ])
-    e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus'])
+    e.add('misctags:no_moving', [
+        '#minecraft:wither_immune',
+        'potionsmaster:cauldron',
+        'appliedenergistics2:cable_bus',
+        'cookingforblockheads:fridge',
+        /^refinedstorage:/,
+        /^extrastorage:/,
+        /^waystones:/,
+        /^compactmachines:/,
+        /^appliedenergistics2:/,
+    ])
     e.add('mekanism:cardboard_blacklist', '#misctags:no_moving')
     e.add('bagofyurting:blacklist', '#misctags:no_moving')
+    e.add('create:brittle', '#misctags:no_moving')
+
     e.add('misctags:flowers/draconic_flowers', ['minecraft:dragon_egg'])
     e.add('misctags:flowers/end_flowers', ['minecraft:chorus_flower', 'minecraft:chorus_plant'])
     e.add('misctags:flowers/forest_flowers', ['#minecraft:flowers', 'minecraft:sweet_berry_bush'])
@@ -325,13 +337,7 @@ onEvent('block.tags', e => {
     e.add('cyclic:scythe_brush', ['#minecraft:flowers'])
     e.add('mcwwindows:window', '/mcwwindows:.+_win/')
     e.add('misctags:concrete', '/minecraft:.+_concrete/')
-    e.add('misctags:no_moving', [
-        '/refinedstorage:.+/',
-        '/extrastorage:.+/',
-        '/waystones:.+/',
-        '/appliedenergistics2:.+/'
-    ])
-    e.add('create:brittle', 'cookingforblockheads:fridge')
+
     e.removeAll('minecraft:enderman_holdable')
 })
 
