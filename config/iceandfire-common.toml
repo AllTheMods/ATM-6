@@ -345,7 +345,7 @@
 		"Myrmex Colony Max Size" = 80
 		#The maximum radius myrmex area allowed to wander/forage
 		#Range: 100 ~ 20000
-		"Myrmex Maximum Wnader Radius" = 50
+		"Myrmex Maximum Wnader Radius" = 100
 
 	[Mobs.Pixies]
 		#size of pixie villages
