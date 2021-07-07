@@ -1,7 +1,7 @@
 {
     "flower": "tag:forge:storage_blocks/osmium",
     "maxTimeInHive": 2400,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "ato/osmium_bee",
     "ColorData": {

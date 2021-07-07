@@ -1,7 +1,7 @@
 {
     "flower": "minecraft:hay_block",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "/crop/wheat_bee",
     "ColorData": {

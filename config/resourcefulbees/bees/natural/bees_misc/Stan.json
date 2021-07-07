@@ -1,7 +1,7 @@
 {
     "flower": "tag:forge:stone",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/stan_bee",
     "ColorData": {

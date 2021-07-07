@@ -1,7 +1,7 @@
 {
     "flower": "minecraft:redstone_block",
     "maxTimeInHive": 2400,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/redstone/redstone_bee",
     "ColorData": {
