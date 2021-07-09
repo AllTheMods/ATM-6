@@ -703,7 +703,7 @@
 
 	[registries.mineralis_ritual_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
-		mineralis_ritual_ore = ["forge:ores/coal;5200", "forge:ores/iron;2500", "forge:ores/gold;550", "forge:ores/lapis;360", "forge:ores/redstone;700", "forge:ores/diamond;120", "forge:ores/emerald;100"]
+		mineralis_ritual_ore = ["forge:ores/coal;5200", "forge:ores/iron;2500", "forge:ores/gold;550", "forge:ores/lapis;360", "forge:ores/redstone;700", "forge:ores/diamond;120", "forge:ores/emerald;100", "forge:ores/aluminum;550", "forge:ores/copper;2500", "forge:ores/lead;360", "forge:ores/nickel;360", "forge:ores/osmium;360", "forge:ores/platinum;100", "forge:ores/silver;360", "forge:ores/tin;1500", "forge:ores/uranium;550", "forge:ores/zinc;550", ]
 
 	[registries.entity_transmutation]
 		#Defines the entity types the corrupted pelotrio ritual can transmute from and to. Format: <EntityTypeFrom>;<EntityTypeTo>
