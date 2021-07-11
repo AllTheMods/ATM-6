@@ -610,7 +610,7 @@ onEvent('recipes', e => {
     ], {
         'F': 'minecraft:sweet_berries',
         'B': 'minecraft:glass_bottle'
-    }).id(`kubejs:sweetberryhuiceitem`)
+    }).id(`kubejs:sweetberryjuiceitem`)
     e.shaped('pamhc2foodcore:p8juiceitem', [
         'FFF',
         'FBF',
