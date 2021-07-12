@@ -36,7 +36,7 @@
 	#Choose the menu row that the Create config button appears on in the main menu
 	#Set to 0 to disable the button altogether
 	#Range: 0 ~ 4
-	mainMenuConfigButtonRow = 0
+	mainMenuConfigButtonRow = 2
 	# 
 	#Offset the Create config button in the main menu by this many pixels on the X axis
 	#The sign (+/-) of this value determines what side of the row the button appears on (right/left)
