@@ -229,7 +229,7 @@ onEvent('recipes', e => {
         ['signalum', [1, 3, 4]],
         ['lumium', [1, 3, 4]],
         ['enderium', [1, 3, 4]],
-        ['lapis', null, null, 'create:lapis_sheet'],
+        //['lapis', null, null, 'create:lapis_sheet'],
         ['brass', [2, 3], 57, 'create:brass_sheet']
     ])
 
