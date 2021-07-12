@@ -17,7 +17,7 @@
         "glowColor": "#D28868",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "ORE"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,

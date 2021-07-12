@@ -1,7 +1,9 @@
 {
     "flower": "tag:forge:storage_blocks/iron",
     "maxTimeInHive": 2400,
-    "traits": ["nether"],
+    "traits": [
+        "nether"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/iron/iron_bee",
     "ColorData": {
@@ -17,7 +19,7 @@
         "glowColor": "#ffcc99",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "ORE"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -28,22 +30,33 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:lead_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:iron_ingot",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:iron_bee",
-                    "BeeType": "iron",
-                    "Color": "#ffcc99"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:iron_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:iron_ingot",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:iron_bee",
+                            "BeeType": "iron",
+                            "Color": "#ffcc99"
+                        }
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:iron_bee"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

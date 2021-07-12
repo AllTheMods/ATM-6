@@ -1,23 +1,23 @@
 {
-    "flower": "tag:forge:storage_blocks/lead",
+    "flower": "tag:forge:storage_blocks/osmium",
     "maxTimeInHive": 2400,
-    "traits": ["nether"],
+    "traits": [""],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ato/lead_bee",
+    "baseLayerTexture": "ato/osmium_bee",
     "ColorData": {
-        "primaryColor": "#D0E4E1",
-        "secondaryColor": "#D0E4E1",
-        "honeycombColor": "#D0E4E1",
+        "primaryColor": "#BDCBD4",
+        "secondaryColor": "#BDCBD4",
+        "honeycombColor": "#BDCBD4",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#D0E4E1",
+        "glowColor": "#BDCBD4",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "DEFAULT"
+        "modelType": "ORE"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,31 +30,28 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:lead_honeycomb_block",
+            "inputID": "resourcefulbees:dense_osmium_honeycomb_block",
             "outputs": [{
-                "outputID": "alltheores:lead_ingot",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:lead_bee",
-                    "BeeType": "lead",
-                    "Color": "#D0E4E1"
+                    "outputID": "alltheores:osmium_ingot",
+                    "weight": 80
                 },
-                "weight": 20
-            }]
+                {
+                    "outputID": "resourcefulbees:dense_osmium_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
         }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_lead",
+        "mainInputCount": 2,
+        "mainOutput": "alltheores:ore_osmium",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
         "mainNBTData": {},
-        "secondaryOutput": "alltheores:lead_ingot",
+        "secondaryOutput": "alltheores:osmium_ingot",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutputCount": 4,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -75,17 +72,17 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
-        "parent1": "Coal",
-        "parent2": "Iron",
+        "isBreedable": false,
+        "parent1": "Iron",
+        "parent2": "Redstone",
         "breedWeight": 10,
         "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/lead",
+        "feedItem": "tag:forge:storage_blocks/osmium",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": true
+        "hasTraits": false
     }
 }

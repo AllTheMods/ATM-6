@@ -17,7 +17,7 @@
         "glowColor": "#D0E4E1",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "DEFAULT"
+        "modelType": "ORE"
     },
     "CombatData": {
         "isPassive": true,
@@ -30,19 +30,16 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:lead_honeycomb_block",
+            "inputID": "resourcefulbees:dense_lead_honeycomb_block",
             "outputs": [{
-                "outputID": "alltheores:lead_ingot",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:lead_bee",
-                    "BeeType": "lead",
-                    "Color": "#D0E4E1"
+                    "outputID": "alltheores:lead_ingot",
+                    "weight": 80
                 },
-                "weight": 20
-            }]
+                {
+                    "outputID": "resourcefulbees:dense_lead_bee_spawn_egg",
+                    "weight": 20
+                }
+            ]
         }]
     },
     "CentrifugeData": {
@@ -50,11 +47,11 @@
         "mainInputCount": 1,
         "mainOutput": "alltheores:ore_lead",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutputCount": 2,
         "mainNBTData": {},
         "secondaryOutput": "alltheores:lead_ingot",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutputCount": 4,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -75,7 +72,7 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
+        "isBreedable": false,
         "parent1": "Coal",
         "parent2": "Iron",
         "breedWeight": 10,
@@ -86,6 +83,6 @@
         "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": true
+        "hasTraits": false
     }
 }
