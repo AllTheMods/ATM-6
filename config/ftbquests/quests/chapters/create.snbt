@@ -498,7 +498,7 @@
 		},
 		{
 			x: -7.5d,
-			y: 2.0d,
+			y: 0.0d,
 			description: ["&cCurrently this item has no uses."],
 			dependencies: ["5EE53C2C83F73244"],
 			id: "5EBCFDDB3D74F000",
@@ -757,31 +757,7 @@
 		},
 		{
 			x: -7.5d,
-			y: 0.0d,
-			description: [
-				"The &n&5Deforester&r, as the name suggests, is very good at cutting down trees.",
-				"",
-				"If you mine all the base blocks of a tree, the entire tree will fall.",
-				"",
-				"Much like Ultimine, but better if  it's a huge tree or you don't want your saturation to go down."
-			],
-			dependencies: ["21CF93BDCE7BA2F9"],
-			id: "4F4D1A18CEDA0B2B",
-			tasks: [{
-				id: "68FE0DC94C8A28C0",
-				type: "item",
-				item: {
-					id: "create:deforester",
-					Count: 1b,
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		},
-		{
-			x: -7.5d,
-			y: -1.5d,
+			y: -2.0d,
 			description: [
 				"The &n&5Wand of Symmetry&r will place down a mirror wherever you R-Click it. Everything you place on one side of the mirror, will be copied to the other side.",
 				"",
@@ -952,39 +928,6 @@
 				id: "339D26EDFBB54047",
 				type: "item",
 				item: "create:portable_fluid_interface"
-			}]
-		},
-		{
-			icon: {
-				id: "create:handheld_blockzapper",
-				Count: 1b,
-				tag: {
-					Retriever: "Chromatic",
-					Scope: "Chromatic",
-					Amplifier: "Chromatic",
-					Body: "Chromatic",
-					Accelerator: "Chromatic"
-				}
-			},
-			x: -6.0d,
-			y: -2.5d,
-			description: ["The &n&5Handheld Blockzapper&r is much like a building wand. you can place or mine blocks and has a lot of unique settings!"],
-			dependencies: ["21CF93BDCE7BA2F9"],
-			id: "35F8BFBF2CE7D6A0",
-			tasks: [{
-				id: "165FC223739A8F1E",
-				type: "item",
-				item: {
-					id: "create:handheld_blockzapper",
-					Count: 1b,
-					tag: {
-						Retriever: "None",
-						Scope: "None",
-						Amplifier: "None",
-						Body: "None",
-						Accelerator: "None"
-					}
-				}
 			}]
 		},
 		{
