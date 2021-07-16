@@ -1,0 +1,4 @@
+#Allows to customize or disable the enchantments
+[enchantments]
+	#Enables the enchantment Soulbound [false/true|default:true]
+	enable_enchantment_soulbound = false

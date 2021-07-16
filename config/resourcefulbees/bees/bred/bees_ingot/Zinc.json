@@ -1,7 +1,7 @@
 {
     "flower": "tag:forge:storage_blocks/zinc",
     "maxTimeInHive": 2400,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "ato/zinc_bee",
     "ColorData": {

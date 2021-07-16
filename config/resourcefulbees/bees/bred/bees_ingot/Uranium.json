@@ -1,7 +1,7 @@
 {
     "flower": "tag:forge:storage_blocks/uranium",
     "maxTimeInHive": 2400,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "ato/uranium_bee",
     "ColorData": {

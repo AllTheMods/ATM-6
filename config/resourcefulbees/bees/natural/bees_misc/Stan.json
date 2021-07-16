@@ -1,7 +1,7 @@
 {
     "flower": "tag:forge:stone",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/stan_bee",
     "ColorData": {
@@ -30,13 +30,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:stan_bee_honeycomb_block",
+            "inputID": "resourcefulbees:stan_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:stan_bee_honeycomb",
+                    "outputID": "resourcefulbees:stan_honeycomb",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:stan_bee_bee_spawn_egg",
+                    "outputID": "resourcefulbees:stan_bee_spawn_egg",
                     "weight": 20
                 }
             ]

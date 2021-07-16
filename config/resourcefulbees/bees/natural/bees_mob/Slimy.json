@@ -1,7 +1,7 @@
 {
     "flower": "minecraft:slime_block",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "/slime/slime_bee",
     "ColorData": {

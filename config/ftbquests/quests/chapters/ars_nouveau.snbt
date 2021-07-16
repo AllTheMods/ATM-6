@@ -1353,17 +1353,6 @@
 			}]
 		},
 		{
-			x: -7.5d,
-			y: 6.5d,
-			dependencies: ["34A173721735401B"],
-			id: "78B03FA829B0EFA3",
-			tasks: [{
-				id: "73ACBE4680F4AF15",
-				type: "item",
-				item: "ars_nouveau:wixie_cauldron"
-			}]
-		},
-		{
 			x: -4.5d,
 			y: 0.0d,
 			dependencies: ["6E0E13806F388D7E"],

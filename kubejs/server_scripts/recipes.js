@@ -229,7 +229,7 @@ onEvent('recipes', e => {
         ['signalum', [1, 3, 4]],
         ['lumium', [1, 3, 4]],
         ['enderium', [1, 3, 4]],
-        ['lapis', null, null, 'create:lapis_sheet'],
+        //['lapis', null, null, 'create:lapis_sheet'],
         ['brass', [2, 3], 57, 'create:brass_sheet']
     ])
 
@@ -610,7 +610,7 @@ onEvent('recipes', e => {
     ], {
         'F': 'minecraft:sweet_berries',
         'B': 'minecraft:glass_bottle'
-    }).id(`kubejs:sweetberryhuiceitem`)
+    }).id(`kubejs:sweetberryjuiceitem`)
     e.shaped('pamhc2foodcore:p8juiceitem', [
         'FFF',
         'FBF',
@@ -948,6 +948,7 @@ onEvent('recipes', e => {
     e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:clay`)
     e.shapeless('4x minecraft:quartz', 'minecraft:quartz_block').id(`kubejs:quartz`)
     e.shapeless('minecraft:chest', '#forge:chests/wooden')
+    e.shapeless('minecraft:crafting_table', /byg:.+_crafting_table/).id(`kubejs:byg_crafter_convert`)
     //e.shapeless(item.of('bluepower:blue_alloy_ingot', 4), ['#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:dusts/teslatite','#forge:ingots/silver'])
     //e.shapeless('kubejs:rotten_leather', ['minecraft:rotten_flesh', 'minecraft:rotten_flesh', 'minecraft:rotten_flesh'])
     e.shapeless('kubejs:rotten_leather', '3x minecraft:rotten_flesh').id(`kubejs:rotten_leather`)

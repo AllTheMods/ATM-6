@@ -1,7 +1,7 @@
 {
     "flower": "tag:forge:sand",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/sandy_bee",
     "ColorData": {

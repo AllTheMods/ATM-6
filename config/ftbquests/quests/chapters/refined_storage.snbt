@@ -424,9 +424,9 @@
 			dependencies: ["7DD638E4111D66E7"],
 			id: "0EA6F1852CCD2E16",
 			tasks: [{
-				id: "6606B7D00BD25934",
+				id: "075ABCA23A90448A",
 				type: "item",
-				item: "extrastorage:disk_256k"
+				item: "extradisks:256k_storage_disk"
 			}],
 			rewards: [{
 				id: "16A780A82BB81AC8",
@@ -440,9 +440,9 @@
 			dependencies: ["7DD638E4111D66E7"],
 			id: "730042321ED43902",
 			tasks: [{
-				id: "40D31519A01A74EC",
+				id: "031361B3FBCD3A89",
 				type: "item",
-				item: "extrastorage:disk_1024k"
+				item: "extradisks:1024k_storage_disk"
 			}],
 			rewards: [{
 				id: "51ED1C67DAC6757D",
@@ -456,9 +456,9 @@
 			dependencies: ["7DD638E4111D66E7"],
 			id: "183F24A9BEB6D127",
 			tasks: [{
-				id: "600D77963899AB2F",
+				id: "2CA18734F97DB412",
 				type: "item",
-				item: "extrastorage:disk_4096k"
+				item: "extradisks:4096k_storage_disk"
 			}],
 			rewards: [{
 				id: "424EC620A61979D9",
@@ -472,9 +472,9 @@
 			dependencies: ["7DD638E4111D66E7"],
 			id: "4EAFD1EB1F657B17",
 			tasks: [{
-				id: "577217F8B7E9C081",
+				id: "5BC0F09A11F1A7A9",
 				type: "item",
-				item: "extrastorage:disk_16384k"
+				item: "extradisks:16384k_storage_disk"
 			}],
 			rewards: [{
 				id: "2A9C25F91C5A5036",

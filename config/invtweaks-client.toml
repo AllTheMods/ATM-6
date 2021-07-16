@@ -113,6 +113,10 @@
 		containerClass = "appeng.container.me.items.WirelessTermContainer"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "refinedstorage.container.CrafterManagerContainer"
+		sortRange = ""
+
 #Tweaks
 [tweaks]
 	#Enable auto-refill
