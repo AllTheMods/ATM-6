@@ -153,12 +153,12 @@ onEvent('recipes', e => {
         A: 'botania:mana_void',
         B: 'bloodmagic:voidsigil',
         C: 'ars_nouveau:void_jar',
-        D: 'rftoolsbuilder:shape_card_void',
+        D: 'mekanism:pellet_antimatter',
         E: 'mininggadgets:upgrade_void_junk',
         F: 'thermal:device_nullifier',
         G: 'mekanism:creative_energy_cube',
         H: 'envirotech:xerothium_void_miner_ccu',
-        I: 'modularrouters:void_module'
+        I: 'sophisticatedbackpacks:advanced_void_upgrade'
     })
     //Oblivion Shard
     e.shaped('atmadditions:oblivion_shard', [
