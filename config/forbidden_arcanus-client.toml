@@ -45,7 +45,7 @@
 
 	[block.stella_arcanum]
 		#Should Stella Arcanum explode when mined [default: true]
-		explode = true
+		explode = false
 		#Should Stella Arcanum explosions deal Block Damage (if explosions enabled) [default: true]
 		block_damage = true
 		#Should Stella Arcanum only explode when mined with a wrong tool (if explosions enabled) [default: false]
