@@ -461,7 +461,6 @@ onEvent('recipes', e => {
     essenceCircle('silentgear:azure_silver_ingot', 6, 'azure_silver')
     essenceCircle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
     essenceCircle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
-    essenceCircle('mekanism:fluorite_gem', 12, 'fluorite')
     e.shaped('mysticalagriculture:unattuned_augment', [
         'PMP',
         'AMA',
