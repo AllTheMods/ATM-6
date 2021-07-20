@@ -162,6 +162,7 @@ onEvent('recipes', e => {
         'mekanism:mekasuit_bodyarmor',
         'mekanism:mekasuit_pants',
         'mekanism:mekasuit_boots',
+        'mekanism:processing/diamond/to_dust',
         'powah:crafting/thermoelectric_plate',
         'eidolon:smelt_stone_brick'
     ]

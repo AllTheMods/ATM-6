@@ -1189,6 +1189,7 @@ onEvent('recipes', e => {
     //crush (`output`, `input`)
     crush(`4x minecraft:blaze_powder`, `#forge:rods/blaze`)
     crush(`6x thermal:sulfur`, `thermal:sulfur_ore`)
+    crush(`thermal:diamond_dust`, `minecraft:diamond`)
 
     //enrich - mek enriching
     //enrich (`output`, `input`)
