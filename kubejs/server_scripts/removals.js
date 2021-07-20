@@ -164,7 +164,8 @@ onEvent('recipes', e => {
         'mekanism:mekasuit_boots',
         'mekanism:processing/diamond/to_dust',
         'powah:crafting/thermoelectric_plate',
-        'eidolon:smelt_stone_brick'
+        'eidolon:smelt_stone_brick',
+        'immersiveengineering:crusher/nether_wart'
     ]
     idRemove.forEach(iR => {
         e.remove({

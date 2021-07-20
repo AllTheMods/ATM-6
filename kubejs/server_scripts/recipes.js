@@ -1198,6 +1198,7 @@ onEvent('recipes', e => {
     //pulverize - thermal pulverizer only
     //pulverize (`output`, `input`)
 
+    e.recipes.immersiveengineering.crusher(`4x minecraft:nether_wart`, `minecraft:nether_wart_block`)
     //add byg logs to mek sawmill
     const saw = [
         'aspen',
