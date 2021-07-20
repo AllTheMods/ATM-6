@@ -461,7 +461,6 @@ onEvent('recipes', e => {
     essenceCircle('silentgear:azure_silver_ingot', 6, 'azure_silver')
     essenceCircle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
     essenceCircle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
-    essenceCircle('mekanism:fluorite_gem', 12, 'fluorite')
     e.shaped('mysticalagriculture:unattuned_augment', [
         'PMP',
         'AMA',
@@ -1189,6 +1188,8 @@ onEvent('recipes', e => {
     //crush - mek crushing only
     //crush (`output`, `input`)
     crush(`4x minecraft:blaze_powder`, `#forge:rods/blaze`)
+    crush(`6x thermal:sulfur`, `thermal:sulfur_ore`)
+    crush(`thermal:diamond_dust`, `minecraft:diamond`)
 
     //enrich - mek enriching
     //enrich (`output`, `input`)
@@ -1197,6 +1198,7 @@ onEvent('recipes', e => {
     //pulverize - thermal pulverizer only
     //pulverize (`output`, `input`)
 
+    e.recipes.immersiveengineering.crusher(`4x minecraft:nether_wart`, `minecraft:nether_wart_block`)
     //add byg logs to mek sawmill
     const saw = [
         'aspen',
