@@ -95,7 +95,7 @@
 	#Voodoo Poppet [false/true|default:true]
 	allow_voodoo_poppet = true
 	#Familiar Receptacle [false/true|default:true]
-	allow_familiar_receptacle = false
+	allow_familiar_receptacle = true
 	#Book of Disenchantment [false/true|default:true]
 	allow_book_of_disenchantment = true
 	#Scroll of Preservation [false/true|default:true]
