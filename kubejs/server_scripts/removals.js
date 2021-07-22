@@ -153,7 +153,6 @@ onEvent('recipes', e => {
         'rftoolsbuilder:builder',
         'extrastorage:iron_crafter',
         'twilightforest:uncrafting_table',
-        'mob_grinding_utils:recipe_mob_swab',
         'creativecrafter:creative_crafter',
         'creativewirelesstransmitter:creative_wireless_transmitter',
         'thermal:machine/pyrolyzer/pyrolyzer_coal',
