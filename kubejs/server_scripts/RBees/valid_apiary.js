@@ -51,7 +51,8 @@ const whitelistVA = [
   '#minecraft:wart_blocks',
   '#forge:soul_sand',
   '#minecraft:nylium',
-  // 'minecraft:soul_soil',
+  'minecraft:soul_soil',
+  'minecraft:soul_sand',
   'minecraft:glowstone',
 
   /create:.+_window/,
