@@ -29,19 +29,16 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:dense_gold_honeycomb_block",
-                "outputs": [{
-                        "outputID": "minecraft:gold_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:dense_gold_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:dense_gold_honeycomb_block",
+            "outputs": [{
+                "outputID": "minecraft:gold_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:dense_gold_bee_spawn_egg",
+                "weight": 20
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

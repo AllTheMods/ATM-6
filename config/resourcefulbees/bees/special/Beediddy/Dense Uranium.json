@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:dense_uranium_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:uranium_ingot",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:dense_uranium_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "alltheores:uranium_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:dense_uranium_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

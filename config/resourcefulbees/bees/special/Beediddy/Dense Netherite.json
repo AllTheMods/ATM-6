@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:dense_netherite_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:netherite_scrap",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:dense_netherite_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "minecraft:netherite_scrap",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:dense_netherite_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

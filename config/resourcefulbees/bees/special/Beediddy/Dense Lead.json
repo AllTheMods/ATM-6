@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:dense_lead_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:lead_ingot",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:dense_lead_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "alltheores:lead_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:dense_lead_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

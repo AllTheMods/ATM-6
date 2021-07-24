@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:dense_copper_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:copper_ingot",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:dense_copper_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "alltheores:copper_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:dense_copper_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {
