@@ -47,10 +47,15 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "tag:forge:storage_blocks/allthemodium",
             "outputs": [{
-                "outputID": "minecraft:cobblestone",
+                "outputID": "allthemodium:allthemodium_nugget",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:allthemodium_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:allthemodium_bee",
+                    "BeeType": "allthemodium",
+                    "Color": "#FCC50C"
+                },
                 "weight": 20
             }]
         }]

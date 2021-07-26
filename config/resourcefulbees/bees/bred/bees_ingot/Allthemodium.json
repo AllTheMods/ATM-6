@@ -47,10 +47,15 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "tag:forge:storage_blocks/vibranium",
             "outputs": [{
-                "outputID": "minecraft:cobblestone",
+                "outputID": "allthemodium:vibranium_nugget",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:vibranium_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:vibranium_bee",
+                    "BeeType": "vibranium",
+                    "Color": "#26DE88"
+                },
                 "weight": 20
             }]
         }]
