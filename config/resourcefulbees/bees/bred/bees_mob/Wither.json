@@ -29,32 +29,26 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:wither_honeycomb_block",
-                "outputs": [{
-                        "outputID": "minecraft:coal",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:wither_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            },
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "minecraft:dragon_egg",
-                "outputs": [{
-                        "outputID": "minecraft:dragon_egg",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:dragonic_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:wither_honeycomb_block",
+            "outputs": [{
+                "outputID": "minecraft:coal",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:wither_bee_spawn_egg",
+                "weight": 20
+            }]
+        }, {
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "minecraft:dragon_egg",
+            "outputs": [{
+                "outputID": "minecraft:dragon_egg",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:dragonic_bee_spawn_egg",
+                "weight": 20
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

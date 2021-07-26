@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:quartz_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:quartz",
-                    "weight": 80
+                "outputID": "minecraft:quartz",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:quartz_bee",
+                    "BeeType": "quartz",
+                    "Color": "#D4CABA"
                 },
-                {
-                    "outputID": "resourcefulbees:quartz_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

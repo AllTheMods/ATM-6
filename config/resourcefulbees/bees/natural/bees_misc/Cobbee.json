@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:cobbee_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:cobblestone",
-                    "weight": 80
+                "outputID": "minecraft:cobblestone",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:cobbee_bee",
+                    "BeeType": "cobbee",
+                    "Color": "#1c1823"
                 },
-                {
-                    "outputID": "resourcefulbees:cobbee_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

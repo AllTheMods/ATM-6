@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:mason_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:clay_ball",
-                    "weight": 80
+                "outputID": "minecraft:clay_ball",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:mason_bee",
+                    "BeeType": "mason",
+                    "Color": "#48544F"
                 },
-                {
-                    "outputID": "resourcefulbees:mason_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

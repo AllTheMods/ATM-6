@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:mana_honeycomb_block",
             "outputs": [{
-                    "outputID": "botania:black_lotus",
-                    "weight": 80
+                "outputID": "botania:black_lotus",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:mana_bee",
+                    "BeeType": "mana",
+                    "Color": "#00C9EA"
                 },
-                {
-                    "outputID": "resourcefulbees:mana_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

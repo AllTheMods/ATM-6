@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:glowing_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:glowstone_dust",
-                    "weight": 80
+                "outputID": "minecraft:glowstone_dust",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:glowing_bee",
+                    "BeeType": "glowing",
+                    "Color": "#F1ED95"
                 },
-                {
-                    "outputID": "resourcefulbees:glowing_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

@@ -29,19 +29,22 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:kobee_beef_honeycomb_block",
-                "outputs": [{
-                        "outputID": "minecraft:beef",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:kobee_beef_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:kobee_beef_honeycomb_block",
+            "outputs": [{
+                "outputID": "minecraft:beef",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:kobee_beef_bee",
+                    "BeeType": "kobee_beef",
+                    "Color": "#FF6666"
+                },
+                "weight": 20
+
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": false,

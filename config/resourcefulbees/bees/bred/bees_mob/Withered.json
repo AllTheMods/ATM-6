@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:withered_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:coal",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:withered_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "minecraft:coal",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:withered_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

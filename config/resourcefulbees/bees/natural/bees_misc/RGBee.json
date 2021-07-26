@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:rgbee_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:rainbow_honey_bottle",
-                    "weight": 80
+                "outputID": "resourcefulbees:rainbow_honey_bottle",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:rgbee_bee",
+                    "BeeType": "rgbee",
+                    "Color": "#ffffff"
                 },
-                {
-                    "outputID": "resourcefulbees:rgbee_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

@@ -29,32 +29,26 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:unobtainium_honeycomb_block",
-                "outputs": [{
-                        "outputID": "allthemodium:unobtainium_nugget",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:unobtainium_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            },
-            {
-                "type": "ENTITY_TO_ENTITY",
-                "inputID": "resourcefulbees:lava_bee",
-                "outputs": [{
-                        "outputID": "resourcefulbees:lava_bee",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:soul_lava_bee",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:unobtainium_honeycomb_block",
+            "outputs": [{
+                "outputID": "allthemodium:unobtainium_nugget",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:unobtainium_bee_spawn_egg",
+                "weight": 20
+            }]
+        }, {
+            "type": "ENTITY_TO_ENTITY",
+            "inputID": "resourcefulbees:lava_bee",
+            "outputs": [{
+                "outputID": "resourcefulbees:lava_bee",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:soul_lava_bee",
+                "weight": 20
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
