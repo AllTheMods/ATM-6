@@ -46,7 +46,7 @@ onEvent('recipes', e => {
 
         'mysticalagriculture:essence/botania/elementium_ingot',
         'mysticalagriculture:essence/botania/manasteel_ingot',
-        `mysticalagriculture:essence/botania/terrasteel_ingot`,
+        'mysticalagriculture:essence/botania/terrasteel_ingot',
 
         'mysticalagriculture:essence/common/brass_ingot',
         'mysticalagriculture:essence/common/bronze_ingot',
@@ -187,6 +187,7 @@ onEvent('recipes', e => {
 
             'cyclic:uncrafter',
             'cyclic:tile_transporter_empty',
+            'cyclic:trash',
 
             'quark:apple_crate',
             'quark:potato_crate',
