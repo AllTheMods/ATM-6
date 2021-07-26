@@ -1,112 +1,62 @@
 [
   {
     "dimension": "rats:ratlantis",
-    "mob": "iceandfire:sea_serpent",
+    "mob": [
+      "iceandfire:siren",
+      "iceandfire:sea_serpent",
+      "iceandfire:hippocampus"
+    ],
     "mincount": {
       "amount": 10,
-      "hostile": true,
       "perplayer": true
     },
     "result": "deny"
   },
   {
     "dimension": "twilightforest:twilightforest",
-    "mob": "iceandfire:siren",
+    "mob": [
+      "iceandfire:siren",
+      "iceandfire:sea_serpent",
+      "iceandfire:hippocampus"
+    ],
     "mincount": {
       "amount": 10,
-      "hostile": true,
       "perplayer": true
     },
+    "result": "deny"
+  },
+  {
+    "dimension": "allthemodium:the_other",
+    "mob": [
+      "iceandfire:hydra",
+      "iceandfire:ghost",
+      "iceandfire:dread_scuttler",
+      "iceandfire:dread_beast",
+      "iceandfire:dread_horse",
+      "iceandfire:dread_thrall",
+      "iceandfire:dread_ghoul",
+      "iceandfire:dread_knight"
+    ],
+    "mincount": {
+      "amount": 10,
+      "perplayer": true
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "rats:ratlantis",
+    "mod": [
+      "ars_nouveau",
+      "mana-and-artifice"
+    ],
     "result": "deny"
   },
   {
     "dimension": "twilightforest:twilightforest",
-    "mob": "iceandfire:sea_serpent",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:hydra",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:ghost",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:dread_knight",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:dread_ghoul",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:dread_thrall",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:dread_horse",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:dread_beast",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
-    "dimension": "allthemodium:the_other",
-    "mob": "iceandfire:dread_scuttler",
-    "mincount": {
-      "amount": 10,
-      "hostile": true,
-      "perplayer": true
-    },
+    "mod": [
+      "ars_nouveau",
+      "mana-and-artifice"
+    ],
     "result": "deny"
   }
 ]
