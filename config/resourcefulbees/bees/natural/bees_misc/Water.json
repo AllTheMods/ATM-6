@@ -3,21 +3,21 @@
     "maxTimeInHive": 1200,
     "traits": ["can_swim"],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/custom/bee",
+    "baseLayerTexture": "misc/water_bee",
     "ColorData": {
-        "primaryColor": "#0F3653",
-        "secondaryColor": "#0F3653",
-        "honeycombColor": "#0F3653",
-        "primaryLayerTexture": "/custom/primary_layer",
-        "secondaryLayerTexture": "/custom/secondary_layer",
+        "primaryColor": "#8499D6",
+        "secondaryColor": "#8499D6",
+        "honeycombColor": "#8499D6",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": true,
+        "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#0F3653",
+        "glowColor": "#8499D6",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "MUSHROOM"
     },
     "CombatData": {
         "isPassive": true,
@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:water_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:water_honeycomb",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:water_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "resourcefulbees:water_honeycomb",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:water_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

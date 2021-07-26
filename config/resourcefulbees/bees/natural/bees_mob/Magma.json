@@ -3,21 +3,21 @@
     "maxTimeInHive": 1200,
     "traits": ["nether"],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/custom/bee",
+    "baseLayerTexture": "misc/magma_bee",
     "ColorData": {
-        "primaryColor": "#885956",
-        "secondaryColor": "#885956",
-        "honeycombColor": "#885956",
-        "primaryLayerTexture": "/custom/primary_layer",
-        "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": true,
+        "primaryColor": "#C73405",
+        "secondaryColor": "#C73405",
+        "honeycombColor": "#C73405",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "slime/magma_bee_emissive",
+        "isBeeColored": false,
         "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#885956",
+        "isGlowing": true,
+        "glowColor": "#C73405",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "GELATINOUS"
     },
     "CombatData": {
         "isPassive": true,
@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:magma_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:magma_cream",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:magma_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "minecraft:magma_cream",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:magma_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

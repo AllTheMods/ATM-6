@@ -3,21 +3,21 @@
     "maxTimeInHive": 1200,
     "traits": [],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/custom/bee",
+    "baseLayerTexture": "misc/lumber_bee",
     "ColorData": {
         "primaryColor": "#453B2A",
         "secondaryColor": "#453B2A",
         "honeycombColor": "#453B2A",
-        "primaryLayerTexture": "/custom/primary_layer",
-        "secondaryLayerTexture": "/custom/secondary_layer",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": true,
+        "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
         "glowColor": "#453B2A",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "MUSHROOM"
     },
     "CombatData": {
         "isPassive": true,
@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:lumber_honeycomb_block",
             "outputs": [{
-                    "outputID": "mysticalagriculture:wood_essence",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:lumber_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "mysticalagriculture:wood_essence",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:lumber_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {
