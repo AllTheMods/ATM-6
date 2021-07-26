@@ -17,7 +17,7 @@
         "glowColor": "#DDD2B7",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "MUSHROOM"
     },
     "CombatData": {
         "isPassive": true,
@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:sandy_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:sand",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:sandy_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "minecraft:sand",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:sandy_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

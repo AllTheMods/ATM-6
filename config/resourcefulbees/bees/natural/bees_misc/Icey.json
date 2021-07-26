@@ -3,21 +3,21 @@
     "maxTimeInHive": 1200,
     "traits": [],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/custom/bee",
+    "baseLayerTexture": "misc/icy_bee",
     "ColorData": {
-        "primaryColor": "#86aefd",
-        "secondaryColor": "#86aefd",
-        "honeycombColor": "#86aefd",
-        "primaryLayerTexture": "/custom/primary_layer",
-        "secondaryLayerTexture": "/custom/secondary_layer",
+        "primaryColor": "#6B88C0",
+        "secondaryColor": "#6B88C0",
+        "honeycombColor": "#6B88C0",
+        "primaryLayerTexture": "empty_layer",
+        "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": true,
+        "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#86aefd",
+        "glowColor": "#6B88C0",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "GELATINOUS"
     },
     "CombatData": {
         "isPassive": true,
@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:icey_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:ice",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:icey_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "minecraft:ice",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:icey_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

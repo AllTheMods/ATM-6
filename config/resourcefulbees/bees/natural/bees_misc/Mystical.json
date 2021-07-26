@@ -3,21 +3,21 @@
     "maxTimeInHive": 1200,
     "traits": [],
     "hasHoneycomb": true,
-    "baseLayerTexture": "/custom/bee",
+    "baseLayerTexture": "misc/mystical_bee",
     "ColorData": {
         "primaryColor": "#5cea30",
         "secondaryColor": "#79ef50",
         "honeycombColor": "#5cea30",
-        "primaryLayerTexture": "/custom/primary_layer",
-        "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "empty_layer",
+        "primaryLayerTexture": "misc/mystical_rainbow_bee",
+        "secondaryLayerTexture": "empty_layer",
+        "emissiveLayerTexture": "misc/mystical_rainbow_bee",
         "isBeeColored": true,
-        "isRainbowBee": false,
+        "isRainbowBee": true,
         "isGlowing": false,
         "glowColor": "#5cea30",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "MUSHROOM"
     },
     "CombatData": {
         "isPassive": true,
@@ -32,14 +32,12 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:mystical_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:mystical_honeycomb",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:mystical_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "outputID": "resourcefulbees:mystical_honeycomb",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:mystical_bee_spawn_egg",
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {
