@@ -35,7 +35,12 @@
                 "outputID": "minecraft:diamond",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:diamond_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:diamond_bee",
+                    "BeeType": "diamond",
+                    "Color": "#00ffff"
+                },
                 "weight": 20
             }]
         }]

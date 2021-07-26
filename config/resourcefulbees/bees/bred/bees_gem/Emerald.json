@@ -35,7 +35,12 @@
                 "outputID": "minecraft:emerald",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:emerald_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:emerald_bee",
+                    "BeeType": "emerald",
+                    "Color": "#18eb09"
+                },
                 "weight": 20
             }]
         }]

@@ -35,7 +35,12 @@
                 "outputID": "alltheores:aluminum_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:aluminum_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:aluminum_bee",
+                    "BeeType": "aluminum",
+                    "Color": "#C3CDD5"
+                },
                 "weight": 20
             }]
         }]

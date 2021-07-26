@@ -35,7 +35,12 @@
                 "outputID": "minecraft:lapis_lazuli",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:lapis_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:lapis_bee",
+                    "BeeType": "lapis",
+                    "Color": "#345ec3"
+                },
                 "weight": 20
             }]
         }]

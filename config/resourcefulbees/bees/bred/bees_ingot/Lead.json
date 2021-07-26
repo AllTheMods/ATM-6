@@ -35,7 +35,12 @@
                 "outputID": "alltheores:lead_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:lead_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:lead_bee",
+                    "BeeType": "lead",
+                    "Color": "#D0E4E1"
+                },
                 "weight": 20
             }]
         }]

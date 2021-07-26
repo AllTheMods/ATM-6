@@ -35,7 +35,12 @@
                 "outputID": "alltheores:uranium_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:uranium_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:uranium_bee",
+                    "BeeType": "uranium",
+                    "Color": "#fff37f"
+                },
                 "weight": 20
             }]
         }]

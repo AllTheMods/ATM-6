@@ -35,7 +35,12 @@
                 "outputID": "alltheores:zinc_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:zinc_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:zinc_bee",
+                    "BeeType": "zinc",
+                    "Color": "#B6DBD8"
+                },
                 "weight": 20
             }]
         }]

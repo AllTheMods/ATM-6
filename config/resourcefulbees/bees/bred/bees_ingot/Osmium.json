@@ -35,7 +35,12 @@
                 "outputID": "alltheores:osmium_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:osmium_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:osmium_bee",
+                    "BeeType": "osmium",
+                    "Color": "#BDCBD4"
+                },
                 "weight": 20
             }]
         }]

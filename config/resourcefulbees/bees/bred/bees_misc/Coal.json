@@ -35,7 +35,12 @@
                 "outputID": "minecraft:coal",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:coal_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:coal_bee",
+                    "BeeType": "coal",
+                    "Color": "#303030"
+                },
                 "weight": 20
             }]
         }]

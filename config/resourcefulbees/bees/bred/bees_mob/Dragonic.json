@@ -35,7 +35,12 @@
                 "outputID": "resourcefulbees:dragonic_honeycomb",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:dragonic_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:dragonic_bee",
+                    "BeeType": "dragonic",
+                    "Color": "#E400FF"
+                },
                 "weight": 20
             }]
         }, {

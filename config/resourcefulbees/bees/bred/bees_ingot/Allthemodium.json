@@ -35,7 +35,12 @@
                 "outputID": "allthemodium:allthemodium_nugget",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:allthemodium_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:allthemodium_bee",
+                    "BeeType": "allthemodium",
+                    "Color": "#FCC50C"
+                },
                 "weight": 20
             }]
         }, {

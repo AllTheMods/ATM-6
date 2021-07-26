@@ -35,7 +35,12 @@
                 "outputID": "resourcefulbees:soul_lava_honeycomb",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:Soul_lava_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:soul_lava_bee",
+                    "BeeType": "soul_lava",
+                    "Color": "#7cc7d6"
+                },
                 "weight": 20
             }]
         }]

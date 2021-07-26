@@ -35,7 +35,12 @@
                 "outputID": "minecraft:obsidian",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:obsidian_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:obsidian_bee",
+                    "BeeType": "obsidian",
+                    "Color": "#211B20"
+                },
                 "weight": 20
             }]
         }]

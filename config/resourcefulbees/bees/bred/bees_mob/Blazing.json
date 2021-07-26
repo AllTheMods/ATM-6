@@ -35,7 +35,12 @@
                 "outputID": "minecraft:blaze_rod",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:blazing_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:blazing_bee",
+                    "BeeType": "blazing",
+                    "Color": "#BD5900"
+                },
                 "weight": 20
             }]
         }]

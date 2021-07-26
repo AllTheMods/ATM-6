@@ -35,7 +35,12 @@
                 "outputID": "minecraft:redstone",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:redstone_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:redstone_bee",
+                    "BeeType": "redstone",
+                    "Color": "#aa0f01"
+                },
                 "weight": 20
             }]
         }]

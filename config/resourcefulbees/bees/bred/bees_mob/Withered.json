@@ -35,7 +35,12 @@
                 "outputID": "minecraft:coal",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:withered_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:withered_bee",
+                    "BeeType": "withered",
+                    "Color": "#444444"
+                },
                 "weight": 20
             }]
         }]

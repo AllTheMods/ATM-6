@@ -35,7 +35,12 @@
                 "outputID": "minecraft:gold_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:gold_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:gold_bee",
+                    "BeeType": "gold",
+                    "Color": "#FFDC00"
+                },
                 "weight": 20
             }]
         }, {

@@ -35,7 +35,12 @@
                 "outputID": "minecraft:netherite_scrap",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:netherite_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:netherite_bee",
+                    "BeeType": "netherite",
+                    "Color": "#654740"
+                },
                 "weight": 20
             }]
         }]

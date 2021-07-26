@@ -35,7 +35,12 @@
                 "outputID": "appliedenergistics2:certus_quartz_crystal",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:certus_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:certus_bee",
+                    "BeeType": "certus",
+                    "Color": "#d2d6f7"
+                },
                 "weight": 20
             }]
         }]

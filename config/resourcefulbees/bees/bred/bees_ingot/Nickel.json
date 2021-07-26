@@ -35,7 +35,12 @@
                 "outputID": "alltheores:nickel_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:nickel_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:nickel_bee",
+                    "BeeType": "nickel",
+                    "Color": "#F5F2A3"
+                },
                 "weight": 20
             }]
         }]

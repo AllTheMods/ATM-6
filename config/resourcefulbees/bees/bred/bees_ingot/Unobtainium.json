@@ -35,7 +35,12 @@
                 "outputID": "allthemodium:unobtainium_nugget",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:unobtainium_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:unobtainium_bee",
+                    "BeeType": "unobtainium",
+                    "Color": "#A62BE0"
+                },
                 "weight": 20
             }]
         }, {

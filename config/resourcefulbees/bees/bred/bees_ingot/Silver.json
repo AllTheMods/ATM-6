@@ -35,7 +35,12 @@
                 "outputID": "alltheores:silver_ingot",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:silver_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:silver_bee",
+                    "BeeType": "silver",
+                    "Color": "#D1E1EC"
+                },
                 "weight": 20
             }]
         }]
