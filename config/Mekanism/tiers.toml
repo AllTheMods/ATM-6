@@ -9,7 +9,7 @@
 		advancedOutput = 512
 		#Storage size of Ultimate chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		ultimateStorage = 512000
+		ultimateStorage = 128000000
 		#Output rate of Ultimate chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		ultimateOutput = 2056
@@ -24,13 +24,13 @@
 		basicStorage = 64000
 		#Storage size of Elite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		eliteStorage = 256000
+		eliteStorage = 8000000
 		#Output rate of Creative chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		creativeOutput = 4611686018427387903
 		#Storage size of Advanced chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		advancedStorage = 128000
+		advancedStorage = 512000
 		#Output rate of Elite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		eliteOutput = 1028
