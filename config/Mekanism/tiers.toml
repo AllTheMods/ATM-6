@@ -4,42 +4,42 @@
 
 	#Chemical Tanks
 	[tier.chemical_tanks]
-		#Output rate of Advanced chemical tanks in mB.
-		#Range: 1 ~ 9223372036854775807
-		advancedOutput = 512
-		#Storage size of Ultimate chemical tanks in mB.
-		#Range: 1 ~ 9223372036854775807
-		ultimateStorage = 128000000
-		#Output rate of Ultimate chemical tanks in mB.
-		#Range: 1 ~ 9223372036854775807
-		ultimateOutput = 2056
-		#Storage size of Creative chemical tanks in mB.
-		#Range: 1 ~ 9223372036854775807
-		creativeStorage = 9223372036854775807
 		#Output rate of Basic chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		basicOutput = 256
+		basicOutput = 640
 		#Storage size of Basic chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		basicStorage = 64000
-		#Storage size of Elite chemical tanks in mB.
+		#Output rate of Advanced chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		eliteStorage = 8000000
-		#Output rate of Creative chemical tanks in mB.
-		#Range: 1 ~ 9223372036854775807
-		creativeOutput = 4611686018427387903
+		advancedOutput = 5120
 		#Storage size of Advanced chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		advancedStorage = 512000
 		#Output rate of Elite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		eliteOutput = 1028
+		eliteOutput = 80000
+		#Storage size of Elite chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		eliteStorage = 8000000
+		#Output rate of Ultimate chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		ultimateOutput = 1280000
+		#Storage size of Ultimate chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		ultimateStorage = 128000000
+		#Output rate of Creative chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		creativeOutput = 4611686018427387903
+		#Storage size of Creative chemical tanks in mB.
+		#Range: 1 ~ 9223372036854775807
+		creativeStorage = 9223372036854775807
 
 	#Bins
 	[tier.bins]
 		#The number of items Ultimate bins can store.
 		#Range: > 1
-		ultimateStorage = 262144
+		ultimateStorage = 16777216
 		#The number of items Creative bins can store.
 		#Range: > 1
 		creativeStorage = 2147483647
@@ -48,10 +48,10 @@
 		basicStorage = 4096
 		#The number of items Elite bins can store.
 		#Range: > 1
-		eliteStorage = 32768
+		eliteStorage = 524288
 		#The number of items Advanced bins can store.
 		#Range: > 1
-		advancedStorage = 8192
+		advancedStorage = 32768
 
 	#Induction
 	[tier.induction]
@@ -119,81 +119,81 @@
 			#Pump rate of Basic pressurized tubes in mB/t.
 			#Range: 1 ~ 9223372036854775807
 			basicPullAmount = 1000
-			#Pump rate of Advanced pressurized tubes in mB/t.
-			#Range: 1 ~ 9223372036854775807
-			advancedPullAmount = 4000
 			#Capacity of Basic pressurized tubes in mB.
 			#Range: 1 ~ 9223372036854775807
 			basicCapacity = 8000
-			#Pump rate of Elite pressurized tubes in mB/t.
+			#Pump rate of Advanced pressurized tubes in mB/t.
 			#Range: 1 ~ 9223372036854775807
-			elitePullAmount = 128000
-			#Capacity of Ultimate pressurized tubes in mB.
-			#Range: 1 ~ 9223372036854775807
-			ultimateCapacity = 16000000
+			advancedPullAmount = 4000
 			#Capacity of Advanced pressurized tubes in mB.
 			#Range: 1 ~ 9223372036854775807
 			advancedCapacity = 64000
+			#Pump rate of Elite pressurized tubes in mB/t.
+			#Range: 1 ~ 9223372036854775807
+			elitePullAmount = 128000
 			#Capacity of Elite pressurized tubes in mB.
 			#Range: 1 ~ 9223372036854775807
 			eliteCapacity = 1000000
 			#Pump rate of Ultimate pressurized tubes in mB/t.
 			#Range: 1 ~ 9223372036854775807
 			ultimatePullAmount = 1024000
+			#Capacity of Ultimate pressurized tubes in mB.
+			#Range: 1 ~ 9223372036854775807
+			ultimateCapacity = 16000000
 
 		#Mechanical Pipes
 		[tier.transmitters.fluid]
 			#Pump rate of Basic mechanical pipes in mB/t.
 			#Range: > 1
 			basicPullAmount = 512
-			#Pump rate of Advanced mechanical pipes in mB/t.
-			#Range: > 1
-			advancedPullAmount = 1000
 			#Capacity of Basic mechanical pipes in mB.
 			#Range: > 1
 			basicCapacity = 4000
+			#Pump rate of Advanced mechanical pipes in mB/t.
+			#Range: > 1
+			advancedPullAmount = 4000
+			#Capacity of Advanced mechanical pipes in mB.
+			#Range: > 1
+			advancedCapacity = 16000
 			#Pump rate of Elite mechanical pipes in mB/t.
 			#Range: > 1
 			elitePullAmount = 16000
-			#Capacity of Ultimate mechanical pipes in mB.
-			#Range: > 1
-			ultimateCapacity = 512000
-			#Capacity of Advanced mechanical pipes in mB.
-			#Range: > 1
-			advancedCapacity = 8000
 			#Capacity of Elite mechanical pipes in mB.
 			#Range: > 1
 			eliteCapacity = 64000
 			#Pump rate of Ultimate mechanical pipes in mB/t.
 			#Range: > 1
 			ultimatePullAmount = 64000
+			#Capacity of Ultimate mechanical pipes in mB.
+			#Range: > 1
+			ultimateCapacity = 512000
 
 		#Logistical Transporters
 		[tier.transmitters.items]
 			#Item throughput rate of Basic logistical transporters in items/s.
 			#Range: > 1
-			basicPullAmount = 1
-			#Item throughput rate of Advanced logistical transporters in items/s.
-			#Range: > 1
-			advancedPullAmount = 16
-			#Five times travel speed of Advanced logistical transporter.
-			#Range: > 1
-			advancedSpeed = 10
-			#Item throughput rate of Elite logistical transporters in items/s.
-			#Range: > 1
-			elitePullAmount = 32
-			#Five times travel speed of Elite logistical transporter.
-			#Range: > 1
-			eliteSpeed = 20
-			#Item throughput rate of Ultimate logistical transporters in items/s.
-			#Range: > 1
-			ultimatePullAmount = 64
-			#Five times travel speed of Ultimate logistical transporter.
-			#Range: > 1
-			ultimateSpeed = 50
+			basicPullAmount = 8
 			#Five times travel speed of Basic logistical transporter.
 			#Range: > 1
-			basicSpeed = 5
+			basicSpeed = 16
+			#Item throughput rate of Advanced logistical transporters in items/s.
+			#Range: > 1
+			advancedPullAmount = 128
+			#Five times travel speed of Advanced logistical transporter.
+			#Range: > 1
+			advancedSpeed = 32
+			#Item throughput rate of Elite logistical transporters in items/s.
+			#Range: > 1
+			elitePullAmount = 256
+			#Five times travel speed of Elite logistical transporter.
+			#Range: > 1
+			eliteSpeed = 64
+			#Item throughput rate of Ultimate logistical transporters in items/s.
+			#Range: > 1
+			ultimatePullAmount = 512
+			#Five times travel speed of Ultimate logistical transporter.
+			#Range: > 1
+			ultimateSpeed = 128
 
 		#Universal Cables
 		[tier.transmitters.energy]
@@ -209,11 +209,11 @@
 	#Energy Cubes
 	[tier.energy_cubes]
 		#Output rate in Joules of Advanced energy cubes.
-		advancedOutput = "16000"
+		advancedOutput = "64000"
 		#Maximum number of Joules Ultimate energy cubes can store.
-		ultimateStorage = "256000000"
+		ultimateStorage = "4096000000"
 		#Output rate in Joules of Ultimate energy cubes.
-		ultimateOutput = "256000"
+		ultimateOutput = "4096000"
 		#Maximum number of Joules Creative energy cubes can store.
 		creativeStorage = "18446744073709551615.9999"
 		#Output rate in Joules of Basic energy cubes.
@@ -221,44 +221,44 @@
 		#Maximum number of Joules Basic energy cubes can store.
 		basicStorage = "4000000"
 		#Maximum number of Joules Elite energy cubes can store.
-		eliteStorage = "64000000"
+		eliteStorage = "512000000"
 		#Output rate in Joules of Creative energy cubes.
 		creativeOutput = "18446744073709551615.9999"
 		#Maximum number of Joules Advanced energy cubes can store.
-		advancedStorage = "16000000"
+		advancedStorage = "64000000"
 		#Output rate in Joules of Elite energy cubes.
-		eliteOutput = "64000"
+		eliteOutput = "512000"
 
 	#Fluid Tanks
 	[tier.fluid_tanks]
 		#Output rate of Advanced fluid tanks in mB.
 		#Range: > 1
-		advancedOutput = 800
+		advancedOutput = 8000
 		#Storage size of Ultimate fluid tanks in mB.
 		#Range: > 1
-		ultimateStorage = 112000
+		ultimateStorage = 32768000
 		#Output rate of Ultimate fluid tanks in mB.
 		#Range: > 1
-		ultimateOutput = 3200
+		ultimateOutput = 32000
 		#Storage size of Creative fluid tanks in mB.
 		#Range: > 1
 		creativeStorage = 2147483647
 		#Output rate of Basic fluid tanks in mB.
 		#Range: > 1
-		basicOutput = 400
+		basicOutput = 4000
 		#Storage size of Basic fluid tanks in mB.
 		#Range: > 1
-		basicStorage = 14000
+		basicStorage = 64000
 		#Storage size of Elite fluid tanks in mB.
 		#Range: > 1
-		eliteStorage = 56000
+		eliteStorage = 4096000
 		#Output rate of Creative fluid tanks in mB.
 		#Range: > 1
 		creativeOutput = 1073741823
 		#Storage size of Advanced fluid tanks in mB.
 		#Range: > 1
-		advancedStorage = 28000
+		advancedStorage = 512000
 		#Output rate of Elite fluid tanks in mB.
 		#Range: > 1
-		eliteOutput = 1600
+		eliteOutput = 16000
 
