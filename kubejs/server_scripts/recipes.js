@@ -502,6 +502,76 @@ onEvent('recipes', e => {
         'B': '#forge:circuits/basic',
         'O': '#forge:ingots/osmium'
     }).id(`kubejs:wind_generator`)
+  e.shaped('mekanism:advanced_bin',[
+    ' C ',
+    'ABA',
+    ' U '
+  ], {
+    C: 'mekanism:advanced_control_circuit',
+    A: 'mekanism:alloy_infused',
+    B: 'mekanism:basic_bin',
+    U: 'storagedrawers:gold_storage_upgrade'
+  })
+  e.shaped('mekanism:elite_bin',[
+    ' C ',
+    'ABA',
+    ' U '
+  ], {
+    C: 'mekanism:elite_control_circuit',
+    A: 'mekanism:alloy_reinforced',
+    B: 'mekanism:advanced_bin',
+    U: 'storagedrawers:diamond_storage_upgrade'
+  })
+  e.shaped('mekanism:ultimate_bin',[
+    ' C ',
+    'ABA',
+    ' U '
+  ], {
+    C: 'mekanism:ultimate_control_circuit',
+    A: 'mekanism:alloy_atomic',
+    B: 'mekanism:elite_bin',
+    U: 'storagedrawers:emerald_storage_upgrade'
+  })
+  e.shaped('mekanism:basic_tier_installer',[
+    'RCR',
+    'MPM',
+    'RCR'
+  ], {
+    R: 'minecraft:redstone',
+    C: 'mekanism:basic_control_circuit',
+    M: 'mekanism:ingot_steel',
+    P: '#minecraft:planks'
+  })
+  e.shaped('mekanism:advanced_tier_installer',[
+    'RCR',
+    'MPM',
+    'RCR'
+  ], {
+    R: 'mekanism:alloy_infused',
+    C: 'mekanism:advanced_control_circuit',
+    M: 'minecraft:gold_ingot',
+    P: '#minecraft:planks'
+  })
+  e.shaped('mekanism:elite_tier_installer',[
+    'RCR',
+    'MPM',
+    'RCR'
+  ], {
+    R: 'mekanism:alloy_reinforced',
+    C: 'mekanism:elite_control_circuit',
+    M: 'minecraft:diamond',
+    P: '#minecraft:planks'
+  })
+  e.shaped('mekanism:ultimate_tier_installer',[
+    'RCR',
+    'MPM',
+    'RCR'
+  ], {
+    R: 'mekanism:alloy_atomic',
+    C: 'mekanism:ultimate_control_circuit',
+    M: 'mekanism:ingot_refined_obsidian',
+    P: '#minecraft:planks'
+  })
     e.shaped('ironjetpacks:diamond_cell', [
         ' R ',
         'TCT',
