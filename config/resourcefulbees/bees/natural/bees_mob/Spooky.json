@@ -32,14 +32,18 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:spooky_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:bone",
-                    "weight": 80
+                "outputID": "minecraft:bone",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:spooky_bee",
+                    "BeeType": "spooky",
+                    "Color": "#F6F2E6"
                 },
-                {
-                    "outputID": "resourcefulbees:spooky_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+
+            }]
         }]
     },
     "CentrifugeData": {

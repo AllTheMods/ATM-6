@@ -29,32 +29,36 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:allthemodium_honeycomb_block",
-                "outputs": [{
-                        "outputID": "allthemodium:allthemodium_nugget",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:allthemodium_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            },
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "tag:forge:storage_blocks/vibranium",
-                "outputs": [{
-                        "outputID": "minecraft:cobblestone",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:vibranium_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:allthemodium_honeycomb_block",
+            "outputs": [{
+                "outputID": "allthemodium:allthemodium_nugget",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:allthemodium_bee",
+                    "BeeType": "allthemodium",
+                    "Color": "#FCC50C"
+                },
+                "weight": 20
+            }]
+        }, {
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "tag:forge:storage_blocks/vibranium",
+            "outputs": [{
+                "outputID": "allthemodium:vibranium_nugget",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:vibranium_bee",
+                    "BeeType": "vibranium",
+                    "Color": "#26DE88"
+                },
+                "weight": 20
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

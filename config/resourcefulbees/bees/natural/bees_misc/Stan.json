@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:stan_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:stan_honeycomb",
-                    "weight": 80
+                "outputID": "resourcefulbees:stan_honeycomb",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:stan_bee",
+                    "BeeType": "stan",
+                    "Color": "#5A5A5A"
                 },
-                {
-                    "outputID": "resourcefulbees:stan_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

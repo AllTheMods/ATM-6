@@ -35,8 +35,14 @@
                 "outputID": "minecraft:magma_cream",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:magma_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:magma_bee",
+                    "BeeType": "magma",
+                    "Color": "#C73405"
+                },
                 "weight": 20
+
             }]
         }]
     },

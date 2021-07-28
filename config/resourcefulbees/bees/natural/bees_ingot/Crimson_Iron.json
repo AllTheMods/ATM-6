@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:crimson_iron_honeycomb_block",
             "outputs": [{
-                    "outputID": "silentgear:crimson_iron_ingot",
-                    "weight": 80
+                "outputID": "silentgear:crimson_iron_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:crimson_iron_bee",
+                    "BeeType": "crimson_iron",
+                    "Color": "#D4CABA"
                 },
-                {
-                    "outputID": "resourcefulbees:crimson_iron_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

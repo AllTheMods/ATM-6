@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:salt_baee_honeycomb_block",
             "outputs": [{
-                    "outputID": "mekanism:salt",
-                    "weight": 80
+                "outputID": "mekanism:salt",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:salt_baee_bee",
+                    "BeeType": "salt_baee",
+                    "Color": "#f3f8e3"
                 },
-                {
-                    "outputID": "resourcefulbees:salt_baee_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

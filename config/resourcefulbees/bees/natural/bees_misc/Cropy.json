@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:cropy_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:cropy_honeycomb",
-                    "weight": 80
+                "outputID": "resourcefulbees:cropy_honeycomb",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:cropy_bee",
+                    "BeeType": "cropy",
+                    "Color": "#dcbb65"
                 },
-                {
-                    "outputID": "resourcefulbees:cropy_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:blazing_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:blaze_rod",
-                    "weight": 80
+                "outputID": "minecraft:blaze_rod",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:blazing_bee",
+                    "BeeType": "blazing",
+                    "Color": "#BD5900"
                 },
-                {
-                    "outputID": "resourcefulbees:blazing_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

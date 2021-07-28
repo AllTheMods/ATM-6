@@ -29,32 +29,36 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:vibranium_honeycomb_block",
-                "outputs": [{
-                        "outputID": "allthemodium:vibranium_nugget",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:vibranium_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            },
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "tag:forge:storage_blocks/unobtainium",
-                "outputs": [{
-                        "outputID": "minecraft:cobblestone",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:unobtainium_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:vibranium_honeycomb_block",
+            "outputs": [{
+                "outputID": "allthemodium:vibranium_nugget",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:vibranium_bee",
+                    "BeeType": "vibranium",
+                    "Color": "#26DE88"
+                },
+                "weight": 20
+            }]
+        }, {
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "tag:forge:storage_blocks/unobtainium",
+            "outputs": [{
+                "outputID": "allthemodium:unobtainium_nugget",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:unobtainium_bee",
+                    "BeeType": "unobtainium",
+                    "Color": "#A62BE0"
+                },
+                "weight": 20
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

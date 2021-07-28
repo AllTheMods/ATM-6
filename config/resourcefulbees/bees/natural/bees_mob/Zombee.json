@@ -32,14 +32,18 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:zombee_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:rotten_flesh",
-                    "weight": 80
+                "outputID": "minecraft:rotten_flesh",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:zombee_bee",
+                    "BeeType": "zombee",
+                    "Color": "#2F4E32"
                 },
-                {
-                    "outputID": "resourcefulbees:zombee_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+
+            }]
         }]
     },
     "CentrifugeData": {

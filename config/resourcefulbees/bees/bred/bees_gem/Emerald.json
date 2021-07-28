@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:emerald_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:emerald",
-                    "weight": 80
+                "outputID": "minecraft:emerald",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:emerald_bee",
+                    "BeeType": "emerald",
+                    "Color": "#18eb09"
                 },
-                {
-                    "outputID": "resourcefulbees:emerald_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

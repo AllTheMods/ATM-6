@@ -35,7 +35,12 @@
                 "outputID": "minecraft:ice",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:icey_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:icey_bee",
+                    "BeeType": "icey",
+                    "Color": "#6B88C0"
+                },
                 "weight": 20
             }]
         }]

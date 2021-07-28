@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:ender_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:ender_pearl",
-                    "weight": 80
+                "outputID": "minecraft:ender_pearl",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:ender_bee",
+                    "BeeType": "ender",
+                    "Color": "#339786"
                 },
-                {
-                    "outputID": "resourcefulbees:ender_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

@@ -4,8 +4,8 @@
     "traits": ["starry"],
     "sizeModifier": 2.0,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [1,1,1,1],
-	"apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB"],
+    "apiaryOutputAmounts": [1, 1, 1, 1],
+    "apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB"],
     "baseLayerTexture": "special/starry_bee_primary_layer",
     "ColorData": {
         "primaryColor": "#FFA500",

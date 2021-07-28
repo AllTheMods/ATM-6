@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:uranium_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:uranium_ingot",
-                    "weight": 80
+                "outputID": "alltheores:uranium_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:uranium_bee",
+                    "BeeType": "uranium",
+                    "Color": "#fff37f"
                 },
-                {
-                    "outputID": "resourcefulbees:uranium_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {
