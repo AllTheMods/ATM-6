@@ -123,6 +123,13 @@ onEvent('recipes', e => {
         'mekanism:digital_miner',
         'mekanism:atomic_disassembler',
         'mekanismgenerators:wind_generator',
+        'mekanism:advanced_bin',
+        'mekanism:elite_bin',
+        'mekanism:ultimate_bin',
+        'mekanism:basic_tier_installer',
+        'mekanism:advanced_tier_installer',
+        'mekanism:elite_tier_installer',
+        'mekanism:ultimate_tier_installer'
         'pamhc2foodcore:fruitpunchitem',
         'pamhc2foodcore:applejuiceitem',
         'pamhc2foodcore:melonjuiceitem',
