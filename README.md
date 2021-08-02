@@ -1,4 +1,4 @@
-# ATM-6
+# [![ATM6](https://cdn.discordapp.com/attachments/668300600995348490/871544530023895090/atm6_banner.png)](https://discord.gg/K5FBPYa)
 
 All The Mods 6
 ======
