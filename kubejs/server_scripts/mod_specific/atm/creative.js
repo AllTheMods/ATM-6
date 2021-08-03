@@ -172,14 +172,14 @@ onEvent('recipes', e => {
     V: 'allthemodium:vibranium_block',
     C: 'mekanism:ultimate_energy_cube'
   })
-  energize(['mekanism:creative_energy_cube', atm_star], Item.of('mekanism:creative_energy_cube', {
-    mekData: {
-      EnergyContainers: [{
-        Container: 0,
-        stored: '18446744073709551615.9999'
-      }]
-    }
-  }), '2147483647')
+  // energize(['mekanism:creative_energy_cube', atm_star], Item.of('mekanism:creative_energy_cube', {
+  //   mekData: {
+  //     EnergyContainers: [{
+  //       Container: 0,
+  //       stored: '18446744073709551615.9999'
+  //     }]
+  //   }
+  // }), '2147483647')
   //Create
   e.recipes.create.mechanical_crafting('create:creative_motor', [
     'CLC',
