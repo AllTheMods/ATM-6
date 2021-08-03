@@ -10,5 +10,5 @@ onEvent(`item.tooltip`, e => {
   e.add(`creativewirelesstransmitter:creative_wireless_transmitter`, [`Right click or craft with a dye to color`])
   e.add(`#pedestals:upgrades`, `Hold upgrades in off-hand to apply them`)
   e.add(`#resourcefulbees:valid_apiary`, `Valid Apiary Block`)
-  e.add(`mekanism:creative_energy_cube`, `§4§lWill delete energy if not filled`)
+  e.add(`mekanism:creative_energy_cube`, [`§4§lWill delete energy if not filled`, `Check JEI Info tab for more info on charging the cube`])
 })
