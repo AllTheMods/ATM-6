@@ -257,4 +257,8 @@
     "item.resourcefulbees.dirty_bee_spawn_egg": "Dirty Bee Spawn Egg",
     "entity.resourcefulbees.dirty_bee": "Dirty Bee",
     "trait.resourcefulbees.starry": "Starry Night Trait"
+    "block.resourcefulbees.papa_beemeritus_honeycomb_block": "Papa Beemeritus Honeycomb Block",
+    "item.resourcefulbees.papa_beemeritus_honeycomb": "Papa Beemeritus Honeycomb",
+    "item.resourcefulbees.papa_beemeritus_bee_spawn_egg": "Papa Beemeritus Bee Spawn Egg",
+    "entity.resourcefulbees.papa_beemeritus_bee": "Papa Beemeritus Bee",
 }
