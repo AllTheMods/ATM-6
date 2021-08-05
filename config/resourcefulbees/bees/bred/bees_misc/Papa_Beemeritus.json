@@ -1,0 +1,84 @@
+{
+    "flower": "tag:tombstone:decorative_graves",
+    "maxTimeInHive": 1200,
+    "traits": ["nether"],
+    "hasHoneycomb": true,
+    "ColorData": {
+        "primaryColor": "#F5F5F5",
+        "secondaryColor": "#626262",
+        "honeycombColor": "#A8A9AD",
+        "isBeeColored": true
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [{
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
+                "outputs": [{
+                        "outputID": "tombstone:grave_dust",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:papa_beemeritus_bee",
+                            "BeeType": "papa_beemeritus",
+                            "Color": "#35b3ff"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 4,
+        "mainOutput": "tombstone:grave_dust",
+        "mainOutputWeight": 0.20,
+        "mainOutputCount": 1,
+        "mainNBTData": {},
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.20,
+        "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
+        "recipeTime": 200,
+        "hasFluidOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "",
+        "biomeBlacklist": "",
+        "spawnWeight": 2,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "Zombee",
+        "parent2": "Spooky",
+        "breedWeight": 10,
+        "breedChance": 0.8,
+        "feedItem": "tombstone:grave_dust",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}
