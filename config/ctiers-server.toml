@@ -5,15 +5,15 @@ centrifugeTier3Mutliplier = 2
 #
 #Centrifuge Tier 4 output Multiplier
 #Range: > 1
-centrifugeTier4Mutliplier = 3
+centrifugeTier4Mutliplier = 4
 #
 #Centrifuge Tier 5 output Multiplier
 #Range: > 1
-centrifugeTier5Mutliplier = 4
+centrifugeTier5Mutliplier = 8
 #
 #Centrifuge Tier Creative output Multiplier
 #Range: > 1
-centrifugeTierCreativeMutliplier = 10
+centrifugeTierCreativeMutliplier = 100
 #
 #Centrifuge Tier 3 Recipe Time 
 #The Value Multiplies the Recipe Time
@@ -34,7 +34,7 @@ centrifugeTier5RecipeTime = 0.125
 #The Value is the Tick for the Recipe Time 
 #If you set the Value to 0 the Game will Crash :)
 #Range: -1 ~ 500
-centrifugeTierCreativeRecipeTime = 1
+centrifugeTierCreativeRecipeTime = -1
 #
 #Centrifuge Tier 3 RF per Block Multiplier
 #Range: > 1
@@ -59,10 +59,6 @@ centrifugeTier4CapacityMutliplier = 40
 #Centrifuge Tier 5 RF Capacity Multiplier
 #Range: > 1
 centrifugeTier5CapacityMutliplier = 80
-#
-#Centrifuge Tier Creative 3x3x3 Size 
-#Should it be 3x3x3?
-centrifugeTierCreativeSize = false
 #
 #Centrifuge Tier 3 Max Tank Capacity
 #Range: > 1
@@ -95,4 +91,12 @@ centrifugeTier5ItemMaxStackSize = 1024
 #Centrifuge Tier Creative Item Max Stack Size
 #Range: > 1
 centrifugeTierCreativeItemMaxStackSize = 16384
+#
+#Centrifuge Tier Creative 3x3x3 Size 
+#Should it be 3x3x3?
+centrifugeTierCreativeSize = true
+#
+#Centrifuge Multiplier Combs Blacklist 
+#For example 'minecraft:honeycomb_block' or 'resourcefulbees:catnip_honeycomb_block'
+centrifugeMultiplierCombsBlacklist = ["resourcefulbees:starry_honeycomb", "resourcefulbees:starry_honeycomb_block"]
 

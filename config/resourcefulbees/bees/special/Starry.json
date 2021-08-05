@@ -2,7 +2,7 @@
     "flower": "kubejs:atm_star_block",
     "maxTimeInHive": 1200,
     "traits": ["starry"],
-    "sizeModifier": 2.0,
+    "sizeModifier": 1.75,
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [1, 1, 1, 1],
     "apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB"],

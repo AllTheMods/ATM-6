@@ -1,897 +1,898 @@
 {
-	id: "7831613229FC6191",
-	group: "02FE661031A105D8",
-	order_index: 4,
-	filename: "psi",
-	title: "Psi",
+	id: "7831613229FC6191"
+	group: "02FE661031A105D8"
+	order_index: 3
+	filename: "psi"
+	title: "Psi"
 	icon: {
-		id: "patchouli:guide_book",
-		Count: 1b,
+		id: "patchouli:guide_book"
+		Count: 1b
 		tag: {
 			"patchouli:book": "psi:encyclopaedia_psionica"
 		}
-	},
-	default_quest_shape: "",
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d,
-			y: 0.0d,
-			shape: "gear",
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
 			description: [
-				"Welcome to &aPsi&f, a mod by &2Vazkii&f!",
-				"",
+				"Welcome to &aPsi&f, a mod by &2Vazkii&f!"
+				""
 				"Contained in your &eAkashic Tome&f, the &eEncyclopaedia Psionica&f will provide more information about the items and features in this mod."
-			],
-			size: 1.5d,
-			id: "14EBEEFAA34FBB77",
+			]
+			size: 1.5d
+			id: "14EBEEFAA34FBB77"
 			tasks: [{
-				id: "341F8B1E1667A045",
-				type: "checkmark",
+				id: "341F8B1E1667A045"
+				type: "checkmark"
 				title: "Psi"
-			}],
+			}]
 			rewards: [{
-				id: "4F58802A8304C359",
-				type: "item",
+				id: "4F58802A8304C359"
+				type: "item"
 				item: {
-					id: "minecraft:player_head",
-					Count: 1b,
+					id: "minecraft:player_head"
+					Count: 1b
 					tag: {
 						SkullOwner: {
 							Properties: {
 								textures: [{
 									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3YzI3M2U5N2MyNzdjNDljOTA2NWVkZGYxMDdlODdlYTc3NWM4N2IyYzlmZWEwOTIyNTUwNTE5MDJhYzRhIn19fQ=="
 								}]
-							},
+							}
 							Id: [I;
-								-647195142,
-								2010533167,
-								-1243897687,
+								-647195142
+								2010533167
+								-1243897687
 								1144171008
 							]
-						},
+						}
 						display: {
-							Name: '{"text":"BovineShaman"}'
+							Name: "{\"text\":\"BovineShaman\"}"
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -2.0d,
-			description: ["Your first &eCasting Assistant Device (CAD)&f!"],
-			dependencies: ["14EBEEFAA34FBB77"],
-			id: "447053485CABA551",
+			x: 0.0d
+			y: -2.0d
+			description: ["Your first &eCasting Assistant Device (CAD)&f!"]
+			dependencies: ["14EBEEFAA34FBB77"]
+			id: "447053485CABA551"
 			tasks: [{
-				id: "7083348D2C3AC9B6",
-				type: "item",
+				id: "7083348D2C3AC9B6"
+				type: "item"
 				item: "psi:cad_assembly_iron"
-			}],
+			}]
 			rewards: [{
-				id: "265BC6BBB82382F6",
-				type: "xp_levels",
+				id: "265BC6BBB82382F6"
+				type: "xp_levels"
 				xp_levels: 1
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -4.0d,
-			description: ["This station will be used for all of your &eCAD&f assembling needs."],
-			dependencies: ["447053485CABA551"],
-			id: "3CEF13CA385F4434",
+			x: 0.0d
+			y: -4.0d
+			description: ["This station will be used for all of your &eCAD&f assembling needs."]
+			dependencies: ["447053485CABA551"]
+			id: "3CEF13CA385F4434"
 			tasks: [{
-				id: "114C592ADE552419",
-				type: "item",
+				id: "114C592ADE552419"
+				type: "item"
 				item: "psi:cad_assembler"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -6.0d,
-			description: ["Plop your &eIron CAD Assembly&f into the &fCAD Assembler&f"],
-			dependencies: ["3CEF13CA385F4434"],
-			id: "6EBFE853BA815DAA",
+			x: 0.0d
+			y: -6.0d
+			description: ["Plop your &eIron CAD Assembly&f into the &fCAD Assembler&f"]
+			dependencies: ["3CEF13CA385F4434"]
+			id: "6EBFE853BA815DAA"
 			tasks: [{
-				id: "0AD774B6DB580774",
-				type: "item",
+				id: "0AD774B6DB580774"
+				type: "item"
 				item: {
-					ForgeCaps: {
-						Parent: {
-							Memory: [],
-							Battery: 0,
-							Time: 0
-						}
-					},
-					id: "psi:cad",
-					Count: 1b,
+					id: "psi:cad"
+					Count: 1b
 					tag: {
 						componentASSEMBLY: {
-							id: "psi:cad_assembly_iron",
+							id: "psi:cad_assembly_iron"
 							Count: 1b
+						}
+					}
+					ForgeCaps: {
+						Parent: {
+							Memory: [ ]
+							Battery: 0
+							Time: 0
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -8.0d,
-			description: ["Throw some &eredstone&f on the ground and right-click using your new &ecasting assistant device&f while nearby"],
-			dependencies: ["6EBFE853BA815DAA"],
-			id: "672A9398B8CB6E25",
+			x: 0.0d
+			y: -8.0d
+			description: ["Throw some &eredstone&f on the ground and right-click using your new &ecasting assistant device&f while nearby"]
+			dependencies: ["6EBFE853BA815DAA"]
+			id: "672A9398B8CB6E25"
 			tasks: [{
-				id: "01A34931339FD7F4",
-				type: "item",
+				id: "01A34931339FD7F4"
+				type: "item"
 				item: "psi:psidust"
-			}],
+			}]
 			rewards: [{
-				id: "527EC20AC4D60C7E",
-				type: "item",
-				item: "psi:psidust",
+				id: "527EC20AC4D60C7E"
+				type: "item"
+				item: "psi:psidust"
 				count: 3
 			}]
-		},
+		}
 		{
-			icon: "psi:programmer",
-			x: -1.0d,
-			y: -7.0d,
+			icon: "psi:programmer"
+			x: -1.0d
+			y: -7.0d
 			description: [
-				"This station will be used for all of your &dspell&f creation needs.",
-				"",
+				"This station will be used for all of your &dspell&f creation needs."
+				""
 				"Right-click a &espell bullet&f onto the &espell programmer&f to load the &ebullet&f with that &dspell&f."
-			],
-			dependencies: ["672A9398B8CB6E25"],
-			id: "5610D15E9584FD62",
+			]
+			dependencies: ["672A9398B8CB6E25"]
+			id: "5610D15E9584FD62"
 			tasks: [
 				{
-					id: "14837B5723152A87",
-					type: "item",
+					id: "14837B5723152A87"
+					type: "item"
 					item: "psi:programmer"
-				},
+				}
 				{
-					id: "3519C05E87E6175B",
-					type: "item",
+					id: "3519C05E87E6175B"
+					type: "item"
 					item: {
-						id: "psi:spell_bullet",
-						Count: 1b,
-						tag: {}
+						id: "psi:spell_bullet"
+						Count: 1b
+						tag: { }
 					}
 				}
-			],
+			]
 			rewards: [{
-				id: "0C0AF913A9C85F17",
-				type: "item",
+				id: "0C0AF913A9C85F17"
+				type: "item"
 				item: {
-					id: "psi:spell_bullet_projectile",
-					Count: 1b,
-					tag: {}
+					id: "psi:spell_bullet_projectile"
+					Count: 1b
+					tag: { }
 				}
 			}]
-		},
+		}
 		{
-			x: -1.0d,
-			y: -9.0d,
+			x: -1.0d
+			y: -9.0d
 			description: [
-				"Simply changes the psi color of the &eCAD&f it's put onto.",
-				"",
+				"Simply changes the psi color of the &eCAD&f it's put onto."
+				""
 				"This is not required for a functional &eCAD&f, it is purely aesthetic"
-			],
-			dependencies: ["672A9398B8CB6E25"],
-			id: "4FCB27776B052710",
+			]
+			dependencies: ["672A9398B8CB6E25"]
+			id: "4FCB27776B052710"
 			tasks: [{
-				id: "3DA14CC8518E5AA8",
-				type: "item",
+				id: "3DA14CC8518E5AA8"
+				type: "item"
 				item: "psi:cad_colorizer_red"
-			}],
+			}]
 			rewards: [{
-				id: "40F60594B0804EA6",
-				type: "xp_levels",
+				id: "40F60594B0804EA6"
+				type: "xp_levels"
 				xp_levels: 1
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -10.0d,
-			description: ["Using the fancy new parts you just made, make a new CAD, only this one will be better!"],
+			x: -2.0d
+			y: -10.0d
+			description: ["Using the fancy new parts you just made, make a new CAD, only this one will be better!"]
 			dependencies: [
-				"4FCB27776B052710",
+				"4FCB27776B052710"
 				"7D724B0F045F26E4"
-			],
-			id: "6884A98956F51E5C",
+			]
+			id: "6884A98956F51E5C"
 			tasks: [{
-				id: "1AAA904E05AFD162",
-				type: "item",
+				id: "1AAA904E05AFD162"
+				type: "item"
 				item: {
-					ForgeCaps: {
-						Parent: {
-							Memory: [],
-							Battery: 100,
-							Time: 0
-						}
-					},
-					id: "psi:cad",
-					Count: 1b,
+					id: "psi:cad"
+					Count: 1b
 					tag: {
 						componentCORE: {
-							id: "psi:cad_core_basic",
+							id: "psi:cad_core_basic"
 							Count: 1b
-						},
+						}
 						componentASSEMBLY: {
-							id: "psi:cad_assembly_gold",
+							id: "psi:cad_assembly_gold"
 							Count: 1b
-						},
+						}
 						componentDYE: {
-							id: "psi:cad_colorizer_psi",
+							id: "psi:cad_colorizer_psi"
 							Count: 1b
-						},
+						}
 						componentSOCKET: {
-							id: "psi:cad_socket_basic",
+							id: "psi:cad_socket_basic"
 							Count: 1b
-						},
+						}
 						componentBATTERY: {
-							id: "psi:cad_battery_basic",
+							id: "psi:cad_battery_basic"
 							Count: 1b
 						}
 					}
+					ForgeCaps: {
+						Parent: {
+							Memory: [ ]
+							Battery: 100
+							Time: 0
+						}
+					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "4CA679F42773B583",
-				type: "item",
+				id: "4CA679F42773B583"
+				type: "item"
 				item: "psi:psidust"
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -8.0d,
+			x: -2.0d
+			y: -8.0d
 			description: [
-				'&dSpell&f must have &bTrick: Infusion&f and be named "&5Infusion&f".',
-				"",
+				"&dSpell&f must have &bTrick: Infusion&f and be named \"&5Infusion&f\"."
 				""
-			],
-			dependencies: ["5610D15E9584FD62"],
-			id: "1FA1B263BE981D57",
+				""
+			]
+			dependencies: ["5610D15E9584FD62"]
+			id: "1FA1B263BE981D57"
 			tasks: [{
-				id: "72F113BBA8359D13",
-				type: "item",
+				id: "72F113BBA8359D13"
+				type: "item"
 				item: {
-					id: "psi:spell_bullet",
-					Count: 1b,
+					id: "psi:spell_bullet"
+					Count: 1b
 					tag: {
 						spell: {
 							modsRequired: [{
-								modVersion: "1.16-94",
+								modVersion: "1.16-94"
 								modName: "psi"
-							}],
-							spellName: "Infusion",
-							uuidMost: 3804495466522953104L,
-							validSpell: 1b,
+							}]
+							spellName: "Infusion"
+							uuidMost: 3804495466522953104L
+							validSpell: 1b
 							spellList: [{
-								x: 4,
-								y: 4,
+								x: 4
+								y: 4
 								data: {
 									key: "psi:trick_infusion"
 								}
-							}],
+							}]
 							uuidLeast: -8202454919581574748L
-						},
+						}
 						has_spell: 1b
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -7.0d,
-			description: ['&dSpell&f must contain &bTrick: Greater Infusion&f and be named "&5Greater Infusion&f".'],
-			dependencies: ["5610D15E9584FD62"],
-			id: "296E709DCF11ECF2",
+			x: -3.0d
+			y: -7.0d
+			description: ["&dSpell&f must contain &bTrick: Greater Infusion&f and be named \"&5Greater Infusion&f\"."]
+			dependencies: ["5610D15E9584FD62"]
+			id: "296E709DCF11ECF2"
 			tasks: [{
-				id: "7390F185303E8519",
-				type: "item",
+				id: "7390F185303E8519"
+				type: "item"
 				item: {
-					id: "psi:spell_bullet",
-					Count: 1b,
+					id: "psi:spell_bullet"
+					Count: 1b
 					tag: {
 						spell: {
 							modsRequired: [{
-								modVersion: "1.16-94",
+								modVersion: "1.16-94"
 								modName: "psi"
-							}],
-							spellName: "Greater Infusion",
-							uuidMost: 7503375332235758121L,
-							validSpell: 1b,
+							}]
+							spellName: "Greater Infusion"
+							uuidMost: 7503375332235758121L
+							validSpell: 1b
 							spellList: [{
-								x: 4,
-								y: 4,
+								x: 4
+								y: 4
 								data: {
 									key: "psi:trick_greater_infusion"
 								}
-							}],
+							}]
 							uuidLeast: -5136156521636814908L
-						},
+						}
 						has_spell: 1b
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -9.0d,
+			x: -3.0d
+			y: -9.0d
 			description: [
-				'Created similarly to &epsidust&f, &epsimetal&f requires a &egold ingot&f on the ground and the casting of the "&5Infusion&f" &dspell&f while near the &egold ingots&f.',
-				"",
+				"Created similarly to &epsidust&f, &epsimetal&f requires a &egold ingot&f on the ground and the casting of the \"&5Infusion&f\" &dspell&f while near the &egold ingots&f."
+				""
 				"This &dspell&f can also be used to make &epsidust&f."
-			],
+			]
 			dependencies: [
-				"1FA1B263BE981D57",
+				"1FA1B263BE981D57"
 				"6884A98956F51E5C"
-			],
-			id: "7897AD80B39B3DA9",
+			]
+			id: "7897AD80B39B3DA9"
 			tasks: [{
-				id: "3FD358531114048C",
-				type: "item",
+				id: "3FD358531114048C"
+				type: "item"
 				item: "psi:psimetal"
-			}],
+			}]
 			rewards: [{
-				id: "13FE8EC6DFF39C62",
-				type: "item",
-				item: "psi:psimetal",
+				id: "13FE8EC6DFF39C62"
+				type: "item"
+				item: "psi:psimetal"
 				count: 3
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -6.0d,
-			dependencies: ["467C88955EDA576B"],
-			id: "350EECB5549A9149",
+			x: -4.0d
+			y: -6.0d
+			dependencies: ["467C88955EDA576B"]
+			id: "350EECB5549A9149"
 			tasks: [{
-				id: "3CDC8E3D9EA38648",
-				type: "item",
+				id: "3CDC8E3D9EA38648"
+				type: "item"
 				item: {
-					ForgeCaps: {
-						Parent: {
-							Memory: [],
-							Battery: 0,
-							Time: 0
-						}
-					},
-					id: "psi:cad",
-					Count: 1b,
+					id: "psi:cad"
+					Count: 1b
 					tag: {
 						componentCORE: {
-							id: "psi:cad_core_overclocked",
+							id: "psi:cad_core_overclocked"
 							Count: 1b
-						},
+						}
 						componentASSEMBLY: {
-							id: "psi:cad_assembly_psimetal",
+							id: "psi:cad_assembly_psimetal"
 							Count: 1b
-						},
+						}
 						componentSOCKET: {
-							id: "psi:cad_socket_signaling",
+							id: "psi:cad_socket_signaling"
 							Count: 1b
-						},
+						}
 						componentBATTERY: {
-							id: "psi:cad_battery_extended",
+							id: "psi:cad_battery_extended"
 							Count: 1b
+						}
+					}
+					ForgeCaps: {
+						Parent: {
+							Memory: [ ]
+							Battery: 0
+							Time: 0
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -5.0d,
-			y: -7.0d,
+			x: -5.0d
+			y: -7.0d
 			description: [
-				'Same as &epsidust&f and &epsimetal&f, the input being &ediamond&f and the "&5Greater Infusion&f" &dspell&f.',
-				"",
+				"Same as &epsidust&f and &epsimetal&f, the input being &ediamond&f and the \"&5Greater Infusion&f\" &dspell&f."
+				""
 				"This &dspell&f can also be used to make &epsidust&f and &epsimetal&f."
-			],
+			]
 			dependencies: [
-				"296E709DCF11ECF2",
+				"296E709DCF11ECF2"
 				"350EECB5549A9149"
-			],
-			id: "508BB7E1F4E05BD9",
+			]
+			id: "508BB7E1F4E05BD9"
 			tasks: [{
-				id: "68DC88BC1A432680",
-				type: "item",
+				id: "68DC88BC1A432680"
+				type: "item"
 				item: "psi:psigem"
-			}],
+			}]
 			rewards: [{
-				id: "2B70EB4BD82021A4",
-				type: "item",
-				item: "psi:psigem",
+				id: "2B70EB4BD82021A4"
+				type: "item"
+				item: "psi:psigem"
 				count: 3
 			}]
-		},
+		}
 		{
-			title: "Ebony \\& Ivory Substance",
-			x: -3.0d,
-			y: -5.0d,
+			title: "Ebony \\& Ivory Substance"
+			x: -3.0d
+			y: -5.0d
 			description: [
-				'Same as &epsidust&f, &epsimetal&f, and &epsigems&f, the input being &ecoal&f or &equartz&f and the "&5Evony \\& Ivory&f" &dspell&f.',
-				"",
-				"This &dspell&f can also be used to make &epsidust&f, &epsimetal&f, and &epsigems&f.",
-				"",
+				"Same as &epsidust&f, &epsimetal&f, and &epsigems&f, the input being &ecoal&f or &equartz&f and the \"&5Evony \\& Ivory&f\" &dspell&f."
+				""
+				"This &dspell&f can also be used to make &epsidust&f, &epsimetal&f, and &epsigems&f."
+				""
 				"You must be in the end for this &dspell&f to work!"
-			],
+			]
 			dependencies: [
-				"350EECB5549A9149",
+				"350EECB5549A9149"
 				"71E43799270B048D"
-			],
-			id: "1BC4DFA9F41319C7",
+			]
+			id: "1BC4DFA9F41319C7"
 			tasks: [
 				{
-					id: "66672A2AF4107310",
-					type: "item",
+					id: "66672A2AF4107310"
+					type: "item"
 					item: "psi:ebony_substance"
-				},
+				}
 				{
-					id: "6A53520A5236FF5F",
-					type: "item",
+					id: "6A53520A5236FF5F"
+					type: "item"
 					item: "psi:ivory_substance"
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "4D216BD77D3A434E",
-					type: "item",
-					item: "psi:ebony_substance",
+					id: "4D216BD77D3A434E"
+					type: "item"
+					item: "psi:ebony_substance"
 					count: 2
-				},
+				}
 				{
-					id: "3393BB0E7CAF3916",
-					type: "item",
-					item: "psi:ivory_substance",
+					id: "3393BB0E7CAF3916"
+					type: "item"
+					item: "psi:ivory_substance"
 					count: 2
 				}
 			]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -3.0d,
-			dependencies: ["1BC4DFA9F41319C7"],
-			id: "707D86F3055FD628",
+			x: -3.0d
+			y: -3.0d
+			dependencies: ["1BC4DFA9F41319C7"]
+			id: "707D86F3055FD628"
 			tasks: [
 				{
-					id: "6C5DE0F53CBB2E19",
-					type: "item",
+					id: "6C5DE0F53CBB2E19"
+					type: "item"
 					item: "psi:ebony_psimetal"
-				},
-				{
-					id: "69AAF133777ECFEC",
-					type: "item",
-					item: "psi:ivory_psimetal"
 				}
-			],
-			rewards: [
 				{
-					id: "3110B8F9C0D4DA02",
-					type: "item",
-					item: "psi:ebony_psimetal"
-				},
-				{
-					id: "13960722C196394C",
-					type: "item",
+					id: "69AAF133777ECFEC"
+					type: "item"
 					item: "psi:ivory_psimetal"
 				}
 			]
-		},
+			rewards: [
+				{
+					id: "3110B8F9C0D4DA02"
+					type: "item"
+					item: "psi:ebony_psimetal"
+				}
+				{
+					id: "13960722C196394C"
+					type: "item"
+					item: "psi:ivory_psimetal"
+				}
+			]
+		}
 		{
-			x: -2.0d,
-			y: -2.0d,
-			description: ["This assembly has higher efficiency than it's ebony counter part."],
-			dependencies: ["707D86F3055FD628"],
-			id: "1882D37244614A68",
+			x: -2.0d
+			y: -2.0d
+			description: ["This assembly has higher efficiency than it's ebony counter part."]
+			dependencies: ["707D86F3055FD628"]
+			id: "1882D37244614A68"
 			tasks: [{
-				id: "375F79ED3299DFE5",
-				type: "item",
+				id: "375F79ED3299DFE5"
+				type: "item"
 				item: "psi:cad_assembly_ivory_psimetal"
-			}],
+			}]
 			rewards: [{
-				id: "491876EB2D0A054E",
-				type: "xp_levels",
+				id: "491876EB2D0A054E"
+				type: "xp_levels"
 				xp_levels: 1
 			}]
-		},
+		}
 		{
-			title: "Getting A Better CAD",
-			x: 0.0d,
-			y: -10.0d,
+			title: "Getting A Better CAD"
+			x: 0.0d
+			y: -10.0d
 			description: [
-				"Time to make some &eCAD&f parts!",
-				"- Cores determine max spell complexity",
-				"- Batteries determine max psi",
+				"Time to make some &eCAD&f parts!"
+				"- Cores determine max spell complexity"
+				"- Batteries determine max psi"
 				"- Sockets determine number of slots for &dspells&f"
-			],
-			dependencies: ["672A9398B8CB6E25"],
-			id: "7D724B0F045F26E4",
+			]
+			dependencies: ["672A9398B8CB6E25"]
+			id: "7D724B0F045F26E4"
 			tasks: [
 				{
-					id: "586BE79EE6794A08",
-					type: "item",
+					id: "586BE79EE6794A08"
+					type: "item"
 					item: "psi:cad_assembly_gold"
-				},
+				}
 				{
-					id: "6BBE3E81A3CB88E4",
-					type: "item",
+					id: "6BBE3E81A3CB88E4"
+					type: "item"
 					item: "psi:cad_core_basic"
-				},
+				}
 				{
-					id: "2DB8A39927CD4799",
-					type: "item",
+					id: "2DB8A39927CD4799"
+					type: "item"
 					item: "psi:cad_socket_basic"
-				},
+				}
 				{
-					id: "716D0E526FFC911B",
-					type: "item",
+					id: "716D0E526FFC911B"
+					type: "item"
 					item: "psi:cad_battery_basic"
 				}
-			],
+			]
 			rewards: [{
-				id: "3517D3ACEF28700C",
-				type: "item",
+				id: "3517D3ACEF28700C"
+				type: "item"
 				item: "psi:psidust"
 			}]
-		},
+		}
 		{
-			title: "Better CAD Parts",
-			x: -4.0d,
-			y: -8.0d,
-			dependencies: ["7897AD80B39B3DA9"],
-			id: "467C88955EDA576B",
+			title: "Better CAD Parts"
+			x: -4.0d
+			y: -8.0d
+			dependencies: ["7897AD80B39B3DA9"]
+			id: "467C88955EDA576B"
 			tasks: [
 				{
-					id: "3B6FD05608ACBFB6",
-					type: "item",
+					id: "3B6FD05608ACBFB6"
+					type: "item"
 					item: "psi:cad_assembly_psimetal"
-				},
+				}
 				{
-					id: "52D4DD0EEF7BA0A3",
-					type: "item",
+					id: "52D4DD0EEF7BA0A3"
+					type: "item"
 					item: "psi:cad_core_overclocked"
-				},
+				}
 				{
-					id: "5A7436894C51324B",
-					type: "item",
+					id: "5A7436894C51324B"
+					type: "item"
 					item: "psi:cad_socket_signaling"
-				},
+				}
 				{
-					id: "5C76A0021188FA01",
-					type: "item",
+					id: "5C76A0021188FA01"
+					type: "item"
 					item: "psi:cad_battery_extended"
 				}
-			],
+			]
 			rewards: [{
-				id: "1ACEA2C49B48E515",
-				type: "item",
-				item: "psi:psimetal",
+				id: "1ACEA2C49B48E515"
+				type: "item"
+				item: "psi:psimetal"
 				count: 2
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -6.0d,
-			description: ['&dSpell&f must contain &bTrick: Ebony \\& Ivory&f and be named "&5Ebony \\& Ivory&f".'],
-			dependencies: ["5610D15E9584FD62"],
-			id: "71E43799270B048D",
+			x: -2.0d
+			y: -6.0d
+			description: ["&dSpell&f must contain &bTrick: Ebony \\& Ivory&f and be named \"&5Ebony \\& Ivory&f\"."]
+			dependencies: ["5610D15E9584FD62"]
+			id: "71E43799270B048D"
 			tasks: [{
-				id: "7755ACF9FA2374C7",
-				type: "item",
+				id: "7755ACF9FA2374C7"
+				type: "item"
 				item: {
-					id: "psi:spell_bullet",
-					Count: 1b,
+					id: "psi:spell_bullet"
+					Count: 1b
 					tag: {
 						spell: {
 							modsRequired: [{
-								modVersion: "1.16-94",
+								modVersion: "1.16-94"
 								modName: "psi"
-							}],
-							spellName: "Ebony & Ivory",
-							uuidMost: 817484819054216280L,
-							validSpell: 1b,
+							}]
+							spellName: "Ebony & Ivory"
+							uuidMost: 817484819054216280L
+							validSpell: 1b
 							spellList: [{
-								x: 4,
-								y: 4,
+								x: 4
+								y: 4
 								data: {
 									key: "psi:trick_ebony_ivory"
 								}
-							}],
+							}]
 							uuidLeast: -6505221033292121448L
-						},
+						}
 						has_spell: 1b
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Psimetal Tools",
-			x: -6.0d,
-			y: -6.0d,
-			description: ["These tools can cast spells just like a &eCAD&f can!"],
-			dependencies: ["508BB7E1F4E05BD9"],
-			id: "03F5451FB3E37710",
+			title: "Psimetal Tools"
+			x: -6.0d
+			y: -6.0d
+			description: ["These tools can cast spells just like a &eCAD&f can!"]
+			dependencies: ["508BB7E1F4E05BD9"]
+			id: "03F5451FB3E37710"
 			tasks: [
 				{
-					id: "32F228801C9F6BB2",
-					type: "item",
+					id: "32F228801C9F6BB2"
+					type: "item"
 					item: {
-						id: "psi:psimetal_sword",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "283D895E9F215B6D",
-					type: "item",
-					item: {
-						id: "psi:psimetal_pickaxe",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "45550AB85C31E698",
-					type: "item",
-					item: {
-						id: "psi:psimetal_axe",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "01B317BF3D6F3FEF",
-					type: "item",
-					item: {
-						id: "psi:psimetal_shovel",
-						Count: 1b,
+						id: "psi:psimetal_sword"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
 				}
-			],
+				{
+					id: "283D895E9F215B6D"
+					type: "item"
+					item: {
+						id: "psi:psimetal_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "45550AB85C31E698"
+					type: "item"
+					item: {
+						id: "psi:psimetal_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "01B317BF3D6F3FEF"
+					type: "item"
+					item: {
+						id: "psi:psimetal_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 			rewards: [{
-				id: "2615F462FCB25EBE",
-				type: "item",
+				id: "2615F462FCB25EBE"
+				type: "item"
 				item: "psi:cad_colorizer_empty"
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: -7.0d,
-			description: ["A tool for measuring vectors"],
-			dependencies: ["672A9398B8CB6E25"],
-			id: "090636BABEE2587A",
+			x: 1.0d
+			y: -7.0d
+			description: ["A tool for measuring vectors"]
+			dependencies: ["672A9398B8CB6E25"]
+			id: "090636BABEE2587A"
 			tasks: [{
-				id: "774CD3F11F95B8C6",
-				type: "item",
+				id: "774CD3F11F95B8C6"
+				type: "item"
 				item: {
-					id: "psi:vector_ruler",
-					Count: 1b,
-					tag: {}
+					id: "psi:vector_ruler"
+					Count: 1b
+					tag: { }
 				}
-			}],
+			}]
 			rewards: [{
-				id: "5AA2B8E73209E416",
-				type: "item",
+				id: "5AA2B8E73209E416"
+				type: "item"
 				item: "psi:psidust"
 			}]
-		},
+		}
 		{
-			title: "Psimetal Exosuit",
-			x: -7.0d,
-			y: -7.0d,
-			description: ["This armor can cast spells just like a &eCAD&f can!"],
-			dependencies: ["508BB7E1F4E05BD9"],
-			id: "04A1564F7BBB5781",
+			title: "Psimetal Exosuit"
+			x: -7.0d
+			y: -7.0d
+			description: ["This armor can cast spells just like a &eCAD&f can!"]
+			dependencies: ["508BB7E1F4E05BD9"]
+			id: "04A1564F7BBB5781"
 			tasks: [
 				{
-					id: "7AFBAFFF4DF54BF8",
-					type: "item",
+					id: "7AFBAFFF4DF54BF8"
+					type: "item"
 					item: {
-						id: "psi:psimetal_exosuit_helmet",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "48B9BB583D4C8B6E",
-					type: "item",
-					item: {
-						id: "psi:psimetal_exosuit_chestplate",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "7A0558C43DEB59B8",
-					type: "item",
-					item: {
-						id: "psi:psimetal_exosuit_leggings",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "765C996BFD3196A1",
-					type: "item",
-					item: {
-						id: "psi:psimetal_exosuit_boots",
-						Count: 1b,
+						id: "psi:psimetal_exosuit_helmet"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
 				}
-			],
+				{
+					id: "48B9BB583D4C8B6E"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7A0558C43DEB59B8"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "765C996BFD3196A1"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 			rewards: [{
-				id: "67826687578C28A1",
-				type: "item",
+				id: "67826687578C28A1"
+				type: "item"
 				item: "psi:cad_colorizer_psi"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -10.0d,
+			x: -4.0d
+			y: -10.0d
 			description: [
-				'Crafting this with a "loaded" &ebullet&f will save whatever &dspell&f is on that &ebullet&f to the &espell drive&f.',
-				"",
+				"Crafting this with a \"loaded\" &ebullet&f will save whatever &dspell&f is on that &ebullet&f to the &espell drive&f."
+				""
 				"While sneaking, right-click the &espell drive&f onto a &espell programmer&f to load up the saved &dspell&f for editing."
-			],
-			dependencies: ["7897AD80B39B3DA9"],
-			id: "078BE0A8317FB3E5",
+			]
+			dependencies: ["7897AD80B39B3DA9"]
+			id: "078BE0A8317FB3E5"
 			tasks: [{
-				id: "2295AC27CFC24222",
-				type: "item",
+				id: "2295AC27CFC24222"
+				type: "item"
 				item: {
-					id: "psi:spell_drive",
-					Count: 1b,
-					tag: {}
-				}
-			}],
-			rewards: [{
-				id: "0C9649A8FC3FBE5E",
-				type: "item",
-				item: {
-					id: "psi:spell_bullet",
-					Count: 1b,
-					tag: {}
+					id: "psi:spell_drive"
+					Count: 1b
+					tag: { }
 				}
 			}]
-		},
+			rewards: [{
+				id: "0C9649A8FC3FBE5E"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
 		{
-			title: "Even Better CAD Parts",
-			x: -6.0d,
-			y: -8.0d,
+			title: "Even Better CAD Parts"
+			x: -6.0d
+			y: -8.0d
 			description: [
-				"These are the highest tier components for &eCAD Assemblies&f.",
-				"",
+				"These are the highest tier components for &eCAD Assemblies&f."
+				""
 				"You will need to choose which &esocket&f and &ecore&f best suits your needs."
-			],
-			dependencies: ["508BB7E1F4E05BD9"],
-			id: "4B6AA8594BD08A05",
+			]
+			dependencies: ["508BB7E1F4E05BD9"]
+			id: "4B6AA8594BD08A05"
 			tasks: [
 				{
-					id: "5E54CAF48AC43B3B",
-					type: "item",
+					id: "5E54CAF48AC43B3B"
+					type: "item"
 					item: "psi:cad_core_hyperclocked"
-				},
+				}
 				{
-					id: "60EE2E57D2E2D2A8",
-					type: "item",
+					id: "60EE2E57D2E2D2A8"
+					type: "item"
 					item: "psi:cad_socket_transmissive"
-				},
+				}
 				{
-					id: "6F00AC0CEB4DDF4A",
-					type: "item",
+					id: "6F00AC0CEB4DDF4A"
+					type: "item"
 					item: "psi:cad_core_radiative"
-				},
+				}
 				{
-					id: "3150325572388CC4",
-					type: "item",
+					id: "3150325572388CC4"
+					type: "item"
 					item: "psi:cad_socket_huge"
-				},
+				}
 				{
-					id: "481287167B69F2FB",
-					type: "item",
+					id: "481287167B69F2FB"
+					type: "item"
 					item: "psi:cad_battery_ultradense"
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "3A539FE9104DF3C7",
-					type: "item",
+					id: "3A539FE9104DF3C7"
+					type: "item"
 					item: "psi:cad_assembly_psimetal"
-				},
+				}
 				{
-					id: "762CBDB981745FC6",
-					type: "item",
+					id: "762CBDB981745FC6"
+					type: "item"
 					item: "psi:cad_colorizer_rainbow"
 				}
 			]
-		},
+		}
 		{
-			title: "Exosuit Sensors",
-			x: -8.0d,
-			y: -6.0d,
-			dependencies: ["04A1564F7BBB5781"],
-			id: "1B4F621A49F86237",
+			title: "Exosuit Sensors"
+			x: -8.0d
+			y: -6.0d
+			dependencies: ["04A1564F7BBB5781"]
+			id: "1B4F621A49F86237"
 			tasks: [
 				{
-					id: "6CFECA4B05D6C468",
-					type: "item",
+					id: "6CFECA4B05D6C468"
+					type: "item"
 					item: "psi:exosuit_sensor_light"
-				},
+				}
 				{
-					id: "6498064514B7E474",
-					type: "item",
+					id: "6498064514B7E474"
+					type: "item"
 					item: "psi:exosuit_sensor_heat"
-				},
+				}
 				{
-					id: "57D9075704B4C348",
-					type: "item",
+					id: "57D9075704B4C348"
+					type: "item"
 					item: "psi:exosuit_sensor_stress"
-				},
+				}
 				{
-					id: "75C242F2A21D466F",
-					type: "item",
+					id: "75C242F2A21D466F"
+					type: "item"
 					item: "psi:exosuit_sensor_water"
-				},
+				}
 				{
-					id: "25CF04BBE1C0AD51",
-					type: "item",
+					id: "25CF04BBE1C0AD51"
+					type: "item"
 					item: "psi:exosuit_sensor_trigger"
 				}
-			],
+			]
 			rewards: [{
-				id: "1A01065ECCFC813C",
-				type: "xp_levels",
+				id: "1A01065ECCFC813C"
+				type: "xp_levels"
 				xp_levels: 1
 			}]
-		},
+		}
 		{
-			x: -8.0d,
-			y: -8.0d,
-			dependencies: ["04A1564F7BBB5781"],
-			id: "33B94A3D3DC4348F",
+			x: -8.0d
+			y: -8.0d
+			dependencies: ["04A1564F7BBB5781"]
+			id: "33B94A3D3DC4348F"
 			tasks: [{
-				id: "179E9DEB9315A5EB",
-				type: "item",
+				id: "179E9DEB9315A5EB"
+				type: "item"
 				item: "psi:exosuit_controller"
-			}],
+			}]
 			rewards: [{
-				id: "7F5A06183FB38425",
-				type: "xp_levels",
+				id: "7F5A06183FB38425"
+				type: "xp_levels"
 				xp_levels: 1
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -2.0d,
-			description: ["This assembly has higher potency than it's ivory counter part."],
-			dependencies: ["707D86F3055FD628"],
-			id: "51544B18E7CCC1A4",
+			x: -4.0d
+			y: -2.0d
+			description: ["This assembly has higher potency than it's ivory counter part."]
+			dependencies: ["707D86F3055FD628"]
+			id: "51544B18E7CCC1A4"
 			tasks: [{
-				id: "67BFB015F706806D",
-				type: "item",
+				id: "67BFB015F706806D"
+				type: "item"
 				item: "psi:cad_assembly_ebony_psimetal"
-			}],
+			}]
 			rewards: [{
-				id: "0842C52DB386315E",
-				type: "xp_levels",
+				id: "0842C52DB386315E"
+				type: "xp_levels"
 				xp_levels: 1
 			}]
 		}

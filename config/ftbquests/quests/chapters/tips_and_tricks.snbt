@@ -1,330 +1,331 @@
 {
-	id: "1BE666F01EFFC00D",
-	group: "",
-	order_index: 3,
-	filename: "tips_and_tricks",
-	title: "Tips and Tricks",
-	default_quest_shape: "",
+	id: "1BE666F01EFFC00D"
+	group: ""
+	order_index: 3
+	filename: "tips_and_tricks"
+	title: "Tips and Tricks"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.5d,
-			y: -4.0d,
-			description: ["Easy item to automate infinite water. Need more water? Make another!"],
-			id: "722978AC0C1B2649",
+			x: -4.5d
+			y: -4.0d
+			description: ["Easy item to automate infinite water. Need more water? Make another!"]
+			id: "722978AC0C1B2649"
 			tasks: [{
-				id: "6855AE257D62AA37",
-				type: "item",
+				id: "6855AE257D62AA37"
+				type: "item"
 				item: "cookingforblockheads:sink"
-			}],
+			}]
 			rewards: [{
-				id: "145F9B3A17676EAA",
-				type: "item",
+				id: "145F9B3A17676EAA"
+				type: "item"
 				item: "pipez:fluid_pipe"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -4.0d,
-			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."],
-			id: "7EC8814940C4C3D7",
+			x: -1.5d
+			y: -4.0d
+			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."]
+			id: "7EC8814940C4C3D7"
 			tasks: [{
-				id: "30C938C85BED7956",
-				type: "item",
+				id: "30C938C85BED7956"
+				type: "item"
 				item: {
-					id: "shrink:shrinking_device",
-					Count: 1b,
-					tag: {}
+					id: "shrink:shrinking_device"
+					Count: 1b
+					tag: { }
 				}
-			}],
+			}]
 			rewards: [{
-				id: "7CCC4171B93B35F0",
-				type: "item",
-				item: "compactmachines:wall",
+				id: "7CCC4171B93B35F0"
+				type: "item"
+				item: "compactmachines:wall"
 				count: 8
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: -2.5d,
-			description: ["Craftable X-Ray potions are very useful when you are running low on an item."],
-			id: "3EE9F242794CD95F",
+			x: -6.0d
+			y: -2.5d
+			description: ["Craftable X-Ray potions are very useful when you are running low on an item."]
+			id: "3EE9F242794CD95F"
 			tasks: [{
-				id: "03F9DE34E4C766D8",
-				type: "item",
+				id: "03F9DE34E4C766D8"
+				type: "item"
 				item: {
-					id: "minecraft:potion",
-					Count: 1b,
+					id: "minecraft:potion"
+					Count: 1b
 					tag: {
 						Potion: "potionsmaster:diamond_sight"
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "319A13116831F46D",
-				type: "item",
+				id: "319A13116831F46D"
+				type: "item"
 				item: {
-					id: "minecraft:potion",
-					Count: 1b,
+					id: "minecraft:potion"
+					Count: 1b
 					tag: {
 						Potion: "potionsmaster:emerald_sight"
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -2.5d,
-			description: ["Wireless power to fix your direwire."],
-			id: "4DFA99898C174BD6",
+			x: -4.5d
+			y: -2.5d
+			description: ["Wireless power to fix your direwire."]
+			id: "4DFA99898C174BD6"
 			tasks: [{
-				id: "7C643CA94F63FBA2",
-				type: "item",
+				id: "7C643CA94F63FBA2"
+				type: "item"
 				item: "fluxnetworks:flux_controller"
-			}],
+			}]
 			rewards: [
 				{
-					id: "0A947736C7FD97A9",
-					type: "item",
+					id: "0A947736C7FD97A9"
+					type: "item"
 					item: "fluxnetworks:flux_point"
-				},
+				}
 				{
-					id: "4E700E2FE535CCEE",
-					type: "item",
+					id: "4E700E2FE535CCEE"
+					type: "item"
 					item: "fluxnetworks:flux_plug"
 				}
 			]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -2.5d,
-			description: ["Use the market to get seeds or saplings. Also try and eat as many foods as you can to improve your health."],
-			id: "27D9B9F9695206BE",
+			x: -3.0d
+			y: -2.5d
+			description: ["Use the market to get seeds or saplings. Also try and eat as many foods as you can to improve your health."]
+			id: "27D9B9F9695206BE"
 			tasks: [{
-				id: "5DDBD32533AB4583",
-				type: "item",
+				id: "5DDBD32533AB4583"
+				type: "item"
 				item: "farmingforblockheads:market"
-			}],
+			}]
 			rewards: [{
-				id: "500A1F43838C5E64",
-				type: "item",
+				id: "500A1F43838C5E64"
+				type: "item"
 				item: "minecraft:emerald"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -2.5d,
+			x: -1.5d
+			y: -2.5d
 			description: [
-				"The sleeping bag lets you sleep during the night.",
-				"",
-				"The hammock lets you sleep during the day.",
-				"",
+				"The sleeping bag lets you sleep during the night."
+				""
+				"The hammock lets you sleep during the day."
+				""
 				"Neither will reset your spawn-point."
-			],
-			id: "14C8FC3F19190054",
+			]
+			id: "14C8FC3F19190054"
 			tasks: [
 				{
-					id: "450D00C38F5DB42B",
-					type: "item",
+					id: "450D00C38F5DB42B"
+					type: "item"
 					item: "comforts:hammock_white"
-				},
+				}
 				{
-					id: "76BF5183FA92EF4B",
-					type: "item",
+					id: "76BF5183FA92EF4B"
+					type: "item"
 					item: "comforts:sleeping_bag_white"
 				}
-			],
+			]
 			rewards: [{
-				id: "34037270BA530831",
-				type: "item",
-				item: "comforts:rope_and_nail",
+				id: "34037270BA530831"
+				type: "item"
+				item: "comforts:rope_and_nail"
 				count: 2
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -4.0d,
+			x: -3.0d
+			y: -4.0d
 			description: [
-				"It's an entire room in one block!",
-				"",
+				"It's an entire room in one block!"
+				""
 				"Higher tiers are even bigger on the inside."
-			],
-			id: "594540768120A627",
+			]
+			id: "594540768120A627"
 			tasks: [{
-				id: "029DB3044D5E30A0",
-				type: "item",
+				id: "029DB3044D5E30A0"
+				type: "item"
 				item: "compactmachines:machine_tiny"
-			}],
+			}]
 			rewards: [{
-				id: "17FAC4A27147E065",
-				type: "item",
+				id: "17FAC4A27147E065"
+				type: "item"
 				item: "compactmachines:personal_shrinking_device"
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: -4.0d,
+			x: -6.0d
+			y: -4.0d
 			description: [
-				"Stores all the guidebooks you'll ever need!",
-				"",
+				"Stores all the guidebooks you'll ever need!"
+				""
 				"Re-craftable with one stick."
-			],
-			id: "5718EEFE4F50BB73",
+			]
+			id: "5718EEFE4F50BB73"
 			tasks: [{
-				id: "523C1E77663E2287",
-				type: "item",
+				id: "523C1E77663E2287"
+				type: "item"
 				item: "akashictome:tome"
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: -5.5d,
+			x: -6.0d
+			y: -5.5d
 			description: [
-				"A quick way to switch between tools.",
-				"",
+				"A quick way to switch between tools."
+				""
 				"Upgrade with belt pouches in an anvil to increase capacity."
-			],
-			id: "378C95C18798D413",
+			]
+			id: "378C95C18798D413"
 			tasks: [{
-				id: "7FD9A02EA29669F6",
-				type: "item",
+				id: "7FD9A02EA29669F6"
+				type: "item"
 				item: "toolbelt:belt"
-			}],
+			}]
 			rewards: [{
-				id: "40BCE4D56FE98018",
-				type: "item",
-				item: "toolbelt:pouch",
+				id: "40BCE4D56FE98018"
+				type: "item"
+				item: "toolbelt:pouch"
 				count: 2
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -5.5d,
+			x: -4.5d
+			y: -5.5d
 			description: [
-				"Allows you to store multiple tools in one!",
-				"",
+				"Allows you to store multiple tools in one!"
+				""
 				"It'll automatically morph in to a mod's tool when looking at a block from that mod. You must add tools via crafting."
-			],
-			id: "73F91BF3D424B269",
+			]
+			id: "73F91BF3D424B269"
 			tasks: [{
-				id: "3B227EED4B839733",
-				type: "item",
+				id: "3B227EED4B839733"
+				type: "item"
 				item: "morphtool:tool"
 			}]
-		},
+		}
 		{
-			title: "Building Gadgets",
-			x: -3.0d,
-			y: -5.5d,
+			title: "Building Gadgets"
+			x: -3.0d
+			y: -5.5d
 			description: [
-				"Some useful gadgets for building.",
-				"",
+				"Some useful gadgets for building."
+				""
 				"&cDestruction Gadget voids blocks!"
-			],
-			id: "0F75D7B9F4FF2459",
+			]
+			id: "0F75D7B9F4FF2459"
 			tasks: [
 				{
-					id: "358F3A8EA9E5E7E3",
-					type: "item",
+					id: "358F3A8EA9E5E7E3"
+					type: "item"
 					item: {
-						id: "buildinggadgets:gadget_building",
-						Count: 1b,
+						id: "buildinggadgets:gadget_building"
+						Count: 1b
 						tag: {
 							state: {
-								serializer: "buildinggadgets:dummy_serializer",
+								serializer: "buildinggadgets:dummy_serializer"
 								state: {
 									Name: "minecraft:air"
-								},
-								data: {}
+								}
+								data: { }
 							}
 						}
 					}
-				},
+				}
 				{
-					id: "008AD88A1CDCEE5E",
-					type: "item",
+					id: "008AD88A1CDCEE5E"
+					type: "item"
 					item: {
-						id: "buildinggadgets:gadget_exchanging",
-						Count: 1b,
+						id: "buildinggadgets:gadget_exchanging"
+						Count: 1b
 						tag: {
 							state: {
-								serializer: "buildinggadgets:dummy_serializer",
+								serializer: "buildinggadgets:dummy_serializer"
 								state: {
 									Name: "minecraft:air"
-								},
-								data: {}
+								}
+								data: { }
 							}
 						}
 					}
-				},
+				}
 				{
-					id: "4738B22DF26DB2D8",
-					type: "item",
+					id: "4738B22DF26DB2D8"
+					type: "item"
 					item: {
-						id: "buildinggadgets:gadget_copy_paste",
-						Count: 1b,
+						id: "buildinggadgets:gadget_copy_paste"
+						Count: 1b
 						tag: {
-							mode: 0b,
+							mode: 0b
 							template_id: [I;
-								1687424916,
-								-1474150034,
-								-1591711937,
+								1687424916
+								-1474150034
+								-1591711937
 								1045183693
 							]
 						}
 					}
-				},
+				}
 				{
-					id: "283D88FA9196A4AC",
-					type: "item",
+					id: "283D88FA9196A4AC"
+					type: "item"
 					item: {
-						id: "buildinggadgets:gadget_destruction",
-						Count: 1b,
+						id: "buildinggadgets:gadget_destruction"
+						Count: 1b
 						tag: {
-							overlay: 1b,
+							overlay: 1b
 							fuzzy: 1b
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "Other Gadgets",
-			x: -1.5d,
-			y: -5.5d,
+			title: "Other Gadgets"
+			x: -1.5d
+			y: -5.5d
 			description: [
-				"Can be helpful for building.",
-				"",
+				"Can be helpful for building."
+				""
 				"The consruction wand has cores that can be added to it in crafting. Sneak left-click the air to switch between cores."
-			],
-			id: "2A2E3D020B1F5126",
+			]
+			id: "2A2E3D020B1F5126"
 			tasks: [
 				{
-					id: "05D9E287D437CDDB",
-					type: "item",
+					id: "05D9E287D437CDDB"
+					type: "item"
 					item: {
-						id: "constructionwand:stone_wand",
-						Count: 1b,
+						id: "constructionwand:stone_wand"
+						Count: 1b
 						tag: {
-							wand_options: {},
+							wand_options: { }
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "0478DE9976B3B6D5",
-					type: "item",
+					id: "0478DE9976B3B6D5"
+					type: "item"
 					item: {
-						id: "exchangers:wooden_exchanger",
-						Count: 1b,
+						id: "exchangers:wooden_exchanger"
+						Count: 1b
 						tag: {
-							mode: 0,
-							fuzzyPlacementChance: 100,
-							directionalPlacement: 0b,
-							forceDropItems: 0b,
-							fuzzyPlacement: 0b,
-							voidItems: 0b,
-							range: 0,
-							Damage: 0,
+							mode: 0
+							fuzzyPlacementChance: 100
+							directionalPlacement: 0b
+							forceDropItems: 0b
+							fuzzyPlacement: 0b
+							voidItems: 0b
+							range: 0
+							Damage: 0
 							blockstate: {
 								Name: "minecraft:air"
 							}
