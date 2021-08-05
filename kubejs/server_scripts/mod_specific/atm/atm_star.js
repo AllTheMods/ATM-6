@@ -5,11 +5,12 @@ onEvent('recipes', e => {
   //#endregion
   //#region FUNCTIONS
   function multiCrush(output, input) {
-    e.recipes.mekanism.crushing(output, input).id(`kubejs:${output}_mek_crush`)
-    e.recipes.create.crushing(output, input).id(`kubejs:${output}_create_crush`)
-    e.recipes.immersiveengineering.crusher(output, input).id(`kubejs:${output}_ie_crush`)
-    e.recipes.thermal.pulverizer(output, input).id(`kubejs:${output}_thermal_pulverize`)
+    e.recipes.mekanism.crushing(output, input).id(`kubejs:${output.split(':')[1]}_mek_crush`)
+    e.recipes.create.crushing(output, input).id(`kubejs:${output.split(':')[1]}_create_crush`)
+    e.recipes.immersiveengineering.crusher(output, input).id(`kubejs:${output.split(':')[1]}_ie_crush`)
+    e.recipes.thermal.pulverizer(output, input).id(`kubejs:${output.split(':')[1]}_thermal_pulverize`)
   }
+  //'9x immersiveengineering:dust_saltpeter'
   function jumbo(ingredients, result, xp) {
     e.recipes.jumbofurnace.jumbo_smelting({
       'ingredients': ingredients,
@@ -17,7 +18,7 @@ onEvent('recipes', e => {
         'item': result
       },
       'experience': xp
-    }).id(`kubejs:${result}_jumbo`)
+    }).id(`kubejs:${result.split(':')[1]}_jumbo`)
   }
   //#endregion
   //#region RECIPES
@@ -82,9 +83,9 @@ onEvent('recipes', e => {
   e.shapeless('kubejs:potassium_block', ['9x kubejs:potassium_ingot']).id('kubejs:potassium_block')
   e.shapeless('kubejs:potassium_ingot', ['9x kubejs:potassium_dust']).id('kubejs:potassium_ingot')
 
-  multiCrush('9x immersiveengineering:dust_saltpeter', ['kubejs:saltpeter_ingot']).id('kubejs:dust_saltpeter_crush')
-  multiCrush('9x kubejs:potassium_dust', ['kubejs:potassium_ingot']).id('kubejs:potassium_dust_crush')
-  multiCrush('9x kubejs:potassium_nitrate_dust', ['kubejs:potassium_nitrate_ingot']).id('kubejs:potassium_nitrate_dust_crush')
+  multiCrush('9x immersiveengineering:dust_saltpeter', 'kubejs:saltpeter_ingot')
+  multiCrush('9x kubejs:potassium_dust', 'kubejs:potassium_ingot')
+  multiCrush('9x kubejs:potassium_nitrate_dust', 'kubejs:potassium_nitrate_ingot')
 
   e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_dust', 'kubejs:potassium_dust', '#forge:dusts/saltpeter').id('kubejs:potassium_nitrate_dust_combine')
   e.recipes.mekanism.combining('2x kubejs:potassium_nitrate_ingot', 'kubejs:potassium_ingot', 'kubejs:saltpeter_ingot').id('kubejs:potassium_nitrate_ingot_combine')
