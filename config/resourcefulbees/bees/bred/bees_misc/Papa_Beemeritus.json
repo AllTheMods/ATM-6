@@ -16,17 +16,22 @@
         "attackDamage": 1
     },
     "MutationData": {
-        "hasMutation": false,
+        "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
                 "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:_honeycomb_block",
+                "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
                 "outputs": [{
-                        "outputID": "",
+                        "outputID": "tombstone:grave_dust",
                         "weight": 80
                     },
                     {
-                        "outputID": "resourcefulbees:Papa_bee_spawn_egg",
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:papa_beemeritus_bee",
+                            "BeeType": "papa_beemeritus",
+                            "Color": "#35b3ff"
+                        },
                         "weight": 20
                     }
                 ]
