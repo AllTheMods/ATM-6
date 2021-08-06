@@ -37,14 +37,17 @@
         "mainOutput": "kubejs:patrick_star",
         "mainOutputWeight": 0.99,
         "mainOutputCount": 1,
+        "mainNBTData": {},
         "secondaryOutput": "atmadditions:atm_star",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
+        "secondaryNBTData": {},
         "bottleOutput": "minecraft:bottle",
-        "bottleOutputWeight": 0,
-        "bottleOutputCount": 0,
+        "bottleOutputWeight": 0.1,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
         "recipeTime": 200,
-        "hasFluidoutput": false
+        "hasFluidOutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": false
