@@ -47,10 +47,10 @@
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
+        "mainInputCount": 9,
         "mainOutput": "resourcefulbees:starry_honey",
         "mainOutputWeight": 0.01,
-        "mainOutputCount": 500,
+        "mainOutputCount": 50,
         "mainNBTData": {},
         "secondaryOutput": "kubejs:patrick_star",
         "secondaryOutputWeight": 0.99,
