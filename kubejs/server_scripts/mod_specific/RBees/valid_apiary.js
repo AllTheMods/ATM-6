@@ -19,6 +19,7 @@ events.listen('block.tags', e => {
 
 const whitelistVA = [
   //Flowers
+  'kubejs:atm_star_block',
   'biomesoplenty:flesh',
   'botania:blaze_block',
   'minecraft:magma_block',
