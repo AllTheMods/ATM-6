@@ -29,25 +29,39 @@
         "attackDamage": 10
     },
     "MutationData": {
-        "hasMutation": false
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "resourcefulbees:starry_honey_block",
+          "outputs": [{
+                  "outputID": "atmadditions:atm_star",
+                  "weight": 50
+              },
+              {
+                  "outputID": "kubejs:patrick_star",
+                  "weight": 50
+              }
+          ]
+      }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "kubejs:patrick_star",
-        "mainOutputWeight": 0.99,
-        "mainOutputCount": 1,
+        "mainOutput": "resourcefulbees:starry_honey",
+        "mainOutputWeight": 0.01,
+        "mainOutputCount": 500,
         "mainNBTData": {},
-        "secondaryOutput": "atmadditions:atm_star",
-        "secondaryOutputWeight": 0.01,
+        "secondaryOutput": "kubejs:patrick_star",
+        "secondaryOutputWeight": 0.99,
         "secondaryOutputCount": 1,
         "secondaryNBTData": {},
-        "bottleOutput": "minecraft:bottle",
+        "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.1,
         "bottleOutputCount": 1,
         "bottleNBTData": {},
         "recipeTime": 200,
-        "hasFluidOutput": false
+        "hasFluidOutput": true
     },
     "SpawnData": {
         "canSpawnInWorld": false

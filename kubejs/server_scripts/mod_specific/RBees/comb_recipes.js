@@ -40,8 +40,8 @@ onEvent('recipes', e => {
   const crops = [`minecraft:wheat`,`minecraft:beetroot`,`minecraft:carrot`,`minecraft:potato`,`minecraft:melon_slice`,`minecraft:pumpkin`,`minecraft:bamboo`,`minecraft:sweet_berries`,`minecraft:brown_mushroom`,`minecraft:red_mushroom`]
   const meat = [`minecraft:porkchop`,`minecraft:beef`,`minecraft:cod`,`minecraft:salmon`,`minecraft:chicken`,`minecraft:rabbit`,`minecraft:mutton`]
   const stones = [`minecraft:andesite`,`minecraft:diorite`,`minecraft:granite`,`minecraft:basalt`,`create:gabbro`,`create:dolomite`,`create:weathered_limestone`,`create:limestone`,`create:scoria`,`create:dark_scoria`,`quark:brimstone`,`quark:slate`,`quark:jasper`,`quark:limestone`,`quark:basalt`,`astralsorcery:marble_raw`]
-  const honey = ['resourcefulbees:honey','cyclic:honey','create:honey',]
-  const customHoney = ['resourcefulbees:rainbow_honey','resourcefulbees:catnip_honey',]
+  const honey = ['resourcefulbees:honey','cyclic:honey','create:honey']
+  const customHoney = ['resourcefulbees:rainbow_honey','resourcefulbees:catnip_honey']
 
   function shapedRecipe(results, craftingItem, itemCount) {
     const maxLength = Math.min(craftingShapes.length, results.length)
@@ -72,6 +72,7 @@ onEvent('recipes', e => {
   }).id(`kubejs:lava_comb_bucket`)
 
   //Honey Compatibility
+    e.recipes.thermal.chiller(`resourcefulbees:starry_honey_block`, fluid.of(`resourcefulbees:starry_honey`, 1000))
   honey.forEach(type => e.recipes.thermal.chiller('minecraft:honey_block', fluid.of(`${type}`, 1000)))
   customHoney.forEach(type => {
     e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))

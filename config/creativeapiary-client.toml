@@ -6,7 +6,7 @@ tierCreativeApiaryOutput = "BLOCK"
 #Tier Creative Apiary Quantity 
 # How many Combs/Blocks per Bees?
 #Range: > 1
-tierCreativeApiaryQuantity = 10
+tierCreativeApiaryQuantity = 1
 #
 #Tier Creative Apiary Max Bees
 #Range: > 1
