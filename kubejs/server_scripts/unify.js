@@ -707,14 +707,14 @@ onEvent('recipes', e => {
   e.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [{ tag: 'minecraft:planks' }],
-    inputFluid: `{FluidName:'immersiveengineering: creosote',Amount:125}`,
+    inputFluid: `{FluidName:'immersiveengineering:creosote',Amount:125}`,
     processingTime: 5,
     output: { item: 'immersiveengineering:treated_wood_horizontal' }
   })
   e.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [{ tag: 'minecraft:planks' }],
-    inputFluid: `{FluidName:'thermal: creosote',Amount:125}`,
+    inputFluid: `{FluidName:'thermal:creosote',Amount:125}`,
     processingTime: 5,
     output: { item: 'immersiveengineering:treated_wood_horizontal' }
   })
