@@ -599,7 +599,10 @@
 			tasks: [{
 				id: "0AA391797B15CD14"
 				type: "item"
-				item: "tconstruct:creative_upgrade"
+				item: "tconstruct:creative_slot"
+				tag: {
+					slot: "upgrades"
+				}
 			}]
 			rewards: [{
 				id: "47F652357238F8F2"
@@ -615,7 +618,10 @@
 			tasks: [{
 				id: "4A6594AB198FE886"
 				type: "item"
-				item: "tconstruct:creative_ability"
+				item: "tconstruct:creative_slot"
+				tag: {
+					slot: "souls"
+				}
 			}]
 		}
 		{
