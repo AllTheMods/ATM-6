@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:lead_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:lead_ingot",
-                    "weight": 80
+                "outputID": "alltheores:lead_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:lead_bee",
+                    "BeeType": "lead",
+                    "Color": "#D0E4E1"
                 },
-                {
-                    "outputID": "resourcefulbees:lead_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

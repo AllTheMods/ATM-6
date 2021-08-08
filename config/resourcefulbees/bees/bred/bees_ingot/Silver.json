@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:silver_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:silver_ingot",
-                    "weight": 80
+                "outputID": "alltheores:silver_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:silver_bee",
+                    "BeeType": "silver",
+                    "Color": "#D1E1EC"
                 },
-                {
-                    "outputID": "resourcefulbees:silver_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

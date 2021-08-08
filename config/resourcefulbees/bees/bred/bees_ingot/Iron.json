@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:lead_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:iron_ingot",
-                    "weight": 80
+                "outputID": "minecraft:iron_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:iron_bee",
+                    "BeeType": "iron",
+                    "Color": "#ffcc99"
                 },
-                {
-                    "outputID": "resourcefulbees:lead_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

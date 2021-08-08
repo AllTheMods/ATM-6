@@ -26,14 +26,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:cobalt_honeycomb_block",
             "outputs": [{
-                    "outputID": "tconstruct:cobalt_ingot",
-                    "weight": 80
+                "outputID": "tconstruct:cobalt_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:cobalt_bee",
+                    "BeeType": "cobalt",
+                    "Color": "#2248ba"
                 },
-                {
-                    "outputID": "resourcefulbees:cobalt_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

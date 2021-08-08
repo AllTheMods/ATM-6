@@ -35,7 +35,12 @@
                 "outputID": "minecraft:sand",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:sandy_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:sandy_bee",
+                    "BeeType": "sandy",
+                    "Color": "#DDD2B7"
+                },
                 "weight": 20
             }]
         }]

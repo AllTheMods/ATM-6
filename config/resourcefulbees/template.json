@@ -1,7 +1,7 @@
 {
     "flower": "",
     "maxTimeInHive": 1200,
-    "traits": [""],
+    "traits": [],
     "hasHoneycomb": true,
     "baseLayerTexture": "",
     "ColorData": {
@@ -29,19 +29,22 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:_honeycomb_block",
-                "outputs": [{
-                        "outputID": "",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:_honeycomb_block",
+            "outputs": [{
+                "outputID": "",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:_bee",
+                    "BeeType": "",
+                    "Color": "#ffcc99"
+                },
+                "weight": 20
+
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

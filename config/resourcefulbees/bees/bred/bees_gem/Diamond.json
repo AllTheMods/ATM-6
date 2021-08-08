@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:diamond_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:diamond",
-                    "weight": 80
+                "outputID": "minecraft:diamond",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:diamond_bee",
+                    "BeeType": "diamond",
+                    "Color": "#00ffff"
                 },
-                {
-                    "outputID": "resourcefulbees:diamond_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

@@ -35,7 +35,12 @@
                 "outputID": "resourcefulbees:mystical_honeycomb",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:mystical_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:mystical_bee",
+                    "BeeType": "mystical",
+                    "Color": "#5cea30"
+                },
                 "weight": 20
             }]
         }]

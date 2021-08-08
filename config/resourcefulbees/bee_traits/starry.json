@@ -22,20 +22,54 @@
     "outOfWorld",
     "magic",
     "sweetBerryBush",
-    "player"
+    "player",
+    "witherSkull",
+    "fireworks",
+    "trident",
+    "arrow",
+    "explosion.player",
+    "explosion",
+    "sting",
+    "mob",
+    "thrown",
+    "indirectMagic",
+    "thorns"
   ],
   "particleName": "minecraft:dripping_honey",
   "potionDamageEffects": [{
       "effectID": "minecraft:nausea",
-      "strength": 3
+      "strength": 5
     },
     {
       "effectID": "minecraft:blindness",
-      "strength": 3
+      "strength": 5
     },
     {
       "effectID": "minecraft:weakness",
       "strength": 5
+    },
+    {
+      "effectID": "minecraft:hunger",
+      "strength": 5
+    },
+    {
+      "effectID": "minecraft:bad_omen",
+      "strength": 1
     }
+  ],
+  "specialAbilities": [
+    "spider"
+  ],
+  "potionImmunities": [
+    "minecraft:poison",
+    "resourcefulbees:calming",
+    "minecraft:slowness",
+    "minecraft:instant_damage",
+    "minecraft:nausea",
+    "minecraft:hunger",
+    "minecraft:weakness",
+    "minecraft:wither",
+    "apotheosis:sundering",
+    "cyclic:paralyze"
   ]
 }

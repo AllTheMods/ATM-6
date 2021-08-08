@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:lava_honeycomb_block",
             "outputs": [{
-                    "outputID": "resourcefulbees:lava_honeycomb",
-                    "weight": 80
+                "outputID": "resourcefulbees:lava_honeycomb",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:lava_bee",
+                    "BeeType": "lava",
+                    "Color": "#DB4819"
                 },
-                {
-                    "outputID": "resourcefulbees:lava_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

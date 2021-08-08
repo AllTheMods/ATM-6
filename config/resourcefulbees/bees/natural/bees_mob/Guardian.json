@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:guardian_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:prismarine_shard",
-                    "weight": 80
+                "outputID": "minecraft:prismarine_shard",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:guardian_bee",
+                    "BeeType": "guardian",
+                    "Color": "#8FC0AA"
                 },
-                {
-                    "outputID": "resourcefulbees:guardian_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

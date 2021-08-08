@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:zinc_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:zinc_ingot",
-                    "weight": 80
+                "outputID": "alltheores:zinc_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:zinc_bee",
+                    "BeeType": "zinc",
+                    "Color": "#B6DBD8"
                 },
-                {
-                    "outputID": "resourcefulbees:zinc_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

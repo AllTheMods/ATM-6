@@ -2,10 +2,10 @@
     "flower": "kubejs:atm_star_block",
     "maxTimeInHive": 1200,
     "traits": ["starry"],
-    "sizeModifier": 2.0,
+    "sizeModifier": 1.75,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [1,1,1,1],
-	"apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB"],
+    "apiaryOutputAmounts": [1, 1, 1, 1],
+    "apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB"],
     "baseLayerTexture": "special/starry_bee_primary_layer",
     "ColorData": {
         "primaryColor": "#FFA500",
@@ -29,22 +29,39 @@
         "attackDamage": 10
     },
     "MutationData": {
-        "hasMutation": false
+      "hasMutation": true,
+      "mutationCount": 1,
+      "mutations": [{
+          "type": "BLOCK_TO_ITEM",
+          "inputID": "resourcefulbees:starry_honey_block",
+          "outputs": [{
+                  "outputID": "atmadditions:atm_star",
+                  "weight": 50
+              },
+              {
+                  "outputID": "kubejs:patrick_star",
+                  "weight": 50
+              }
+          ]
+      }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "kubejs:patrick_star",
-        "mainOutputWeight": 0.99,
-        "mainOutputCount": 1,
-        "secondaryOutput": "atmadditions:atm_star",
-        "secondaryOutputWeight": 0.01,
+        "mainInputCount": 9,
+        "mainOutput": "resourcefulbees:starry_honey",
+        "mainOutputWeight": 0.01,
+        "mainOutputCount": 50,
+        "mainNBTData": {},
+        "secondaryOutput": "kubejs:patrick_star",
+        "secondaryOutputWeight": 0.99,
         "secondaryOutputCount": 1,
-        "bottleOutput": "minecraft:bottle",
-        "bottleOutputWeight": 0,
-        "bottleOutputCount": 0,
+        "secondaryNBTData": {},
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.1,
+        "bottleOutputCount": 1,
+        "bottleNBTData": {},
         "recipeTime": 200,
-        "hasFluidoutput": false
+        "hasFluidOutput": true
     },
     "SpawnData": {
         "canSpawnInWorld": false

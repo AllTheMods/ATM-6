@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:beeper_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:gunpowder",
-                    "weight": 80
+                "outputID": "minecraft:gunpowder",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:beeper_bee",
+                    "BeeType": "beeper",
+                    "Color": "#0C9F0A"
                 },
-                {
-                    "outputID": "resourcefulbees:beeper_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

@@ -32,14 +32,18 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:slimy_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:slime_ball",
-                    "weight": 80
+                "outputID": "minecraft:slime_ball",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:slimy_bee",
+                    "BeeType": "slimy",
+                    "Color": "#1ad920"
                 },
-                {
-                    "outputID": "resourcefulbees:slimy_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+
+            }]
         }]
     },
     "CentrifugeData": {

@@ -29,32 +29,36 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:dragonic_honeycomb_block",
-                "outputs": [{
-                        "outputID": "resourcefulbees:dragonic_honeycomb",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:dragonic_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            },
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "tag:forge:storage_blocks/allthemodium",
-                "outputs": [{
-                        "outputID": "minecraft:cobblestone",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:allthemodium_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:dragonic_honeycomb_block",
+            "outputs": [{
+                "outputID": "resourcefulbees:dragonic_honeycomb",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:dragonic_bee",
+                    "BeeType": "dragonic",
+                    "Color": "#E400FF"
+                },
+                "weight": 20
+            }]
+        }, {
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "tag:forge:storage_blocks/allthemodium",
+            "outputs": [{
+                "outputID": "allthemodium:allthemodium_nugget",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:allthemodium_bee",
+                    "BeeType": "allthemodium",
+                    "Color": "#FCC50C"
+                },
+                "weight": 20
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

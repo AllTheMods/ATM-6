@@ -29,32 +29,36 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:gold_honeycomb_block",
-                "outputs": [{
-                        "outputID": "minecraft:gold_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:gold_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            },
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "minecraft:netherite_block",
-                "outputs": [{
-                        "outputID": "minecraft:cobblestone",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:netherite_bee_spawn_egg",
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:gold_honeycomb_block",
+            "outputs": [{
+                "outputID": "minecraft:gold_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:gold_bee",
+                    "BeeType": "gold",
+                    "Color": "#FFDC00"
+                },
+                "weight": 20
+            }]
+        }, {
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "minecraft:netherite_block",
+            "outputs": [{
+                "outputID": "minecraft:netherite_scrap",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:netherite_bee",
+                    "BeeType": "netherite",
+                    "Color": "#654740"
+                },
+                "weight": 20
+            }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:leafy_honeycomb_block",
             "outputs": [{
-                    "outputID": "mysticalagriculture:nature_essence",
-                    "weight": 80
+                "outputID": "mysticalagriculture:nature_essence",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:leafy_bee",
+                    "BeeType": "leafy",
+                    "Color": "#06B805"
                 },
-                {
-                    "outputID": "resourcefulbees:leafy_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

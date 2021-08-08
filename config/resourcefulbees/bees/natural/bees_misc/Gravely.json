@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:gravely_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:gravel",
-                    "weight": 80
+                "outputID": "minecraft:gravel",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:gravely_bee",
+                    "BeeType": "gravely",
+                    "Color": "#726b69"
                 },
-                {
-                    "outputID": "resourcefulbees:gravely_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

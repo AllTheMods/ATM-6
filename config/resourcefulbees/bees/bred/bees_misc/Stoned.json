@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:stoned_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:stone",
-                    "weight": 80
+                "outputID": "minecraft:stone",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:stoned_bee",
+                    "BeeType": "stoned",
+                    "Color": "#5A5A5A"
                 },
-                {
-                    "outputID": "resourcefulbees:stoned_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

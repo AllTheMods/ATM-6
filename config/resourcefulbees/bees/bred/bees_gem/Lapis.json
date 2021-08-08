@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:lapis_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:lapis_lazuli",
-                    "weight": 80
+                "outputID": "minecraft:lapis_lazuli",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:lapis_bee",
+                    "BeeType": "lapis",
+                    "Color": "#345ec3"
                 },
-                {
-                    "outputID": "resourcefulbees:lapis_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

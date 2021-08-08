@@ -35,7 +35,12 @@
                 "outputID": "mysticalagriculture:wood_essence",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:lumber_bee_spawn_egg",
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:lumber_bee",
+                    "BeeType": "lumber",
+                    "Color": "#453B2A"
+                },
                 "weight": 20
             }]
         }]

@@ -32,14 +32,18 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:spider_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:string",
-                    "weight": 80
+                "outputID": "minecraft:string",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:spider_bee",
+                    "BeeType": "spider",
+                    "Color": "#3b0000"
                 },
-                {
-                    "outputID": "resourcefulbees:spider_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+
+            }]
         }]
     },
     "CentrifugeData": {

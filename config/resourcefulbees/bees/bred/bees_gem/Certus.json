@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:certus_honeycomb_block",
             "outputs": [{
-                    "outputID": "appliedenergistics2:certus_quartz_crystal",
-                    "weight": 80
+                "outputID": "appliedenergistics2:certus_quartz_crystal",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:certus_bee",
+                    "BeeType": "certus",
+                    "Color": "#d2d6f7"
                 },
-                {
-                    "outputID": "resourcefulbees:certus_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

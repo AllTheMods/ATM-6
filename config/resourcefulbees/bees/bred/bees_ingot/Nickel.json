@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:nickel_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:nickel_ingot",
-                    "weight": 80
+                "outputID": "alltheores:nickel_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:nickel_bee",
+                    "BeeType": "nickel",
+                    "Color": "#F5F2A3"
                 },
-                {
-                    "outputID": "resourcefulbees:nickel_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

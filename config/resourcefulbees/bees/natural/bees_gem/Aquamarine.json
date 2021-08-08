@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:aquamarine_honeycomb_block",
             "outputs": [{
-                    "outputID": "astralsorcery:aquamarine",
-                    "weight": 80
+                "outputID": "astralsorcery:aquamarine",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:aquamarine_bee",
+                    "BeeType": "aquamarine",
+                    "Color": "#35b3ff"
                 },
-                {
-                    "outputID": "resourcefulbees:aquamarine_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

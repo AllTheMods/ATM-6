@@ -32,14 +32,17 @@
             "type": "BLOCK_TO_ITEM",
             "inputID": "resourcefulbees:copper_honeycomb_block",
             "outputs": [{
-                    "outputID": "alltheores:copper_ingot",
-                    "weight": 80
+                "outputID": "alltheores:copper_ingot",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:copper_bee",
+                    "BeeType": "copper",
+                    "Color": "#D28868"
                 },
-                {
-                    "outputID": "resourcefulbees:copper_bee_spawn_egg",
-                    "weight": 20
-                }
-            ]
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {
