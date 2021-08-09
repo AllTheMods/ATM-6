@@ -58,5 +58,11 @@
       "mana-and-artifice"
     ],
     "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mob": "iceandfire:myrmex_queen",
+    "result": "deny",
+    "onjoin": true
   }
 ]
