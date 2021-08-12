@@ -33,7 +33,19 @@
     "mob",
     "thrown",
     "indirectMagic",
-    "thorns"
+    "thorns",
+	"pedestal1",
+	"pedestal2",
+	"pedestal3",
+	"pedestal4",
+	"pedestal5",
+	"pedestal6",
+	"pedestal7",
+	"pedestal8",
+	"pedestal9",
+	"pedestal10",
+	"pedestal11",
+	"pedestal12"
   ],
   "particleName": "minecraft:dripping_honey",
   "potionDamageEffects": [{
