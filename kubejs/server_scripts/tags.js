@@ -23,6 +23,8 @@ onEvent('item.tags', e => {
     e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`)
     e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
+  e.add('forge:ingots/aluminum', 'zycraft:aluminium')
+  e.add('forge:ingots/aluminium', 'zycraft:aluminium')
   e.add('minecraft:logs_unstripped', '/^.+:(?!stripped_).+_log$/')
   e.add('forge:swords', ['allthemodium:alloy_paxel', 'allthemodium:alloy_sword'])
   e.add('forge:dusts/certus_quartz', ['appliedenergistics2:certus_quartz_dust'])

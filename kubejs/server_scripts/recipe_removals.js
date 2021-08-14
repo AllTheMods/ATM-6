@@ -1,6 +1,8 @@
 //priority: 999
 onEvent('recipes', e => {
   const idRemove = [
+    'rftoolsdim:dimension_builder',
+    'explorerscompass:explorers_compass',
     'minecraft:comparator',
     'minecraft:glass',
 
@@ -279,6 +281,7 @@ onEvent('recipes', e => {
     ]
   })
   e.remove({ mod: 'cabletiers' })
+  e.remove({ mod: 'chiseled' })
   e.remove({
     input: ['appliedenergistics2:flour']
   })

@@ -1332,18 +1332,16 @@ onEvent('recipes', e => {
     { item: 'tconstruct:blood_slime_ball' },
     { item: 'minecraft:clay_ball' }
   ]).energy(4000).id('kubejs:smelter/pig_iron')
-
   e.recipes.thermal.chiller(
     [
       { item: 'tconstruct:pig_iron_ingot' }
-    ], 
+    ],
     [
-    fluid.of('tconstruct:molten_pig_iron', 144),
-    { item: 'thermal:chiller_ingot_cast' }
-  ])
-  .energy(5000)
-  .id('kubejs:chiller/pig_iron')
-
+      fluid.of('tconstruct:molten_pig_iron', 144),
+      { item: 'thermal:chiller_ingot_cast' }
+    ])
+    .energy(5000)
+    .id('kubejs:chiller/pig_iron')
   e.recipes.thermal.smelter([
     { item: 'tconstruct:slimesteel_ingot', count: 2 }
   ], [
@@ -1358,6 +1356,23 @@ onEvent('recipes', e => {
     ['minecraft:blackstone', 'byg:magmatic_stone']
   ])
   tinkerMelting(['byg:cryptic_magma_block', 'byg:magmatic_stone'])
+
+  //Explorer's Compass
+  e.recipes.bloodmagic.altar('explorerscompass:explorerscompass', 'minecraft:compass').upgradeLevel(3).altarSyphon(40000)
+
+  //RFTools
+  e.shaped('rftoolsdim:dimension_builder', [
+    'USU',
+    'MCM',
+    'BAB'
+  ], {
+    U: 'kubejs:uu_matter',
+    S: 'atmadditions:dimensional_seed',
+    A: 'atmadditions:atm_star',
+    M: 'mekanism:pellet_antimatter',
+    B: 'thermal:enderium_block',
+    C: 'rftoolsbase:machine_frame'
+  }).id('kubejs:thermoelectric_plate')
 
   //Custom Blocks
   customBlock('kubejs:nether_star_block', 'minecraft:nether_star')
