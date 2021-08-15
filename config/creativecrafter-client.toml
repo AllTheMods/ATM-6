@@ -1,0 +1,10 @@
+#
+#Creative Crafter RF Consume
+#Range: > 0
+creativecrafterrfconsume = 0
+#
+#Creative Crafter Speed 
+#If this Value is too high and you try to craft like 10.000.000 items the Game will lag :)
+#Range: > 0
+creativecrafterspeed = 60000
+

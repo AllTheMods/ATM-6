@@ -1,0 +1,4 @@
+#Sets the maximum number of parsed GUI window files to be stored for quick loading.
+#Range: 0 ~ 100
+windowCacheCap = 12
+

@@ -1,0 +1,28 @@
+
+#lots of cosmetic stuff in here
+[visuals]
+	#How much the dummy swings in degrees with respect to the damage dealt. default=0.75
+	#Range: 0.0 ~ 2.0
+	animationIntensity = 0.75
+	#Show hearths instead of damage dealt? (1 hearth = two damage)
+	showHearths = false
+	#Does dps message update dynamically or will it only appear after each parse? 
+	dynamicDPS = true
+	#possible skins: 0 = default, 1 = original, 2 = my attempt
+	#Range: 0 ~ 2
+	texture = 0
+
+	[visuals.damage_number_colors]
+		#hex color for various damage sources
+		genetic = "0xffffff"
+		crit = "0xff0000"
+		dragon_breath = "0xFF00FF"
+		wither = "0x666666"
+		explosion = "0xFFCC33"
+		indirect_magic = "0x990033"
+		magic = "0x3399FF"
+		trident = "0x00FFCC"
+		fire = "0xFF9900"
+		lightning = "0xFFFF00"
+		cactus = "0x006600"
+

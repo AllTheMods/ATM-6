@@ -1,9 +1,146 @@
 {
+    CyaniteReprocessor: {
+        /* 
+         * Max water capacity
+         * Valid range: (0,)
+         * Default: 5000
+         */
+        WaterTankCapacity: 5000.0,
+
+        /* 
+         * Time (in ticks) it takes to complete a job.
+         * Valid range: (0,)
+         * Default: 200
+         */
+        TotalWorkTime: 200.0,
+
+        /* 
+         * Max energy capacity.
+         * Valid range: (0,)
+         * Default: 5000
+         */
+        EnergyTankCapacity: 5000.0,
+
+        /* 
+         * Power usage per tick of work.
+         * Valid range: (0,)
+         * Default: 1
+         */
+        EnergyConsumptionPerTick: 1.0,
+
+        /* 
+         * Max transfer rate of fluids and energy.
+         * Valid range: (0,)
+         * Default: 500
+         */
+        TransferRate: 500.0,
+
+        /* 
+         * Water usage per tick of work.
+         * Valid range: (0,)
+         * Default: 1
+         */
+        WaterConsumptionPerTick: 1.0,
+
+    },
+
+    HeatExchanger: {
+        GUI: {
+            /* 
+             * Default: 2000
+             */
+            HeatDisplayMax: 2000.0,
+
+        },
+
+    },
+
+    Turbine: {
+        /* 
+         * Valid range: [5,192]
+         * Default: 32
+         */
+        MaxWidth: 32.0,
+
+        /* 
+         * Valid range: [4,256]
+         * Default: 192
+         */
+        MaxHeight: 192.0,
+
+        /* 
+         * Valid range: [5,192]
+         * Default: 32
+         */
+        MaxLength: 32.0,
+
+    },
+
+    Reactor: {
+        /* 
+         * Valid range: (0,)
+         * Default: 1.0
+         */
+        FuelUsageMultiplier: 1.0,
+
+        /* 
+         * Valid range: [3,192]
+         * Default: 128
+         */
+        MaxWidth: 128.0,
+
+        /* 
+         * Valid range: (0,)
+         * Default: 1.0
+         */
+        OutputMultiplier: 1.0,
+
+        /* 
+         * Valid range: [3,256]
+         * Default: 192
+         */
+        MaxHeight: 192.0,
+
+        /* 
+         * Valid range: [3,192]
+         * Default: 128
+         */
+        MaxLength: 128.0,
+
+        GUI: {
+            /* 
+             * Default: 2000
+             */
+            HeatDisplayMax: 2000.0,
+
+        },
+
+    },
+
     WorldGen: {
+        /* 
+         * Valid range: [1,)
+         * Default: 5
+         */
+        YelloriteOreMaxClustersPerChunk: 5.0,
+
         /* 
          * Default: true
          */
         EnableYelloriteGeneration: false,
+
+        /* 
+         * Valid range: [5,)
+         * Default: 50
+         */
+        YelloriteOreMaxSpawnY: 50.0,
+
+        /* 
+         * Valid range: [1,)
+         * Default: 10
+         */
+        YelloriteMaxOrePerCluster: 10.0,
+
     },
 
 }

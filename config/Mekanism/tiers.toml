@@ -170,25 +170,25 @@
 
 		#Logistical Transporters
 		[tier.transmitters.items]
-			#Item throughput rate of Basic logistical transporters in items/s.
+			#Item throughput rate of Basic logistical transporters in items/half second.
 			#Range: > 1
 			basicPullAmount = 8
 			#Five times travel speed of Basic logistical transporter.
 			#Range: > 1
 			basicSpeed = 16
-			#Item throughput rate of Advanced logistical transporters in items/s.
+			#Item throughput rate of Advanced logistical transporters in items/half second.
 			#Range: > 1
 			advancedPullAmount = 128
 			#Five times travel speed of Advanced logistical transporter.
 			#Range: > 1
 			advancedSpeed = 32
-			#Item throughput rate of Elite logistical transporters in items/s.
+			#Item throughput rate of Elite logistical transporters in items/half second.
 			#Range: > 1
 			elitePullAmount = 256
 			#Five times travel speed of Elite logistical transporter.
 			#Range: > 1
 			eliteSpeed = 64
-			#Item throughput rate of Ultimate logistical transporters in items/s.
+			#Item throughput rate of Ultimate logistical transporters in items/half second.
 			#Range: > 1
 			ultimatePullAmount = 512
 			#Five times travel speed of Ultimate logistical transporter.

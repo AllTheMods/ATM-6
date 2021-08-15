@@ -1,0 +1,46 @@
+
+[Smoke]
+	#Affects probability of coloring smoke by chimneys
+	#Range: 0.0 ~ 1.0
+	coloringFactor = 0.10000000149011612
+	#Maximum smoke particles that can be rendered at scene.
+	#If exceeded, smoke amount will be reduced proportionally for each rendered chimney
+	#Range: 0 ~ 2000
+	maxRenderedParticlesAmount = 800
+	#If true, smoke particles will collide with obstacles
+	canCollide = true
+	#If true, all emitters will produce smoke even without connected chimneys
+	emitWithoutChimney = true
+	#Use retro smoke particles instead of modern ones
+	retroSmokeParticles = false
+	#Completely disables vanilla cozy smoke particles from a campfire
+	disableVanillaCampfireSmoke = true
+	#Whether or not to colorize smoke particles
+	colorize = true
+
+[MaterialGroups]
+
+	[MaterialGroups.Brick]
+		#Whether to display this group of blocks or not
+		enabled = true
+
+	[MaterialGroups.Cobblestone]
+		#Whether to display this group of blocks or not
+		enabled = true
+
+	[MaterialGroups.Concrete]
+		#Whether to display this group of blocks or not
+		enabled = true
+
+	[MaterialGroups.Glass]
+		#Whether to display this group of blocks or not
+		enabled = true
+
+	[MaterialGroups.Terracotta]
+		#Whether to display this group of blocks or not
+		enabled = true
+
+	[MaterialGroups.Other]
+		#Whether to display this group of blocks or not
+		enabled = true
+

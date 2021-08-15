@@ -1,0 +1,9 @@
+
+[gear]
+	#Allow gear items to have the 'enchanted glow' effect. Set to 'false' to disable the effect.
+	#The way vanilla handles the effect is bugged, and it is recommended to disable this until it can be fixed
+	#The bug is not harmful and some like the way the overpowered effect looks
+	allowEnchantedEffect = false
+	#Plays a sped-up 'item breaking' sound when an item's stats are recalculated due to durability loss
+	playKachinkSound = true
+

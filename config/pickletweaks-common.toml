@@ -30,12 +30,21 @@
 	enabled = false
 	#Enabling this makes it so custom repair materials override the default ones for the tools specified.
 	overrideMode = false
+	#Crafting grid repair removes all non-curse enchantments.
+	stripEnchantments = false
 
 #General configuration options.
 [General]
 	#The effective radius of the Magnet.
 	#Range: 1.0 ~ 16.0
 	magnetRange = 7.0
+	#Should fake players be able to use watering cans?
+	fakePlayerWatering = true
+	#Here you can specify a list of tools that shouldn't have tool info tooltips.
+	#Ex. ["minecraft:iron_pickaxe"]
+	#You can also blacklist entire mods by doing <mod-id>:*
+	#Ex. ["pickletweaks:*"]
+	toolInfoTooltipBlacklist = ["silentgear:*"]
 
 #Disable features.
 [Features]
@@ -65,4 +74,8 @@
 	apples = true
 	#Enable Meshes?
 	meshes = false
+	#Enable Sickles?
+	sickles = true
+	#Enable Scythes?
+	scythes = true
 

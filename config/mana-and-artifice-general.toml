@@ -1,0 +1,49 @@
+#How many souls are players worth when killed?
+#Range: 1 ~ 20000
+playerSouls = 2500
+#How many souls are villagers worth when killed?
+#Range: 1 ~ 20000
+villagerSouls = 250
+#How many souls are enemy faction members worth when killed?
+#Range: 1 ~ 20000
+factionSouls = 250
+#How many souls are mobs worth when killed?
+#Range: 1 ~ 20000
+mobSouls = 150
+#How many souls are animals worth when killed?
+#Range: 1 ~ 20000
+animalSouls = 100
+#How many souls are undead worth when killed?
+#Range: 1 ~ 20000
+undeadSouls = 50
+
+#Mana and Artifice // General Options
+[ma_general_options]
+	#Rituals of Aurora and Eventide by default will change time gradually for a prettier effect.  However this isn't without its performance impacts, and this can be toggled off by setting this to false, making the transition instant like the /time set commands. [true / false]
+	gradualTimeChange = true
+	#A comma separated list of entity IDs that the warding candle should ignore, regardless of detection (use this if it's stopping you from something you think it shouldn't; this isn't to expand what it will block)
+	wardingCandleBlacklist = ""
+
+#Mana and Artifice // Villager Modification
+[ma_villager_modification]
+	#Adjust librarian villagers to not have enchanted books until tier 3.  This is done for balancing and to remove the exploit of rolling librarians for cheap enchants. [true / false]
+	modifyVillagerTrades = true
+
+#Raids are based on a chance value.  The value is increased each day there is not a raid.  If the chance hits a total of 1.0 or greater, it's a guaranteed raid.  The chance resets after a raid successfully spawns.
+[ma_faction_raids]
+	#Adjust the base amount per day that the chance to be raided goes up for each player.
+	#Range: 0.0 ~ 1.0
+	raidBaselineIncrease = 0.05
+	#Adjust the amount per day that the chance to be raided goes up for each player based on their tier above 3 (this value * (tier-3)).  This is added to the baseline.
+	#Range: 0.0 ~ 1.0
+	raidTierIncrease = 0.05
+	#How many attempts (within a 20x20x5 box centered on the player in question) should the game make to spawn a raid?  Note this will be re-attempted every 1000 ticks until a successful spawn is made.  If you're lagging due to raid spawn attempts, lower this setting.
+	#Range: 1 ~ 1000
+	raidSpawnAttempts = 100
+
+#Mana and Artifice // Worldgen Options
+[ma_worldgen_options]
+	#How far apart ley line nodes must be as a minimum.  They can be farther than this depending on world seed and generation.
+	#Range: 100 ~ 15000
+	leyLineDistance = 500
+

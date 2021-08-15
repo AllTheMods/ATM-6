@@ -1,0 +1,180 @@
+
+["YUNG's Better Dungeons"]
+
+	###########################################################################################################
+	## General settings.
+	###########################################################################################################
+	["YUNG's Better Dungeons".General]
+		# Whether or not dungeons should be allowed to place skeleton skulls and other mob heads.
+		# This option may be useful for some modpack creators.
+		# Default: true
+		"Enable Skulls & Heads" = true
+		# Whether or not vanilla dungeons should be prevented from spawning in the world.
+		# It is recommended to disable these, since the Small Dungeons are very similar in design.
+		# Default: true
+		"Remove Vanilla Dungeons" = true
+		# Some dungeons can rarely spawn Nether-related blocks such as soul sand, soul campfires, and soul lanterns.
+		# Note that the blocks will be purely decorative - nothing progression-breaking like Ancient Debris.
+		# Set this to false to prevent any Nether-related blocks from spawning in dungeons.
+		# This option may be useful for some modpack creators.
+		# Default: true
+		"Enable Nether Blocks in Dungeons" = true
+
+	###########################################################################################################
+	## Spider Dungeon settings.
+	###########################################################################################################
+	["YUNG's Better Dungeons"."Spider Dungeons"]
+		# The minimum y-value at which the STARTING POINT of the spider dungeon can spawn.
+		# Note that this point is the top of the spider dungeon, so the various pieces of the dungeon can extend far below it.
+		# Any parts that spawn above the surface (according to the heightmap) will not be placed.
+		# Default: 70
+		"Spider Dungeon Min Start Y" = 70
+		# The maximum y-value at which the STARTING POINT of the spider dungeon can spawn.
+		# Note that this point is the top of the spider dungeon, so the various pieces of the dungeon can extend far below it.
+		# Any parts that spawn above the surface (according to the heightmap) will not be placed.
+		# Default: 71
+		"Spider Dungeon Max Start Y" = 71
+		# Whether or not Spider Dungeons from Better Dungeons should spawn.
+		# Default: true
+		"Spawn Spider Dungeons" = true
+		# The average number of chunks between adjacent Spider Dungeons.
+		# This controls how often Spider Dungeons spawn. Higher value = more rare.
+		# Default: 44
+		"Spider Dungeon Average Separation Distance" = 44
+		# List of dimensions that will have Spider Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:overworld, minecraft:the_nether, undergarden:undergarden]"
+		# Default: "[minecraft:overworld]"
+		"Spider Dungeon Whitelisted Dimensions" = "[minecraft:overworld]"
+		# List of biomes that will NOT have Spider Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:plains, byg:alps]"
+		# Default: "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+		"Spider Dungeon Blacklisted Biomes" = "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+		# Whether or not Cobbedstone from Quark should be used when generating Spider Caves, if Quark is installed.
+		# If Quark is not installed, this setting has no effect.
+		# Default: true
+		"Use Quark Cobbedstone" = true
+
+	###########################################################################################################
+	## Skeleton Dungeon settings.
+	###########################################################################################################
+	["YUNG's Better Dungeons"."Skeleton Dungeons"]
+		# The minimum y-value at which the STARTING POINT of the skeleton dungeon can spawn.
+		# Note that this point is the bottom of the skeleton dungeon, so the various pieces of the dungeon can extend above it.
+		# Default: 11
+		"Skeleton Dungeon Min Start Y" = 11
+		# The maximum y-value at which the STARTING POINT of the skeleton dungeon can spawn.
+		# Note that this point is the bottom of the skeleton dungeon, so the various pieces of the dungeon can extend above it.
+		# Default: 30
+		"Skeleton Dungeon Max Start Y" = 30
+		# Whether or not Skeleton Dungeons from Better Dungeons should spawn.
+		# Default: true
+		"Spawn Skeleton Dungeons" = true
+		# The average number of chunks between adjacent Skeleton Dungeons.
+		# This controls how often Skeleton Dungeons spawn. Higher value = more rare.
+		# Default: 46
+		"Skeleton Dungeon Average Separation Distance" = 46
+		# List of dimensions that will have Skeleton Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:overworld, minecraft:the_nether, undergarden:undergarden]"
+		# Default: "[minecraft:overworld]"
+		"Skeleton Dungeon Whitelisted Dimensions" = "[minecraft:overworld]"
+		# List of biomes that will NOT have Skeleton Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:plains, byg:alps]"
+		# Default: "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+		"Skeleton Dungeon Blacklisted Biomes" = "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+
+	###########################################################################################################
+	## Zombie Dungeon settings.
+	###########################################################################################################
+	["YUNG's Better Dungeons"."Zombie Dungeons"]
+		# The minimum y-value at which the STARTING POINT of the zombie dungeon can spawn.
+		# Note that this point is the bottom of the zombie dungeon, so the various pieces of the dungeon can extend below it.
+		# Default: 50
+		"Zombie Dungeon Min Start Y" = 50
+		# The maximum y-value at which the STARTING POINT of the zombie dungeon can spawn.
+		# Note that this point is the bottom of the zombie dungeon, so the various pieces of the dungeon can extend below it.
+		# Default: 51
+		"Zombie Dungeon Max Start Y" = 51
+		# Whether or not Zombie Dungeons from Better Dungeons should spawn.
+		# Default: true
+		"Spawn Zombie Dungeons" = true
+		# The average number of chunks between adjacent Zombie Dungeons.
+		# This controls how often Zombie Dungeons spawn. Higher value = more rare.
+		# Default: 48
+		"Zombie Dungeon Average Separation Distance" = 48
+		# The longest distance that can be checked when attempting to generate a surface entrance staircase.
+		# Making this too large may cause problems.
+		# Default: 20
+		"Zombie Dungeon Surface Entrance Staircase Max Length" = 20
+		# List of dimensions that will have Zombie Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:overworld, minecraft:the_nether, undergarden:undergarden]"
+		# Default: "[minecraft:overworld]"
+		"Zombie Dungeon Whitelisted Dimensions" = "[minecraft:overworld]"
+		# List of biomes that will NOT have Zombie Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:plains, byg:alps]"
+		# Default: "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+		"Zombie Dungeon Blacklisted Biomes" = "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+
+	###########################################################################################################
+	## Small Dungeon settings.
+	###########################################################################################################
+	["YUNG's Better Dungeons"."Small Dungeons"]
+		# The minimum y-value at which small dungeons can spawn.
+		# Default: 11
+		"Small Dungeon Min Y" = 11
+		# The maximum y-value at which small dungeons can spawn.
+		# Default: 50
+		"Small Dungeon Max Start Y" = 50
+		# The maximum number of banners that can spawn in a single small dungeon.
+		# Default: 2
+		#Range: 0 ~ 8
+		"Small Dungeon Max Banner Count" = 2
+		# The minimum number of chests that are guaranteed to spawn in a single small dungeon.
+		# Default: 1
+		"Small Dungeon Min Chest Count" = 1
+		# The maximum number of chests that can spawn in a single small dungeon.
+		# Default: 2
+		"Small Dungeon Max Chest Count" = 2
+		# Whether or not the small dungeons (monster rooms) from Better Dungeons should spawn.
+		# Default: true
+		"Spawn Small Dungeons" = true
+		# The average number of chunks between adjacent small dungeons.
+		# This controls how often small dungeons spawn. Higher value = more rare.
+		# Default: 10
+		"Small Dungeon Average Separation Distance" = 10
+		# The variation in distance between small dungeons, in chunks.
+		# This, combined with the Small Dungeon Average Separation Distance, controls the distribution
+		# of spawn chances for small dungeons.
+		# For example, if Small Dungeon Average Separation Distance is set to 10, and this value is set to 6, then
+		# small dungeons will have anywhere from 10 - 6 = 4 chunks to 10 + 6 = 16 chunks between them.
+		# In other words, spawn distribution = average distance +/- variation
+		# Default: 6
+		"Small Dungeon Separation Distance Variation" = 6
+		# List of dimensions that will have Small Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:overworld, minecraft:the_nether, undergarden:undergarden]"
+		# Default: "[minecraft:overworld]"
+		"Small Dungeon Whitelisted Dimensions" = "[minecraft:overworld]"
+		# List of biomes that will NOT have Small Dungeons.
+		# List must be comma-separated values enclosed in square brackets.
+		# Entries must have the mod namespace included.
+		# For example: "[minecraft:plains, byg:alps]"
+		# Default: "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+		"Small Dungeon Blacklisted Biomes" = "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river, minecraft:deep_warm_ocean]"
+		# Whether or not Small Dungeons can rarely place ore blocks in the corners of the dungeon.
+		# If this is set to false, any ore blocks that spawn as part of a corner prop will instead be replaced with air.
+		# Default: true
+		"Allow Ore Blocks in Corners" = true
+

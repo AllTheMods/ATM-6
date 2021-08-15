@@ -2,7 +2,7 @@
 [General]
 	#List of rules in format "domain:item1, domain:item2, n".
 	#Causes a compacting drawer convert n of item1 into 1 of item2.
-	compactingRules = ["minecraft:clay, minecraft:clay_ball, 4","powah:uraninite_raw_dense, powah:uraninite_raw, 2","powah:uraninite_raw, powah:uraninite_raw_poor, 2","compressium:sand_2, compressium:sand_1, 9","compressium:sand_1, minecraft:sand, 9"]
+	compactingRules = ["minecraft:clay, minecraft:clay_ball, 4", "powah:uraninite_raw_dense, powah:uraninite_raw, 2", "powah:uraninite_raw, powah:uraninite_raw_poor, 2", "compressium:sand_2, compressium:sand_1, 9", "compressium:sand_1, minecraft:sand, 9"]
 	enableUI = true
 	debugTrace = false
 	enableItemConversion = true

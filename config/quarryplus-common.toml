@@ -16,7 +16,7 @@
 	CollectBedrock = false
 	#DisableFrameChainBreak
 	DisableFrameChainBreak = false
-	#Set false to allow PlumPlus to remove non-source fluid block.
+	#Set false to allow PumpPlus to remove non-source fluid block.
 	RemoveOnlyFluidSource = false
 	#True to enable RS control of machines.
 	EnableRSControl = false
@@ -25,6 +25,9 @@
 	QuarryRangeLimit = -1
 	#Spawner Controller Blacklist
 	spawnerBlacklist = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:area_effect_cloud", "minecraft:item", "minecraft:player"]
+	#The amount of energy(FE) workbench receives in a tick.
+	#Range: > 0
+	WorkbenchTickBonus = 5
 
 	#Quarry PowerSetting [MJ] (min = 0, Max = 2,000,000,000 = 2 billion)
 	[common.PowerSetting]
@@ -146,4 +149,9 @@
 		ModuleTorch = false
 		ModuleFuel = false
 		ModuleRemoveBedrock = false
+
+#Integration with other mods
+[integration]
+	#False to disable notification of chunk protection by FTBChunks
+	SendNotificationOfChunkProtection = true
 

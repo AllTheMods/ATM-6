@@ -1,0 +1,67 @@
+
+[Client]
+	#Should the magnet play a ding sound when turned on or off?
+	#Requires a world reload
+	#Allowed Values: true, false  Default: true
+	playToggleSound = true
+	#Should the magnet display a message on screen when turned on or off?
+	#Requires a world reload
+	#Allowed Values: true, false  Default: true
+	showToggleMessage = true
+	#Should the Demagnetization Coil's range be highlighted when looking at it?
+	#Requires a world reload
+	#Allowed Values: true, false  Default: true
+	showDemagnetizationArea = true
+
+[General]
+	#In what range should the Basic Magnet pickup items and xp?
+	#Requires a world reload
+	#Allowed Range: 1 ~ 20  Default: 5
+	basicMagnetRange = 5
+	#In what range should the Advanced Magnet pickup items and xp by default?
+	#Requires a world reload
+	#Allowed Range: 1 ~ 20  Default: 8
+	advancedMagnetRange = 11
+	#What is the minimum range of the Advanced Magnet?
+	#Requires a world reload
+	#Allowed Range: 1 ~ 20  Default: 3
+	advancedMagnetMinRange = 3
+	#What is the maximum range of the Advanced Magnet?
+	#Requires a world reload
+	#Allowed Range: 1 ~ 20  Default: 11
+	advancedMagnetMaxRange = 11
+
+	[General."Demagnetization Coils"]
+		#In what range should the Basic Demagnetization Coil demagnetize items by default?
+		#Requires a world reload
+		#Allowed Range: 1 ~ 10  Default: 2
+		basicCoilRange = 2
+		#What is the minimum range of the Basic Demagnetization Coil?
+		#Requires a world reload
+		#Allowed Range: 1 ~ 10  Default: 1
+		basicCoilMinRange = 1
+		#What is the maximum range of the Basic Demagnetization Coil?
+		#Requires a world reload
+		#Allowed Range: 1 ~ 10  Default: 3
+		basicCoilMaxRange = 3
+		#Should the Basic Demagnetization Coil be able to filter items?
+		#Requires a world reload
+		#Allowed Values: true, false  Default: false
+		basicCoilFilter = false
+		#In what range should the Advanced Demagnetization Coil pickup items and xp by default?
+		#Requires a world reload
+		#Allowed Range: 1 ~ 10  Default: 3
+		advancedCoilRange = 3
+		#What is the minimum range of the Advanced Demagnetization Coil?
+		#Requires a world reload
+		#Allowed Range: 1 ~ 10  Default: 1
+		advancedCoilMinRange = 1
+		#What is the maximum range of the Advanced Demagnetization Coil?
+		#Requires a world reload
+		#Allowed Range: 1 ~ 10  Default: 5
+		advancedCoilMaxRange = 5
+		#Should the Advanced Demagnetization Coil be able to filter items?
+		#Requires a world reload
+		#Allowed Values: true, false  Default: true
+		advancedCoilFilter = true
+

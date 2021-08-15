@@ -1,0 +1,6 @@
+┏╸ma:info_tablet
+┃┏╸bo:enabled
+┃┣> Variable Type: java.lang.Boolean
+┃┣> Default: true
+┃┗╸
+┗╸

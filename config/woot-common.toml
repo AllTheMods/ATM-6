@@ -20,6 +20,9 @@
 		#Max health for a tier 1 mob
 		#Range: > 5
 		t1MaxHealth = 20
+		#Exotic drop chance
+		#Range: 0.0 ~ 100.0
+		exotic = 15.0
 
 	[factory.basicCell]
 		#Tank max transfer rate (mb/t per side)
@@ -127,6 +130,61 @@
 			#Range: 0 ~ 1000
 			l1Generate = 100
 
+		[factory.perks.headless]
+			#Percentage chance to drop a skull for headless 1 perks
+			#Range: 0 ~ 1000
+			l1HeadlessChance = 25
+			#Percentage chance to drop a skull for headless 2 perks
+			#Range: 0 ~ 1000
+			l2HeadlessChance = 50
+			#Percentage chance to drop a skull for headless 3 perks
+			#Range: 0 ~ 1000
+			l3HeadlessChance = 80
+
+		[factory.perks.slaughter]
+			#Percentage of liquid meat and pink slime to drop for slaughter 1 perks
+			#Range: 0 ~ 1000
+			l1SlaughterAmount = 100
+			#Percentage of liquid meat and pink slime to drop for slaughter 2 perks
+			#Range: 0 ~ 1000
+			l2SlaughterAmount = 120
+			#Percentage of liquid meat and pink slime to drop for slaughter 3 perks
+			#Range: 0 ~ 1000
+			l3SlaughterAmount = 140
+
+		[factory.perks.crusher]
+			#Percentage of essence to drop for crusher 1 perks
+			#Range: 0 ~ 1000
+			l1CrusherAmount = 100
+			#Percentage of essence to drop for crusher 2 perks
+			#Range: 0 ~ 1000
+			l2CrusherAmount = 120
+			#Percentage of essence to drop for crusher 3 perks
+			#Range: 0 ~ 1000
+			l3CrusherAmount = 140
+
+		[factory.perks.laser]
+			#Percentage of ether gas to drop for laser 1 perks
+			#Range: 0 ~ 1000
+			l1LaserAmount = 100
+			#Percentage of ether gas to drop for laser 2 perks
+			#Range: 0 ~ 1000
+			l2LaserAmount = 120
+			#Percentage of ether gas to drop for laser 3 perks
+			#Range: 0 ~ 1000
+			l3LaserAmount = 140
+
+		[factory.perks.flayed]
+			#Percentage of mob health for flayed 1 perks
+			#Range: 0 ~ 1000
+			l1FlayedAmount = 90
+			#Percentage of mob health for flayed 2 perks
+			#Range: 0 ~ 1000
+			l2FlayedAmount = 100
+			#Percentage of mob health for flayed 3 perks
+			#Range: 0 ~ 1000
+			l3FlayedAmount = 110
+
 	[factory.premiumCell]
 		#Tank max transfer rate (mb/t per side)
 		#Range: > 1
@@ -148,6 +206,23 @@
 		#Number of kills to program the shard
 		#Range: 1 ~ 65535
 		shardKills = 5
+
+	[factory.exotic]
+		#Percentage reduction for recipe fluids
+		#Range: 0.0 ~ 100.0
+		exoticAPercentage = 85.0
+		#Percentage reduction for recipe fluids
+		#Range: 0.0 ~ 100.0
+		exoticBPercentage = 85.0
+		#Percentage reduction for Conatus fluid
+		#Range: 0.0 ~ 100.0
+		exoticCPercentage = 85.0
+		#Number of ticks between spawns
+		#Range: > 1
+		exoticDTicks = 20
+		#Number of mobs to spawn
+		#Range: > 1
+		exoticECount = 10
 
 #Settings for the loot simulation
 [simulation]
@@ -315,6 +390,14 @@
 			efficiency1 = []
 			#Set efficiency perk level 3 for a mob
 			efficiency3 = []
+			#Set headless perk level 1 for a mob
+			headless1 = []
+			#Set headless perk level 2 for a mob
+			headless2 = []
+			#Set headless perk level 3 for a mob
+			headless3 = []
+			#A list of mobs and their skull drop
+			headlessSkulls = ["minecraft:skeleton,{\"item\": \"minecraft:skeleton_skull\"}", "minecraft:wither_skeleton,{\"item\": \"minecraft:wither_skeleton_skull\"}", "minecraft:zombie,{\"item\": \"minecraft:zombie_head\"}", "minecraft:creeper,{\"item\": \"minecraft:creeper_head\"}"]
 
 	[policy.blacklist]
 		#Do not generate the following items
@@ -333,4 +416,25 @@
 		learnItem = []
 		#Do not allow shard creation with entities from the following mods
 		shardMod = []
+
+#Settings for commands
+[commands]
+	#Manual learning of a mob command level
+	#Range: 0 ~ 10
+	simLearnLevel = 2
+	#Display loot table of a mob command level
+	#Range: 0 ~ 10
+	simDumpLevel = 0
+	#Flush loot table of a mob command level
+	#Range: 0 ~ 10
+	simFlushLevel = 2
+	#Show status of mob simulation command level
+	#Range: 0 ~ 10
+	simStatusLevel = 0
+	#Test drop of a mob command level
+	#Range: 0 ~ 10
+	simRollDropsLevel = 0
+	#Give mob controller command level
+	#Range: 0 ~ 10
+	giveControllerLevel = 2
 

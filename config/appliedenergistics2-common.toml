@@ -7,32 +7,51 @@
 		TileEntityFacades = false
 
 	[features.Rendering]
+		#No comment
 		AlphaPass = true
 
 	[features.Misc]
+		#No comment
 		CraftingLog = false
+		#No comment
 		IntegrationLogging = false
+		#No comment
 		DebugLogging = false
+		#No comment
 		PacketLogging = false
+		#No comment
 		UnsupportedDeveloperTools = false
+		#No comment
 		UpdateLogging = false
+		#No comment
 		WebsiteRecipes = false
+		#No comment
 		LogSecurityAudits = false
 
 	[features.Commands]
+		#No comment
 		ChunkLoggerTrace = false
 
 	[features.Crafting]
+		#No comment
 		EnableDisassemblyCrafting = true
+		#No comment
 		InWorldFluix = true
+		#No comment
 		InWorldSingularity = true
+		#No comment
 		InWorldPurification = true
+		#No comment
 		EnableFacadeCrafting = true
 
 	[features.World]
+		#No comment
 		CertusQuartzWorldGen = true
+		#No comment
 		VillagerTrading = true
+		#No comment
 		SpawnPressesInMeteorites = true
+		#No comment
 		MeteoriteWorldGen = true
 
 [general]
@@ -66,12 +85,12 @@
 	matterCannon = 200000
 
 [worldGen]
-	meteoriteDimensionWhitelist = ["minecraft:dimension"]
 	quartzOresClusterAmount = 20
 	quartzOresPerCluster = 4
-	meteoriteMaximumSpawnHeight = 180
 	#Range: 0.0 ~ 1.0
 	spawnChargedChance = 0.08
+	meteoriteBiomeBlacklist = []
+	quartzOresBiomeBlacklist = []
 
 [wireless]
 	wirelessTerminalDrainMultiplier = 1.0
@@ -83,7 +102,6 @@
 	wirelessBoosterRangeMultiplier = 1.0
 
 [PowerRatios]
-	IC2 = 2.0
 	ForgeEnergy = 0.5
 	#Range: 0.01 ~ 1.7976931348623157E308
 	UsageMultiplier = 1.0

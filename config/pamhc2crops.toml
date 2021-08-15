@@ -7,7 +7,7 @@
 	#Disable/enable grass blocks dropping seeds.
 	"Enable grass blocks dropping seeds" = false
 	#Disable/enable right-click harvesting of crops.
-	"Enable right-click harvesting for crops" = true
+	"Enable both for right-click harvesting for crops" = true
 
 ["Dimensions Settings"]
 	#Enter a dimension id to whitelist feature generation
@@ -46,5 +46,5 @@
 
 ["Right-click Harvesting Settings"]
 	#Disable/enable right-click harvesting of crops
-	"Enable right-click harvesting for crops" = false
+	"Enable both for right-click harvesting for crops" = true
 

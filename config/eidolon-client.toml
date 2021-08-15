@@ -1,0 +1,6 @@
+
+#Graphics settings
+[graphics]
+	#NOTE: Does NOT work with fabulous graphics mode.
+	betterLayering = true
+

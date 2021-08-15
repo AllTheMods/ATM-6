@@ -1,0 +1,142 @@
+
+#Furnace Settings
+[furnaces]
+
+	[furnaces.iron_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 160
+		#Range: 2 ~ 72000
+		speed = 160
+
+	[furnaces.gold_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 120
+		#Range: 2 ~ 72000
+		speed = 120
+
+	[furnaces.diamond_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 80
+		#Range: 2 ~ 72000
+		speed = 80
+
+	[furnaces.emerald_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 40
+		#Range: 2 ~ 72000
+		speed = 40
+
+	[furnaces.obsidian_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 20
+		#Range: 2 ~ 72000
+		speed = 20
+
+	[furnaces.crystal_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 40
+		#Range: 2 ~ 72000
+		speed = 40
+
+	[furnaces.netherite_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 5
+		#Range: 2 ~ 72000
+		speed = 5
+
+	[furnaces.copper_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 180
+		#Range: 2 ~ 72000
+		speed = 180
+
+	[furnaces.silver_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 140
+		#Range: 2 ~ 72000
+		speed = 140
+
+	[furnaces.rainbow_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 20
+		#Range: 2 ~ 72000
+		speed = 20
+
+	[furnaces.furance_xp_drop]
+		# This value indicates when the furnace should 'overload' and spit out the xp stored. 
+		# Default: 10, Recipes
+		#Range: 1 ~ 500
+		value = 10
+		# This value indicates when the furnace should 'overload' and spit out the xp stored. 
+		# Default: 100000, Single recipe uses
+		#Range: 1 ~ 1000000
+		value_two = 100000
+
+#Modded Furnace Settings
+[modded_furnaces]
+
+	[modded_furnaces.allthemodium_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 5
+		#Range: 1 ~ 72000
+		speed = 5
+		# Number of items that can be smelted at once. The regular furnace only smelts 1 item at once of course.
+		# Default: 16
+		#Range: 1 ~ 64
+		mult = 16
+
+	[modded_furnaces.vibranium_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 3
+		#Range: 1 ~ 72000
+		speed = 3
+		# Number of items that can be smelted at once. The regular furnace only smelts 1 item at once of course.
+		# Default: 32
+		#Range: 1 ~ 64
+		mult = 32
+
+	[modded_furnaces.unobtanium_furnace]
+		# Number of ticks to complete one smelting operation.
+		# 200 ticks is what a regular furnace takes.
+		# Default: 1
+		#Range: 1 ~ 72000
+		speed = 1
+		# Number of items that can be smelted at once. The regular furnace only smelts 1 item at once of course.
+		# Default: 64
+		#Range: 1 ~ 64
+		mult = 64
+
+#JEI Settings
+[jei]
+
+	[jei.jei]
+		# Enable or disable the JeiPlugin of Iron Furnaces.
+		enable_jei = true
+		# Enable or disable the Catalysts in Jei for Iron Furnaces.
+		enable_jei_catalysts = true
+		# Enable or disable the Click Area inside the GUI in all of Iron Furnaces' furnaces.
+		enable_jei_click_area = true
+
+#Misc
+[misc]
+
+	[misc.misc]
+		# Given or not given the Rainbow Coal to our champion
+		coal = false
+		# Enable or disable the Rainbow Content
+		rainbow = true
+		# Show furnace settings errors in chat, used for debugging
+		errors = false
+

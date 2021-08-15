@@ -8,3 +8,4 @@ enchantsBlacklist = ["flimflam", "soulBound", "reactive"]
 hiddenTabs = []
 dimensionsBlacklist = [-11]
 disableLootManagerReloading = true
+

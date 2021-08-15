@@ -15,8 +15,8 @@ showCollarColor = true
 #How to display RF: 0 = do not show, 1 = show in a bar, 2 = show as text
 #Range: 0 ~ 2
 showRF = 1
-#How to display tank contents: 0 = do not show, 1 = show in a bar, 2 = show as text
-#Range: 0 ~ 2
+#How to display tank contents: 0 = do not show, 1 = show in fluid bar, 2 = show in a bar, 3 = show as text
+#Range: 0 ~ 3
 showTank = 1
 #Format for displaying RF
 rfFormat = "COMPACT"
