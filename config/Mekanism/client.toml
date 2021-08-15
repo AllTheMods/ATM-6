@@ -28,7 +28,7 @@
 	energyColor = 3997338
 	#How far (in blocks) from the player radiation particles can spawn.
 	radiationParticleRadius = 30
-	#Align HUD with left (if true) or right (if false)
+	#Align HUD (text) with left (if true) or right (if false)
 	alignHUDLeft = true
 	#How much light to produce if ambient lighting is enabled.
 	#Range: 1 ~ 15
@@ -36,6 +36,9 @@
 	#Range at which Tile Entity Renderer's added by Mekanism can render at, for example the contents of multiblocks. Vanilla defaults the rendering range for TERs to 64 for most blocks, but uses a range of 256 for beacons and end gateways.
 	#Range: 1 ~ 1024
 	terRange = 256
+	#Scale of the text displayed on the HUD.
+	#Range: 0.25 ~ 1.0
+	hudScale = 0.6
 
 	#QIO Config
 	[client.qio]

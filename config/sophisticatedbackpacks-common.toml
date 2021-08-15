@@ -4,7 +4,7 @@
 	#Turns on/off loot added to various vanilla chest loot tables
 	chestLootEnabled = true
 	#Disable / enable any items here (disables their recipes)
-	enabledItems = ["backpack:true", "iron_backpack:true", "gold_backpack:true", "diamond_backpack:true", "netherite_backpack:true", "pickup_upgrade:true", "advanced_pickup_upgrade:true", "filter_upgrade:true", "advanced_filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "feeding_upgrade:true", "compacting_upgrade:true", "advanced_compacting_upgrade:true", "void_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "advanced_restock_upgrade:true", "deposit_upgrade:true", "advanced_deposit_upgrade:true", "refill_upgrade:true", "inception_upgrade:true", "everlasting_upgrade:true", "smelting_upgrade:true", "auto_smelting_upgrade:true", "crafting_upgrade:true", "stonecutter_upgrade:true", "stack_upgrade_tier_1:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_4:true", "jukebox_upgrade:true", "tool_swapper_upgrade:true", "advanced_tool_swapper_upgrade:true", "upgrade_base:true"]
+	enabledItems = ["backpack:true", "iron_backpack:true", "gold_backpack:true", "diamond_backpack:true", "netherite_backpack:true", "pickup_upgrade:true", "advanced_pickup_upgrade:true", "filter_upgrade:true", "advanced_filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "feeding_upgrade:true", "compacting_upgrade:true", "advanced_compacting_upgrade:true", "void_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "advanced_restock_upgrade:true", "deposit_upgrade:true", "advanced_deposit_upgrade:true", "refill_upgrade:true", "inception_upgrade:true", "everlasting_upgrade:true", "smelting_upgrade:true", "auto_smelting_upgrade:true", "crafting_upgrade:true", "stonecutter_upgrade:true", "stack_upgrade_tier_1:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_4:true", "jukebox_upgrade:true", "tool_swapper_upgrade:true", "advanced_tool_swapper_upgrade:true", "upgrade_base:true", "tank_upgrade:true"]
 
 	#Advanced Filter Upgrade Settings
 	[common.advancedFilterUpgrade]
@@ -263,4 +263,16 @@
 		addLoot = true
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
 		playJukebox = false
+
+	#Tank Upgrade Settings
+	[common.tankUpgrade]
+		#Capacity in mB the tank upgrade will have per row of backpack slots
+		#Range: 500 ~ 20000
+		capacityPerSlotRow = 2000
+		#Ratio that gets applied (multiplies) to inventory stack multiplier before this is applied to tank capacity. Value lower than 1 makes stack multiplier affect the capacity less, higher makes it affect the capacity more. 0 turns off stack multiplier affecting tank capacity
+		#Range: 0.0 ~ 5.0
+		stackMultiplierRatio = 1.0
+		#Cooldown between fill/drain actions done on fluid containers in tank slots. Only fills/drains one bucket worth to/from container after this cooldown and then waits again.
+		#Range: 1 ~ 100
+		autoFillDrainContainerCooldown = 20
 

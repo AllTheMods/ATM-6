@@ -1,21 +1,4 @@
 
-[energy]
-	#Range: 0 ~ 9223372036854775807
-	gargantuanTransfer = 1440000
-	#Range: 0 ~ 9223372036854775807
-	basicCapacity = 1000000
-	#Range: 0 ~ 9223372036854775807
-	basicTransfer = 20000
-	#Range: 0 ~ 9223372036854775807
-	herculeanCapacity = 8000000
-	#Range: 0 ~ 9223372036854775807
-	gargantuanCapacity = 128000000
-	#The default transfer limit of a flux connector
-	#Range: 0 ~ 9223372036854775807
-	defaultLimit = 800000
-	#Range: 0 ~ 9223372036854775807
-	herculeanTransfer = 120000
-
 [networks]
 	#See ops.json. If the player has permission level equal or greater to the value set here they will be able to Activate Super Admin. Setting this to 0 will allow anyone to active Super Admin.
 	#Range: > 0

@@ -18,8 +18,7 @@ enable_in_world_coloring = true
 	#Each item can only be use once per chest
 	large_capacity_singleuse = []
 
-#
-#NOTE: Capacity numbers are in slots
+#Adjust how many inventory slots are available
 [capacity_settings]
 	#Maximum capacity an EnderChest holds
 	#Range: 9 ~ 54

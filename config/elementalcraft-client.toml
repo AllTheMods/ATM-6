@@ -1,0 +1,21 @@
+
+#ElementalCraft client config
+[elementalcraft-client]
+	#The duration of shrine range display.
+	#Range: 0 ~ 10000
+	shrineRangeDisplayDuration = 600
+	#Display a shadow where pedestals can be placed.
+	renderPedestalShadow = true
+	#Set to true if you want to reduce quality of particles for beter performances.
+	fastParticleEffects = false
+
+	[elementalcraft-client.gauge]
+		#Use pale element gauges.
+		usePaleElementGauge = false
+		#the offset of the gauge on the X axis.
+		#Range: -10000 ~ 10000
+		gaugeOffsetX = 0
+		#the offset of the gauge on the Y axis.
+		#Range: -10000 ~ 10000
+		gaugeOffsetY = 0
+

@@ -1,0 +1,6 @@
+
+#Miscellaneous options
+[general]
+	#Allows to open the woodcutter in inventory with right-click while sneaking [default:true]
+	open_woodcutter_in_inventory = true
+

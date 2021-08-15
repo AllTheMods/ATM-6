@@ -24,7 +24,7 @@
 		excavate = true
 		#Set false to disable enchantment
 		growth = true
-		#Set false to disable enchantment
+		#Set false to disable Multi Jump enchantment
 		launch = true
 		#Set false to disable enchantment
 		life_leech = true
@@ -61,19 +61,15 @@
 		#True means only players with OP can use this /cyclic command
 		gethome = false
 		#True means only players with OP can use this /cyclic command
-		help = false
-		#True means only players with OP can use this /cyclic command
 		health = true
 		#True means only players with OP can use this /cyclic command
 		home = true
 		#True means only players with OP can use this /cyclic command
 		hunger = true
 		#True means only players with OP can use this /cyclic command
-		nbtprint = false
+		dev = false
 		#True means only players with OP can use this /cyclic command
-		pingnether = false
-		#True means only players with OP can use this /cyclic command
-		worldspawn = true
+		ping = false
 
 	#####################################################################################
 	# Logging related configs
@@ -181,6 +177,74 @@
 			#Range: 1 ~ 200
 			maximum = 100
 
+		#####################################################################################
+		# Emerald gear settings
+		#####################################################################################
+		[cyclic.items.emerald]
+			#Armor toughness
+			#Range: 0.10000000149011612 ~ 99.0
+			toughness = 3.0
+			#Weapon damage
+			#Range: 0.10000000149011612 ~ 99.0
+			damage = 4.5
+			#Damage Reduction
+			#Range: 1 ~ 99
+			boots = 4
+			#Damage Reduction
+			#Range: 1 ~ 99
+			helm = 4
+			#Damage Reduction
+			#Range: 1 ~ 99
+			chest = 9
+			#Damage Reduction
+			#Range: 1 ~ 99
+			leg = 7
+
+		#####################################################################################
+		# Obsidian gear settings
+		#####################################################################################
+		[cyclic.items.obsidian]
+			#Armor toughness
+			#Range: 0.10000000149011612 ~ 99.0
+			toughness = 6.0
+			#Weapon damage
+			#Range: 0.10000000149011612 ~ 99.0
+			damage = 10.5
+			#Damage Reduction
+			#Range: 1 ~ 99
+			boots = 7
+			#Damage Reduction
+			#Range: 1 ~ 99
+			helm = 7
+			#Damage Reduction
+			#Range: 1 ~ 99
+			chest = 11
+			#Damage Reduction
+			#Range: 1 ~ 99
+			leg = 10
+
+		#####################################################################################
+		# Settings for varios charms (curios)
+		#####################################################################################
+		[cyclic.items.charms]
+			#Boost given by item charm_luck
+			#Range: 0 ~ 100
+			luck = 10
+			#Boost given by item charm_speed
+			#Range: 0.0 ~ 2.0
+			speed = 0.5
+			#Boost given by item charm_attackspeed
+			#Range: 0.0 ~ 2.0
+			attackspeed = 0.5
+
+		#####################################################################################
+		# Edible chorus settings
+		#####################################################################################
+		[cyclic.items.chorus]
+			#Seconds of noClip per chorus_spectral
+			#Range: 1 ~ 20000
+			ticks = 600
+
 	#####################################################################################
 	# Block specific configs
 	#####################################################################################
@@ -221,4 +285,36 @@
 			#Ticks used for each uncraft
 			#Range: 1 ~ 9999
 			ticks = 60
+
+		#Ender shelf settings
+		[cyclic.blocks.ender_shelf]
+			#Each shelf has five rows.  Set the number of books stored per row here
+			#Range: 1 ~ 64
+			books_per_row = 64
+			#Controller Max distance to search (using manhattan distance)
+			#Range: 1 ~ 256
+			controller_distance = 64
+
+		#Sprinkler settings
+		[cyclic.blocks.sprinkler]
+			#Water consumption
+			#Range: 0 ~ 1000
+			water = 5
+			#Tick rate.  20 will fire one block per second
+			#Range: 1 ~ 20
+			ticks = 20
+
+	#####################################################################################
+	#Fluid cost for various machines
+	#####################################################################################
+	[cyclic.fluid]
+		#Cost of magma fluid per action
+		#Range: 1 ~ 64000
+		anvil_magma = 100
+		#Cost of (or payment for if negative) per enchanted book generated
+		#Range: -1000 ~ 16000
+		disenchanter = 100
+		#Payment per void action, if not zero
+		#Range: 0 ~ 16000
+		void_anvil = 25
 

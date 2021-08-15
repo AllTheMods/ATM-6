@@ -1,0 +1,27 @@
+
+#General configuration options.
+[General]
+	#Enable jetpack sounds?
+	jetpackSounds = true
+	#Enable jetpack particles?
+	jetpackParticles = true
+	#Enable jetpack stat tooltips?
+	advancedTooltips = true
+
+#HUD configuration options.
+[HUD]
+	#Enable the HUD?
+	enable = true
+	#The position preset for the HUD.
+	#0=Top Left, 1=Middle Left, 2=Bottom Left, 3=Top Right, 4=Middle Right, 5=Bottom Right
+	#Range: 0 ~ 5
+	position = 1
+	#The X offset for the HUD.
+	#Range: > -2147483648
+	offsetX = 0
+	#The Y offset for the HUD.
+	#Range: > -2147483648
+	offsetY = 0
+	#Show HUD over the chat?
+	showOverChat = false
+

@@ -1,0 +1,126 @@
+
+["Tweak World Generation Rates"]
+	#Chance of temperate fruit trees generating in the world. Higher numbers indicate a lower probability (Default: 5000)
+	#Range: 1 ~ 1000000000
+	"Probability of temperate fruit trees generating" = 5000
+	#Chance of warm fruit trees generating in the world. Higher numbers indicate a lower probability (Default: 5000)
+	#Range: 1 ~ 1000000000
+	"Probability of warm fruit trees generating" = 5000
+	#Chance of cold fruit trees generating in the world. Higher numbers indicate a lower probability (Default: 5000)
+	#Range: 1 ~ 1000000000
+	"Probability of cold fruit trees generating" = 5000
+
+["Miscellaneous Features"]
+	#Disable/enable grass blocks dropping seeds.
+	"Enable grass blocks dropping seeds" = false
+	#Disable/enable tall grass blocks dropping seeds.
+	"Enable tall grass blocks dropping seeds" = false
+	#Disable/enable fern blocks dropping seeds.
+	"Enable fern blocks dropping seeds" = false
+
+["Enable/Disable Garden World Generation"]
+	#Should apple trees generate in world
+	"Generate apple trees" = true
+	#Should avocado trees generate in world
+	"Generate avocado trees" = true
+	#Should candlenut trees generate in world
+	"Generate candlenut trees" = true
+	#Should cherry trees generate in world
+	"Generate cherry trees" = true
+	#Should chestnut trees generate in world
+	"Generate chestnut trees" = true
+	#Should gooseberry trees generate in world
+	"Generate gooseberry trees" = true
+	#Should lemon trees generate in world
+	"Generate lemon trees" = true
+	#Should nutmeg trees generate in world
+	"Generate nutmeg trees" = true
+	#Should orange trees generate in world
+	"Generate orange trees" = true
+	#Should peach trees generate in world
+	"Generate peach trees" = true
+	#Should pear trees generate in world
+	"Generate pear trees" = true
+	#Should plum trees generate in world
+	"Generate plum trees" = true
+	#Should walnut trees generate in world
+	"Generate walnut trees" = true
+	#Should spiderweb trees generate in world
+	"Generate spiderweb trees" = true
+	#Should hazelnut trees generate in world
+	"Generate hazelnut trees" = true
+	#Should pawpaw trees generate in world
+	"Generate pawpaw trees" = true
+	#Should soursop trees generate in world
+	"Generate soursop trees" = true
+	#Should almond trees generate in world
+	"Generate almond trees" = true
+	#Should apricot trees generate in world
+	"Generate apricot trees" = true
+	#Should banana trees generate in world
+	"Generate banana trees" = true
+	#Should cashew trees generate in world
+	"Generate cashew trees" = true
+	#Should cinnamon trees generate in world
+	"Generate cinnamon trees" = true
+	#Should coconut trees generate in world
+	"Generate coconut trees" = true
+	#Should almond date generate in world
+	"Generate date trees" = true
+	#Should dragonfruit trees generate in world
+	"Generate dragonfruit trees" = true
+	#Should durian trees generate in world
+	"Generate durian trees" = true
+	#Should fig trees generate in world
+	"Generate fig trees" = true
+	#Should grapefruit trees generate in world
+	"Generate grapefruit trees" = true
+	#Should lime trees generate in world
+	"Generate lime trees" = true
+	#Should mango trees generate in world
+	"Generate mango trees" = true
+	#Should olive trees generate in world
+	"Generate olive trees" = true
+	#Should papaya trees generate in world
+	"Generate papaya trees" = true
+	#Should paperbark trees generate in world
+	"Generate paperbark trees" = true
+	#Should pecan trees generate in world
+	"Generate pecan trees" = true
+	#Should peppercorn trees generate in world
+	"Generate peppercorn trees" = true
+	#Should persimmon trees generate in world
+	"Generate persimmon trees" = true
+	#Should pistachio trees generate in world
+	"Generate pistachio trees" = true
+	#Should pomegranate trees generate in world
+	"Generate pomegranate trees" = true
+	#Should starfruit trees generate in world
+	"Generate starfruit trees" = true
+	#Should vanillabean trees generate in world
+	"Generate vanillabean trees" = true
+	#Should breadfruit trees generate in world
+	"Generate breadfruit trees" = true
+	#Should guava trees generate in world
+	"Generate guava trees" = true
+	#Should jackfruit trees generate in world
+	"Generate jackfruit trees" = true
+	#Should lychee trees generate in world
+	"Generate lychee trees" = true
+	#Should passionfruit trees generate in world
+	"Generate passionfruit trees" = true
+	#Should rambutan trees generate in world
+	"Generate rambutan trees" = true
+	#Should tamarind trees generate in world
+	"Generate tamarind trees" = true
+	#Should maple trees generate in world
+	"Generate maple trees" = true
+	#Should pinenut trees generate in world
+	"Generate pinenut trees" = true
+
+["Dimensions Settings"]
+	#Enter a dimension id to whitelist feature generation
+	white_dim = ["minecraft:overworld"]
+	#Enter a dimension id to blacklist feature generation
+	black_dim = ["minecraft:the_end", "minecraft:the_nether"]
+

@@ -16,5 +16,8 @@
   "speedHover": 0.0,
   "sprintSpeedMulti": 2.0,
   "sprintSpeedMultiVertical": 1.0,
-  "sprintFuelMulti": 4.0
+  "sprintFuelMulti": 4.0,
+  "creative": false,
+  "toughness": 0.0,
+  "knockbackResistance": 0.0
 }

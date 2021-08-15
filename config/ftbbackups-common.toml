@@ -6,14 +6,14 @@ silent = false
 #More backups = more space used
 #0 - Infinite
 #Range: 0 ~ 32000
-backups_to_keep = 12
+backups_to_keep = 5
 #Timer in minutes.
 #5 - backups every 5 minutes
 #60 - backups every hour
 #360 - backups every 6 hours
 #1440 - backups once every day
 #Range: 1 ~ 43800
-backup_timer = 120
+backup_timer = 60
 #0 - Disabled (output = folders)
 #1 - Best speed
 #9 - Smallest file size

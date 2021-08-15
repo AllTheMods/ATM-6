@@ -16,4 +16,13 @@ tierCreativeApiaryMaxBees = 18
 #For example 0.7 = 70% reduction
 #Range: 0.0 ~ 1.0
 tierCreativeApiaryMaxTimeInHive = 0.85
+#
+#Creative Apiary Breeder Speed (Value in %) 
+#For example 0.7 = 70% reduction
+#Range: 0.0 ~ 1.0
+CreativeApiaryBreederSpeed = 1.0
+#
+#Creative Apiary Breeder Item Max Stack Size
+#Range: > 1
+CreativeApiaryStorageItemMaxStackSize = 16384
 

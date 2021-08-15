@@ -17,8 +17,6 @@
 	#The chance that creatures appear after the contents of a grave are retrieved [0..100|default:0]
 	#Range: 0 ~ 100
 	chance_mob_on_grave_recovery = 0
-	#Enables PvP mode, which allows players to open graves of players they kill [false/true|default:false]
-	pvp_mode = true
 	#Percent of stolen experience by killing a player when PvP mode is enabled [0..100|default:30]
 	#Range: 0 ~ 100
 	pvp_stolen_xp = 30
@@ -87,8 +85,6 @@
 	#Minimum time without sleeping for phantom to spawn around players [1200..MAX|default:72000]
 	#Range: > 1200
 	time_for_phantom_spawn = 72000
-	#The Halloween features also happen outside the dates of the event [false/true|default:false]
-	persistant_halloween = false
 	#Allows players to be hurt by special damages related to some items [false/true|default:true]
 	allow_beyond_the_grave_damage = true
 	#Cooldown in minutes to use the command tbrequestteleport [-1..1440|default:-1]
@@ -202,8 +198,6 @@
 	#Chance on 1000 to receive a familiar receptacle on undead boss [0..1000|default:100]
 	#Range: 0 ~ 1000
 	chance_familiar_receptacle_on_boss = 0
-	#Allows the undeads to have a low chance to drop their skull [false/true|default:true]
-	undead_can_drop_skull = true
 	#Chance on 1000 to receive a Soul Receptacle on undead boss [0..1000|default:50]
 	#Range: 0 ~ 1000
 	chance_soul_receptacle_on_boss = 50
@@ -214,9 +208,9 @@
 	treasure_loot_table = ["minecraft:chests/end_city_treasure", "minecraft:chests/abandoned_mineshaft", "minecraft:chests/nether_bridge", "minecraft:chests/stronghold_library", "minecraft:chests/desert_pyramid", "minecraft:chests/jungle_temple", "minecraft:chests/igloo_chest", "minecraft:chests/woodland_mansion"]
 	#The magic items from Tombstone can only be found as creature loot if the player is the killer [false/true|default:true]
 	drop_only_on_player_kill = true
-	#Minimum life for an undead to be considered as a boss for drop [10..1000|default:100]
-	#Range: > 10
-	undead_boss_life_for_drop = 100
+	#Minimum life for an undead to be considered as a boss for drop [200..MAX|default:200]
+	#Range: > 200
+	undead_boss_life_for_drop = 200
 
 #Allows to enable some features related to others mods
 [compatibility]

@@ -5,8 +5,6 @@ disableFancyTESR = false
 showTextOverlay = true
 #Set this to false to disable the super awesome looking nixie tube front for the voltmeter and other things
 nixietubeFont = true
-#Set this to false to disable the manual's forced change of GUI scale
-adjustManualScale = true
 #Set this to true if you suffer from bad eyesight. The Engineer's manual will be switched to a bold and darker text to improve readability.
 badEyesight = false
 #Controls if item tooltips should contain the tags names of items. These tooltips are only visible in advanced tooltip mode (F3+H)
@@ -25,6 +23,9 @@ earDefenders_SoundBlacklist = []
 #Use VBOs to render certain blocks. This is significantly faster than the usual rendering,
 #but may not work correctly with visual effects from other mods
 enableVBO = true
+#Set the GUI scale of the Engineer's Manual. This uses the same numbers as Vanilla's GUI Scale and is therefor limited to the maximum value available ingame.
+#Range: 1 ~ 32
+manualGuiScale = 4
 
 #Options to set the RGB color of all IE wire types
 [wire_colors]

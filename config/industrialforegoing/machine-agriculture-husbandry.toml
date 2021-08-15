@@ -52,6 +52,8 @@
 		maxProgress = 100
 		#Amount of Power Consumed per Operation - Default: [400FE]
 		powerPerOperation = 400
+		#How many animals there need to be in the area to stop the machine from working
+		maxAnimalInTheArea = 35
 
 	[MachineAgricultureHusbandryConfig.AnimalBabySeparatorConfig]
 		#Max Stored Power [FE] - Default: [10000 FE]
@@ -96,4 +98,26 @@
 		maxProgress = 50
 		#Amount of Power Consumer per Operation - Default: [400FE]
 		powerPerOperation = 1000
+
+	[MachineAgricultureHusbandryConfig.MobDuplicatorConfig]
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 62
+		#Amount of Power Consumed per Operation - Default: [400FE]
+		powerPerOperation = 5000
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 50000
+		#Max Essence [mb] - Default: [8000 mb]
+		tankSize = 8000
+		#Exact Copy to spawn - Default: [false]
+		exactCopy = false
+		#Essence needed to spawn [Mob health*EssenceNeeded] - Default: [12]
+		essenceNeeded = 12
+
+	[MachineAgricultureHusbandryConfig.WitherBuilderConfig]
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [40 (5s)]
+		maxProgress = 40
+		#Amount of Power Consumed per Operation - Default: [500FE]
+		powerPerOperation = 20000
+		#Max Stored Power [FE] - Default: [70000 FE]
+		maxStoredPower = 70000
 

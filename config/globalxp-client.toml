@@ -1,0 +1,9 @@
+#How fast the emerald should spin (multiplier of the default speed)
+#Range: 0.0 ~ 1.7976931348623157E308
+spinSpeed = 1.0
+#How fast the emerald should bob up and down (multiplier of the default speed)
+#Range: 0.0 ~ 1.7976931348623157E308
+bobSpeed = 1.0
+#Whether info about the saved levels should be shown above the XP Block
+renderNameplate = true
+

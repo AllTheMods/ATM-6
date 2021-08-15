@@ -3,12 +3,16 @@
 [gameplay]
 	#Set this to false to disable new players spawning with the Tinkers' Book.
 	shouldSpawnWithTinkersBook = false
-	#Blacklist of registry names for the crafting station to connect to. Mainly for compatibility.
-	craftingStationBlacklist = []
-	#If true all material variants of the different tools will be listed in creative. Set to false to only have the first found material for all tools (usually wood).
-	listAllToolMaterials = true
-	#If true all material variants of the different parts will be listed in creative. Set to false to only have the first found material for all parts (usually wood).
-	listAllPartMaterials = true
+	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
+	#If empty, all materials will show
+	showOnlyToolMaterial = ""
+	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
+	#If empty, all materials will show
+	showOnlyPartMaterial = ""
+	#If true, tables such as the part builder and tinker station will show all variants. If false they will show just the first entry in the tag, typically oak.
+	showAllTableVariants = true
+	#If true, anvils will show all metal variants. If false, only the first variant in the tag will show (typically tinkers bronze)
+	showAllAnvilVariants = true
 
 #Options related to recipes, limited options as a datapack allows most recipes to be modified
 [recipes]
@@ -26,6 +30,19 @@
 	#Number of nuggets produced when an ore block is melted in the smeltery. 9 nuggets would give 1 ingot
 	#Range: 1 ~ 45
 	smelteryNuggetsPerOre = 18
+	#Number of nuggets produced when an ore block is melted in the foundry. 9 nuggets would give 1 ingot
+	#Range: 1 ~ 45
+	foundryNuggetsPerOre = 15
+
+	#Entity head drops when killed by a charged creeper
+	[recipes.heads]
+		blaze = true
+		enderman = true
+		stray = true
+		husk = true
+		drowned = true
+		spider = true
+		cave_spider = true
 
 #Everything to do with world generation
 [worldgen]
@@ -37,6 +54,53 @@
 	generateCobalt = true
 	#Approx Ores per Chunk
 	veinCountCobalt = 8
-	#Set this to false to disable slime islands spawning in the world
-	generateSlimeIslands = true
+
+	#Options related to slime islands
+	[worldgen.slime_islands]
+
+		#Options related to earth slime islands spawning in the oceans
+		[worldgen.slime_islands.earth]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 25
+
+		#Settings for sky slime islands in the overworld sky
+		[worldgen.slime_islands.sky]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 30
+
+		#Settings for clay islands in the overworld sky
+		[worldgen.slime_islands.clay]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 100
+
+		#Settings for blood islands in the nether lava ocean
+		[worldgen.slime_islands.blood]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 13
+
+		#Settings for end slime islands in the outer end islands
+		[worldgen.slime_islands.end]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 25
+
+#Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
+[debug]
+	#If true, forces integration materials to be enabled, even if the relevant metal is missing. Useful for testing material balance.
+	#Does not provide recipes for any of them, they will only be available to cheat in creative.
+	forceIntegrationMaterials = false
 

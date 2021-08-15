@@ -1,0 +1,8 @@
+
+#Disable features.
+[Features]
+	#Tool Information Tooltips enabled?
+	toolInfoTooltip = true
+	#Waila harvest level tooltip enabled?
+	wailaHarvestLevel = true
+

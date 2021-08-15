@@ -1,0 +1,6 @@
+┏╸ma:multiblock
+┃┏╸bo:enabled
+┃┣> Variable Type: java.lang.Boolean
+┃┣> Default: true
+┃┗╸
+┗╸

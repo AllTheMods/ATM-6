@@ -1,0 +1,119 @@
+
+##########################################################################################
+#You can edit a lot of values for the different processors of the mod here.
+#
+#When the config mentions 'processors', all machines which produce materials are meant.
+#Processors: Fluix Aggregator, Pulse Centrifuge, Crystal Energizer, Circuit Etcher
+#
+#When there is an option writing about 'upgrades', Acceleration Cards from AE2 are meant.
+##########################################################################################
+[general]
+	#The maximum amount of acceleration cards which can be stored in a processor.
+	#Upgrades will speed up the processing and increase the energy buffer at the cost of a higher energy consumption.
+	#Range: > 1
+	upgradeSlots = 8
+
+[fluix_aggregator]
+	#The base size of the Fluix Aggregator's energy buffer.
+	#Range: > 1
+	energyBuffer = 200000
+	#The additional size the Fluix Aggregator's energy buffer increases per upgrade.
+	#Calculation: bufferBase + bufferUpgrade * upgradeAmount)
+	#Range: > 1
+	energyBufferUpgrade = 100000
+	#The base energy cost per tick of the Fluix Aggregator.
+	#Range: > 1
+	energyCostBase = 100
+	#The multiplicator of how much the Fluix Aggregator's energy cost per tick increases per upgrade.
+	#Calculation: energyBase * (energyUpgrade ^ upgradeAmount)
+	#Range: 1.0 ~ 1.7976931348623157E308
+	energyCostUpgrade = 1.3
+	#The base number of ticks needed to process one Fluix Aggregator recipe.
+	#This value will be used on recipes with no explicit processing time.
+	#This only takes effect when custom recipes are added.
+	#Range: > 1
+	workerTicksBase = 80
+	#The multiplicator of how much the Fluix Aggregator's processing speed per recipe increases per upgrade.
+	#Calculation: speedBase * (speedUpgrade ^ upgradeAmount)
+	#The speed is the reverse value of the processing time. The higher the time, the lower the speed.
+	#Range: 1.0 ~ 1.7976931348623157E308
+	workerTicksUpgrade = 1.25
+
+[pulse_centrifuge]
+	#The base size of the Pulse Centrifuge's energy buffer.
+	#Range: > 1
+	energyBuffer = 400000
+	#The additional size the Pulse Centrifuge's energy buffer increases per upgrade.
+	#Calculation: bufferBase + bufferUpgrade * upgradeAmount)
+	#Range: > 1
+	energyBufferUpgrade = 200000
+	#The base energy cost per tick of the Pulse Centrifuge.
+	#Range: > 1
+	energyCostBase = 150
+	#The multiplicator of how much the Pulse Centrifuge's energy cost per tick increases per upgrade.
+	#Calculation: energyBase * (energyUpgrade ^ upgradeAmount)
+	#Range: 1.0 ~ 1.7976931348623157E308
+	energyCostUpgrade = 1.3
+	#The base number of ticks needed to process one Pulse Centrifuge recipe.
+	#This value will be used on recipes with no explicit processing time.
+	#This only takes effect when custom recipes are added.
+	#Range: > 1
+	workerTicksBase = 160
+	#The multiplicator of how much the Pulse Centrifuge's processing speed per recipe increases per upgrade.
+	#Calculation: speedBase * (speedUpgrade ^ upgradeAmount)
+	#The speed is the reverse value of the processing time. The higher the time, the lower the speed.
+	#Range: 1.0 ~ 1.7976931348623157E308
+	workerTicksUpgrade = 1.25
+
+[crystal_energizer]
+	#The base size of the Crystal Energizer's energy buffer.
+	#Range: > 1
+	energyBuffer = 200000
+	#The additional size the Crystal Energizer's energy buffer increases per upgrade.
+	#Calculation: bufferBase + bufferUpgrade * upgradeAmount)
+	#Range: > 1
+	energyBufferUpgrade = 100000
+	#The base energy cost per tick of the Crystal Energizer.
+	#Range: > 1
+	energyCostBase = 60
+	#The multiplicator of how much the Crystal Energizer's energy cost per tick increases per upgrade.
+	#Calculation: energyBase * (energyUpgrade ^ upgradeAmount)
+	#Range: 1.0 ~ 1.7976931348623157E308
+	energyCostUpgrade = 1.35
+	#The base number of ticks needed to process one Crystal Energizer recipe.
+	#This value will be used on recipes with no explicit processing time.
+	#This only takes effect when custom recipes are added.
+	#Range: > 1
+	workerTicksBase = 100
+	#The multiplicator of how much the Crystal Energizer's processing speed per recipe increases per upgrade.
+	#Calculation: speedBase * (speedUpgrade ^ upgradeAmount)
+	#The speed is the reverse value of the processing time. The higher the time, the lower the speed.
+	#Range: 1.0 ~ 1.7976931348623157E308
+	workerTicksUpgrade = 1.3
+
+[circuit_etcher]
+	#The base size of the Circuit Etcher's energy buffer.
+	#Range: > 1
+	energyBuffer = 400000
+	#The additional size the Circuit Etcher's energy buffer increases per upgrade.
+	#Calculation: bufferBase + bufferUpgrade * upgradeAmount)
+	#Range: > 1
+	energyBufferUpgrade = 200000
+	#The base energy cost per tick of the Circuit Etcher.
+	#Range: > 1
+	energyCostBase = 250
+	#The multiplicator of how much the Circuit Etcher's energy cost per tick increases per upgrade.
+	#Calculation: energyBase * (energyUpgrade ^ upgradeAmount)
+	#Range: 1.0 ~ 1.7976931348623157E308
+	energyCostUpgrade = 1.26
+	#The base number of ticks needed to process one Circuit Etcher recipe.
+	#This value will be used on recipes with no explicit processing time.
+	#This only takes effect when custom recipes are added.
+	#Range: > 1
+	workerTicksBase = 120
+	#The multiplicator of how much the Circuit Etcher's processing speed per recipe increases per upgrade.
+	#Calculation: speedBase * (speedUpgrade ^ upgradeAmount)
+	#The speed is the reverse value of the processing time. The higher the time, the lower the speed.
+	#Range: 1.0 ~ 1.7976931348623157E308
+	workerTicksUpgrade = 1.2
+

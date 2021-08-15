@@ -98,6 +98,8 @@
 		defaultPartUpdateFreq = 1
 		#The NBT tags that are not allowed to be read by displaying NBT tags or performing operations on them.
 		nbtTagBlacklist = []
+		#Priority list of mod id's when determining tag-based recipe outputs.
+		recipeTagOutputModPriorities = []
 
 	[machine.invisible_light]
 		#If invisible light should act as full a block

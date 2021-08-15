@@ -19,6 +19,8 @@ shouldReturnPortalBeUsable = true
 progressionRuleDefault = true
 #Disable the uncrafting function of the uncrafting table. Provided as an option when interaction with other mods produces exploitable recipes.
 disableUncrafting = true
+#If true, Keepsake Caskets that are spawned when a player dies will not be accessible by other players. Use this if you dont want people taking from other people's death caskets. NOTE: server operators will still be able to open locked caskets.
+uuid_locking = false
 
 #Settings that are not reversible without consequences.
 ["Dimension Settings"]
@@ -28,6 +30,8 @@ disableUncrafting = true
 	skylightForest = false
 	#If true, giant Twilight Oaks will also spawn in void worlds
 	skylightOaks = true
+	#Destination dimension for Twilight Portals and some other logic as well
+	twilightDimensionID = "twilightforest:twilightforest"
 
 	#Weights for various small features
 	["Dimension Settings"."World-Gen Weights"]
@@ -63,10 +67,12 @@ disableUncrafting = true
 	["Dimension Settings"."Custom Hollow Hill Stalactites"]
 		#Blocks generating as stalactites in large hills only
 		largeHill = []
-		#Blocks generating as stalactites in all hills
+		#Blocks generating as stalactites in medium and large hills
 		mediumHill = []
 		#If true, default stalactites and stalactites defined by other mods will not be used.
 		useConfigOnly = false
+		#Blocks generating as stalactites in all hills
+		smallHill = []
 
 #Lets you sacrifice various things to improve world performance.
 ["Performance Tweaks"]

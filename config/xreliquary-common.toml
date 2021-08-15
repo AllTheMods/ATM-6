@@ -236,7 +236,7 @@ mobDropsEnabled = true
 		#Maximum range at which torches can be placed
 		#Range: 1 ~ 30
 		maxRange = 30
-		#List of torches that are supported by the staff in addition to the default minecraft torch
+		#List of torches that are supported by the staff
 		torches = ["minecraft:torch"]
 		#Number of items the staff can store per item type
 		#Range: 1 ~ 9999
@@ -267,8 +267,6 @@ mobDropsEnabled = true
 
 	#Fortune Coin settings
 	[items.fortuneCoin]
-		#Allows to disable the sound of fortune coin teleporting stuff
-		enabledAudio = true
 		#The distance that it pulls from when right click is held
 		#Range: 9 ~ 30
 		longRangePullDistance = 15
@@ -320,6 +318,8 @@ mobDropsEnabled = true
 		#Minimum light level below which the lantern will place torches
 		#Range: 0 ~ 15
 		minLightLevel = 8
+		#List of torches that are supported by the lantern
+		torches = ["minecraft:torch"]
 
 	#Alkahestry Tome settings
 	[items.alkahestryTome]
@@ -346,8 +346,10 @@ mobDropsEnabled = true
 		pedestalRange = 21
 		#Determines if almost destroyed charms stay displayed in the hud
 		keepAlmostDestroyedDisplayed = true
+		#List of hostile entities that are not supposed to have mob charms registered for them
+		entityBlockList = ["minecraft:ender_dragon", "minecraft:wither"]
 
-	#Infernal Chalice settings
+	#Infernal Claws settings
 	[items.infernalClaws]
 		#Percent hunger used to heal player per 1 damage that would be taken otherwise.
 		#Range: 0 ~ 30
@@ -371,6 +373,8 @@ mobDropsEnabled = true
 	[items.infernalTear]
 		#Whether the infernal tear starts absorbing immediately after it is set to item type
 		absorbWhenCreated = false
+		#List of items that can be consumed by infernal tear with their experience point value
+		entityLootTableList = ["minecraft:emerald|63", "minecraft:sandstone|1", "minecraft:gravel|1", "minecraft:diamond|125", "minecraft:gunpowder|8", "minecraft:nether_star|500", "minecraft:iron_ingot|63", "minecraft:charcoal|2", "minecraft:soul_sand|2", "minecraft:lapis_lazuli|8", "minecraft:obsidian|4", "minecraft:end_stone|1", "minecraft:gold_ingot|63", "minecraft:netherrack|1", "minecraft:flint|2", "minecraft:clay|4", "minecraft:chorus_fruit|2", "minecraft:quartz|16", "minecraft:honeycomb|4", "minecraft:netherite_scrap|250"]
 
 	#Destruction Catalyst settings
 	[items.destructionCatalyst]
@@ -407,15 +411,27 @@ mobDropsEnabled = true
 		#A player's experience level at which pulling from the medallion to player will stop
 		#Range: 0 ~ 1000
 		experienceLevelMaximum = 200
-		#Experience level that the medallion can hold
-		#Range: > 0
-		experienceLimit = 2147483647
 		#Cooldown between hero medallion tries to fix mending items in nearby pedestals
 		#Range: 1 ~ 100
 		pedestalCoolDown = 20
 		#Range in which pedestals are checked for items with mending enchant that need fixing
 		#Range: 1 ~ 20
 		pedestalRange = 5
+
+	#Handgun settings
+	[items.handgun]
+		#Experience level at which handgun has the fastest reload time and shortes cooldown between shots
+		#Range: 0 ~ 100
+		maxSkillLevel = 20
+
+	#Mob Charm Fragment Settings
+	[items.mobCharmFragment]
+		#Chance of fragment droping from mobs that don't have fragment that can be crafted
+		#Range: 0.0 ~ 1.0
+		dropChance = 0.01666666753590107
+		#Additional chance per level of looting
+		#Range: 0.0 ~ 1.0
+		lootingMultiplier = 0.008333333767950535
 
 [blocks]
 
