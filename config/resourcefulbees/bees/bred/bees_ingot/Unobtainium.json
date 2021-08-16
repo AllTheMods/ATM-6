@@ -50,12 +50,7 @@
                 "outputID": "resourcefulbees:lava_bee",
                 "weight": 80
             }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:soul_lava_bee",
-                    "BeeType": "soul_lava",
-                    "Color": "#7cc7d6"
-                },
+                "outputID": "resourcefulbees:soul_lava_bee",
                 "weight": 20
             }]
         }]
