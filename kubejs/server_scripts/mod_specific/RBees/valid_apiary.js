@@ -93,7 +93,7 @@ const whitelistVA = [
   '#darkutils:filter',
 
   '#minecolonies:decoblocks',
-  
+
   '#minecraft:alabaster_blocks',
 
   '#mcwwindows:window',

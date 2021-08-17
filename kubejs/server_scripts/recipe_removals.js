@@ -57,6 +57,7 @@ onEvent('recipes', e => {
     'mysticalagriculture:essence/common/silicon',
     'mysticalagriculture:essence/common/steel_ingot',
     'mysticalagriculture:essence/common/sulfur',
+	'mysticalagriculture:essence/common/niter',
     'mysticalagriculture:essence/immersiveengineering/hop_graphite_ingot',
     'mysticalagriculture:essence/pneumaticcraft/compressed_iron_ingot',
     'mysticalagriculture:essence/appliedenergistics2/fluix',

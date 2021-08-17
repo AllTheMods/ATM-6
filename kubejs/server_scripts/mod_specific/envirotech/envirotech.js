@@ -6,20 +6,11 @@ onEvent('recipes', e => {
     return ingredients[x] ? x : ' '
   }
   function add(recipe) {
-    //0=ingredients, 1=result, 2=nbt, 3=boolean
-    // if (!!recipe[2]) {
-      e.shaped(Item.of(recipe[1], recipe[2]), [
-        ` ${key('T', recipe[0])} `,
-        `${key('L', recipe[0])}${key('C', recipe[0])}${key('R', recipe[0])}`,
-        ` ${key('B', recipe[0])} `
-      ], recipe[0])
-    // } else {
-    //   e.shaped(Item.of(recipe[1], recipe[2]), [
-    //     ` ${key('T', recipe[0])} `,
-    //     `${key('L', recipe[0])}${key('C', recipe[0])}${key('R', recipe[0])}`,
-    //     ` ${key('B', recipe[0])} `
-    //   ], recipe[0])
-    // }
+    e.shaped(Item.of(recipe[1], recipe[2]), [
+      ` ${key('T', recipe[0])} `,
+      `${key('L', recipe[0])}${key('C', recipe[0])}${key('R', recipe[0])}`,
+      ` ${key('B', recipe[0])} `
+    ], recipe[0])
   }
   //#endregion
 
