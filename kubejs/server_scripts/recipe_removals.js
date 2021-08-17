@@ -1,57 +1,53 @@
 //priority: 999
 onEvent('recipes', e => {
-  const idRemove = [
-    'rftoolsdim:dimension_builder',
+  function removeRecipeByID(recipes) {
+    recipes.forEach(recipe => {
+      e.remove({ id: recipe })
+    })
+  }
+  function removeRecipeByType(recipes){
+    recipes.forEach(recipe => {
+      if(Array.isArray(recipe)){
+        e.remove({type: recipe[1], output: recipe[0]})
+      } else {
+        e.remove({output: recipe})
+      }
+    })
+  }
+
+  removeRecipeByID([
+    'appliedenergistics2:grinder/flour',
     'explorerscompass:explorers_compass',
     'minecraft:comparator',
     'minecraft:glass',
-
     'pedestals:pedestal_crushing/dustnethergold',
-
     'forbidden_arcanus:leather',
-
+    'forbidden_arcanus:iron_chain',
     'computercraft:turtle_normal',
     'computercraft:turtle_advanced',
-
-    'byg:black_glass_from_sand',
-    'byg:purple_glass_from_sand',
-    'byg:blue_glass_from_sand',
-    'byg:white_glass_from_sand',
-
     'engineerstools:crushing/aluminium_grit_crushing_recipe',
-
     'xreliquary:alkahestry/crafting/nether_star',
     'xreliquary:fertile_lily_pad',
-
-    'thermal:machine/press/packing2x2/press_honeycomb_packing',
-    'thermal:machine/press/unpacking/press_honeycomb_unpacking',
-    'thermal:machine/centrifuge/centrifuge_oil_sand',
-    'thermal:machine/centrifuge/centrifuge_oil_red_sand',
-
-    //ma balance
+    'mysticalagriculture:oratchalcum_seeds_infusion',
+    'mysticalagriculture:crimson_steel_seeds_infusion',
     'mysticalagriculture:essence/astralsorcery/rock_crystal',
     'mysticalagriculture:essence/astralsorcery/starmetal_ingot',
     'mysticalagriculture:essence/astralsorcery/aquamarine',
-
     'mysticalagriculture:essence/thermal/basalz_rod',
     'mysticalagriculture:essence/thermal/blitz_rod',
     'mysticalagriculture:essence/thermal/blizz_rod',
     'mysticalagriculture:essence/thermal/enderium_ingot',
     'mysticalagriculture:essence/thermal/lumium_ingot',
     'mysticalagriculture:essence/thermal/signalum_ingot',
-
     'mysticalagriculture:essence/quark/ender_biotite',
-
     'mysticalagriculture:essence/powah/blazing_crystal',
     'mysticalagriculture:essence/powah/energized_steel',
     'mysticalagriculture:essence/powah/niotic_crystal',
     'mysticalagradditions:essence/nitro_crystal',
     'mysticalagriculture:essence/powah/spirited_crystal',
-
     'mysticalagriculture:essence/botania/elementium_ingot',
     'mysticalagriculture:essence/botania/manasteel_ingot',
     'mysticalagriculture:essence/botania/terrasteel_ingot',
-
     'mysticalagriculture:essence/common/brass_ingot',
     'mysticalagriculture:essence/common/bronze_ingot',
     'mysticalagriculture:essence/common/constantan_ingot',
@@ -61,24 +57,18 @@ onEvent('recipes', e => {
     'mysticalagriculture:essence/common/silicon',
     'mysticalagriculture:essence/common/steel_ingot',
     'mysticalagriculture:essence/common/sulfur',
-    'mysticalagriculture:essence/common/niter',
-
+	'mysticalagriculture:essence/common/niter',
     'mysticalagriculture:essence/immersiveengineering/hop_graphite_ingot',
-
     'mysticalagriculture:essence/pneumaticcraft/compressed_iron_ingot',
-
     'mysticalagriculture:essence/appliedenergistics2/fluix',
     'mysticalagriculture:essence/appliedenergistics2/sky_stone',
     'mysticalagriculture:essence/appliedenergistics2/silicon_press',
     'mysticalagriculture:essence/appliedenergistics2/calculation_press',
     'mysticalagriculture:essence/appliedenergistics2/engineering_press',
     'mysticalagriculture:essence/appliedenergistics2/logic_press',
-
     'mysticalagriculture:essence/refinedstorage/quartz_enriched_iron_ingot',
-
     'mysticalagriculture:essence/mekanism/refined_glowstone_ingot',
     'mysticalagriculture:essence/mekanism/refined_obsidian_ingot',
-
     'mysticalagriculture:seed/infusion/basalz',
     'mysticalagriculture:seed/infusion/blazing_crystal',
     'mysticalagriculture:seed/infusion/blitz',
@@ -87,7 +77,6 @@ onEvent('recipes', e => {
     'mysticalagriculture:seed/infusion/bronze',
     'mysticalagriculture:seed/infusion/compressed_iron',
     'mysticalagriculture:seed/infusion/constantan',
-    'mysticalagriculture:crimson_steel_seeds_infusion',
     'mysticalagriculture:seed/infusion/electrum',
     'mysticalagriculture:seed/infusion/elementium',
     'mysticalagriculture:seed/infusion/enderium',
@@ -99,9 +88,9 @@ onEvent('recipes', e => {
     'mysticalagriculture:seed/infusion/invar',
     'mysticalagriculture:seed/infusion/lumium',
     'mysticalagriculture:seed/infusion/manasteel',
+    'mysticalagriculture:seed/infusion/marble',
     'mysticalagriculture:seed/infusion/niotic_crystal',
     'mysticalagriculture:seed/infusion/nitro_crystal',
-    'mysticalagriculture:oratchalcum_seeds_infusion',
     'mysticalagriculture:seed/infusion/quartz_enriched_iron',
     'mysticalagriculture:seed/infusion/refined_glowstone',
     'mysticalagriculture:seed/infusion/refined_obsidian',
@@ -114,14 +103,10 @@ onEvent('recipes', e => {
     'mysticalagriculture:seed/infusion/steel',
     'mysticalagriculture:seed/infusion/sulfur',
     'mysticalagriculture:seed/infusion/terrasteel',
-
     'mysticalagradditions:nitro_crystal_crux',
-
-    //crative apiary
     'creativeapiary:tcreative_apiary',
     'creativeapiary:creative_apiary_storage',
     'creativeapiary:creative_apiary_breeder',
-
     'quarryplus:solidquarry',
     'quarryplus:workbenchplus',
     'mininggadgets:upgrade_empty',
@@ -135,15 +120,22 @@ onEvent('recipes', e => {
     'mekanism:advanced_tier_installer',
     'mekanism:elite_tier_installer',
     'mekanism:ultimate_tier_installer',
+    'mekanism:mekasuit_helmet',
+    'mekanism:mekasuit_bodyarmor',
+    'mekanism:mekasuit_pants',
+    'mekanism:mekasuit_boots',
+    'mekanism:processing/diamond/to_dust',
+    'mekanism:gas_conversion/salt_to_hydrogen_chloride',
     'pamhc2foodcore:fruitpunchitem',
     'pamhc2foodcore:applejuiceitem',
     'pamhc2foodcore:melonjuiceitem',
     'pamhc2foodcore:sweetberryjuiceitem',
     'pamhc2foodcore:p8juiceitem',
     'pamhc2foodcore:tool_roller',
+    'pamhc2foodcore:cottoncandyitem',
+    'pamhc2foodextended:peachesandcreamoatmealitem',
     'angelring:itemring',
     'angelring:itemdiamondring',
-    'forbidden_arcanus:iron_chain',
     'silentgear:iron_rod',
     'entangled:block',
     'entangled:item',
@@ -161,18 +153,11 @@ onEvent('recipes', e => {
     'extradisks:part/infinite_storage_part',
     'mysticalagriculture:unattuned_augment',
     'rftoolsbuilder:builder',
+    'rftoolsdim:dimension_builder',
     'extrastorage:iron_crafter',
     'twilightforest:uncrafting_table',
     'creativecrafter:creative_crafter',
     'creativewirelesstransmitter:creative_wireless_transmitter',
-    'thermal:machine/pyrolyzer/pyrolyzer_coal',
-    'thermal:machine/pyrolyzer/pyrolyzer_logs',
-    'mekanism:mekasuit_helmet',
-    'mekanism:mekasuit_bodyarmor',
-    'mekanism:mekasuit_pants',
-    'mekanism:mekasuit_boots',
-    'mekanism:processing/diamond/to_dust',
-    'mekanism:gas_conversion/salt_to_hydrogen_chloride',
     'powah:crafting/thermoelectric_plate',
     'eidolon:smelt_stone_brick',
     'immersiveengineering:crusher/nether_wart',
@@ -182,10 +167,18 @@ onEvent('recipes', e => {
     'byg:compat/tconstruct/magma_cream_from_magmatic_stone_melting',
     'byg:compat/tconstruct/magmatic_stone_from_casting',
     'byg:compat/tconstruct/cryptic_magma_block_from_casting',
+    'byg:black_glass_from_sand',
+    'byg:purple_glass_from_sand',
+    'byg:blue_glass_from_sand',
+    'byg:white_glass_from_sand',
     'immersivepetroleum:hydrotreater/sulfur_recovery',
-    'pamhc2foodcore:cottoncandyitem',
-    'pamhc2foodextended:peachesandcreamoatmealitem',
     'rats:dragon_wing_iaf',
+    'thermal:machine/press/packing2x2/press_honeycomb_packing',
+    'thermal:machine/press/unpacking/press_honeycomb_unpacking',
+    'thermal:machine/centrifuge/centrifuge_oil_sand',
+    'thermal:machine/centrifuge/centrifuge_oil_red_sand',
+    'thermal:machine/pyrolyzer/pyrolyzer_coal',
+    'thermal:machine/pyrolyzer/pyrolyzer_logs',
     `thermal:compat/astralsorcery/pulverizer_astralsorcery_aquamarine_ore`,
     `thermal:compat/tconstruct/smelter_alloy_tconstruct_pigiron_ingot`,
     `thermal:compat/tconstruct/chiller_tconstruct_pigiron_ingot`,
@@ -218,6 +211,10 @@ onEvent('recipes', e => {
     `thermal:compat/mysticalagriculture/insolator_mysticalag_parrot_seeds`,
     `thermal:compat/mysticalagriculture/insolator_mysticalag_cat_seeds`,
     `thermal:compat/mysticalagriculture/insolator_mysticalag_bat_seeds`,
+    'thermal:machine/chiller/chiller_honey_to_honey_block',
+    'thermal:machine/bottler/bottler_honey_bottle',
+    'thermal:machine/centrifuge/centrifuge_honeycomb',
+    'thermal:machine/crucible/crucible_honey_block_to_honey',
     'create:emptying/honey_bottle',
     'cyclic:melter_honey',
     'cyclic:melter_honey1',
@@ -238,88 +235,44 @@ onEvent('recipes', e => {
     'cyclic:solidifier_honeycake',
     'cyclic:solidifier_honeycarrot',
     'cyclic:solidifier_honey_bottle',
-    'thermal:machine/chiller/chiller_honey_to_honey_block',
-    'thermal:machine/bottler/bottler_honey_bottle',
-    'thermal:machine/centrifuge/centrifuge_honeycomb',
-    'thermal:machine/crucible/crucible_honey_block_to_honey'
-  ]
-  idRemove.forEach(recipe_id => { e.remove({ id: recipe_id }) })
-  e.remove({
-    output: [
-      'darkutils:ender_hopper',
-
-      'minecraft:dragon_egg',
-
-      'ctiers:centrifuge_casing_tier_creative',
-      'ctiers:centrifuge_controller_tier_creative',
-
-      'appliedenergistics2:silicon',
-
-      'mekanism:upgrade_anchor',
-
-      'forbidden_arcanus:rotten_leather',
-
-      'xreliquary:alkahestry_tome',
-
-      'naturesaura:chunk_loader',
-
-      'cyclic:uncrafter',
-      'cyclic:tile_transporter_empty',
-      'cyclic:trash',
-
-      'quark:apple_crate',
-      'quark:potato_crate',
-      'quark:carrot_crate',
-      'quark:beetroot_crate',
-      'quark:charcoal_block',
-      'quark:gunpowder_sack',
-
-      'mekanism:block_charcoal',
-
-      'titanium:iron_gear',
-      'titanium:gold_gear',
-      'titanium:diamond_gear'
-    ]
-  })
-  e.remove({ mod: 'cabletiers' })
-  e.remove({ mod: 'chiseled' })
-  e.remove({
-    input: ['appliedenergistics2:flour']
-  })
-  e.remove({
-    type: 'xreliquary:alkahestry_charging'
-  })
-  e.remove({
-    id: 'appliedenergistics2:grinder/flour'
-  })
-  e.remove({
-    output: '#minecraft:signs',
-    type: 'pedestals:pedestal_sawing'
-  })
-  e.remove({
-    output: '#minecraft:wooden_stairs',
-    type: 'pedestals:pedestal_sawing'
-  })
-  e.remove({
-    output: '#minecraft:wooden_slabs',
-    type: 'pedestals:pedestal_sawing'
-  })
-  e.remove({
-    output: '#minecraft:wooden_trapdoors',
-    type: 'pedestals:pedestal_sawing'
-  })
-  e.remove({
-    output: '#minecraft:wooden_pressure_plates',
-    type: 'pedestals:pedestal_sawing'
-  })
-  e.remove({
-    output: 'minecraft:stick',
-    type: 'pedestals:pedestal_sawing'
-  })
-  e.remove({
-    output: 'pedestals:dustflour'
-  })
-  e.remove({
-    output: 'mekanism:bio_fuel'
-  })
+    'cyclic:energy_pipe',
+    'cyclic:item_pipe',
+    'cyclic:fluid_pipe'
+  ])
+  removeRecipeByType([
+    'resourcefulbees:bee_jar',
+    'darkutils:ender_hopper',
+    'minecraft:dragon_egg',
+    'ctiers:centrifuge_casing_tier_creative',
+    'ctiers:centrifuge_controller_tier_creative',
+    'appliedenergistics2:silicon',
+    'mekanism:upgrade_anchor',
+    'forbidden_arcanus:rotten_leather',
+    'xreliquary:alkahestry_tome',
+    'naturesaura:chunk_loader',
+    'cyclic:uncrafter',
+    'cyclic:tile_transporter_empty',
+    'cyclic:trash',
+    'quark:apple_crate',
+    'quark:potato_crate',
+    'quark:carrot_crate',
+    'quark:beetroot_crate',
+    'quark:charcoal_block',
+    'quark:gunpowder_sack',
+    'mekanism:block_charcoal',
+    'titanium:iron_gear',
+    'titanium:gold_gear',
+    'titanium:diamond_gear',
+    ['#minecraft:signs', 'pedestals:pedestal_sawing'],
+    ['#minecraft:wooden_stairs', 'pedestals:pedestal_sawing'],
+    ['#minecraft:wooden_slabs', 'pedestals:pedestal_sawing'],
+    ['#minecraft:wooden_trapdoors', 'pedestals:pedestal_sawing'],
+    ['#minecraft:wooden_pressure_plates', 'pedestals:pedestal_sawing'],
+    ['#minecraft:stick', 'pedestals:pedestal_sawing']
+  ])
+  e.remove({mod: 'cabletiers'})
+  e.remove({mod: 'chiseled'})
+  e.remove({input: ['appliedenergistics2:flour']})
+  e.remove({output: ['mekanism:bio_fuel', 'pedestals:dustflour']})
+  e.remove({type: 'xreliquary:alkahestry_charging'})
 })

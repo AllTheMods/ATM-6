@@ -1,8 +1,11 @@
 //priority: 1000
+//#region ITEM TAGS
 onEvent('item.tags', e => {
+  //#region constants
   const alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
   const allthemodiumores = ['allthemodium', 'vibranium', 'unobtainium']
-
+  //#endregion
+  //#region additions
   allthemodiumores.forEach(item => {
     e.add(`mekanism:clumps/${item}`, `allthemodium:${item}_clump`)
     e.add(`mekanism:clumps`, `#mekanism:clumps/${item}`)
@@ -23,6 +26,7 @@ onEvent('item.tags', e => {
     e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`)
     e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
+  e.add('forge:marble', ['#chisel:marble'])
   e.add('forge:ingots/aluminum', 'zycraft:aluminium')
   e.add('forge:ingots/aluminium', 'zycraft:aluminium')
   e.add('minecraft:logs_unstripped', '/^.+:(?!stripped_).+_log$/')
@@ -100,7 +104,8 @@ onEvent('item.tags', e => {
   e.add('forge:hoes', ['/.+_hoe/', '/.+:hoe_.+/'])
   e.add('forge:simple_honeycombs', '/^.+:(?!(catnip|rgbee)_).*honeycomb$/')
   e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
-
+  //#endregion
+  //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)
   e.remove('forge:leather', 'forbidden_arcanus:rotten_leather')
   e.remove('engineerstools:musli_bar_food_blacklisted', 'minecraft:chicken')
@@ -114,10 +119,17 @@ onEvent('item.tags', e => {
   e.remove('appliedenergistics2:workbench', 'minecraft:crafting_table')
   e.remove('minecraft:beehives', ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive'])
   e.remove('forge:cheese/silkentofu', 'pamhc2foodextended:silkentofuitem')
+  e.remove('forge:chests/personal', 'mekanism:personal_chest')
+  e.remove('forge:chests/electric', 'mekanism:personal_chest')
+  e.remove('forge:chests', 'mekanism:personal_chest')
+  //#endregion
 })
+//#endregion
 
-//Block tags
+//#region BLOCK TAGS
 onEvent('block.tags', e => {
+  //#region additions
+  e.add('forge:marble', ['#chisel:marble'])
   e.add('forge:ores/certus_quartz', ['appliedenergistics2:quartz_ore', 'appliedenergistics2:charged_quartz_ore'])
   e.add('forge:ores/oratchalcum', 'rats:oratchalcum_ore')
   e.add('forge:ores/cheese', 'rats:cheese_ore')
@@ -130,7 +142,6 @@ onEvent('block.tags', e => {
   e.add('mekanism:cardboard_blacklist', '#misctags:no_moving')
   e.add('bagofyurting:blacklist', '#misctags:no_moving')
   e.add('create:brittle', '#misctags:no_moving')
-
   e.add('misctags:flowers/draconic_flowers', ['minecraft:dragon_egg'])
   e.add('misctags:flowers/end_flowers', ['minecraft:chorus_flower', 'minecraft:chorus_plant'])
   e.add('misctags:flowers/forest_flowers', ['#minecraft:flowers', 'minecraft:sweet_berry_bush'])
@@ -161,23 +172,32 @@ onEvent('block.tags', e => {
   e.add('cyclic:scythe_brush', ['#minecraft:flowers'])
   e.add('mcwwindows:window', '/mcwwindows:.+_win/')
   e.add('misctags:concrete', '/minecraft:.+_concrete/')
-
+  //#endregion
+  //#region removals
   e.removeAll('minecraft:enderman_holdable')
+  e.remove('forge:chests/personal', 'mekanism:personal_chest')
+  e.remove('forge:chests/electric', 'mekanism:personal_chest')
+  e.remove('forge:chests', 'mekanism:personal_chest')
+  //#endregion
 })
+//#endregion
 
-//Entity tags
+//#region ENTITY TAGS
 onEvent('entity_type.tags', e => {
   e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg',])
   e.add('mob_grinding_utils:noswab', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg',])
 })
+//#endregion
 
-//Fluid tags
+//#region FLUID TAGS
 onEvent('fluid.tags', e => {
   const alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
-  e.add('forge:essence', 'pneumaticcraft:memory_essence')
-  e.add('minecraft:water', ['cofh_core:honey', 'cyclic:honey', 'resourcefulbees:catnip_honey', 'resourcefulbees:honey', 'resourcefulbees:rainbow_honey_flowing', 'resourcefulbees:rainbow_honey'])
+
   alltheores.forEach(material => {
     e.add(`forge:molten_${material}`, [`alltheores:molten_${material}`, `#tconstruct:molten_${material}`])
     e.add(`tconstruct:metal_like`, `alltheores:molten_${material}`)
   })
+  e.add('forge:essence', 'pneumaticcraft:memory_essence')
+  e.add('minecraft:water', ['cofh_core:honey', 'cyclic:honey', 'resourcefulbees:catnip_honey', 'resourcefulbees:honey', 'resourcefulbees:rainbow_honey_flowing', 'resourcefulbees:rainbow_honey'])
 })
+//#endregion

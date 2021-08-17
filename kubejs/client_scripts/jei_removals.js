@@ -37,6 +37,7 @@ onEvent(`jei.hide.items`, e => {
     /appliedenergistics2:facade/,
     `cyclic:tile_transporter_empty`,
     `cyclic:trash`,
+    /cyclic:.*pipe/,
     `naturesaura:chunk_loader`,
     /extrastorage:disk_.+/,
     /extrastorage:block_.+/,

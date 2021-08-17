@@ -1382,6 +1382,25 @@ onEvent('recipes', e => {
     C: 'rftoolsbase:machine_frame'
   }).id('kubejs:thermoelectric_plate')
 
+  e.shaped('16x resourcefulbees:bee_jar', [
+    ' G ',
+    'G G',
+    'GGG'
+  ], {
+    G: '#forge:glass'
+  })
+
+  e.custom({
+    type: "transport:rail_workers_bench",
+    ingredient: {
+      tag: "forge:storage_blocks/iron",
+      count: 2
+    },
+    result: {
+      item: "transport:steam_locomotive",
+      count: 1
+    }
+  }).id('transport:steam_locomotive')
   //Custom Blocks
   customBlock('kubejs:nether_star_block', 'minecraft:nether_star')
   customBlock('kubejs:atm_star_block', 'atmadditions:atm_star')
