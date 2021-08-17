@@ -239,7 +239,6 @@ onEvent('recipes', e => {
     'cyclic:fluid_pipe'
   ])
   removeRecipeByType([
-    'mythicbotany:wither_aconite',
     'resourcefulbees:bee_jar',
     'darkutils:ender_hopper',
     'minecraft:dragon_egg',
