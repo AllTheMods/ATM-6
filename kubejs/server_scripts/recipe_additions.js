@@ -1426,7 +1426,6 @@ onEvent('recipes', e => {
       count: 1
     }
   }).id('transport:steam_locomotive')
-
   //Custom Blocks
   customBlock('kubejs:nether_star_block', 'minecraft:nether_star')
   customBlock('kubejs:atm_star_block', 'atmadditions:atm_star')
