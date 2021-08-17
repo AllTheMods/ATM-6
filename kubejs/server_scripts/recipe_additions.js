@@ -1050,7 +1050,8 @@ onEvent('recipes', e => {
     'AAA'
   ], {
     A: 'mysticalagriculture:aquamarine_essence'
-  }).id(`kubejs:aquamarine_essence`)  e.shaped('8x thermal:niter_dust', [
+  }).id(`kubejs:aquamarine_essence`)
+  e.shaped('8x thermal:niter_dust', [
     ' A ',
     ' A ',
     ' A '
@@ -1321,40 +1322,6 @@ onEvent('recipes', e => {
     ]
   }).id('kubejs:petal_apothecary/mass_of_wills')
 
-  //ma infusion
-  // e.recipes.mysticalagriculture.infusion({
-  //   input: {
-  //     item: 'mysticalagriculture:prosperity_seed_base'
-  //   },
-  //   ingredients: [{
-  //     tag: 'forge:marble'
-  //   },
-  //   {
-  //     item: 'mysticalagriculture:prudentium_essence'
-  //   },
-  //   {
-  //     tag: 'forge:marble'
-  //   },
-  //   {
-  //     item: 'mysticalagriculture:prudentium_essence'
-  //   },
-  //   {
-  //     tag: 'forge:marble'
-  //   },
-  //   {
-  //     item: 'mysticalagriculture:prudentium_essence'
-  //   },
-  //   {
-  //     tag: 'forge:marble'
-  //   },
-  //   {
-  //     item: 'mysticalagriculture:prudentium_essence'
-  //   }
-  //   ],
-  //   result: {
-  //     item: 'mysticalagriculture:marble_seeds'
-  //   }
-  // })
   mainfusion('mysticalagriculture:saltpeter_seeds', 'mysticalagriculture:prosperity_seed_base', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence')
   mainfusion('kubejs:magical_soil', 'botania:overgrowth_seed', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block')
 
