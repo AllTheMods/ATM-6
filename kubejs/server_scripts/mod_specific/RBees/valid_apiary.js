@@ -94,8 +94,6 @@ const whitelistVA = [
 
   '#minecolonies:decoblocks',
 
-  '#minecraft:alabaster_blocks',
-
   '#mcwwindows:window',
 
   'botania:mana_glass',
