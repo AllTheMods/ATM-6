@@ -1050,7 +1050,13 @@ onEvent('recipes', e => {
     'AAA'
   ], {
     A: 'mysticalagriculture:aquamarine_essence'
-  }).id(`kubejs:aquamarine_essence`)
+  }).id(`kubejs:aquamarine_essence`)  e.shaped('8x thermal:niter_dust', [
+    ' A ',
+    ' A ',
+    ' A '
+  ], {
+    A: 'mysticalagriculture:saltpeter_essence'
+  }).id('kubejs:saltpeter_essence')
   //Cable Tiers changes
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
@@ -1349,6 +1355,7 @@ onEvent('recipes', e => {
   //     item: 'mysticalagriculture:marble_seeds'
   //   }
   // })
+  mainfusion('mysticalagriculture:saltpeter_seeds', 'mysticalagriculture:prosperity_seed_base', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence')
   mainfusion('kubejs:magical_soil', 'botania:overgrowth_seed', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block')
 
   //thermal
