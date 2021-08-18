@@ -670,6 +670,36 @@ onEvent('recipes', e => {
     M: 'mekanism:ingot_refined_obsidian',
     P: '#minecraft:planks'
   })
+  e.shaped('mekanism:chemical_oxidizer', [
+    'RCR',
+    'PDT',
+    'RCR'
+  ], {
+    R: 'mekanism:alloy_infused',
+    C: 'mekanism:basic_control_circuit',
+    P: 'mekanism:personal_chest',
+    D: 'mekanism:dynamic_tank',
+    T: 'mekanism:basic_chemical_tank'
+  })
+  e.shaped('mekanism:robit', [
+    ' S ',
+    'ERE',
+    'OPO'
+  ], {
+    R: 'mekanism:alloy_atomic',
+    S: '#forge:ingots/steel',
+    E: 'mekanism:energy_tablet',
+    O: 'mekanism:ingot_refined_obsidian',
+    P: 'mekanism:personal_chest'
+  })
+  e.shaped('mekanism:laser_tractor_beam', [
+    ' P ',
+    ' L ',
+    '   '
+  ], {
+    P: 'mekanism:personal_chest',
+    L: 'mekanism:laser_amplifier'
+  })
   e.shaped('ironjetpacks:diamond_cell', [
     ' R ',
     'TCT',
