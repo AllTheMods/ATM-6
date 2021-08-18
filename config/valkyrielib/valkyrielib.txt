@@ -5,6 +5,6 @@
 ┃┗╸
 ┃┏╸bo:debug
 ┃┣> Variable Type: java.lang.Boolean
-┃┣> Default: false
+┃┣> Default: null
 ┃┗╸
 ┗╸

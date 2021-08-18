@@ -1,0 +1,20 @@
+
+#Settings affecting the logical server side.
+[server]
+
+	#Opt-out settings
+	[server.optout]
+		#Opt-out any block by its registry name ('*' wildcard matching, comma separated list, whitespaces ignored. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' excludes everything that has 'wood' or 'steel' in the registry name. The matching result is also traced in the log file. 
+		pattern_excludes = ""
+		#Prevent blocks from being opt'ed by registry name ('*' wildcard matching, comma separated list, whitespaces ignored. Evaluated before all other opt-out checks. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' includes everything that has 'wood' or 'steel' in the registry name.The matching result is also traced in the log file.
+		pattern_includes = ""
+
+	#Miscellaneous settings
+	[server.miscellaneous]
+		#Enables experimental features. Use at own risk.
+		with_experimental = false
+		#Enable detailed logging of the config values and resulting calculations in each mod feature config.
+		with_config_logging = false
+		#Enable chest loot tables for villages and mineshafts.
+		with_chest_loot = false
+

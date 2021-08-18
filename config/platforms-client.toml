@@ -1,0 +1,14 @@
+#Changes what sneak right-clicking on a platform with a wrench will do
+#GUI: opens the platform selector GUI
+#CYCLE: cycles through the options
+#MIXED: uses the GUI if the is more then 5 options
+#Allowed Values: GUI, CYCLE, MIXED
+"Selection Mode" = "MIXED"
+
+#Select A GUI Style
+[gui_style]
+	#Allowed Values: DEFAULT, VANILLA
+	PlatFormer = "DEFAULT"
+	#Allowed Values: DEFAULT, VANILLA
+	"Platform Select" = "DEFAULT"
+

@@ -1,0 +1,11 @@
+
+[Misc]
+	#Should module tooltips always show module settings (without needing to hold Shift)?
+	alwaysShowSettings = true
+	#Should module GUI's be tinted according to the module item colour?
+	moduleGuiBackgroundTint = true
+	#Should items being transferred be rendered in-world? Looks good, but many items may incur an FPS hit.
+	renderFlyingItems = true
+	#When holding an Item Router, should nearby camouflaged routers be highlighted?
+	heldRouterShowsCamoRouters = true
+

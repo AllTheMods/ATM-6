@@ -25,14 +25,6 @@
 	#Range: > 0
 	maximumContraptionLightVolume = 16384
 	# 
-	#Offset the overlay from goggle- and hover- information by this many pixels on the X axis; Use /create overlay
-	#Range: > -2147483648
-	overlayOffsetX = 20
-	# 
-	#Offset the overlay from goggle- and hover- information by this many pixels on the Y axis; Use /create overlay
-	#Range: > -2147483648
-	overlayOffsetY = 0
-	# 
 	#Choose the menu row that the Create config button appears on in the main menu
 	#Set to 0 to disable the button altogether
 	#Range: 0 ~ 4
@@ -55,6 +47,11 @@
 	# 
 	#Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled
 	ignoreFabulousWarning = false
+	# 
+	#[in Blocks]
+	#Maximum Distance to the player at which items in Blocks' filter slots will be displayed
+	#Range: 1.0 ~ 3.4028234663852886E38
+	filterItemRenderDistance = 10.0
 
 	# 
 	#Settings for the Placement Assist
@@ -86,4 +83,37 @@
 		#Maximum volume modifier of Ambient noise
 		#Range: 0.0 ~ 1.0
 		ambientVolumeCap = 0.10000000149011612
+
+	# 
+	#Settings for the Goggle Overlay
+	[client.goggleOverlay]
+		# 
+		#Offset the overlay from goggle- and hover- information by this many pixels on the X axis; Use /create overlay
+		#Range: > -2147483648
+		overlayOffsetX = 20
+		# 
+		#Offset the overlay from goggle- and hover- information by this many pixels on the Y axis; Use /create overlay
+		#Range: > -2147483648
+		overlayOffsetY = 0
+		# 
+		#Enable this to use your custom colors for the Goggle- and Hover- Overlay
+		customColorsOverlay = false
+		# 
+		#The custom background color to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBackgroundOverlay = -267386864
+		# 
+		#The custom top color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBorderTopOverlay = 1347420415
+		# 
+		#The custom bot color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBorderBotOverlay = 1344798847
 

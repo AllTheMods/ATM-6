@@ -1,0 +1,43 @@
+
+#Mana and Artifice // Codex Settings
+[ma_codex_settings]
+	#0: UI buttons only.  Escape closes the codex entirely.
+	#1: UI buttons / escape.  Escape backs the codex out until the index, then closes it.
+	#2: UI buttons / right mouse.  Right mouse backs the codex out until the index. Escape closes the codex entirely.
+	#3: UI buttons / escape / right mouse.  Escape or right mouse backs the codex out until the index, then closes it.
+	#Range: 0 ~ 3
+	codexBackStyle = 0
+
+#Mana and Artifice // HUD Settings
+[ma_hud_settings]
+	#0: Always visible.
+	#1: Hidden unless holding a mana consuming/restoring item.
+	#2: Always hidden.
+	#Range: 0 ~ 2
+	hudMode = 0
+	#0: Top Left
+	#1: Top Center
+	#2: Top Right
+	#3: Middle Right
+	#4: Bottom Right
+	#5: Bottom Center
+	#6: Bottom Left
+	#7: Middle Left
+	#Range: 0 ~ 7
+	hudPosition = 0
+	#Change the size of pinned recipes.
+	#Range: 1 ~ 3
+	pinnedRecipeSize = 1
+
+#Mana and Artifice // Performance Settings
+[ma_performance]
+	#Enable fancy magelights (disable this if you're getting FPS issues)
+	ma_fancy_magelights = true
+
+#Mana and Artifice // Help Tips Settings
+[ma_helptips]
+	ma_ritual_tip = false
+	ma_pin_tip = false
+	ma_modifier_tip = false
+	ma_damage_stacking_tip = false
+

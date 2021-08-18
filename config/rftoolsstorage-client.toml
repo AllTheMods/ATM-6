@@ -1,0 +1,22 @@
+
+#Settings for the modular storage system
+[storage]
+	#Background color for group lines
+	#Range: > 0
+	groupBackground = 0
+	#Foreground color for group lines
+	#Range: > 0
+	groupForeground = 0
+	#If true we automatically set the focus on the search field when opening the GUI for the modular storage. Set to false if you don't want that
+	autofocusSearch = false
+	#If true we clear the search field when opening the GUI for the modular storage. Set to false if you don't want that
+	clearSearchOnOpen = true
+
+#Settings for the storage scanner machine
+[storagescanner]
+	#Time (in seconds) to hilight a block in the world
+	#Range: > 0
+	hilightTime = 5
+	#If this is true then opening the storage scanner GUI will automatically select the starred inventory view
+	hilightStarredOnGuiOpen = true
+

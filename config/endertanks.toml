@@ -3,10 +3,10 @@ enable_in_world_coloring = true
 
 #Items used to upgrade the EnderTanks
 [upgrade_items]
-	#Items that are used to increase the tanks internal pump
+	#Items that are used to increase the tanks internal transfer pump
 	#Each item can only be use once per tank
 	pump_singleuse = []
-	#Items that upgrade storage capacity by 3
+	#Items that apply a small storage capacity upgrade
 	#Each item can only be use once per tank
 	small_capacity_singleuse = []
 	#Items that apply a large storage capacity upgrade
@@ -15,16 +15,15 @@ enable_in_world_coloring = true
 	personal = ["tag|forge:gems.diamond"]
 	#Items used to make the tanks team tanks
 	team = ["tag|forge:gems.emerald"]
-	#Items that are used to increase the tanks internal pump
+	#Items that are used to increase the tanks internal transfer pump
 	pump = ["minecraft:piston"]
 	#Items that apply a small storage capacity upgrade
 	small_capacity = ["minecraft:ender_pearl"]
-	#Items that upgrade storage capacity by 9
+	#Items that apply a large storage capacity upgrade
 	#Each item can only be use once per tank
 	large_capacity_singleuse = []
 
-#
-#NOTE: Capacity numbers are in buckets
+#Set the number of buckets a tank holds, how many pump upgrades can be applied, and the value of a storage upgrade
 [capacity_settings]
 	#Maximum capacity an EnderTank holds
 	#Range: 4 ~ 512
@@ -38,8 +37,8 @@ enable_in_world_coloring = true
 	#Capacity increased by large capacity upgrade items
 	#Range: 4 ~ 32
 	large_capacity_upgrade = 16
-	#How many internal pump upgrades can a tank have?
-	# default internal pump is only 1/4 bucket, upgrades make it a bucket per upgrade
+	#How many internal transfer pump upgrades can a tank have?
+	# default is only 1/4 bucket, upgrades make it a bucket per upgrade
 	#Range: 0 ~ 8
 	tank_pump_max = 4
 
@@ -81,4 +80,11 @@ enable_in_world_coloring = true
 	personal_link_lock = true
 	#While true only the owner can use the tank
 	personal_use_lock = false
+
+#Mod integration can be disabled to solve compatibility issues, remove unwanted/unneeded features, etc.
+[integration]
+	store_mekanism_gas = true
+	store_mekanism_infusion = true
+	store_mekanism_pigment = true
+	store_mekanism_slurry = true
 

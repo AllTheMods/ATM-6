@@ -1,0 +1,8 @@
+{
+  "bo:enabled": true,
+  "ma:cells": {},
+  "ma:ccus": {
+    "do:production_power:[4.9E-324~1.7976931348623157E308]": 2.2,
+    "in:production_rate:[-2147483648~2147483647]": 128
+  }
+}

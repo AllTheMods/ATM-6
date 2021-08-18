@@ -600,9 +600,6 @@
 				id: "0AA391797B15CD14"
 				type: "item"
 				item: "tconstruct:creative_slot"
-				tag: {
-					slot: "upgrades"
-				}
 			}]
 			rewards: [{
 				id: "47F652357238F8F2"
@@ -619,9 +616,6 @@
 				id: "4A6594AB198FE886"
 				type: "item"
 				item: "tconstruct:creative_slot"
-				tag: {
-					slot: "souls"
-				}
 			}]
 		}
 		{
@@ -831,7 +825,7 @@
 							MAHOUTSUKAI_PLAYER_DEATH_COLLECTION_USES_LEFT: 0.0f
 						}
 						"mekanism:radiation": {
-							radiation: 1.0E-7d
+							radiation: "1.0E-7d"
 						}
 						"twilightforest:cap_shield": {
 							permshields: 0

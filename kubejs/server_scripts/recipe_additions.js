@@ -1051,6 +1051,13 @@ onEvent('recipes', e => {
   ], {
     A: 'mysticalagriculture:aquamarine_essence'
   }).id(`kubejs:aquamarine_essence`)
+  e.shaped('8x thermal:niter_dust', [
+    ' A ',
+    ' A ',
+    ' A '
+  ], {
+    A: 'mysticalagriculture:saltpeter_essence'
+  }).id('kubejs:saltpeter_essence')
   //Cable Tiers changes
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
@@ -1317,6 +1324,7 @@ onEvent('recipes', e => {
 
   //ma infusion
   mainfusion('kubejs:magical_soil', 'botania:overgrowth_seed', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block')
+  mainfusion('mysticalagriculture:saltpeter_seeds', 'mysticalagriculture:prosperity_seed_base', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence')
 
   //thermal
   e.recipes.thermal.pulverizer([
@@ -1332,18 +1340,16 @@ onEvent('recipes', e => {
     { item: 'tconstruct:blood_slime_ball' },
     { item: 'minecraft:clay_ball' }
   ]).energy(4000).id('kubejs:smelter/pig_iron')
-
   e.recipes.thermal.chiller(
     [
       { item: 'tconstruct:pig_iron_ingot' }
-    ], 
+    ],
     [
-    fluid.of('tconstruct:molten_pig_iron', 144),
-    { item: 'thermal:chiller_ingot_cast' }
-  ])
-  .energy(5000)
-  .id('kubejs:chiller/pig_iron')
-
+      fluid.of('tconstruct:molten_pig_iron', 144),
+      { item: 'thermal:chiller_ingot_cast' }
+    ])
+    .energy(5000)
+    .id('kubejs:chiller/pig_iron')
   e.recipes.thermal.smelter([
     { item: 'tconstruct:slimesteel_ingot', count: 2 }
   ], [
@@ -1359,6 +1365,42 @@ onEvent('recipes', e => {
   ])
   tinkerMelting(['byg:cryptic_magma_block', 'byg:magmatic_stone'])
 
+  //Explorer's Compass
+  e.recipes.bloodmagic.altar('explorerscompass:explorerscompass', 'minecraft:compass').upgradeLevel(3).altarSyphon(40000)
+
+  //RFTools
+  e.shaped('rftoolsdim:dimension_builder', [
+    'USU',
+    'MCM',
+    'BAB'
+  ], {
+    U: 'kubejs:uu_matter',
+    S: 'atmadditions:dimensional_seed',
+    A: 'atmadditions:atm_star',
+    M: 'mekanism:pellet_antimatter',
+    B: 'thermal:enderium_block',
+    C: 'rftoolsbase:machine_frame'
+  }).id('kubejs:thermoelectric_plate')
+
+  e.shaped('16x resourcefulbees:bee_jar', [
+    ' G ',
+    'G G',
+    'GGG'
+  ], {
+    G: '#forge:glass'
+  })
+
+  e.custom({
+    type: "transport:rail_workers_bench",
+    ingredient: {
+      tag: "forge:storage_blocks/iron",
+      count: 2
+    },
+    result: {
+      item: "transport:steam_locomotive",
+      count: 1
+    }
+  }).id('transport:steam_locomotive')
   //Custom Blocks
   customBlock('kubejs:nether_star_block', 'minecraft:nether_star')
   customBlock('kubejs:atm_star_block', 'atmadditions:atm_star')

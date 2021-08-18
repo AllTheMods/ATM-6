@@ -365,6 +365,16 @@ onEvent('recipes', e => {
               Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"CyclicGuidebook"}]}'
             }
           }
+        },
+        advancedperipherals: {
+          id: 'patchouli:guide_book',
+          Count: 1,
+          tag: {
+            'akashictome:displayName': {
+              text: "Advanced Peripherals"
+            },
+            'patchouli:book': 'advancedperipherals:manual'
+          }
         }
       }
     }),

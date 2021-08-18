@@ -1,0 +1,6 @@
+
+#Server and Client side changes
+[common]
+	#The max distance a Drowned can be from an Ocean Ruin to spawn with Scuba Gear. If Drowned cause performance issues, lower this.
+	distanceFromRuin = 15
+

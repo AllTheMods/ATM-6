@@ -1,6 +1,16 @@
-# Main configuration file fur Solar Flux Reborn!
+# Main configuration file for Solar Flux Reborn!
 # To implement custom panels, look for the custom_panels.js file!
-~ Saved With Solar Flux 16.1.1
+~ Saved With Solar Flux 16.2.5
+
++C:Main={
+  # How much energy should be generated when it is raining? 0 - nothing, 1 - full power. (Default: 0.6, Range: [0.0;1.0])
+  +F:Rain Multiplier=0.6
+
+  # How much energy should be generated when it is thundering? 0 - nothing, 1 - full power. (Default: 0.4, Range: [0.0;1.0])
+  +F:Thunder Multiplier=0.4
+
+}
+
 
 +C:Solar Panels={
   # How much energy (percent) will get lost while picking up the solar panel? (Default: 5.0, Range: [0.0;100.0])

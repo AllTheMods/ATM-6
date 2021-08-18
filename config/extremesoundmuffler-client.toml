@@ -1,0 +1,21 @@
+
+#general settings
+[general]
+	#Blacklisted Sounds - add the name of the sounds to blacklist, separated with comma
+	forbiddenSounds = ["ui.", "music.", "ambient."]
+	#Disable the Muffle button in the player inventory?
+	disableInventoryButton = false
+	#Disable the Anchors?
+	disableAnchors = false
+	#Volume set when pressed the mute button by default
+	#Range: 0.0 ~ 0.9
+	defaultMuteVolume = 0.0
+	#Set to true to move the muffle and play buttons to the left side of the GUI
+	leftButtons = false
+	#Show a message the first time a sound is muffled indicating that you can change the volume
+	showTip = true
+	#Whether or not use the dark theme
+	useDarkTheme = false
+	#Set to true if this mod wont be present in the server; it will load and save the Anchors in ESM -> ServerWorld
+	isClientSide = false
+

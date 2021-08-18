@@ -6,7 +6,7 @@ onEvent('recipes', e => {
     return ingredients[x] ? x : ' '
   }
   function add(recipe) {
-    //0=ingredients, 1=result, 2=nbt boolean
+	//0=ingredients, 1=result, 2=nbt boolean
     e.shaped(Item.of(recipe[1], recipe[2]), [
       ` ${key('T', recipe[0])} `,
       `${key('L', recipe[0])}${key('C', recipe[0])}${key('R', recipe[0])}`,

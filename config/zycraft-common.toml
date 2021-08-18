@@ -1,0 +1,40 @@
+
+#WorldGen settings
+[worldGen]
+
+	#Zychorite
+	[worldGen.zychorite]
+		#Defines the maximum amount of blocks in a vein
+		#Range: > 0
+		size = 17
+		#Defines the percentage of the vein that will be filled with Zychorium Ore's
+		#Range: 0 ~ 100
+		orePercentage = 50
+		#Defines the amount of veins per chunk
+		#Range: > 0
+		amount = 8
+		#Defines the maximum height at which a vein can be generated
+		#Range: 0 ~ 256
+		maxHeight = 64
+
+	#Aluminium
+	[worldGen.aluminium]
+		#Defines the maximum amount of blocks in a vein
+		#Range: > 0
+		size = 8
+		#Defines the amount of veins per chunk
+		#Range: > 0
+		amount = 8
+		#Defines the maximum height at which a vein can be generated
+		#Range: 0 ~ 256
+		maxHeight = 255
+
+	#Quartz Crystal Cluster
+	[worldGen.quartzCrystalCluster]
+		#Defines the amount of attempts to generate crystal clusters per chunk
+		#Range: > 0
+		generationAttempts = 64
+		#Defines the max amount of crystal clusters per chunk
+		#Range: > 0
+		amount = 4
+

@@ -1,0 +1,34 @@
+#Make cicadas silent for those having sound library problems, or otherwise finding them annoying.
+silentCicadas = false
+#Controls whether various effects from the mod are rendered while in first-person view. Turn this off if you find them distracting.
+firstPersonEffects = true
+#Rotate trophy heads on item model. Has no performance impact at all. For those who don't like fun.
+rotateTrophyHeadsGui = true
+#Disable the nag screen when Optifine is installed.
+disableOptifineNagScreen = false
+
+#Client only: Controls for the Loading screen
+["Loading Screen"]
+	#Wobble the Loading icon. Has no performance impact at all. For those who don't like fun.
+	enable = true
+	#How many ticks between each loading screen change. Set to 0 to not cycle at all.
+	#Range: > 0
+	cycleLoadingScreenFrequency = 0
+	#Frequency of wobble and bounce.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	frequency = 5.0
+	#Scale of whole bouncy loading icon.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	scale = 3.0
+	#How much the loading icon bounces.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	scaleDeviation = 5.25
+	#How far the loading icon wobbles.
+	#Range: 0.0 ~ 360.0
+	tiltRange = 11.25
+	#Pushback value to re-center the wobble of loading icon.
+	#Range: 0.0 ~ 360.0
+	tiltConstant = 22.5
+	#List of items to be used for the wobbling Loading Icon. (domain:item).
+	loadingIconStacks = ["twilightforest:experiment_115", "twilightforest:magic_map", "twilightforest:charm_of_life_2", "twilightforest:charm_of_keeping_3", "twilightforest:phantom_helmet", "twilightforest:lamp_of_cinders", "twilightforest:carminite", "twilightforest:block_and_chain", "twilightforest:yeti_helmet", "twilightforest:hydra_chop", "twilightforest:magic_beans", "twilightforest:ironwood_raw", "twilightforest:naga_scale", "twilightforest:twilight_portal_miniature_structure", "twilightforest:lich_tower_miniature_structure", "twilightforest:knightmetal_block", "twilightforest:ghast_trap", "twilightforest:time_sapling", "twilightforest:transformation_sapling", "twilightforest:mining_sapling", "twilightforest:sorting_sapling", "twilightforest:rainboak_sapling", "twilightforest:borer_essence"]
+

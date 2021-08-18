@@ -136,18 +136,12 @@
 		#Dragon Flute Distance - how many chunks away is the dragon flute effective?
 		#Range: 0 ~ 10000
 		"Dragon Flute Distance" = 4
-		#Change this to slow down or speed up hippogryph flight.
-		#Range: 0.0 ~ 2.0
-		"Hippogryph Flight Speed Modifier" = 1.3
 		#Max dragon health. Health is scaled to this
 		#Range: 1.0 ~ 100000.0
 		"Dragon Health" = 32768.0
 		#Change this to slow down or speed up dragon or amphithere flight.
 		#Range: 0.0 ~ 2.0
 		"Dragon Flight Speed Modifier" = 1.0
-		#Change this to slow down or speed up hippocampus swimming.
-		#Range: 0.0 ~ 2.0
-		"Hippocampus Swim Speed Modifier" = 1.0
 		#Enable this if your server is being bombarded with moved wrongly or moved too fast console messages. REQUIRES RESTART!
 		"Dragon Moved Wrongly Error Fix" = true
 		#Damage dealt from a successful fire breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
@@ -241,9 +235,6 @@
 		"Sea Serpent Base Health" = 200.0
 
 	[Mobs.Others]
-		#1 out of this number chance per chunk for generation
-		#Range: 1 ~ 10000
-		"Spawn Hippocampus Chance" = 40
 		#True if ghosts can rarely spawn from brutal PvP deaths.
 		"Ghost Spawn from PvP deaths" = true
 		#Dread Lich spawn weight. Lower = lower chance to spawn
@@ -252,11 +243,6 @@
 		#Maximum hydra health
 		#Range: 1.0 ~ 10000.0
 		"Hydra Max Health" = 250.0
-		#Maximum gorgon health
-		#Range: 1.0 ~ 10000.0
-		"Gorgon Max Health" = 100.0
-		#True if hippogryphs are allowed to spawn
-		"Spawn Hippogryphs" = true
 		#True if dread liches are allowed to spawn
 		"Spawn Liches" = true
 		#Maximum ghost health.
@@ -264,22 +250,15 @@
 		"Ghost Max Health" = 30.0
 		#True if hydra caves are allowed to generate
 		"Generate Hydra Caves" = true
-		#Hippogryph spawn weight. Lower = lower chance to spawn.
-		#Range: 1 ~ 10000
-		"Hippogryph Spawn Weight" = 20
-		#True if gorgon temples are allowed to spawn
-		"Spawn Gorgons" = true
 		#Maximum ghost attack strength.
 		#Range: 0.0 ~ 10000.0
 		"Ghost Attack Strength" = 3.0
 		#One out of this number chance per chunk to generate a hydra cave.
 		#Range: 1 ~ 10000
 		"Hydra Caves Gen Chance" = 80
-		#True if hippocampi are allowed to spawn
-		"Spawn Hippocampus" = true
-		#1 out of this number chance per chunk for generation
-		#Range: 1 ~ 10000
-		"Spawn Gorgon Chance" = 75
+		#Villager Scribe House generation weight. Lower = lower chance to spawn
+		#Range: 30 ~ 10000
+		"Villager Scribe House Weight" = 30
 
 	[Mobs.Cyclops]
 		#True if cyclops caves are allowed to spawn
@@ -407,8 +386,38 @@
 		#Range: 1 ~ 10000
 		"Amphithere Tame Time" = 400
 
+	[Mobs.Hippocampus]
+		#True if hippocampi are allowed to spawn
+		"Spawn Hippocampus" = true
+		#1 out of this number chance per chunk for generation
+		#Range: 1 ~ 10000
+		"Spawn Hippocampus Chance" = 40
+		#Change this to slow down or speed up hippocampus swimming.
+		#Range: 0.0 ~ 2.0
+		"Hippocampus Swim Speed Modifier" = 1.0
+
+	[Mobs.Hippogryph]
+		#True if hippogryphs are allowed to spawn
+		"Spawn Hippogryphs" = true
+		#Hippogryph spawn weight. Lower = lower chance to spawn.
+		#Range: 1 ~ 10000
+		"Hippogryph Spawn Weight" = 2
+		#Change this to slow down or speed up hippogryph flight.
+		#Range: 0.0 ~ 2.0
+		"Hippogryph Flight Speed Modifier" = 1.0
+
+	[Mobs.Gorgons]
+		#True if gorgon temples are allowed to spawn
+		"Spawn Gorgons" = true
+		#1 out of this number chance per chunk for generation
+		#Range: 1 ~ 10000
+		"Spawn Gorgon Chance" = 75
+		#Maximum gorgon health
+		#Range: 1.0 ~ 10000.0
+		"Gorgon Max Health" = 100.0
+
 [Items]
-	#Default durability value of dragonsteel sword.
+	#Default durability value of dragonsteel tools.
 	#Range: > 1
 	"Dragonsteel Base Durability" = 8000
 	#Default armor value of dragonsteel chestplate.
@@ -424,6 +433,15 @@
 	#Percentage of critical strike that will disarm with easter egg tinkers material.
 	#Range: 0.0 ~ 1.0
 	"Easter Egg Tinkers Tool Disarm chance" = 0.20000000298023224
+	#Default durability value of dragonsteel equipment.
+	#Range: > 1
+	"Dragonsteel Base Durability Equipment" = 8000
+	#True if the dragon bone fire sword ignites attackers.
+	"Dragon Bone Fire Abilities" = true
+	#True if the dragon bone ice sword freezes attackers.
+	"Dragon Bone Ice Abilities" = true
+	#True if the dragon bone lightning sword strikes attackers.
+	"Dragon Bone Lightning Abilities" = true
 
 [Pathfinding]
 	#Maximum threads to use for dragon/myrmex pathfinding. Increase this number if pathing is slow and you have many cores.

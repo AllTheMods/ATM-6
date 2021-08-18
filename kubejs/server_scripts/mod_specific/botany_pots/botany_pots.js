@@ -219,5 +219,24 @@ onEvent(`recipes`, e => {
       maxRolls: 2
     }
   ], `ars_nouveau:mana_bloom_crop`).categories([`dirt`])
+
+  // Twilight Forest Dungeon Saplings
+  // These only drop logs, not saplings
+  for (let tree of ["transformation", "sorting", "mining", "time"]) {
+    e.recipes.botanypots.crop({
+      seed: Item.of(`twilightforest:${tree}_sapling`).toJson(),
+      categories: ["dirt"],
+      growthTicks: 2400,
+      display: {
+        block: `twilightforest:${tree}_sapling`
+      },
+      results: [{
+        chance: 0.25,
+        output: Item.of(`twilightforest:${tree}_log`).toResultJson(),
+        minRolls: 1,
+        maxRolls: 1
+      }]
+    }).id(`kubejs:botany_pots/botanytrees/${tree}_tree`)
+  }
   //#endregion
 })

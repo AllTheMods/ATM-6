@@ -1,0 +1,17 @@
+
+#Client only settings for Abnormals Core.
+[client]
+	#If sky color transition should be smooth; Default: True
+	smoothSkyColor = true
+
+	#Slabfish patron hat settings.
+	[client.slabfishSettings]
+		#If the slabfish hat should be enabled; Default: True
+		enabled = true
+		#If the slabfish hat's backpack should be enabled; Default: True
+		backpackEnabled = true
+		#If the slabfish hat's sweater should be enabled; Default: True
+		sweaterEnabled = true
+		#If the slabfish hat's custom type should be enabled. If false, the default swamp slabfish appears; Default: True
+		typeEnabled = true
+
