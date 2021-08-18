@@ -23,6 +23,7 @@ onEvent(`jei.hide.items`, e => {
   //#endregion
   
   e.hide([
+    '@chipped',
     /structurize:.*timber_frame/,
     /structurize:.*shingle/,
     /structurize:.*shingle_slab/,

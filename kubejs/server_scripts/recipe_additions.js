@@ -693,9 +693,8 @@ onEvent('recipes', e => {
     P: 'mekanism:personal_chest'
   })
   e.shaped('mekanism:laser_tractor_beam', [
-    ' P ',
-    ' L ',
-    '   '
+    'P',
+    'L'
   ], {
     P: 'mekanism:personal_chest',
     L: 'mekanism:laser_amplifier'
