@@ -355,11 +355,6 @@
 						"separation": 1280,
 						"salt": 0
 					},
-					"iceandfire:mausoleum": {
-						"spacing": 8000,
-						"separation": 8000,
-						"salt": 0
-					},
 					"iceandfire:graveyard": {
 						"spacing": 2560,
 						"separation": 1280,
