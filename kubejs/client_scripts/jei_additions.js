@@ -23,7 +23,14 @@ onEvent(`jei.add.items`, e => {
     'tconstruct:tinker_station',
     'tconstruct:part_builder',
     'tconstruct:tinkers_anvil',
-    'tconstruct:scorched_anvil'
+    'tconstruct:scorched_anvil',
+    'chipped:botanist_workbench',
+    'chipped:glassblower',
+    'chipped:carpenters_table',
+    'chipped:loom_table',
+    'chipped:mason_table',
+    'chipped:alchemy_bench',
+    'chipped:mechanist_workbench'
   ])
 })
 //#endregion
