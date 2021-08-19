@@ -1,15 +1,5 @@
 [
 	{
-		"type": "fluid",
-		"key": "allthemodium:molten_bluelava",
-		"rarity": "rare",
-		"create": 100,
-		"maintain": 100,
-		"ticks": 100,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
 		"type": "biome",
 		"key": "allthemodium:the_other",
 		"rarity": "rare",
