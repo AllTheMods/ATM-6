@@ -1,0 +1,172 @@
+[
+	{
+		"type": "fluid",
+		"key": "allthemodium:molten_bluelava",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:the_other",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:nether_wastes",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:soul_sand_valley",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:badlands",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:mountain_edge",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:mountains",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:gravelly_mountains",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:modified_gravelly_mountains",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:desert",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:desert_hills",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:badlands_plateau",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:modified_badlands_plateau",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:eroded_badlands",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:crimson_forest",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:warped_forest",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	},
+	{
+		"type": "biome",
+		"key": "allthemodium:basalt_deltas",
+		"rarity": "rare",
+		"create": 100,
+		"maintain": 100,
+		"ticks": 100,
+		"worldgen": false,
+		"dimlet": true
+	}
+]
