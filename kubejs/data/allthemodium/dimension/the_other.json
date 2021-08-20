@@ -356,8 +356,8 @@
 						"salt": 0
 					},
 					"iceandfire:graveyard": {
-						"spacing": 2560,
-						"separation": 1280,
+						"spacing": 1280,
+						"separation": 640,
 						"salt": 0
 					}
 				}
