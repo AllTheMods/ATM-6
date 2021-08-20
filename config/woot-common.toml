@@ -347,9 +347,9 @@
 
 	[policy.mob]
 		#Override default spawn ticks for a mob
-		spawnTicks = ["minecraft:wither,1200", "minecraft:ender_dragon,12000"]
+		spawnTicks = ["minecraft:wither,1200", "minecraft:ender_dragon,12000", "botania:doppleganger,12000"]
 		#Override default tier for a mob
-		tier = ["minecraft:wither_skeleton,4", "minecraft:villager,4", "minecraft:magma_cube,3", "minecraft:enderman,4", "minecraft:villager_golem,4", "minecraft:guardian,4", "minecraft:blaze,3", "minecraft:witch,3", "minecraft:ghast,3", "minecraft:zombie_pigman,3", "minecraft:ender_dragon,5", "minecraft:wither,5"]
+		tier = ["minecraft:wither_skeleton,4", "minecraft:villager,4", "minecraft:magma_cube,3", "minecraft:enderman,4", "minecraft:villager_golem,4", "minecraft:guardian,4", "minecraft:blaze,3", "minecraft:witch,3", "minecraft:ghast,3", "minecraft:zombie_pigman,3", "minecraft:ender_dragon,5", "minecraft:wither,5", "botania:doppleganger,5"]
 		#Override default units per health for a mob
 		unitsPerHealth = []
 		#Set a fixed cost for a mob
@@ -357,21 +357,21 @@
 		#Override default mass count for a mob
 		massCount = []
 		#Override default xp for a mob
-		xp = ["minecraft:iron_golem,20", "minecraft:bat,1", "minecraft:snow_golem,1", "minecraft:villager,2", "minecraft:wandering_villager,2", "minecraft:ender_dragon,500"]
+		xp = ["minecraft:iron_golem,20", "minecraft:bat,1", "minecraft:snow_golem,1", "minecraft:villager,2", "minecraft:wandering_villager,2", "minecraft:ender_dragon,500", "botania:doppleganger,1"]
 		#Override default health for a mob
-		health = ["minecraft:ender_dragon,500"]
+		health = ["minecraft:ender_dragon,500", "botania:doppleganger,250"]
 		#Override default shard kills for a mob
 		shardKills = []
 		#A list of mobs that should not be simulated and use custom config only
-		customDropsOnly = ["minecraft:ender_dragon"]
+		customDropsOnly = ["minecraft:ender_dragon", "botania:doppleganger"]
 
 		[policy.mob.perk]
 			#Set mass perk level 1 for a mob
-			mass1 = ["minecraft:ender_dragon,2", "minecraft:wither,2"]
-			#Set mass perk level 3 for a mob
-			mass3 = ["minecraft:ender_dragon,4", "minecraft:wither,4"]
+			mass1 = ["minecraft:ender_dragon,2", "minecraft:wither,2", "botania:doppleganger,2"]
 			#Set mass perk level 2 for a mob
-			mass2 = ["minecraft:ender_dragon,3", "minecraft:wither,3"]
+			mass2 = ["minecraft:ender_dragon,3", "minecraft:wither,3", "botania:doppleganger,3"]
+			#Set mass perk level 3 for a mob
+			mass3 = ["minecraft:ender_dragon,4", "minecraft:wither,4", "botania:doppleganger,4"]
 			#Set rate perk level 1 for a mob
 			rate1 = []
 			#Set rate perk level 2 for a mob
@@ -409,7 +409,7 @@
 		#Do not learn items from the following mods
 		learnMod = []
 		#Do not capture any entity from the following mods
-		captureMod = ["botania"]
+		captureMod = []
 		#Do not capture the following entities
 		captureEntity = []
 		#Do not learn the following items
