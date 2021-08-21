@@ -13,7 +13,6 @@ onEvent(`jei.hide.items`, e => {
       if (!Ingredient.of(id).stacks.empty) e.hide(id)
     })
   }
-
   function hideStuff(mod, type, names) {
     names.forEach(name => {
       const id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
@@ -23,6 +22,7 @@ onEvent(`jei.hide.items`, e => {
   //#endregion
   
   e.hide([
+    /chisel:.*\/.*/,
     '@chipped',
     /structurize:.*timber_frame/,
     /structurize:.*shingle/,

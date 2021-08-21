@@ -44,10 +44,8 @@
 
 #Options related to player's death
 [player_death]
-	#Whether to handle player experience [false/true|default:true]
-	handle_player_xp = true
-	#Experience loss on death (%) [0..100|default:0]
-	#Range: 0 ~ 100
+	#Experience loss on death (%) (-1 = disabled) [-1..100|default:80]
+	#Range: -1 ~ 100
 	xp_loss = 0
 	#The time in minutes before a Grave's Key isn't required to open a grave (-1 = disabled) [-1..MAX|default:-1]
 	#Range: > -1
@@ -72,22 +70,19 @@
 
 #For settings related to decorative tombs and magic items
 [decorative_grave]
-	#Maximum uses of a tablet [1..20|default:10]
-	#Range: 1 ~ 20
+	#Maximum uses of a tablet [1..10|default:3]
+	#Range: 1 ~ 10
 	tablet_max_use = 10
-	#Cooldown in second after using a tablet other than Tablet of Cupidity [30..1200|default:60]
-	#Range: 30 ~ 1200
+	#Cooldown in second after using a tablet [60..1200|default:300]
+	#Range: 60 ~ 1200
 	tablet_cooldown = 60
-	#Cooldown in second after using a Tablet of Cupidity [300..3600|default:900]
-	#Range: 300 ~ 3600
-	tablet_of_cupidity_cooldown = 900
 	#Sets the decorative graves unbreakable [false/true|default:false]
 	unbreakable_decorative_grave = false
-	#The cooldown in hours to pray with the Ã‚nkh [1..10|default:3]
+	#The cooldown in hours to pray with the Ankh [1..10|default:3]
 	#Range: 1 ~ 10
 	cooldown_to_pray = 3
-	#The cooldown in minutes to reset the perks with the ankh of Pray [0..60|default:20]
-	#Range: 0 ~ 60
+	#The cooldown in minutes to reset the perks with the ankh of Pray [20..1440|default:120]
+	#Range: 20 ~ 1440
 	cooldown_reset_perk = 20
 
 #Allows to disable some magic items
@@ -128,6 +123,10 @@
 	allow_scroll_of_lightning_resistance = true
 	#Dust of Vanishing [false/true|default:true]
 	allow_dust_of_vanishing = true
+	#Scroll of Frost Resistance [false/true|default:true]
+	allow_scroll_of_frost_resistance = true
+	#Scroll of Aquatic Life [false/true|default:true]
+	allow_scroll_of_aquatic_life = true
 
 #Allows to change the chance to drop some items
 [loot]

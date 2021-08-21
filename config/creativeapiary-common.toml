@@ -1,0 +1,28 @@
+#
+#Tier Creative Apiary Output
+#Allowed Values: BLOCK
+tierCreativeApiaryOutput = "BLOCK"
+#
+#Tier Creative Apiary Quantity 
+# How many Combs/Blocks per Bees?
+#Range: > 1
+tierCreativeApiaryQuantity = 100
+#
+#Tier Creative Apiary Max Bees
+#Range: > 1
+tierCreativeApiaryMaxBees = 100
+#
+#Tier Creative Apiary Max Time in Hive (Value in %) 
+#For example 0.7 = 70% reduction
+#Range: 0.0 ~ 1.0
+tierCreativeApiaryMaxTimeInHive = 1.0
+#
+#Creative Apiary Breeder Speed (Value in %) 
+#For example 0.7 = 70% reduction
+#Range: 0.0 ~ 1.0
+CreativeApiaryBreederSpeed = 1.0
+#
+#Creative Apiary Breeder Item Max Stack Size
+#Range: > 1
+CreativeApiaryStorageItemMaxStackSize = 16384
+
