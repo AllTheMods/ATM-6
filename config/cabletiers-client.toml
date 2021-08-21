@@ -42,4 +42,12 @@ ultraenergycost = 4
 #Creative Energy Cost Multiplier
 #Range: > 0
 creativeenergycost = 0
+#
+#Elite Disk Manipulator Speed
+#Range: 1 ~ 20
+elitediskmanipulatorspeed = 2
+#
+#Ultra Disk Manipulator Speed
+#Range: 1 ~ 20
+ultradiskmanipulatorspeed = 6
 
