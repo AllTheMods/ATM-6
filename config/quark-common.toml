@@ -652,7 +652,7 @@
 					"Is Blacklist" = true
 
 		[world.big_stone_clusters.marble]
-			Enabled = true
+			Enabled = false
 			#Allowed values: [0,)
 			Rarity = 4
 			#Allowed values: [0,255]
@@ -1141,8 +1141,8 @@
 			Dimensions = ["minecraft:the_nether"]
 
 	[world.new_stone_types]
-		"Enable Marble" = true
-		"Enable Limestone" = true
+		"Enable Marble" = false
+		"Enable Limestone" = false
 		"Enable Jasper" = true
 		"Enable Slate" = true
 		"Enable Voidstone" = true

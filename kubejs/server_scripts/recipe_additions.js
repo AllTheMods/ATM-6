@@ -993,7 +993,7 @@ onEvent('recipes', e => {
     A: '#forge:storage_blocks/allthemodium',
     D: '#forge:storage_blocks/diamond',
     P: 'solarflux:photovoltaic_cell_4'
-  }).id(`kubejs:allthemodium_solar`)
+  }).id(`kubejs:solarflux/allthemodium_solar`)
   e.shaped('2x solarflux:sp_custom_vibranium', [
     'PPP',
     'SAS',
@@ -1002,7 +1002,7 @@ onEvent('recipes', e => {
     S: 'solarflux:sp_custom_allthemodium',
     A: '#forge:storage_blocks/vibranium',
     P: 'solarflux:photovoltaic_cell_5'
-  }).id(`kubejs:vibranium_solar`)
+  }).id(`kubejs:solarflux/vibranium_solar`)
   e.shaped('2x solarflux:sp_custom_unobtainium', [
     'PPP',
     'SAS',
@@ -1011,7 +1011,7 @@ onEvent('recipes', e => {
     S: 'solarflux:sp_custom_vibranium',
     A: '#forge:storage_blocks/unobtainium',
     P: 'solarflux:photovoltaic_cell_6'
-  }).id(`kubejs:unobtainium_solar`)
+  }).id(`kubejs:solarflux/unobtainium_solar`)
   e.shaped('4x biggerreactors:reactor_manifold', ['IGI', 'G G', 'IGI'], {
     I: '#forge:ingots/iron',
     G: '#forge:glass'
@@ -1040,7 +1040,7 @@ onEvent('recipes', e => {
   e.shaped('rats:dragon_wing', ['BBB', 'LLB', '  L'], {
     B: '#forge:bones/dragon',
     L: '#forge:scales/dragon'
-  }).id(`kubejs:dragon_wing`)
+  }).id(`kubejs:rats/dragon_wing`)
   //Minecraft
   e.shaped('minecraft:dragon_egg', [
     'SSS',
@@ -1049,7 +1049,7 @@ onEvent('recipes', e => {
   ], {
     S: 'mysticalagradditions:dragon_egg_chunk',
     D: 'atmadditions:dragon_soul'
-  })
+  }).id('kubejs:minecraft/dragon_egg')
   //Tombstone
   e.shaped('tombstone:soul_receptacle', [
     'ABA',
@@ -1061,7 +1061,7 @@ onEvent('recipes', e => {
     C: 'minecraft:totem_of_undying',
     D: 'tombstone:familiar_receptacle',
     E: 'tombstone:voodoo_poppet'
-  })
+  }).id('kubejs:tombstone/soul_receptacle')
   //Pipez
   e.shaped('pipez:infinity_upgrade', [
     'ABA',
@@ -1071,7 +1071,7 @@ onEvent('recipes', e => {
     A: 'allthemodium:unobtainium_ingot',
     B: 'compressium:redstone_4',
     C: 'pipez:ultimate_upgrade'
-  })
+  }).id('kubejs:pipez/infinity_upgrade')
   //MA
   e.shaped('8x astralsorcery:aquamarine', [
     'AAA',
@@ -1079,14 +1079,14 @@ onEvent('recipes', e => {
     'AAA'
   ], {
     A: 'mysticalagriculture:aquamarine_essence'
-  }).id(`kubejs:aquamarine_essence`)
+  }).id(`kubejs:mysticalagriculture/aquamarine_essence`)
   e.shaped('8x thermal:niter_dust', [
     ' A ',
     ' A ',
     ' A '
   ], {
     A: 'mysticalagriculture:saltpeter_essence'
-  }).id('kubejs:saltpeter_essence')
+  }).id('kubejs:mysticalagriculture/saltpeter_essence')
   //Cable Tiers changes
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
@@ -1101,7 +1101,7 @@ onEvent('recipes', e => {
     D: 'rsinfinitybooster:dimension_card',
     C: 'refinedstorage:machine_casing',
     T: 'refinedstorage:wireless_transmitter'
-  }).id(`kubejs:creative_wireless_transmitter`)
+  }).id(`kubejs:creativewirelesstransmitter/creative_wireless_transmitter`)
   //Mekasuit
   e.shaped(Item.of('mekanism:mekasuit_helmet', {
     HideFlags: 2
@@ -1115,7 +1115,7 @@ onEvent('recipes', e => {
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_helmet'
-  }).id(`kubejs:mekasuit_helmet`)
+  }).id(`kubejs:mekanism/mekasuit_helmet`)
   e.shaped(Item.of('mekanism:mekasuit_bodyarmor', {
     HideFlags: 2
   }), [
@@ -1128,7 +1128,7 @@ onEvent('recipes', e => {
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_chestplate'
-  }).id(`kubejs:mekasuit_bodyarmor`)
+  }).id(`kubejs:mekanism/mekasuit_bodyarmor`)
   e.shaped(Item.of('mekanism:mekasuit_pants', {
     HideFlags: 2
   }), [
@@ -1141,7 +1141,7 @@ onEvent('recipes', e => {
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_leggings'
-  }).id(`kubejs:mekasuit_pants`)
+  }).id(`kubejs:mekanism/mekasuit_pants`)
   e.shaped(Item.of('mekanism:mekasuit_boots', {
     HideFlags: 2
   }), [
@@ -1154,7 +1154,7 @@ onEvent('recipes', e => {
     P: 'mekanism:pellet_polonium',
     I: 'mekanism:basic_induction_cell',
     U: 'allthemodium:unobtainium_boots'
-  }).id(`kubejs:mekasuit_boots`)
+  }).id(`kubejs:mekanism/mekasuit_boots`)
 
   //Misc Shapeless Recipes
   e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:clay`)
@@ -1178,7 +1178,7 @@ onEvent('recipes', e => {
     B: '#forge:rods/blaze',
     A: 'mekanism:alloy_infused',
     C: 'powah:capacitor_basic_tiny'
-  }).id('kubejs:thermoelectric_plate')
+  }).id('kubejs:powah/thermoelectric_plate')
 
   energize([{ tag: 'forge:storage_blocks/iron' }, { tag: 'forge:storage_blocks/gold' }], 'powah:energized_steel_block', 2, '90000')
   energize([{ item: 'botania:blaze_block' }], 'powah:blazing_crystal_block', 1, '810000')
@@ -1409,7 +1409,7 @@ onEvent('recipes', e => {
     M: 'mekanism:pellet_antimatter',
     B: 'thermal:enderium_block',
     C: 'rftoolsbase:machine_frame'
-  }).id('kubejs:thermoelectric_plate')
+  }).id('kubejs:rftoolsdim/dimension_builder')
 
   e.shaped('16x resourcefulbees:bee_jar', [
     ' G ',
@@ -1430,6 +1430,17 @@ onEvent('recipes', e => {
       count: 1
     }
   }).id('transport:steam_locomotive')
+
+  e.shapeless(`astralsorcery:marble_raw`, 'enviromats:marble')
+  e.shapeless(`enviromats:marble`, `quark:marble`)
+  e.shapeless(`quark:marble`, `chisel:marble/raw`)
+  e.shapeless(`chisel:marble/raw`, `astralsorcery:marble_raw`)
+
+  e.shapeless(`create:limestone`, 'create:weathered_limestone')
+  e.shapeless(`create:weathered_limestone`, `quark:limestone`)
+  e.shapeless(`quark:limestone`, `chisel:limestone/raw`)
+  e.shapeless(`chisel:limestone/raw`, `create:limestone`)
+
   //Custom Blocks
   customBlock('kubejs:nether_star_block', 'minecraft:nether_star')
   customBlock('kubejs:atm_star_block', 'atmadditions:atm_star')

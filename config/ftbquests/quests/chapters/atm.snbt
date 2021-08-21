@@ -185,5 +185,35 @@
 				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
+		{
+			title: "Automating the Gaia Guardian"
+			x: -3.0d
+			y: -4.5d
+			description: [
+				"Normally, you can't automate the Guardian. It's a lot of manual labor to make the ATM Star!"
+				""
+				"Well, we've fixed that! You can now use Woot to automate* Guardian farming for the ATM Star."
+				""
+				"The Gaia Guardian requires a tier V Woot farm, and one Gaia Spirit Ingot per spawn."
+				""
+				"* (The guardian will only drop gaia spirits and wills - you can't have it all!)"
+			]
+			id: "2BAB9C6C03540D90"
+			tasks: [{
+				id: "4A080582AC11BEB1"
+				type: "item"
+				item: {
+					id: "woot:mobshard"
+					Count: 1b
+					tag: {
+						Mob: {
+							keyTag: ""
+							keyEntity: "botania:doppleganger"
+						}
+						Kills: 5
+					}
+				}
+			}]
+		}
 	]
 }

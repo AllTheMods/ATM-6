@@ -1,0 +1,45 @@
+{
+    "type": "woot:factory",
+    "mob": "botania:doppleganger",
+    "items": [
+      { "item": "botania:gaia_ingot", "count": 1 }
+    ],
+    "fluids": [ ],
+    "drops": [
+      {
+        "item": "botania:life_essence",
+        "sizes": [ 8, 8, 8, 8 ],
+        "chances": [ 100.0, 100.0, 100.0, 100.0 ]
+      },
+      {
+        "item": "botania:ancient_will_ahrim",
+        "sizes": [ 1, 1, 1, 1 ],
+        "chances": [ 10.0, 10.0, 10.0, 10.0 ]
+      },
+      {
+        "item": "botania:ancient_will_dharok",
+        "sizes": [ 1, 1, 1, 1 ],
+        "chances": [ 10.0, 10.0, 10.0, 10.0 ]
+      },
+      {
+        "item": "botania:ancient_will_guthan",
+        "sizes": [ 1, 1, 1, 1 ],
+        "chances": [ 10.0, 10.0, 10.0, 10.0 ]
+      },
+      {
+        "item": "botania:ancient_will_torag",
+        "sizes": [ 1, 1, 1, 1 ],
+        "chances": [ 10.0, 10.0, 10.0, 10.0 ]
+      },
+      {
+        "item": "botania:ancient_will_verac",
+        "sizes": [ 1, 1, 1, 1 ],
+        "chances": [ 10.0, 10.0, 10.0, 10.0 ]
+      },
+      {
+        "item": "botania:ancient_will_karil",
+        "sizes": [ 1, 1, 1, 1 ],
+        "chances": [ 10.0, 10.0, 10.0, 10.0 ]
+      }
+    ]
+  }

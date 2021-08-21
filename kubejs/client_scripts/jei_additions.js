@@ -6,6 +6,12 @@ onEvent(`jei.add.items`, e => {
   })
 
   e.add([
+    /chisel:antiblock.*/,
+    `chisel:factory/dots`,
+    `chisel:futura/controller`,
+    `chisel:futura/wavy`,
+    `chisel:futura/controller_purple`,
+    `chisel:laboratory/wallpanel`,
     `minecraft:dragon_egg`,
     `structurize:plain_oak_oak_timber_frame`,
     `structurize:double_crossed_oak_oak_timber_frame`,
