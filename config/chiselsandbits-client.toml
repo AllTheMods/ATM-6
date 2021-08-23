@@ -1,7 +1,7 @@
 
 [client]
 
-	#Configuration entries related to the settings of gameplay aspects.
+	#mod.chiselsandbits.config.client.settings.comment
 	[client.settings]
 		#When enabled allows cycling through the tool modes of the chisel using (sneak) right clicks.
 		enable-right-click-mode-change = false
@@ -77,16 +77,7 @@
 			[client.client.performance.models]
 
 				[client.client.performance.models.cache]
-					#The size of the model cache.
+					#mod.chiselsandbits.config.client.performance.models.cache.size.comment
 					#Range: 0 ~ 2000
 					size = 1000
-
-		[client.client.client]
-
-			#client.gui
-			[client.client.client.gui]
-
-				[client.client.client.gui.radial-menu]
-					#radial-menu.mouse-indicator
-					mouse-indicator = false
 

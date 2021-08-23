@@ -1,0 +1,10 @@
+{
+  "add_loot": "forbidden_arcanus:blocks/additions/spawner_additions",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:blocks/spawner"
+    }
+  ],
+  "type": "valhelsia_core:append_loot"
+}
