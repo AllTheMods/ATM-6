@@ -27,7 +27,7 @@ onEvent(`jei.hide.items`, e => {
     /structurize:.*shingle/,
     /structurize:.*shingle_slab/,
     /chiselsandbits:block_bit/,
-    /chiseled.*/,
+    /chiseled:.*/,
     /supplementaries:bamboo_spikes_tipped/,
     `quark:ancient_tome`,
     `@curios`,
