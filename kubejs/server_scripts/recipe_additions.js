@@ -2,7 +2,7 @@ onEvent('recipes', e => {
   //#region CONST
   const quarkWoodTypes = ['oak', 'dark_oak', 'acacia', 'spruce', 'birch', 'jungle', 'warped', 'crimson']
   const solars = ['1', '2', '3', '4', '5', 'custom_allthemodium', 'custom_vibranium', 'custom_unobtainium']
-  const caTypes = [`importer`, `exporter`, `constructor`, `destructor`, `disk_manipulator`]
+  const caTypes = [`importer`, `exporter`, `constructor`, `destructor`, `disk_manipulator`, `requester`]
   const tiersPowah = ['starter', 'basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro']
   const typesPowah = ['energy_cell', 'reactor', 'furnator', 'magmator', 'thermo_generator', 'solar_panel', 'player_transmitter', 'energy_hopper', 'energy_discharger', 'energizing_rod']
   const resetNBT = ['rftoolsbase:filter_module', 'rftoolspower:dimensionalcell_simple', 'rftoolspower:dimensionalcell', 'rftoolspower:dimensionalcell_advanced', 'rftoolspower:powercell_card', 'rftoolsutility:syringe']
