@@ -1,7 +1,9 @@
 {
-    "flower": "tag:forge:storage_blocks/netherite",
+    "flower": "allthecompressed:netherite_block_4x",
     "maxTimeInHive": 2400,
-    "traits": ["nether"],
+    "traits": [
+        "dense"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/netherite/netherite_bee",
     "ColorData": {
@@ -20,36 +22,46 @@
         "modelType": "DEFAULT"
     },
     "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
+        "isPassive": false,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 1
+        "attackDamage": 2147483647
     },
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:dense_netherite_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:netherite_scrap",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:dense_netherite_bee_spawn_egg",
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dense_netherite_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:netherite_scrap",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_netherite_bee",
+                            "BeeType": "dense_netherite",
+                            "Color": "#654740"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
         "mainOutput": "minecraft:netherite_scrap",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 2,
+        "mainOutputCount": 4,
         "mainNBTData": {},
         "secondaryOutput": "minecraft:netherite_scrap",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 4,
+        "secondaryOutputCount": 8,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,

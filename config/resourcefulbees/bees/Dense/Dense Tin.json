@@ -1,7 +1,9 @@
 {
-    "flower": "tag:forge:storage_blocks/tin",
+    "flower": "allthecompressed:tin_block_4x",
     "maxTimeInHive": 2400,
-    "traits": [""],
+    "traits": [
+        "dense"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "ato/tin_bee",
     "ColorData": {
@@ -20,36 +22,46 @@
         "modelType": "ORE"
     },
     "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
+        "isPassive": false,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 1
+        "attackDamage": 2147483647
     },
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:dense_tin_honeycomb_block",
-            "outputs": [{
-                "outputID": "alltheores:tin_ingot",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:dense_tin_bee_spawn_egg",
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dense_tin_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:tin_ingot",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_tin_bee",
+                            "BeeType": "dense_tin",
+                            "Color": "#ECEDEE"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
         "mainOutput": "alltheores:ore_tin",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 2,
+        "mainOutputCount": 4,
         "mainNBTData": {},
         "secondaryOutput": "alltheores:tin_ingot",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 4,
+        "secondaryOutputCount": 8,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
