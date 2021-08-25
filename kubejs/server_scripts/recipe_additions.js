@@ -2,7 +2,7 @@ onEvent('recipes', e => {
   //#region CONST
   const quarkWoodTypes = ['oak', 'dark_oak', 'acacia', 'spruce', 'birch', 'jungle', 'warped', 'crimson']
   const solars = ['1', '2', '3', '4', '5', 'custom_allthemodium', 'custom_vibranium', 'custom_unobtainium']
-  const caTypes = [`importer`, `exporter`, `constructor`, `destructor`, `disk_manipulator`, `requester`]
+  const caTypes = [`importer`, `exporter`, `constructor`, `destructor`, 'disk_manipulator']
   const tiersPowah = ['starter', 'basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro']
   const typesPowah = ['energy_cell', 'reactor', 'furnator', 'magmator', 'thermo_generator', 'solar_panel', 'player_transmitter', 'energy_hopper', 'energy_discharger', 'energizing_rod']
   const resetNBT = ['rftoolsbase:filter_module', 'rftoolspower:dimensionalcell_simple', 'rftoolspower:dimensionalcell', 'rftoolspower:dimensionalcell_advanced', 'rftoolspower:powercell_card', 'rftoolsutility:syringe']
@@ -64,6 +64,17 @@ onEvent('recipes', e => {
         c: `${cables}${caType}`
       })
     })
+  }
+  function caTierSingle(tier, corners, processor, cables, caType){
+    e.shaped(`cabletiers:${tier}_${caType}`, [
+      `a a`,
+      `bcb`,
+      `a a`
+    ], {
+      a: corners,
+      b: processor,
+      c: `${cables}${caType}`
+     })
   }
   function buildQuarkChest(type, material) {
     e.shaped(`quark:${type}_chest`, [
@@ -1091,6 +1102,9 @@ onEvent('recipes', e => {
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
   caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`)
+  caTierSingle(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `rsrequestify:`, `requester`)
+  caTierSingle(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`, `requester`)
+  caTierSingle(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`, `requester`)
   //Creative Transmitter
   e.shaped('creativewirelesstransmitter:creative_wireless_transmitter', [
     'ITI',
