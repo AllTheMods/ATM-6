@@ -5,22 +5,24 @@ onEvent('recipes', e => {
       e.remove({ id: recipe })
     })
   }
-  function removeRecipeByType(recipes){
+  function removeRecipeByType(recipes) {
     recipes.forEach(recipe => {
-      if(Array.isArray(recipe)){
-        e.remove({type: recipe[1], output: recipe[0]})
+      if (Array.isArray(recipe)) {
+        e.remove({ type: recipe[1], output: recipe[0] })
       } else {
-        e.remove({output: recipe})
+        e.remove({ output: recipe })
       }
     })
   }
 
   removeRecipeByID([
+    'moreminecarts:minecraft_with_chunk_loader',
     'appliedenergistics2:grinder/flour',
     'explorerscompass:explorers_compass',
     'minecraft:comparator',
     'minecraft:glass',
     'pedestals:pedestal_crushing/dustnethergold',
+    'pedestals:dustflour',
     'forbidden_arcanus:leather',
     'forbidden_arcanus:iron_chain',
     'computercraft:turtle_normal',
@@ -128,6 +130,7 @@ onEvent('recipes', e => {
     'mekanism:gas_conversion/salt_to_hydrogen_chloride',
     'mekanism:chemical_oxidizer',
     'mekanism:robit',
+    'mekanism:bio_fuel',
     'mekanism:laser_tractor_beam',
     'pamhc2foodcore:fruitpunchitem',
     'pamhc2foodcore:applejuiceitem',
@@ -163,9 +166,7 @@ onEvent('recipes', e => {
     'creativewirelesstransmitter:creative_wireless_transmitter',
     'powah:crafting/thermoelectric_plate',
     'eidolon:smelt_stone_brick',
-    'immersiveengineering:crusher/nether_wart',
     'biggerreactors:crafting/reactor/reactor_manifold',
-    'biomesoplenty:soil/ash',
     'byg:compat/tconstruct/magma_cream_from_cryptic_magma_block_melting',
     'byg:compat/tconstruct/magma_cream_from_magmatic_stone_melting',
     'byg:compat/tconstruct/magmatic_stone_from_casting',
@@ -175,6 +176,7 @@ onEvent('recipes', e => {
     'byg:blue_glass_from_sand',
     'byg:white_glass_from_sand',
     'immersivepetroleum:hydrotreater/sulfur_recovery',
+    'immersiveengineering:crusher/nether_wart',
     'rats:dragon_wing_iaf',
     'thermal:machine/press/packing2x2/press_honeycomb_packing',
     'thermal:machine/press/unpacking/press_honeycomb_unpacking',
@@ -249,7 +251,6 @@ onEvent('recipes', e => {
     'ctiers:centrifuge_casing_tier_creative',
     'ctiers:centrifuge_controller_tier_creative',
     'appliedenergistics2:silicon',
-    'mekanism:upgrade_anchor',
     'forbidden_arcanus:rotten_leather',
     'xreliquary:alkahestry_tome',
     'naturesaura:chunk_loader',
@@ -263,6 +264,7 @@ onEvent('recipes', e => {
     'quark:charcoal_block',
     'quark:gunpowder_sack',
     'mekanism:block_charcoal',
+    'mekanism:upgrade_anchor',
     'titanium:iron_gear',
     'titanium:gold_gear',
     'titanium:diamond_gear',
@@ -273,9 +275,8 @@ onEvent('recipes', e => {
     ['#minecraft:wooden_pressure_plates', 'pedestals:pedestal_sawing'],
     ['#minecraft:stick', 'pedestals:pedestal_sawing']
   ])
-  e.remove({mod: 'cabletiers'})
-  e.remove({mod: 'chiseled'})
-  e.remove({input: ['appliedenergistics2:flour']})
-  e.remove({output: ['mekanism:bio_fuel', 'pedestals:dustflour']})
-  e.remove({type: 'xreliquary:alkahestry_charging'})
+  e.remove({ mod: 'cabletiers' })
+  e.remove({ mod: 'chiseled' })
+  e.remove({ input: ['appliedenergistics2:flour'] })
+  e.remove({ type: 'xreliquary:alkahestry_charging' })
 })

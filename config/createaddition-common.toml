@@ -1,0 +1,108 @@
+
+#General Settings
+[general]
+	#Forge Energy conversion rate (in FE/t at max RPM).
+	#Range: > 0
+	fe_conversion = 80
+	#Max stress for the Alternator and Electric Motor.
+	#Range: > 0
+	generator_stress = 4096
+
+#Electric Motor
+[electric_motor]
+	#Electric Motor min/max RPM.
+	#Range: 1 ~ 256
+	motor_rpm_range = 256
+	#Electric Motor minimum required energy consumption in FE/t.
+	#Range: > 0
+	motor_min_consumption = 8
+	#Electric Motor max input in FE (Energy transfer not consumption).
+	#Range: > 0
+	motor_max_input = 256
+	#Electric Motor internal capacity in FE.
+	#Range: > 0
+	motor_capacity = 2048
+
+#Alternator
+[alternator]
+	#Alternator max input in FE (Energy transfer, not generation).
+	#Range: > 0
+	generator_max_output = 256
+	#Alternator internal capacity in FE.
+	#Range: > 0
+	generator_capacity = 2048
+	#Alternator efficiency relative to base conversion rate.
+	#Range: 0.01 ~ 1.0
+	generator_efficiency = 0.75
+
+#Rolling Mill
+[rolling_mill]
+	#Rolling Mill duration in ticks.
+	#Range: > 0
+	rolling_mill_processing_duration = 100
+	#Rolling Mill base stress impact.
+	#Range: 0 ~ 1024
+	rolling_mill_stress = 16
+
+#Heater
+[heater]
+	#Induction Heater max input in FE (Energy transfer, not consumption).
+	#Range: > 0
+	heater_max_input = 256
+	#Induction Heater internal capacity in FE.
+	#Range: > 0
+	heater_capacity = 2048
+	#Induction Heater normal consumption rate in FE/t.
+	#Range: > 0
+	heater_normal_consumption = 16
+	#Induction Heater when attached to a Furnace Engine consumption rate in FE/t.
+	#Range: > 0
+	heater_furnace_engine_consumption = 400
+	#Enable Induction Heater when attached to a Furnace Engine.
+	heater_furnace_engine_enable = false
+
+#Wires
+[wires]
+	#Connector max input in FE/t (Energy transfer).
+	#Range: > 0
+	connector_max_input = 256
+	#Connector max output in FE/t (Energy transfer).
+	#Range: > 0
+	connector_max_output = 256
+	#Connector internal capacity in FE.
+	#Range: > 0
+	connector_capacity = 512
+
+#Accumulator
+[accumulator]
+	#Accumulator max input in FE/t (Energy transfer).
+	#Range: > 0
+	accumulator_max_input = 512
+	#Accumulator max output in FE/t (Energy transfer).
+	#Range: > 0
+	accumulator_max_output = 512
+	#Accumulator internal capacity in FE.
+	#Range: > 0
+	accumulator_capacity = 4196000
+
+#Charger
+[charger]
+	#Charger max input in FE/t (Energy transfer).
+	#Range: > 0
+	charger_max_input = 8192
+	#Charger charge rate in FE/t.
+	#Range: > 0
+	charger_charge_rate = 8192
+	#Charger internal capacity in FE.
+	#Range: > 0
+	charger_capacity = 32000
+
+#Misc
+[misc]
+	#Diamond Grit Sandpaper durability (number of uses).
+	#Range: > 3
+	diamond_grit_sandpaper_uses = 1024
+	#The energy cost of turning Chromatic Compound into Overcharged Alloy.
+	#Range: > 1
+	overcharging_energy_cost = 16777216
+

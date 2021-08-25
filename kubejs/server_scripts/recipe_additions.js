@@ -461,13 +461,6 @@ onEvent('recipes', e => {
     'F': '#forge:ingots/fluix_steel',
     'V': '#forge:storage_blocks/vibranium'
   }).id(`kubejs:silicon_press`)
-  e.shaped('biomesoplenty:flesh', [
-    'FFF',
-    'FFF',
-    'FFF'
-  ], {
-    'F': 'minecraft:rotten_flesh',
-  }).id(`kubejs:bop_flesh`)
   e.shaped('extrastorage:iron_crafter', [
     'B B',
     'PCP',
@@ -1275,7 +1268,6 @@ onEvent('recipes', e => {
 
   //multicrush - mek crusher and thermal pulverizer
   multicrush('4x minecraft:brick', 'minecraft:bricks')
-  multicrush(`9x minecraft:rotten_flesh`, `biomesoplenty:flesh`)
   multicrush(`4x minecraft:magma_cream`, `minecraft:magma_block`)
   multicrush(`minecraft:snow_block`, `minecraft:ice`)
   multicrush(`allthemodium:unobtainium_allthemodium_alloy_dust`, `allthemodium:unobtainium_allthemodium_alloy_ingot`)
@@ -1418,18 +1410,6 @@ onEvent('recipes', e => {
   ], {
     G: '#forge:glass'
   })
-
-  e.custom({
-    type: "transport:rail_workers_bench",
-    ingredient: {
-      tag: "forge:storage_blocks/iron",
-      count: 2
-    },
-    result: {
-      item: "transport:steam_locomotive",
-      count: 1
-    }
-  }).id('transport:steam_locomotive')
 
   e.shapeless(`astralsorcery:marble_raw`, 'enviromats:marble')
   e.shapeless(`enviromats:marble`, `quark:marble`)

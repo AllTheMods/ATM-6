@@ -498,8 +498,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 0.0d
+			x: -4.5d
+			y: 2.0d
 			description: ["&cCurrently this item has no uses."]
 			dependencies: ["5EE53C2C83F73244"]
 			id: "5EBCFDDB3D74F000"

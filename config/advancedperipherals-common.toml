@@ -30,7 +30,7 @@
 	#Enable the Environment Detector or not.
 	enableEnvironmentDetector = true
 	#Enable the Chunky Turtle or not.
-	enableChunkyTurtle = true
+	enableChunkyTurtle = false
 	#Enable the debug mode. You should only enable it, if a developer say it or something does not work.
 	enableDebugMode = false
 	#Enable the Energy Detector or not.

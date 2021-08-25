@@ -22,6 +22,9 @@ onEvent(`jei.hide.items`, e => {
   //#endregion
   
   e.hide([
+    'moreminecarts:chunkrodite',
+    'moreminecarts:chunkrodite_block',
+    'moreminecarts:chunkloader',
     /chisel:.*\/.*/,
     '@chipped',
     /structurize:.*timber_frame/,
@@ -119,9 +122,9 @@ onEvent(`jei.hide.items`, e => {
     'thermal:machine_catalyst_creative_augment'
   ])
 
-  enviroStonesCore.forEach(stone => {
-    e.hide(`/envirocore:${stone}_.*/`)
-  })
+  // enviroStonesCore.forEach(stone => {
+  //   e.hide(`/envirocore:${stone}_.*/`)
+  // })
   enviroStonesMats.forEach(stone => {
     e.hide(`/enviromats:${stone}_.*/`)
   })
