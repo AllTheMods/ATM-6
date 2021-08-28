@@ -541,7 +541,7 @@
 	[world.big_stone_clusters]
 		#Blocks that stone clusters can replace. If you want to make it so it only replaces in one dimension,
 		#do "block|dimension", as we do for netherrack and end stone by default.
-		"Blocks To Replace" = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack|minecraft:the_nether", "minecraft:end_stone|minecraft:the_end", "quark:marble", "quark:limestone", "quark:jasper", "quark:slate", "quark:basalt"]
+		"Blocks To Replace" = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack|minecraft:the_nether", "minecraft:end_stone|minecraft:the_end", "quark:jasper", "quark:slate", "quark:basalt"]
 
 		[world.big_stone_clusters.granite]
 			Enabled = true
@@ -654,23 +654,23 @@
 		[world.big_stone_clusters.marble]
 			Enabled = false
 			#Allowed values: [0,)
-			Rarity = 4
+			Rarity = 0
 			#Allowed values: [0,255]
-			"Min Y Level" = 20
+			"Min Y Level" = 0
 			#Allowed values: [0,255]
-			"Max Y Level" = 80
+			"Max Y Level" = 0
 			#Allowed values: [0,)
-			"Horizontal Size" = 14
+			"Horizontal Size" = 0
 			#Allowed values: [0,)
-			"Vertical Size" = 14
+			"Vertical Size" = 0
 			#Allowed values: [0,)
-			"Horizontal Variation" = 9
+			"Horizontal Variation" = 0
 			#Allowed values: [0,)
-			"Vertical Variation" = 9
+			"Vertical Variation" = 0
 
 			[world.big_stone_clusters.marble.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["minecraft:overworld"]
+				Dimensions = []
 
 			[world.big_stone_clusters.marble.biomes]
 
@@ -680,7 +680,7 @@
 					# plateau, modified, ocean, river, water, mesa, forest,
 					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
 					# beach, void, overworld, nether, end]
-					"Biome Types" = ["plains"]
+					"Biome Types" = []
 					"Is Blacklist" = false
 
 				[world.big_stone_clusters.marble.biomes.biomes]
@@ -688,25 +688,25 @@
 					"Is Blacklist" = true
 
 		[world.big_stone_clusters.limestone]
-			Enabled = true
+			Enabled = false
 			#Allowed values: [0,)
-			Rarity = 4
+			Rarity = 0
 			#Allowed values: [0,255]
-			"Min Y Level" = 20
+			"Min Y Level" = 0
 			#Allowed values: [0,255]
-			"Max Y Level" = 80
+			"Max Y Level" = 0
 			#Allowed values: [0,)
-			"Horizontal Size" = 14
+			"Horizontal Size" = 0
 			#Allowed values: [0,)
-			"Vertical Size" = 14
+			"Vertical Size" = 0
 			#Allowed values: [0,)
-			"Horizontal Variation" = 9
+			"Horizontal Variation" = 0
 			#Allowed values: [0,)
-			"Vertical Variation" = 9
+			"Vertical Variation" = 0
 
 			[world.big_stone_clusters.limestone.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["minecraft:overworld"]
+				Dimensions = []
 
 			[world.big_stone_clusters.limestone.biomes]
 
@@ -716,7 +716,7 @@
 					# plateau, modified, ocean, river, water, mesa, forest,
 					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
 					# beach, void, overworld, nether, end]
-					"Biome Types" = ["swamp", "ocean"]
+					"Biome Types" = []
 					"Is Blacklist" = false
 
 				[world.big_stone_clusters.limestone.biomes.biomes]
@@ -1141,8 +1141,8 @@
 			Dimensions = ["minecraft:the_nether"]
 
 	[world.new_stone_types]
-		"Enable Marble" = false
-		"Enable Limestone" = false
+		"Enable Marble" = true
+		"Enable Limestone" = true
 		"Enable Jasper" = true
 		"Enable Slate" = true
 		"Enable Voidstone" = true
@@ -1152,33 +1152,33 @@
 
 			[world.new_stone_types.marble.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["minecraft:overworld"]
+				Dimensions = []
 
 			[world.new_stone_types.marble.oregen]
 				#Allowed values: [0,255]
 				"Min Height" = 0
 				#Allowed values: [0,255]
-				"Max Height" = 255
+				"Max Height" = 0
 				#Allowed values: [0,)
-				"Cluster Size" = 33
+				"Cluster Size" = 0
 				#Allowed values: [0,)
-				"Cluster Count" = 10
+				"Cluster Count" = 0
 
 		[world.new_stone_types.limestone]
 
 			[world.new_stone_types.limestone.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["minecraft:overworld"]
+				Dimensions = []
 
 			[world.new_stone_types.limestone.oregen]
 				#Allowed values: [0,255]
 				"Min Height" = 0
 				#Allowed values: [0,255]
-				"Max Height" = 255
+				"Max Height" = 0
 				#Allowed values: [0,)
-				"Cluster Size" = 33
+				"Cluster Size" = 0
 				#Allowed values: [0,)
-				"Cluster Count" = 10
+				"Cluster Count" = 0
 
 		[world.new_stone_types.jasper]
 

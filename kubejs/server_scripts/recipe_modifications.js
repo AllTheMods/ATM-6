@@ -26,7 +26,7 @@ onEvent('recipes', e => {
   }
   //#endregion
 
-  e.replaceOutput('#forge:cheese', 'rats:cheese')
+  e.replaceOutput('#forge:cheese', 'pamhc2foodcore:cheeseitem')
 
   //#region RECIPES
   modifyShapeless('botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book'])
@@ -586,5 +586,6 @@ onEvent('recipes', e => {
     G: '#forge:gravel',
     U: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
   })
+  e.replaceInput('zycraft:aluminium', '#forge:ingots/aluminum')
   //#endregion
 })

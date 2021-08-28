@@ -10,7 +10,7 @@
 	"Drowned swimming animation" = true
 	#The max height that deep ocean mobs can spawn at
 	#Range: 0 ~ 255
-	"Deep ocean mob max height" = 30
+	"Deep ocean mob max height" = 40
 
 	[mobs.spawns]
 		"Glow Squid spawn weight (oceans)" = 67

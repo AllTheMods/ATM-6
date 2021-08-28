@@ -17,7 +17,7 @@
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
 	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.  This works in conjunction with 'oil_world_gen_category_blacklist' - if a biome matches either, then no oil lakes will generate there.
-	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens"]
+	oil_world_gen_blacklist = ["allthemodium:mining", "minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens"]
 	#Chance per chunk as a percentage to generate an Oil Lake. Set to 0 for no oil lakes. See also 'surface_oil_generation_chance'.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15

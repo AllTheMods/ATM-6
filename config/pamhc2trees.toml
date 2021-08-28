@@ -122,5 +122,5 @@
 	#Enter a dimension id to whitelist feature generation
 	white_dim = ["minecraft:overworld"]
 	#Enter a dimension id to blacklist feature generation
-	black_dim = ["minecraft:the_end", "minecraft:the_nether"]
+	black_dim = ["minecraft:the_end", "minecraft:the_nether", "allthemodium:mining"]
 

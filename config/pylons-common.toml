@@ -1,0 +1,16 @@
+
+[expulsion_pylon]
+	#Which dimensions the Expulsion Pylon is allowed to operate in.
+	expulsionAllowedDimensions = ["minecraft:overworld"]
+
+[infusion_pylon]
+	#The minimum effect duration (in seconds) that can be used for Potion Filters.
+	#This defaults to 60 seconds to prevent unintended interactions
+	#with other mods that add persistent potion effects at low durations.
+	#Range: 1 ~ 3600
+	infusionMinimumDuration = 60
+	#The total duration (in seconds) required before a Potion Filter can be used.
+	#By default this is 3600 seconds/1 hour, which is equivalent to 7.5 vanilla extended potions.
+	#Range: 1 ~ 28800
+	infusionRequiredDuration = 3600
+

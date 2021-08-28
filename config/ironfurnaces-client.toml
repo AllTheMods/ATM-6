@@ -9,6 +9,10 @@
 
 #Furnace Settings
 [furnaces]
+	# The capacity of the recipe cache, higher values use more memory.
+	# Default: 10
+	#Range: 1 ~ 100
+	recipe_cache = 10
 
 	[furnaces.iron_furnace]
 		# Number of ticks to complete one smelting operation.

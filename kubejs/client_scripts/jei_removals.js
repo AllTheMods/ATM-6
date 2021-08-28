@@ -3,7 +3,6 @@ onEvent(`jei.hide.items`, e => {
   const refined = [`controller`, `creative_controller`, `grid`, `crafting_grid`, `pattern_grid`, `fluid_grid`, `network_receiver`, `network_transmitter`, `relay`, `detector`, `security_manager`, `wireless_transmitter`, `disk_manipulator`, `crafter`, `crafter_manager`, `crafting_monitor`]
   const colors = [`white`, `light_gray`, `gray`, `black`, `red`, `orange`, `yellow`, `lime`, `green`, `light_blue`, `cyan`, `blue`, `purple`, `magenta`, `pink`, `brown`]
   const typeFirst = ['mekanism', 'immersiveengineering']
-  const enviroStonesCore = ['litherite', 'erodium', 'kyronite', 'pladium', 'ionite', 'aethium', 'nanorite', 'xerothium']
   const enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
   //#endregion
   //#region functions
@@ -31,7 +30,6 @@ onEvent(`jei.hide.items`, e => {
     /structurize:.*shingle/,
     /structurize:.*shingle_slab/,
     /chiselsandbits:block_bit/,
-    /chiseled.*/,
     /supplementaries:bamboo_spikes_tipped/,
     `quark:ancient_tome`,
     `@curios`,
@@ -70,7 +68,6 @@ onEvent(`jei.hide.items`, e => {
     `darkutils:ender_hopper`,
     /biggerreactors:yello.+/,
     /engineerstools:.+_grit/,
-    `pamhc2foodcore:cheeseitem`,
     `platforms:ramp`,
     `platforms:rise`,
     `platforms:rail`,
@@ -106,7 +103,7 @@ onEvent(`jei.hide.items`, e => {
     `eidolon:lead_ingot`,
     `eidolon:lead_block`,
     `eidolon:lead_nugget`,
-    /resourcefulbees:.+_bee_spawn_egg/,
+    /resourcefulbees:.*spawn_egg/,
     'cyclic:honey_bucket',
     'create:honey_bucket',
     'thermal:creosote_bucket',
@@ -122,9 +119,6 @@ onEvent(`jei.hide.items`, e => {
     'thermal:machine_catalyst_creative_augment'
   ])
 
-  // enviroStonesCore.forEach(stone => {
-  //   e.hide(`/envirocore:${stone}_.*/`)
-  // })
   enviroStonesMats.forEach(stone => {
     e.hide(`/enviromats:${stone}_.*/`)
   })

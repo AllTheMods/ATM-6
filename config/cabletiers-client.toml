@@ -50,4 +50,12 @@ elitediskmanipulatorspeed = 2
 #Ultra Disk Manipulator Speed
 #Range: 1 ~ 20
 ultradiskmanipulatorspeed = 6
+#
+#Elite Requester Max Craft Amount
+#Range: > 1
+eliterequestermaxcraftamount = 2000
+#
+#Ultra Requester Max Craft Amount
+#Range: > 1
+ultrarequestermaxcraftamount = 6000
 

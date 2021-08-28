@@ -102,5 +102,5 @@ onEvent('recipes', e => {
     'item': 'pneumaticcraft:compressed_iron_block',
     'count': 64
   }
-  ], 'pneumaticcraft:creative_compressor', 1, 4.9)
+  ], 'pneumaticcraft:creative_compressed_iron_block', 1, 4.9)
 })

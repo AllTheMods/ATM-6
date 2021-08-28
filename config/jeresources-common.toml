@@ -5,7 +5,7 @@ itemsPerRow = 4
 diyData = true
 showDevData = false
 enchantsBlacklist = ["flimflam", "soulBound", "reactive"]
-hiddenTabs = []
+hiddenTabs = ["lumberjack", "swineherder", "shepherd", "cowboy", "chickenherder", "rabbitherder", "beekeeper", "builder", "ranger", "knight", "crusher", "sifter", "stonesmeltery", "blacksmith", "stonemason", "sawmill", "composter", "student", "smelter", "cook", "cookassistant", "bakery", "researcher"]
 dimensionsBlacklist = [-11]
 disableLootManagerReloading = true
 
