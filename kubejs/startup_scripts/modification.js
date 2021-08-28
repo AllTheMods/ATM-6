@@ -75,7 +75,8 @@ onEvent('item.modification', e => {
     'thermal:lightning_grenade'
   ], 64)
   modifyStack([
-    'forbidden_arcanus:quantum_catcher'
+    'forbidden_arcanus:quantum_catcher',
+    'aquaculture:worm'
   ], 1)
 
   e.modify('immersivepetroleum:bitumen', item => item.burnTime = 1600)
@@ -87,6 +88,6 @@ onEvent('item.modification', e => {
 
 onEvent('worldgen.remove', e => {
   e.removeOres(ore => {
-    ore.blocks = ['zycraft:aluminium_ore']
+    ore.blocks = ['zycraft:aluminium_ore', 'chisel:marble/raw', 'chisel:limestone/raw', 'chisel:basalt/raw', 'powah:dry_ice']
   })
 })

@@ -7,6 +7,6 @@ onEvent('recipes', e => {
       Item.of('atmadditions:atm_star').toJson()
     ],
     energy: '2147483647',
-    result: 'immersiveengineering:capacitor_creative'
+    result: Item.of('immersiveengineering:capacitor_creative').toResultJson()
   })
 })

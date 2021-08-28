@@ -12,7 +12,7 @@
 	#Range: 0 ~ 100
 	carbuncleWeight = 5
 	#Dimensions where hostile mobs will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
-	dimensionBlacklist = []
+	dimensionBlacklist = ["allthemodium:mining"]
 	#Rate of tree spawn per chunk
 	#Range: 0.0 ~ 1.0
 	genTrees = 0.002
@@ -36,9 +36,9 @@
 	#Should the Wilden Hunter attack animals?
 	hunterHuntsAnimals = true
 	#Should the Wilden Stalker attack animals?
-	stalkerHuntsAnimals = false
+	stalkerHuntsAnimals = true
 	#Should the Wilden Defender attack animals?
-	defenderHuntsAnimals = false
+	defenderHuntsAnimals = true
 	#Archwood forest spawn weight
 	#Range: > 0
 	archwoodForest = 3

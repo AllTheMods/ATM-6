@@ -31,14 +31,14 @@
 	#Has to be higher than the separation!
 	#
 	#Range: 9 ~ 8192
-	spacing = 24
+	spacing = 32
 	#----------------------------------------------------------------------------------------------------#
 	#The minimum distance between the dungeons in chunks. Has to be lower than the spacing!
 	#The closer the separation is to the spacing, the more grid-aligned and predictable the dungeon placement will be.
 	#Generally, bigger values allow for less, and smaller values for more randomness.
 	#
 	#Range: 8 ~ 8191
-	separation = 12
+	separation = 10
 
 	["Dungeon Placement".Biomes]
 		#----------------------------------------------------------------------------------------------------#

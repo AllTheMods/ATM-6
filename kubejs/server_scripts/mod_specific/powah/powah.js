@@ -8,6 +8,6 @@ onEvent('recipes', e => {
       Item.of('powah:energy_cell_nitro').toJson()
     ],
     energy: '2147483647',
-    result: 'powah:energy_cell_creative'
+    result: Item.of('powah:energy_cell_creative').toResultJson()
   })
 })

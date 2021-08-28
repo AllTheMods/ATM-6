@@ -169,7 +169,7 @@
 			average_distance = 19
 			#Minimum distance apart in chunks between spawn attempts. 1001 to disable them entirely
 			#Range: 0 ~ 1001
-			minimum_distance = 10
+			minimum_distance = 1001
 			#With this option road signs will display the distance to the structure that they are pointing to
 			show_distance_text = true
 			#list of structure that a sign can point to. Note that they will only spawn in dimensions where vanilla villages can

@@ -132,7 +132,7 @@ onEvent('recipes', e => {
     A: 'computercraft:monitor_advanced',
     B: 'mekanism:module_solar_recharging_unit',
     C: ['extradisks:1048576k_storage_part', 'ae2extras:16m_cell_component', 'extradisks:1048576k_fluid_storage_part'],
-    D: 'rats:psionic_rat_brain',
+    D: 'forbidden_arcanus:eternal_obsidian_skull',
     E: Item.of('apotheosis:potion_charm', {
       Damage: 0,
       Potion: "apotheosis:strong_knowledge"

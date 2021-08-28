@@ -18,15 +18,15 @@ onEvent('recipes', e => {
       Item.of('atmadditions:atm_star').toJson()
     ],
     energy: '2147483647',
-    result: 'createaddition:creative_energy'
+    result: Item.of('createaddition:creative_energy').toResultJson()
   })
 
   e.recipes.create.mixing(
     'create:creative_blaze_cake',
     [
-      'create:chocolate_cake',
+      'createaddition:chocolate_cake',
       'atmadditions:atm_star',
-      'create:honey_cake'
+      'createaddition:honey_cake'
     ]
   )
     .superheated()

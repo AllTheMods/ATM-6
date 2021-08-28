@@ -17,6 +17,9 @@
 	#Defines max nbt string that can be stored in nbt storage
 	#Range: > 0
 	nbtStorageMaxSize = 1048576
+	#Time in seconds, while loaded chunk can be consider as valid without touch
+	#Range: > 60
+	chunkLoadValidTime = 600
 
 [Features]
 	#Enable the Chat Box or not.
@@ -125,7 +128,7 @@
 
 [world]
 	#Enable the villager structures for the computer scientist.
-	enableVillagerStructures = true
+	enableVillagerStructures = false
 	#Gives the ap documentation to new players on a world.
 	givePlayerBookOnJoin = false
 

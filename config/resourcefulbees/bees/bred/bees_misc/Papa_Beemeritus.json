@@ -19,24 +19,23 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
-                "outputs": [{
-                        "outputID": "tombstone:grave_dust",
-                        "weight": 80
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
+            "outputs": [{
+                    "outputID": "tombstone:grave_dust",
+                    "weight": 80
+                },
+                {
+                    "outputID": "resourcefulbees:bee_jar",
+                    "nbtData": {
+                        "Entity": "resourcefulbees:papa_beemeritus_bee",
+                        "BeeType": "papa_beemeritus",
+                        "Color": "#35b3ff"
                     },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:papa_beemeritus_bee",
-                            "BeeType": "papa_beemeritus",
-                            "Color": "#35b3ff"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+                    "weight": 20
+                }
+            ]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -44,28 +43,17 @@
         "mainOutput": "tombstone:grave_dust",
         "mainOutputWeight": 0.20,
         "mainOutputCount": 1,
-        "mainNBTData": {},
-        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutput": "tombstone:essence_of_undeath",
         "secondaryOutputWeight": 0.20,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
         "recipeTime": 200,
         "hasFluidOutput": false
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

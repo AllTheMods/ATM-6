@@ -2,7 +2,7 @@ onEvent('recipes', e => {
   //#region CONST
   const quarkWoodTypes = ['oak', 'dark_oak', 'acacia', 'spruce', 'birch', 'jungle', 'warped', 'crimson']
   const solars = ['1', '2', '3', '4', '5', 'custom_allthemodium', 'custom_vibranium', 'custom_unobtainium']
-  const caTypes = [`importer`, `exporter`, `constructor`, `destructor`]
+  const caTypes = ['importer', 'exporter', 'constructor', 'destructor', 'disk_manipulator', 'requester']
   const tiersPowah = ['starter', 'basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro']
   const typesPowah = ['energy_cell', 'reactor', 'furnator', 'magmator', 'thermo_generator', 'solar_panel', 'player_transmitter', 'energy_hopper', 'energy_discharger', 'energizing_rod']
   const resetNBT = ['rftoolsbase:filter_module', 'rftoolspower:dimensionalcell_simple', 'rftoolspower:dimensionalcell', 'rftoolspower:dimensionalcell_advanced', 'rftoolspower:powercell_card', 'rftoolsutility:syringe']
@@ -61,7 +61,7 @@ onEvent('recipes', e => {
       ], {
         a: corners,
         b: processor,
-        c: `${cables}${caType}`
+        c: `${(caType == 'requester' && tier == 'elite') ? 'rsrequestify:' : cables}${caType}`
       })
     })
   }
@@ -500,14 +500,6 @@ onEvent('recipes', e => {
     'r': '#forge:storage_blocks/redstone',
     'm': 'rftoolsbase:machine_frame'
   }).id(`kubejs:builder`)
-  e.shaped('rats:pied_wool', [
-    'YGY',
-    'GYG',
-    'YGY'
-  ], {
-    'Y': 'minecraft:yellow_wool',
-    'G': 'minecraft:green_wool'
-  }).id(`kubejs:pied_wool`)
   e.shaped('quarryplus:solidquarry', [
     'FFF',
     'DGD',
@@ -1030,10 +1022,6 @@ onEvent('recipes', e => {
       chance: '0.02'
     }
   }).id('kubejs:hydrotreater/sulfur_recovery')
-  e.shaped('rats:dragon_wing', ['BBB', 'LLB', '  L'], {
-    B: '#forge:bones/dragon',
-    L: '#forge:scales/dragon'
-  }).id(`kubejs:rats/dragon_wing`)
   //Minecraft
   e.shaped('minecraft:dragon_egg', [
     'SSS',
@@ -1389,19 +1377,7 @@ onEvent('recipes', e => {
   //Explorer's Compass
   e.recipes.bloodmagic.altar('explorerscompass:explorerscompass', 'minecraft:compass').upgradeLevel(3).altarSyphon(40000)
 
-  //RFTools
-  e.shaped('rftoolsdim:dimension_builder', [
-    'USU',
-    'MCM',
-    'BAB'
-  ], {
-    U: 'kubejs:uu_matter',
-    S: 'atmadditions:dimensional_seed',
-    A: 'atmadditions:atm_star',
-    M: 'mekanism:pellet_antimatter',
-    B: 'thermal:enderium_block',
-    C: 'rftoolsbase:machine_frame'
-  }).id('kubejs:rftoolsdim/dimension_builder')
+
 
   e.shaped('16x resourcefulbees:bee_jar', [
     ' G ',
@@ -1413,7 +1389,8 @@ onEvent('recipes', e => {
 
   e.shapeless(`astralsorcery:marble_raw`, 'enviromats:marble')
   e.shapeless(`enviromats:marble`, `quark:marble`)
-  e.shapeless(`quark:marble`, `chisel:marble/raw`)
+  e.shapeless(`quark:marble`, `projectred-exploration:marble`)
+  e.shapeless(`projectred-exploration:marble`, `chisel:marble/raw`)
   e.shapeless(`chisel:marble/raw`, `astralsorcery:marble_raw`)
 
   e.shapeless(`create:limestone`, 'create:weathered_limestone')
