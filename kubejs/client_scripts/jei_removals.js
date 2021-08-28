@@ -116,7 +116,9 @@ onEvent(`jei.hide.items`, e => {
     'lazierae2:coal_dust',
     'thermal:rf_coil_creative_augment',
     'thermal:fluid_tank_creative_augment',
-    'thermal:machine_catalyst_creative_augment'
+    'thermal:machine_catalyst_creative_augment',
+    'moreminecarts:chunk_loader',
+    'moreminecarts:minecart_with_chunk_loader'
   ])
 
   enviroStonesMats.forEach(stone => {
