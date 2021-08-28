@@ -242,7 +242,9 @@ onEvent('recipes', e => {
     'cyclic:solidifier_honey_bottle',
     'cyclic:energy_pipe',
     'cyclic:item_pipe',
-    'cyclic:fluid_pipe'
+    'cyclic:fluid_pipe',
+    'moreminecarts:chunk_loader',
+    'moreminecarts:minecart_with_chunk_loader'
   ])
   removeRecipeByType([
     'resourcefulbees:bee_jar',
