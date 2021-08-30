@@ -291,7 +291,7 @@ mobDropsEnabled = true
 		#Range: 1 ~ 900
 		levelCapForLeveledFormula = 100
 		#Allows switching stealing from player on and off
-		stealFromPlayers = true
+		stealFromPlayers = false
 		#If set to false it goes through additional 4 accessible slots and looks for items in case the one selected randomly was empty
 		stealFromVacantSlots = true
 		#Whether entities get angry at player if stealing fails
@@ -300,7 +300,7 @@ mobDropsEnabled = true
 		failStealFromVacantSlots = false
 		#The flat failure rate in case failure rate isn't influenced by player's level
 		#Range: 0 ~ 100
-		flatStealFailurePercentRate = 10
+		flatStealFailurePercentRate = 100
 		#Whether level influences stealing failure rate of the rod
 		useLeveledFailureRate = true
 

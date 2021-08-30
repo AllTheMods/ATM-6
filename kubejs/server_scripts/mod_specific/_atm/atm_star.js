@@ -1,8 +1,4 @@
 onEvent('recipes', e => {
-  //#region CONST
-  const iaf = 'iceandfire:'
-  const dBlood = '_dragon_blood'
-  //#endregion
   //#region FUNCTIONS
   function multiCrush(output, input) {
     e.recipes.mekanism.crushing(output, input).id(`kubejs:${output.split(':')[1]}_mek_crush`)
@@ -10,28 +6,53 @@ onEvent('recipes', e => {
     e.recipes.immersiveengineering.crusher(output, input).id(`kubejs:${output.split(':')[1]}_ie_crush`)
     e.recipes.thermal.pulverizer(output, input).id(`kubejs:${output.split(':')[1]}_thermal_pulverize`)
   }
-  //'9x immersiveengineering:dust_saltpeter'
-  function jumbo(ingredients, result, xp) {
+  function jumbo(ingr, res, xp) {
     e.recipes.jumbofurnace.jumbo_smelting({
-      'ingredients': ingredients,
-      'result': {
-        'item': result
-      },
-      'experience': xp
-    }).id(`kubejs:${result.split(':')[1]}_jumbo`)
+      ingredients: ingr,
+      result: { item: res },
+      experience: xp
+    }).id(`kubejs:${res.split(':')[1]}_jumbo`)
+  }
+  function draconicItem(item) {
+    return (item.charAt(0) === '#') ? { tag: item.substring(1) } : { item: item }
+  }
+  function draconicFusion(output, craftingTier, energy, middleItem, ingredientList) {
+    let cTier, ingr = [] //1 draconium, 2 wyvern, 3 draconic, 4 chaotic
+    switch (craftingTier) {
+      case 1:
+        cTier = 'DRACONIUM'
+        break
+      case 2:
+        cTier = 'WYVERN'
+        break
+      case 3:
+        cTier = 'DRACONIC'
+        break
+      case 4:
+        cTier = 'CHAOTIC'
+        break
+      default:
+        cTier = 'DRACONIUM'
+        break
+    }
+    ingredientList.forEach(item => ingr.push(draconicItem(item)))
+    e.custom({
+      type: 'draconicevolution:fusion_crafting',
+      result: { item: output },
+      catalyst: { item: middleItem },
+      total_energy: energy,
+      tier: cTier,
+      ingredients: ingr
+    })
   }
   //#endregion
   //#region RECIPES
   //#region Dragon Soul
-  e.shaped('atmadditions:dragon_soul', [
-    'CDA',
-    'SNI',
-    'BSE'
-  ], {
+  e.shaped('atmadditions:dragon_soul', ['CDA', 'SNI', 'BSE'], {
     A: 'eidolon:lesser_soul_gem',
     C: 'forbidden_arcanus:dark_soul',
-    D: [`${iaf}fire${dBlood}`, `${iaf}ice${dBlood}`, `${iaf}lightning${dBlood}`],
-    N: 'minecraft:nether_star',
+    D: [`iceandfire:fire_dragon_blood`, `iceandfire:ice_dragon_blood`, `iceandfire:lightning_dragon_blood`],
+    N: 'draconicevolution:dragon_heart',
     B: 'minecraft:dragon_breath',
     S: 'botania:dragonstone',
     E: 'forbidden_arcanus:golden_dragon_scale',
@@ -39,11 +60,7 @@ onEvent('recipes', e => {
   }).id('kubejs:dragon_soul')
   //#endregion
   //#region Dimensional Seed
-  e.shaped('atmadditions:dimensional_seed', [
-    'ABC',
-    'DEF',
-    'GHI'
-  ], {
+  e.shaped('atmadditions:dimensional_seed', ['ABC', 'DEF', 'GHI'], {
     A: 'compressium:stone_6',
     B: 'compressium:endstone_4',
     C: 'compressium:netherrack_4',
@@ -56,18 +73,15 @@ onEvent('recipes', e => {
   }).id('kubejs:dimensional_seed')
   //#endregion
   //#region Withers Compass
-  e.shaped('atmadditions:withers_compass', [
-    'DCD',
-    'ABA',
-    'DAD'
-  ], {
+  e.shaped('atmadditions:withers_compass', ['DCD', 'ABA', 'DED'], {
     A: 'resourcefulbees:wither_honeycomb_block',
     B: 'ars_nouveau:glyph_wither',
     C: 'darkutils:rune_wither',
     D: Item.of('apotheosis:potion_charm', {
       Damage: 0,
       Potion: "apotheosis:strong_wither"
-    })
+    }),
+    E: 'explorerscompass:explorerscompass'
   }).id('kubejs:withers_compass')
   //#endregion
   //#region Philosopher's Fuel
@@ -117,18 +131,14 @@ onEvent('recipes', e => {
   e.recipes.bloodmagic.alchemytable('atmadditions:philosophers_fuel', [
     'kubejs:potassium_nitrate_block',
     'mekanism:sulfuric_acid_bucket',
-    'mana-and-artifice:enchantment_focus_fire',
+    'iceandfire:dragonsteel_fire_block',
     'thermal:coal_coke_block',
     'immersivepetroleum:napalm_bucket',
     'pneumaticcraft:lpg_bucket'
   ]).syphon(50000).id('kubejs:philosophers_fuel')
   //#endregion
   //#region Improbable Probaility Device
-  e.shaped('atmadditions:improbable_probability_device', [
-    'AAB',
-    'CDE',
-    'FFF'
-  ], {
+  e.shaped('atmadditions:improbable_probability_device', ['AAB', 'CGE', 'FDF'], {
     A: 'computercraft:monitor_advanced',
     B: 'mekanism:module_solar_recharging_unit',
     C: ['extradisks:1048576k_storage_part', 'ae2extras:16m_cell_component', 'extradisks:1048576k_fluid_storage_part'],
@@ -137,57 +147,55 @@ onEvent('recipes', e => {
       Damage: 0,
       Potion: "apotheosis:strong_knowledge"
     }),
-    F: 'thermal:enderium_block'
+    F: 'thermal:enderium_block',
+    G: 'draconicevolution:reactor_core'
   }).id('kubejs:improbable_probability_device')
   //#endregion
   //#region Nexium Emitter
-  e.shaped('atmadditions:nexium_emitter', [
-    'A C',
-    ' BF',
-    'CED'
-  ], {
+  e.shaped('atmadditions:nexium_emitter', ['A C', ' BF', 'CED'], {
     A: 'powah:energizing_rod_nitro',
     B: ['refinedstorageaddons:wireless_crafting_grid', 'appliedenergistics2:wireless_terminal', 'refinedstorage:wireless_grid', 'refinedstorage:wireless_fluid_grid'],
     C: 'alltheores:platinum_block',
     D: 'compressium:netherite_3',
-    E: 'mana-and-artifice:transitory_tunnel',
+    E: 'appliedenergistics2:quantum_entangled_singularity',
     F: 'powah:player_transmitter_nitro'
   }).id('kubejs:nexium_emitter')
   //#endregion
   //#region Pulsating Black Hole
-  e.shaped('atmadditions:pulsating_black_hole', [
-    'ABC',
-    'DEF',
-    'GHI'
-  ], {
-    A: 'botania:mana_void',
+  e.shaped('atmadditions:pulsating_black_hole', ['ABC', 'DEF', 'GHI'], {
+    A: 'mininggadgets:upgrade_void_junk',
     B: 'bloodmagic:voidsigil',
     C: 'ars_nouveau:void_jar',
     D: 'mekanism:pellet_antimatter',
-    E: 'mininggadgets:upgrade_void_junk',
+    E: 'draconicevolution:chaos_shard',
     F: 'thermal:device_nullifier',
     G: 'mekanism:creative_energy_cube',
     H: 'envirotech:xerothium_void_miner_ccu',
     I: 'sophisticatedbackpacks:advanced_void_upgrade'
   }).id('kubejs:pulsating_black_hole')
+
+  draconicFusion('atmadditions:pulsating_black_hole', 4, 1024000000, 'draconicevolution:chaos_shard',
+    [
+      'mininggadgets:upgrade_void_junk',
+      'bloodmagic:voidsigil',
+      'ars_nouveau:void_jar',
+      'mekanism:pellet_antimatter',
+      'thermal:device_nullifier',
+      'mekanism:creative_energy_cube',
+      'envirotech:xerothium_void_miner_ccu',
+      'sophisticatedbackpacks:advanced_void_upgrade'
+    ]
+  )
   //#endregion
   //#region Oblivion Shard
-  e.shaped('atmadditions:oblivion_shard', [
-    ' AB',
-    'ACA',
-    'BA '
-  ], {
+  e.shaped('atmadditions:oblivion_shard', [' AB','ACA','BA '], {
     A: 'allthemodium:unobtainium_block',
     C: 'astralsorcery:shifting_star_vicio',
     B: 'forbidden_arcanus:dark_nether_star_block'
   }).id('kubejs:oblivion_shard')
   //#endregion
   //#region Creative Essence
-  e.shaped('mysticalagradditions:creative_essence', [
-    'CAC',
-    'ABA',
-    'CAC'
-  ], {
+  e.shaped('mysticalagradditions:creative_essence', ['CAC','ABA','CAC'], {
     A: 'mysticalagradditions:insanium_block',
     C: 'mysticalagradditions:insanium_gemstone_block',
     B: 'mysticalagriculture:master_infusion_crystal'

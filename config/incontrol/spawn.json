@@ -1,18 +1,5 @@
 [
   {
-    "dimension": "rats:ratlantis",
-    "mob": [
-      "iceandfire:siren",
-      "iceandfire:sea_serpent",
-      "iceandfire:hippocampus"
-    ],
-    "mincount": {
-      "amount": 10,
-      "perplayer": true
-    },
-    "result": "deny"
-  },
-  {
     "dimension": "twilightforest:twilightforest",
     "mob": [
       "iceandfire:siren",
@@ -44,14 +31,6 @@
     "result": "deny"
   },
   {
-    "dimension": "rats:ratlantis",
-    "mod": [
-      "ars_nouveau",
-      "mana-and-artifice"
-    ],
-    "result": "deny"
-  },
-  {
     "dimension": "twilightforest:twilightforest",
     "mod": [
       "ars_nouveau",
@@ -64,5 +43,15 @@
     "mob": "iceandfire:myrmex_queen",
     "result": "deny",
     "onjoin": true
+  },
+  {
+    "dimension": "allthemodium:mining",
+    "mod": "ars_nouveou",
+    "result": "deny"
+  },
+  {
+    "dimension": "compactmachines:compact_world",
+    "mod": "ars_nouveou",
+    "result": "deny"
   }
 ]

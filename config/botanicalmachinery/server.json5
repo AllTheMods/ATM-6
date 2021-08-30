@@ -1,0 +1,58 @@
+{
+  // This is only as a reminder that the config changed. Turn to true if you accept that I'm the new config
+  "reminder": true,
+  
+  // The amount of mana used in alfheim market to trade items [Default: 500]
+  "AlfheimMarket": {
+  
+    // Minimum: 1
+    "recipeCost": 500
+  },
+  
+  // The default amount of mana capacity in each machine.
+  "MaxManaCapacity": {
+  
+    // Minimum: 1
+    "alfheimMarket": 100000,
+    
+    // Minimum: 500000
+    "industrialAgglomerationFactory": 1000000,
+    
+    // Minimum: 1
+    "manaBattery": 10000000,
+    
+    // Minimum: 1
+    "mechanicalBrewery": 100000,
+    
+    // Minimum: 1
+    "mechanicalManaPool": 100000,
+    
+    // Minimum: 1
+    "mechanicalRunicAltar": 250000
+  },
+  
+  // The default duration multiplied with this will be the used working duration.
+  "WorkingDurationMultiplier": {
+  
+    // Range: 1 - 25
+    "alfheimMarket": 1,
+    
+    // Range: 1 - 5000
+    "industrialAgglomerationFactory": 1,
+    
+    // Minimum: 1
+    "mechanicalApothecary": 1,
+    
+    // Range: 1 - 50
+    "mechanicalBrewery": 1,
+    
+    // Minimum: 1
+    "mechanicalDaisy": 3,
+    
+    // Minimum: 1
+    "mechanicalManaPool": 1,
+    
+    // Range: 1 - 100
+    "mechanicalRunicAltar": 1
+  }
+}

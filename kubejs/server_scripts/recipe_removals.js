@@ -1,5 +1,6 @@
 //priority: 999
 onEvent('recipes', e => {
+  //#region functions
   function removeRecipeByID(recipes) {
     recipes.forEach(recipe => {
       e.remove({ id: recipe })
@@ -14,11 +15,32 @@ onEvent('recipes', e => {
       }
     })
   }
-
+  //#endregion
+  //#region removals
   removeRecipeByID([
+    /^tmechworks:.*_block_from_.*_ingot/,
+    /^immersiveengineering:crafting\/ingot_.*_to_storage_.*/,
+    /^mekanism:processing\/.*\/storage_blocks\/from_ingots/,
+    /^thermal:storage\/.*_block/,
+    'tconstruct:common/materials/copper_block_from_ingots',
+    'create:crafting/materials/copper_block_from_compacting',
+    'create:crafting/materials/zinc_block_from_compacting',
+    'iceandfire:copper_block',
+    'iceandfire:silver_block',
+    'projectred-exploration:copper_block',
+    'projectred-exploration:silver_block',
+    'projectred-exploration:tin_block',
+    'eidolon:lead_block',
+    'biggerreactors:crafting/yellorium_block',
+    'mekanism:storage_blocks/bronze',
+
+    'resourcefulbees:elite_centrifuge_casing',
+    'resourcefulbees:elite_centrifuge_controller',
     'platforms:wrench_alt',
-    'moreminecarts:minecraft_with_chunk_loader',
+    'moreminecarts:minecart_with_chunk_loader',
+    'moreminecarts:chunk_loader',
     'appliedenergistics2:grinder/flour',
+    'appliedenergistics2:inscriber/silicon_print',
     'explorerscompass:explorers_compass',
     'minecraft:comparator',
     'minecraft:glass',
@@ -29,6 +51,7 @@ onEvent('recipes', e => {
     'computercraft:turtle_normal',
     'computercraft:turtle_advanced',
     'engineerstools:crushing/aluminium_grit_crushing_recipe',
+    'engineersdecor:dependent/slag_brick_block_recipe',
     'xreliquary:alkahestry/crafting/nether_star',
     'xreliquary:fertile_lily_pad',
     'mysticalagriculture:oratchalcum_seeds_infusion',
@@ -177,6 +200,7 @@ onEvent('recipes', e => {
     'byg:white_glass_from_sand',
     'immersivepetroleum:hydrotreater/sulfur_recovery',
     'immersiveengineering:crusher/nether_wart',
+    'immersiveengineering:crafting/concrete2',
     'rats:dragon_wing_iaf',
     'thermal:machine/press/packing2x2/press_honeycomb_packing',
     'thermal:machine/press/unpacking/press_honeycomb_unpacking',
@@ -279,4 +303,5 @@ onEvent('recipes', e => {
   e.remove({ mod: 'chiseled' })
   e.remove({ input: ['appliedenergistics2:flour'] })
   e.remove({ type: 'xreliquary:alkahestry_charging' })
+  //#endregion
 })

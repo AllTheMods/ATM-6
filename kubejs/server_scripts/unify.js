@@ -6,85 +6,31 @@ onEvent('recipes', e => {
     e.replaceOutput(`#forge:dusts/${name}`, dustItem)
     e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
     e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
-    e.remove({
-      input: [`#forge:ores/${name}`, `#forge:dusts/${name}`],
-      output: `#forge:ingots/${name}`,
-      type: 'minecraft:smelting'
-    })
-    e.remove({
-      input: [`#forge:ores/${name}`, `#forge:dusts/${name}`],
-      output: `#forge:ingots/${name}`,
-      type: 'minecraft:blasting'
-    })
+    
+    e.remove({ input: `#forge:ores/${name}`, type: 'immersiveengineering:crusher' })
+    e.remove({ input: `#forge:ingots/${name}`, type: 'immersiveengineering:crusher' })
+    e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:smelting' })
+    e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:blasting' })
+    e.remove({ id: `appliedenergistics2:grinder/${name}_dust_ingot` })
     if (name !== 'iron' && name !== 'gold' && name !== 'azure_silver' && name !== 'crimson_iron') {
-      e.remove({
-        input: `#forge:ores/${name}`,
-        output: `mekanism:dust_${name}`,
-        type: 'mekanism:enriching'
-      })
-      e.remove({
-        input: `mekanism:dirty_dust_${name}`,
-        output: `mekanism:dust_${name}`,
-        type: 'mekanism:enriching'
-      })
-      e.remove({
-        input: `#mekanism:clumps/${name}`,
-        output: `mekanism:dirty_dust_${name}`,
-        type: 'mekanism:crushing'
-      })
-      e.remove({
-        input: `#forge:ores/${name}`,
-        output: `mekanism:clump_${name}`,
-        type: 'mekanism:purifying'
-      })
-      e.remove({
-        input: `mekanism:shard_${name}`,
-        output: `mekanism:clump_${name}`,
-        type: 'mekanism:purifying'
-      })
-      e.remove({
-        input: `#forge:ores/${name}`,
-        output: `mekanism:shard_${name}`,
-        type: 'mekanism:injecting'
-      })
-      e.remove({
-        input: `#mekanism:crystals/${name}`,
-        output: `mekanism:shard_${name}`,
-        type: 'mekanism:injecting'
-      })
+      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
+      e.remove({ input: `mekanism:dirty_dust_${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
+      e.remove({ input: `#mekanism:clumps/${name}`, output: `mekanism:dirty_dust_${name}`, type: 'mekanism:crushing' })
+      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:clump_${name}`, type: 'mekanism:purifying' })
+      e.remove({ input: `mekanism:shard_${name}`, output: `mekanism:clump_${name}`, type: 'mekanism:purifying' })
+      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
+      e.remove({ input: `#mekanism:crystals/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
     }
-    e.remove({
-      input: `#forge:ores/${name}`,
-      type: 'immersiveengineering:crusher'
-    })
-    e.remove({
-      input: `#forge:ingots/${name}`,
-      type: 'immersiveengineering:crusher'
-    })
     e.recipes.minecraft.smelting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.minecraft.blasting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
-    e.recipes.pedestals.pedestal_crushing({
-      ingredient: { tag: `forge:ingots/${name}` },
-      result: { item: dustItem }
-    })
-    e.remove({ id: `appliedenergistics2:grinder/${name}_dust_ingot` })
-    e.recipes.appliedenergistics2.grinder({
-      input: { tag: `forge:ingots/${name}` },
-      result: { primary: { item: dustItem } },
-      turns: 8
-    })
-    e.recipes.immersiveengineering.crusher({
-      secondaries: [],
-      result: { base_ingredient: { item: dustItem } },
-      input: { tag: `forge:ingots/${name}` },
-      energy: 3000
-    })
+    e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem } })
+    e.recipes.appliedenergistics2.grinder({ input: { tag: `forge:ingots/${name}` }, result: { primary: { item: dustItem } }, turns: 8 })
+    e.recipes.immersiveengineering.crusher({ secondaries: [], result: { base_ingredient: { item: dustItem } }, input: { tag: `forge:ingots/${name}` }, energy: 3000 })
 
     if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
       e.recipes.minecraft.smelting(ingotItem, `#forge:ores/${name}`).xp(1)
       e.recipes.minecraft.blasting(ingotItem, `#forge:ores/${name}`).xp(1)
       e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`)
-      //This is here to stop crushing hammer recipes for modium from generating
       if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
         e.remove({ id: `engineerstools:crushing/${name}_grit_crushing_recipe` })
         e.recipes.engineerstools.crafting_extended_shapeless({
@@ -180,10 +126,6 @@ onEvent('recipes', e => {
       e.replaceInput(create, `#forge:plates/${type}`)
       e.replaceOutput(`immersiveengineering:plate_${type}`, output)
       e.replaceOutput(create, output)
-      if (type != 'aluminum') {
-        e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_gold_cast` })
-        e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_sand_cast` })
-      }
     })
   }
 
@@ -565,7 +507,7 @@ onEvent('recipes', e => {
 
   createHoneyMixing([
     [
-      'minecraft:bee_nest', 1, 8000, [
+      'minecraft:bee_nest', 1, 1000, [
         ['resourcefulbees:resourceful_honeycomb_block', 1],
         ['resourcefulbees:resourceful_honeycomb', 1],
         ['resourcefulbees:resourceful_honeycomb_block', 1]

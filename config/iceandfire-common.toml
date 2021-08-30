@@ -257,7 +257,7 @@
 		#Range: 1 ~ 10000
 		"Hydra Caves Gen Chance" = 80
 		#Villager Scribe House generation weight. Lower = lower chance to spawn
-		#Range: 30 ~ 10000
+		#Range: 0 ~ 10000
 		"Villager Scribe House Weight" = 30
 
 	[Mobs.Cyclops]
@@ -323,8 +323,8 @@
 		#Range: 10 ~ 10000
 		"Myrmex Colony Max Size" = 80
 		#The maximum radius myrmex area allowed to wander/forage
-		#Range: 100 ~ 20000
-		"Myrmex Maximum Wnader Radius" = 100
+		#Range: 25 ~ 4000
+		"Myrmex Maximum Wander Radius" = 50
 
 	[Mobs.Pixies]
 		#size of pixie villages

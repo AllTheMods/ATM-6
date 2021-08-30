@@ -331,7 +331,6 @@ onEvent('recipes', e => {
     ['enderium', [1, 3, 4]],
     ['brass', [2, 3], 57, 'create:brass_sheet']
   ])
-
   parapet([
     'oak',
     'spruce',
@@ -1335,6 +1334,21 @@ onEvent('recipes', e => {
   mainfusion('kubejs:magical_soil', 'botania:overgrowth_seed', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block')
   mainfusion('mysticalagriculture:saltpeter_seeds', 'mysticalagriculture:prosperity_seed_base', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence', 'thermal:niter_dust', 'mysticalagriculture:prudentium_essence')
 
+  e.recipes.mysticalagriculture.infusion({
+    input: { item: 'mysticalagriculture:prosperity_seed_base' },
+    ingredients: [
+      { tag: 'chisel:marble' },
+      { item: 'mysticalagriculture:prudentium_essence' },
+      { tag: 'chisel:marble' },
+      { item: 'mysticalagriculture:prudentium_essence' },
+      { tag: 'chisel:marble' },
+      { item: 'mysticalagriculture:prudentium_essence' },
+      { tag: 'chisel:marble' },
+      { item: 'mysticalagriculture:prudentium_essence' }
+    ],
+    result: { item: 'mysticalagriculture:marble_seeds' }
+  })
+
   //thermal
   e.recipes.thermal.pulverizer([
     Item.of('astralsorcery:aquamarine').withChance(6),
@@ -1377,14 +1391,70 @@ onEvent('recipes', e => {
   //Explorer's Compass
   e.recipes.bloodmagic.altar('explorerscompass:explorerscompass', 'minecraft:compass').upgradeLevel(3).altarSyphon(40000)
 
-
-
+  e.shaped(item.of('minecraft:white_wool'), [
+    'SS',
+    'SS'
+  ], {
+    S: '#forge:string'
+  })
+  e.shaped(item.of('minecraft:glass', 3), [
+    'GGG',
+    'G G',
+    'GGG',
+  ], {
+    G: 'minecraft:glass_pane'
+  })
+  e.shaped(item.of('engineersdecor:slag_brick_block', 8), [
+    'BBB',
+    'BSB',
+    'BBB'
+  ], {
+    B: '#engineersdecor:brick_ingots',
+    S: '#forge:slag'
+  })
+  e.recipes.appliedenergistics2.inscriber({
+    mode: 'inscribe',
+    result: { item: 'appliedenergistics2:printed_silicon' },
+    ingredients: {
+      top: { item: 'appliedenergistics2:silicon_press' },
+      middle: { tag: 'forge:silicon' }
+    }
+  })
   e.shaped('16x resourcefulbees:bee_jar', [
     ' G ',
     'G G',
     'GGG'
   ], {
     G: '#forge:glass'
+  })
+  e.shaped(item.of('immersiveengineering:concrete', 12), [
+    'SBS',
+    'GUG',
+    'SBS'
+  ], {
+    B: '#forge:clay',
+    S: '#forge:slag',
+    G: '#forge:gravel',
+    U: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
+  })
+  
+  e.shaped(item.of('resourcefulbees:elite_centrifuge_casing', 3), [
+    'NBN',
+    'BNB',
+    'NRN'
+  ], {
+    B: 'resourcefulbees:centrifuge_casing',
+    N: 'minecraft:netherite_ingot',
+    R: 'mineraft:redstone'
+  })
+  e.shaped(item.of('resourcefulbees:elite_centrifuge_controller', 1), [
+    'BNB',
+    'NCN',
+    'BNB'
+  ], {
+    B: 'resourcefulbees:elite_centrifuge_casing',
+    N: 'minecraft:netherite_block',
+    C: 'resourcefulbees:centrifuge_controller'
   })
 
   e.shapeless(`astralsorcery:marble_raw`, 'enviromats:marble')

@@ -129,6 +129,7 @@ onEvent('item.tags', e => {
 //#region BLOCK TAGS
 onEvent('block.tags', e => {
   //#region additions
+  e.add('pedestals:quarry/blacklist', ['allthemodium:allthemodium_ore', 'allthemodium:vibranium_ore', 'allthemodium:unobtainium_ore'])
   e.add('forge:gems/quartz', 'zycraft:quartz_crystal')
   e.add('resourcefulbees:valid_apiary', ['glassential:glass_dark_ethereal', 'glassential:glass_dark_ethereal_reverse', 'glassential:glass_ethereal', 'glassential:glass_ethereal_reverse', 'glassential:glass_ghostly'])
   e.add('forge:marble', '#chisel:marble')

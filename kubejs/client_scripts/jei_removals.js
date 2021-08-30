@@ -21,9 +21,15 @@ onEvent(`jei.hide.items`, e => {
   //#endregion
   
   e.hide([
+    'iceandfire:copper_block',
+    'iceandfire:silver_block',
+    'projectred-exploration:copper_ore',
+    'projectred-exploration:tin_ore',
+    'projectred-exploration:silver_ore',
     'moreminecarts:chunkrodite',
     'moreminecarts:chunkrodite_block',
-    'moreminecarts:chunkloader',
+    'moreminecarts:chunk_loader',
+    'moreminecarts:minecart_with_chunk_loader',
     /chisel:.*\/.*/,
     '@chipped',
     /structurize:.*timber_frame/,

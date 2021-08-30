@@ -1,0 +1,14 @@
+#Should mana in GUIs be displayed with numbers?
+numericalMana = true
+
+[advanced-rendering]
+	#If you turn this off, the special rendering is disabled for all machines and ignores the other config options
+	all = true
+	alfheim-market = true
+	industrial-agglomeration-factory = true
+	mechanical-apothecary = true
+	mechanical-brewery = true
+	mechanical-daisy = true
+	mechanical-mana-pool = true
+	mechanical-runic-altar = true
+

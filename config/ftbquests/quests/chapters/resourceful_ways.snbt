@@ -644,10 +644,10 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -6.0d
+			x: -12.0d
+			y: -4.5d
 			shape: "diamond"
-			dependencies: ["76071C22A73A2026"]
+			dependencies: ["5BC4250E4C9F803C"]
 			id: "21F654C968722841"
 			tasks: [{
 				id: "5E6AA14A531DC749"
@@ -681,7 +681,7 @@
 		}
 		{
 			x: -10.0d
-			y: -7.0d
+			y: -6.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "67AA59BD340FEC62"
@@ -812,8 +812,8 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: -4.0d
+			x: -13.0d
+			y: -4.5d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "3D888A965033D446"
