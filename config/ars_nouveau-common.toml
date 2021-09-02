@@ -1,2 +1,3 @@
 [general]
 	dimensionBlacklist = ["allthemodium:mining"]
+	spawnBook = true

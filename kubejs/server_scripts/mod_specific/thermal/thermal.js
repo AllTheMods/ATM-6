@@ -1,23 +1,13 @@
 onEvent('recipes', e => {
-<<<<<<< Updated upstream
-  e.remove({id:'thermal:storage/onion_block'})
-
-  e.shaped('thermal:machine_efficiency_creative_augment', ['ABA','CDC','AEA'], {
-=======
   e.remove({ id: 'thermal:storage/onion_block' })
 
   e.shaped('thermal:machine_efficiency_creative_augment', ['ABA', 'CDC', 'AEA'], {
->>>>>>> Stashed changes
     A: 'thermal:upgrade_augment_3',
     B: `powah:charged_snowball`,
     C: `thermal:energy_cell`,
     D: 'atmadditions:atm_star',
     E: `thermal:lightning_charge`
   })
-<<<<<<< Updated upstream
-  e.shaped('thermal:onion_block', ['OOO','OOO','OOO'], {O: '#forge:crops/onion'})
-})
-=======
   e.shaped('thermal:onion_block', ['OOO', 'OOO', 'OOO'], { O: '#forge:crops/onion' })
 
   e.recipes.mekanism.crushing('6x thermal:sulfur', 'thermal:sulfur_ore')
@@ -69,4 +59,3 @@ onEvent('recipes', e => {
     'thermal:machine/crucible/crucible_honey_block_to_honey'
   ])
 })
->>>>>>> Stashed changes

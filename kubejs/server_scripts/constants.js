@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-const colors = ['white','light_gray','gray','black','red','orange','yellow','lime','green','light_blue','cyan','blue','purple','magenta','pink','brown']
-=======
 //priority: 1
 const colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
 const energize = function (ingredient, result, power) {
@@ -48,4 +45,3 @@ const removeRecipeByOutput = function (recipes) {
     })
   })
 }
->>>>>>> Stashed changes

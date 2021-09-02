@@ -11,11 +11,7 @@ onEvent('recipes', e => {
       ingredients: ingr,
       result: { item: res },
       experience: xp
-<<<<<<< Updated upstream:kubejs/server_scripts/mod_specific/_atm/atm_star.js
-    }).id(`kubejs:${res.split(':')[1]}_jumbo`)
-=======
     }).id(`kubejs:atmadditions/${res.split(':')[1]}_jumbo`)
->>>>>>> Stashed changes:kubejs/server_scripts/mod_specific/1atm/atm_star.js
   }
   function draconicItem(item) {
     return (item.charAt(0) === '#') ? { tag: item.substring(1) } : { item: item }
@@ -47,11 +43,7 @@ onEvent('recipes', e => {
       total_energy: energy,
       tier: cTier,
       ingredients: ingr
-<<<<<<< Updated upstream:kubejs/server_scripts/mod_specific/_atm/atm_star.js
-    })
-=======
     }).id(`kubejs:atmadditions/fusion_crafting/${output}`)
->>>>>>> Stashed changes:kubejs/server_scripts/mod_specific/1atm/atm_star.js
   }
   //#endregion
   //#region RECIPES
@@ -85,18 +77,9 @@ onEvent('recipes', e => {
     A: 'resourcefulbees:wither_honeycomb_block',
     B: 'ars_nouveau:glyph_wither',
     C: 'darkutils:rune_wither',
-<<<<<<< Updated upstream:kubejs/server_scripts/mod_specific/_atm/atm_star.js
-    D: Item.of('apotheosis:potion_charm', {
-      Damage: 0,
-      Potion: "apotheosis:strong_wither"
-    }),
-    E: 'explorerscompass:explorerscompass'
-  }).id('kubejs:withers_compass')
-=======
     D: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_wither" }),
     E: 'explorerscompass:explorerscompass'
   }).id('kubejs:atmadditions/withers_compass')
->>>>>>> Stashed changes:kubejs/server_scripts/mod_specific/1atm/atm_star.js
   //#endregion
   //#region Philosopher's Fuel
   e.shapeless('kubejs:saltpeter_block', ['9x kubejs:saltpeter_ingot']).id('kubejs:atmadditions/saltpeter_block')
@@ -156,20 +139,10 @@ onEvent('recipes', e => {
     B: 'mekanism:module_solar_recharging_unit',
     C: ['extradisks:1048576k_storage_part', 'ae2extras:16m_cell_component', 'extradisks:1048576k_fluid_storage_part'],
     D: 'forbidden_arcanus:eternal_obsidian_skull',
-<<<<<<< Updated upstream:kubejs/server_scripts/mod_specific/_atm/atm_star.js
-    E: Item.of('apotheosis:potion_charm', {
-      Damage: 0,
-      Potion: "apotheosis:strong_knowledge"
-    }),
-    F: 'thermal:enderium_block',
-    G: 'draconicevolution:reactor_core'
-  }).id('kubejs:improbable_probability_device')
-=======
     E: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_knowledge" }),
     F: 'thermal:enderium_block',
     G: 'draconicevolution:reactor_core'
   }).id('kubejs:atmadditions/improbable_probability_device')
->>>>>>> Stashed changes:kubejs/server_scripts/mod_specific/1atm/atm_star.js
   //#endregion
   //#region Nexium Emitter
   e.shaped('atmadditions:nexium_emitter', ['A C', ' BF', 'CED'], {
@@ -192,25 +165,6 @@ onEvent('recipes', e => {
     G: 'mekanism:creative_energy_cube',
     H: 'envirotech:xerothium_void_miner_ccu',
     I: 'sophisticatedbackpacks:advanced_void_upgrade'
-<<<<<<< Updated upstream:kubejs/server_scripts/mod_specific/_atm/atm_star.js
-  }).id('kubejs:pulsating_black_hole')
-
-  draconicFusion('atmadditions:pulsating_black_hole', 4, 1024000000, 'draconicevolution:chaos_shard',
-    [
-      'mininggadgets:upgrade_void_junk',
-      'bloodmagic:voidsigil',
-      'ars_nouveau:void_jar',
-      'mekanism:pellet_antimatter',
-      'thermal:device_nullifier',
-      'mekanism:creative_energy_cube',
-      'envirotech:xerothium_void_miner_ccu',
-      'sophisticatedbackpacks:advanced_void_upgrade'
-    ]
-  )
-  //#endregion
-  //#region Oblivion Shard
-  e.shaped('atmadditions:oblivion_shard', [' AB','ACA','BA '], {
-=======
   }).id('kubejs:atmadditions/pulsating_black_hole')
 
   draconicFusion('atmadditions:pulsating_black_hole', 4, 1024000000, 'draconicevolution:chaos_shard', [
@@ -226,18 +180,13 @@ onEvent('recipes', e => {
   //#endregion
   //#region Oblivion Shard
   e.shaped('atmadditions:oblivion_shard', [' AB', 'ACA', 'BA '], {
->>>>>>> Stashed changes:kubejs/server_scripts/mod_specific/1atm/atm_star.js
     A: 'allthemodium:unobtainium_block',
     C: 'astralsorcery:shifting_star_vicio',
     B: 'forbidden_arcanus:dark_nether_star_block'
   }).id('kubejs:atmadditions/oblivion_shard')
   //#endregion
   //#region Creative Essence
-<<<<<<< Updated upstream:kubejs/server_scripts/mod_specific/_atm/atm_star.js
-  e.shaped('mysticalagradditions:creative_essence', ['CAC','ABA','CAC'], {
-=======
   e.shaped('mysticalagradditions:creative_essence', ['CAC', 'ABA', 'CAC'], {
->>>>>>> Stashed changes:kubejs/server_scripts/mod_specific/1atm/atm_star.js
     A: 'mysticalagradditions:insanium_block',
     C: 'mysticalagradditions:insanium_gemstone_block',
     B: 'mysticalagriculture:master_infusion_crystal'

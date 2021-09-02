@@ -4,13 +4,15 @@ onEvent('recipes', e => {
     I: '#forge:ingots/iron'
   }).id(`kubejs:iron_chain`)
 
+  e.shapeless('forbidden_arcanus:rotten_leather', '3x minecraft:rotten_flesh').id(`kubejs:forbidden_arcanus/rotten_leather`)
+
   removeRecipeByID([
     'forbidden_arcanus:leather',
     'forbidden_arcanus:iron_chain'
   ])
   
   removeRecipeByOutput([
-    // 'forbidden_arcanus:rotten_leather'
+    'forbidden_arcanus:rotten_leather'
   ])
   
   modifyShaped('forbidden_arcanus:candle_lamp', 1, ['NDN', 'GAG', 'NDN'], {

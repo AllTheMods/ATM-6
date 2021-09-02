@@ -6,11 +6,7 @@ onEvent('recipes', e => {
     output: Item.of('kubejs:uu_matter', 16).toResultJson(),
     duration: 20
   })
-<<<<<<< Updated upstream
-  
-=======
 
->>>>>>> Stashed changes
   e.custom({
     type: 'psi:trick_crafting',
     input: { tag: 'forge:dusts/unobtainium_vibranium_alloy' },
@@ -20,12 +16,7 @@ onEvent('recipes', e => {
   })
 
   function mShaped(result, pattern, count) {
-<<<<<<< Updated upstream
-    e.custom({
-      type: 'cucumber:shaped_no_mirror',
-=======
     e.recipes.cucumber.shaped_no_mirror({
->>>>>>> Stashed changes
       pattern: pattern,
       key: { U: { item: 'kubejs:uu_matter' } },
       result: { item: result, count: count != null ? count : 1 }

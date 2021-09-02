@@ -3,21 +3,6 @@ onEvent('recipes', e => {
     S: 'atmadditions:atm_star',
     M: 'botania:mana_pool',
     R: '#botania:runes'
-<<<<<<< Updated upstream
-  })
-
-  e.shapeless(item.of('botania:mana_tablet', {
-    mana: 500000,
-    creative: '1b'
-  }), 'botania:creative_pool')
-
-  e.shapeless('botania:creative_pool',
-    Item.of('botania:mana_tablet', {
-      mana: 500000,
-      creative: true
-    })
-  )
-=======
   }).id('kubejs:botania/creative_pool')
 
   e.shapeless(item.of('botania:mana_tablet', { mana: 500000, creative: '1b' }), 'botania:creative_pool').id('kubejs:botania/creative_mana_tablet')
@@ -50,5 +35,4 @@ onEvent('recipes', e => {
   }).id('kubejs:botania/petal_apothecary/mass_of_wills')
 
   modifyShapeless('botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book'])
->>>>>>> Stashed changes
 })

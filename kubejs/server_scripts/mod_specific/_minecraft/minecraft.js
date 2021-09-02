@@ -2,8 +2,8 @@ onEvent('recipes', e => {
   e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
 
   e.smelting('minecraft:glass', '#forge:sand').xp(.1).id('kubejs:minecraft/smelting/sand')
-  e.smelting('minecraft:leather', 'kubejs:rotten_leather').xp(.5).id('kubejs:minecraft/smelting/leather')
-  e.smoking('minecraft:leather', 'kubejs:rotten_leather').xp(.5).id('kubejs:minecraft/smoking/leather')
+  e.smelting('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smelting/leather')
+  e.smoking('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smoking/leather')
 
   e.recipes.immersiveengineering.crusher(`4x minecraft:nether_wart`, `minecraft:nether_wart_block`).id('kubejs:minecraft/immersiveengineering_crusher/nether_wart')
   e.recipes.mekanism.crushing('4x minecraft:blaze_powder', '#forge:rods/blaze')

@@ -39,7 +39,6 @@ onEvent(`jei.hide.items`, e => {
     /supplementaries:bamboo_spikes_tipped/,
     `quark:ancient_tome`,
     `@curios`,
-    `forbidden_arcanus:rotten_leather`,
     `appliedenergistics2:silicon`,
     `appliedenergistics2:flour`,
     `cyclic:tile_transporter_empty`,
