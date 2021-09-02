@@ -42,7 +42,6 @@ onEvent(`jei.hide.items`, e => {
     `forbidden_arcanus:rotten_leather`,
     `appliedenergistics2:silicon`,
     `appliedenergistics2:flour`,
-    /appliedenergistics2:facade/,
     `cyclic:tile_transporter_empty`,
     `cyclic:trash`,
     /cyclic:.*pipe/,

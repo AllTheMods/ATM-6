@@ -1,0 +1,9 @@
+
+[general]
+	#Colors must be specified in #RRGGBB format
+	"color values" = ["#FFFFFF", "#33FFFF", "#42270A", "#FF5000", "#5200FF", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#FFEF0E", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#26DE88", "#D152E3"]
+	#Always show armor bar even if empty?
+	"Always show bar" = false
+	#Show empty armor icons?
+	"Show empty icons" = false
+

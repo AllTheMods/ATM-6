@@ -1,3 +1,0 @@
-#Set this to true if you're a modpack dev to see Farming for Blockheads registry warnings in chat. Errors will always display.
-showRegistryWarnings = false
-

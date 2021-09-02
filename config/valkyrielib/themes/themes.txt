@@ -1,6 +1,0 @@
-┏╸ma:themes
-┃┏╸bo:enabled
-┃┣> Variable Type: java.lang.Boolean
-┃┣> Default: true
-┃┗╸
-┗╸

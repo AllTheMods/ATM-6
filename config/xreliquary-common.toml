@@ -1,34 +1,8 @@
-#Determines whether Reliquary items will be generated in chest loot (mostly mob drops, very rarely some lower level items)
-chestLootEnabled = true
-#Determines wheter Reliquary mob drops have crafting recipes
-dropCraftingRecipesEnabled = false
-#Whether mobs drop the Reliquary mob drops. This won't remove mob drop items from registry and replace them with something else, but allows to turn off the additional drops when mobs are killed by player. If this is turned off the mob drop crafting recipes turned on by the other setting can be used.
-mobDropsEnabled = true
-
-#Disable sections of the mod
 [disable]
-	#Disable Alkahestry tome and its recipes
 	alkahestryTome = true
-	#Disable the HANDGUN, bullets, magazines, and gun parts
-	handgun = false
-	#Disable the POTION system including mortar, altar, potions, tipped arrows, and powder
-	potion = false
-	#Disable all pedestals
-	pedestal = false
-	#Disable all display-only pedestals
-	passivePedestal = false
-	#Disable recipes to craft spawn eggs from fragments
-	disableSpawnEggRecipes = false
-
-#Potions related settings
 [potions]
 	#Whether potions augmented with Redstone and Glowstone appear in creative tabs / JEI
 	differentDurations = false
-	#Maximum number of effects a POTION can have to appear in creative tabs / JEI
-	#Range: 1 ~ 6
-	maxEffectCount = 1
-	#Whether potions with the same effect combination, but different duration appear in creative tabs / JEI
-	redstoneAndGlowstone = false
 	#Whether potions that are made out of three base ingredients appear in creative tabs / JEI
 	threeIngredients = false
 	#Map of POTION ingredients and their effects
