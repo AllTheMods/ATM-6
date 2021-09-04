@@ -1,2 +1,3 @@
 [client]
 	mainMenuConfigButtonRow = 0
+	ingameMenuConfigButtonRow = 0

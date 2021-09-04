@@ -1,0 +1,3 @@
+[aureal]
+	[aureal.corruption]
+		disable_consequences = true

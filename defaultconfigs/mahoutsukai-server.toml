@@ -459,7 +459,7 @@
 	#Power Consolidation Damage Cap Tiers
 	POWER_CONSOLIDATION_TIERS = [10000.0, 50000.0, 500000.0, 1000000.0, 5000000.0]
 	#Power Consolidation Tier Upgrade Items
-	POWER_CONSOLIDATION_TIER_UPGRADE_ITEM = ["allthemodium:vibranium_allthemodium_alloy_block"]
+	POWER_CONSOLIDATION_TIER_UPGRADE_ITEM = ["atmadditions:atm_star"]
 	#Replica Durability
 	#Range: 0 ~ 10000000
 	REPLICA_DURABILITY = 10000

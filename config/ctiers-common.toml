@@ -1,3 +1,3 @@
 centrifugeTierCreativeMutliplier = 10
-centrifugeTierCreativeSize = true
-centrifugeMultiplierBlacklist = ["resourcefulbees:starry_honeycomb", "resourcefulbees:starry_honeycomb_block"]
+centrifugeTierCreativeSize = false
+centrifugeMultiplierBlacklist = ["resourcefulbees:starry_honeycomb", "resourcefulbees:starry_honeycomb_block", "resourcefulbees:chaotic_honeycomb", "resourcefulbees:chaotic_honeycomb_block"]
