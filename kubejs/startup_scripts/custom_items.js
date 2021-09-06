@@ -8,11 +8,14 @@ onEvent('item.registry', e => {
   e.create('potassium_nitrate_ingot').displayName('Potassium Nitrate Ingot')
   e.create('potassium_dust').displayName('Potassium Dust')
   e.create('potassium_ingot').displayName('Potassium Ingot')
+  e.create('uru_ingot').displayName('§6Uru Metal Ingot')
+  e.create('uru_nugget').displayName('§6Uru Metal Ingot')
 })
 
 onEvent('block.registry', e => {
-  e.create('magical_soil').displayName('§bMagical Soil').material('organic').hardness(0.6)
-  e.create('saltpeter_block').displayName('Nitrate Block').material('iron')
-  e.create('potassium_block').displayName('Potassium Block').material('iron')
-  e.create('potassium_nitrate_block').displayName('Potassium Nitrate Block').material('iron')
+  e.create('magical_soil').displayName('§bMagical Soil').material('grass').hardness(0.6)
+  e.create('saltpeter_block').displayName('Nitrate Block').material('metal')
+  e.create('potassium_block').displayName('Potassium Block').material('metal')
+  e.create('potassium_nitrate_block').displayName('Potassium Nitrate Block').material('metal')
+  e.create('uru_block').displayName('§6Uru Metal Block').material('metal')
 })

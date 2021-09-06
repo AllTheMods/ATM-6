@@ -22,7 +22,7 @@ onEvent('block.right_click', e => {
   if (e.entity.isPlayer() && e.entity.isCrouching()) {
     let heldItem = e.entity.getHeldItem(MAIN_HAND).id
     if (placedBlock.id.equals('mekanism:creative_energy_cube')) {
-      if (heldItem.equals('kubejs:atm_star')) {
+      if (heldItem.equals('atmadditions:atm_star')) {
         if (
           placedBlock.offset(SOUTH, 1).id.equals('mekanism:ultimate_induction_provider') &&
           placedBlock.offset(NORTH, 1).id.equals('mekanism:ultimate_induction_provider') &&
@@ -59,9 +59,9 @@ onEvent('block.right_click', e => {
           placedBlock.offset(WEST, 2).entityData.putAll(UECData1)
           placedBlock.offset(EAST, 2).entityData.putAll(UECData2)
 
-          e.server.runCommand('/title @a title {"text":"Cube filled!","color":"green"}')
+          e.server.runCommand(`/title ${e.entity.getName()} title {"text":"Cube filled!","color":"green"}`)
         } else {
-          e.server.runCommand('/title @a title {"text":"Block formation is incorrect!","color":"dark_red"}')
+          e.server.runCommand(`/title ${e.entity.getName()} title {"text":"Block formation is incorrect!","color":"dark_red"}`)
         }
       }
     }

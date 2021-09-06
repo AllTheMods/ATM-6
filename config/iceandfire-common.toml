@@ -36,11 +36,6 @@
 		"Sea Serpent Base Health" = 200.0
 	[Mobs.Others]
 		"Hydra Caves Gen Chance" = 80
-<<<<<<< Updated upstream
-		#Villager Scribe House generation weight. Lower = lower chance to spawn
-		#Range: 0 ~ 10000
-=======
->>>>>>> Stashed changes
 		"Villager Scribe House Weight" = 30
 	[Mobs.Cyclops]
 		"Spawn Cyclops Cave Chance" = 45
@@ -49,106 +44,6 @@
 		"Troll Spawn Weight" = 50
 	[Mobs.Myrmex]
 		"Myrmex Base Attack Strength" = 13.0
-<<<<<<< Updated upstream
-		#How many maximum individuals a myrmex colony can have.
-		#Range: 10 ~ 10000
-		"Myrmex Colony Max Size" = 80
-		#The maximum radius myrmex area allowed to wander/forage
-		#Range: 25 ~ 4000
-		"Myrmex Maximum Wander Radius" = 50
-
-	[Mobs.Pixies]
-		#size of pixie villages
-		#Range: 1 ~ 10000
-		"Pixie Village Size" = 5
-		#True if pixie villages are allowed to spawn
-		"Spawn Pixies" = true
-		#1 out of this number chance per chunk for generation
-		#Range: 1 ~ 10000
-		"Spawn Pixies Chance" = 60
-		#True if pixies are allowed to steal from players
-		"Pixies Steal Items" = true
-
-	[Mobs.Stymphalians]
-		#How many blocks away can stymphalian birds spot potential prey. Note that increasing this could cause lag.
-		#Range: 1 ~ 10000
-		"Stymphalian Bird Target Search Length" = 64
-		#True if stymphalian birds are allowed to target and attack animals
-		"Stymphalian Birds Target Animals" = false
-		#1 out of this number chance per chunk for generation
-		#Range: 1 ~ 10000
-		"Spawn Stymhphalian Bird Chance" = 80
-		#1/this number chance for a stymphalian feather to turn into an item before despawning. Zero means never.
-		#Range: 0 ~ 10000
-		"Stymphalian Bird Feather Drop Chance" = 25
-		#How far away stymphalian birds will consider other birds to be in the same flock.
-		#Range: 1 ~ 10000
-		"Stymphalian Bird Flock Length" = 40
-		#How high stymphalian birds can fly, in Y height.
-		#Range: > 10
-		"Max Stymphalian Bird Flight Height" = 80
-		#True if stymphalian birds are allowed to spawn
-		"Spawn Stymphalian Birds" = true
-		#True if stymphalian birds can drop items registered in the ore dictionary to ingotCopper, ingotBronze, nuggetCopper, nuggetBronze.
-		"Stymphalian Birds drop ore dict items" = true
-		#Stymphalian bird feather attack strength.
-		#Range: 0.0 ~ 10000.0
-		"Stymphalian Bird Feather Attack Strength" = 1.0
-
-	[Mobs.Amphitheres]
-		#How fast amphitheres fly.
-		#Range: 0.0 ~ 3.0
-		"Amphithere Flight Speed" = 1.75
-		#True if amphitheres are allowed to spawn
-		"Spawn Amphitheres" = true
-		#Amphithere spawn weight. Lower = lower chance to spawn
-		#Range: 1 ~ 10000
-		"Amphithere Spawn Weight" = 50
-		#Maximum amphithere health
-		#Range: 1.0 ~ 10000.0
-		"Amphithere Max Health" = 50.0
-		#Amphithere attack strength
-		#Range: 1.0 ~ 10000.0
-		"Amphithere Attack Strength" = 7.0
-		#How many blocks away can ampitheres detect villagers being hurt. Note that increasing this could cause lag.
-		#Range: 1 ~ 10000
-		"Amphithere Villager Search Length" = 64
-		#How many ticks it takes while riding an untamed amphithere to tame it.
-		#Range: 1 ~ 10000
-		"Amphithere Tame Time" = 400
-
-	[Mobs.Hippocampus]
-		#True if hippocampi are allowed to spawn
-		"Spawn Hippocampus" = true
-		#1 out of this number chance per chunk for generation
-		#Range: 1 ~ 10000
-		"Spawn Hippocampus Chance" = 40
-		#Change this to slow down or speed up hippocampus swimming.
-		#Range: 0.0 ~ 2.0
-		"Hippocampus Swim Speed Modifier" = 1.0
-
-	[Mobs.Hippogryph]
-		#True if hippogryphs are allowed to spawn
-		"Spawn Hippogryphs" = true
-		#Hippogryph spawn weight. Lower = lower chance to spawn.
-		#Range: 1 ~ 10000
-		"Hippogryph Spawn Weight" = 2
-		#Change this to slow down or speed up hippogryph flight.
-		#Range: 0.0 ~ 2.0
-		"Hippogryph Flight Speed Modifier" = 1.0
-
-	[Mobs.Gorgons]
-		#True if gorgon temples are allowed to spawn
-		"Spawn Gorgons" = true
-		#1 out of this number chance per chunk for generation
-		#Range: 1 ~ 10000
-		"Spawn Gorgon Chance" = 75
-		#Maximum gorgon health
-		#Range: 1.0 ~ 10000.0
-		"Gorgon Max Health" = 100.0
-
-=======
->>>>>>> Stashed changes
 [Items]
 	"Dragonsteel Base Armor" = 75
 	"Chunk Load Summon Crystal" = true

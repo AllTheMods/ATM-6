@@ -52,26 +52,26 @@ onEvent('recipes', e => {
     N: 'minecraft:netherite_block',
     C: 'resourcefulbees:centrifuge_controller'
   }).id(`kubejs:resourcefulbees/elite_centrifuge_controller`)
-  
-removeRecipeByID([
-  'resourcefulbees:elite_centrifuge_casing',
-  'resourcefulbees:elite_centrifuge_controller',
-  'creativeapiary:tcreative_apiary',
-  'creativeapiary:creative_apiary_storage',
-  'creativeapiary:creative_apiary_breeder'
-])
 
-removeRecipeByOutput([
-  'resourcefulbees:bee_jar',
-  'ctiers:centrifuge_casing_tier_creative',
-  'ctiers:centrifuge_controller_tier_creative'
-])
+  removeRecipeByID([
+    'resourcefulbees:elite_centrifuge_casing',
+    'resourcefulbees:elite_centrifuge_controller',
+    'creativeapiary:tcreative_apiary',
+    'creativeapiary:creative_apiary_storage',
+    'creativeapiary:creative_apiary_breeder'
+  ])
 
-modifyShaped('resourcefulbees:centrifuge_controller', 1, ['ICI', 'BAB', 'IRI'], {
-  I: 'resourcefulbees:centrifuge_casing',
-  C: 'resourcefulbees:centrifuge',
-  B: 'minecraft:iron_bars',
-  A: 'minecraft:comparator',
-  R: '#forge:storage_blocks/redstone'
-})
+  removeRecipeByOutput([
+    'resourcefulbees:bee_jar',
+    'ctiers:centrifuge_casing_tier_creative',
+    'ctiers:centrifuge_controller_tier_creative'
+  ])
+
+  modifyShaped('resourcefulbees:centrifuge_controller', 1, ['ICI', 'BAB', 'IRI'], {
+    I: 'resourcefulbees:centrifuge_casing',
+    C: 'resourcefulbees:centrifuge',
+    B: 'minecraft:iron_bars',
+    A: 'minecraft:comparator',
+    R: '#forge:storage_blocks/redstone'
+  })
 })

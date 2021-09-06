@@ -37,6 +37,7 @@ onEvent('recipes', e => {
       { item: 'minecraft:clay_ball' }
     ]
   ).energy(4000).id('kubejs:smelter/pig_iron')
+  
   e.recipes.thermal.smelter(
     [{ item: 'tconstruct:slimesteel_ingot', count: 2 }],
     [
@@ -45,6 +46,7 @@ onEvent('recipes', e => {
       { item: 'tconstruct:seared_brick', count: 1 }
     ]
   ).energy(4000).id('kubejs:smelter/slimesteel')
+
   e.recipes.thermal.chiller(
     [{ item: 'tconstruct:pig_iron_ingot' }],
     [

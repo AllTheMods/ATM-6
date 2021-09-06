@@ -1,3 +1,4 @@
 [MachineMiscConfig]
 	[MachineMiscConfig.EnchantmentApplicatorConfig]
 		ignoreEnchantMaxLevels = true
+		

@@ -1,5 +1,4 @@
 [core]
-
-	[core.general]
+[core.general]
 		analytics = false
 		versionChecker = false

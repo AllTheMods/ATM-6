@@ -13,38 +13,6 @@ onEvent('recipes', e => {
       experience: xp
     }).id(`kubejs:atmadditions/${res.split(':')[1]}_jumbo`)
   }
-  function draconicItem(item) {
-    return (item.charAt(0) === '#') ? { tag: item.substring(1) } : { item: item }
-  }
-  function draconicFusion(output, craftingTier, energy, middleItem, ingredientList) {
-    let cTier, ingr = [] //1 draconium, 2 wyvern, 3 draconic, 4 chaotic
-    switch (craftingTier) {
-      case 1:
-        cTier = 'DRACONIUM'
-        break
-      case 2:
-        cTier = 'WYVERN'
-        break
-      case 3:
-        cTier = 'DRACONIC'
-        break
-      case 4:
-        cTier = 'CHAOTIC'
-        break
-      default:
-        cTier = 'DRACONIUM'
-        break
-    }
-    ingredientList.forEach(item => ingr.push(draconicItem(item)))
-    e.custom({
-      type: 'draconicevolution:fusion_crafting',
-      result: { item: output },
-      catalyst: { item: middleItem },
-      total_energy: energy,
-      tier: cTier,
-      ingredients: ingr
-    }).id(`kubejs:atmadditions/fusion_crafting/${output}`)
-  }
   //#endregion
   //#region RECIPES
   //#region Dragon Soul
@@ -155,18 +123,6 @@ onEvent('recipes', e => {
   }).id('kubejs:atmadditions/nexium_emitter')
   //#endregion
   //#region Pulsating Black Hole
-  e.shaped('atmadditions:pulsating_black_hole', ['ABC', 'DEF', 'GHI'], {
-    A: 'mininggadgets:upgrade_void_junk',
-    B: 'bloodmagic:voidsigil',
-    C: 'ars_nouveau:void_jar',
-    D: 'mekanism:pellet_antimatter',
-    E: 'draconicevolution:chaos_shard',
-    F: 'thermal:device_nullifier',
-    G: 'mekanism:creative_energy_cube',
-    H: 'envirotech:xerothium_void_miner_ccu',
-    I: 'sophisticatedbackpacks:advanced_void_upgrade'
-  }).id('kubejs:atmadditions/pulsating_black_hole')
-
   draconicFusion('atmadditions:pulsating_black_hole', 4, 1024000000, 'draconicevolution:chaos_shard', [
     'mininggadgets:upgrade_void_junk',
     'bloodmagic:voidsigil',

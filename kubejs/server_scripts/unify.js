@@ -12,6 +12,7 @@ onEvent('recipes', e => {
     e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:smelting' })
     e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:blasting' })
     e.remove({ id: `appliedenergistics2:grinder/${name}_dust_ingot` })
+
     if (name !== 'iron' && name !== 'gold' && name !== 'azure_silver' && name !== 'crimson_iron') {
       e.remove({ input: `#forge:ores/${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
       e.remove({ input: `mekanism:dirty_dust_${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
@@ -21,6 +22,7 @@ onEvent('recipes', e => {
       e.remove({ input: `#forge:ores/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
       e.remove({ input: `#mekanism:crystals/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
     }
+
     e.recipes.minecraft.smelting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.minecraft.blasting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem } })
@@ -61,6 +63,7 @@ onEvent('recipes', e => {
         turns: 8
       })
     }
+    
     e.replaceInput(nuggetItem, `#forge:nuggets/${name}`)
     e.replaceInput(dustItem, `#forge:dusts/${name}`)
     e.replaceInput(ingotItem, `#forge:ingots/${name}`)
@@ -350,12 +353,12 @@ onEvent('recipes', e => {
   ])
 
   e.custom({
-    'type': 'tconstruct:casting_basin',
-    'cast': { 'item': 'tconstruct:seared_heater' },
-    'cast_consumed': true,
-    'fluid': { 'name': 'alltheores:molten_copper', 'amount': 576 },
-    'result': 'tconstruct:smeltery_controller',
-    'cooling_time': 100
+    type: 'tconstruct:casting_basin',
+    cast: { 'item': 'tconstruct:seared_heater' },
+    cast_consumed: true,
+    fluid: { 'name': 'alltheores:molten_copper', 'amount': 576 },
+    result: 'tconstruct:smeltery_controller',
+    cooling_time: 100
   })
 
   // #endregion Tinkers Unification

@@ -21,7 +21,8 @@ onEvent('recipes', e => {
     'cyclic:solidifier_honey_bottle',
     'cyclic:energy_pipe',
     'cyclic:item_pipe',
-    'cyclic:fluid_pipe'
+    'cyclic:fluid_pipe',
+    'cyclic:crafting_bag'
   ])
 
   removeRecipeByOutput([

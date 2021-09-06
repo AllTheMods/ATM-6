@@ -1,4 +1,4 @@
 [updates]
-
-	[updates.check_updates]
+[updates.check_updates]
 		updates = false
+		

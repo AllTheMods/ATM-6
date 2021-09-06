@@ -10,11 +10,11 @@ onEvent('recipes', e => {
     'forbidden_arcanus:leather',
     'forbidden_arcanus:iron_chain'
   ])
-  
+
   removeRecipeByOutput([
     'forbidden_arcanus:rotten_leather'
   ])
-  
+
   modifyShaped('forbidden_arcanus:candle_lamp', 1, ['NDN', 'GAG', 'NDN'], {
     N: 'forbidden_arcanus:arcane_gold_nugget',
     A: 'forbidden_arcanus:candle',

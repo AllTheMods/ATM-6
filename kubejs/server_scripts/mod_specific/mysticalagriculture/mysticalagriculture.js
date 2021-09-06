@@ -41,20 +41,20 @@ onEvent('recipes', e => {
     A: 'mysticalagriculture:saltpeter_essence'
   }).id('kubejs:mysticalagriculture/saltpeter_essence')
 
-  e.recipes.mysticalagriculture.infusion({
-    input: { item: 'mysticalagriculture:prosperity_seed_base' },
-    ingredients: [
-      { tag: 'chisel:marble' },
-      { item: 'mysticalagriculture:prudentium_essence' },
-      { tag: 'chisel:marble' },
-      { item: 'mysticalagriculture:prudentium_essence' },
-      { tag: 'chisel:marble' },
-      { item: 'mysticalagriculture:prudentium_essence' },
-      { tag: 'chisel:marble' },
-      { item: 'mysticalagriculture:prudentium_essence' }
-    ],
-    result: { item: 'mysticalagriculture:marble_seeds' }
-  }).id('kubejs:mysticalagriculture/marble_seeds')
+  // e.recipes.mysticalagriculture.infusion({
+  //   input: { item: 'mysticalagriculture:prosperity_seed_base' },
+  //   ingredients: [
+  //     { tag: 'chisel:marble' },
+  //     { item: 'mysticalagriculture:prudentium_essence' },
+  //     { tag: 'chisel:marble' },
+  //     { item: 'mysticalagriculture:prudentium_essence' },
+  //     { tag: 'chisel:marble' },
+  //     { item: 'mysticalagriculture:prudentium_essence' },
+  //     { tag: 'chisel:marble' },
+  //     { item: 'mysticalagriculture:prudentium_essence' }
+  //   ],
+  //   result: { item: 'mysticalagriculture:marble_seeds' }
+  // }).id('kubejs:mysticalagriculture/marble_seeds')
 
   removeRecipeByID([
     'mysticalagriculture:oratchalcum_seeds_infusion',

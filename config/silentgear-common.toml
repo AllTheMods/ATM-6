@@ -1,3 +1,4 @@
 [item]
 	[item.blueprint]
 		spawnWithStarterBlueprints = false
+		

@@ -1,5 +1,21 @@
 //priority: 1
 const colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
+
+const draconicFusion = function (output, craftingTier, energy, middleItem, ingredientList) {
+  //crafting tier: 1.draconium, 2.wyvern, 3.draconic, 4.chaotic
+  onEvent('recipes', e => {
+    let tiers = ['WYVERN', 'DRACONIC', 'CHAOTIC']
+    e.custom({
+      type: 'draconicevolution:fusion_crafting',
+      result: { item: output },
+      catalyst: { item: middleItem },
+      total_energy: energy,
+      tier: (craftingTier > 4 && craftingTier <= 1) ? 'DRACONIUM' : tiers[craftingTier - 2],
+      ingredients: ingredientList.map(item => (item.charAt(0) === '#') ? { tag: item.substring(1) } : { item: item })
+    }).id(`kubejs:atmadditions/fusion_crafting/${output.split(':')[1]}`)
+  })
+}
+
 const energize = function (ingredient, result, power) {
   onEvent('recipes', e => {
     e.recipes.powah.energizing({

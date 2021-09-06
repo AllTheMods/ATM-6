@@ -1,0 +1,17 @@
+[additions-common]
+	[additions-common.spawning]
+		[additions-common.spawning.baby-creepers]
+			shouldSpawn = true
+
+		[additions-common.spawning.baby-endermen]
+			shouldSpawn = true
+
+		[additions-common.spawning.baby-skeletons]
+			shouldSpawn = true
+
+		[additions-common.spawning.baby-strays]
+			shouldSpawn = true
+
+		[additions-common.spawning.baby-wither-skeletons]
+			shouldSpawn = true
+

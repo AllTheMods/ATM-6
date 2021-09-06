@@ -1,0 +1,14 @@
+[controller]
+	capacity = 256000
+
+[wirelessGrid]
+	capacity = 25600
+
+[wirelessFluidGrid]
+	capacity = 25600
+
+[portableGrid]
+	capacity = 25600
+
+[wirelessCraftingMonitor]
+	capacity = 25600

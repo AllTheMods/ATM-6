@@ -1,3 +1,4 @@
 [general]
 	dimensionBlacklist = ["allthemodium:mining"]
-	spawnBook = true
+	spawnBook = false
+	

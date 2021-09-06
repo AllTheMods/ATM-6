@@ -1,6 +1,4 @@
-
 [core]
-
 	[core.general]
 		analytics = true
 		versionChecker = true

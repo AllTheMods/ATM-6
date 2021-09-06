@@ -2,29 +2,6 @@ boxLeftX = -1
 boxBorderColor = "0"
 boxFillColor = "0"
 boxThickness = 0
-<<<<<<< Updated upstream
-#How much the border should be offset (i.e. to create an 'outer' border)
-#Range: 0 ~ 20
-boxOffset = 0
-#If true show liquid information when the probe hits liquid first
-showLiquids = false
-#Toggle default probe visibility (client can override)
-isVisible = true
-#If true then the probe hotkey must be held down to show the tooltip
-holdKeyToMakeVisible = false
-#The scale of the tooltips, 1 is default, 2 is smaller
-#Range: 0.4 ~ 5.0
-tooltipScale = 1.0
-#Color of the border of the chest contents box (0 to disable)
-chestContentsBorderColor = "ff006699"
-#0 means don't show break progress, 1 is show as bar, 2 is show as text
-#Range: 0 ~ 2
-showBreakProgress = 1
-#true means shows harvestability with vanilla style icons
-harvestStyleVanilla = true
-
-=======
->>>>>>> Stashed changes
 [style]
 	High = "gold"
 	Name = "white"
