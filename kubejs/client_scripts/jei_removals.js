@@ -21,6 +21,8 @@ onEvent('jei.hide.items', e => {
   //#endregion
   
   e.hide([
+    'apotheosis:iron_mining_arrow',
+    'apotheosis:diamond_mining_arrow',
     'iceandfire:copper_block',
     'iceandfire:silver_block',
     'projectred-exploration:copper_ore',
@@ -82,7 +84,6 @@ onEvent('jei.hide.items', e => {
     'xreliquary:alkahestry_tome',
     'mininggadgets:minerslight',
     'mysticalagradditions:nitro_crystal_crux',
-    'rats:ratlantis_portal',
     'iceandfire:silver_ingot',
     'iceandfire:copper_ingot',
     'tconstruct:copper_ingot',
