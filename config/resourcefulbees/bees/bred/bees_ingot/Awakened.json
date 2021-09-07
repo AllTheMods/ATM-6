@@ -31,7 +31,7 @@
 		"mutationCount": 1,
 		"mutations": [{
 			"type": "BLOCK_TO_ITEM",
-			"inputID": "draconicevolution:wyvern_crafting_injector",
+			"inputID": "draconicevolution:chaotic_crafting_injector",
 			"outputs": [{
 				"outputID": "draconicevolution:small_chaos_frag",
 				"weight": 80
