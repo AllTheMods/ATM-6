@@ -52,9 +52,15 @@ onEvent('recipes', e => {
     'appliedenergistics2:grinder/flour',
     'appliedenergistics2:inscriber/silicon_print'
   ])
-  
-  removeRecipeByOutput(['appliedenergistics2:silicon'])
-  
+
+  removeRecipeByOutput([
+    'appliedenergistics2:silicon',
+    'appliedenergistics2:network_tool',
+    'apotheosis:explosive_arrow',
+    'apotheosis:diamond_mining_arrow',
+    'apotheosis:iron_mining_arrow'
+  ])
+
   modifyShaped('appliedenergistics2:quartz_glass', 4, ['GDG', 'DGD', 'GDG'], {
     G: '#appliedenergistics2:dusts/quartz',
     D: '#forge:glass'
@@ -108,7 +114,7 @@ onEvent('recipes', e => {
     I: '#forge:ingots/iron',
     C: '#forge:chests/wooden'
   })
-  
+
   modifyShapeless('appliedenergistics2:cable_anchor', 3, ['#forge:ingots/iron', '#appliedenergistics2:knife'])
   modifyShapeless('appliedenergistics2:fluix_covered_cable', 1, ['#minecraft:wool', 'appliedenergistics2:fluix_glass_cable'])
   modifyShapeless('appliedenergistics2:crafting_card', 1, ['#forge:workbench', 'appliedenergistics2:basic_card'])

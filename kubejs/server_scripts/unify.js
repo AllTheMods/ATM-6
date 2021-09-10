@@ -6,7 +6,7 @@ onEvent('recipes', e => {
     e.replaceOutput(`#forge:dusts/${name}`, dustItem)
     e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
     e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
-    
+
     e.remove({ input: `#forge:ores/${name}`, type: 'immersiveengineering:crusher' })
     e.remove({ input: `#forge:ingots/${name}`, type: 'immersiveengineering:crusher' })
     e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:smelting' })
@@ -63,7 +63,7 @@ onEvent('recipes', e => {
         turns: 8
       })
     }
-    
+
     e.replaceInput(nuggetItem, `#forge:nuggets/${name}`)
     e.replaceInput(dustItem, `#forge:dusts/${name}`)
     e.replaceInput(ingotItem, `#forge:ingots/${name}`)
@@ -146,7 +146,6 @@ onEvent('recipes', e => {
     }
     e.custom(type != 'ores' ? recipe : Object.assign({ byproducts: byproduct }, recipe)).id(`kubejs:melting/${type}/${material}`)
   }
-
   function tinkerBlockMelting(entries) {
     entries.forEach(([input, fluidAmount, time, byproductAmount], index) => {
       e.custom({
@@ -159,28 +158,17 @@ onEvent('recipes', e => {
       }).id(`kubejs:melting/copper/fromblock/${index + 1}`)
     })
   }
-
   function tinkerAlloys(entries) {
     entries.forEach(([output, outputAmount, temperature, inputs]) => {
       e.remove({ id: `tconstruct:smeltery/alloys/molten_${output}` })
       e.custom({
         type: 'tconstruct:alloy',
-        conditions: [
-          {
-            value: {
-              tag: `forge:ingots/${output}`,
-              type: 'forge:tag_empty'
-            },
-            type: 'forge:not'
-          }
-        ],
         inputs: inputs,
         result: { fluid: `tconstruct:molten_${output}`, amount: outputAmount },
         temperature: temperature
       }).id(`kubejs:melting/alloys/${output}`)
     })
   }
-
   function unifyTinkers(entries) {
     const meltingTypes = ['block', 'can', 'coin', 'dust', 'gear', 'ingot', 'nugget', 'ore', 'plates', 'rod', 'sheetmetal']
     const meltingTypeValues = {
@@ -213,6 +201,62 @@ onEvent('recipes', e => {
       meltingParts.forEach(meltingPart => e.remove({ id: `tconstruct:tools/parts/melting/${meltingPart}/tconstruct/${material}` }))
     })
   }
+  function tinkerAlloyMelting(entries) {
+    entries.forEach(([input, outputItem, outputBlock, outputNugget]) => {
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/block` })
+
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/ingot_gold_cast` })
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/ingot_sand_cast` })
+
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/nugget_gold_cast` })
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/nugget_sand_cast` })
+
+      e.custom({
+        type: 'tconstruct:casting_basin',
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 1296},
+        result: { item: `${outputBlock}` },
+        cooling_time: 171
+      }).id(`kubejs:smeltery/casting/metal/${input}/block`)
+
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/multi_use/ingot'},
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 144},
+        result: { item: `${outputItem}` },
+        cooling_time: 57
+      }).id(`kubejs:smeltery/casting/metal/${input}/ingot_gold_cast`)
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/single_use/ingot'},
+        cast_consumed: true,
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 144},
+        result: { item: `${outputItem}` },
+        cooling_time: 57
+      }).id(`kubejs:smeltery/casting/metal/${input}/ingot_sand_cast`)
+
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/multi_use/nugget'},
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 16},
+        result: { item: `${outputNugget}` },
+        cooling_time: 19
+      }).id(`kubejs:smeltery/casting/metal/${input}/nugget_gold_cast`)
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/single_use/nugget'},
+        cast_consumed: true,
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 16},
+        result: { item: `${outputNugget}` },
+        cooling_time: 19
+      }).id(`kubejs:smeltery/casting/metal/${input}/nugget_sand_cast`)
+    })
+  }
+
+  tinkerAlloyMelting([
+    ['bronze', 'thermal:bronze_ingot', 'thermal:bronze_block', 'thermal:bronze_nugget'],
+    ['constantan', 'thermal:constantan_ingot', 'thermal:constantan_block', 'thermal:constantan_nugget'],
+    ['electrum', 'thermal:electrum_ingot', 'thermal:electrum_block', 'thermal:electrum_nugget']
+  ])
 
   unifyTinkers([
     [
@@ -528,13 +572,6 @@ onEvent('recipes', e => {
         ['minecraft:melon_slice', 0],
         ['forge:nuggets/gold', 1],
         ['minecraft:melon_slice', 0]
-      ]
-    ],
-    [
-      'minecraft:enchanted_golden_apple', 1, 4000, [
-        ['cyclic:apple_diamond', 0],
-        ['minecraft:netherite_block', 0],
-        ['minecraft:golden_apple', 0]
       ]
     ],
     [

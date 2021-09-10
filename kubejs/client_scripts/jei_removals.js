@@ -23,6 +23,7 @@ onEvent('jei.hide.items', e => {
   e.hide([
     'apotheosis:iron_mining_arrow',
     'apotheosis:diamond_mining_arrow',
+    'apotheosis:explosive_arrow',
     'iceandfire:copper_block',
     'iceandfire:silver_block',
     'projectred-exploration:copper_ore',
@@ -43,6 +44,7 @@ onEvent('jei.hide.items', e => {
     '@curios',
     'appliedenergistics2:silicon',
     'appliedenergistics2:flour',
+    'appliedenergistics2:network_tool',
     'cyclic:tile_transporter_empty',
     'cyclic:trash',
     'cyclic:crafting_bag',

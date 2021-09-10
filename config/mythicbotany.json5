@@ -1,0 +1,8 @@
+{  
+  "mjoellnir": {    
+    "base_attack_speed": -2.5,
+    "base_damage_melee": 15000.0,
+    "base_damage_ranged": 15000.0,
+    "ranged_cooldown": 20
+  }
+}

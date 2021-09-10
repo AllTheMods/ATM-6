@@ -1,0 +1,9 @@
+[world_generation]
+	[world_generation.copper]
+		shouldGenerate = false
+	[world_generation.tin]
+		shouldGenerate = false
+	[world_generation.uranium]
+		shouldGenerate = false
+	[world_generation.lead]
+		shouldGenerate = true

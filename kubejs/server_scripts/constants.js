@@ -1,5 +1,5 @@
 //priority: 1
-const colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
+const colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black']
 
 const draconicFusion = function (output, craftingTier, energy, middleItem, ingredientList) {
   //crafting tier: 1.draconium, 2.wyvern, 3.draconic, 4.chaotic

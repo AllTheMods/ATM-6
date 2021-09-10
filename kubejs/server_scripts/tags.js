@@ -26,7 +26,6 @@ onEvent('item.tags', e => {
     e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`)
     e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
-  e.add('resourcefulbees:valid_apiary', ['glassential:glass_dark_ethereal', 'glassential:glass_dark_ethereal_reverse', 'glassential:glass_ethereal', 'glassential:glass_ethereal_reverse', 'glassential:glass_ghostly'])
   e.add('forge:marble', '#chisel:marble')
   e.add('chisel:marble', ['astralsorcery:marble_raw', 'enviromats:marble', 'quark:marble'])
   e.add('chisel:limestone', ['create:limestone', 'create:weathered_limestone', 'quark:limestone'])
@@ -134,6 +133,7 @@ onEvent('item.tags', e => {
 //#region BLOCK TAGS
 onEvent('block.tags', e => {
   //#region additions
+  e.add('resourcefulbees:valid_apiary', ['glassential:glass_dark_ethereal', 'glassential:glass_dark_ethereal_reverse', 'glassential:glass_ethereal', 'glassential:glass_ethereal_reverse', 'glassential:glass_ghostly'])
   e.add('forge:storage_blocks/uru', 'kubejs:uru_block')
   e.add('pedestals:quarry/blacklist', ['allthemodium:allthemodium_ore', 'allthemodium:vibranium_ore', 'allthemodium:unobtainium_ore'])
   e.add('forge:gems/quartz', 'zycraft:quartz_crystal')
