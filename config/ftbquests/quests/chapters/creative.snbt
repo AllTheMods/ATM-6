@@ -902,7 +902,7 @@
 				{
 					id: "08D9DBD77105C43B"
 					type: "item"
-					item: "kubejs:atm_star_block"
+					item: "allthecompressed:atm_star_block"
 					consume_items: false
 				}
 				{
