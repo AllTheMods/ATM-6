@@ -1,5 +1,5 @@
 {
-  "flower": "draconicevolution:wyvern_crafting_injector",
+  "flower": "draconicevolution:draconium_block",
   "maxTimeInHive": 4800,
   "traits": ["draconic"],
   "hasHoneycomb": true,
@@ -30,7 +30,7 @@
     "mutationCount": 1,
     "mutations": [{
       "type": "BLOCK_TO_ITEM",
-      "inputID": "draconicevolution:wyvern_crafting_injector",
+      "inputID": "draconicevolution:awakened_crafting_injector",
       "outputs": [{
         "outputID": "draconicevolution:awakened_draconium_nugget",
         "weight": 80
