@@ -22,9 +22,9 @@
       "variance": 0
     },
     "dimensions": {
-      "nether": "default",
-      "end": "default",
-      "includeExtraDimensions": false
+      "nether": "byg:world",
+      "end": "byg:world",
+      "includeExtraDimensions": true
     }
   },
   "structures": {
@@ -89,6 +89,12 @@
         "spacing": 1,
         "separation": 0,
         "salt": 593751808,
+        "disabled": false
+      },
+      "betterstrongholds:stronghold": {
+        "spacing": 85,
+        "separation": 50,
+        "salt": 596441280,
         "disabled": false
       },
       "dungeoncrawl:dungeon": {
@@ -731,6 +737,12 @@
         "spacing": 48,
         "separation": 24,
         "salt": 1925189632,
+        "disabled": false
+      },
+      "supplementaries:way_sign": {
+        "spacing": 19,
+        "separation": 10,
+        "salt": 431041536,
         "disabled": false
       },
       "tconstruct:clay_island": {
