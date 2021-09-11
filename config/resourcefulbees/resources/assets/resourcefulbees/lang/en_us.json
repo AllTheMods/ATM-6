@@ -231,7 +231,6 @@
     "item.resourcefulbees.cropy_honeycomb": "Cropy Honeycomb",
     "item.resourcefulbees.cropy_bee_spawn_egg": "Cropy Spawn Egg",
     "entity.resourcefulbees.cropy_bee": "Cropy Bee",
-    "trait.resourcefulbees.soul_fire": "Soul Fire Trait",
     "block.resourcefulbees.salt_baee_honeycomb_block": "Salt Baee Honeycomb Block",
     "item.resourcefulbees.salt_baee_honeycomb": "Salt Baee Honeycomb",
     "item.resourcefulbees.salt_baee_bee_spawn_egg": "Salt Baee Spawn Egg",
@@ -256,7 +255,6 @@
     "item.resourcefulbees.starry_honeycomb": "Starry Honeycomb",
     "item.resourcefulbees.starry_bee_spawn_egg": "Starry Bee Spawn Egg",
     "entity.resourcefulbees.starry_bee": "Starry Bee",
-    "trait.resourcefulbees.starry": "Starry Night Trait",
 	"item.resourcefulbees.starry_honey_bottle": "Starry Honey Bottle",
 	"item.resourcefulbees.starry_honey_fluid_bucket": "Starry Honey Bucket",
 	"block.resourcefulbees.starry_honey_block": "Starry Honey Block",
@@ -264,5 +262,26 @@
     "block.resourcefulbees.papa_beemeritus_honeycomb_block": "Papa Beemeritus Honeycomb Block",
     "item.resourcefulbees.papa_beemeritus_honeycomb": "Papa Beemeritus Honeycomb",
     "item.resourcefulbees.papa_beemeritus_bee_spawn_egg": "Papa Beemeritus Spawn Egg",
-    "entity.resourcefulbees.papa_beemeritus_bee": "Papa Beemeritus"
+    "entity.resourcefulbees.papa_beemeritus_bee": "Papa Beemeritus",
+    
+    "block.resourcefulbees.draconium_honeycomb_block": "Draconium Honeycomb Block",
+    "item.resourcefulbees.draconium_honeycomb": "Draconium Honeycomb",
+    "item.resourcefulbees.draconium_bee_spawn_egg": "Draconium Bee Spawn Egg",
+    "entity.resourcefulbees.draconium_bee": "Draconium Bee",
+    
+    "block.resourcefulbees.awakened_honeycomb_block": "Awakened Honeycomb Block",
+    "item.resourcefulbees.awakened_honeycomb": "Awakened Honeycomb",
+    "item.resourcefulbees.awakened_bee_spawn_egg": "Awakened Bee Spawn Egg",
+    "entity.resourcefulbees.awakened_bee": "Awakened Bee",
+    
+    "block.resourcefulbees.chaotic_honeycomb_block": "Chaotic Honeycomb Block",
+    "item.resourcefulbees.chaotic_honeycomb": "Chaotic Honeycomb",
+    "item.resourcefulbees.chaotic_bee_spawn_egg": "Chaotic Bee Spawn Egg",
+    "entity.resourcefulbees.chaotic_bee": "Chaotic Bee",
+    
+    "trait.resourcefulbees.draconic": "Draconic Trait",
+    "trait.resourcefulbees.awakened": "Awakened Trait",
+    "trait.resourcefulbees.chaotic": "Chaotic Trait",
+    "trait.resourcefulbees.soul_fire": "Soul Fire Trait",
+    "trait.resourcefulbees.starry": "Starry Night Trait"
 }

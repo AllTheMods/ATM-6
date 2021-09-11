@@ -574,8 +574,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -4.0d
+			x: -3.5d
+			y: -9.0d
 			description: ["Did I read write? Infinite Storage?! :D"]
 			dependencies: ["238BB6ED076FF964"]
 			id: "546D0730D780D30B"
@@ -588,34 +588,6 @@
 				id: "09B576D0B4CC9DF0"
 				type: "item"
 				item: "storagedrawers:spruce_full_drawers_1"
-			}]
-		}
-		{
-			x: -3.5d
-			y: -9.0d
-			description: ["Hello my Name is lame"]
-			dependencies: ["238BB6ED076FF964"]
-			id: "0FD7181F1B5D63FA"
-			tasks: [{
-				id: "0AA391797B15CD14"
-				type: "item"
-				item: "tconstruct:creative_slot"
-			}]
-			rewards: [{
-				id: "47F652357238F8F2"
-				type: "item"
-				item: "minecraft:damaged_anvil"
-			}]
-		}
-		{
-			x: -5.5d
-			y: -9.5d
-			dependencies: ["0FD7181F1B5D63FA"]
-			id: "7A8623CCCB16D1B9"
-			tasks: [{
-				id: "4A6594AB198FE886"
-				type: "item"
-				item: "tconstruct:creative_slot"
 			}]
 		}
 		{

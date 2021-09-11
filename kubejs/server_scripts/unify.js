@@ -6,85 +6,33 @@ onEvent('recipes', e => {
     e.replaceOutput(`#forge:dusts/${name}`, dustItem)
     e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
     e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
-    e.remove({
-      input: [`#forge:ores/${name}`, `#forge:dusts/${name}`],
-      output: `#forge:ingots/${name}`,
-      type: 'minecraft:smelting'
-    })
-    e.remove({
-      input: [`#forge:ores/${name}`, `#forge:dusts/${name}`],
-      output: `#forge:ingots/${name}`,
-      type: 'minecraft:blasting'
-    })
+
+    e.remove({ input: `#forge:ores/${name}`, type: 'immersiveengineering:crusher' })
+    e.remove({ input: `#forge:ingots/${name}`, type: 'immersiveengineering:crusher' })
+    e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:smelting' })
+    e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:blasting' })
+    e.remove({ id: `appliedenergistics2:grinder/${name}_dust_ingot` })
+
     if (name !== 'iron' && name !== 'gold' && name !== 'azure_silver' && name !== 'crimson_iron') {
-      e.remove({
-        input: `#forge:ores/${name}`,
-        output: `mekanism:dust_${name}`,
-        type: 'mekanism:enriching'
-      })
-      e.remove({
-        input: `mekanism:dirty_dust_${name}`,
-        output: `mekanism:dust_${name}`,
-        type: 'mekanism:enriching'
-      })
-      e.remove({
-        input: `#mekanism:clumps/${name}`,
-        output: `mekanism:dirty_dust_${name}`,
-        type: 'mekanism:crushing'
-      })
-      e.remove({
-        input: `#forge:ores/${name}`,
-        output: `mekanism:clump_${name}`,
-        type: 'mekanism:purifying'
-      })
-      e.remove({
-        input: `mekanism:shard_${name}`,
-        output: `mekanism:clump_${name}`,
-        type: 'mekanism:purifying'
-      })
-      e.remove({
-        input: `#forge:ores/${name}`,
-        output: `mekanism:shard_${name}`,
-        type: 'mekanism:injecting'
-      })
-      e.remove({
-        input: `#mekanism:crystals/${name}`,
-        output: `mekanism:shard_${name}`,
-        type: 'mekanism:injecting'
-      })
+      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
+      e.remove({ input: `mekanism:dirty_dust_${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
+      e.remove({ input: `#mekanism:clumps/${name}`, output: `mekanism:dirty_dust_${name}`, type: 'mekanism:crushing' })
+      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:clump_${name}`, type: 'mekanism:purifying' })
+      e.remove({ input: `mekanism:shard_${name}`, output: `mekanism:clump_${name}`, type: 'mekanism:purifying' })
+      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
+      e.remove({ input: `#mekanism:crystals/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
     }
-    e.remove({
-      input: `#forge:ores/${name}`,
-      type: 'immersiveengineering:crusher'
-    })
-    e.remove({
-      input: `#forge:ingots/${name}`,
-      type: 'immersiveengineering:crusher'
-    })
+
     e.recipes.minecraft.smelting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.minecraft.blasting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
-    e.recipes.pedestals.pedestal_crushing({
-      ingredient: { tag: `forge:ingots/${name}` },
-      result: { item: dustItem }
-    })
-    e.remove({ id: `appliedenergistics2:grinder/${name}_dust_ingot` })
-    e.recipes.appliedenergistics2.grinder({
-      input: { tag: `forge:ingots/${name}` },
-      result: { primary: { item: dustItem } },
-      turns: 8
-    })
-    e.recipes.immersiveengineering.crusher({
-      secondaries: [],
-      result: { base_ingredient: { item: dustItem } },
-      input: { tag: `forge:ingots/${name}` },
-      energy: 3000
-    })
+    e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem } })
+    e.recipes.appliedenergistics2.grinder({ input: { tag: `forge:ingots/${name}` }, result: { primary: { item: dustItem } }, turns: 8 })
+    e.recipes.immersiveengineering.crusher({ secondaries: [], result: { base_ingredient: { item: dustItem } }, input: { tag: `forge:ingots/${name}` }, energy: 3000 })
 
     if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
       e.recipes.minecraft.smelting(ingotItem, `#forge:ores/${name}`).xp(1)
       e.recipes.minecraft.blasting(ingotItem, `#forge:ores/${name}`).xp(1)
       e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`)
-      //This is here to stop crushing hammer recipes for modium from generating
       if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
         e.remove({ id: `engineerstools:crushing/${name}_grit_crushing_recipe` })
         e.recipes.engineerstools.crafting_extended_shapeless({
@@ -115,6 +63,7 @@ onEvent('recipes', e => {
         turns: 8
       })
     }
+
     e.replaceInput(nuggetItem, `#forge:nuggets/${name}`)
     e.replaceInput(dustItem, `#forge:dusts/${name}`)
     e.replaceInput(ingotItem, `#forge:ingots/${name}`)
@@ -180,10 +129,6 @@ onEvent('recipes', e => {
       e.replaceInput(create, `#forge:plates/${type}`)
       e.replaceOutput(`immersiveengineering:plate_${type}`, output)
       e.replaceOutput(create, output)
-      if (type != 'aluminum') {
-        e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_gold_cast` })
-        e.remove({ id: `tconstruct:smeltery/casting/metal/${type}/plate_sand_cast` })
-      }
     })
   }
 
@@ -201,7 +146,6 @@ onEvent('recipes', e => {
     }
     e.custom(type != 'ores' ? recipe : Object.assign({ byproducts: byproduct }, recipe)).id(`kubejs:melting/${type}/${material}`)
   }
-
   function tinkerBlockMelting(entries) {
     entries.forEach(([input, fluidAmount, time, byproductAmount], index) => {
       e.custom({
@@ -214,28 +158,17 @@ onEvent('recipes', e => {
       }).id(`kubejs:melting/copper/fromblock/${index + 1}`)
     })
   }
-
   function tinkerAlloys(entries) {
     entries.forEach(([output, outputAmount, temperature, inputs]) => {
       e.remove({ id: `tconstruct:smeltery/alloys/molten_${output}` })
       e.custom({
         type: 'tconstruct:alloy',
-        conditions: [
-          {
-            value: {
-              tag: `forge:ingots/${output}`,
-              type: 'forge:tag_empty'
-            },
-            type: 'forge:not'
-          }
-        ],
         inputs: inputs,
         result: { fluid: `tconstruct:molten_${output}`, amount: outputAmount },
         temperature: temperature
       }).id(`kubejs:melting/alloys/${output}`)
     })
   }
-
   function unifyTinkers(entries) {
     const meltingTypes = ['block', 'can', 'coin', 'dust', 'gear', 'ingot', 'nugget', 'ore', 'plates', 'rod', 'sheetmetal']
     const meltingTypeValues = {
@@ -268,6 +201,62 @@ onEvent('recipes', e => {
       meltingParts.forEach(meltingPart => e.remove({ id: `tconstruct:tools/parts/melting/${meltingPart}/tconstruct/${material}` }))
     })
   }
+  function tinkerAlloyMelting(entries) {
+    entries.forEach(([input, outputItem, outputBlock, outputNugget]) => {
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/block` })
+
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/ingot_gold_cast` })
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/ingot_sand_cast` })
+
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/nugget_gold_cast` })
+      e.remove({ id: `tconstruct:smeltery/casting/metal/${input}/nugget_sand_cast` })
+
+      e.custom({
+        type: 'tconstruct:casting_basin',
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 1296},
+        result: { item: `${outputBlock}` },
+        cooling_time: 171
+      }).id(`kubejs:smeltery/casting/metal/${input}/block`)
+
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/multi_use/ingot'},
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 144},
+        result: { item: `${outputItem}` },
+        cooling_time: 57
+      }).id(`kubejs:smeltery/casting/metal/${input}/ingot_gold_cast`)
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/single_use/ingot'},
+        cast_consumed: true,
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 144},
+        result: { item: `${outputItem}` },
+        cooling_time: 57
+      }).id(`kubejs:smeltery/casting/metal/${input}/ingot_sand_cast`)
+
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/multi_use/nugget'},
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 16},
+        result: { item: `${outputNugget}` },
+        cooling_time: 19
+      }).id(`kubejs:smeltery/casting/metal/${input}/nugget_gold_cast`)
+      e.custom({
+        type: 'tconstruct:casting_table',
+        cast: {tag: 'tconstruct:casts/single_use/nugget'},
+        cast_consumed: true,
+        fluid: {tag: `tconstruct:molten_${input}`,amount: 16},
+        result: { item: `${outputNugget}` },
+        cooling_time: 19
+      }).id(`kubejs:smeltery/casting/metal/${input}/nugget_sand_cast`)
+    })
+  }
+
+  tinkerAlloyMelting([
+    ['bronze', 'thermal:bronze_ingot', 'thermal:bronze_block', 'thermal:bronze_nugget'],
+    ['constantan', 'thermal:constantan_ingot', 'thermal:constantan_block', 'thermal:constantan_nugget'],
+    ['electrum', 'thermal:electrum_ingot', 'thermal:electrum_block', 'thermal:electrum_nugget']
+  ])
 
   unifyTinkers([
     [
@@ -408,12 +397,12 @@ onEvent('recipes', e => {
   ])
 
   e.custom({
-    'type': 'tconstruct:casting_basin',
-    'cast': { 'item': 'tconstruct:seared_heater' },
-    'cast_consumed': true,
-    'fluid': { 'name': 'alltheores:molten_copper', 'amount': 576 },
-    'result': 'tconstruct:smeltery_controller',
-    'cooling_time': 100
+    type: 'tconstruct:casting_basin',
+    cast: { 'item': 'tconstruct:seared_heater' },
+    cast_consumed: true,
+    fluid: { 'name': 'alltheores:molten_copper', 'amount': 576 },
+    result: 'tconstruct:smeltery_controller',
+    cooling_time: 100
   })
 
   // #endregion Tinkers Unification
@@ -565,7 +554,7 @@ onEvent('recipes', e => {
 
   createHoneyMixing([
     [
-      'minecraft:bee_nest', 1, 8000, [
+      'minecraft:bee_nest', 1, 1000, [
         ['resourcefulbees:resourceful_honeycomb_block', 1],
         ['resourcefulbees:resourceful_honeycomb', 1],
         ['resourcefulbees:resourceful_honeycomb_block', 1]
@@ -583,13 +572,6 @@ onEvent('recipes', e => {
         ['minecraft:melon_slice', 0],
         ['forge:nuggets/gold', 1],
         ['minecraft:melon_slice', 0]
-      ]
-    ],
-    [
-      'minecraft:enchanted_golden_apple', 1, 4000, [
-        ['cyclic:apple_diamond', 0],
-        ['minecraft:netherite_block', 0],
-        ['minecraft:golden_apple', 0]
       ]
     ],
     [

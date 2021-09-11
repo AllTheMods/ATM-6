@@ -1,0 +1,61 @@
+{
+  "flower": "draconicevolution:chaotic_crafting_injector",
+  "maxTimeInHive": 4800,
+  "traits": ["chaotic"],
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [1, 1, 1, 1, 1],
+  "apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB", "COMB"],
+  "baseLayerTexture": "dragon/dragon_bee_primary",
+  "ColorData": {
+    "primaryColor": "#161616",
+    "secondaryColor": "#0A0A0A",
+    "honeycombColor": "#0A000C",
+    "primaryLayerTexture": "dragon/dragon_bee_primary",
+    "secondaryLayerTexture": "dragon/dragon_bee_secondary",
+    "emissiveLayerTexture": "dragon/dragon_bee_emissive",
+    "isBeeColored": true,
+    "isRainbowBee": false,
+    "isGlowing": true,
+    "glowColor": "#2D2D2D",
+    "isEnchanted": false,
+    "glowingPulse": 0,
+    "modelType": "DRAGON"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "draconicevolution:small_chaos_frag",
+    "mainOutputWeight": 0.02,
+    "mainOutputCount": 1,
+    "secondaryOutput": "resourcefulbees:wax",
+    "secondaryOutputWeight": 0.20,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200,
+    "hasFluidOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false,
+    "feedItem": "draconicevolution:chaotic_core",
+    "feedAmount": 3,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}
