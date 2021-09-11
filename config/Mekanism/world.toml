@@ -6,4 +6,6 @@
 	[world_generation.uranium]
 		shouldGenerate = false
 	[world_generation.lead]
-		shouldGenerate = true
+		shouldGenerate = false
+	[world_generation.osmium]
+		shouldGenerate = false
