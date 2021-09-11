@@ -1,4 +1,3 @@
-
 ["Dynamic Chunk View Distance Settings"]
 	#The minimum chunk view distance allowed to use. Default: 4
 	#Range: 3 ~ 200
@@ -16,6 +15,5 @@
 	logMessages = true
 
 ["Chunk slow unload settings"]
-	#Enable slow chunk unloading(~1minute) after load, helps with mods hot-loading chunks frequently. Default: true
 	chunkunload = true
 

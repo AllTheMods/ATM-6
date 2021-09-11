@@ -1,6 +1,0 @@
-
-[COMMON]
-	#Max amount of items per request
-	#Range: > 1
-	MAX_CRAFT_AMOUNT = 1000
-

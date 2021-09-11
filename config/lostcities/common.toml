@@ -1,8 +1,0 @@
-
-#General settings
-[profiles]
-	#A list of dimensions with associated city generation profiles (format <dimensionid>=<profilename>
-	dimensionsWithProfiles = ["lostcities:lostcity=default"]
-	#A list of assets that Lost Cities will use to load city data. Paths starting with '/' are relative to the Lost City resource pack. Paths starting with '$' are relative to the main config directory
-	assets = ["/assets/lostcities/citydata/conditions.json", "/assets/lostcities/citydata/palette.json", "/assets/lostcities/citydata/palette_desert.json", "/assets/lostcities/citydata/palette_chisel.json", "/assets/lostcities/citydata/palette_chisel_desert.json", "/assets/lostcities/citydata/highwayparts.json", "/assets/lostcities/citydata/railparts.json", "/assets/lostcities/citydata/monorailparts.json", "/assets/lostcities/citydata/buildingparts.json", "/assets/lostcities/citydata/library.json", "$lostcities/userassets.json"]
-

@@ -20,8 +20,8 @@
         "modelType": "DEFAULT"
     },
     "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
+        "isPassive": false,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
         "attackDamage": 1
     },
@@ -64,26 +64,12 @@
         "hasFluidOutput": true
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": false,
-        "parent1": "",
-        "parent2": "",
-        "breedWeight": 10,
-        "breedChance": 0.60,
         "feedItem": "",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
+        "feedAmount": 5
     },
     "TraitData": {
         "hasTraits": true
