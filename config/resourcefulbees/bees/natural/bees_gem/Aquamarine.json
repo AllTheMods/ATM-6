@@ -65,7 +65,7 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:beach",
+        "biomeWhitelist": "tag:beach, tag:lake",
         "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,
