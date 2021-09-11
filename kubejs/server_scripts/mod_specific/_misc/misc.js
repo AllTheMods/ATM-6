@@ -135,6 +135,7 @@ onEvent('recipes', e => {
     'moreminecarts:minecart_with_chunk_loader',
     'moreminecarts:chunk_loader',
     'silentgear:iron_rod',
+    'archers_paradox:explosive_arrow',
     'twilightforest:uncrafting_table'
   ])
 
