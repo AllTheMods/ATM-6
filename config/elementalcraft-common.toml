@@ -1,9 +1,0 @@
-[shrines]
-	[shrines.overloadShrine]
-		overloadShrineConsumeAmount = 100
-
-[items]
-	lenseElementMultiplier = 100
-
-[source]
-	sourceRecoverRate = 5
