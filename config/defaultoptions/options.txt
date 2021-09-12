@@ -1,4 +1,4 @@
-version:2580
+version:2586
 autoJump:false
 autoSuggestions:true
 chatColors:true
@@ -25,14 +25,14 @@ fovEffectScale:1.0
 gamma:0.0
 renderDistance:10
 entityDistanceScaling:1.0
-guiScale:2
+guiScale:3
 particles:0
 maxFps:260
 difficulty:2
 graphicsMode:1
 ao:2
 biomeBlendRadius:2
-renderClouds:true
+renderClouds:false
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
@@ -44,7 +44,7 @@ textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
 advancedItemTooltips:false
-pauseOnLostFocus:true
+pauseOnLostFocus:false
 overrideWidth:0
 overrideHeight:0
 heldItemTooltips:true

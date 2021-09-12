@@ -1,6 +1,0 @@
-
-#General configuration options.
-[General]
-	#Should Growth Accelerators use animated textures?
-	animatedGrowthAccelerators = true
-

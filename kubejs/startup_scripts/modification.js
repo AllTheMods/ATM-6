@@ -8,6 +8,9 @@ onEvent('item.modification', e => {
   }
 
   modifyStack([
+    /^industrialforegoing:.*addon.*/,
+    'cyclic:heart',
+    'cyclic:heart_empty',
     'minecraft:ender_pearl',
     'minecraft:egg',
     'minecraft:honey_bottle',
@@ -40,6 +43,9 @@ onEvent('item.modification', e => {
     'tconstruct:greenheart_sign',
     'tconstruct:skyroot_sign',
     'tconstruct:bloodshroom_sign',
+    'tconstruct:glow_ball',
+    'tconstruct:efln_ball',
+    'tconstruct:flint_shuriken',
     'powah:charged_snowball',
     'resourcefulbees:bee_jar',
     'resourcefulbees:rainbow_honey_bottle',
@@ -75,7 +81,9 @@ onEvent('item.modification', e => {
     'thermal:lightning_grenade'
   ], 64)
   modifyStack([
-    'forbidden_arcanus:quantum_catcher'
+    'forbidden_arcanus:quantum_catcher',
+    'aquaculture:worm',
+    'immersiveengineering:graphite_electrode'
   ], 1)
 
   e.modify('immersivepetroleum:bitumen', item => item.burnTime = 1600)
@@ -87,6 +95,6 @@ onEvent('item.modification', e => {
 
 onEvent('worldgen.remove', e => {
   e.removeOres(ore => {
-    ore.blocks = ['zycraft:aluminium_ore']
+    ore.blocks = ['zycraft:aluminium_ore', 'chisel:marble/raw', 'chisel:limestone/raw', 'chisel:basalt/raw', 'powah:dry_ice']
   })
 })

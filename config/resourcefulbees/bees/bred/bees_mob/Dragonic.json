@@ -58,6 +58,21 @@
                 },
                 "weight": 20
             }]
+        }, {
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "draconicevolution:wyvern_crafting_injector",
+            "outputs": [{
+                "outputID": "draconicevolution:draconium_nugget",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:draconium_bee",
+                    "BeeType": "draconium",
+                    "Color": "#8419FF"
+                },
+                "weight": 20
+            }]
         }]
     },
     "CentrifugeData": {

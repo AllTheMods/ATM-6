@@ -1,12 +1,10 @@
-// priority: 99
+// priority: 1000
 //Thanks to Cerbrus#9468, we have this
 onEvent('recipes', e => {
   //#region FUNCTIONS
-  function key(x, ingredients) {
-    return ingredients[x] ? x : ' '
-  }
+  function key(x, ingredients) { return ingredients[x] ? x : ' ' }
   function add(recipe) {
-	//0=ingredients, 1=result, 2=nbt boolean
+    //0=ingredients, 1=result, 2=nbt boolean
     e.shaped(Item.of(recipe[1], recipe[2]), [
       ` ${key('T', recipe[0])} `,
       `${key('L', recipe[0])}${key('C', recipe[0])}${key('R', recipe[0])}`,
@@ -14,7 +12,6 @@ onEvent('recipes', e => {
     ], recipe[0])
   }
   //#endregion
-
   const recipes = [
     [{
       T: 'envirocore:litherite_interconnect',
@@ -1091,7 +1088,53 @@ onEvent('recipes', e => {
     ]
   ]
 
-  recipes.forEach(recipe => {
-    add(recipe)
+  recipes.forEach(recipe => { add(recipe) })
+
+  e.shaped('8x enviromats:alabaster_magenta', ['AAA', 'AMA', 'AAA'], {
+    A: '#forge:alabaster',
+    M: '#forge:dyes/magenta'
+  }).id(`kubejs:magenta_alabaster`)
+
+  modifyShaped('envirotech:erodium_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
+    C: 'envirocore:erodium_crystal',
+    M: 'envirotech:litherite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'minecraft:netherite_block'
+  })
+  modifyShaped('envirotech:kyronite_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
+    C: 'envirocore:kyronite_crystal',
+    M: 'envirotech:erodium_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:allthemodium_block'
+  })
+  modifyShaped('envirotech:pladium_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
+    C: 'envirocore:pladium_crystal',
+    M: 'envirotech:kyronite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:vibranium_block'
+  })
+  modifyShaped('envirotech:ionite_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
+    C: 'envirocore:ionite_crystal',
+    M: 'envirotech:pladium_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:unobtainium_block'
+  })
+  modifyShaped('envirotech:aethium_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
+    C: 'envirocore:aethium_crystal',
+    M: 'envirotech:ionite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:vibranium_allthemodium_alloy_block'
+  })
+  modifyShaped('envirotech:nanorite_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
+    C: 'envirocore:nanorite_crystal',
+    M: 'envirotech:aethium_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:unobtainium_allthemodium_alloy_block'
+  })
+  modifyShaped('envirotech:xerothium_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
+    C: 'envirocore:xerothium_crystal',
+    M: 'envirotech:nanorite_void_miner_ccu',
+    L: 'envirocore:laser_core',
+    B: 'allthemodium:unobtainium_vibranium_alloy_block'
   })
 })

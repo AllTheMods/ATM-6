@@ -18,16 +18,16 @@
 		advancedStorage = 512000
 		#Output rate of Elite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		eliteOutput = 80000
+		eliteOutput = 40960
 		#Storage size of Elite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		eliteStorage = 8000000
+		eliteStorage = 4096000
 		#Output rate of Ultimate chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		ultimateOutput = 1280000
+		ultimateOutput = 327680
 		#Storage size of Ultimate chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		ultimateStorage = 128000000
+		ultimateStorage = 32768000
 		#Output rate of Creative chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
 		creativeOutput = 4611686018427387903
@@ -233,19 +233,19 @@
 	[tier.fluid_tanks]
 		#Output rate of Advanced fluid tanks in mB.
 		#Range: > 1
-		advancedOutput = 8000
+		advancedOutput = 5120
 		#Storage size of Ultimate fluid tanks in mB.
 		#Range: > 1
 		ultimateStorage = 32768000
 		#Output rate of Ultimate fluid tanks in mB.
 		#Range: > 1
-		ultimateOutput = 32000
+		ultimateOutput = 327680
 		#Storage size of Creative fluid tanks in mB.
 		#Range: > 1
 		creativeStorage = 2147483647
 		#Output rate of Basic fluid tanks in mB.
 		#Range: > 1
-		basicOutput = 4000
+		basicOutput = 640
 		#Storage size of Basic fluid tanks in mB.
 		#Range: > 1
 		basicStorage = 64000
@@ -260,5 +260,5 @@
 		advancedStorage = 512000
 		#Output rate of Elite fluid tanks in mB.
 		#Range: > 1
-		eliteOutput = 16000
+		eliteOutput = 40960
 

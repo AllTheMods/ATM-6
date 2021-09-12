@@ -64,15 +64,7 @@
         "hasFluidOutput": false
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

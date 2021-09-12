@@ -1,6 +1,0 @@
-┏╸ma:conditions
-┃┏╸bo:enabled
-┃┣> Variable Type: java.lang.Boolean
-┃┣> Default: true
-┃┗╸
-┗╸

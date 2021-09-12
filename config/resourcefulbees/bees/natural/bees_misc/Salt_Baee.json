@@ -65,7 +65,7 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:salt_baee",
+        "biomeWhitelist": "tag:salt_baee, tag:lake",
         "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,

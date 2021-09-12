@@ -10,11 +10,11 @@
 	#If true, smoke particles will collide with obstacles
 	canCollide = true
 	#If true, all emitters will produce smoke even without connected chimneys
-	emitWithoutChimney = true
+	emitWithoutChimney = false
 	#Use retro smoke particles instead of modern ones
 	retroSmokeParticles = false
 	#Completely disables vanilla cozy smoke particles from a campfire
-	disableVanillaCampfireSmoke = true
+	disableVanillaCampfireSmoke = false
 	#Whether or not to colorize smoke particles
 	colorize = true
 
