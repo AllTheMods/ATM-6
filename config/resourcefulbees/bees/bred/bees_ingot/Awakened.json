@@ -1,5 +1,5 @@
 {
-	"flower": "draconicevolution:awakened_draconium_block",
+	"flower": "draconicevolution:awakened_crafting_injector",
 	"maxTimeInHive": 4800,
 	"traits": ["awakened"],
 	"hasHoneycomb": true,
