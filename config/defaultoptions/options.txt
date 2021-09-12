@@ -32,7 +32,7 @@ difficulty:2
 graphicsMode:1
 ao:2
 biomeBlendRadius:2
-renderClouds:true
+renderClouds:false
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
