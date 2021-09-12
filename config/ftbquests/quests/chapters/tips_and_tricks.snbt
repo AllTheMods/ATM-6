@@ -351,7 +351,8 @@
 			tasks: [{
 				id: "4A080582AC11BEB1"
 				type: "item"
-				item: {
+				title: "Mob Shard (Gaia Guardian)"
+				icon: {
 					id: "woot:mobshard"
 					Count: 1b
 					tag: {
@@ -360,6 +361,38 @@
 							keyEntity: "botania:doppleganger"
 						}
 						Kills: 5
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "woot:mobshard"
+								Count: 1b
+								tag: {
+									Mob: {
+										keyTag: ""
+										keyEntity: "botania:doppleganger"
+									}
+									Kills: 5
+								}
+							}
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Mob: {
+											keyTag: ""
+											keyEntity: "botania:doppleganger"
+										}
+										Kills: 5
+									}
+								}
+							}
+						]
 					}
 				}
 			}]
