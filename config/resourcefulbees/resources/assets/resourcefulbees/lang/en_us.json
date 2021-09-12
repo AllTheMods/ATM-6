@@ -310,8 +310,11 @@
     "item.resourcefulbees.dense_uranium_honeycomb": "Dense Uranium Honeycomb",
     "item.resourcefulbees.dense_uranium_bee_spawn_egg": "Dense Uranium Spawn Egg",
     "entity.resourcefulbees.dense_uranium_bee": "Dense Uranium Bee",
-    "block.resourcefulbees.dense_zince_honeycomb_block": "Dense Zince Honeycomb Block",
-    "item.resourcefulbees.dense_zince_honeycomb": "Dense Zince Honeycomb",
-    "item.resourcefulbees.dense_zince_bee_spawn_egg": "Dense Zince Spawn Egg",
-    "entity.resourcefulbees.dense_zince_bee": "Dense Zince Bee"
+    "block.resourcefulbees.dense_zinc_honeycomb_block": "Dense Zinc Honeycomb Block",
+    "item.resourcefulbees.dense_zinc_honeycomb": "Dense Zinc Honeycomb",
+    "item.resourcefulbees.dense_zinc_bee_spawn_egg": "Dense Zinc Spawn Egg",
+    "entity.resourcefulbees.dense_zinc_bee": "Dense Zinc Bee",
+    "trait.resourcefulbees.beediddy": "Beediddy Trait",
+    "item.resourcefulbees.beediddy_bee_bee_spawn_egg": "Beediddy Spawn Egg",
+    "entity.resourcefulbees.beediddy_bee_bee": "Beediddy Bee"
 }

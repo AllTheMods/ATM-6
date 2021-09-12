@@ -1,5 +1,5 @@
 {
-    "flower": "allthecompressed:netherite_block_4x",
+    "flower": "compressium:netherite_3",
     "maxTimeInHive": 2400,
     "traits": [
         "dense"

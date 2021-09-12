@@ -1,14 +1,13 @@
 {
-    "flower": "allthecompressed:copper_block_4x",
+    "flower": "allthecompressed:atm_star_block",
     "maxTimeInHive": 9600,
     "traits": [
         "beediddy",
         "angry"
     ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "misc/beediddy",
+    "hasHoneycomb": false,
+    "baseLayerTexture": "special/beediddy",
     "ColorData": {
-        "isEnchanted": true,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -42,7 +41,7 @@
             },
             {
                 "type": "BLOCK_TO_ITEM",
-                "inputID": "allthecompressed:gold_block_3x",
+                "inputID": "compressium:gold_3",
                 "outputs": [
                     {
                         "outputID": "minecraft:gold_block",
@@ -61,7 +60,7 @@
             },
             {
                 "type": "BLOCK_TO_ITEM",
-                "inputID": "allthecompressed:iron_block_3x",
+                "inputID": "compressium:iron_3",
                 "outputs": [
                     {
                         "outputID": "minecraft:iron_block",
@@ -99,7 +98,7 @@
             },
             {
                 "type": "BLOCK_TO_ITEM",
-                "inputID": "allthecompressed:netherite_block_3x",
+                "inputID": "compressium:netherite_3",
                 "outputs": [
                     {
                         "outputID": "minecraft:netherite_block",

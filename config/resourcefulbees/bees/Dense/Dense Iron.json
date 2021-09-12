@@ -1,5 +1,5 @@
 {
-    "flower": "allthecompressed:iron_block_4x",
+    "flower": "compressium:iron_3",
     "maxTimeInHive": 2400,
     "traits": [
         "dense"

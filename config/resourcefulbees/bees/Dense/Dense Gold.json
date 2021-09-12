@@ -1,5 +1,5 @@
 {
-    "flower": "allthecompressed:gold_block_4x",
+    "flower": "compressium:gold_3",
     "maxTimeInHive": 2400,
     "traits": [
         "dense"
