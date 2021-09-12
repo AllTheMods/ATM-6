@@ -12,7 +12,7 @@ onEvent('recipes', e => {
 
   e.recipes.mekanism.crushing('6x thermal:sulfur', 'thermal:sulfur_ore')
   e.recipes.mekanism.crushing('thermal:diamond_dust', 'minecraft:diamond')
-  e.recipes.mekanism.crushing('thermal:sulfur', 'thermal:sulfur')
+  e.recipes.mekanism.crushing('thermal:sulfur_dust', 'thermal:sulfur')
 
   removeRecipeByID([
     'thermal:storage/tin_block',
