@@ -99,7 +99,7 @@ onEvent('recipes', e => {
     ['brass', [2, 3], 57, 'create:brass_sheet']
   ])
   
-  e.shapeless('9x atmadditions:atm_star', 'kubejs:atm_star_block').id('kubejs:atmadditions/atm_star_salvage')
+  e.shapeless('allthecompressed:atm_star_block', 'kubejs:atm_star_block').id('kubejs:atmadditions/atm_star_block_conversion')
 
   e.shapeless('astralsorcery:marble_raw', 'enviromats:marble').id('kubejs:marble/astral_to_envirotech')
   e.shapeless('enviromats:marble', 'quark:marble').id('kubejs:marble/envirotech_to_quark')
