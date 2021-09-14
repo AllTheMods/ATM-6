@@ -1,0 +1,14 @@
+{
+  "biomes": [
+	"biomesoplenty:coniferous_lakes",
+	"minecraft:desert_lakes",
+	"byg:fresh_water_lake",
+	"byg:frozen_lake",
+	"terraforged:frozen_lake",
+	"byg:great_lake_isles",
+	"byg:great_lakes",
+	"byg:grove_lakes",
+	"terraforged:lake",
+	"byg:polluted_lake"
+  ]
+}

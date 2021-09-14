@@ -16,12 +16,12 @@ const draconicFusion = function (output, craftingTier, energy, middleItem, ingre
   })
 }
 
-const energize = function (ingredient, result, power) {
+const energize = function (ingredient, result, power, count) {
   onEvent('recipes', e => {
     e.recipes.powah.energizing({
       ingredients: ingredient.map(i => Ingredient.of(i).toJson()),
       energy: power,
-      result: Item.of(result).toResultJson()
+      result: Item.of(result, count ? count : 1).toResultJson()
     })
   })
 }

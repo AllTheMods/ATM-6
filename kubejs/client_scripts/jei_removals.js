@@ -24,6 +24,7 @@ onEvent('jei.hide.items', e => {
     'apotheosis:iron_mining_arrow',
     'apotheosis:diamond_mining_arrow',
     'apotheosis:explosive_arrow',
+    'archers_paradox:explosive_arrow',
     'iceandfire:copper_block',
     'iceandfire:silver_block',
     'projectred-exploration:copper_ore',

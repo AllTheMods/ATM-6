@@ -16,14 +16,12 @@
 		"Dangerous World Gen Dist Seperation" = 128
 		"Mausoleum Gen Chance" = 800
 [Dragons]
-
 		"Max Dragon Flight Height" = 250
 	[Dragons.Griefing]
 		blacklistedBreakBlocks = ["minecraft:obsidian", "minecraft:bedrock", "minecraft:ancient_debris", "minecraft:barrier", "cyclic:unbreakable_block", "cyclic:unbreakable_reactive", "metalbarrels:obsidian_barrel", "ironfurnaces:million_furnace", "powah:energy_cell_creative", "mekanism:creative_energy_cube", "ctiers:centrifuge_controller_tier_creative", "ctiers:centrifuge_casing_tier_creative", "refinedstorage:creative_controller", "creativewirelesstransmitter:creative_wireless_transmitter", "creativecrafter:creative_crafter", "creativeapiary:tcreative_apiary", "compactmachines:solid_wall"]
 		"Dragon Griefing" = 1
 		"Tamed Dragon Griefing" = false
 		noDropBreakBlocks = ["minecraft:stone", "minecraft:dirt", "minecraft:grass_block", "minecraft:netherrack"]
-
 	[Dragons.Attributes]
 		"Dragon Attack Damage(Lightning breath)" = 33.5
 		"Dragon Health" = 32768.0

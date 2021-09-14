@@ -1,6 +1,5 @@
 [networks]
 maximumPerPlayer = -1
-
 [general]
 	enableChunkLoading = false
 	

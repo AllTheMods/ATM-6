@@ -8,14 +8,23 @@ onEvent('recipes', e => {
     D: 'atmadditions:atm_star',
     E: `thermal:lightning_charge`
   })
-  e.shaped('thermal:onion_block', ['OOO', 'OOO', 'OOO'], { O: '#forge:crops/onion' })
+  e.shapeless('thermal:onion_block', '9x #forge:crops/onion')
 
   e.recipes.mekanism.crushing('6x thermal:sulfur', 'thermal:sulfur_ore')
   e.recipes.mekanism.crushing('thermal:diamond_dust', 'minecraft:diamond')
-  e.recipes.mekanism.crushing('thermal:sulfur', 'thermal:sulfur')
+  e.recipes.mekanism.crushing('thermal:sulfur_dust', 'thermal:sulfur')
 
   removeRecipeByID([
-    /^thermal:storage\/.*_block/,
+    'thermal:storage/tin_block',
+    'thermal:storage/copper_block',
+    'thermal:storage/lead_block',
+    'thermal:storage/platinum_block',
+    'thermal:storage/uranium_block',
+    'thermal:storage/silver_block',
+    'thermal:storage/aluminum_block',
+    'thermal:storage/nickel_block',
+    'thermal:storage/osmium_block',
+    'thermal:storage/zinc_block',
     'thermal:machine/press/packing2x2/press_honeycomb_packing',
     'thermal:machine/press/unpacking/press_honeycomb_unpacking',
     'thermal:machine/centrifuge/centrifuge_oil_sand',
