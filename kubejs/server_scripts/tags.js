@@ -27,6 +27,7 @@ onEvent('item.tags', e => {
     e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
   e.add('forge:marble', '#chisel:marble')
+  e.add('integrateddynamics:menril_log', 'integrateddynamics:menril_log_filled')
   e.add('chisel:marble', ['astralsorcery:marble_raw', 'enviromats:marble', 'quark:marble'])
   e.add('chisel:limestone', ['create:limestone', 'create:weathered_limestone', 'quark:limestone'])
   e.add('forge:ingots/aluminum', 'zycraft:aluminium')
