@@ -108,6 +108,7 @@ onEvent('item.tags', e => {
   e.add('forge:hoes', ['/.+_hoe/', '/.+:hoe_.+/'])
   e.add('forge:simple_honeycombs', '/^.+:(?!(catnip|rgbee)_).*honeycomb$/')
   e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
+  e.add('forge:wooden_buttons', '/forbidden_arcanus:.+_button/')
   //#endregion
   //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)
