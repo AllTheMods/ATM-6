@@ -1,7 +1,5 @@
-#Allows to customize or disable the enchantments
 [enchantments]
 	enable_enchantment_soulbound = false
-
 [player_death]
 	xp_loss = 0
 [decorative_grave]

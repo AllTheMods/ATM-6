@@ -11,4 +11,3 @@
 			mass3 = ["minecraft:ender_dragon,4", "minecraft:wither,4", "botania:doppleganger,4"]
 	[policy.blacklist]
 		captureMod = []
-
