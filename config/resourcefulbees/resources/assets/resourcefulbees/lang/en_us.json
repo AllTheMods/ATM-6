@@ -178,10 +178,10 @@
     "item.resourcefulbees.dragonic_bee_spawn_egg": "Dragonic Bee Spawn Egg",
     "entity.resourcefulbees.dragonic_bee": "Dragonic Bee",
 	
-    "block.resourcefulbees.ghost_honeycomb_block": "Ghost Honeycomb Block",
-    "item.resourcefulbees.ghost_honeycomb": "Ghost Honeycomb",
-    "item.resourcefulbees.ghost_bee_spawn_egg": "Ghost Bee Spawn Egg",
-    "entity.resourcefulbees.ghost_bee": "Ghost Bee",
+    "block.resourcefulbees.ghastly_honeycomb_block": "Ghastly Honeycomb Block",
+    "item.resourcefulbees.ghastly_honeycomb": "Ghastly Honeycomb",
+    "item.resourcefulbees.ghastly_bee_spawn_egg": "Ghastly Bee Spawn Egg",
+    "entity.resourcefulbees.ghastly_bee": "Ghastly Bee",
 
     "block.resourcefulbees.wither_honeycomb_block": "Wither Honeycomb Block",
     "item.resourcefulbees.wither_honeycomb": "Wither Honeycomb",
