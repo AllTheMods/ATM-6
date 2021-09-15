@@ -110,6 +110,8 @@ onEvent('item.tags', e => {
   e.add('forge:simple_honeycombs', '/^.+:(?!(catnip|rgbee)_).*honeycomb$/')
   e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
   e.add('minecraft:wooden_buttons', '/forbidden_arcanus:.+_button/')
+  e.add('forge:dusts/flour', ['create:wheat_flour', 'pneumaticcraft:wheat_flour', 'pamhc2foodcore:flouritem'])
+  e.add('forge:dough', ['create:dough', 'pamhc2foodcore:doughitem'])
   //#endregion
   //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)
