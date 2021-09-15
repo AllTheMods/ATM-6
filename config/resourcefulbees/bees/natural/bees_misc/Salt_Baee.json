@@ -1,7 +1,7 @@
 {
     "flower": "mekanism:block_salt",
     "maxTimeInHive": 1200,
-    "traits": [],
+    "traits": ["can_swim"],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/salt_baee",
     "ColorData": {
@@ -67,11 +67,11 @@
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:salt_baee, tag:lake",
         "biomeBlacklist": "",
-        "spawnWeight": 5,
+        "spawnWeight": 10,
         "minYLevel": 0,
         "maxYLevel": 255,
         "minGroupSize": 1,
-        "maxGroupSize": 3,
+        "maxGroupSize": 2,
         "lightLevel": "ANY"
     },
     "BreedData": {
@@ -86,6 +86,6 @@
         "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": false
+        "hasTraits": true
     }
 }

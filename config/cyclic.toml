@@ -1,6 +1,5 @@
 [cyclic]
 	[cyclic.enchantment]
-		#Beheading enchant add player skin head drop, add any mob id and any skin
 		beheadingEntityMHF = []
 		magnet = false
 		

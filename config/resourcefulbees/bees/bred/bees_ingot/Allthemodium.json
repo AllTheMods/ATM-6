@@ -97,7 +97,7 @@
         "minYLevel": 0,
         "maxYLevel": 255,
         "minGroupSize": 1,
-        "maxGroupSize": 3,
+        "maxGroupSize": 2,
         "lightLevel": "ANY"
     },
     "BreedData": {

@@ -1,34 +1,3 @@
-#Range: 1 ~ 4
-itemsPerColumn = 4
-#Range: 1 ~ 4
-itemsPerRow = 4
-diyData = true
-showDevData = false
 enchantsBlacklist = ["flimflam","soulBound","reactive"]
-hiddenTabs = [
-  "minecolonies:baker/crafting",
-  "minecolonies:blacksmith/crafting",
-  "minecolonies:composting",
-  "minecolonies:concretemixer/custom",
-  "minecolonies:cook/smelting",
-  "minecolonies:cookassistant/crafting",
-  "minecolonies:crusher/custom",
-  "minecolonies:dyer/crafting",
-  "minecolonies:dyer/smelting",
-  "minecolonies:enchanter/custom",
-  "minecolonies:farmer/crafting",
-  "minecolonies:fletcher/crafting",
-  "minecolonies:glassblower/crafting",
-  "minecolonies:glassblower/smelting",
-  "minecolonies:lumberjack/custom",
-  "minecolonies:mechanic/crafting",
-  "minecolonies:planter/crafting",
-  "minecolonies:sawmill/crafting",
-  "minecolonies:sifter/custom",
-  "minecolonies:smelter/smelting",
-  "minecolonies:stonemason/crafting",
-  "minecolonies:stonesmeltery/smelting"
-]
-dimensionsBlacklist = [-11]
 disableLootManagerReloading = true
 
