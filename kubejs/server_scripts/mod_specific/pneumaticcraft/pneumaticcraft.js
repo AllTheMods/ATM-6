@@ -108,19 +108,12 @@ onEvent('recipes', e => {
     'type': 'pneumaticcraft:stacked_item',
     'item': 'minecraft:wheat',
     'count': 1
-  }
-  ], 'create:wheat_flour', 3, 1.5)
+  }], 'create:wheat_flour', 3, 1.5)
 
   e.custom({
     "type": "pneumaticcraft:explosion_crafting",
-    "input": {
-      "tag": "forge:crops/wheat"
-    },
-    "results": [
-      {
-        "item": "create:wheat_flour"
-      }
-    ],
+    "input": { "tag": "forge:crops/wheat" },
+    "results": [{ "item": "create:wheat_flour" }],
     "loss_rate": 50
   })
 
