@@ -19,14 +19,5 @@
         "chance": 0.125
       }
     ],
-    "processingTime": 300,
-    "conditions": [
-      {
-        "value": {
-          "tag": "forge:ores/unobtainium",
-          "type": "forge:tag_empty"
-        },
-        "type": "forge:not"
-      }
-    ]
+    "processingTime": 750
   }
