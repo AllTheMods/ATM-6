@@ -317,22 +317,97 @@
     "item.resourcefulbees.starry_honeycomb": "Starry Honeycomb",
     "item.resourcefulbees.starry_bee_spawn_egg": "Starry Bee Spawn Egg",
     "entity.resourcefulbees.starry_bee": "Starry Bee",
+
+    "item.resourcefulbees.starry_honey_bottle": "Starry Honey Bottle",
+    "item.resourcefulbees.starry_honey_fluid_bucket": "Starry Honey Bucket",
+    "block.resourcefulbees.starry_honey_block": "Starry Honey Block",
+    "fluid.resourcefulbees.starry_honey": "Starry Honey",
+  	"item.resourcefulbees.starry_honey_bottle": "Starry Honey Bottle",
+  	"item.resourcefulbees.starry_honey_fluid_bucket": "Starry Honey Bucket",
+  	"block.resourcefulbees.starry_honey_block": "Starry Honey Block",
+	  "fluid.resourcefulbees.starry_honey": "Starry Honey",
+
 	"item.resourcefulbees.starry_honey_bottle": "Starry Honey Bottle",
 	"item.resourcefulbees.starry_honey_fluid_bucket": "Starry Honey Bucket",
 	"block.resourcefulbees.starry_honey_block": "Starry Honey Block",
 	"fluid.resourcefulbees.starry_honey": "Starry Honey",
 	
+
     "block.resourcefulbees.papa_beemeritus_honeycomb_block": "Papa Beemeritus Honeycomb Block",
     "item.resourcefulbees.papa_beemeritus_honeycomb": "Papa Beemeritus Honeycomb",
     "item.resourcefulbees.papa_beemeritus_bee_spawn_egg": "Papa Beemeritus Spawn Egg",
     "entity.resourcefulbees.papa_beemeritus_bee": "Papa Beemeritus",
+    "trait.resourcefulbees.dense": "Dense Bee Trait",
     
-    "block.resourcefulbees.draconium_honeycomb_block": "Draconium Honeycomb Block",
+  "block.resourcefulbees.dense_copper_honeycomb_block": "Dense Copper Honeycomb Block",
+    "item.resourcefulbees.dense_copper_honeycomb": "Dense Copper Honeycomb",
+    "item.resourcefulbees.dense_copper_bee_spawn_egg": "Dense Copper Spawn Egg",
+    "entity.resourcefulbees.dense_copper_bee": "Dense Copper Bee",
+    
+  "block.resourcefulbees.dense_gold_honeycomb_block": "Dense Gold Honeycomb Block",
+    "item.resourcefulbees.dense_gold_honeycomb": "Dense Gold Honeycomb",
+    "item.resourcefulbees.dense_gold_bee_spawn_egg": "Dense Gold Spawn Egg",
+    "entity.resourcefulbees.dense_gold_bee": "Dense Gold Bee",
+    
+  "block.resourcefulbees.dense_iron_honeycomb_block": "Dense Iron Honeycomb Block",
+    "item.resourcefulbees.dense_iron_honeycomb": "Dense Iron Honeycomb",
+    "item.resourcefulbees.dense_iron_bee_spawn_egg": "Dense Iron Spawn Egg",
+    "entity.resourcefulbees.dense_iron_bee": "Dense Iron Bee",
+    
+  "block.resourcefulbees.dense_lead_honeycomb_block": "Dense Lead Honeycomb Block",
+    "item.resourcefulbees.dense_lead_honeycomb": "Dense Lead Honeycomb",
+    "item.resourcefulbees.dense_lead_bee_spawn_egg": "Dense Lead Spawn Egg",
+    "entity.resourcefulbees.dense_lead_bee": "Dense Lead Bee",
+    
+  "block.resourcefulbees.dense_netherite_honeycomb_block": "Dense Netherite Honeycomb Block",
+    "item.resourcefulbees.dense_netherite_honeycomb": "Dense Netherite Honeycomb",
+    "item.resourcefulbees.dense_netherite_bee_spawn_egg": "Dense Netherite Spawn Egg",
+    "entity.resourcefulbees.dense_netherite_bee": "Dense Netherite Bee",
+    
+  "block.resourcefulbees.dense_nickel_honeycomb_block": "Dense Nickel Honeycomb Block",
+    "item.resourcefulbees.dense_nickel_honeycomb": "Dense Nickel Honeycomb",
+    "item.resourcefulbees.dense_nickel_bee_spawn_egg": "Dense Nickel Spawn Egg",
+    "entity.resourcefulbees.dense_nickel_bee": "Dense Nickel Bee",
+    
+  "block.resourcefulbees.dense_osmium_honeycomb_block": "Dense Osmium Honeycomb Block",
+    "item.resourcefulbees.dense_osmium_honeycomb": "Dense Osmium Honeycomb",
+    "item.resourcefulbees.dense_osmium_bee_spawn_egg": "Dense Osmium Spawn Egg",
+    "entity.resourcefulbees.dense_osmium_bee": "Dense Osmium Bee",
+    
+  "block.resourcefulbees.dense_platinum_honeycomb_block": "Dense Platinum Honeycomb Block",
+    "item.resourcefulbees.dense_platinum_honeycomb": "Dense Platinum Honeycomb",
+    "item.resourcefulbees.dense_platinum_bee_spawn_egg": "Dense Platinum Spawn Egg",
+    "entity.resourcefulbees.dense_platinum_bee": "Dense Platinum Bee",
+   
+  "block.resourcefulbees.dense_silver_honeycomb_block": "Dense Silver Honeycomb Block",
+    "item.resourcefulbees.dense_silver_honeycomb": "Dense Silver Honeycomb",
+    "item.resourcefulbees.dense_silver_bee_spawn_egg": "Dense Silver Spawn Egg",
+    "entity.resourcefulbees.dense_silver_bee": "Dense Silver Bee",
+    
+  "block.resourcefulbees.dense_tin_honeycomb_block": "Dense Tin Honeycomb Block",
+    "item.resourcefulbees.dense_tin_honeycomb": "Dense Tin Honeycomb",
+    "item.resourcefulbees.dense_tin_bee_spawn_egg": "Dense Tin Spawn Egg",
+    "entity.resourcefulbees.dense_tin_bee": "Dense Tin Bee",
+    
+  "block.resourcefulbees.dense_uranium_honeycomb_block": "Dense Uranium Honeycomb Block",
+    "item.resourcefulbees.dense_uranium_honeycomb": "Dense Uranium Honeycomb",
+    "item.resourcefulbees.dense_uranium_bee_spawn_egg": "Dense Uranium Spawn Egg",
+    "entity.resourcefulbees.dense_uranium_bee": "Dense Uranium Bee",
+    
+  "block.resourcefulbees.dense_zinc_honeycomb_block": "Dense Zinc Honeycomb Block",
+    "item.resourcefulbees.dense_zinc_honeycomb": "Dense Zinc Honeycomb",
+    "item.resourcefulbees.dense_zinc_bee_spawn_egg": "Dense Zinc Spawn Egg",
+    "entity.resourcefulbees.dense_zinc_bee": "Dense Zinc Bee",
+    
+  "item.resourcefulbees.beediddy_bee_bee_spawn_egg": "Beediddy Spawn Egg",
+    "entity.resourcefulbees.beediddy_bee_bee": "Beediddy Bee"
+    
+  "block.resourcefulbees.draconium_honeycomb_block": "Draconium Honeycomb Block",
     "item.resourcefulbees.draconium_honeycomb": "Draconium Honeycomb",
     "item.resourcefulbees.draconium_bee_spawn_egg": "Draconium Bee Spawn Egg",
     "entity.resourcefulbees.draconium_bee": "Draconium Bee",
     
-    "block.resourcefulbees.awakened_honeycomb_block": "Awakened Honeycomb Block",
+  "block.resourcefulbees.awakened_honeycomb_block": "Awakened Honeycomb Block",
     "item.resourcefulbees.awakened_honeycomb": "Awakened Honeycomb",
     "item.resourcefulbees.awakened_bee_spawn_egg": "Awakened Bee Spawn Egg",
     "entity.resourcefulbees.awakened_bee": "Awakened Bee",
@@ -340,11 +415,12 @@
     "block.resourcefulbees.chaotic_honeycomb_block": "Chaotic Honeycomb Block",
     "item.resourcefulbees.chaotic_honeycomb": "Chaotic Honeycomb",
     "item.resourcefulbees.chaotic_bee_spawn_egg": "Chaotic Bee Spawn Egg",
-    "entity.resourcefulbees.chaotic_bee": "Chaotic Bee",
     
+  "entity.resourcefulbees.chaotic_bee": "Chaotic Bee",
     "trait.resourcefulbees.draconic": "Draconic Trait",
     "trait.resourcefulbees.awakened": "Awakened Trait",
     "trait.resourcefulbees.chaotic": "Chaotic Trait",
     "trait.resourcefulbees.soul_fire": "Soul Fire Trait",
-    "trait.resourcefulbees.starry": "Starry Night Trait"
+    "trait.resourcefulbees.starry": "Starry Night Trait",
+    "trait.resourcefulbees.beediddy": "Beediddy Trait",
 }

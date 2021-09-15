@@ -1,7 +1,9 @@
 {
-    "flower": "tag:forge:storage_blocks/platinum",
+    "flower": "allthecompressed:platinum_block_4x",
     "maxTimeInHive": 2400,
-    "traits": [],
+    "traits": [
+        "dense"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "ato/platinum_bee",
     "ColorData": {
@@ -17,44 +19,49 @@
         "glowColor": "#A4EDFC",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "DEFAULT"
+        "modelType": "ORE"
     },
     "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
+        "isPassive": false,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 1
+        "attackDamage": 2147483647
     },
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:platinum_honeycomb_block",
-            "outputs": [{
-                "outputID": "alltheores:platinum_ingot",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:platinum_bee",
-                    "BeeType": "platinum",
-                    "Color": "#A4EDFC"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dense_platinum_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:platinum_ingot",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_platinum_bee",
+                            "BeeType": "dense_platinum",
+                            "Color": "#A4EDFC"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
         "mainOutput": "alltheores:ore_platinum",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutputCount": 4,
         "mainNBTData": {},
         "secondaryOutput": "alltheores:platinum_ingot",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutputCount": 8,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -71,11 +78,11 @@
         "minYLevel": 0,
         "maxYLevel": 255,
         "minGroupSize": 1,
-        "maxGroupSize": 2,
+        "maxGroupSize": 3,
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
+        "isBreedable": false,
         "parent1": "Silver",
         "parent2": "Gold",
         "breedWeight": 10,

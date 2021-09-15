@@ -23,7 +23,7 @@
         "isPassive": false,
         "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 1
+        "attackDamage": 2147483647
     },
     "MutationData": {
         "hasMutation": true,

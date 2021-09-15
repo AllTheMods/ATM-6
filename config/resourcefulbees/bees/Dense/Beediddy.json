@@ -1,0 +1,272 @@
+{
+    "flower": "allthecompressed:atm_star_block",
+    "maxTimeInHive": 9600,
+    "traits": [
+        "beediddy",
+        "angry"
+    ],
+    "hasHoneycomb": false,
+    "baseLayerTexture": "special/beediddy",
+    "ColorData": {
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2147483647
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:copper_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:copper_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_copper_bee",
+                            "BeeType": "dense_copper",
+                            "Color": "#D28868"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "compressium:gold_3",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:gold_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_gold_bee",
+                            "BeeType": "dense_gold",
+                            "Color": "#FFDC00"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "compressium:iron_3",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:iron_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_iron_bee",
+                            "BeeType": "dense_iron",
+                            "Color": "#ffcc99"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:lead_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:lead_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_lead_bee",
+                            "BeeType": "dense_lead",
+                            "Color": "#D0E4E1"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "compressium:netherite_3",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:netherite_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_netherite_bee",
+                            "BeeType": "dense_netherite",
+                            "Color": "#654740"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:nickel_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:nickel_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_nickel_bee",
+                            "BeeType": "dense_nickel",
+                            "Color": "#F5F2A3"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:osmium_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:osmium_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_osmium_bee",
+                            "BeeType": "dense_osmium",
+                            "Color": "#BDCBD4"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:platinum_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:platinum_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_platinum_bee",
+                            "BeeType": "dense_platinum",
+                            "Color": "#A4EDFC"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:silver_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:silver_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_silver_bee",
+                            "BeeType": "dense_silver",
+                            "Color": "#D1E1EC"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:tin_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:tin_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_tin_bee",
+                            "BeeType": "dense_tin",
+                            "Color": "#ECEDEE"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:uranium_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:uranium_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_uranium_bee",
+                            "BeeType": "dense_uranium",
+                            "Color": "#fff37f"
+                        },
+                        "weight": 10
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "allthecompressed:zinc_block_3x",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:zinc_block",
+                        "weight": 90
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_zinc_bee",
+                            "BeeType": "dense_zinc",
+                            "Color": "#B6DBD8"
+                        },
+                        "weight": 10
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:beediddy",
+        "spawnWeight": 1,
+        "minYLevel": 128,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 1,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

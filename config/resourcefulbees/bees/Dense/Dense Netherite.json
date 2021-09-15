@@ -1,31 +1,31 @@
 {
-    "flower": "tag:forge:storage_blocks/iron",
+    "flower": "compressium:netherite_3",
     "maxTimeInHive": 2400,
     "traits": [
-        "nether"
+        "dense"
     ],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ores/iron/iron_bee",
+    "baseLayerTexture": "ores/netherite/netherite_bee",
     "ColorData": {
-        "primaryColor": "#ffcc99",
-        "secondaryColor": "#ffcc99",
-        "honeycombColor": "#ffcc99",
+        "primaryColor": "#654740",
+        "secondaryColor": "#654740",
+        "honeycombColor": "#654740",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#ffcc99",
+        "glowColor": "#654740",
         "isEnchanted": false,
         "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
+        "isPassive": false,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 1
+        "attackDamage": 2147483647
     },
     "MutationData": {
         "hasMutation": true,
@@ -33,24 +33,18 @@
         "mutations": [
             {
                 "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:iron_honeycomb_block",
+                "inputID": "resourcefulbees:dense_netherite_honeycomb_block",
                 "outputs": [
                     {
-                        "outputID": "minecraft:iron_ingot",
+                        "outputID": "minecraft:netherite_scrap",
                         "weight": 80
                     },
                     {
                         "outputID": "resourcefulbees:bee_jar",
                         "nbtData": {
-                            "Entity": "resourcefulbees:iron_bee",
-                            "BeeType": "iron",
-                            "Color": "#ffcc99"
-                        }
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:iron_bee"
+                            "Entity": "resourcefulbees:dense_netherite_bee",
+                            "BeeType": "dense_netherite",
+                            "Color": "#654740"
                         },
                         "weight": 20
                     }
@@ -61,13 +55,13 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "minecraft:iron_ore",
+        "mainOutput": "minecraft:netherite_scrap",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutputCount": 4,
         "mainNBTData": {},
-        "secondaryOutput": "minecraft:iron_ingot",
+        "secondaryOutput": "minecraft:netherite_scrap",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutputCount": 8,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -84,16 +78,16 @@
         "minYLevel": 0,
         "maxYLevel": 255,
         "minGroupSize": 1,
-        "maxGroupSize": 2,
+        "maxGroupSize": 3,
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
-        "parent1": "Quartz",
-        "parent2": "Stoned",
+        "isBreedable": false,
+        "parent1": "",
+        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/iron",
+        "feedItem": "tag:forge:storage_blocks/netherite",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
