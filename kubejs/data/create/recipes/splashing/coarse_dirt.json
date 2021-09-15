@@ -1,0 +1,22 @@
+{
+    "type": "create:splashing",
+    "ingredients": [
+      {
+        "item": "minecraft:coarse_dirt"
+      }
+    ],
+    "results": [
+      {
+        "item": "minecraft:dirt",
+        "chance": 0.75
+      },
+      {
+        "item": "minecraft:gravel",
+        "chance": 0.2
+      },
+      {
+        "item": "minecraft:flint",
+        "chance": 0.05
+      }
+    ]
+  }

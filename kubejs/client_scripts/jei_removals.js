@@ -21,6 +21,9 @@ onEvent('jei.hide.items', e => {
   //#endregion
   
   e.hide([
+    'pneumaticcraft:wheat_flour',
+    'pamhc2foodcore:flouritem',
+    'pamhc2foodcore:doughitem',
     'apotheosis:iron_mining_arrow',
     'apotheosis:diamond_mining_arrow',
     'apotheosis:explosive_arrow',

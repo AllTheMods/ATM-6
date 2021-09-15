@@ -19,6 +19,16 @@ onEvent('recipes', e => {
     'createaddition:honey_cake'
   ]).superheated().processingTime(6000).id('kubejs:create/creative_blaze_cake')
 
+  e.replaceInput('create:wheat_flour', '#forge:dusts/flour')
+  e.replaceInput('pneumaticraft:wheat_flour', '#forge:dusts/flour')
+  e.replaceInput('pamhc2foodcore:flouritem', '#forge:dusts/flour')
+  e.replaceInput('create:dough', '#forge:dough')
+  e.replaceInput('pamhc2foodcore:doughitem', '#forge:dough')
+
+  e.replaceOutput('pneumaticraft:wheat_flour', 'create:wheat_flour')
+  e.replaceOutput('pamhc2foodcore:flouritem', 'create:wheat_flour')
+  e.replaceOutput('pamhc2foodcore:doughitem', 'create:dough')
+
   removeRecipeByID([
     'create:crafting/materials/copper_block_from_compacting',
     'create:crafting/materials/zinc_block_from_compacting',

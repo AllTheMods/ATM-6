@@ -1,0 +1,19 @@
+{
+    "type": "create:splashing",
+    "ingredients": [
+      {
+        "item": "allthemodium:unobtainium_dust"
+      }
+    ],
+    "results": [
+      {
+        "item": "allthemodium:unobtainium_nugget",
+        "count": 10
+      },
+      {
+        "item": "allthemodium:unobtainium_nugget",
+        "count": 5,
+        "chance": 0.5
+      }
+    ]
+  }

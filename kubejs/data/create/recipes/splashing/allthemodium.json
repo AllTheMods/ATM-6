@@ -1,0 +1,19 @@
+{
+    "type": "create:splashing",
+    "ingredients": [
+      {
+        "item": "allthemodium:allthemodium_dust"
+      }
+    ],
+    "results": [
+      {
+        "item": "allthemodium:allthemodium_nugget",
+        "count": 10
+      },
+      {
+        "item": "allthemodium:allthemodium_nugget",
+        "count": 5,
+        "chance": 0.5
+      }
+    ]
+  }
