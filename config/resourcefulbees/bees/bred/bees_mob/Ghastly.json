@@ -48,7 +48,7 @@
   },
   "BreedData": {
     "isBreedable": true,
-    "parent1": "Creeper",
+    "parent1": "Beeper",
     "parent2": "Magma",
     "breedWeight": 10,
     "breedChance": 0.60,

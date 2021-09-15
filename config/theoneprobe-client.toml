@@ -10,5 +10,4 @@ boxThickness = 0
 	InfoImportant = "blue"
 	Label = "gray"
 	Error = "red,bold"
-	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
 	Obsolete = "gray,strikethrough"

@@ -6,10 +6,10 @@ onEvent('recipes', e => {
   })
 
   energize(['powah:energy_cell_nitro', 'powah:energy_cell_nitro', 'atmadditions:atm_star', 'powah:energy_cell_nitro', 'powah:energy_cell_nitro'], 'powah:energy_cell_creative', '2147483647')
-  energize([{ tag: 'forge:storage_blocks/iron' }, { tag: 'forge:storage_blocks/gold' }], 'powah:energized_steel_block', 2, '90000')
-  energize([{ item: 'botania:blaze_block' }], 'powah:blazing_crystal_block', 1, '810000')
-  energize([{ tag: 'forge:storage_blocks/diamond' }], 'powah:niotic_crystal_block', 1, '2700000')
-  energize([{ tag: 'forge:storage_blocks/emerald' }], 'powah:spirited_crystal_block', 1, '9000000')
+  energize([{ tag: 'forge:storage_blocks/iron' }, { tag: 'forge:storage_blocks/gold' }], 'powah:energized_steel_block', '90000', 2)
+  energize([{ item: 'botania:blaze_block' }], 'powah:blazing_crystal_block', '810000')
+  energize([{ tag: 'forge:storage_blocks/diamond' }], 'powah:niotic_crystal_block', '2700000')
+  energize([{ tag: 'forge:storage_blocks/emerald' }], 'powah:spirited_crystal_block', '9000000')
 
   e.shaped('powah:thermoelectric_plate', ['BAB', 'ACA', 'BAB'], {
     B: '#forge:rods/blaze',
