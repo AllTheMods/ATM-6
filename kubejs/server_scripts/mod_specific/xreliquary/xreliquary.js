@@ -7,7 +7,7 @@ onEvent('recipes', e => {
     L: 'minecraft:lily_pad',
     F: 'mysticalagriculture:mystical_fertilizer'
   }).id(`kubejs:xreliquary/fertile_lily_pad`)
-
+  e.replaceInput('xreliquary:bat_wing', ['ars_nouveau:wilden_wing', 'forbidden_arcanus:bat_wing','xreliquary:bat_wing'])
   removeRecipeByOutput([
     'xreliquary:alkahestry_tome',
     'xreliquary:fertile_lily_pad'
