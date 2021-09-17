@@ -1,0 +1,19 @@
+{
+	"programs": ["envirotech:ore", "envirotech:metallic_ore"],
+	"item": {
+		"raw:item_tag": "bigreactors:yellorite_ore", "count":1
+	},
+	"config": [
+		{
+			"weight": 0,
+			"blacklist_dimensions": true,
+			"dimensions": ["minecraft:the_nether", "minecraft:the_end"]
+		},
+		{
+			"focus": "envirotech:yellow",
+			"weight": 0,
+			"blacklist_dimensions": true,
+			"dimensions": ["minecraft:the_nether", "minecraft:the_end"]
+		}
+	]
+}
