@@ -121,6 +121,9 @@ onEvent('recipes', e => {
       I: 'mekanism:basic_induction_cell',
       U: 'allthemodium:unobtainium_boots'
   }).id(`kubejs:mekanism/mekasuit_boots`)
+  e.shaped('kubejs:yellow_cake_uranium_block', ['UUU', 'UUU', 'UUU'], {
+    U: 'mekanism:yellow_cake_uranium'
+}).id(`kubejs:mekanism/yellow_cake_uranium_block`)
 
   e.recipes.mekanism.crushing('2x mekanism:bio_fuel', '#misctags:biofuel2')
   e.recipes.mekanism.crushing('4x mekanism:bio_fuel', '#misctags:biofuel4')
