@@ -1,26 +1,44 @@
 onEvent('recipes', e => {
   e.custom({
-    type: 'mekanism:nucleosynthesizing',
-    itemInput: { ingredient: { tag: 'forge:dusts/unobtainium_vibranium_alloy' } },
-    gasInput: { gas: 'mekanism:antimatter', amount: 1 },
-    output: Item.of('kubejs:uu_matter', 16).toResultJson(),
-    duration: 20
+      type: 'mekanism:nucleosynthesizing',
+      itemInput: {
+          ingredient: {
+              tag: 'forge:dusts/unobtainium_vibranium_alloy'
+          }
+      },
+      gasInput: {
+          gas: 'mekanism:antimatter',
+          amount: 1
+      },
+      output: Item.of('kubejs:uu_matter', 16).toResultJson(),
+      duration: 20
   })
 
   e.custom({
-    type: 'psi:trick_crafting',
-    input: { tag: 'forge:dusts/unobtainium_vibranium_alloy' },
-    output: Item.of('kubejs:uu_matter', 4).toResultJson(),
-    cad: { item: 'psi:cad_assembly_psimetal' },
-    trick: 'psi:trick_ebony_ivory'
+      type: 'psi:trick_crafting',
+      input: {
+          tag: 'forge:dusts/unobtainium_vibranium_alloy'
+      },
+      output: Item.of('kubejs:uu_matter', 4).toResultJson(),
+      cad: {
+          item: 'psi:cad_assembly_psimetal'
+      },
+      trick: 'psi:trick_ebony_ivory'
   })
 
   function mShaped(result, pattern, count) {
-    e.recipes.cucumber.shaped_no_mirror({
-      pattern: pattern,
-      key: { U: { item: 'kubejs:uu_matter' } },
-      result: { item: result, count: count != null ? count : 1 }
-    })
+      e.recipes.cucumber.shaped_no_mirror({
+          pattern: pattern,
+          key: {
+              U: {
+                  item: 'kubejs:uu_matter'
+              }
+          },
+          result: {
+              item: result,
+              count: count != null ? count : 1
+          }
+      })
   }
 
   mShaped('alltheores:ore_aluminum', [' UU', 'UUU', 'UUU'], 12)
