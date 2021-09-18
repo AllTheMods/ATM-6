@@ -1,30 +1,45 @@
 onEvent('recipes', e => {
   function coinUpgrade(name, type) {
-    e.recipes.allthemodium.atmshapeless_crafting({
-      ingredients: [
-        { item: `pedestals:coin/${name}` },
-        { item: `minecraft:${type == 'xp' ? 'experience_bottle' : 'redstone_block'}` }
-      ],
-      result: { item: `pedestals:coin/${type}${name}` }
-    })
+      e.recipes.allthemodium.atmshapeless_crafting({
+          ingredients: [{
+                  item: `pedestals:coin/${name}`
+              },
+              {
+                  item: `minecraft:${type == 'xp' ? 'experience_bottle' : 'redstone_block'}`
+              }
+          ],
+          result: {
+              item: `pedestals:coin/${type}${name}`
+          }
+      })
   }
+
   function pedestalCrush(result, count, ingred, type) {
-    e.recipes.pedestals.pedestal_crushing({
-      result: {
-        item: result,
-        count: count
-      },
-      ingredient: (type == 1) ? { tag: ingred } : { item: ingred }
-    })
+      e.recipes.pedestals.pedestal_crushing({
+          result: {
+              item: result,
+              count: count
+          },
+          ingredient: (type == 1) ? {
+              tag: ingred
+          } : {
+              item: ingred
+          }
+      })
   }
+
   function pedestalSaw(result, count, ingred, type) {
-    e.recipes.pedestals.pedestal_sawing({
-      result: {
-        item: result,
-        count: count
-      },
-      ingredient: (type == 1) ? { tag: ingred } : { item: ingred }
-    })
+      e.recipes.pedestals.pedestal_sawing({
+          result: {
+              item: result,
+              count: count
+          },
+          ingredient: (type == 1) ? {
+              tag: ingred
+          } : {
+              item: ingred
+          }
+      })
   }
 
   coinUpgrade('import', 'rf')
@@ -45,7 +60,7 @@ onEvent('recipes', e => {
   pedestalSaw('minecraft:stick', 2, 'minecraft:wooden_slabs', 1)
 
   removeRecipeByID([
-    'pedestals:pedestal_crushing/dustnethergold',
-    'pedestals:dustflour'
+      'pedestals:pedestal_crushing/dustnethergold',
+      'pedestals:dustflour'
   ])
 })

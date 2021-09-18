@@ -1,33 +1,33 @@
 onEvent('recipes', e => {
   const craftingShapes = [
-    //vertical
-    ['  C', '  C', '  C'],
-    [' C ', ' C ', ' C '],
-    ['C  ', 'C  ', 'C  '],
-    //horizontal 
-    ['CCC', '   ', '   '],
-    ['   ', 'CCC', '   '],
-    ['   ', '   ', 'CCC'],
-    //diagonal
-    ['  C', ' C ', 'C  '],
-    ['C  ', ' C ', '  C'],
-    //misc
-    ['  C', ' C ', ' C '],
-    [' C ', 'C  ', 'C  '],
-    ['  C', 'CC ', '   '],
-    ['   ', '  C', 'CC '],
-    ['  C', '  C', ' C '],
-    [' C ', ' C ', 'C  '],
-    ['C C', ' C ', '   '],
-    ['   ', 'C C', ' C '],
-    [' C ', ' C ', '  C'],
-    ['C  ', 'C  ', ' C '],
-    ['   ', ' C ', 'C C'],
-    [' C ', 'C C', '   '],
-    ['  C', ' C ', '  C'],
-    [' C ', 'C  ', ' C '],
-    ['   ', 'CC ', '  C'],
-    ['CC ', '  C', '   ']
+      //vertical
+      ['  C', '  C', '  C'],
+      [' C ', ' C ', ' C '],
+      ['C  ', 'C  ', 'C  '],
+      //horizontal 
+      ['CCC', '   ', '   '],
+      ['   ', 'CCC', '   '],
+      ['   ', '   ', 'CCC'],
+      //diagonal
+      ['  C', ' C ', 'C  '],
+      ['C  ', ' C ', '  C'],
+      //misc
+      ['  C', ' C ', ' C '],
+      [' C ', 'C  ', 'C  '],
+      ['  C', 'CC ', '   '],
+      ['   ', '  C', 'CC '],
+      ['  C', '  C', ' C '],
+      [' C ', ' C ', 'C  '],
+      ['C C', ' C ', '   '],
+      ['   ', 'C C', ' C '],
+      [' C ', ' C ', '  C'],
+      ['C  ', 'C  ', ' C '],
+      ['   ', ' C ', 'C C'],
+      [' C ', 'C C', '   '],
+      ['  C', ' C ', '  C'],
+      [' C ', 'C  ', ' C '],
+      ['   ', 'CC ', '  C'],
+      ['CC ', '  C', '   ']
   ] // 25 now
   const dyes = []
   const botaniaFlowers = []
@@ -35,27 +35,36 @@ onEvent('recipes', e => {
   const customHoney = ['resourcefulbees:rainbow_honey', 'resourcefulbees:catnip_honey']
 
   function shapedRecipe(results, craftingItem, itemCount) {
-    const maxLength = Math.min(craftingShapes.length, results.length)
-    for (let i = 0; i < maxLength; i++) {
-      e.recipes.cucumber.shaped_no_mirror({
-        pattern: craftingShapes[i],
-        key: { C: { item: craftingItem } },
-        result: { item: results[i], count: itemCount }
-      })
-    }
+      const maxLength = Math.min(craftingShapes.length, results.length)
+      for (let i = 0; i < maxLength; i++) {
+          e.recipes.cucumber.shaped_no_mirror({
+              pattern: craftingShapes[i],
+              key: {
+                  C: {
+                      item: craftingItem
+                  }
+              },
+              result: {
+                  item: results[i],
+                  count: itemCount
+              }
+          })
+      }
   }
 
   colors.forEach(color => {
-    dyes.push(`minecraft:${color}_dye`)
-    botaniaFlowers.push(`botania:${color}_mystical_flower`)
+      dyes.push(`minecraft:${color}_dye`)
+      botaniaFlowers.push(`botania:${color}_mystical_flower`)
   })
 
   e.recipes.thermal.chiller(`resourcefulbees:starry_honey_block`, fluid.of(`resourcefulbees:starry_honey`, 1000))
 
   honey.forEach(type => e.recipes.thermal.chiller('minecraft:honey_block', fluid.of(`${type}`, 1000)))
   customHoney.forEach(type => {
-    e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))
-    e.shaped('compressium:honey_1', ['AAA', 'AAA', 'AAA'], { A: `${type}_block` })
+      e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))
+      e.shaped('compressium:honey_1', ['AAA', 'AAA', 'AAA'], {
+          A: `${type}_block`
+      })
   })
 
   shapedRecipe(dyes, `resourcefulbees:rainbow_honey_block`, 32)
