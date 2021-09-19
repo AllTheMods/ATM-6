@@ -1,16 +1,3 @@
 {
-  "programs": ["envirotech:ore", "envirotech:magical_ore"],
-  "item": {
-    "raw:item": "astralsorcery:rock_crystal_ore",
-    "count": 1,
-    "selector": "all"
-  },
-  "config": [{
-      "weight": 0
-    },
-    {
-      "focus": "envirotech:white",
-      "weight": 0
-    }
-  ]
+  "override": "disable"
 }

@@ -1,4 +1,5 @@
 {
+	"override": "replace",
 	"programs": ["envirotech:ore", "envirotech:metallic_ore"],
 	"item": {
     "raw:item": "alltheores:ore_aluminum",
