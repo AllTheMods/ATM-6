@@ -1,3 +1,6 @@
 {
-	merge_tags: ["integrateddynamics:menril_logs"]
+	merge_tags: [
+		"integrateddynamics:menril_logs"
+		"zycraft:ores/zychorium"
+	]
 }
