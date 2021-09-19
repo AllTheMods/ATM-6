@@ -2,7 +2,8 @@
   "programs": ["envirotech:ore", "envirotech:magical_ore"],
   "item": {
     "raw:item": "astralsorcery:starmetal_ore",
-    "count": 1
+    "count": 1,
+    "selector": "all"
   },
   "config": [{
       "weight": 0,

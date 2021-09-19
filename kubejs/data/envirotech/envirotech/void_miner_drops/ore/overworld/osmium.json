@@ -1,18 +1,19 @@
 {
 	"programs": ["envirotech:ore", "envirotech:metallic_ore"],
 	"item": {
-		"raw:item": "biggerreactors:yellorite_ore",
-		"count": 1,
+    "raw:item": "alltheores:ore_osmium",
+    "count": 1,
     "selector": "all"
 	},
-	"config": [{
-			"weight": 0,
+	"config": [
+		{
+			"weight": 750,
 			"blacklist_dimensions": true,
 			"dimensions": ["minecraft:the_nether", "minecraft:the_end"]
 		},
 		{
-			"focus": "envirotech:yellow",
-			"weight": 0,
+			"focus": "envirotech:light_blue",
+			"weight": 6000,
 			"blacklist_dimensions": true,
 			"dimensions": ["minecraft:the_nether", "minecraft:the_end"]
 		}

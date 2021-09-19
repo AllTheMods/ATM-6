@@ -112,6 +112,7 @@ onEvent('item.tags', e => {
   e.add('minecraft:wooden_buttons', '/forbidden_arcanus:.+_button/')
   e.add('forge:dusts/flour', ['create:wheat_flour', 'pneumaticcraft:wheat_flour', 'pamhc2foodcore:flouritem'])
   e.add('forge:dough', ['create:dough', 'pamhc2foodcore:doughitem'])
+  e.add('minecraft:planks', '/forbidden_arcanus:.+_planks/')
   //#endregion
   //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)

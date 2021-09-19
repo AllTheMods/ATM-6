@@ -1,6 +1,17 @@
 onEvent('recipes', e => {
   e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
 
+  e.forEachRecipe({ type: 'minecraft:crafting_shaped', output: '#minecraft:slabs' }, r => {
+    e.shaped(r.inputItems[0], ['S', 'S'], {S: Item.of(r.outputItems[0].id)})
+  })
+  e.forEachRecipe({ type: 'minecraft:stonecutting', output: '#minecraft:stairs' }, r => {
+    e.stonecutting(r.inputItems[0], Item.of(r.outputItems[0].id))
+  })
+  e.forEachRecipe({ type: 'minecraft:crafting_shapeless', output: '#minecraft:buttons' }, r => {
+    e.remove({type: 'minecraft:crafting_shapeless', output: r.outputItems[0].id})
+    e.shapeless(`8x ${r.outputItems[0].id}`, r.inputItems[0])
+  })
+
   e.smelting('minecraft:glass', '#forge:sand').xp(.1).id('kubejs:minecraft/smelting/sand')
   e.smelting('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smelting/leather')
   e.smoking('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smoking/leather')
@@ -9,7 +20,7 @@ onEvent('recipes', e => {
   e.recipes.mekanism.crushing('4x minecraft:blaze_powder', '#forge:rods/blaze')
   e.recipes.mekanism.sawing(`6x minecraft:oak_planks`, `byg:withering_oak_log`, Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_withering_oak`)
   e.recipes.mekanism.sawing(`6x minecraft:birch_planks`, [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
-  e.recipes.mekanism.enriching('minecraft:blaze_rod', '4x minecraft:blaze_powder').id('kubejs:minecraft/enriching/blaze_rod')
+  e.recipes.mekanism.enriching('4x minecraft:blaze_powder', 'minecraft:blaze_rod').id('kubejs:minecraft/enriching/blaze_powder')
 
   e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:minecraft/clay`)
   e.shapeless('4x minecraft:quartz', 'minecraft:quartz_block').id(`kubejs:minecraft/quartz`)

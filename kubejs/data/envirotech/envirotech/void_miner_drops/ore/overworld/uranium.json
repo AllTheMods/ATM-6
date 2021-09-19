@@ -1,8 +1,9 @@
 {
   "programs": ["envirotech:ore", "envirotech:metallic_ore"],
   "item": {
-    "raw:item": "alltheores:uranium_ore",
-    "count": 1
+    "raw:item": "alltheores:ore_uranium",
+    "count": 1,
+    "selector": "all"
   },
   "config": [{
       "weight": 140,
