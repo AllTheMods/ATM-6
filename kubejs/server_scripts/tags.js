@@ -112,6 +112,7 @@ onEvent('item.tags', e => {
   e.add('minecraft:wooden_buttons', '/forbidden_arcanus:.+_button/')
   e.add('forge:dusts/flour', ['create:wheat_flour', 'pneumaticcraft:wheat_flour', 'pamhc2foodcore:flouritem'])
   e.add('forge:dough', ['create:dough', 'pamhc2foodcore:doughitem'])
+  e.add('minecraft:planks', '/forbidden_arcanus:.+_planks/')
   //#endregion
   //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)
@@ -175,7 +176,7 @@ onEvent('block.tags', e => {
   e.add('forge:mushroom_caps', ['#forge:mushroom_caps/red_mushroom', '#forge:mushroom_caps/brown_mushroom', '#forge:mushroom_caps/blue_glowshroom', '#forge:mushroom_caps/purple_glowshroom', '#forge:mushroom_caps/green_mushroom', '#forge:mushroom_caps/black_puff_mushroom', '#forge:mushroom_caps/weeping_milkcap_mushroom'])
   e.add('forge:mushroom_stems', ['#forge:mushroom_stems/mushroom', '#forge:mushroom_stems/brown_mushroom', '#forge:mushroom_stems/white_mushroom', '#forge:mushroom_stems/red_glowshroom', '#forge:mushroom_stems/yellow_glowshroom'])
   e.add('forge:mushrooms', ['minecraft:warped_fungus', 'minecraft:crimson_fungus', 'byg:blue_glowshroom', 'byg:purple_glowshroom'])
-  e.add('forge:storage_blocks', ['#forge:storage_blocks/uraninite', '#forge:storage_blocks/oratchalcum', '#forge:storage_blocks/nether_star'])
+  e.add('forge:storage_blocks', ['#forge:storage_blocks/uraninite', '#forge:storage_blocks/nether_star'])
   e.add('forge:storage_blocks/nether_star', 'allthecompressed:nether_star_block')
   e.add('forge:storage_blocks/uraninite', 'powah:uraninite_block')
   e.add('cyclic:scythe_brush', '#minecraft:flowers')
