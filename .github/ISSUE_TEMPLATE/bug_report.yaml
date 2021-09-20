@@ -15,8 +15,8 @@ body:
       label: Possible Fixes
       description: Have you tried the above mentioned points?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
   - type: input
