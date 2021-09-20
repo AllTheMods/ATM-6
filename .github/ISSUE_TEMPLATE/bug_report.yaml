@@ -39,7 +39,7 @@ body:
     id: logs
     attributes:
       label: latest.log
-      description: Please upload your 'latest.log' file to https://pastebin.com/ (512KB limit) or https://gist.github.com/ (100MB limit) and leave the link here.
-      placeholder: Paste your link from https://pastebin.com/ or https://gist.github.com/ here
+      description: Please upload your 'latest.log' file to  https://gist.github.com/ and leave the link here.
+      placeholder: Paste your link from https://gist.github.com/ here
     validations:
       required: true
