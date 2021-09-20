@@ -43,7 +43,7 @@ onEvent('recipes', e => {
   for (let recipe of listMARecipes) {
   	var essence = `mysticalagriculture:${recipe}_essence`
   	var seeds = `mysticalagriculture:${recipe}_seeds`
-  	e.recipes.thermal.insolator([essence,seeds],seeds).water(500)
+  	e.recipes.thermal.insolator([essence,seeds],seeds).water(500).id(`kubejs:thermal/insolator_${recipe}_seeds`)
   }
 
   removeRecipeByID([
