@@ -1,0 +1,13 @@
+name: Bug Report
+description: File a bug report
+title: "[Question]: "
+labels: [ Question ]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Please give a thorough explanation of what happened. Attach/Link relevant images/files in relation to the issue!
+      placeholder: Tell us what you see!
+    validations:
+      required: true
