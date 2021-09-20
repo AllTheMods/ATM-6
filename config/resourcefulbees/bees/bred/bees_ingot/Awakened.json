@@ -3,7 +3,6 @@
 	"maxTimeInHive": 4800,
 	"traits": ["awakened"],
 	"hasHoneycomb": true,
-	"apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB", "COMB"],
 	"baseLayerTexture": "dragon/dragon_bee_primary",
 	"ColorData": {
 		"primaryColor": "#FF4C00",
