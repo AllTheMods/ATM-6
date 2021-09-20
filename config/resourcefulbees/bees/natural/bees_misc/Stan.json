@@ -3,6 +3,9 @@
     "maxTimeInHive": 1200,
     "traits": [],
     "hasHoneycomb": true,
+    "creator": "Lexxie",
+    "lore": "In loving memory of Stan Lee",
+    "loreColor": "#FFFFFF",
     "baseLayerTexture": "misc/stan_bee",
     "ColorData": {
         "primaryColor": "#5A5A5A",
