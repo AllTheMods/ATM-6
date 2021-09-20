@@ -206,7 +206,9 @@ onEvent('recipes', e => {
       'cobalt',
       'rose_gold',
       'knightmetal',
-      'fiery_ingot'
+      'fiery_ingot',
+      'ruby',
+      'sapphire',
   ], 3250, 'imperium')
   //Tier 5 Crops
   tier([
@@ -220,7 +222,8 @@ onEvent('recipes', e => {
       'uranium',
       'manyullyn',
       'queens_slime',
-      'hepatizon'
+      'hepatizon',
+      'draconium',
   ], 4000, 'supremium')
   //Tier 6 Crops
   tier([
