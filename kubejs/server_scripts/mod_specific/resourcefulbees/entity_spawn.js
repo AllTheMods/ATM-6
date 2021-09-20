@@ -1,5 +1,5 @@
 onEvent('entity.spawned', e => {
-  const entity = e.getEntity()
+  let entity = e.getEntity()
   if(entity.type === 'resourcefulbees:starry_bee'){
     let nbt = entity.getFullNBT()
     nbt.Invulnerable = 1

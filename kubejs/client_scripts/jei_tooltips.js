@@ -53,8 +53,4 @@ onEvent('item.tooltip', e => {
     '§bThis item is obtained by killing',
     'a tamed wolf with a §3Caliburn'
   ])
-
-  e.addAdvanced('minecraft:stone', () => {
-    accept('minecraft:stone', true, 'test')
-  }).isShift()
 })

@@ -1,25 +1,25 @@
 onEvent('jei.hide.items', e => {
   //#region consts
-  const refined = ['controller', 'creative_controller', 'grid', 'crafting_grid', 'pattern_grid', 'fluid_grid', 'network_receiver', 'network_transmitter', 'relay', 'detector', 'security_manager', 'wireless_transmitter', 'disk_manipulator', 'crafter', 'crafter_manager', 'crafting_monitor']
-  const colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
-  const typeFirst = ['mekanism', 'immersiveengineering']
-  const enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
+  let refined = ['controller', 'creative_controller', 'grid', 'crafting_grid', 'pattern_grid', 'fluid_grid', 'network_receiver', 'network_transmitter', 'relay', 'detector', 'security_manager', 'wireless_transmitter', 'disk_manipulator', 'crafter', 'crafter_manager', 'crafting_monitor']
+  let colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
+  let typeFirst = ['mekanism', 'immersiveengineering']
+  let enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
   //#endregion
   //#region functions
   function hideMetal(mod, name, types) {
     types.forEach(type => {
-      const id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
+      let id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
       if (!Ingredient.of(id).stacks.empty) e.hide(id)
     })
   }
   function hideStuff(mod, type, names) {
     names.forEach(name => {
-      const id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
+      let id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
       if (!Ingredient.of(id).stacks.empty) e.hide(id)
     })
   }
   //#endregion
-  
+
   e.hide([
     'apotheosis:iron_mining_arrow',
     'apotheosis:diamond_mining_arrow',
@@ -128,15 +128,9 @@ onEvent('jei.hide.items', e => {
     'thermal:machine_catalyst_creative_augment'
   ])
 
-  enviroStonesMats.forEach(stone => {
-    e.hide(`/enviromats:${stone}_.*/`)
-  })
-
+  enviroStonesMats.forEach(stone => e.hide(`/enviromats:${stone}_.*/`))
   colors.forEach(color => {
-    refined.forEach(refin => {
-      e.hide([`refinedstorage:${color}_${refin}`])
-    })
-
+    refined.forEach(refin => e.hide([`refinedstorage:${color}_${refin}`]))
     e.hide([
       `creativewirelesstransmitter:${color}_creative_wireless_transmitter`,
       `/enviromats:alabaster_${color}_.*/`

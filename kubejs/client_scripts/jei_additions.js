@@ -1,9 +1,5 @@
-//#region ITEMS
 onEvent('jei.add.items', e => {
-  const eggs = ['dragonic', 'allthemodium', 'vibranium', 'unobtainium', 'soul_lava', 'netherite']
-  eggs.forEach(type => {
-    e.add([`resourcefulbees:${type}_bee_spawn_egg`])
-  })
+  utils.listOf(['dragonic', 'allthemodium', 'vibranium', 'unobtainium', 'soul_lava', 'netherite']).forEach(type => e.add([`resourcefulbees:${type}_bee_spawn_egg`]))
 
   e.add([
     /chisel:antiblock.*/,
@@ -39,4 +35,3 @@ onEvent('jei.add.items', e => {
     'chipped:mechanist_workbench'
   ])
 })
-//#endregion

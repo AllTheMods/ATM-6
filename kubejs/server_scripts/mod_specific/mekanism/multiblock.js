@@ -1,9 +1,9 @@
 onEvent('block.right_click', e => {
-  const NORTH = Facing.north
-  const WEST = Facing.west
-  const SOUTH = Facing.south
-  const EAST = Facing.east
-  const placedBlock = e.getBlock()
+  let NORTH = Facing.north
+  let WEST = Facing.west
+  let SOUTH = Facing.south
+  let EAST = Facing.east
+  let placedBlock = e.getBlock()
 
   //check full ultimate energy cube
   function checkUEC(targetBlock) {

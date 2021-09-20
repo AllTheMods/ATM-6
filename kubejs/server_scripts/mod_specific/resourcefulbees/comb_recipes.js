@@ -1,5 +1,5 @@
 onEvent('recipes', e => {
-  const craftingShapes = [
+  let craftingShapes = [
     //vertical
     ['  C', '  C', '  C'],
     [' C ', ' C ', ' C '],
@@ -29,13 +29,13 @@ onEvent('recipes', e => {
     ['   ', 'CC ', '  C'],
     ['CC ', '  C', '   ']
   ] // 25 now
-  const dyes = []
-  const botaniaFlowers = []
-  const honey = ['resourcefulbees:honey', 'cyclic:honey', 'create:honey']
-  const customHoney = ['resourcefulbees:rainbow_honey', 'resourcefulbees:catnip_honey']
+  let dyes = []
+  let botaniaFlowers = []
+  let honey = ['resourcefulbees:honey', 'cyclic:honey', 'create:honey']
+  let customHoney = ['resourcefulbees:rainbow_honey', 'resourcefulbees:catnip_honey']
 
   function shapedRecipe(results, craftingItem, itemCount) {
-    const maxLength = Math.min(craftingShapes.length, results.length)
+    let maxLength = Math.min(craftingShapes.length, results.length)
     for (let i = 0; i < maxLength; i++) {
       e.recipes.cucumber.shaped_no_mirror({
         pattern: craftingShapes[i],

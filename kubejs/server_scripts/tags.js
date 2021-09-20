@@ -2,8 +2,8 @@
 //#region ITEM TAGS
 onEvent('item.tags', e => {
   //#region constants
-  const alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
-  const allthemodiumores = ['allthemodium', 'vibranium', 'unobtainium']
+  let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
+  let allthemodiumores = ['allthemodium', 'vibranium', 'unobtainium']
   //#endregion
   //#region additions
   allthemodiumores.forEach(item => {
@@ -199,7 +199,7 @@ onEvent('entity_type.tags', e => {
 
 //#region FLUID TAGS
 onEvent('fluid.tags', e => {
-  const alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
+  let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
 
   alltheores.forEach(material => {
     e.add(`forge:molten_${material}`, [`alltheores:molten_${material}`, `#tconstruct:molten_${material}`])

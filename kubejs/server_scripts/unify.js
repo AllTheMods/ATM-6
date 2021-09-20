@@ -121,7 +121,7 @@ onEvent('recipes', e => {
   // #endregion Plate Unification
   // #region Tinkers Unification
   function tinkerMelting(material, type, typeValues, temperature, time, byproduct) {
-    const recipe = {
+    let recipe = {
       type: 'tconstruct:melting',
       ingredient: { tag: `forge:${type}/${material}` },
       result: { fluid: `alltheores:molten_${material}`, amount: typeValues.amount },
@@ -142,8 +142,8 @@ onEvent('recipes', e => {
     })
   }
   function unifyTinkers(entries) {
-    const meltingTypes = ['block', 'can', 'coin', 'dust', 'gear', 'ingot', 'nugget', 'ore', 'plates', 'rod', 'sheetmetal']
-    const meltingTypeValues = {
+    let meltingTypes = ['block', 'can', 'coin', 'dust', 'gear', 'ingot', 'nugget', 'ore', 'plates', 'rod', 'sheetmetal']
+    let meltingTypeValues = {
       storage_blocks: { amount: 1296, multiplier: 88.125 },
       dusts: { amount: 144, multiplier: 21.75 },
       gears: { amount: 576, multiplier: 58.8 },
@@ -154,7 +154,7 @@ onEvent('recipes', e => {
       rods: { amount: 72, multiplier: 5.88 },
       sheetmetals: { amount: 144, multiplier: 29.4 }
     }
-    const meltingParts = ['broad_axe_head', 'broad_blade', 'hammer_head', 'large_plate', 'pickaxe_head', 'repair_kit', 'small_axe_head', 'small_blade', 'tool_binding', 'tool_handle', 'tough_handle']
+    let meltingParts = ['broad_axe_head', 'broad_blade', 'hammer_head', 'large_plate', 'pickaxe_head', 'repair_kit', 'small_axe_head', 'small_blade', 'tool_binding', 'tool_handle', 'tough_handle']
 
     entries.forEach(([material, temperature, time, types, byproduct]) => {
       e.replaceInput(`tconstruct:${material}_ingot`, `#forge:ingots/${material}`)
@@ -402,8 +402,8 @@ onEvent('recipes', e => {
   unifyExtraStorageDisks([256, 1024, 4096, 16384])
   // #endregion ExtraDisks & ExtraStorage
   // #region Honey
-  const simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'cyclic:honey', 'create:honey']
-  const customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey']
+  let simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'cyclic:honey', 'create:honey']
+  let customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey']
 
   function cyclicHoneyMelter(entries) {
     entries.forEach(([input, honey, honeyAmount]) => {

@@ -19,8 +19,5 @@ onEvent('block.registry', e => {
   e.create('potassium_nitrate_block').displayName('Potassium Nitrate Block').material('metal')
   e.create('uru_block').displayName('§6Uru Metal Block').material('metal')
   e.create('atm_star_block').displayName('§eATM Star Block').material('iron').hardness(5).lightLevel(1)
-
   e.create('yellow_cake_uranium_block').displayName('§eYellow Cake Uranium Block').material('sand')
-
-
 })

@@ -2,7 +2,7 @@ onEvent('recipes', e => {
   e.remove({ id: /botanypots:crafting\/hopper.*_botany_pot/ })
   e.remove({ id: /botanypots:crafting\/compact_hopper.*botany_pot/ })
   
-  const pots = [
+  let pots = [
     'botanypots:botany_pot',
     'botanypots:white_botany_pot',
     'botanypots:orange_botany_pot',

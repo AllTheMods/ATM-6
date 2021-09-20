@@ -12,7 +12,7 @@ onEvent('recipes', e => {
     ], recipe[0])
   }
   //#endregion
-  const recipes = [
+  let recipes = [
     [{
       T: 'envirocore:litherite_interconnect',
       B: 'envirocore:lonsdaleite_crystal',
