@@ -3,7 +3,7 @@
   "maxTimeInHive": 4800,
   "traits": ["chaotic"],
   "hasHoneycomb": true,
-  "apiaryOutputAmounts": [1, 1, 1, 1, 1],
+  "apiaryOutputAmounts": [8, 16, 24, 32, 40],
   "apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB", "COMB"],
   "baseLayerTexture": "dragon/dragon_bee_primary",
   "ColorData": {
@@ -34,7 +34,7 @@
     "hasCentrifugeOutput": true,
     "mainInputCount": 1,
     "mainOutput": "draconicevolution:small_chaos_frag",
-    "mainOutputWeight": 0.02,
+    "mainOutputWeight": 0.5,
     "mainOutputCount": 1,
     "secondaryOutput": "resourcefulbees:wax",
     "secondaryOutputWeight": 0.20,

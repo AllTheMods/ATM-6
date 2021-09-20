@@ -2,29 +2,29 @@
 //#region ITEM TAGS
 onEvent('item.tags', e => {
   //#region constants
-  const alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
-  const allthemodiumores = ['allthemodium', 'vibranium', 'unobtainium']
+  let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
+  let allthemodiumores = ['allthemodium', 'vibranium', 'unobtainium']
   //#endregion
   //#region additions
   allthemodiumores.forEach(item => {
-      e.add(`mekanism:clumps/${item}`, `allthemodium:${item}_clump`)
-      e.add(`mekanism:clumps`, `#mekanism:clumps/${item}`)
-      e.add(`mekanism:dirty_dusts/${item}`, `allthemodium:dirty_${item}_dust`)
-      e.add(`mekanism:dirty_dusts`, `#mekanism:dirty_dusts/${item}`)
-      e.add(`mekanism:shards/${item}`, `allthemodium:${item}_shard`)
-      e.add(`mekanism:shards`, `#mekanism:shards/${item}`)
-      e.add(`mekanism:crystals/${item}`, `allthemodium:${item}_crystal`)
-      e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
+    e.add(`mekanism:clumps/${item}`, `allthemodium:${item}_clump`)
+    e.add(`mekanism:clumps`, `#mekanism:clumps/${item}`)
+    e.add(`mekanism:dirty_dusts/${item}`, `allthemodium:dirty_${item}_dust`)
+    e.add(`mekanism:dirty_dusts`, `#mekanism:dirty_dusts/${item}`)
+    e.add(`mekanism:shards/${item}`, `allthemodium:${item}_shard`)
+    e.add(`mekanism:shards`, `#mekanism:shards/${item}`)
+    e.add(`mekanism:crystals/${item}`, `allthemodium:${item}_crystal`)
+    e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
   alltheores.forEach(item => {
-      e.add(`mekanism:clumps/${item}`, `alltheores:${item}_clump`)
-      e.add(`mekanism:clumps`, `#mekanism:clumps/${item}`)
-      e.add(`mekanism:dirty_dusts/${item}`, `alltheores:dirty_${item}_dust`)
-      e.add(`mekanism:dirty_dusts`, `#mekanism:dirty_dusts/${item}`)
-      e.add(`mekanism:shards/${item}`, `alltheores:${item}_shard`)
-      e.add(`mekanism:shards`, `#mekanism:shards/${item}`)
-      e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`)
-      e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
+    e.add(`mekanism:clumps/${item}`, `alltheores:${item}_clump`)
+    e.add(`mekanism:clumps`, `#mekanism:clumps/${item}`)
+    e.add(`mekanism:dirty_dusts/${item}`, `alltheores:dirty_${item}_dust`)
+    e.add(`mekanism:dirty_dusts`, `#mekanism:dirty_dusts/${item}`)
+    e.add(`mekanism:shards/${item}`, `alltheores:${item}_shard`)
+    e.add(`mekanism:shards`, `#mekanism:shards/${item}`)
+    e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`)
+    e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
   e.add('forge:marble', '#chisel:marble')
   e.add('integrateddynamics:menril_logs', 'integrateddynamics:menril_log_filled')
@@ -110,8 +110,6 @@ onEvent('item.tags', e => {
   e.add('forge:simple_honeycombs', '/^.+:(?!(catnip|rgbee)_).*honeycomb$/')
   e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
   e.add('minecraft:wooden_buttons', '/forbidden_arcanus:.+_button/')
-  e.add('forge:dusts/flour', ['create:wheat_flour', 'pneumaticcraft:wheat_flour', 'pamhc2foodcore:flouritem'])
-  e.add('forge:dough', ['create:dough', 'pamhc2foodcore:doughitem'])
   e.add('minecraft:planks', '/forbidden_arcanus:.+_planks/')
   //#endregion
   //#region removals
@@ -149,7 +147,7 @@ onEvent('block.tags', e => {
   e.add('forge:ores/arcane_brick', 'ars_nouveau:arcane_ore')
   e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
   e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
-  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/, ])
+  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/,])
   e.add('mekanism:cardboard_blacklist', '#misctags:no_moving')
   e.add('bagofyurting:blacklist', '#misctags:no_moving')
   e.add('create:brittle', '#misctags:no_moving')
@@ -176,7 +174,7 @@ onEvent('block.tags', e => {
   e.add('forge:mushroom_caps', ['#forge:mushroom_caps/red_mushroom', '#forge:mushroom_caps/brown_mushroom', '#forge:mushroom_caps/blue_glowshroom', '#forge:mushroom_caps/purple_glowshroom', '#forge:mushroom_caps/green_mushroom', '#forge:mushroom_caps/black_puff_mushroom', '#forge:mushroom_caps/weeping_milkcap_mushroom'])
   e.add('forge:mushroom_stems', ['#forge:mushroom_stems/mushroom', '#forge:mushroom_stems/brown_mushroom', '#forge:mushroom_stems/white_mushroom', '#forge:mushroom_stems/red_glowshroom', '#forge:mushroom_stems/yellow_glowshroom'])
   e.add('forge:mushrooms', ['minecraft:warped_fungus', 'minecraft:crimson_fungus', 'byg:blue_glowshroom', 'byg:purple_glowshroom'])
-  e.add('forge:storage_blocks', ['#forge:storage_blocks/uraninite', '#forge:storage_blocks/nether_star'])
+  e.add('forge:storage_blocks', ['#forge:storage_blocks/uraninite', '#forge:storage_blocks/oratchalcum', '#forge:storage_blocks/nether_star'])
   e.add('forge:storage_blocks/nether_star', 'allthecompressed:nether_star_block')
   e.add('forge:storage_blocks/uraninite', 'powah:uraninite_block')
   e.add('cyclic:scythe_brush', '#minecraft:flowers')
@@ -194,18 +192,18 @@ onEvent('block.tags', e => {
 
 //#region ENTITY TAGS
 onEvent('entity_type.tags', e => {
-  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', ])
-  e.add('mob_grinding_utils:noswab', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', ])
+  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg',])
+  e.add('mob_grinding_utils:noswab', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg',])
 })
 //#endregion
 
 //#region FLUID TAGS
 onEvent('fluid.tags', e => {
-  const alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
+  let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
 
   alltheores.forEach(material => {
-      e.add(`forge:molten_${material}`, [`alltheores:molten_${material}`, `#tconstruct:molten_${material}`])
-      e.add(`tconstruct:metal_like`, `alltheores:molten_${material}`)
+    e.add(`forge:molten_${material}`, [`alltheores:molten_${material}`, `#tconstruct:molten_${material}`])
+    e.add(`tconstruct:metal_like`, `alltheores:molten_${material}`)
   })
   e.add('forge:essence', 'pneumaticcraft:memory_essence')
   e.add('minecraft:water', ['cofh_core:honey', 'cyclic:honey', 'resourcefulbees:catnip_honey', 'resourcefulbees:honey', 'resourcefulbees:rainbow_honey_flowing', 'resourcefulbees:rainbow_honey'])

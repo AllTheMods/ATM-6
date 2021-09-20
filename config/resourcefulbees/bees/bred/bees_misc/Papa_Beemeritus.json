@@ -2,6 +2,9 @@
     "flower": "tag:tombstone:decorative_graves",
     "maxTimeInHive": 1200,
     "traits": ["nether"],
+    "creator": "NoControl",
+    "lore": "You are never truly alone. Wherever you are, you have ghosts, and if you have ghosts, you have everything.",
+    "loreColor": "#626262",
     "hasHoneycomb": true,
     "ColorData": {
         "primaryColor": "#F5F5F5",
