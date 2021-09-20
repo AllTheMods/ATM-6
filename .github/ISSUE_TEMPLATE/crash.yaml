@@ -40,6 +40,6 @@ body:
     attributes:
       label: latest.log
       description: Please upload your 'latest.log' file to  https://gist.github.com/ and leave the link here.
-      placeholder: Paste your link from https://gist.github.com/ here
+      placeholder: https://gist.github.com/
     validations:
       required: true
