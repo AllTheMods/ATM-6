@@ -1,7 +1,7 @@
 {
 	id: "16956970FF49BB4D"
 	group: ""
-	order_index: 2
+	order_index: 1
 	filename: "creative"
 	title: "Creative "
 	icon: "atmadditions:atm_star"
@@ -9,708 +9,62 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: -1.0d
-			description: ["Who doesn't wants a Creative Controller?"]
-			dependencies: ["238BB6ED076FF964"]
-			dependency_requirement: "all_started"
-			size: 2.0d
-			id: "30CED5B9C295B35E"
-			tasks: [{
-				id: "31F0B27967C02BD8"
-				type: "item"
-				item: "refinedstorage:creative_controller"
-			}]
-		}
-		{
-			x: -3.5d
-			y: 2.0d
-			shape: "diamond"
-			description: ["This thingy is fast, faster than your mom"]
-			dependencies: ["30CED5B9C295B35E"]
-			dependency_requirement: "all_started"
-			id: "6B7DBB240C8118FE"
-			tasks: [{
-				id: "35EB9584F516588A"
-				type: "item"
-				item: "cabletiers:creative_importer"
-			}]
-			rewards: [{
-				id: "19A6926A441E120E"
-				type: "item"
-				item: "refinedstorage:cable"
-			}]
-		}
-		{
+			title: "Resourceful Bees"
 			x: -1.5d
-			y: 3.5d
-			shape: "diamond"
-			description: ["That thingy is too fast for the police (I got arrested :/)"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "0F9109AE64212CF7"
-			tasks: [{
-				id: "058A8C0A7A5E1EC7"
-				type: "item"
-				item: "cabletiers:creative_exporter"
-			}]
-			rewards: [{
-				id: "43A7E2137B8756E8"
-				type: "item"
-				item: "refinedstorage:cable"
-			}]
-		}
-		{
-			x: 1.5d
-			y: 3.5d
-			shape: "diamond"
-			description: ["BUILD THE WORLD (or one block fast)"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "146C3E26EDEC0367"
-			tasks: [{
-				id: "327FC7484ACA80D4"
-				type: "item"
-				item: "cabletiers:creative_constructor"
-			}]
-			rewards: [{
-				id: "25B60B8ED6E1BA9E"
-				type: "item"
-				item: "refinedstorage:cable"
-			}]
-		}
-		{
-			x: 3.5d
-			y: 2.0d
-			shape: "diamond"
-			description: ["DESTROY THE WORLD (or one block fast)"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "53645509B62A9CC3"
-			tasks: [{
-				id: "448B5E5CF32D35F8"
-				type: "item"
-				item: "cabletiers:creative_destructor"
-			}]
-			rewards: [{
-				id: "33FCD8E1C03FB22E"
-				type: "item"
-				item: "refinedstorage:cable"
-			}]
-		}
-		{
-			x: -4.0d
-			y: -0.5d
-			description: ["Who is tired of not having infinite Item Storage? -Yes you"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "06D3E33E05FE772B"
-			tasks: [{
-				id: "5162E68375FD02E4"
-				type: "item"
-				item: "extradisks:infinite_storage_part"
-			}]
-			rewards: [{
-				id: "6860F6AB3C7B38F7"
-				type: "item"
-				item: "refinedstorage:1k_storage_part"
-			}]
-		}
-		{
-			x: 4.0d
-			y: -0.5d
-			description: ["Wait... THATS ILLEGAL"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "4308E010FFA13776"
-			tasks: [{
-				id: "6B60347B23D31266"
-				type: "item"
-				item: "extradisks:infinite_fluid_storage_part"
-			}]
-			rewards: [{
-				id: "22893CBE9E9226E2"
-				type: "item"
-				item: "refinedstorage:1k_storage_disk"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 0.5d
-			description: ["Last Step for Infinite Item Storage"]
-			dependencies: ["06D3E33E05FE772B"]
-			id: "44AD57AE43B87688"
-			tasks: [{
-				id: "554522543E07DF62"
-				type: "item"
-				item: "extradisks:infinite_storage_disk"
-			}]
-			rewards: [{
-				id: "32070DA7BA620A3E"
-				type: "item"
-				item: "refinedstorage:1k_storage_part"
-			}]
-		}
-		{
-			x: 6.5d
-			y: 0.5d
-			description: ["Last Step for Infinite Fluid Storage"]
-			dependencies: ["4308E010FFA13776"]
-			id: "0C96CC7992E0AA34"
-			tasks: [{
-				id: "4559EA6B3E990E81"
-				type: "item"
-				item: "extradisks:infinite_fluid_storage_disk"
-			}]
-			rewards: [{
-				id: "4B84DB0F8726A3DC"
-				type: "item"
-				item: "refinedstorage:1k_storage_part"
-			}]
-		}
-		{
-			x: -6.0d
 			y: -1.5d
-			description: ["This isn't useless at all..."]
-			dependencies: ["06D3E33E05FE772B"]
-			id: "0A020FC07B087DC6"
-			tasks: [{
-				id: "6748222126CC16FC"
-				type: "item"
-				item: "extradisks:infinite_storage_block"
-			}]
-			rewards: [{
-				id: "5F627C99A1CF7692"
-				type: "item"
-				item: "refinedstorage:1k_storage_part"
-			}]
-		}
-		{
-			x: 6.5d
-			y: -1.5d
-			description: ["Useless block is useless. But craft it anyway,"]
-			dependencies: ["4308E010FFA13776"]
-			id: "04EBABF967CDC6B9"
-			tasks: [{
-				id: "7EEEACA18EE3EC8C"
-				type: "item"
-				item: "extradisks:infinite_fluid_storage_block"
-			}]
-			rewards: [{
-				id: "313B59A4246CE31C"
-				type: "item"
-				item: "refinedstorage:1k_storage_part"
-			}]
-		}
-		{
-			x: -3.0d
-			y: -3.0d
-			description: ["Good for people who don't want to wait.. (like you :))"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "4D03898DBFE209BA"
-			tasks: [{
-				id: "115A3E3BEDF7A1FC"
-				type: "item"
-				item: "creativecrafter:creative_crafter"
-			}]
-		}
-		{
-			x: 2.5d
-			y: -3.0d
-			description: ["Who doesn't wants to have infinite Range that also works across dimensions?"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "0ABBCD2FA07815F2"
-			tasks: [{
-				id: "093509335BA2BFAD"
-				type: "item"
-				item: "creativewirelesstransmitter:creative_wireless_transmitter"
-			}]
-			rewards: [{
-				id: "6013E00B05293D67"
-				type: "item"
-				item: "refinedstorage:wireless_transmitter"
-			}]
-		}
-		{
-			x: 0.0d
-			y: -13.0d
-			description: ["MORE RESOURCES"]
-			dependencies: ["238BB6ED076FF964"]
-			size: 2.0d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
 			id: "695EEC6AEF550449"
-			tasks: [{
-				id: "7D962F84E056C9BC"
-				type: "item"
-				item: "creativeapiary:tcreative_apiary"
-			}]
-			rewards: [{
-				id: "05A5ECD16A804E54"
-				type: "item"
-				item: "minecraft:bee_spawn_egg"
-			}]
+			tasks: [
+				{
+					id: "7D962F84E056C9BC"
+					type: "item"
+					item: "creativeapiary:tcreative_apiary"
+				}
+				{
+					id: "210AEEC1A63F3AE4"
+					type: "item"
+					item: "creativeapiary:creative_apiary_storage"
+				}
+				{
+					id: "2A15883F32EC6030"
+					type: "item"
+					item: "creativeapiary:creative_apiary_breeder"
+				}
+			]
 		}
 		{
-			x: 0.0d
-			y: -7.5d
-			description: ["The most powerful item you can get. You need this item for nearly every Creative Crafting Recipe"]
-			dependencies: ["7A6B1CD5DE007F2B"]
-			size: 3.0d
-			id: "238BB6ED076FF964"
-			tasks: [{
-				id: "7787EDA65C44149E"
-				type: "item"
-				item: "atmadditions:atm_star"
-			}]
-		}
-		{
-			x: -3.5d
-			y: -14.0d
-			description: ["MORE SLOTS"]
-			dependencies: ["695EEC6AEF550449"]
-			id: "10D9631CFB2F7E70"
-			tasks: [{
-				id: "79950B2F24578A11"
-				type: "item"
-				item: "creativeapiary:creative_apiary_storage"
-			}]
-			rewards: [{
-				id: "4E888365DAA63235"
-				type: "item"
-				item: "apotheosis:beeshelf"
-			}]
-		}
-		{
-			x: 3.5d
-			y: -14.0d
-			description: ["INSTANT BREEDING"]
-			dependencies: ["695EEC6AEF550449"]
-			id: "781B1AFE1BAEDB32"
-			tasks: [{
-				id: "09DE0D02E36DD837"
-				type: "item"
-				item: "creativeapiary:creative_apiary_breeder"
-			}]
-			rewards: [{
-				id: "4BD2A95F266A3BE2"
-				type: "item"
-				item: "minecraft:bee_nest"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 4.0d
-			description: ["No more RF for the Wireless Grid needed"]
-			dependencies: ["30CED5B9C295B35E"]
-			id: "174ABE77F6B2AE1E"
-			tasks: [{
-				id: "42877799D98896A9"
-				type: "item"
-				item: "refinedstorage:creative_wireless_grid"
-			}]
-			rewards: [{
-				id: "779234C793666E0E"
-				type: "item"
-				item: "refinedstorage:wireless_fluid_grid"
-			}]
-		}
-		{
-			x: -1.5d
-			y: 5.5d
-			description: ["Why do you want to see your Fluids in your system?"]
-			dependencies: ["174ABE77F6B2AE1E"]
-			id: "31C7561C314412A5"
-			tasks: [{
-				id: "1790E35E4A8451C8"
-				type: "item"
-				item: "refinedstorage:creative_wireless_fluid_grid"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 6.0d
-			description: ["Useless.. But if you want make it ¯\\_(ツ)_/¯"]
-			dependencies: ["174ABE77F6B2AE1E"]
-			id: "483120B0993728A0"
-			tasks: [{
-				id: "4D32C4F87E9FF0BB"
-				type: "item"
-				item: "refinedstorage:creative_wireless_crafting_monitor"
-			}]
+			title: "Create"
+			x: -0.5d
+			y: -3.0d
+			description: ["Infinite RPM out of nothing :O"]
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "2CF11A70229000AB"
+			tasks: [
+				{
+					id: "0CF133CEADDC504C"
+					type: "item"
+					item: "create:creative_motor"
+				}
+				{
+					id: "72936F6095FF124A"
+					type: "item"
+					item: "create:creative_blaze_cake"
+				}
+			]
 		}
 		{
 			x: 1.5d
-			y: 5.5d
-			description: ["BUILD THAT NOW!"]
-			dependencies: ["174ABE77F6B2AE1E"]
-			id: "4FB9FA944DEAA66A"
-			tasks: [{
-				id: "1649D5E2F2DADF9C"
-				type: "item"
-				item: "refinedstorageaddons:creative_wireless_crafting_grid"
-			}]
-		}
-		{
-			x: 3.5d
-			y: -7.5d
-			description: ["Did someone say more Resources?"]
-			dependencies: ["238BB6ED076FF964"]
-			id: "54A9B5BD133DEEBD"
-			tasks: [{
-				id: "7C183EACFB14B28C"
-				type: "item"
-				item: "ctiers:centrifuge_casing_tier_creative"
-			}]
-			rewards: [{
-				id: "703A6EDA47903AF4"
-				type: "item"
-				item: "resourcefulbees:centrifuge_casing"
-			}]
-		}
-		{
-			x: 5.5d
-			y: -7.5d
-			description: ["Help me"]
-			dependencies: ["54A9B5BD133DEEBD"]
-			id: "28128A206D096F27"
-			tasks: [{
-				id: "6B39213BDB8B6447"
-				type: "item"
-				item: "ctiers:centrifuge_controller_tier_creative"
-			}]
-		}
-		{
-			x: -2.5d
-			y: -10.0d
-			description: [
-				""
-				""
-			]
-			dependencies: ["238BB6ED076FF964"]
-			id: "61069A50EE9E3564"
-			tasks: [{
-				id: "173C460B86F6935F"
-				type: "item"
-				item: "woot:creative_conatus"
-			}]
-			rewards: [{
-				id: "2D04A6769343457D"
-				type: "item"
-				item: "woot:conatus_fluid_bucket"
-			}]
-		}
-		{
-			x: -3.5d
-			y: -7.5d
-			description: ["Who doesn't want infinite Mana?"]
-			dependencies: ["238BB6ED076FF964"]
-			id: "527AAD9B7DB2FBF0"
-			tasks: [{
-				id: "7C69307D15F4C27D"
-				type: "item"
-				item: "botania:creative_pool"
-			}]
-			rewards: [{
-				id: "1E3359594EE6BEE6"
-				type: "item"
-				item: "botania:mana_pool"
-			}]
-		}
-		{
-			x: -5.5d
-			y: -7.5d
-			description: [
-				"A Tablet that has Infinite Mana"
-				"Isn't that cool? "
-			]
-			dependencies: ["527AAD9B7DB2FBF0"]
-			id: "24BBF9EAFC992E80"
-			tasks: [{
-				id: "2A92A112B86EEDCC"
-				type: "item"
-				item: {
-					id: "botania:mana_tablet"
-					Count: 1b
-					tag: {
-						mana: 500000
-						creative: 1b
-					}
-				}
-			}]
-		}
-		{
-			x: 2.5d
-			y: -10.0d
-			description: ["Everything you want is in this book"]
-			dependencies: ["238BB6ED076FF964"]
-			id: "55F188E5F963CECA"
-			tasks: [{
-				id: "58B6A14C640B7B66"
-				type: "item"
-				item: "ars_nouveau:creative_spell_book"
-			}]
-			rewards: [{
-				id: "66AB6688609D92E4"
-				type: "item"
-				item: "ars_nouveau:novice_spell_book"
-			}]
-		}
-		{
-			x: -3.5d
-			y: -6.0d
-			description: [
-				"Mana Jar."
-				"What else should I write?"
-			]
-			dependencies: ["238BB6ED076FF964"]
-			id: "49BF14EB67E23950"
-			tasks: [{
-				id: "06F2A790EAEAC6CE"
-				type: "item"
-				item: "ars_nouveau:creative_mana_jar"
-			}]
-			rewards: [{
-				id: "3F63C6D33396B403"
-				type: "item"
-				item: "ars_nouveau:mana_jar"
-			}]
-		}
-		{
-			x: 3.5d
-			y: -6.0d
-			description: ["Infinite RPM out of nothing :O"]
-			dependencies: ["238BB6ED076FF964"]
-			id: "2CF11A70229000AB"
-			tasks: [{
-				id: "0CF133CEADDC504C"
-				type: "item"
-				item: "create:creative_motor"
-			}]
-			rewards: [{
-				id: "39C85D32E8F91BB0"
-				type: "item"
-				item: "create:water_wheel"
-			}]
-		}
-		{
-			x: -2.5d
-			y: -4.5d
-			description: [
-				"INFINITE ENERGY"
-				"YAY"
-			]
-			dependencies: ["238BB6ED076FF964"]
-			id: "6E47EC730178E08B"
-			tasks: [{
-				id: "1F84095CD6855C7E"
-				type: "item"
-				item: "mekanism:creative_energy_cube"
-			}]
-			rewards: [{
-				id: "17C691E7480A4392"
-				type: "item"
-				item: "mekanism:basic_energy_cube"
-			}]
-		}
-		{
-			x: 2.5d
-			y: -4.5d
-			description: [
-				"INFINITE ENERGY"
-				"YAY"
-			]
-			dependencies: ["238BB6ED076FF964"]
-			id: "02766ACD9AF4DC55"
-			tasks: [{
-				id: "26842B27FC687C5D"
-				type: "item"
-				item: "appliedenergistics2:creative_energy_cell"
-			}]
-			rewards: [{
-				id: "57A0639CA0911384"
-				type: "item"
-				item: {
-					id: "appliedenergistics2:dense_energy_cell"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: -1.0d
-			y: -10.5d
-			description: [
-				"INFINITE ENERGY"
-				"YAY"
-			]
-			dependencies: ["238BB6ED076FF964"]
-			id: "61D247B6998CECCB"
-			tasks: [{
-				id: "3CC0F1FCCE8B1301"
-				type: "item"
-				item: "immersiveengineering:capacitor_creative"
-			}]
-			rewards: [{
-				id: "3A9805F8C8B36C54"
-				type: "item"
-				item: "immersiveengineering:capacitor_mv"
-			}]
-		}
-		{
-			x: 1.0d
-			y: -10.5d
-			description: ["A cool infinite Battery."]
-			dependencies: ["238BB6ED076FF964"]
-			id: "434E5B84AFEA48AD"
-			tasks: [{
-				id: "35991F9FFCEB2A73"
-				type: "item"
-				item: "integrateddynamics:energy_battery_creative"
-			}]
-			rewards: [{
-				id: "6218BAB139E0DE0A"
-				type: "item"
-				item: {
-					id: "integrateddynamics:energy_battery"
-					Count: 1b
-					tag: {
-						energy: 0
-					}
-				}
-			}]
-		}
-		{
-			x: -3.5d
-			y: -9.0d
-			description: ["Did I read write? Infinite Storage?! :D"]
-			dependencies: ["238BB6ED076FF964"]
+			y: 3.0d
+			description: ["Nearly infinite Storage"]
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
 			id: "546D0730D780D30B"
 			tasks: [{
 				id: "6A69B872FEC84F2C"
 				type: "item"
 				item: "storagedrawers:creative_storage_upgrade"
-			}]
-			rewards: [{
-				id: "09B576D0B4CC9DF0"
-				type: "item"
-				item: "storagedrawers:spruce_full_drawers_1"
-			}]
-		}
-		{
-			title: "Alfsteel AIOT SS Rank"
-			icon: {
-				id: "aiotbotania:alfsteel_aiot"
-				Count: 1b
-				tag: {
-					tipped: 1b
-					mana: 2147483647
-					Damage: 0
-				}
-			}
-			x: 5.5d
-			y: -9.5d
-			description: ["Get a Life"]
-			dependencies: ["4D15AA4334D14E1D"]
-			id: "0BE2549013745186"
-			tasks: [{
-				id: "6681321AB17F2EF9"
-				type: "item"
-				title: "Alfsteel AIOT SS Rank"
-				icon: {
-					id: "aiotbotania:alfsteel_aiot"
-					Count: 1b
-					tag: {
-						tipped: 1b
-						mana: 2147483647
-						Damage: 0
-					}
-				}
-				item: {
-					id: "itemfilters:and"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "itemfilters:weak_nbt"
-								Count: 1b
-								tag: {
-									value: {
-										tipped: 1b
-										mana: 2147483647
-										Damage: 0
-									}
-								}
-							}
-							{
-								id: "aiotbotania:alfsteel_aiot"
-								Count: 1b
-								tag: {
-									tipped: 1b
-									mana: 2147483647
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "4AF9AD001C827085"
-				type: "item"
-				item: "minecraft:dirt"
-			}]
-		}
-		{
-			title: "Terrasteel AIOT SS Rank"
-			icon: {
-				id: "aiotbotania:terra_aiot"
-				Count: 1b
-				tag: {
-					tipped: 1b
-					mana: 2147483647
-					Damage: 0
-				}
-			}
-			x: 3.5d
-			y: -9.0d
-			description: ["Terrasteel AIOT SS Rank"]
-			dependencies: ["238BB6ED076FF964"]
-			id: "4D15AA4334D14E1D"
-			tasks: [{
-				id: "6A12700E5D568EC6"
-				type: "item"
-				item: {
-					id: "itemfilters:and"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "aiotbotania:terra_aiot"
-								Count: 1b
-								tag: {
-									tipped: 1b
-									mana: 2147483647
-									Damage: 0
-								}
-							}
-							{
-								id: "itemfilters:weak_nbt"
-								Count: 1b
-								tag: {
-									value: {
-										mana: 2147483647
-										tipped: 1b
-									}
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "7D47D39B5A8AAF56"
-				type: "item"
-				item: {
-					id: "aiotbotania:livingwood_aiot"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
 			}]
 		}
 		{
@@ -885,8 +239,8 @@
 					}
 				}
 			}
-			x: 0.0d
-			y: -16.0d
+			x: -0.5d
+			y: -1.5d
 			subtitle: "The time has come!"
 			description: [
 				"   &6The queen of all bees is now here!&r"
@@ -896,7 +250,8 @@
 				""
 				"She will only produce 1 comb item, no matter what apiary or hive you're using. Centrifuge multipliers also do not work on the combs."
 			]
-			dependencies: ["695EEC6AEF550449"]
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
 			id: "5C010374A550B53F"
 			tasks: [
 				{
@@ -956,6 +311,365 @@
 					}
 				}
 			]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			id: "5B677F41E5A12166"
+			tasks: [{
+				id: "32115EB5F6198E0A"
+				type: "item"
+				item: "mysticalagradditions:creative_essence"
+			}]
+			rewards: [{
+				id: "51E7B49C797D47B5"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			id: "3FCB14EFFBAF0C9B"
+			tasks: [{
+				id: "3183D4DEAB2C4F3E"
+				type: "item"
+				item: "atmadditions:nexium_emitter"
+			}]
+			rewards: [{
+				id: "0941901F4B5EE1C4"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			id: "7633927107252797"
+			tasks: [{
+				id: "27348FEF99D8CB45"
+				type: "item"
+				item: "atmadditions:philosophers_fuel"
+			}]
+			rewards: [{
+				id: "669C3B858C7D2814"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			id: "4B6F6458B290F3FF"
+			tasks: [{
+				id: "323C73CE2E9A8EAA"
+				type: "item"
+				item: "atmadditions:pulsating_black_hole"
+			}]
+			rewards: [{
+				id: "7D12D645F5CB2813"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			id: "7A2C6D2BF3FF5B8A"
+			tasks: [{
+				id: "03EF1A2F1062529D"
+				type: "item"
+				item: "atmadditions:dimensional_seed"
+			}]
+			rewards: [{
+				id: "79E9954DA4DE4282"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Needed for crafting OP creative items"]
+			dependencies: [
+				"3DDF486DEE908A20"
+				"4548B0E30DCD59A4"
+				"7633927107252797"
+				"5B677F41E5A12166"
+				"3FCB14EFFBAF0C9B"
+				"4B6F6458B290F3FF"
+				"26175CD0F21263E4"
+				"7A2C6D2BF3FF5B8A"
+				"2C6B3E47676E62A4"
+				"1EAB4A302BC29CAF"
+			]
+			id: "257064EF9D295744"
+			tasks: [{
+				id: "1805981EC03970F2"
+				type: "item"
+				item: "atmadditions:atm_star"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "4548B0E30DCD59A4"
+			tasks: [{
+				id: "020B201E582AC647"
+				type: "item"
+				item: "kubejs:patrick_star"
+			}]
+			rewards: [{
+				id: "12CAAD4E3A41127F"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			id: "26175CD0F21263E4"
+			tasks: [{
+				id: "25ABCDE2203D6C94"
+				type: "item"
+				item: "atmadditions:oblivion_shard"
+			}]
+			rewards: [{
+				id: "388D90F741B5B0F8"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			id: "2C6B3E47676E62A4"
+			tasks: [{
+				id: "668FDE92D3C3CF31"
+				type: "item"
+				item: "atmadditions:improbable_probability_device"
+			}]
+			rewards: [{
+				id: "6C15B7FBA87B96D9"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			id: "3DDF486DEE908A20"
+			tasks: [{
+				id: "04BC676867D17C75"
+				type: "item"
+				item: "atmadditions:dragon_soul"
+			}]
+			rewards: [{
+				id: "5F008E41DD00B16F"
+				type: "item"
+				item: "pamhc2foodextended:brownieitem"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			id: "1EAB4A302BC29CAF"
+			tasks: [{
+				id: "02762484FB7BE47F"
+				type: "item"
+				item: "atmadditions:withers_compass"
+			}]
+		}
+		{
+			title: "Infinite Energy"
+			x: 2.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "436B5A79FA72DB1A"
+			tasks: [
+				{
+					id: "033F476B1BF4E019"
+					type: "item"
+					item: "integrateddynamics:energy_battery_creative"
+				}
+				{
+					id: "6E4D52064D796B82"
+					type: "item"
+					item: {
+						id: "mekanism:creative_energy_cube"
+						Count: 1b
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: 0b
+									stored: "18446744073709551615.9999"
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "095B0D3C9B780B6D"
+					type: "item"
+					item: "immersiveengineering:capacitor_creative"
+				}
+				{
+					id: "62DBA52A673B030B"
+					type: "item"
+					item: "appliedenergistics2:creative_energy_cell"
+				}
+				{
+					id: "43FEC446367EEE81"
+					type: "item"
+					item: "woot:creative_conatus"
+				}
+			]
+		}
+		{
+			title: "Infinite Mana"
+			x: 0.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "5C7B81756CA58056"
+			tasks: [
+				{
+					id: "775BD503F830BB6C"
+					type: "item"
+					item: "botania:creative_pool"
+				}
+				{
+					id: "7FDBB3698C087D8B"
+					type: "item"
+					item: {
+						id: "botania:mana_tablet"
+						Count: 1b
+						tag: {
+							mana: 500000
+							creative: 1b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0426E9AD4B1EC5B8"
+				type: "item"
+				item: "botania:gaia_ingot"
+				count: 10
+			}]
+		}
+		{
+			title: "Ars Nouveau"
+			x: 1.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "6FB82574D7AE6D85"
+			tasks: [
+				{
+					id: "38D108393447BCA3"
+					type: "item"
+					item: "ars_nouveau:creative_spell_book"
+				}
+				{
+					id: "59FB36C4D3780888"
+					type: "item"
+					item: "ars_nouveau:creative_mana_jar"
+				}
+			]
+		}
+		{
+			title: "Creative Centrifuge"
+			x: -2.5d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "13E4B8DECD54CFE1"
+			tasks: [
+				{
+					id: "7264B77AE04099FC"
+					type: "item"
+					item: "ctiers:centrifuge_controller_tier_creative"
+				}
+				{
+					id: "5DB8527C27ABA035"
+					type: "item"
+					item: "ctiers:centrifuge_casing_tier_creative"
+					count: 35L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "0A5EE5CAA2CC572E"
+			tasks: [{
+				id: "3C71DA673A75CBAA"
+				type: "item"
+				item: "rftoolsdim:dimension_builder"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "7DB018F46584386C"
+			tasks: [
+				{
+					id: "386CDB9672DABEFD"
+					type: "item"
+					item: "iceandfire:creative_dragon_meal"
+				}
+				{
+					id: "472661F36304E191"
+					type: "item"
+					item: "iceandfire:dragonegg_red"
+				}
+				{
+					id: "6E5798DE7C154661"
+					type: "item"
+					item: "iceandfire:dragonegg_blue"
+				}
+				{
+					id: "0195E0F92E81EFBA"
+					type: "item"
+					item: "iceandfire:dragonegg_electric"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "22C55C94E18D5073"
+			tasks: [{
+				id: "65EAD2FC01537F02"
+				type: "item"
+				item: "waterstrainer:super_worm"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["257064EF9D295744"]
+			id: "54F43B991F8ADB0F"
+			tasks: [{
+				id: "1446F1B10FD2814E"
+				type: "item"
+				item: {
+					id: "ironjetpacks:creative_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
 		}
 	]
 }

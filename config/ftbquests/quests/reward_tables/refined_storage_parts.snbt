@@ -1,0 +1,13 @@
+{
+	id: "3183DFB374F0B096"
+	order_index: 2
+	title: "Refined Storage Parts"
+	loot_size: 1
+	rewards: [
+		{ item: "refinedstorage:basic_processor", count: 3, weight: 40 }
+		{ item: "refinedstorage:improved_processor", count: 2, weight: 30 }
+		{ item: "refinedstorage:advanced_processor", weight: 20 }
+		{ item: "extrastorage:neural_processor", weight: 10 }
+		{ item: "extradisks:withering_processor" }
+	]
+}
