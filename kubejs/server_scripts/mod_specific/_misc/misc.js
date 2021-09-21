@@ -98,7 +98,7 @@ onEvent('recipes', e => {
     ['enderium', [1, 3, 4]],
     ['brass', [2, 3], 57, 'create:brass_sheet']
   ])
-  
+
   e.shapeless('allthecompressed:atm_star_block', 'kubejs:atm_star_block').id('kubejs:atmadditions/atm_star_block_conversion')
 
   e.shapeless('astralsorcery:marble_raw', 'enviromats:marble').id('kubejs:marble/astral_to_envirotech')

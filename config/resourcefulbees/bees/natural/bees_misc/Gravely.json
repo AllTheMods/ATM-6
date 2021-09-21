@@ -5,19 +5,8 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/gravely_bee",
     "ColorData": {
-        "primaryColor": "#726b69",
-        "secondaryColor": "#726b69",
         "honeycombColor": "#726b69",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#726b69",
-        "isEnchanted": false,
-        "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -28,22 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:gravely_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:gravel",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:gravely_bee",
-                    "BeeType": "gravely",
-                    "Color": "#726b69"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:gravely_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:gravel",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:gravely_bee",
+                            "BeeType": "gravely",
+                            "Color": "#726b69"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,22 +45,17 @@
         "mainOutput": "minecraft:gravel",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 16,
-        "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.2,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:mountain",
-        "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,
         "maxYLevel": 255,
@@ -76,8 +65,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "tag:forge:gravel",

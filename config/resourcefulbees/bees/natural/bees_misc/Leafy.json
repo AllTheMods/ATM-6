@@ -10,14 +10,9 @@
         "honeycombColor": "#06B805",
         "primaryLayerTexture": "/custom/primary_layer",
         "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "empty_layer",
         "isBeeColored": true,
         "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#06B805",
-        "isEnchanted": false,
-        "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -28,22 +23,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:leafy_honeycomb_block",
-            "outputs": [{
-                "outputID": "mysticalagriculture:nature_essence",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:leafy_bee",
-                    "BeeType": "leafy",
-                    "Color": "#06B805"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:leafy_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "mysticalagriculture:nature_essence",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:leafy_bee",
+                            "BeeType": "leafy",
+                            "Color": "#06B805"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,17 +51,13 @@
         "mainOutput": "mysticalagriculture:nature_essence",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "mysticalagriculture:nature_essence",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
@@ -76,8 +72,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "tag:minecraft:leaves",

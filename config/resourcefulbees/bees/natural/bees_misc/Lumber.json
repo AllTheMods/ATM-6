@@ -8,15 +8,6 @@
         "primaryColor": "#453B2A",
         "secondaryColor": "#453B2A",
         "honeycombColor": "#453B2A",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#453B2A",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "MUSHROOM"
     },
     "CombatData": {
@@ -28,22 +19,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:lumber_honeycomb_block",
-            "outputs": [{
-                "outputID": "mysticalagriculture:wood_essence",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:lumber_bee",
-                    "BeeType": "lumber",
-                    "Color": "#453B2A"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:lumber_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "mysticalagriculture:wood_essence",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:lumber_bee",
+                            "BeeType": "lumber",
+                            "Color": "#453B2A"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,17 +47,13 @@
         "mainOutput": "mysticalagriculture:wood_essence",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:apple",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
@@ -76,8 +68,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "tag:minecraft:logs",

@@ -5,18 +5,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/redstone/redstone_bee",
     "ColorData": {
-        "primaryColor": "#aa0f01",
-        "secondaryColor": "#aa0f01",
         "honeycombColor": "#aa0f01",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#aa0f01",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -28,22 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:redstone_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:redstone",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:redstone_bee",
-                    "BeeType": "redstone",
-                    "Color": "#aa0f01"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:redstone_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:redstone",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:redstone_bee",
+                            "BeeType": "redstone",
+                            "Color": "#aa0f01"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,28 +45,16 @@
         "mainOutput": "minecraft:redstone_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:redstone",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

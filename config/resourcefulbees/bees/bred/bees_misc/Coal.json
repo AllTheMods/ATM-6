@@ -5,18 +5,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/coal/coal_bee",
     "ColorData": {
-        "primaryColor": "#303030",
-        "secondaryColor": "#303030",
         "honeycombColor": "#303030",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#303030",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -28,22 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:coal_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:coal",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:coal_bee",
-                    "BeeType": "coal",
-                    "Color": "#303030"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:coal_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:coal",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:coal_bee",
+                            "BeeType": "coal",
+                            "Color": "#303030"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,17 +45,13 @@
         "mainOutput": "minecraft:coal_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:coal",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": false

@@ -1,5 +1,5 @@
 onEvent('recipes', e => {
-  e.remove({id: 'mythicbotany:mythicbotany_rune_rituals/mjoellnir'})
+  e.remove({ id: 'mythicbotany:mythicbotany_rune_rituals/mjoellnir' })
   e.custom({
     "type": "mythicbotany:rune_ritual",
     "group": "rune_rituals",

@@ -12,11 +12,8 @@
         "secondaryLayerTexture": "dragon/dragon_bee_secondary",
         "emissiveLayerTexture": "dragon/dragon_bee_emissive",
         "isBeeColored": true,
-        "isRainbowBee": false,
         "isGlowing": true,
         "glowColor": "#E400FF",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "DRAGON"
     },
     "CombatData": {
@@ -28,52 +25,65 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:dragonic_honeycomb_block",
-            "outputs": [{
-                "outputID": "resourcefulbees:dragonic_honeycomb",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:dragonic_bee",
-                    "BeeType": "dragonic",
-                    "Color": "#E400FF"
-                },
-                "weight": 20
-            }]
-        }, {
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "tag:forge:storage_blocks/allthemodium",
-            "outputs": [{
-                "outputID": "allthemodium:allthemodium_nugget",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:allthemodium_bee",
-                    "BeeType": "allthemodium",
-                    "Color": "#FCC50C"
-                },
-                "weight": 20
-            }]
-        }, {
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "draconicevolution:wyvern_crafting_injector",
-            "outputs": [{
-                "outputID": "draconicevolution:draconium_nugget",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:draconium_bee",
-                    "BeeType": "draconium",
-                    "Color": "#8419FF"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dragonic_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "resourcefulbees:dragonic_honeycomb",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dragonic_bee",
+                            "BeeType": "dragonic",
+                            "Color": "#E400FF"
+                        },
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "tag:forge:storage_blocks/allthemodium",
+                "outputs": [
+                    {
+                        "outputID": "allthemodium:allthemodium_nugget",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:allthemodium_bee",
+                            "BeeType": "allthemodium",
+                            "Color": "#FCC50C"
+                        },
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "draconicevolution:wyvern_crafting_injector",
+                "outputs": [
+                    {
+                        "outputID": "draconicevolution:draconium_nugget",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:draconium_bee",
+                            "BeeType": "draconium",
+                            "Color": "#8419FF"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -81,39 +91,19 @@
         "mainOutput": "minecraft:dragon_egg",
         "mainOutputWeight": 0.01,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.2,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "",
-        "parent2": "",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "minecraft:dragon_egg",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": false

@@ -1,22 +1,15 @@
 {
     "flower": "allthemodium:molten_bluelava_block",
     "maxTimeInHive": 4800,
-    "traits": ["nether", "angry", "soul_fire"],
+    "traits": [
+        "nether",
+        "angry",
+        "soul_fire"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "modium/soul_lava_bee",
     "ColorData": {
-        "primaryColor": "#7cc7d6",
-        "secondaryColor": "#7cc7d6",
         "honeycombColor": "#7cc7d6",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#7cc7d6",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
@@ -28,22 +21,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:soul_lava_honeycomb_block",
-            "outputs": [{
-                "outputID": "resourcefulbees:soul_lava_honeycomb",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:soul_lava_bee",
-                    "BeeType": "soul_lava",
-                    "Color": "#7cc7d6"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:soul_lava_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "resourcefulbees:soul_lava_honeycomb",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:soul_lava_bee",
+                            "BeeType": "soul_lava",
+                            "Color": "#7cc7d6"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,15 +49,12 @@
         "mainOutput": "allthemodium:molten_bluelava",
         "mainOutputWeight": 0.75,
         "mainOutputCount": 20,
-        "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:soul_lava_honeycomb",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
         "recipeTime": 200,
         "hasFluidOutput": true
     },
@@ -67,9 +62,7 @@
         "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "feedItem": "",
-        "feedAmount": 5
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": true

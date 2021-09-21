@@ -7,18 +7,8 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "modium/modium_bee",
     "ColorData": {
-        "primaryColor": "#FCC50C",
-        "secondaryColor": "#FCC50C",
         "honeycombColor": "#FCC50C",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#FCC50C",
         "isEnchanted": true,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -77,39 +67,19 @@
         "mainOutput": "allthemodium:allthemodium_nugget",
         "mainOutputWeight": 0.02,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.20,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "Quartz",
-        "parent2": "Stoned",
-        "breedWeight": 10,
-        "breedChance": 0.6,
-        "feedItem": "tag:forge:storage_blocks/allthemodium",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": true

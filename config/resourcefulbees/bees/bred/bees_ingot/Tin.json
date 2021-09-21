@@ -5,18 +5,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "ato/tin_bee",
     "ColorData": {
-        "primaryColor": "#ECEDEE",
-        "secondaryColor": "#ECEDEE",
         "honeycombColor": "#ECEDEE",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#ECEDEE",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
@@ -28,22 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:tin_honeycomb_block",
-            "outputs": [{
-                "outputID": "alltheores:tin_ingot",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:tin_bee",
-                    "BeeType": "tin",
-                    "Color": "#ECEDEE"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:tin_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:tin_ingot",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:tin_bee",
+                            "BeeType": "tin",
+                            "Color": "#ECEDEE"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,28 +45,16 @@
         "mainOutput": "alltheores:ore_tin",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "alltheores:tin_ingot",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

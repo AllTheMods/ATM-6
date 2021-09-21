@@ -5,18 +5,8 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "/slime/slime_bee",
     "ColorData": {
-        "primaryColor": "#1ad920",
-        "secondaryColor": "#1ad920",
         "honeycombColor": "#1ad920",
         "gelLayerTexture": "/slime/slime_gel_Layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#1ad920",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "GELATINOUS"
     },
     "CombatData": {
@@ -28,23 +18,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:slimy_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:slime_ball",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:slimy_bee",
-                    "BeeType": "slimy",
-                    "Color": "#1ad920"
-                },
-                "weight": 20
-
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:slimy_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:slime_ball",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:slimy_bee",
+                            "BeeType": "slimy",
+                            "Color": "#1ad920"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -52,22 +46,17 @@
         "mainOutput": "minecraft:slime_ball",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 2,
-        "mainNBTData": {},
         "secondaryOutput": "xreliquary:slime_pearl",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:swamp",
-        "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,
         "maxYLevel": 255,
@@ -77,8 +66,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "xreliquary:slime_pearl",

@@ -5,18 +5,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/fluorite_bee",
     "ColorData": {
-        "primaryColor": "#d6aedd",
-        "secondaryColor": "#d6aedd",
         "honeycombColor": "#d6aedd",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#d6aedd",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -28,22 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:fluorite_honeycomb_block",
-            "outputs": [{
-                "outputID": "mekanism:fluorite_gem",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:fluorite_bee",
-                    "BeeType": "fluorite",
-                    "Color": "#d6aedd"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:fluorite_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "mekanism:fluorite_gem",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:fluorite_bee",
+                            "BeeType": "fluorite",
+                            "Color": "#d6aedd"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,28 +45,16 @@
         "mainOutput": "mekanism:fluorite_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "mekanism:fluorite_gem",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

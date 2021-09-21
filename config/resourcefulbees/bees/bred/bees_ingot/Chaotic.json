@@ -1,10 +1,24 @@
 {
   "flower": "draconicevolution:chaotic_crafting_injector",
   "maxTimeInHive": 4800,
-  "traits": ["chaotic"],
+  "traits": [
+    "chaotic"
+  ],
   "hasHoneycomb": true,
-  "apiaryOutputAmounts": [8, 16, 24, 32, 40],
-  "apiaryOutputTypes": ["COMB", "COMB", "COMB", "COMB", "COMB"],
+  "apiaryOutputAmounts": [
+    8,
+    16,
+    24,
+    32,
+    40
+  ],
+  "apiaryOutputTypes": [
+    "COMB",
+    "COMB",
+    "COMB",
+    "COMB",
+    "COMB"
+  ],
   "baseLayerTexture": "dragon/dragon_bee_primary",
   "ColorData": {
     "primaryColor": "#161616",
@@ -14,11 +28,8 @@
     "secondaryLayerTexture": "dragon/dragon_bee_secondary",
     "emissiveLayerTexture": "dragon/dragon_bee_emissive",
     "isBeeColored": true,
-    "isRainbowBee": false,
     "isGlowing": true,
     "glowColor": "#2D2D2D",
-    "isEnchanted": false,
-    "glowingPulse": 0,
     "modelType": "DRAGON"
   },
   "CombatData": {
@@ -42,8 +53,7 @@
     "bottleOutput": "minecraft:honey_bottle",
     "bottleOutputWeight": 0.25,
     "bottleOutputCount": 1,
-    "recipeTime": 200,
-    "hasFluidOutput": false
+    "recipeTime": 200
   },
   "SpawnData": {
     "canSpawnInWorld": false

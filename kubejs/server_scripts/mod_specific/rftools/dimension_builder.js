@@ -1,7 +1,7 @@
 onEvent('recipes', e => {
   e.remove({ id: 'rftoolsdim:dimension_builder' })
 
-  e.shaped('rftoolsdim:dimension_builder', ['USU','MCM','BAB'], {
+  e.shaped('rftoolsdim:dimension_builder', ['USU', 'MCM', 'BAB'], {
     U: 'kubejs:uu_matter',
     S: 'atmadditions:dimensional_seed',
     A: 'atmadditions:atm_star',

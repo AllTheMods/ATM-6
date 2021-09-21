@@ -5,18 +5,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/diamond/diamond_bee",
     "ColorData": {
-        "primaryColor": "#00ffff",
-        "secondaryColor": "#00ffff",
         "honeycombColor": "#00ffff",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#00ffff",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -28,22 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:diamond_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:diamond",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:diamond_bee",
-                    "BeeType": "diamond",
-                    "Color": "#00ffff"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:diamond_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:diamond",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:diamond_bee",
+                            "BeeType": "diamond",
+                            "Color": "#00ffff"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,28 +45,16 @@
         "mainOutput": "minecraft:diamond_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:diamond",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

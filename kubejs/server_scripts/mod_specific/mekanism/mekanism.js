@@ -158,7 +158,7 @@ onEvent('recipes', e => {
     'mekanism:block_charcoal',
     'mekanism:upgrade_anchor'
   ])
-  
+
   modifyShaped(e, 'mekanismgenerators:solar_panel', 1, ['PPP', 'RIR', 'OOO'], {
     P: 'powah:solar_panel_starter',
     R: '#forge:dusts/redstone',

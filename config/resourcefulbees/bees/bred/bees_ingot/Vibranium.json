@@ -1,22 +1,14 @@
 {
     "flower": "tag:forge:storage_blocks/vibranium",
     "maxTimeInHive": 4800,
-    "traits": ["nether"],
+    "traits": [
+        "nether"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "modium/vibranium_bee",
     "ColorData": {
-        "primaryColor": "#26DE88",
-        "secondaryColor": "#26DE88",
         "honeycombColor": "#26DE88",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#26DE88",
         "isEnchanted": true,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -28,37 +20,46 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:vibranium_honeycomb_block",
-            "outputs": [{
-                "outputID": "allthemodium:vibranium_nugget",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:vibranium_bee",
-                    "BeeType": "vibranium",
-                    "Color": "#26DE88"
-                },
-                "weight": 20
-            }]
-        }, {
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "tag:forge:storage_blocks/unobtainium",
-            "outputs": [{
-                "outputID": "allthemodium:unobtainium_nugget",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:unobtainium_bee",
-                    "BeeType": "unobtainium",
-                    "Color": "#A62BE0"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:vibranium_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "allthemodium:vibranium_nugget",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:vibranium_bee",
+                            "BeeType": "vibranium",
+                            "Color": "#26DE88"
+                        },
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "tag:forge:storage_blocks/unobtainium",
+                "outputs": [
+                    {
+                        "outputID": "allthemodium:unobtainium_nugget",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:unobtainium_bee",
+                            "BeeType": "unobtainium",
+                            "Color": "#A62BE0"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -66,39 +67,19 @@
         "mainOutput": "allthemodium:vibranium_nugget",
         "mainOutputWeight": 0.02,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "",
-        "parent2": "",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/vibranium",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": true

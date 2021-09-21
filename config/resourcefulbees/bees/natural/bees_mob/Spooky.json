@@ -5,19 +5,8 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "/skeleton/skeleton_bee",
     "ColorData": {
-        "primaryColor": "#F6F2E6",
-        "secondaryColor": "#F6F2E6",
         "honeycombColor": "#F6F2E6",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#F6F2E6",
-        "isEnchanted": false,
-        "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -28,23 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:spooky_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:bone",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:spooky_bee",
-                    "BeeType": "spooky",
-                    "Color": "#F6F2E6"
-                },
-                "weight": 20
-
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:spooky_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:bone",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:spooky_bee",
+                            "BeeType": "spooky",
+                            "Color": "#F6F2E6"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -52,17 +45,13 @@
         "mainOutput": "minecraft:bone",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:bone_meal",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
@@ -77,8 +66,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "xreliquary:rib_bone",
