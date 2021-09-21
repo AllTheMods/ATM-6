@@ -265,13 +265,6 @@
 		}
 		{
 			title: "Beeper"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:beeper_bee"
-				}
-			}
 			x: 1.5d
 			y: 4.5d
 			shape: "hexagon"
@@ -282,6 +275,18 @@
 			tasks: [{
 				id: "42059A339876368C"
 				type: "item"
+				title: "Filled Bee Jar - Beeper"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:beeper_bee"
+						Color: "#0C9F0A"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.beeper_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -307,13 +312,6 @@
 		}
 		{
 			title: "Ender Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:ender_bee"
-				}
-			}
 			x: 2.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -324,6 +322,18 @@
 			tasks: [{
 				id: "14ADF9262F998A24"
 				type: "item"
+				title: "Filled Bee Jar - Ender Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:ender_bee"
+						Color: "#339786"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.ender_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -349,21 +359,10 @@
 		}
 		{
 			title: "Uranium Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:uranium_bee"
-					Color: "#fff37f"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.uranium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 2.0d
 			y: 5.5d
 			shape: "hexagon"
-			subtitle: "Beetical mass"
+			subtitle: "Critical buzz"
 			description: ["Parents: Beeper and Ender"]
 			dependencies: [
 				"472686291A4A1FA3"
@@ -373,6 +372,18 @@
 			tasks: [{
 				id: "0C4920974C65CB2A"
 				type: "item"
+				title: "Filled Bee Jar - Uranium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:uranium_bee"
+						Color: "#fff37f"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.uranium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -398,13 +409,6 @@
 		}
 		{
 			title: "Slimy Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:slimy_bee"
-				}
-			}
 			x: -0.5d
 			y: 4.5d
 			shape: "hexagon"
@@ -415,6 +419,18 @@
 			tasks: [{
 				id: "3BCA5466BDABE810"
 				type: "item"
+				title: "Filled Bee Jar - Slimy Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:slimy_bee"
+						Color: "#1ad920"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.slimy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -440,17 +456,6 @@
 		}
 		{
 			title: "Uraninite Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:uraninite_bee"
-					Color: "#00FC1A"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.uraninite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.5d
 			y: 4.5d
 			shape: "hexagon"
@@ -463,6 +468,18 @@
 			tasks: [{
 				id: "628E5F21283B06D9"
 				type: "item"
+				title: "Filled Bee Jar - Uraninite Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:uraninite_bee"
+						Color: "#00FC1A"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.uraninite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -488,17 +505,6 @@
 		}
 		{
 			title: "Gold Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:gold_bee"
-					Color: "#FFDC00"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.gold_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.0d
 			y: 5.5d
 			shape: "hexagon"
@@ -512,6 +518,18 @@
 			tasks: [{
 				id: "4B6B8CFAFB740281"
 				type: "item"
+				title: "Filled Bee Jar - Gold Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:gold_bee"
+						Color: "#FFDC00"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.gold_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -537,17 +555,6 @@
 		}
 		{
 			title: "Platinum Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:platinum_bee"
-					Color: "#A4EDFC"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.platinum_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.5d
 			y: 4.5d
 			shape: "hexagon"
@@ -560,6 +567,18 @@
 			tasks: [{
 				id: "4A5E641696B624B6"
 				type: "item"
+				title: "Filled Bee Jar - Platinum Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:platinum_bee"
+						Color: "#A4EDFC"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.platinum_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -585,17 +604,6 @@
 		}
 		{
 			title: "Silver Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:silver_bee"
-					Color: "#D1E1EC"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.silver_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -2.0d
 			y: 5.5d
 			shape: "hexagon"
@@ -608,6 +616,18 @@
 			tasks: [{
 				id: "0F8432FC15174A96"
 				type: "item"
+				title: "Filled Bee Jar - Silver Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:silver_bee"
+						Color: "#D1E1EC"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.silver_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -633,17 +653,6 @@
 		}
 		{
 			title: "Emerald Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:emerald_bee"
-					Color: "#18eb09"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.emerald_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.0d
 			y: 5.5d
 			shape: "hexagon"
@@ -656,6 +665,18 @@
 			tasks: [{
 				id: "300407068D825948"
 				type: "item"
+				title: "Filled Bee Jar - Emerald Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:emerald_bee"
+						Color: "#18eb09"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.emerald_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -681,17 +702,6 @@
 		}
 		{
 			title: "Quartz Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:quartz_bee"
-					Color: "#D4CABA"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.quartz_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -702,6 +712,18 @@
 			tasks: [{
 				id: "36A6273973BD9762"
 				type: "item"
+				title: "Filled Bee Jar - Quartz Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:quartz_bee"
+						Color: "#D4CABA"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.quartz_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -727,17 +749,6 @@
 		}
 		{
 			title: "Aluminum Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:aluminum_bee"
-					Color: "#C3CDD5"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.aluminum_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -2.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -750,6 +761,18 @@
 			tasks: [{
 				id: "1F5F620CB2A3EA82"
 				type: "item"
+				title: "Filled Bee Jar - Aluminum Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:aluminum_bee"
+						Color: "#C3CDD5"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.aluminum_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -775,17 +798,6 @@
 		}
 		{
 			title: "Stoned Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:stoned_bee"
-					Color: "#5A5A5A"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.stoned_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -799,6 +811,18 @@
 			tasks: [{
 				id: "5128CED516C2C32B"
 				type: "item"
+				title: "Filled Bee Jar - Stoned Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:stoned_bee"
+						Color: "#5A5A5A"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.stoned_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -824,17 +848,6 @@
 		}
 		{
 			title: "Copper Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:copper_bee"
-					Color: "#D28868"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.copper_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -848,6 +861,18 @@
 			tasks: [{
 				id: "1132ECF981A1193F"
 				type: "item"
+				title: "Filled Bee Jar - Copper Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:copper_bee"
+						Color: "#D28868"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.copper_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -873,17 +898,6 @@
 		}
 		{
 			title: "Certus Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:certus_bee"
-					Color: "#d2d6f7"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.certus_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -0.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -896,6 +910,18 @@
 			tasks: [{
 				id: "658E1CFA3CEF6E1C"
 				type: "item"
+				title: "Filled Bee Jar - Certus Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:certus_bee"
+						Color: "#d2d6f7"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.certus_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -921,17 +947,6 @@
 		}
 		{
 			title: "Tin Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:tin_bee"
-					Color: "#ECEDEE"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.tin_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -2.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -944,6 +959,18 @@
 			tasks: [{
 				id: "2967F814DDD6E2DD"
 				type: "item"
+				title: "Filled Bee Jar - Tin Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:tin_bee"
+						Color: "#ECEDEE"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.tin_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -969,13 +996,6 @@
 		}
 		{
 			title: "Cobbee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:cobbee_bee"
-				}
-			}
 			x: -0.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -989,6 +1009,18 @@
 			tasks: [{
 				id: "1659A0DF6B38F544"
 				type: "item"
+				title: "Filled Bee Jar - CobBee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:cobbee_bee"
+						Color: "#1c1823"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.cobbee_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1014,13 +1046,6 @@
 		}
 		{
 			title: "Lava Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:lava_bee"
-				}
-			}
 			x: 0.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -1031,6 +1056,18 @@
 			tasks: [{
 				id: "03B9270A83F7008A"
 				type: "item"
+				title: "Filled Bee Jar - Lava Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:lava_bee"
+						Color: "#DB4819"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.lava_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1056,13 +1093,6 @@
 		}
 		{
 			title: "Water Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:water_bee"
-				}
-			}
 			x: 1.0d
 			y: 5.5d
 			shape: "hexagon"
@@ -1073,6 +1103,18 @@
 			tasks: [{
 				id: "34B5B3B657D835B3"
 				type: "item"
+				title: "Filled Bee Jar - Water Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:water_bee"
+						Color: "#8499D6"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.water_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1098,17 +1140,6 @@
 		}
 		{
 			title: "Obsidian Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:obsidian_bee"
-					Color: "#211B20"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.obsidian_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 1.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -1121,6 +1152,18 @@
 			tasks: [{
 				id: "2FFCEB0BE0476A6C"
 				type: "item"
+				title: "Filled Bee Jar - Obsidian Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:obsidian_bee"
+						Color: "#211B20"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.obsidian_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1146,17 +1189,6 @@
 		}
 		{
 			title: "Iron Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:iron_bee"
-					Color: "#ffcc99"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.iron_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -1169,6 +1201,18 @@
 			tasks: [{
 				id: "28B61134414A4FB7"
 				type: "item"
+				title: "Filled Bee Jar - Iron Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:iron_bee"
+						Color: "#ffcc99"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.iron_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1194,17 +1238,6 @@
 		}
 		{
 			title: "Zinc Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:zinc_bee"
-					Color: "#B6DBD8"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.zinc_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -3.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -1217,6 +1250,18 @@
 			tasks: [{
 				id: "6FDFEA4CE2CFEB46"
 				type: "item"
+				title: "Filled Bee Jar - Zinc Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:zinc_bee"
+						Color: "#B6DBD8"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.zinc_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1242,17 +1287,6 @@
 		}
 		{
 			title: "Nickel Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:nickel_bee"
-					Color: "#F5F2A3"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.nickel_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -2.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -1265,6 +1299,18 @@
 			tasks: [{
 				id: "15C2800E436E286C"
 				type: "item"
+				title: "Filled Bee Jar - Nickel Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:nickel_bee"
+						Color: "#F5F2A3"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.nickel_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1290,17 +1336,6 @@
 		}
 		{
 			title: "Fluorite Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:fluorite_bee"
-					Color: "#d6aedd"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.fluorite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -3.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -1314,6 +1349,18 @@
 			tasks: [{
 				id: "5007ED938E3FDFDB"
 				type: "item"
+				title: "Filled Bee Jar - Fluorite Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:fluorite_bee"
+						Color: "#d6aedd"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.fluorite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1339,17 +1386,6 @@
 		}
 		{
 			title: "Redstone Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:redstone_bee"
-					Color: "#aa0f01"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.redstone_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -3.0d
 			y: 9.5d
 			shape: "hexagon"
@@ -1362,6 +1398,18 @@
 			tasks: [{
 				id: "29C8E5B1AD71D1F6"
 				type: "item"
+				title: "Filled Bee Jar - Redstone Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:redstone_bee"
+						Color: "#aa0f01"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.redstone_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1387,17 +1435,6 @@
 		}
 		{
 			title: "Osmium Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:osmium_bee"
-					Color: "#BDCBD4"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.osmium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -2.0d
 			y: 9.5d
 			shape: "hexagon"
@@ -1410,6 +1447,18 @@
 			tasks: [{
 				id: "54F9D3C08F0A381F"
 				type: "item"
+				title: "Filled Bee Jar - Osmium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:osmium_bee"
+						Color: "#BDCBD4"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.osmium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1435,17 +1484,6 @@
 		}
 		{
 			title: "Lapis Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:lapis_bee"
-					Color: "#345ec3"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.lapis_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.0d
 			y: 9.5d
 			shape: "hexagon"
@@ -1458,6 +1496,18 @@
 			tasks: [{
 				id: "7AFF1113A788EC9C"
 				type: "item"
+				title: "Filled Bee Jar - Lapis Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:lapis_bee"
+						Color: "#345ec3"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.lapis_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1501,6 +1551,18 @@
 			tasks: [{
 				id: "2418C31DC6D95627"
 				type: "item"
+				title: "Filled Bee Jar - RGBee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:rgbee_bee"
+						Color: "rainbow"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.rgbee_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1544,6 +1606,18 @@
 			tasks: [{
 				id: "4422B91ABA9228FF"
 				type: "item"
+				title: "Filled Bee Jar - Glowing Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:glowing_bee"
+						Color: "#D6D30D"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.glowing_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1569,17 +1643,6 @@
 		}
 		{
 			title: "Lead Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:lead_bee"
-					Color: "#D0E4E1"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.lead_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.0d
 			y: 9.5d
 			shape: "hexagon"
@@ -1593,6 +1656,18 @@
 			tasks: [{
 				id: "3BB7061FAD891900"
 				type: "item"
+				title: "Filled Bee Jar - Lead Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:lead_bee"
+						Color: "#D0E4E1"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.lead_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1618,17 +1693,6 @@
 		}
 		{
 			title: "Coal Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:coal_bee"
-					Color: "#303030"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.coal_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -1641,6 +1705,18 @@
 			tasks: [{
 				id: "60029E43ACBDFA64"
 				type: "item"
+				title: "Filled Bee Jar - Coal Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:coal_bee"
+						Color: "#303030"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.coal_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1666,17 +1742,6 @@
 		}
 		{
 			title: "Diamond Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:diamond_bee"
-					Color: "#00ffff"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.diamond_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 1.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -1689,6 +1754,18 @@
 			tasks: [{
 				id: "65818D073FBC6BD2"
 				type: "item"
+				title: "Filled Bee Jar - Diamond Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:diamond_bee"
+						Color: "#00ffff"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.diamond_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1731,6 +1808,18 @@
 			tasks: [{
 				id: "0C4ABE0BE18A335E"
 				type: "item"
+				title: "Filled Bee Jar - Lumber Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:lumber_bee"
+						Color: "#453B2A"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.lumber_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1756,17 +1845,6 @@
 		}
 		{
 			title: "Blazing Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:blazing_bee"
-					Color: "#BD5900"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.blazing_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 1.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -1779,6 +1857,18 @@
 			tasks: [{
 				id: "6BFE4020DF23EF6B"
 				type: "item"
+				title: "Filled Bee Jar - Blazing Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:blazing_bee"
+						Color: "#BD5900"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.blazing_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1804,13 +1894,6 @@
 		}
 		{
 			title: "Magma Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:magma_bee"
-				}
-			}
 			x: 3.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -1821,6 +1904,18 @@
 			tasks: [{
 				id: "027876690B9A2349"
 				type: "item"
+				title: "Filled Bee Jar - Magma Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:magma_bee"
+						Color: "#C73405"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.magma_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1846,13 +1941,6 @@
 		}
 		{
 			title: "Spooky Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:spooky_bee"
-				}
-			}
 			x: 2.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -1863,6 +1951,18 @@
 			tasks: [{
 				id: "26F7F92EF3E0731D"
 				type: "item"
+				title: "Filled Bee Jar - Spooky Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:spooky_bee"
+						Color: "#F6F2E6"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.spooky_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1911,6 +2011,18 @@
 			tasks: [{
 				id: "0D2066B1E89B1C31"
 				type: "item"
+				title: "Filled Bee Jar - Withered Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:withered_bee"
+						Color: "#444444"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.withered_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1954,6 +2066,18 @@
 			tasks: [{
 				id: "754334C91C0B5DB8"
 				type: "item"
+				title: "Filled Bee Jar - Wither Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:wither_bee"
+						Color: "#444444"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.wither_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -1996,6 +2120,18 @@
 			tasks: [{
 				id: "27118FD59EB0299B"
 				type: "item"
+				title: "Filled Bee Jar - Netherite Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:netherite_bee"
+						Color: "#654740"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.netherite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2037,6 +2173,18 @@
 			tasks: [{
 				id: "2811BB7322CB2583"
 				type: "item"
+				title: "Filled Bee Jar - Dragonic Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dragonic_bee"
+						Color: "#222222"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dragonic_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2078,6 +2226,18 @@
 			tasks: [{
 				id: "179EAF66C68B51CC"
 				type: "item"
+				title: "Filled Bee Jar - Allthemodium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:allthemodium_bee"
+						Color: "#FCC50C"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.allthemodium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2119,6 +2279,18 @@
 			tasks: [{
 				id: "740211E2C257FDBC"
 				type: "item"
+				title: "Filled Bee Jar - Draconium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:draconium_bee"
+						Color: "#8419FF"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.draconium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2160,6 +2332,18 @@
 			tasks: [{
 				id: "033EA6128B38806D"
 				type: "item"
+				title: "Filled Bee Jar - Awakened Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:awakened_bee"
+						Color: "#FF4C00"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.awakened_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2201,6 +2385,18 @@
 			tasks: [{
 				id: "3193949D89976991"
 				type: "item"
+				title: "Filled Bee Jar - Vibranium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:vibranium_bee"
+						Color: "#26DE88"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.vibranium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2242,6 +2438,18 @@
 			tasks: [{
 				id: "773BA5B668033A8B"
 				type: "item"
+				title: "Filled Bee Jar - Unobtainium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:unobtainium_bee"
+						Color: "#A62BE0"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.unobtainium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2283,6 +2491,18 @@
 			tasks: [{
 				id: "4135962668E7C893"
 				type: "item"
+				title: "Filled Bee Jar - Soul Lava Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:soul_lava_bee"
+						Color: "#7cc7d6"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.soul_lava_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2308,13 +2528,6 @@
 		}
 		{
 			title: "Aquamarine Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:aquamarine_bee"
-				}
-			}
 			x: 2.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -2325,6 +2538,18 @@
 			tasks: [{
 				id: "3E35E2966E710172"
 				type: "item"
+				title: "Filled Bee Jar - Aquamarine Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:aquamarine_bee"
+						Color: "#35b3ff"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.aquamarine_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2350,14 +2575,6 @@
 		}
 		{
 			title: "Mana Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:mana_bee"
-					Color: "#00C9EA"
-				}
-			}
 			x: 2.5d
 			y: 4.5d
 			shape: "hexagon"
@@ -2369,6 +2586,18 @@
 			tasks: [{
 				id: "5DFC8304FFCD63E7"
 				type: "item"
+				title: "Filled Bee Jar - Mana Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:mana_bee"
+						Color: "#00C9EA"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.mana_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2394,14 +2623,6 @@
 		}
 		{
 			title: "Croppy Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:cropy_bee"
-					Color: "#dcbb65"
-				}
-			}
 			x: -3.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -2412,6 +2633,18 @@
 			tasks: [{
 				id: "28D4E2CD79BB6E7C"
 				type: "item"
+				title: "Filled Bee Jar - Croppy Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:cropy_bee"
+						Color: "#dcbb65"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.cropy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2455,6 +2688,18 @@
 			tasks: [{
 				id: "7DB752282C738CB0"
 				type: "item"
+				title: "Filled Bee Jar - Mystical Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:mystical_bee"
+						Color: "rainbow"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.mystical_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2480,14 +2725,6 @@
 		}
 		{
 			title: "Crimson Iron Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:crimson_iron_bee"
-					Color: "#D4CABA"
-				}
-			}
 			x: -3.0d
 			y: 5.5d
 			shape: "hexagon"
@@ -2498,6 +2735,18 @@
 			tasks: [{
 				id: "7A518BF618272376"
 				type: "item"
+				title: "Filled Bee Jar - Crimson Iron Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:crimson_iron_bee"
+						Color: "#D4CABA"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.crimson_iron_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2541,6 +2790,18 @@
 			tasks: [{
 				id: "26EB53BBA6FF70E2"
 				type: "item"
+				title: "Filled Bee Jar - Dirty Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dirty_bee"
+						Color: "#79553A"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dirty_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2584,6 +2845,18 @@
 			tasks: [{
 				id: "441790114501CCDF"
 				type: "item"
+				title: "Filled Bee Jar - Gravely Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:gravely_bee"
+						Color: "#726b69"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.gravely_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2627,6 +2900,18 @@
 			tasks: [{
 				id: "1AF9847315CD4AAA"
 				type: "item"
+				title: "Filled Bee Jar - Guardian Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:guardian_bee"
+						Color: "#8FC0AA"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.guardian_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2652,14 +2937,6 @@
 		}
 		{
 			title: "Icey Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:icey_bee"
-					Color: "#6B88C0"
-				}
-			}
 			x: -1.0d
 			y: 3.5d
 			shape: "hexagon"
@@ -2670,6 +2947,18 @@
 			tasks: [{
 				id: "18DE6EA1A856344D"
 				type: "item"
+				title: "Filled Bee Jar - Icey Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:icey_bee"
+						Color: "#6B88C0"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.icey_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2695,14 +2984,6 @@
 		}
 		{
 			title: "Kitten Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:kitten_bee"
-					Color: "#EAA939"
-				}
-			}
 			x: 1.0d
 			y: 3.5d
 			shape: "hexagon"
@@ -2714,6 +2995,18 @@
 			tasks: [{
 				id: "0CCE1A00146A32E5"
 				type: "item"
+				title: "Filled Bee Jar - Kitten Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:kitten_bee"
+						Color: "#EAA939"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.kitten_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2757,6 +3050,18 @@
 			tasks: [{
 				id: "529C38274166B152"
 				type: "item"
+				title: "Filled Bee Jar - Leafy Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:leafy_bee"
+						Color: "#06B805"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.leafy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2800,6 +3105,18 @@
 			tasks: [{
 				id: "04451F9E3005C3A6"
 				type: "item"
+				title: "Filled Bee Jar - Mason Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:mason_bee"
+						Color: "#48544F"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.mason_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2831,12 +3148,15 @@
 				tag: {
 					Entity: "resourcefulbees:oreo_bee"
 					Color: "#442920"
+					display: {
+						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.oreo_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+					}
 				}
 			}
 			x: -1.0d
 			y: 13.5d
 			shape: "hexagon"
-			subtitle: "ATM is not associated with Nabisco"
+			subtitle: "ATM is not affiliated with Nabisco"
 			description: ["Spawns naturally."]
 			hide_dependency_lines: true
 			dependencies: ["1B1DE94EC57DC4E4"]
@@ -2844,6 +3164,18 @@
 			tasks: [{
 				id: "07D0D5F6861E889C"
 				type: "item"
+				title: "Filled Bee Jar - Oreo Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:oreo_bee"
+						Color: "#442920"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.oreo_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2869,14 +3201,6 @@
 		}
 		{
 			title: "Sandy Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:sandy_bee"
-					Color: "#DDD2B7"
-				}
-			}
 			x: -2.0d
 			y: 3.5d
 			shape: "hexagon"
@@ -2887,6 +3211,18 @@
 			tasks: [{
 				id: "3629DD75FD7A754C"
 				type: "item"
+				title: "Filled Bee Jar - Sandy Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:sandy_bee"
+						Color: "#DDD2B7"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.sandy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2912,14 +3248,6 @@
 		}
 		{
 			title: "Spider Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:spider_bee"
-					Color: "#030303"
-				}
-			}
 			x: 2.0d
 			y: 3.5d
 			shape: "hexagon"
@@ -2930,6 +3258,18 @@
 			tasks: [{
 				id: "3B850542DFD00EDE"
 				type: "item"
+				title: "Filled Bee Jar - Spider Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:spider_bee"
+						Color: "#030303"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.spider_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2973,6 +3313,18 @@
 			tasks: [{
 				id: "29A7117C2F5BB3F7"
 				type: "item"
+				title: "Filled Bee Jar - Stan Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:stan_bee"
+						Color: "#5A5A5A"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.stan_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -2998,14 +3350,6 @@
 		}
 		{
 			title: "ZomBee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:zombee_bee"
-					Color: "#2F4E32"
-				}
-			}
 			x: 4.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -3017,6 +3361,18 @@
 			tasks: [{
 				id: "3162A6D501D09018"
 				type: "item"
+				title: "Filled Bee Jar - ZomBee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:zombee_bee"
+						Color: "#2F4E32"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.zombee_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3042,15 +3398,8 @@
 		}
 		{
 			title: "Starry Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:starry_bee"
-				}
-			}
-			x: 0.0d
-			y: 15.5d
+			x: 0.0033163265306086487d
+			y: 3.4974489795918444d
 			shape: "hexagon"
 			description: ["Quest reward"]
 			dependencies: ["5C010374A550B53F"]
@@ -3059,6 +3408,18 @@
 			tasks: [{
 				id: "2AF55A5372C71454"
 				type: "item"
+				title: "Filled Bee Jar - Starry Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:starry_bee"
+						Color: "#FFA500"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.starry_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3083,23 +3444,6 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 3.375d
-			description: [
-				"Due to how FTBQuests works, the input for quests has to bee an item filter, hence the question marks."
-				"All you need for each quest is the respective bee in a jar."
-			]
-			hide_dependency_lines: true
-			dependencies: ["1B1DE94EC57DC4E4"]
-			size: 1.25d
-			id: "593DFB6DA7AC0E0E"
-			tasks: [{
-				id: "11AE24C6C714D619"
-				type: "checkmark"
-				title: "JustEnoughBees"
-			}]
-		}
-		{
 			title: "Chaotic Bee"
 			icon: {
 				id: "resourcefulbees:bee_jar"
@@ -3117,6 +3461,18 @@
 			tasks: [{
 				id: "2590243DDB721B78"
 				type: "item"
+				title: "Filled Bee Jar - Chaotic Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:chaotic_bee"
+						Color: "#161616"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.chaotic_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3142,14 +3498,6 @@
 		}
 		{
 			title: "Yeti Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:yeti_bee"
-					Color: "#E9F4F6"
-				}
-			}
 			x: -2.5d
 			y: 4.5d
 			shape: "hexagon"
@@ -3160,6 +3508,18 @@
 			tasks: [{
 				id: "54D7C6A2CF3B6E8C"
 				type: "item"
+				title: "Filled Bee Jar - Yeti Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:yeti_bee"
+						Color: "#E9F4F6"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.yeti_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3185,17 +3545,6 @@
 		}
 		{
 			title: "Papa Beemeritus Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:papa_beemeritus_bee"
-					Color: "#F5F5F5"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.papa_beemeritus_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 3.5d
 			y: 8.5d
 			shape: "hexagon"
@@ -3213,6 +3562,18 @@
 			tasks: [{
 				id: "21B9216CBE7888F5"
 				type: "item"
+				title: "Filled Bee Jar - Papa Beemeritus"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:papa_beemeritus_bee"
+						Color: "#F5F5F5"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.papa_beemeritus_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3238,17 +3599,6 @@
 		}
 		{
 			title: "Ghastly Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:ghastly_bee"
-					Color: "#B7C7C7"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.ghastly_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 3.0d
 			y: 5.5d
 			shape: "hexagon"
@@ -3261,6 +3611,18 @@
 			tasks: [{
 				id: "0B6E0E9A1995EDCA"
 				type: "item"
+				title: "Filled Bee Jar - Ghastly Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:ghastly_bee"
+						Color: "#B7C7C7"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.ghastly_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3286,14 +3648,6 @@
 		}
 		{
 			title: "Cobalt Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:cobalt_bee"
-					Color: "#243281"
-				}
-			}
 			x: 3.5d
 			y: 6.5d
 			shape: "hexagon"
@@ -3304,6 +3658,18 @@
 			tasks: [{
 				id: "253313DD30466328"
 				type: "item"
+				title: "Filled Bee Jar - Cobalt Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:cobalt_bee"
+						Color: "#2248ba"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.cobalt_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3329,14 +3695,6 @@
 		}
 		{
 			title: "KoBee Beef"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:kobee_beef_bee"
-					Color: "#FF6666"
-				}
-			}
 			x: -4.0d
 			y: 7.5d
 			shape: "hexagon"
@@ -3347,6 +3705,18 @@
 			tasks: [{
 				id: "2E18F9B922C56745"
 				type: "item"
+				title: "Filled Bee Jar - KoBee Beef"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:kobee_beef_bee"
+						Color: "#FF6666"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.kobee_beef_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3390,6 +3760,18 @@
 			tasks: [{
 				id: "1344733C42244AA3"
 				type: "item"
+				title: "Filled Bee Jar - Salt Baee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:salt_baee_bee"
+						Color: "#f3f8e3"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.salt_baee_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3415,17 +3797,6 @@
 		}
 		{
 			title: "Beediddy"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:beediddy_bee"
-					Color: "#edc343"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.beediddy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.0d
 			y: -5.5d
 			shape: "hexagon"
@@ -3440,6 +3811,18 @@
 			tasks: [{
 				id: "18A3A6488ECA0F59"
 				type: "item"
+				title: "Filled Bee Jar - Beediddy Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:beediddy_bee"
+						Color: "#edc343"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.beediddy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3465,17 +3848,6 @@
 		}
 		{
 			title: "Dense Copper Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_copper_bee"
-					Color: "#D28868"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_copper_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.0d
 			y: -3.5d
 			shape: "hexagon"
@@ -3484,6 +3856,18 @@
 			tasks: [{
 				id: "41347205F95504E3"
 				type: "item"
+				title: "Filled Bee Jar - Dense Copper Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_copper_bee"
+						Color: "#D28868"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_copper_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3509,17 +3893,6 @@
 		}
 		{
 			title: "Dense Gold Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_gold_bee"
-					Color: "#FFDC00"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_gold_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 1.0d
 			y: -3.5d
 			shape: "hexagon"
@@ -3528,6 +3901,18 @@
 			tasks: [{
 				id: "68374ACC7D92B974"
 				type: "item"
+				title: "Filled Bee Jar - Dense Gold Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_gold_bee"
+						Color: "#FFDC00"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_gold_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3553,17 +3938,6 @@
 		}
 		{
 			title: "Dense Iron Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_iron_bee"
-					Color: "#ffcc99"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_iron_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.0d
 			y: -3.5d
 			shape: "hexagon"
@@ -3572,6 +3946,18 @@
 			tasks: [{
 				id: "1A2D39A3AC204111"
 				type: "item"
+				title: "Filled Bee Jar - Dense Iron Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_iron_bee"
+						Color: "#ffcc99"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_iron_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3597,17 +3983,6 @@
 		}
 		{
 			title: "Dense Lead Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_lead_bee"
-					Color: "#D0E4E1"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_lead_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 1.5d
 			y: -4.5d
 			shape: "hexagon"
@@ -3616,6 +3991,18 @@
 			tasks: [{
 				id: "1F74CD7F534E011E"
 				type: "item"
+				title: "Filled Bee Jar - Dense Lead Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_lead_bee"
+						Color: "#D0E4E1"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_lead_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3641,17 +4028,6 @@
 		}
 		{
 			title: "Dense Netherite Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_netherite_bee"
-					Color: "#654740"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_netherite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 2.0d
 			y: -5.5d
 			shape: "hexagon"
@@ -3660,6 +4036,18 @@
 			tasks: [{
 				id: "4056914D800CA62D"
 				type: "item"
+				title: "Filled Bee Jar - Dense Netherite Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_netherite_bee"
+						Color: "#654740"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_netherite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3685,17 +4073,6 @@
 		}
 		{
 			title: "Dense Nickel Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_nickel_bee"
-					Color: "#F5F2A3"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_nickel_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 1.5d
 			y: -6.5d
 			shape: "hexagon"
@@ -3704,6 +4081,18 @@
 			tasks: [{
 				id: "33DAB794D06B88A3"
 				type: "item"
+				title: "Filled Bee Jar - Dense Nickel Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_nickel_bee"
+						Color: "#F5F2A3"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_nickel_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3729,17 +4118,6 @@
 		}
 		{
 			title: "Dense Osmium Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_osmium_bee"
-					Color: "#BDCBD4"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_osmium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 1.0d
 			y: -7.5d
 			shape: "hexagon"
@@ -3748,6 +4126,18 @@
 			tasks: [{
 				id: "7B14C52212093A8F"
 				type: "item"
+				title: "Filled Bee Jar - Dense Osmium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_osmium_bee"
+						Color: "#BDCBD4"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_osmium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3773,17 +4163,6 @@
 		}
 		{
 			title: "Dense Platinum Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_platinum_bee"
-					Color: "#A4EDFC"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_platinum_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.5d
 			y: -4.5d
 			shape: "hexagon"
@@ -3792,6 +4171,18 @@
 			tasks: [{
 				id: "5747D3BB1D908672"
 				type: "item"
+				title: "Filled Bee Jar - Dense Platinum Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_platinum_bee"
+						Color: "#A4EDFC"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_platinum_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3817,17 +4208,6 @@
 		}
 		{
 			title: "Dense Silver Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_silver_bee"
-					Color: "#D1E1EC"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_silver_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -2.0d
 			y: -5.5d
 			shape: "hexagon"
@@ -3836,6 +4216,18 @@
 			tasks: [{
 				id: "419E5BB0C1EE96E0"
 				type: "item"
+				title: "Filled Bee Jar - Dense Silver Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_silver_bee"
+						Color: "#D1E1EC"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_silver_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3861,17 +4253,6 @@
 		}
 		{
 			title: "Dense Tin Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_tin_bee"
-					Color: "#ECEDEE"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_tin_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.5d
 			y: -6.5d
 			shape: "hexagon"
@@ -3880,6 +4261,18 @@
 			tasks: [{
 				id: "1DB39DC97F94939C"
 				type: "item"
+				title: "Filled Bee Jar - Dense Tin Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_tin_bee"
+						Color: "#ECEDEE"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_tin_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3905,17 +4298,6 @@
 		}
 		{
 			title: "Dense Uranium Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_uranium_bee"
-					Color: "#fff37f"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_uranium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: -1.0d
 			y: -7.5d
 			shape: "hexagon"
@@ -3924,6 +4306,18 @@
 			tasks: [{
 				id: "74AC42108CD8E740"
 				type: "item"
+				title: "Filled Bee Jar - Dense Uranium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_uranium_bee"
+						Color: "#fff37f"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_uranium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -3949,17 +4343,6 @@
 		}
 		{
 			title: "Dense Zinc Bee"
-			icon: {
-				id: "resourcefulbees:bee_jar"
-				Count: 1b
-				tag: {
-					Entity: "resourcefulbees:dense_zinc_bee"
-					Color: "#B6DBD8"
-					display: {
-						Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_zinc_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
-					}
-				}
-			}
 			x: 0.0d
 			y: -7.5d
 			shape: "hexagon"
@@ -3968,6 +4351,18 @@
 			tasks: [{
 				id: "3A0F4F929CA096C1"
 				type: "item"
+				title: "Filled Bee Jar - Dense Zinc Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_zinc_bee"
+						Color: "#B6DBD8"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_zinc_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
