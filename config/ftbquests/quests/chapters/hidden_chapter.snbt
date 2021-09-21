@@ -12,7 +12,6 @@
 			title: "Kill 5x Each I\\&F Dragon"
 			x: -1.0d
 			y: -1.0d
-			dependencies: ["0E7A236BB508FFB5"]
 			optional: true
 			id: "1D85CE0A88D09165"
 			tasks: [
@@ -38,6 +37,7 @@
 			rewards: [{
 				id: "38223539FD086E03"
 				type: "item"
+				auto: "invisible"
 				item: "atmadditions:dragon_soul"
 			}]
 		}
@@ -88,16 +88,19 @@
 				{
 					id: "125C7ED63AB6EFBF"
 					type: "item"
+					auto: "invisible"
 					item: "allthemodium:allthemodium_ore"
 				}
 				{
 					id: "2D9A756777B58733"
 					type: "item"
+					auto: "invisible"
 					item: "allthemodium:vibranium_ore"
 				}
 				{
 					id: "0F1377835B90C234"
 					type: "item"
+					auto: "invisible"
 					item: "allthemodium:unobtainium_ore"
 				}
 			]
@@ -115,6 +118,7 @@
 			rewards: [{
 				id: "5709D6E6CD232ACF"
 				type: "item"
+				auto: "invisible"
 				item: "xreliquary:hero_medallion"
 			}]
 		}
@@ -190,6 +194,7 @@
 			rewards: [{
 				id: "605623DDD28FABFF"
 				type: "item"
+				auto: "invisible"
 				item: {
 					id: "pedestals:coin/cobble"
 					Count: 1b
@@ -224,9 +229,9 @@
 		}
 		{
 			title: "Completionist"
+			icon: "atmadditions:atm_star"
 			x: 0.0d
 			y: 1.5d
-			subtitle: "WIP"
 			description: [
 				"Dev Note:"
 				""
@@ -234,15 +239,62 @@
 			]
 			dependencies: [
 				"1B175B2C955D8395"
-				"1DB294A8F8686321"
-				"15AAF17B6665223D"
 				"6C891E4EAC7ADBB6"
+				"6AEDA2F9BEB57759"
+				"70AE2F21054AD796"
+				"32C4B62281328EB9"
+				"100C477F4E63F20A"
+				"16956970FF49BB4D"
+				"4351A2B2F092D7AF"
+				"193F91842D2ED7D9"
+				"5C764279146E5E66"
+				"244A74DD4896B704"
+				"7831613229FC6191"
+				"15AAF17B6665223D"
+				"1DB294A8F8686321"
+				"1BE666F01EFFC00D"
 			]
 			optional: true
 			id: "50A5D1FCAD93857C"
-			tasks: [{
-				id: "00AF110DE2E71F0D"
-				type: "checkmark"
+			rewards: [{
+				id: "6565D36ACFFDA791"
+				type: "item"
+				auto: "enabled"
+				item: {
+					id: "mekanism:creative_bin"
+					Count: 1b
+					tag: {
+						mekData: {
+							Items: [{
+								Item: {
+									id: "atmadditions:atm_star"
+									Count: -1b
+								}
+								Slot: 0b
+								SizeOverride: 2147483647
+							}]
+						}
+						BlockEntityTag: {
+							currentRedstone: 15
+							updateDelay: 0
+							activeState: 0b
+							ForgeCaps: { }
+							Items: [{
+								Item: {
+									id: "atmadditions:atm_star"
+									Count: -1b
+								}
+								Slot: 0b
+								SizeOverride: 2147483647
+							}]
+							id: "mekanism:creative_bin"
+							redstone: 0b
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -260,7 +312,7 @@
 			rewards: [{
 				id: "1BF637611E711D9D"
 				type: "item"
-				auto: "enabled"
+				auto: "invisible"
 				item: {
 					id: "mekanism:creative_bin"
 					Count: 1b
@@ -294,11 +346,13 @@
 				{
 					id: "3795E76486D9705C"
 					type: "item"
+					auto: "invisible"
 					item: "botania:gaia_head"
 				}
 				{
 					id: "5E676BD63BC6F855"
 					type: "item"
+					auto: "invisible"
 					item: "kubejs:mass_of_wills"
 				}
 			]
@@ -334,33 +388,22 @@
 				{
 					id: "24AD298140198DB2"
 					type: "item"
+					auto: "invisible"
 					item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
 				}
 				{
 					id: "34D25FEF850E43F2"
 					type: "item"
+					auto: "invisible"
 					item: "allthemodium:unobtainium_vibranium_alloy_ingot"
 				}
 				{
 					id: "1B16C848C057050B"
 					type: "item"
+					auto: "invisible"
 					item: "allthemodium:vibranium_allthemodium_alloy_ingot"
 				}
 			]
-		}
-		{
-			title: "Dependency for Locking"
-			x: 0.0d
-			y: 0.0d
-			subtitle: "#Locked"
-			optional: true
-			id: "0E7A236BB508FFB5"
-			tasks: [{
-				id: "3C07E8ADEF84FCCA"
-				type: "kill"
-				entity: "minecraft:snowball"
-				value: 1974008390L
-			}]
 		}
 	]
 }
