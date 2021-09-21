@@ -14,35 +14,10 @@ onEvent('recipes', e => {
   e.recipes.mekanism.crushing('thermal:diamond_dust', 'minecraft:diamond')
   e.recipes.mekanism.crushing('thermal:sulfur_dust', 'thermal:sulfur')
 
-  //Add any extra seeds missing from the insolator.
-  //For example, 'apatite' will create a recipe of apatite_seeds = apatite_essence + apatite_seeds
-  const listMARecipes = [
-    'apatite',
-    'slimesteel',
-    'pig_iron',
-    'steeleaf',
-    'ironwood',
-    'aquamarine',
-    'azure_silver',
-    'crimson_iron',
-    'ruby',
-    'sapphire',
-    'cobalt',
-    'rose_gold',
-    'fluorite',
-    'knightmetal',
-    'fiery_ingot',
-    'azure_electrum',
-    'manyullyn',
-    'queens_slime',
-    'hepatizon',
-    'draconium'
-  ]
-  for (let recipe of listMARecipes) {
-    var essence = `mysticalagriculture:${recipe}_essence`
-    var seeds = `mysticalagriculture:${recipe}_seeds`
-    e.recipes.thermal.insolator([essence, seeds], seeds).water(500).id(`kubejs:thermal/insolator_${recipe}_seeds`)
-  }
+  utils.listOf(['apatite', 'slimesteel', 'pig_iron', 'steeleaf', 'ironwood', 'aquamarine', 'azure_silver', 'crimson_iron', 'ruby', 'sapphire', 'cobalt', 'rose_gold', 'fluorite', 'knightmetal', 'fiery_ingot', 'azure_electrum', 'manyullyn', 'queens_slime', 'hepatizon', 'draconium'])
+    .forEach(item => {
+      e.recipes.thermal.insolator([`mysticalagriculture:${item}_essence`, `mysticalagriculture:${item}_seeds`], `mysticalagriculture:${item}_seeds`).water(500).id(`kubejs:thermal/insolator_${item}_seeds`)
+    })
 
   removeRecipeByID(e, [
     'thermal:storage/tin_block',

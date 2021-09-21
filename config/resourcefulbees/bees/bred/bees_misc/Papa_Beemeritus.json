@@ -5,7 +5,7 @@
         "nether"
     ],
     "creator": "NoControl",
-    "lore": "You are never truly alone. Wherever you are, you have ghosts, and if you have ghosts, you have everything.",
+    "lore": "You are never truly alone.\nWherever you are, you have ghosts,\nand if you have ghosts, you have everything.",
     "loreColor": "#626262",
     "hasHoneycomb": true,
     "ColorData": {
