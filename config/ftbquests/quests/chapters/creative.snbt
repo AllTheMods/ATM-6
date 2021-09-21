@@ -671,5 +671,33 @@
 				}
 			}]
 		}
+		{
+			x: 0.0d
+			y: -5.5d
+			subtitle: "Become God???"
+			hide_dependency_lines: true
+			dependencies: [
+				"2CF11A70229000AB"
+				"0A5EE5CAA2CC572E"
+				"7DB018F46584386C"
+				"13E4B8DECD54CFE1"
+				"695EEC6AEF550449"
+				"5C010374A550B53F"
+				"5C7B81756CA58056"
+				"54F43B991F8ADB0F"
+				"546D0730D780D30B"
+				"22C55C94E18D5073"
+				"436B5A79FA72DB1A"
+				"6FB82574D7AE6D85"
+			]
+			hide: true
+			size: 3.0d
+			id: "6E6FDF551EA4FF1A"
+			tasks: [{
+				id: "0814C4E6DE262193"
+				type: "item"
+				item: "allthecompressed:atm_star_block_9x"
+			}]
+		}
 	]
 }
