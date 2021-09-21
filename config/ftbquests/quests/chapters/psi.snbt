@@ -328,63 +328,6 @@
 					id: "38F05C2FCBD45B25"
 					type: "checkmark"
 				}
-				{
-					id: "7A23C7AE79FD3F9B"
-					type: "item"
-					item: {
-						id: "itemfilters:weak_nbt"
-						Count: 1b
-						tag: {
-							value: {
-								key: "psi:trick_greater_infusion"
-							}
-						}
-					}
-				}
-				{
-					id: "26FEC2D4226C257F"
-					type: "item"
-					item: {
-						id: "itemfilters:weak_nbt"
-						Count: 1b
-						tag: {
-							value: {
-								spellName: "Greater Infusion"
-							}
-						}
-					}
-				}
-				{
-					id: "01515A9ABE76F3F5"
-					type: "item"
-					item: {
-						id: "itemfilters:weak_nbt"
-						Count: 1b
-						tag: {
-							value: {
-								spell: {
-									spellName: "Greater Infusion"
-								}
-								has_spell: 1b
-							}
-						}
-					}
-				}
-				{
-					id: "43175DD3908658D9"
-					type: "item"
-					item: {
-						id: "itemfilters:weak_nbt"
-						Count: 1b
-						tag: {
-							value: {
-								spell: {
-									spellName: "Greater Infusion"
-								}
-							}
-						}
-					}
-				}
 			]
 		}
 		{
