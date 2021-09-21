@@ -4266,6 +4266,18 @@
 			tasks: [{
 				id: "18A3A6488ECA0F59"
 				type: "item"
+				title: "Filled Bee Jar - Beediddy Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:beediddy_bee"
+						Color: "#edc343"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.beediddy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4310,6 +4322,18 @@
 			tasks: [{
 				id: "41347205F95504E3"
 				type: "item"
+				title: "Filled Bee Jar - Dense Copper Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_copper_bee"
+						Color: "#D28868"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_copper_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4354,6 +4378,18 @@
 			tasks: [{
 				id: "68374ACC7D92B974"
 				type: "item"
+				title: "Filled Bee Jar - Dense Gold Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_gold_bee"
+						Color: "#FFDC00"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_gold_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4398,6 +4434,18 @@
 			tasks: [{
 				id: "1A2D39A3AC204111"
 				type: "item"
+				title: "Filled Bee Jar - Dense Iron Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_iron_bee"
+						Color: "#ffcc99"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_iron_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4442,6 +4490,18 @@
 			tasks: [{
 				id: "1F74CD7F534E011E"
 				type: "item"
+				title: "Filled Bee Jar - Dense Lead Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_lead_bee"
+						Color: "#D0E4E1"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_lead_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4486,6 +4546,18 @@
 			tasks: [{
 				id: "4056914D800CA62D"
 				type: "item"
+				title: "Filled Bee Jar - Dense Netherite Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_netherite_bee"
+						Color: "#654740"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_netherite_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4530,6 +4602,18 @@
 			tasks: [{
 				id: "33DAB794D06B88A3"
 				type: "item"
+				title: "Filled Bee Jar - Dense Nickel Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_nickel_bee"
+						Color: "#F5F2A3"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_nickel_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4574,6 +4658,18 @@
 			tasks: [{
 				id: "7B14C52212093A8F"
 				type: "item"
+				title: "Filled Bee Jar - Dense Osmium Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_osmium_bee"
+						Color: "#BDCBD4"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_osmium_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4618,6 +4714,18 @@
 			tasks: [{
 				id: "5747D3BB1D908672"
 				type: "item"
+				title: "Filled Bee Jar - Dense Platinum Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_platinum_bee"
+						Color: "#A4EDFC"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_platinum_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4662,6 +4770,18 @@
 			tasks: [{
 				id: "419E5BB0C1EE96E0"
 				type: "item"
+				title: "Filled Bee Jar - Dense Silver Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_silver_bee"
+						Color: "#D1E1EC"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_silver_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4706,6 +4826,7 @@
 			tasks: [{
 				id: "1DB39DC97F94939C"
 				type: "item"
+				title: "Filled Bee Jar - Dense Tin Bee"
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4750,6 +4871,7 @@
 			tasks: [{
 				id: "74AC42108CD8E740"
 				type: "item"
+				title: "Filled Bee Jar - Dense Uranium Bee"
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
@@ -4794,6 +4916,18 @@
 			tasks: [{
 				id: "3A0F4F929CA096C1"
 				type: "item"
+				title: "Filled Bee Jar - Dense Zinc Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:dense_zinc_bee"
+						Color: "#B6DBD8"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.dense_zinc_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
 				item: {
 					id: "itemfilters:and"
 					Count: 1b
