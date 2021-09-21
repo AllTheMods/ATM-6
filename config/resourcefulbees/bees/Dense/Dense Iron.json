@@ -7,18 +7,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/iron/iron_bee",
     "ColorData": {
-        "primaryColor": "#ffcc99",
-        "secondaryColor": "#ffcc99",
         "honeycombColor": "#ffcc99",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#ffcc99",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -58,39 +47,19 @@
         "mainOutput": "minecraft:iron_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 4,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:iron_ingot",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 8,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "Quartz",
-        "parent2": "Stoned",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/iron",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": false

@@ -10,14 +10,8 @@
         "honeycombColor": "#48544F",
         "primaryLayerTexture": "/custom/primary_layer",
         "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "empty_layer",
         "isBeeColored": true,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#48544F",
-        "isEnchanted": false,
-        "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -28,22 +22,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:mason_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:clay_ball",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:mason_bee",
-                    "BeeType": "mason",
-                    "Color": "#48544F"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:mason_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:clay_ball",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:mason_bee",
+                            "BeeType": "mason",
+                            "Color": "#48544F"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,17 +50,13 @@
         "mainOutput": "minecraft:clay_ball",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 3,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:brick",
         "secondaryOutputWeight": 0.2,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
@@ -76,8 +71,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "tag:forge:storage_blocks/clay",

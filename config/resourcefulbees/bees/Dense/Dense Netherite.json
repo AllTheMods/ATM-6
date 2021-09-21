@@ -7,18 +7,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/netherite/netherite_bee",
     "ColorData": {
-        "primaryColor": "#654740",
-        "secondaryColor": "#654740",
         "honeycombColor": "#654740",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#654740",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
@@ -58,39 +47,19 @@
         "mainOutput": "minecraft:netherite_scrap",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 4,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:netherite_scrap",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 8,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "",
-        "parent2": "",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/netherite",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
+        "isBreedable": false
     },
     "TraitData": {
         "hasTraits": true

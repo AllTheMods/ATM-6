@@ -1,22 +1,15 @@
 {
     "flower": "tag:forge:storage_blocks/nether_star",
     "maxTimeInHive": 2400,
-    "traits": ["nether", "wither"],
+    "traits": [
+        "nether",
+        "wither"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "wither/wither_bee",
     "ColorData": {
-        "primaryColor": "#444444",
-        "secondaryColor": "#444444",
         "honeycombColor": "#444444",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#444444",
         "isEnchanted": true,
-        "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
@@ -28,37 +21,42 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:wither_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:coal",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:wither_bee",
-                    "BeeType": "wither",
-                    "Color": "#444444"
-                },
-                "weight": 20
-            }]
-        }, {
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "minecraft:dragon_egg",
-            "outputs": [{
-                "outputID": "minecraft:dragon_egg",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:dragonic_bee",
-                    "BeeType": "dragonic",
-                    "Color": "#E400FF"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:wither_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:coal",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:wither_bee",
+                            "BeeType": "wither",
+                            "Color": "#444444"
+                        },
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "minecraft:dragon_egg",
+                "outputs": [
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dragonic_bee",
+                            "BeeType": "dragonic",
+                            "Color": "#E400FF"
+                        },
+                        "weight": 100
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -66,28 +64,16 @@
         "mainOutput": "minecraft:nether_star",
         "mainOutputWeight": 0.01,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.2,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

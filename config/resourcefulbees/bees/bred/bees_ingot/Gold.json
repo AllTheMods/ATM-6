@@ -1,22 +1,13 @@
 {
     "flower": "tag:forge:storage_blocks/gold",
     "maxTimeInHive": 2400,
-    "traits": ["nether"],
+    "traits": [
+        "nether"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "ores/gold/gold_bee",
     "ColorData": {
-        "primaryColor": "#FFDC00",
-        "secondaryColor": "#FFDC00",
         "honeycombColor": "#FFDC00",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#FFDC00",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
@@ -28,37 +19,46 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:gold_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:gold_ingot",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:gold_bee",
-                    "BeeType": "gold",
-                    "Color": "#FFDC00"
-                },
-                "weight": 20
-            }]
-        }, {
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "minecraft:netherite_block",
-            "outputs": [{
-                "outputID": "minecraft:netherite_scrap",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:netherite_bee",
-                    "BeeType": "netherite",
-                    "Color": "#654740"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:gold_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:gold_ingot",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:gold_bee",
+                            "BeeType": "gold",
+                            "Color": "#FFDC00"
+                        },
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "minecraft:netherite_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:netherite_scrap",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:netherite_bee",
+                            "BeeType": "netherite",
+                            "Color": "#654740"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -66,28 +66,16 @@
         "mainOutput": "minecraft:gold_ore",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:gold_ingot",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "",
-        "biomeBlacklist": "",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,

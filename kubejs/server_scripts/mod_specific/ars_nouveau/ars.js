@@ -13,7 +13,7 @@ onEvent('recipes', e => {
     }
   )
 
-  e.shaped('ars_nouveau:creative_mana_jar', ['GMG','GSG','GGG'], {
+  e.shaped('ars_nouveau:creative_mana_jar', ['GMG', 'GSG', 'GGG'], {
     G: '#forge:glass',
     S: 'atmadditions:atm_star',
     M: 'ars_nouveau:mana_gem_block'

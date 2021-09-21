@@ -2,13 +2,13 @@ onEvent('recipes', e => {
   e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
 
   e.forEachRecipe({ type: 'minecraft:crafting_shaped', output: '#minecraft:slabs' }, r => {
-    e.shaped(r.inputItems[0], ['S', 'S'], {S: Item.of(r.outputItems[0].id)})
+    e.shaped(r.inputItems[0], ['S', 'S'], { S: Item.of(r.outputItems[0].id) })
   })
   e.forEachRecipe({ type: 'minecraft:stonecutting', output: '#minecraft:stairs' }, r => {
     e.stonecutting(r.inputItems[0], Item.of(r.outputItems[0].id))
   })
   e.forEachRecipe({ type: 'minecraft:crafting_shapeless', output: '#minecraft:buttons' }, r => {
-    e.remove({type: 'minecraft:crafting_shapeless', output: r.outputItems[0].id})
+    e.remove({ type: 'minecraft:crafting_shapeless', output: r.outputItems[0].id })
     e.shapeless(`8x ${r.outputItems[0].id}`, r.inputItems[0])
   })
 

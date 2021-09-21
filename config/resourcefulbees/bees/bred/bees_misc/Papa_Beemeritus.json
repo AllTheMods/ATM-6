@@ -1,7 +1,9 @@
 {
     "flower": "tag:tombstone:decorative_graves",
     "maxTimeInHive": 1200,
-    "traits": ["nether"],
+    "traits": [
+        "nether"
+    ],
     "creator": "NoControl",
     "lore": "You are never truly alone. Wherever you are, you have ghosts, and if you have ghosts, you have everything.",
     "loreColor": "#626262",
@@ -21,24 +23,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
-            "outputs": [{
-                    "outputID": "tombstone:grave_dust",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:bee_jar",
-                    "nbtData": {
-                        "Entity": "resourcefulbees:papa_beemeritus_bee",
-                        "BeeType": "papa_beemeritus",
-                        "Color": "#35b3ff"
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "tombstone:grave_dust",
+                        "weight": 80
                     },
-                    "weight": 20
-                }
-            ]
-        }]
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:papa_beemeritus_bee",
+                            "BeeType": "papa_beemeritus",
+                            "Color": "#35b3ff"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -52,8 +57,7 @@
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": false
