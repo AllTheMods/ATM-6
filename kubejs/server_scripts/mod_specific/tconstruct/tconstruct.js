@@ -1,4 +1,5 @@
 onEvent('recipes', e => {
+  //#region functions
   function tinkerBasinCasting(entries) {
     entries.forEach(([input, output]) => {
       e.custom({
@@ -34,7 +35,7 @@ onEvent('recipes', e => {
       }).id(`kubejs:melting/copper/fromblock/${index + 1}`)
     })
   }
-
+  //#endregion
   tinkerBasinCasting([
     ['byg:cryptic_stone', 'byg:cryptic_magma_block'],
     ['minecraft:blackstone', 'byg:magmatic_stone']
@@ -79,10 +80,19 @@ onEvent('recipes', e => {
     ]
   ).energy(5000).id('kubejs:tconstruct/chiller/pig_iron')
 
+  e.shaped(`tconstruct:crafting_station`, ['P', 'T'],
+    {
+      P: 'tconstruct:pattern',
+      T: 'craftingstation:crafting_station'
+    }
+  )
+
   removeRecipeByID(e, [
     /^tmechworks:.*_block_from_.*_ingot/,
     'tconstruct:common/materials/copper_block_from_ingots',
     'tconstruct:smeltery/melting/copper/smeltery_controller',
-    'tconstruct:smeltery/melting/copper/smeltery_io'
+    'tconstruct:smeltery/melting/copper/smeltery_io',
+    'tconstruct:tables/crafting_station_from_logs',
+    'tconstruct:tables/crafting_station'
   ])
 })
