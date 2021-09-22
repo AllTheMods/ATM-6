@@ -35,6 +35,7 @@
         "modelType": "QUEEN"
     },
     "CombatData": {
+		"isInvulnerable": true,
         "isPassive": false,
         "removeStingerOnAttack": false,
         "inflictsPoison": false,
