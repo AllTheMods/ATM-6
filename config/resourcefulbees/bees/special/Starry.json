@@ -4,7 +4,7 @@
     "traits": [
         "starry"
     ],
-    "sizeModifier": 1.75,
+    "sizeModifier": 1.25,
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [
         1,
