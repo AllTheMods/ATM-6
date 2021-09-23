@@ -1,0 +1,15 @@
+
+["AllTheCompressed Blocks"]
+	#Show Mekanism Blocks
+	Mekanism = true
+	#Show Powah Blocks
+	Powah = true
+	#Show AllTheModium Blocks
+	AllTheModium = true
+	#Show AllTheOres Blocks
+	AllTheOres = true
+	#Show Compressium Blocks
+	Compressium = false
+	#Show Thermal Blocks
+	Thermal = true
+
