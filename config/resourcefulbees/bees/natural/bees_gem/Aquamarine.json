@@ -1,22 +1,13 @@
 {
     "flower": "astralsorcery:starmetal",
     "maxTimeInHive": 1200,
-    "traits": ["can_swim"],
+    "traits": [
+        "can_swim"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/aquamarine_bee",
     "ColorData": {
-        "primaryColor": "#35b3ff",
-        "secondaryColor": "#35b3ff",
         "honeycombColor": "#35b3ff",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#35b3ff",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "ORE"
     },
     "CombatData": {
@@ -28,22 +19,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:aquamarine_honeycomb_block",
-            "outputs": [{
-                "outputID": "astralsorcery:aquamarine",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:aquamarine_bee",
-                    "BeeType": "aquamarine",
-                    "Color": "#35b3ff"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:aquamarine_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "astralsorcery:aquamarine",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:aquamarine_bee",
+                            "BeeType": "aquamarine",
+                            "Color": "#35b3ff"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,22 +47,17 @@
         "mainOutput": "astralsorcery:aquamarine",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "astralsorcery:aquamarine",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:beach, tag:lake, tag:river",
-        "biomeBlacklist": "",
         "spawnWeight": 10,
         "minYLevel": 0,
         "maxYLevel": 255,
@@ -76,8 +67,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "astralsorcery:aquamarine",

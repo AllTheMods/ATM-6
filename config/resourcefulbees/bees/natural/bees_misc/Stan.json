@@ -3,6 +3,9 @@
     "maxTimeInHive": 1200,
     "traits": [],
     "hasHoneycomb": true,
+    "creator": "Lexxie",
+    "lore": "In loving memory of Stan Lee",
+    "loreColor": "#FFFFFF",
     "baseLayerTexture": "misc/stan_bee",
     "ColorData": {
         "primaryColor": "#5A5A5A",
@@ -10,13 +13,6 @@
         "honeycombColor": "#5A5A5A",
         "primaryLayerTexture": "/custom/primary_layer",
         "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#5A5A5A",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
@@ -28,22 +24,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:stan_honeycomb_block",
-            "outputs": [{
-                "outputID": "resourcefulbees:stan_honeycomb",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:stan_bee",
-                    "BeeType": "stan",
-                    "Color": "#5A5A5A"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:stan_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "resourcefulbees:stan_honeycomb",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:stan_bee",
+                            "BeeType": "stan",
+                            "Color": "#5A5A5A"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": false,
@@ -51,17 +52,13 @@
         "mainOutput": "astralsorcery:marble_raw",
         "mainOutputWeight": 0.50,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "astralsorcery:black_marble_raw",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
@@ -75,9 +72,7 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": false,
-        "parent1": "Stan_Bee",
-        "parent2": "Stan_Bee",
+        "isBreedable": true,
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "tag:forge:stone",

@@ -21,11 +21,11 @@ onEvent('recipes', e => {
 
   utils.listOf(['1', '2', '3', '4', '5', 'custom_allthemodium', 'custom_vibranium', 'custom_unobtainium']).forEach(solar => e.shapeless(`solarflux:sp_${solar}`, `solarflux:sp_${solar}`))
 
-  modifyShaped('solarflux:mirror', 3, ['GGG', 'III'], {
+  modifyShaped(e, 'solarflux:mirror', 3, ['GGG', 'III'], {
     G: '#forge:glass',
     I: '#forge:ingots'
   })
-  modifyShaped('solarflux:sp_1', 1, ['MMM', 'ILI', 'III'], {
+  modifyShaped(e, 'solarflux:sp_1', 1, ['MMM', 'ILI', 'III'], {
     M: 'solarflux:mirror',
     L: '#forge:storage_blocks/lapis',
     I: '#forge:ingots/iron'

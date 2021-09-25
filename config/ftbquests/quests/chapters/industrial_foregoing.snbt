@@ -9,6 +9,13 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "industrialforegoing:industrial_foregoing"
+				}
+			}
 			x: 0.0d
 			y: 0.0d
 			shape: "gear"
@@ -805,8 +812,8 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 1.0d
+			x: 12.0d
+			y: 0.0d
 			dependencies: ["0E8647B8EB4AAC41"]
 			id: "408203C29BAABA44"
 			tasks: [{
@@ -814,10 +821,15 @@
 				type: "item"
 				item: "industrialforegoing:pink_slime_ingot"
 			}]
+			rewards: [{
+				id: "2638272F9CC5DC85"
+				type: "item"
+				item: "industrialforegoing:pink_slime_ingot"
+			}]
 		}
 		{
-			x: 11.0d
-			y: 2.0d
+			x: 13.5d
+			y: 0.0d
 			dependencies: [
 				"408203C29BAABA44"
 				"0BCCDE24D378F260"
@@ -1275,8 +1287,8 @@
 			}]
 		}
 		{
-			x: 11.5d
-			y: -1.0d
+			x: 10.5d
+			y: -1.5d
 			dependencies: ["0E8647B8EB4AAC41"]
 			id: "65C147F5282E8FCD"
 			tasks: [{
@@ -1286,8 +1298,8 @@
 			}]
 		}
 		{
-			x: 12.5d
-			y: -2.0d
+			x: 10.5d
+			y: -3.0d
 			dependencies: ["65C147F5282E8FCD"]
 			id: "41E8550FC36ABCA5"
 			tasks: [

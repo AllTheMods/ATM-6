@@ -11,12 +11,12 @@ onEvent('recipes', e => {
 
   e.remove({ mod: 'cabletiers' })
 
-  energize(['refinedstorage:wireless_grid'], 'refinedstorage:creative_wireless_grid', '2147483647')
-  energize(['refinedstorage:wireless_fluid_grid'], 'refinedstorage:creative_wireless_fluid_grid', '2147483647')
-  energize(['refinedstorage:wireless_crafting_monitor'], 'refinedstorage:creative_wireless_crafting_monitor', '2147483647')
-  energize(['refinedstorageaddons:wireless_crafting_grid'], 'refinedstorageaddons:creative_wireless_crafting_grid', '2147483647')
-  energize(['refinedstorage:portable_grid'], 'refinedstorage:creative_portable_grid', '2147483647')
-  energize(['refinedstorage:controller', 'atmadditions:atm_star'], 'refinedstorage:creative_controller', '2147483647')
+  energize(e, ['refinedstorage:wireless_grid'], 'refinedstorage:creative_wireless_grid', '2147483647')
+  energize(e, ['refinedstorage:wireless_fluid_grid'], 'refinedstorage:creative_wireless_fluid_grid', '2147483647')
+  energize(e, ['refinedstorage:wireless_crafting_monitor'], 'refinedstorage:creative_wireless_crafting_monitor', '2147483647')
+  energize(e, ['refinedstorageaddons:wireless_crafting_grid'], 'refinedstorageaddons:creative_wireless_crafting_grid', '2147483647')
+  energize(e, ['refinedstorage:portable_grid'], 'refinedstorage:creative_portable_grid', '2147483647')
+  energize(e, ['refinedstorage:controller', 'atmadditions:atm_star'], 'refinedstorage:creative_controller', '2147483647')
 
   e.shaped('extrastorage:iron_crafter', ['B B', 'PCP', 'B B'], {
     B: '#forge:storage_blocks/iron',
@@ -89,31 +89,14 @@ onEvent('recipes', e => {
     b: '#forge:dusts/redstone',
     n: '#forge:ingots/unobtainium'
   }).id(`kubejs:1048576k_storage_part`)
-  e.shaped('extradisks:infinite_fluid_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:1048576k_fluid_storage_part',
-    b: 'minecraft:bucket',
-    n: '#forge:ingots/unobtainium'
-  }).id(`kubejs:infinite_fluid_part`)
-  e.shaped('extradisks:infinite_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:1048576k_storage_part',
-    b: '#forge:dusts/redstone',
-    n: '#forge:ingots/unobtainium'
-  }).id(`kubejs:infinite_storage_part`)
-  e.shaped('creativewirelesstransmitter:creative_wireless_transmitter', ['ITI', 'ICI', 'IDI'], {
-    I: 'allthemodium:unobtainium_ingot',
-    D: 'rsinfinitybooster:dimension_card',
-    C: 'refinedstorage:machine_casing',
-    T: 'refinedstorage:wireless_transmitter'
-  }).id(`kubejs:creativewirelesstransmitter/creative_wireless_transmitter`)
+
 
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
   caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`)
 
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'refinedstorage:part/4096k_fluid_storage_part',
     'extradisks:part/4096k_storage_part',
     'extradisks:part/16384k_fluid_storage_part',
@@ -124,12 +107,9 @@ onEvent('recipes', e => {
     'extradisks:part/262144k_storage_part',
     'extradisks:part/1048576k_fluid_storage_part',
     'extradisks:part/1048576k_storage_part',
-    'extradisks:part/infinite_fluid_storage_part',
-    'extradisks:part/infinite_storage_part',
     'creativecrafter:creative_crafter',
-    'creativewirelesstransmitter:creative_wireless_transmitter',
     'extrastorage:iron_crafter'
   ])
 
-  modifySmelt('refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
+  modifySmelt(e, 'refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
 })

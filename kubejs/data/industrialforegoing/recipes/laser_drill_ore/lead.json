@@ -1,45 +1,45 @@
 {
   "output": {
-    "item": "alltheores:ore_lead"
+      "item": "alltheores:ore_lead"
   },
   "rarity": [{
-      "whitelist": {},
-      "blacklist": {
-        "type": "minecraft:worldgen/biome",
-        "values": [
-          "minecraft:the_end",
-          "minecraft:the_void",
-          "minecraft:small_end_islands",
-          "minecraft:end_barrens",
-          "minecraft:end_highlands",
-          "minecraft:end_midlands"
-        ]
+          "whitelist": {},
+          "blacklist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                  "minecraft:the_end",
+                  "minecraft:the_void",
+                  "minecraft:small_end_islands",
+                  "minecraft:end_barrens",
+                  "minecraft:end_highlands",
+                  "minecraft:end_midlands"
+              ]
+          },
+          "depth_min": 10,
+          "depth_max": 40,
+          "weight": 6
       },
-      "depth_min": 10,
-      "depth_max": 40,
-      "weight": 6
-    },
-    {
-      "whitelist": {},
-      "blacklist": {
-        "type": "minecraft:worldgen/biome",
-        "values": [
-          "minecraft:the_end",
-          "minecraft:the_void",
-          "minecraft:small_end_islands",
-          "minecraft:end_barrens",
-          "minecraft:end_highlands",
-          "minecraft:end_midlands"
-        ]
-      },
-      "depth_min": 0,
-      "depth_max": 255,
-      "weight": 1
-    }
+      {
+          "whitelist": {},
+          "blacklist": {
+              "type": "minecraft:worldgen/biome",
+              "values": [
+                  "minecraft:the_end",
+                  "minecraft:the_void",
+                  "minecraft:small_end_islands",
+                  "minecraft:end_barrens",
+                  "minecraft:end_highlands",
+                  "minecraft:end_midlands"
+              ]
+          },
+          "depth_min": 0,
+          "depth_max": 255,
+          "weight": 1
+      }
   ],
   "pointer": 0,
   "catalyst": {
-    "item": "industrialforegoing:laser_lens10"
+      "item": "industrialforegoing:laser_lens10"
   },
   "type": "industrialforegoing:laser_drill_ore"
 }

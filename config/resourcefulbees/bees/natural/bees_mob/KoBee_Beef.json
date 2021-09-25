@@ -10,13 +10,7 @@
         "honeycombColor": "#FF6666",
         "primaryLayerTexture": "/custom/primary_layer",
         "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "empty_layer",
         "isBeeColored": true,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#FF6666",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "DEFAULT"
     },
     "CombatData": {
@@ -28,23 +22,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:kobee_beef_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:beef",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:kobee_beef_bee",
-                    "BeeType": "kobee_beef",
-                    "Color": "#FF6666"
-                },
-                "weight": 20
-
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:kobee_beef_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:beef",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:kobee_beef_bee",
+                            "BeeType": "kobee_beef",
+                            "Color": "#FF6666"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": false,
@@ -52,22 +50,18 @@
         "mainOutput": "minecraft:beef",
         "mainOutputWeight": 0.01,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.2,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
         "recipeTime": 200,
         "hasFluidOutput": false
     },
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:kobeebeef",
-        "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,
         "maxYLevel": 255,
@@ -77,8 +71,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.6,
         "feedItem": "minecraft:beef",

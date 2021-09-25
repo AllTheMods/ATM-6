@@ -98,7 +98,7 @@ onEvent('recipes', e => {
     ['enderium', [1, 3, 4]],
     ['brass', [2, 3], 57, 'create:brass_sheet']
   ])
-  
+
   e.shapeless('allthecompressed:atm_star_block', 'kubejs:atm_star_block').id('kubejs:atmadditions/atm_star_block_conversion')
 
   e.shapeless('astralsorcery:marble_raw', 'enviromats:marble').id('kubejs:marble/astral_to_envirotech')
@@ -117,7 +117,7 @@ onEvent('recipes', e => {
   e.shapeless('9x kubejs:uru_nugget', 'kubejs:uru_ingot').id('kubejs:uru/ingot_to_nugget')
   e.shapeless('kubejs:uru_block', '9x kubejs:uru_ingot').id('kubejs:uru/ingot_to_block')
 
-  draconicFusion('kubejs:uru_ingot', 4, 1024000000, 'draconicevolution:chaos_shard', [
+  draconicFusion(e, 'kubejs:uru_ingot', 4, 1024000000, 'draconicevolution:chaos_shard', [
     'allthemodium:unobtainium_allthemodium_alloy_ingot',
     'allthemodium:unobtainium_vibranium_alloy_ingot',
     'allthemodium:vibranium_allthemodium_alloy_ingot',
@@ -130,7 +130,7 @@ onEvent('recipes', e => {
     W: 'waterstrainer:worm'
   }).id('kubejs:waterstrainer/super_worm')
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'eidolon:lead_block',
     'eidolon:smelt_stone_brick',
     'platforms:wrench_alt',
@@ -141,7 +141,7 @@ onEvent('recipes', e => {
     'twilightforest:uncrafting_table'
   ])
 
-  removeRecipeByOutput([
+  removeRecipeByOutput(e, [
     'darkutils:ender_hopper',
     'naturesaura:chunk_loader',
     'titanium:iron_gear',

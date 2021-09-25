@@ -1,0 +1,67 @@
+{
+    "flower": "compressium:gold_3",
+    "maxTimeInHive": 2400,
+    "traits": [
+        "dense"
+    ],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/gold/gold_bee",
+    "ColorData": {
+        "honeycombColor": "#FFDC00",
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2147483647
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dense_gold_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:gold_ingot",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_gold_bee",
+                            "BeeType": "dense_gold",
+                            "Color": "#FFDC00"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "minecraft:gold_ore",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 4,
+        "secondaryOutput": "minecraft:gold_ingot",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 8,
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "recipeTime": 200
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

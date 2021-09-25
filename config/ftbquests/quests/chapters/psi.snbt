@@ -1,7 +1,7 @@
 {
 	id: "7831613229FC6191"
 	group: "02FE661031A105D8"
-	order_index: 3
+	order_index: 4
 	filename: "psi"
 	title: "Psi"
 	icon: {
@@ -89,6 +89,7 @@
 		{
 			x: 0.0d
 			y: -6.0d
+			subtitle: "aka CAD"
 			description: ["Plop your &eIron CAD Assembly&f into the &fCAD Assembler&f"]
 			dependencies: ["3CEF13CA385F4434"]
 			id: "6EBFE853BA815DAA"
@@ -198,6 +199,7 @@
 				"4FCB27776B052710"
 				"7D724B0F045F26E4"
 			]
+			dependency_requirement: "one_started"
 			id: "6884A98956F51E5C"
 			tasks: [{
 				id: "1AAA904E05AFD162"
@@ -252,34 +254,40 @@
 			]
 			dependencies: ["5610D15E9584FD62"]
 			id: "1FA1B263BE981D57"
-			tasks: [{
-				id: "72F113BBA8359D13"
-				type: "item"
-				item: {
-					id: "psi:spell_bullet"
-					Count: 1b
-					tag: {
-						spell: {
-							modsRequired: [{
-								modVersion: "1.16-94"
-								modName: "psi"
-							}]
-							spellName: "Infusion"
-							uuidMost: 3804495466522953104L
-							validSpell: 1b
-							spellList: [{
-								x: 4
-								y: 4
-								data: {
-									key: "psi:trick_infusion"
-								}
-							}]
-							uuidLeast: -8202454919581574748L
+			tasks: [
+				{
+					id: "72F113BBA8359D13"
+					type: "item"
+					item: {
+						id: "psi:spell_bullet"
+						Count: 1b
+						tag: {
+							spell: {
+								modsRequired: [{
+									modVersion: "1.16-94"
+									modName: "psi"
+								}]
+								spellName: "Infusion"
+								uuidMost: 3804495466522953104L
+								validSpell: 1b
+								spellList: [{
+									x: 4
+									y: 4
+									data: {
+										key: "psi:trick_infusion"
+									}
+								}]
+								uuidLeast: -8202454919581574748L
+							}
+							has_spell: 1b
 						}
-						has_spell: 1b
 					}
 				}
-			}]
+				{
+					id: "32FAFA6E6F2F9F6B"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -287,34 +295,40 @@
 			description: ["&dSpell&f must contain &bTrick: Greater Infusion&f and be named \"&5Greater Infusion&f\"."]
 			dependencies: ["5610D15E9584FD62"]
 			id: "296E709DCF11ECF2"
-			tasks: [{
-				id: "7390F185303E8519"
-				type: "item"
-				item: {
-					id: "psi:spell_bullet"
-					Count: 1b
-					tag: {
-						spell: {
-							modsRequired: [{
-								modVersion: "1.16-94"
-								modName: "psi"
-							}]
-							spellName: "Greater Infusion"
-							uuidMost: 7503375332235758121L
-							validSpell: 1b
-							spellList: [{
-								x: 4
-								y: 4
-								data: {
-									key: "psi:trick_greater_infusion"
-								}
-							}]
-							uuidLeast: -5136156521636814908L
+			tasks: [
+				{
+					id: "7390F185303E8519"
+					type: "item"
+					item: {
+						id: "psi:spell_bullet"
+						Count: 1b
+						tag: {
+							spell: {
+								modsRequired: [{
+									modVersion: "1.16-94"
+									modName: "psi"
+								}]
+								spellName: "Greater Infusion"
+								uuidMost: 7503375332235758121L
+								validSpell: 1b
+								spellList: [{
+									x: 4
+									y: 4
+									data: {
+										key: "psi:trick_greater_infusion"
+									}
+								}]
+								uuidLeast: -5136156521636814908L
+							}
+							has_spell: 1b
 						}
-						has_spell: 1b
 					}
 				}
-			}]
+				{
+					id: "38F05C2FCBD45B25"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -576,34 +590,40 @@
 			description: ["&dSpell&f must contain &bTrick: Ebony \\& Ivory&f and be named \"&5Ebony \\& Ivory&f\"."]
 			dependencies: ["5610D15E9584FD62"]
 			id: "71E43799270B048D"
-			tasks: [{
-				id: "7755ACF9FA2374C7"
-				type: "item"
-				item: {
-					id: "psi:spell_bullet"
-					Count: 1b
-					tag: {
-						spell: {
-							modsRequired: [{
-								modVersion: "1.16-94"
-								modName: "psi"
-							}]
-							spellName: "Ebony & Ivory"
-							uuidMost: 817484819054216280L
-							validSpell: 1b
-							spellList: [{
-								x: 4
-								y: 4
-								data: {
-									key: "psi:trick_ebony_ivory"
-								}
-							}]
-							uuidLeast: -6505221033292121448L
+			tasks: [
+				{
+					id: "7755ACF9FA2374C7"
+					type: "item"
+					item: {
+						id: "psi:spell_bullet"
+						Count: 1b
+						tag: {
+							spell: {
+								modsRequired: [{
+									modVersion: "1.16-94"
+									modName: "psi"
+								}]
+								spellName: "Ebony & Ivory"
+								uuidMost: 817484819054216280L
+								validSpell: 1b
+								spellList: [{
+									x: 4
+									y: 4
+									data: {
+										key: "psi:trick_ebony_ivory"
+									}
+								}]
+								uuidLeast: -6505221033292121448L
+							}
+							has_spell: 1b
 						}
-						has_spell: 1b
 					}
 				}
-			}]
+				{
+					id: "7FC801248D55FFAC"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "Psimetal Tools"

@@ -1,20 +1,17 @@
 onEvent('recipes', e => {
   e.remove({ id: 'thermal:storage/onion_block' })
-
-  e.shaped('thermal:machine_efficiency_creative_augment', ['ABA', 'CDC', 'AEA'], {
-    A: 'thermal:upgrade_augment_3',
-    B: `powah:charged_snowball`,
-    C: `thermal:energy_cell`,
-    D: 'atmadditions:atm_star',
-    E: `thermal:lightning_charge`
-  })
   e.shapeless('thermal:onion_block', '9x #forge:crops/onion')
 
   e.recipes.mekanism.crushing('6x thermal:sulfur', 'thermal:sulfur_ore')
   e.recipes.mekanism.crushing('thermal:diamond_dust', 'minecraft:diamond')
   e.recipes.mekanism.crushing('thermal:sulfur_dust', 'thermal:sulfur')
 
-  removeRecipeByID([
+  utils.listOf(['apatite', 'slimesteel', 'pig_iron', 'steeleaf', 'ironwood', 'aquamarine', 'azure_silver', 'crimson_iron', 'ruby', 'sapphire', 'cobalt', 'rose_gold', 'fluorite', 'knightmetal', 'fiery_ingot', 'azure_electrum', 'manyullyn', 'queens_slime', 'hepatizon', 'draconium'])
+    .forEach(item => {
+      e.recipes.thermal.insolator([`mysticalagriculture:${item}_essence`, `mysticalagriculture:${item}_seeds`], `mysticalagriculture:${item}_seeds`).water(500).id(`kubejs:thermal/insolator_${item}_seeds`)
+    })
+
+  removeRecipeByID(e, [
     'thermal:storage/tin_block',
     'thermal:storage/copper_block',
     'thermal:storage/lead_block',

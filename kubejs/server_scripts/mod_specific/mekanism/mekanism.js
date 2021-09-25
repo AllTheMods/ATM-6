@@ -129,7 +129,7 @@ onEvent('recipes', e => {
     ).id(`kubejs:saw/byg_log_${type}`)
   })
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     /^mekanism:processing\/.*\/storage_blocks\/from_ingots/,
     'mekanism:storage_blocks/bronze',
     'mekanism:digital_miner',
@@ -154,12 +154,12 @@ onEvent('recipes', e => {
     'mekanism:laser_tractor_beam',
     'mekanism:storage_blocks/bronze'
   ])
-  removeRecipeByOutput([
+  removeRecipeByOutput(e, [
     'mekanism:block_charcoal',
     'mekanism:upgrade_anchor'
   ])
-  
-  modifyShaped('mekanismgenerators:solar_panel', 1, ['PPP', 'RIR', 'OOO'], {
+
+  modifyShaped(e, 'mekanismgenerators:solar_panel', 1, ['PPP', 'RIR', 'OOO'], {
     P: 'powah:solar_panel_starter',
     R: '#forge:dusts/redstone',
     I: 'mekanism:alloy_infused',

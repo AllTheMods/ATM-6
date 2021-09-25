@@ -1,15 +1,16 @@
 {
 	id: "1BE666F01EFFC00D"
 	group: ""
-	order_index: 3
+	order_index: 2
 	filename: "tips_and_tricks"
-	title: "Tips and Tricks"
+	title: "Tips \\& Tricks"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.5d
-			y: -4.0d
+			x: -1.5d
+			y: 0.0d
+			subtitle: "Can be used as Reactor Coolant"
 			description: ["Easy item to automate infinite water. Need more water? Make another!"]
 			id: "722978AC0C1B2649"
 			tasks: [{
@@ -24,8 +25,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -4.0d
+			x: -2.0d
+			y: -2.0d
 			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."]
 			id: "7EC8814940C4C3D7"
 			tasks: [{
@@ -45,8 +46,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -2.5d
+			x: 1.5d
+			y: 0.0d
 			description: ["Craftable X-Ray potions are very useful when you are running low on an item."]
 			id: "3EE9F242794CD95F"
 			tasks: [{
@@ -73,8 +74,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -2.5d
+			x: -1.0d
+			y: 1.0d
 			description: ["Wireless power to fix your direwire."]
 			id: "4DFA99898C174BD6"
 			tasks: [{
@@ -96,8 +97,9 @@
 			]
 		}
 		{
+			title: "Farmer's Market"
 			x: -3.0d
-			y: -2.5d
+			y: 0.0d
 			description: ["Use the market to get seeds or saplings. Also try and eat as many foods as you can to improve your health."]
 			id: "27D9B9F9695206BE"
 			tasks: [{
@@ -112,8 +114,10 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -2.5d
+			title: "Comforts"
+			x: 1.0d
+			y: 1.0d
+			subtitle: "ZZZzzz..."
 			description: [
 				"The sleeping bag lets you sleep during the night."
 				""
@@ -142,8 +146,9 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -4.0d
+			x: -1.0d
+			y: -1.0d
+			subtitle: "When an infinite world is too small"
 			description: [
 				"It's an entire room in one block!"
 				""
@@ -162,8 +167,9 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -4.0d
+			x: 0.0d
+			y: -1.5d
+			subtitle: "A Mega Guidebook"
 			description: [
 				"Stores all the guidebooks you'll ever need!"
 				""
@@ -175,10 +181,16 @@
 				type: "item"
 				item: "akashictome:tome"
 			}]
+			rewards: [{
+				id: "135DC7E4DBF766E7"
+				type: "item"
+				title: "An Emergency Stick"
+				item: "minecraft:stick"
+			}]
 		}
 		{
-			x: -6.0d
-			y: -5.5d
+			x: 1.0d
+			y: -1.0d
 			description: [
 				"A quick way to switch between tools."
 				""
@@ -198,8 +210,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -5.5d
+			x: 0.0d
+			y: -3.0d
 			description: [
 				"Allows you to store multiple tools in one!"
 				""
@@ -214,8 +226,8 @@
 		}
 		{
 			title: "Building Gadgets"
-			x: -3.0d
-			y: -5.5d
+			x: 2.0d
+			y: -2.0d
 			description: [
 				"Some useful gadgets for building."
 				""
@@ -290,8 +302,8 @@
 		}
 		{
 			title: "Other Gadgets"
-			x: -1.5d
-			y: -5.5d
+			x: 3.0d
+			y: 0.0d
 			description: [
 				"Can be helpful for building."
 				""
@@ -336,8 +348,8 @@
 		}
 		{
 			title: "Automating the Gaia Guardian"
-			x: -7.5d
-			y: -5.5d
+			x: 0.0d
+			y: 1.5d
 			description: [
 				"Normally, you can't automate the Guardian. It's a lot of manual labor to make the ATM Star!"
 				""
@@ -395,6 +407,125 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "2283DE747B7E1C60"
+				type: "item"
+				item: "botania:life_essence"
+				count: 4
+			}]
+		}
+		{
+			title: "Automatic Fishing"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"Place the strainer base under water, and place a strainer inside. It should slowly start to give you resources."
+				""
+				"Put food or plants into the Worm Bin to produce worms and fertilizer. The worms can be used as bait in a strainer to get more loot. The fertilizer is a bonemeal equivalent."
+			]
+			id: "7D831F7B42EC0951"
+			tasks: [
+				{
+					id: "33D7B488E87983D1"
+					type: "item"
+					item: "waterstrainer:strainer_base"
+				}
+				{
+					id: "6E4B09E902175543"
+					type: "item"
+					item: "waterstrainer:worm_bin"
+				}
+			]
+			rewards: [
+				{
+					id: "32CF3C1A3CF3E630"
+					type: "item"
+					item: {
+						id: "waterstrainer:strainer_survivalist"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "780CEA8950A8545B"
+					type: "item"
+					item: {
+						id: "waterstrainer:strainer_fisherman"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "ZYCraft Info Book"
+			icon: "zycraft:green_zychorium_bricks"
+			x: -2.0d
+			y: 2.0d
+			description: ["This might be removed and then re-added as tooltips."]
+			id: "24F4CFC10E8899CC"
+			tasks: [{
+				id: "47D696D15790E304"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6094F681DA203579"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						pages: [
+							"{\"text\":\"Zychorium Water\\n\\nActs as a Water source block. Can turn source Lava to Obsidian and flowing Lava to Cobblestone.\"}"
+							"{\"text\":\"Zychorium Soil\\n\\nActs as a Farmland block. Any crops can be placed on this block (even Sugar Cane and Cactus!) and it\"}"
+							"{\"text\":\"Fire Basin\\n\\nActs as a Netherrack block. Fire will always burn on the upper side of this block.\"}"
+							"{\"text\":\"Fluid Void\\n\\nVoids any adjacent fluid (Works with WaterLogged blocks too!).\"}"
+							"{\"text\":\"Zychorium Ice\\n\\nTurns adjacent Water to Ice.\"}"
+							"{\"text\":\"Fabricator\\n\\nAn autocrafter\"}"
+						]
+						title: "ZYCraft Info"
+						author: "BovineShaman"
+					}
+				}
+			}]
+		}
+		{
+			title: "Tipped Out"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Complete all of the tips!"
+			hide_dependency_lines: true
+			dependencies: [
+				"722978AC0C1B2649"
+				"7EC8814940C4C3D7"
+				"3EE9F242794CD95F"
+				"4DFA99898C174BD6"
+				"27D9B9F9695206BE"
+				"14C8FC3F19190054"
+				"594540768120A627"
+				"5718EEFE4F50BB73"
+				"378C95C18798D413"
+				"73F91BF3D424B269"
+				"0F75D7B9F4FF2459"
+				"2A2E3D020B1F5126"
+				"2BAB9C6C03540D90"
+				"7D831F7B42EC0951"
+				"24F4CFC10E8899CC"
+			]
+			id: "0F8F37D7E12078F5"
+			tasks: [{
+				id: "42DA8E971B27ACED"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4389EE84B9FAA973"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 	]

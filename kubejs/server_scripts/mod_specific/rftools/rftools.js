@@ -8,7 +8,7 @@ onEvent('recipes', e => {
 
   utils.listOf(['rftoolsbase:filter_module', 'rftoolspower:dimensionalcell_simple', 'rftoolspower:dimensionalcell', 'rftoolspower:dimensionalcell_advanced', 'rftoolspower:powercell_card', 'rftoolsutility:syringe']).forEach(reset => e.shapeless(reset, reset))
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'rftoolsbuilder:builder'
   ])
 })

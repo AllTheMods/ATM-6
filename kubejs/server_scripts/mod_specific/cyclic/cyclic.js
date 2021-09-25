@@ -1,5 +1,5 @@
 onEvent('recipes', e => {
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'cyclic:melter_honey',
     'cyclic:melter_honey1',
     'cyclic:melter_honeybottle',
@@ -25,7 +25,7 @@ onEvent('recipes', e => {
     'cyclic:crafting_bag'
   ])
 
-  removeRecipeByOutput([
+  removeRecipeByOutput(e, [
     'cyclic:uncrafter',
     'cyclic:tile_transporter_empty',
     'cyclic:trash'

@@ -1,7 +1,7 @@
 onEvent('recipes', e => {
   e.remove({ input: 'appliedenergistics2:flour' })
 
-  energize(['appliedenergistics2:dense_energy_cell', 'atmadditions:atm_star'], 'appliedenergistics2:creative_energy_cell', '2147483647')
+  energize(e, ['appliedenergistics2:dense_energy_cell', 'atmadditions:atm_star'], 'appliedenergistics2:creative_energy_cell', '2147483647')
 
   e.smelting('appliedenergistics2:certus_quartz_crystal', '#forge:ores/certus_quartz').xp(1).id('kubejs:appliedenergistics2/smelting/certus')
   e.shapeless('appliedenergistics2:interface', 'appliedenergistics2:cable_interface').id(`kubejs:appliedenergistics2/interface`)
@@ -48,12 +48,12 @@ onEvent('recipes', e => {
     }
   }).id(`kubejs:appliedenergistics2/inscriber/printed_silicon`)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'appliedenergistics2:grinder/flour',
     'appliedenergistics2:inscriber/silicon_print'
   ])
 
-  removeRecipeByOutput([
+  removeRecipeByOutput(e, [
     'appliedenergistics2:silicon',
     'appliedenergistics2:network_tool',
     'apotheosis:explosive_arrow',
@@ -61,63 +61,63 @@ onEvent('recipes', e => {
     'apotheosis:iron_mining_arrow'
   ])
 
-  modifyShaped('appliedenergistics2:quartz_glass', 4, ['GDG', 'DGD', 'GDG'], {
+  modifyShaped(e, 'appliedenergistics2:quartz_glass', 4, ['GDG', 'DGD', 'GDG'], {
     G: '#appliedenergistics2:dusts/quartz',
     D: '#forge:glass'
   })
-  modifyShaped('appliedenergistics2:quartz_fiber', 3, ['DDD', 'GGG', 'DDD'], {
+  modifyShaped(e, 'appliedenergistics2:quartz_fiber', 3, ['DDD', 'GGG', 'DDD'], {
     G: '#appliedenergistics2:dusts/quartz',
     D: '#forge:glass'
   })
-  modifyShaped('appliedenergistics2:chest', 1, ['GTG', 'C C', 'IFI'], {
+  modifyShaped(e, 'appliedenergistics2:chest', 1, ['GTG', 'C C', 'IFI'], {
     G: '#forge:glass',
     T: 'appliedenergistics2:terminal',
     C: 'appliedenergistics2:fluix_glass_cable',
     I: '#forge:ingots/iron',
     F: '#appliedenergistics2:crystals/fluix'
   })
-  modifyShaped('appliedenergistics2:condenser', 1, ['IGI', 'GDG', 'IGI'], {
+  modifyShaped(e, 'appliedenergistics2:condenser', 1, ['IGI', 'GDG', 'IGI'], {
     G: '#forge:glass',
     I: '#forge:ingots/iron',
     D: '#appliedenergistics2:dusts/fluix',
   })
-  modifyShaped('appliedenergistics2:spatial_io_port', 1, ['GGG', 'CPC', 'IEI'], {
+  modifyShaped(e, 'appliedenergistics2:spatial_io_port', 1, ['GGG', 'CPC', 'IEI'], {
     G: '#forge:glass',
     C: 'appliedenergistics2:fluix_glass_cable',
     P: 'appliedenergistics2:io_port',
     I: '#forge:ingots/iron',
     E: 'appliedenergistics2:engineering_processor'
   })
-  modifyShaped('appliedenergistics2:io_port', 1, ['GGG', 'DCD', 'IPI'], {
+  modifyShaped(e, 'appliedenergistics2:io_port', 1, ['GGG', 'DCD', 'IPI'], {
     G: '#forge:glass',
     C: 'appliedenergistics2:fluix_glass_cable',
     P: 'appliedenergistics2:logic_processor',
     I: '#forge:ingots/iron',
     D: 'appliedenergistics2:drive'
   })
-  modifyShaped('appliedenergistics2:interface', 1, ['IGI', 'A F', 'IGI'], {
+  modifyShaped(e, 'appliedenergistics2:interface', 1, ['IGI', 'A F', 'IGI'], {
     G: '#forge:glass',
     A: 'appliedenergistics2:annihilation_core',
     F: 'appliedenergistics2:formation_core',
     I: '#forge:ingots/iron'
   })
-  modifyShaped('appliedenergistics2:molecular_assembler', 1, ['IGI', 'ACF', 'IGI'], {
+  modifyShaped(e, 'appliedenergistics2:molecular_assembler', 1, ['IGI', 'ACF', 'IGI'], {
     G: 'appliedenergistics2:quartz_glass',
     A: 'appliedenergistics2:annihilation_core',
     F: 'appliedenergistics2:formation_core',
     I: '#forge:ingots/iron',
     C: '#forge:workbench'
   })
-  modifyShaped('appliedenergistics2:cell_workbench', 1, ['WEW', 'ICI', 'III'], {
+  modifyShaped(e, 'appliedenergistics2:cell_workbench', 1, ['WEW', 'ICI', 'III'], {
     W: '#minecraft:wool',
     E: 'appliedenergistics2:calculation_processor',
     I: '#forge:ingots/iron',
     C: '#forge:chests/wooden'
   })
 
-  modifyShapeless('appliedenergistics2:cable_anchor', 3, ['#forge:ingots/iron', '#appliedenergistics2:knife'])
-  modifyShapeless('appliedenergistics2:fluix_covered_cable', 1, ['#minecraft:wool', 'appliedenergistics2:fluix_glass_cable'])
-  modifyShapeless('appliedenergistics2:crafting_card', 1, ['#forge:workbench', 'appliedenergistics2:basic_card'])
-  modifyShapeless('appliedenergistics2:fuzzy_card', 1, ['#minecraft:wool', 'appliedenergistics2:advanced_card'])
-  modifyShapeless('appliedenergistics2:crafting_terminal', 1, ['appliedenergistics2:terminal', '#forge:workbench', 'appliedenergistics2:calculation_processor'])
+  modifyShapeless(e, 'appliedenergistics2:cable_anchor', 3, ['#forge:ingots/iron', '#appliedenergistics2:knife'])
+  modifyShapeless(e, 'appliedenergistics2:fluix_covered_cable', 1, ['#minecraft:wool', 'appliedenergistics2:fluix_glass_cable'])
+  modifyShapeless(e, 'appliedenergistics2:crafting_card', 1, ['#forge:workbench', 'appliedenergistics2:basic_card'])
+  modifyShapeless(e, 'appliedenergistics2:fuzzy_card', 1, ['#minecraft:wool', 'appliedenergistics2:advanced_card'])
+  modifyShapeless(e, 'appliedenergistics2:crafting_terminal', 1, ['appliedenergistics2:terminal', '#forge:workbench', 'appliedenergistics2:calculation_processor'])
 })

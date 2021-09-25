@@ -34,5 +34,5 @@ onEvent('recipes', e => {
     ]
   }).id('kubejs:botania/petal_apothecary/mass_of_wills')
 
-  modifyShapeless('botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book'])
+  modifyShapeless(e, 'botania:lexicon', 1, ['#minecraft:flowers', 'minecraft:book'])
 })

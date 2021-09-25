@@ -12,7 +12,7 @@ onEvent('recipes', e => {
     A: '#forge:nuggets/allthemodium'
   }).id(`kubejs:workbenchplus`)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'quarryplus:solidquarry',
     'quarryplus:workbenchplus'
   ])

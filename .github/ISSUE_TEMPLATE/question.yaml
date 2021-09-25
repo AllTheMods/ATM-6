@@ -1,0 +1,12 @@
+name: Question
+description: Ask the developers a question
+title: "[Question]: "
+labels: [ Question ]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like to know?
+      description: Please write your question here and it will be answered as soon as possible!
+    validations:
+      required: true

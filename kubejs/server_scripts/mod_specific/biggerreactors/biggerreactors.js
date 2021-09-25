@@ -4,7 +4,7 @@ onEvent('recipes', e => {
     G: '#forge:glass'
   }).id(`kubejs:biggerreactors/reactor_manifold`)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'biggerreactors:crafting/reactor/reactor_manifold',
     'biggerreactors:crafting/yellorium_block'
   ])

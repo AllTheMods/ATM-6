@@ -1,22 +1,16 @@
 {
     "flower": "minecraft:magma_block",
     "maxTimeInHive": 1200,
-    "traits": ["nether"],
+    "traits": [
+        "nether"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/magma_bee",
     "ColorData": {
-        "primaryColor": "#C73405",
-        "secondaryColor": "#C73405",
         "honeycombColor": "#C73405",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "slime/magma_bee_emissive",
-        "isBeeColored": false,
-        "isRainbowBee": false,
         "isGlowing": true,
         "glowColor": "#C73405",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "GELATINOUS"
     },
     "CombatData": {
@@ -28,23 +22,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:magma_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:magma_cream",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:magma_bee",
-                    "BeeType": "magma",
-                    "Color": "#C73405"
-                },
-                "weight": 20
-
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:magma_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:magma_cream",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:magma_bee",
+                            "BeeType": "magma",
+                            "Color": "#C73405"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -52,22 +50,17 @@
         "mainOutput": "minecraft:magma_cream",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
-        "mainNBTData": {},
         "secondaryOutput": "minecraft:magma_block",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 2,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
+        "recipeTime": 200
     },
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:nether",
-        "biomeBlacklist": "",
         "spawnWeight": 5,
         "minYLevel": 0,
         "maxYLevel": 255,
@@ -77,8 +70,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "xreliquary:molten_core",

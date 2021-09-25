@@ -1,0 +1,67 @@
+{
+    "flower": "allthecompressed:tin_block_4x",
+    "maxTimeInHive": 2400,
+    "traits": [
+        "dense"
+    ],
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ato/tin_bee",
+    "ColorData": {
+        "honeycombColor": "#ECEDEE",
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2147483647
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dense_tin_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "alltheores:tin_ingot",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:dense_tin_bee",
+                            "BeeType": "dense_tin",
+                            "Color": "#ECEDEE"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "alltheores:ore_tin",
+        "mainOutputWeight": 0.50,
+        "mainOutputCount": 4,
+        "secondaryOutput": "alltheores:tin_ingot",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 8,
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "recipeTime": 200
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}

@@ -1,4 +1,6 @@
 {
   "type": "immersiveengineering:generated_list",
-  "conditions": [{ "type": "forge:false" }]
+  "conditions": [{
+      "type": "forge:false"
+  }]
 }

@@ -103,22 +103,4 @@ onEvent('recipes', e => {
     'count': 64
   }
   ], 'pneumaticcraft:creative_compressed_iron_block', 1, 4.9)
-
-  pressure([{
-    'type': 'pneumaticcraft:stacked_item',
-    'item': 'minecraft:wheat',
-    'count': 1
-  }], 'create:wheat_flour', 3, 1.5)
-
-  e.custom({
-    "type": "pneumaticcraft:explosion_crafting",
-    "input": { "tag": "forge:crops/wheat" },
-    "results": [{ "item": "create:wheat_flour" }],
-    "loss_rate": 50
-  })
-
-  removeRecipeByID([
-    'pneumaticcraft:explosion_crafting/wheat_flour',
-    'pneumaticcraft:pressure_chamber/wheat_flour'
-  ])
 })

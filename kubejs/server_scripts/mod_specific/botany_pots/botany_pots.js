@@ -1,8 +1,8 @@
 onEvent('recipes', e => {
   e.remove({ id: /botanypots:crafting\/hopper.*_botany_pot/ })
   e.remove({ id: /botanypots:crafting\/compact_hopper.*botany_pot/ })
-  
-  const pots = [
+
+  let pots = [
     'botanypots:botany_pot',
     'botanypots:white_botany_pot',
     'botanypots:orange_botany_pot',
@@ -247,11 +247,11 @@ onEvent('recipes', e => {
     e.shapeless(`botanypots:hopper_${color}_botany_pot`, ['#botanypots:hopper_botany_pots', `#forge:dyes/${color}`])
   })
 
-  modifyShaped('botanypots:botany_pot', 1, ['T T', 'TPT', ' T '], {
+  modifyShaped(e, 'botanypots:botany_pot', 1, ['T T', 'TPT', ' T '], {
     T: 'minecraft:terracotta',
     P: 'minecraft:flower_pot'
   })
-  modifyShaped('botanypots:hopper_botany_pot', 1, ['MPM', ' H '], {
+  modifyShaped(e, 'botanypots:hopper_botany_pot', 1, ['MPM', ' H '], {
     M: '#forge:nuggets/terrasteel',
     P: 'botanypots:botany_pot',
     H: ['botania:hopperhock', 'botania:hopperhock_chibi']

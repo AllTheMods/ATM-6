@@ -1,5 +1,5 @@
 onEvent('recipes', e => {
-  energize([
+  energize(e, [
     'integrateddynamics:energy_battery',
     'integrateddynamics:energy_battery',
     'atmadditions:atm_star',

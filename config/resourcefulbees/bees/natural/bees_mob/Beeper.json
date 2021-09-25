@@ -1,23 +1,19 @@
 {
     "flower": "tag:forge:storage_blocks/gunpowder",
     "maxTimeInHive": 1200,
-    "traits": ["creeper"],
+    "traits": [
+        "creeper"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "/creeper/creeper_bee",
     "ColorData": {
         "primaryColor": "#0C9F0A",
         "secondaryColor": "#0C9F0A",
         "honeycombColor": "#0C9F0A",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "/creeper/creeper_bee_emissive",
-        "isBeeColored": false,
-        "isRainbowBee": false,
         "isGlowing": true,
         "glowColor": "#E2D3D3",
-        "isEnchanted": false,
-        "glowingPulse": 0,
-        "modelType": "default"
+        "modelType": "DEFAULT"
     },
     "CombatData": {
         "isPassive": true,
@@ -28,22 +24,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:beeper_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:gunpowder",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:beeper_bee",
-                    "BeeType": "beeper",
-                    "Color": "#0C9F0A"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:beeper_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:gunpowder",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:beeper_bee",
+                            "BeeType": "beeper",
+                            "Color": "#0C9F0A"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -51,15 +52,12 @@
         "mainOutput": "minecraft:gunpowder",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 2,
-        "mainNBTData": {},
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
+        "secondaryOutput": "xreliquary:catalyzing_gland",
+        "secondaryOutputWeight": 0.1,
         "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
         "bottleOutputCount": 1,
-        "bottleNBTData": {},
         "recipeTime": 200,
         "hasFluidOutput": false
     },
@@ -76,8 +74,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.8,
         "feedItem": "xreliquary:catalyzing_gland",

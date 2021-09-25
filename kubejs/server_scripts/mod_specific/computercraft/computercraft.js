@@ -10,7 +10,7 @@ onEvent('recipes', e => {
     A: '#forge:ingots/allthemodium'
   }).id(`kubejs:computercraft/turtle_normal`)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'advancedperipherals:chunk_controller'
   ])
 })

@@ -1,29 +1,20 @@
 {
   "flower": "tag:misctags:flowers/nether_flowers",
   "maxTimeInHive": 2400,
-  "traits": ["nether"],
+  "traits": [
+    "nether"
+  ],
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/ghost_bee",
   "ColorData": {
-    "primaryColor": "#B7C7C7",
-    "secondaryColor": "#B7C7C7",
     "honeycombColor": "#B7C7C7",
-    "primaryLayerTexture": "empty_layer",
-    "secondaryLayerTexture": "empty_layer",
-    "emissiveLayerTexture": "empty_layer",
-    "isBeeColored": false,
-    "isRainbowBee": false,
-    "isGlowing": false,
-    "glowColor": "#B7C7C7",
-    "isEnchanted": false,
-    "glowingPulse": 0,
     "modelType": "DEFAULT"
   },
   "CombatData": {
-      "isPassive": true,
-      "removeStingerOnAttack": true,
-      "inflictsPoison": true,
-      "attackDamage": 1
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": false
@@ -40,8 +31,7 @@
     "bottleOutput": "minecraft:honey_bottle",
     "bottleOutputWeight": 0.25,
     "bottleOutputCount": 1,
-    "recipeTime": 200,
-    "hasFluidOutput": false
+    "recipeTime": 200
   },
   "SpawnData": {
     "canSpawnInWorld": false

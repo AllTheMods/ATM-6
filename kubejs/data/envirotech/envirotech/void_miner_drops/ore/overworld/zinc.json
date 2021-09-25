@@ -1,0 +1,21 @@
+{
+    "override": "replace",
+    "programs": ["envirotech:ore", "envirotech:metallic_ore"],
+    "item": {
+        "raw:item": "alltheores:ore_zinc",
+        "count": 1,
+        "selector": "all"
+    },
+    "config": [{
+            "weight": 186,
+            "blacklist_dimensions": true,
+            "dimensions": ["minecraft:the_nether", "minecraft:the_end"]
+        },
+        {
+            "focus": "envirotech:pink",
+            "weight": 1488,
+            "blacklist_dimensions": true,
+            "dimensions": ["minecraft:the_nether", "minecraft:the_end"]
+        }
+    ]
+}

@@ -11,7 +11,8 @@
 		{
 			title: "Vanilla"
 			x: 7.0d
-			y: 2.0d
+			y: 3.0d
+			description: ["Vanilla Stuff"]
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
 			id: "1D20D9D437F3D177"
@@ -35,7 +36,7 @@
 		}
 		{
 			x: 0.0d
-			y: 1.0d
+			y: 2.0d
 			dependencies: ["5E4BC0F59C90433A"]
 			id: "7A93D054881AA536"
 			tasks: [{
@@ -46,7 +47,7 @@
 		}
 		{
 			x: -3.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["5E4BC0F59C90433A"]
 			id: "58514FDE153FD971"
 			tasks: [{
@@ -57,7 +58,7 @@
 		}
 		{
 			x: -5.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["58514FDE153FD971"]
 			id: "3E33730DC2115D26"
 			tasks: [{
@@ -68,7 +69,7 @@
 		}
 		{
 			x: -7.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["3E33730DC2115D26"]
 			id: "4C0BDD483CCB40C4"
 			tasks: [{
@@ -79,7 +80,7 @@
 		}
 		{
 			x: -7.0d
-			y: -2.0d
+			y: -1.0d
 			dependencies: ["4C0BDD483CCB40C4"]
 			id: "73CD1D166E4B89BE"
 			tasks: [{
@@ -90,7 +91,7 @@
 		}
 		{
 			x: -9.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["4C0BDD483CCB40C4"]
 			id: "77F241BEE9902751"
 			tasks: [{
@@ -102,7 +103,7 @@
 		{
 			title: "Vanilla Chest"
 			x: -1.0d
-			y: 0.0d
+			y: 1.0d
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
 			id: "5E4BC0F59C90433A"
@@ -115,7 +116,7 @@
 		{
 			title: "Vanilla Barrel"
 			x: 1.0d
-			y: 0.0d
+			y: 1.0d
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
 			id: "20BE978C844561A5"
@@ -127,7 +128,7 @@
 		}
 		{
 			x: 3.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["20BE978C844561A5"]
 			id: "3AF3D4ADE7ED1092"
 			tasks: [{
@@ -138,7 +139,7 @@
 		}
 		{
 			x: 5.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["3AF3D4ADE7ED1092"]
 			id: "6597F70A1EBD8A35"
 			tasks: [{
@@ -149,7 +150,7 @@
 		}
 		{
 			x: 7.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["6597F70A1EBD8A35"]
 			id: "17A57F9E69DF4FE2"
 			tasks: [{
@@ -160,7 +161,7 @@
 		}
 		{
 			x: 7.0d
-			y: -2.0d
+			y: -1.0d
 			dependencies: ["17A57F9E69DF4FE2"]
 			id: "2D22BF606D1DD1DE"
 			tasks: [{
@@ -171,7 +172,7 @@
 		}
 		{
 			x: 9.0d
-			y: 0.0d
+			y: 1.0d
 			dependencies: ["17A57F9E69DF4FE2"]
 			id: "7E47B6B4D8C5600A"
 			tasks: [{
@@ -182,7 +183,7 @@
 		}
 		{
 			x: 9.0d
-			y: -2.0d
+			y: -1.0d
 			dependencies: ["7E47B6B4D8C5600A"]
 			id: "3D2DDCD026BB9A02"
 			tasks: [{
@@ -193,7 +194,7 @@
 		}
 		{
 			x: 0.0d
-			y: -3.0d
+			y: -2.0d
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
 			id: "2746575C929B6C50"
@@ -232,9 +233,8 @@
 		}
 		{
 			x: -9.0d
-			y: 2.0d
-			hide_dependency_lines: true
-			dependencies: ["5A94A2664BFDD7B9"]
+			y: 3.0d
+			dependencies: ["094C4AF84F4012ED"]
 			id: "344895B591A32648"
 			tasks: [{
 				id: "2443F51C05854523"
@@ -244,8 +244,9 @@
 		}
 		{
 			x: -7.0d
-			y: 2.0d
-			dependencies: ["344895B591A32648"]
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["5A94A2664BFDD7B9"]
 			id: "094C4AF84F4012ED"
 			tasks: [{
 				id: "3A429E21CB194836"
@@ -261,7 +262,7 @@
 		}
 		{
 			x: -5.0d
-			y: 2.0d
+			y: 3.0d
 			dependencies: ["094C4AF84F4012ED"]
 			id: "74C0C1373EA5AF15"
 			tasks: [{
@@ -278,7 +279,7 @@
 		}
 		{
 			x: -3.0d
-			y: 2.0d
+			y: 3.0d
 			dependencies: ["74C0C1373EA5AF15"]
 			id: "28D437E80250199C"
 			tasks: [{
@@ -295,7 +296,7 @@
 		}
 		{
 			x: -1.0d
-			y: 2.0d
+			y: 3.0d
 			dependencies: ["28D437E80250199C"]
 			id: "3D154C1D631276BB"
 			tasks: [{
@@ -312,7 +313,7 @@
 		}
 		{
 			x: 1.0d
-			y: 2.0d
+			y: 3.0d
 			dependencies: ["3D154C1D631276BB"]
 			id: "508BD519CD61D481"
 			tasks: [{
@@ -329,7 +330,7 @@
 		}
 		{
 			x: 3.0d
-			y: 2.0d
+			y: 3.0d
 			dependencies: ["508BD519CD61D481"]
 			id: "246E45FE72E8B704"
 			tasks: [{
@@ -346,7 +347,7 @@
 		}
 		{
 			x: 5.0d
-			y: 2.0d
+			y: 3.0d
 			dependencies: ["246E45FE72E8B704"]
 			id: "243FC2DF5361A36C"
 			tasks: [{
@@ -363,9 +364,8 @@
 		}
 		{
 			x: -9.0d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["5A94A2664BFDD7B9"]
+			y: 5.0d
+			dependencies: ["5584DE65020A502A"]
 			id: "7F64C889BA52F4B0"
 			tasks: [{
 				id: "0BE13EB20FFDD620"
@@ -375,8 +375,9 @@
 		}
 		{
 			x: -7.0d
-			y: 4.0d
-			dependencies: ["7F64C889BA52F4B0"]
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["5A94A2664BFDD7B9"]
 			id: "5584DE65020A502A"
 			tasks: [{
 				id: "28BB91351E152D09"
@@ -386,7 +387,7 @@
 		}
 		{
 			x: -5.0d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["5584DE65020A502A"]
 			id: "4CBD4AFB154E3B52"
 			tasks: [{
@@ -397,7 +398,7 @@
 		}
 		{
 			x: -3.0d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["4CBD4AFB154E3B52"]
 			id: "11685DFD06E3CC65"
 			tasks: [{
@@ -408,7 +409,7 @@
 		}
 		{
 			x: -1.0d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["11685DFD06E3CC65"]
 			id: "04A6B159417E2B92"
 			tasks: [{
@@ -419,7 +420,7 @@
 		}
 		{
 			x: 1.0d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["04A6B159417E2B92"]
 			id: "5E456C646619BFFB"
 			tasks: [{
@@ -430,7 +431,7 @@
 		}
 		{
 			x: 3.0d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["5E456C646619BFFB"]
 			id: "45254C074338327C"
 			tasks: [{
@@ -441,7 +442,7 @@
 		}
 		{
 			x: 5.0d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["45254C074338327C"]
 			id: "6389968F8CA5D57A"
 			tasks: [{
@@ -452,7 +453,7 @@
 		}
 		{
 			x: -1.0d
-			y: -2.0d
+			y: -1.0d
 			dependencies: ["2746575C929B6C50"]
 			dependency_requirement: "one_started"
 			id: "2B422B7E0CE3590D"
@@ -464,7 +465,7 @@
 		}
 		{
 			x: 1.0d
-			y: -2.0d
+			y: -1.0d
 			dependencies: ["2746575C929B6C50"]
 			dependency_requirement: "one_started"
 			id: "6FBAE89EE782DABA"
@@ -482,7 +483,7 @@
 		}
 		{
 			x: -1.0d
-			y: -7.0d
+			y: -6.0d
 			dependencies: ["6EFEF430894B1838"]
 			id: "07404AE25D403F15"
 			tasks: [{
@@ -493,7 +494,7 @@
 		}
 		{
 			x: -1.0d
-			y: -5.5d
+			y: -4.5d
 			dependencies: ["2746575C929B6C50"]
 			dependency_requirement: "one_started"
 			id: "6EFEF430894B1838"
@@ -505,7 +506,7 @@
 		}
 		{
 			x: -2.0d
-			y: -6.5d
+			y: -5.5d
 			dependencies: ["6EFEF430894B1838"]
 			id: "6CD64A7FC1DB9142"
 			tasks: [{
@@ -516,7 +517,7 @@
 		}
 		{
 			x: -2.5d
-			y: -5.5d
+			y: -4.5d
 			dependencies: ["6EFEF430894B1838"]
 			id: "03128285B915068C"
 			tasks: [{
@@ -527,7 +528,7 @@
 		}
 		{
 			x: -2.0d
-			y: -4.5d
+			y: -3.5d
 			dependencies: ["6EFEF430894B1838"]
 			id: "0351BAA7E42AB7FF"
 			tasks: [{
@@ -538,7 +539,7 @@
 		}
 		{
 			x: -1.0d
-			y: -4.0d
+			y: -3.0d
 			dependencies: ["6EFEF430894B1838"]
 			id: "7EFF53FAC2017DD3"
 			tasks: [{
@@ -549,7 +550,7 @@
 		}
 		{
 			x: 3.0d
-			y: -2.0d
+			y: -1.0d
 			dependencies: ["6FBAE89EE782DABA"]
 			id: "2128E9346CD1B036"
 			tasks: [
@@ -567,7 +568,7 @@
 		}
 		{
 			x: 1.0d
-			y: -5.5d
+			y: -4.5d
 			dependencies: ["6EFEF430894B1838"]
 			id: "464997A7F2D97778"
 			tasks: [{
@@ -578,7 +579,7 @@
 		}
 		{
 			x: 2.5d
-			y: -5.5d
+			y: -4.5d
 			dependencies: ["6EFEF430894B1838"]
 			optional: true
 			id: "41785A3C46F4689D"
@@ -590,7 +591,7 @@
 		}
 		{
 			x: 2.0d
-			y: -6.5d
+			y: -5.5d
 			dependencies: ["6EFEF430894B1838"]
 			optional: true
 			id: "31334BC08715B6C1"
@@ -602,7 +603,7 @@
 		}
 		{
 			x: 2.0d
-			y: -4.5d
+			y: -3.5d
 			dependencies: ["6EFEF430894B1838"]
 			optional: true
 			id: "5EC418B8BE9EBDC4"
@@ -614,7 +615,7 @@
 		}
 		{
 			x: 1.0d
-			y: -7.0d
+			y: -6.0d
 			dependencies: ["6EFEF430894B1838"]
 			optional: true
 			id: "44D4BCE983B9A605"
@@ -626,7 +627,7 @@
 		}
 		{
 			x: 1.0d
-			y: -4.0d
+			y: -3.0d
 			dependencies: ["6EFEF430894B1838"]
 			optional: true
 			id: "7E779B8E22899945"
@@ -639,7 +640,7 @@
 		{
 			title: "Ender Storage"
 			x: -3.0d
-			y: -2.0d
+			y: -1.0d
 			description: ["Color coded ender storage."]
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
@@ -700,7 +701,7 @@
 		}
 		{
 			x: 0.0d
-			y: -1.0d
+			y: 0.0d
 			shape: "gear"
 			hide_dependency_lines: true
 			size: 1.5d
@@ -740,7 +741,7 @@
 		{
 			title: "Trash Cans"
 			x: -9.0d
-			y: -2.0d
+			y: -1.0d
 			description: ["A way to destroy unwanted items, liquid, and power."]
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
@@ -771,7 +772,7 @@
 		{
 			title: "Mekanism Storage"
 			x: 9.0d
-			y: 2.0d
+			y: 3.0d
 			description: ["Go to the &aMekanism&f quest chapter for more on this mod."]
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
@@ -808,7 +809,7 @@
 			title: "QIO Drive Array"
 			icon: "mekanism:qio_drive_array"
 			x: 9.0d
-			y: 4.0d
+			y: 5.0d
 			description: ["&aMekanism&f's version of a storage network."]
 			dependencies: ["6B639160FD560CC1"]
 			id: "0CD52E81FD607310"
@@ -825,7 +826,7 @@
 		{
 			title: "Vanilla+"
 			x: 7.0d
-			y: 4.0d
+			y: 5.0d
 			description: ["An &eender chest backpack&f."]
 			dependencies: ["1D20D9D437F3D177"]
 			id: "4B7CD2EF8CB96B07"
@@ -841,36 +842,9 @@
 			}]
 		}
 		{
-			title: "Enchantment Storage"
-			x: 5.0d
-			y: -2.0d
-			description: ["Can store &eenchantment books&f."]
-			hide_dependency_lines: true
-			dependencies: ["5A94A2664BFDD7B9"]
-			id: "0A532064A15B46EA"
-			tasks: [
-				{
-					id: "7D72C8664C5B2CC1"
-					type: "item"
-					item: "cyclic:ender_controller"
-				}
-				{
-					id: "7F0917B77E88A124"
-					type: "item"
-					item: "cyclic:ender_shelf"
-				}
-			]
-			rewards: [{
-				id: "26C66531B967733A"
-				type: "item"
-				item: "cyclic:ender_shelf"
-				count: 4
-			}]
-		}
-		{
 			title: "Dimensional Storage"
 			x: -5.0d
-			y: -2.0d
+			y: -1.0d
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
 			id: "3D5852E6D0ADF651"
@@ -890,7 +864,7 @@
 		{
 			title: "Refined Storage"
 			x: -2.0d
-			y: -1.0d
+			y: 0.0d
 			description: ["Go to the &aRefined Storage&f quest chapter for more on this mod."]
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
@@ -904,7 +878,7 @@
 		{
 			title: "Applied Energistics 2"
 			x: 2.0d
-			y: -1.0d
+			y: 0.0d
 			description: ["Go to the &aApplied Energistics 2&f quest chapter for more on this mod."]
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
@@ -913,6 +887,19 @@
 				id: "2590CD4938201A9D"
 				type: "item"
 				item: "appliedenergistics2:controller"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			description: ["Can store tons of &eenchantments&f, whilst also being able to give back different leveled enchantments."]
+			hide_dependency_lines: true
+			dependencies: ["5A94A2664BFDD7B9"]
+			id: "73F94E2FECDD1DD5"
+			tasks: [{
+				id: "50F183F484E1B30B"
+				type: "item"
+				item: "apotheosis:enchantment_library"
 			}]
 		}
 	]

@@ -1,0 +1,21 @@
+{
+  "override": "replace",
+  "programs": ["envirotech:ore", "envirotech:metallic_ore"],
+  "item": {
+      "raw:item": "alltheores:ore_uranium",
+      "count": 1,
+      "selector": "all"
+  },
+  "config": [{
+          "weight": 140,
+          "blacklist_dimensions": true,
+          "dimensions": ["minecraft:the_nether", "minecraft:the_end"]
+      },
+      {
+          "focus": "envirotech:green",
+          "weight": 1120,
+          "blacklist_dimensions": true,
+          "dimensions": ["minecraft:the_nether", "minecraft:the_end"]
+      }
+  ]
+}

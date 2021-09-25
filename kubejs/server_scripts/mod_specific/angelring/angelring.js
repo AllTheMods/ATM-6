@@ -15,7 +15,7 @@ onEvent('recipes', e => {
     G: 'botania:gaia_ingot'
   }).id('kubejs:angelring/itemring')
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'angelring:itemring',
     'angelring:itemdiamondring'
   ])
