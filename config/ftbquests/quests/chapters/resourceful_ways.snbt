@@ -742,7 +742,7 @@
 		{
 			x: -9.5d
 			y: 2.5d
-			shape: "octagon"
+			shape: "rsquare"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "07564DBB023EE2A6"
 			tasks: [{
