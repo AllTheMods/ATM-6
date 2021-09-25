@@ -1131,10 +1131,4 @@ onEvent('recipes', e => {
     L: 'envirocore:laser_core',
     B: 'allthemodium:unobtainium_allthemodium_alloy_block'
   })
-  modifyShaped(e, 'envirotech:xerothium_void_miner_ccu', 1, ['CBC', 'CMC', 'CLC'], {
-    C: 'envirocore:xerothium_crystal',
-    M: 'envirotech:nanorite_void_miner_ccu',
-    L: 'envirocore:laser_core',
-    B: 'allthemodium:unobtainium_vibranium_alloy_block'
-  })
 })
