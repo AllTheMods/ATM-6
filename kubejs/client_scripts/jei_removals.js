@@ -34,7 +34,6 @@ onEvent('jei.hide.items', e => {
     'moreminecarts:chunkrodite_block',
     'moreminecarts:chunk_loader',
     'moreminecarts:minecart_with_chunk_loader',
-    /chisel:.*\/.*/,
     '@chipped',
     /structurize:.*timber_frame/,
     /structurize:.*shingle/,

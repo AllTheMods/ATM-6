@@ -2,12 +2,6 @@ onEvent('jei.add.items', e => {
   utils.listOf(['dragonic', 'allthemodium', 'vibranium', 'unobtainium', 'soul_lava', 'netherite']).forEach(type => e.add([`resourcefulbees:${type}_bee_spawn_egg`]))
 
   e.add([
-    /chisel:antiblock.*/,
-    'chisel:factory/dots',
-    'chisel:futura/controller',
-    'chisel:futura/wavy',
-    'chisel:futura/controller_purple',
-    'chisel:laboratory/wallpanel',
     'minecraft:dragon_egg',
     'structurize:plain_oak_oak_timber_frame',
     'structurize:double_crossed_oak_oak_timber_frame',

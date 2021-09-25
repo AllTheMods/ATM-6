@@ -4387,6 +4387,7 @@
 			}]
 		}
 		{
+			title: "Beehive"
 			x: -3.5d
 			y: -1.5d
 			description: [
@@ -4662,6 +4663,7 @@
 			}]
 		}
 		{
+			title: "Honeycomb"
 			x: -3.5d
 			y: -2.5d
 			dependencies: ["158CF0DCB09D21C0"]
@@ -4680,6 +4682,7 @@
 			}]
 		}
 		{
+			title: "Honey Bottle"
 			x: 4.5d
 			y: 1.5d
 			dependencies: ["527F724A093EECCE"]

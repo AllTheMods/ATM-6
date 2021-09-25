@@ -7,4 +7,9 @@ onEvent('jei.information', e => {
     'You must build a multiblock structure in a horizontal line by placing the Creative Cube down with the Providers on either sides and the Ultimate Cubes at the end.',
     '',
     'All you have to do now, is to make sure your cubes are filled, after which you can Shift + RClick the Creative Cube with the Star.'])
+  e.add('atmadditions:atm_star_shard', ['To get the Shards, you will have to build a 4 block tall structure as such:',
+    '',
+    'The bottom block is Bedrock, above it an Anvil with an Item Frame on top. Hovering over the Item Frame, place Mjollnir.',
+    '',
+    'Once you have the structure, place your ATM Star in the item frame and click the hammer.'])
 })
