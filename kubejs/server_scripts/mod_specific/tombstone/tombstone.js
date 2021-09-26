@@ -1,5 +1,5 @@
 onEvent('recipes', e => {
-  e.shaped('tombstone:soul_receptacle', ['ABA','CDC','AEA'], {
+  e.shaped('tombstone:soul_receptacle', ['ABA', 'CDC', 'AEA'], {
     A: 'tombstone:dust_of_vanishing',
     B: 'tombstone:ankh_of_pray',
     C: 'minecraft:totem_of_undying',

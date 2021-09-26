@@ -10,7 +10,7 @@ onEvent('recipes', e => {
     C: 'minecraft:ender_chest'
   }).id(`kubejs:entanled/item`)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'entangled:block',
     'entangled:item'
   ])

@@ -44,7 +44,7 @@ onEvent('recipes', e => {
   pedestalSaw('minecraft:stick', 4, 'minecraft:planks', 1)
   pedestalSaw('minecraft:stick', 2, 'minecraft:wooden_slabs', 1)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'pedestals:pedestal_crushing/dustnethergold',
     'pedestals:dustflour'
   ])

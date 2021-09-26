@@ -14,7 +14,7 @@ onEvent('recipes', e => {
     e.shapeless(`quark:${wood}_trapped_chest`, [`quark:${wood}_chest`, 'minecraft:tripwire_hook'])
   })
 
-  removeRecipeByOutput([
+  removeRecipeByOutput(e, [
     'quark:apple_crate',
     'quark:potato_crate',
     'quark:carrot_crate',

@@ -7,7 +7,7 @@ onEvent('recipes', e => {
     G: 'create:gearbox'
   })
 
-  energize([
+  energize(e, [
     Item.of('create:flywheel').toJson(),
     Item.of('create:furnace_engine').toJson(),
     Item.of('atmadditions:atm_star').toJson()
@@ -19,7 +19,12 @@ onEvent('recipes', e => {
     'createaddition:honey_cake'
   ]).superheated().processingTime(6000).id('kubejs:create/creative_blaze_cake')
 
-  removeRecipeByID([
+  e.recipes.createSplashing([
+    '10x alltheores:platinum_nugget',
+    Item.of('alltheores:platinum_nugget', 5).withChance(0.5)
+  ], 'create:crushed_platinum_ore')
+
+  removeRecipeByID(e, [
     'create:crafting/materials/copper_block_from_compacting',
     'create:crafting/materials/zinc_block_from_compacting',
     'create:emptying/honey_bottle'

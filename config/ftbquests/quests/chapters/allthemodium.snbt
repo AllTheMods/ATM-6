@@ -6,11 +6,11 @@
 	title: "Allthemodium"
 	icon: "allthemodium:allthemodium_ingot"
 	default_quest_shape: ""
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	quests: [
 		{
-			x: -3.5d
-			y: 2.0d
+			x: 0.0d
+			y: 8.5d
 			dependencies: ["2403B59A21D2B3AF"]
 			id: "3DF54AB611650DEC"
 			tasks: [{
@@ -31,10 +31,12 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -5.0d
+			x: -3.5d
+			y: 1.5d
 			description: ["Find this ore in any ocean biome between Y5 to Y45."]
+			hide_dependency_lines: false
 			dependencies: ["731686C758AD9A99"]
+			hide: false
 			dependency_requirement: "one_completed"
 			id: "5BDBE666E604FCAC"
 			tasks: [{
@@ -49,9 +51,10 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -5.0d
+			x: 0.0d
+			y: 1.5d
 			description: ["Find this ore in the Nethers Warped Forests and Crimson Forests between Y107 to Y113."]
+			hide_dependency_lines: false
 			dependencies: ["731686C758AD9A99"]
 			dependency_requirement: "one_started"
 			id: "2DF64CB9298E91EA"
@@ -67,9 +70,10 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -5.0d
+			x: 3.5d
+			y: 1.5d
 			description: ["Find this obtainable ore in the End Highlands biome."]
+			hide_dependency_lines: false
 			dependencies: ["731686C758AD9A99"]
 			id: "4F6E6AF1D9E74CB7"
 			tasks: [{
@@ -84,8 +88,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -2.0d
+			x: -3.5d
+			y: 4.5d
 			description: ["Now that is a fast furnace!"]
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "2CC97CF32D9C017B"
@@ -101,8 +105,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -4.5d
+			x: -2.5d
+			y: 2.0d
 			description: ["It is recommended to use this potion with your first ingot. "]
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "04AB01C841CD3E3F"
@@ -130,9 +134,10 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -4.0d
+			x: -3.5d
+			y: 2.5d
 			description: ["Don't underestimate my power!"]
+			hide_dependency_lines: false
 			dependencies: ["5BDBE666E604FCAC"]
 			dependency_requirement: "one_completed"
 			id: "71A43C89EB13E9A0"
@@ -148,8 +153,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -3.0d
+			x: -3.5d
+			y: 3.5d
 			description: ["This solar panel produces 2,048 FE/Tick."]
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "4F08DCAC86C3C8E3"
@@ -165,8 +170,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -4.5d
+			x: 1.0d
+			y: 2.0d
 			description: ["It is recommended to use this potion with your first ingot. "]
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "7496DB58411060AE"
@@ -194,8 +199,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -4.5d
+			x: 4.5d
+			y: 2.0d
 			description: ["It is recommended to use this potion with your first ingot. "]
 			dependencies: ["44760B819EB3CA68"]
 			id: "76016E5C8C9397D2"
@@ -223,9 +228,10 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -4.0d
+			x: 0.0d
+			y: 2.5d
 			description: ["With great power comes.. well something."]
+			hide_dependency_lines: false
 			dependencies: ["2DF64CB9298E91EA"]
 			id: "61FDABF2C7CC1F9D"
 			tasks: [{
@@ -240,8 +246,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -1.0d
+			x: -3.5d
+			y: 5.5d
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "3D6EFB3C35D50091"
 			tasks: [{
@@ -262,8 +268,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -2.0d
+			x: 0.0d
+			y: 4.5d
 			description: ["How fast can this possibly get!?"]
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "5CA0BA27F9C537B2"
@@ -279,8 +285,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -3.0d
+			x: 0.0d
+			y: 3.5d
 			description: ["This solar panel produces 8,129 FE/Tick."]
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "794057DF3614A59E"
@@ -296,8 +302,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -1.0d
+			x: 0.0d
+			y: 5.5d
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "4D3DD44BEDA715BA"
 			tasks: [{
@@ -318,8 +324,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
+			x: 3.5d
+			y: 5.5d
 			dependencies: ["44760B819EB3CA68"]
 			id: "4D24742EB7E480FD"
 			tasks: [{
@@ -349,8 +355,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -3.0d
+			x: 3.5d
+			y: 3.5d
 			description: ["This solar panel produces 32,768 FE/Tick."]
 			dependencies: ["44760B819EB3CA68"]
 			id: "630255EA7104D1E1"
@@ -366,8 +372,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.0d
+			x: 3.5d
+			y: 4.5d
 			description: ["Now you are just showing off."]
 			dependencies: ["44760B819EB3CA68"]
 			id: "1AFDB3AE73E72A33"
@@ -383,8 +389,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -3.5d
+			x: -2.5d
+			y: 3.0d
 			description: ["Almost cheating at this point."]
 			dependencies: ["04AB01C841CD3E3F"]
 			id: "6CDAE6626ACA1897"
@@ -407,8 +413,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -3.5d
+			x: 1.0d
+			y: 3.0d
 			description: ["My god this stuff is a lot more commen then I thought."]
 			dependencies: ["7496DB58411060AE"]
 			id: "479B9579742354E1"
@@ -431,8 +437,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -3.5d
+			x: 4.5d
+			y: 3.0d
 			description: ["Why cant I hold all these things."]
 			dependencies: ["76016E5C8C9397D2"]
 			id: "2D76BDEC76B0C788"
@@ -455,8 +461,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -2.5d
+			x: -2.5d
+			y: 4.0d
 			description: ["Bees?"]
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
@@ -473,8 +479,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -2.5d
+			x: 1.0d
+			y: 4.0d
 			hide_dependency_lines: true
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "6BAA3137C9674E7F"
@@ -490,8 +496,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -2.5d
+			x: 4.5d
+			y: 4.0d
 			hide_dependency_lines: true
 			dependencies: ["44760B819EB3CA68"]
 			id: "25884CEF41F8AABC"
@@ -507,8 +513,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 3.0d
+			x: -1.0d
+			y: 9.5d
 			dependencies: ["2403B59A21D2B3AF"]
 			id: "2AF6901685445541"
 			tasks: [{
@@ -529,9 +535,10 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 3.0d
+			x: 0.0d
+			y: 9.5d
 			description: [""]
+			hide_dependency_lines: false
 			dependencies: [
 				"5A9C8F63CE469155"
 				"3DF54AB611650DEC"
@@ -558,8 +565,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 4.0d
+			x: 0.0d
+			y: 10.5d
 			dependencies: ["2403B59A21D2B3AF"]
 			id: "5A9C8F63CE469155"
 			tasks: [{
@@ -580,8 +587,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 3.0d
+			x: 1.0d
+			y: 9.5d
 			dependencies: ["2403B59A21D2B3AF"]
 			id: "768A30A300FCE0F3"
 			tasks: [{
@@ -602,8 +609,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 0.5d
+			x: -1.0d
+			y: 7.0d
 			description: ["Looks like candy."]
 			dependencies: [
 				"61761B6C1D1542FD"
@@ -629,8 +636,8 @@
 			]
 		}
 		{
-			x: -2.5d
-			y: 0.5d
+			x: 1.0d
+			y: 7.0d
 			description: ["We are in the endgame now."]
 			dependencies: ["61761B6C1D1542FD"]
 			id: "6459F9A1F845A049"
@@ -653,8 +660,8 @@
 			]
 		}
 		{
-			x: -3.5d
-			y: 0.5d
+			x: 0.0d
+			y: 7.0d
 			description: ["Doesn't taste good though."]
 			dependencies: ["6A101A8056AC9A3A"]
 			id: "1D3C4B41BD512EF7"
@@ -677,9 +684,10 @@
 			]
 		}
 		{
-			x: -8.0d
-			y: -1.5d
-			dependencies: ["26296F815ACC04BE"]
+			x: -4.5d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["71A43C89EB13E9A0"]
 			id: "1BF186347C4683B3"
 			tasks: [{
 				id: "5CCD462442A9CBC9"
@@ -699,9 +707,10 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -2.5d
-			dependencies: ["4C7718982E78D7A2"]
+			x: -4.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["71A43C89EB13E9A0"]
 			id: "26296F815ACC04BE"
 			tasks: [{
 				id: "7CE4D8C55D2A92A8"
@@ -721,9 +730,9 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -3.5d
-			dependencies: ["29637BD992599915"]
+			x: -4.5d
+			y: 3.0d
+			dependencies: ["71A43C89EB13E9A0"]
 			id: "4C7718982E78D7A2"
 			tasks: [{
 				id: "4979179C2D56C137"
@@ -743,8 +752,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -4.5d
+			x: -4.5d
+			y: 2.0d
 			dependencies: ["71A43C89EB13E9A0"]
 			dependency_requirement: "one_completed"
 			id: "29637BD992599915"
@@ -766,8 +775,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -4.5d
+			x: -1.0d
+			y: 2.0d
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "3AD52402D8E8DD26"
 			tasks: [{
@@ -788,8 +797,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -4.5d
+			x: 2.5d
+			y: 2.0d
 			dependencies: ["44760B819EB3CA68"]
 			id: "172E838FFEC67A70"
 			tasks: [{
@@ -822,9 +831,9 @@
 			]
 		}
 		{
-			x: -4.5d
-			y: -3.5d
-			dependencies: ["3AD52402D8E8DD26"]
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "7B3AB687F4C93A34"
 			tasks: [{
 				id: "7B3CDD0509D01AAE"
@@ -844,9 +853,10 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -2.5d
-			dependencies: ["7B3AB687F4C93A34"]
+			x: -1.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "75739214ED76F5EB"
 			tasks: [{
 				id: "1FC0BDF4415EB2DA"
@@ -866,9 +876,10 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -1.5d
-			dependencies: ["75739214ED76F5EB"]
+			x: -1.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "2EB6FFC8ECE83EA5"
 			tasks: [{
 				id: "257AC90DE43522E3"
@@ -888,9 +899,9 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -3.5d
-			dependencies: ["172E838FFEC67A70"]
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["44760B819EB3CA68"]
 			id: "20E127419D6C8D4F"
 			tasks: [{
 				id: "6CF03B6572FC417E"
@@ -922,9 +933,10 @@
 			]
 		}
 		{
-			x: -1.0d
-			y: -2.5d
-			dependencies: ["20E127419D6C8D4F"]
+			x: 2.5d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["44760B819EB3CA68"]
 			id: "0DA107D16D5D56AA"
 			tasks: [{
 				id: "394BBD6916C7E6CF"
@@ -956,9 +968,10 @@
 			]
 		}
 		{
-			x: -1.0d
-			y: -1.5d
-			dependencies: ["0DA107D16D5D56AA"]
+			x: 2.5d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["44760B819EB3CA68"]
 			id: "751C6906C49E6E41"
 			tasks: [{
 				id: "74597E29E1ED9CFF"
@@ -990,8 +1003,8 @@
 			]
 		}
 		{
-			x: -3.5d
-			y: -6.5d
+			x: 0.0d
+			y: 0.0d
 			description: ["Detailed Guide to Allthemodium."]
 			id: "731686C758AD9A99"
 			tasks: [{
@@ -1007,8 +1020,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -1.5d
+			x: -2.5d
+			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "4DB7AB98161AC064"
@@ -1024,8 +1037,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -1.5d
+			x: 1.0d
+			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["61FDABF2C7CC1F9D"]
 			id: "48A776F5F3D35B23"
@@ -1041,8 +1054,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.5d
+			x: 4.5d
+			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["44760B819EB3CA68"]
 			id: "55FC612B6B92629F"
@@ -1058,8 +1071,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -4.0d
+			x: 3.5d
+			y: 2.5d
+			hide_dependency_lines: false
 			dependencies: ["4F6E6AF1D9E74CB7"]
 			id: "44760B819EB3CA68"
 			tasks: [{
@@ -1074,8 +1088,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 0.0d
+			x: -3.5d
+			y: 6.5d
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "5130BBAD5C542EDB"
 			tasks: [{
@@ -1086,8 +1100,10 @@
 		}
 		{
 			title: "Diggy Diggy Hole!"
-			x: -8.0d
-			y: 0.5d
+			icon: "minecraft:stone"
+			x: -4.5d
+			y: 7.0d
+			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "21AC1C7A92CAB0C2"
 			tasks: [{
@@ -1098,8 +1114,10 @@
 		}
 		{
 			title: "Piglin Homeworld"
-			x: -6.0d
-			y: 0.5d
+			icon: "minecraft:netherrack"
+			x: -2.5d
+			y: 7.0d
+			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "1A5E414C9D25703A"
 			tasks: [{
@@ -1109,8 +1127,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -0.5d
+			x: -2.5d
+			y: 6.0d
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "7F3B96033AB7A21E"
@@ -1121,8 +1139,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -0.5d
+			x: -4.5d
+			y: 6.0d
 			hide_dependency_lines: true
 			dependencies: ["71A43C89EB13E9A0"]
 			id: "15D56588634665FA"

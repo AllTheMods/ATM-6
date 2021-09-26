@@ -1,6 +1,17 @@
 onEvent('recipes', e => {
   e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
 
+  e.forEachRecipe({ type: 'minecraft:crafting_shaped', output: '#minecraft:slabs' }, r => {
+    e.shaped(r.inputItems[0], ['S', 'S'], { S: Item.of(r.outputItems[0].id) })
+  })
+  e.forEachRecipe({ type: 'minecraft:stonecutting', output: '#minecraft:stairs' }, r => {
+    e.stonecutting(r.inputItems[0], Item.of(r.outputItems[0].id))
+  })
+  e.forEachRecipe({ type: 'minecraft:crafting_shapeless', output: '#minecraft:buttons' }, r => {
+    e.remove({ type: 'minecraft:crafting_shapeless', output: r.outputItems[0].id })
+    e.shapeless(`8x ${r.outputItems[0].id}`, r.inputItems[0])
+  })
+
   e.smelting('minecraft:glass', '#forge:sand').xp(.1).id('kubejs:minecraft/smelting/sand')
   e.smelting('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smelting/leather')
   e.smoking('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smoking/leather')
@@ -77,8 +88,8 @@ onEvent('recipes', e => {
     }
   })
 
-  removeRecipeByID(['minecraft:comparator', 'minecraft:glass'])
-  removeRecipeByOutput([
+  removeRecipeByID(e, ['minecraft:comparator', 'minecraft:glass'])
+  removeRecipeByOutput(e, [
     'minecraft:dragon_egg',
     ['#minecraft:signs', 'pedestals:pedestal_sawing'],
     ['#minecraft:wooden_stairs', 'pedestals:pedestal_sawing'],
@@ -88,17 +99,17 @@ onEvent('recipes', e => {
     ['#minecraft:stick', 'pedestals:pedestal_sawing']
   ])
 
-  modifyShaped('minecraft:honeycomb_block', 1, ['CCC', 'CCC', 'CCC'], { C: 'minecraft:honeycomb' })
-  modifyShaped('minecraft:sticky_piston', 1, ['B', 'P'], {
+  modifyShaped(e, 'minecraft:honeycomb_block', 1, ['CCC', 'CCC', 'CCC'], { C: 'minecraft:honeycomb' })
+  modifyShaped(e, 'minecraft:sticky_piston', 1, ['B', 'P'], {
     B: '#forge:slimeballs',
     P: 'minecraft:piston'
   })
-  modifyShaped('minecraft:daylight_detector', 1, ['GGG', 'QQQ', 'SSS'], {
+  modifyShaped(e, 'minecraft:daylight_detector', 1, ['GGG', 'QQQ', 'SSS'], {
     G: '#forge:glass',
     Q: '#forge:gems/quartz',
     S: '#minecraft:wooden_slabs'
   })
-  modifyShaped('minecraft:beehive', 1, ['PPP', 'CCC', 'PPP'], {
+  modifyShaped(e, 'minecraft:beehive', 1, ['PPP', 'CCC', 'PPP'], {
     P: '#minecraft:planks',
     C: '#resourcefulbees:resourceful_honeycomb'
   })

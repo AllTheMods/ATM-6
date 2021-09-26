@@ -1,5 +1,5 @@
 onEvent('item.modification', e => {
-  const colors = [`white`, `light_gray`, `gray`, `black`, `red`, `orange`, `yellow`, `lime`, `green`, `light_blue`, `cyan`, `blue`, `purple`, `magenta`, `pink`, `brown`]
+  let colors = [`white`, `light_gray`, `gray`, `black`, `red`, `orange`, `yellow`, `lime`, `green`, `light_blue`, `cyan`, `blue`, `purple`, `magenta`, `pink`, `brown`]
 
   function modifyStack(listOfItems, countPerStack) {
     listOfItems.forEach(item => {
@@ -17,7 +17,7 @@ onEvent('item.modification', e => {
     'minecraft:snowball',
     'minecraft:armor_stand',
     'minecraft:bucket',
-	  'minecraft:oak_sign',
+    'minecraft:oak_sign',
     'minecraft:spruce_sign',
     'minecraft:oak_sign',
     'minecraft:spruce_sign',
@@ -78,7 +78,11 @@ onEvent('item.modification', e => {
     'thermal:earth_grenade',
     'thermal:fire_grenade',
     'thermal:ice_grenade',
-    'thermal:lightning_grenade'
+    'thermal:lightning_grenade',
+    'bloodmagic:voidsigil',
+    'sophisticatedbackpacks:advanced_void_upgrade',
+    'ars_nouveau:void_jar',
+    'mininggadgets:upgrade_void_junk'
   ], 64)
   modifyStack([
     'forbidden_arcanus:quantum_catcher',
@@ -90,11 +94,5 @@ onEvent('item.modification', e => {
 
   colors.forEach(color => {
     e.modify(`minecraft:${color}_banner`, item => item.maxStackSize = 64)
-  })
-})
-
-onEvent('worldgen.remove', e => {
-  e.removeOres(ore => {
-    ore.blocks = ['zycraft:aluminium_ore', 'chisel:marble/raw', 'chisel:limestone/raw', 'chisel:basalt/raw', 'powah:dry_ice']
   })
 })

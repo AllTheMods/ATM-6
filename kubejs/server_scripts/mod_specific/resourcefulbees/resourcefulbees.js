@@ -53,7 +53,7 @@ onEvent('recipes', e => {
     C: 'resourcefulbees:centrifuge_controller'
   }).id(`kubejs:resourcefulbees/elite_centrifuge_controller`)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'resourcefulbees:elite_centrifuge_casing',
     'resourcefulbees:elite_centrifuge_controller',
     'creativeapiary:tcreative_apiary',
@@ -61,13 +61,13 @@ onEvent('recipes', e => {
     'creativeapiary:creative_apiary_breeder'
   ])
 
-  removeRecipeByOutput([
+  removeRecipeByOutput(e, [
     'resourcefulbees:bee_jar',
     'ctiers:centrifuge_casing_tier_creative',
     'ctiers:centrifuge_controller_tier_creative'
   ])
 
-  modifyShaped('resourcefulbees:centrifuge_controller', 1, ['ICI', 'BAB', 'IRI'], {
+  modifyShaped(e, 'resourcefulbees:centrifuge_controller', 1, ['ICI', 'BAB', 'IRI'], {
     I: 'resourcefulbees:centrifuge_casing',
     C: 'resourcefulbees:centrifuge',
     B: 'minecraft:iron_bars',

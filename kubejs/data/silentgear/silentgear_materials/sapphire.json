@@ -1,0 +1,133 @@
+{
+  "availability": {
+    "tier": 3,
+    "categories": [
+      "gem"
+    ],
+    "visible": true,
+    "gear_blacklist": [],
+    "can_salvage": true
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:gems/sapphire"
+    }
+  },
+  "name": {
+    "translate": "material.silentgear.sapphire"
+  },
+  "stats": {
+    "main": {
+      "durability": 512.0,
+      "armor_durability": 33.0,
+      "enchantability": 10.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 8.0,
+      "melee_damage": 3.0,
+      "magic_damage": 1.0,
+      "attack_speed": 0.0,
+      "armor": 20.0,
+      "armor/helmet": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/leggings": 6.0,
+      "armor/boots": 3.0,
+      "armor_toughness": 8.0,
+      "magic_armor": 4.0,
+      "ranged_damage": 2.0,
+      "ranged_speed": -0.2,
+      "projectile_speed": 0.9,
+      "projectile_accuracy": 1.1,
+      "rarity": 70.0,
+      "silentgems:chargeability": 0.8
+    },
+    "rod": {
+      "durability": {
+        "mul2": 0.2
+      },
+      "harvest_speed": {
+        "mul2": 0.2
+      },
+      "rarity": 20.0
+    },
+    "tip": {
+      "durability": {
+        "add": 64.0
+      },
+      "armor_durability": {
+        "add": 9.0
+      },
+      "harvest_level": {
+        "max": 3.0
+      },
+      "harvest_speed": {
+        "add": 2.0
+      },
+      "melee_damage": {
+        "add": 2.0
+      },
+      "magic_damage": {
+        "add": 1.0
+      },
+      "ranged_damage": {
+        "add": 0.5
+      },
+      "rarity": {
+        "add": 8.0
+      }
+    },
+    "adornment": {}
+  },
+  "traits": {
+    "main": [{
+        "name": "silentgear:brittle",
+        "level": 2
+      },
+      {
+        "name": "silentgear:lustrous",
+        "level": 1,
+        "conditions": [{
+          "type": "silentgear:or",
+          "values": [{
+              "type": "silentgear:material_count",
+              "count": 3
+            },
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ]
+        }]
+      }
+    ],
+    "rod": [{
+        "name": "silentgear:brittle",
+        "level": 5,
+        "conditions": [{
+          "type": "silentgear:material_ratio",
+          "ratio": 0.5
+        }]
+      },
+      {
+        "name": "silentgear:lustrous",
+        "level": 4,
+        "conditions": [{
+          "type": "silentgear:material_ratio",
+          "ratio": 0.5
+        }]
+      }
+    ],
+    "tip": [{
+        "name": "silentgear:brittle",
+        "level": 2
+      },
+      {
+        "name": "silentgear:lustrous",
+        "level": 2
+      }
+    ],
+    "adornment": [{
+      "name": "silentgear:bastion",
+      "level": 1
+    }]
+  }
+}

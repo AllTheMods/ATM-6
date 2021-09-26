@@ -1,0 +1,12 @@
+{
+    "type": "mekanism:oxidizing",
+    "input": {
+        "ingredient": {
+            "item": "kubejs:yellow_cake_uranium_block"
+        }
+    },
+    "output": {
+        "gas": "mekanism:uranium_oxide",
+        "amount": 2250
+    }
+}

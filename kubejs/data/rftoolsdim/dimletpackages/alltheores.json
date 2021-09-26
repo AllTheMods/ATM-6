@@ -1,511 +1,511 @@
 [{
-    "type": "block",
-    "key": "alltheores:aluminum_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:copper_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:lead_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:nickel_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:osmium_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:platinum_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:silver_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:tin_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:uranium_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:zinc_block",
-    "rarity": "common",
-    "create": 10,
-    "maintain": 10,
-    "ticks": 10,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_aluminum",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_copper",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_lead",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_nickel",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_osmium",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_platinum",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_silver",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_tin",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_uranium",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_zinc",
-    "rarity": "uncommon",
-    "create": 100,
-    "maintain": 100,
-    "ticks": 100,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_aluminum",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_copper",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_lead",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_nickel",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_osmium",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_platinum",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_silver",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_tin",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_uranium",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_zinc",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_coal",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_iron",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_redstone",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_diamond",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-    "type": "block",
-    "key": "alltheores:ore_other_lapis",
-    "rarity": "rare",
-    "create": 1000,
-    "maintain": 1000,
-    "ticks": 1000,
-    "worldgen": true,
-    "dimlet": true
-  },
-  {
-		"type": "biome",
-		"key": "allthemodium:the_other",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:nether_wastes",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:soul_sand_valley",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:badlands",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:mountain_edge",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:mountains",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:gravelly_mountains",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:modified_gravelly_mountains",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:desert",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:desert_hills",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:badlands_plateau",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:modified_badlands_plateau",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:eroded_badlands",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:crimson_forest",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:warped_forest",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	},
-	{
-		"type": "biome",
-		"key": "allthemodium:basalt_deltas",
-		"rarity": "rare",
-		"create": 1000,
-		"maintain": 1000,
-		"ticks": 1000,
-		"worldgen": false,
-		"dimlet": true
-	}
+  "type": "block",
+  "key": "alltheores:aluminum_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:copper_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:lead_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:nickel_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:osmium_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:platinum_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:silver_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:tin_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:uranium_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:zinc_block",
+  "rarity": "common",
+  "create": 10,
+  "maintain": 10,
+  "ticks": 10,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_aluminum",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_copper",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_lead",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_nickel",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_osmium",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_platinum",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_silver",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_tin",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_uranium",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_zinc",
+  "rarity": "uncommon",
+  "create": 100,
+  "maintain": 100,
+  "ticks": 100,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_aluminum",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_copper",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_lead",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_nickel",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_osmium",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_platinum",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_silver",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_tin",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_uranium",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_zinc",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_coal",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_iron",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_redstone",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_diamond",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "block",
+  "key": "alltheores:ore_other_lapis",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": true,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:the_other",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:nether_wastes",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:soul_sand_valley",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:badlands",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:mountain_edge",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:mountains",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:gravelly_mountains",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:modified_gravelly_mountains",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:desert",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:desert_hills",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:badlands_plateau",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:modified_badlands_plateau",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:eroded_badlands",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:crimson_forest",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:warped_forest",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+},
+{
+  "type": "biome",
+  "key": "allthemodium:basalt_deltas",
+  "rarity": "rare",
+  "create": 1000,
+  "maintain": 1000,
+  "ticks": 1000,
+  "worldgen": false,
+  "dimlet": true
+}
 ]

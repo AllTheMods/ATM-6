@@ -5,18 +5,7 @@
     "hasHoneycomb": true,
     "baseLayerTexture": "misc/sandy_bee",
     "ColorData": {
-        "primaryColor": "#DDD2B7",
-        "secondaryColor": "#DDD2B7",
         "honeycombColor": "#DDD2B7",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "empty_layer",
-        "emissiveLayerTexture": "empty_layer",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "glowColor": "#DDD2B7",
-        "isEnchanted": false,
-        "glowingPulse": 0,
         "modelType": "MUSHROOM"
     },
     "CombatData": {
@@ -28,22 +17,27 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:sandy_honeycomb_block",
-            "outputs": [{
-                "outputID": "minecraft:sand",
-                "weight": 80
-            }, {
-                "outputID": "resourcefulbees:bee_jar",
-                "nbtData": {
-                    "Entity": "resourcefulbees:sandy_bee",
-                    "BeeType": "sandy",
-                    "Color": "#DDD2B7"
-                },
-                "weight": 20
-            }]
-        }]
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:sandy_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:sand",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:sandy_bee",
+                            "BeeType": "sandy",
+                            "Color": "#DDD2B7"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

@@ -9,7 +9,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
+			icon: "chisel:futura/controller"
+			x: -10.0d
 			y: 0.0d
 			shape: "gear"
 			description: ["Welcome to &aApplied Energistics 2&f!"]
@@ -48,7 +49,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: -8.0d
 			y: 0.0d
 			dependencies: ["19AE785A8A2A781B"]
 			id: "6E2CBFBCF0524177"
@@ -60,7 +61,7 @@
 		}
 		{
 			title: "Inscriber Presses"
-			x: 3.0d
+			x: -7.0d
 			y: 1.0d
 			shape: "rsquare"
 			dependencies: ["6E2CBFBCF0524177"]
@@ -94,7 +95,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: -9.0d
 			y: -1.0d
 			dependencies: ["19AE785A8A2A781B"]
 			id: "01588BD6756AFD7D"
@@ -117,9 +118,10 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: -8.0d
 			y: -2.0d
 			dependencies: ["01588BD6756AFD7D"]
+			dependency_requirement: "all_started"
 			id: "477C09F17DD5826B"
 			tasks: [{
 				id: "0F12DAD73052342B"
@@ -134,9 +136,8 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: -9.0d
 			y: 1.0d
-			hide_dependency_lines: true
 			dependencies: ["19AE785A8A2A781B"]
 			id: "12408CAE8B4D97C8"
 			tasks: [
@@ -153,7 +154,7 @@
 			]
 		}
 		{
-			x: 3.0d
+			x: -7.0d
 			y: -1.0d
 			shape: "rsquare"
 			dependencies: [
@@ -169,7 +170,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: -6.0d
 			y: -2.0d
 			dependencies: ["477C09F17DD5826B"]
 			id: "5832A9E1ED7B1524"
@@ -180,7 +181,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: -8.0d
 			y: 2.0d
 			dependencies: ["6E2CBFBCF0524177"]
 			id: "483B15757D583ABB"
@@ -197,7 +198,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: -6.0d
 			y: 2.0d
 			dependencies: ["483B15757D583ABB"]
 			id: "10AEE3B63F71E943"
@@ -214,7 +215,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: -6.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: ["The most important part of the ME system"]
@@ -224,6 +225,7 @@
 				"7649A910A63AC709"
 				"10AEE3B63F71E943"
 			]
+			dependency_requirement: "all_started"
 			id: "0C9EF370D15DFC01"
 			tasks: [{
 				id: "4BBB2BB77C2390CE"
@@ -237,7 +239,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 2.0d
 			y: 0.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -250,7 +252,7 @@
 			}]
 		}
 		{
-			x: 14.0d
+			x: 4.0d
 			y: 0.0d
 			dependencies: ["10EE17B993744BBE"]
 			id: "1A8E24EE87E20806"
@@ -261,7 +263,7 @@
 			}]
 		}
 		{
-			x: 10.0d
+			x: 0.0d
 			y: -2.0d
 			shape: "rsquare"
 			description: ["A place to put your &estorage cells&f."]
@@ -275,7 +277,7 @@
 			}]
 		}
 		{
-			x: 10.0d
+			x: 0.0d
 			y: -4.0d
 			dependencies: ["03650B79243393B5"]
 			id: "70E70A39E752CF99"
@@ -293,7 +295,7 @@
 			]
 		}
 		{
-			x: 12.0d
+			x: 2.0d
 			y: -2.0d
 			dependencies: ["03650B79243393B5"]
 			id: "08BDB40244B67175"
@@ -304,7 +306,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: -1.0d
 			y: -5.0d
 			dependencies: ["70E70A39E752CF99"]
 			id: "42D1BE48C985B332"
@@ -315,7 +317,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: -1.0d
 			y: -7.0d
 			dependencies: ["42D1BE48C985B332"]
 			id: "3ADFCF48F479DD38"
@@ -326,7 +328,7 @@
 			}]
 		}
 		{
-			x: 11.0d
+			x: 1.0d
 			y: -5.0d
 			dependencies: ["70E70A39E752CF99"]
 			id: "44455BDD706828C6"
@@ -337,7 +339,7 @@
 			}]
 		}
 		{
-			x: 11.0d
+			x: 1.0d
 			y: -7.0d
 			dependencies: ["44455BDD706828C6"]
 			id: "14A4C69DCE06A728"
@@ -348,7 +350,7 @@
 			}]
 		}
 		{
-			x: 11.0d
+			x: 1.0d
 			y: -9.0d
 			dependencies: ["14A4C69DCE06A728"]
 			id: "58AE272113881475"
@@ -359,7 +361,7 @@
 			}]
 		}
 		{
-			x: 11.0d
+			x: 1.0d
 			y: -11.0d
 			dependencies: ["58AE272113881475"]
 			id: "7E7F3B90B0698872"
@@ -370,7 +372,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 2.0d
 			y: -10.0d
 			dependencies: ["7E7F3B90B0698872"]
 			id: "0D802448FE319FEC"
@@ -381,7 +383,7 @@
 			}]
 		}
 		{
-			x: 12.5d
+			x: 2.5d
 			y: -8.0d
 			dependencies: ["0D802448FE319FEC"]
 			id: "4E4D0C1F5CF0549F"
@@ -392,7 +394,7 @@
 			}]
 		}
 		{
-			x: 12.5d
+			x: 2.5d
 			y: -6.0d
 			dependencies: ["4E4D0C1F5CF0549F"]
 			id: "0BA9FAA7642D1AC1"
@@ -403,7 +405,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 2.0d
 			y: -4.0d
 			dependencies: ["0BA9FAA7642D1AC1"]
 			id: "044FBD32E3B228F2"
@@ -414,7 +416,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: -1.0d
 			y: -9.0d
 			dependencies: ["3ADFCF48F479DD38"]
 			id: "6DFBB26943D4CF88"
@@ -425,7 +427,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: -1.0d
 			y: -11.0d
 			dependencies: ["6DFBB26943D4CF88"]
 			id: "0E664DCD7817BA88"
@@ -436,7 +438,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: -2.0d
 			y: -10.0d
 			dependencies: ["0E664DCD7817BA88"]
 			id: "29A0B60E4FBBCA13"
@@ -447,7 +449,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: -2.5d
 			y: -8.0d
 			dependencies: ["29A0B60E4FBBCA13"]
 			id: "38450082134B1A8A"
@@ -458,7 +460,7 @@
 			}]
 		}
 		{
-			x: 7.5d
+			x: -2.5d
 			y: -6.0d
 			dependencies: ["38450082134B1A8A"]
 			id: "799E5DF27B686E7F"
@@ -469,7 +471,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: -2.0d
 			y: -4.0d
 			dependencies: ["799E5DF27B686E7F"]
 			id: "0E9ECD002C0C79B2"
@@ -480,7 +482,7 @@
 			}]
 		}
 		{
-			x: 14.0d
+			x: 4.0d
 			y: -2.0d
 			description: ["I have no idea how spatial storage works"]
 			dependencies: ["08BDB40244B67175"]
@@ -492,7 +494,7 @@
 			}]
 		}
 		{
-			x: 10.0d
+			x: 0.0d
 			y: 2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -505,7 +507,7 @@
 			}]
 		}
 		{
-			x: 10.0d
+			x: 0.0d
 			y: 4.0d
 			description: ["These will allow you to access your storage system, wirelessly."]
 			dependencies: ["63471F9218507F84"]
@@ -528,7 +530,7 @@
 			]
 		}
 		{
-			x: 6.0d
+			x: -4.0d
 			y: -2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -545,7 +547,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: -5.0d
 			y: -3.0d
 			dependencies: ["10A5ABDBD6DD55E2"]
 			id: "24EB7386CA395BE8"
@@ -560,7 +562,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: -2.0d
 			y: 2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -573,7 +575,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: -2.0d
 			y: 4.0d
 			dependencies: ["266CC38BC5FD7F6E"]
 			id: "3133090A01D9A312"
@@ -584,7 +586,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: -3.0d
 			y: 3.0d
 			dependencies: ["3133090A01D9A312"]
 			id: "79BB2077CEE6C9F3"
@@ -595,7 +597,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: -1.0d
 			y: 3.0d
 			dependencies: ["3133090A01D9A312"]
 			id: "0EAF464246E63F5E"
@@ -606,7 +608,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: -1.0d
 			y: 5.0d
 			dependencies: ["0EAF464246E63F5E"]
 			id: "431374A4B93FD94D"
@@ -617,7 +619,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: -3.0d
 			y: 5.0d
 			dependencies: ["3133090A01D9A312"]
 			id: "1BD13602982DCDDB"
@@ -628,7 +630,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: -4.0d
 			y: 2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -648,10 +650,11 @@
 			]
 		}
 		{
-			x: 11.0d
+			x: 1.0d
 			y: 3.0d
 			description: ["These will boost the range of the &ewireless access port&f. Stacks up to 64."]
 			dependencies: ["25FFC52137326268"]
+			dependency_requirement: "all_started"
 			id: "6E5F1D957BB32321"
 			tasks: [{
 				id: "31727F116B1BAEE3"
@@ -665,7 +668,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: -5.0d
 			y: 3.0d
 			dependencies: ["4C3C69789D724BCC"]
 			id: "2B2E8903F412D5D2"
@@ -683,7 +686,7 @@
 			]
 		}
 		{
-			x: 10.0d
+			x: 0.0d
 			y: -6.0d
 			hide_dependency_lines: true
 			dependencies: ["7E85FD869F164235"]
@@ -695,7 +698,7 @@
 			}]
 		}
 		{
-			x: 10.0d
+			x: 0.0d
 			y: -8.0d
 			dependencies: ["11271EC3F6601FF0"]
 			id: "3D983213BF8BA37D"
@@ -706,7 +709,7 @@
 			}]
 		}
 		{
-			x: 10.0d
+			x: 0.0d
 			y: -10.0d
 			dependencies: ["3D983213BF8BA37D"]
 			id: "60CE5D4EC897E63D"
@@ -717,7 +720,7 @@
 			}]
 		}
 		{
-			x: 18.0d
+			x: 8.0d
 			y: -2.0d
 			dependencies: ["2D4C79A2D53DE45A"]
 			id: "1FC2B6761027B2DD"
@@ -728,7 +731,7 @@
 			}]
 		}
 		{
-			x: 16.0d
+			x: 6.0d
 			y: -2.0d
 			dependencies: ["7E85FD869F164235"]
 			id: "2D4C79A2D53DE45A"
@@ -739,7 +742,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: -4.0d
 			y: 0.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -764,7 +767,7 @@
 			}]
 		}
 		{
-			x: 15.0d
+			x: 5.0d
 			y: -1.0d
 			dependencies: ["1A8E24EE87E20806"]
 			id: "14A639B96DB8163D"
@@ -775,7 +778,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 2.0d
 			y: 2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -788,7 +791,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 2.0d
 			y: 4.0d
 			dependencies: ["5D23C4693F648580"]
 			id: "103884AEFCF01B44"
@@ -819,7 +822,7 @@
 			}]
 		}
 		{
-			x: 17.0d
+			x: 7.0d
 			y: -1.0d
 			dependencies: ["14A639B96DB8163D"]
 			id: "1ACCB3F257B60F4E"
@@ -830,7 +833,7 @@
 			}]
 		}
 		{
-			x: 16.0d
+			x: 6.0d
 			y: 0.0d
 			dependencies: ["14A639B96DB8163D"]
 			id: "59BBD6908713422D"
@@ -841,7 +844,7 @@
 			}]
 		}
 		{
-			x: 18.0d
+			x: 8.0d
 			y: 0.0d
 			dependencies: ["1ACCB3F257B60F4E"]
 			id: "7D1F9440CD8AD477"
@@ -852,7 +855,7 @@
 			}]
 		}
 		{
-			x: 15.0d
+			x: 5.0d
 			y: 1.0d
 			dependencies: ["1A8E24EE87E20806"]
 			id: "63B21814E8CE889F"
@@ -863,7 +866,7 @@
 			}]
 		}
 		{
-			x: 14.0d
+			x: 4.0d
 			y: 2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -877,7 +880,7 @@
 		}
 		{
 			title: "Basic Cards"
-			x: 13.0d
+			x: 3.0d
 			y: 3.0d
 			dependencies: ["34ECA7AEEC61C281"]
 			id: "7255C5C5E9631BCD"
@@ -900,7 +903,7 @@
 			]
 		}
 		{
-			x: 14.0d
+			x: 4.0d
 			y: 4.0d
 			dependencies: ["34ECA7AEEC61C281"]
 			id: "3A4DBA40E3AD6B82"
@@ -912,7 +915,7 @@
 		}
 		{
 			title: "Advanced Cards"
-			x: 15.0d
+			x: 5.0d
 			y: 3.0d
 			dependencies: ["3A4DBA40E3AD6B82"]
 			id: "4F4C07148FE8A730"
@@ -936,10 +939,11 @@
 		}
 		{
 			title: "Other Tools"
-			x: 8.0d
+			x: -2.0d
 			y: 0.0d
 			shape: "rsquare"
 			dependencies: ["4C44F539A9488432"]
+			dependency_requirement: "all_started"
 			id: "21101506FB150EA8"
 			tasks: [
 				{
@@ -991,7 +995,7 @@
 			}]
 		}
 		{
-			x: 15.0d
+			x: 5.0d
 			y: -3.0d
 			hide_dependency_lines: true
 			dependencies: ["42D1BE48C985B332"]
@@ -1012,7 +1016,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: -5.0d
 			y: 5.0d
 			dependencies: ["3C15323D88647DFA"]
 			id: "0B36EC7E3B020FAF"
@@ -1023,7 +1027,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: -4.0d
 			y: 4.0d
 			dependencies: ["4C3C69789D724BCC"]
 			id: "3C15323D88647DFA"
@@ -1035,7 +1039,7 @@
 		}
 		{
 			title: "Other Machines"
-			x: 10.0d
+			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -1065,7 +1069,7 @@
 			]
 		}
 		{
-			x: 16.0d
+			x: 6.0d
 			y: 2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -1078,7 +1082,7 @@
 			}]
 		}
 		{
-			x: 18.0d
+			x: 8.0d
 			y: 2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -1091,7 +1095,7 @@
 			}]
 		}
 		{
-			x: 17.0d
+			x: 7.0d
 			y: 1.0d
 			dependencies: ["7D1F9440CD8AD477"]
 			id: "0F64578F97BE24BF"
@@ -1117,7 +1121,7 @@
 			]
 		}
 		{
-			x: 16.0d
+			x: 6.0d
 			y: 4.0d
 			dependencies: [
 				"41F4B828D4786CD2"
@@ -1131,7 +1135,7 @@
 			}]
 		}
 		{
-			x: 18.0d
+			x: 8.0d
 			y: 4.0d
 			dependencies: [
 				"71F60B1D74293149"
@@ -1145,7 +1149,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: -2.0d
 			y: -2.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
@@ -1158,7 +1162,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: -1.0d
 			y: -3.0d
 			dependencies: ["19299FC3C312F886"]
 			id: "5468CFE5CCC84ACC"
@@ -1191,7 +1195,7 @@
 			]
 		}
 		{
-			x: 11.0d
+			x: 1.0d
 			y: -3.0d
 			hide_dependency_lines: true
 			dependencies: [
@@ -1227,7 +1231,7 @@
 			}]
 		}
 		{
-			x: 13.0d
+			x: 3.0d
 			y: -3.0d
 			hide_dependency_lines: true
 			dependencies: ["42D1BE48C985B332"]
@@ -1244,7 +1248,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: -3.0d
 			y: -3.0d
 			dependencies: ["10A5ABDBD6DD55E2"]
 			id: "576A2F652A20532E"
@@ -1255,7 +1259,7 @@
 			}]
 		}
 		{
-			x: 17.0d
+			x: 7.0d
 			y: -3.0d
 			hide_dependency_lines: true
 			dependencies: ["11271EC3F6601FF0"]
@@ -1267,7 +1271,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -10.0d
 			y: -2.0d
 			shape: "rsquare"
 			description: ["This can charge various AE2 tools. Also can charge &ecertus quartz&f."]

@@ -56,7 +56,7 @@ onEvent('recipes', e => {
   //   result: { item: 'mysticalagriculture:marble_seeds' }
   // }).id('kubejs:mysticalagriculture/marble_seeds')
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'mysticalagriculture:oratchalcum_seeds_infusion',
     'mysticalagriculture:crimson_steel_seeds_infusion',
     'mysticalagriculture:essence/astralsorcery/rock_crystal',

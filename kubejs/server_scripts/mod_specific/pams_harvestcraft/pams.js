@@ -26,7 +26,7 @@ onEvent('recipes', e => {
 
   e.replaceOutput('#forge:cheese', 'pamhc2foodcore:cheeseitem')
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'pamhc2foodcore:fruitpunchitem',
     'pamhc2foodcore:applejuiceitem',
     'pamhc2foodcore:melonjuiceitem',

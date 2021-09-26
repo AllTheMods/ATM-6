@@ -7,7 +7,7 @@ onEvent('recipes', e => {
     'G': 'minecraft:glass_pane'
   }).id(`kubejs:mininggadgets/upgrade`)
 
-  removeRecipeByID([
+  removeRecipeByID(e, [
     'mininggadgets:upgrade_empty'
   ])
 })

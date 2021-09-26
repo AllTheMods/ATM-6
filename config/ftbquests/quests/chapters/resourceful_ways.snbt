@@ -9,8 +9,8 @@
 	quests: [
 		{
 			title: "Mystical Path"
-			x: -5.5d
-			y: 0.0d
+			x: -3.0d
+			y: 1.5d
 			shape: "rsquare"
 			id: "6D750A38944E9B68"
 			tasks: [
@@ -40,8 +40,8 @@
 		}
 		{
 			title: "Seed for Though"
-			x: -2.5d
-			y: -3.0d
+			x: 0.0d
+			y: -1.5d
 			shape: "diamond"
 			dependencies: ["1CC4F8570A7A99EB"]
 			id: "0A731CA172FB9188"
@@ -52,8 +52,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -3.5d
+			x: -3.0d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "54D72C234EA76054"
@@ -65,8 +65,8 @@
 		}
 		{
 			title: "The Inferior Essence"
-			x: -5.0d
-			y: -1.5d
+			x: -2.5d
+			y: 0.0d
 			shape: "circle"
 			dependencies: ["1CC4F8570A7A99EB"]
 			id: "7DFF18CFEB0B8DBE"
@@ -77,8 +77,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -3.5d
+			x: -2.0d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "1E7DC8E0493BE99E"
@@ -89,8 +89,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -4.0d
+			x: -2.5d
+			y: -2.5d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "712EB19B26D405DD"
@@ -101,8 +101,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -2.5d
+			x: -3.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "409A92D40F539485"
@@ -113,8 +113,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -2.5d
+			x: -2.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "1609BF52108238B0"
@@ -125,8 +125,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -3.0d
+			x: -2.5d
+			y: -1.5d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "4526E151BAE88310"
@@ -137,8 +137,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -4.5d
+			x: -3.0d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "13124A7E22999850"
@@ -149,8 +149,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: -4.5d
+			x: -2.0d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "27A0BCE75F198A82"
@@ -162,8 +162,8 @@
 		}
 		{
 			title: "Circle of Souls"
-			x: -4.5d
-			y: 0.0d
+			x: -2.0d
+			y: 1.5d
 			shape: "rsquare"
 			description: [
 				"Some seeds require you to kill the mobs needed to get the seeds."
@@ -198,8 +198,8 @@
 			]
 		}
 		{
-			x: -7.5d
-			y: -1.5d
+			x: -5.0d
+			y: 0.0d
 			shape: "circle"
 			dependencies: ["7DFF18CFEB0B8DBE"]
 			id: "576ABF43FCF886B7"
@@ -210,8 +210,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -2.5d
+			x: -4.5d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "31BAC57972148E1F"
@@ -222,8 +222,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -5.5d
+			x: -4.5d
+			y: -4.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "0E25CDB09FE88A63"
@@ -234,8 +234,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -2.5d
+			x: -5.5d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "4A6AC3D1ACBC3BFC"
@@ -246,8 +246,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -3.5d
+			x: -4.5d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "573885D6EF32B7BC"
@@ -258,8 +258,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -3.0d
+			x: -5.0d
+			y: -1.5d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "2777FEB022346947"
@@ -270,8 +270,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: -4.5d
+			x: -4.5d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "2A049419C78E96F4"
@@ -282,8 +282,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -5.5d
+			x: -5.5d
+			y: -4.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "594F6ED00D1619EE"
@@ -294,8 +294,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -4.5d
+			x: -5.5d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "5A17C762CDB680B5"
@@ -306,8 +306,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -3.5d
+			x: -5.5d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "40B13424FA523E11"
@@ -318,8 +318,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -5.0d
+			x: -5.0d
+			y: -3.5d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "3DDB7C8E61BA048F"
@@ -330,8 +330,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: -4.0d
+			x: -5.0d
+			y: -2.5d
 			shape: "diamond"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "13EDB9956517B349"
@@ -342,8 +342,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 0.0d
+			x: -4.5d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "3384308C78D86059"
@@ -354,8 +354,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 2.0d
+			x: -5.5d
+			y: 3.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "2AECDD9E2DEA708C"
@@ -367,8 +367,8 @@
 		}
 		{
 			title: "Meow Meow I'm a Cow... NO!"
-			x: -8.0d
-			y: 1.0d
+			x: -5.5d
+			y: 2.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "7580037DB8ADEB3C"
@@ -379,8 +379,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 0.0d
+			x: -5.5d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "75D09040185B0E40"
@@ -392,8 +392,8 @@
 		}
 		{
 			title: "Beep Beep I'm a Sheep"
-			x: -7.0d
-			y: 1.0d
+			x: -4.5d
+			y: 2.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "2C73E3C5113BF2AC"
@@ -404,8 +404,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 2.0d
+			x: -4.5d
+			y: 3.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "29AE69722AB4C75C"
@@ -416,8 +416,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 3.0d
+			x: -5.5d
+			y: 4.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "092A23FDA5D50812"
@@ -428,8 +428,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 3.0d
+			x: -4.5d
+			y: 4.5d
 			shape: "rsquare"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "04B6E31120663EB2"
@@ -440,8 +440,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -1.5d
+			x: -7.5d
+			y: 0.0d
 			shape: "circle"
 			dependencies: ["576ABF43FCF886B7"]
 			id: "76071C22A73A2026"
@@ -452,8 +452,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: 1.0d
+			x: -7.0d
+			y: 2.5d
 			shape: "rsquare"
 			dependencies: ["76071C22A73A2026"]
 			id: "38A77DBAD24C4B53"
@@ -464,8 +464,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 2.0d
+			x: -8.0d
+			y: 3.5d
 			shape: "rsquare"
 			dependencies: ["76071C22A73A2026"]
 			id: "6A18B971C3DB83AE"
@@ -476,8 +476,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 1.0d
+			x: -8.0d
+			y: 2.5d
 			shape: "rsquare"
 			dependencies: ["76071C22A73A2026"]
 			id: "26A7746051A4A079"
@@ -488,8 +488,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 0.0d
+			x: -8.0d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["76071C22A73A2026"]
 			id: "155A843A562DB7C4"
@@ -500,8 +500,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: 0.0d
+			x: -7.0d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["76071C22A73A2026"]
 			id: "7ADE214373DE135F"
@@ -512,8 +512,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -2.5d
+			x: -7.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "7A89560F303A8BE6"
@@ -524,8 +524,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: -2.5d
+			x: -8.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "56B58CAFCB707565"
@@ -536,8 +536,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -3.0d
+			x: -7.5d
+			y: -1.5d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "6950FC974624C6AA"
@@ -548,8 +548,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: -3.5d
+			x: -8.0d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "7361BD20A6B95D14"
@@ -560,8 +560,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -3.5d
+			x: -7.0d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "0A8F44B9B3C8FC0F"
@@ -572,8 +572,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -4.0d
+			x: -7.5d
+			y: -2.5d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "5EE485880EA9FACF"
@@ -584,8 +584,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -4.5d
+			x: -7.0d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "02D45E3FB37ED0AD"
@@ -596,8 +596,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: -4.5d
+			x: -8.0d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "62020721A69D40F2"
@@ -608,8 +608,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -5.0d
+			x: -7.5d
+			y: -3.5d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "30DF8297FEEC9F22"
@@ -620,8 +620,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -5.5d
+			x: -7.0d
+			y: -4.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "47045A0E8E3457C2"
@@ -632,8 +632,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: -5.5d
+			x: -8.0d
+			y: -4.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "2581B7D8E6C6E510"
@@ -644,8 +644,8 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: -4.5d
+			x: -9.5d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "21F654C968722841"
@@ -656,8 +656,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -6.5d
+			x: -7.0d
+			y: -5.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "242820928E62F027"
@@ -668,8 +668,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: -6.5d
+			x: -8.0d
+			y: -5.0d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "62EF10105680383C"
@@ -680,8 +680,8 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -6.0d
+			x: -7.5d
+			y: -4.5d
 			shape: "diamond"
 			dependencies: ["76071C22A73A2026"]
 			id: "67AA59BD340FEC62"
@@ -692,8 +692,8 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: -1.5d
+			x: -10.0d
+			y: 0.0d
 			shape: "circle"
 			dependencies: ["76071C22A73A2026"]
 			id: "5BC4250E4C9F803C"
@@ -704,8 +704,8 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: 0.0d
+			x: -10.5d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "260F9C98DC2E485B"
@@ -716,8 +716,8 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: 0.0d
+			x: -9.5d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "4F0DD86CF6E5F1B5"
@@ -728,8 +728,8 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: 1.0d
+			x: -10.5d
+			y: 2.5d
 			shape: "rsquare"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "27E8ED4B5F8127F9"
@@ -740,9 +740,9 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: 1.0d
-			shape: "octagon"
+			x: -9.5d
+			y: 2.5d
+			shape: "rsquare"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "07564DBB023EE2A6"
 			tasks: [{
@@ -752,8 +752,8 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: -2.5d
+			x: -9.5d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "0AF5FB1B5AA5AA11"
@@ -764,8 +764,8 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: -2.5d
+			x: -10.5d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "25D84D82DBADA0DB"
@@ -776,8 +776,8 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: -3.0d
+			x: -10.0d
+			y: -1.5d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "64B04D1CBC923789"
@@ -788,8 +788,8 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: -3.5d
+			x: -9.5d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "222739E77C745519"
@@ -800,8 +800,8 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: -3.5d
+			x: -10.5d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "248AEF5537E48B1A"
@@ -812,8 +812,8 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: -4.5d
+			x: -10.5d
+			y: -3.0d
 			shape: "diamond"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "3D888A965033D446"
@@ -824,8 +824,8 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: -1.5d
+			x: -12.5d
+			y: 0.0d
 			shape: "circle"
 			dependencies: ["5BC4250E4C9F803C"]
 			id: "48BF71269DEA1AB1"
@@ -836,8 +836,8 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: 0.0d
+			x: -12.5d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "7CFA92CC48D1E7E3"
@@ -848,8 +848,8 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: -3.0d
+			x: -12.5d
+			y: -1.5d
 			shape: "diamond"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "5B52389583A70E66"
@@ -860,8 +860,8 @@
 			}]
 		}
 		{
-			x: -14.5d
-			y: -2.5d
+			x: -12.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "6A2AD67569F91F1F"
@@ -872,8 +872,8 @@
 			}]
 		}
 		{
-			x: -15.5d
-			y: -2.5d
+			x: -13.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "4E09BBC0BAED3440"
@@ -884,8 +884,8 @@
 			}]
 		}
 		{
-			x: -15.5d
-			y: -3.5d
+			x: -13.0d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "2B0553F307A024F7"
@@ -896,8 +896,8 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: -4.0d
+			x: -12.5d
+			y: -2.5d
 			shape: "diamond"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "06A7A3FC8634D2DA"
@@ -908,8 +908,8 @@
 			}]
 		}
 		{
-			x: -14.5d
-			y: -3.5d
+			x: -12.0d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "4E7990AEBCCC3C95"
@@ -920,8 +920,8 @@
 			}]
 		}
 		{
-			x: -17.5d
-			y: -1.5d
+			x: -15.0d
+			y: 0.0d
 			shape: "circle"
 			dependencies: ["48BF71269DEA1AB1"]
 			id: "2FA6B8A1C8713DE0"
@@ -932,9 +932,10 @@
 			}]
 		}
 		{
-			x: -17.0d
-			y: -2.5d
+			x: -14.5d
+			y: -1.0d
 			shape: "diamond"
+			description: ["Requires a Crux (Next Quest)"]
 			dependencies: ["2FA6B8A1C8713DE0"]
 			id: "4A96A0456680837C"
 			tasks: [{
@@ -944,9 +945,10 @@
 			}]
 		}
 		{
-			x: -18.0d
-			y: -2.5d
+			x: -15.5d
+			y: -1.0d
 			shape: "diamond"
+			description: ["Requires a Crux (Next Quest)"]
 			dependencies: ["2FA6B8A1C8713DE0"]
 			id: "6AB1C7B6251FE9F5"
 			tasks: [{
@@ -956,8 +958,8 @@
 			}]
 		}
 		{
-			x: -19.5d
-			y: -2.5d
+			x: -17.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["5DFA18E547CB4D5D"]
 			id: "5E13C11CAD0AF38C"
@@ -968,8 +970,8 @@
 			}]
 		}
 		{
-			x: -20.5d
-			y: -2.5d
+			x: -18.0d
+			y: -1.0d
 			shape: "diamond"
 			dependencies: ["5DFA18E547CB4D5D"]
 			id: "370297F4982AEED4"
@@ -980,8 +982,8 @@
 			}]
 		}
 		{
-			x: -20.0d
-			y: -3.0d
+			x: -17.5d
+			y: -1.5d
 			shape: "diamond"
 			dependencies: ["5DFA18E547CB4D5D"]
 			id: "11948ECF241B2923"
@@ -992,9 +994,10 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 1.0d
+			x: -3.0d
+			y: 2.5d
 			shape: "rsquare"
+			description: ["Use this to make augments for the tiered armors."]
 			id: "6A4C49AE72E98727"
 			tasks: [
 				{
@@ -1010,9 +1013,10 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 2.0d
+			x: -2.5d
+			y: 3.5d
 			shape: "octagon"
+			description: ["This augment allows creative flight."]
 			dependencies: ["6A4C49AE72E98727"]
 			id: "50E2B7E8DA12976B"
 			tasks: [{
@@ -1022,9 +1026,10 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 1.0d
+			x: -2.0d
+			y: 2.5d
 			shape: "rsquare"
+			description: ["Speeds up growth of plants in a 9x9 radius around the lilypad"]
 			hide_dependency_lines: true
 			id: "38405DCFF0A178B5"
 			tasks: [{
@@ -1034,8 +1039,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -1.5d
+			x: 0.0d
+			y: 0.0d
 			id: "1CC4F8570A7A99EB"
 			tasks: [{
 				id: "667004CD0469493D"
@@ -1044,8 +1049,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 0.0d
+			x: 0.0d
+			y: 1.5d
 			description: ["Is required for making higher tiered essence."]
 			dependencies: ["1CC4F8570A7A99EB"]
 			id: "05618FE80F2E0372"
@@ -1062,8 +1067,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 1.5d
+			x: 0.0d
+			y: 3.0d
 			description: ["Crafting essence with infinite uses!"]
 			dependencies: ["05618FE80F2E0372"]
 			id: "24F4E46FFFB0C13F"
@@ -1074,8 +1079,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.5d
+			x: 2.5d
+			y: 0.0d
 			description: [
 				"Stacking these beneath farmland will increase the speed of crops."
 				""
@@ -1090,8 +1095,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.5d
+			x: 3.5d
+			y: 0.0d
 			dependencies: ["4821419D44F8083F"]
 			id: "7655E1C6C5E5469F"
 			tasks: [{
@@ -1101,8 +1106,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -1.5d
+			x: 4.5d
+			y: 0.0d
 			dependencies: ["7655E1C6C5E5469F"]
 			id: "077B2D62FA7650FB"
 			tasks: [{
@@ -1112,8 +1117,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -1.5d
+			x: 5.5d
+			y: 0.0d
 			dependencies: ["077B2D62FA7650FB"]
 			id: "06EAA74E0A10CBB6"
 			tasks: [{
@@ -1123,8 +1128,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -1.5d
+			x: 6.5d
+			y: 0.0d
 			dependencies: ["06EAA74E0A10CBB6"]
 			id: "3E555B364FD88B43"
 			tasks: [{
@@ -1134,8 +1139,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.5d
+			x: 2.5d
+			y: -1.0d
 			description: [
 				"Using this near or on crops will help the crops grow faster!"
 				""
@@ -1157,8 +1162,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -2.5d
+			x: 3.5d
+			y: -1.0d
 			dependencies: ["62D04566426DD979"]
 			id: "1AC3485AB2EA13E5"
 			tasks: [{
@@ -1175,8 +1180,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -2.5d
+			x: 4.5d
+			y: -1.0d
 			dependencies: ["1AC3485AB2EA13E5"]
 			id: "69D8F6483DACD930"
 			tasks: [{
@@ -1193,8 +1198,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -2.5d
+			x: 5.5d
+			y: -1.0d
 			dependencies: ["69D8F6483DACD930"]
 			id: "20CA94E3263FCA5E"
 			tasks: [{
@@ -1211,8 +1216,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -2.5d
+			x: 6.5d
+			y: -1.0d
 			dependencies: ["20CA94E3263FCA5E"]
 			id: "475B63AF0E87E318"
 			tasks: [{
@@ -1229,8 +1234,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -0.5d
+			x: 2.5d
+			y: 1.0d
 			description: [
 				"This can turn any extra seeds you have into their respective essence, at the cost of fuel."
 				""
@@ -1245,8 +1250,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -0.5d
+			x: 3.5d
+			y: 1.0d
 			dependencies: ["722B66145690D56B"]
 			id: "19092706A5192F5E"
 			tasks: [{
@@ -1256,8 +1261,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -0.5d
+			x: 4.5d
+			y: 1.0d
 			dependencies: ["19092706A5192F5E"]
 			id: "7012244236825F79"
 			tasks: [{
@@ -1267,8 +1272,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: -0.5d
+			x: 5.5d
+			y: 1.0d
 			dependencies: ["7012244236825F79"]
 			id: "77EB0A0A5E5A2F32"
 			tasks: [{
@@ -1278,8 +1283,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -0.5d
+			x: 6.5d
+			y: 1.0d
 			dependencies: ["77EB0A0A5E5A2F32"]
 			id: "1BC3146A1CDD1C79"
 			tasks: [{
@@ -1289,8 +1294,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 0.5d
+			x: 2.5d
+			y: 2.0d
 			description: [
 				"Better than a golden apple, and a tasty snack!"
 				""
@@ -1305,8 +1310,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 0.5d
+			x: 3.5d
+			y: 2.0d
 			dependencies: ["1F88C697817A7680"]
 			id: "3BB3AA6C29285837"
 			tasks: [{
@@ -1316,8 +1321,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 0.5d
+			x: 4.5d
+			y: 2.0d
 			dependencies: ["3BB3AA6C29285837"]
 			id: "5F6ACDE014A61F46"
 			tasks: [{
@@ -1327,8 +1332,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.5d
+			x: 5.5d
+			y: 2.0d
 			dependencies: ["5F6ACDE014A61F46"]
 			id: "212EF8601746C500"
 			tasks: [{
@@ -1338,8 +1343,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.5d
+			x: 6.5d
+			y: 2.0d
 			dependencies: ["212EF8601746C500"]
 			id: "1C4ABF4518638A82"
 			tasks: [{
@@ -1349,8 +1354,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 0.5d
+			x: 7.5d
+			y: 2.0d
 			dependencies: ["1C4ABF4518638A82"]
 			id: "1F7591DB6D8EC1E7"
 			tasks: [{
@@ -1360,8 +1365,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -3.5d
+			x: 2.5d
+			y: -2.0d
 			dependencies: ["1CC4F8570A7A99EB"]
 			id: "2A7E3F2CD335EAD0"
 			tasks: [
@@ -1412,9 +1417,10 @@
 			]
 		}
 		{
-			x: 1.0d
-			y: -3.5d
+			x: 3.5d
+			y: -2.0d
 			dependencies: ["2A7E3F2CD335EAD0"]
+			dependency_requirement: "all_started"
 			id: "4F137DB561F45306"
 			tasks: [
 				{
@@ -1464,9 +1470,10 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: -3.5d
+			x: 4.5d
+			y: -2.0d
 			dependencies: ["4F137DB561F45306"]
+			dependency_requirement: "all_started"
 			id: "15D764CAF047EA7A"
 			tasks: [
 				{
@@ -1516,9 +1523,10 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: -3.5d
+			x: 5.5d
+			y: -2.0d
 			dependencies: ["15D764CAF047EA7A"]
+			dependency_requirement: "all_started"
 			id: "7D43016926E77150"
 			tasks: [
 				{
@@ -1568,9 +1576,10 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: -3.5d
+			x: 6.5d
+			y: -2.0d
 			dependencies: ["7D43016926E77150"]
+			dependency_requirement: "all_started"
 			id: "5B1E0E3E876339E7"
 			tasks: [
 				{
@@ -1620,14 +1629,41 @@
 			]
 		}
 		{
-			x: -20.0d
-			y: -1.5d
+			x: -17.5d
+			y: 0.0d
+			description: ["Used as Crux for the 3 different Allthemodium seeds"]
 			dependencies: ["2FA6B8A1C8713DE0"]
 			id: "5DFA18E547CB4D5D"
 			tasks: [{
 				id: "4AF02F837AD0E6E2"
 				type: "item"
 				item: "kubejs:magical_soil"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -2.0d
+			shape: "hexagon"
+			description: ["Place this under the soil to allow Nether Star Seeds to grow."]
+			dependencies: ["4A96A0456680837C"]
+			id: "7BBCE618001884B1"
+			tasks: [{
+				id: "790FD93CF3EFE86F"
+				type: "item"
+				item: "mysticalagradditions:nether_star_crux"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -2.0d
+			shape: "hexagon"
+			description: ["Place this under the soil to allow Dragon Egg Seeds to grow."]
+			dependencies: ["6AB1C7B6251FE9F5"]
+			id: "7B7504F386DABBDD"
+			tasks: [{
+				id: "725AA849F27E509F"
+				type: "item"
+				item: "mysticalagradditions:dragon_egg_crux"
 			}]
 		}
 	]

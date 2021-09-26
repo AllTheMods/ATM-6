@@ -1,7 +1,9 @@
 {
   "flower": "draconicevolution:wyvern_crafting_injector",
   "maxTimeInHive": 4800,
-  "traits": ["draconic"],
+  "traits": [
+    "draconic"
+  ],
   "hasHoneycomb": true,
   "baseLayerTexture": "dragon/dragon_bee_primary",
   "ColorData": {
@@ -28,22 +30,27 @@
   "MutationData": {
     "hasMutation": true,
     "mutationCount": 1,
-    "mutations": [{
-      "type": "BLOCK_TO_ITEM",
-      "inputID": "draconicevolution:awakened_crafting_injector",
-      "outputs": [{
-        "outputID": "draconicevolution:awakened_draconium_nugget",
-        "weight": 80
-      }, {
-        "outputID": "resourcefulbees:bee_jar",
-        "nbtData": {
-          "Entity": "resourcefulbees:awakened_bee",
-          "BeeType": "awakened",
-          "Color": "#FF4C00"
-        },
-        "weight": 20
-      }]
-    }]
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "draconicevolution:awakened_crafting_injector",
+        "outputs": [
+          {
+            "outputID": "draconicevolution:awakened_draconium_nugget",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:awakened_bee",
+              "BeeType": "awakened",
+              "Color": "#FF4C00"
+            },
+            "weight": 20
+          }
+        ]
+      }
+    ]
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
@@ -57,8 +64,7 @@
     "bottleOutput": "minecraft:honey_bottle",
     "bottleOutputWeight": 0.25,
     "bottleOutputCount": 1,
-    "recipeTime": 200,
-    "hasFluidOutput": false
+    "recipeTime": 200
   },
   "SpawnData": {
     "canSpawnInWorld": false

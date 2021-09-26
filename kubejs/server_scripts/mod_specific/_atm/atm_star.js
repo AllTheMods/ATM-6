@@ -123,7 +123,7 @@ onEvent('recipes', e => {
   }).id('kubejs:atmadditions/nexium_emitter')
   //#endregion
   //#region Pulsating Black Hole
-  draconicFusion('atmadditions:pulsating_black_hole', 4, 1024000000, 'draconicevolution:chaos_shard', [
+  draconicFusion(e, 'atmadditions:pulsating_black_hole', 4, 1024000000, 'draconicevolution:chaos_shard', [
     'mininggadgets:upgrade_void_junk',
     'bloodmagic:voidsigil',
     'ars_nouveau:void_jar',

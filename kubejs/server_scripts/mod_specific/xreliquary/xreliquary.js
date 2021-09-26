@@ -8,7 +8,7 @@ onEvent('recipes', e => {
     F: 'mysticalagriculture:mystical_fertilizer'
   }).id(`kubejs:xreliquary/fertile_lily_pad`)
 
-  removeRecipeByOutput([
+  removeRecipeByOutput(e, [
     'xreliquary:alkahestry_tome',
     'xreliquary:fertile_lily_pad'
   ])

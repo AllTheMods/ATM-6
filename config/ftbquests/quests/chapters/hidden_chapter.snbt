@@ -1,0 +1,409 @@
+{
+	id: "17FBD5F9FD6AAF2D"
+	group: ""
+	order_index: 3
+	filename: "hidden_chapter"
+	title: "Hidden Chapter"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "Kill 5x Each I\\&F Dragon"
+			x: -1.0d
+			y: -1.0d
+			optional: true
+			id: "1D85CE0A88D09165"
+			tasks: [
+				{
+					id: "1DFDC23BABB72AC1"
+					type: "kill"
+					entity: "iceandfire:fire_dragon"
+					value: 10L
+				}
+				{
+					id: "61DFF3FDE570688C"
+					type: "kill"
+					entity: "iceandfire:ice_dragon"
+					value: 10L
+				}
+				{
+					id: "59523A52D7E444A2"
+					type: "kill"
+					entity: "iceandfire:lightning_dragon"
+					value: 10L
+				}
+			]
+			rewards: [{
+				id: "38223539FD086E03"
+				type: "item"
+				auto: "invisible"
+				item: "atmadditions:dragon_soul"
+			}]
+		}
+		{
+			title: "Visit Every Dimension"
+			x: 0.0d
+			y: -1.5d
+			id: "0B66FB2CE83CD2BD"
+			tasks: [
+				{
+					id: "6C5BF8AB010372DF"
+					type: "dimension"
+					icon: "minecraft:grass_block"
+					dimension: "minecraft:overworld"
+				}
+				{
+					id: "0F35EDDD181481F6"
+					type: "dimension"
+					icon: "minecraft:netherrack"
+					dimension: "minecraft:the_nether"
+				}
+				{
+					id: "563B31B6534ED405"
+					type: "dimension"
+					icon: "minecraft:orange_terracotta"
+					dimension: "allthemodium:the_other"
+				}
+				{
+					id: "1F04C1452010053E"
+					type: "dimension"
+					icon: "minecraft:stone"
+					dimension: "allthemodium:mining"
+				}
+				{
+					id: "1DAB1D499DED6938"
+					type: "dimension"
+					icon: "compactmachines:wall"
+					dimension: "compactmachines:compact_world"
+				}
+				{
+					id: "3D5F7AF61AC06296"
+					type: "dimension"
+					icon: "twilightforest:twilight_portal_miniature_structure"
+					dimension: "twilightforest:twilightforest"
+				}
+			]
+			rewards: [
+				{
+					id: "125C7ED63AB6EFBF"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:allthemodium_ore"
+				}
+				{
+					id: "2D9A756777B58733"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:vibranium_ore"
+				}
+				{
+					id: "0F1377835B90C234"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:unobtainium_ore"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			id: "23797322470A9E4D"
+			tasks: [{
+				id: "36FF69BF35415E37"
+				type: "xp"
+				value: 500L
+				points: false
+			}]
+			rewards: [{
+				id: "5709D6E6CD232ACF"
+				type: "item"
+				auto: "invisible"
+				item: "xreliquary:hero_medallion"
+			}]
+		}
+		{
+			title: "Conquer The Forest"
+			x: -1.5d
+			y: 0.0d
+			id: "3EC2209347A35A1D"
+			tasks: [
+				{
+					id: "0A46B47511B7FBB0"
+					type: "item"
+					item: "twilightforest:naga_trophy"
+				}
+				{
+					id: "5C882C56B3C99C90"
+					type: "item"
+					item: "twilightforest:lich_trophy"
+				}
+				{
+					id: "0E423AF9FE9F7837"
+					type: "item"
+					item: "twilightforest:minoshroom_trophy"
+				}
+				{
+					id: "0A82048F3D194836"
+					type: "item"
+					item: "twilightforest:hydra_trophy"
+				}
+				{
+					id: "122F6DC3FD753968"
+					type: "item"
+					item: "twilightforest:knight_phantom_trophy"
+				}
+				{
+					id: "03D2937D44FD2427"
+					type: "item"
+					item: "twilightforest:ur_ghast_trophy"
+				}
+				{
+					id: "606401AC23B97BCC"
+					type: "item"
+					item: "twilightforest:yeti_trophy"
+				}
+				{
+					id: "1829FF4B46C92FEF"
+					type: "item"
+					item: "twilightforest:snow_queen_trophy"
+				}
+				{
+					id: "1EE9B5D2E2D3C483"
+					type: "item"
+					item: "twilightforest:quest_ram_trophy"
+				}
+			]
+			rewards: [{
+				id: "24436C0F06F6CD2E"
+				type: "item"
+				auto: "invisible"
+				item: "twilightforest:fiery_block"
+				count: 2
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			id: "5CF77B044B41E74A"
+			tasks: [{
+				id: "453ED0BE514A51CB"
+				type: "item"
+				item: "compressium:cobblestone_9"
+			}]
+			rewards: [{
+				id: "605623DDD28FABFF"
+				type: "item"
+				auto: "invisible"
+				item: {
+					id: "pedestals:coin/cobble"
+					Count: 1b
+					tag: {
+						RepairCost: 31
+						Enchantments: [
+							{
+								lvl: 1s
+								id: "pedestals:upgradeadvanced"
+							}
+							{
+								lvl: 9s
+								id: "pedestals:upgradecapacity"
+							}
+							{
+								lvl: 9s
+								id: "pedestals:upgradearea"
+							}
+							{
+								lvl: 9s
+								id: "pedestals:upgradespeed"
+							}
+							{
+								lvl: 9s
+								id: "pedestals:upgraderange"
+							}
+						]
+					}
+				}
+				count: 5
+			}]
+		}
+		{
+			title: "Completionist"
+			icon: "atmadditions:atm_star"
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"Dev Note:"
+				""
+				"The idea is that there would be some reward for completing every other questline."
+			]
+			dependencies: [
+				"1B175B2C955D8395"
+				"6C891E4EAC7ADBB6"
+				"6AEDA2F9BEB57759"
+				"70AE2F21054AD796"
+				"32C4B62281328EB9"
+				"100C477F4E63F20A"
+				"16956970FF49BB4D"
+				"4351A2B2F092D7AF"
+				"193F91842D2ED7D9"
+				"5C764279146E5E66"
+				"244A74DD4896B704"
+				"7831613229FC6191"
+				"15AAF17B6665223D"
+				"1DB294A8F8686321"
+				"1BE666F01EFFC00D"
+			]
+			optional: true
+			id: "50A5D1FCAD93857C"
+			rewards: [{
+				id: "6565D36ACFFDA791"
+				type: "item"
+				auto: "enabled"
+				item: {
+					id: "mekanism:creative_bin"
+					Count: 1b
+					tag: {
+						mekData: {
+							Items: [{
+								Item: {
+									id: "atmadditions:atm_star"
+									Count: -1b
+								}
+								Slot: 0b
+								SizeOverride: 2147483647
+							}]
+						}
+						BlockEntityTag: {
+							currentRedstone: 15
+							updateDelay: 0
+							activeState: 0b
+							ForgeCaps: { }
+							Items: [{
+								Item: {
+									id: "atmadditions:atm_star"
+									Count: -1b
+								}
+								Slot: 0b
+								SizeOverride: 2147483647
+							}]
+							id: "mekanism:creative_bin"
+							redstone: 0b
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			hide_dependency_lines: false
+			dependencies: ["5CF77B044B41E74A"]
+			id: "79E5AAC316FE9C1B"
+			tasks: [{
+				id: "749CA27C9C82447A"
+				type: "item"
+				item: "compressium:cobblestone_9"
+				count: 64L
+			}]
+			rewards: [{
+				id: "1BF637611E711D9D"
+				type: "item"
+				auto: "invisible"
+				item: {
+					id: "mekanism:creative_bin"
+					Count: 1b
+					tag: {
+						mekData: {
+							Items: [{
+								Item: {
+									id: "minecraft:cobblestone"
+									Count: -1b
+								}
+								Slot: 0b
+								SizeOverride: 2147483647
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			id: "212CC58521442922"
+			tasks: [{
+				id: "5EBCD7C3A0113AA9"
+				type: "kill"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 20L
+			}]
+			rewards: [
+				{
+					id: "3795E76486D9705C"
+					type: "item"
+					auto: "invisible"
+					item: "botania:gaia_head"
+				}
+				{
+					id: "5E676BD63BC6F855"
+					type: "item"
+					auto: "invisible"
+					item: "kubejs:mass_of_wills"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			hide_dependency_lines: false
+			dependencies: ["1D85CE0A88D09165"]
+			optional: true
+			id: "27AD35DC3E9ED98E"
+			tasks: [
+				{
+					id: "6B062A4683F886F1"
+					type: "kill"
+					entity: "iceandfire:fire_dragon"
+					value: 50L
+				}
+				{
+					id: "4B01F51997C42B9D"
+					type: "kill"
+					entity: "iceandfire:ice_dragon"
+					value: 50L
+				}
+				{
+					id: "0A95CBA1230772F7"
+					type: "kill"
+					entity: "iceandfire:lightning_dragon"
+					value: 50L
+				}
+			]
+			rewards: [
+				{
+					id: "24AD298140198DB2"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
+				}
+				{
+					id: "34D25FEF850E43F2"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+				}
+				{
+					id: "1B16C848C057050B"
+					type: "item"
+					auto: "invisible"
+					item: "allthemodium:vibranium_allthemodium_alloy_ingot"
+				}
+			]
+		}
+	]
+}
