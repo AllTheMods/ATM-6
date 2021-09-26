@@ -1,6 +1,5 @@
-
 [milestones]
 	heartsPerMilestone = 1
-	milestones = [5, 10, 15, 20, 25]
+	milestones = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 [miscellaneous]
 		resetOnDeath = false
