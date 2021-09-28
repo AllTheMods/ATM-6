@@ -371,9 +371,6 @@ onEvent('recipes', e => {
   e.replaceInput('iceandfire:sapphire', '#forge:gems/sapphire')
   e.replaceInput('iceandfire:sapphire_block', '#forge:storage_blocks/sapphire')
   e.replaceInput('minecraft:stick', '#forge:rods/wooden')
-  e.replaceInput('minecraft:stone', '#forge:stone')
-  e.replaceInput({ output: 'minecraft:furnace', type: 'minecraft:crafting_shaped' }, 'minecraft:stone', ['#forge:stone', '#forge:cobblestone'])
-  e.replaceInput({ output: 'minecraft:stone_pickaxe', type: 'minecraft:crafting_shaped' }, 'minecraft:stone', ['#forge:stone', '#forge:cobblestone'])
 
   e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
   e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
