@@ -40,7 +40,7 @@ onEvent('recipes', e => {
   pedestalCrush('appliedenergistics2:certus_quartz_dust', 1, 'forge:gems/certus_quartz', 1)
   pedestalCrush('mekanism:dust_quartz', 1, 'forge:gems/quartz', 1)
 
-  pedestalSaw('mekanism:sawdust', 1, 'forge:rods/wooden', 1)
+  pedestalSaw('thermal:sawdust', 1, 'forge:rods/wooden', 1)
   pedestalSaw('minecraft:stick', 4, 'minecraft:planks', 1)
   pedestalSaw('minecraft:stick', 2, 'minecraft:wooden_slabs', 1)
 
