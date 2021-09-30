@@ -376,6 +376,7 @@ onEvent('recipes', e => {
   e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
   e.replaceOutput('iceandfire:sapphire_gem', 'projectred-core:sapphire')
   e.replaceOutput('iceandfire:sapphire_block', 'projectred-core:sapphire_block')
+  e.replaceOutput('mekanism:sawdust', 'thermal:sawdust')
 
   // #region ExtraDisks & ExtraStorage
   function unifyExtraStorageDisks(entries) {
