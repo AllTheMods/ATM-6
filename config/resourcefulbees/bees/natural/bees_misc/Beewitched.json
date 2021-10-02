@@ -1,0 +1,87 @@
+{
+    "flower": "eidolon:crucible",
+    "maxTimeInHive": 1200,
+    "traits": [],
+    "creator": "NoControl, Dawn Felstar",
+    "lore": "Double, double toil and trouble; fire burn and cauldron bubble.",
+    "loreColor": "#326847",
+    "hasHoneycomb": true,
+    "baseLayerTexture" : "misc/beewitched_bee",
+    "ColorData": {
+    "isBeeColored": false,
+    "modelType" : "WITCH",
+    "honeycombColor": "#326847",
+    "isGlowing": true,
+    "emissiveLayerTexture": "misc/beewitched_bee_emissive"
+    },
+    "CombatData": {
+        "isPassive": true,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationCount": 1,
+        "mutations": [
+            {
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:beewitched_honeycomb_block",
+                "outputs": [
+                    {
+                        "outputID": "beewitched_honeycomb",
+                        "weight": 80
+                    },
+                    {
+                        "outputID": "resourcefulbees:bee_jar",
+                        "nbtData": {
+                            "Entity": "resourcefulbees:beewitched_bee",
+                            "BeeType": "beewitched_bee",
+                            "Color": "#326847"
+                        },
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainInputCount": 1,
+        "mainOutput": "resourcefulbees:beewitched_honeycomb",
+        "mainOutputWeight": 0.20,
+        "mainOutputCount": 1,
+        "secondaryOutput": "minecraft:sugar",
+        "secondaryOutputWeight": 0.20,
+        "secondaryOutputCount": 1,
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+        "recipeTime": 200
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "byg:pumpkin_forest",
+        "biomeBlacklist": "",
+        "spawnWeight": 5,
+        "minYLevel": 0,
+        "maxYLevel": 255,
+        "minGroupSize": 1,
+        "maxGroupSize": 2,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "",
+        "parent2": "",
+        "breedWeight": 10,
+        "breedChance": 0.8,
+        "feedItem": "xreliquary:witch_hat",
+        "feedAmount": 5,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
+}
