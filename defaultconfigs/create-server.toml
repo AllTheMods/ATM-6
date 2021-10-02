@@ -3,4 +3,4 @@
 	bulkCutting = true
 [fluids]
 	fluidTankCapacity = 64
-	hosePulleyBlockThreshold = 0
+	hosePulleyBlockThreshold = -1
