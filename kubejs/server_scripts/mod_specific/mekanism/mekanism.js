@@ -119,13 +119,13 @@ onEvent('recipes', e => {
   e.recipes.mekanism.crushing('5x mekanism:bio_fuel', '#misctags:biofuel5')
   e.recipes.mekanism.crushing('7x mekanism:bio_fuel', '#misctags:biofuel7')
   e.recipes.mekanism.crushing('8x mekanism:bio_fuel', '#misctags:biofuel8')
-  e.recipes.mekanism.sawing('8x mekanism:sawdust', 'byg:imbued_nightshade_log').id('kubejs:saw/byg_log_imbued_nightshade')
+  e.recipes.mekanism.sawing('8x thermal:sawdust', 'byg:imbued_nightshade_log').id('kubejs:saw/byg_log_imbued_nightshade')
 
   utils.listOf(['aspen', 'baobab', 'blue_enchanted', 'cherry', 'cika', 'cypress', 'ebony', 'ether', 'fir', 'green_enchanted', 'holly', 'jacaranda', 'lament', 'mahogany', 'mangrove', 'maple', 'nightshade', 'palm', 'pine', 'rainbow_eucalyptus', 'redwood', 'skyris', 'willow', 'witch_hazel', 'zelkova']).forEach(type => {
     e.recipes.mekanism.sawing(
       `6x byg:${type}_planks`,
       [`byg:stripped_${type}_log`, `byg:${type}_log`],
-      Item.of('mekanism:sawdust').withChance(0.25)
+      Item.of('thermal:sawdust').withChance(0.25)
     ).id(`kubejs:saw/byg_log_${type}`)
   })
 
