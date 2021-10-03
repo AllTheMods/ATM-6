@@ -19,12 +19,17 @@ body:
         - "No"
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: pack-version
     attributes:
       label: Modpack Version
       description: What version of the pack are you using?
-      placeholder: ex. 1.8.4
+      options:
+        - 1.8.5
+        - 1.8.4
+        - 1.8.3
+        - 1.7.11
+        - other
     validations:
       required: true
   - type: textarea
