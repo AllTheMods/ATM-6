@@ -38,7 +38,7 @@ onEvent('recipes', e => {
   pedestalCrush('pamhc2foodcore:flouritem', 1, 'forge:flour_plants', 1)
   pedestalCrush('appliedenergistics2:fluix_dust', 1, 'appliedenergistics2:fluix_crystal', 0)
   pedestalCrush('appliedenergistics2:certus_quartz_dust', 1, 'forge:gems/certus_quartz', 1)
-  pedestalCrush('mekanism:dust_quartz', 1, 'forge:gems/quartz', 1)
+  pedestalCrush('thermal:quartz_dust', 1, 'forge:gems/quartz', 1)
 
   pedestalSaw('thermal:sawdust', 1, 'forge:rods/wooden', 1)
   pedestalSaw('minecraft:stick', 4, 'minecraft:planks', 1)

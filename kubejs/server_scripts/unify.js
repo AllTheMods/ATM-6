@@ -380,6 +380,8 @@ onEvent('recipes', e => {
   e.replaceOutput('mekanism:sawdust', 'thermal:sawdust')
   e.replaceOutput('mekanism:dust_sulfur', 'thermal:sulfur_dust')
   e.replaceOutput('immersiveengineering:dust_sulfur', 'thermal:sulfur_dust')
+  e.replaceOutput('mekanism:dust_quartz', 'thermal:quartz_dust')
+  e.replaceOutput('appliedenergistics2:nether_quartz_dust', 'thermal:quartz_dust')
 
   // #region ExtraDisks & ExtraStorage
   function unifyExtraStorageDisks(entries) {
