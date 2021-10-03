@@ -166,6 +166,3 @@ onEvent('recipes', e => {
     O: '#forge:ingots/osmium'
   })
 })
-onEvent('jei.hide.items', e => {
-	e.hide('mekanism:dust_sulfur')
-})
