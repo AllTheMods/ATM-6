@@ -38,8 +38,8 @@ body:
   - type: input
     id: logs
     attributes:
-      label: latest.log
-      description: Please upload your 'latest.log' file to  https://gist.github.com/ and leave the link here.
+      label: Crash Log
+      description: Please upload your crash log to  https://gist.github.com/ and leave the link here.
       placeholder: https://gist.github.com/
     validations:
       required: true
