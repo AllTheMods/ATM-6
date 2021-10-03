@@ -3398,12 +3398,12 @@
 		}
 		{
 			title: "Starry Bee"
-			x: 0.0033163265306086487d
-			y: 3.4974489795918444d
+			x: 0.0d
+			y: 15.5d
 			shape: "hexagon"
 			description: ["Quest reward"]
 			dependencies: ["5C010374A550B53F"]
-			size: 1.5d
+			size: 1.25d
 			id: "3274F1946A54879A"
 			tasks: [{
 				id: "2AF55A5372C71454"
@@ -4736,6 +4736,52 @@
 				id: "252A0A3CE7863CB7"
 				type: "checkmark"
 				title: "Bee Mutations"
+			}]
+		}
+		{
+			title: "Cotton Candy Bee"
+			x: 0.0d
+			y: 3.5d
+			shape: "hexagon"
+			subtitle: "Minecraft bee is trans"
+			description: ["Spawns naturally."]
+			id: "2AC3B3501A718A2D"
+			tasks: [{
+				id: "7FF127A9088D27A4"
+				type: "item"
+				title: "Filled Bee Jar - Cotton Candy Bee"
+				icon: {
+					id: "resourcefulbees:bee_jar"
+					Count: 1b
+					tag: {
+						Entity: "resourcefulbees:cotton_candy_bee"
+						Color: "#55CDFC"
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\" - \"},{\"translate\":\"entity.resourcefulbees.cotton_candy_bee\"}],\"translate\":\"item.resourcefulbees.bee_jar_filled\"}"
+						}
+					}
+				}
+				item: {
+					id: "itemfilters:and"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "resourcefulbees:bee_jar"
+								Count: 1b
+							}
+							{
+								id: "itemfilters:weak_nbt"
+								Count: 1b
+								tag: {
+									value: {
+										Entity: "resourcefulbees:cotton_candy_bee"
+									}
+								}
+							}
+						]
+					}
+				}
 			}]
 		}
 	]
