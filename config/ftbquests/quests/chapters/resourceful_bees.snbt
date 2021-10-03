@@ -4651,7 +4651,7 @@
 				"One of the most interesting features of Resourceful Bees is mutation. It lets you turn blocks, items, and other mobs into others using bees."
 				"Mutations happen when a bee with polen flies over a mutatable block or entity."
 				"Below is a setup to mutate blocks using a bee going back and forth."
-				"{image:modpack:textures/block_mutation.png width:192 height:108 align:1}"
+				"{image:allthemods:textures/block_mutation.png width:192 height:108 align:1}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["288A0D740ECD12F1"]
@@ -4728,7 +4728,7 @@
 			description: [
 				"You can mutate certain bees into other bees."
 				"Below is an example setup."
-				"{image:modpack:textures/entity_mutation.png width:192 height:108 align:1 fit:true}"
+				"{image:allthemods:textures/entity_mutation.png width:192 height:108 align:1 fit:true}"
 			]
 			dependencies: ["1C97E085F7F6CFF3"]
 			id: "75F070F3C448F38E"
