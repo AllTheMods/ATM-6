@@ -13,7 +13,7 @@ onEvent('recipes', e => {
     result: { fluid: 'immersivepetroleum:diesel', amount: 7 },
     input: { tag: 'forge:diesel_sulfur', amount: 7 },
     secondary_input: { tag: 'minecraft:water', amount: 7 },
-    secondary_result: { item: 'immersiveengineering:dust_sulfur', chance: '0.02' }
+    secondary_result: { item: 'thermal:sulfur_dust', chance: '0.02' }
   }).id('kubejs:immersivepetroleum/hydrotreater/diesel')
   e.custom({
     type: 'immersivepetroleum:distillation',

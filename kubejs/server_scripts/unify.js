@@ -378,6 +378,8 @@ onEvent('recipes', e => {
   e.replaceOutput('iceandfire:sapphire_gem', 'projectred-core:sapphire')
   e.replaceOutput('iceandfire:sapphire_block', 'projectred-core:sapphire_block')
   e.replaceOutput('mekanism:sawdust', 'thermal:sawdust')
+  e.replaceOutput('mekanism:dust_sulfur', 'thermal:sulfur_dust')
+  e.replaceOutput('immersiveengineering:dust_sulfur', 'thermal:sulfur_dust')
 
   // #region ExtraDisks & ExtraStorage
   function unifyExtraStorageDisks(entries) {
