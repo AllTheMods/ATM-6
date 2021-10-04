@@ -9,6 +9,7 @@ body:
         **Prior to filling out this bug report, please make sure of the following:**
         - You tried on the latest version of the pack.
         - You don't have any other mods installed.
+        - You checked the previous issues to see if it's not a duplicate.
   - type: dropdown
     id: fixes
     attributes:
@@ -19,12 +20,17 @@ body:
         - "No"
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: pack-version
     attributes:
       label: Modpack Version
       description: What version of the pack are you using?
-      placeholder: ex. 1.8.4
+      options:
+        - 1.8.5
+        - 1.8.4
+        - 1.8.3
+        - 1.7.11
+        - other
     validations:
       required: true
   - type: textarea

@@ -16,3 +16,4 @@ onEvent('item.entity_interact', e => {
     }
   }
 })
+
