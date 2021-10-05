@@ -57,8 +57,8 @@ onEvent('item.tooltip', e => {
   formattedTooltip('zycraft:zychorium_ice', 'Turns adjacent water to ice.')
   formattedTooltip('zycraft:fabricator', 'Autocrafter that can push the results into adjacent fabricators.')
   formattedTooltip('mekanism:creative_energy_cube', 'Will delete energy if not filled! Check JEI Info tab for more info on charging the cube', 'Lexxie')
-  formattedTooltip('mahoutsukai:caliburn', 'This item is obtained by throwing an enchanted sword into a lake created by the Power Consolidation ritual', 'Lexxie')
-  formattedTooltip('mahoutsukai:morgan', 'This item is obtained by killing a tamed wolf with a Caliburn', 'Lexxie')
+  formattedTooltip('mahoutsukai:caliburn', 'This item is obtained by throwing an enchanted sword into a lake created by the Power Consolidation ritual. The damage cap can be increased by throwing the sword back into the lake with an ATM Star', 'Lexxie')
+  formattedTooltip('mahoutsukai:morgan', 'This item is obtained by killing a tamed wolf with a Caliburn. The damage cap can be increased by throwing the sword back into the lake with an ATM Star', 'Lexxie')
   formattedTooltip('craftingstation:crafting_station', 'Crafting Station Mk.II', 'Lexxie')
   formattedTooltip('atmadditions:atm_star_shard', 'Check JEI Info page for more info', 'Lexxie')
 
