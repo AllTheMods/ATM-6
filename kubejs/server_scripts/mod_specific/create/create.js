@@ -24,9 +24,7 @@ onEvent('recipes', e => {
     Item.of('minecraft:netherite_scrap', 2).withChance(0.33)
   ], 'minecraft:ancient_debris')
 
-  e.recipes.create.milling(
-    '2x minecraft:netherite_scrap',
-    'minecraft:ancient_debris')
+  e.recipes.create.milling('2x minecraft:netherite_scrap', 'minecraft:ancient_debris')
   
   e.recipes.createSplashing([
     '10x alltheores:platinum_nugget',
