@@ -1,20 +1,7 @@
-
 [client]
-
 	[client.visual_options]
 		tasks = false
-		#If plaques should show for goal advancements (medium-difficulty advancements).
-		goals = false
-		#If plaques should show for challenge advancements (high-difficulty advancements).
-		challenges = true
-
 	[client.duration_options]
-		#Duration of the shiny effect fade in for challenges.
-		#Range: 0.1 ~ 3.0
 		challenge_effect_fadein = 0.2
-		#Duration of the shiny effect fade out for challenges.
-		#Range: 0.1 ~ 3.0
 		challenge_effect_fadeout = 0.5
-		#Duration of the plaques for challenges (minus the effect fade in/out durations).
-		#Range: 2.0 ~ 10.0
 		challenge_duration = 2.0
