@@ -138,7 +138,8 @@ onEvent('recipes', e => {
     'moreminecarts:chunk_loader',
     'silentgear:iron_rod',
     'archers_paradox:explosive_arrow',
-    'twilightforest:uncrafting_table'
+    'twilightforest:uncrafting_table',
+    'translocators:diamond_nugget'
   ])
 
   removeRecipeByOutput(e, [
