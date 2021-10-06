@@ -139,7 +139,7 @@ onEvent('recipes', e => {
     'silentgear:iron_rod',
     'archers_paradox:explosive_arrow',
     'twilightforest:uncrafting_table',
-	'translocators:diamond_nugget'
+    'translocators:diamond_nugget'
   ])
 
   removeRecipeByOutput(e, [
