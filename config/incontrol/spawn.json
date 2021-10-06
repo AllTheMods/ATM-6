@@ -62,13 +62,18 @@
       "mana-and-artifice:mushroom_soldier",
       "mana-and-artifice:pixie",
       "mana-and-artifice:skeleton_assassin",
-      "mana-and-artifice:spellbreaker",
-      "mana-and-artifice:witch_hunter"
+      "mana-and-artifice:spellbreaker"
     ],
     "mincount": {
       "amount": 1,
       "perplayer": true
     },
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "mana-and-artifice:witch_hunter"
+    ],
     "result": "deny"
   }
 ]
