@@ -37,11 +37,18 @@ onEvent('recipes', e => {
   function shapedRecipe(results, craftingItem, itemCount) {
     let maxLength = Math.min(craftingShapes.length, results.length)
     for (let i = 0; i < maxLength; i++) {
-      e.recipes.cucumber.shaped_no_mirror({
+      let recipe = {
         pattern: craftingShapes[i],
         key: { C: { item: craftingItem } },
-        result: { item: results[i], count: itemCount }
-      })
+        result: {
+          item: results[i].match(/^(\w+:\w+)(?:{[^}]*})?$/)[1],
+          count: itemCount
+        }
+      }
+
+      if (results[i].match(/{.+}/)) recipe.result['nbt'] = results[i].match(/{.+}/)[0]
+
+      e.recipes.cucumber.shaped_no_mirror(recipe)
     }
   }
 
