@@ -61,7 +61,6 @@ onEvent('item.tooltip', e => {
   formattedTooltip('mahoutsukai:morgan', 'This item is obtained by killing a tamed wolf with a Caliburn', 'Lexxie')
   formattedTooltip('craftingstation:crafting_station', 'Crafting Station Mk.II', 'Lexxie')
   formattedTooltip('atmadditions:atm_star_shard', 'Check JEI Info page for more info', 'Lexxie')
-  formattedTooltip('appliedenergistics2:quantum_entangled_singularity', 'To make this, you must use Ender Pearls, not Ender Dust', 'AR.E')
 
   //#region Pipez
   //pipes
