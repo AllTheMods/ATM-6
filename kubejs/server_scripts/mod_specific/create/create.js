@@ -34,6 +34,7 @@ onEvent('recipes', e => {
   removeRecipeByID(e, [
     'create:crafting/materials/copper_block_from_compacting',
     'create:crafting/materials/zinc_block_from_compacting',
-    'create:emptying/honey_bottle'
+    'create:emptying/honey_bottle',
+    'createaddition:crushing/diamond_ore'
   ])
 })
