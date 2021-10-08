@@ -52,6 +52,11 @@ onEvent('recipes', e => {
     N: 'minecraft:netherite_block',
     C: 'resourcefulbees:centrifuge_controller'
   }).id(`kubejs:resourcefulbees/elite_centrifuge_controller`)
+  e.shaped('resourcefulbees:t1_apiary', ['CHC', 'HSH', 'CHC',], {
+    C: '#resourcefulbees:resourceful_honeycomb_block',
+    H: 'resourcefulbees:t4_beehive',
+    S: 'minecraft:nether_star'
+  }).id('resourcefulbees:t1_apiary')
 
   removeRecipeByID(e, [
     'resourcefulbees:elite_centrifuge_casing',
