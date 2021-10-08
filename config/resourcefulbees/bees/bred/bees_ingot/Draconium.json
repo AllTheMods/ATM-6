@@ -53,7 +53,7 @@
           "type": "ENTITY_TO_ENTITY",
           "inputID": "minecraft:witch",
           "outputs": [{
-              "outputID": "resourcefulbees:draconium_bee",
+              "outputID": "minecraft:witch",
               "weight": 80
           }, {
               "outputID": "resourcefulbees:alchemist_bee",
