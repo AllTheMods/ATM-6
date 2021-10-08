@@ -417,6 +417,16 @@
   "item.resourcefulbees.beewitched_bee_spawn_egg": "Beewitched Bee Spawn Egg",
   "entity.resourcefulbees.beewitched_bee": "Beewitched Bee",
 
+   "block.resourcefulbees.vampire_honeycomb_block": "Vampire Honeycomb Block",
+   "item.resourcefulbees.vampire_honeycomb": "Vampire Honeycomb",
+   "item.resourcefulbees.vampire_bee_spawn_egg": "Vampire Bee Spawn Egg",
+   "entity.resourcefulbees.vampire_bee": "Vampire Bee",
+
+   "block.resourcefulbees.wizard_honeycomb_block": "Wizard Honeycomb Block",
+   "item.resourcefulbees.wizard_honeycomb": "Wizard Honeycomb",
+   "item.resourcefulbees.wizard_bee_spawn_egg": "Wizard Bee Spawn Egg",
+   "entity.resourcefulbees.wizard_bee": "Wizard Bee",
+
   "trait.resourcefulbees.draconic": "Draconic Trait",
   "trait.resourcefulbees.awakened": "Awakened Trait",
   "trait.resourcefulbees.chaotic": "Chaotic Trait",
