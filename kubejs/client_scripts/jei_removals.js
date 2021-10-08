@@ -125,7 +125,9 @@ onEvent('jei.hide.items', e => {
     'thermal:rf_coil_creative_augment',
     'thermal:fluid_tank_creative_augment',
     'thermal:machine_catalyst_creative_augment',
-		'mekanism:dust_sulfur'
+    'mekanism:dust_sulfur',
+    'translocators:diamond_nugget',
+    'createaddition:diamond_grit'
   ])
 
   enviroStonesMats.forEach(stone => e.hide(`/enviromats:${stone}_.*/`))

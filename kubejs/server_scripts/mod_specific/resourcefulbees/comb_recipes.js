@@ -37,7 +37,6 @@ onEvent('recipes', e => {
   function shapedRecipe(results, craftingItem, itemCount) {
     let maxLength = Math.min(craftingShapes.length, results.length)
     for (let i = 0; i < maxLength; i++) {
- console.log (results[i].match(/^([a-z\-_0-9]+:[a-z\-_0-9]+)(?:{[^}]*})?$/))
       let recipe = {
         pattern: craftingShapes[i],
         key: { C: { item: craftingItem } },

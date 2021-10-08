@@ -1,0 +1,10 @@
+[client]
+	[client.visual_options]
+		tasks = false
+	[client.duration_options]
+		goal_effect_fadein = 0.2
+		goal_effect_fadeout = 0.5
+		goal_duration = 2.0
+		challenge_effect_fadein = 0.2
+		challenge_effect_fadeout = 0.5
+		challenge_duration = 2.0
