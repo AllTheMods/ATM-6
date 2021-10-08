@@ -7,10 +7,12 @@
     "loreColor": "#F7A8B8",
     "hasHoneycomb": true,
     "baseLayerTexture" : "misc/cotton_candy_bee",
-     "ColorData": {
+    "ColorData": {
     "isBeeColored": false,
     "modelType" : "CROP",
-    "honeycombColor": "#55CDFC"
+    "honeycombColor": "#55CDFC",
+    "isGlowing": true,
+    "emissiveLayerTexture": "misc/cotton_candy_bee_emissive"
     },
     "CombatData": {
         "isPassive": true,
@@ -33,9 +35,7 @@
                     {
                         "outputID": "resourcefulbees:bee_jar",
                         "nbtData": {
-                            "Entity": "resourcefulbees:cotton_candy_bee",
-                            "BeeType": "cotton_candy",
-                            "Color": "#55CDFC"
+                            "Entity": "resourcefulbees:cotton_candy_bee"
                         },
                         "weight": 20
                     }
