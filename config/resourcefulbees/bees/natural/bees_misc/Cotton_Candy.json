@@ -40,7 +40,7 @@
             "type": "ENTITY_TO_ENTITY",
             "inputID": "minecraft:witch",
             "outputs": [{
-                "outputID": "resourcefulbees:cotton_candy_bee",
+                "outputID": "minecraft:witch",
                 "weight": 80
             }, {
                 "outputID": "resourcefulbees:beewitched_bee",
@@ -50,7 +50,7 @@
                 "type": "ENTITY_TO_ENTITY",
                 "inputID": "vampirism:vampire",
                 "outputs": [{
-                    "outputID": "resourcefulbees:cotton_candy_bee",
+                    "outputID": "vampirism:vampire",
                     "weight": 80
                 }, {
                     "outputID": "resourcefulbees:vampire_bee",

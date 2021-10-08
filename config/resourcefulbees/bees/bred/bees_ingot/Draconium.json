@@ -49,6 +49,16 @@
             "weight": 20
           }
         ]
+        }, {
+          "type": "ENTITY_TO_ENTITY",
+          "inputID": "minecraft:witch",
+          "outputs": [{
+              "outputID": "minecraft:witch",
+              "weight": 80
+          }, {
+              "outputID": "resourcefulbees:alchemist_bee",
+              "weight": 20
+          }] 
       }
     ]
   },
@@ -70,11 +80,7 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "draconicevolution:wyvern_core",
-    "feedAmount": 3,
-    "childGrowthDelay": -24000,
-    "breedDelay": 6000
+    "isBreedable": false
   },
   "TraitData": {
     "hasTraits": true
