@@ -18,8 +18,8 @@ onEvent('recipes', e => {
 
   e.recipes.immersiveengineering.crusher(`4x minecraft:nether_wart`, `minecraft:nether_wart_block`).id('kubejs:minecraft/immersiveengineering_crusher/nether_wart')
   e.recipes.mekanism.crushing('4x minecraft:blaze_powder', '#forge:rods/blaze')
-  e.recipes.mekanism.sawing(`6x minecraft:oak_planks`, `byg:withering_oak_log`, Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_withering_oak`)
-  e.recipes.mekanism.sawing(`6x minecraft:birch_planks`, [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('mekanism:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
+  e.recipes.mekanism.sawing(`6x minecraft:oak_planks`, `byg:withering_oak_log`, Item.of('thermal:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_withering_oak`)
+  e.recipes.mekanism.sawing(`6x minecraft:birch_planks`, [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('thermal:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
   e.recipes.mekanism.enriching('4x minecraft:blaze_powder', 'minecraft:blaze_rod').id('kubejs:minecraft/enriching/blaze_powder')
 
   e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:minecraft/clay`)

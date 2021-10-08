@@ -9,11 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Resourceful Bees"
+			title: "Creative Apiary"
 			x: -1.5d
 			y: -1.5d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "695EEC6AEF550449"
 			tasks: [
 				{
@@ -36,10 +35,8 @@
 		{
 			title: "Create"
 			x: -0.5d
-			y: -3.0d
-			description: ["Infinite RPM out of nothing :O"]
+			y: -3.0d			
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "2CF11A70229000AB"
 			tasks: [
 				{
@@ -57,9 +54,7 @@
 		{
 			x: 1.5d
 			y: 3.0d
-			description: ["Nearly infinite Storage"]
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "546D0730D780D30B"
 			tasks: [{
 				id: "6A69B872FEC84F2C"
@@ -251,7 +246,6 @@
 				"She will only produce 1 comb item, no matter what apiary or hive you're using. Centrifuge multipliers also do not work on the combs."
 			]
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "5C010374A550B53F"
 			tasks: [
 				{
@@ -315,97 +309,60 @@
 		{
 			x: -1.0d
 			y: 0.0d
-			id: "5B677F41E5A12166"
+			id: "314537C71B1B5741"
 			tasks: [{
-				id: "32115EB5F6198E0A"
+				id: "4F7E4F430154E96E"
 				type: "item"
 				item: "mysticalagradditions:creative_essence"
-			}]
-			rewards: [{
-				id: "51E7B49C797D47B5"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: -2.0d
 			y: 0.5d
-			id: "3FCB14EFFBAF0C9B"
+			id: "088E6EA318D25659"
 			tasks: [{
-				id: "3183D4DEAB2C4F3E"
+				id: "48CC30220D7FC2C9"
 				type: "item"
 				item: "atmadditions:nexium_emitter"
-			}]
-			rewards: [{
-				id: "0941901F4B5EE1C4"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: -2.5d
 			y: 1.5d
-			id: "7633927107252797"
+			id: "29FFA090ADB56195"
 			tasks: [{
-				id: "27348FEF99D8CB45"
+				id: "3F1E9259BB90D044"
 				type: "item"
 				item: "atmadditions:philosophers_fuel"
-			}]
-			rewards: [{
-				id: "669C3B858C7D2814"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: -2.0d
 			y: 2.5d
-			id: "4B6F6458B290F3FF"
+			id: "296E89E2DF857B25"
 			tasks: [{
-				id: "323C73CE2E9A8EAA"
+				id: "56F3DEFF2D46B881"
 				type: "item"
 				item: "atmadditions:pulsating_black_hole"
-			}]
-			rewards: [{
-				id: "7D12D645F5CB2813"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: -1.0d
 			y: 3.0d
-			id: "7A2C6D2BF3FF5B8A"
+			id: "794EC696A3B7DAC3"
 			tasks: [{
-				id: "03EF1A2F1062529D"
+				id: "10834451DAC877C5"
 				type: "item"
 				item: "atmadditions:dimensional_seed"
-			}]
-			rewards: [{
-				id: "79E9954DA4DE4282"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: 0.0d
 			y: 0.0d
 			description: ["Needed for crafting OP creative items"]
-			dependencies: [
-				"3DDF486DEE908A20"
-				"4548B0E30DCD59A4"
-				"7633927107252797"
-				"5B677F41E5A12166"
-				"3FCB14EFFBAF0C9B"
-				"4B6F6458B290F3FF"
-				"26175CD0F21263E4"
-				"7A2C6D2BF3FF5B8A"
-				"2C6B3E47676E62A4"
-				"1EAB4A302BC29CAF"
-			]
-			id: "257064EF9D295744"
+			id: "464D0C17601E8A2B"
 			tasks: [{
-				id: "1805981EC03970F2"
+				id: "5F6988D125AAB233"
 				type: "item"
 				item: "atmadditions:atm_star"
 			}]
@@ -413,69 +370,49 @@
 		{
 			x: 1.0d
 			y: 0.0d
-			id: "4548B0E30DCD59A4"
+			id: "24CE3AF373180CC9"
 			tasks: [{
-				id: "020B201E582AC647"
+				id: "7222BF35C9281295"
 				type: "item"
 				item: "kubejs:patrick_star"
-			}]
-			rewards: [{
-				id: "12CAAD4E3A41127F"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: 2.0d
 			y: -0.5d
-			id: "26175CD0F21263E4"
+			id: "20408CB5A15237EA"
 			tasks: [{
-				id: "25ABCDE2203D6C94"
+				id: "64A1AE71DDC8F0B0"
 				type: "item"
 				item: "atmadditions:oblivion_shard"
-			}]
-			rewards: [{
-				id: "388D90F741B5B0F8"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: 2.5d
 			y: -1.5d
-			id: "2C6B3E47676E62A4"
+			id: "4A629299C15E7E81"
 			tasks: [{
-				id: "668FDE92D3C3CF31"
+				id: "52DDA8A874F605CB"
 				type: "item"
 				item: "atmadditions:improbable_probability_device"
-			}]
-			rewards: [{
-				id: "6C15B7FBA87B96D9"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: 2.0d
 			y: -2.5d
-			id: "3DDF486DEE908A20"
+			id: "3615BAFD4F2AD479"
 			tasks: [{
-				id: "04BC676867D17C75"
+				id: "48CE28F5C1683093"
 				type: "item"
 				item: "atmadditions:dragon_soul"
-			}]
-			rewards: [{
-				id: "5F008E41DD00B16F"
-				type: "item"
-				item: "pamhc2foodextended:brownieitem"
 			}]
 		}
 		{
 			x: 1.0d
 			y: -3.0d
-			id: "1EAB4A302BC29CAF"
+			id: "5477FBAEBDE2D10B"
 			tasks: [{
-				id: "02762484FB7BE47F"
+				id: "042808E2D5E02DED"
 				type: "item"
 				item: "atmadditions:withers_compass"
 			}]
@@ -485,7 +422,6 @@
 			x: 2.5d
 			y: 1.5d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "436B5A79FA72DB1A"
 			tasks: [
 				{
@@ -531,7 +467,6 @@
 			x: 0.5d
 			y: 1.5d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "5C7B81756CA58056"
 			tasks: [
 				{
@@ -552,19 +487,12 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "0426E9AD4B1EC5B8"
-				type: "item"
-				item: "botania:gaia_ingot"
-				count: 10
-			}]
 		}
 		{
 			title: "Ars Nouveau"
 			x: 1.5d
 			y: 1.5d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "6FB82574D7AE6D85"
 			tasks: [
 				{
@@ -584,7 +512,6 @@
 			x: -2.5d
 			y: -1.5d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "13E4B8DECD54CFE1"
 			tasks: [
 				{
@@ -604,7 +531,6 @@
 			x: -1.5d
 			y: -3.0d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "0A5EE5CAA2CC572E"
 			tasks: [{
 				id: "3C71DA673A75CBAA"
@@ -613,10 +539,10 @@
 			}]
 		}
 		{
+			title: "Ice and Fire"
 			x: -2.5d
 			y: -3.0d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "7DB018F46584386C"
 			tasks: [
 				{
@@ -645,7 +571,6 @@
 			x: 2.5d
 			y: 3.0d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "22C55C94E18D5073"
 			tasks: [{
 				id: "65EAD2FC01537F02"
@@ -657,7 +582,6 @@
 			x: 0.5d
 			y: 3.0d
 			hide_dependency_lines: true
-			dependencies: ["257064EF9D295744"]
 			id: "54F43B991F8ADB0F"
 			tasks: [{
 				id: "1446F1B10FD2814E"
@@ -697,6 +621,36 @@
 				id: "0814C4E6DE262193"
 				type: "item"
 				item: "allthecompressed:atm_star_block_9x"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			description: [
+				"To get the Shards, you will have to build a 4 block tall structure as such:"
+				"The bottom block is Bedrock, above it an Anvil with an Item Frame on top. Hovering over the Item Frame, place Mjollnir."
+				"Once you have the structure, place your ATM Star in the item frame and click the hammer."
+				"{image:modpack:textures/atm_shard_bonk.png width:100 height:200 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["464D0C17601E8A2B"]
+			id: "3A6E437A6D0C634D"
+			tasks: [{
+				id: "7185D1288C51896F"
+				type: "item"
+				item: "atmadditions:atm_star_shard"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["3A6E437A6D0C634D"]
+			id: "435F4E14490CBE2B"
+			tasks: [{
+				id: "6E417FA286B2F2BF"
+				type: "item"
+				item: "atmadditions:allthecatalystium"
 			}]
 		}
 	]

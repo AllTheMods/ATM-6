@@ -371,14 +371,17 @@ onEvent('recipes', e => {
   e.replaceInput('iceandfire:sapphire', '#forge:gems/sapphire')
   e.replaceInput('iceandfire:sapphire_block', '#forge:storage_blocks/sapphire')
   e.replaceInput('minecraft:stick', '#forge:rods/wooden')
-  e.replaceInput('minecraft:stone', '#forge:stone')
-  e.replaceInput({ output: 'minecraft:furnace', type: 'minecraft:crafting_shaped' }, 'minecraft:stone', ['#forge:stone', '#forge:cobblestone'])
-  e.replaceInput({ output: 'minecraft:stone_pickaxe', type: 'minecraft:crafting_shaped' }, 'minecraft:stone', ['#forge:stone', '#forge:cobblestone'])
+  e.replaceInput('pneumaticcraft:plastic','#forge:plastic')
 
   e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
   e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
   e.replaceOutput('iceandfire:sapphire_gem', 'projectred-core:sapphire')
   e.replaceOutput('iceandfire:sapphire_block', 'projectred-core:sapphire_block')
+  e.replaceOutput('mekanism:sawdust', 'thermal:sawdust')
+  e.replaceOutput('mekanism:dust_sulfur', 'thermal:sulfur_dust')
+  e.replaceOutput('immersiveengineering:dust_sulfur', 'thermal:sulfur_dust')
+  e.replaceOutput('mekanism:dust_quartz', 'thermal:quartz_dust')
+  e.replaceOutput('appliedenergistics2:nether_quartz_dust', 'thermal:quartz_dust')
 
   // #region ExtraDisks & ExtraStorage
   function unifyExtraStorageDisks(entries) {
