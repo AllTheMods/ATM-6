@@ -382,6 +382,8 @@ onEvent('recipes', e => {
   e.replaceOutput('immersiveengineering:dust_sulfur', 'thermal:sulfur_dust')
   e.replaceOutput('mekanism:dust_quartz', 'thermal:quartz_dust')
   e.replaceOutput('appliedenergistics2:nether_quartz_dust', 'thermal:quartz_dust')
+  e.replaceOutput('mekanism:dust_diamond', 'thermal:diamond_dust')
+  e.replaceOutput('createaddition:diamond_grit', 'thermal:diamond_dust')
 
   // #region ExtraDisks & ExtraStorage
   function unifyExtraStorageDisks(entries) {
@@ -603,16 +605,16 @@ onEvent('recipes', e => {
   e.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [{ tag: 'minecraft:planks' }],
-    inputFluid: { FluidName: 'immersiveengineering:creosote', Amount: 125 },
+    inputFluid: "{ FluidName: \"immersiveengineering:creosote\", Amount: 125 }",
     processingTime: 5,
     output: { item: 'immersiveengineering:treated_wood_horizontal' }
-  })
+  }).id('kubejs:dissolution_chamber/immersiveengineering/treated_wood_horizontal')
   e.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [{ tag: 'minecraft:planks' }],
-    inputFluid: { FluidName: 'thermal:creosote', Amount: 125 },
+    inputFluid: "{ FluidName: \"thermal:creosote\", Amount: 125 }",
     processingTime: 5,
     output: { item: 'immersiveengineering:treated_wood_horizontal' }
-  })
+  }).id('kubejs:dissolution_chamber/thermal/treated_wood_horizontal')
   // #endregion Oil
 })
