@@ -427,6 +427,11 @@
    "item.resourcefulbees.wizard_bee_spawn_egg": "Wizard Bee Spawn Egg",
    "entity.resourcefulbees.wizard_bee": "Wizard Bee",
 
+   "block.resourcefulbees.alchemist_honeycomb_block": "Alchemist Honeycomb Block",
+   "item.resourcefulbees.alchemist_honeycomb": "Alchemist Honeycomb",
+   "item.resourcefulbees.alchemist_bee_spawn_egg": "Alchemist Bee Spawn Egg",
+   "entity.resourcefulbees.alchemist_bee": "Alchemist Bee",
+
   "trait.resourcefulbees.draconic": "Draconic Trait",
   "trait.resourcefulbees.awakened": "Awakened Trait",
   "trait.resourcefulbees.chaotic": "Chaotic Trait",
