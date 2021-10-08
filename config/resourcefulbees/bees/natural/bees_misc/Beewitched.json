@@ -29,15 +29,13 @@
                 "inputID": "resourcefulbees:beewitched_honeycomb_block",
                 "outputs": [
                     {
-                        "outputID": "beewitched_honeycomb",
+                        "outputID": "resourcefulbees:beewitched_honeycomb",
                         "weight": 80
                     },
                     {
                         "outputID": "resourcefulbees:bee_jar",
                         "nbtData": {
-                            "Entity": "resourcefulbees:beewitched_bee",
-                            "BeeType": "beewitched_bee",
-                            "Color": "#326847"
+                            "Entity": "resourcefulbees:beewitched_bee"
                         },
                         "weight": 20
                     }
@@ -52,7 +50,7 @@
         "mainOutputWeight": 0.20,
         "mainOutputCount": 1,
         "secondaryOutput": "minecraft:sugar",
-        "secondaryOutputWeight": 0.20,
+        "secondaryOutputWeight": 0.05,
         "secondaryOutputCount": 1,
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
