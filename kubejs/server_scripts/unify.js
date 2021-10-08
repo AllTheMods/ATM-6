@@ -372,6 +372,8 @@ onEvent('recipes', e => {
   e.replaceInput('iceandfire:sapphire_block', '#forge:storage_blocks/sapphire')
   e.replaceInput('minecraft:stick', '#forge:rods/wooden')
   e.replaceInput('pneumaticcraft:plastic','#forge:plastic')
+  e.replaceInput('thermal:coal_coke', '#forge:coal_coke') 
+  e.replaceInput('immersiveengineering:coke', '#forge:coal_coke')
 
   e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
   e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
@@ -382,6 +384,7 @@ onEvent('recipes', e => {
   e.replaceOutput('immersiveengineering:dust_sulfur', 'thermal:sulfur_dust')
   e.replaceOutput('mekanism:dust_quartz', 'thermal:quartz_dust')
   e.replaceOutput('appliedenergistics2:nether_quartz_dust', 'thermal:quartz_dust')
+  e.replaceOutput('thermal:coal_coke', 'immersiveengineering:coke')
   e.replaceOutput('mekanism:dust_diamond', 'thermal:diamond_dust')
   e.replaceOutput('createaddition:diamond_grit', 'thermal:diamond_dust')
 
@@ -602,6 +605,7 @@ onEvent('recipes', e => {
   // creosote
   e.recipes.thermal.pyrolyzer([Fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs').id('kubejs:thermal/pyrolyzer/charcoal')
   e.recipes.thermal.pyrolyzer([Fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], '#forge:storage_blocks/coal').id('kubejs:thermal/pyrolyzer/coke_block')
+  e.recipes.thermal.pyrolyzer([Fluid.of('immersiveengineering:creosote', 250), 'immersiveengineering:coal_coke'], '#minecraft:coals').id('kubejs:thermal/pyrolyzer/coal_coke')
   e.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [{ tag: 'minecraft:planks' }],
