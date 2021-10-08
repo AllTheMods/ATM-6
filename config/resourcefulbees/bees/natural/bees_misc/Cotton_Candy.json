@@ -3,7 +3,7 @@
     "maxTimeInHive": 1200,
     "traits": [],
     "creator": "NoControl, Dawn Felstar",
-    "lore": "Not because I want to be different, but because I want to be myself.",
+    "lore": "Not because I want to be different,\nbut because I want to be myself.",
     "loreColor": "#F7A8B8",
     "hasHoneycomb": true,
     "baseLayerTexture" : "misc/cotton_candy_bee",
@@ -23,25 +23,40 @@
     "MutationData": {
         "hasMutation": true,
         "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:cotton_candy_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "pamhc2foodcore:cottoncandyitem",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:cotton_candy_bee"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
-        ]
+        "mutations": [{
+            "type": "BLOCK_TO_ITEM",
+            "inputID": "resourcefulbees:cotton_candy_honeycomb_block",
+            "outputs": [{
+                "outputID": "pamhc2foodcore:cottoncandyitem",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:bee_jar",
+                "nbtData": {
+                    "Entity": "resourcefulbees:cotton_candy_bee"
+                },
+                "weight": 20
+            }]
+        }, {
+            "type": "ENTITY_TO_ENTITY",
+            "inputID": "minecraft:witch",
+            "outputs": [{
+                "outputID": "resourcefulbees:cotton_candy_bee",
+                "weight": 80
+            }, {
+                "outputID": "resourcefulbees:beewitched_bee",
+                "weight": 20
+            }]
+            }, {
+                "type": "ENTITY_TO_ENTITY",
+                "inputID": "vampirism:vampire",
+                "outputs": [{
+                    "outputID": "resourcefulbees:cotton_candy_bee",
+                    "weight": 80
+                }, {
+                    "outputID": "resourcefulbees:vampire_bee",
+                    "weight": 20
+                }]
+        }]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
@@ -78,8 +93,5 @@
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+    }   
 }
