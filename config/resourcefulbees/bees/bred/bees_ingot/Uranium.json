@@ -1,73 +1,73 @@
 {
-    "flower": "tag:forge:storage_blocks/uranium",
-    "maxTimeInHive": 2400,
-    "traits": [],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ato/uranium_bee",
-    "ColorData": {
-        "honeycombColor": "#fff37f",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:uranium_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "alltheores:uranium_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:uranium_bee",
-                            "BeeType": "uranium",
-                            "Color": "#fff37f"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:forge:storage_blocks/uranium",
+  "maxTimeInHive": 2400,
+  "traits": [],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/uranium_bee",
+  "ColorData": {
+    "honeycombColor": "#fff37f",
+    "modelType": "DEFAULT"
+  },
+  "CombatData": {
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:uranium_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "alltheores:uranium_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:uranium_bee",
+              "BeeType": "uranium",
+              "Color": "#fff37f"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_uranium",
-        "mainOutputWeight": 0.02,
-        "mainOutputCount": 1,
-        "secondaryOutput": "alltheores:uranium_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Ender",
-        "parent2": "Beeper",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/uranium",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "alltheores:ore_uranium",
+    "mainOutputWeight": 0.02,
+    "mainOutputCount": 1,
+    "secondaryOutput": "alltheores:uranium_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 2,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Ender",
+    "parent2": "Beeper",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "tag:forge:storage_blocks/uranium",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

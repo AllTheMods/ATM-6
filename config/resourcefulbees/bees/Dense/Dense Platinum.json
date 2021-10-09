@@ -1,67 +1,67 @@
 {
-    "flower": "allthecompressed:platinum_block_4x",
-    "maxTimeInHive": 2400,
-    "traits": [
-        "dense"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ato/platinum_bee",
-    "ColorData": {
-        "honeycombColor": "#A4EDFC",
-        "modelType": "ORE"
-    },
-    "CombatData": {
-        "isPassive": false,
-        "removeStingerOnAttack": false,
-        "inflictsPoison": true,
-        "attackDamage": 2147483647
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:dense_platinum_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "alltheores:platinum_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:dense_platinum_bee",
-                            "BeeType": "dense_platinum",
-                            "Color": "#A4EDFC"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "allthecompressed:platinum_block_4x",
+  "maxTimeInHive": 2400,
+  "traits": [
+    "dense"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/platinum_bee",
+  "ColorData": {
+    "honeycombColor": "#A4EDFC",
+    "modelType": "ORE"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 2147483647
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:dense_platinum_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "alltheores:platinum_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:dense_platinum_bee",
+              "BeeType": "dense_platinum",
+              "Color": "#A4EDFC"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_platinum",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 4,
-        "secondaryOutput": "alltheores:platinum_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 8,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": false
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "alltheores:ore_platinum",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 4,
+    "secondaryOutput": "alltheores:platinum_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 8,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

@@ -1,67 +1,67 @@
 {
-    "flower": "allthecompressed:nickel_block_4x",
-    "maxTimeInHive": 2400,
-    "traits": [
-        "dense"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ato/nickel_bee",
-    "ColorData": {
-        "honeycombColor": "#F5F2A3",
-        "modelType": "ORE"
-    },
-    "CombatData": {
-        "isPassive": false,
-        "removeStingerOnAttack": false,
-        "inflictsPoison": true,
-        "attackDamage": 2147483647
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:dense_nickel_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "alltheores:nickel_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:dense_nickel_bee",
-                            "BeeType": "dense_nickel",
-                            "Color": "#654740"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "allthecompressed:nickel_block_4x",
+  "maxTimeInHive": 2400,
+  "traits": [
+    "dense"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/nickel_bee",
+  "ColorData": {
+    "honeycombColor": "#F5F2A3",
+    "modelType": "ORE"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 2147483647
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:dense_nickel_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "alltheores:nickel_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:dense_nickel_bee",
+              "BeeType": "dense_nickel",
+              "Color": "#654740"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 4,
-        "mainOutput": "alltheores:ore_nickel",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
-        "secondaryOutput": "alltheores:nickel_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 8,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": false
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 4,
+    "mainOutput": "alltheores:ore_nickel",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 1,
+    "secondaryOutput": "alltheores:nickel_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 8,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

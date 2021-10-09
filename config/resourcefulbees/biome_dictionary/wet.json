@@ -1,23 +1,23 @@
 {
-    "biomes": [
-        "minecraft:swamp",
-        "minecraft:jungle",
-        "minecraft:jungle_hills",
-        "minecraft:jungle_edge",
-        "minecraft:swamp_hills",
-        "minecraft:modified_jungle",
-        "byg:bayou",
-        "byg:crag_gardens",
-        "byg:glowshroom_bayou",
-        "byg:mangrove_marshes",
-        "byg:vibrant_swamplands",
-        "byg:bog",
-        "byg:canyon_edge",
-        "byg:coral_mangroves",
-        "byg:fresh_water_lake",
-        "byg:frozen_lake",
-        "byg:marshlands",
-        "byg:oasis",
-        "byg:polluted_lake"
-    ]
+  "biomes": [
+    "minecraft:swamp",
+    "minecraft:jungle",
+    "minecraft:jungle_hills",
+    "minecraft:jungle_edge",
+    "minecraft:swamp_hills",
+    "minecraft:modified_jungle",
+    "byg:bayou",
+    "byg:crag_gardens",
+    "byg:glowshroom_bayou",
+    "byg:mangrove_marshes",
+    "byg:vibrant_swamplands",
+    "byg:bog",
+    "byg:canyon_edge",
+    "byg:coral_mangroves",
+    "byg:fresh_water_lake",
+    "byg:frozen_lake",
+    "byg:marshlands",
+    "byg:oasis",
+    "byg:polluted_lake"
+  ]
 }

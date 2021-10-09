@@ -49,16 +49,20 @@
             "weight": 20
           }
         ]
-        }, {
-          "type": "ENTITY_TO_ENTITY",
-          "inputID": "minecraft:witch",
-          "outputs": [{
-              "outputID": "minecraft:witch",
-              "weight": 80
-          }, {
-              "outputID": "resourcefulbees:alchemist_bee",
-              "weight": 20
-          }] 
+      },
+      {
+        "type": "ENTITY_TO_ENTITY",
+        "inputID": "minecraft:witch",
+        "outputs": [
+          {
+            "outputID": "minecraft:witch",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:alchemist_bee",
+            "weight": 20
+          }
+        ]
       }
     ]
   },

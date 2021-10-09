@@ -1,73 +1,73 @@
 {
-    "flower": "tag:forge:obsidian",
-    "maxTimeInHive": 1200,
-    "traits": [],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "misc/obsidian_bee",
-    "ColorData": {
-        "honeycombColor": "#211B20",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:obsidian_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:obsidian",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:obsidian_bee",
-                            "BeeType": "obsidian",
-                            "Color": "#211B20"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:forge:obsidian",
+  "maxTimeInHive": 1200,
+  "traits": [],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/obsidian_bee",
+  "ColorData": {
+    "honeycombColor": "#211B20",
+    "modelType": "DEFAULT"
+  },
+  "CombatData": {
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:obsidian_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:obsidian",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:obsidian_bee",
+              "BeeType": "obsidian",
+              "Color": "#211B20"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:obsidian",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 8,
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 1,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Water",
-        "parent2": "Lava",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "minecraft:obsidian",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:obsidian",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 8,
+    "secondaryOutput": "resourcefulbees:wax",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Water",
+    "parent2": "Lava",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "minecraft:obsidian",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

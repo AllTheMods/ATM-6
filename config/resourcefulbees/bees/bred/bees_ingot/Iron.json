@@ -1,81 +1,81 @@
 {
-    "flower": "tag:forge:storage_blocks/iron",
-    "maxTimeInHive": 2400,
-    "traits": [
-        "nether"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ores/iron/iron_bee",
-    "ColorData": {
-        "honeycombColor": "#ffcc99",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:iron_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:iron_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:iron_bee",
-                            "BeeType": "iron",
-                            "Color": "#ffcc99"
-                        }
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:iron_bee"
-                        },
-                        "weight": 20
-                    }
-                ]
+  "flower": "tag:forge:storage_blocks/iron",
+  "maxTimeInHive": 2400,
+  "traits": [
+    "nether"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ores/iron/iron_bee",
+  "ColorData": {
+    "honeycombColor": "#ffcc99",
+    "modelType": "DEFAULT"
+  },
+  "CombatData": {
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:iron_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:iron_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:iron_bee",
+              "BeeType": "iron",
+              "Color": "#ffcc99"
             }
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:iron_bee"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:iron_ore",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
-        "secondaryOutput": "minecraft:iron_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Quartz",
-        "parent2": "Stoned",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/iron",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:iron_ore",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 1,
+    "secondaryOutput": "minecraft:iron_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 2,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Quartz",
+    "parent2": "Stoned",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "tag:forge:storage_blocks/iron",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

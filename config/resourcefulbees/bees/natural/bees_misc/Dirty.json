@@ -1,80 +1,80 @@
 {
-    "flower": "tag:forge:dirt",
-    "maxTimeInHive": 1200,
-    "traits": [
-        "can_swim"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "misc/dirty_bee",
-    "ColorData": {
-        "honeycombColor": "#79553A",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:dirty_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:dirt",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:dirty_bee",
-                            "BeeType": "dirty",
-                            "Color": "#F1ED95"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:forge:dirt",
+  "maxTimeInHive": 1200,
+  "traits": [
+    "can_swim"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/dirty_bee",
+  "ColorData": {
+    "honeycombColor": "#79553A",
+    "modelType": "DEFAULT"
+  },
+  "CombatData": {
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:dirty_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:dirt",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:dirty_bee",
+              "BeeType": "dirty",
+              "Color": "#F1ED95"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:dirt",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 16,
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
-        "secondaryOutputCount": 1,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:OVERWORLD",
-        "spawnWeight": 2,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "tag:forge:dirt",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:dirt",
+    "mainOutputWeight": 0.5,
+    "mainOutputCount": 16,
+    "secondaryOutput": "resourcefulbees:wax",
+    "secondaryOutputWeight": 0.2,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "spawnWeight": 2,
+    "minYLevel": 0,
+    "maxYLevel": 255,
+    "minGroupSize": 1,
+    "maxGroupSize": 2,
+    "lightLevel": "ANY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "breedWeight": 10,
+    "breedChance": 0.8,
+    "feedItem": "tag:forge:dirt",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

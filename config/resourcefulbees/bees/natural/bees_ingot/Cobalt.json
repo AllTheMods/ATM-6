@@ -1,74 +1,74 @@
 {
-    "flower": "tag:forge:storage_blocks/cobalt",
-    "maxTimeInHive": 1200,
-    "traits": [
-        "nether"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "misc/cobalt_bee",
-    "ColorData": {
-        "honeycombColor": "#2248ba",
-        "modelType": "ORE"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:cobalt_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "tconstruct:cobalt_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:cobalt_bee",
-                            "BeeType": "cobalt",
-                            "Color": "#2248ba"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:forge:storage_blocks/cobalt",
+  "maxTimeInHive": 1200,
+  "traits": [
+    "nether"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/cobalt_bee",
+  "ColorData": {
+    "honeycombColor": "#2248ba",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:cobalt_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "tconstruct:cobalt_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:cobalt_bee",
+              "BeeType": "cobalt",
+              "Color": "#2248ba"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "tconstruct:cobalt_ore",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 1,
-        "secondaryOutput": "tconstruct:cobalt_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:cobalt",
-        "spawnWeight": 5,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "tag:forge:storage_blocks/cobalt",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "tconstruct:cobalt_ore",
+    "mainOutputWeight": 0.5,
+    "mainOutputCount": 1,
+    "secondaryOutput": "tconstruct:cobalt_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 2,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:cobalt",
+    "spawnWeight": 5,
+    "minYLevel": 0,
+    "maxYLevel": 255,
+    "minGroupSize": 1,
+    "maxGroupSize": 2,
+    "lightLevel": "ANY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "breedWeight": 10,
+    "breedChance": 0.8,
+    "feedItem": "tag:forge:storage_blocks/cobalt",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

@@ -1,85 +1,85 @@
 {
-    "flower": "tag:forge:sand",
-    "maxTimeInHive": 1200,
-    "traits": [],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "misc/sandy_bee",
-    "ColorData": {
-        "honeycombColor": "#DDD2B7",
-        "modelType": "MUSHROOM"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:sandy_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:sand",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:sandy_bee",
-                            "BeeType": "sandy",
-                            "Color": "#DDD2B7"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:forge:sand",
+  "maxTimeInHive": 1200,
+  "traits": [],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/sandy_bee",
+  "ColorData": {
+    "honeycombColor": "#DDD2B7",
+    "modelType": "MUSHROOM"
+  },
+  "CombatData": {
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:sandy_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:sand",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:sandy_bee",
+              "BeeType": "sandy",
+              "Color": "#DDD2B7"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:sand",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 16,
-        "mainNBTData": {},
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
-        "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": false
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:sandy",
-        "biomeBlacklist": "",
-        "spawnWeight": 5,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "",
-        "parent2": "",
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "tag:forge:sand",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:sand",
+    "mainOutputWeight": 0.5,
+    "mainOutputCount": 16,
+    "mainNBTData": {},
+    "secondaryOutput": "resourcefulbees:wax",
+    "secondaryOutputWeight": 0.2,
+    "secondaryOutputCount": 1,
+    "secondaryNBTData": {},
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "bottleNBTData": {},
+    "recipeTime": 200,
+    "hasFluidOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:sandy",
+    "biomeBlacklist": "",
+    "spawnWeight": 5,
+    "minYLevel": 0,
+    "maxYLevel": 255,
+    "minGroupSize": 1,
+    "maxGroupSize": 2,
+    "lightLevel": "ANY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "",
+    "parent2": "",
+    "breedWeight": 10,
+    "breedChance": 0.8,
+    "feedItem": "tag:forge:sand",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

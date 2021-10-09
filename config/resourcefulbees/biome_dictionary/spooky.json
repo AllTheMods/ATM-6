@@ -1,7 +1,7 @@
 {
   "biomes": [
-      "minecraft:dark_forest",
-      "minecraft:dark_forest_hills",
-      "byg:dead_sea"
+    "minecraft:dark_forest",
+    "minecraft:dark_forest_hills",
+    "byg:dead_sea"
   ]
 }

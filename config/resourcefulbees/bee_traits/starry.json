@@ -52,7 +52,8 @@
     "draconicevolution.draconic_projectile"
   ],
   "particleName": "minecraft:dripping_honey",
-  "potionDamageEffects": [{
+  "potionDamageEffects": [
+    {
       "effectID": "minecraft:nausea",
       "strength": 5
     },
