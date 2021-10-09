@@ -377,6 +377,7 @@ onEvent('recipes', e => {
   e.replaceInput('pneumaticcraft:plastic', '#forge:plastic')
   e.replaceInput('thermal:coal_coke', '#forge:coal_coke')
   e.replaceInput('immersiveengineering:coal_coke', '#forge:coal_coke')
+
   e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
   e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
   e.replaceOutput('iceandfire:sapphire_gem', 'projectred-core:sapphire')
