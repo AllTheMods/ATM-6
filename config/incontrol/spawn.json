@@ -53,7 +53,8 @@
     "dimension": "compactmachines:compact_world",
     "mod": "ars_nouveau",
     "result": "deny"
-  }  {
+  },
+  {
     "mob": [
       "mana-and-artifice:demon_imp",
       "mana-and-artifice:hulking_zombie",
