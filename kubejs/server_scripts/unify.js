@@ -373,9 +373,6 @@ onEvent('recipes', e => {
   e.replaceInput('minecraft:stick', '#forge:rods/wooden')
   e.replaceInput('pneumaticcraft:plastic', '#forge:plastic')
   e.replaceInput('thermal:coal_coke', '#forge:coal_coke')
-  e.replaceInput('immersiveengineering:coke', '#forge:coal_coke')
-  e.replaceInput('pneumaticcraft:plastic', '#forge:plastic')
-  e.replaceInput('thermal:coal_coke', '#forge:coal_coke')
   e.replaceInput('immersiveengineering:coal_coke', '#forge:coal_coke')
 
   e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
