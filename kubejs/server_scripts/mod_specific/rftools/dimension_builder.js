@@ -10,4 +10,3 @@ onEvent('recipes', e => {
     C: 'rftoolsbase:machine_frame'
   }).id('kubejs:rftoolsdim/dimension_builder')
 })
-

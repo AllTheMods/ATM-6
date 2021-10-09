@@ -371,8 +371,8 @@ onEvent('recipes', e => {
   e.replaceInput('iceandfire:sapphire', '#forge:gems/sapphire')
   e.replaceInput('iceandfire:sapphire_block', '#forge:storage_blocks/sapphire')
   e.replaceInput('minecraft:stick', '#forge:rods/wooden')
-  e.replaceInput('pneumaticcraft:plastic','#forge:plastic')
-  e.replaceInput('thermal:coal_coke', '#forge:coal_coke') 
+  e.replaceInput('pneumaticcraft:plastic', '#forge:plastic')
+  e.replaceInput('thermal:coal_coke', '#forge:coal_coke')
   e.replaceInput('immersiveengineering:coke', '#forge:coal_coke')
 
   e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')

@@ -1,16 +1,16 @@
 {
   "biomes": [
-      "minecraft:desert",
-      "minecraft:desert_hills",
-      "minecraft:badlands",
-      "minecraft:wooded_badlands_plateau",
-      "minecraft:badlands_plateau",
-      "minecraft:desert_lakes",
-      "byg:dunes",
-      "byg:mojave_desert",
-      "byg:red_desert",
-      "byg:lush_red_desert",
-      "byg:oasis",
-      "byg:red_desert_dunes"
+    "minecraft:desert",
+    "minecraft:desert_hills",
+    "minecraft:badlands",
+    "minecraft:wooded_badlands_plateau",
+    "minecraft:badlands_plateau",
+    "minecraft:desert_lakes",
+    "byg:dunes",
+    "byg:mojave_desert",
+    "byg:red_desert",
+    "byg:lush_red_desert",
+    "byg:oasis",
+    "byg:red_desert_dunes"
   ]
 }

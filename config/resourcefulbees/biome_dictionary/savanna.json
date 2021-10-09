@@ -1,9 +1,9 @@
 {
   "biomes": [
-      "minecraft:savanna",
-      "minecraft:savanna_plateau",
-      "minecraft:shattered_savanna",
-      "minecraft:shattered_savanna_plateau",
-      "byg:baobab_savanna"
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:shattered_savanna",
+    "minecraft:shattered_savanna_plateau",
+    "byg:baobab_savanna"
   ]
 }

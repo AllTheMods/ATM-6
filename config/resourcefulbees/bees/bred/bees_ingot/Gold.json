@@ -1,94 +1,94 @@
 {
-    "flower": "tag:forge:storage_blocks/gold",
-    "maxTimeInHive": 2400,
-    "traits": [
-        "nether"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ores/gold/gold_bee",
-    "ColorData": {
-        "honeycombColor": "#FFDC00",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:gold_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:gold_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:gold_bee",
-                            "BeeType": "gold",
-                            "Color": "#FFDC00"
-                        },
-                        "weight": 20
-                    }
-                ]
+  "flower": "tag:forge:storage_blocks/gold",
+  "maxTimeInHive": 2400,
+  "traits": [
+    "nether"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ores/gold/gold_bee",
+  "ColorData": {
+    "honeycombColor": "#FFDC00",
+    "modelType": "DEFAULT"
+  },
+  "CombatData": {
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:gold_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:gold_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:gold_bee",
+              "BeeType": "gold",
+              "Color": "#FFDC00"
             },
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "minecraft:netherite_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:netherite_scrap",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:netherite_bee",
-                            "BeeType": "netherite",
-                            "Color": "#654740"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:gold_ore",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
-        "secondaryOutput": "minecraft:gold_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Quartz",
-        "parent2": "Stoned",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/gold",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      },
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "minecraft:netherite_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:netherite_scrap",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:netherite_bee",
+              "BeeType": "netherite",
+              "Color": "#654740"
+            },
+            "weight": 20
+          }
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:gold_ore",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 1,
+    "secondaryOutput": "minecraft:gold_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 2,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Quartz",
+    "parent2": "Stoned",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "tag:forge:storage_blocks/gold",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

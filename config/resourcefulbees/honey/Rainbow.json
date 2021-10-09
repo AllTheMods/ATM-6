@@ -2,7 +2,7 @@
   "hunger": 3,
   "honeyColor": "#FFFFFF",
   "saturation": 0.25,
-  "isRainbow" : true,
+  "isRainbow": true,
   "effects": [
     {
       "effectID": "minecraft:glowing",
