@@ -1,7 +1,6 @@
 {
   "flower": "botania:livingrock",
   "maxTimeInHive": 1200,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/mystical_bee",
   "ColorData": {
@@ -13,12 +12,6 @@
     "isBeeColored": true,
     "isRainbowBee": true,
     "modelType": "MUSHROOM"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

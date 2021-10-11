@@ -1,7 +1,6 @@
 {
   "flower": "tag:forge:stone",
   "maxTimeInHive": 1200,
-  "traits": [],
   "hasHoneycomb": true,
   "creator": "Lexxie",
   "lore": "In loving memory of Stan Lee",
@@ -14,12 +13,6 @@
     "primaryLayerTexture": "/custom/primary_layer",
     "secondaryLayerTexture": "/custom/secondary_layer",
     "modelType": "DEFAULT"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

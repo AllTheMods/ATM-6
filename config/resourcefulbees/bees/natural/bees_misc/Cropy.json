@@ -1,18 +1,11 @@
 {
   "flower": "minecraft:hay_block",
   "maxTimeInHive": 1200,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "/crop/wheat_bee",
   "ColorData": {
     "honeycombColor": "#dcbb65",
     "modelType": "CROP"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

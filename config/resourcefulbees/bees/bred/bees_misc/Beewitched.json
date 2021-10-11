@@ -1,7 +1,6 @@
 {
   "flower": "eidolon:crucible",
   "maxTimeInHive": 1200,
-  "traits": [],
   "creator": "NoControl, Dawn Felstar",
   "lore": "Double, double toil and trouble;\nfire burn and cauldron bubble.",
   "loreColor": "#326847",
@@ -13,12 +12,6 @@
     "honeycombColor": "#326847",
     "isGlowing": true,
     "emissiveLayerTexture": "misc/beewitched_bee_emissive"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

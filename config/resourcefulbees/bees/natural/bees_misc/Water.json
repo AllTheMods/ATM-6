@@ -10,12 +10,6 @@
     "honeycombColor": "#8499D6",
     "modelType": "MUSHROOM"
   },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
-  },
   "MutationData": {
     "hasMutation": true,
     "mutationCount": 1,

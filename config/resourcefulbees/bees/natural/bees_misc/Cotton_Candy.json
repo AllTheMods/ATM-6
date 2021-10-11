@@ -1,7 +1,6 @@
 {
   "flower": "thermal:sugar_cane_block",
   "maxTimeInHive": 1200,
-  "traits": [],
   "creator": "NoControl, Dawn Felstar",
   "lore": "Not because I want to be different,\nbut because I want to be myself.",
   "loreColor": "#F7A8B8",
@@ -88,7 +87,6 @@
   "SpawnData": {
     "canSpawnInWorld": true,
     "biomeWhitelist": "byg:pumpkin_forest",
-    "biomeBlacklist": "",
     "spawnWeight": 5,
     "minYLevel": 0,
     "maxYLevel": 255,
@@ -98,8 +96,6 @@
   },
   "BreedData": {
     "isBreedable": true,
-    "parent1": "",
-    "parent2": "",
     "breedWeight": 10,
     "breedChance": 0.8,
     "feedItem": "pamhc2foodcore:cottoncandyitem",

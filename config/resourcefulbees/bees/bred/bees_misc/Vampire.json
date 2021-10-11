@@ -1,7 +1,6 @@
 {
   "flower": "vampirism:vampire_orchid",
   "maxTimeInHive": 1200,
-  "traits": [],
   "creator": "NoControl, Dawn Felstar",
   "lore": "Listen to them, the children of the night.\nWhat music they make!",
   "loreColor": "#bb0a1e",
@@ -13,12 +12,6 @@
     "honeycombColor": "#bb0a1e",
     "isGlowing": true,
     "emissiveLayerTexture": "misc/vampire_bee_emissive"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,
@@ -49,15 +42,12 @@
     "mainOutput": "bloodmagic:life_essence_fluid",
     "mainOutputWeight": 0.1,
     "mainOutputCount": 10,
-    "mainNBTData": {},
     "secondaryOutput": "vampirism:vampire_blood_bottle",
     "secondaryOutputWeight": 0.1,
     "secondaryOutputCount": 1,
-    "secondaryNBTData": {},
     "bottleOutput": "minecraft:honey_bottle",
     "bottleOutputWeight": 0.25,
     "bottleOutputCount": 1,
-    "bottleNBTData": {},
     "recipeTime": 200,
     "hasFluidOutput": true
   },

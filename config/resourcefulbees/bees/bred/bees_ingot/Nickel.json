@@ -1,18 +1,11 @@
 {
   "flower": "tag:forge:storage_blocks/nickel",
   "maxTimeInHive": 2400,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "ato/nickel_bee",
   "ColorData": {
     "honeycombColor": "#F5F2A3",
     "modelType": "DEFAULT"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

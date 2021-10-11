@@ -1,7 +1,6 @@
 {
   "flower": "cookingforblockheads:fridge",
   "maxTimeInHive": 1200,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "/custom/bee",
   "ColorData": {
@@ -12,12 +11,6 @@
     "secondaryLayerTexture": "/custom/secondary_layer",
     "isBeeColored": true,
     "modelType": "DEFAULT"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,
