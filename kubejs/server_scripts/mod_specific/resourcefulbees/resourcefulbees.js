@@ -71,4 +71,8 @@ onEvent('recipes', e => {
     A: 'minecraft:comparator',
     R: '#forge:storage_blocks/redstone'
   })
+
+  removeRecipeByOutput(e, [
+    'creativeapiary:tcreative_apiary'
+  ])
 })
