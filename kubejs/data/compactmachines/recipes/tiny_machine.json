@@ -15,16 +15,19 @@
       "component": "W"
     }
   ],
+
   "catalyst": {
     "id": "minecraft:ender_pearl",
     "Count": 1
   },
+
   "components": {
     "W": {
       "type": "compactcrafting:block",
       "block": "compactmachines:wall"
     }
   },
+
   "outputs": [
     {
       "id": "compactmachines:machine_tiny",

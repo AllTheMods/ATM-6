@@ -9,21 +9,9 @@
     {
       "type": "compactcrafting:mixed",
       "pattern": [
-        [
-          "W",
-          "W",
-          "W"
-        ],
-        [
-          "W",
-          "G",
-          "W"
-        ],
-        [
-          "W",
-          "W",
-          "W"
-        ]
+        ["W", "W", "W"],
+        ["W", "G", "W"],
+        ["W", "W", "W"]
       ]
     },
     {
@@ -31,10 +19,12 @@
       "component": "W"
     }
   ],
+
   "catalyst": {
     "id": "minecraft:ender_pearl",
     "Count": 1
   },
+
   "components": {
     "W": {
       "type": "compactcrafting:block",
@@ -45,6 +35,7 @@
       "block": "minecraft:gold_block"
     }
   },
+
   "outputs": [
     {
       "id": "compactmachines:machine_normal",
