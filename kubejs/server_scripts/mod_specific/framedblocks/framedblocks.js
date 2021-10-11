@@ -82,7 +82,7 @@ onEvent('recipes', e => {
       ['framedblocks:framed_cube', 'framedblocks:framed_double_prism_corner', 1],
       ['framedblocks:framed_cube', 'framedblocks:framed_double_threeway_corner', 1],
       ['framedblocks:framed_cube', 'framedblocks:framed_floor_board', 8],
-      ['framedblocks:framed_cube', 'framedblocks:framed_lattice', 4],
+      ['framedblocks:framed_cube', 'framedblocks:framed_lattice_block', 4],
       ['framedblocks:framed_cube', 'framedblocks:framed_vertical_stairs', 1],
       ['framedblocks:framed_cube', 'framedblocks:framed_bars', 8],
       ['framedblocks:framed_cube', 'framedblocks:framed_pane', 8],
@@ -112,7 +112,7 @@ onEvent('recipes', e => {
     'framedblocks:framed_double_prism_corner',
     'framedblocks:framed_double_threeway_corner',
     'framedblocks:framed_floor_board',
-    'framedblocks:framed_lattice',
+    'framedblocks:framed_lattice_block',
     'framedblocks:framed_vertical_stairs',
     'framedblocks:framed_bars',
     'framedblocks:framed_pane'
