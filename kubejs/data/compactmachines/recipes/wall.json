@@ -1,37 +1,34 @@
 {
-    "type": "compactcrafting:miniaturization",
-    "recipeSize": 1,
-    "layers": [
-      {
-        "type": "compactcrafting:filled",
-        "component": "R"
-      },
-      {
-        "type": "compactcrafting:filled",
-        "component": "I"
-      }
-    ],
-  
-    "catalyst": {
-      "id": "minecraft:ender_pearl",
-      "Count": 1
+  "type": "compactcrafting:miniaturization",
+  "recipeSize": 1,
+  "layers": [
+    {
+      "type": "compactcrafting:filled",
+      "component": "R"
     },
-  
-    "components": {
-      "R": {
-        "type": "compactcrafting:block",
-        "block": "minecraft:redstone_wire"
-      },
-      "I": {
-        "type": "compactcrafting:block",
-        "block": "minecraft:iron_block"
-      }
+    {
+      "type": "compactcrafting:filled",
+      "component": "I"
+    }
+  ],
+  "catalyst": {
+    "id": "minecraft:ender_pearl",
+    "Count": 1
+  },
+  "components": {
+    "R": {
+      "type": "compactcrafting:block",
+      "block": "minecraft:redstone_wire"
     },
-  
-    "outputs": [
-      {
-        "id": "compactmachines:wall",
-        "Count": 16
-      }
-    ]
-  }
+    "I": {
+      "type": "compactcrafting:block",
+      "block": "minecraft:iron_block"
+    }
+  },
+  "outputs": [
+    {
+      "id": "compactmachines:wall",
+      "Count": 16
+    }
+  ]
+}

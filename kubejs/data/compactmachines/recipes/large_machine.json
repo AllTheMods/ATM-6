@@ -11,8 +11,44 @@
       "wall": "W"
     },
     {
-      "type": "compactcrafting:hollow",
-      "wall": "W"
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        [
+          "W",
+          "-",
+          "-",
+          "-",
+          "W"
+        ],
+        [
+          "W",
+          "-",
+          "D",
+          "-",
+          "W"
+        ],
+        [
+          "W",
+          "-",
+          "-",
+          "-",
+          "W"
+        ],
+        [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ]
+      ]
     },
     {
       "type": "compactcrafting:hollow",
@@ -23,19 +59,20 @@
       "component": "W"
     }
   ],
-
   "catalyst": {
     "id": "minecraft:ender_pearl",
     "Count": 1
   },
-
   "components": {
     "W": {
       "type": "compactcrafting:block",
       "block": "compactmachines:wall"
+    },
+    "D": {
+      "type": "compactcrafting:block",
+      "block": "minecraft:obsidian"
     }
   },
-
   "outputs": [
     {
       "id": "compactmachines:machine_large",
