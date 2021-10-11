@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tool_mixingbowl"
+    },
+    {
+      "tag": "forge:groundmeats/groundmutton"
+    },
+    {
+      "tag": "forge:spices/saltandpepper"
+    },
+    {
+      "tag": "forge:crops/spiceleaf"
+    },
+    {
+      "tag": "forge:condiments/mustard"
+    }
+  ],
+  "result": {
+    "item": "pamhc2foodextended:gourmetmuttonpattyitem",
+    "count": 1
+  }
+}

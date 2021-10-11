@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "MMM",
+    "SMS"
+  ],
+  "key": {
+    "C": {
+      "item": "endergetic:ender_campfire"
+    },
+    "M": {
+      "item": "endergetic:eumus_brick"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moreminecarts:endfire_cart"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "endergetic"
+    }
+  ]
+}

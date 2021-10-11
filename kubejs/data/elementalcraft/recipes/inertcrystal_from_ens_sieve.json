@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "exnihilosequentia"
+        }
+      ],
+      "recipe": {
+        "type": "exnihilosequentia:sieve",
+        "rolls": [
+          {
+            "chance": 0.015,
+            "mesh": "iron"
+          },
+          {
+            "chance": 0.015,
+            "mesh": "diamond"
+          }
+        ],
+        "input": {
+          "item": "minecraft:gravel"
+        },
+        "result": {
+          "item": "elementalcraft:inertcrystal"
+        }
+      }
+    }
+  ]
+}
+
+
