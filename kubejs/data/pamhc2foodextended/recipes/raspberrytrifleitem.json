@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tool_bakeware"
+    },
+    {
+      "tag": "forge:crops/raspberry"
+    },
+    {
+      "tag": "forge:cream"
+    },
+    {
+      "tag": "forge:spices/vanilla"
+    },
+    {
+      "tag": "forge:dough"
+    }
+  ],
+  "result": {
+    "item": "pamhc2foodextended:raspberrytrifleitem",
+    "count": 1
+  }
+}
