@@ -407,31 +407,6 @@
   "item.resourcefulbees.chaotic_bee_spawn_egg": "Chaotic Bee Spawn Egg",
   "entity.resourcefulbees.chaotic_bee": "Chaotic Bee",
 
-  "block.resourcefulbees.cotton_candy_honeycomb_block": "Cotton Candy Honeycomb Block",
-  "item.resourcefulbees.cotton_candy_honeycomb": "Cotton Candy Honeycomb",
-  "item.resourcefulbees.cotton_candy_bee_spawn_egg": "Cotton Candy Bee Spawn Egg",
-  "entity.resourcefulbees.cotton_candy_bee": "Cotton Candy Bee",
-
-  "block.resourcefulbees.beewitched_honeycomb_block": "Beewitched Honeycomb Block",
-  "item.resourcefulbees.beewitched_honeycomb": "Beewitched Honeycomb",
-  "item.resourcefulbees.beewitched_bee_spawn_egg": "Beewitched Bee Spawn Egg",
-  "entity.resourcefulbees.beewitched_bee": "Beewitched Bee",
-
-   "block.resourcefulbees.vampire_honeycomb_block": "Vampire Honeycomb Block",
-   "item.resourcefulbees.vampire_honeycomb": "Vampire Honeycomb",
-   "item.resourcefulbees.vampire_bee_spawn_egg": "Vampire Bee Spawn Egg",
-   "entity.resourcefulbees.vampire_bee": "Vampire Bee",
-
-   "block.resourcefulbees.wizard_honeycomb_block": "Wizard Honeycomb Block",
-   "item.resourcefulbees.wizard_honeycomb": "Wizard Honeycomb",
-   "item.resourcefulbees.wizard_bee_spawn_egg": "Wizard Bee Spawn Egg",
-   "entity.resourcefulbees.wizard_bee": "Wizard Bee",
-
-   "block.resourcefulbees.alchemist_honeycomb_block": "Alchemist Honeycomb Block",
-   "item.resourcefulbees.alchemist_honeycomb": "Alchemist Honeycomb",
-   "item.resourcefulbees.alchemist_bee_spawn_egg": "Alchemist Bee Spawn Egg",
-   "entity.resourcefulbees.alchemist_bee": "Alchemist Bee",
-
   "trait.resourcefulbees.draconic": "Draconic Trait",
   "trait.resourcefulbees.awakened": "Awakened Trait",
   "trait.resourcefulbees.chaotic": "Chaotic Trait",
@@ -439,3 +414,4 @@
   "trait.resourcefulbees.starry": "Starry Night Trait",
   "trait.resourcefulbees.beediddy": "Beediddy Trait"
 }
+
