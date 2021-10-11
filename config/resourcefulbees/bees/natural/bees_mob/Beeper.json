@@ -52,8 +52,7 @@
     "bottleOutput": "minecraft:honey_bottle",
     "bottleOutputWeight": 0.25,
     "bottleOutputCount": 1,
-    "recipeTime": 200,
-    "hasFluidOutput": false
+    "recipeTime": 200
   },
   "SpawnData": {
     "canSpawnInWorld": true,

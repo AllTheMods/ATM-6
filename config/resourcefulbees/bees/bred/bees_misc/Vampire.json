@@ -7,7 +7,6 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/vampire_bee",
   "ColorData": {
-    "isBeeColored": false,
     "modelType": "WITCH",
     "honeycombColor": "#bb0a1e",
     "isGlowing": true,

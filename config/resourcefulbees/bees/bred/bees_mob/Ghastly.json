@@ -11,7 +11,29 @@
     "modelType": "DEFAULT"
   },
   "MutationData": {
-    "hasMutation": false
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:ghastly_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "resourcefulbees:ghastly_honeycomb",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:ghastly_bee",
+              "BeeType": "ghastly",
+              "Color": "#B7C7C7"
+            },
+            "weight": 20
+          }
+        ]
+      }
+    ]
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,

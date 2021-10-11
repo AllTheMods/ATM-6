@@ -7,7 +7,6 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/warlock_bee",
   "ColorData": {
-    "isBeeColored": false,
     "modelType": "WITCH",
     "honeycombColor": "#374798",
     "isGlowing": true,

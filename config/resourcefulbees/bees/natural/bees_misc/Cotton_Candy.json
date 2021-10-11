@@ -7,7 +7,6 @@
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/cotton_candy_bee",
   "ColorData": {
-    "isBeeColored": false,
     "modelType": "CROP",
     "honeycombColor": "#55CDFC",
     "isGlowing": true,

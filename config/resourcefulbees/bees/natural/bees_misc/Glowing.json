@@ -17,7 +17,6 @@
     "isBeeColored": true,
     "isGlowing": true,
     "glowColor": "#D6D30D",
-    "isEnchanted": false,
     "modelType": "DEFAULT"
   },
   "MutationData": {
