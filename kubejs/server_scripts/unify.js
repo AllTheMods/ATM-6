@@ -25,7 +25,7 @@ onEvent('recipes', e => {
 
     e.recipes.minecraft.smelting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.minecraft.blasting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
-    e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem } })
+    e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem, count: 1 } })
     e.recipes.appliedenergistics2.grinder({ input: { tag: `forge:ingots/${name}` }, result: { primary: { item: dustItem } }, turns: 8 })
     e.recipes.immersiveengineering.crusher({ secondaries: [], result: { base_ingredient: { item: dustItem } }, input: { tag: `forge:ingots/${name}` }, energy: 3000 })
 
