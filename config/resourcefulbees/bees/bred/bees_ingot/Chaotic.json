@@ -59,11 +59,7 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "draconicevolution:chaotic_core",
-    "feedAmount": 3,
-    "childGrowthDelay": -24000,
-    "breedDelay": 6000
+    "isBreedable": false
   },
   "TraitData": {
     "hasTraits": true

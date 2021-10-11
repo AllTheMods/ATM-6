@@ -1,7 +1,6 @@
 {
   "flower": "all",
   "maxTimeInHive": 1200,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "/ores/custom/custom_bee_primary",
   "ColorData": {
@@ -15,12 +14,6 @@
     "isGlowing": true,
     "glowColor": "#ffffff",
     "modelType": "ORE"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

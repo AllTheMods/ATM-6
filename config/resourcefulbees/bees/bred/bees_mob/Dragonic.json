@@ -1,7 +1,6 @@
 {
   "flower": "minecraft:end_stone",
   "maxTimeInHive": 4800,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "/custom/bee",
   "ColorData": {
@@ -15,12 +14,6 @@
     "isGlowing": true,
     "glowColor": "#E400FF",
     "modelType": "DRAGON"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

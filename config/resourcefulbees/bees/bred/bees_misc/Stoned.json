@@ -1,18 +1,11 @@
 {
   "flower": "tag:forge:stone",
   "maxTimeInHive": 1200,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/stoned_bee",
   "ColorData": {
     "honeycombColor": "#5A5A5A",
     "modelType": "DEFAULT"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

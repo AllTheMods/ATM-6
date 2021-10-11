@@ -1,18 +1,11 @@
 {
   "flower": "tag:forge:storage_blocks/osmium",
   "maxTimeInHive": 2400,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "ato/osmium_bee",
   "ColorData": {
     "honeycombColor": "#BDCBD4",
     "modelType": "DEFAULT"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

@@ -10,12 +10,6 @@
     "honeycombColor": "#D0E4E1",
     "modelType": "DEFAULT"
   },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
-  },
   "MutationData": {
     "hasMutation": true,
     "mutationCount": 1,

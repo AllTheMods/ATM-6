@@ -1,24 +1,16 @@
 {
   "flower": "vampirism:alchemical_cauldron",
   "maxTimeInHive": 1200,
-  "traits": [],
   "creator": "NoControl, Dawn Felstar",
   "lore": "You are here to learn the subtle science and exact art of potion-making.\nAs there is little foolish wand-waving here,\nmany of you will hardly believe this is magic.",
   "loreColor": "#5d2560",
   "hasHoneycomb": true,
   "baseLayerTexture": "misc/alchemist_bee",
   "ColorData": {
-    "isBeeColored": false,
     "modelType": "WITCH",
     "honeycombColor": "#5d2560",
     "isGlowing": true,
     "emissiveLayerTexture": "misc/alchemist_bee_emissive"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

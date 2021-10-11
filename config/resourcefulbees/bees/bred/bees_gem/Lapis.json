@@ -1,18 +1,11 @@
 {
   "flower": "tag:forge:storage_blocks/lapis",
   "maxTimeInHive": 2400,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "ores/lapis/lapis_bee",
   "ColorData": {
     "honeycombColor": "#345ec3",
     "modelType": "ORE"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

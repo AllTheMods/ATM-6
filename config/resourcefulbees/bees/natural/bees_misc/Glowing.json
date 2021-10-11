@@ -17,14 +17,7 @@
     "isBeeColored": true,
     "isGlowing": true,
     "glowColor": "#D6D30D",
-    "isEnchanted": false,
     "modelType": "DEFAULT"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,

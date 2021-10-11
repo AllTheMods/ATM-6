@@ -1,18 +1,11 @@
 {
   "flower": "tag:forge:storage_blocks/diamond",
   "maxTimeInHive": 2400,
-  "traits": [],
   "hasHoneycomb": true,
   "baseLayerTexture": "ores/diamond/diamond_bee",
   "ColorData": {
     "honeycombColor": "#00ffff",
     "modelType": "ORE"
-  },
-  "CombatData": {
-    "isPassive": true,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
   },
   "MutationData": {
     "hasMutation": true,
