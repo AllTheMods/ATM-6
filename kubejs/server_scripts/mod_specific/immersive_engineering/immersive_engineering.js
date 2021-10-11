@@ -45,7 +45,7 @@ onEvent('recipes', e => {
     S: ['#forge:sand', '#forge:slag'],
     G: '#forge:gravel',
     O: '#forge:water'
-  }).id('kubejs:engineersdecor/slag_brick_block')
+  }).id('kubejs:immersivepetroleum/asphalt')
 
   modifyShaped(e, 'engineerstools:crushing_hammer', 1, ['RI ', 'BS ', '  S'], {
     R: '#forge:string',
