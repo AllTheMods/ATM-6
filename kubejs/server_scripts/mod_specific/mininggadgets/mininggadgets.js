@@ -4,7 +4,7 @@ onEvent('recipes', e => {
     'R': '#forge:storage_blocks/redstone',
     'D': '#forge:gems/diamond',
     'A': '#forge:nuggets/allthemodium',
-    'G': 'minecraft:glass_pane'
+    'G': '#forge:glass_panes'
   }).id(`kubejs:mininggadgets/upgrade`)
 
   removeRecipeByID(e, [

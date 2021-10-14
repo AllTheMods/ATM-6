@@ -7,7 +7,7 @@ onEvent('recipes', e => {
         item: result,
         count: rCount
       }]
-    })
+    }).id(`kubejs:pressure/${result.replace(':', '/')}`)
   }
 
   pressure([{
