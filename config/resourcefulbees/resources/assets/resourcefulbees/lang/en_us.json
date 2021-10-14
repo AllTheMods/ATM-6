@@ -407,6 +407,11 @@
   "item.resourcefulbees.chaotic_bee_spawn_egg": "Chaotic Bee Spawn Egg",
   "entity.resourcefulbees.chaotic_bee": "Chaotic Bee",
 
+  "block.resourcefulbees.cotton_candy_honeycomb_block": "Cotton Candy Honeycomb Block",
+  "item.resourcefulbees.cotton_candy_honeycomb": "Cotton Candy Honeycomb",
+  "item.resourcefulbees.cotton_candy_bee_spawn_egg": "Cotton Candy Bee Spawn Egg",
+  "entity.resourcefulbees.cotton_candy_bee": "Cotton Candy Bee",
+  
   "trait.resourcefulbees.draconic": "Draconic Trait",
   "trait.resourcefulbees.awakened": "Awakened Trait",
   "trait.resourcefulbees.chaotic": "Chaotic Trait",

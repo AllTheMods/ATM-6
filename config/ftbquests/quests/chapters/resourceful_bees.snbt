@@ -243,10 +243,7 @@
 			x: 11.60612244897959d
 			y: 0.9923469387754764d
 			subtitle: "All your comb are belong to us"
-			dependencies: [
-				"18A1EA065FF47F55"
-				"257064EF9D295744"
-			]
+			dependencies: ["18A1EA065FF47F55"]
 			size: 1.25d
 			id: "0034618BF30DCBBB"
 			tasks: [
@@ -4743,8 +4740,10 @@
 			x: 0.0d
 			y: 3.5d
 			shape: "hexagon"
-			subtitle: "Minecraft bee is trans"
 			description: ["Spawns naturally."]
+			hide_dependency_lines: true
+			dependencies: ["1B1DE94EC57DC4E4"]
+			dependency_requirement: "one_completed"
 			id: "2AC3B3501A718A2D"
 			tasks: [{
 				id: "7FF127A9088D27A4"
