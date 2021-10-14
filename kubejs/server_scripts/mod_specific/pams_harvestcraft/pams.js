@@ -17,13 +17,10 @@ onEvent('recipes', e => {
     B: 'pamhc2foodcore:juiceritem'
   }).id(`kubejs:p8juiceitem`)
 
-  e.replaceOutput('#forge:cheese', 'pamhc2foodcore:cheeseitem')
-
   removeRecipeByID(e, [
     'pamhc2foodcore:fruitpunchitem',
     'pamhc2foodcore:applejuiceitem',
     'pamhc2foodcore:p8juiceitem',
     'pamhc2foodcore:cottoncandyitem',
-    'pamhc2foodextended:peachesandcreamoatmealitem'
   ])
 })
