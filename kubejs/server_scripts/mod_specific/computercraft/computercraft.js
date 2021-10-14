@@ -11,6 +11,9 @@ onEvent('recipes', e => {
   }).id(`kubejs:computercraft/turtle_normal`)
 
   removeRecipeByID(e, [
-    'advancedperipherals:chunk_controller'
+    'advancedperipherals:chunk_controller',
+    'computercraft:turtle_normal',
+    'computercraft:turtle_advanced',
+    'computercraft:turtle_advanced_upgrade'
   ])
 })
