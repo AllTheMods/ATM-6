@@ -1,9 +1,12 @@
 onEvent('recipes', e => {
   let trees = ['orange', 'peach', 'pear', 'plum', 'pawpaw', 'soursop', 'apricot', 'banana', 'date', 'dragonfruit', 'fig', 'grapefruit', 'mango', 'papaya', 'persimmon', 'pomegranate', 'starfruit', 'breadfruit', 'jackfruit', 'guava', 'lychee', 'passionfruit', 'rambutan', 'tamarind',]
-  trees.forEach(type => modifyShaped(e, `pamhc2foodextended:${type}juiceitem`, 1, ['FFF', 'FBF', 'FFF'], {
-    F: `pamhc2trees:${type}item`,
-    B: 'pamhc2foodcore:juiceritem'
-  }))
+  trees.forEach(type => {
+    e.remove({ output: `pamhc2foodextended:${type}juiceitem` })
+    e.shaped(`pamhc2foodextended:${type}juiceitem`, ['FFF', 'FBF', 'FFF'], {
+      F: `pamhc2trees:${type}item`,
+      B: 'pamhc2foodcore:juiceritem'
+    }).id(`kubejs:shaped/pamhc2foodextended/${type}juiceitem`)
+  })
   e.shaped('pamhc2foodcore:fruitpunchitem', ['FFF', 'FBF', 'FFF'], {
     F: '#forge:fruits',
     B: '#forge:juices'
