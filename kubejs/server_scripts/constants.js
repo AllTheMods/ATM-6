@@ -21,7 +21,7 @@ let energize = (e, ingredient, result, power, count) => {
   }).id(`kubejs:energizing/${result.replace(':', '/')}`)
 }
 let modifyShaped = (e, result, count, pattern, ingredients) => {
-  e.remove({ output: result, type: 'minecraft:crafting_shaped' })
+  e.remove({ output: result })
   e.shaped(item.of(result, count), pattern, ingredients).id(`kubejs:shaped/${result.replace(':', '/')}`)
 }
 let modifyShapeless = (e, result, count, ingredients) => {

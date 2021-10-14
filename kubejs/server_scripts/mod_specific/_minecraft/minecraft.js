@@ -1,8 +1,7 @@
 onEvent('recipes', e => {
   e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
 
-  e.smelting('minecraft:glass', '#forge:sand').xp(.1).id('kubejs:minecraft/smelting/sand')
-  e.smelting('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smelting/leather')
+  modifySmelt(e, 'minecraft:glass', '#forge:sand')
   e.smoking('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smoking/leather')
 
   e.recipes.immersiveengineering.crusher(`4x minecraft:nether_wart`, `minecraft:nether_wart_block`).id('kubejs:minecraft/immersiveengineering_crusher/nether_wart')
@@ -16,29 +15,54 @@ onEvent('recipes', e => {
   e.shapeless('minecraft:chest', '#forge:chests/wooden').id(`kubejs:minecraft/quartz`)
   e.shapeless('minecraft:crafting_table', /byg:.+_crafting_table/).id(`kubejs:byg_crafter_convert`)
   e.shapeless('9x minecraft:honeycomb', 'minecraft:honeycomb_block').id('kubejs:minecraft/honeycomb')
-
+  //#region shaped
+  e.shaped('minecraft:white_wool', ['SS', 'SS'], {
+    S: '#forge:string'
+  })
+  e.shaped('3x minecraft:glass', ['GGG', 'G G', 'GGG',], {
+    G: 'minecraft:glass_pane'
+  })
   e.shaped('minecraft:totem_of_undying', [' E ', 'GVG', ' G '], {
     E: 'compressium:emerald_3',
     G: '#forge:storage_blocks/gold',
     V: 'minecraft:villager_spawn_egg'
   }).id(`kubejs:minecraft/totem_of_undying`)
-  e.shaped('4x minecraft:ladder', ['S S', 'SPS', 'S S'], {
-    S: '#forge:rods',
-    P: '#minecraft:planks'
-  }).id(`kubejs:minecraft/ladder`)
   e.shaped('minecraft:hopper', ['ILI', 'ILI', ' I '], {
     L: '#minecraft:logs',
     I: '#forge:ingots/iron'
   }).id(`kubejs:minecraft/hopper`)
-  e.shaped('16x minecraft:stick', ['L', 'L'], { 'L': '#minecraft:logs' }).id(`kubejs:minecraft/sticks`)
-  e.shaped('12x minecraft:grass', [' E ', 'E E'], { 'E': 'mysticalagriculture:nature_essence' }).id('kubejs:minecraft/grass')
+  e.shaped('16x minecraft:stick', ['L', 'L'], {
+    L: '#minecraft:logs'
+  }).id(`kubejs:minecraft/sticks`)
+  e.shaped('12x minecraft:grass', [' E ', 'E E'], {
+    E: 'mysticalagriculture:nature_essence'
+  }).id('kubejs:minecraft/grass')
   e.shaped('minecraft:dragon_egg', ['SSS', 'SDS', 'SSS'], {
     S: 'mysticalagradditions:dragon_egg_chunk',
     D: 'atmadditions:dragon_soul'
   }).id('kubejs:minecraft/dragon_egg')
-  e.shaped('minecraft:white_wool', ['SS', 'SS'], { S: '#forge:string' })
-  e.shaped('3x minecraft:glass', ['GGG', 'G G', 'GGG',], { G: 'minecraft:glass_pane' })
-
+  modifyShaped(e, 'minecraft:ladder', 4, ['S S', 'SPS', 'S S'], {
+    S: '#forge:rods/wooden',
+    P: '#minecraft:planks'
+  })
+  modifyShaped(e, 'minecraft:honeycomb_block', 1, ['CCC', 'CCC', 'CCC'], {
+    C: 'minecraft:honeycomb'
+  })
+  modifyShaped(e, 'minecraft:sticky_piston', 1, ['B', 'P'], {
+    B: '#forge:slimeballs',
+    P: 'minecraft:piston'
+  })
+  modifyShaped(e, 'minecraft:daylight_detector', 1, ['GGG', 'QQQ', 'SSS'], {
+    G: '#forge:glass',
+    Q: '#forge:gems/quartz',
+    S: '#minecraft:wooden_slabs'
+  })
+  modifyShaped(e, 'minecraft:beehive', 1, ['PPP', 'CCC', 'PPP'], {
+    P: '#minecraft:planks',
+    C: '#resourcefulbees:resourceful_honeycomb'
+  })
+  //#endregion
+  //#region Color
   colors.forEach(color => {
     e.remove({ output: `minecraft:${color}_bed` })
     e.remove({ output: `minecraft:${color}_wool` })
@@ -76,8 +100,8 @@ onEvent('recipes', e => {
       })
     }
   })
-
-  removeRecipeByID(e, ['minecraft:comparator', 'minecraft:glass'])
+  //#endregion
+  removeRecipeByID(e, ['minecraft:comparator'])
   removeRecipeByOutput(e, [
     'minecraft:dragon_egg',
     ['#minecraft:signs', 'pedestals:pedestal_sawing'],
@@ -87,19 +111,4 @@ onEvent('recipes', e => {
     ['#minecraft:wooden_pressure_plates', 'pedestals:pedestal_sawing'],
     ['#minecraft:stick', 'pedestals:pedestal_sawing']
   ])
-
-  modifyShaped(e, 'minecraft:honeycomb_block', 1, ['CCC', 'CCC', 'CCC'], { C: 'minecraft:honeycomb' })
-  modifyShaped(e, 'minecraft:sticky_piston', 1, ['B', 'P'], {
-    B: '#forge:slimeballs',
-    P: 'minecraft:piston'
-  })
-  modifyShaped(e, 'minecraft:daylight_detector', 1, ['GGG', 'QQQ', 'SSS'], {
-    G: '#forge:glass',
-    Q: '#forge:gems/quartz',
-    S: '#minecraft:wooden_slabs'
-  })
-  modifyShaped(e, 'minecraft:beehive', 1, ['PPP', 'CCC', 'PPP'], {
-    P: '#minecraft:planks',
-    C: '#resourcefulbees:resourceful_honeycomb'
-  })
 })

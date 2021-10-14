@@ -1,7 +1,7 @@
 onEvent('recipes', e => {
-  e.remove({ id: 'thermal:storage/onion_block' })
-  e.shapeless('thermal:onion_block', '9x #forge:crops/onion')
-
+  modifyShaped(e, 'thermal:onion_block', 1, ['XXX', 'XXX', 'XXX'], {
+    X: '#forge:crops/onion',
+  })
   e.recipes.mekanism.crushing('6x thermal:sulfur', 'thermal:sulfur_ore')
   e.recipes.mekanism.crushing('thermal:diamond_dust', 'minecraft:diamond')
   e.recipes.mekanism.crushing('thermal:sulfur_dust', 'thermal:sulfur')
@@ -32,34 +32,6 @@ onEvent('recipes', e => {
     'thermal:compat/tconstruct/smelter_alloy_tconstruct_pigiron_ingot',
     'thermal:compat/tconstruct/chiller_tconstruct_pigiron_ingot',
     'thermal:compat/tconstruct/smelter_alloy_tconstruct_slimesteel_ingot',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_zombie_pigman_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_phantom_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_villager_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_wolf_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_polar_bear_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_llama_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_stray_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_vex_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_evoker_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_magma_cube_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_drowned_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_dolphin_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_husk_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_panda_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_vindicator_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_shulker_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_ravager_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_guardian_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_mooshroom_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_horse_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_silverfish_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_fox_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_endermite_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_witch_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_pillager_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_parrot_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_cat_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_bat_seeds',
     'thermal:compat/biomesoplenty/tree_extractor_bop_pink_cherry',
     'thermal:compat/biomesoplenty/tree_extractor_bop_white_cherry',
     'thermal:compat/biomesoplenty/tree_extractor_bop_fir', // temporary until fixed in Thermal

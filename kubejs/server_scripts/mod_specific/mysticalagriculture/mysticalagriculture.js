@@ -1,5 +1,5 @@
 onEvent('recipes', e => {
-  function mainfusion(output, middle, item1, item2, item3, item4, item5, item6, item7, item8) {
+  let mainfusion = (output, middle, item1, item2, item3, item4, item5, item6, item7, item8) => {
     e.recipes.mysticalagriculture.infusion({
       input: { item: middle },
       ingredients: [
@@ -13,10 +13,10 @@ onEvent('recipes', e => {
         { item: item8 }
       ],
       result: { item: output }
-    })
+    }).id(`kubejs:${output.replace(':', '/')}/infusion`)
   }
   function essenceCircle(result, count, name) {
-    e.shaped(item.of(result, count), ['aaa', 'a a', 'aaa'], { a: `mysticalagriculture:${name}_essence` }).id(`kubejs:${name}_nugget`)
+    e.shaped(item.of(result, count), ['aaa', 'a a', 'aaa'], { a: `mysticalagriculture:${name}_essence` }).id(`kubejs:mysticalagriculture/${name}_essence_crafting`)
   }
 
   mainfusion('kubejs:magical_soil', 'botania:overgrowth_seed', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block', 'botania:gaia_ingot', 'mysticalagradditions:insanium_block')
@@ -28,40 +28,26 @@ onEvent('recipes', e => {
   essenceCircle('silentgear:azure_silver_ingot', 6, 'azure_silver')
   essenceCircle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
   essenceCircle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
+  essenceCircle('astralsorcery:aquamarine', 8, 'aquamarine')
 
-  e.shaped('mysticalagriculture:unattuned_augment', ['PMP', 'AMA', 'PMP'], {
+  modifyShaped(e, 'mysticalagriculture:unattuned_augment', 1, ['PMP', 'AMA', 'PMP'], {
     P: 'mysticalagriculture:prosperity_ingot',
     M: 'botania:manasteel_ingot',
     A: '#forge:nuggets/allthemodium'
-  }).id(`kubejs:mysticalagriculture/unattuned_augment`)
-  e.shaped('8x astralsorcery:aquamarine', ['AAA', 'A A', 'AAA'], {
-    A: 'mysticalagriculture:aquamarine_essence'
-  }).id(`kubejs:mysticalagriculture/aquamarine_essence`)
-  e.shaped('8x thermal:niter_dust', [' A ', ' A ', ' A '], {
-    A: 'mysticalagriculture:saltpeter_essence'
-  }).id('kubejs:mysticalagriculture/saltpeter_essence')
+  })
 
-  // e.recipes.mysticalagriculture.infusion({
-  //   input: { item: 'mysticalagriculture:prosperity_seed_base' },
-  //   ingredients: [
-  //     { tag: 'chisel:marble' },
-  //     { item: 'mysticalagriculture:prudentium_essence' },
-  //     { tag: 'chisel:marble' },
-  //     { item: 'mysticalagriculture:prudentium_essence' },
-  //     { tag: 'chisel:marble' },
-  //     { item: 'mysticalagriculture:prudentium_essence' },
-  //     { tag: 'chisel:marble' },
-  //     { item: 'mysticalagriculture:prudentium_essence' }
-  //   ],
-  //   result: { item: 'mysticalagriculture:marble_seeds' }
-  // }).id('kubejs:mysticalagriculture/marble_seeds')
+  e.recipes.mysticalagriculture.infusion({
+    input: { item: 'mysticalagriculture:prosperity_seed_base' },
+    ingredients: [{ tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }],
+    result: { item: 'mysticalagriculture:marble_seeds' }
+  }).id('kubejs:mysticalagriculture/marble_seeds')
 
   removeRecipeByID(e, [
     'mysticalagriculture:oratchalcum_seeds_infusion',
     'mysticalagriculture:crimson_steel_seeds_infusion',
     'mysticalagriculture:essence/astralsorcery/rock_crystal',
-    'mysticalagriculture:essence/astralsorcery/starmetal_ingot',
     'mysticalagriculture:essence/astralsorcery/aquamarine',
+    'mysticalagriculture:essence/astralsorcery/starmetal_ingot',
     'mysticalagriculture:essence/thermal/basalz_rod',
     'mysticalagriculture:essence/thermal/blitz_rod',
     'mysticalagriculture:essence/thermal/blizz_rod',
@@ -85,7 +71,6 @@ onEvent('recipes', e => {
     'mysticalagriculture:essence/common/silicon',
     'mysticalagriculture:essence/common/steel_ingot',
     'mysticalagriculture:essence/common/sulfur',
-    'mysticalagriculture:essence/common/niter',
     'mysticalagriculture:essence/immersiveengineering/hop_graphite_ingot',
     'mysticalagriculture:essence/pneumaticcraft/compressed_iron_ingot',
     'mysticalagriculture:essence/appliedenergistics2/fluix',
@@ -131,7 +116,6 @@ onEvent('recipes', e => {
     'mysticalagriculture:seed/infusion/steel',
     'mysticalagriculture:seed/infusion/sulfur',
     'mysticalagriculture:seed/infusion/terrasteel',
-    'mysticalagriculture:unattuned_augment',
     'mysticalagradditions:nitro_crystal_crux',
     'mysticalagradditions:essence/nitro_crystal'
   ])

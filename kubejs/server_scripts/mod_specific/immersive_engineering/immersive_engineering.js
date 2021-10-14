@@ -30,23 +30,24 @@ onEvent('recipes', e => {
     energy: 2048
   }).id('kubejs:immersivepetroleum/distillation/oilcracking')
 
-  e.shaped('8x engineersdecor:slag_brick_block', ['BBB', 'BSB', 'BBB'], {
+  modifyShaped(e, 'engineersdecor:slag_brick_block', 8, ['BBB', 'BSB', 'BBB'], {
     B: '#engineersdecor:brick_ingots',
     S: '#forge:slag'
-  }).id('kubejs:engineersdecor/slag_brick_block')
-  e.shaped('12x immersiveengineering:concrete', ['SBS', 'GUG', 'SBS'], {
-    B: '#forge:clay',
-    S: '#forge:slag',
+  })
+  modifyShaped(e, 'immersiveengineering:concrete', 12, ['SBS', 'GUG', 'SBS'], {
+    B: '#forge:storage_blocks/clay',
+    S: ['#forge:slag', '#forge:sand'],
     G: '#forge:gravel',
-    U: ['minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket']
-  }).id('kubejs:immersiveengineering/concrete')
-  e.shaped('8x immersivepetroleum:asphalt', ['SBS', 'GOG', 'SBS'], {
+    U: '#misctags:water/items'
+  })
+  e.shapeless('immersiveengineering:concrete', ['immersiveengineering:slab_concrete', 'immersiveengineering:slab_concrete',]).id('kubejs:immersiveengineering/concrete_slab_combine')
+  modifyShaped(e, 'immersivepetroleum:asphalt', 8, ['SBS', 'GOG', 'SBS'], {
     B: '#forge:bitumen',
     S: ['#forge:sand', '#forge:slag'],
     G: '#forge:gravel',
-    O: '#forge:water'
-  }).id('kubejs:immersivepetroleum/asphalt')
-
+    O: '#misctags:water/items'
+  })
+  e.shapeless('immersivepetroleum:asphalt', ['immersivepetroleum:asphalt_slab', 'immersivepetroleum:asphalt_slab',]).id('kubejs:immersivepetroleum/asphalt_slab_combine')
   modifyShaped(e, 'engineerstools:crushing_hammer', 1, ['RI ', 'BS ', '  S'], {
     R: '#forge:string',
     I: '#forge:ingots/iron',
@@ -64,13 +65,7 @@ onEvent('recipes', e => {
     /^immersiveengineering:crafting\/ingot_.*_to_storage_.*/,
     'immersivepetroleum:hydrotreater/sulfur_recovery',
     'immersiveengineering:crusher/nether_wart',
-    'immersiveengineering:crafting/concrete2',
     'engineerstools:crushing/aluminium_grit_crushing_recipe',
-    'engineersdecor:dependent/slag_brick_block_recipe',
     'immersivepetroleum:distillationtower/oilcracking'
-  ])
-
-  removeRecipeByOutput(e, [
-    'immersivepetroleum:asphalt'
   ])
 })

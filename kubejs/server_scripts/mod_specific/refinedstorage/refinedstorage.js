@@ -1,10 +1,10 @@
 onEvent('recipes', e => {
   function caTier(tier, corners, processor, cables) {
     utils.listOf(['importer', 'exporter', 'constructor', 'destructor', 'disk_manipulator', 'requester']).forEach(caType => {
-      e.shaped(`cabletiers:${tier}_${caType}`, [`a a`, `bcb`, `a a`], {
-        a: corners,
-        b: processor,
-        c: `${(caType == 'requester' && tier == 'elite') ? 'rsrequestify:' : cables}${caType}`
+      e.shaped(`cabletiers:${tier}_${caType}`, ['A A', 'BCB', 'A A'], {
+        A: corners,
+        B: processor,
+        C: `${(caType == 'requester' && tier == 'elite') ? 'rsrequestify:' : cables}${caType}`
       })
     })
   }
@@ -18,119 +18,119 @@ onEvent('recipes', e => {
   energize(e, ['refinedstorage:portable_grid'], 'refinedstorage:creative_portable_grid', '2147483647')
   energize(e, ['refinedstorage:controller', 'atmadditions:atm_star'], 'refinedstorage:creative_controller', '2147483647')
 
-  e.shaped('extrastorage:iron_crafter', ['B B', 'PCP', 'B B'], {
+  modifyShaped(e, 'extrastorage:iron_crafter', 1, ['BSB', 'PCP', 'B B'], {
+    S: '#forge:chests',
     B: '#forge:storage_blocks/iron',
     P: 'refinedstorage:improved_processor',
     C: '#refinedstorage:crafter'
-  }).id(`kubejs:extrastorage/iron_crafter`)
-  e.shaped(`creativecrafter:creative_crafter`, [`BUB`, `PCP`, `BUB`], {
+  })
+  //gold-netherite crafter temp till mod updates with proper tags
+  modifyShaped(e, 'extrastorage:gold_crafter', 1, ['BSB', 'PCP', 'B B'], {
+    S: '#forge:chests',
+    B: '#forge:storage_blocks/gold',
+    P: 'extrastorage:neural_processor',
+    C: '#refinedstorage:crafter'
+  })
+  modifyShaped(e, 'extrastorage:diamond_crafter', 1, ['BSB', 'PCP', 'B B'], {
+    S: '#forge:chests',
+    B: '#forge:storage_blocks/diamond',
+    P: 'extrastorage:neural_processor',
+    C: '#refinedstorage:crafter'
+  })
+  modifyShaped(e, 'extrastorage:netherite_crafter', 1, ['BSB', 'PCP', 'B B'], {
+    S: '#forge:chests',
+    B: '#forge:storage_blocks/netherite',
+    P: 'extrastorage:neural_processor',
+    C: '#refinedstorage:crafter'
+  })
+  modifyShaped(e, 'creativecrafter:creative_crafter', 1, [`BUB`, `PCP`, `BUB`], {
     B: `#forge:storage_blocks/netherite`,
     P: `extradisks:withering_processor`,
     C: `extrastorage:netherite_crafter`,
     U: `#forge:ingots/unobtainium`
-  }).id(`kubejs:creativecrafter/creative_crafter`)
-  e.shaped('refinedstorage:4096k_fluid_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'refinedstorage:1024k_fluid_storage_part',
-    b: 'minecraft:bucket',
-    n: '#forge:nuggets/allthemodium'
-  }).id(`kubejs:4096k_fluid_storage_part`)
-  e.shaped('extradisks:4096k_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:1024k_storage_part',
-    b: '#forge:dusts/redstone',
-    n: '#forge:nuggets/allthemodium'
-  }).id(`kubejs:4096k_storage_part`)
-  e.shaped('extradisks:16384k_fluid_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'refinedstorage:4096k_fluid_storage_part',
-    b: 'minecraft:bucket',
-    n: '#forge:ingots/allthemodium'
-  }).id(`kubejs:16384k_fluid_storage_part`)
-  e.shaped('extradisks:16384k_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:4096k_storage_part',
-    b: '#forge:dusts/redstone',
-    n: '#forge:ingots/allthemodium'
-  }).id(`kubejs:16384k_storage_part`)
-  e.shaped('extradisks:65536k_fluid_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:16384k_fluid_storage_part',
-    b: 'minecraft:bucket',
-    n: '#forge:ingots/allthemodium'
-  }).id(`kubejs:65536k_fluid_storage_part`)
-  e.shaped('extradisks:65536k_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:16384k_storage_part',
-    b: '#forge:dusts/redstone',
-    n: '#forge:ingots/allthemodium'
-  }).id(`kubejs:65536k_storage_part`)
-  e.shaped('extradisks:262144k_fluid_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:65536k_fluid_storage_part',
-    b: 'minecraft:bucket',
-    n: '#forge:ingots/vibranium'
-  }).id(`kubejs:262144k_fluid_storage_part`)
-  e.shaped('extradisks:262144k_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:65536k_storage_part',
-    b: '#forge:dusts/redstone',
-    n: '#forge:ingots/vibranium'
-  }).id(`kubejs:262144k_storage_part`)
-  e.shaped('extradisks:1048576k_fluid_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:262144k_fluid_storage_part',
-    b: 'minecraft:bucket',
-    n: '#forge:ingots/unobtainium'
-  }).id(`kubejs:1048576k_fluid_storage_part`)
-  e.shaped('extradisks:1048576k_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:262144k_storage_part',
-    b: '#forge:dusts/redstone',
-    n: '#forge:ingots/unobtainium'
-  }).id(`kubejs:1048576k_storage_part`)
-  e.shaped('extradisks:infinite_fluid_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:1048576k_fluid_storage_part',
-    b: 'minecraft:bucket',
-    n: '#forge:ingots/unobtainium'
-  }).id('kubejs:infinite_fluid_part')
-  e.shaped('extradisks:infinite_storage_part', ['ana', 'fbf', 'afa'], {
-    a: 'refinedstorage:advanced_processor',
-    f: 'extradisks:1048576k_storage_part',
-    b: '#forge:dusts/redstone',
-    n: '#forge:ingots/unobtainium'
-  }).id('kubejs:infinite_storage_part')
-  e.shaped('creativewirelesstransmitter:creative_wireless_transmitter', ['ITI', 'ICI', 'IDI'], {
+  })
+  modifyShaped(e, 'refinedstorage:4096k_fluid_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'refinedstorage:1024k_fluid_storage_part',
+    B: 'minecraft:bucket',
+    N: '#forge:nuggets/allthemodium'
+  })
+  modifyShaped(e, 'extradisks:4096k_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:1024k_storage_part',
+    B: '#forge:dusts/redstone',
+    N: '#forge:nuggets/allthemodium'
+  })
+  modifyShaped(e, 'extradisks:16384k_fluid_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'refinedstorage:4096k_fluid_storage_part',
+    B: 'minecraft:bucket',
+    N: '#forge:ingots/allthemodium'
+  })
+  modifyShaped(e, 'extradisks:16384k_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:4096k_storage_part',
+    B: '#forge:dusts/redstone',
+    N: '#forge:ingots/allthemodium'
+  })
+  modifyShaped(e, 'extradisks:65536k_fluid_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:16384k_fluid_storage_part',
+    B: 'minecraft:bucket',
+    N: '#forge:ingots/allthemodium'
+  })
+  modifyShaped(e, 'extradisks:65536k_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:16384k_storage_part',
+    B: '#forge:dusts/redstone',
+    N: '#forge:ingots/allthemodium'
+  })
+  modifyShaped(e, 'extradisks:262144k_fluid_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:65536k_fluid_storage_part',
+    B: 'minecraft:bucket',
+    N: '#forge:ingots/vibranium'
+  })
+  modifyShaped(e, 'extradisks:262144k_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:65536k_storage_part',
+    B: '#forge:dusts/redstone',
+    N: '#forge:ingots/vibranium'
+  })
+  modifyShaped(e, 'extradisks:1048576k_fluid_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:262144k_fluid_storage_part',
+    B: 'minecraft:bucket',
+    N: '#forge:ingots/unobtainium'
+  })
+  modifyShaped(e, 'extradisks:1048576k_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:262144k_storage_part',
+    B: '#forge:dusts/redstone',
+    N: '#forge:ingots/unobtainium'
+  })
+  modifyShaped(e, 'extradisks:infinite_fluid_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:1048576k_fluid_storage_part',
+    B: 'minecraft:bucket',
+    N: '#forge:ingots/unobtainium'
+  })
+  modifyShaped(e, 'extradisks:infinite_storage_part', 1, ['ANA', 'FBF', 'AFA'], {
+    A: 'refinedstorage:advanced_processor',
+    F: 'extradisks:1048576k_storage_part',
+    B: '#forge:dusts/redstone',
+    N: '#forge:ingots/unobtainium'
+  })
+  modifyShaped(e, 'creativewirelesstransmitter:creative_wireless_transmitter', 1, ['ITI', 'ICI', 'IDI'], {
     I: 'allthemodium:unobtainium_ingot',
     D: 'rsinfinitybooster:dimension_card',
     C: 'refinedstorage:machine_casing',
     T: 'refinedstorage:wireless_transmitter'
-  }).id('kubejs:creativewirelesstransmitter/creative_wireless_transmitter')
-
+  })
 
   caTier(`elite`, `#forge:storage_blocks/iron`, `refinedstorage:improved_processor`, `refinedstorage:`)
   caTier(`ultra`, `#forge:storage_blocks/diamond`, `refinedstorage:advanced_processor`, `cabletiers:elite_`)
   caTier(`creative`, `#forge:storage_blocks/netherite`, `extradisks:withering_processor`, `cabletiers:ultra_`)
-
-
-  removeRecipeByID(e, [
-    'refinedstorage:part/4096k_fluid_storage_part',
-    'extradisks:part/4096k_storage_part',
-    'extradisks:part/16384k_fluid_storage_part',
-    'extradisks:part/16384k_storage_part',
-    'extradisks:part/65536k_fluid_storage_part',
-    'extradisks:part/65536k_storage_part',
-    'extradisks:part/262144k_fluid_storage_part',
-    'extradisks:part/262144k_storage_part',
-    'extradisks:part/1048576k_fluid_storage_part',
-    'extradisks:part/1048576k_storage_part',
-    'extradisks:part/infinite_fluid_storage_part',
-    'extradisks:part/infinite_storage_part',
-    'creativecrafter:creative_crafter',
-    'creativewirelesstransmitter:creative_wireless_transmitter',
-    'extrastorage:iron_crafter'
-  ])
 
   modifySmelt(e, 'refinedstorage:silicon', '#appliedenergistics2:crystals/quartz')
 })

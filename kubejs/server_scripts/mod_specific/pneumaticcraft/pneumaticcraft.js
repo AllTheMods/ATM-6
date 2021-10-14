@@ -7,7 +7,7 @@ onEvent('recipes', e => {
         item: result,
         count: rCount
       }]
-    })
+    }).id(`kubejs:pressure/${result.replace(':', '/')}`)
   }
 
   pressure([{
@@ -117,8 +117,7 @@ onEvent('recipes', e => {
     'type': 'pneumaticcraft:stacked_item',
     'tag': 'forge:plastic',
     'count': 1
-  }], 'pneumaticcraft:transistor', 1, 1.0)
-  e.remove({ id: 'pneumaticcraft:pressure_chamber/transistor' })
+    }], 'pneumaticcraft:transistor', 1, 1.0)
   pressure([{
     'type': 'pneumaticcraft:stacked_item',
     'item': 'minecraft:gold_nugget',
@@ -131,8 +130,7 @@ onEvent('recipes', e => {
     'type': 'pneumaticcraft:stacked_item',
     'tag': 'forge:plastic',
     'count': 1
-  }], 'pneumaticcraft:capacitor', 1, 1.0)
-  e.remove({ id: 'pneumaticcraft:pressure_chamber/capacitor' })
+    }], 'pneumaticcraft:capacitor', 1, 1.0)
   pressure([{
     'type': 'pneumaticcraft:stacked_item',
     'item': 'minecraft:redstone_torch',
@@ -146,5 +144,9 @@ onEvent('recipes', e => {
     'tag': 'forge:plastic',
     'count': 1
   }], 'pneumaticcraft:empty_pcb', 3, 1.5)
-  e.remove({ id: 'pneumaticcraft:pressure_chamber/empty_pcb' })
+  removeRecipeByID(e, [
+    'pneumaticcraft:pressure_chamber/empty_pcb',
+    'pneumaticcraft:pressure_chamber/capacitor',
+    'pneumaticcraft:pressure_chamber/transistor'
+  ])
 })

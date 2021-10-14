@@ -1,13 +1,9 @@
 onEvent('recipes', e => {
-  e.shaped('mininggadgets:upgrade_empty', ['RAL', 'DGD', 'LAR'], {
+  modifyShaped(e, 'mininggadgets:upgrade_empty', 1, ['RAL', 'DGD', 'LAR'], {
     'L': '#forge:storage_blocks/lapis',
     'R': '#forge:storage_blocks/redstone',
     'D': '#forge:gems/diamond',
     'A': '#forge:nuggets/allthemodium',
-    'G': 'minecraft:glass_pane'
-  }).id(`kubejs:mininggadgets/upgrade`)
-
-  removeRecipeByID(e, [
-    'mininggadgets:upgrade_empty'
-  ])
+    'G': '#forge:glass_panes'
+  })
 })

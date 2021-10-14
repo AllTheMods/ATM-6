@@ -1,38 +1,6 @@
 onEvent('recipes', e => {
-  modifyShaped(e, 'framedblocks:framed_door', 3,
-    ['BB', 'BB', 'BB'],
-    { B: 'framedblocks:framed_cube' }
-  )
-  modifyShaped(e, 'framedblocks:framed_wrench', 1,
-    [' B ', 'BS ', '  S'],
-    {
-      B: 'framedblocks:framed_cube',
-      S: '#forge:rods/wooden'
-    }
-  )
-  modifyShaped(e, 'framedblocks:framed_cube', 8,
-    ['PSP', 'S S', 'PSP'],
-    {
-      P: '#minecraft:planks',
-      S: '#forge:rods/wooden'
-    }
-  )
-
-  modifyShapeless(e, 'framedblocks:framed_inner_corner_slope', 1,
-    [
-      'framedblocks:framed_corner_slope',
-      'framedblocks:framed_corner_slope',
-      'framedblocks:framed_corner_slope'
-    ]
-  )
-  modifyShapeless(e, 'framedblocks:framed_inner_prism_corner', 1,
-    [
-      'framedblocks:framed_prism_corner',
-      'framedblocks:framed_prism_corner',
-      'framedblocks:framed_prism_corner'
-    ]
-  )
-
+  modifyShapeless(e, 'framedblocks:framed_inner_corner_slope', 1, ['framedblocks:framed_corner_slope', 'framedblocks:framed_corner_slope', 'framedblocks:framed_corner_slope'])
+  modifyShapeless(e, 'framedblocks:framed_inner_prism_corner', 1, ['framedblocks:framed_prism_corner', 'framedblocks:framed_prism_corner', 'framedblocks:framed_prism_corner'])
   e.shaped('framedblocks:framed_cube', ['B', 'B'], {
     B: [
       'framedblocks:framed_slope',
