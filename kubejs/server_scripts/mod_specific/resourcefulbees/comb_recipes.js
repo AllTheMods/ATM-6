@@ -76,4 +76,6 @@ onEvent('recipes', e => {
   shapedRecipe(['minecraft:andesite', 'minecraft:diorite', 'minecraft:granite', 'minecraft:basalt', 'create:gabbro', 'create:dolomite', 'create:weathered_limestone', 'create:limestone', 'create:scoria', 'create:dark_scoria', 'quark:brimstone', 'quark:slate', 'quark:jasper', 'quark:limestone', 'quark:basalt', 'astralsorcery:marble_raw'], 'resourcefulbees:stan_honeycomb_block', 18)
   shapedRecipe(['minecraft:oak_log', 'minecraft:spruce_log', 'minecraft:birch_log', 'minecraft:jungle_log', 'minecraft:acacia_log', 'minecraft:dark_oak_log', 'minecraft:crimson_stem', 'minecraft:warped_stem'], 'resourcefulbees:lumber_honeycomb', 3)
   shapedRecipe(['minecraft:oak_log', 'minecraft:spruce_log', 'minecraft:birch_log', 'minecraft:jungle_log', 'minecraft:acacia_log', 'minecraft:dark_oak_log', 'minecraft:crimson_stem', 'minecraft:warped_stem'], 'resourcefulbees:lumber_honeycomb_block', 27)
+  shapedRecipe(['pamhc2foodcore:cottoncandyitem', 'pamhc2foodextended:candycornitem', 'supplementaries:candy'], 'resourcefulbees:cotton_candy_honeycomb', 3)
+  shapedRecipe(['pamhc2foodcore:cottoncandyitem', 'pamhc2foodextended:candycornitem', 'supplementaries:candy'], 'resourcefulbees:cotton_candy_honeycomb_block', 27)
 })
