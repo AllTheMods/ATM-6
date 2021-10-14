@@ -28,19 +28,19 @@ onEvent('recipes', e => {
     S: '#forge:chests',
     B: '#forge:storage_blocks/gold',
     P: 'extrastorage:neural_processor',
-    C: '#refinedstorage:crafter'
+    C: 'extrastorage:iron_crafter'
   })
   modifyShaped(e, 'extrastorage:diamond_crafter', 1, ['BSB', 'PCP', 'B B'], {
     S: '#forge:chests',
     B: '#forge:storage_blocks/diamond',
     P: 'extrastorage:neural_processor',
-    C: '#refinedstorage:crafter'
+    C: 'extrastorage:gold_crafter'
   })
   modifyShaped(e, 'extrastorage:netherite_crafter', 1, ['BSB', 'PCP', 'B B'], {
     S: '#forge:chests',
     B: '#forge:storage_blocks/netherite',
     P: 'extrastorage:neural_processor',
-    C: '#refinedstorage:crafter'
+    C: 'extrastorage:diamond_crafter'
   })
   e.shaped(`creativecrafter:creative_crafter`, [`BUB`, `PCP`, `BUB`], {
     B: `#forge:storage_blocks/netherite`,
