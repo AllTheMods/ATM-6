@@ -2,6 +2,7 @@
   "flower": "tag:forge:storage_blocks/allthemodium",
   "maxTimeInHive": 4800,
   "traits": [
+    "allthemodium",
     "nether"
   ],
   "hasHoneycomb": true,
