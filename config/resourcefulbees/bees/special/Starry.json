@@ -1,91 +1,86 @@
 {
-    "flower": "allthecompressed:atm_star_block",
-    "maxTimeInHive": 1200,
-    "traits": [
-        "starry"
-    ],
-    "sizeModifier": 1.25,
-    "hasHoneycomb": true,
-    "apiaryOutputAmounts": [
-        1,
-        1,
-        1,
-        1
-    ],
-    "apiaryOutputTypes": [
-        "COMB",
-        "COMB",
-        "COMB",
-        "COMB"
-    ],
-    "baseLayerTexture": "special/starry_bee_primary_layer",
-    "ColorData": {
-        "primaryColor": "#FFA500",
-        "secondaryColor": "#FFA500",
-        "honeycombColor": "#FFA500",
-        "primaryLayerTexture": "empty_layer",
-        "secondaryLayerTexture": "special/starry_bee_secondary_layer",
-        "emissiveLayerTexture": "special/starry_bee_emissive",
-        "isBeeColored": true,
-        "isRainbowBee": false,
-        "isGlowing": true,
-        "glowColor": "#FFA500",
-        "isEnchanted": false,
-        "glowingPulse": 1,
-        "modelType": "QUEEN"
-    },
-    "CombatData": {
-		"isInvulnerable": true,
-        "isPassive": false,
-        "removeStingerOnAttack": false,
-        "inflictsPoison": false,
-        "attackDamage": 10
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:starry_honey_block",
-                "outputs": [
-                    {
-                        "outputID": "atmadditions:atm_star",
-                        "weight": 50
-                    },
-                    {
-                        "outputID": "kubejs:patrick_star",
-                        "weight": 50
-                    }
-                ]
-            }
+  "flower": "allthecompressed:atm_star_block",
+  "maxTimeInHive": 1200,
+  "traits": [
+    "starry"
+  ],
+  "sizeModifier": 1.25,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "apiaryOutputTypes": [
+    "COMB",
+    "COMB",
+    "COMB",
+    "COMB"
+  ],
+  "baseLayerTexture": "special/starry_bee_primary_layer",
+  "ColorData": {
+    "primaryColor": "#FFA500",
+    "secondaryColor": "#FFA500",
+    "honeycombColor": "#FFA500",
+    "primaryLayerTexture": "empty_layer",
+    "secondaryLayerTexture": "special/starry_bee_secondary_layer",
+    "emissiveLayerTexture": "special/starry_bee_emissive",
+    "isBeeColored": true,
+    "isGlowing": true,
+    "glowColor": "#FFA500",
+    "glowingPulse": 1,
+    "modelType": "QUEEN"
+  },
+  "CombatData": {
+    "isInvulnerable": true,
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": false,
+    "attackDamage": 10
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:starry_honey_block",
+        "outputs": [
+          {
+            "outputID": "atmadditions:atm_star",
+            "weight": 50
+          },
+          {
+            "outputID": "kubejs:patrick_star",
+            "weight": 50
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 9,
-        "mainOutput": "resourcefulbees:starry_honey",
-        "mainOutputWeight": 0.01,
-        "mainOutputCount": 50,
-        "mainNBTData": {},
-        "secondaryOutput": "kubejs:patrick_star",
-        "secondaryOutputWeight": 0.99,
-        "secondaryOutputCount": 1,
-        "secondaryNBTData": {},
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.1,
-        "bottleOutputCount": 1,
-        "bottleNBTData": {},
-        "recipeTime": 200,
-        "hasFluidOutput": true
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": false
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 9,
+    "mainOutput": "resourcefulbees:starry_honey",
+    "mainOutputWeight": 0.01,
+    "mainOutputCount": 50,
+    "secondaryOutput": "kubejs:patrick_star",
+    "secondaryOutputWeight": 0.99,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.1,
+    "bottleOutputCount": 1,
+    "recipeTime": 200,
+    "hasFluidOutput": true
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

@@ -14,10 +14,8 @@
     "secondaryLayerTexture": "dragon/dragon_bee_secondary",
     "emissiveLayerTexture": "dragon/dragon_bee_emissive",
     "isBeeColored": true,
-    "isRainbowBee": false,
     "isGlowing": true,
     "glowColor": "#E400FF",
-    "isEnchanted": false,
     "glowingPulse": 0,
     "modelType": "DRAGON"
   },
@@ -70,11 +68,7 @@
     "canSpawnInWorld": false
   },
   "BreedData": {
-    "isBreedable": false,
-    "feedItem": "draconicevolution:wyvern_core",
-    "feedAmount": 3,
-    "childGrowthDelay": -24000,
-    "breedDelay": 6000
+    "isBreedable": false
   },
   "TraitData": {
     "hasTraits": true

@@ -1,73 +1,66 @@
 {
-    "flower": "tag:forge:storage_blocks/platinum",
-    "maxTimeInHive": 2400,
-    "traits": [],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ato/platinum_bee",
-    "ColorData": {
-        "honeycombColor": "#A4EDFC",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:platinum_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "alltheores:platinum_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:platinum_bee",
-                            "BeeType": "platinum",
-                            "Color": "#A4EDFC"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:forge:storage_blocks/platinum",
+  "maxTimeInHive": 2400,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/platinum_bee",
+  "ColorData": {
+    "honeycombColor": "#A4EDFC",
+    "modelType": "DEFAULT"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:platinum_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "alltheores:platinum_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:platinum_bee",
+              "BeeType": "platinum",
+              "Color": "#A4EDFC"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_platinum",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
-        "secondaryOutput": "alltheores:platinum_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Silver",
-        "parent2": "Gold",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/platinum",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "alltheores:ore_platinum",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 1,
+    "secondaryOutput": "alltheores:platinum_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 2,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Silver",
+    "parent2": "Gold",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "tag:forge:storage_blocks/platinum",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

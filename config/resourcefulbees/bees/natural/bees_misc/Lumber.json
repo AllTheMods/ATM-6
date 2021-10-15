@@ -1,70 +1,63 @@
 {
-    "flower": "tag:minecraft:logs",
-    "maxTimeInHive": 1200,
-    "traits": [],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "misc/lumber_bee",
-    "ColorData": {
-        "primaryColor": "#453B2A",
-        "secondaryColor": "#453B2A",
-        "honeycombColor": "#453B2A",
-        "modelType": "MUSHROOM"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:lumber_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "mysticalagriculture:wood_essence",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:lumber_bee",
-                            "BeeType": "lumber",
-                            "Color": "#453B2A"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:minecraft:logs",
+  "maxTimeInHive": 1200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/lumber_bee",
+  "ColorData": {
+    "primaryColor": "#453B2A",
+    "secondaryColor": "#453B2A",
+    "honeycombColor": "#453B2A",
+    "modelType": "MUSHROOM"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:lumber_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "mysticalagriculture:wood_essence",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:lumber_bee",
+              "BeeType": "lumber",
+              "Color": "#453B2A"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": false
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:forest",
-        "biomeBlacklist": "tag:ocean",
-        "spawnWeight": 5,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "tag:minecraft:logs",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:forest",
+    "biomeBlacklist": "tag:ocean",
+    "spawnWeight": 5,
+    "minYLevel": 0,
+    "maxYLevel": 255,
+    "minGroupSize": 1,
+    "maxGroupSize": 2,
+    "lightLevel": "ANY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "breedWeight": 10,
+    "breedChance": 0.8,
+    "feedItem": "tag:minecraft:logs",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

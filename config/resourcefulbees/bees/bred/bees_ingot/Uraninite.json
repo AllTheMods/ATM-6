@@ -1,73 +1,66 @@
 {
-    "flower": "tag:forge:storage_blocks/uraninite",
-    "maxTimeInHive": 2400,
-    "traits": [],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ato/uraninite_bee",
-    "ColorData": {
-        "honeycombColor": "#00FC1A",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:uraninite_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "powah:uraninite",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:uraninite_bee",
-                            "BeeType": "uraninite",
-                            "Color": "#00FC1A"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:forge:storage_blocks/uraninite",
+  "maxTimeInHive": 2400,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/uraninite_bee",
+  "ColorData": {
+    "honeycombColor": "#00FC1A",
+    "modelType": "DEFAULT"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:uraninite_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "powah:uraninite",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:uraninite_bee",
+              "BeeType": "uraninite",
+              "Color": "#00FC1A"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "powah:uraninite_ore",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
-        "secondaryOutput": "powah:uraninite",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Slimy",
-        "parent2": "Beeper",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/uraninite",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "powah:uraninite_ore",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 1,
+    "secondaryOutput": "powah:uraninite",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 2,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Slimy",
+    "parent2": "Beeper",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "tag:forge:storage_blocks/uraninite",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

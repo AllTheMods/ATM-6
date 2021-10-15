@@ -1,67 +1,67 @@
 {
-    "flower": "allthecompressed:copper_block_4x",
-    "maxTimeInHive": 2400,
-    "traits": [
-        "dense"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ato/copper_bee",
-    "ColorData": {
-        "honeycombColor": "#D28868",
-        "modelType": "ORE"
-    },
-    "CombatData": {
-        "isPassive": false,
-        "removeStingerOnAttack": false,
-        "inflictsPoison": true,
-        "attackDamage": 2147483647
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:dense_copper_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "alltheores:copper_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:dense_copper_bee",
-                            "BeeType": "dense_copper",
-                            "Color": "#D28868"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "allthecompressed:copper_block_4x",
+  "maxTimeInHive": 2400,
+  "traits": [
+    "dense"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/copper_bee",
+  "ColorData": {
+    "honeycombColor": "#D28868",
+    "modelType": "ORE"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 2147483647
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:dense_copper_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "alltheores:copper_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:dense_copper_bee",
+              "BeeType": "dense_copper",
+              "Color": "#D28868"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_copper",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 2,
-        "secondaryOutput": "alltheores:copper_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 4,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": false
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "alltheores:ore_copper",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 2,
+    "secondaryOutput": "alltheores:copper_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 4,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

@@ -1,67 +1,67 @@
 {
-    "flower": "allthecompressed:zinc_block_4x",
-    "maxTimeInHive": 2400,
-    "traits": [
-        "dense"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "ato/zinc_bee",
-    "ColorData": {
-        "honeycombColor": "#B6DBD8",
-        "modelType": "ORE"
-    },
-    "CombatData": {
-        "isPassive": false,
-        "removeStingerOnAttack": false,
-        "inflictsPoison": true,
-        "attackDamage": 2147483647
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:dense_zinc_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "alltheores:zinc_ingot",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:dense_zinc_bee",
-                            "BeeType": "dense_zinc",
-                            "Color": "#B6DBD8"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "allthecompressed:zinc_block_4x",
+  "maxTimeInHive": 2400,
+  "traits": [
+    "dense"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "ato/zinc_bee",
+  "ColorData": {
+    "honeycombColor": "#B6DBD8",
+    "modelType": "ORE"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 2147483647
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:dense_zinc_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "alltheores:zinc_ingot",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:dense_zinc_bee",
+              "BeeType": "dense_zinc",
+              "Color": "#B6DBD8"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "alltheores:ore_zinc",
-        "mainOutputWeight": 0.50,
-        "mainOutputCount": 4,
-        "secondaryOutput": "alltheores:zinc_ingot",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 8,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": false
-    },
-    "TraitData": {
-        "hasTraits": false
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "alltheores:ore_zinc",
+    "mainOutputWeight": 0.50,
+    "mainOutputCount": 4,
+    "secondaryOutput": "alltheores:zinc_ingot",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 8,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": false
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

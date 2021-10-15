@@ -6,7 +6,7 @@ onEvent('recipes', e => {
     V: 'allthemodium:vibranium_ingot',
     U: 'allthemodium:unobtainium_ingot'
   }).id(`kubejs:apotheosis/boss_summoner`)
-  
+
   removeRecipeByID(e, [
     'apotheosis:fletching/iron_mining_arrow',
     'apotheosis:fletching/diamond_mining_arrow'

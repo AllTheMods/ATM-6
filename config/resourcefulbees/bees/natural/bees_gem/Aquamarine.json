@@ -1,80 +1,74 @@
 {
-    "flower": "astralsorcery:starmetal",
-    "maxTimeInHive": 1200,
-    "traits": [
-        "can_swim"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "misc/aquamarine_bee",
-    "ColorData": {
-        "honeycombColor": "#35b3ff",
-        "modelType": "ORE"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:aquamarine_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "astralsorcery:aquamarine",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:aquamarine_bee",
-                            "BeeType": "aquamarine",
-                            "Color": "#35b3ff"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "astralsorcery:starmetal",
+  "maxTimeInHive": 1200,
+  "traits": [
+    "can_swim"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "misc/aquamarine_bee",
+  "ColorData": {
+    "honeycombColor": "#35b3ff",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:aquamarine_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "astralsorcery:aquamarine",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:aquamarine_bee",
+              "BeeType": "aquamarine",
+              "Color": "#35b3ff"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "astralsorcery:aquamarine",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 1,
-        "secondaryOutput": "astralsorcery:aquamarine",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:beach, tag:lake, tag:river",
-        "spawnWeight": 10,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "astralsorcery:aquamarine",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "astralsorcery:aquamarine",
+    "mainOutputWeight": 0.5,
+    "mainOutputCount": 1,
+    "secondaryOutput": "astralsorcery:aquamarine",
+    "secondaryOutputWeight": 0.01,
+    "secondaryOutputCount": 2,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:beach, tag:lake, tag:river",
+    "spawnWeight": 10,
+    "minYLevel": 0,
+    "maxYLevel": 255,
+    "minGroupSize": 1,
+    "maxGroupSize": 2,
+    "lightLevel": "ANY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "breedWeight": 10,
+    "breedChance": 0.8,
+    "feedItem": "astralsorcery:aquamarine",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

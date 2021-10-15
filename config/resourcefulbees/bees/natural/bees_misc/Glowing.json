@@ -1,90 +1,83 @@
 {
-    "flower": "tag:misctags:flowers/glowing_flowers",
-    "maxTimeInHive": 1200,
-    "traits": [
-        "nether",
-        "pigman"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "/custom/bee",
-    "ColorData": {
-        "primaryColor": "#D6D30D",
-        "secondaryColor": "#D6D30D",
-        "honeycombColor": "#F1ED95",
-        "primaryLayerTexture": "/custom/primary_layer",
-        "secondaryLayerTexture": "/custom/secondary_layer",
-        "emissiveLayerTexture": "/custom/emissive_layer",
-        "isBeeColored": true,
-        "isGlowing": true,
-        "glowColor": "#D6D30D",
-        "isEnchanted": false,
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:glowing_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:glowstone_dust",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:glowing_bee",
-                            "BeeType": "glowing",
-                            "Color": "#F1ED95"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:misctags:flowers/glowing_flowers",
+  "maxTimeInHive": 1200,
+  "traits": [
+    "nether",
+    "pigman"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "/custom/bee",
+  "ColorData": {
+    "primaryColor": "#D6D30D",
+    "secondaryColor": "#D6D30D",
+    "honeycombColor": "#F1ED95",
+    "primaryLayerTexture": "/custom/primary_layer",
+    "secondaryLayerTexture": "/custom/secondary_layer",
+    "emissiveLayerTexture": "/custom/emissive_layer",
+    "isBeeColored": true,
+    "isGlowing": true,
+    "glowColor": "#D6D30D",
+    "modelType": "DEFAULT"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:glowing_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:glowstone_dust",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:glowing_bee",
+              "BeeType": "glowing",
+              "Color": "#F1ED95"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:glowstone_dust",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 1,
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
-        "secondaryOutputCount": 1,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:nether",
-        "spawnWeight": 5,
-        "minYLevel": 0,
-        "maxYLevel": 255,
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "ANY"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "tag:misctags:flowers/glowing_flowers",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:glowstone_dust",
+    "mainOutputWeight": 0.5,
+    "mainOutputCount": 1,
+    "secondaryOutput": "resourcefulbees:wax",
+    "secondaryOutputWeight": 0.2,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:nether",
+    "spawnWeight": 5,
+    "minYLevel": 0,
+    "maxYLevel": 255,
+    "minGroupSize": 1,
+    "maxGroupSize": 2,
+    "lightLevel": "ANY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "breedWeight": 10,
+    "breedChance": 0.8,
+    "feedItem": "tag:misctags:flowers/glowing_flowers",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

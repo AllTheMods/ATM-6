@@ -1,76 +1,70 @@
 {
-    "flower": "tag:minecraft:wither_summon_base_blocks",
-    "maxTimeInHive": 1200,
-    "traits": [
-        "nether",
-        "wither"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "wither/wither_bee",
-    "ColorData": {
-        "honeycombColor": "#444444",
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:withered_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:coal",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:withered_bee",
-                            "BeeType": "withered",
-                            "Color": "#444444"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:minecraft:wither_summon_base_blocks",
+  "maxTimeInHive": 1200,
+  "traits": [
+    "nether",
+    "wither"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "wither/wither_bee",
+  "ColorData": {
+    "honeycombColor": "#444444",
+    "modelType": "DEFAULT"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:withered_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:coal",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:withered_bee",
+              "BeeType": "withered",
+              "Color": "#444444"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:wither_skeleton_skull",
-        "mainOutputWeight": 0.01,
-        "mainOutputCount": 1,
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
-        "secondaryOutputCount": 1,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Coal",
-        "parent2": "Spooky",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "xreliquary:withered_rib",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:wither_skeleton_skull",
+    "mainOutputWeight": 0.01,
+    "mainOutputCount": 1,
+    "secondaryOutput": "resourcefulbees:wax",
+    "secondaryOutputWeight": 0.2,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Coal",
+    "parent2": "Spooky",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "xreliquary:withered_rib",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

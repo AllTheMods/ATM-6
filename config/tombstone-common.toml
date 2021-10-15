@@ -1,0 +1,8 @@
+#Options related to player's death
+[player_death]
+	#Whether to unlock access to a grave if the player has been killed by another player [false/true|default:true]
+	pvp_unlock_grave = false
+#Allows to change the chance to drop some items
+[loot]
+	#Entities that can't found as loot in a Familiar Receptacle
+	unhandled_tameable_entities = ["iceandfire:fire_dragon", "iceandfire:ice_dragon", "iceandfire:lightning_dragon"]

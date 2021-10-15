@@ -60,6 +60,9 @@ onEvent('recipes', e => {
     'thermal:compat/mysticalagriculture/insolator_mysticalag_parrot_seeds',
     'thermal:compat/mysticalagriculture/insolator_mysticalag_cat_seeds',
     'thermal:compat/mysticalagriculture/insolator_mysticalag_bat_seeds',
+    'thermal:compat/biomesoplenty/tree_extractor_bop_pink_cherry',
+    'thermal:compat/biomesoplenty/tree_extractor_bop_white_cherry',
+    'thermal:compat/biomesoplenty/tree_extractor_bop_fir', // temporary until fixed in Thermal
     'thermal:machine/chiller/chiller_honey_to_honey_block',
     'thermal:machine/bottler/bottler_honey_bottle',
     'thermal:machine/centrifuge/centrifuge_honeycomb',

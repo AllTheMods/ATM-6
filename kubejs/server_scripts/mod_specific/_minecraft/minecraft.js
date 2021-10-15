@@ -1,19 +1,7 @@
 onEvent('recipes', e => {
   e.replaceInput('minecraft:glass_pane', '#forge:glass_panes')
 
-  e.forEachRecipe({ type: 'minecraft:crafting_shaped', output: '#minecraft:slabs' }, r => {
-    e.shaped(r.inputItems[0], ['S', 'S'], { S: Item.of(r.outputItems[0].id) })
-  })
-  e.forEachRecipe({ type: 'minecraft:stonecutting', output: '#minecraft:stairs' }, r => {
-    e.stonecutting(r.inputItems[0], Item.of(r.outputItems[0].id))
-  })
-  e.forEachRecipe({ type: 'minecraft:crafting_shapeless', output: '#minecraft:buttons' }, r => {
-    e.remove({ type: 'minecraft:crafting_shapeless', output: r.outputItems[0].id })
-    e.shapeless(`8x ${r.outputItems[0].id}`, r.inputItems[0])
-  })
-
-  e.smelting('minecraft:glass', '#forge:sand').xp(.1).id('kubejs:minecraft/smelting/sand')
-  e.smelting('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smelting/leather')
+  modifySmelt(e, 'minecraft:glass', '#forge:sand')
   e.smoking('minecraft:leather', 'forbidden_arcanus:rotten_leather').xp(.5).id('kubejs:minecraft/smoking/leather')
 
   e.recipes.immersiveengineering.crusher(`4x minecraft:nether_wart`, `minecraft:nether_wart_block`).id('kubejs:minecraft/immersiveengineering_crusher/nether_wart')

@@ -1,23 +1,4 @@
 onEvent('recipes', e => {
-  modifyShaped(e, 'framedblocks:framed_door', 3,
-    ['BB', 'BB', 'BB'],
-    { B: 'framedblocks:framed_cube' }
-  )
-  modifyShaped(e, 'framedblocks:framed_wrench', 1,
-    [' B ', 'BS ', '  S'],
-    {
-      B: 'framedblocks:framed_cube',
-      S: '#forge:rods/wooden'
-    }
-  )
-  modifyShaped(e, 'framedblocks:framed_cube', 8,
-    ['PSP', 'S S', 'PSP'],
-    {
-      P: '#minecraft:planks',
-      S: '#forge:rods/wooden'
-    }
-  )
-
   modifyShapeless(e, 'framedblocks:framed_inner_corner_slope', 1,
     [
       'framedblocks:framed_corner_slope',
@@ -82,7 +63,7 @@ onEvent('recipes', e => {
       ['framedblocks:framed_cube', 'framedblocks:framed_double_prism_corner', 1],
       ['framedblocks:framed_cube', 'framedblocks:framed_double_threeway_corner', 1],
       ['framedblocks:framed_cube', 'framedblocks:framed_floor_board', 8],
-      ['framedblocks:framed_cube', 'framedblocks:framed_lattice', 4],
+      ['framedblocks:framed_cube', 'framedblocks:framed_lattice_block', 4],
       ['framedblocks:framed_cube', 'framedblocks:framed_vertical_stairs', 1],
       ['framedblocks:framed_cube', 'framedblocks:framed_bars', 8],
       ['framedblocks:framed_cube', 'framedblocks:framed_pane', 8],
@@ -112,7 +93,7 @@ onEvent('recipes', e => {
     'framedblocks:framed_double_prism_corner',
     'framedblocks:framed_double_threeway_corner',
     'framedblocks:framed_floor_board',
-    'framedblocks:framed_lattice',
+    'framedblocks:framed_lattice_block',
     'framedblocks:framed_vertical_stairs',
     'framedblocks:framed_bars',
     'framedblocks:framed_pane'

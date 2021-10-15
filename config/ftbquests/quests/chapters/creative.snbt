@@ -630,7 +630,7 @@
 				"To get the Shards, you will have to build a 4 block tall structure as such:"
 				"The bottom block is Bedrock, above it an Anvil with an Item Frame on top. Hovering over the Item Frame, place Mjollnir."
 				"Once you have the structure, place your ATM Star in the item frame and click the hammer."
-				"{image:modpack:textures/atm_shard_bonk.png width:100 height:200 align:1}"
+				"{image:allthemods:textures/atm_shard_bonk.png width:100 height:200 align:1}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["464D0C17601E8A2B"]

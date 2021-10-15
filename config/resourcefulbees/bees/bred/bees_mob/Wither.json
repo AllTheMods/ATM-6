@@ -1,92 +1,86 @@
 {
-    "flower": "tag:forge:storage_blocks/nether_star",
-    "maxTimeInHive": 2400,
-    "traits": [
-        "nether",
-        "wither"
-    ],
-    "hasHoneycomb": true,
-    "baseLayerTexture": "wither/wither_bee",
-    "ColorData": {
-        "honeycombColor": "#444444",
-        "isEnchanted": true,
-        "modelType": "DEFAULT"
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:wither_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "minecraft:coal",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:wither_bee",
-                            "BeeType": "wither",
-                            "Color": "#444444"
-                        },
-                        "weight": 20
-                    }
-                ]
+  "flower": "tag:forge:storage_blocks/nether_star",
+  "maxTimeInHive": 2400,
+  "traits": [
+    "nether",
+    "wither"
+  ],
+  "hasHoneycomb": true,
+  "baseLayerTexture": "wither/wither_bee",
+  "ColorData": {
+    "honeycombColor": "#444444",
+    "isEnchanted": true,
+    "modelType": "DEFAULT"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:wither_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "minecraft:coal",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:wither_bee",
+              "BeeType": "wither",
+              "Color": "#444444"
             },
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "minecraft:dragon_egg",
-                "outputs": [
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:dragonic_bee",
-                            "BeeType": "dragonic",
-                            "Color": "#E400FF"
-                        },
-                        "weight": 100
-                    }
-                ]
-            }
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 1,
-        "mainOutput": "minecraft:nether_star",
-        "mainOutputWeight": 0.01,
-        "mainOutputCount": 1,
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.2,
-        "secondaryOutputCount": 1,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Withered",
-        "parent2": "Netherite",
-        "breedWeight": 10,
-        "breedChance": 0.60,
-        "feedItem": "tag:forge:nether_stars",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      },
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "minecraft:dragon_egg",
+        "outputs": [
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:dragonic_bee",
+              "BeeType": "dragonic",
+              "Color": "#E400FF"
+            },
+            "weight": 100
+          }
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 1,
+    "mainOutput": "minecraft:nether_star",
+    "mainOutputWeight": 0.01,
+    "mainOutputCount": 1,
+    "secondaryOutput": "resourcefulbees:wax",
+    "secondaryOutputWeight": 0.2,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Withered",
+    "parent2": "Netherite",
+    "breedWeight": 10,
+    "breedChance": 0.60,
+    "feedItem": "tag:forge:nether_stars",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

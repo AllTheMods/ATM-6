@@ -1,79 +1,73 @@
 {
-    "flower": "tag:tombstone:decorative_graves",
-    "maxTimeInHive": 1200,
-    "traits": [
-        "nether"
-    ],
-    "creator": "NoControl",
-    "lore": "You are never truly alone.\nWherever you are, you have ghosts,\nand if you have ghosts, you have everything.",
-    "loreColor": "#626262",
-    "hasHoneycomb": true,
-    "ColorData": {
-        "primaryColor": "#F5F5F5",
-        "secondaryColor": "#626262",
-        "honeycombColor": "#A8A9AD",
-        "isBeeColored": true
-    },
-    "CombatData": {
-        "isPassive": true,
-        "removeStingerOnAttack": true,
-        "inflictsPoison": true,
-        "attackDamage": 1
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationCount": 1,
-        "mutations": [
-            {
-                "type": "BLOCK_TO_ITEM",
-                "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
-                "outputs": [
-                    {
-                        "outputID": "tombstone:grave_dust",
-                        "weight": 80
-                    },
-                    {
-                        "outputID": "resourcefulbees:bee_jar",
-                        "nbtData": {
-                            "Entity": "resourcefulbees:papa_beemeritus_bee",
-                            "BeeType": "papa_beemeritus",
-                            "Color": "#35b3ff"
-                        },
-                        "weight": 20
-                    }
-                ]
-            }
+  "flower": "tag:tombstone:decorative_graves",
+  "maxTimeInHive": 1200,
+  "traits": [
+    "nether"
+  ],
+  "creator": "NoControl",
+  "lore": "You are never truly alone.\nWherever you are, you have ghosts,\nand if you have ghosts, you have everything.",
+  "loreColor": "#626262",
+  "hasHoneycomb": true,
+  "ColorData": {
+    "primaryColor": "#F5F5F5",
+    "secondaryColor": "#626262",
+    "honeycombColor": "#A8A9AD",
+    "isBeeColored": true
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 1,
+    "mutations": [
+      {
+        "type": "BLOCK_TO_ITEM",
+        "inputID": "resourcefulbees:papa_beemeritus_honeycomb_block",
+        "outputs": [
+          {
+            "outputID": "tombstone:grave_dust",
+            "weight": 80
+          },
+          {
+            "outputID": "resourcefulbees:bee_jar",
+            "nbtData": {
+              "Entity": "resourcefulbees:papa_beemeritus_bee",
+              "BeeType": "papa_beemeritus",
+              "Color": "#35b3ff"
+            },
+            "weight": 20
+          }
         ]
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainInputCount": 4,
-        "mainOutput": "tombstone:grave_dust",
-        "mainOutputWeight": 0.20,
-        "mainOutputCount": 1,
-        "secondaryOutput": "tombstone:essence_of_undeath",
-        "secondaryOutputWeight": 0.20,
-        "secondaryOutputCount": 1,
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
-        "bottleOutputCount": 1,
-        "recipeTime": 200
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "Zombee",
-        "parent2": "Spooky",
-        "breedWeight": 10,
-        "breedChance": 0.8,
-        "feedItem": "tombstone:grave_dust",
-        "feedAmount": 5,
-        "childGrowthDelay": -24000,
-        "breedDelay": 6000
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainInputCount": 4,
+    "mainOutput": "tombstone:grave_dust",
+    "mainOutputWeight": 0.20,
+    "mainOutputCount": 1,
+    "secondaryOutput": "tombstone:essence_of_undeath",
+    "secondaryOutputWeight": 0.20,
+    "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.25,
+    "bottleOutputCount": 1,
+    "recipeTime": 200
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Zombee",
+    "parent2": "Spooky",
+    "breedWeight": 10,
+    "breedChance": 0.8,
+    "feedItem": "tombstone:grave_dust",
+    "feedAmount": 5,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

@@ -1,6 +1,4 @@
 onEvent('jei.add.items', e => {
-  utils.listOf(['dragonic', 'allthemodium', 'vibranium', 'unobtainium', 'soul_lava', 'netherite']).forEach(type => e.add([`resourcefulbees:${type}_bee_spawn_egg`]))
-
   e.add([
     'minecraft:dragon_egg',
     'structurize:plain_oak_oak_timber_frame',

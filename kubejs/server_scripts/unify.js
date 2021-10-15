@@ -25,7 +25,7 @@ onEvent('recipes', e => {
 
     e.recipes.minecraft.smelting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.minecraft.blasting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
-    e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem } })
+    e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem, count: 1 } })
     e.recipes.appliedenergistics2.grinder({ input: { tag: `forge:ingots/${name}` }, result: { primary: { item: dustItem } }, turns: 8 })
     e.recipes.immersiveengineering.crusher({ secondaries: [], result: { base_ingredient: { item: dustItem } }, input: { tag: `forge:ingots/${name}` }, energy: 3000 })
 
@@ -371,7 +371,9 @@ onEvent('recipes', e => {
   e.replaceInput('iceandfire:sapphire', '#forge:gems/sapphire')
   e.replaceInput('iceandfire:sapphire_block', '#forge:storage_blocks/sapphire')
   e.replaceInput('minecraft:stick', '#forge:rods/wooden')
-  e.replaceInput('pneumaticcraft:plastic','#forge:plastic')
+  e.replaceInput('pneumaticcraft:plastic', '#forge:plastic')
+  e.replaceInput('thermal:coal_coke', '#forge:coal_coke')
+  e.replaceInput('immersiveengineering:coal_coke', '#forge:coal_coke')
 
   e.replaceOutput('immersivepetroleum:bitumen', 'thermal:bitumen')
   e.replaceOutput('lazierae2:coal_dust', 'mekanism:dust_coal')
@@ -382,6 +384,9 @@ onEvent('recipes', e => {
   e.replaceOutput('immersiveengineering:dust_sulfur', 'thermal:sulfur_dust')
   e.replaceOutput('mekanism:dust_quartz', 'thermal:quartz_dust')
   e.replaceOutput('appliedenergistics2:nether_quartz_dust', 'thermal:quartz_dust')
+  e.replaceOutput('thermal:coal_coke', 'immersiveengineering:coke')
+  e.replaceOutput('mekanism:dust_diamond', 'thermal:diamond_dust')
+  e.replaceOutput('createaddition:diamond_grit', 'thermal:diamond_dust')
 
   // #region ExtraDisks & ExtraStorage
   function unifyExtraStorageDisks(entries) {
@@ -600,19 +605,20 @@ onEvent('recipes', e => {
   // creosote
   e.recipes.thermal.pyrolyzer([Fluid.of('immersiveengineering:creosote', 250), 'minecraft:charcoal'], '#minecraft:logs').id('kubejs:thermal/pyrolyzer/charcoal')
   e.recipes.thermal.pyrolyzer([Fluid.of('immersiveengineering:creosote', 5000), 'immersiveengineering:coke'], '#forge:storage_blocks/coal').id('kubejs:thermal/pyrolyzer/coke_block')
+  e.recipes.thermal.pyrolyzer([Fluid.of('immersiveengineering:creosote', 250), 'immersiveengineering:coal_coke'], '#minecraft:coals').id('kubejs:thermal/pyrolyzer/coal_coke')
   e.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [{ tag: 'minecraft:planks' }],
-    inputFluid: { FluidName: 'immersiveengineering:creosote', Amount: 125 },
+    inputFluid: "{ FluidName: \"immersiveengineering:creosote\", Amount: 125 }",
     processingTime: 5,
     output: { item: 'immersiveengineering:treated_wood_horizontal' }
-  })
+  }).id('kubejs:dissolution_chamber/immersiveengineering/treated_wood_horizontal')
   e.custom({
     type: 'industrialforegoing:dissolution_chamber',
     input: [{ tag: 'minecraft:planks' }],
-    inputFluid: { FluidName: 'thermal:creosote', Amount: 125 },
+    inputFluid: "{ FluidName: \"thermal:creosote\", Amount: 125 }",
     processingTime: 5,
     output: { item: 'immersiveengineering:treated_wood_horizontal' }
-  })
+  }).id('kubejs:dissolution_chamber/thermal/treated_wood_horizontal')
   // #endregion Oil
 })

@@ -111,6 +111,7 @@ onEvent('item.tags', e => {
   e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
   e.add('minecraft:wooden_buttons', '/forbidden_arcanus:.+_button/')
   e.add('minecraft:planks', '/forbidden_arcanus:.+_planks/')
+  e.add('misctags:water/items', ['#forge:water', 'minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket', 'resourcefulbees:water_honeycomb', 'mysticalagriculture:water_essence'])
   //#endregion
   //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)

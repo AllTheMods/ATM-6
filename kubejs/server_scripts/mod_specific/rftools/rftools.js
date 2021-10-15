@@ -11,4 +11,7 @@ onEvent('recipes', e => {
   removeRecipeByID(e, [
     'rftoolsbuilder:builder'
   ])
+
+  e.recipes.thermal.press('rftoolsdim:dimensional_blank_block', '4x rftoolsbase:dimensionalshard')
+  e.recipes.thermal.press('4x rftoolsbase:dimensionalshard', ['1x rftoolsdim:dimensional_blank_block', 'thermal:press_unpacking_die'])
 })
