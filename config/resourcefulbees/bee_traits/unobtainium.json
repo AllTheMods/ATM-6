@@ -1,0 +1,22 @@
+{
+  "beepediaItemID": "allthemodium:unobtainium_ore",
+  "damageImmunities": [
+    "inFire",
+    "lightningBolt",
+    "onFire",
+    "lava",
+    "hotFloor",
+    "inWall",
+    "cramming",
+    "drown",
+    "starve",
+    "cactus",
+    "fall",
+    "flyIntoWall",
+    "wither",
+    "anvil",
+    "fallingBlock",
+    "dragonBreath",
+    "dryout"
+  ]
+}

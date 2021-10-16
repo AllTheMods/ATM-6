@@ -11,6 +11,7 @@
     "modelType": "DEFAULT"
   },
   "CombatData": {
+    "isInvulnerable": true,
     "isPassive": false,
     "removeStingerOnAttack": false,
     "inflictsPoison": true,

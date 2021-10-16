@@ -2,6 +2,7 @@
   "flower": "tag:forge:storage_blocks/vibranium",
   "maxTimeInHive": 4800,
   "traits": [
+    "Vibranium",
     "nether"
   ],
   "hasHoneycomb": true,
