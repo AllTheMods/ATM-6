@@ -46,7 +46,7 @@
     "hasCentrifugeOutput": true,
     "mainInputCount": 1,
     "mainOutput": "alltheores:ore_uranium",
-    "mainOutputWeight": 0.02,
+    "mainOutputWeight": 0.50,
     "mainOutputCount": 4,
     "secondaryOutput": "alltheores:uranium_ingot",
     "secondaryOutputWeight": 0.01,
