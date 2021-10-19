@@ -27,7 +27,7 @@ onEvent('item.tooltip', e => {
     'draconicevolution:creative_op_capacitor'
   ]
 
-  let formattedTooltip = (item, tooltip, signature) => {
+  let formattedTooltip = (item, tooltip) => {
     e.add(item, '')
     let line = ''
     tooltip.split(' ').forEach(word => {
@@ -38,7 +38,6 @@ onEvent('item.tooltip', e => {
       }
     })
     if (line.length > 0) e.add(item, Text.of(line).darkPurple())
-    if (signature) e.add(item, Text.of(`   - ${signature}`).darkRed())
     e.add(item, '')
   }
   //#endregion
