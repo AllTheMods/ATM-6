@@ -6,159 +6,110 @@ onEvent('recipes', e => {
     })
   }
   function inf(rCount, time, soil) {
-    tier([`inferium`], time, soil, rCount)
+    tier(['inferium'], time, soil, rCount)
   }
   function regular(results, seed, crop) {
-    e.recipes.immersiveengineering.cloche(results, Item.of(seed), `minecraft:dirt`, crop).time(600)
+    e.recipes.immersiveengineering.cloche(results, Item.of(seed), 'minecraft:dirt', crop).time(600)
   }
   //#endregion
 
   //#region CROPS
   //Tier 1 Crops
   tier([
-    `air`,
-    `earth`,
-    `fire`,
-    `water`,
-    `dirt`,
-    `wood`,
-    `ice`,
-    `stone`
-  ], 1000, `#misctags:farmland/tier1`, 2)
+    'inferium',
+    'air',
+    'earth',
+    'fire',
+    'water',
+    'dirt',
+    'wood',
+    'ice',
+    'stone'
+  ], 1000, '#misctags:farmland/tier1', 2)
   //Tier 2 Crops
   tier([
-    `aluminum`,
-    `chicken`,
-    `coal`,
-    `copper`,
-    `coral`,
-    `cow`,
-    `dye`,
-    `fish`,
-    `honey`,
-    `iridium`,
-    `mystical_flower`,
-    `nature`,
-    `nether`,
-    `pig`,
-    `rubber`,
-    `saltpeter`,
-    `sheep`,
-    `silicon`,
-    `slime`,
-    `squid`,
-    `sulfur`,
-    `turtle`,
-    `sky_stone`,
-    `basalz`,
-    `blizz`,
-    `blitz`,
-    `apatite`
-  ], 1750, `#misctags:farmland/tier2`, 2)
+    'aluminum',
+    'chicken',
+    'coal',
+    'copper',
+    'coral',
+    'cow',
+    'dye',
+    'fish',
+    'honey',
+    'mystical_flower',
+    'nature',
+    'nether',
+    'pig',
+    'saltpeter',
+    'sheep',
+    'slime',
+    'squid',
+    'turtle',
+    'apatite'
+  ], 1750, '#misctags:farmland/tier2', 2)
   //Tier 3 Crops
   tier([
-    `azure_silver`,
-    `brass`,
-    `bronze`,
-    `certus_quartz`,
-    `creeper`,
-    `crimson_iron`,
-    `ender_biotite`,
-    `glowstone`,
-    `graphite`,
-    `iron`,
-    `lead`,
-    `nether_quartz`,
-    `obsidian`,
-    `prismarine`,
-    `quartz_enriched_iron`,
-    `rabbit`,
-    `redstone`,
-    `silver`,
-    `skeleton`,
-    `spider`,
-    `tin`,
-    `zinc`,
-    `zombie`,
-    `lumium`,
-    `fluorite`,
-    `aquamarine`,
-    `signalum`,
-    `starmetal`,
-    `pig_iron`,
-    `steeleaf`,
-    `ironwood`,
-    `slimesteel`,
-    `tinkers_bronze`,
-    `knightmetal`,
-    `fiery_ingot`
-  ], 2500, `#misctags:farmland/tier3`, 2)
+    'azure_silver',
+    'certus_quartz',
+    'creeper',
+    'crimson_iron',
+    'glowstone',
+    'iron',
+    'lead',
+    'nether_quartz',
+    'obsidian',
+    'prismarine',
+    'rabbit',
+    'redstone',
+    'silver',
+    'skeleton',
+    'spider',
+    'tin',
+    'zinc',
+    'zombie',
+    'fluorite'
+  ], 2500, '#misctags:farmland/tier3', 2)
   //Tier 4 Crops
   tier([
-    `azure_electrum`,
-    `blaze`,
-    `chrome`,
-    `constantan`,
-    `crimson_steel`,
-    `electrum`,
-    `end`,
-    `enderman`,
-    `experience`,
-    `fluix`,
-    `ghast`,
-    `gold`,
-    `invar`,
-    `lapis_lazuli`,
-    `mithril`,
-    `nickel`,
-    `oratchalcum`,
-    `osmium`,
-    `refined_glowstone`,
-    `refined_obsidian`,
-    `steel`,
-    `titanium`,
-    `tungsten`,
-    `compressed_iron`,
-    `hop_graphite`,
-    `energized_steel`,
-    `blazing_crystal`,
-    `rose_gold`,
-    `cobalt`
-  ], 3250, `#misctags:farmland/tier4`, 2)
+    'azure_electrum',
+    'blaze',
+    'end',
+    'enderman',
+    'experience',
+    'ghast',
+    'gold',
+    'lapis_lazuli',
+    'nickel',
+    'osmium',
+    'cobalt'
+  ], 3250, '#misctags:farmland/tier4', 2)
   //Tier 5 Crops
   tier([
-    `diamond`,
-    `emerald`,
-    `netherite`,
-    `uraninite`,
-    `wither_skeleton`,
-    `platinum`,
-    `uranium`,
-    `enderium`,
-    `spirited_crystal`,
-    `rock_crystal`,
-    `niotic_crystal`,
-    `manyullyn`,
-    `queens_slime`,
-    `hepatizon`
-  ], 4000, `#misctags:farmland/tier5`, 2)
+    'diamond',
+    'emerald',
+    'netherite',
+    'uraninite',
+    'wither_skeleton',
+    'platinum',
+    'uranium'
+  ], 4000, '#misctags:farmland/tier5', 2)
   //Tier 6 Crops
   tier([
-    `dragon_egg`,
-    `nether_star`,
-    `nitro_crystal`
-  ], 4750, `#misctags:farmland/tier6`, 2)
+    'dragon_egg',
+    'nether_star'
+  ], 4750, '#misctags:farmland/tier6', 2)
   //Magical Tier
   tier([
-    `allthemodium`,
-    `vibranium`,
-    `unobtainium`
-  ], 5500, `kubejs:magical_soil`, 2)
+    'allthemodium',
+    'vibranium',
+    'unobtainium'
+  ], 5500, 'kubejs:magical_soil', 2)
 
   //Regular crops
-  regular([`forbidden_arcanus:arcane_gold_nugget`, `forbidden_arcanus:golden_orchid_seeds`], `forbidden_arcanus:golden_orchid_seeds`, `forbidden_arcanus:golden_orchid`)
-  regular([Item.of(`silentgear:flax_fiber`, 2), `silentgear:flax_seeds`], `silentgear:flax_seeds`, `silentgear:flax_plant`)
-  regular([Item.of(`byg:blueberries`, 2)], `byg:blueberries`, `byg:blueberry_bush`)
+  regular(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid')
+  regular([Item.of('silentgear:flax_fiber', 2), 'silentgear:flax_seeds'], 'silentgear:flax_seeds', 'silentgear:flax_plant')
+  regular([Item.of('byg:blueberries', 2)], 'byg:blueberries', 'byg:blueberry_bush')
 
   //Inferium
   inf(1, 1000, 'minecraft:dirt')
