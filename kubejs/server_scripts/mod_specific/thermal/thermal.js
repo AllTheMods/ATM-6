@@ -1,15 +1,42 @@
 onEvent('recipes', e => {
-  e.remove({ id: 'thermal:storage/onion_block' })
-  e.shapeless('thermal:onion_block', '9x #forge:crops/onion')
-
+  modifyShapeless(e, 'thermal:onion_block', 1, '9x #forge:crops/onion')
   e.recipes.mekanism.crushing('6x thermal:sulfur', 'thermal:sulfur_ore')
   e.recipes.mekanism.crushing('thermal:diamond_dust', 'minecraft:diamond')
   e.recipes.mekanism.crushing('thermal:sulfur_dust', 'thermal:sulfur')
 
-  utils.listOf(['apatite', 'slimesteel', 'pig_iron', 'steeleaf', 'ironwood', 'aquamarine', 'azure_silver', 'crimson_iron', 'ruby', 'sapphire', 'cobalt', 'rose_gold', 'fluorite', 'knightmetal', 'fiery_ingot', 'azure_electrum', 'manyullyn', 'queens_slime', 'hepatizon', 'draconium'])
+  utils.listOf(['apatite', 'aquamarine', 'azure_silver', 'crimson_iron', 'ruby', 'sapphire', 'cobalt', 'fluorite', 'azure_electrum', 'hepatizon', 'draconium'])
     .forEach(item => {
       e.recipes.thermal.insolator([`mysticalagriculture:${item}_essence`, `mysticalagriculture:${item}_seeds`], `mysticalagriculture:${item}_seeds`).water(500).id(`kubejs:thermal/insolator_${item}_seeds`)
     })
+
+  let smelterCompat = (e, input1, count1, input2, count2, output, count4, power) => {
+    e.remove({ output: output, type: 'thermal:smelter' })
+    e.custom({
+      type: 'thermal:smelter',
+      ingredients: [
+        {
+          value: [input1],
+          count: count1
+        },
+        {
+          value: [input2],
+          count: count2
+        }
+      ],
+      result: [{
+        item: [output],
+        count: count4
+      }],
+      energy: power
+    })
+  }
+  smelterCompat(e, [{ "tag": "forge:ingots/tin" }, { "tag": "forge:dusts/tin" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 3, "thermal:bronze_ingot", 4, 6400)
+  smelterCompat(e, [{ "tag": "forge:ingots/silver" }, { "tag": "forge:dusts/silver" }], 1, [{ "tag": "forge:dusts/gold" }, { "tag": "forge:ingots/gold" }], 3, "thermal:electrum_ingot", 2, 3200)
+  smelterCompat(e, [{ "tag": "forge:ingots/nickel" }, { "tag": "forge:dusts/nickel" }], 1, [{ "tag": "forge:dusts/iron" }, { "tag": "forge:ingots/iron" }], 2, "thermal:invar_ingot", 3, 4800)
+  smelterCompat(e, [{ "tag": "forge:ingots/nickel" }, { "tag": "forge:dusts/nickel" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 2, "thermal:constantan_ingot", 2, 3200)
+  smelterCompat(e, [{ "tag": "forge:ingots/zinc" }, { "tag": "forge:dusts/zinc" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 1, "create:brass_ingot", 2, 3200)
+  smelterCompat(e, [{ "tag": "forge:sand" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 3, "tconstruct:tinkers_bronze_ingot", 3, 4000)
+  smelterCompat(e, [{ "tag": "forge:ingots/gold" }, { "tag": "forge:dusts/gold" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 3, "tconstruct:rose_gold_ingot", 4, 4000)
 
   removeRecipeByID(e, [
     'thermal:storage/tin_block',
@@ -32,34 +59,6 @@ onEvent('recipes', e => {
     'thermal:compat/tconstruct/smelter_alloy_tconstruct_pigiron_ingot',
     'thermal:compat/tconstruct/chiller_tconstruct_pigiron_ingot',
     'thermal:compat/tconstruct/smelter_alloy_tconstruct_slimesteel_ingot',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_zombie_pigman_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_phantom_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_villager_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_wolf_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_polar_bear_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_llama_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_stray_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_vex_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_evoker_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_magma_cube_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_drowned_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_dolphin_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_husk_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_panda_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_vindicator_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_shulker_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_ravager_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_guardian_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_mooshroom_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_horse_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_silverfish_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_fox_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_endermite_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_witch_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_pillager_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_parrot_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_cat_seeds',
-    'thermal:compat/mysticalagriculture/insolator_mysticalag_bat_seeds',
     'thermal:compat/biomesoplenty/tree_extractor_bop_pink_cherry',
     'thermal:compat/biomesoplenty/tree_extractor_bop_white_cherry',
     'thermal:compat/biomesoplenty/tree_extractor_bop_fir', // temporary until fixed in Thermal
