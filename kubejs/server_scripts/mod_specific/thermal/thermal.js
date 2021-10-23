@@ -9,34 +9,27 @@ onEvent('recipes', e => {
       e.recipes.thermal.insolator([`mysticalagriculture:${item}_essence`, `mysticalagriculture:${item}_seeds`], `mysticalagriculture:${item}_seeds`).water(500).id(`kubejs:thermal/insolator_${item}_seeds`)
     })
 
-  let smelterCompat = (e, input1, count1, input2, count2, output, count4, power) => {
+  let smelterCompat = (e, output, count1, input1, count2, input2, count3, input3, count4) => {
     e.remove({ output: output, type: 'thermal:smelter' })
-    e.custom({
-      type: 'thermal:smelter',
-      ingredients: [
-        {
-          value: [input1],
-          count: count1
-        },
-        {
-          value: [input2],
-          count: count2
-        }
-      ],
-      result: [{
-        item: [output],
-        count: count4
-      }],
-      energy: power
-    })
+    if (input3 == null) {
+      e.recipes.thermal.smelter(item.of(output, count1), [ingredient.of(input1, count2), ingredient.of(input2, count3)]).id(`kubejs:thermal/smelter/${output.replace(':', '/')}`)
+    } else {
+      e.recipes.thermal.smelter(item.of(output, count1), [ingredient.of(input1, count2), ingredient.of(input2, count3), ingredient.of(input3, count4)]).id(`kubejs:thermal/smelter/${output.replace(':', '/')}`)
+    }
   }
-  smelterCompat(e, [{ "tag": "forge:ingots/tin" }, { "tag": "forge:dusts/tin" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 3, "thermal:bronze_ingot", 4, 6400)
-  smelterCompat(e, [{ "tag": "forge:ingots/silver" }, { "tag": "forge:dusts/silver" }], 1, [{ "tag": "forge:dusts/gold" }, { "tag": "forge:ingots/gold" }], 3, "thermal:electrum_ingot", 2, 3200)
-  smelterCompat(e, [{ "tag": "forge:ingots/nickel" }, { "tag": "forge:dusts/nickel" }], 1, [{ "tag": "forge:dusts/iron" }, { "tag": "forge:ingots/iron" }], 2, "thermal:invar_ingot", 3, 4800)
-  smelterCompat(e, [{ "tag": "forge:ingots/nickel" }, { "tag": "forge:dusts/nickel" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 2, "thermal:constantan_ingot", 2, 3200)
-  smelterCompat(e, [{ "tag": "forge:ingots/zinc" }, { "tag": "forge:dusts/zinc" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 1, "create:brass_ingot", 2, 3200)
-  smelterCompat(e, [{ "tag": "forge:sand" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 3, "tconstruct:tinkers_bronze_ingot", 3, 4000)
-  smelterCompat(e, [{ "tag": "forge:ingots/gold" }, { "tag": "forge:dusts/gold" }], 1, [{ "tag": "forge:dusts/copper" }, { "tag": "forge:ingots/copper" }], 3, "tconstruct:rose_gold_ingot", 4, 4000)
+  smelterCompat(e, 'thermal:bronze_ingot', 4, ['#forge:dusts/tin', '#forge:ingots/tin'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 3)
+  smelterCompat(e, 'thermal:electrum_ingot', 3, ['#forge:dusts/silver', '#forge:ingots/silver'], 1, ['#forge:dusts/gold', '#forge:ingots/gold'], 2)
+  smelterCompat(e, 'thermal:invar_ingot', 3, ['#forge:dusts/nickel', '#forge:ingots/nickel'], 1, ['#forge:dusts/iron', '#forge:ingots/iron'], 2)
+  smelterCompat(e, 'thermal:constantan_ingot', 2, ['#forge:dusts/nickel', '#forge:ingots/nickel'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 2)
+  smelterCompat(e, 'thermal:signalum_ingot', 4, ['#forge:dusts/silver', '#forge:ingots/silver'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 3, '#forge:dusts/redstone', 2)
+  smelterCompat(e, 'thermal:lumium_ingot', 4, ['#forge:dusts/silver', '#forge:ingots/silver'], 1, ['#forge:dusts/tin', '#forge:ingots/tin'], 3, '#forge:dusts/glowstone', 2)
+  smelterCompat(e, 'thermal:enderium_ingot', 2, ['#forge:dusts/diamond', '#forge:gems/diamond'], 1, ['#forge:dusts/lead', '#forge:ingots/lead'], 3, ['#forge:dusts/ender_pearl', '#forge:ender_pearls'], 2)
+  smelterCompat(e, 'create:brass_ingot', 2, ['#forge:dusts/zinc', '#forge:ingots/zinc'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 1)
+  smelterCompat(e, 'tconstruct:tinkers_bronze_ingot', 3, '#forge:sand', 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 3)
+  smelterCompat(e, 'tconstruct:rose_gold_ingot', 4, ['#forge:dusts/gold', '#forge:ingots/gold'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 3)
+  smelterCompat(e, 'tconstruct:pig_iron_ingot', 2, '#forge:slimeball/blood', 1, ['#forge:dusts/iron', '#forge:ingots/iron'], 1, 'minecraft:clay_ball', 1)
+  smelterCompat(e, 'tconstruct:queens_slime_ingot', 2, ['#forge:dusts/gold', '#forge:ingots/gold'], 1, '#forge:ingots/cobalt', 1, 'minecraft:magma_cream', 1)
+  smelterCompat(e, 'tconstruct:hepatizon_ingot', 2, ['#forge:dusts/copper', '#forge:ingots/copper'], 2, '#forge:ingots/cobalt', 1, '#forge:obsidian', 1)
 
   removeRecipeByID(e, [
     'thermal:storage/tin_block',
