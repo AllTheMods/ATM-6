@@ -60,6 +60,9 @@ onEvent('recipes', e => {
     R: 'mekanism:resistive_heater'
   })
 
+  e.replaceInput('immersiveengineering:hammer', '#misctags:immersive_engineering_hammer')
+  e.replaceInput('immersiveengineering:wirecutter', '#misctags:immersive_engineering_wirecutter')
+
   removeRecipeByID(e, [
     /^immersiveengineering:crafting\/ingot_.*_to_storage_.*/,
     'immersivepetroleum:hydrotreater/sulfur_recovery',

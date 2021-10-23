@@ -113,6 +113,7 @@ onEvent('item.tags', e => {
   e.add('minecraft:planks', '/forbidden_arcanus:.+_planks/')
   e.add('misctags:water/items', ['#forge:water', 'minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket', 'resourcefulbees:water_honeycomb', 'mysticalagriculture:water_essence'])
   e.add('misctags:immersive_engineering_hammer', 'immersiveengineering:hammer')
+  e.add('misctags:immersive_engineering_wirecutter', 'immersiveengineering:wirecutter')
   //#endregion
   //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)
