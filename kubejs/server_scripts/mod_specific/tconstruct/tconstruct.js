@@ -56,14 +56,6 @@ onEvent('recipes', e => {
   }).id('kubejs:tconstruct/smeltery_controller')
 
   e.recipes.thermal.smelter(
-    [{ item: 'tconstruct:pig_iron_ingot', count: 2 }],
-    [
-      { tag: 'forge:ingots/iron' },
-      { item: 'tconstruct:blood_slime_ball' },
-      { item: 'minecraft:clay_ball' }
-    ]
-  ).energy(4000).id('kubejs:tconstruct/smelter/pig_iron')
-  e.recipes.thermal.smelter(
     [{ item: 'tconstruct:slimesteel_ingot', count: 2 }],
     [
       { tag: 'forge:ingots/iron', count: 1 },
