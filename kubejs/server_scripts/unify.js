@@ -111,13 +111,104 @@ onEvent('recipes', e => {
   unifyCraftMetal('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
   // #endregion Metal Unification
   // #region Plate Unification
-  utils.listOf(['iron', 'gold', 'copper', 'tin', 'lead', 'silver', 'nickel', 'bronze', 'electrum', 'invar', 'constantan', 'signalum', 'lumium', 'enderium', 'aluminum']).forEach(type => {
-    e.replaceInput(`thermal:${type}_plate`, `#forge:plates/${type}`)
-    e.replaceInput(`immersiveengineering:plate_${type}`, `#forge:plates/${type}`)
-    e.replaceInput(type == 'gold' ? `create:${type}en_sheet` : `create:${type}_sheet`, `#forge:plates/${type}`)
-    e.replaceOutput(`immersiveengineering:plate_${type}`, type == 'aluminum' ? `immersiveengineering:plate_${type}` : `thermal:${type}_plate`)
-    e.replaceOutput(type == 'gold' ? `create:${type}en_sheet` : `create:${type}_sheet`, type == 'aluminum' ? `immersiveengineering:plate_${type}` : `thermal:${type}_plate`)
-  })
+  function plateCasting(material, coolingTime, result) {
+    e.custom({
+      type: 'tconstruct:casting_table',
+      conditions: [
+        {
+          value: {tag: `forge:plates/${material}`, type: 'forge:tag_empty'},
+          type: 'forge:not'
+        }
+      ],
+      cast: {tag: 'tconstruct:casts/multi_use/plate'},
+      fluid: {name: `tconstruct:molten_${material}`, amount: 144},
+      result: {item: result},
+      cooling_time: coolingTime
+    }).id(`kubejs:smeltery/casting/metal/${material}/plate_gold_cast`)
+    e.custom({
+      type: 'tconstruct:casting_table',
+      conditions: [
+        {
+          value: {tag: `forge:plates/${material}`, type: 'forge:tag_empty'},
+          type: 'forge:not'
+        }
+      ],
+      cast: {tag: 'tconstruct:casts/single_use/plate'},
+      cast_consumed: true,
+      fluid: {name: `tconstruct:molten_${material}`, amount: 144},
+      result: {item: result},
+      cooling_time: coolingTime
+    }).id(`kubejs:smeltery/casting/metal/${material}/plate_sand_cast`)
+  }
+
+  function platePressing(material, result) {
+    e.custom({
+      type: 'immersiveengineering:metal_press',
+      mold: {item: 'immersiveengineering:mold_plate'},
+      result: {item: result},
+      conditions: [
+        {
+          value: {tag: `forge:ingots/${material}`, type: 'forge:tag_empty'},
+          type: 'forge:not'
+        },
+        {
+          value: {tag: `forge:plates/${material}`, type: 'forge:tag_empty'},
+          type: 'forge:not'
+        }
+      ],
+      input: {tag: `forge:ingots/${material}`},
+      energy: 2400
+    }).id(`kubejs:metalpress/plate_${material}`)
+  }
+
+  function plateProcessing(types) {
+    types.forEach(([material, coolingTime, result]) => {
+      e.replaceInput(`thermal:${material}_plate`, `#forge:plates/${material}`)
+      e.replaceInput(`immersiveengineering:plate_${material}`, `#forge:plates/${material}`)
+      e.replaceInput(material === 'gold' ? `create:${material}en_sheet` : `create:${material}_sheet`, `#forge:plates/${material}`)
+
+      result = result ? result : `thermal:${material}_plate`
+
+      e.remove({id: `immersiveengineering:crafting/plate_${material}_hammering`});
+      e.shapeless(result, [`#forge:ingots/${material}`, '#misctags:immersive_engineering_hammer']).id(`kubejs:crafting/plate_${material}_hammering`);
+
+      e.remove({id: `create:pressing/${material}_ingot`})
+      e.recipes.create.pressing(result, `#forge:ingots/${material}`).id(`kubejs:pressing/${material}_ingot`)
+
+      if (coolingTime !== null) {
+        e.remove({id: `tconstruct:smeltery/casting/metal/${material}/plate_gold_cast`})
+        e.remove({id: `tconstruct:smeltery/casting/metal/${material}/plate_sand_cast`})
+        plateCasting(material, coolingTime, result)
+      }
+
+      e.remove({id: `immersiveengineering:metalpress/plate_${material}`})
+      platePressing(material, result)
+
+      e.remove({id: `thermal:machine/press/press_${material}_ingot_to_plate`})
+      e.recipes.thermal.press(result, `#forge:ingots/${material}`).id(`kubejs:machine/press/press_${material}_ingot_to_plate`)
+    })
+  }
+
+  plateProcessing([
+    ['aluminum', 47, 'immersiveengineering:plate_aluminum'],
+    ['steel', 50, 'immersiveengineering:plate_steel'],
+    ['uranium', 50, 'immersiveengineering:plate_uranium'],
+    ['iron', 60],
+    ['gold', 57],
+    ['copper', 50],
+    ['tin', 39],
+    ['lead', 43],
+    ['silver', 60],
+    ['nickel', 65],
+    ['bronze', 57],
+    ['electrum', 59],
+    ['invar', 63],
+    ['constantan', 64],
+    ['signalum', null],
+    ['lumium', null],
+    ['enderium', null],
+    ['brass', 57, 'create:brass_sheet']
+  ])
   // #endregion Plate Unification
   // #region Tinkers Unification
   function tinkerMelting(material, type, typeValues, temperature, time, byproduct) {
