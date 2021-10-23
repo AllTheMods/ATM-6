@@ -1,69 +1,5 @@
 onEvent('recipes', e => {
   //#region functions
-  function plateCasting(material, coolingTime, result) {
-    e.custom(
-      {
-        type: 'tconstruct:casting_table',
-        conditions: [
-          {
-            value: { tag: `forge:plates/${material}`, type: 'forge:tag_empty' },
-            type: 'forge:not'
-          }
-        ],
-        cast: { tag: 'tconstruct:casts/multi_use/plate' },
-        fluid: { name: `tconstruct:molten_${material}`, amount: 144 },
-        result: { item: result },
-        cooling_time: coolingTime
-      }
-    )
-    e.custom(
-      {
-        type: 'tconstruct:casting_table',
-        conditions: [
-          {
-            value: { tag: `forge:plates/${material}`, type: 'forge:tag_empty' },
-            type: 'forge:not'
-          }
-        ],
-        cast: { tag: 'tconstruct:casts/single_use/plate' },
-        cast_consumed: true,
-        fluid: { name: `tconstruct:molten_${material}`, amount: 144 },
-        result: { item: result },
-        cooling_time: coolingTime
-      }
-    )
-  }
-  function platePressing(material, result) {
-    e.custom(
-      {
-        type: 'immersiveengineering:metal_press',
-        mold: { item: 'immersiveengineering:mold_plate' },
-        result: { item: result },
-        conditions: [
-          {
-            value: { tag: `forge:ingots/${material}`, type: 'forge:tag_empty' },
-            type: 'forge:not'
-          },
-          {
-            value: { tag: `forge:plates/${material}`, type: 'forge:tag_empty' },
-            type: 'forge:not'
-          }
-        ],
-        input: { tag: `forge:ingots/${material}` },
-        energy: 2400
-      }
-    )
-  }
-  function plateProcessing(types) {
-    types.forEach(([material, type, coolingTime, result]) => {
-      result = result ? result : `thermal:${material}_plate`
-      if (type.includes(0)) plateCasting(material, coolingTime, result) // casting missing
-      if (type.includes(1)) e.recipes.create.pressing(result, `#forge:ingots/${material}`) // create missing
-      if (type.includes(2)) e.recipes.thermal.press(result, `#forge:ingots/${material}`) // thermal missing
-      if (type.includes(3)) e.shapeless(result, [`#forge:ingots/${material}`, 'immersiveengineering:hammer']).id(`kubejs:${material}_plate`) // crafting missing
-      if (type.includes(4)) platePressing(material, result) // immersiveengineering missing
-    })
-  }
   function multicrush(output, input) {
     e.recipes.mekanism.crushing(output, input)
     e.recipes.create.crushing(output, input)
@@ -77,27 +13,6 @@ onEvent('recipes', e => {
   multicrush('allthemodium:unobtainium_allthemodium_alloy_dust', 'allthemodium:unobtainium_allthemodium_alloy_ingot')
   multicrush('allthemodium:unobtainium_vibranium_alloy_dust', 'allthemodium:unobtainium_vibranium_alloy_ingot')
   multicrush('allthemodium:vibranium_allthemodium_alloy_dust', 'allthemodium:vibranium_allthemodium_alloy_ingot')
-
-  plateProcessing([
-    ['aluminum', [1, 2], 47, 'immersiveengineering:plate_aluminum'],
-    ['steel', [1, 2], null, 'immersiveengineering:plate_steel'],
-    ['uranium', [1], null, 'immersiveengineering:plate_uranium'],
-    ['iron', [0], 60],
-    ['gold', [0], 57],
-    ['copper', [0], 50],
-    ['tin', [0, 1, 3], 39],
-    ['lead', [0, 1], 43],
-    ['silver', [0, 1], 60],
-    ['nickel', [0, 1], 65],
-    ['bronze', [0, 1, 3], 57],
-    ['electrum', [0, 1], 59],
-    ['invar', [0, 1, 3], 63],
-    ['constantan', [0, 1], 64],
-    ['signalum', [1, 3, 4]],
-    ['lumium', [1, 3, 4]],
-    ['enderium', [1, 3, 4]],
-    ['brass', [2, 3], 57, 'create:brass_sheet']
-  ])
 
   e.shapeless('allthecompressed:atm_star_block', 'kubejs:atm_star_block').id('kubejs:atmadditions/atm_star_block_conversion')
 

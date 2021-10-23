@@ -169,7 +169,7 @@ onEvent('jei.hide.items', e => {
   //#region hideStuff
   hideStuff('thermal', 'dust', ['iron', 'gold'])
   hideStuff('immersiveengineering', 'dust', ['iron', 'gold', 'sulfur', 'wood'])
-  hideStuff('immersiveengineering', 'plate', ['iron', 'gold', 'copper', 'aluminum', 'lead', 'silver', 'nickel', 'constantan', 'electrum'])
+  hideStuff('immersiveengineering', 'plate', ['iron', 'gold', 'copper', 'lead', 'silver', 'nickel', 'constantan', 'electrum'])
   hideStuff('mekanism', 'dust', ['lapis_lazuli', 'emerald', 'diamond', 'quartz', 'iron', 'gold'])
   hideStuff('mekanism', 'crystal', ['osmium', 'copper', 'tin', 'lead', 'uranium'])
   hideStuff('mekanism', 'shard', ['osmium', 'copper', 'tin', 'lead', 'uranium'])
