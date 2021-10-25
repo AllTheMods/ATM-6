@@ -476,8 +476,10 @@ onEvent('recipes', e => {
   e.replaceOutput('mekanism:dust_quartz', 'thermal:quartz_dust')
   e.replaceOutput('appliedenergistics2:nether_quartz_dust', 'thermal:quartz_dust')
   e.replaceOutput('thermal:coal_coke', 'immersiveengineering:coal_coke')
+  e.replaceOutput('thermal:coal_coke_block', 'immersiveengineering:coke')
   e.replaceOutput('mekanism:dust_diamond', 'thermal:diamond_dust')
   e.replaceOutput('createaddition:diamond_grit', 'thermal:diamond_dust')
+  e.remove({id: 'thermal:storage/coal_coke_block'})
 
   // #region ExtraDisks & ExtraStorage
   function unifyExtraStorageDisks(entries) {
