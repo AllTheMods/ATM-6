@@ -1,4 +1,7 @@
 [projection]
-		PROJECTION_BLACKLIST = ["silentgear"]
-		POWER_CONSOLIDATION_TIERS = [10000.0, 50000.0, 500000.0, 1000000.0, 5000000.0]
-		POWER_CONSOLIDATION_TIER_UPGRADE_ITEM = ["atmadditions:atm_star"]
+	PROJECTION_BLACKLIST = ["silentgear"]
+	POWER_CONSOLIDATION_TIERS = [10000.0, 50000.0, 500000.0, 1000000.0, 5000000.0]
+	POWER_CONSOLIDATION_TIER_UPGRADE_ITEM = ["atmadditions:atm_star"]
+[boundary]
+#Entities that won't be considered for the boundary
+	DRAIN_LIFE_ENTITY_BLACKLIST = ["dummmmmmy:target_dummy"]

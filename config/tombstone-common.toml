@@ -6,3 +6,9 @@
 [loot]
 	#Entities that can't found as loot in a Familiar Receptacle
 	unhandled_tameable_entities = ["iceandfire:fire_dragon", "iceandfire:ice_dragon", "iceandfire:lightning_dragon"]
+#Miscellaneous options
+[general]
+	#Beneficial effects that can't used by certain features such as ankh of pray, lollipop, scroll of preservation, alchemy perk and magic siphon enchantment
+	unhandled_beneficial_effects = ["extraalchemy", "astralsorcery:potiontimefreeze", "xreliquary:flight", "mana-and-artifice"]
+	#Harmful effects that can't used by certain features such as tablet of cupidity and the enchantment plague bringer
+	unhandled_harmful_effects = ["minecraft:nausea", "mana-and-artifice", "mahoutsukai"]

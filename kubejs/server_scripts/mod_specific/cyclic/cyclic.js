@@ -1,4 +1,10 @@
 onEvent('recipes', e => {
+  modifyShaped(e, 'cyclic:soulstone', 1, ['GTG', 'TST', 'GTG'], {
+    G: '#forge:ingots/gold',
+    T: 'minecraft:totem_of_undying',
+    S: 'atmadditions:atm_star_shard'
+  })
+
   removeRecipeByID(e, [
     'cyclic:melter_honey',
     'cyclic:melter_honey1',

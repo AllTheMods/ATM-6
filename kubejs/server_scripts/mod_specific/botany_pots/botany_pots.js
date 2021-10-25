@@ -106,40 +106,29 @@ onEvent('recipes', e => {
     'dye',
     'fish',
     'honey',
-    'iridium',
     'mystical_flower',
     'nature',
     'nether',
     'pig',
-    'rubber',
     'saltpeter',
     'sheep',
-    'silicon',
     'slime',
     'squid',
-    'sulfur',
     'turtle',
-    'sky_stone',
     'apatite'
   ], 1750, 'prudentium')
   //Tier 3 Crops
   tier([
     'azure_silver',
-    'brass',
-    'bronze',
     'certus_quartz',
     'creeper',
     'crimson_iron',
-    'ender_biotite',
     'glowstone',
-    'graphite',
     'iron',
     'lead',
-    'manasteel',
     'nether_quartz',
     'obsidian',
     'prismarine',
-    'quartz_enriched_iron',
     'rabbit',
     'redstone',
     'silver',
@@ -148,67 +137,36 @@ onEvent('recipes', e => {
     'tin',
     'zinc',
     'zombie',
-    'lumium',
-    'fluorite',
-    'tinkers_bronze',
-    'slimesteel',
-    'pig_iron',
-    'steeleaf',
-    'ironwood'
+    'fluorite'
   ], 2500, 'tertium')
   //Tier 4 Crops
   tier([
     'azure_electrum',
     'blaze',
-    'chrome',
-    'constantan',
-    'crimson_steel',
-    'electrum',
-    'elementium',
     'end',
     'enderman',
     'experience',
-    'fluix',
     'ghast',
     'gold',
-    'invar',
     'lapis_lazuli',
-    'mithril',
     'nickel',
-    'oratchalcum',
     'osmium',
-    'refined_glowstone',
-    'refined_obsidian',
-    'steel',
-    'titanium',
-    'tungsten',
-    'enderium',
-    'compressed_iron',
-    'hop_graphite',
-    'cobalt',
-    'rose_gold',
-    'knightmetal',
-    'fiery_ingot'
+    'cobalt'
   ], 3250, 'imperium')
   //Tier 5 Crops
   tier([
     'diamond',
     'emerald',
     'netherite',
-    'terrasteel',
     'uraninite',
     'wither_skeleton',
     'platinum',
-    'uranium',
-    'manyullyn',
-    'queens_slime',
-    'hepatizon'
+    'uranium'
   ], 4000, 'supremium')
   //Tier 6 Crops
   tier([
     'dragon_egg',
-    'nether_star',
-    'nitro_crystal',
+    'nether_star'
   ], 4750, 'insanium')
   //Magical Crops
   tier([

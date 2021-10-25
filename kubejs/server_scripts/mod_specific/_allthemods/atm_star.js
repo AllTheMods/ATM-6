@@ -96,7 +96,7 @@ onEvent('recipes', e => {
     'kubejs:potassium_nitrate_block',
     'mekanism:sulfuric_acid_bucket',
     'iceandfire:dragonsteel_fire_block',
-    'thermal:coal_coke_block',
+    '#forge:storage_blocks/coal_coke',
     'immersivepetroleum:napalm_bucket',
     'pneumaticcraft:lpg_bucket'
   ]).syphon(50000).id('kubejs:atmadditions/philosophers_fuel')
