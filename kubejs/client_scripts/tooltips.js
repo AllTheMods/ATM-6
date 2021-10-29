@@ -63,6 +63,7 @@ onEvent('item.tooltip', e => {
   formattedTooltip('appliedenergistics2:quantum_entangled_singularity', 'To make this, you must use Ender Pearls, not Ender Dust')
   formattedTooltip('astralsorcery:altar_discovery', 'Check the Astral Tome for more info')
   formattedTooltip('enderchests:ender_chest', 'Increase the capacity by shift right-clicking with Eye of Ender or Ender Pearls')
+  formattedTooltip('enderchests:ender_tank', 'Increase the capacity by shift right-clicking with Eye of Ender or Ender Pearls')
 
   //#region Pipez
   //pipes
