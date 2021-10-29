@@ -146,6 +146,7 @@ onEvent('recipes', e => {
     'extradisks:part/1048576k_storage_part',
     'extradisks:part/infinite_fluid_storage_part',
     'extradisks:part/infinite_storage_part',
+    /^extrastorage:(?:part|disk|storage_block)\/.+/,
     'creativecrafter:creative_crafter',
     'creativewirelesstransmitter:creative_wireless_transmitter',
     'extrastorage:iron_crafter'
