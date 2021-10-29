@@ -481,29 +481,6 @@ onEvent('recipes', e => {
   e.replaceOutput('createaddition:diamond_grit', 'thermal:diamond_dust')
   e.remove({id: 'thermal:storage/coal_coke_block'})
 
-  // #region ExtraDisks & ExtraStorage
-  function unifyExtraStorageDisks(entries) {
-    entries.forEach(size => {
-      utils.listOf([
-        ['parts', 'part', 'part', 'storagepart'],
-        ['storage_blocks', 'storage_block', 'block', 'block'],
-        ['disks', 'disk/shaped', 'disk', 'disk']
-      ]).forEach(([tagCategory, recipeCategory, disk, storage]) => {
-        e.replaceInput(`extrastorage:${storage}_${size}k`, `#refinedstorage:${tagCategory}/items/${size}k`)
-        e.replaceInput(`extrastorage:${storage}_${size * 64}k_fluid`, `#refinedstorage:${tagCategory}/fluids/${size * 64}k`)
-        e.replaceOutput(`extrastorage:${storage}_${size}k`, `extradisks:${size}k_storage_${disk}`)
-        e.replaceOutput(`extrastorage:${storage}_${size * 64}k_fluid`, `extradisks:${size * 64}k_fluid_storage_${disk}`)
-
-        e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size}k` })
-        e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size * 64}k_fluid` })
-      })
-      e.remove({ id: `extrastorage:disk/shapeless/disk_${size}k` })
-      e.remove({ id: `extrastorage:disk/shapeless/disk_${size * 64}k_fluid` })
-    })
-  }
-
-  unifyExtraStorageDisks([256, 1024, 4096, 16384])
-  // #endregion ExtraDisks & ExtraStorage
   // #region Honey
   let simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'cyclic:honey', 'create:honey']
   let customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey']
