@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tool_bakeware"
+    },
+    {
+      "tag": "forge:butter"
+    },
+    {
+      "item": "pamhc2foodextended:mochiitem"
+    },
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "tag": "forge:egg"
+    },
+    {
+      "tag": "forge:spices/vanilla"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "tag": "forge:tool_grinder"
+    }
+  ],
+  "result": {
+    "item": "pamhc2foodextended:mochicakeitem",
+    "count": 1
+  }
+}
