@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tool_grinder"
+    },
+    {
+      "tag": "forge:crops/nutmeg"
+    }
+  ],
+  "result": {
+    "item": "pamhc2foodextended:groundnutmegitem",
+    "count": 1
+  }
+}

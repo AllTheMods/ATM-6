@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tool_skillet"
+    },
+    {
+      "item": "pamhc2foodextended:gourmetporkpattyitem"
+    },
+    {
+      "item": "pamhc2foodextended:briochebunitem"
+    },
+    {
+      "tag": "forge:crops/tomato"
+    },
+    {
+      "tag": "forge:leafyvegetables"
+    },
+    {
+      "tag": "forge:crops/avocado"
+    },
+    {
+      "item": "pamhc2foodextended:friedonionsitem"
+    },
+    {
+      "tag": "forge:tool_grinder"
+    }
+  ],
+  "result": {
+    "item": "pamhc2foodextended:gourmetporkburgeritem",
+    "count": 1
+  }
+}
