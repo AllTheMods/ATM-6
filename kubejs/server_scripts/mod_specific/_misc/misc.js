@@ -41,7 +41,7 @@ onEvent('recipes', e => {
 
   e.shaped('waterstrainer:super_worm', ['DSD', 'DWD', 'DDD'], {
     D: '#forge:dirt',
-    S: 'atmadditions:atm_star',
+    S: 'atmadditions:atm_star_shard',
     W: 'waterstrainer:worm'
   }).id('kubejs:waterstrainer/super_worm')
 

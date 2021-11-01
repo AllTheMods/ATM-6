@@ -48,6 +48,13 @@ onEvent('recipes', e => {
     C: `extrastorage:netherite_crafter`,
     U: `#forge:ingots/unobtainium`
   }).id(`kubejs:creativecrafter/creative_crafter`)
+
+  e.shaped('extradisks:1024k_storage_part', ['ana', 'fbf', 'afa'], {
+    a: 'refinedstorage:advanced_processor',
+    f: 'extradisks:256k_storage_part',
+    b: '#forge:dusts/redstone',
+    n: 'refinedstorage:quartz_enriched_iron'
+  }).id('kubejs:1024k_storage_part')
   e.shaped('refinedstorage:4096k_fluid_storage_part', ['ana', 'fbf', 'afa'], {
     a: 'refinedstorage:advanced_processor',
     f: 'refinedstorage:1024k_fluid_storage_part',
@@ -134,6 +141,7 @@ onEvent('recipes', e => {
 
 
   removeRecipeByID(e, [
+    'extradisks:part/1024k_storage_part',
     'refinedstorage:part/4096k_fluid_storage_part',
     'extradisks:part/4096k_storage_part',
     'extradisks:part/16384k_fluid_storage_part',
