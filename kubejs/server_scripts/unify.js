@@ -112,6 +112,9 @@ onEvent('recipes', e => {
   // #endregion Metal Unification
   // #region Plate Unification
   function plateCasting(material, coolingTime, result) {
+    let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
+    let fluid = alltheores.includes(material) ? {tag: `forge:molten_${material}`, amount: 144} : {name: `tconstruct:molten_${material}`, amount: 144}
+
     e.custom({
       type: 'tconstruct:casting_table',
       conditions: [
@@ -121,7 +124,7 @@ onEvent('recipes', e => {
         }
       ],
       cast: {tag: 'tconstruct:casts/multi_use/plate'},
-      fluid: {name: `tconstruct:molten_${material}`, amount: 144},
+      fluid: fluid,
       result: {item: result},
       cooling_time: coolingTime
     }).id(`kubejs:smeltery/casting/metal/${material}/plate_gold_cast`)
@@ -135,7 +138,7 @@ onEvent('recipes', e => {
       ],
       cast: {tag: 'tconstruct:casts/single_use/plate'},
       cast_consumed: true,
-      fluid: {name: `tconstruct:molten_${material}`, amount: 144},
+      fluid: fluid,
       result: {item: result},
       cooling_time: coolingTime
     }).id(`kubejs:smeltery/casting/metal/${material}/plate_sand_cast`)
