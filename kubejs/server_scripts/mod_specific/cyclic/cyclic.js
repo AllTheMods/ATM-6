@@ -32,6 +32,7 @@ onEvent('recipes', e => {
   ])
 
   removeRecipeByOutput(e, [
+    'cyclic:packager', // lag issues
     'cyclic:uncrafter',
     'cyclic:tile_transporter_empty',
     'cyclic:trash'
