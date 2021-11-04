@@ -947,11 +947,6 @@
 			id: "21101506FB150EA8"
 			tasks: [
 				{
-					id: "5FA814539AF1DDA2"
-					type: "item"
-					item: "appliedenergistics2:network_tool"
-				}
-				{
 					id: "0BAAD4561465D96A"
 					type: "item"
 					item: {

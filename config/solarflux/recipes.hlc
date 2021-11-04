@@ -1,74 +1,66 @@
-~ Saved With Solar Flux 16.2.5
+~ Saved With Hammer Lib 16.3.25
 
+# List of all the recipes that Solar Flux adds.
+# Defaulted to true, but you may disable any of the recipes listed.
+# After you're done changing, you may apply the code right away, using /reload command
 +C:recipes={
-  # Enable this recipe? (Default: true)
   +B:solarflux:blank_upgrade=true
 
-  # Enable this recipe? (Default: true)
+  +B:solarflux:blazing_coating=true
+
   +B:solarflux:block_charging_upgrade=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:capacity_upgrade=true
 
-  # Enable this recipe? (Default: true)
+  +B:solarflux:chaotic_panel=true
+
   +B:solarflux:dispersive_upgrade=true
 
-  # Enable this recipe? (Default: true)
+  +B:solarflux:draconic_panel=true
+
   +B:solarflux:efficiency_upgrade=true
 
-  # Enable this recipe? (Default: true)
+  +B:solarflux:emerald_glass=true
+
+  +B:solarflux:ender_glass=true
+
   +B:solarflux:furnace_upgrade=true
 
-  # Enable this recipe? (Default: true)
-  +B:solarflux:mirror=false
+  +B:solarflux:mirror=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:photovoltaic_cell_1=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:photovoltaic_cell_2=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:photovoltaic_cell_3=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:photovoltaic_cell_4=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:photovoltaic_cell_5=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:photovoltaic_cell_6=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_1=false
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_2=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_3=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_4=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_5=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_6=false
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_7=false
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:solar_panel_8=false
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:transfer_rate_upgrade=true
 
-  # Enable this recipe? (Default: true)
   +B:solarflux:traversal_upgrade=true
+
+  +B:solarflux:wyvern_panel=true
 
 }
 

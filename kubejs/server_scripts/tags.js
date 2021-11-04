@@ -114,6 +114,7 @@ onEvent('item.tags', e => {
   e.add('misctags:water/items', ['#forge:water', 'minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'mahoutsukai:murky_bucket', 'resourcefulbees:water_honeycomb', 'mysticalagriculture:water_essence'])
   e.add('misctags:immersive_engineering_hammer', 'immersiveengineering:hammer')
   e.add('misctags:immersive_engineering_wirecutter', 'immersiveengineering:wirecutter')
+  e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
   //#endregion
   //#region removals
   e.remove(`minecraft:flowers`, `#botania:special_flowers`)
@@ -195,8 +196,8 @@ onEvent('block.tags', e => {
 
 //#region ENTITY TAGS
 onEvent('entity_type.tags', e => {
-  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg',])
-  e.add('mob_grinding_utils:noswab', [/resourcefulbees:.+_bee/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg',])
+  e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/, /iceandfire:myrmex.+/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', 'artifacts:mimic',])
+  e.add('mob_grinding_utils:noswab', [/resourcefulbees:.+_bee/, /iceandfire:myrmex.+/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', 'artifacts:mimic',])
 })
 //#endregion
 

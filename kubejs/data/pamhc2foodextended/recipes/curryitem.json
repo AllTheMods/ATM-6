@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tool_saucepan"
+    },
+    {
+      "tag": "forge:crops/rice"
+    },
+    {
+      "tag": "forge:spices/blackpepper"
+    },
+    {
+      "tag": "forge:crops/chilipepper"
+    },
+    {
+      "tag": "forge:crops/coconut"
+    },
+    {
+      "tag": "forge:spices/currypowder"
+    },
+    {
+      "tag": "forge:tool_grinder"
+    }
+  ],
+  "result": {
+    "item": "pamhc2foodextended:curryitem",
+    "count": 1
+  }
+}

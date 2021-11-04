@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tool_cuttingboard"
+    },
+    {
+      "item": "pamhc2foodcore:friedchickenitem"
+    },
+    {
+      "item": "pamhc2foodextended:biscuititem"
+    },
+    {
+      "tag": "forge:condiments/bbqsauce"
+    },
+    {
+      "tag": "forge:tool_grinder"
+    }
+  ],
+  "result": {
+    "item": "pamhc2foodextended:bbqchickenbiscuititem",
+    "count": 1
+  }
+}

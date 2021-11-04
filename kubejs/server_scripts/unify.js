@@ -112,6 +112,9 @@ onEvent('recipes', e => {
   // #endregion Metal Unification
   // #region Plate Unification
   function plateCasting(material, coolingTime, result) {
+    let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
+    let fluid = alltheores.includes(material) ? {tag: `forge:molten_${material}`, amount: 144} : {name: `tconstruct:molten_${material}`, amount: 144}
+
     e.custom({
       type: 'tconstruct:casting_table',
       conditions: [
@@ -121,7 +124,7 @@ onEvent('recipes', e => {
         }
       ],
       cast: {tag: 'tconstruct:casts/multi_use/plate'},
-      fluid: {name: `tconstruct:molten_${material}`, amount: 144},
+      fluid: fluid,
       result: {item: result},
       cooling_time: coolingTime
     }).id(`kubejs:smeltery/casting/metal/${material}/plate_gold_cast`)
@@ -135,7 +138,7 @@ onEvent('recipes', e => {
       ],
       cast: {tag: 'tconstruct:casts/single_use/plate'},
       cast_consumed: true,
-      fluid: {name: `tconstruct:molten_${material}`, amount: 144},
+      fluid: fluid,
       result: {item: result},
       cooling_time: coolingTime
     }).id(`kubejs:smeltery/casting/metal/${material}/plate_sand_cast`)
@@ -481,29 +484,6 @@ onEvent('recipes', e => {
   e.replaceOutput('createaddition:diamond_grit', 'thermal:diamond_dust')
   e.remove({id: 'thermal:storage/coal_coke_block'})
 
-  // #region ExtraDisks & ExtraStorage
-  function unifyExtraStorageDisks(entries) {
-    entries.forEach(size => {
-      utils.listOf([
-        ['parts', 'part', 'part', 'storagepart'],
-        ['storage_blocks', 'storage_block', 'block', 'block'],
-        ['disks', 'disk/shaped', 'disk', 'disk']
-      ]).forEach(([tagCategory, recipeCategory, disk, storage]) => {
-        e.replaceInput(`extrastorage:${storage}_${size}k`, `#refinedstorage:${tagCategory}/items/${size}k`)
-        e.replaceInput(`extrastorage:${storage}_${size * 64}k_fluid`, `#refinedstorage:${tagCategory}/fluids/${size * 64}k`)
-        e.replaceOutput(`extrastorage:${storage}_${size}k`, `extradisks:${size}k_storage_${disk}`)
-        e.replaceOutput(`extrastorage:${storage}_${size * 64}k_fluid`, `extradisks:${size * 64}k_fluid_storage_${disk}`)
-
-        e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size}k` })
-        e.remove({ id: `extrastorage:${recipeCategory}/${storage}_${size * 64}k_fluid` })
-      })
-      e.remove({ id: `extrastorage:disk/shapeless/disk_${size}k` })
-      e.remove({ id: `extrastorage:disk/shapeless/disk_${size * 64}k_fluid` })
-    })
-  }
-
-  unifyExtraStorageDisks([256, 1024, 4096, 16384])
-  // #endregion ExtraDisks & ExtraStorage
   // #region Honey
   let simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'cyclic:honey', 'create:honey']
   let customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey']
