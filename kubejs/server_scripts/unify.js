@@ -42,7 +42,7 @@ onEvent('recipes', e => {
             { item: 'engineerstools:crushing_hammer' }
           ],
           result: { item: dustItem, count: 2 },
-          aspects: { tool: 'engineerstools:crushing_hammer', tool_damage: 25 }
+          aspects: { tool: 'engineerstools:crushing_hammer', tool_damage: 10 }
         })
       }
       e.recipes.immersiveengineering.crusher({
@@ -113,33 +113,33 @@ onEvent('recipes', e => {
   // #region Plate Unification
   function plateCasting(material, coolingTime, result) {
     let alltheores = ['aluminum', 'copper', 'lead', 'nickel', 'osmium', 'platinum', 'silver', 'tin', 'uranium', 'zinc']
-    let fluid = alltheores.includes(material) ? {tag: `forge:molten_${material}`, amount: 144} : {name: `tconstruct:molten_${material}`, amount: 144}
+    let fluid = alltheores.includes(material) ? { tag: `forge:molten_${material}`, amount: 144 } : { name: `tconstruct:molten_${material}`, amount: 144 }
 
     e.custom({
       type: 'tconstruct:casting_table',
       conditions: [
         {
-          value: {tag: `forge:plates/${material}`, type: 'forge:tag_empty'},
+          value: { tag: `forge:plates/${material}`, type: 'forge:tag_empty' },
           type: 'forge:not'
         }
       ],
-      cast: {tag: 'tconstruct:casts/multi_use/plate'},
+      cast: { tag: 'tconstruct:casts/multi_use/plate' },
       fluid: fluid,
-      result: {item: result},
+      result: { item: result },
       cooling_time: coolingTime
     }).id(`kubejs:smeltery/casting/metal/${material}/plate_gold_cast`)
     e.custom({
       type: 'tconstruct:casting_table',
       conditions: [
         {
-          value: {tag: `forge:plates/${material}`, type: 'forge:tag_empty'},
+          value: { tag: `forge:plates/${material}`, type: 'forge:tag_empty' },
           type: 'forge:not'
         }
       ],
-      cast: {tag: 'tconstruct:casts/single_use/plate'},
+      cast: { tag: 'tconstruct:casts/single_use/plate' },
       cast_consumed: true,
       fluid: fluid,
-      result: {item: result},
+      result: { item: result },
       cooling_time: coolingTime
     }).id(`kubejs:smeltery/casting/metal/${material}/plate_sand_cast`)
   }
@@ -147,19 +147,19 @@ onEvent('recipes', e => {
   function platePressing(material, result) {
     e.custom({
       type: 'immersiveengineering:metal_press',
-      mold: {item: 'immersiveengineering:mold_plate'},
-      result: {item: result},
+      mold: { item: 'immersiveengineering:mold_plate' },
+      result: { item: result },
       conditions: [
         {
-          value: {tag: `forge:ingots/${material}`, type: 'forge:tag_empty'},
+          value: { tag: `forge:ingots/${material}`, type: 'forge:tag_empty' },
           type: 'forge:not'
         },
         {
-          value: {tag: `forge:plates/${material}`, type: 'forge:tag_empty'},
+          value: { tag: `forge:plates/${material}`, type: 'forge:tag_empty' },
           type: 'forge:not'
         }
       ],
-      input: {tag: `forge:ingots/${material}`},
+      input: { tag: `forge:ingots/${material}` },
       energy: 2400
     }).id(`kubejs:metalpress/plate_${material}`)
   }
@@ -172,22 +172,22 @@ onEvent('recipes', e => {
 
       result = result ? result : `thermal:${material}_plate`
 
-      e.remove({id: `immersiveengineering:crafting/plate_${material}_hammering`});
+      e.remove({ id: `immersiveengineering:crafting/plate_${material}_hammering` });
       e.shapeless(result, [`#forge:ingots/${material}`, '#misctags:immersive_engineering_hammer']).id(`kubejs:crafting/plate_${material}_hammering`);
 
-      e.remove({id: `create:pressing/${material}_ingot`})
+      e.remove({ id: `create:pressing/${material}_ingot` })
       e.recipes.create.pressing(result, `#forge:ingots/${material}`).id(`kubejs:pressing/${material}_ingot`)
 
       if (coolingTime !== null) {
-        e.remove({id: `tconstruct:smeltery/casting/metal/${material}/plate_gold_cast`})
-        e.remove({id: `tconstruct:smeltery/casting/metal/${material}/plate_sand_cast`})
+        e.remove({ id: `tconstruct:smeltery/casting/metal/${material}/plate_gold_cast` })
+        e.remove({ id: `tconstruct:smeltery/casting/metal/${material}/plate_sand_cast` })
         plateCasting(material, coolingTime, result)
       }
 
-      e.remove({id: `immersiveengineering:metalpress/plate_${material}`})
+      e.remove({ id: `immersiveengineering:metalpress/plate_${material}` })
       platePressing(material, result)
 
-      e.remove({id: `thermal:machine/press/press_${material}_ingot_to_plate`})
+      e.remove({ id: `thermal:machine/press/press_${material}_ingot_to_plate` })
       e.recipes.thermal.press(result, `#forge:ingots/${material}`).id(`kubejs:machine/press/press_${material}_ingot_to_plate`)
     })
   }
@@ -482,7 +482,7 @@ onEvent('recipes', e => {
   e.replaceOutput('thermal:coal_coke_block', 'immersiveengineering:coke')
   e.replaceOutput('mekanism:dust_diamond', 'thermal:diamond_dust')
   e.replaceOutput('createaddition:diamond_grit', 'thermal:diamond_dust')
-  e.remove({id: 'thermal:storage/coal_coke_block'})
+  e.remove({ id: 'thermal:storage/coal_coke_block' })
 
   // #region Honey
   let simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'cyclic:honey', 'create:honey']
