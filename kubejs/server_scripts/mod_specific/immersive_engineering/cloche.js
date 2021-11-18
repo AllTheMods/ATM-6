@@ -2,7 +2,7 @@ onEvent('recipes', e => {
   //#region FUNCTIONS
   function tier(types, time, soil, rCount) {
     types.forEach(type => {
-      e.recipes.immersiveengineering.cloche(Item.of(`mysticalagriculture:${type}_essence`, rCount), `mysticalagriculture:${type}_seeds`, soil, `mysticalagriculture:${type}_crop`).time(time)
+      e.recipes.immersiveengineering.cloche(Item.of(`mysticalagriculture:${type}_essence`, rCount), `mysticalagriculture:${type}_seeds`, soil, `mysticalagriculture:${type}_crop`).time(time).id(`kubejs:immersiveengineering/cloche/${type}`)
     })
   }
   function inf(rCount, time, soil) {
@@ -92,12 +92,14 @@ onEvent('recipes', e => {
     'uraninite',
     'wither_skeleton',
     'platinum',
-    'uranium'
+    'uranium',
+    'draconium'
   ], 4000, '#misctags:farmland/tier5', 2)
   //Tier 6 Crops
   tier([
     'dragon_egg',
-    'nether_star'
+    'nether_star',
+    'awakened_draconium'
   ], 4750, '#misctags:farmland/tier6', 2)
   //Magical Tier
   tier([
