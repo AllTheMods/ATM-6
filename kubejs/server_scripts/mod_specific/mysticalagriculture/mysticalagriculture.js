@@ -35,7 +35,10 @@ onEvent('recipes', e => {
     M: 'botania:manasteel_ingot',
     A: '#forge:nuggets/allthemodium'
   })
-
+  e.shaped('8x bloodmagic:saltpeter', [' A ', ' A ', ' A '], {
+    A: 'mysticalagriculture:saltpeter_essence'
+  }).id('kubejs:mysticalagriculture/bloodmagic/saltpeter')
+  e.remove({ id: 'mysticalagriculture:essence/common/saltpeter' })
   e.recipes.mysticalagriculture.infusion({
     input: { item: 'mysticalagriculture:prosperity_seed_base' },
     ingredients: [{ tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }],
