@@ -29,13 +29,17 @@ onEvent('recipes', e => {
   essenceCircle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
   essenceCircle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
   essenceCircle('astralsorcery:aquamarine', 8, 'aquamarine')
+  essenceCircle('alltheores:copper_ingot', 6, 'copper')
 
   modifyShaped(e, 'mysticalagriculture:unattuned_augment', 1, ['PMP', 'AMA', 'PMP'], {
     P: 'mysticalagriculture:prosperity_ingot',
     M: 'botania:manasteel_ingot',
     A: '#forge:nuggets/allthemodium'
   })
-
+  e.shaped('8x bloodmagic:saltpeter', [' A ', ' A ', ' A '], {
+    A: 'mysticalagriculture:saltpeter_essence'
+  }).id('kubejs:mysticalagriculture/bloodmagic/saltpeter')
+  removeRecipeByID(e, ['mysticalagriculture:essence/common/saltpeter', 'mysticalagriculture:essence/common/copper_ingot'])
   e.recipes.mysticalagriculture.infusion({
     input: { item: 'mysticalagriculture:prosperity_seed_base' },
     ingredients: [{ tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }, { tag: 'chisel:marble' }, { item: 'mysticalagriculture:prudentium_essence' }],
