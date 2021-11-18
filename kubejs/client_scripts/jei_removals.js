@@ -130,7 +130,8 @@ onEvent('jei.hide.items', e => {
     'zycraft:aluminium_foil',
     'zycraft:quartz_bucket',
     'zycraft:aluminium_can',
-    'compactmachines:tunnel'
+    'compactmachines:tunnel',
+    'projectred-core:copper_ingot'
   ])
 
   enviroStonesMats.forEach(stone => e.hide(`/enviromats:${stone}_.*/`))
