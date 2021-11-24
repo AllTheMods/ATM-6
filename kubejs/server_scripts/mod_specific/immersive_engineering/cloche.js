@@ -16,7 +16,6 @@ onEvent('recipes', e => {
   //#region CROPS
   //Tier 1 Crops
   tier([
-    'inferium',
     'air',
     'earth',
     'fire',
