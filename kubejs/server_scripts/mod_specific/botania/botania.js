@@ -5,9 +5,6 @@ onEvent('recipes', e => {
     R: '#botania:runes'
   }).id('kubejs:botania/creative_pool')
 
-  e.shapeless(item.of('botania:mana_tablet', { mana: 500000, creative: '1b' }), 'botania:creative_pool').id('kubejs:botania/creative_mana_tablet')
-  e.shapeless('botania:creative_pool', Item.of('botania:mana_tablet', { mana: 500000, creative: true })).id('kubejs:botania/creative_pool_from_creative_mana_tablet')
-
   e.recipes.botania.runic_altar({
     output: { item: 'kubejs:rune_of_sins' },
     mana: 25000,
