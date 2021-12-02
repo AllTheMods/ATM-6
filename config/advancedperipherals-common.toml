@@ -1,6 +1,0 @@
-[Features]
-	enableChunkyTurtle = false
-[world]
-	enableVillagerStructures = false
-	givePlayerBookOnJoin = false
-

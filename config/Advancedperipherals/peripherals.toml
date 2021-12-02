@@ -1,0 +1,6 @@
+
+#Peripherals config
+[Peripherals]
+	[Peripherals.Chunky_Turtle]
+		#Enable the Chunky Turtle or not.
+		enableChunkyTurtle = false
