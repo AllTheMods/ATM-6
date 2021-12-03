@@ -457,6 +457,9 @@ onEvent('recipes', e => {
 
   // #endregion Tinkers Unification
 
+  e.replaceInput('zycraft:aluminium_block', '#forge:storage_blocks/aluminum')
+  e.remove({id: 'zycraft:aluminium_block'})
+
   e.replaceInput('appliedenergistics2:certus_quartz_dust', '#forge:dusts/certus_quartz')
   e.replaceInput('thermal:bitumen', '#forge:bitumen')
   e.replaceInput('immersivepetroleum:bitumen', '#forge:bitumen')
