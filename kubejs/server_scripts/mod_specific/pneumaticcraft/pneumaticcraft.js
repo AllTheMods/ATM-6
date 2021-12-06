@@ -147,4 +147,15 @@ onEvent('recipes', e => {
     'count': 1
   }], 'pneumaticcraft:empty_pcb', 3, 1.5)
   e.remove({ id: 'pneumaticcraft:pressure_chamber/empty_pcb' })
+
+  // change construction bricks to only take pneumaticcraft:plastic
+  function brickRecipe(color) {
+    e.shaped(`pneumaticcraft:plastic_brick_${color}`, ['PPP', 'PDP', 'PPP'], {
+      P: 'pneumaticcraft:plastic',
+      D: `#forge:dyes/${color}`
+    }).id(`kubejs:pneumaticcraft/plastic_brick_${color}`)
+    e.remove({ id: `pneumaticcraft:plastic_brick_${color}` })
+  }
+
+  colors.forEach(color => brickRecipe(color))
 })

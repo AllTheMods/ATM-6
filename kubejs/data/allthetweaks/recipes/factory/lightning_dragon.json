@@ -1,0 +1,36 @@
+{
+  "type": "woot:factory",
+  "mob": "iceandfire:lightning_dragon",
+  "items": [{
+    "item": "draconicevolution:dragon_heart",
+    "count": 1
+  }],
+  "fluids": [],
+  "drops": [
+    {
+      "item": "iceandfire:dragonscales_black",
+      "sizes": [3, 3, 3, 3],
+      "chances": [100.0, 100.0, 100.0, 100.0]
+    },
+    {
+      "item": "iceandfire:lightning_dragon_blood",
+      "sizes": [1, 1, 1, 1],
+      "chances": [100.0, 100.0, 100.0, 100.0]
+    },
+    {
+      "item": "iceandfire:lightning_dragon_flesh",
+      "sizes": [1, 1, 1, 1],
+      "chances": [100.0, 100.0, 100.0, 100.0]
+    },
+    {
+      "item": "iceandfire:lightning_dragon_heart",
+      "sizes": [1, 1, 1, 1],
+      "chances": [10.0, 10.0, 10.0, 10.0]
+    },
+    {
+      "item": "atmadditions:dragon_soul",
+      "sizes": [1, 1, 1, 1],
+      "chances": [10.0, 10.0, 10.0, 10.0]
+    }
+  ]
+}

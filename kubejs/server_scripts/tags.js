@@ -117,7 +117,7 @@ onEvent('item.tags', e => {
   e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
   //#endregion
   //#region removals
-  e.remove(`minecraft:flowers`, `#botania:special_flowers`)
+  e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)
   e.remove('forge:leather', 'forbidden_arcanus:rotten_leather')
   e.remove('engineerstools:musli_bar_food_blacklisted', 'minecraft:chicken')
   e.remove('forge:dyes/yellow', 'mekanism:dust_sulfur')

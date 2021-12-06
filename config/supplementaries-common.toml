@@ -1,0 +1,7 @@
+
+#Vanilla tweaks
+[tweaks]
+
+	[tweaks.placeable_books]
+		#Allow books and enchanted books to be placed on the ground
+		enabled = false
