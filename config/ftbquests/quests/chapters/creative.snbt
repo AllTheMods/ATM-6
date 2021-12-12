@@ -623,6 +623,11 @@
 				type: "item"
 				item: "allthecompressed:atm_star_block_1x"
 			}]
+			rewards: [{
+				id: "31A7D5AEF21B43BC"
+				type: "item"
+				item: "allthetweaks:trophy_atm"
+			}]
 		}
 		{
 			x: 1.0d
