@@ -35,7 +35,7 @@
 		{
 			title: "Create"
 			x: -0.5d
-			y: -3.0d			
+			y: -3.0d
 			hide_dependency_lines: true
 			id: "2CF11A70229000AB"
 			tasks: [
@@ -596,9 +596,10 @@
 			}]
 		}
 		{
+			title: "Set For Life"
 			x: 0.0d
 			y: -5.5d
-			subtitle: "Become God???"
+			subtitle: "Enough to make everything in the pack?"
 			hide_dependency_lines: true
 			dependencies: [
 				"2CF11A70229000AB"
@@ -620,7 +621,12 @@
 			tasks: [{
 				id: "0814C4E6DE262193"
 				type: "item"
-				item: "allthecompressed:atm_star_block_9x"
+				item: "allthecompressed:atm_star_block_1x"
+			}]
+			rewards: [{
+				id: "31A7D5AEF21B43BC"
+				type: "item"
+				item: "allthetweaks:trophy_atm"
 			}]
 		}
 		{
