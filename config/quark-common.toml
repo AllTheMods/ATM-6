@@ -25,6 +25,7 @@
 	[tools.color_runes]
 		"Apply Cost" = 15
 [tweaks]
+	"Automatic Recipe Unlock" = false
 	"Compasses Work Everywhere" = false
 	[tweaks.compasses_work_everywhere]
 		"Enable Compass Nerf" = false
