@@ -9,7 +9,7 @@ onEvent('recipes', e => {
     C: 'computercraft:computer_normal',
     A: '#forge:ingots/allthemodium'
   })
-  modifyShaped(e, 'computercraft:wired_modem', 1, [' S ', 'SRS', ' S '], {
+  modifyShaped(e, 'computercraft:wired_modem', 1, ['S S', ' R ', 'S S'], {
     S: '#forge:stone',
     R: '#forge:dusts/redstone'
   })
