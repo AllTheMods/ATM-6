@@ -176,6 +176,7 @@ onEvent('recipes', e => {
       e.shapeless(result, [`#forge:ingots/${material}`, '#misctags:immersive_engineering_hammer']).id(`kubejs:crafting/plate_${material}_hammering`);
 
       e.remove({ id: `create:pressing/${material}_ingot` })
+      e.remove({ id: `createaddition:pressing/${material}_ingot` })
       e.recipes.create.pressing(result, `#forge:ingots/${material}`).id(`kubejs:pressing/${material}_ingot`)
 
       if (coolingTime !== null) {
@@ -210,7 +211,8 @@ onEvent('recipes', e => {
     ['signalum', null],
     ['lumium', null],
     ['enderium', null],
-    ['brass', 57, 'create:brass_sheet']
+    ['brass', 57, 'create:brass_sheet'],
+    ['zinc', 57, 'createaddition:zinc_sheet'],
   ])
   // #endregion Plate Unification
   // #region Tinkers Unification

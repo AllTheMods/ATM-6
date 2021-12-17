@@ -112,14 +112,4 @@ onEvent('recipes', e => {
   regular(['forbidden_arcanus:arcane_gold_nugget', 'forbidden_arcanus:golden_orchid_seeds'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:golden_orchid')
   regular([Item.of('silentgear:flax_fiber', 2), 'silentgear:flax_seeds'], 'silentgear:flax_seeds', 'silentgear:flax_plant')
   regular([Item.of('byg:blueberries', 2)], 'byg:blueberries', 'byg:blueberry_bush')
-
-  //Inferium
-  inf(1, 1000, 'minecraft:dirt')
-  inf(2, 1750, 'mysticalagriculture:inferium_farmland')
-  inf(3, 2500, 'mysticalagriculture:prudentium_farmland')
-  inf(4, 3250, 'mysticalagriculture:tertium_farmland')
-  inf(5, 4000, 'mysticalagriculture:imperium_farmland')
-  inf(6, 4750, 'mysticalagriculture:supremium_farmland')
-  inf(7, 5500, 'mysticalagradditions:insanium_farmland')
-  //#endregion
 })
