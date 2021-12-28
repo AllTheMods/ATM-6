@@ -50,6 +50,7 @@ onEvent('recipes', e => {
   ], 1750, '#misctags:farmland/tier2', 2)
   //Tier 3 Crops
   tier([
+    'aquamarine',
     'azure_silver',
     'certus_quartz',
     'creeper',
