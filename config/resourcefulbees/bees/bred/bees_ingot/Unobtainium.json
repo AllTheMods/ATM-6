@@ -2,7 +2,7 @@
   "flower": "tag:forge:storage_blocks/unobtainium",
   "maxTimeInHive": 4800,
   "traits": [
-    "Unobtainium",
+    "unobtainium",
     "nether"
   ],
   "hasHoneycomb": true,

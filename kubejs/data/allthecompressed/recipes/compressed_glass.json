@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "allthecompressed:glass_block_1x",
+    "count": 1
+  }
+}

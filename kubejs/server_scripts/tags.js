@@ -115,6 +115,7 @@ onEvent('item.tags', e => {
   e.add('misctags:immersive_engineering_hammer', 'immersiveengineering:hammer')
   e.add('misctags:immersive_engineering_wirecutter', 'immersiveengineering:wirecutter')
   e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
+  e.add('forbidden_arcanus:indestructible_blacklisted', /^cb_microblock:[\w]+_saw$/)
   //#endregion
   //#region removals
   e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)
