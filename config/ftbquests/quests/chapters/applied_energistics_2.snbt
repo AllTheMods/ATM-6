@@ -1157,39 +1157,6 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -3.0d
-			dependencies: ["19299FC3C312F886"]
-			id: "5468CFE5CCC84ACC"
-			tasks: [
-				{
-					id: "212AB79A039305E3"
-					type: "item"
-					item: "appliedenergistics2:redstone_p2p_tunnel"
-				}
-				{
-					id: "7AE7F588A93A4B28"
-					type: "item"
-					item: "appliedenergistics2:item_p2p_tunnel"
-				}
-				{
-					id: "37DB80AF9100EEBE"
-					type: "item"
-					item: "appliedenergistics2:fluid_p2p_tunnel"
-				}
-				{
-					id: "600F540826528C28"
-					type: "item"
-					item: "appliedenergistics2:fe_p2p_tunnel"
-				}
-				{
-					id: "3737C51E0BE51641"
-					type: "item"
-					item: "appliedenergistics2:light_p2p_tunnel"
-				}
-			]
-		}
-		{
 			x: 1.0d
 			y: -3.0d
 			hide_dependency_lines: true
