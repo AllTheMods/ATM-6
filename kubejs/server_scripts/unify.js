@@ -226,6 +226,15 @@ onEvent('recipes', e => {
     }
     e.custom(type != 'ores' ? recipe : Object.assign({ byproducts: byproduct }, recipe)).id(`kubejs:melting/${type}/${material}`)
   }
+  function tinkerCreateCompat(material, temperature, time) {
+    e.custom({
+      type: 'tconstruct:melting',
+      ingredient: { item: `create:crushed_${material}_ore` },
+      result: { fluid: `alltheores:molten_${material}`, amount: 144 },
+      temperature: temperature,
+      time: time * 29.4
+    }).id(`kubejs:melting/crushed_ore/${material}`)
+  }
   function tinkerAlloys(entries) {
     entries.forEach(([output, outputAmount, temperature, inputs]) => {
       e.remove({ id: `tconstruct:smeltery/alloys/molten_${output}` })
@@ -261,6 +270,8 @@ onEvent('recipes', e => {
       e.replaceOutput(`tmechworks:${material}_ingot`, `alltheores:${material}_ingot`)
       e.replaceOutput(`tconstruct:${material}_block`, `alltheores:${material}_block`)
       e.replaceOutput(`tmechworks:${material}_block`, `alltheores:${material}_block`)
+
+      tinkerCreateCompat(material, temperature, time);
 
       meltingTypes.forEach(meltingType => {
         e.remove({ id: `tconstruct:smeltery/melting/metal/${material}/${meltingType}` })
@@ -398,6 +409,9 @@ onEvent('recipes', e => {
       [{ fluid: 'alltheores:molten_tin', amount: 48 }]
     ]
   ])
+
+  tinkerCreateCompat('iron', 800, 60);
+  tinkerCreateCompat('gold', 700, 57);
 
   tinkerAlloys([
     [
