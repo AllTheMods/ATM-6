@@ -46,7 +46,10 @@ onEvent('recipes', e => {
     'slime',
     'squid',
     'turtle',
-    'apatite'
+    'apatite',
+    'marble',
+    'limestone',
+    'basalt',
   ], 1750, '#misctags:farmland/tier2', 2)
   //Tier 3 Crops
   tier([
@@ -83,7 +86,9 @@ onEvent('recipes', e => {
     'lapis_lazuli',
     'nickel',
     'osmium',
-    'cobalt'
+    'cobalt',
+    'ruby',
+    'sapphire',
   ], 3250, '#misctags:farmland/tier4', 2)
   //Tier 5 Crops
   tier([
