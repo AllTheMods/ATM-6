@@ -118,7 +118,10 @@ onEvent('recipes', e => {
     'slime',
     'squid',
     'turtle',
-    'apatite'
+    'apatite',
+    'marble',
+    'limestone',
+    'basalt',
   ], 1750, 'prudentium')
   //Tier 3 Crops
   tier([
@@ -154,7 +157,8 @@ onEvent('recipes', e => {
     'lapis_lazuli',
     'nickel',
     'osmium',
-    'cobalt'
+    'ruby',
+    'sapphire',
   ], 3250, 'imperium')
   //Tier 5 Crops
   tier([
