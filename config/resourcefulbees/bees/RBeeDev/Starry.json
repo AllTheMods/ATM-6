@@ -1,12 +1,17 @@
 {
+  "beeVersion": 0.10,
   "flower": "allthecompressed:atm_star_block",
   "maxTimeInHive": 1200,
   "traits": [
     "starry"
   ],
+  "creator": "Lady Lexxie",
+  "lore": "Reach for the stars!",
+  "loreColor": "rainbow",
   "sizeModifier": 1.25,
   "hasHoneycomb": true,
   "apiaryOutputAmounts": [
+    1,
     1,
     1,
     1,
@@ -16,17 +21,18 @@
     "COMB",
     "COMB",
     "COMB",
+    "COMB",
     "COMB"
   ],
-  "baseLayerTexture": "special/starry_bee_primary_layer",
+  "baseLayerTexture": "empty_layer",
   "ColorData": {
-    "primaryColor": "#FFA500",
+    "isBeeColored": true,
+    "primaryColor": "#FFFFFF",
     "secondaryColor": "#FFA500",
     "honeycombColor": "#FFA500",
-    "primaryLayerTexture": "empty_layer",
-    "secondaryLayerTexture": "special/starry_bee_secondary_layer",
-    "emissiveLayerTexture": "special/starry_bee_emissive",
-    "isBeeColored": true,
+    "primaryLayerTexture": "starry/starry_bee_primary_layer",
+    "secondaryLayerTexture": "empty_layer",
+    "emissiveLayerTexture": "starry/starry_bee_emissive",
     "isGlowing": true,
     "glowColor": "#FFA500",
     "glowingPulse": 1,
@@ -34,10 +40,9 @@
   },
   "CombatData": {
     "isInvulnerable": true,
-    "isPassive": false,
     "removeStingerOnAttack": false,
-    "inflictsPoison": false,
-    "attackDamage": 10
+    "baseHealth": 20,
+    "attackDamage": 0
   },
   "MutationData": {
     "hasMutation": true,
