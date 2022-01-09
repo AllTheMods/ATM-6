@@ -2,4 +2,4 @@
 ["General Options"]
 	generateDefaults = false
 	useForgeBiomeDictionaries = false
-
+	enableEasterEggBees = false
