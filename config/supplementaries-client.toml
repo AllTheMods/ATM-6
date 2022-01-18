@@ -1,0 +1,5 @@
+
+#General settings
+[general]
+	#Enable Quark style config button on main menu. Needs Configured installed to work
+	config_button = false
