@@ -182,8 +182,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -5.5d
+			x: 5.5d
+			y: -6.5d
 			shape: "rsquare"
 			dependencies: ["441C0659ED28D935"]
 			id: "6C4E72C0BF98E8DD"
@@ -206,10 +206,10 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -6.5d
+			x: 1.0d
+			y: -9.5d
 			shape: "rsquare"
-			dependencies: ["441C0659ED28D935"]
+			dependencies: ["63DD7F5A4441ACE7"]
 			id: "295703FC5B92D0E6"
 			tasks: [{
 				id: "6A60A533BDBCCAD9"
@@ -254,7 +254,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -1.0d
 			y: -9.5d
 			shape: "rsquare"
 			dependencies: ["63DD7F5A4441ACE7"]
@@ -326,7 +326,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 5.0d
 			y: -5.5d
 			shape: "rsquare"
 			dependencies: ["441C0659ED28D935"]
@@ -423,7 +423,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 0.0d
 			y: -9.5d
 			shape: "rsquare"
 			dependencies: ["63DD7F5A4441ACE7"]
@@ -748,7 +748,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: -5.5d
 			shape: "rsquare"
 			dependencies: ["441C0659ED28D935"]
@@ -772,7 +772,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 3.0d
 			y: -5.5d
 			shape: "rsquare"
 			dependencies: ["441C0659ED28D935"]
@@ -1131,7 +1131,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 6.0d
 			y: -5.5d
 			shape: "rsquare"
 			dependencies: ["441C0659ED28D935"]
