@@ -1103,28 +1103,67 @@
 			icon: "minecraft:stone"
 			x: -4.5d
 			y: 7.0d
+			description: ["Besides abundant ore, Archwood can also be found in the mining dimension."]
 			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "21AC1C7A92CAB0C2"
-			tasks: [{
-				id: "59FF7825435AF860"
-				type: "dimension"
-				dimension: "allthemodium:mining"
-			}]
+			tasks: [
+				{
+					id: "59FF7825435AF860"
+					type: "dimension"
+					dimension: "allthemodium:mining"
+				}
+				{
+					id: "6C4DC9DB97B8881C"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "ars_nouveau:blue_archwood_sapling"
+									Count: 1b
+								}
+								{
+									id: "ars_nouveau:purple_archwood_sapling"
+									Count: 1b
+								}
+								{
+									id: "ars_nouveau:red_archwood_sapling"
+									Count: 1b
+								}
+								{
+									id: "ars_nouveau:green_archwood_sapling"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Piglin Homeworld"
 			icon: "minecraft:netherrack"
 			x: -2.5d
 			y: 7.0d
+			description: ["Here be dragons - you can find their skeletons scattered across the landscape, or fight a live one if you're feeling brave!"]
 			hide_dependency_lines: false
 			dependencies: ["5130BBAD5C542EDB"]
 			id: "1A5E414C9D25703A"
-			tasks: [{
-				id: "2212DFCF11CE8D69"
-				type: "dimension"
-				dimension: "allthemodium:the_other"
-			}]
+			tasks: [
+				{
+					id: "2212DFCF11CE8D69"
+					type: "dimension"
+					dimension: "allthemodium:the_other"
+				}
+				{
+					id: "1D06C07E6AB15648"
+					type: "item"
+					item: "iceandfire:dragonbone"
+				}
+			]
 		}
 		{
 			x: -2.5d
