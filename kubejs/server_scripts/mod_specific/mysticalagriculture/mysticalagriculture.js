@@ -28,7 +28,6 @@ onEvent('recipes', e => {
   essenceCircle('silentgear:azure_silver_ingot', 6, 'azure_silver')
   essenceCircle('silentgear:azure_electrum_ingot', 4, 'azure_electrum')
   essenceCircle('silentgear:crimson_iron_ingot', 6, 'crimson_iron')
-  essenceCircle('astralsorcery:aquamarine', 8, 'aquamarine')
   essenceCircle('alltheores:copper_ingot', 6, 'copper')
 
   modifyShaped(e, 'mysticalagriculture:unattuned_augment', 1, ['PMP', 'AMA', 'PMP'], {
