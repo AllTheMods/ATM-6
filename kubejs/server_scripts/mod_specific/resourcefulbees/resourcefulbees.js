@@ -9,6 +9,11 @@ onEvent('recipes', e => {
     B: 'minecraft:bucket'
   }).id(`kubejs:minecraft/lava_bucket`)
 
+  e.shaped('resourcefulbees:t1_beehive', ['GGG', 'GBG', 'GGG'], {
+    G: 'minecraft:grass',
+    B: 'minecraft:beehive'
+  }).id('kubejs:shaped/resourcefulbees/t1_beehive')
+
   modifyShaped(e, 'resourcefulbees:bee_jar', 16, [' G ', 'G G', 'GGG'], {
     G: '#forge:glass'
   })
