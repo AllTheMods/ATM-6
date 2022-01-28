@@ -11,11 +11,10 @@ onEvent('block.left_click', e => {
         entities.forEach(entity => {
           if (entity.isFrame()) {
             frame = entity
-            return
           }
         })
 
-        if (frame.getItem() === 'atmadditions:atm_star') {
+        if (frame && frame.getItem() === 'atmadditions:atm_star') {
           frame.setItem('minecraft:air')
           e.world.spawnLightning(anvil.x, anvil.y, anvil.z, true)
           frame.kill()
