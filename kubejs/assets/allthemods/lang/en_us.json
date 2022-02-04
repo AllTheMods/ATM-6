@@ -6,12 +6,18 @@
   "item.pamhc2trees.maplesyrupitem": "Maple Syrup",
   "item.allthemodium.molten_allthemodium_bucket": "Molten AllTheModium Bucket",
   "item.allthemodium.molten_vibranium_bucket": "Molten Vibranium Bucket",
-  "item.allthemodium.molten_unobtanium_bucket": "Molten Unobtanium Bucket",
+  "item.allthemodium.molten_unobtainium_bucket": "Molten Unobtainium Bucket",
   "item.allthemodium.vapor_allthemodium_bucket": "AllTheModium Vapor Bucket",
   "item.allthemodium.vapor_vibranium_bucket": "Vibranium Vapor Bucket",
-  "item.allthemodium.vapor_unobtanium_bucket": "Unobtanium Vapor Bucket",
+  "item.allthemodium.vapor_unobtainium_bucket": "Unobtainium Vapor Bucket",
   "fluid.allthemodium.vapor_allthemodium": "AllTheModium Vapor",
   "fluid.allthemodium.vapor_vibranium": "Vibranium Vapor",
-  "fluid.allthemodium.vapor_unobtanium": "Unobtanium Vapor",
-  "fluid.bloodmagic.life_essence_fluid": "Life Essence"
+  "fluid.allthemodium.vapor_unobtainium": "Unobtainium Vapor",
+  "fluid.bloodmagic.life_essence_fluid": "Life Essence",
+  "enchantment.minecolonies.raider_damage_enchant.desc": "Increases damage against MineColonies raiders.",
+  "enchantment.draconicevolution.reaper_enchantment.desc": "Killing mobs has a chance to drop the corresponding Mob Soul.",
+  "enchantment.create.capacity.desc": "Increases the air capacity of a Copper Backtank.",
+  "enchantment.create.potato_recovery.desc": "Potato Cannon ammo has a chance to drop as an item on hit.",
+  "enchantment.mythicbotany.hammer_mobility.desc": "Increases Mjöllnir attack speed.",
+  "enchantment.mahoutsukai.projector.desc": "Decorative magic circles applied by the Mahoujin Projector."
 }
