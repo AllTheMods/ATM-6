@@ -5,7 +5,7 @@ onEvent('recipes', e => {
     V: '#forge:storage_blocks/vibranium',
     U: '#forge:storage_blocks/unobtainium',
     A: '#forge:storage_blocks/allthemodium',
-    E: 'minecraft:elytra'
+    E: '#forge:elytra'
   }).id('kubejs:angelring/diamondring')
   e.shaped('angelring:itemring', ['CAC', 'ARA', 'DGD'], {
     C: 'botania:pixie_dust',
