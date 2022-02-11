@@ -63,9 +63,8 @@ onEvent('item.tooltip', e => {
   formattedTooltip('appliedenergistics2:quantum_entangled_singularity', 'To make this, you must use Ender Pearls, not Ender Dust')
   formattedTooltip('astralsorcery:altar_discovery', 'Check the Astral Tome for more info')
 
-
-  e.add(['enderchests:ender_chest', 'enderchests:ender_bag', 'enderchests:ender_pouch', 'endertanks:ender_tank', 'endertanks:ender_bucket'], [
-    Text.of('Recipe Removed to Convert to EnderStorage').red()
+  e.add(['resourcefulbees:t1_apiary', 'resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', "resourcefulbees:t4_apiary"], [
+    Text.of('Remove bees before upgrading to next tier.').red()
   ])
   //#region Pipez
   //pipes
