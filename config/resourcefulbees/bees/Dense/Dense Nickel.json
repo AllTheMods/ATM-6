@@ -44,10 +44,9 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainInputCount": 4,
     "mainOutput": "alltheores:ore_nickel",
     "mainOutputWeight": 0.50,
-    "mainOutputCount": 1,
+    "mainOutputCount": 4,
     "secondaryOutput": "alltheores:nickel_ingot",
     "secondaryOutputWeight": 0.01,
     "secondaryOutputCount": 8,
