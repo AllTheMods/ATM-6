@@ -1,0 +1,4 @@
+["Ignored Mods"]
+	#Client-side mod IDs that will be ignored if not present on the server.
+	clientIgnoredMods = ["jeresources", "advancementplaques", "equipmentcompare"]
+
