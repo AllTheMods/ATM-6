@@ -26,6 +26,7 @@ onEvent('item.tags', e => {
     e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`)
     e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
+  e.add('forge:stone', ['quark:deepslate'])
   e.add('forge:marble', '#chisel:marble')
   e.add('integrateddynamics:menril_logs', 'integrateddynamics:menril_log_filled')
   e.add('chisel:marble', ['astralsorcery:marble_raw', 'enviromats:marble', 'quark:marble'])
@@ -185,8 +186,8 @@ onEvent('block.tags', e => {
   e.add('cyclic:scythe_brush', '#minecraft:flowers')
   e.add('mcwwindows:window', '/mcwwindows:.+_win/')
   e.add('misctags:concrete', '/minecraft:.+_concrete/')
-  e.add('buildinggadgets:blacklist/copy_paste', /^refinedstorage:.+$/)
-  e.add('buildinggadgets:blacklist/building', /^refinedstorage:.+$/)
+  e.add('buildinggadgets:blacklist/copy_paste', [/^refinedstorage:.+$/, /^windowlogging:.+$/])
+  e.add('buildinggadgets:blacklist/building', [/^refinedstorage:.+$/, /^windowlogging:.+$/])
   //#endregion
   //#region removals
   e.removeAll('minecraft:enderman_holdable')

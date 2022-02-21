@@ -1,0 +1,28 @@
+{
+  "dontChangeMe": "RandomString",
+  "printWarningMessage": true,
+  "enableDebugLog": false,
+  "whitelistLoggersTypes": [
+    "DebugFile"
+  ],
+  "loggers": [
+    "net.minecraft.client.renderer.model.BlockModel",
+    "net.minecraft.client.renderer.texture.AtlasTexture",
+    "com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService",
+    "net.minecraft.client.renderer.model.ModelBakery",
+    "net.minecraft.client.util.ClientRecipeBook",
+    "net.minecraft.command.Commands",
+    "net.minecraft.util.Util",
+    "net.minecraft.entity.EntityType",
+    "net.minecraft.loot.LootTableManager",
+    "net.minecraft.world.chunk.storage.ChunkSerializer",
+    "net.minecraftforge.registries.GameData",
+    "net.minecraftforge.common.ForgeConfigSpec",
+    "net.minecraftforge.fml.VersionChecker",
+    "mezz.jei.load.PluginCaller",
+    "configured"
+  ],
+  "ignoredExceptions": [
+    "com.mojang.authlib.exceptions.AuthenticationUnavailableException"
+  ]
+}
