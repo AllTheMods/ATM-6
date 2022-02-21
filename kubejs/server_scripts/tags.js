@@ -26,6 +26,7 @@ onEvent('item.tags', e => {
     e.add(`mekanism:crystals/${item}`, `alltheores:${item}_crystal`)
     e.add(`mekanism:crystals`, `#mekanism:crystals/${item}`)
   })
+  e.add('forge:stone', ['quark:deepslate'])
   e.add('forge:marble', '#chisel:marble')
   e.add('integrateddynamics:menril_logs', 'integrateddynamics:menril_log_filled')
   e.add('chisel:marble', ['astralsorcery:marble_raw', 'enviromats:marble', 'quark:marble'])
