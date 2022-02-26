@@ -44,10 +44,9 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainInputCount": 4,
     "mainOutput": "alltheores:ore_osmium",
     "mainOutputWeight": 0.50,
-    "mainOutputCount": 1,
+    "mainOutputCount": 4,
     "secondaryOutput": "alltheores:osmium_ingot",
     "secondaryOutputWeight": 0.01,
     "secondaryOutputCount": 8,
