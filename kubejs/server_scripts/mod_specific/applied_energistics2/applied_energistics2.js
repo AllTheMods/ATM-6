@@ -39,6 +39,24 @@ onEvent('recipes', e => {
     turns: 8
   }).id(`kubejs:appliedenergistics2/grinder/flour`)
 
+  e.recipes.appliedenergistics2.grinder({
+    input: { tag: 'forge:ender_pearls' },
+    result: { primary: { item: 'thermal:ender_pearl_dust' } },
+    turns: 4
+  }).id(`kubejs:appliedenergistics2/grinder/ender_pearl_dust`)
+
+  e.recipes.lazierae2.pulse_centrifuge({
+    input: { tag: 'forge:flour_plants' },
+    output: { item: 'pamhc2foodcore:flouritem' },
+    processing_time: 160
+  }).id(`kubejs:appliedenergistics2/pulse_centrifuge/flour`)
+
+  e.recipes.lazierae2.pulse_centrifuge({
+    input: { tag: 'forge:ender_pearls' },
+    output: { item: 'thermal:ender_pearl_dust' },
+    processing_time: 160
+  }).id(`kubejs:appliedenergistics2/pulse_centrifuge/ender_pearl_dust`)
+
   e.recipes.appliedenergistics2.inscriber({
     mode: 'inscribe',
     result: { item: 'appliedenergistics2:printed_silicon' },
@@ -48,13 +66,28 @@ onEvent('recipes', e => {
     }
   }).id(`kubejs:appliedenergistics2/inscriber/printed_silicon`)
 
+  e.recipes.lazierae2.fluix_aggregator({
+    inputs: [
+      { input: { item: 'appliedenergistics2:sky_dust' } },
+      { input: { tag: 'forge:gems/diamond' } },
+      { input: { item: 'thermal:ender_pearl_dust' } }
+    ],
+    output: { item: 'lazierae2:resonating_gem' },
+    processing_time: 80
+  }).id(`kubejs:lazierae2/fluix_aggregator/resonating_gem`)
+
+  e.recipes.create.milling('1x thermal:ender_pearl_dust', '#forge:ender_pearls').id(`kubejs:create/compat/ae2/milling/ender_pearl`)
+  e.recipes.mekanism.crushing('1x thermal:ender_pearl_dust', '#forge:ender_pearls').id('kubejs:mekanism/compat/appliedenergistics2/ender_pearl_to_dust')
+
   removeRecipeByID(e, [
-    'appliedenergistics2:grinder/flour',
-    'appliedenergistics2:inscriber/silicon_print'
+    'appliedenergistics2:inscriber/silicon_print',
+    'lazierae2:fluix_aggregator/resonating_gem'
   ])
 
   removeRecipeByOutput(e, [
     'appliedenergistics2:silicon',
+    'appliedenergistics2:flour',
+    'appliedenergistics2:ender_dust',
     'appliedenergistics2:network_tool',
     'apotheosis:explosive_arrow',
     'apotheosis:diamond_mining_arrow',
