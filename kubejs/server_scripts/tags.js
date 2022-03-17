@@ -206,8 +206,8 @@ onEvent('block.tags', e => {
   e.add('cyclic:scythe_brush', '#minecraft:flowers')
   e.add('mcwwindows:window', '/mcwwindows:.+_win/')
   e.add('misctags:concrete', '/minecraft:.+_concrete/')
-  e.add('buildinggadgets:blacklist/copy_paste', [/^refinedstorage:.+$/, /^windowlogging:.+$/])
-  e.add('buildinggadgets:blacklist/building', [/^refinedstorage:.+$/, /^windowlogging:.+$/])
+  e.add('buildinggadgets:blacklist/copy_paste', [/^refinedstorage:.+$/, /^windowlogging:.+$/, /^mekanism:.+$/])
+  e.add('buildinggadgets:blacklist/building', [/^refinedstorage:.+$/, /^windowlogging:.+$/, /^mekanism:.+$/])
   //#endregion
   //#region removals
   e.removeAll('minecraft:enderman_holdable')
