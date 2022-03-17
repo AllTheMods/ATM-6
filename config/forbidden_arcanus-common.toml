@@ -1,4 +1,7 @@
 [aureal]
 	[aureal.corruption]
 		disable_consequences = true
-		
+[world_gen]
+	[world_gen.nipa]
+		#Generate Nipas? [default: true]
+		generate = false
