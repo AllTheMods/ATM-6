@@ -62,6 +62,7 @@ onEvent('item.tooltip', e => {
   formattedTooltip('atmadditions:atm_star_shard', 'Check JEI Info page for more info')
   formattedTooltip('appliedenergistics2:quantum_entangled_singularity', 'To make this, you must use Ender Pearls, not Ender Dust')
   formattedTooltip('astralsorcery:altar_discovery', 'Check the Astral Tome for more info')
+  formattedTooltip('bloodmagic:strong_tau', 'Can be found in Blood Magic dungeons')
 
   e.add(['resourcefulbees:t1_apiary', 'resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', "resourcefulbees:t4_apiary"], [
     Text.of('Remove bees before upgrading to next tier.').red()
