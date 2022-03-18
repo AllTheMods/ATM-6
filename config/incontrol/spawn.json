@@ -16,7 +16,6 @@
     "dimension": "allthemodium:the_other",
     "mob": [
       "iceandfire:hydra",
-      "iceandfire:ghost",
       "iceandfire:dread_scuttler",
       "iceandfire:dread_beast",
       "iceandfire:dread_horse",
@@ -72,6 +71,7 @@
   },
   {
     "mob": [
+      "iceandfire:ghost",
       "mana-and-artifice:witch_hunter"
     ],
     "result": "deny"
