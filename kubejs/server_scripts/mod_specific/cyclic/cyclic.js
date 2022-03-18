@@ -6,6 +6,7 @@ onEvent('recipes', e => {
   })
 
   removeRecipeByID(e, [
+    'cyclic:ender_eye_reuse',
     'cyclic:melter_honey',
     'cyclic:melter_honey1',
     'cyclic:melter_honeybottle',

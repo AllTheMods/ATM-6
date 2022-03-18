@@ -51,4 +51,51 @@ onEvent('recipes', e => {
       e.remove({ input: `mysticalagriculture:${type}_${name}` })
     })
   })
+
+  let fish = [
+    'aquaculture:arapaima',
+    'aquaculture:atlantic_cod',
+    'aquaculture:atlantic_halibut',
+    'aquaculture:atlantic_herring',
+    'aquaculture:bayad',
+    'aquaculture:blackfish',
+    'aquaculture:bluegill',
+    'aquaculture:boulti',
+    'aquaculture:brown_shrooma',
+    'aquaculture:brown_trout',
+    'aquaculture:capitaine',
+    'aquaculture:carp',
+    'aquaculture:catfish',
+    'aquaculture:gar',
+    'aquaculture:minnow',
+    'aquaculture:muskellunge',
+    'aquaculture:pacific_halibut',
+    'aquaculture:perch',
+    'aquaculture:pink_salmon',
+    'aquaculture:piranha',
+    'aquaculture:pollock',
+    'aquaculture:rainbow_trout',
+    'aquaculture:red_grouper',
+    'aquaculture:red_shrooma',
+    'aquaculture:smallmouth_bass',
+    'aquaculture:synodontis',
+    'aquaculture:tambaqui',
+    'aquaculture:tuna',
+    'upgrade_aquatic:lionfish',
+    'upgrade_aquatic:perch',
+    'upgrade_aquatic:pike',
+  ];
+
+  fish.forEach(name => {
+    e.custom({
+      type: 'mysticalagriculture:soul_extraction',
+      input: {
+        item: name
+      },
+      output: {
+        type: 'mysticalagriculture:fish',
+        souls: 0.5
+      }
+    })
+  })
 })

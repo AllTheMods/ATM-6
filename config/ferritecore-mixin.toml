@@ -1,0 +1,2 @@
+#Do not keep already-parsed NBT data for partially loaded chunks in memory
+reducedChunkNBT = false
