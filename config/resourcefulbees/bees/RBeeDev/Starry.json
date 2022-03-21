@@ -73,6 +73,9 @@
     "secondaryOutput": "kubejs:patrick_star",
     "secondaryOutputWeight": 0.99,
     "secondaryOutputCount": 1,
+    "bottleOutput": "minecraft:honey_bottle",
+    "bottleOutputWeight": 0.1,
+    "bottleOutputCount": 1,
     "recipeTime": 200,
     "hasFluidOutput": true
   },
