@@ -66,16 +66,13 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainInputCount": 9,
+    "mainInputCount": 1,
     "mainOutput": "resourcefulbees:starry_honey",
     "mainOutputWeight": 0.01,
     "mainOutputCount": 50,
     "secondaryOutput": "kubejs:patrick_star",
     "secondaryOutputWeight": 0.99,
     "secondaryOutputCount": 1,
-    "bottleOutput": "minecraft:honey_bottle",
-    "bottleOutputWeight": 0.1,
-    "bottleOutputCount": 1,
     "recipeTime": 200,
     "hasFluidOutput": true
   },
