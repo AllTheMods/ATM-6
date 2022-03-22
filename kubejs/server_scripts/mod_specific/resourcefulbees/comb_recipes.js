@@ -31,8 +31,6 @@ onEvent('recipes', e => {
   ] // 25 now
   let dyes = []
   let botaniaFlowers = []
-  let honey = ['resourcefulbees:honey', 'cyclic:honey', 'create:honey']
-  let customHoney = ['resourcefulbees:rainbow_honey', 'resourcefulbees:catnip_honey']
 
   function shapedRecipe(results, craftingItem, itemCount) {
     let maxLength = Math.min(craftingShapes.length, results.length)
@@ -55,14 +53,6 @@ onEvent('recipes', e => {
   colors.forEach(color => {
     dyes.push(`minecraft:${color}_dye`)
     botaniaFlowers.push(`botania:${color}_mystical_flower`)
-  })
-
-  e.recipes.thermal.chiller('resourcefulbees:starry_honey_block', fluid.of('resourcefulbees:starry_honey', 1000))
-
-  honey.forEach(type => e.recipes.thermal.chiller('minecraft:honey_block', fluid.of(`${type}`, 1000)))
-  customHoney.forEach(type => {
-    e.recipes.thermal.chiller(`${type}_block`, fluid.of(`${type}`, 1000))
-    e.shaped('compressium:honey_1', ['AAA', 'AAA', 'AAA'], { A: `${type}_block` })
   })
 
   shapedRecipe(dyes, 'resourcefulbees:rainbow_honey_block', 32)
