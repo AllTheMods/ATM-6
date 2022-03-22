@@ -1,0 +1,16 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "minecraft:honey_bottle"
+  },
+  "result": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "fluid": "resourcefulbees:honey",
+      "amount": 250
+    }
+  ],
+  "energy": 400
+}

@@ -66,7 +66,7 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainInputCount": 9,
+    "mainInputCount": 1,
     "mainOutput": "resourcefulbees:starry_honey",
     "mainOutputWeight": 0.01,
     "mainOutputCount": 50,

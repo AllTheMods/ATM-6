@@ -773,7 +773,6 @@
 			title: "Mekanism Storage"
 			x: 9.0d
 			y: 3.0d
-			description: ["Go to the &aMekanism&f quest chapter for more on this mod."]
 			hide_dependency_lines: true
 			dependencies: ["5A94A2664BFDD7B9"]
 			id: "6B639160FD560CC1"

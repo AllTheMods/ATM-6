@@ -243,7 +243,7 @@
 				"                  &4&lWARNING:&r"
 				"The bee is immune to damage, but there might still be sources that will harm her. She's unique, so take care of her!"
 				""
-				"She will only produce 1 comb item, no matter what apiary or hive you're using. Centrifuge multipliers also do not work on the combs."
+				"She will only produce 1 comb item in regular apiaries, but 10 combs in the Creative Apiary. Centrifuge multipliers do not work on the combs."
 			]
 			hide_dependency_lines: true
 			id: "5C010374A550B53F"
