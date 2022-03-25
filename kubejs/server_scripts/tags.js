@@ -173,7 +173,7 @@ onEvent('block.tags', e => {
   e.add('forge:ores/arcane_brick', 'ars_nouveau:arcane_ore')
   e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
   e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
-  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/,])
+  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/, /^thermal:/, /^mekanism:/])
   e.add('mekanism:cardboard_blacklist', '#misctags:no_moving')
   e.add('bagofyurting:blacklist', '#misctags:no_moving')
   e.add('create:brittle', '#misctags:no_moving')
@@ -206,8 +206,8 @@ onEvent('block.tags', e => {
   e.add('cyclic:scythe_brush', '#minecraft:flowers')
   e.add('mcwwindows:window', '/mcwwindows:.+_win/')
   e.add('misctags:concrete', '/minecraft:.+_concrete/')
-  e.add('buildinggadgets:blacklist/copy_paste', [/^refinedstorage:.+$/, /^windowlogging:.+$/])
-  e.add('buildinggadgets:blacklist/building', [/^refinedstorage:.+$/, /^windowlogging:.+$/])
+  e.add('buildinggadgets:blacklist/copy_paste', [/^refinedstorage:.+$/, /^windowlogging:.+$/, /^mekanism:.+$/])
+  e.add('buildinggadgets:blacklist/building', [/^refinedstorage:.+$/, /^windowlogging:.+$/, /^mekanism:.+$/])
   //#endregion
   //#region removals
   e.removeAll('minecraft:enderman_holdable')

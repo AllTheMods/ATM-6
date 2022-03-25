@@ -505,7 +505,7 @@ onEvent('recipes', e => {
 
   // #region Honey
   let simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'cyclic:honey', 'create:honey']
-  let customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey']
+  let customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey', 'resourcefulbees:starry_honey']
 
   function cyclicHoneyMelter(entries) {
     entries.forEach(([input, honey, honeyAmount]) => {

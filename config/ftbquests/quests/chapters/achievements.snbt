@@ -2,16 +2,20 @@
 	id: "17FBD5F9FD6AAF2D"
 	group: ""
 	order_index: 3
-	filename: "hidden_chapter"
-	title: "Hidden Chapter"
-	always_invisible: true
+	filename: "achievements"
+	title: "Achievements"
 	default_quest_shape: ""
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Kill 5x Each I\\&F Dragon"
-			x: -1.0d
-			y: -1.0d
+			x: -1.5d
+			y: 0.0d
+			description: [
+				"Tip: bring Woot mob shards with you!"
+				""
+				"It takes 5 kills to fill a mob shard, which can be used later to farm dragon materials in a Woot spawner."
+			]
 			optional: true
 			id: "1D85CE0A88D09165"
 			tasks: [
@@ -19,19 +23,19 @@
 					id: "1DFDC23BABB72AC1"
 					type: "kill"
 					entity: "iceandfire:fire_dragon"
-					value: 10L
+					value: 5L
 				}
 				{
 					id: "61DFF3FDE570688C"
 					type: "kill"
 					entity: "iceandfire:ice_dragon"
-					value: 10L
+					value: 5L
 				}
 				{
 					id: "59523A52D7E444A2"
 					type: "kill"
 					entity: "iceandfire:lightning_dragon"
-					value: 10L
+					value: 5L
 				}
 			]
 			rewards: [{
@@ -42,7 +46,7 @@
 			}]
 		}
 		{
-			title: "Visit Every Dimension"
+			title: "Visit (almost) Every Dimension"
 			x: 0.0d
 			y: -1.5d
 			id: "0B66FB2CE83CD2BD"
@@ -82,6 +86,42 @@
 					type: "dimension"
 					icon: "twilightforest:twilight_portal_miniature_structure"
 					dimension: "twilightforest:twilightforest"
+				}
+				{
+					id: "05FD9DCCD1A94275"
+					type: "dimension"
+					icon: {
+						id: "mahoutsukai:scroll_reality_marble"
+						Count: 1b
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+					dimension: "mahoutsukai:reality_marble"
+				}
+				{
+					id: "103DACA38A5ECD61"
+					type: "dimension"
+					icon: "appliedenergistics2:spatial_io_port"
+					dimension: "appliedenergistics2:spatial_storage"
+				}
+				{
+					id: "3A90698DDCEECDED"
+					type: "dimension"
+					icon: "mythicbotany:kvasir_mead"
+					dimension: "mythicbotany:alfheim"
+				}
+				{
+					id: "25642A025F30E071"
+					type: "dimension"
+					icon: "bloodmagic:weak_tau"
+					dimension: "bloodmagic:dungeon"
+				}
+				{
+					id: "3A6E0DB2F6B7A537"
+					type: "dimension"
+					icon: "minecraft:red_bed"
+					dimension: "lostcities:lostcity"
 				}
 			]
 			rewards: [
@@ -124,8 +164,8 @@
 		}
 		{
 			title: "Conquer The Forest"
-			x: -1.5d
-			y: 0.0d
+			x: 0.0d
+			y: 1.5d
 			id: "3EC2209347A35A1D"
 			tasks: [
 				{
@@ -183,8 +223,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 1.0d
+			x: 1.5d
+			y: 0.0d
 			id: "5CF77B044B41E74A"
 			tasks: [{
 				id: "453ED0BE514A51CB"
@@ -228,78 +268,8 @@
 			}]
 		}
 		{
-			title: "Completionist"
-			icon: "atmadditions:atm_star"
-			x: 0.0d
-			y: 1.5d
-			description: [
-				"Dev Note:"
-				""
-				"The idea is that there would be some reward for completing every other questline."
-			]
-			dependencies: [
-				"1B175B2C955D8395"
-				"6C891E4EAC7ADBB6"
-				"6AEDA2F9BEB57759"
-				"70AE2F21054AD796"
-				"32C4B62281328EB9"
-				"100C477F4E63F20A"
-				"16956970FF49BB4D"
-				"4351A2B2F092D7AF"
-				"193F91842D2ED7D9"
-				"5C764279146E5E66"
-				"244A74DD4896B704"
-				"7831613229FC6191"
-				"15AAF17B6665223D"
-				"1DB294A8F8686321"
-				"1BE666F01EFFC00D"
-			]
-			optional: true
-			id: "50A5D1FCAD93857C"
-			rewards: [{
-				id: "6565D36ACFFDA791"
-				type: "item"
-				auto: "enabled"
-				item: {
-					id: "mekanism:creative_bin"
-					Count: 1b
-					tag: {
-						mekData: {
-							Items: [{
-								Item: {
-									id: "atmadditions:atm_star"
-									Count: -1b
-								}
-								Slot: 0b
-								SizeOverride: 2147483647
-							}]
-						}
-						BlockEntityTag: {
-							currentRedstone: 15
-							updateDelay: 0
-							activeState: 0b
-							ForgeCaps: { }
-							Items: [{
-								Item: {
-									id: "atmadditions:atm_star"
-									Count: -1b
-								}
-								Slot: 0b
-								SizeOverride: 2147483647
-							}]
-							id: "mekanism:creative_bin"
-							redstone: 0b
-						}
-						display: {
-							Lore: ["\"(+NBT)\""]
-						}
-					}
-				}
-			}]
-		}
-		{
-			x: -2.0d
-			y: 2.0d
+			x: 1.0d
+			y: 1.0d
 			hide_dependency_lines: false
 			dependencies: ["5CF77B044B41E74A"]
 			id: "79E5AAC316FE9C1B"
@@ -309,31 +279,10 @@
 				item: "compressium:cobblestone_9"
 				count: 64L
 			}]
-			rewards: [{
-				id: "1BF637611E711D9D"
-				type: "item"
-				auto: "invisible"
-				item: {
-					id: "mekanism:creative_bin"
-					Count: 1b
-					tag: {
-						mekData: {
-							Items: [{
-								Item: {
-									id: "minecraft:cobblestone"
-									Count: -1b
-								}
-								Slot: 0b
-								SizeOverride: 2147483647
-							}]
-						}
-					}
-				}
-			}]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
+			x: -1.0d
+			y: -1.0d
 			id: "212CC58521442922"
 			tasks: [{
 				id: "5EBCD7C3A0113AA9"
@@ -358,8 +307,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: -2.0d
+			x: -1.0d
+			y: 1.0d
 			hide_dependency_lines: false
 			dependencies: ["1D85CE0A88D09165"]
 			optional: true

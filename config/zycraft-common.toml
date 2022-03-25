@@ -1,4 +1,8 @@
 [worldGen]
 	[worldGen.aluminium]
 		maxHeight = 255
-		
+	#Quartz Crystal
+	[worldGen.quartzCrystalCluster]
+		#Defines the amount of attempts to generate per chunk
+		#Range: 0 ~ 256
+		generationAttempts = 0

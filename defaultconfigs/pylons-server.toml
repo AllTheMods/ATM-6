@@ -1,3 +1,7 @@
 [expulsion_pylon]
 	#Which dimensions the Expulsion Pylon is allowed to operate in.
 	expulsionAllowedDimensions = ["minecraft:overworld", "compactmachines:compact_world", "allthemodium:mining"]
+[infusion_pylon]
+	#Effects that may not be used in the Infusion Pylon.
+	#This list will override the allowed effect list.
+	infusionDeniedEffects = ["tombstone:ghostly_shape"]
