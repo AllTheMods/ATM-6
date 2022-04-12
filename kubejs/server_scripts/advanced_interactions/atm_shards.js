@@ -1,8 +1,8 @@
 onEvent('block.left_click', e => {
   let hammer = e.getBlock()
-  let anvil = hammer.getDown().getDown()
-  let bedrock = anvil.getDown()
   if (hammer === 'mythicbotany:mjoellnir') {
+    let anvil = hammer.getDown().getDown()
+    let bedrock = anvil.getDown()
     if (anvil === 'minecraft:anvil') {
       if (bedrock === 'minecraft:bedrock') {
         let entities = e.world.getEntitiesWithin(AABB.ofBlock(hammer.getDown().getPos()))
@@ -20,9 +20,9 @@ onEvent('block.left_click', e => {
           frame.kill()
 
           let dimension = e.world.getDimension()
-          e.server.schedule(1000, () => {
+          e.server.scheduleInTicks(20, () => {
             e.server.runCommandSilent(`/execute in ${dimension} run summon minecraft:item ${anvil.x} ${anvil.y + 1} ${anvil.z} {Item:{id:"atmadditions:atm_star_shard",Count:5}}`)
-          }).call()
+          });
         }
       }
     }
