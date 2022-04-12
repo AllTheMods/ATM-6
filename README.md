@@ -1,4 +1,4 @@
-# [![ATM6](https://i.imgur.com/YqebipQ.png)](https://discord.gg/K5FBPYa)
+# [![ATM6](https://i.imgur.com/YqebipQ.png)](https://discord.gg/3paFjuRfz9)
 
 
 All The Mods 6
@@ -13,7 +13,7 @@ When reporting an issue put the version number before the issue title! Such as [
 
 |You can also find us on Discord for help<br>or just to chat as well as Reddit|
 |:------------:|
-|<a href="https://discordapp.com/invite/rbSZNDQ"><img src="https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png" alt="Join us on Discord!"  width="200" height="68"></a>|
+|<a href="https://discord.gg/3paFjuRfz9"><img src="https://discordapp.com/assets/fc0b01fe10a0b8c602fb0106d8189d9b.png" alt="Join us on Discord!"  width="200" height="68"></a>|
 |<a href="https://www.reddit.com/r/allthemods"><img src="https://www.redditstatic.com/about/assets/reddit-logo.png" alt="/r/AllTheMods on Reddit"  width="200" height="67"></a>|
 <br>
 
