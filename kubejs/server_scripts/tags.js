@@ -156,6 +156,7 @@ onEvent('block.tags', e => {
   e.add('forge:storage_blocks/uru', 'kubejs:uru_block')
   e.add('pedestals:quarry/blacklist', ['allthemodium:allthemodium_ore', 'allthemodium:vibranium_ore', 'allthemodium:unobtainium_ore'])
   e.add('forge:gems/quartz', 'zycraft:quartz_crystal')
+  e.add('forge:stone', ['quark:deepslate'])
   e.add('forge:marble', '#chisel:marble')
   e.add('chisel:marble', ['astralsorcery:marble_raw', 'enviromats:marble', 'quark:marble'])
   e.add('chisel:limestone', ['create:limestone', 'create:weathered_limestone', 'quark:limestone'])
@@ -173,7 +174,7 @@ onEvent('block.tags', e => {
   e.add('forge:ores/arcane_brick', 'ars_nouveau:arcane_ore')
   e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
   e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
-  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/, /^thermal:/, /^mekanism:/])
+  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/, /^thermal:/, /^mekanism:/, /^creativecrafter:/])
   e.add('mekanism:cardboard_blacklist', '#misctags:no_moving')
   e.add('bagofyurting:blacklist', '#misctags:no_moving')
   e.add('create:brittle', '#misctags:no_moving')
@@ -222,6 +223,7 @@ onEvent('block.tags', e => {
 onEvent('entity_type.tags', e => {
   e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/, /iceandfire:myrmex.+/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', 'artifacts:mimic',])
   e.add('mob_grinding_utils:noswab', [/resourcefulbees:.+_bee/, /iceandfire:myrmex.+/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', 'artifacts:mimic',])
+  e.add('mob_grinding_utils:no_spawn', '#mob_grinding_utils:noswab')
 })
 //#endregion
 

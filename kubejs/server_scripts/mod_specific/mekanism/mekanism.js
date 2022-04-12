@@ -86,6 +86,10 @@ onEvent('recipes', e => {
     ).id(`kubejs:saw/byg_log_${type}`)
   })
 
+  mekanismMetals.forEach(metal => {
+    e.remove({id: `mekanism:processing/${metal}/ore/from_dust`})
+  })
+
   removeRecipeByID(e, [
     /^mekanism:processing\/.*\/storage_blocks\/from_ingots/,
     'mekanism:storage_blocks/bronze',
