@@ -175,7 +175,7 @@ onEvent('block.tags', e => {
   e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
   e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
   e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/, /^thermal:/, /^mekanism:/, /^creativecrafter:/])
-  e.add('mekanism:cardboard_blacklist', '#misctags:no_moving')
+  e.add('mekanism:cardboard_blacklist', ['#misctags:no_moving', "draconicevolution:chaos_crystal", "draconicevolution:chaos_crystal_part"])
   e.add('bagofyurting:blacklist', '#misctags:no_moving')
   e.add('create:brittle', '#misctags:no_moving')
   e.add('misctags:flowers/draconic_flowers', 'minecraft:dragon_egg')
