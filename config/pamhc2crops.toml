@@ -1,3 +1,8 @@
 ["Dimensions Settings"]
 	black_dim = ["minecraft:the_end", "minecraft:the_nether", "allthemodium:mining"]
-	
+["Miscellaneous Features"]
+	#Disable/enable right-click harvesting of crops.
+	"Enable both for right-click harvesting for crops" = false
+["Right-click Harvesting Settings"]
+	#Disable/enable right-click harvesting of crops
+	"Enable both for right-click harvesting for crops" = false
