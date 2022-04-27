@@ -1,15 +1,12 @@
 [general]
 	"Enable 'q' Button" = false
 	"Ignored Screens" = ["blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "com.blakebr0.extendedcrafting.client.screen.EliteTableScreen", "com.blakebr0.extendedcrafting.client.screen.EliteAutoTableScreen", "com.blakebr0.extendedcrafting.client.screen.UltimateTableScreen", "com.blakebr0.extendedcrafting.client.screen.UltimateAutoTableScreen", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen", "appeng.client.gui.me.items.CraftingTermScreen", "appeng.client.gui.me.items.PatternTermScreen", "com.YTrollman.CreativeCrafter.gui.CreativeCrafterScreen", "slimeknights.tconstruct.smeltery.client.inventory.HeatingStructureScreen", "slimeknights.tconstruct.smeltery.client.inventory.module.HeatingStructureSideInventoryScreen", "com.YTrollman.CreativeApiary.gui.CreativeApiaryStorageScreen"]
+	#Quark replaces the Piston logic to allow for its piston features to work. If you're having troubles, try turning this off.
+	"Use Piston Logic Replacement" = false
 [categories]
 	Oddities = false
-	[automation.pistons_move_tile_entities]
-		"Render Blacklist" = ["psi:programmer", "botania:starfield"]
-		"Movement Blacklist" = ["minecraft:spawner", "integrateddynamics:cable", "randomthings:blockbreaker", "minecraft:ender_chest", "minecraft:enchanting_table", "minecraft:trapped_chest", "quark:spruce_trapped_chest", "quark:birch_trapped_chest", "quark:jungle_trapped_chest", "quark:acacia_trapped_chest", "quark:dark_oak_trapped_chest", "endergetic:bolloom_bud"]
-		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
-	[automation.redstone_circuit]
-		"Enable Randomizer" = true
-		"Enable Inductor" = true
+[automation]
+	"Pistons Move Tile Entities" = false
 [building]
 	"Variant Chests" = false
 [management]
@@ -27,6 +24,7 @@
 [tweaks]
 	"Automatic Recipe Unlock" = false
 	"Compasses Work Everywhere" = false
+	"Simple Harvest" = false
 	[tweaks.compasses_work_everywhere]
 		"Enable Compass Nerf" = false
 		"Enable Clock Nerf" = false
@@ -85,6 +83,10 @@
 				"Max Height" = 0
 				"Cluster Size" = 0
 				"Cluster Count" = 0
+	[world.mega_caves]
+		[world.mega_caves.spawn_settings]
+			#Allowed values: [0,)
+			Rarity = 3200
 [client]
 	[client.greener_grass]
 		"Block List" = ["minecraft:large_fern", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:fern", "minecraft:grass", "minecraft:potted_fern", "minecraft:sugar_cane"]
