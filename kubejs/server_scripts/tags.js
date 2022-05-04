@@ -126,6 +126,22 @@ onEvent('item.tags', e => {
   e.add('misctags:immersive_engineering_wirecutter', 'immersiveengineering:wirecutter')
   e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
   e.add('forbidden_arcanus:indestructible_blacklisted', /^cb_microblock:[\w]+_saw$/)
+  e.add('mana-and-artifice:stonecutter_resettable_redstone_arcane_stones', [
+    'mana-and-artifice:decoration/redstone_arcane_stone_straight',
+    'mana-and-artifice:decoration/redstone_arcane_stone_corner',
+    'mana-and-artifice:decoration/redstone_arcane_stone_t',
+    'mana-and-artifice:decoration/redstone_arcane_stone_quad',
+    'mana-and-artifice:decoration/redstone_arcane_stone_chiseled',
+    'mana-and-artifice:decoration/redstone_arcane_stone_pillar',
+  ])
+  e.add('mana-and-artifice:stonecutter_resettable_redstone_arcane_sandstones', [
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_straight',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_corner',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_t',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_quad',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_chiseled',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_pillar',
+  ])
   //#endregion
   //#region removals
   e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)
