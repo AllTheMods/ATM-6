@@ -43,7 +43,6 @@ onEvent('jei.hide.items', e => {
     '@curios',
     'appliedenergistics2:silicon',
     'appliedenergistics2:flour',
-    'appliedenergistics2:network_tool',
     'cyclic:tile_transporter_empty',
     'cyclic:trash',
     'cyclic:crafting_bag',
