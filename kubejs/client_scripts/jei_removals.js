@@ -44,7 +44,6 @@ onEvent('jei.hide.items', e => {
     'appliedenergistics2:silicon',
     'appliedenergistics2:flour',
     'appliedenergistics2:network_tool',
-    'cyclic:ender_eye_reuse',
     'cyclic:tile_transporter_empty',
     'cyclic:trash',
     'cyclic:crafting_bag',
