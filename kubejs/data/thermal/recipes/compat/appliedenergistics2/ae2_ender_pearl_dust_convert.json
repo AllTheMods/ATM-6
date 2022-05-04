@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "nonexistent_mod_condition"
+    }
+  ]
+}
