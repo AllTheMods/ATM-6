@@ -47,8 +47,8 @@ onEvent('recipes', e => {
 
   utils.listOf(['basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium']).forEach(type => {
     utils.listOf(['seeds', 'essence']).forEach(name => {
-      e.remove({ output: `mysticalagriculture:${type}_${name}` })
-      e.remove({ input: `mysticalagriculture:${type}_${name}` })
+      e.remove({ output: `mysticalagriculture:${type}_${name}` , id: '/mysticalagriculture/' })
+      e.remove({ input: `mysticalagriculture:${type}_${name}` , id: '/mysticalagriculture/' })
     })
   })
 
