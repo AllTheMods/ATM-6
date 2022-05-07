@@ -3,6 +3,7 @@ onEvent('item.tooltip', e => {
   let creativeOnly = [
     'exchangers:creative_exchanger',
     'appliedenergistics2:creative_storage_cell',
+    'appliedenergistics2:network_tool',
     'bloodmagic:activationcrystalcreative',
     'buildinggadgets:construction_paste_container_creative',
     'create:creative_fluid_tank',

@@ -126,6 +126,22 @@ onEvent('item.tags', e => {
   e.add('misctags:immersive_engineering_wirecutter', 'immersiveengineering:wirecutter')
   e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
   e.add('forbidden_arcanus:indestructible_blacklisted', /^cb_microblock:[\w]+_saw$/)
+  e.add('mana-and-artifice:stonecutter_resettable_redstone_arcane_stones', [
+    'mana-and-artifice:decoration/redstone_arcane_stone_straight',
+    'mana-and-artifice:decoration/redstone_arcane_stone_corner',
+    'mana-and-artifice:decoration/redstone_arcane_stone_t',
+    'mana-and-artifice:decoration/redstone_arcane_stone_quad',
+    'mana-and-artifice:decoration/redstone_arcane_stone_chiseled',
+    'mana-and-artifice:decoration/redstone_arcane_stone_pillar',
+  ])
+  e.add('mana-and-artifice:stonecutter_resettable_redstone_arcane_sandstones', [
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_straight',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_corner',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_t',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_quad',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_chiseled',
+    'mana-and-artifice:decoration/redstone_arcane_sandstone_pillar',
+  ])
   //#endregion
   //#region removals
   e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)
@@ -174,7 +190,7 @@ onEvent('block.tags', e => {
   e.add('forge:ores/arcane_brick', 'ars_nouveau:arcane_ore')
   e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
   e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
-  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', "draconicevolution:chaos_crystal", "draconicevolution:chaos_crystal_part", /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/, /^thermal:/, /^mekanism:/, /^creativecrafter:/])
+  e.add('misctags:no_moving', ['#minecraft:wither_immune', 'potionsmaster:cauldron', 'appliedenergistics2:cable_bus', 'cookingforblockheads:fridge', 'draconicevolution:chaos_crystal', 'draconicevolution:chaos_crystal_part', 'astralsorcery:rock_collector_crystal', 'astralsorcery:celestial_collector_crystal', /^refinedstorage:/, /^extrastorage:/, /^waystones:/, /^compactmachines:/, /^appliedenergistics2:/, /^thermal:/, /^mekanism:/, /^creativecrafter:/])
   e.add('mekanism:cardboard_blacklist', '#misctags:no_moving')
   e.add('bagofyurting:blacklist', '#misctags:no_moving')
   e.add('create:brittle', '#misctags:no_moving')
