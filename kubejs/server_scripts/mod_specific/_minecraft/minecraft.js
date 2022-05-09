@@ -10,9 +10,8 @@ onEvent('recipes', e => {
   e.recipes.mekanism.sawing(`6x minecraft:birch_planks`, [`byg:stripped_palo_verde_log`, `byg:palo_verde_log`], Item.of('thermal:sawdust').withChance(0.25)).id(`kubejs:saw/byg_log_palo_verde`)
   e.recipes.mekanism.enriching('4x minecraft:blaze_powder', 'minecraft:blaze_rod').id('kubejs:minecraft/enriching/blaze_powder')
 
-  e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:minecraft/clay`)
-  e.shapeless('4x minecraft:quartz', 'minecraft:quartz_block').id(`kubejs:minecraft/quartz`)
-  e.shapeless('minecraft:chest', '#forge:chests/wooden').id(`kubejs:minecraft/quartz`)
+  e.shapeless('4x minecraft:clay_ball', 'minecraft:clay').id(`kubejs:minecraft/clay_from_clay_block`)
+  e.shapeless('minecraft:chest', '#forge:chests/wooden').id(`kubejs:minecraft/chest_from_tag`)
   e.shapeless('minecraft:crafting_table', /byg:.+_crafting_table/).id(`kubejs:byg_crafter_convert`)
   e.shapeless('9x minecraft:honeycomb', 'minecraft:honeycomb_block').id('kubejs:minecraft/honeycomb')
 
@@ -76,7 +75,13 @@ onEvent('recipes', e => {
     }
   })
 
-  removeRecipeByID(e, ['minecraft:comparator', 'minecraft:glass'])
+  removeRecipeByID(e, [
+    'appliedenergistics2:misc/vanilla_daylight_detector',
+    'mincraft:daylight_detector',
+    'minecraft:sticky_piston',
+    'minecraft:comparator',
+    'minecraft:glass'
+  ])
   removeRecipeByOutput(e, [
     'minecraft:dragon_egg',
     ['#minecraft:signs', 'pedestals:pedestal_sawing'],
@@ -88,15 +93,6 @@ onEvent('recipes', e => {
   ])
 
   modifyShaped(e, 'minecraft:honeycomb_block', 1, ['CCC', 'CCC', 'CCC'], { C: 'minecraft:honeycomb' })
-  modifyShaped(e, 'minecraft:sticky_piston', 1, ['B', 'P'], {
-    B: '#forge:slimeballs',
-    P: 'minecraft:piston'
-  })
-  modifyShaped(e, 'minecraft:daylight_detector', 1, ['GGG', 'QQQ', 'SSS'], {
-    G: '#forge:glass',
-    Q: '#forge:gems/quartz',
-    S: '#minecraft:wooden_slabs'
-  })
   modifyShaped(e, 'minecraft:beehive', 1, ['PPP', 'CCC', 'PPP'], {
     P: '#minecraft:planks',
     C: '#resourcefulbees:resourceful_honeycomb'

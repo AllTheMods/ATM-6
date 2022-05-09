@@ -20,6 +20,8 @@
     "net.minecraftforge.common.ForgeConfigSpec",
     "net.minecraftforge.fml.VersionChecker",
     "mezz.jei.load.PluginCaller",
+    "com.connectivity.Connectivity",
+    "net.minecraft.network.datasync.EntityDataManager",
     "configured"
   ],
   "ignoredExceptions": [

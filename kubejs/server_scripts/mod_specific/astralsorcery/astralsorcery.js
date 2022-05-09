@@ -15,12 +15,4 @@ onEvent('recipes', e => {
     acceptChaliceInput: true,
     copyNBTToOutputs: false
   }).id(`kubejs:astralsorcery/infuser/marble_raw`)
-
-  e.recipes.thermal.pulverizer(
-    [
-      Item.of('astralsorcery:aquamarine').withChance(6),
-      Item.of('minecraft:sand').withChance(0.2)
-    ],
-    [{ item: 'astralsorcery:aquamarine_sand_ore' }]
-  )
 })

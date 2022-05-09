@@ -142,6 +142,7 @@ onEvent('item.tags', e => {
     'mana-and-artifice:decoration/redstone_arcane_sandstone_chiseled',
     'mana-and-artifice:decoration/redstone_arcane_sandstone_pillar',
   ])
+  e.add('pedestals:filters', /^pedestals:filter\/filter\w+$/);
   //#endregion
   //#region removals
   e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)

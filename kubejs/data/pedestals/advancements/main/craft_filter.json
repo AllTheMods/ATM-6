@@ -1,0 +1,35 @@
+{
+  "parent": "pedestals:main/root",
+  "display": {
+    "icon": {
+      "item": "pedestals:filter/filteritemstack"
+    },
+    "title": {
+      "translate": "advancements.main.craft_filter.title"
+    },
+    "description": {
+      "translate": "advancements.main.craft_filter.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "pedestals:filters"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement1"
+    ]
+  ]
+}

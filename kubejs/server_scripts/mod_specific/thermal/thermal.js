@@ -18,9 +18,9 @@ onEvent('recipes', e => {
     }
   }
   smelterCompat(e, 6400, 'thermal:bronze_ingot', 4, ['#forge:dusts/tin', '#forge:ingots/tin'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 3)
-  smelterCompat(e, 3200, 'thermal:electrum_ingot', 3, ['#forge:dusts/silver', '#forge:ingots/silver'], 1, ['#forge:dusts/gold', '#forge:ingots/gold'], 2)
+  smelterCompat(e, 3200, 'thermal:electrum_ingot', 2, ['#forge:dusts/silver', '#forge:ingots/silver'], 1, ['#forge:dusts/gold', '#forge:ingots/gold'], 1)
   smelterCompat(e, 4800, 'thermal:invar_ingot', 3, ['#forge:dusts/nickel', '#forge:ingots/nickel'], 1, ['#forge:dusts/iron', '#forge:ingots/iron'], 2)
-  smelterCompat(e, 3200, 'thermal:constantan_ingot', 2, ['#forge:dusts/nickel', '#forge:ingots/nickel'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 2)
+  smelterCompat(e, 3200, 'thermal:constantan_ingot', 2, ['#forge:dusts/nickel', '#forge:ingots/nickel'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 1)
   smelterCompat(e, 12000, 'thermal:signalum_ingot', 4, ['#forge:dusts/silver', '#forge:ingots/silver'], 1, ['#forge:dusts/copper', '#forge:ingots/copper'], 3, '#forge:dusts/redstone', 2)
   smelterCompat(e, 12000, 'thermal:lumium_ingot', 4, ['#forge:dusts/silver', '#forge:ingots/silver'], 1, ['#forge:dusts/tin', '#forge:ingots/tin'], 3, '#forge:dusts/glowstone', 2)
   smelterCompat(e, 16000, 'thermal:enderium_ingot', 2, ['#forge:dusts/diamond', '#forge:gems/diamond'], 1, ['#forge:dusts/lead', '#forge:ingots/lead'], 3, ['#forge:dusts/ender_pearl', '#forge:ender_pearls'], 2)
@@ -48,13 +48,9 @@ onEvent('recipes', e => {
     'thermal:machine/centrifuge/centrifuge_oil_red_sand',
     'thermal:machine/pyrolyzer/pyrolyzer_coal',
     'thermal:machine/pyrolyzer/pyrolyzer_logs',
-    'thermal:compat/astralsorcery/pulverizer_astralsorcery_aquamarine_ore',
     'thermal:compat/tconstruct/smelter_alloy_tconstruct_pigiron_ingot',
     'thermal:compat/tconstruct/chiller_tconstruct_pigiron_ingot',
     'thermal:compat/tconstruct/smelter_alloy_tconstruct_slimesteel_ingot',
-    'thermal:compat/biomesoplenty/tree_extractor_bop_pink_cherry',
-    'thermal:compat/biomesoplenty/tree_extractor_bop_white_cherry',
-    'thermal:compat/biomesoplenty/tree_extractor_bop_fir', // temporary until fixed in Thermal
     'thermal:machine/chiller/chiller_honey_to_honey_block',
     'thermal:machine/bottler/bottler_honey_bottle',
     'thermal:machine/centrifuge/centrifuge_honeycomb',
