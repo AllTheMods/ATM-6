@@ -1,0 +1,103 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tconstruct"
+    }
+  ],
+  "parent": "twilightforest:alt/root",
+  "criteria": {
+    "materials_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tconstruct:materials_and_you"
+          }
+        ]
+      }
+    },
+    "gold_cast": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "tconstruct:casts/gold"
+          }
+        ]
+      }
+    },
+    "sand_cast": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "tconstruct:casts/sand"
+          }
+        ]
+      }
+    },
+    "blank_pattern": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tconstruct:pattern"
+          }
+        ]
+      }
+    },
+    "crafting_station": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tconstruct:crafting_station"
+          }
+        ]
+      }
+    },
+    "tinker_station": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tconstruct:tinker_station"
+          }
+        ]
+      }
+    },
+    "part_builder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tconstruct:part_builder"
+          }
+        ]
+      }
+    },
+    "tinkers_anvil": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tconstruct:tinkers_anvil"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "materials_book",
+      "gold_cast",
+      "sand_cast",
+      "blank_pattern",
+      "crafting_station",
+      "tinker_station",
+      "part_builder",
+      "tinkers_anvil"
+    ]
+  ]
+}
