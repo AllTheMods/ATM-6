@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:basalt_blocks"
+  },
+  "result": "enviromats:basalt_brick_slab",
+  "count": 2
+}

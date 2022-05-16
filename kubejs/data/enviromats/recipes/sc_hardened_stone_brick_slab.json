@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:hardened_stone_blocks"
+  },
+  "result": "enviromats:hardened_stone_brick_slab",
+  "count": 2
+}
