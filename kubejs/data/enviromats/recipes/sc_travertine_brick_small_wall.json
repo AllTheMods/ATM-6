@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:travertine_blocks"
+  },
+  "result": "enviromats:travertine_brick_small_wall",
+  "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "envirocore:nanorite_blocks"
+  },
+  "result": "envirocore:nanorite_brick_slab",
+  "count": 2
+}

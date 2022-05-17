@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "envirocore:xerothium_blocks"
+  },
+  "result": "envirocore:xerothium_brick_small_wall",
+  "count": 1
+}

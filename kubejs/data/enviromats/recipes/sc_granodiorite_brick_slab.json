@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:granodiorite_blocks"
+  },
+  "result": "enviromats:granodiorite_brick_slab",
+  "count": 2
+}

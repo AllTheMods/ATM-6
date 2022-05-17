@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:alabaster_magenta_blocks"
+  },
+  "result": "enviromats:alabaster_magenta_brick_small_wall",
+  "count": 1
+}

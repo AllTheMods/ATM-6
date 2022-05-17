@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "envirocore:ionite_blocks"
+  },
+  "result": "envirocore:ionite_brick_slab",
+  "count": 2
+}

@@ -1,9 +1,7 @@
 onEvent('jei.hide.items', e => {
   //#region consts
   let refined = ['controller', 'creative_controller', 'grid', 'crafting_grid', 'pattern_grid', 'fluid_grid', 'network_receiver', 'network_transmitter', 'relay', 'detector', 'security_manager', 'wireless_transmitter', 'disk_manipulator', 'crafter', 'crafter_manager', 'crafting_monitor']
-  let colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
   let typeFirst = ['mekanism', 'immersiveengineering']
-  let enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
   //#endregion
   //#region functions
   function hideMetal(mod, name, types) {
@@ -130,7 +128,6 @@ onEvent('jei.hide.items', e => {
     'projectred-core:copper_ingot'
   ])
 
-  enviroStonesMats.forEach(stone => e.hide(`/enviromats:${stone}_.*/`))
   colors.forEach(color => {
     refined.forEach(refin => e.hide([`refinedstorage:${color}_${refin}`]))
     e.hide([
@@ -149,11 +146,9 @@ onEvent('jei.hide.items', e => {
   hideMetal('immersiveengineering', 'steel', ['ingot', 'dust', 'nugget', 'storage', 'slab_storage'])
   hideMetal('immersiveengineering', 'electrum', ['ingot', 'dust', 'nugget', 'storage', 'slab_storage'])
   hideMetal('immersiveengineering', 'constantan', ['ingot', 'dust', 'nugget', 'storage', 'slab_storage'])
-  hideMetal('mekanism', 'copper', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'tin', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'uranium', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'lead', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'osmium', ['ingot', 'dust', 'nugget', 'block'])
+  mekanismMetals.forEach(metal => {
+    hideMetal('mekanism', metal, ['ingot', 'dust', 'nugget', 'block', 'clean', 'dirty']);
+  })
   hideMetal('mekanism', 'bronze', ['ingot', 'dust', 'nugget', 'block'])
   hideMetal('create', 'copper', ['ingot', 'ore', 'nugget', 'block'])
   hideMetal('create', 'zinc', ['ingot', 'ore', 'nugget', 'block'])
@@ -176,10 +171,9 @@ onEvent('jei.hide.items', e => {
   hideStuff('create', 'sheet', ['iron', 'golden', 'copper'])
   hideStuff('iceandfire', 'ore', ['silver', 'copper'])
   hideStuff('tmechworks', 'ore', ['aluminum', 'copper'])
-  hideStuff('solarflux', 'sp', [6, 7, 8])
   hideStuff('quark', 'crate', ['apple', 'carrot', 'beetroot', 'potato'])
   hideStuff('quark', 'block', ['bamboo', 'charcoal', 'sugar_cane'])
-  hideStuff('mysticalagriculture', 'seeds', ['basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium'])
-  hideStuff('mysticalagriculture', 'essence', ['basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium'])
+  hideStuff('mysticalagriculture', 'seeds', maDisabledSeeds)
+  hideStuff('mysticalagriculture', 'essence', maDisabledSeeds)
   //#endregion
 })
