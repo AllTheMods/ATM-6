@@ -1,7 +1,8 @@
 onEvent('recipes', e => {
-  removeRecipeByID(e, [
-    'projectred-exploration:copper_block',
-    'projectred-exploration:silver_block',
-    'projectred-exploration:tin_block'
-  ])
+  projectRedMetals.forEach(metal => {
+    removeRecipeByID(e, [
+      `projectred-exploration:${metal}_block`,
+      `projectred-exploration:${metal}_from_block`,
+    ])
+  });
 })
