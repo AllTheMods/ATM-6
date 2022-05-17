@@ -53,5 +53,9 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
+		containerClass = "com.refinedmods.refinedstorage.container.CrafterManagerContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
 		containerClass = "slimeknights.tconstruct.smeltery.inventory.HeatingStructureContainer"
 		sortRange = ""

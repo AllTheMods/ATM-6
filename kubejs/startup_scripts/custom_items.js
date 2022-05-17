@@ -9,7 +9,7 @@ onEvent('item.registry', e => {
   e.create('potassium_dust').displayName('Potassium Dust')
   e.create('potassium_ingot').displayName('Potassium Ingot')
   e.create('uru_ingot').displayName('§6Uru Metal Ingot')
-  e.create('uru_nugget').displayName('§6Uru Metal Ingot')
+  e.create('uru_nugget').displayName('§6Uru Metal Nugget')
 })
 
 onEvent('block.registry', e => {

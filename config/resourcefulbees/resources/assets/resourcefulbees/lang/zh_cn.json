@@ -1,0 +1,417 @@
+{
+    "block.resourcefulbees.diamond_honeycomb_block": "钻石蜜脾块",
+    "item.resourcefulbees.diamond_honeycomb": "钻石蜜脾",
+    "item.resourcefulbees.diamond_bee_spawn_egg": "钻石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.diamond_bee": "钻石蜜蜂",
+  
+    "block.resourcefulbees.emerald_honeycomb_block": "绿宝石蜜脾块",
+    "item.resourcefulbees.emerald_honeycomb": "绿宝石蜜脾",
+    "item.resourcefulbees.emerald_bee_spawn_egg": "绿宝石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.emerald_bee": "绿宝石蜜蜂",
+  
+    "block.resourcefulbees.lapis_honeycomb_block": "青金石蜜脾块",
+    "item.resourcefulbees.lapis_honeycomb": "青金石蜜脾",
+    "item.resourcefulbees.lapis_bee_spawn_egg": "青金石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.lapis_bee": "青金石蜜蜂",
+  
+    "block.resourcefulbees.quartz_honeycomb_block": "石英蜜脾块",
+    "item.resourcefulbees.quartz_honeycomb": "石英蜜脾",
+    "item.resourcefulbees.quartz_bee_spawn_egg": "石英蜜蜂刷怪蛋",
+    "entity.resourcefulbees.quartz_bee": "石英蜜蜂",
+  
+    "block.resourcefulbees.allthemodium_honeycomb_block": "ATM蜜脾块",
+    "item.resourcefulbees.allthemodium_honeycomb": "ATM蜜脾",
+    "item.resourcefulbees.allthemodium_bee_spawn_egg": "ATM蜜蜂刷怪蛋",
+    "entity.resourcefulbees.allthemodium_bee": "ATM蜜蜂",
+  
+    "block.resourcefulbees.aluminum_honeycomb_block": "铝蜜脾块",
+    "item.resourcefulbees.aluminum_honeycomb": "铝蜜脾",
+    "item.resourcefulbees.aluminum_bee_spawn_egg": "铝蜜蜂刷怪蛋",
+    "entity.resourcefulbees.aluminum_bee": "铝蜜蜂",
+  
+    "block.resourcefulbees.copper_honeycomb_block": "铜蜜脾块",
+    "item.resourcefulbees.copper_honeycomb": "铜蜜脾",
+    "item.resourcefulbees.copper_bee_spawn_egg": "铜蜜蜂刷怪蛋",
+    "entity.resourcefulbees.copper_bee": "铜蜜蜂",
+  
+    "block.resourcefulbees.gold_honeycomb_block": "金蜜脾块",
+    "item.resourcefulbees.gold_honeycomb": "金蜜脾",
+    "item.resourcefulbees.gold_bee_spawn_egg": "金蜜蜂刷怪蛋",
+    "entity.resourcefulbees.gold_bee": "金蜜蜂",
+  
+    "block.resourcefulbees.iron_honeycomb_block": "铁蜜脾块",
+    "item.resourcefulbees.iron_honeycomb": "铁蜜脾",
+    "item.resourcefulbees.iron_bee_spawn_egg": "铁蜜蜂刷怪蛋",
+    "entity.resourcefulbees.iron_bee": "铁蜜蜂",
+  
+    "block.resourcefulbees.lead_honeycomb_block": "铅蜜脾块",
+    "item.resourcefulbees.lead_honeycomb": "铅蜜脾",
+    "item.resourcefulbees.lead_bee_spawn_egg": "铅蜜蜂刷怪蛋",
+    "entity.resourcefulbees.lead_bee": "铅蜜蜂",
+  
+    "block.resourcefulbees.netherite_honeycomb_block": "下界合金蜜脾块",
+    "item.resourcefulbees.netherite_honeycomb": "下界合金蜜脾",
+    "item.resourcefulbees.netherite_bee_spawn_egg": "下界合金蜜蜂刷怪蛋",
+    "entity.resourcefulbees.netherite_bee": "下界合金蜜蜂",
+  
+    "block.resourcefulbees.nickel_honeycomb_block": "镍蜜脾块",
+    "item.resourcefulbees.nickel_honeycomb": "镍蜜脾",
+    "item.resourcefulbees.nickel_bee_spawn_egg": "镍蜜蜂刷怪蛋",
+    "entity.resourcefulbees.nickel_bee": "镍蜜蜂",
+  
+    "block.resourcefulbees.osmium_honeycomb_block": "锇蜜脾块",
+    "item.resourcefulbees.osmium_honeycomb": "锇蜜脾",
+    "item.resourcefulbees.osmium_bee_spawn_egg": "锇蜜蜂刷怪蛋",
+    "entity.resourcefulbees.osmium_bee": "锇蜜蜂",
+  
+    "block.resourcefulbees.platinum_honeycomb_block": "铂蜜脾块",
+    "item.resourcefulbees.platinum_honeycomb": "铂蜜脾",
+    "item.resourcefulbees.platinum_bee_spawn_egg": "铂蜜蜂刷怪蛋",
+    "entity.resourcefulbees.platinum_bee": "铂蜜蜂",
+  
+    "block.resourcefulbees.silver_honeycomb_block": "银蜜脾块",
+    "item.resourcefulbees.silver_honeycomb": "银蜜脾",
+    "item.resourcefulbees.silver_bee_spawn_egg": "银蜜蜂刷怪蛋",
+    "entity.resourcefulbees.silver_bee": "银蜜蜂",
+  
+    "block.resourcefulbees.tin_honeycomb_block": "锡蜜脾块",
+    "item.resourcefulbees.tin_honeycomb": "锡蜜脾",
+    "item.resourcefulbees.tin_bee_spawn_egg": "锡蜜蜂刷怪蛋",
+    "entity.resourcefulbees.tin_bee": "锡蜜蜂",
+  
+    "block.resourcefulbees.unobtainium_honeycomb_block": "难得素蜜脾块",
+    "item.resourcefulbees.unobtainium_honeycomb": "难得素蜜脾",
+    "item.resourcefulbees.unobtainium_bee_spawn_egg": "难得素蜜蜂刷怪蛋",
+    "entity.resourcefulbees.unobtainium_bee": "难得素蜜蜂",
+  
+    "block.resourcefulbees.uranium_honeycomb_block": "铀蜜脾块",
+    "item.resourcefulbees.uranium_honeycomb": "铀蜜脾",
+    "item.resourcefulbees.uranium_bee_spawn_egg": "铀蜜蜂刷怪蛋",
+    "entity.resourcefulbees.uranium_bee": "铀蜜蜂",
+  
+    "block.resourcefulbees.vibranium_honeycomb_block": "振金蜜脾块",
+    "item.resourcefulbees.vibranium_honeycomb": "振金蜜脾",
+    "item.resourcefulbees.vibranium_bee_spawn_egg": "振金蜜蜂刷怪蛋",
+    "entity.resourcefulbees.vibranium_bee": "振金蜜蜂",
+  
+    "block.resourcefulbees.zinc_honeycomb_block": "锌蜜脾块",
+    "item.resourcefulbees.zinc_honeycomb": "锌蜜脾",
+    "item.resourcefulbees.zinc_bee_spawn_egg": "锌蜜蜂刷怪蛋",
+    "entity.resourcefulbees.zinc_bee": "锌蜜蜂",
+  
+    "block.resourcefulbees.crimson_iron_honeycomb_block": "绯红铁蜜脾块",
+    "item.resourcefulbees.crimson_iron_honeycomb": "绯红铁蜜脾",
+    "item.resourcefulbees.crimson_iron_bee_spawn_egg": "绯红铁蜜蜂刷怪蛋",
+    "entity.resourcefulbees.crimson_iron_bee": "绯红铁蜜蜂",
+  
+    "block.resourcefulbees.coal_honeycomb_block": "煤炭蜜脾块",
+    "item.resourcefulbees.coal_honeycomb": "煤炭蜜脾",
+    "item.resourcefulbees.coal_bee_spawn_egg": "煤炭蜜蜂刷怪蛋",
+    "entity.resourcefulbees.coal_bee": "煤炭蜜蜂",
+  
+    "block.resourcefulbees.obsidian_honeycomb_block": "黑曜石蜜脾块",
+    "item.resourcefulbees.obsidian_honeycomb": "黑曜石蜜脾",
+    "item.resourcefulbees.obsidian_bee_spawn_egg": "黑曜石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.obsidian_bee": "黑曜石蜜蜂",
+  
+    "block.resourcefulbees.redstone_honeycomb_block": "红石蜜脾块",
+    "item.resourcefulbees.redstone_honeycomb": "红石蜜脾",
+    "item.resourcefulbees.redstone_bee_spawn_egg": "红石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.redstone_bee": "红石蜜蜂",
+  
+    "block.resourcefulbees.uraninite_honeycomb_block": "晶质铀蜜脾块",
+    "item.resourcefulbees.uraninite_honeycomb": "晶质铀蜜脾",
+    "item.resourcefulbees.uraninite_bee_spawn_egg": "晶质铀蜜蜂刷怪蛋",
+    "entity.resourcefulbees.uraninite_bee": "晶质铀蜜蜂",
+  
+    "block.resourcefulbees.glowing_honeycomb_block": "荧光蜜脾块",
+    "item.resourcefulbees.glowing_honeycomb": "荧光蜜脾",
+    "item.resourcefulbees.glowing_bee_spawn_egg": "荧光蜜蜂刷怪蛋",
+    "entity.resourcefulbees.glowing_bee": "荧光蜜蜂",
+  
+    "block.resourcefulbees.leafy_honeycomb_block": "繁叶蜜脾块",
+    "item.resourcefulbees.leafy_honeycomb": "繁叶蜜脾",
+    "item.resourcefulbees.leafy_bee_spawn_egg": "繁叶蜜蜂刷怪蛋",
+    "entity.resourcefulbees.leafy_bee": "繁叶蜜蜂",
+  
+    "block.resourcefulbees.lumber_honeycomb_block": "木材蜜脾块",
+    "item.resourcefulbees.lumber_honeycomb": "木材蜜脾",
+    "item.resourcefulbees.lumber_bee_spawn_egg": "木材蜜蜂刷怪蛋",
+    "entity.resourcefulbees.lumber_bee": "木材蜜蜂",
+  
+    "block.resourcefulbees.mana_honeycomb_block": "魔力蜜脾块",
+    "item.resourcefulbees.mana_honeycomb": "魔力蜜脾",
+    "item.resourcefulbees.mana_bee_spawn_egg": "魔力蜜蜂刷怪蛋",
+    "entity.resourcefulbees.mana_bee": "魔力蜜蜂",
+  
+    "block.resourcefulbees.mason_honeycomb_block": "石匠蜜脾块",
+    "item.resourcefulbees.mason_honeycomb": "石匠蜜脾",
+    "item.resourcefulbees.mason_bee_spawn_egg": "石匠蜜蜂刷怪蛋",
+    "entity.resourcefulbees.mason_bee": "石匠蜜蜂",
+  
+    "block.resourcefulbees.miner_honeycomb_block": "矿工蜜脾块",
+    "item.resourcefulbees.miner_honeycomb": "矿工蜜脾",
+    "item.resourcefulbees.miner_bee_spawn_egg": "矿工蜜蜂刷怪蛋",
+    "entity.resourcefulbees.miner_bee": "矿工蜜蜂",
+  
+    "block.resourcefulbees.rgbee_honeycomb_block": "RGB蜜蜂蜜脾块",
+    "item.resourcefulbees.rgbee_honeycomb": "RGB蜜蜂蜜脾",
+    "item.resourcefulbees.rgbee_bee_spawn_egg": "RGB蜜蜂刷怪蛋",
+    "entity.resourcefulbees.rgbee_bee": "RGB蜜蜂",
+  
+    "block.resourcefulbees.stoned_honeycomb_block": "石头蜜脾块",
+    "item.resourcefulbees.stoned_honeycomb": "石头蜜脾",
+    "item.resourcefulbees.stoned_bee_spawn_egg": "石头蜜蜂刷怪蛋",
+    "entity.resourcefulbees.stoned_bee": "石头蜜蜂",
+    "block.resourcefulbees.sandy_honeycomb_block": "多沙蜜脾块",
+    "item.resourcefulbees.sandy_honeycomb": "多沙蜜脾",
+    "item.resourcefulbees.sandy_bee_spawn_egg": "多沙蜜蜂刷怪蛋",
+    "entity.resourcefulbees.sandy_bee": "多沙蜜蜂",
+  
+    "block.resourcefulbees.blazing_honeycomb_block": "烈焰蜜脾块",
+    "item.resourcefulbees.blazing_honeycomb": "烈焰蜜脾",
+    "item.resourcefulbees.blazing_bee_spawn_egg": "烈焰蜜蜂刷怪蛋",
+    "entity.resourcefulbees.blazing_bee": "烈焰蜜蜂",
+  
+    "block.resourcefulbees.dragonic_honeycomb_block": "龙蜜脾块",
+    "item.resourcefulbees.dragonic_honeycomb": "龙蜜脾",
+    "item.resourcefulbees.dragonic_bee_spawn_egg": "龙蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dragonic_bee": "龙蜜蜂",
+  
+    "block.resourcefulbees.ghastly_honeycomb_block": "恶魂蜜脾块",
+    "item.resourcefulbees.ghastly_honeycomb": "恶魂蜜脾",
+    "item.resourcefulbees.ghastly_bee_spawn_egg": "恶魂蜜蜂刷怪蛋",
+    "entity.resourcefulbees.ghastly_bee": "恶魂蜜蜂",
+  
+    "block.resourcefulbees.wither_honeycomb_block": "凋灵蜜脾块",
+    "item.resourcefulbees.wither_honeycomb": "凋灵蜜脾",
+    "item.resourcefulbees.wither_bee_spawn_egg": "凋灵蜜蜂刷怪蛋",
+    "entity.resourcefulbees.wither_bee": "凋灵蜜蜂",
+  
+    "block.resourcefulbees.withered_honeycomb_block": "凋零蜜脾块",
+    "item.resourcefulbees.withered_honeycomb": "凋零蜜脾",
+    "item.resourcefulbees.withered_bee_spawn_egg": "凋零蜜蜂刷怪蛋",
+    "entity.resourcefulbees.withered_bee": "凋零蜜蜂",
+  
+    "block.resourcefulbees.beeper_honeycomb_block": "蜂力怕蜜脾块",
+    "item.resourcefulbees.beeper_honeycomb": "蜂力怕蜜脾",
+    "item.resourcefulbees.beeper_bee_spawn_egg": "蜂力怕刷怪蛋",
+    "entity.resourcefulbees.beeper_bee": "蜂力怕",
+  
+    "block.resourcefulbees.ender_honeycomb_block": "末影蜜脾块",
+    "item.resourcefulbees.ender_honeycomb": "末影蜜脾",
+    "item.resourcefulbees.ender_bee_spawn_egg": "末影蜜蜂刷怪蛋",
+    "entity.resourcefulbees.ender_bee": "末影蜜蜂",
+  
+    "block.resourcefulbees.guardian_honeycomb_block": "守卫者蜜脾块",
+    "item.resourcefulbees.guardian_honeycomb": "守卫者蜜脾",
+    "item.resourcefulbees.guardian_bee_spawn_egg": "守卫者蜜蜂刷怪蛋",
+    "entity.resourcefulbees.guardian_bee": "守卫者蜜蜂",
+  
+    "block.resourcefulbees.magma_honeycomb_block": "岩浆蜜脾块",
+    "item.resourcefulbees.magma_honeycomb": "岩浆蜜脾",
+    "item.resourcefulbees.magma_bee_spawn_egg": "岩浆蜜蜂刷怪蛋",
+    "entity.resourcefulbees.magma_bee": "岩浆蜜蜂",
+  
+    "block.resourcefulbees.spooky_honeycomb_block": "惊悚蜜脾块",
+    "item.resourcefulbees.spooky_honeycomb": "惊悚蜜脾",
+    "item.resourcefulbees.spooky_bee_spawn_egg": "惊悚蜜蜂刷怪蛋",
+    "entity.resourcefulbees.spooky_bee": "惊悚蜜蜂",
+  
+    "block.resourcefulbees.slimy_honeycomb_block": "史莱姆蜜脾块",
+    "item.resourcefulbees.slimy_honeycomb": "史莱姆蜜脾",
+    "item.resourcefulbees.slimy_bee_spawn_egg": "史莱姆蜜蜂刷怪蛋",
+    "entity.resourcefulbees.slimy_bee": "史莱姆蜜蜂",
+  
+    "block.resourcefulbees.zombee_honeycomb_block": "僵尸蜜蜂蜜脾块",
+    "item.resourcefulbees.zombee_honeycomb": "僵尸蜜蜂蜜脾",
+    "item.resourcefulbees.zombee_bee_spawn_egg": "僵尸蜜蜂刷怪蛋",
+    "entity.resourcefulbees.zombee_bee": "僵尸蜜蜂",
+  
+    "block.resourcefulbees.water_honeycomb_block": "水蜜脾块",
+    "item.resourcefulbees.water_honeycomb": "水蜜脾",
+    "item.resourcefulbees.water_bee_spawn_egg": "水蜜蜂刷怪蛋",
+    "entity.resourcefulbees.water_bee": "水蜜蜂",
+  
+    "block.resourcefulbees.lava_honeycomb_block": "熔岩蜜脾块",
+    "item.resourcefulbees.lava_honeycomb": "熔岩蜜脾",
+    "item.resourcefulbees.lava_bee_spawn_egg": "熔岩蜜蜂刷怪蛋",
+    "entity.resourcefulbees.lava_bee": "熔岩蜜蜂",
+  
+    "block.resourcefulbees.certus_honeycomb_block": "赛特斯蜜脾块",
+    "item.resourcefulbees.certus_honeycomb": "赛特斯蜜脾",
+    "item.resourcefulbees.certus_bee_spawn_egg": "赛特斯蜜蜂刷怪蛋",
+    "entity.resourcefulbees.certus_bee": "赛特斯蜜蜂",
+  
+    "block.resourcefulbees.spider_honeycomb_block": "蜘蛛蜜脾块",
+    "item.resourcefulbees.spider_honeycomb": "蜘蛛蜜脾",
+    "item.resourcefulbees.spider_bee_spawn_egg": "蜘蛛蜜蜂刷怪蛋",
+    "entity.resourcefulbees.spider_bee": "蜘蛛蜜蜂",
+  
+    "block.resourcefulbees.fluorite_honeycomb_block": "氟石蜜脾块",
+    "item.resourcefulbees.fluorite_honeycomb": "氟石蜜脾",
+    "item.resourcefulbees.fluorite_bee_spawn_egg": "氟石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.fluorite_bee": "氟石蜜蜂",
+  
+    "block.resourcefulbees.aquamarine_honeycomb_block": "海蓝宝石蜜脾块",
+    "item.resourcefulbees.aquamarine_honeycomb": "海蓝宝石蜜脾",
+    "item.resourcefulbees.aquamarine_bee_spawn_egg": "海蓝宝石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.aquamarine_bee": "海蓝宝石蜜蜂",
+  
+    "block.resourcefulbees.cobbee_honeycomb_block": "圆石蜜蜂蜜脾块",
+    "item.resourcefulbees.cobbee_honeycomb": "圆石蜜蜂蜜脾",
+    "item.resourcefulbees.cobbee_bee_spawn_egg": "圆石蜜蜂刷怪蛋",
+    "entity.resourcefulbees.cobbee_bee": "圆石蜜蜂",
+  
+    "block.resourcefulbees.icey_honeycomb_block": "冰蜜脾块",
+    "item.resourcefulbees.icey_honeycomb": "冰蜜脾",
+    "item.resourcefulbees.icey_bee_spawn_egg": "冰蜜蜂刷怪蛋",
+    "entity.resourcefulbees.icey_bee": "冰蜜蜂",
+  
+    "block.resourcefulbees.gravely_honeycomb_block": "沙砾蜜脾块",
+    "item.resourcefulbees.gravely_honeycomb": "沙砾蜜脾",
+    "item.resourcefulbees.gravely_bee_spawn_egg": "沙砾蜜蜂刷怪蛋",
+    "entity.resourcefulbees.gravely_bee": "沙砾蜜蜂",
+  
+    "block.resourcefulbees.soul_lava_honeycomb_block": "灵魂熔岩蜜脾块",
+    "item.resourcefulbees.soul_lava_honeycomb": "灵魂熔岩蜜脾",
+    "item.resourcefulbees.soul_lava_bee_spawn_egg": "灵魂熔岩蜜蜂刷怪蛋",
+    "entity.resourcefulbees.soul_lava_bee": "灵魂熔岩蜜蜂",
+  
+    "block.resourcefulbees.mystical_honeycomb_block": "神秘蜜脾块",
+    "item.resourcefulbees.mystical_honeycomb": "神秘蜜脾",
+    "item.resourcefulbees.mystical_bee_spawn_egg": "神秘蜜蜂刷怪蛋",
+    "entity.resourcefulbees.mystical_bee": "神秘蜜蜂",
+  
+    "block.resourcefulbees.cropy_honeycomb_block": "农夫蜜脾块",
+    "item.resourcefulbees.cropy_honeycomb": "农夫蜜脾",
+    "item.resourcefulbees.cropy_bee_spawn_egg": "农夫蜜蜂刷怪蛋",
+    "entity.resourcefulbees.cropy_bee": "农夫蜜蜂",
+  
+    "block.resourcefulbees.salt_baee_honeycomb_block": "盐巴蜜脾块",
+    "item.resourcefulbees.salt_baee_honeycomb": "盐巴蜜脾",
+    "item.resourcefulbees.salt_baee_bee_spawn_egg": "盐巴蜜蜂刷怪蛋",
+    "entity.resourcefulbees.salt_baee_bee": "盐巴蜜蜂",
+  
+    "block.resourcefulbees.cobalt_honeycomb_block": "钴蜜脾块",
+    "item.resourcefulbees.cobalt_honeycomb": "钴蜜脾",
+    "item.resourcefulbees.cobalt_bee_spawn_egg": "钴蜜蜂刷怪蛋",
+    "entity.resourcefulbees.cobalt_bee": "钴蜜蜂",
+  
+    "block.resourcefulbees.kobee_beef_honeycomb_block": "神户牛肉蜜蜂蜜脾块",
+    "item.resourcefulbees.kobee_beef_honeycomb": "神户牛肉蜜蜂蜜脾",
+    "item.resourcefulbees.kobee_beef_bee_spawn_egg": "神户牛肉蜜蜂刷怪蛋",
+    "entity.resourcefulbees.kobee_beef_bee": "神户牛肉蜜蜂",
+  
+    "block.resourcefulbees.stan_honeycomb_block": "斯坦蜜蜂蜜脾块",
+    "item.resourcefulbees.stan_honeycomb": "斯坦蜜蜂蜜脾",
+    "item.resourcefulbees.stan_bee_spawn_egg": "斯坦蜜蜂刷怪蛋",
+    "entity.resourcefulbees.stan_bee": "斯坦蜜蜂",
+  
+    "block.resourcefulbees.dirty_honeycomb_block": "泥土蜜脾块",
+    "item.resourcefulbees.dirty_honeycomb": "泥土蜜脾",
+    "item.resourcefulbees.dirty_bee_spawn_egg": "泥土蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dirty_bee": "泥土蜜蜂",
+  
+    "block.resourcefulbees.papa_beemeritus_honeycomb_block": "教皇蜜脾块",
+    "item.resourcefulbees.papa_beemeritus_honeycomb": "教皇蜜脾",
+    "item.resourcefulbees.papa_beemeritus_bee_spawn_egg": "教皇蜜蜂刷怪蛋",
+    "entity.resourcefulbees.papa_beemeritus_bee": "教皇蜜蜂",
+    "trait.resourcefulbees.dense": "致密蜜蜂特质",
+  
+    "block.resourcefulbees.dense_copper_honeycomb_block": "致密铜蜜脾块",
+    "item.resourcefulbees.dense_copper_honeycomb": "致密铜蜜脾",
+    "item.resourcefulbees.dense_copper_bee_spawn_egg": "致密铜蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_copper_bee": "致密铜蜜蜂",
+  
+    "block.resourcefulbees.dense_gold_honeycomb_block": "致密金蜜脾块",
+    "item.resourcefulbees.dense_gold_honeycomb": "致密金蜜脾",
+    "item.resourcefulbees.dense_gold_bee_spawn_egg": "致密金蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_gold_bee": "致密金蜜蜂",
+  
+    "block.resourcefulbees.dense_iron_honeycomb_block": "致密铁蜜脾块",
+    "item.resourcefulbees.dense_iron_honeycomb": "致密铁蜜脾",
+    "item.resourcefulbees.dense_iron_bee_spawn_egg": "致密铁蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_iron_bee": "致密铁蜜蜂",
+  
+    "block.resourcefulbees.dense_lead_honeycomb_block": "致密铅蜜脾块",
+    "item.resourcefulbees.dense_lead_honeycomb": "致密铅蜜脾",
+    "item.resourcefulbees.dense_lead_bee_spawn_egg": "致密铅蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_lead_bee": "致密铅蜜蜂",
+  
+    "block.resourcefulbees.dense_netherite_honeycomb_block": "致密下界合金蜜脾块",
+    "item.resourcefulbees.dense_netherite_honeycomb": "致密下界合金蜜脾",
+    "item.resourcefulbees.dense_netherite_bee_spawn_egg": "致密下界合金蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_netherite_bee": "致密下界合金蜜蜂",
+  
+    "block.resourcefulbees.dense_nickel_honeycomb_block": "致密镍蜜脾块",
+    "item.resourcefulbees.dense_nickel_honeycomb": "致密镍蜜脾",
+    "item.resourcefulbees.dense_nickel_bee_spawn_egg": "致密镍蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_nickel_bee": "致密镍蜜蜂",
+  
+    "block.resourcefulbees.dense_osmium_honeycomb_block": "致密锇蜜脾块",
+    "item.resourcefulbees.dense_osmium_honeycomb": "致密锇蜜脾",
+    "item.resourcefulbees.dense_osmium_bee_spawn_egg": "致密锇蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_osmium_bee": "致密锇蜜蜂",
+  
+    "block.resourcefulbees.dense_platinum_honeycomb_block": "致密铂蜜脾块",
+    "item.resourcefulbees.dense_platinum_honeycomb": "致密铂蜜脾",
+    "item.resourcefulbees.dense_platinum_bee_spawn_egg": "致密铂蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_platinum_bee": "致密铂蜜蜂",
+  
+    "block.resourcefulbees.dense_silver_honeycomb_block": "致密银蜜脾块",
+    "item.resourcefulbees.dense_silver_honeycomb": "致密银蜜脾",
+    "item.resourcefulbees.dense_silver_bee_spawn_egg": "致密银蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_silver_bee": "致密银蜜蜂",
+  
+    "block.resourcefulbees.dense_tin_honeycomb_block": "致密锡蜜脾块",
+    "item.resourcefulbees.dense_tin_honeycomb": "致密锡蜜脾",
+    "item.resourcefulbees.dense_tin_bee_spawn_egg": "致密锡蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_tin_bee": "致密锡蜜蜂",
+  
+    "block.resourcefulbees.dense_uranium_honeycomb_block": "致密铀蜜脾块",
+    "item.resourcefulbees.dense_uranium_honeycomb": "致密铀蜜脾",
+    "item.resourcefulbees.dense_uranium_bee_spawn_egg": "致密铀蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_uranium_bee": "致密铀蜜蜂",
+  
+    "block.resourcefulbees.dense_zinc_honeycomb_block": "致密锌蜜脾块",
+    "item.resourcefulbees.dense_zinc_honeycomb": "致密锌蜜脾",
+    "item.resourcefulbees.dense_zinc_bee_spawn_egg": "致密锌蜜蜂刷怪蛋",
+    "entity.resourcefulbees.dense_zinc_bee": "致密锌蜜蜂",
+  
+    "item.resourcefulbees.beediddy_bee_spawn_egg": "老爹蜜蜂刷怪蛋",
+    "entity.resourcefulbees.beediddy_bee": "老爹蜜蜂",
+  
+    "block.resourcefulbees.draconium_honeycomb_block": "龙矿蜜脾块",
+    "item.resourcefulbees.draconium_honeycomb": "龙矿蜜脾",
+    "item.resourcefulbees.draconium_bee_spawn_egg": "龙矿蜜蜂刷怪蛋",
+    "entity.resourcefulbees.draconium_bee": "龙矿蜜蜂",
+  
+    "block.resourcefulbees.awakened_honeycomb_block": "觉醒蜜脾块",
+    "item.resourcefulbees.awakened_honeycomb": "觉醒蜜脾",
+    "item.resourcefulbees.awakened_bee_spawn_egg": "觉醒蜜蜂刷怪蛋",
+    "entity.resourcefulbees.awakened_bee": "觉醒蜜蜂",
+  
+    "block.resourcefulbees.chaotic_honeycomb_block": "混沌蜜脾块",
+    "item.resourcefulbees.chaotic_honeycomb": "混沌蜜脾",
+    "item.resourcefulbees.chaotic_bee_spawn_egg": "混沌蜜蜂刷怪蛋",
+    "entity.resourcefulbees.chaotic_bee": "混沌蜜蜂",
+  
+    "block.resourcefulbees.cotton_candy_honeycomb_block": "棉花糖蜜脾块",
+    "item.resourcefulbees.cotton_candy_honeycomb": "棉花糖蜜脾",
+    "item.resourcefulbees.cotton_candy_bee_spawn_egg": "棉花糖蜜蜂刷怪蛋",
+    "entity.resourcefulbees.cotton_candy_bee": "棉花糖蜜蜂",
+  
+    "trait.resourcefulbees.draconic": "龙特质",
+    "trait.resourcefulbees.awakened": "觉醒特质",
+    "trait.resourcefulbees.chaotic": "混沌特质",
+    "trait.resourcefulbees.soul_fire": "灵魂之火特质",
+    "trait.resourcefulbees.starry": "星空特质",
+    "trait.resourcefulbees.beediddy": "老爹蜜蜂",
+    "trait.resourcefulbees.allthemodium": "ATM蜜蜂",
+    "trait.resourcefulbees.vibranium": "振金蜜蜂",
+    "trait.resourcefulbees.unobtainium": "难得素蜜蜂"
+  
+  }
+  
+  

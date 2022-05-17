@@ -42,6 +42,7 @@ function init() {
 	.buildAndRegister()
 		.langBuilder()
 			.put("en_us", "Allthemodium Solar Panel")
+			.put("zh_cn", "ATM太阳能板")
 			.build();
 
 	panel()
@@ -53,6 +54,7 @@ function init() {
 	.buildAndRegister()
 		.langBuilder()
 			.put("en_us", "Vibranium Solar Panel")
+			.put("zh_cn", "振金太阳能板")
 			.build();
 
 	panel()
@@ -64,5 +66,6 @@ function init() {
 	.buildAndRegister()
 		.langBuilder()
 			.put("en_us", "Unobtainium Solar Panel")
+			.put("zh_cn", "难得素太阳能板")
 			.build();
 }

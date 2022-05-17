@@ -9,9 +9,8 @@
 	paxels = false
 	flintGear = false
 	emeraldGear = false
-	rightClickHarvest = false
+	rightClickHarvest = true
 ["Grid Repair"]
 	enabled = false
 [Tweaks]
 	toolBreaking = false
-	
