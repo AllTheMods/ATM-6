@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "envirocore:erodium_blocks"
+  },
+  "result": "envirocore:erodium_brick_slab",
+  "count": 2
+}
