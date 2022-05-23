@@ -77,6 +77,7 @@ onEvent('recipes', e => {
     'immersiveengineering:crafting/concrete2',
     'engineerstools:crushing/aluminium_grit_crushing_recipe',
     'engineersdecor:dependent/slag_brick_block_recipe',
+    'immersiveengineering:crafting/paper_from_sawdust',
     'immersivepetroleum:distillationtower/oilcracking'
   ])
 

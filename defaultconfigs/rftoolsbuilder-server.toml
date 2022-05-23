@@ -1,0 +1,5 @@
+#Settings for the builder
+[builder]
+	#Can Tile Entities be moved? 'forbidden' means never, 'whitelist' means only whitelisted, 'blacklist' means all except blacklisted, 'allowed' means all
+	#Allowed Values: MOVE_FORBIDDEN, MOVE_WHITELIST, MOVE_BLACKLIST, MOVE_ALLOWED
+	tileEntityMode = "MOVE_FORBIDDEN"

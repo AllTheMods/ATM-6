@@ -1,0 +1,23 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:gold_ore",
+    "minecraft:iron_ore",
+    "minecraft:coal_ore",
+    "minecraft:redstone_ore",
+    "minecraft:diamond_ore",
+    "minecraft:lapis_ore",
+    "minecraft:nether_quartz_ore",
+    "alltheores:ore_aluminum",
+    "alltheores:ore_osmium",
+    "alltheores:ore_platinum",
+    "alltheores:ore_zinc",
+    "alltheores:ore_uranium",
+    "alltheores:ore_tin",
+    "alltheores:ore_lead",
+    "alltheores:ore_silver",
+    "alltheores:ore_nickel",
+    "alltheores:ore_zinc",
+    "alltheores:ore_copper"
+  ]
+}
