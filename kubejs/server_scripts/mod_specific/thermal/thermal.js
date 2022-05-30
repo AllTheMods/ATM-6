@@ -38,6 +38,23 @@ onEvent('recipes', e => {
     e.remove({id: `thermal:storage/${metal}_block`});
   });
 
+  let extruderRecipe = (e, result, adj, below) => {
+    e.custom({
+      type: 'thermal:rock_gen',
+      adjacent: adj,
+      below: below,
+      result: {
+        item: result
+      }
+    })
+  }
+
+  extruderRecipe(e, "minecraft:netherrack", "minecraft:lava", "minecraft:magma_block")
+  extruderRecipe(e, "minecraft:andesite", "minecraft:water", "minecraft:stone")
+  extruderRecipe(e, "minecraft:blackstone", "minecraft:water", "minecraft:gilded_blackstone")
+  extruderRecipe(e, "minecraft:diorite", "minecraft:water", "minecraft:quartz_block")
+  extruderRecipe(e, "minecraft:granite", "minecraft:water", "minecraft:red_sand")
+
   removeRecipeByID(e, [
     'thermal:machine/press/packing2x2/press_honeycomb_packing',
     'thermal:machine/press/unpacking/press_honeycomb_unpacking',
