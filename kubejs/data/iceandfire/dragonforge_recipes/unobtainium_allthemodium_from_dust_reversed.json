@@ -1,0 +1,12 @@
+{
+  "dragon_type": "lightning",
+  "input_left": {
+    "tag": "forge:dusts/allthemodium"
+  },
+  "input_right": {
+    "tag": "forge:dusts/unobtainium"
+  },
+  "result": {
+    "item": "allthemodium:unobtainium_allthemodium_alloy_ingot"
+  }
+}
