@@ -1,0 +1,12 @@
+{
+  "dragon_type": "ice",
+  "input_left": {
+    "tag": "forge:ingots/vibranium"
+  },
+  "input_right": {
+    "tag": "forge:ingots/unobtainium"
+  },
+  "result": {
+    "item": "allthemodium:unobtainium_vibranium_alloy_ingot"
+  }
+}

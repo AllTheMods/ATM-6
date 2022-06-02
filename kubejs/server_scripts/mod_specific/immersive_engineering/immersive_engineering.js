@@ -63,6 +63,13 @@ onEvent('recipes', e => {
   e.replaceInput('immersiveengineering:hammer', '#misctags:immersive_engineering_hammer')
   e.replaceInput('immersiveengineering:wirecutter', '#misctags:immersive_engineering_wirecutter')
 
+  immersiveMetals.concat(immersiveAlloys).forEach(metal => {
+    e.remove({id: `immersiveengineering:crafting/nugget_${metal}_to_ingot_${metal}`});
+    e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_nugget_${metal}`});
+    e.remove({id: `immersiveengineering:crafting/ingot_${metal}_to_storage_${metal}`});
+    e.remove({id: `immersiveengineering:crafting/storage_${metal}_to_ingot_${metal}`});
+  })
+
   removeRecipeByID(e, [
     /^immersiveengineering:crafting\/ingot_.*_to_storage_.*/,
     'immersivepetroleum:hydrotreater/sulfur_recovery',
@@ -70,6 +77,7 @@ onEvent('recipes', e => {
     'immersiveengineering:crafting/concrete2',
     'engineerstools:crushing/aluminium_grit_crushing_recipe',
     'engineersdecor:dependent/slag_brick_block_recipe',
+    'immersiveengineering:crafting/paper_from_sawdust',
     'immersivepetroleum:distillationtower/oilcracking'
   ])
 

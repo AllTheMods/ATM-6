@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:alabaster_blue_blocks"
+  },
+  "result": "enviromats:alabaster_blue_brick_slab",
+  "count": 2
+}

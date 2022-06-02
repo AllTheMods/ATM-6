@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:pumice_blocks"
+  },
+  "result": "enviromats:pumice_brick_slab",
+  "count": 2
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "envirocore:litherite_blocks"
+  },
+  "result": "envirocore:litherite_brick_small_wall",
+  "count": 1
+}

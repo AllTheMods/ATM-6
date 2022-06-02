@@ -13,16 +13,6 @@ onEvent('recipes', e => {
     e.remove({ input: [`#forge:ores/${name}`, `#forge:dusts/${name}`], output: `#forge:ingots/${name}`, type: 'minecraft:blasting' })
     e.remove({ id: `appliedenergistics2:grinder/${name}_dust_ingot` })
 
-    if (name !== 'iron' && name !== 'gold' && name !== 'azure_silver' && name !== 'crimson_iron') {
-      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
-      e.remove({ input: `mekanism:dirty_dust_${name}`, output: `mekanism:dust_${name}`, type: 'mekanism:enriching' })
-      e.remove({ input: `#mekanism:clumps/${name}`, output: `mekanism:dirty_dust_${name}`, type: 'mekanism:crushing' })
-      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:clump_${name}`, type: 'mekanism:purifying' })
-      e.remove({ input: `mekanism:shard_${name}`, output: `mekanism:clump_${name}`, type: 'mekanism:purifying' })
-      e.remove({ input: `#forge:ores/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
-      e.remove({ input: `#mekanism:crystals/${name}`, output: `mekanism:shard_${name}`, type: 'mekanism:injecting' })
-    }
-
     e.recipes.minecraft.smelting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.minecraft.blasting(ingotItem, `#forge:dusts/${name}`).xp(0.5)
     e.recipes.pedestals.pedestal_crushing({ ingredient: { tag: `forge:ingots/${name}` }, result: { item: dustItem, count: 1 } })
@@ -32,7 +22,7 @@ onEvent('recipes', e => {
     if (!ingredient.of(`#forge:ores/${name}`).stacks.empty) {
       e.recipes.minecraft.smelting(ingotItem, `#forge:ores/${name}`).xp(1)
       e.recipes.minecraft.blasting(ingotItem, `#forge:ores/${name}`).xp(1)
-      e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`)
+      e.recipes.mekanism.enriching(item.of(dustItem, 2), `#forge:ores/${name}`).id(`alltheores:mek_processing/${name}/dust/from_ore`)
       if (name !== 'allthemodium' && name !== 'vibranium' && name !== 'unobtainium') {
         e.remove({ id: `engineerstools:crushing/${name}_grit_crushing_recipe` })
         e.recipes.engineerstools.crafting_extended_shapeless({
@@ -713,4 +703,39 @@ onEvent('recipes', e => {
     output: { item: 'immersiveengineering:treated_wood_horizontal' }
   }).id('kubejs:dissolution_chamber/thermal/treated_wood_horizontal')
   // #endregion Oil
+
+  tmechworksMetals.forEach(metal => {
+    removeRecipeByID(e, [
+      `tmechworks:${metal}_ingot_from_${metal}_nugget`,
+      `tmechworks:${metal}_ingot_from_${metal}_block`,
+      `tmechworks:${metal}_nugget_from_${metal}_ingot`,
+    ])
+  })
+
+  createMetals.forEach(metal => {
+    removeRecipeByID(e, [
+      `create:crafting/materials/${metal}_ingot_from_compacting`,
+      `create:crafting/materials/${metal}_ingot_from_decompacting`,
+      `create:crafting/materials/${metal}_nugget_from_decompacting`,
+    ])
+  })
+
+  iceAndFireMetals.forEach(metal => {
+    removeRecipeByID(e, [
+      `iceandfire:${metal}_ingot`,
+      `iceandfire:${metal}_block_to_ingots`,
+      `iceandfire:${metal}_ingot_to_nuggets`,
+    ])
+  })
+
+  removeRecipeByID(e,[
+    'zycraft:aluminium_from_aluminium_block',
+    'eidolon:decompress_lead_block',
+    'eidolon:decompress_lead_ingot',
+    'eidolon:lead_ingot',
+    'tconstruct:common/materials/copper_ingot_from_block',
+    'tconstruct:common/materials/copper_ingot_from_nuggets',
+    'tconstruct:common/materials/copper_nugget_from_ingot',
+    'biggerreactors:crafting/yellorium_ingot',
+  ])
 })

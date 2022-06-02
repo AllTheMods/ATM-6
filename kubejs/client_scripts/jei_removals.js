@@ -1,9 +1,7 @@
 onEvent('jei.hide.items', e => {
   //#region consts
   let refined = ['controller', 'creative_controller', 'grid', 'crafting_grid', 'pattern_grid', 'fluid_grid', 'network_receiver', 'network_transmitter', 'relay', 'detector', 'security_manager', 'wireless_transmitter', 'disk_manipulator', 'crafter', 'crafter_manager', 'crafting_monitor']
-  let colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
   let typeFirst = ['mekanism', 'immersiveengineering']
-  let enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
   //#endregion
   //#region functions
   function hideMetal(mod, name, types) {
@@ -12,12 +10,14 @@ onEvent('jei.hide.items', e => {
       if (!Ingredient.of(id).stacks.empty) e.hide(id)
     })
   }
+
   function hideStuff(mod, type, names) {
     names.forEach(name => {
       let id = typeFirst.includes(mod) ? `${mod}:${type}_${name}` : `${mod}:${name}_${type}`
       if (!Ingredient.of(id).stacks.empty) e.hide(id)
     })
   }
+
   //#endregion
 
   e.hide([
@@ -103,7 +103,6 @@ onEvent('jei.hide.items', e => {
     'eidolon:lead_ingot',
     'eidolon:lead_block',
     'eidolon:lead_nugget',
-    /resourcefulbees:.*spawn_egg/,
     'cyclic:honey_bucket',
     'create:honey_bucket',
     'thermal:creosote_bucket',
@@ -130,7 +129,67 @@ onEvent('jei.hide.items', e => {
     'projectred-core:copper_ingot'
   ])
 
-  enviroStonesMats.forEach(stone => e.hide(`/enviromats:${stone}_.*/`))
+  // only hide uncraftable spawn eggs
+  e.hide([
+    'resourcefulbees:abbee_bee_spawn_egg',
+    'resourcefulbees:allthemodium_bee_spawn_egg',
+    'resourcefulbees:aluminum_bee_spawn_egg',
+    'resourcefulbees:awakened_bee_spawn_egg',
+    'resourcefulbees:beediddy_bee_spawn_egg',
+    'resourcefulbees:blazing_bee_spawn_egg',
+    'resourcefulbees:certus_bee_spawn_egg',
+    'resourcefulbees:chaotic_bee_spawn_egg',
+    'resourcefulbees:coal_bee_spawn_egg',
+    'resourcefulbees:copper_bee_spawn_egg',
+    'resourcefulbees:cotton_candy_bee_spawn_egg',
+    'resourcefulbees:dense_copper_bee_spawn_egg',
+    'resourcefulbees:dense_gold_bee_spawn_egg',
+    'resourcefulbees:dense_iron_bee_spawn_egg',
+    'resourcefulbees:dense_lead_bee_spawn_egg',
+    'resourcefulbees:dense_netherite_bee_spawn_egg',
+    'resourcefulbees:dense_nickel_bee_spawn_egg',
+    'resourcefulbees:dense_osmium_bee_spawn_egg',
+    'resourcefulbees:dense_platinum_bee_spawn_egg',
+    'resourcefulbees:dense_silver_bee_spawn_egg',
+    'resourcefulbees:dense_tin_bee_spawn_egg',
+    'resourcefulbees:dense_uranium_bee_spawn_egg',
+    'resourcefulbees:dense_zinc_bee_spawn_egg',
+    'resourcefulbees:diamond_bee_spawn_egg',
+    'resourcefulbees:draconium_bee_spawn_egg',
+    'resourcefulbees:dragonic_bee_spawn_egg',
+    'resourcefulbees:emerald_bee_spawn_egg',
+    'resourcefulbees:fluorite_bee_spawn_egg',
+    'resourcefulbees:ghastly_bee_spawn_egg',
+    'resourcefulbees:gold_bee_spawn_egg',
+    'resourcefulbees:iron_bee_spawn_egg',
+    'resourcefulbees:kitten_bee_spawn_egg',
+    'resourcefulbees:kobee_beef_bee_spawn_egg',
+    'resourcefulbees:lapis_bee_spawn_egg',
+    'resourcefulbees:lead_bee_spawn_egg',
+    'resourcefulbees:netherite_bee_spawn_egg',
+    'resourcefulbees:nickel_bee_spawn_egg',
+    'resourcefulbees:obsidian_bee_spawn_egg',
+    'resourcefulbees:oreo_bee_spawn_egg',
+    'resourcefulbees:osmium_bee_spawn_egg',
+    'resourcefulbees:papa_beemeritus_bee_spawn_egg',
+    'resourcefulbees:platinum_bee_spawn_egg',
+    'resourcefulbees:redstone_bee_spawn_egg',
+    'resourcefulbees:silver_bee_spawn_egg',
+    'resourcefulbees:soul_lava_bee_spawn_egg',
+    'resourcefulbees:starry_bee_spawn_egg',
+    'resourcefulbees:stoned_bee_spawn_egg',
+    'resourcefulbees:tin_bee_spawn_egg',
+    'resourcefulbees:unobtainium_bee_spawn_egg',
+    'resourcefulbees:uraninite_bee_spawn_egg',
+    'resourcefulbees:uranium_bee_spawn_egg',
+    'resourcefulbees:vibranium_bee_spawn_egg',
+    'resourcefulbees:wither_bee_spawn_egg',
+    'resourcefulbees:withered_bee_spawn_egg',
+    'resourcefulbees:yeti_bee_spawn_egg',
+    'resourcefulbees:zinc_bee_spawn_egg'
+  ])
+
+
   colors.forEach(color => {
     refined.forEach(refin => e.hide([`refinedstorage:${color}_${refin}`]))
     e.hide([
@@ -149,11 +208,9 @@ onEvent('jei.hide.items', e => {
   hideMetal('immersiveengineering', 'steel', ['ingot', 'dust', 'nugget', 'storage', 'slab_storage'])
   hideMetal('immersiveengineering', 'electrum', ['ingot', 'dust', 'nugget', 'storage', 'slab_storage'])
   hideMetal('immersiveengineering', 'constantan', ['ingot', 'dust', 'nugget', 'storage', 'slab_storage'])
-  hideMetal('mekanism', 'copper', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'tin', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'uranium', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'lead', ['ingot', 'dust', 'nugget', 'block'])
-  hideMetal('mekanism', 'osmium', ['ingot', 'dust', 'nugget', 'block'])
+  mekanismMetals.forEach(metal => {
+    hideMetal('mekanism', metal, ['ingot', 'dust', 'nugget', 'block', 'clean', 'dirty']);
+  })
   hideMetal('mekanism', 'bronze', ['ingot', 'dust', 'nugget', 'block'])
   hideMetal('create', 'copper', ['ingot', 'ore', 'nugget', 'block'])
   hideMetal('create', 'zinc', ['ingot', 'ore', 'nugget', 'block'])
@@ -176,10 +233,9 @@ onEvent('jei.hide.items', e => {
   hideStuff('create', 'sheet', ['iron', 'golden', 'copper'])
   hideStuff('iceandfire', 'ore', ['silver', 'copper'])
   hideStuff('tmechworks', 'ore', ['aluminum', 'copper'])
-  hideStuff('solarflux', 'sp', [6, 7, 8])
   hideStuff('quark', 'crate', ['apple', 'carrot', 'beetroot', 'potato'])
   hideStuff('quark', 'block', ['bamboo', 'charcoal', 'sugar_cane'])
-  hideStuff('mysticalagriculture', 'seeds', ['basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium'])
-  hideStuff('mysticalagriculture', 'essence', ['basalz', 'blazing_crystal', 'blitz', 'blizz', 'brass', 'bronze', 'compressed_iron', 'constantan', 'chrome', 'electrum', 'elementium', 'ender_biotite', 'energized_steel', 'fluix', 'graphite', 'hop_graphite', 'invar', 'iridium', 'manasteel', 'niotic_crystal', 'nitro_crystal', 'quartz_enriched_iron', 'refined_glowstone', 'refined_obsidian', 'rock_crystal', 'rubber', 'signalum', 'silicon', 'sky_stone', 'spirited_crystal', 'starmetal', 'steel', 'sulfur', 'terrasteel', 'titanium', 'tungsten', 'mithril', 'tinkers_bronze', 'ironwood', 'steeleaf', 'pig_iron', 'slimesteel', 'rose_gold', 'queens_slime', 'manyullyn', 'fiery_ingot', 'knightmetal', 'hepatizon', 'lumium', 'enderium'])
+  hideStuff('mysticalagriculture', 'seeds', maDisabledSeeds)
+  hideStuff('mysticalagriculture', 'essence', maDisabledSeeds)
   //#endregion
 })

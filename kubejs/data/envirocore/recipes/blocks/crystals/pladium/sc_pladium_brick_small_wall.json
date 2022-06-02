@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "envirocore:pladium_blocks"
+  },
+  "result": "envirocore:pladium_brick_small_wall",
+  "count": 1
+}

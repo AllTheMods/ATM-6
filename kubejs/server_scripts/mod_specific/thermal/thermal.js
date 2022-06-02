@@ -31,17 +31,31 @@ onEvent('recipes', e => {
   smelterCompat(e, 4000, 'tconstruct:queens_slime_ingot', 2, ['#forge:dusts/gold', '#forge:ingots/gold'], 1, '#forge:ingots/cobalt', 1, 'minecraft:magma_cream', 1)
   smelterCompat(e, 4000, 'tconstruct:hepatizon_ingot', 2, ['#forge:dusts/copper', '#forge:ingots/copper'], 2, '#forge:ingots/cobalt', 1, '#forge:obsidian', 1)
 
+  thermalMetals.forEach(metal => {
+    e.remove({id: `thermal:storage/${metal}_nugget_from_ingot`});
+    e.remove({id: `thermal:storage/${metal}_ingot_from_nuggets`});
+    e.remove({id: `thermal:storage/${metal}_ingot_from_block`});
+    e.remove({id: `thermal:storage/${metal}_block`});
+  });
+
+  let extruderRecipe = (e, result, adj, below) => {
+    e.custom({
+      type: 'thermal:rock_gen',
+      adjacent: adj,
+      below: below,
+      result: {
+        item: result
+      }
+    })
+  }
+
+  extruderRecipe(e, "minecraft:netherrack", "minecraft:lava", "minecraft:magma_block")
+  extruderRecipe(e, "minecraft:andesite", "minecraft:water", "minecraft:stone")
+  extruderRecipe(e, "minecraft:blackstone", "minecraft:water", "minecraft:gilded_blackstone")
+  extruderRecipe(e, "minecraft:diorite", "minecraft:water", "minecraft:quartz_block")
+  extruderRecipe(e, "minecraft:granite", "minecraft:water", "minecraft:red_sand")
+
   removeRecipeByID(e, [
-    'thermal:storage/tin_block',
-    'thermal:storage/copper_block',
-    'thermal:storage/lead_block',
-    'thermal:storage/platinum_block',
-    'thermal:storage/uranium_block',
-    'thermal:storage/silver_block',
-    'thermal:storage/aluminum_block',
-    'thermal:storage/nickel_block',
-    'thermal:storage/osmium_block',
-    'thermal:storage/zinc_block',
     'thermal:machine/press/packing2x2/press_honeycomb_packing',
     'thermal:machine/press/unpacking/press_honeycomb_unpacking',
     'thermal:machine/centrifuge/centrifuge_oil_sand',

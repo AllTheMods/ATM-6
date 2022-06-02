@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "enviromats:marble_blocks"
+  },
+  "result": "enviromats:marble_brick_slab",
+  "count": 2
+}
