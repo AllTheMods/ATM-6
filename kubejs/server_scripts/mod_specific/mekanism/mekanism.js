@@ -96,6 +96,7 @@ onEvent('recipes', e => {
   })
 
   removeRecipeByID(e, [
+    'mekanism:nuggets/bronze',
     'mekanism:digital_miner',
     'mekanism:atomic_disassembler',
     'mekanism:mekasuit_helmet',
