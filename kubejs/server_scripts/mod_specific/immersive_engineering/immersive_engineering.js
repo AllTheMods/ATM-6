@@ -71,6 +71,8 @@ onEvent('recipes', e => {
   })
 
   removeRecipeByID(e, [
+    'immersiveengineering:crafting/ingot_steel_from_dust_from_blasting',
+    'immersiveengineering:crafting/ingot_steel_from_dust',
     /^immersiveengineering:crafting\/ingot_.*_to_storage_.*/,
     'immersivepetroleum:hydrotreater/sulfur_recovery',
     'immersiveengineering:crusher/nether_wart',
@@ -78,7 +80,8 @@ onEvent('recipes', e => {
     'engineerstools:crushing/aluminium_grit_crushing_recipe',
     'engineersdecor:dependent/slag_brick_block_recipe',
     'immersiveengineering:crafting/paper_from_sawdust',
-    'immersivepetroleum:distillationtower/oilcracking'
+    'immersivepetroleum:distillationtower/oilcracking',
+    'immersivepetroleum:arcfurnace/steel',
   ])
 
   removeRecipeByOutput(e, [
