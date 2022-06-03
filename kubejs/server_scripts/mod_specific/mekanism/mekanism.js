@@ -84,7 +84,7 @@ onEvent('recipes', e => {
     e.remove({id: `mekanism:processing/${metal}/slurry/clean`})
   })
 
-  mekanismMetals.concat(mekanismAlloys).forEach(metal => {
+  mekanismMetals.concat(['bronze']).forEach(metal => {
     e.remove({id: `mekanism:processing/${metal}/dust/from_ingot`})
     e.remove({id: `mekanism:processing/${metal}/ingot/from_block`})
     e.remove({id: `mekanism:processing/${metal}/ingot/from_dust_blasting`})
@@ -96,6 +96,7 @@ onEvent('recipes', e => {
   })
 
   removeRecipeByID(e, [
+    'mekanism:nuggets/bronze',
     'mekanism:digital_miner',
     'mekanism:atomic_disassembler',
     'mekanism:mekasuit_helmet',
