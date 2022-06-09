@@ -1,0 +1,583 @@
+{
+	id: "18A429E7F56AF5A9"
+	group: ""
+	order_index: 4
+	filename: "bounty_board"
+	title: "Bounty Board"
+	icon: "minecraft:zombie_head"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -1.0d
+			id: "2B05A29C62676EB2"
+			tasks: [{
+				id: "5457CD8C1ABA0B9E"
+				type: "kill"
+				title: "Kill 5 Zombies"
+				icon: "minecraft:zombie_head"
+				entity: "minecraft:zombie"
+				value: 5L
+			}]
+			rewards: [
+				{
+					id: "0FE23E01BFCD22FA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "4247F14C46042AFC"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+					count: 5
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			dependencies: ["2B05A29C62676EB2"]
+			id: "444ACE285311ECB4"
+			tasks: [{
+				id: "3AD10C31CB6BA4C2"
+				type: "kill"
+				title: "Kill 10 Zombies"
+				icon: "minecraft:zombie_head"
+				entity: "minecraft:zombie"
+				value: 10L
+			}]
+			rewards: [
+				{
+					id: "3ED7AA82E00DCFD5"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "54178E89681A580C"
+					type: "item"
+					item: "xreliquary:zombie_heart"
+					count: 5
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: ["444ACE285311ECB4"]
+			id: "146232B8504789C1"
+			tasks: [{
+				id: "51471254BFEBDAA7"
+				type: "kill"
+				title: "Kill 50 Zombies"
+				icon: "minecraft:zombie_head"
+				entity: "minecraft:zombie"
+				value: 50L
+			}]
+			rewards: [
+				{
+					id: "267B3DBA7DED8C3B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "5E79DAB83F92174C"
+					type: "item"
+					item: "xreliquary:zombie_heart"
+					count: 10
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			dependencies: ["146232B8504789C1"]
+			size: 1.5d
+			id: "7D5B36BF3EC0C93F"
+			tasks: [{
+				id: "5056DC37AEF523E5"
+				type: "kill"
+				title: "Kill 100 Zombies"
+				icon: "minecraft:zombie_head"
+				entity: "minecraft:zombie"
+				value: 100L
+			}]
+			rewards: [
+				{
+					id: "0A77CE5C75957CD7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5DA606CC7CD77A3F"
+					type: "item"
+					item: "xreliquary:zombie_heart"
+					count: 25
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			id: "42822B1E8A53D051"
+			tasks: [{
+				id: "5B35720DF93CE2DB"
+				type: "kill"
+				title: "Kill 5 Skeletons"
+				icon: "minecraft:skeleton_skull"
+				entity: "minecraft:skeleton"
+				value: 5L
+			}]
+			rewards: [
+				{
+					id: "40AC6E73C9411610"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "47DAFBFECB3B54BE"
+					type: "item"
+					item: "minecraft:bone"
+					count: 5
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["42822B1E8A53D051"]
+			id: "4748831E75A840BE"
+			tasks: [{
+				id: "015CB0D172D0712A"
+				type: "kill"
+				title: "Kill 10 Skeletons"
+				icon: "minecraft:skeleton_skull"
+				entity: "minecraft:skeleton"
+				value: 10L
+			}]
+			rewards: [
+				{
+					id: "456F7CC9E8BAA08C"
+					type: "item"
+					item: "xreliquary:rib_bone"
+					count: 5
+				}
+				{
+					id: "0D2AAD3B11A32E90"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["4748831E75A840BE"]
+			id: "410E0DD607CB3469"
+			tasks: [{
+				id: "2E17443A1BF2A0DA"
+				type: "kill"
+				title: "Kill 50 Skeletons"
+				icon: "minecraft:skeleton_skull"
+				entity: "minecraft:skeleton"
+				value: 50L
+			}]
+			rewards: [
+				{
+					id: "2356BB045B96E1F6"
+					type: "item"
+					item: "xreliquary:rib_bone"
+					count: 10
+				}
+				{
+					id: "02E2F8ED5DB84B97"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			dependencies: ["410E0DD607CB3469"]
+			size: 1.5d
+			id: "555957ED58ABF8F8"
+			tasks: [{
+				id: "00655AC734444E54"
+				type: "kill"
+				title: "Kill 100 Skeletons"
+				icon: "minecraft:skeleton_skull"
+				entity: "minecraft:skeleton"
+				value: 100L
+			}]
+			rewards: [
+				{
+					id: "43239A50BD455DCE"
+					type: "item"
+					item: "xreliquary:rib_bone"
+					count: 25
+				}
+				{
+					id: "3F6EFAED74D8B549"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			id: "77FC692AC94D2EEF"
+			tasks: [{
+				id: "423AF6C6647B1626"
+				type: "kill"
+				title: "Kill 5 Creepers"
+				icon: "minecraft:creeper_head"
+				entity: "minecraft:creeper"
+				value: 5L
+			}]
+			rewards: [
+				{
+					id: "311AAB7A9D64E946"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 5
+				}
+				{
+					id: "02E39788C2347A3F"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["77FC692AC94D2EEF"]
+			id: "65BBA5C0DAEEC31F"
+			tasks: [{
+				id: "1AB92CF7F0246D21"
+				type: "kill"
+				title: "Kill 10 Creepers"
+				icon: "minecraft:creeper_head"
+				entity: "minecraft:creeper"
+				value: 10L
+			}]
+			rewards: [
+				{
+					id: "127375D9B7C4A08E"
+					type: "item"
+					item: "xreliquary:catalyzing_gland"
+					count: 5
+				}
+				{
+					id: "687FF91B1E08FDFF"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			dependencies: ["65BBA5C0DAEEC31F"]
+			id: "76A29816F19E33A2"
+			tasks: [{
+				id: "24BA89BD9898759B"
+				type: "kill"
+				title: "Kill 50 Creepers"
+				icon: "minecraft:creeper_head"
+				entity: "minecraft:creeper"
+				value: 50L
+			}]
+			rewards: [
+				{
+					id: "272649D80F0A2836"
+					type: "item"
+					item: "xreliquary:catalyzing_gland"
+					count: 10
+				}
+				{
+					id: "22546D5D3D7EB48C"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			dependencies: ["76A29816F19E33A2"]
+			size: 1.5d
+			id: "5FCA4FF8C135435E"
+			tasks: [{
+				id: "045D1087A2692360"
+				type: "kill"
+				title: "Kill 100 Creepers"
+				icon: "minecraft:creeper_head"
+				entity: "minecraft:creeper"
+				value: 100L
+			}]
+			rewards: [
+				{
+					id: "7FB75217C3012F8F"
+					type: "item"
+					item: "xreliquary:catalyzing_gland"
+					count: 25
+				}
+				{
+					id: "4648D5CB942BAA4A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "The Bounty Board"
+			x: 0.0d
+			y: 2.25d
+			subtitle: "Killing All The Things"
+			description: [
+				"Here you'll find all of the rewards you can get by slaying enemies."
+				""
+				"This page is a work in progress!"
+			]
+			size: 2.0d
+			id: "41C0948CD9D50322"
+			tasks: [{
+				id: "3C380961550177C2"
+				type: "checkmark"
+				title: "Bounty Board"
+			}]
+		}
+		{
+			x: -3.75d
+			y: 0.75d
+			size: 1.5d
+			id: "728BE1816DA23DC0"
+			tasks: [{
+				id: "1809F1F9A3043683"
+				type: "kill"
+				title: "Kill the Ender Dragon"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "73BAA6AD36E525E5"
+				type: "xp"
+				xp: 1000
+			}]
+		}
+		{
+			x: -3.75d
+			y: 2.25d
+			size: 1.5d
+			id: "09C82CDDA800D8C9"
+			tasks: [{
+				id: "171FD27057746E80"
+				type: "kill"
+				title: "Kill the Wither"
+				icon: "minecraft:wither_skeleton_skull"
+				entity: "minecraft:wither"
+				value: 1L
+			}]
+			rewards: [{
+				id: "47314637684743A3"
+				type: "xp"
+				xp: 1000
+			}]
+		}
+		{
+			x: -3.75d
+			y: 3.75d
+			size: 1.5d
+			id: "08D1CC753F6B4283"
+			tasks: [{
+				id: "2F28B803C75DA3B2"
+				type: "kill"
+				title: "Kill the Elder Guardian"
+				icon: "minecraft:elder_guardian_spawn_egg"
+				entity: "minecraft:elder_guardian"
+				value: 1L
+			}]
+		}
+		{
+			x: 3.75d
+			y: 0.75d
+			subtitle: "My Eyes are Up Here"
+			size: 1.5d
+			id: "4047966D48EB8D13"
+			tasks: [{
+				id: "10D271610B5B247F"
+				type: "kill"
+				title: "Kill a Gorgon"
+				icon: {
+					id: "iceandfire:gorgon_head"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "iceandfire:gorgon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "466E07053C753975"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.75d
+			y: 2.25d
+			subtitle: "Save the Sheep"
+			size: 1.5d
+			id: "647A9224E45EAD48"
+			tasks: [{
+				id: "179DE415566AD566"
+				type: "kill"
+				title: "Kill a Cyclops"
+				icon: "iceandfire:cyclops_skull"
+				entity: "iceandfire:cyclops"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "24305458C17EFBF4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3333C7BFBD0CB4A0"
+					type: "item"
+					item: "iceandfire:cyclops_skull"
+				}
+			]
+		}
+		{
+			x: 3.75d
+			y: 3.75d
+			subtitle: "You'll need Fire."
+			size: 1.5d
+			id: "464805030BE62367"
+			tasks: [{
+				id: "5FFAC55EB9C194E3"
+				type: "kill"
+				title: "Kill a Hydra"
+				icon: "iceandfire:hydra_skull"
+				entity: "iceandfire:hydra"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "25844FD02009DEBB"
+					type: "item"
+					item: "iceandfire:hydra_skull"
+				}
+				{
+					id: "26611A511A38910F"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 5.25d
+			subtitle: "More than Once."
+			size: 1.5d
+			id: "56DA46DC82F6665D"
+			tasks: [{
+				id: "452B65E139D9E12D"
+				type: "kill"
+				title: "Kill the Wilden Chimera"
+				icon: "ars_nouveau:wilden_tribute"
+				entity: "ars_nouveau:wilden_boss"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "4DFA285786102C2B"
+					type: "item"
+					item: "ars_nouveau:wilden_spike"
+					count: 10
+				}
+				{
+					id: "20AEE2C8F4472343"
+					type: "xp"
+					xp: 1000
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 5.25d
+			subtitle: "Not the Guardian of Gaia Online btw"
+			size: 1.5d
+			id: "5825492F8B874CF2"
+			tasks: [{
+				id: "615EF9B587C0E4F6"
+				type: "kill"
+				title: "Kill the Guardian Of Gaia"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "7D584499C3422A82"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "623E6C4256F301A2"
+					type: "item"
+					item: "botania:life_essence"
+				}
+			]
+		}
+		{
+			title: "Kill the Trader Villager and His Annoying Llamas"
+			x: 0.0d
+			y: 5.25d
+			subtitle: "\"This is Personal\" - AlfredGG"
+			size: 1.5d
+			optional: true
+			id: "0F55D0B4D5094EDB"
+			tasks: [
+				{
+					id: "596ABB45C0612AAF"
+					type: "kill"
+					title: "Kill the Trader Villager"
+					icon: "minecraft:trader_llama_spawn_egg"
+					entity: "minecraft:wandering_trader"
+					value: 1L
+				}
+				{
+					id: "1D136D138EF82DA9"
+					type: "kill"
+					title: "Kill the Trader Llamas"
+					icon: "minecraft:trader_llama_spawn_egg"
+					entity: "minecraft:trader_llama"
+					value: 2L
+				}
+			]
+			rewards: [{
+				id: "26EF416511A49817"
+				type: "item"
+				item: {
+					id: "minecraft:iron_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+						display: {
+							Lore: ["[{\"text\":\"For those brave enough to slaughter the Mighty and Annoying Trader\",\"italic\":false}]"]
+							Name: "[{\"text\":\"Sword of AlfredGG\",\"italic\":false}]"
+						}
+					}
+				}
+			}]
+		}
+	]
+}

@@ -8,8 +8,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -1.5d
-			y: 0.0d
+			x: 7.0d
+			y: 1.5d
 			subtitle: "Can be used as Reactor Coolant"
 			description: ["Easy item to automate infinite water. Need more water? Make another!"]
 			id: "722978AC0C1B2649"
@@ -25,8 +25,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -2.0d
+			x: -1.5d
+			y: 0.5d
 			description: ["Use this item to shrink. Helpful for working on automation and also just overall fun."]
 			id: "7EC8814940C4C3D7"
 			tasks: [{
@@ -46,9 +46,15 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
-			description: ["Craftable X-Ray potions are very useful when you are running low on an item."]
+			title: "X-Ray Potions!"
+			x: 2.5d
+			y: -1.0d
+			subtitle: "Seeing Through Walls"
+			description: [
+				"These are craftable X-Ray potions. You can make them for any ore in the game!"
+				""
+				"*Note: Does not work with Shaders."
+			]
 			id: "3EE9F242794CD95F"
 			tasks: [{
 				id: "03F9DE34E4C766D8"
@@ -74,49 +80,28 @@
 			}]
 		}
 		{
+			title: "How to Get More Hearts!"
+			icon: "cyclic:heart"
 			x: -1.0d
-			y: 1.0d
-			description: ["Wireless power to fix your direwire."]
-			id: "4DFA99898C174BD6"
-			tasks: [{
-				id: "7C643CA94F63FBA2"
-				type: "item"
-				item: "fluxnetworks:flux_controller"
-			}]
-			rewards: [
-				{
-					id: "0A947736C7FD97A9"
-					type: "item"
-					item: "fluxnetworks:flux_point"
-				}
-				{
-					id: "4E700E2FE535CCEE"
-					type: "item"
-					item: "fluxnetworks:flux_plug"
-				}
-			]
-		}
-		{
-			title: "Farmer's Market"
-			x: -3.0d
-			y: 0.0d
-			description: ["Use the market to get seeds or saplings. Also try and eat as many foods as you can to improve your health."]
+			y: 2.5d
+			description: ["Eating different and unique foods have a chance to grant you more hearts. Don't be picky!"]
 			id: "27D9B9F9695206BE"
 			tasks: [{
-				id: "5DDBD32533AB4583"
-				type: "item"
-				item: "farmingforblockheads:market"
+				id: "643333E504AE921C"
+				type: "checkmark"
+				title: "Different Foods Give Hearts"
 			}]
 			rewards: [{
-				id: "500A1F43838C5E64"
+				id: "4E5752854C90E1C2"
 				type: "item"
-				item: "minecraft:emerald"
+				item: "pamhc2foodcore:chickennuggetitem"
+				count: 4
 			}]
 		}
 		{
 			title: "Comforts"
-			x: 1.0d
-			y: 1.0d
+			x: 2.5d
+			y: 2.5d
 			subtitle: "ZZZzzz..."
 			description: [
 				"The sleeping bag lets you sleep during the night."
@@ -147,8 +132,8 @@
 		}
 		{
 			title: "Compact Machines"
-			x: -1.0d
-			y: -1.0d
+			x: 6.0d
+			y: 1.5d
 			subtitle: "When an infinite world is too small"
 			description: [
 				"It's an entire room in one block!"
@@ -200,8 +185,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.5d
+			x: 3.0d
+			y: 1.5d
 			subtitle: "A Mega Guidebook"
 			description: [
 				"Stores all the guidebooks you'll ever need!"
@@ -222,8 +207,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.0d
+			x: -2.0d
+			y: 1.5d
 			description: [
 				"A quick way to switch between tools."
 				""
@@ -243,8 +228,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -3.0d
+			x: 2.0d
+			y: 1.5d
 			description: [
 				"Allows you to store multiple tools in one!"
 				""
@@ -259,8 +244,8 @@
 		}
 		{
 			title: "Building Gadgets"
-			x: 2.0d
-			y: -2.0d
+			x: -1.0d
+			y: 1.5d
 			description: [
 				"Some useful gadgets for building."
 				""
@@ -335,8 +320,8 @@
 		}
 		{
 			title: "Other Gadgets"
-			x: 3.0d
-			y: 0.0d
+			x: 0.0d
+			y: 1.5d
 			description: [
 				"Can be helpful for building."
 				""
@@ -381,7 +366,7 @@
 		}
 		{
 			title: "Automating the Gaia Guardian"
-			x: 0.0d
+			x: 8.0d
 			y: 1.5d
 			description: [
 				"Normally, you can't automate the Guardian. It's a lot of manual labor to make the ATM Star!"
@@ -450,8 +435,8 @@
 		}
 		{
 			title: "Automatic Fishing"
-			x: 2.0d
-			y: 2.0d
+			x: 7.0d
+			y: 0.5d
 			description: [
 				"Place the strainer base under water, and place a strainer inside. It should slowly start to give you resources."
 				""
@@ -498,8 +483,8 @@
 		{
 			title: "ZYCraft Info Book"
 			icon: "zycraft:green_zychorium_bricks"
-			x: -2.0d
-			y: 2.0d
+			x: 7.0d
+			y: 2.5d
 			description: ["This might be removed and then re-added as tooltips."]
 			id: "24F4CFC10E8899CC"
 			tasks: [{
@@ -529,15 +514,13 @@
 		}
 		{
 			title: "Tipped Out"
-			x: 0.0d
-			y: 0.0d
+			x: 3.0d
+			y: -3.0d
 			subtitle: "Complete all of the tips!"
 			hide_dependency_lines: true
 			dependencies: [
 				"722978AC0C1B2649"
 				"7EC8814940C4C3D7"
-				"3EE9F242794CD95F"
-				"4DFA99898C174BD6"
 				"27D9B9F9695206BE"
 				"14C8FC3F19190054"
 				"594540768120A627"
@@ -549,7 +532,10 @@
 				"2BAB9C6C03540D90"
 				"7D831F7B42EC0951"
 				"24F4CFC10E8899CC"
+				"3EE9F242794CD95F"
+				"7B64DE20AE1DE5D1"
 			]
+			size: 1.5d
 			id: "0F8F37D7E12078F5"
 			tasks: [{
 				id: "42DA8E971B27ACED"
@@ -562,10 +548,341 @@
 			}]
 		}
 		{
+			title: "Tier 2: Metals"
+			x: 1.0d
+			y: 4.5d
+			subtitle: "Iron isn't the only metal now."
+			description: ["Iron is the easiest to get, but you can use Copper, Tin, etc."]
+			dependencies: ["7757FA9A0000AA78"]
+			id: "671FDEB78D7B988C"
+			tasks: [{
+				id: "62C870C23A85F04B"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+			rewards: [
+				{
+					id: "17ADB318F95E7F93"
+					type: "item"
+					item: "minecraft:iron_ore"
+				}
+				{
+					id: "05A9ECCE6CB3A808"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			title: "&dTier 3: Precious Stones"
+			x: 2.5d
+			y: 4.5d
+			subtitle: "Don't take it to the Mountain."
+			dependencies: ["671FDEB78D7B988C"]
+			id: "29676CBEF9B15031"
+			tasks: [{
+				id: "314AA4081F1F2F1C"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+			rewards: [
+				{
+					id: "42D1F053639309FF"
+					type: "item"
+					item: "minecraft:diamond_ore"
+				}
+				{
+					id: "16A6F2E736A50C08"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "&aCrimson Steel"
+			x: 4.0d
+			y: 4.5d
+			subtitle: "You'll need to craft these."
+			dependencies: ["29676CBEF9B15031"]
+			id: "426CCA46B725C8E3"
+			tasks: [{
+				id: "398CF2A980A29193"
+				type: "item"
+				item: "silentgear:crimson_steel_ingot"
+			}]
+			rewards: [
+				{
+					id: "3541CC9C2EFE9897"
+					type: "item"
+					item: "silentgear:crimson_steel_ingot"
+				}
+				{
+					id: "1AE699C3D9099F7A"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			title: "&eAllthemodium Ingots"
+			x: 5.5d
+			y: 4.5d
+			subtitle: "Pronounced \"AlltheMOD-E-UM\""
+			description: [
+				"This ore is only found in Ocean biomes, between the Y levels of 5 and 45."
+				""
+				"In the mining dimension, it's found everywhere at the same Y levels."
+			]
+			dependencies: ["426CCA46B725C8E3"]
+			id: "0D53E040C1BAD5B3"
+			tasks: [{
+				id: "1BF22C19704C3B9E"
+				type: "item"
+				item: "allthemodium:allthemodium_ingot"
+			}]
+			rewards: [
+				{
+					id: "2F570710AD96DE06"
+					type: "item"
+					item: {
+						id: "minecraft:splash_potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:allthemodium_sight"
+						}
+					}
+				}
+				{
+					id: "0F836F3570764B3E"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "&9Vibranium Ingots"
+			x: 7.0d
+			y: 4.5d
+			subtitle: "Easier to find than Allthemodium"
+			description: [
+				"Vibranium ore can only be found in the Nether in Warped or Crimson Forest biomes at Y levels 107 - 113."
+				""
+				"It's spawns frequently in the Other."
+			]
+			dependencies: ["0D53E040C1BAD5B3"]
+			id: "11898AB9B479CA63"
+			tasks: [{
+				id: "1D3EFB49BD950056"
+				type: "item"
+				item: "allthemodium:vibranium_ingot"
+			}]
+			rewards: [
+				{
+					id: "3C8C64F0429FCF09"
+					type: "item"
+					item: {
+						id: "minecraft:splash_potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:vibranium_sight"
+						}
+					}
+				}
+				{
+					id: "62E71C96AAA358D8"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "&5Unobtainium Ingots"
+			x: 8.5d
+			y: 4.5d
+			subtitle: "You won't believe this, but they are obtainable. "
+			description: ["The hardest ore to find. These can only be found in End Highland biome."]
+			dependencies: ["11898AB9B479CA63"]
+			id: "4A5891ED7C1D8515"
+			tasks: [{
+				id: "43A1A3A05EB06742"
+				type: "item"
+				item: "allthemodium:unobtainium_ingot"
+			}]
+			rewards: [
+				{
+					id: "151E97CAFACD3D40"
+					type: "item"
+					item: {
+						id: "minecraft:splash_potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:unobtainium_sight"
+						}
+					}
+				}
+				{
+					id: "08440F213C29803E"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			icon: {
+				id: "minecraft:wooden_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: 4.5d
+			subtitle: "Mining All of the Ores"
+			description: ["These are the tiers for progression in ATM6."]
+			size: 1.5d
+			id: "4F422FAD584BE2EE"
+			tasks: [{
+				id: "01685B8AB8202F74"
+				type: "checkmark"
+				title: "Mining Level Progression"
+			}]
+		}
+		{
+			title: "Tier 1: Stone"
+			x: -0.5d
+			y: 4.5d
+			subtitle: "Wood is only good for 3 hits. Change my mind."
+			description: [""]
+			dependencies: ["4F422FAD584BE2EE"]
+			id: "7757FA9A0000AA78"
+			tasks: [{
+				id: "75C5E08779B7EDE3"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+			rewards: [{
+				id: "2E89CF5851DE9785"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			title: "X-Ray...Charms?"
+			x: 3.5d
+			y: -1.0d
+			subtitle: "Last longer than potions."
+			dependencies: ["3EE9F242794CD95F"]
+			id: "7B64DE20AE1DE5D1"
+			tasks: [{
+				id: "6D02FC1D182AF4CD"
+				type: "item"
+				item: {
+					id: "apotheosis:potion_charm"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Potion: "potionsmaster:diamond_sight"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "179FAB839812617E"
+					type: "item"
+					item: "minecraft:blaze_powder"
+					count: 6
+				}
+				{
+					id: "7C31BBE16AB30A47"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Biome Locator"
+			x: 4.0d
+			y: 1.5d
+			subtitle: "Finding spawn locations just got easier!"
+			description: [
+				"Using this item, you can search for any biome. The compass will point in the direction of the biome!"
+				""
+				"This is great for hunting dragons or looking for Unobtainium Ore!"
+			]
+			id: "7E4BC3BBFA8DF215"
+			tasks: [{
+				id: "2D27C11ED9EDC56E"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Paxel"
+			x: 2.5d
+			y: 0.5d
+			subtitle: "The All In One Tool"
+			description: [
+				"Combines a pickaxe, shovel, and axe together all in one tool!"
+				""
+				"*Note: You can also use Silent Gear to craft one!"
+			]
+			id: "66CCA63252B35275"
+			tasks: [{
+				id: "729FEBD09D95B517"
+				type: "item"
+				item: {
+					id: "mekanismtools:iron_paxel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Time in A Bottle"
+			x: 3.5d
+			y: 0.5d
+			subtitle: "The Sandman's Favorite Weapon"
+			description: [
+				"The Cloud in a Bottle stores time while it is in your inventory."
+				""
+				"You can use the stored time on almost anything to increase the speed of the item. To do this, shift-right click on the item with the bottle in hand."
+				""
+				"*Note: It can go up to 256x, but costs a lot of time! Make this early on."
+			]
+			id: "1840E4AEE664F507"
+			tasks: [{
+				id: "7FB116D85321DA44"
+				type: "item"
+				item: "quark:bottled_cloud"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.5d
+			subtitle: "Indestructible Items"
+			description: ["When combined with a tool in a Smithing Table, it makes the tool indestructible!"]
+			id: "008F236233D2F725"
+			tasks: [{
+				id: "5FF74D38FD6641CD"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:eternal_stella"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
 			title: "Metal Block Variants"
 			icon: "minecraft:stonecutter"
-			x: 0.0d
-			y: 3.0d
+			x: -0.5d
+			y: 0.5d
 			description: [
 				"Metal block recipes have been unified in this pack, but if you need another mod's variant for decorative purposes, fear not!"
 				""

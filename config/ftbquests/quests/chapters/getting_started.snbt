@@ -1,0 +1,1124 @@
+{
+	id: "517444D5104113B0"
+	group: "06B954267315CB8E"
+	order_index: 0
+	filename: "getting_started"
+	title: "Getting Started"
+	icon: "minecraft:furnace"
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -6.5d
+		y: -4.5d
+		width: 5.0d
+		height: 5.0d
+		rotation: 0.0d
+		image: "byg:textures/block/baobab_crafting_table_top.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "&9Getting Started!"
+			icon: "minecraft:crafting_table"
+			x: -8.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "Welcome to All The Mods 6"
+			description: [
+				"ATM6 has a ton of utilities to start you out. Veinminer is in the pack with FTB Ultamine. The default key is ~. You can change this in the keybind settings."
+				""
+				"Go out and have some fun!"
+			]
+			size: 2.0d
+			id: "22C568A17B5D1B46"
+			tasks: [{
+				id: "3E051AF322DF9BEF"
+				type: "checkmark"
+				title: "Getting Started"
+			}]
+			rewards: [{
+				id: "4B7A57FC6018E1C7"
+				type: "item"
+				item: "minecraft:cooked_beef"
+				count: 16
+			}]
+		}
+		{
+			title: "Getting Wood"
+			x: -6.0d
+			y: 0.0d
+			subtitle: "The Start of Everyone's Journey"
+			description: ["Chop down a tree."]
+			dependencies: ["22C568A17B5D1B46"]
+			dependency_requirement: "one_completed"
+			id: "3001B2EEE5C6C9AB"
+			tasks: [
+				{
+					id: "1BB08F6BC4167067"
+					type: "item"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 8L
+				}
+				{
+					id: "63E6BD713B5AF4AE"
+					type: "item"
+					title: "Any #minecraft:planks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "18AF6D629BECC09D"
+					type: "item"
+					item: "minecraft:stick"
+					count: 4
+				}
+				{
+					id: "249A2C2859276487"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "The (Just to get Stone) Starter Tool"
+			x: -4.5d
+			y: 0.0d
+			subtitle: "&a\"What am I even good for?\" &9\"To get 3 pieces of stone and delete.\""
+			description: ["Get yourself a crafting table and craft this to get yourself some stone."]
+			dependencies: ["3001B2EEE5C6C9AB"]
+			dependency_requirement: "one_completed"
+			id: "34632E58F226ED0B"
+			tasks: [
+				{
+					id: "6AD281F857300748"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1F77F00653C5D948"
+					type: "item"
+					item: "minecraft:crafting_table"
+				}
+			]
+			rewards: [{
+				id: "05F5DDA4B9AC2DAB"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			description: ["Get some stone, then craft yourself the vanilla stone tools."]
+			dependencies: ["34632E58F226ED0B"]
+			id: "48CCBB5C39A4ABE7"
+			tasks: [
+				{
+					id: "61E0C6483C86DAE7"
+					type: "item"
+					title: "Stone Age"
+					item: "minecraft:cobblestone"
+					count: 32L
+				}
+				{
+					id: "075BB84D26281DF0"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5C94E7A6F6C613BF"
+					type: "item"
+					item: {
+						id: "minecraft:stone_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "31608E864628764D"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1939EFFFF1EF3FD2"
+					type: "item"
+					item: "minecraft:torch"
+					count: 16
+				}
+				{
+					id: "507448ACAD1178E1"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			title: "Smelting Our First Iron"
+			icon: "minecraft:furnace"
+			x: 1.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Or whatever else you found while mining"
+			description: ["Craft a furnace and get yourself some iron!"]
+			dependencies: ["48CCBB5C39A4ABE7"]
+			size: 1.25d
+			id: "3118DD682A054C5F"
+			tasks: [
+				{
+					id: "5A7B935E6FBF15CB"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+				{
+					id: "3C3B19AD35B187D7"
+					type: "item"
+					title: "Any #minecraft:coals"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:coals"
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "323695D281F5DD1E"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "25E695C1868C4FD4"
+					type: "item"
+					item: "minecraft:coal"
+					count: 16
+				}
+				{
+					id: "7D1847B8B12D5236"
+					type: "xp"
+					xp: 20
+				}
+			]
+		}
+		{
+			icon: "silentgear:blueprint_paper"
+			x: -3.0d
+			y: -1.5d
+			subtitle: "Repairable Starter Tools"
+			description: ["Put your Vanilla Stone Tools back into the crafting table to convert them to Silent Gear tools. These are repairable!"]
+			dependencies: ["48CCBB5C39A4ABE7"]
+			id: "584DC2622E508A38"
+			tasks: [{
+				id: "29A5844A3A7FDBDC"
+				type: "checkmark"
+				title: "Silent Gear Tools"
+			}]
+		}
+		{
+			title: "Your Very First Knife"
+			x: -3.0d
+			y: -3.0d
+			subtitle: "My baby is all grown up."
+			description: [
+				"Combine 2 Sticks in the crafting table to create 2 Rough Rods. Then combine a rough rod with a piece of cobble to create a knife."
+				""
+				"Combine the knife with Wood Logs to create template boards."
+				""
+				"These are the starting materials needed to make Silent Gear tools and armor."
+			]
+			dependencies: ["584DC2622E508A38"]
+			id: "05F8DD5EBB055385"
+			tasks: [
+				{
+					id: "6DAAD145C67ED865"
+					type: "item"
+					item: "silentgear:rough_rod"
+					count: 2L
+				}
+				{
+					id: "4CA8BB7BB4A02065"
+					type: "item"
+					item: "silentgear:template_board"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "53DB93C8F16893FA"
+					type: "item"
+					item: "silentgear:template_board"
+					count: 8
+				}
+				{
+					id: "540AAAB00B063A4A"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			subtitle: "The Start of Repairing Tools"
+			description: [
+				"Craft yourself a repair kit."
+				""
+				"To use this, combine the repair kit with materials you want to repair an item with to put it in the repair kit. Then combine the repair kit with the tool you want to repair in a crafting table to repair the item."
+				""
+				"*Note: To repair an item, the materials need to be the same as the make of the item. (Stone for Stone tools, etc.)"
+			]
+			dependencies: ["05F8DD5EBB055385"]
+			id: "3C85485D62038129"
+			tasks: [{
+				id: "44708064DA541387"
+				type: "item"
+				item: {
+					id: "silentgear:very_crude_repair_kit"
+					Count: 1b
+					tag: {
+						Storage: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "588782323B6C8779"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 4
+				}
+				{
+					id: "4FC6999889B3BB90"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			title: "Making a Home"
+			x: 0.5d
+			y: -2.0d
+			subtitle: "Home is where you make it"
+			description: [
+				"Make yourself a starter base and set your spawn point with a bed."
+				""
+				"If you're on a multiplayer server, you can also use the command /sethome (name of home) to set your home point! "
+				""
+				"You can return using the command /home (name of home)"
+				""
+			]
+			dependencies: ["6D9403AE80FF8B4B"]
+			id: "39C364C1D308A36E"
+			tasks: [{
+				id: "117F36B0C3105A55"
+				type: "item"
+				title: "Any #minecraft:beds"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2355AABD596C3199"
+					type: "item"
+					item: "pamhc2foodextended:greenbeancasseroleitem"
+				}
+				{
+					id: "571539FD99069C56"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			title: "Teleporting"
+			icon: "waystones:waystone"
+			x: 0.5d
+			y: -4.0d
+			subtitle: "Getting Around"
+			description: [
+				"If you run into a waystone, you can always break it and place it back at your base."
+				""
+				" Collect or make a few of these, and you'll have a teleport system!"
+			]
+			dependencies: ["39C364C1D308A36E"]
+			id: "20134C0F2CA354AD"
+			tasks: [{
+				id: "6447AAD5099DC220"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "56415DDBF1CD440B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Easy Base Teleportation"
+			x: 0.5d
+			y: -6.0d
+			description: [
+				"These work like pressure plates. Right click them to get a shard that you can use on another warp plate to link them."
+				""
+				"If you need to create another Attuned Shard, place flint in the center and surround with 4 warp dust."
+			]
+			dependencies: ["20134C0F2CA354AD"]
+			id: "126B8B84A22CB6BE"
+			tasks: [{
+				id: "6ABEC63C60D1DE30"
+				type: "item"
+				item: "waystones:warp_plate"
+				count: 2L
+			}]
+			rewards: [{
+				id: "79B4325D5FE8AC0E"
+				type: "item"
+				item: "waystones:warp_plate"
+			}]
+		}
+		{
+			title: "Teleport Scrolls"
+			x: -1.0d
+			y: -6.0d
+			subtitle: "Teleportation on the Go!"
+			description: [
+				"Craft yourself a few of these to warp back home on the go!"
+				""
+				"Once made, you can bind them to a waystone by right-clicking on the waystone."
+				""
+				"*Note: These are single-use items."
+			]
+			dependencies: ["20134C0F2CA354AD"]
+			id: "1D8E6EDA2A698A8F"
+			tasks: [{
+				id: "5BF8793B30DA322B"
+				type: "item"
+				item: "waystones:bound_scroll"
+			}]
+			rewards: [
+				{
+					id: "0DDA4EBBD7DC0592"
+					type: "item"
+					item: "waystones:bound_scroll"
+					count: 2
+				}
+				{
+					id: "756626BB6CF01EF2"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Converting Logs to Charcoal"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Starter Coal"
+			description: ["Placing Wood Logs in a furnace smelts them into Charcoal. This is great for starting out!"]
+			dependencies: ["3118DD682A054C5F"]
+			optional: true
+			id: "52D18CDB05357525"
+			tasks: [{
+				id: "64DE1F00F0826CBA"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "55ED11E8DF4A851F"
+					type: "item"
+					item: "minecraft:charcoal"
+					count: 8
+				}
+				{
+					id: "4749933F0AC03EB1"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			title: "Efficient Smelting"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "Tiny Pieces of Charcoal"
+			description: [
+				"Putting Charcoal back into the crafting table gives you 8 Charcoal Pieces."
+				""
+				"These are used as efficient fuel, as it smelts 1 item per charcoal piece."
+				""
+				"These aren't necessary at all, but saves materials in the beginning."
+			]
+			dependencies: ["52D18CDB05357525"]
+			optional: true
+			id: "51620A05A5844661"
+			tasks: [{
+				id: "5916E86774F651E9"
+				type: "item"
+				item: "pickletweaks:charcoal_piece"
+				count: 8L
+			}]
+			rewards: [{
+				id: "11C8B0E269A301BD"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 8
+			}]
+		}
+		{
+			title: "Getting an Upgrade"
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: 0.0d
+			subtitle: "Upgrading our tools"
+			description: ["It's time to upgrade our tools to iron."]
+			dependencies: ["3118DD682A054C5F"]
+			id: "147BC89798F3F925"
+			tasks: [
+				{
+					id: "398AC1E36020082C"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "31A15170DC702B2D"
+					type: "item"
+					item: {
+						id: "minecraft:iron_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D0CB27B3BBC4B68"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "39C640B8AFD78CBF"
+					type: "item"
+					item: {
+						id: "minecraft:iron_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5137D5DA40D41450"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 16
+				}
+				{
+					id: "7D9E82A58FF438C1"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			title: "Furnace Upgrade?"
+			x: 3.5d
+			y: 1.5d
+			subtitle: "Does everything get an upgrade in this pack?"
+			description: [
+				"If you surround a furnace with Iron in a crafting table, you can upgrade your furnace to an Iron Furnace."
+				""
+				"These smelt faster and can also be configured to be automated with the cogwheel in the top left of the GUI."
+			]
+			dependencies: ["3118DD682A054C5F"]
+			id: "376BAC497511F067"
+			tasks: [{
+				id: "405EB586C5ADC0A2"
+				type: "item"
+				item: "ironfurnaces:iron_furnace"
+			}]
+			rewards: [{
+				id: "2D9829459275EC1F"
+				type: "item"
+				item: "ironfurnaces:upgrade_iron"
+			}]
+		}
+		{
+			icon: "minecraft:chest"
+			x: -3.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Put your stuff and things up"
+			description: ["Check out the Chapter &aBasic Storage&r to learn all of the ways you can store your items."]
+			dependencies: ["0352A34ACD22E10B"]
+			size: 2.0d
+			id: "07FFCB61B9F511A1"
+			tasks: [{
+				id: "1CF21CEDFF5F70BD"
+				type: "checkmark"
+				title: "Storage Chapter"
+			}]
+		}
+		{
+			title: "Tools and Armor Chapter"
+			icon: "tconstruct:tinkers_anvil"
+			x: 6.0d
+			y: 0.0d
+			shape: "gear"
+			description: ["To get better tools, check out the chapter &aTools and Armor&r"]
+			dependencies: ["147BC89798F3F925"]
+			size: 2.0d
+			id: "3BD46BF30D2E0B63"
+			tasks: [{
+				id: "52DCC52E9C4DE92B"
+				type: "checkmark"
+				title: "Better Tools"
+			}]
+		}
+		{
+			title: "Start a Farm"
+			icon: "minecraft:wheat_seeds"
+			x: 3.5d
+			y: -2.0d
+			subtitle: "The basics of food."
+			description: ["Start yourself a small farm for food."]
+			dependencies: ["39C364C1D308A36E"]
+			id: "1658780534451E39"
+			tasks: [
+				{
+					id: "5ADD78F668867783"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 8L
+				}
+				{
+					id: "270877E392533EC4"
+					type: "item"
+					item: {
+						id: "minecraft:stone_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "254E23EDCFEB9781"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "59BF4162E4B08353"
+					type: "item"
+					item: "minecraft:bread"
+					count: 8
+				}
+				{
+					id: "60103E3DC2D66F0C"
+					type: "item"
+					item: "minecraft:bone_meal"
+					count: 8
+				}
+				{
+					id: "1F6C343190B103B7"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Farming and Food Chapter"
+			icon: "minecraft:apple"
+			x: 6.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Getting Started with Food"
+			description: ["Get started by checking out the \"Farming and Food\" chapter."]
+			dependencies: ["1658780534451E39"]
+			size: 2.0d
+			id: "5ED547FE0A9CFC63"
+			tasks: [{
+				id: "212FE7B11E7CA150"
+				type: "checkmark"
+				title: "Food and Farming"
+			}]
+		}
+		{
+			icon: "silentgear:pickaxe_blueprint"
+			x: -3.0d
+			y: -6.75d
+			shape: "gear"
+			subtitle: "Moving Forward"
+			description: [
+				"Looking for more about Silent Gear tools?"
+				""
+				"Check out the &eSilent Gear Chapter&r under the &9Tools and Armor&r section!"
+			]
+			dependencies: ["3C85485D62038129"]
+			size: 2.0d
+			id: "57030EBF7504C51C"
+			tasks: [{
+				id: "2F1A10EAACB85AAE"
+				type: "checkmark"
+				title: "Silent Gear Chapter"
+			}]
+		}
+		{
+			title: "Starter Power"
+			icon: "rftoolspower:coalgenerator"
+			x: 3.5d
+			y: 3.0d
+			subtitle: "Your First Generator"
+			description: [
+				"There are plenty of ways to generate your first bits of power."
+				""
+				"The RFTools Coal Generator is one of the easiest."
+			]
+			dependencies: ["500BA2C1177DA724"]
+			id: "25D1363D8890E7C3"
+			tasks: [{
+				id: "39565EF66F300895"
+				type: "item"
+				item: "rftoolspower:coalgenerator"
+			}]
+		}
+		{
+			title: "Basic Ingots"
+			x: 1.5d
+			y: 3.0d
+			subtitle: "Gather various ingots."
+			description: ["We'll use these to start creating in other mods."]
+			dependencies: ["3118DD682A054C5F"]
+			id: "500BA2C1177DA724"
+			tasks: [
+				{
+					id: "21FD24E5E2BF99FE"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 16L
+				}
+				{
+					id: "44BD59A2B967F00E"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 8L
+				}
+				{
+					id: "7CDC7225B59508B5"
+					type: "item"
+					item: "alltheores:tin_ingot"
+					count: 16L
+				}
+				{
+					id: "2AED93C7245AD1C1"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 16L
+				}
+				{
+					id: "1CDB0A9B9CBBA334"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "7C5F7B3272E7C8A4"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+		}
+		{
+			title: "Getting Started: Part 2"
+			icon: "mekanismgenerators:wind_generator"
+			x: 6.0d
+			y: 2.25d
+			shape: "gear"
+			subtitle: "Starting with Power and Beyond"
+			description: [
+				"ATM6 has plenty of Tech mods to get you started!"
+				""
+				"If you're new to tech mods, check out the &aGetting Started: Part 2&r to get started!"
+			]
+			dependencies: [
+				"25D1363D8890E7C3"
+				"376BAC497511F067"
+			]
+			size: 2.0d
+			id: "162AB6F9257EB71E"
+			tasks: [{
+				id: "1AD156F8A190ED63"
+				type: "checkmark"
+				title: "Power Generation"
+			}]
+			rewards: [{
+				id: "0AE705952533CFCB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Mystical Agriculture Chapter"
+			icon: "mysticalagriculture:infusion_altar"
+			x: 6.0d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "You can grow diamonds."
+			description: ["With Mystical Agriculture, you can grow all of the resources in the game! Check out the Chapter &aMystical Agriculture&r to get started!"]
+			dependencies: ["6838B24EA44AA126"]
+			size: 2.0d
+			id: "318DBF3E4D146EB0"
+			tasks: [{
+				id: "71C07470C85A2B0D"
+				type: "checkmark"
+				title: "Growing Resources"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -6.0d
+			subtitle: "Catching Bees"
+			description: ["To start catching bees, you'll need a few of these!"]
+			dependencies: ["5E7C6705CE996BDF"]
+			id: "1ED427AD73E99447"
+			tasks: [{
+				id: "24D805D64447D449"
+				type: "item"
+				item: "resourcefulbees:bee_jar"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "7325549C6A2FAE2D"
+					type: "item"
+					item: "resourcefulbees:bee_jar"
+					count: 8
+				}
+				{
+					id: "5E4C6834E89F7396"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			title: "Resourceful Bees Chapter"
+			icon: "resourcefulbees:bee_nest"
+			x: 6.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Breeding for Resources"
+			description: ["If bees are your &oJam&r then check out the &aResourceful Bees&r chapter!"]
+			dependencies: ["1ED427AD73E99447"]
+			size: 2.0d
+			id: "3E2A8A9A357EAF03"
+			tasks: [{
+				id: "6F58EDD274CCD787"
+				type: "checkmark"
+				title: "Productive Bees"
+			}]
+		}
+		{
+			title: "Building Materials"
+			x: -1.0d
+			y: -2.0d
+			subtitle: "Starter Supplies"
+			description: ["Grab some starter supplies to build a house!"]
+			dependencies: ["48CCBB5C39A4ABE7"]
+			id: "6D9403AE80FF8B4B"
+			tasks: [
+				{
+					id: "147D1FD822CE4C7C"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 16L
+				}
+				{
+					id: "2447018019B93BB7"
+					type: "item"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 16L
+				}
+				{
+					id: "07F5584697531C74"
+					type: "item"
+					title: "Any #minecraft:planks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					count: 32L
+				}
+				{
+					id: "6EEA50A2B8817EB4"
+					type: "item"
+					item: "minecraft:sand"
+					count: 16L
+				}
+				{
+					id: "25E2380D9066E41B"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 16L
+				}
+				{
+					id: "6D9F6514BC41FAC7"
+					type: "item"
+					item: "minecraft:glass"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "134BCD7C2842CE2B"
+					type: "item"
+					item: "minecraft:stone"
+					count: 32
+				}
+				{
+					id: "4AFD52821DEED578"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			subtitle: "The First Seed"
+			description: [
+				"To start the process for growing materials, you'll need plenty of Inferium Essence."
+				""
+				"Grab yourself a seed and make an Inferium Seed! Plant this to grow inferium over time."
+				""
+				"*Note: It's never too early to start growing inferium."
+			]
+			dependencies: ["1658780534451E39"]
+			id: "6838B24EA44AA126"
+			tasks: [
+				{
+					id: "69B1EAD49178B4E7"
+					type: "item"
+					title: "Inferium Essence"
+					item: "mysticalagriculture:inferium_essence"
+					count: 8L
+				}
+				{
+					id: "3124D531026D500A"
+					type: "item"
+					item: "mysticalagriculture:inferium_seeds"
+				}
+			]
+			rewards: [{
+				id: "3B61755CB8D2821B"
+				type: "item"
+				item: "mysticalagriculture:inferium_seeds"
+				count: 4
+			}]
+		}
+		{
+			title: "Storing Stuff"
+			x: -3.0d
+			y: 1.5d
+			description: ["Make your first chest."]
+			dependencies: ["48CCBB5C39A4ABE7"]
+			id: "13C46BACD0A36080"
+			tasks: [{
+				id: "56CC6703530D3AD8"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+			rewards: [
+				{
+					id: "350067AECBCFCCE9"
+					type: "item"
+					item: "minecraft:chest"
+					count: 2
+				}
+				{
+					id: "0CD74B61C7ED99F1"
+					type: "xp"
+					xp: 5
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			subtitle: "Portable Crafting Table"
+			dependencies: ["34632E58F226ED0B"]
+			id: "6BFB212879D080BE"
+			tasks: [{
+				id: "2DD4DE2880D13AE8"
+				type: "item"
+				item: "cyclic:crafting_stick"
+			}]
+			rewards: [{
+				id: "48738360C71AEFA3"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "Portable Storage!"
+			dependencies: ["13C46BACD0A36080"]
+			id: "0352A34ACD22E10B"
+			tasks: [{
+				id: "5E28CA2CA2C2EA80"
+				type: "item"
+				title: "Backpack"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [
+				{
+					id: "3345D818BE3FE3CD"
+					type: "item"
+					item: "sophisticatedbackpacks:upgrade_base"
+				}
+				{
+					id: "4E9631B8B888E3F8"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "The Dank"
+			x: -1.0d
+			y: -3.5d
+			subtitle: "The Old Dev Null"
+			description: [
+				"This item can store stacks of items, which is useful when mining!"
+				""
+				"It can also be set to \"Filter Pickup\" to automatically store items you come across."
+			]
+			dependencies: ["6D9403AE80FF8B4B"]
+			id: "2C421427D458E049"
+			tasks: [{
+				id: "3660A814F3326E80"
+				type: "item"
+				item: "dankstorage:dank_1"
+			}]
+			rewards: [
+				{
+					id: "2931692A807CE240"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "229A66A9E21F28FC"
+					type: "item"
+					item: "minecraft:stone"
+					count: 8
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			description: [
+				"It's time to create a team  so we can claim chunks and even force-load them!"
+				""
+				"Use the command &a/ftbteams party create&r to create your team."
+				""
+				"To claim chunks, open your map and click the \"Claim Chunks\" button in the top left. To claim a chunk, left click and drag to claim. To force load a chunk, Shift-Left Click the chunk. If done properly, you'll see lines across the chunk."
+			]
+			dependencies: ["39C364C1D308A36E"]
+			id: "5E7C6705CE996BDF"
+			tasks: [{
+				id: "642A4BFF2F208D53"
+				type: "checkmark"
+				title: "Creating A Team"
+			}]
+			rewards: [{
+				id: "77B322B39E82234E"
+				type: "xp"
+				xp: 5
+			}]
+		}
+	]
+}
