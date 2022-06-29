@@ -69,8 +69,6 @@ onEvent('item.tooltip', e => {
     Text.of('Recipe disabled due to RS bug').red()
   ])
 
-  formattedTooltip('extradisks:infinite_storage_disk', '')
-
   e.add(['resourcefulbees:t1_apiary', 'resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', "resourcefulbees:t4_apiary"], [
     Text.of('Remove bees before upgrading to next tier.').red()
   ])
