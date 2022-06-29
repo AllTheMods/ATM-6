@@ -126,6 +126,7 @@ onEvent('jei.hide.items', e => {
     'zycraft:quartz_bucket',
     'zycraft:aluminium_can',
     'compactmachines:tunnel',
+    'exchangers:tuberous_exchanger',
     'projectred-core:copper_ingot'
   ])
 
