@@ -1,0 +1,17 @@
+{
+  "programs": ["envirotech:ore", "envirotech:gemstone_ore"],
+  "item": {
+    "raw:item": "byg:emeraldite_ore", "count": 1
+  },
+  "config": [
+    {
+      "weight": 100,
+      "dimensions": ["minecraft:the_nether"]
+    },
+    {
+      "focus": "envirotech:green",
+      "weight": 400,
+      "dimensions": ["minecraft:the_nether"]
+    }
+  ]
+}

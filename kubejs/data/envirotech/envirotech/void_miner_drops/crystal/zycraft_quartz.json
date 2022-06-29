@@ -1,0 +1,10 @@
+{
+  "program": "envirotech:crystal",
+  "item": {"raw:item": "zycraft:quartz_crystal", "count":1},
+  "config": [
+    {
+      "dimensions": ["minecraft:overworld"],
+      "weight": 200
+    }
+  ]
+}
