@@ -127,7 +127,8 @@ onEvent('jei.hide.items', e => {
     'zycraft:aluminium_can',
     'compactmachines:tunnel',
     'exchangers:tuberous_exchanger',
-    'projectred-core:copper_ingot'
+    'projectred-core:copper_ingot',
+    /^extradisks:infinite.*/,
   ])
 
   // only hide uncraftable spawn eggs
