@@ -60,6 +60,7 @@ onEvent('recipes', e => {
   removeRecipeByOutput(e, [
     'darkutils:ender_hopper',
     'naturesaura:chunk_loader',
+    'exchangers:tuberous_exchanger',
     'titanium:iron_gear',
     'titanium:gold_gear',
     'titanium:diamond_gear'

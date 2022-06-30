@@ -12,4 +12,30 @@ onEvent('jei.information', e => {
     'The bottom block is Bedrock, above it an Anvil with an Item Frame on top. Hovering over the Item Frame, place Mjollnir.',
     '',
     'Once you have the structure, place your ATM Star in the item frame and click the hammer.'])
+
+  e.add('enderstorage:ender_chest', [
+    'Cross-dimensional wireless item transfer to any chest on the same channel.',
+    'Use dye on the colored bars to set the channel.',
+    'Use a diamond on the latch to switch to private channel.',
+  ])
+
+  e.add('enderstorage:ender_tank', [
+    'Cross-dimensional wireless fluid transfer to any tank on the same channel.',
+    'Use dye on the colored bars to set the channel.',
+    'Use a diamond on the latch to switch to private channel.',
+  ])
+
+  e.add('enderchests:ender_chest', [
+    'Cross-dimensional wireless item transfer to any chest on the same channel.',
+    'Use dye on the colored bars to set the channel.',
+    'Sneak + right-click with a diamond to switch to private channel.',
+    'Sneak + right-click with an ender pearl or eye of ender to increase inventory size.',
+  ])
+
+  e.add('endertanks:ender_tank', [
+    'Cross-dimensional wireless fluid transfer to any tank on the same channel.',
+    'Use dye on the colored bars to set the channel.',
+    'Sneak + right-click with a diamond to switch to private channel.',
+    'Sneak + right-click with an ender pearl or eye of ender to increase tank size.',
+  ])
 })

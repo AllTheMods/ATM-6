@@ -65,6 +65,10 @@ onEvent('item.tooltip', e => {
   formattedTooltip('astralsorcery:altar_discovery', 'Check the Astral Tome for more info')
   formattedTooltip('bloodmagic:strong_tau', 'Can be found in Blood Magic dungeons')
 
+  e.add(['extradisks:infinite_storage_disk', 'extradisks:infinite_fluid_storage_disk'], [
+    Text.of('Recipe disabled due to RS bug').red()
+  ])
+
   e.add(['resourcefulbees:t1_apiary', 'resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', "resourcefulbees:t4_apiary"], [
     Text.of('Remove bees before upgrading to next tier.').red()
   ])
