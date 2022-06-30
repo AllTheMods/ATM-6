@@ -1,0 +1,17 @@
+{
+  "programs": ["envirotech:ore", "envirotech:metallic_ore"],
+  "item": {
+    "raw:item": "byg:pendorite_ore", "count": 1
+  },
+  "config": [
+    {
+      "weight": 100,
+      "dimensions": ["minecraft:the_nether"]
+    },
+    {
+      "focus": "envirotech:purple",
+      "weight": 400,
+      "dimensions": ["minecraft:the_nether"]
+    }
+  ]
+}

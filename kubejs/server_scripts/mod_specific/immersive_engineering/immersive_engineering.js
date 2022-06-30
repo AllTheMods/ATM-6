@@ -59,6 +59,9 @@ onEvent('recipes', e => {
     T: '#forge:treated_wood',
     R: 'mekanism:resistive_heater'
   })
+  modifyShaped(e, 'immersiveengineering:sawdust', 6, ['   ', 'SSS', 'SSS'], {
+    S: '#forge:dusts/wood'
+  })
 
   e.replaceInput('immersiveengineering:hammer', '#misctags:immersive_engineering_hammer')
   e.replaceInput('immersiveengineering:wirecutter', '#misctags:immersive_engineering_wirecutter')
