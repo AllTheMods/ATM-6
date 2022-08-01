@@ -5,7 +5,7 @@
   "color": "dede00",
   "armorPoints": 2,
   "enchantability": 25,
-  "craftingMaterial": "tag:forge:ingots/gold",
+  "craftingMaterial": "null",
   "rarity": 0,
   "capacity": 10000000,
   "usage": 300,

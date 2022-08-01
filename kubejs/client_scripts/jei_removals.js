@@ -129,6 +129,7 @@ onEvent('jei.hide.items', e => {
     'exchangers:tuberous_exchanger',
     'projectred-core:copper_ingot',
     /^extradisks:infinite.*/,
+    'ironjetpacks:gold_jetpack',
   ])
 
   // only hide uncraftable spawn eggs
