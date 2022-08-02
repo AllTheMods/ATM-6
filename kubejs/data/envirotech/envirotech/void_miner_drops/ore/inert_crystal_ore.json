@@ -1,0 +1,10 @@
+{
+  "program": ["envirotech:ore", "envirotech:gemstone_ore"],
+  "item": {"raw:item": "elementalcraft:crystalore", "count":1},
+  "config": [
+    {
+      "dimensions": ["minecraft:overworld"],
+      "weight": 200
+    }
+  ]
+}
