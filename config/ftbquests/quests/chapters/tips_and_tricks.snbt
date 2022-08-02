@@ -561,5 +561,22 @@
 				xp_levels: 5
 			}]
 		}
+		{
+			title: "Metal Block Variants"
+			icon: "minecraft:stonecutter"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Metal block recipes have been unified in this pack, but if you need another mod's variant for decorative purposes, fear not!"
+				""
+				"You can use the Bench Saw to convert metal blocks to any other variant."
+			]
+			id: "2B551CE390BD2231"
+			tasks: [{
+				id: "0BA119E165152033"
+				type: "item"
+				item: "minecraft:stonecutter"
+			}]
+		}
 	]
 }
