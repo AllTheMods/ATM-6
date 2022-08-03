@@ -54,6 +54,7 @@ onEvent('recipes', e => {
   extruderRecipe(e, "minecraft:blackstone", "minecraft:water", "minecraft:gilded_blackstone")
   extruderRecipe(e, "minecraft:diorite", "minecraft:water", "minecraft:quartz_block")
   extruderRecipe(e, "minecraft:granite", "minecraft:water", "minecraft:red_sand")
+  extruderRecipe(e, "mysticalagriculture:soulstone", "minecraft:lava", "mysticalagriculture:soulium_block")
 
   removeRecipeByID(e, [
     'thermal:machine/press/packing2x2/press_honeycomb_packing',
