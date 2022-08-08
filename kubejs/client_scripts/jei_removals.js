@@ -40,6 +40,7 @@ onEvent('jei.hide.items', e => {
     'appliedenergistics2:silicon',
     'appliedenergistics2:flour',
     'cyclic:tile_transporter_empty',
+    'cyclic:hopper_gold',
     'cyclic:trash',
     'cyclic:crafting_bag',
     /cyclic:.*pipe/,
