@@ -44,6 +44,7 @@ onEvent('jei.hide.items', e => {
     'cyclic:trash',
     'cyclic:crafting_bag',
     /cyclic:.*pipe/,
+    'quark:pipe',
     'naturesaura:chunk_loader',
     /extrastorage:disk_.+/,
     /extrastorage:block_.+/,
