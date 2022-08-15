@@ -40,9 +40,11 @@ onEvent('jei.hide.items', e => {
     'appliedenergistics2:silicon',
     'appliedenergistics2:flour',
     'cyclic:tile_transporter_empty',
+    'cyclic:hopper_gold',
     'cyclic:trash',
     'cyclic:crafting_bag',
     /cyclic:.*pipe/,
+    'quark:pipe',
     'naturesaura:chunk_loader',
     /extrastorage:disk_.+/,
     /extrastorage:block_.+/,
@@ -129,6 +131,7 @@ onEvent('jei.hide.items', e => {
     'exchangers:tuberous_exchanger',
     'projectred-core:copper_ingot',
     /^extradisks:infinite.*/,
+    'ironjetpacks:gold_jetpack',
   ])
 
   // only hide uncraftable spawn eggs

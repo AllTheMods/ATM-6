@@ -35,6 +35,7 @@ onEvent('recipes', e => {
     'cyclic:packager', // lag issues
     'cyclic:uncrafter',
     'cyclic:tile_transporter_empty',
+    'cyclic:hopper_gold', // dupe bug
     'cyclic:trash'
   ])
 })
