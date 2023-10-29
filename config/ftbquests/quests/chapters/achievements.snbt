@@ -94,7 +94,9 @@
 						id: "mahoutsukai:scroll_reality_marble"
 						Count: 1b
 						ForgeCaps: {
-							Parent: { }
+							Parent: {
+								MAHOUTSUKAI_CASTER_NAME: ""
+							}
 						}
 					}
 					dimension: "mahoutsukai:reality_marble"
