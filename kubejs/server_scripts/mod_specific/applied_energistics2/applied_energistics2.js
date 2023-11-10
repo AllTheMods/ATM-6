@@ -45,13 +45,13 @@ onEvent('recipes', e => {
     turns: 4
   }).id(`kubejs:appliedenergistics2/grinder/ender_pearl_dust`)
 
-  e.recipes.lazierae2.pulse_centrifuge({
+  e.recipes.lazierae2.centrifuge({
     input: { tag: 'forge:flour_plants' },
     output: { item: 'pamhc2foodcore:flouritem' },
     processing_time: 160
   }).id(`kubejs:appliedenergistics2/pulse_centrifuge/flour`)
 
-  e.recipes.lazierae2.pulse_centrifuge({
+  e.recipes.lazierae2.centrifuge({
     input: { tag: 'forge:ender_pearls' },
     output: { item: 'thermal:ender_pearl_dust' },
     processing_time: 160
@@ -66,7 +66,7 @@ onEvent('recipes', e => {
     }
   }).id(`kubejs:appliedenergistics2/inscriber/printed_silicon`)
 
-  e.recipes.lazierae2.fluix_aggregator({
+  e.recipes.lazierae2.aggregator({
     inputs: [
       { input: { item: 'appliedenergistics2:sky_dust' } },
       { input: { tag: 'forge:gems/diamond' } },
