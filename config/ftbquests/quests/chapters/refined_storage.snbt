@@ -1481,31 +1481,6 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -17.5d
-			description: ["Infinite fluid storage!"]
-			hide_dependency_lines: false
-			dependencies: ["49772923B8AF0F1F"]
-			id: "1D483A4F8A2E48C5"
-			tasks: [{
-				id: "48E0006E9C8D0BC9"
-				type: "item"
-				item: "extradisks:infinite_fluid_storage_part"
-			}]
-			rewards: [
-				{
-					id: "0FED744A44F71189"
-					type: "random"
-					table_id: 3567941291661635734L
-				}
-				{
-					id: "0315A15FD7D5B1AC"
-					type: "random"
-					table_id: 4001436279668650237L
-				}
-			]
-		}
-		{
 			x: 0.0d
 			y: -14.5d
 			dependencies: [
