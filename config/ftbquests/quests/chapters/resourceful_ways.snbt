@@ -6,6 +6,18 @@
 	title: "Mystical Agriculture"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: -6.0d
+		width: 5.0d
+		height: 5.0d
+		rotation: 0.0d
+		image: "mysticalagriculture:textures/item/inferium_essence.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			title: "Mystical Path"

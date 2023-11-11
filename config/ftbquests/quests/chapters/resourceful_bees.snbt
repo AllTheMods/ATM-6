@@ -7,6 +7,32 @@
 	icon: "resourcefulbees:t1_apiary"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -6.0d
+			y: -5.5d
+			width: 5.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "resourcefulbees:textures/item/starry_honeycomb.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.0d
+			y: -5.5d
+			width: 5.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "resourcefulbees:textures/item/starry_honeycomb.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			x: 0.0d
