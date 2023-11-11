@@ -242,6 +242,7 @@ onEvent('entity_type.tags', e => {
   e.add('industrialforegoing:mob_imprisonment_tool_blacklist', [/resourcefulbees:.+_bee/, /iceandfire:myrmex.+/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', 'artifacts:mimic',/mana-and-artifice:.+/])
   e.add('mob_grinding_utils:noswab', [/resourcefulbees:.+_bee/, /iceandfire:myrmex.+/, /iceandfire:.+_dragon/, 'iceandfire:dragon_multipart', 'iceandfire:dragon_egg', 'artifacts:mimic', /mana-and-artifice:.+/])
   e.add('mob_grinding_utils:no_spawn', '#mob_grinding_utils:noswab')
+  e.add('pneumaticcraft:vacuum_trap_blacklisted', '#mob_grinding_utils:noswab')
 })
 //#endregion
 
