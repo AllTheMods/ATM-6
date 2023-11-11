@@ -10,7 +10,7 @@
 		{
 			x: -7.5d
 			y: -0.5d
-			description: ["The first machine you'll need for mekanism is the metallurgic infuser. You'll need it to make the alloys which you'll need for the other machines."]
+			description: ["The first machine you'll need for Mekanism is the Metallurgic Infuser. You'll need it to make the alloys which you'll need for the other machines."]
 			id: "2C0AEAC781C0B1AD"
 			tasks: [{
 				id: "3AAA84F9125FB5F7"
@@ -60,7 +60,7 @@
 		{
 			x: -6.0d
 			y: -0.5d
-			description: ["Steel, like in real life, is used in most building and machines. To create steel you need to put Carbon (coal or coal equivalent) into the infuse slot (the yellow slot) and put iron into the regular slot. That will get you enriched iron which you have to put back in to get steel dust, which can be smelted for steel ignots."]
+			description: ["Steel, like in real life, is used in most building and machines. To create steel you need to put Carbon (coal or coal equivalent) into the infuse slot (the yellow slot) and put iron into the regular slot. That will get you enriched iron which you have to put back in to get steel dust, which can be smelted for steel ingots."]
 			dependencies: ["2C0AEAC781C0B1AD"]
 			id: "1C0A267C6E9CA279"
 			tasks: [{
@@ -78,7 +78,7 @@
 		{
 			x: -6.0d
 			y: -2.0d
-			description: ["Like the infused alloy the control circuit is also needed for building items and machines. To make one you need redstone in the infuse slot (yellow slot) and put an osium ingot in the regular slot. "]
+			description: ["Like the infused alloy the control circuit is also needed for building items and machines. To make one you need redstone in the infuse slot (yellow slot) and put an osmium ingot in the regular slot."]
 			dependencies: ["2C0AEAC781C0B1AD"]
 			id: "45E179B596AFE62E"
 			tasks: [{
@@ -95,7 +95,7 @@
 		{
 			x: -1.0d
 			y: -0.5d
-			description: ["Steel casing is the foundation for all machines from Mekanism. You need 4 steel ingots, 4 glass blocks, and 1 osium ingot to make 1 steel casing."]
+			description: ["Steel casing is the foundation for all machines from Mekanism. You need 4 steel ingots, 4 glass blocks, and 1 osmium ingot to make 1 steel casing."]
 			hide_dependency_lines: false
 			dependencies: ["1C0A267C6E9CA279"]
 			id: "2CE8FDD158020D56"
@@ -126,7 +126,7 @@
 		{
 			x: 1.0d
 			y: -0.5d
-			description: ["Energized Smelter is pretty much a furnace on steriods. Instead of fuel it uses power. Everything a furnace can smelt the Energized Smelter can aswell."]
+			description: ["Energized Smelter is pretty much a furnace on steroids. Instead of fuel it uses power. Everything a furnace can smelt the Energized Smelter can as well."]
 			dependencies: ["2CE8FDD158020D56"]
 			id: "1ACBD051F460BF2B"
 			tasks: [{
@@ -144,7 +144,7 @@
 		{
 			x: 0.5d
 			y: -2.0d
-			description: ["The Chrusher is the opposite of the enrichment chamber. It can get sand from gravel, and dust from ingots. Its also used to get bio-fuel from... well plants."]
+			description: ["The Crusher is the opposite of the enrichment chamber. It can get sand from gravel, and dust from ingots. Its also used to get bio-fuel from... well plants."]
 			dependencies: ["2CE8FDD158020D56"]
 			hide_text_until_complete: false
 			id: "2F3B6995F7082A8D"
@@ -181,7 +181,7 @@
 		{
 			x: -3.0d
 			y: -0.5d
-			description: ["The Combiner is a machine solely to put the dust back into the ores and combine different dye colors. To avoid exploits though it isnt cheap."]
+			description: ["The Combiner is a machine solely to put the dust back into the ores and combine different dye colors. To avoid exploits though it isn't cheap."]
 			dependencies: ["2CE8FDD158020D56"]
 			id: "10A6CF653F3A20B9"
 			tasks: [{
@@ -199,7 +199,7 @@
 		{
 			x: -2.5d
 			y: -2.0d
-			description: ["The Purifcation Chamber is an upgrade to the Enrichment Chamber. It gets clumps from ores and shards, which gives us more ingots to ores than the Chrusher gives."]
+			description: ["The Purification Chamber is an upgrade to the Enrichment Chamber. It gets clumps from ores and shards, which gives us more ingots to ores than the Crusher gives."]
 			dependencies: ["2CE8FDD158020D56"]
 			id: "51D4B69B84F87F0F"
 			tasks: [{
@@ -420,7 +420,7 @@
 		{
 			x: -6.0d
 			y: 6.5d
-			description: ["The Gas Burning Generator uses different gases to create FE. If you don't know whats a gas or not check a periodic table."]
+			description: ["The Gas Burning Generator uses different gases to create FE. If you don't know what's a gas or not check a periodic table."]
 			dependencies: ["014B2FBA2133B45A"]
 			id: "300A9EA8BC45A4D1"
 			tasks: [{
@@ -488,7 +488,7 @@
 		{
 			x: -10.5d
 			y: 5.0d
-			description: ["The Advanced Solar Generator is like the normal Solar Generator just better. It does same thing but gives and outputs more FE."]
+			description: ["The Advanced Solar Generator is like the normal Solar Generator just better. It does the same thing but produces and outputs more FE."]
 			dependencies: ["161557CDDCC26C58"]
 			id: "60C60F5A75CE577E"
 			tasks: [{
@@ -505,7 +505,7 @@
 		{
 			x: -7.5d
 			y: 5.0d
-			description: ["This solar panel does not make power, its just used to craft the actual solar panels."]
+			description: ["This solar panel does not make power, it's just used to craft the actual solar panels."]
 			dependencies: ["014B2FBA2133B45A"]
 			id: "1BEAF8B671786FB1"
 			tasks: [{
@@ -676,7 +676,7 @@
 			title: "Turbine for Fission Reactor"
 			x: -3.0d
 			y: 5.0d
-			description: ["To be able to get power from your fission reactor you need a turbine. Set the cooland output to go to your turbine and they will generate power."]
+			description: ["To be able to get power from your fission reactor you need a turbine. Set the coolant output to go to your turbine and they will generate power."]
 			dependencies: ["014B2FBA2133B45A"]
 			id: "1E6DD81145657D05"
 			tasks: [
@@ -899,7 +899,7 @@
 		{
 			x: 3.5d
 			y: 1.0d
-			description: ["Next step is taking our Sulfic Acid and combining it with Fluorite in a Chemical Disolution Chamber to get Hydrofluoric Acid."]
+			description: ["Next step is taking our Sulfuric Acid and combining it with Fluorite in a Chemical Dissolution Chamber to get Hydrofluoric Acid."]
 			dependencies: ["373984D424410DEB"]
 			id: "17BCAC153B132D01"
 			tasks: [{
@@ -917,7 +917,7 @@
 		{
 			x: 5.0d
 			y: -1.0d
-			description: ["To get oxygen for Sulfur Trioxide (and anything else that needs oxygen) you need an electrolytic Separator. By using an Electric Pump you can directly pump water in it to be separated."]
+			description: ["To get oxygen for Sulfur Trioxide (and anything else that needs oxygen) you need an Electrolytic Separator. By using an Electric Pump you can directly pump water in it to be separated."]
 			id: "22E9C3E8C9EBCA53"
 			tasks: [{
 				id: "384654188FC13B22"
@@ -933,7 +933,7 @@
 		{
 			x: 5.0d
 			y: 2.0d
-			description: ["To get yellow cake (not the edible kind) uranium you have to put uranium ingot into an Enrichment Chamber. Then put the yellow cake (don't eat it) uranium into chemical oxidizer for Uranium Oxide."]
+			description: ["To get yellow cake (not the edible kind) uranium you have to put uranium ingot into an Enrichment Chamber. Then put the yellow cake (don't eat it) uranium into a chemical oxidizer for Uranium Oxide."]
 			id: "685782BFDCEDA947"
 			tasks: [{
 				id: "0D1B9781CC7E7322"
@@ -1284,7 +1284,7 @@
 		{
 			x: 6.0d
 			y: 9.5d
-			description: ["The most important material for endgame mekanism."]
+			description: ["The most important material for endgame Mekanism."]
 			dependencies: ["500D6D336B230C4B"]
 			id: "3C059C9F714CA894"
 			tasks: [{
@@ -1351,7 +1351,7 @@
 		{
 			x: 6.0d
 			y: 6.5d
-			description: ["DT Fuel is the main fuel for the Fusion Reactor. Its made by combing Deuterium and Tritium in a Chemical Infuser."]
+			description: ["DT Fuel is the main fuel for the Fusion Reactor. It's made by combing Deuterium and Tritium in a Chemical Infuser."]
 			dependencies: [
 				"258ECF90E1E8298B"
 				"51E891F004909628"
@@ -1887,7 +1887,7 @@
 		{
 			x: 6.5d
 			y: -4.5d
-			description: ["The Atomic Disambler but can be upgraded with modules units."]
+			description: ["The Atomic Disassembler but can be upgraded with modules units."]
 			dependencies: [
 				"41438B7D0DBE4E29"
 				"77E2CB806AD3F397"
@@ -2033,7 +2033,7 @@
 		{
 			x: 3.0d
 			y: 6.5d
-			description: ["Radiation exists in Mekanism its mostly involved with the Fission Reactor and its outputs. The JEI tells radioactivity of different items but its mainly: spent and regular nuclear waste, polonium gas, and plutonium gas."]
+			description: ["Radiation exists in Mekanism, it's mostly involved with the Fission Reactor and its outputs. JEI tells radioactivity of different items but it's mainly: spent and regular nuclear waste, polonium gas, and plutonium gas."]
 			dependencies: ["7D793D29FF85A8D7"]
 			id: "5171934E6B5B8CFA"
 			tasks: [{
@@ -2198,7 +2198,7 @@
 			title: "Full Meka-Suit"
 			x: 14.5d
 			y: -4.5d
-			description: ["One if not the most OP armor set in the game. The amount of energy it has is how much damage you can take without being harmed. The ATM armor sets come prebuilt with extras but this one must have them added."]
+			description: ["One of, if not the most OP armor set in the game. The amount of energy it has is how much damage you can take without being harmed. The ATM armor sets come prebuilt with extras but this one must have them added."]
 			id: "529AA24C9BB3C28F"
 			tasks: [
 				{

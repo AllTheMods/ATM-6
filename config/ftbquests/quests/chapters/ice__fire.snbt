@@ -879,7 +879,7 @@
 		{
 			x: 13.5d
 			y: 0.0d
-			description: ["Its made by combining Vibrainium and Allthemodium in a Fire Forge. It's only really used with the other 2 alloys :P"]
+			description: ["It's made by combining Vibranium and Allthemodium in a Fire Forge. It's only really used with the other 2 alloys :P"]
 			dependencies: ["4423647FF3FFD43B"]
 			id: "1FC97892708EA909"
 			tasks: [{
@@ -1091,9 +1091,10 @@
 			}]
 		}
 		{
+			title: "Summoning Crystals",
 			x: 11.0d
 			y: 4.0d
-			description: ["Summoming Crystals when binded to a Dragon will tp it to you from wherever it is (besides in the Horn)."]
+			description: ["Summoning Crystals when binded to a Dragon will tp it to you from wherever it is (besides in the Horn)."]
 			dependencies: [
 				"75F0EF439334D3D8"
 				"2B6CA1876EF701A1"
@@ -1293,6 +1294,7 @@
 			}]
 		}
 		{
+			title: "AllTheModium Armors",
 			x: 11.0d
 			y: 8.5d
 			description: ["Dragons nest will have Allthemods armor in the chests. The higher the stages the better the armor. The armor will also come with enchants."]
@@ -1502,7 +1504,7 @@
 		{
 			x: 13.5d
 			y: -1.0d
-			description: ["Is also used for the strongest weapons. Its weapons and tools will set your opponent on fire. The armor grants buffs against Fire Dragons. Its made by combing Fire Dragon Blood and an Iron Ignot in a Fire Forge."]
+			description: ["Is also used for the strongest weapons. Its weapons and tools will set your opponent on fire. The armor grants buffs against Fire Dragons. It's made by combining Fire Dragon Blood and an Iron Ingot in a Fire Forge."]
 			dependencies: ["4423647FF3FFD43B"]
 			id: "45EE8A86A46A4FF2"
 			tasks: [{
@@ -1521,7 +1523,7 @@
 		{
 			x: 13.5d
 			y: 2.5d
-			description: ["Again used for the strongest weapons. The tools and weapons freeze whoever is hit. The armor also helps protect from Ice Dragons. Its made by freezing together Ice Dragon Blood and an Iron Ingot."]
+			description: ["Again used for the strongest weapons. The tools and weapons freeze whoever is hit. The armor also helps protect from Ice Dragons. It's made by freezing together Ice Dragon Blood and an Iron Ingot."]
 			dependencies: ["26ADE3D48DE519FB"]
 			id: "50BF2F801551F09D"
 			tasks: [{
@@ -1556,7 +1558,7 @@
 		{
 			x: 0.5d
 			y: 6.0d
-			description: ["Hydra Arrows can be made by crafting a Hydra Fang (dropped from killing a hydra) stick and lilly pad. When used it will drain the mob whos hit health, and give it to you."]
+			description: ["Hydra Arrows can be made by crafting a Hydra Fang (dropped from killing a hydra) stick and lily pad. When hitting a mob with it, it will drain their health, and give it to you."]
 			dependencies: ["31020C770ECB6A13"]
 			id: "773FF8C48E251700"
 			tasks: [{
