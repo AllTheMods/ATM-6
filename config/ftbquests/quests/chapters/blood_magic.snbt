@@ -1,0 +1,1540 @@
+{
+	id: "6E20D7B89B23BEB7"
+	group: "02FE661031A105D8"
+	order_index: 5
+	filename: "blood_magic"
+	title: "Blood Magic"
+	icon: "bloodmagic:weakbloodshard"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "bloodmagic:guide"
+				}
+			}
+			x: 1.6845238095238102d
+			y: -0.456547619047619d
+			shape: "gear"
+			description: [
+				"Welcome to &aBlood Magic&f!"
+				""
+				""
+				"Please refer to &eSanguineScientem &fin your &eAkashic Tome &ffor additional help with the mod."
+			]
+			size: 2.5d
+			id: "49A96581E8F776A1"
+			tasks: [{
+				id: "0815D11BF811C24A"
+				type: "checkmark"
+				title: "Blood Magic"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -3.5d
+			subtitle: "Your first Orb"
+			description: [
+				"Click with it on your hand to own it. It will hurt you 1 heart."
+				""
+				"Will start your Soul Network."
+				""
+				"Soul Network store Life Points which are used on the rituals."
+			]
+			hide_dependency_lines: true
+			dependencies: ["71F673B14E5072D5"]
+			hide: true
+			id: "5D8B7A76A2A1F254"
+			tasks: [{
+				id: "13D2C23467EF9C7F"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -0.5d
+			shape: "octagon"
+			dependencies: ["5D8B7A76A2A1F254"]
+			hide: true
+			id: "051DEF1A0ECBAA79"
+			tasks: [{
+				id: "3D6B9894ABA9D35E"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			shape: "octagon"
+			dependencies: ["051DEF1A0ECBAA79"]
+			hide: true
+			optional: true
+			id: "6F58379A5803E9A9"
+			tasks: [{
+				id: "058F2B2AA98A2DC6"
+				type: "item"
+				item: {
+					id: "bloodmagic:arcaneashes"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Slow them up a little bit"
+			description: [
+				"Use it to throw it to enemies to debuff them."
+				""
+				"Enemies killed while debuffed will drop demon will."
+			]
+			dependencies: ["71F673B14E5072D5"]
+			hide: true
+			id: "1404394D88A79270"
+			tasks: [{
+				id: "5A2D19451A191D35"
+				type: "item"
+				item: "bloodmagic:soulsnare"
+			}]
+			rewards: [{
+				id: "45051561ABF76557"
+				type: "item"
+				item: "bloodmagic:soulsnare"
+				count: 5
+			}]
+		}
+		{
+			x: -13.0d
+			y: -0.5d
+			shape: "gear"
+			description: [
+				"Enemies killed with this sword will drop demon will."
+				""
+				"Can be enchanted."
+				""
+				"&lLooting enchantment will increase the quantity of will dropped."
+			]
+			dependencies: ["5DBAEADEC6E98463"]
+			hide: true
+			optional: true
+			id: "390F71E02D8235F7"
+			tasks: [{
+				id: "6A64F9BFFE36EE66"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "64E266D0E04A32D1"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 5.0d
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -0.5d
+			subtitle: "Your first will"
+			dependencies: ["1404394D88A79270"]
+			hide: true
+			id: "5DBAEADEC6E98463"
+			tasks: [{
+				id: "6D081DFB1D987B24"
+				type: "item"
+				item: "bloodmagic:basemonstersoul"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.5d
+			shape: "octagon"
+			subtitle: "Another forge"
+			description: [
+				"&5Hellfire forge &fis another craft-station used to craft will-related items."
+				""
+				"How to use:"
+				"Place it. Right click to open its GUI."
+				"Place materials on the four left outside slots, it does not matter where these items go, the center slot is where your crafted item will appear."
+				"Place Demon Will or Tartaric Gem filled with wills to consume on the right side."
+				"The bar will fill showing it's progress."
+				"Result item will show on center slot on the left side."
+				""
+				"Every craft got a Will Demon requisite which must be fulfilled using Demon Will or filled Tartaric Gem."
+				""
+				"Leaving a Tartaric Gem inside will fill it with the Demon Will in the air (if there are any)."
+			]
+			dependencies: ["190804DACC484506"]
+			hide: true
+			id: "53E4F3F39F494DB8"
+			tasks: [{
+				id: "793C47F89C122F12"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+			rewards: [{
+				id: "54DF9DF1FE3AF88D"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 5.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			shape: "diamond"
+			description: [
+				"This is one of the main components used on various crafts."
+				""
+				"It is also needed to craft the other slates."
+			]
+			dependencies: ["71F673B14E5072D5"]
+			hide: true
+			id: "190804DACC484506"
+			tasks: [{
+				id: "7B6354086F16E8C5"
+				type: "item"
+				item: "bloodmagic:blankslate"
+			}]
+			rewards: [{
+				id: "675C15BE7F6ADD36"
+				type: "item"
+				item: "bloodmagic:blankslate"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Blood for the god of blood!"
+			description: ["Hit enemies next to the altar with this sword to kill them and produce blood."]
+			dependencies: ["264B6EE417D6FC82"]
+			optional: true
+			id: "62DC2283AC670E3F"
+			tasks: [{
+				id: "00E6D70CAE355A64"
+				type: "item"
+				item: "bloodmagic:daggerofsacrifice"
+			}]
+			rewards: [{
+				id: "1EFCB44406B12312"
+				type: "item"
+				item: "bloodmagic:life_essence_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -20.0d
+			shape: "octagon"
+			hide_dependency_lines: true
+			dependencies: ["71F673B14E5072D5"]
+			hide: true
+			dependency_requirement: "one_started"
+			optional: true
+			id: "6E895F7A3871D5D6"
+			tasks: [{
+				id: "69968F0D3DEB35D5"
+				type: "item"
+				item: "bloodmagic:incensealtar"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -6.5d
+			description: ["Click with it on your hand to own it. It will hurt you 1 heart."]
+			hide_dependency_lines: true
+			dependencies: ["5D8B7A76A2A1F254"]
+			hide: true
+			id: "264B6EE417D6FC82"
+			tasks: [{
+				id: "674AF82EFEED5C29"
+				type: "item"
+				item: "bloodmagic:apprenticebloodorb"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -9.5d
+			description: ["Click with it on your hand to own it. It will hurt you 1 heart."]
+			hide_dependency_lines: true
+			dependencies: ["264B6EE417D6FC82"]
+			hide: true
+			id: "01D80A70CEB65D78"
+			tasks: [{
+				id: "66A5F0EF7CE5ED66"
+				type: "item"
+				item: "bloodmagic:magicianbloodorb"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -13.5d
+			description: ["Click with it on your hand to own it. It will hurt you 1 heart."]
+			hide_dependency_lines: true
+			dependencies: ["01D80A70CEB65D78"]
+			hide: true
+			id: "3BA8EAB211D4DE15"
+			tasks: [{
+				id: "476AC834592E5C4D"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+		}
+		{
+			title: "Getting Started"
+			x: -0.5d
+			y: -0.5d
+			shape: "octagon"
+			subtitle: "Let's go"
+			description: [
+				"&aBlood altar&f is the main craft-station for this mod."
+				""
+				"Use the &4Sacrificial knife&f to hurt yourself (it can kill you!) and provide blood to the altar."
+				""
+				"&aBlood altar&f will lose blood on every new tier, unless you craft the orb of that tier."
+				""
+				"Check &eSanguineScientem &ffor instructions on how to build the different tiers."
+			]
+			dependencies: ["49A96581E8F776A1"]
+			hide: true
+			id: "71F673B14E5072D5"
+			tasks: [
+				{
+					id: "6D4FB1B3A6BFD4F2"
+					type: "item"
+					item: "bloodmagic:altar"
+				}
+				{
+					id: "5A46D184251DF79B"
+					type: "item"
+					item: {
+						id: "bloodmagic:sacrificialdagger"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "7E937987AE2B2C43"
+				type: "item"
+				item: "bloodmagic:life_essence_bucket"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -3.5d
+			shape: "pentagon"
+			dependencies: ["5D8B7A76A2A1F254"]
+			optional: true
+			id: "4E5ACB67DE8EE61D"
+			tasks: [{
+				id: "64D3D8E3B5E502A0"
+				type: "item"
+				item: "bloodmagic:lavacrystal"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -21.0d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: [
+				"5D8B7A76A2A1F254"
+				"6E895F7A3871D5D6"
+			]
+			hide: true
+			optional: true
+			id: "742DF7E2FB1D18E3"
+			tasks: [{
+				id: "492EA45E701AD972"
+				type: "item"
+				item: "bloodmagic:woodbrickpath"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -20.0d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: [
+				"6E895F7A3871D5D6"
+				"264B6EE417D6FC82"
+			]
+			hide: true
+			optional: true
+			id: "4F9D7B705EA55055"
+			tasks: [{
+				id: "41A2E1FFC618E9CA"
+				type: "item"
+				item: "bloodmagic:stonebrickpath"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -19.0d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: [
+				"01D80A70CEB65D78"
+				"6E895F7A3871D5D6"
+			]
+			hide: true
+			optional: true
+			id: "2DCE994FA03CA25D"
+			tasks: [{
+				id: "6E9DBC8D299BA93B"
+				type: "item"
+				item: "bloodmagic:wornstonebrickpath"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -20.0d
+			shape: "rsquare"
+			hide_dependency_lines: true
+			dependencies: [
+				"3BA8EAB211D4DE15"
+				"6E895F7A3871D5D6"
+			]
+			hide: true
+			optional: true
+			id: "5704D8150627A32A"
+			tasks: [{
+				id: "6EB08883375587D6"
+				type: "item"
+				item: "bloodmagic:obsidianbrickpath"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -3.5d
+			shape: "gear"
+			hide_dependency_lines: true
+			dependencies: [
+				"5DBAEADEC6E98463"
+				"390F71E02D8235F7"
+			]
+			hide: true
+			optional: true
+			id: "0DFD6F06CD02B05D"
+			tasks: [{
+				id: "57606AA831433CBF"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -14.0d
+			y: -2.5d
+			shape: "gear"
+			hide_dependency_lines: true
+			dependencies: [
+				"5DBAEADEC6E98463"
+				"390F71E02D8235F7"
+			]
+			hide: true
+			optional: true
+			id: "2D4D60AC79E0A716"
+			tasks: [{
+				id: "2B6655357F65F3E4"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulpickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -14.5d
+			y: -1.5d
+			shape: "gear"
+			hide_dependency_lines: true
+			dependencies: [
+				"5DBAEADEC6E98463"
+				"390F71E02D8235F7"
+			]
+			hide: true
+			optional: true
+			id: "76CD6F7D94457030"
+			tasks: [{
+				id: "482187287112EDF7"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulshovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -15.0d
+			y: -0.5d
+			shape: "gear"
+			hide_dependency_lines: true
+			dependencies: [
+				"5DBAEADEC6E98463"
+				"390F71E02D8235F7"
+			]
+			hide: true
+			optional: true
+			id: "06CF1D2EB506B47B"
+			tasks: [{
+				id: "6F96CD2B985B8A86"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulscythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			shape: "diamond"
+			description: [
+				"Use the Divination Sigil to see how much LP is in your personal network."
+				""
+				"If you look at the Blood Altar (with the The Divination Sigil in hand) on the left of the screen  you can see what tier your Altar is and how much LP the Altar has in it:"
+			]
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"190804DACC484506"
+			]
+			hide: true
+			optional: true
+			id: "35CAB65FB3587C1C"
+			tasks: [{
+				id: "1BCC405ECEFC15DC"
+				type: "item"
+				item: "bloodmagic:divinationsigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -7.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"665178D301AC752B"
+			]
+			hide: true
+			optional: true
+			id: "74611140507F6B9F"
+			tasks: [{
+				id: "5AF81FCB9FC8B87F"
+				type: "item"
+				item: {
+					id: "bloodmagic:growthsigil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -7.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"665178D301AC752B"
+			]
+			hide: true
+			optional: true
+			id: "5AE1A8B4CDF1E762"
+			tasks: [{
+				id: "72602012D494EA09"
+				type: "item"
+				item: {
+					id: "bloodmagic:miningsigil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -10.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"3631AC827E7F7D9B"
+			]
+			hide: true
+			optional: true
+			id: "35D1C5603CC7017D"
+			tasks: [{
+				id: "688BFE4D8A34BB16"
+				type: "item"
+				item: {
+					id: "bloodmagic:sigilofmagnetism"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -10.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"3631AC827E7F7D9B"
+			]
+			hide: true
+			optional: true
+			id: "7B99CF45B5A2AA29"
+			tasks: [{
+				id: "0023C42F3CB07924"
+				type: "item"
+				item: "bloodmagic:seersigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			shape: "diamond"
+			description: ["Will consume LP to place Water"]
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"190804DACC484506"
+			]
+			hide: true
+			optional: true
+			id: "3E879D349C8C8C3A"
+			tasks: [{
+				id: "7BFB8041F942770E"
+				type: "item"
+				item: "bloodmagic:watersigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"665178D301AC752B"
+			]
+			hide: true
+			optional: true
+			id: "2ABE32571735FD2D"
+			tasks: [{
+				id: "647A68FC000FB385"
+				type: "item"
+				item: "bloodmagic:voidsigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -4.0d
+			shape: "diamond"
+			description: ["Will consume LP to produce lava."]
+			dependencies: [
+				"6F58379A5803E9A9"
+				"190804DACC484506"
+			]
+			hide: true
+			optional: true
+			id: "313D457A41DD76E0"
+			tasks: [{
+				id: "7EBF5DBE647A9322"
+				type: "item"
+				item: "bloodmagic:lavasigil"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -6.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"665178D301AC752B"
+			]
+			hide: true
+			optional: true
+			id: "2719E6352CD75A11"
+			tasks: [{
+				id: "516A255998E4A8DF"
+				type: "item"
+				item: "bloodmagic:airsigil"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -9.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"3631AC827E7F7D9B"
+			]
+			hide: true
+			optional: true
+			id: "5BF887A44B13F096"
+			tasks: [{
+				id: "79F48883AB5E250C"
+				type: "item"
+				item: "bloodmagic:bloodlightsigil"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -9.0d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"3631AC827E7F7D9B"
+			]
+			hide: true
+			optional: true
+			id: "7F6F70C757B32B8D"
+			tasks: [{
+				id: "467185D9FE20EBC3"
+				type: "item"
+				item: "bloodmagic:sigilofholding"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -13.5d
+			shape: "diamond"
+			hide_dependency_lines: false
+			dependencies: [
+				"6F58379A5803E9A9"
+				"19ADFB3E7AF0CCA8"
+			]
+			hide: true
+			optional: true
+			id: "69576B63E19091BB"
+			tasks: [{
+				id: "0397E67189AB4540"
+				type: "item"
+				item: "bloodmagic:telepositionsigil"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"5D8B7A76A2A1F254"
+				"190804DACC484506"
+			]
+			hide: true
+			id: "5E28FFD90D14D828"
+			tasks: [{
+				id: "59B74526C6B6793F"
+				type: "item"
+				item: "bloodmagic:blankrune"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			shape: "rsquare"
+			subtitle: "Gotta go fast!"
+			dependencies: [
+				"190804DACC484506"
+				"5D8B7A76A2A1F254"
+				"5E28FFD90D14D828"
+			]
+			hide: true
+			optional: true
+			id: "01065B2EC0038B38"
+			tasks: [{
+				id: "560D159F8905BCE6"
+				type: "item"
+				item: "bloodmagic:speedrune"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -7.5d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"264B6EE417D6FC82"
+				"5E28FFD90D14D828"
+				"665178D301AC752B"
+			]
+			hide: true
+			optional: true
+			id: "5507C7450B54C403"
+			tasks: [{
+				id: "41F8F04EF6DA9116"
+				type: "item"
+				item: "bloodmagic:sacrificerune"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -6.5d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"264B6EE417D6FC82"
+				"5E28FFD90D14D828"
+				"665178D301AC752B"
+			]
+			hide: true
+			optional: true
+			id: "6C04734FEB9F7BF0"
+			tasks: [{
+				id: "2BD116C97C811278"
+				type: "item"
+				item: "bloodmagic:selfsacrificerune"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -9.0d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"3631AC827E7F7D9B"
+				"5E28FFD90D14D828"
+			]
+			hide: true
+			optional: true
+			id: "138990E6F2672556"
+			tasks: [{
+				id: "712C1C03E3AB0BDF"
+				type: "item"
+				item: "bloodmagic:dislocationrune"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -10.0d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"3631AC827E7F7D9B"
+				"5E28FFD90D14D828"
+			]
+			hide: true
+			optional: true
+			id: "7F32155047CC8202"
+			tasks: [{
+				id: "0F02E782294BB0B3"
+				type: "item"
+				item: "bloodmagic:altarcapacityrune"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -13.5d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"19ADFB3E7AF0CCA8"
+				"7F32155047CC8202"
+				"3BA8EAB211D4DE15"
+			]
+			hide: true
+			optional: true
+			id: "44021488F32FAF09"
+			tasks: [{
+				id: "3EF2351D89D12186"
+				type: "item"
+				item: "bloodmagic:bettercapacityrune"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -5.5d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"264B6EE417D6FC82"
+				"5E28FFD90D14D828"
+				"5D8B7A76A2A1F254"
+			]
+			hide: true
+			optional: true
+			id: "378FE7841E9DE079"
+			tasks: [{
+				id: "0D7A1EEAFDB98035"
+				type: "item"
+				item: "bloodmagic:orbcapacityrune"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -11.5d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"19ADFB3E7AF0CCA8"
+				"01065B2EC0038B38"
+				"3BA8EAB211D4DE15"
+			]
+			hide: true
+			optional: true
+			id: "5F2C4F9DA95C8A93"
+			tasks: [{
+				id: "5DC4FB126E142C82"
+				type: "item"
+				item: "bloodmagic:accelerationrune"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -12.5d
+			shape: "rsquare"
+			hide_dependency_lines: false
+			dependencies: [
+				"19ADFB3E7AF0CCA8"
+				"3BA8EAB211D4DE15"
+			]
+			hide: true
+			optional: true
+			id: "35DD21E7853829F2"
+			tasks: [{
+				id: "143C117946C94F3F"
+				type: "item"
+				item: "bloodmagic:chargingrune"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -6.5d
+			shape: "octagon"
+			description: ["This machine will extract your Demon Will from the Tartaric Gem freeing on the air of the chunk is it placed."]
+			dependencies: ["360D34FCD4EB0A53"]
+			id: "1F81ACBA45476EF6"
+			tasks: [{
+				id: "34106EB422801957"
+				type: "item"
+				item: "bloodmagic:demoncrucible"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			shape: "octagon"
+			description: [
+				"Will consume the will on the air of the chunk to produce Will Demon Crystal Cluster."
+				""
+				"Every cluster can have up to 7 crystals."
+				""
+				"To extract the crystals keep 1024 Demon will on a Tartaric Gem and right click the cluster."
+				"Otherwise you can use a Pickaxe."
+			]
+			dependencies: ["360D34FCD4EB0A53"]
+			id: "3C9526AE2AFC1826"
+			tasks: [{
+				id: "42CE2A482FC92EB0"
+				type: "item"
+				item: "bloodmagic:demoncrystallizer"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -8.0d
+			shape: "octagon"
+			description: ["Pulls Demon Will from the air of adjacent chunks into their own."]
+			dependencies: ["360D34FCD4EB0A53"]
+			id: "049C10D03598CC9D"
+			tasks: [{
+				id: "5A851774817BD12B"
+				type: "item"
+				item: "bloodmagic:demonpylon"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "How Petty!"
+			description: [
+				"Demon will storage."
+				""
+				"Can be placed on Curios slot."
+				""
+				"Can store up to 64 wills."
+			]
+			dependencies: [
+				"5DBAEADEC6E98463"
+				"53E4F3F39F494DB8"
+			]
+			hide: true
+			id: "2AC6B70DA0AE0F26"
+			tasks: [{
+				id: "5CDC36F2BDB2684B"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "3EE5E96F263AC3F2"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -5.0d
+			shape: "gear"
+			description: [
+				"Upgraded version of Petty Tartaric Gem."
+				""
+				"Can store up to 256 wills."
+			]
+			dependencies: ["2AC6B70DA0AE0F26"]
+			hide: true
+			id: "35866DDEBD00C527"
+			tasks: [{
+				id: "52E040899C2D40A5"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "01C63D4B31BDCBE3"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 5.0d
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.5d
+			shape: "gear"
+			description: [
+				"Upgraded version of the Lesser Tartaric Gem."
+				""
+				"Can store up to 1024 wills."
+			]
+			dependencies: ["35866DDEBD00C527"]
+			hide: true
+			id: "360D34FCD4EB0A53"
+			tasks: [{
+				id: "6664558FF585A9FD"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: {
+						souls: 1024.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "1D7C482EFA56D153"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 15.0d
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: -8.0d
+			shape: "gear"
+			description: [
+				"Upgraded version of the Common Tartaric Gem."
+				""
+				"Can store up to 4096 wills."
+			]
+			dependencies: ["360D34FCD4EB0A53"]
+			hide: true
+			id: "78F915A2EA229468"
+			tasks: [{
+				id: "4ABA4A658A30145B"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: {
+						souls: 4096.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "10A31C399C1F3995"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 25.0d
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.5d
+			shape: "diamond"
+			description: ["Upgraded version of the Blank Slate"]
+			dependencies: ["190804DACC484506"]
+			hide: true
+			id: "665178D301AC752B"
+			tasks: [{
+				id: "62FF936FE304448D"
+				type: "item"
+				item: "bloodmagic:reinforcedslate"
+			}]
+			rewards: [{
+				id: "6F725699C31593EE"
+				type: "item"
+				item: "bloodmagic:reinforcedslate"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -9.5d
+			shape: "diamond"
+			description: ["Upgraded version of the Reinforced Slate."]
+			dependencies: ["665178D301AC752B"]
+			hide: true
+			id: "3631AC827E7F7D9B"
+			tasks: [{
+				id: "508103E7A1DD2EB0"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+			rewards: [{
+				id: "0B80B58CD11DA075"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -13.5d
+			shape: "diamond"
+			dependencies: ["3631AC827E7F7D9B"]
+			hide: true
+			id: "19ADFB3E7AF0CCA8"
+			tasks: [{
+				id: "1E13E67CE3DE309D"
+				type: "item"
+				item: "bloodmagic:demonslate"
+			}]
+			rewards: [{
+				id: "6556D702ADD2FE05"
+				type: "item"
+				item: "bloodmagic:demonslate"
+			}]
+		}
+		{
+			title: "Blank Ritual Stone"
+			x: -3.0d
+			y: -6.5d
+			shape: "rsquare"
+			description: ["Basic stones used to build the rituals."]
+			hide_dependency_lines: true
+			dependencies: [
+				"264B6EE417D6FC82"
+				"665178D301AC752B"
+			]
+			id: "57E632F2709E9122"
+			tasks: [{
+				id: "08D848A142E6D93D"
+				type: "item"
+				item: "bloodmagic:ritualstone"
+			}]
+		}
+		{
+			title: "Ritual Selector"
+			x: -4.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "and Builder!"
+			description: [
+				"Right click aiming to the air to change the ritual selected."
+				""
+				""
+				"Right click on Master Ritual stone to start building ritual."
+				""
+				""
+				"Will place Blank Stone ritual and transform them if necessary."
+			]
+			dependencies: ["57E632F2709E9122"]
+			id: "1B48C2254099AA9F"
+			tasks: [{
+				id: "165218820F54106B"
+				type: "item"
+				item: "bloodmagic:ritualdiviner"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -9.5d
+			shape: "gear"
+			subtitle: "version 2.0!"
+			description: ["Upgraded version with more rituals."]
+			dependencies: ["1B48C2254099AA9F"]
+			optional: true
+			id: "02EE5324F7E9032D"
+			tasks: [{
+				id: "652D3E0EEB19F2E1"
+				type: "item"
+				item: "bloodmagic:ritualdivinerdusk"
+			}]
+		}
+		{
+			title: "Ritual: Edge of the Hidden Realm"
+			x: -10.5d
+			y: -9.5d
+			description: ["Prepare this ritual to travel to another dimension."]
+			hide_dependency_lines: true
+			dependencies: [
+				"351CF70E7E448AF7"
+				"58B3DCAB48CFC28D"
+				"35099101D9267F8E"
+			]
+			id: "5AB1D7A01042A8C9"
+			tasks: [{
+				id: "5EC0B624477A8F73"
+				type: "dimension"
+				dimension: "bloodmagic:dungeon"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -10.5d
+			description: ["Get some Tau fruit from chest or ceiling."]
+			dependencies: ["5AB1D7A01042A8C9"]
+			id: "0FAD865C66AF352B"
+			tasks: [{
+				id: "73A07B6D7C41FB86"
+				type: "item"
+				item: "bloodmagic:weak_tau"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -11.5d
+			description: ["You can get it from chest, ceiling of growing Tau Fruit."]
+			dependencies: ["5AB1D7A01042A8C9"]
+			id: "62E25EFAB617395C"
+			tasks: [{
+				id: "1913A5401EF4409F"
+				type: "item"
+				item: "bloodmagic:strong_tau"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -9.5d
+			shape: "rsquare"
+			subtitle: "Yes, Master"
+			description: [
+				"Controller block of the ritual."
+				""
+				"Can be redstone controlled."
+			]
+			dependencies: ["57E632F2709E9122"]
+			id: "351CF70E7E448AF7"
+			tasks: [{
+				id: "22C9EA08F359AF35"
+				type: "item"
+				item: "bloodmagic:masterritualstone"
+			}]
+		}
+		{
+			title: "Ritual Stones"
+			x: -1.0d
+			y: -6.5d
+			shape: "rsquare"
+			description: ["Various stone blocks used to build the rituals."]
+			dependencies: ["57E632F2709E9122"]
+			optional: true
+			id: "33E286D09CEDA71C"
+			tasks: [
+				{
+					id: "27A8987E1FF1DB44"
+					type: "item"
+					item: "bloodmagic:airritualstone"
+				}
+				{
+					id: "669B04507D31C2F4"
+					type: "item"
+					item: "bloodmagic:waterritualstone"
+				}
+				{
+					id: "3BF1D653FE6E3002"
+					type: "item"
+					item: "bloodmagic:fireritualstone"
+				}
+				{
+					id: "0D11064F9C153EBD"
+					type: "item"
+					item: "bloodmagic:earthritualstone"
+				}
+				{
+					id: "0C2D33463F3F35EA"
+					type: "item"
+					item: "bloodmagic:duskritualstone"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -13.5d
+			description: ["Used on Alchemical Reaction Chamber to obtain Weak Blood Shard."]
+			dependencies: ["7377847441C5648E"]
+			id: "5BC49EA3937C0DE5"
+			tasks: [{
+				id: "345B4DE882EE6785"
+				type: "item"
+				item: {
+					id: "bloodmagic:sanguinereverter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -13.5d
+			description: ["Machine that allows some processing like smeltering, blasting, duplicate ore and more."]
+			dependencies: ["3631AC827E7F7D9B"]
+			id: "7377847441C5648E"
+			tasks: [{
+				id: "03145FB829473272"
+				type: "item"
+				item: "bloodmagic:alchemicalreactionchamber"
+			}]
+		}
+		{
+			title: "Caution"
+			icon: "engineersdecor:sign_caution"
+			x: 1.5d
+			y: 2.25d
+			shape: "gear"
+			description: [
+				"There are a few issues with this version. Some of them can crash your game."
+				""
+				"Bound Armor can crash it too."
+			]
+			size: 1.5d
+			optional: true
+			id: "18735D4871A61A1E"
+		}
+		{
+			x: -10.0d
+			y: -6.5d
+			description: ["Shard of Demon Will Crystal Cluster."]
+			dependencies: ["1F81ACBA45476EF6"]
+			id: "481B878407976C00"
+			tasks: [{
+				id: "1D56C9F67083E10A"
+				type: "item"
+				item: "bloodmagic:defaultcrystal"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -7.5d
+			dependencies: ["481B878407976C00"]
+			id: "7D9C9A4F5BA59E98"
+			tasks: [{
+				id: "7D848ADF272386A8"
+				type: "item"
+				item: "bloodmagic:corrosivecrystal"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -6.5d
+			dependencies: ["481B878407976C00"]
+			id: "48D371EDAAE2E53D"
+			tasks: [{
+				id: "6DE8BF5C60809FE1"
+				type: "item"
+				item: "bloodmagic:vengefulcrystal"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -5.5d
+			dependencies: ["481B878407976C00"]
+			id: "195001080F41C7A2"
+			tasks: [{
+				id: "58CF8A272018FC76"
+				type: "item"
+				item: "bloodmagic:destructivecrystal"
+			}]
+		}
+		{
+			x: -13.0d
+			y: -4.5d
+			dependencies: ["481B878407976C00"]
+			id: "169FC063EB072251"
+			tasks: [{
+				id: "7CC86D014EE56DA0"
+				type: "item"
+				item: "bloodmagic:steadfastcrystal"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -13.5d
+			description: ["Component used to craft Master Blood Orb and blocks for T4 Altar"]
+			dependencies: [
+				"5BC49EA3937C0DE5"
+				"62E25EFAB617395C"
+			]
+			id: "4B4EA80D976368F7"
+			tasks: [{
+				id: "2D4A8EE103A6DBB4"
+				type: "item"
+				item: "bloodmagic:weakbloodshard"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -8.5d
+			description: ["Just keeping it on the inventory will show level of Demon Will on air of the chunk."]
+			dependencies: ["481B878407976C00"]
+			id: "689BBDE48A211572"
+			tasks: [{
+				id: "62DC7E241EC776B9"
+				type: "item"
+				item: "bloodmagic:demonwillgauge"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -0.5d
+			dependencies: ["051DEF1A0ECBAA79"]
+			id: "10C2E98D9FB51C03"
+			tasks: [{
+				id: "2956D79A38A951AA"
+				type: "item"
+				item: "atmadditions:philosophers_fuel"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -2.5d
+			dependencies: ["051DEF1A0ECBAA79"]
+			id: "3553C13A06C313F9"
+			tasks: [{
+				id: "54E3E322243E0EF8"
+				type: "item"
+				item: "bloodmagic:slate_vial"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -9.5d
+			description: [
+				"Use this key to open the doors of the dungeon dimension."
+				""
+				"&lEvery key got one use."
+				""
+			]
+			dependencies: ["3631AC827E7F7D9B"]
+			id: "58B3DCAB48CFC28D"
+			tasks: [{
+				id: "764CA46D6DF96732"
+				type: "item"
+				item: "bloodmagic:simplekey"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -9.5d
+			description: ["Crystal used to activate the rituals"]
+			dependencies: [
+				"4E5ACB67DE8EE61D"
+				"01D80A70CEB65D78"
+			]
+			id: "35099101D9267F8E"
+			tasks: [{
+				id: "3CCBC73FDA184F2F"
+				type: "item"
+				item: "bloodmagic:activationcrystalweak"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -13.5d
+			shape: "gear"
+			dependencies: ["19ADFB3E7AF0CCA8"]
+			id: "15831EF372661D0B"
+			tasks: [{
+				id: "2FDA9B743F5D10D2"
+				type: "item"
+				item: "bloodmagic:ritualtinkerer"
+			}]
+		}
+	]
+}
