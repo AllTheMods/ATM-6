@@ -1,0 +1,1655 @@
+{
+	id: "2C9583921A9A561E"
+	group: "4742E6B32DF6698E"
+	order_index: 0
+	filename: "ice__fire"
+	title: "Ice \\& Fire"
+	icon: "iceandfire:dragon_skull_fire"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "073F4B64FF6BED03"
+			tasks: [{
+				id: "2C29D02B25D5093E"
+				type: "dimension"
+				dimension: "allthemodium:the_other"
+			}]
+		}
+		{
+			title: "Fire Dragon Biome"
+			x: 3.5d
+			y: -0.5d
+			description: ["The Basalt Deltas are the home of the Fire Dragons!"]
+			dependencies: ["073F4B64FF6BED03"]
+			id: "2F794105F17C5076"
+			tasks: [{
+				id: "3C9F9DF2EE2307EA"
+				type: "biome"
+				biome: "allthemodium:basalt_delta"
+			}]
+		}
+		{
+			title: "Lightning Dragon Biome"
+			x: 2.0d
+			y: -2.5d
+			description: ["The Desert is the place for the Lightning Dragon!"]
+			dependencies: ["073F4B64FF6BED03"]
+			id: "519C2AAA1B0027A2"
+			tasks: [{
+				id: "26A5D2AF388EA0BE"
+				type: "biome"
+				biome: "allthemodium:desert"
+			}]
+		}
+		{
+			title: "Ice Dragon Biome"
+			x: 2.0d
+			y: 2.0d
+			description: ["The Mountain biomes (not gravelly) is where you'll find the Ice Dragons!"]
+			dependencies: ["073F4B64FF6BED03"]
+			id: "0E366AEC67C4D9CC"
+			tasks: [{
+				id: "66901FFCC62D852F"
+				type: "biome"
+				biome: "allthemodium:mountain"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			description: ["The Lightning Dragon is the newest dragon (you can probably notice how the mod is just ice and fire). They're nocturnal, they'll be up and hunting during the night and sleeping during the day. They sleep standing up which can be confusing to those who haven't read the quests."]
+			dependencies: ["519C2AAA1B0027A2"]
+			id: "7B845E005103666D"
+			tasks: [{
+				id: "76788D4333492E52"
+				type: "checkmark"
+				title: "Lightning Dragon"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			description: ["The Fire Dragon is the most popular dragon. 1 of the original 2 dragons. They are Diurnal, they're awake at day and asleep at night. Be careful with them as their attacks can keep you burning for awhile."]
+			dependencies: ["2F794105F17C5076"]
+			id: "67026E07AB9A2FB5"
+			tasks: [{
+				id: "091719F68DCDD85E"
+				type: "checkmark"
+				title: "Fire Dragon"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			description: ["The Ice Dragon is also 1 of the original 2 dragons. Arguably the hardest to fight. Their frozen breath will stop you in your tracks."]
+			dependencies: ["0E366AEC67C4D9CC"]
+			id: "7F097BBC5A73DE2E"
+			tasks: [{
+				id: "676EC1B972578AFB"
+				type: "checkmark"
+				title: "Ice Dragon"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			description: ["Home to gravel, gravel, and cyclops."]
+			dependencies: ["073F4B64FF6BED03"]
+			id: "5029B48C8C35181C"
+			tasks: [{
+				id: "5E0663230DABDF74"
+				type: "biome"
+				biome: "allthemodium:gravelly_mountains"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			description: ["The cyclops lives in rocks that look similar to Patrick Stars home. You'll find giant rocks filled with sheep, bones, and gold piles. That's where you'll find the cyclops."]
+			dependencies: ["5029B48C8C35181C"]
+			id: "464A75578FB0D567"
+			tasks: [{
+				id: "7E42D4E29F99C98A"
+				type: "checkmark"
+				title: "Cyclops"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["Resting place for the restless souls. "]
+			dependencies: ["073F4B64FF6BED03"]
+			id: "769A9553B23B1D3E"
+			tasks: [{
+				id: "5AF0C507D0757962"
+				type: "biome"
+				biome: "allthemodium:soul_sand_valley"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			description: ["You won't find the ghosts the ghosts will find you! When traveling through soul sand valleys you'll get haunted which trust me you'll tell when you are haunted."]
+			dependencies: ["769A9553B23B1D3E"]
+			id: "6662574F06722053"
+			tasks: [{
+				id: "314E0A19F3648F3D"
+				type: "checkmark"
+				title: "Ghost"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			description: ["Quite a boring biome above the surface. We're not looking above surface though. We're looking for the sticky caves the Myrmex live in."]
+			dependencies: ["073F4B64FF6BED03"]
+			id: "04C9F6F79A52592E"
+			tasks: [{
+				id: "248388888581F405"
+				type: "biome"
+				biome: "allthemodium:eroded_badlands"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["A foresty biome home to many nice creatures... and the ones that feast on them, like the Hydras."]
+			dependencies: ["073F4B64FF6BED03"]
+			id: "0F961E4FF617AE19"
+			tasks: [{
+				id: "55AF5E26342C91B5"
+				type: "biome"
+				biome: "allthemodium:mountain_edge"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			description: ["The Myrmex are ant like insects that live in the Other. They have different roles from worker, soldier, sentinel, to Queen. "]
+			dependencies: ["04C9F6F79A52592E"]
+			id: "5A3D89D2DF6894A6"
+			tasks: [{
+				id: "595E2F2C54215209"
+				type: "checkmark"
+				title: "Mymerx"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: ["Hydras live in little grass domes in the mountains edge biome. They're easy to see because of the mass of vines on them. They usually have piles of iron and skeleton skulls in them."]
+			dependencies: ["0F961E4FF617AE19"]
+			id: "4ED6200BB9B9A664"
+			tasks: [{
+				id: "77EDF47E0F4DCB0E"
+				type: "checkmark"
+				title: "Hydra"
+			}]
+			rewards: [{
+				id: "108DAB966D880E75"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Dragon Stages"
+			x: 6.5d
+			y: -4.5d
+			description: ["Dragons have 5 different stages (ages) they come in. It changes how much health they have, the way they attack, and the loot they drop."]
+			id: "637D2D362CDBC76D"
+			tasks: [{
+				id: "027AE80F1C8B7FCF"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6109A82312099B65"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.5d
+			description: ["Stage 3 are the strongest above ground dragons you can find. Their health is much higher around 5k to 7k hearts. Now being bigger than Steve they can also do many more attacks than previous dragons can."]
+			dependencies: ["637D2D362CDBC76D"]
+			id: "65CA22A959F4104C"
+			tasks: [{
+				id: "4A0A34BBB7131C48"
+				type: "checkmark"
+				title: "Stage 3"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.5d
+			description: ["Stage 2 is elementary age for Dragons. They are slightly bigger with bigger nests. They have more health from 3k to 5k hearts. They can also give much more of a fight than the Stage 1 can."]
+			dependencies: ["637D2D362CDBC76D"]
+			id: "41C55D4F75CC41C5"
+			tasks: [{
+				id: "13EAEAB777FB9D83"
+				type: "checkmark"
+				title: "Stage 2"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.5d
+			description: ["Stage 1 Dragons are just babies. They have the least health only being around 1k hearts. They are much smaller as well and give less loot. Their nests will also be smaller."]
+			dependencies: ["637D2D362CDBC76D"]
+			id: "7E85C3D69176A356"
+			tasks: [{
+				id: "724DD3C04EDB011C"
+				type: "checkmark"
+				title: "Stage 1"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -5.5d
+			description: ["Stage 4 are pretty much adult dragons. They live far underground (around Y level 30) in caves. Stage 4s can also drop Dragon Eggs which are needed to hatch your own dragons. Their health is much higher from 10k to 20k hearts."]
+			dependencies: ["637D2D362CDBC76D"]
+			id: "5875F1DBB79066B9"
+			tasks: [{
+				id: "14F1224359DDE3B2"
+				type: "checkmark"
+				title: "Stage 4"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -5.5d
+			description: ["The Stage 5 dragons are the strongest in the game. Also the biggest with the most hearts going above 20k. Bigger size means more cave which also means more loot. "]
+			dependencies: ["637D2D362CDBC76D"]
+			id: "718984A93343009D"
+			tasks: [{
+				id: "7A3B03414C60FE6C"
+				type: "checkmark"
+				title: "Stage 5"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			description: ["Once a Dragon is slain its corpse will stay there. It still has a hitbox that must be rightclicked to obtain the different items."]
+			dependencies: [
+				"7F097BBC5A73DE2E"
+				"67026E07AB9A2FB5"
+				"7B845E005103666D"
+			]
+			id: "51E6B2478E19D7C9"
+			tasks: [{
+				id: "4EBF89B56CA13773"
+				type: "checkmark"
+				title: "killing the dragons"
+			}]
+		}
+		{
+			title: "Scales"
+			x: 7.5d
+			y: -0.5d
+			description: ["By right clicking the Dragon corpse with an empty hand you will first get scales. Scales will be needed to make the Dragon Forges. Can only be obtained by killed dragons."]
+			dependencies: ["51E6B2478E19D7C9"]
+			id: "3B4DA7EF08D1EC2F"
+			tasks: [{
+				id: "4019EE8D6049A177"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:dragonscales_red"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_green"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_bronze"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_gray"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_blue"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_white"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_sapphire"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_silver"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_electric"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_amythest"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_copper"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonscales_black"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Dragon Heart"
+			x: 5.5d
+			y: -0.5d
+			description: ["The Dragon's Hearts are always dropped by Dragons. Obviously they'll only drop 1. Their hearts are used for the Dragon Forge Core and for the Ice and Fire flowers."]
+			dependencies: ["51E6B2478E19D7C9"]
+			id: "45F0280E0EE75C7B"
+			tasks: [{
+				id: "19C32D099951607A"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:fire_dragon_heart"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:ice_dragon_heart"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:lightning_dragon_heart"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0AAA8C7488BB00AD"
+					type: "item"
+					item: "iceandfire:fire_lily"
+				}
+				{
+					id: "39F97E6ABFFBE974"
+					type: "item"
+					item: "iceandfire:frost_lily"
+				}
+				{
+					id: "703295DE38A8CFF7"
+					type: "item"
+					item: "iceandfire:lightning_lily"
+				}
+			]
+		}
+		{
+			title: "Dragon Flesh"
+			x: 7.5d
+			y: 1.5d
+			description: ["The Dragon Flesh is a food source dropped from 3 and above Dragons. It's used for the Lillys and for eating. Don't try feeding it to your own dragons, don't make them cannibals!"]
+			dependencies: ["51E6B2478E19D7C9"]
+			id: "13F8BD59613AC3FE"
+			tasks: [{
+				id: "3D767ED99127F326"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:fire_dragon_flesh"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:ice_dragon_flesh"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:lightning_dragon_flesh"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "773E6506D27523DE"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+		}
+		{
+			title: "Dragon Blood"
+			x: 5.5d
+			y: 1.5d
+			description: ["Dragon blood can be obtained by right clicking a dragon corpse with an empty bottle. It will get rid of the corpse so you can not get both scales and blood. It will also be needed for the Dragon Forge."]
+			dependencies: ["51E6B2478E19D7C9"]
+			id: "7DF4BD144CB89FB7"
+			tasks: [{
+				id: "5D1562E775B45AB7"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:fire_dragon_blood"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:ice_dragon_blood"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:lightning_dragon_blood"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "27D5A1B221F8CBB8"
+				type: "item"
+				item: "minecraft:glass_bottle"
+				count: 16
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			description: ["Dragon Skeletons are either found in Badlands, or made from taking the scales or blood off the Dragon corpse."]
+			id: "5C56E1F2D9FC1B9C"
+			tasks: [{
+				id: "2FFB54131A82B7FB"
+				type: "checkmark"
+				title: "Skeleton"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			description: ["Dragon bones are the first that come off the skeleton. They're used to craft bone blocks which are needed for the Dragon Forge and they make different tools."]
+			dependencies: ["5C56E1F2D9FC1B9C"]
+			id: "54306E8AB3574BC3"
+			tasks: [{
+				id: "1433644BEFB894C1"
+				type: "item"
+				item: "iceandfire:dragonbone"
+			}]
+			rewards: [{
+				id: "11E40893920BD1A6"
+				type: "item"
+				item: "iceandfire:dragonbone"
+				count: 8
+			}]
+		}
+		{
+			title: "Dragon Skulls"
+			x: 7.5d
+			y: -2.5d
+			description: ["The Dragon Skull is the final drop of a Dragon. Its used to craft the Dragon Command Staff. That's only for tamed dragons though. It's mainly for decoration."]
+			dependencies: ["5C56E1F2D9FC1B9C"]
+			id: "11512722F976909C"
+			tasks: [{
+				id: "5D7464E1B8FD7302"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:dragon_skull_lightning"
+								Count: 1b
+								tag: {
+									Stage: 4
+									DragonAge: 75
+								}
+							}
+							{
+								id: "iceandfire:dragon_skull_ice"
+								Count: 1b
+								tag: {
+									Stage: 4
+									DragonAge: 75
+								}
+							}
+							{
+								id: "iceandfire:dragon_skull_fire"
+								Count: 1b
+								tag: {
+									Stage: 4
+									DragonAge: 75
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "48DE75324333022A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.0d
+			description: ["The Ice Dragon is the most annoying to fight and thats because of the ice breath. As the name suggests it'll freeze you. To avoid the ice breath avoid the Dragon, keep your range."]
+			dependencies: ["7F097BBC5A73DE2E"]
+			id: "24CE516102D3E77F"
+			tasks: [{
+				id: "5C6FDED1F335690F"
+				type: "kill"
+				entity: "iceandfire:ice_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "7588EE6155DE05A9"
+					type: "item"
+					item: "iceandfire:dragon_skull_ice"
+				}
+				{
+					id: "1C68487ED6E852FF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -0.5d
+			description: ["The Fire Dragons main attack is their firey breath. Welcome to the Other, you can't place water so when the Dragon sets you on fire there's not much to put you out. Try fire resistant armor or fire resistant potions!"]
+			dependencies: ["67026E07AB9A2FB5"]
+			id: "7DB26C9C2935F9AC"
+			tasks: [{
+				id: "00B7A7982A887849"
+				type: "kill"
+				entity: "iceandfire:fire_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "006CC2401331B979"
+					type: "item"
+					item: "iceandfire:dragon_skull_fire"
+				}
+				{
+					id: "3425FAF1AF91DEBE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -3.5d
+			description: ["The Lightning Dragon is the most fierce dragon. They'll hunt you down for ages. They also have the most range of all the dragons. Take advantage of the fact they're nocturnal."]
+			dependencies: ["7B845E005103666D"]
+			id: "4268019C1C1EAABB"
+			tasks: [{
+				id: "3D4B07DEDF604E67"
+				type: "kill"
+				entity: "iceandfire:lightning_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "48793FC490A5D20B"
+					type: "item"
+					item: "iceandfire:dragon_skull_lightning"
+				}
+				{
+					id: "64E45A74B64F40F8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 12.0d
+			y: -3.5d
+			description: ["The Lightning Forge needs a Lightning Dragon to power it. It's a 3x3x3 structure. It has Dragon Bone Blocks in all of the corners and a Core in the exact middle with an Aperature next to it. The rest is Forge Bricks."]
+			dependencies: [
+				"2C3AB5AA4B4FE37A"
+				"1AFCD9C70F020AE8"
+			]
+			id: "67B918732BC42670"
+			tasks: [
+				{
+					id: "4C6099AE107945CB"
+					type: "item"
+					item: "iceandfire:dragonforge_lightning_brick"
+					count: 17L
+				}
+				{
+					id: "5AD86026F35DF6C9"
+					type: "item"
+					item: "iceandfire:dragonforge_lightning_input"
+				}
+				{
+					id: "76D1CE34668C176E"
+					type: "item"
+					item: "iceandfire:dragonforge_lightning_core_disabled"
+				}
+				{
+					id: "134D4347DB9012F1"
+					type: "item"
+					item: "iceandfire:dragon_bone_block"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "71257D88FF5A033E"
+				type: "item"
+				item: "iceandfire:lightning_dragon_blood"
+				count: 3
+			}]
+		}
+		{
+			x: 12.0d
+			y: -0.5d
+			description: ["Fire Forge needs a Fire Dragon to power it. It's a 3x3x3 structure. It has Dragon Bone Blocks in all of its corners. It has an Core in the exact middle with a Aperature next to it. The rest is Forge Bricks."]
+			dependencies: [
+				"2C3AB5AA4B4FE37A"
+				"45F2540C29070E51"
+			]
+			id: "4423647FF3FFD43B"
+			tasks: [
+				{
+					id: "2A8F4BD951891CA6"
+					type: "item"
+					item: "iceandfire:dragonforge_fire_brick"
+					count: 17L
+				}
+				{
+					id: "70C2A64D9FC9A631"
+					type: "item"
+					item: "iceandfire:dragon_bone_block"
+					count: 8L
+				}
+				{
+					id: "4B55FCAAA14EACE0"
+					type: "item"
+					item: "iceandfire:dragonforge_fire_core_disabled"
+				}
+				{
+					id: "7230144D1E37DC10"
+					type: "item"
+					item: "iceandfire:dragonforge_fire_input"
+				}
+			]
+			rewards: [{
+				id: "09644699E5314584"
+				type: "item"
+				item: "iceandfire:fire_dragon_blood"
+				count: 3
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			description: ["The Ice Forge needs an Ice Dragon to power it. Its a 3x3x3 structure. The corners are Dragon Bone Blocks and the exact middle is the Core with an Aperature is next to it. The rest of the structure is Forge Bricks."]
+			dependencies: [
+				"2C3AB5AA4B4FE37A"
+				"453698CE1657B17E"
+			]
+			id: "26ADE3D48DE519FB"
+			tasks: [
+				{
+					id: "0B31B04345450544"
+					type: "item"
+					item: "iceandfire:dragonforge_ice_brick"
+					count: 17L
+				}
+				{
+					id: "0066619EE12B7015"
+					type: "item"
+					item: "iceandfire:dragonforge_ice_input"
+				}
+				{
+					id: "7ADD0CD37C5D2422"
+					type: "item"
+					item: "iceandfire:dragonforge_ice_core_disabled"
+				}
+				{
+					id: "4131CCE1910C6764"
+					type: "item"
+					item: "iceandfire:dragon_bone_block"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "5F0D4FCCB3AA88F2"
+				type: "item"
+				item: "iceandfire:ice_dragon_blood"
+				count: 3
+			}]
+		}
+		{
+			title: "Fire Dragon Eggs."
+			x: 10.0d
+			y: -0.5d
+			description: ["The Fire Dragon Eggs require mass amounts of heat to hatch. They must be kept surrounded by fire for a few days."]
+			dependencies: ["7DB26C9C2935F9AC"]
+			id: "45F2540C29070E51"
+			tasks: [{
+				id: "5AD3E77AF539EC68"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:dragonegg_gray"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_bronze"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_green"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_red"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "4E84001D88873E62"
+				type: "item"
+				item: "minecraft:netherrack"
+				count: 9
+			}]
+		}
+		{
+			title: "Ice Dragon Eggs"
+			x: 10.0d
+			y: 3.0d
+			description: ["The Ice Dragon Eggs require lowww temperatures to hatch. Put them in a pond of water and let them freeze to hatch."]
+			dependencies: ["24CE516102D3E77F"]
+			id: "453698CE1657B17E"
+			tasks: [{
+				id: "6219F85261929C6A"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:dragonegg_blue"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_white"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_sapphire"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_silver"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "37132F4A2DF43E93"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "Lightning Dragon Eggs"
+			x: 10.0d
+			y: -3.5d
+			description: ["Lightning Dragons need stormy weather to hatch. Leave them outside and let it rain!"]
+			dependencies: ["4268019C1C1EAABB"]
+			id: "1AFCD9C70F020AE8"
+			tasks: [{
+				id: "0F8A8669195B7BC9"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:dragonegg_electric"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_amythest"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_copper"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:dragonegg_black"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			description: ["It's made by combining Vibranium and Allthemodium in a Fire Forge. It's only really used with the other 2 alloys :P"]
+			dependencies: ["4423647FF3FFD43B"]
+			id: "1FC97892708EA909"
+			tasks: [{
+				id: "6FBA66194F775497"
+				type: "item"
+				item: "allthemodium:vibranium_allthemodium_alloy_ingot"
+			}]
+			rewards: [{
+				id: "1318CCDD9541DABE"
+				type: "item"
+				item: "allthemodium:vibranium_allthemodium_alloy_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: 13.5d
+			y: 3.5d
+			description: ["This one is made by placing Unobtainium and Vibranium into an Ice Forge. This will be needed for the ATM Tools. It's also used for UU Matter."]
+			dependencies: ["26ADE3D48DE519FB"]
+			id: "42518D6A472BEAA1"
+			tasks: [{
+				id: "435713A256D4FAEF"
+				type: "item"
+				item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+			}]
+			rewards: [{
+				id: "229C6BB69584AA49"
+				type: "item"
+				item: "allthemodium:unobtainium_vibranium_alloy_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: 13.5d
+			y: -3.0d
+			description: ["To make these you need to put Unobtainium and Allthemodium into a Lightning Forge. This will be needed for the ATM Star."]
+			dependencies: ["67B918732BC42670"]
+			id: "62B8382F1BFBCA6F"
+			tasks: [{
+				id: "6E58E17212000EE6"
+				type: "item"
+				item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
+			}]
+			rewards: [{
+				id: "3E6B5D9D01E8DCDC"
+				type: "item"
+				item: "allthemodium:unobtainium_allthemodium_alloy_ingot"
+				count: 2
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.5d
+			description: ["The Cyclops has 75 hearts and 10 armor. It's not the strongest mob but it'll still give a fight. Their main attack is picking you up and biting you. Try to avoid them picking you up."]
+			dependencies: ["464A75578FB0D567"]
+			id: "79E339E5083B37F9"
+			tasks: [{
+				id: "621B86C6C733909A"
+				type: "kill"
+				entity: "iceandfire:cyclops"
+				value: 1L
+			}]
+			rewards: [{
+				id: "44940C4668482859"
+				type: "item"
+				item: "iceandfire:cyclops_skull"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			description: ["Besides the biome the best way to tell a Dragons type is by their color. All 3 Dragon types have 4 different colors they can come in."]
+			id: "03D776E331D95114"
+			tasks: [{
+				id: "771A01EF27E80B42"
+				type: "checkmark"
+				title: "Colors of Dragons"
+			}]
+		}
+		{
+			title: "Fire Dragon Colors"
+			x: 5.5d
+			y: 5.0d
+			description: ["Fire Dragons come in: Red, Emerald, Bronze, and Gray."]
+			dependencies: ["03D776E331D95114"]
+			id: "61C2732DC98234AD"
+			tasks: [
+				{
+					id: "564232DC02B982C3"
+					type: "item"
+					item: "iceandfire:dragonscales_red"
+				}
+				{
+					id: "1B9711F0CDD5D386"
+					type: "item"
+					item: "iceandfire:dragonscales_green"
+				}
+				{
+					id: "4D132507EAD29C22"
+					type: "item"
+					item: "iceandfire:dragonscales_bronze"
+				}
+				{
+					id: "2CAC9788D972A6D8"
+					type: "item"
+					item: "iceandfire:dragonscales_gray"
+				}
+			]
+			rewards: [{
+				id: "3ADCA8AA753B746E"
+				type: "item"
+				item: "iceandfire:dragonforge_fire_brick"
+				count: 5
+			}]
+		}
+		{
+			title: "Ice Dragon Colors"
+			x: 6.5d
+			y: 5.0d
+			description: ["Ice Dragons come in: Blue, White, Sapphire, and Silver."]
+			dependencies: ["03D776E331D95114"]
+			id: "6D572E185AD81408"
+			tasks: [
+				{
+					id: "24A1B566997C35EE"
+					type: "item"
+					item: "iceandfire:dragonscales_blue"
+				}
+				{
+					id: "25D60C07D02A918C"
+					type: "item"
+					item: "iceandfire:dragonscales_white"
+				}
+				{
+					id: "099F8557504B0CC4"
+					type: "item"
+					item: "iceandfire:dragonscales_sapphire"
+				}
+				{
+					id: "0CBC3551F91886AE"
+					type: "item"
+					item: "iceandfire:dragonscales_silver"
+				}
+			]
+			rewards: [{
+				id: "443E202754144724"
+				type: "item"
+				item: "iceandfire:dragonforge_ice_brick"
+				count: 5
+			}]
+		}
+		{
+			title: "Lightning Dragon Scales"
+			x: 7.5d
+			y: 5.0d
+			description: ["Lightning Dragons come in: Electric Blue, Amethyst, Copper, and Black."]
+			dependencies: ["03D776E331D95114"]
+			id: "1BA9D47B1026062F"
+			tasks: [
+				{
+					id: "1780983DDAB5E417"
+					type: "item"
+					item: "iceandfire:dragonscales_electric"
+				}
+				{
+					id: "4810202B85C52E77"
+					type: "item"
+					item: "iceandfire:dragonscales_amythest"
+				}
+				{
+					id: "15A39A4B8A7E5756"
+					type: "item"
+					item: "iceandfire:dragonscales_copper"
+				}
+				{
+					id: "3C0D450FF1792C03"
+					type: "item"
+					item: "iceandfire:dragonscales_black"
+				}
+			]
+			rewards: [{
+				id: "39F53DC251E8ADA4"
+				type: "item"
+				item: "iceandfire:dragonforge_lightning_brick"
+				count: 5
+			}]
+		}
+		{
+			x: 11.0d
+			y: -0.5d
+			description: ["Dragon Meal will be needed to help grow your baby Dragon."]
+			dependencies: [
+				"45F2540C29070E51"
+				"1AFCD9C70F020AE8"
+				"453698CE1657B17E"
+			]
+			dependency_requirement: "one_completed"
+			id: "2C3AB5AA4B4FE37A"
+			tasks: [{
+				id: "29930433F8587FA3"
+				type: "item"
+				item: "iceandfire:dragon_meal"
+			}]
+			rewards: [{
+				id: "2660BFC4B9A8CE48"
+				type: "item"
+				item: "iceandfire:dragon_meal"
+				count: 9
+			}]
+		}
+		{
+			title: "Summoning Crystals",
+			x: 11.0d
+			y: 4.0d
+			description: ["Summoning Crystals when binded to a Dragon will tp it to you from wherever it is (besides in the Horn)."]
+			dependencies: [
+				"75F0EF439334D3D8"
+				"2B6CA1876EF701A1"
+				"2C3AB5AA4B4FE37A"
+			]
+			dependency_requirement: "one_completed"
+			id: "6D386ABD2DA5E1B9"
+			tasks: [{
+				id: "76F6FC5CC0563679"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "iceandfire:summoning_crystal_fire"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:summoning_crystal_ice"
+								Count: 1b
+							}
+							{
+								id: "iceandfire:summoning_crystal_lightning"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 5.0d
+			description: ["The Sapphire Ore spawns in Stage 4 and 5 Ice Dragon Nests. It'll be necessary to making summoning crystals."]
+			dependencies: ["78033592199F9170"]
+			id: "2B6CA1876EF701A1"
+			tasks: [{
+				id: "728985BAF5B6FBE4"
+				type: "item"
+				item: "iceandfire:sapphire_gem"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 5.0d
+			description: ["The Amethyst Ore spawns in Stage 4 and 5 Lightning Dragon nests. It'll be necessary to create summoning crystals."]
+			dependencies: ["78033592199F9170"]
+			id: "75F0EF439334D3D8"
+			tasks: [{
+				id: "78B5B53BE38FFAE4"
+				type: "item"
+				item: "iceandfire:amythest_gem"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -4.5d
+			description: ["The Dragon Command Staff tells the Dragon how to act. Like telling a dog to sit. The Dragon Horn is a tool to hide your Dragon in your inventory. Helpful for keeping space as Dragons can get pretty big. The Flute is how to settle your Dragon down when it keeps on going away from you."]
+			dependencies: ["2C3AB5AA4B4FE37A"]
+			id: "0A2BEACC7C7743C0"
+			tasks: [
+				{
+					id: "6B52A8F8A0BE553A"
+					type: "item"
+					item: "iceandfire:dragon_stick"
+				}
+				{
+					id: "2C786BD74003F272"
+					type: "item"
+					item: "iceandfire:dragon_horn"
+				}
+				{
+					id: "16A63FEB882A6698"
+					type: "item"
+					item: "iceandfire:dragon_flute"
+				}
+			]
+			rewards: [{
+				id: "4A5973FBA98C16B6"
+				type: "item"
+				item: "iceandfire:dragon_meal"
+				count: 10
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			description: ["A very useful item, one of my favorites. With it activated in your inventory every mob and entity will be highlighted. Useful for finding Dragon caves underground."]
+			dependencies: ["79E339E5083B37F9"]
+			id: "54DAF84FD6E9979D"
+			tasks: [{
+				id: "6C422595A1D15F0E"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:spectral_eye_amulet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2D1029368A18B522"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:spectral_eye_amulet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			description: ["Ectoplasm is dropped by ghosts and is used to make 2 blocks. The Cursed Chest and Graveyard Soil. The cursed chest will spawn ghosts when opened and the graveyard soil will occasionally spawn ghosts. Both good for pranking your friends!"]
+			dependencies: ["77F8919845C04EF6"]
+			id: "09E340C5FA709F59"
+			tasks: [{
+				id: "79A740CD783DA2D6"
+				type: "item"
+				item: "iceandfire:ectoplasm"
+			}]
+			rewards: [{
+				id: "053426F8CD80C994"
+				type: "item"
+				item: "iceandfire:ectoplasm"
+				count: 4
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.0d
+			description: ["Ghosts are one of the weaker mobs from Ice and Fire but their health isn't their strength. Ghosts, like vexes, will fly through blocks to attack you. "]
+			dependencies: ["6662574F06722053"]
+			id: "77F8919845C04EF6"
+			tasks: [{
+				id: "6E3ECBD330B3E1F4"
+				type: "kill"
+				entity: "iceandfire:ghost"
+				value: 1L
+			}]
+			rewards: [{
+				id: "63FB8E183151C4CC"
+				type: "item"
+				item: "iceandfire:ectoplasm"
+				count: 3
+			}]
+		}
+		{
+			x: 11.0d
+			y: 6.5d
+			description: ["Different Dragon nests will have different loot but all have the basic things. The rule of thumb is the bigger the nest the better the loot."]
+			id: "78033592199F9170"
+			tasks: [{
+				id: "617790A6A6786C33"
+				type: "checkmark"
+				title: "Dragon Nest loot"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 7.5d
+			description: ["Most nests have piles of allthemodium nuggets or gold nuggets. The higher the stage dragon the higher the nuggets. Unobtainium piles only appear in stage 4 and 5."]
+			dependencies: ["78033592199F9170"]
+			id: "2C16C46A88D4540C"
+			tasks: [
+				{
+					id: "0FAC0367C08AF240"
+					type: "item"
+					item: "allthemodium:allthemodium_nugget"
+					count: 9L
+				}
+				{
+					id: "057216A8A651D45A"
+					type: "item"
+					item: "allthemodium:vibranium_nugget"
+					count: 9L
+				}
+				{
+					id: "3D9CDA33666F9630"
+					type: "item"
+					item: "allthemodium:unobtainium_nugget"
+					count: 9L
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 7.5d
+			description: ["All nests have manuscripts in the chests. Manuscripts are needed for the bestiary and to upgrade it. They can also be found in many other structures like Hydra homes, Cyclops Caves, or villages."]
+			dependencies: ["78033592199F9170"]
+			id: "216A6EC6FE4E436E"
+			tasks: [{
+				id: "55EECEF7AD1263C9"
+				type: "item"
+				item: "iceandfire:manuscript"
+			}]
+		}
+		{
+			title: "AllTheModium Armors",
+			x: 11.0d
+			y: 8.5d
+			description: ["Dragons nest will have Allthemods armor in the chests. The higher the stages the better the armor. The armor will also come with enchants."]
+			dependencies: ["78033592199F9170"]
+			id: "364EBAD83FEEB4D2"
+			tasks: [
+				{
+					id: "1B7F6774D2F8B568"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "allthemodium:allthemodium_helmet"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:allthemodium_chestplate"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:allthemodium_leggings"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:allthemodium_boots"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "25F7FA805A75FC88"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "allthemodium:vibranium_helmet"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:vibranium_chestplate"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:vibranium_leggings"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:vibranium_boots"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "0A2B61AC9712228D"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "allthemodium:unobtainium_helmet"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:unobtainium_chestplate"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:unobtainium_leggings"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									id: "allthemodium:unobtainium_boots"
+									Count: 1b
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 7.5d
+			description: ["The Bestiary is the ingame guide book to Ice and Fire. It tells you everything the quest says and more. You'll need manuscripts and a Bestiary Lectern to read and upgrade it."]
+			dependencies: ["216A6EC6FE4E436E"]
+			id: "4EDEB83B4BDA8CD6"
+			tasks: [
+				{
+					id: "5072E7A9ED8513F8"
+					type: "item"
+					item: "iceandfire:bestiary"
+				}
+				{
+					id: "1EF459C4DCA584A5"
+					type: "item"
+					item: "iceandfire:lectern"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			description: ["The cyclops eye is a weapon that delivers weakness to mobs nearby when it is held. Can be used in offhand."]
+			dependencies: ["79E339E5083B37F9"]
+			id: "41CA03A9DD63C47D"
+			tasks: [{
+				id: "374981B0184DE1C1"
+				type: "item"
+				item: {
+					id: "iceandfire:cyclops_eye"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7544D9CD58750E4E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: ["For those who've read any greek mythology they'd know how to defeat the hydra. For those who don't basically the Hydra will regrow their necks and make more. To prevent the regeneration you'll need fire."]
+			dependencies: ["4ED6200BB9B9A664"]
+			id: "31020C770ECB6A13"
+			tasks: [{
+				id: "18C18C021AAC288C"
+				type: "kill"
+				entity: "iceandfire:hydra"
+				value: 1L
+			}]
+			rewards: [{
+				id: "7A9EA4D1DBBCC323"
+				type: "item"
+				item: "iceandfire:hydra_skull"
+			}]
+		}
+		{
+			x: 13.5d
+			y: -4.0d
+			description: ["Is used to make some of the best weapons. The weapon and tools will summon a lightning strike on whoever is hit. The armor also gives buffs against Lightning Dragons. Made by combining Lightning Dragon Blood and an Iron Ingot in a Lightning Forge."]
+			dependencies: ["67B918732BC42670"]
+			id: "23ECC0F6431951ED"
+			tasks: [{
+				id: "63553B74E01E41D4"
+				type: "item"
+				item: "iceandfire:dragonsteel_lightning_ingot"
+			}]
+			rewards: [{
+				id: "1F4420C6EC2DC59F"
+				type: "item"
+				item: "iceandfire:dragonsteel_lightning_ingot"
+				count: 3
+			}]
+		}
+		{
+			x: 13.5d
+			y: -1.0d
+			description: ["Is also used for the strongest weapons. Its weapons and tools will set your opponent on fire. The armor grants buffs against Fire Dragons. It's made by combining Fire Dragon Blood and an Iron Ingot in a Fire Forge."]
+			dependencies: ["4423647FF3FFD43B"]
+			id: "45EE8A86A46A4FF2"
+			tasks: [{
+				id: "04204A74B864038A"
+				type: "item"
+				item: "iceandfire:dragonsteel_fire_ingot"
+			}]
+			rewards: [{
+				id: "76618493E1DE90D9"
+				type: "item"
+				auto: "invisible"
+				item: "iceandfire:dragonsteel_fire_ingot"
+				count: 3
+			}]
+		}
+		{
+			x: 13.5d
+			y: 2.5d
+			description: ["Again used for the strongest weapons. The tools and weapons freeze whoever is hit. The armor also helps protect from Ice Dragons. It's made by freezing together Ice Dragon Blood and an Iron Ingot."]
+			dependencies: ["26ADE3D48DE519FB"]
+			id: "50BF2F801551F09D"
+			tasks: [{
+				id: "143100BB4698AF3D"
+				type: "item"
+				item: "iceandfire:dragonsteel_ice_ingot"
+			}]
+			rewards: [{
+				id: "35B1941700995EA0"
+				type: "item"
+				item: "iceandfire:dragonsteel_ice_ingot"
+				count: 3
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			description: ["The Hydra Heart will give the person who has it regeneration. The less health, the more regeneration."]
+			dependencies: ["31020C770ECB6A13"]
+			id: "1397287A048D9837"
+			tasks: [{
+				id: "787B29A32CC137C4"
+				type: "item"
+				item: "iceandfire:hydra_heart"
+			}]
+			rewards: [{
+				id: "4F56B06DF2F06583"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.0d
+			description: ["Hydra Arrows can be made by crafting a Hydra Fang (dropped from killing a hydra) stick and lily pad. When hitting a mob with it, it will drain their health, and give it to you."]
+			dependencies: ["31020C770ECB6A13"]
+			id: "773FF8C48E251700"
+			tasks: [{
+				id: "1FE24C4054AB44FD"
+				type: "item"
+				item: "iceandfire:hydra_arrow"
+			}]
+			rewards: [{
+				id: "02FDBE69579F11E2"
+				type: "item"
+				item: "iceandfire:hydra_arrow"
+				count: 15
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			description: ["By combing a Dragon Bone Sword and a Phantasmol Ingot in a Smithing Table you will receive a sword that throws swords!"]
+			dependencies: ["77F8919845C04EF6"]
+			id: "5A66ACEB1280104B"
+			tasks: [{
+				id: "6D57935FBF9C88F3"
+				type: "item"
+				item: {
+					id: "iceandfire:ghost_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0E8645BB06437DD6"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			description: ["The Myrmex work with a reputation system. They will automatically be hostile so you have to be careful. If you want the loot in the cocoons then hack and slash your way through. But if you want a peaceful diplomatic route look to the next quest."]
+			dependencies: ["5A3D89D2DF6894A6"]
+			id: "6CF5D033D7667C4E"
+			tasks: [{
+				id: "4392CDCB63082BFA"
+				type: "item"
+				item: "iceandfire:myrmex_desert_resin"
+			}]
+			rewards: [{
+				id: "685555B12045C034"
+				type: "item"
+				item: "iceandfire:myrmex_desert_resin"
+				count: 3
+			}]
+		}
+		{
+			title: "Diplomatic way"
+			x: -6.0d
+			y: -1.0d
+			description: ["To increase your reputation with the Myrmex you need to give Resin to the workers. Do so by dropping it near them. Again they will attack you but don't attack back just drop resin and run. Continue doing it until they're no longer hostile. Now you can safely live and trade with the Myrmex."]
+			dependencies: ["6CF5D033D7667C4E"]
+			id: "5FA10300910B5D0F"
+			tasks: [{
+				id: "58F63A93A4E9FA3F"
+				type: "item"
+				item: "iceandfire:myrmex_desert_resin_block"
+			}]
+			rewards: [{
+				id: "6B2D11AE6B023476"
+				type: "item"
+				item: "iceandfire:myrmex_desert_resin"
+				count: 20
+			}]
+		}
+		{
+			title: "Hack and Slash way"
+			x: -6.0d
+			y: 0.0d
+			description: ["If you don't want to take the peaceful route or it's just not working you can always kill your way through. Just kill them, take their babies, and make your own colony."]
+			dependencies: ["6CF5D033D7667C4E"]
+			id: "0C0E2D7C9B971886"
+			tasks: [{
+				id: "0C68068935436544"
+				type: "item"
+				item: "iceandfire:myrmex_desert_swarm"
+			}]
+			rewards: [{
+				id: "759C1A0FB6EE99B5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}
