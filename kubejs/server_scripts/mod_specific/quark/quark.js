@@ -15,6 +15,7 @@ onEvent('recipes', e => {
   })
 
   removeRecipeByOutput(e, [
+    'quark:sugar_cane_block',
     'quark:apple_crate',
     'quark:potato_crate',
     'quark:carrot_crate',
