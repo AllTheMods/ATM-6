@@ -1003,9 +1003,12 @@
 			]
 		}
 		{
+			title: "Allthemodium Manual"
 			x: 0.0d
 			y: 0.0d
 			description: ["Detailed Guide to Allthemodium."]
+			hide_dependency_lines: false
+			dependencies: ["6591144C543D0B8C"]
 			id: "731686C758AD9A99"
 			tasks: [{
 				id: "71D1672A82D08E89"
@@ -1187,6 +1190,31 @@
 				id: "32629A7C461C48F7"
 				type: "item"
 				item: "allthemodium:allthemodium_carrot"
+			}]
+		}
+		{
+			title: "&eWelcome to All The Mods 6!!!"
+			icon: "allthemodium:allthemodium_ingot"
+			x: 0.0d
+			y: -2.0d
+			description: [
+				"All The Mods 6 aims to provide hours of play with tons of mods! The goal of the ATM modpack is to create the ATM Star to craft Creative Items!"
+				""
+				"To get started, make sure to check out the quest chapters on the left! If you're new to modded Minecraft, make sure to check out the &aGetting Started&r Chapter!"
+				""
+				"Below you'll find all of the information about the tools and items added by AlltheMods."
+			]
+			size: 2.0d
+			id: "6591144C543D0B8C"
+			tasks: [{
+				id: "60DD3924358EF3EA"
+				type: "checkmark"
+				title: "Welcome to All The Mods 6!"
+			}]
+			rewards: [{
+				id: "643EEA53DB59D9BE"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]

@@ -10,27 +10,29 @@ onEvent('recipes', e => {
     S: 'minecraft:stone',
     B: 'minecraft:blackstone'
   }).id(`kubejs:appliedenergistics2/sky_stone_brick`)
-  e.shaped('appliedenergistics2:calculation_processor_press', ['CFC', 'FVF', 'PFP'], {
-    C: 'appliedenergistics2:purified_certus_quartz_crystal',
-    F: '#forge:ingots/fluix_steel',
-    V: '#forge:storage_blocks/vibranium',
-    P: 'appliedenergistics2:fluix_pearl'
+  e.shaped('appliedenergistics2:calculation_processor_press', ['HBH', 'IXI', 'HBH'], {
+    X: 'appliedenergistics2:purified_certus_quartz_crystal',
+    I: 'minecraft:iron_ingot',
+    B: 'minecraft:iron_block',
+    H: 'minecraft:iron_bars'
   }).id(`kubejs:appliedenergistics2/calculation_press`)
-  e.shaped('appliedenergistics2:logic_processor_press', ['BFB', 'FVF', 'CFC'], {
-    B: '#forge:ingots/blaze_gold',
-    F: '#forge:ingots/fluix_steel',
-    V: '#forge:storage_blocks/vibranium',
-    C: '#forge:ingots/rose_gold'
+  e.shaped('appliedenergistics2:logic_processor_press', ['HBH', 'IXI', 'HBH'], {
+    X: 'minecraft:gold_ingot',
+    I: 'minecraft:iron_ingot',
+    B: 'minecraft:iron_block',
+    H: 'minecraft:iron_bars'
   }).id(`kubejs:appliedenergistics2/logic_press`)
-  e.shaped('appliedenergistics2:engineering_processor_press', ['DFD', 'FVF', 'DFD'], {
-    D: '#forge:gems/mana_diamond',
-    F: '#forge:ingots/fluix_steel',
-    V: '#forge:storage_blocks/vibranium'
+  e.shaped('appliedenergistics2:engineering_processor_press', ['HBH', 'IXI', 'HBH'], {
+    X: 'minecraft:diamond',
+    I: 'minecraft:iron_ingot',
+    B: 'minecraft:iron_block',
+    H: 'minecraft:iron_bars'
   }).id(`kubejs:appliedenergistics2/engineering_press`)
-  e.shaped('appliedenergistics2:silicon_press', ['WFW', 'FVF', 'WFW'], {
-    W: '#forge:silicon',
-    F: '#forge:ingots/fluix_steel',
-    V: '#forge:storage_blocks/vibranium'
+  e.shaped('appliedenergistics2:silicon_press', ['HBH', 'IXI', 'HBH'], {
+    X: '#forge:silicon',
+    I: 'minecraft:iron_ingot',
+    B: 'minecraft:iron_block',
+    H: 'minecraft:iron_bars'
   }).id(`kubejs:appliedenergistics2/silicon_press`)
 
   e.recipes.appliedenergistics2.grinder({
@@ -45,13 +47,13 @@ onEvent('recipes', e => {
     turns: 4
   }).id(`kubejs:appliedenergistics2/grinder/ender_pearl_dust`)
 
-  e.recipes.lazierae2.pulse_centrifuge({
+  e.recipes.lazierae2.centrifuge({
     input: { tag: 'forge:flour_plants' },
     output: { item: 'pamhc2foodcore:flouritem' },
     processing_time: 160
   }).id(`kubejs:appliedenergistics2/pulse_centrifuge/flour`)
 
-  e.recipes.lazierae2.pulse_centrifuge({
+  e.recipes.lazierae2.centrifuge({
     input: { tag: 'forge:ender_pearls' },
     output: { item: 'thermal:ender_pearl_dust' },
     processing_time: 160
@@ -66,7 +68,7 @@ onEvent('recipes', e => {
     }
   }).id(`kubejs:appliedenergistics2/inscriber/printed_silicon`)
 
-  e.recipes.lazierae2.fluix_aggregator({
+  e.recipes.lazierae2.aggregator({
     inputs: [
       { input: { item: 'appliedenergistics2:sky_dust' } },
       { input: { tag: 'forge:gems/diamond' } },
