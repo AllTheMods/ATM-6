@@ -23,7 +23,7 @@
 				"Welcome to &aBlood Magic&f!"
 				""
 				""
-				"Please refer to &eSanguineScientem &fin your &eAkashic Tome &ffor additional help with the mod."
+				"Please refer to &eSanguineScientem&f in your &eAkashic Tome &ffor additional help with the mod."
 			]
 			size: 2.5d
 			id: "49A96581E8F776A1"
@@ -40,9 +40,13 @@
 			description: [
 				"Click with it on your hand to own it. It will hurt you 1 heart."
 				""
-				"Will start your Soul Network."
+				"Doing so will start your Soul Network."
 				""
-				"Soul Network store Life Points which are used on the rituals."
+				"Soul Network consist on a non-visible amount of Life Points stored on your player data. Divination Sigil and Seer's Sigil will show you this value. &l(x)"
+				""
+				"Blood Orb transforms and store Life Essence inside the &cBlood Altar&f, into Life Points (LP) which are used on the rituals and sigils."
+				""
+				"&l(x)&r: Continue on the Alchemy Table branch to unlock and know these items."
 			]
 			hide_dependency_lines: true
 			dependencies: ["71F673B14E5072D5"]
@@ -58,6 +62,13 @@
 			x: 10.0d
 			y: -0.5d
 			shape: "octagon"
+			description: [
+				"The Alchemy Table is a craft-station used to craft a bunch of &2Blood Magic&f components and provides alternate recipes for some vanilla items as items."
+				""
+				"To do craftings, the Alchemy Table uses items and LP from the Soul Network of the player."
+				""
+				"Check the &eSanguineScientem&f for more detailed information."
+			]
 			dependencies: ["5D8B7A76A2A1F254"]
 			hide: true
 			id: "051DEF1A0ECBAA79"
@@ -68,9 +79,23 @@
 			}]
 		}
 		{
+			title: "Alchemy Arrays"
 			x: 4.5d
 			y: -0.5d
 			shape: "octagon"
+			description: [
+				"&8Arcane Ashes&f is the main tool used to create Alchemy Arrays."
+				""
+				"In order to create an Alchemy Array, use &8Arcane Ashes&f while looking at a block."
+				"This will consume 1 durability out of 20 and draw a simple Alchemy Array."
+				""
+				"When you click on the Alchemy Array, it will consume a single item from the stack on your hand and hold it in the array."
+				"These items are then used to determine the Alchemy Array's effect."
+				""
+				"Each effect requires two items: a &lbase&r and a &lcatalyst&r."
+				"The base is the first item that you click the array with after it is drawn, and the catalyst is the second item."
+				"When you apply the base item, the design of the array will change if it is valid, and the array will activate once you apply the catalyst."
+			]
 			dependencies: ["051DEF1A0ECBAA79"]
 			hide: true
 			optional: true
@@ -88,7 +113,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.5d
 			y: -0.5d
 			shape: "gear"
 			subtitle: "Slow them up a little bit"
@@ -154,6 +179,11 @@
 			x: -6.0d
 			y: -0.5d
 			subtitle: "Your first will"
+			description: [
+				"Crystallized form of the mob soul."
+				""
+				"Used as ingredient for Crystal Clusters and Sentient Tools."
+			]
 			dependencies: ["1404394D88A79270"]
 			hide: true
 			id: "5DBAEADEC6E98463"
@@ -164,7 +194,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.5d
 			y: -3.5d
 			shape: "octagon"
 			subtitle: "Another forge"
@@ -172,15 +202,15 @@
 				"&5Hellfire forge &fis another craft-station used to craft will-related items."
 				""
 				"How to use:"
-				"Place it. Right click to open its GUI."
-				"Place materials on the four left outside slots, it does not matter where these items go, the center slot is where your crafted item will appear."
-				"Place Demon Will or Tartaric Gem filled with wills to consume on the right side."
-				"The bar will fill showing it's progress."
+				" - Place it. Right click to open its GUI."
+				" - Place materials on the four left outside slots, it does not matter where these items go, the center slot is where your crafted item will appear."
+				" - Place Demon Will or Tartaric Gem filled with wills to consume on the right side."
+				" The bar will fill showing it's progress."
 				"Result item will show on center slot on the left side."
 				""
 				"Every craft got a Will Demon requisite which must be fulfilled using Demon Will or filled Tartaric Gem."
 				""
-				"Leaving a Tartaric Gem inside will fill it with the Demon Will in the air (if there are any)."
+				"&lLeaving a Tartaric Gem inside will fill it with the Demon Will in the air (if there are any)."
 			]
 			dependencies: ["190804DACC484506"]
 			hide: true
@@ -230,7 +260,7 @@
 			y: -6.5d
 			shape: "gear"
 			subtitle: "Blood for the god of blood!"
-			description: ["Hit enemies next to the altar with this sword to kill them and produce blood."]
+			description: ["Hit enemies next to the altar with this &6Dagger of Sacrifice&f to kill them and produce blood."]
 			dependencies: ["264B6EE417D6FC82"]
 			optional: true
 			id: "62DC2283AC670E3F"
@@ -247,8 +277,13 @@
 		}
 		{
 			x: 1.5d
-			y: -20.0d
+			y: -18.5d
 			shape: "octagon"
+			description: [
+				"Multiblock structure used to boost your self-sacrifing at a &cBlood Altar&f."
+				""
+				"Check the &eSanguineScientem&f for more detailed information."
+			]
 			hide_dependency_lines: true
 			dependencies: ["71F673B14E5072D5"]
 			hide: true
@@ -310,11 +345,11 @@
 			shape: "octagon"
 			subtitle: "Let's go"
 			description: [
-				"&aBlood altar&f is the main craft-station for this mod."
+				"The &cBlood Altar&f is the main craft-station for this mod."
 				""
-				"Use the &4Sacrificial knife&f to hurt yourself (it can kill you!) and provide blood to the altar."
+				"Use the &6Sacrificial Knife&f to hurt yourself (it can kill you!) and provide &4Life Essence&f (measured as LP) to the altar."
 				""
-				"&aBlood altar&f will lose blood on every new tier, unless you craft the orb of that tier."
+				"The &cBlood Altar&f will lose blood on every new tier, unless you craft the orb of that tier."
 				""
 				"Check &eSanguineScientem &ffor instructions on how to build the different tiers."
 			]
@@ -348,7 +383,6 @@
 			y: -3.5d
 			shape: "pentagon"
 			dependencies: ["5D8B7A76A2A1F254"]
-			optional: true
 			id: "4E5ACB67DE8EE61D"
 			tasks: [{
 				id: "64D3D8E3B5E502A0"
@@ -358,8 +392,9 @@
 		}
 		{
 			x: 1.5d
-			y: -21.0d
+			y: -20.0d
 			shape: "rsquare"
+			description: ["Place it on a 3x3 pattern outside the platform."]
 			hide_dependency_lines: true
 			dependencies: [
 				"5D8B7A76A2A1F254"
@@ -376,8 +411,9 @@
 		}
 		{
 			x: 2.5d
-			y: -20.0d
+			y: -17.5d
 			shape: "rsquare"
+			description: ["Place it on a 2x3 pattern next to Wooded Path."]
 			hide_dependency_lines: true
 			dependencies: [
 				"6E895F7A3871D5D6"
@@ -393,9 +429,10 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -19.0d
+			x: 0.5d
+			y: -17.5d
 			shape: "rsquare"
+			description: ["Place it on a 2x3 pattern next to Stone Path."]
 			hide_dependency_lines: true
 			dependencies: [
 				"01D80A70CEB65D78"
@@ -408,24 +445,6 @@
 				id: "6E9DBC8D299BA93B"
 				type: "item"
 				item: "bloodmagic:wornstonebrickpath"
-			}]
-		}
-		{
-			x: 0.5d
-			y: -20.0d
-			shape: "rsquare"
-			hide_dependency_lines: true
-			dependencies: [
-				"3BA8EAB211D4DE15"
-				"6E895F7A3871D5D6"
-			]
-			hide: true
-			optional: true
-			id: "5704D8150627A32A"
-			tasks: [{
-				id: "6EB08883375587D6"
-				type: "item"
-				item: "bloodmagic:obsidianbrickpath"
 			}]
 		}
 		{
@@ -525,13 +544,13 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 3.5d
 			y: -3.5d
 			shape: "diamond"
 			description: [
-				"Use the Divination Sigil to see how much LP is in your personal network."
+				"Use the &6Divination Sigil&f to see how much LP is in your personal network."
 				""
-				"If you look at the Blood Altar (with the The Divination Sigil in hand) on the left of the screen  you can see what tier your Altar is and how much LP the Altar has in it:"
+				"If you look at the &cBlood Altar&f (with the &6Divination Sigil&f in hand) on the left top (by default) of the screen you can see what tier your Altar is and how much LP the Altar has in it:"
 			]
 			hide_dependency_lines: false
 			dependencies: [
@@ -548,9 +567,16 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 5.5d
 			y: -7.0d
 			shape: "diamond"
+			description: [
+				"Will apply bonemeal effect upon use, drawing 150 LP per use."
+				""
+				"Press [Right click] and [Left Click] (*) while aiming at the air, it will light up to indicate it is activated, &ndrawing 150 LP every 5 seconds until deactivated&r, applying bonemeal on a radius 7x7x5 around the user."
+				""
+				"(*): by default, check \"Use Item/Place block\" and \"Attack/Destroy\" buttons."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -570,9 +596,14 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: -7.0d
 			shape: "diamond"
+			description: [
+				"Press [Right click] and [Left Click] (*) while aiming at the air, it will light up to indicate it is activated, &ndrawing 100 LP every 5 seconds until deactivated&r, This will provide a Haste effect."
+				""
+				"(*): by default, check \"Use Item/Place block\" and \"Attack/Destroy\" buttons."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -592,9 +623,16 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -10.0d
+			x: 5.5d
+			y: -9.5d
 			shape: "diamond"
+			description: [
+				"Press [Right click] and [Left Click] (*) while aiming at the air, it will light up to indicate it is activated, &ndrawing 50 LP every 5 seconds until deactivated&r,"
+				""
+				"This will increas the item pickup range on 7 blocks around the user."
+				""
+				"(*): by default, check \"Use Item/Place block\" and \"Attack/Destroy\" buttons."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -614,13 +652,24 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -10.0d
+			x: 3.5d
+			y: -6.5d
 			shape: "diamond"
+			description: [
+				"Advanced version of Divination Sigil."
+				""
+				"Alongside showing the LP value of the network, will show more information when looking at a &cBlood Altar&f:"
+				"From top to bottom:"
+				" - Current Tier of the Altar"
+				" - Amount of blood currently inside the &cBlood Altar&f."
+				" - Current crafting progress, if any."
+				" - LP Consumption/Tick: how much LP the &cBlood Altar&f will use per tick when crafting."
+				" - Current LP Storage of any &2Charging Runes&f you may have"
+			]
 			hide_dependency_lines: false
 			dependencies: [
-				"6F58379A5803E9A9"
-				"3631AC827E7F7D9B"
+				"665178D301AC752B"
+				"35CAB65FB3587C1C"
 			]
 			hide: true
 			optional: true
@@ -632,10 +681,10 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -3.0d
+			x: 5.5d
+			y: -3.5d
 			shape: "diamond"
-			description: ["Will consume LP to place Water"]
+			description: ["Use it to draw 100 LP from your Soul network to place a source block of water"]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -651,9 +700,10 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 5.5d
 			y: -6.0d
 			shape: "diamond"
+			description: ["Use it to destroy any fluid block at a cost of 50 LP per block."]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -669,10 +719,10 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -4.0d
+			x: 4.5d
+			y: -3.5d
 			shape: "diamond"
-			description: ["Will consume LP to produce lava."]
+			description: ["Use it to draw 1000 LP from your Soul Network to place a source block of lava."]
 			dependencies: [
 				"6F58379A5803E9A9"
 				"190804DACC484506"
@@ -687,9 +737,14 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: -6.0d
 			shape: "diamond"
+			description: [
+				"Throws the user in the direction it is facing, at a cost of 50 LP per use."
+				""
+				"&lThis does not provide any source of feather falling effect. Use with caution."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -705,9 +760,14 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -9.0d
+			x: 3.5d
+			y: -9.5d
 			shape: "diamond"
+			description: [
+				"Use it to launch a blood light."
+				""
+				"Upon hitting a block, will draw 10 LP to spawn a light source."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -723,9 +783,14 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -9.0d
+			x: 4.5d
+			y: -9.5d
 			shape: "diamond"
+			description: [
+				"This sigil can hold other 5 sigils inside."
+				""
+				"Check the controls to open the sigil and cycle back and forward."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -744,6 +809,10 @@
 			x: 4.5d
 			y: -13.5d
 			shape: "diamond"
+			description: [
+				"Will temporary remove all liquids on a 6 block radius around the user."
+				"A short while after moving, the fluids will return as though they never left."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"6F58379A5803E9A9"
@@ -762,6 +831,13 @@
 			x: 7.5d
 			y: -2.0d
 			shape: "rsquare"
+			description: [
+				"Blood Runes act as upgrades to the Altar, and by using more advanced versions of the Blood Runes you can confer different effects on the &cBlood altar&f."
+				""
+				"&lThis Blank Rune does not give any upgrades."
+				""
+				"It's only use is to upgrade the Tier of the Altar."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"5D8B7A76A2A1F254"
@@ -780,6 +856,11 @@
 			y: -3.5d
 			shape: "rsquare"
 			subtitle: "Gotta go fast!"
+			description: [
+				"Each of this &bSpeed Rune&f increase crafting speed of the &cBlood Altar&f."
+				""
+				"Each &bSpeed Rune&f gives a bonus of +20% speed additively."
+			]
 			dependencies: [
 				"190804DACC484506"
 				"5D8B7A76A2A1F254"
@@ -798,6 +879,11 @@
 			x: 7.5d
 			y: -7.5d
 			shape: "rsquare"
+			description: [
+				"Each of this &2Rune&f increases the amount of Life Essence gained in the &4Blood Altar&f through means that take health from non-player entities."
+				""
+				"Each &2Rune&f gives a bonus of +10% additively."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"264B6EE417D6FC82"
@@ -817,6 +903,11 @@
 			x: 7.5d
 			y: -6.5d
 			shape: "rsquare"
+			description: [
+				"Each of this &2Rune&f increases the amount of Life Essence gained in the &4Blood Altar&f through means that use a player's health."
+				""
+				"Each &2Rune&f gives a bonus of +10% additively."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"264B6EE417D6FC82"
@@ -836,6 +927,11 @@
 			x: 7.5d
 			y: -9.0d
 			shape: "rsquare"
+			description: [
+				"Each of this &1Displacement Rune&f increases the flow input and output of the &cBlood Altar&f when pumping to and from an external tank."
+				""
+				"Each &1Displacement Rune&f gives a bonus of +10% additively."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"3631AC827E7F7D9B"
@@ -854,6 +950,11 @@
 			x: 7.0d
 			y: -10.0d
 			shape: "rsquare"
+			description: [
+				"Each of this &6Rune of Capacity&f increases the capacity of the &cBlood Altar&f."
+				""
+				"Each &6Rune of Capacity&f gives a bonus of +20% capacity additively."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"3631AC827E7F7D9B"
@@ -872,6 +973,15 @@
 			x: 7.0d
 			y: -13.5d
 			shape: "rsquare"
+			description: [
+				"Upgraded version of the &6Capacity Runes&f."
+				""
+				"Each of this &4Rune of Augmented Capacity&f increases the &cBlood Altar&f capacity on a multiplicative percentage."
+				""
+				"The calculations apply after the regular &6Capacity Runes&f."
+				""
+				"Each &4Rune of Augmented Capacity&f gives a bonus of +7,5% additively."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"19ADFB3E7AF0CCA8"
@@ -891,6 +1001,11 @@
 			x: 7.5d
 			y: -5.5d
 			shape: "rsquare"
+			description: [
+				"Each of this &9Rune of the Orb&f increases the capacity of the blood orb that is inside the &4Blood altar&f while it's inside."
+				""
+				"Each &9Rune of the Orb&f gives a bonus of +2% additively."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"264B6EE417D6FC82"
@@ -910,6 +1025,12 @@
 			x: 8.0d
 			y: -11.5d
 			shape: "rsquare"
+			description: [
+				"Each of this &bAcceleration Rune&f increases the speed of a couple operations:"
+				"The operations from &2Charging Rune&f and &1Displacement Rune&f occurs every 20 ticks."
+				""
+				"Each &bAcceleration Rune&f removes 1 tick of the delay until a minimun of 1 operation per tick."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"19ADFB3E7AF0CCA8"
@@ -929,6 +1050,15 @@
 			x: 7.5d
 			y: -12.5d
 			shape: "rsquare"
+			description: [
+				"This &2Charging rune&f works differently from the rest. "
+				""
+				"When the &cBlood Altar&f is not crafting nor filling a Blood Orb, it will syphon LP from the Altar to charge an internal buffer."
+				""
+				"When an item is placed inside the &cBlood Altar&f, it will instantaneously consume the stored charge and apply it to the crafting."
+				""
+				"Each &2 Chargin Rune&f holds a capacity of 1000mb of LP. It increases depending on the total capacity of the &cBlood Altar&f."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"19ADFB3E7AF0CCA8"
@@ -944,11 +1074,18 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: -6.5d
+			x: -7.5d
+			y: -5.0d
 			shape: "octagon"
-			description: ["This machine will extract your Demon Will from the Tartaric Gem freeing on the air of the chunk is it placed."]
+			description: [
+				"This machine will extract your Demon Will from the Tartaric Gem freeing on the air of the chunk is it placed."
+				""
+				"The Demon Will in the air will be drawn by Hellfire Forge and Demon Crystallizer."
+			]
+			hide_dependency_lines: false
 			dependencies: ["360D34FCD4EB0A53"]
+			hide: true
+			optional: true
 			id: "1F81ACBA45476EF6"
 			tasks: [{
 				id: "34106EB422801957"
@@ -957,18 +1094,23 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: -5.0d
+			x: -7.5d
+			y: -6.5d
 			shape: "octagon"
 			description: [
 				"Will consume the will on the air of the chunk to produce Will Demon Crystal Cluster."
 				""
 				"Every cluster can have up to 7 crystals."
 				""
-				"To extract the crystals keep 1024 Demon will on a Tartaric Gem and right click the cluster."
+				"To extract the crystals keep total of 1024 Demon will on inventory or on a Tartaric Gem and [Right click] (*) aiming &nat the individual crystals&r, &lnot the cluster."
 				"Otherwise you can use a Pickaxe."
+				""
+				"(*): by default, check \"Use Item/Place block\" and button."
 			]
+			hide_dependency_lines: false
 			dependencies: ["360D34FCD4EB0A53"]
+			hide: true
+			optional: true
 			id: "3C9526AE2AFC1826"
 			tasks: [{
 				id: "42CE2A482FC92EB0"
@@ -977,11 +1119,14 @@
 			}]
 		}
 		{
-			x: -8.5d
+			x: -7.5d
 			y: -8.0d
 			shape: "octagon"
 			description: ["Pulls Demon Will from the air of adjacent chunks into their own."]
+			hide_dependency_lines: false
 			dependencies: ["360D34FCD4EB0A53"]
+			hide: true
+			optional: true
 			id: "049C10D03598CC9D"
 			tasks: [{
 				id: "5A851774817BD12B"
@@ -1006,6 +1151,7 @@
 				"53E4F3F39F494DB8"
 			]
 			hide: true
+			optional: true
 			id: "2AC6B70DA0AE0F26"
 			tasks: [{
 				id: "5CDC36F2BDB2684B"
@@ -1041,6 +1187,7 @@
 			]
 			dependencies: ["2AC6B70DA0AE0F26"]
 			hide: true
+			optional: true
 			id: "35866DDEBD00C527"
 			tasks: [{
 				id: "52E040899C2D40A5"
@@ -1074,6 +1221,7 @@
 			]
 			dependencies: ["35866DDEBD00C527"]
 			hide: true
+			optional: true
 			id: "360D34FCD4EB0A53"
 			tasks: [{
 				id: "6664558FF585A9FD"
@@ -1109,6 +1257,7 @@
 			]
 			dependencies: ["360D34FCD4EB0A53"]
 			hide: true
+			optional: true
 			id: "78F915A2EA229468"
 			tasks: [{
 				id: "4ABA4A658A30145B"
@@ -1177,6 +1326,7 @@
 			shape: "diamond"
 			dependencies: ["3631AC827E7F7D9B"]
 			hide: true
+			optional: true
 			id: "19ADFB3E7AF0CCA8"
 			tasks: [{
 				id: "1E13E67CE3DE309D"
@@ -1191,7 +1341,7 @@
 		}
 		{
 			title: "Blank Ritual Stone"
-			x: -3.0d
+			x: -2.5d
 			y: -6.5d
 			shape: "rsquare"
 			description: ["Basic stones used to build the rituals."]
@@ -1214,7 +1364,7 @@
 			shape: "gear"
 			subtitle: "and Builder!"
 			description: [
-				"Right click aiming to the air to change the ritual selected."
+				"Right click aiming to the air to cycle the ritual selected."
 				""
 				""
 				"Right click on Master Ritual stone to start building ritual."
@@ -1249,7 +1399,11 @@
 			title: "Ritual: Edge of the Hidden Realm"
 			x: -10.5d
 			y: -9.5d
-			description: ["Prepare this ritual to travel to another dimension."]
+			description: [
+				"Prepare this ritual to travel to another dimension."
+				""
+				"To do so, you need 36 ritual stones and 80.000 LP from your Soul Network."
+			]
 			hide_dependency_lines: true
 			dependencies: [
 				"351CF70E7E448AF7"
@@ -1266,8 +1420,9 @@
 		{
 			x: -8.5d
 			y: -10.5d
-			description: ["Get some Tau fruit from chest or ceiling."]
+			description: ["Can be found from chest on Blood Magic Dungeon Dimension."]
 			dependencies: ["5AB1D7A01042A8C9"]
+			optional: true
 			id: "0FAD865C66AF352B"
 			tasks: [{
 				id: "73A07B6D7C41FB86"
@@ -1278,7 +1433,12 @@
 		{
 			x: -9.5d
 			y: -11.5d
-			description: ["You can get it from chest, ceiling of growing Tau Fruit."]
+			description: [
+				"You can get it from chest on the Blood Magic Dungeon Dimension, or growing Tau Fruit."
+				""
+				"To grow from Tau, keep a passive animal (like a cow, sheep or pig) above the farmland it is placed."
+				"The animal will work as a sacrifice."
+			]
 			dependencies: ["5AB1D7A01042A8C9"]
 			id: "62E25EFAB617395C"
 			tasks: [{
@@ -1288,7 +1448,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.5d
 			y: -9.5d
 			shape: "rsquare"
 			subtitle: "Yes, Master"
@@ -1307,7 +1467,7 @@
 		}
 		{
 			title: "Ritual Stones"
-			x: -1.0d
+			x: -0.5d
 			y: -6.5d
 			shape: "rsquare"
 			description: ["Various stone blocks used to build the rituals."]
@@ -1345,7 +1505,7 @@
 		{
 			x: -6.0d
 			y: -13.5d
-			description: ["Used on Alchemical Reaction Chamber to obtain Weak Blood Shard."]
+			description: ["Used on Alchemical Reaction Chamber to obtain Weak Blood Shard from Saturated Tau fruit."]
 			dependencies: ["7377847441C5648E"]
 			id: "5BC49EA3937C0DE5"
 			tasks: [{
@@ -1375,23 +1535,37 @@
 		{
 			title: "Caution"
 			icon: "engineersdecor:sign_caution"
-			x: 1.5d
+			x: 1.749999999999993d
 			y: 2.25d
 			shape: "gear"
 			description: [
-				"There are a few issues with this version. Some of them can crash your game."
+				"There are a few issues with the Living Armor on this version. Some of them can crash your game."
+				"&lUse it at your own risk."
+				"&nIt is NOT necessary to complete this quest page."
 				""
-				"Bound Armor can crash it too."
+				"Also, there are a few rituals and sigils not implemented yet."
 			]
 			size: 1.5d
 			optional: true
 			id: "18735D4871A61A1E"
+			tasks: [{
+				id: "67EFD18FA095A351"
+				type: "checkmark"
+				title: "I Accept it"
+			}]
 		}
 		{
-			x: -10.0d
+			x: -9.0d
 			y: -6.5d
-			description: ["Shard of Demon Will Crystal Cluster."]
-			dependencies: ["1F81ACBA45476EF6"]
+			description: [
+				"Shard of Demon Will Crystal Cluster."
+				""
+				"Ingredient Used on a few craftings."
+			]
+			hide_dependency_lines: false
+			dependencies: ["3C9526AE2AFC1826"]
+			hide: true
+			optional: true
 			id: "481B878407976C00"
 			tasks: [{
 				id: "1D56C9F67083E10A"
@@ -1402,7 +1576,8 @@
 		{
 			x: -11.5d
 			y: -7.5d
-			dependencies: ["481B878407976C00"]
+			dependencies: ["15F5BFB5B6D1D879"]
+			optional: true
 			id: "7D9C9A4F5BA59E98"
 			tasks: [{
 				id: "7D848ADF272386A8"
@@ -1413,7 +1588,8 @@
 		{
 			x: -12.0d
 			y: -6.5d
-			dependencies: ["481B878407976C00"]
+			dependencies: ["15F5BFB5B6D1D879"]
+			optional: true
 			id: "48D371EDAAE2E53D"
 			tasks: [{
 				id: "6DE8BF5C60809FE1"
@@ -1424,7 +1600,8 @@
 		{
 			x: -12.5d
 			y: -5.5d
-			dependencies: ["481B878407976C00"]
+			dependencies: ["15F5BFB5B6D1D879"]
+			optional: true
 			id: "195001080F41C7A2"
 			tasks: [{
 				id: "58CF8A272018FC76"
@@ -1435,7 +1612,8 @@
 		{
 			x: -13.0d
 			y: -4.5d
-			dependencies: ["481B878407976C00"]
+			dependencies: ["15F5BFB5B6D1D879"]
+			optional: true
 			id: "169FC063EB072251"
 			tasks: [{
 				id: "7CC86D014EE56DA0"
@@ -1446,7 +1624,7 @@
 		{
 			x: -8.5d
 			y: -13.5d
-			description: ["Component used to craft Master Blood Orb and blocks for T4 Altar"]
+			description: ["Component used to craft Master Blood Orb, Great Tartaric Gem and Large Bloodstone blocks for T4 Altar"]
 			dependencies: [
 				"5BC49EA3937C0DE5"
 				"62E25EFAB617395C"
@@ -1463,6 +1641,7 @@
 			y: -8.5d
 			description: ["Just keeping it on the inventory will show level of Demon Will on air of the chunk."]
 			dependencies: ["481B878407976C00"]
+			optional: true
 			id: "689BBDE48A211572"
 			tasks: [{
 				id: "62DC7E241EC776B9"
@@ -1473,7 +1652,12 @@
 		{
 			x: 16.5d
 			y: -0.5d
-			dependencies: ["051DEF1A0ECBAA79"]
+			description: ["ATM Star ingredient."]
+			dependencies: [
+				"051DEF1A0ECBAA79"
+				"3BA8EAB211D4DE15"
+			]
+			hide: false
 			id: "10C2E98D9FB51C03"
 			tasks: [{
 				id: "2956D79A38A951AA"
@@ -1482,21 +1666,10 @@
 			}]
 		}
 		{
-			x: 15.5d
-			y: -2.5d
-			dependencies: ["051DEF1A0ECBAA79"]
-			id: "3553C13A06C313F9"
-			tasks: [{
-				id: "54E3E322243E0EF8"
-				type: "item"
-				item: "bloodmagic:slate_vial"
-			}]
-		}
-		{
-			x: -1.0d
+			x: -0.5d
 			y: -9.5d
 			description: [
-				"Use this key to open the doors of the dungeon dimension."
+				"Use this key to open the sealed doors of the dungeon dimension."
 				""
 				"&lEvery key got one use."
 				""
@@ -1528,12 +1701,32 @@
 			x: -1.0d
 			y: -13.5d
 			shape: "gear"
+			description: ["Tool used to get information and modify rituals."]
 			dependencies: ["19ADFB3E7AF0CCA8"]
+			optional: true
 			id: "15831EF372661D0B"
 			tasks: [{
 				id: "2FDA9B743F5D10D2"
 				type: "item"
 				item: "bloodmagic:ritualtinkerer"
+			}]
+		}
+		{
+			title: "Ritual: Resonance of the Faceted Crystal"
+			x: -10.5d
+			y: -6.5d
+			description: [
+				"Use this ritual to generate different types of Will Demon."
+				""
+				"To prepare it, you will need 20 ritual stones and 20.000 LP on your network."
+			]
+			dependencies: ["481B878407976C00"]
+			optional: true
+			id: "15F5BFB5B6D1D879"
+			tasks: [{
+				id: "1262C29B11E75717"
+				type: "item"
+				item: "bloodmagic:rawdemoncrystal"
 			}]
 		}
 	]
