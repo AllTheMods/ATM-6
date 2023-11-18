@@ -6,6 +6,7 @@
     "DebugFile"
   ],
   "loggers": [
+    "net.minecraft.client.renderer.GlDebugTextUtils",
     "net.minecraft.client.renderer.model.BlockModel",
     "net.minecraft.client.renderer.texture.AtlasTexture",
     "com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService",

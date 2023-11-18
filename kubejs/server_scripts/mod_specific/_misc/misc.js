@@ -45,6 +45,11 @@ onEvent('recipes', e => {
     W: 'waterstrainer:worm'
   }).id('kubejs:waterstrainer/super_worm')
 
+  e.shaped('draconicevolution:info_tablet', ['SSS', 'SDS', 'SSS'], {
+    D: 'draconicevolution:draconium_dust',
+    S: 'minecraft:stone'
+  }).id('kubejs:draconicevolution/info_tablet')
+
   removeRecipeByID(e, [
     'eidolon:lead_block',
     'eidolon:smelt_stone_brick',
