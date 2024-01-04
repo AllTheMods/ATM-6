@@ -1,11 +1,14 @@
 [projection]
-	PROJECTION_BLACKLIST = ["silentgear", "draconicevolution", "mysticalagriculture", "thermal"]
-	POWER_CONSOLIDATION_TIERS = [10000.0, 50000.0, 500000.0, 1000000.0, 5000000.0]
-	POWER_CONSOLIDATION_TIER_UPGRADE_ITEM = ["atmadditions:atm_star"]
-	#Projection Enchantment Blacklist
-	PROJECTION_ENCHANTMENT_BLACKLIST = ["minecraft:mending", "forbiddenarcanus:indestructible", "apotheosis:life_mending", "naturesaura:aura_mending"]
-	#Projection items cannot be used in anvil
-	PROJECTION_ANVIL_CANCEL = true
+	[projection.projection]
+		PROJECTION_BLACKLIST = ["silentgear", "draconicevolution", "mysticalagriculture", "thermal"]
+		#Projection Enchantment Blacklist
+		PROJECTION_ENCHANTMENT_BLACKLIST = ["minecraft:mending", "forbiddenarcanus:indestructible", "apotheosis:life_mending", "naturesaura:aura_mending"]
+		#Projection items cannot be used in anvil
+		PROJECTION_ANVIL_CANCEL = true
+	[projection."power consolidation"]
+		POWER_CONSOLIDATION_TIERS = [10000.0, 50000.0, 500000.0, 1000000.0, 5000000.0]
+		POWER_CONSOLIDATION_TIER_UPGRADE_ITEM = ["atmadditions:atm_star"]
 [boundary]
-#Entities that won't be considered for the boundary
-	DRAIN_LIFE_ENTITY_BLACKLIST = ["dummmmmmy:target_dummy"]
+	[boundary."drain life"]
+		#Entities that won't be considered for the boundary
+		DRAIN_LIFE_ENTITY_BLACKLIST = ["dummmmmmy:target_dummy"]
