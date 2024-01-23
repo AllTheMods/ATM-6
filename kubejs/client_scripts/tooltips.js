@@ -65,6 +65,10 @@ onEvent('item.tooltip', e => {
   formattedTooltip('astralsorcery:altar_discovery', 'Check the Astral Tome for more info')
   formattedTooltip('bloodmagic:strong_tau', 'Can be found in Blood Magic dungeons')
 
+  e.add('allthemodium:allthemodium_ore', [
+    Text.of('Mining Dimension, Y 25 to 30').gold()
+  ])
+
   e.add(['extradisks:infinite_storage_disk', 'extradisks:infinite_fluid_storage_disk'], [
     Text.of('Recipe disabled due to RS bug').red()
   ])
