@@ -28,7 +28,7 @@
 			tasks: [{
 				id: "3C9F9DF2EE2307EA"
 				type: "biome"
-				biome: "allthemodium:basalt_delta"
+				biome: "allthemodium:basalt_deltas"
 			}]
 		}
 		{
@@ -54,7 +54,7 @@
 			tasks: [{
 				id: "66901FFCC62D852F"
 				type: "biome"
-				biome: "allthemodium:mountain"
+				biome: "allthemodium:mountains"
 			}]
 		}
 		{
