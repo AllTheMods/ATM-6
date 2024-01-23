@@ -48,13 +48,13 @@ onEvent('recipes', e => {
   }).id(`kubejs:appliedenergistics2/grinder/ender_pearl_dust`)
 
   e.recipes.lazierae2.centrifuge({
-    input: { tag: 'forge:flour_plants' },
+    input: [{ tag: 'forge:flour_plants' }],
     output: { item: 'pamhc2foodcore:flouritem' },
     processing_time: 160
   }).id(`kubejs:appliedenergistics2/pulse_centrifuge/flour`)
 
   e.recipes.lazierae2.centrifuge({
-    input: { tag: 'forge:ender_pearls' },
+    input: [{ tag: 'forge:ender_pearls' }],
     output: { item: 'thermal:ender_pearl_dust' },
     processing_time: 160
   }).id(`kubejs:appliedenergistics2/pulse_centrifuge/ender_pearl_dust`)
@@ -68,22 +68,11 @@ onEvent('recipes', e => {
     }
   }).id(`kubejs:appliedenergistics2/inscriber/printed_silicon`)
 
-  e.recipes.lazierae2.aggregator({
-    inputs: [
-      { input: { item: 'appliedenergistics2:sky_dust' } },
-      { input: { tag: 'forge:gems/diamond' } },
-      { input: { item: 'thermal:ender_pearl_dust' } }
-    ],
-    output: { item: 'lazierae2:resonating_gem' },
-    processing_time: 80
-  }).id(`kubejs:lazierae2/fluix_aggregator/resonating_gem`)
-
   e.recipes.create.milling('1x thermal:ender_pearl_dust', '#forge:ender_pearls').id(`kubejs:create/compat/ae2/milling/ender_pearl`)
   e.recipes.mekanism.crushing('1x thermal:ender_pearl_dust', '#forge:ender_pearls').id('kubejs:mekanism/compat/appliedenergistics2/ender_pearl_to_dust')
 
   removeRecipeByID(e, [
-    'appliedenergistics2:inscriber/silicon_print',
-    'lazierae2:fluix_aggregator/resonating_gem'
+    'appliedenergistics2:inscriber/silicon_print'
   ])
 
   removeRecipeByOutput(e, [
