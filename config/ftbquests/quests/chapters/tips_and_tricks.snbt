@@ -844,12 +844,12 @@
 			}]
 		}
 		{
-			title: "Time in A Bottle"
+			title: "Time in a Bottle"
 			x: 3.5d
 			y: 0.5d
 			subtitle: "The Sandman's Favorite Weapon"
 			description: [
-				"The Cloud in a Bottle stores time while it is in your inventory."
+				"The Time in a Bottle stores time while it is in your inventory."
 				""
 				"You can use the stored time on almost anything to increase the speed of the item. To do this, shift-right click on the item with the bottle in hand."
 				""
@@ -859,7 +859,7 @@
 			tasks: [{
 				id: "7FB116D85321DA44"
 				type: "item"
-				item: "quark:bottled_cloud"
+				item: "tiab:timeinabottle"
 			}]
 		}
 		{

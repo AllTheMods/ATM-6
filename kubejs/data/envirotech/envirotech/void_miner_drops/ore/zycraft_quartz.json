@@ -1,5 +1,5 @@
 {
-  "program": ["envirotech:ore", "envirotech:gemstone_ore"],
+  "programs": ["envirotech:ore", "envirotech:gemstone_ore"],
   "item": {"raw:item": "zycraft:quartz_crystal", "count":1},
   "config": [
     {

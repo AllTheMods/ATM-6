@@ -25,6 +25,7 @@ body:
       label: Modpack Version
       description: What version of the pack are you using?
       options:
+        - 1.9.2
         - 1.9.1
         - 1.9.0
         - 1.8.28
