@@ -1056,16 +1056,11 @@
 					type: "item"
 					item: "appliedenergistics2:cell_workbench"
 				}
-				{
-					id: "184B0D2B2C216398"
-					type: "item"
-					item: "lazierae2:crystal_energizer"
-				}
 			]
 		}
 		{
-			x: 6.0d
-			y: 2.0d
+			x: 7.0d
+			y: 3.0d
 			shape: "rsquare"
 			hide_dependency_lines: true
 			dependencies: ["0C9EF370D15DFC01"]
@@ -1074,19 +1069,6 @@
 				id: "0D724074856FD440"
 				type: "item"
 				item: "lazierae2:universal_press"
-			}]
-		}
-		{
-			x: 8.0d
-			y: 2.0d
-			shape: "rsquare"
-			hide_dependency_lines: true
-			dependencies: ["0C9EF370D15DFC01"]
-			id: "41F4B828D4786CD2"
-			tasks: [{
-				id: "3C56B9F45C111386"
-				type: "item"
-				item: "lazierae2:fluix_aggregator"
 			}]
 		}
 		{
@@ -1116,34 +1098,6 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: 4.0d
-			dependencies: [
-				"41F4B828D4786CD2"
-				"71F60B1D74293149"
-			]
-			id: "22C74BBDEB3211B9"
-			tasks: [{
-				id: "31D38E4034CF9F28"
-				type: "item"
-				item: "lazierae2:pulse_centrifuge"
-			}]
-		}
-		{
-			x: 8.0d
-			y: 4.0d
-			dependencies: [
-				"71F60B1D74293149"
-				"41F4B828D4786CD2"
-			]
-			id: "4186F252E69406E7"
-			tasks: [{
-				id: "59EC37FE994B0D8A"
-				type: "item"
-				item: "lazierae2:circuit_etcher"
-			}]
-		}
-		{
 			x: -2.0d
 			y: -2.0d
 			shape: "rsquare"
@@ -1157,6 +1111,7 @@
 			}]
 		}
 		{
+			title: "1K ME Cells"
 			x: 1.0d
 			y: -3.0d
 			hide_dependency_lines: true
